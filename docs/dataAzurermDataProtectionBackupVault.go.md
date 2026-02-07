@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataProtectionBackupVault.DataAzurermDataProtectionBackupVault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermdataprotectionbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermdataprotectionbackupvault"
 
 dataazurermdataprotectionbackupvault.NewDataAzurermDataProtectionBackupVault(scope Construct, id *string, config DataAzurermDataProtectionBackupVaultConfig) DataAzurermDataProtectionBackupVault
 ```
@@ -303,7 +303,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermDataProtectionBackupVault.DataAzurermDataProtectionBackupVault.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermdataprotectionbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermdataprotectionbackupvault"
 
 dataazurermdataprotectionbackupvault.DataAzurermDataProtectionBackupVault_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermDataProtectionBackupVault.DataAzurermDataProtectionBackupVault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermdataprotectionbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermdataprotectionbackupvault"
 
 dataazurermdataprotectionbackupvault.DataAzurermDataProtectionBackupVault_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ dataazurermdataprotectionbackupvault.DataAzurermDataProtectionBackupVault_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermDataProtectionBackupVault.DataAzurermDataProtectionBackupVault.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermdataprotectionbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermdataprotectionbackupvault"
 
 dataazurermdataprotectionbackupvault.DataAzurermDataProtectionBackupVault_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataazurermdataprotectionbackupvault.DataAzurermDataProtectionBackupVault_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermDataProtectionBackupVault.DataAzurermDataProtectionBackupVault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermdataprotectionbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermdataprotectionbackupvault"
 
 dataazurermdataprotectionbackupvault.DataAzurermDataProtectionBackupVault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -713,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDataProtectionBackupVault.DataAzurermDataProtectionBackupVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermdataprotectionbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermdataprotectionbackupvault"
 
 &dataazurermdataprotectionbackupvault.DataAzurermDataProtectionBackupVaultConfig {
 	Connection: interface{},
@@ -726,7 +726,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermdatapro
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.dataAzurermDataProtectionBackupVault.DataAzurermDataProtectionBackupVaultTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.dataAzurermDataProtectionBackupVault.DataAzurermDataProtectionBackupVaultTimeouts,
 }
 ```
 
@@ -876,7 +876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDataProtectionBackupVault.DataAzurermDataProtectionBackupVaultIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermdataprotectionbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermdataprotectionbackupvault"
 
 &dataazurermdataprotectionbackupvault.DataAzurermDataProtectionBackupVaultIdentity {
 
@@ -889,7 +889,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermdatapro
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDataProtectionBackupVault.DataAzurermDataProtectionBackupVaultTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermdataprotectionbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermdataprotectionbackupvault"
 
 &dataazurermdataprotectionbackupvault.DataAzurermDataProtectionBackupVaultTimeouts {
 	Read: *string,
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataProtectionBackupVault.DataAzurermDataProtectionBackupVaultIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermdataprotectionbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermdataprotectionbackupvault"
 
 dataazurermdataprotectionbackupvault.NewDataAzurermDataProtectionBackupVaultIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermDataProtectionBackupVaultIdentityList
 ```
@@ -1072,7 +1072,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataProtectionBackupVault.DataAzurermDataProtectionBackupVaultIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermdataprotectionbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermdataprotectionbackupvault"
 
 dataazurermdataprotectionbackupvault.NewDataAzurermDataProtectionBackupVaultIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermDataProtectionBackupVaultIdentityOutputReference
 ```
@@ -1383,7 +1383,7 @@ func InternalValue() DataAzurermDataProtectionBackupVaultIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataProtectionBackupVault.DataAzurermDataProtectionBackupVaultTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermdataprotectionbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermdataprotectionbackupvault"
 
 dataazurermdataprotectionbackupvault.NewDataAzurermDataProtectionBackupVaultTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermDataProtectionBackupVaultTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermResourceGroupTemplateDeployment.DataAzurermResourceGroupTemplateDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermresourcegrouptemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermresourcegrouptemplatedeployment"
 
 dataazurermresourcegrouptemplatedeployment.NewDataAzurermResourceGroupTemplateDeployment(scope Construct, id *string, config DataAzurermResourceGroupTemplateDeploymentConfig) DataAzurermResourceGroupTemplateDeployment
 ```
@@ -303,7 +303,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermResourceGroupTemplateDeployment.DataAzurermResourceGroupTemplateDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermresourcegrouptemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermresourcegrouptemplatedeployment"
 
 dataazurermresourcegrouptemplatedeployment.DataAzurermResourceGroupTemplateDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermResourceGroupTemplateDeployment.DataAzurermResourceGroupTemplateDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermresourcegrouptemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermresourcegrouptemplatedeployment"
 
 dataazurermresourcegrouptemplatedeployment.DataAzurermResourceGroupTemplateDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ dataazurermresourcegrouptemplatedeployment.DataAzurermResourceGroupTemplateDeplo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermResourceGroupTemplateDeployment.DataAzurermResourceGroupTemplateDeployment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermresourcegrouptemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermresourcegrouptemplatedeployment"
 
 dataazurermresourcegrouptemplatedeployment.DataAzurermResourceGroupTemplateDeployment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataazurermresourcegrouptemplatedeployment.DataAzurermResourceGroupTemplateDeplo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermResourceGroupTemplateDeployment.DataAzurermResourceGroupTemplateDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermresourcegrouptemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermresourcegrouptemplatedeployment"
 
 dataazurermresourcegrouptemplatedeployment.DataAzurermResourceGroupTemplateDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +669,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermResourceGroupTemplateDeployment.DataAzurermResourceGroupTemplateDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermresourcegrouptemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermresourcegrouptemplatedeployment"
 
 &dataazurermresourcegrouptemplatedeployment.DataAzurermResourceGroupTemplateDeploymentConfig {
 	Connection: interface{},
@@ -682,7 +682,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermresourc
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.dataAzurermResourceGroupTemplateDeployment.DataAzurermResourceGroupTemplateDeploymentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.dataAzurermResourceGroupTemplateDeployment.DataAzurermResourceGroupTemplateDeploymentTimeouts,
 }
 ```
 
@@ -832,7 +832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermResourceGroupTemplateDeployment.DataAzurermResourceGroupTemplateDeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermresourcegrouptemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermresourcegrouptemplatedeployment"
 
 &dataazurermresourcegrouptemplatedeployment.DataAzurermResourceGroupTemplateDeploymentTimeouts {
 	Read: *string,
@@ -866,7 +866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermResourceGroupTemplateDeployment.DataAzurermResourceGroupTemplateDeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermresourcegrouptemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermresourcegrouptemplatedeployment"
 
 dataazurermresourcegrouptemplatedeployment.NewDataAzurermResourceGroupTemplateDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermResourceGroupTemplateDeploymentTimeoutsOutputReference
 ```

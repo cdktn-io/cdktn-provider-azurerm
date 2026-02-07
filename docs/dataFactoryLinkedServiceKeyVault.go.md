@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceKeyVault.DataFactoryLinkedServiceKeyVault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/datafactorylinkedservicekeyvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datafactorylinkedservicekeyvault"
 
 datafactorylinkedservicekeyvault.NewDataFactoryLinkedServiceKeyVault(scope Construct, id *string, config DataFactoryLinkedServiceKeyVaultConfig) DataFactoryLinkedServiceKeyVault
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceKeyVault.DataFactoryLinkedServiceKeyVault.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/datafactorylinkedservicekeyvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datafactorylinkedservicekeyvault"
 
 datafactorylinkedservicekeyvault.DataFactoryLinkedServiceKeyVault_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceKeyVault.DataFactoryLinkedServiceKeyVault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/datafactorylinkedservicekeyvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datafactorylinkedservicekeyvault"
 
 datafactorylinkedservicekeyvault.DataFactoryLinkedServiceKeyVault_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ datafactorylinkedservicekeyvault.DataFactoryLinkedServiceKeyVault_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceKeyVault.DataFactoryLinkedServiceKeyVault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/datafactorylinkedservicekeyvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datafactorylinkedservicekeyvault"
 
 datafactorylinkedservicekeyvault.DataFactoryLinkedServiceKeyVault_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ datafactorylinkedservicekeyvault.DataFactoryLinkedServiceKeyVault_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceKeyVault.DataFactoryLinkedServiceKeyVault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/datafactorylinkedservicekeyvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datafactorylinkedservicekeyvault"
 
 datafactorylinkedservicekeyvault.DataFactoryLinkedServiceKeyVault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -949,7 +949,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceKeyVault.DataFactoryLinkedServiceKeyVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/datafactorylinkedservicekeyvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datafactorylinkedservicekeyvault"
 
 &datafactorylinkedservicekeyvault.DataFactoryLinkedServiceKeyVaultConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/datafactorylinkeds
 	Id: *string,
 	IntegrationRuntimeName: *string,
 	Parameters: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.dataFactoryLinkedServiceKeyVault.DataFactoryLinkedServiceKeyVaultTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.dataFactoryLinkedServiceKeyVault.DataFactoryLinkedServiceKeyVaultTimeouts,
 }
 ```
 
@@ -1196,7 +1196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceKeyVault.DataFactoryLinkedServiceKeyVaultTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/datafactorylinkedservicekeyvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datafactorylinkedservicekeyvault"
 
 &datafactorylinkedservicekeyvault.DataFactoryLinkedServiceKeyVaultTimeouts {
 	Create: *string,
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceKeyVault.DataFactoryLinkedServiceKeyVaultTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/datafactorylinkedservicekeyvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datafactorylinkedservicekeyvault"
 
 datafactorylinkedservicekeyvault.NewDataFactoryLinkedServiceKeyVaultTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryLinkedServiceKeyVaultTimeoutsOutputReference
 ```

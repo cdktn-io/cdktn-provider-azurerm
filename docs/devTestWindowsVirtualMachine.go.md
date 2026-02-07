@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devtestwindowsvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devtestwindowsvirtualmachine"
 
 devtestwindowsvirtualmachine.NewDevTestWindowsVirtualMachine(scope Construct, id *string, config DevTestWindowsVirtualMachineConfig) DevTestWindowsVirtualMachine
 ```
@@ -466,7 +466,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachine.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devtestwindowsvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devtestwindowsvirtualmachine"
 
 devtestwindowsvirtualmachine.DevTestWindowsVirtualMachine_IsConstruct(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devtestwindowsvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devtestwindowsvirtualmachine"
 
 devtestwindowsvirtualmachine.DevTestWindowsVirtualMachine_IsTerraformElement(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ devtestwindowsvirtualmachine.DevTestWindowsVirtualMachine_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devtestwindowsvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devtestwindowsvirtualmachine"
 
 devtestwindowsvirtualmachine.DevTestWindowsVirtualMachine_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ devtestwindowsvirtualmachine.DevTestWindowsVirtualMachine_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devtestwindowsvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devtestwindowsvirtualmachine"
 
 devtestwindowsvirtualmachine.DevTestWindowsVirtualMachine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1173,7 +1173,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devtestwindowsvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devtestwindowsvirtualmachine"
 
 &devtestwindowsvirtualmachine.DevTestWindowsVirtualMachineConfig {
 	Connection: interface{},
@@ -1183,7 +1183,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devtestwindowsvirt
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	GalleryImageReference: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachineGalleryImageReference,
+	GalleryImageReference: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachineGalleryImageReference,
 	LabName: *string,
 	LabSubnetName: *string,
 	LabVirtualNetworkId: *string,
@@ -1200,7 +1200,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devtestwindowsvirt
 	InboundNatRule: interface{},
 	Notes: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachineTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachineTimeouts,
 }
 ```
 
@@ -1536,7 +1536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachineGalleryImageReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devtestwindowsvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devtestwindowsvirtualmachine"
 
 &devtestwindowsvirtualmachine.DevTestWindowsVirtualMachineGalleryImageReference {
 	Offer: *string,
@@ -1610,7 +1610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachineInboundNatRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devtestwindowsvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devtestwindowsvirtualmachine"
 
 &devtestwindowsvirtualmachine.DevTestWindowsVirtualMachineInboundNatRule {
 	BackendPort: *f64,
@@ -1656,7 +1656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devtestwindowsvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devtestwindowsvirtualmachine"
 
 &devtestwindowsvirtualmachine.DevTestWindowsVirtualMachineTimeouts {
 	Create: *string,
@@ -1732,7 +1732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachineGalleryImageReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devtestwindowsvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devtestwindowsvirtualmachine"
 
 devtestwindowsvirtualmachine.NewDevTestWindowsVirtualMachineGalleryImageReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DevTestWindowsVirtualMachineGalleryImageReferenceOutputReference
 ```
@@ -2069,7 +2069,7 @@ func InternalValue() DevTestWindowsVirtualMachineGalleryImageReference
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachineInboundNatRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devtestwindowsvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devtestwindowsvirtualmachine"
 
 devtestwindowsvirtualmachine.NewDevTestWindowsVirtualMachineInboundNatRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DevTestWindowsVirtualMachineInboundNatRuleList
 ```
@@ -2229,7 +2229,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachineInboundNatRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devtestwindowsvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devtestwindowsvirtualmachine"
 
 devtestwindowsvirtualmachine.NewDevTestWindowsVirtualMachineInboundNatRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DevTestWindowsVirtualMachineInboundNatRuleOutputReference
 ```
@@ -2551,7 +2551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devTestWindowsVirtualMachine.DevTestWindowsVirtualMachineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devtestwindowsvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devtestwindowsvirtualmachine"
 
 devtestwindowsvirtualmachine.NewDevTestWindowsVirtualMachineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DevTestWindowsVirtualMachineTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arckubernetesprovisionedcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arckubernetesprovisionedcluster"
 
 arckubernetesprovisionedcluster.NewArcKubernetesProvisionedCluster(scope Construct, id *string, config ArcKubernetesProvisionedClusterConfig) ArcKubernetesProvisionedCluster
 ```
@@ -459,7 +459,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arckubernetesprovisionedcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arckubernetesprovisionedcluster"
 
 arckubernetesprovisionedcluster.ArcKubernetesProvisionedCluster_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arckubernetesprovisionedcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arckubernetesprovisionedcluster"
 
 arckubernetesprovisionedcluster.ArcKubernetesProvisionedCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ arckubernetesprovisionedcluster.ArcKubernetesProvisionedCluster_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arckubernetesprovisionedcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arckubernetesprovisionedcluster"
 
 arckubernetesprovisionedcluster.ArcKubernetesProvisionedCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ arckubernetesprovisionedcluster.ArcKubernetesProvisionedCluster_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arckubernetesprovisionedcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arckubernetesprovisionedcluster"
 
 arckubernetesprovisionedcluster.ArcKubernetesProvisionedCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1045,7 +1045,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedClusterAzureActiveDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arckubernetesprovisionedcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arckubernetesprovisionedcluster"
 
 &arckubernetesprovisionedcluster.ArcKubernetesProvisionedClusterAzureActiveDirectory {
 	AdminGroupObjectIds: *[]*string,
@@ -1105,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arckubernetesprovisionedcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arckubernetesprovisionedcluster"
 
 &arckubernetesprovisionedcluster.ArcKubernetesProvisionedClusterConfig {
 	Connection: interface{},
@@ -1115,16 +1115,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arckubernetesprovi
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedClusterIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedClusterIdentity,
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
 	ArcAgentAutoUpgradeEnabled: interface{},
 	ArcAgentDesiredVersion: *string,
-	AzureActiveDirectory: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedClusterAzureActiveDirectory,
+	AzureActiveDirectory: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedClusterAzureActiveDirectory,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedClusterTimeouts,
 }
 ```
 
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedClusterIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arckubernetesprovisionedcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arckubernetesprovisionedcluster"
 
 &arckubernetesprovisionedcluster.ArcKubernetesProvisionedClusterIdentity {
 	Type: *string,
@@ -1388,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arckubernetesprovisionedcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arckubernetesprovisionedcluster"
 
 &arckubernetesprovisionedcluster.ArcKubernetesProvisionedClusterTimeouts {
 	Create: *string,
@@ -1464,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedClusterAzureActiveDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arckubernetesprovisionedcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arckubernetesprovisionedcluster"
 
 arckubernetesprovisionedcluster.NewArcKubernetesProvisionedClusterAzureActiveDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArcKubernetesProvisionedClusterAzureActiveDirectoryOutputReference
 ```
@@ -1800,7 +1800,7 @@ func InternalValue() ArcKubernetesProvisionedClusterAzureActiveDirectory
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedClusterIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arckubernetesprovisionedcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arckubernetesprovisionedcluster"
 
 arckubernetesprovisionedcluster.NewArcKubernetesProvisionedClusterIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArcKubernetesProvisionedClusterIdentityOutputReference
 ```
@@ -2093,7 +2093,7 @@ func InternalValue() ArcKubernetesProvisionedClusterIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcKubernetesProvisionedCluster.ArcKubernetesProvisionedClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arckubernetesprovisionedcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arckubernetesprovisionedcluster"
 
 arckubernetesprovisionedcluster.NewArcKubernetesProvisionedClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArcKubernetesProvisionedClusterTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoLocalRulestackOutboundUntrustCertificateAssociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/paloaltolocalrulestackoutbounduntrustcertificateassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/paloaltolocalrulestackoutbounduntrustcertificateassociation"
 
 paloaltolocalrulestackoutbounduntrustcertificateassociation.NewPaloAltoLocalRulestackOutboundUntrustCertificateAssociation(scope Construct, id *string, config PaloAltoLocalRulestackOutboundUntrustCertificateAssociationConfig) PaloAltoLocalRulestackOutboundUntrustCertificateAssociation
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.paloAltoLocalRulestackOutboundUntrustCertificateAssociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/paloaltolocalrulestackoutbounduntrustcertificateassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/paloaltolocalrulestackoutbounduntrustcertificateassociation"
 
 paloaltolocalrulestackoutbounduntrustcertificateassociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.paloAltoLocalRulestackOutboundUntrustCertificateAssociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/paloaltolocalrulestackoutbounduntrustcertificateassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/paloaltolocalrulestackoutbounduntrustcertificateassociation"
 
 paloaltolocalrulestackoutbounduntrustcertificateassociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ paloaltolocalrulestackoutbounduntrustcertificateassociation.PaloAltoLocalRulesta
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.paloAltoLocalRulestackOutboundUntrustCertificateAssociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/paloaltolocalrulestackoutbounduntrustcertificateassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/paloaltolocalrulestackoutbounduntrustcertificateassociation"
 
 paloaltolocalrulestackoutbounduntrustcertificateassociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ paloaltolocalrulestackoutbounduntrustcertificateassociation.PaloAltoLocalRulesta
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.paloAltoLocalRulestackOutboundUntrustCertificateAssociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/paloaltolocalrulestackoutbounduntrustcertificateassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/paloaltolocalrulestackoutbounduntrustcertificateassociation"
 
 paloaltolocalrulestackoutbounduntrustcertificateassociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoLocalRulestackOutboundUntrustCertificateAssociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/paloaltolocalrulestackoutbounduntrustcertificateassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/paloaltolocalrulestackoutbounduntrustcertificateassociation"
 
 &paloaltolocalrulestackoutbounduntrustcertificateassociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociationConfig {
 	Connection: interface{},
@@ -772,7 +772,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/paloaltolocalrules
 	Provisioners: *[]interface{},
 	CertificateId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.paloAltoLocalRulestackOutboundUntrustCertificateAssociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.paloAltoLocalRulestackOutboundUntrustCertificateAssociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociationTimeouts,
 }
 ```
 
@@ -909,7 +909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoLocalRulestackOutboundUntrustCertificateAssociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/paloaltolocalrulestackoutbounduntrustcertificateassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/paloaltolocalrulestackoutbounduntrustcertificateassociation"
 
 &paloaltolocalrulestackoutbounduntrustcertificateassociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociationTimeouts {
 	Create: *string,
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoLocalRulestackOutboundUntrustCertificateAssociation.PaloAltoLocalRulestackOutboundUntrustCertificateAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/paloaltolocalrulestackoutbounduntrustcertificateassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/paloaltolocalrulestackoutbounduntrustcertificateassociation"
 
 paloaltolocalrulestackoutbounduntrustcertificateassociation.NewPaloAltoLocalRulestackOutboundUntrustCertificateAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PaloAltoLocalRulestackOutboundUntrustCertificateAssociationTimeoutsOutputReference
 ```

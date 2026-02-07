@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudActiveDeployment.SpringCloudActiveDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudactivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudactivedeployment"
 
 springcloudactivedeployment.NewSpringCloudActiveDeployment(scope Construct, id *string, config SpringCloudActiveDeploymentConfig) SpringCloudActiveDeployment
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.springCloudActiveDeployment.SpringCloudActiveDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudactivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudactivedeployment"
 
 springcloudactivedeployment.SpringCloudActiveDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.springCloudActiveDeployment.SpringCloudActiveDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudactivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudactivedeployment"
 
 springcloudactivedeployment.SpringCloudActiveDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ springcloudactivedeployment.SpringCloudActiveDeployment_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.springCloudActiveDeployment.SpringCloudActiveDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudactivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudactivedeployment"
 
 springcloudactivedeployment.SpringCloudActiveDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ springcloudactivedeployment.SpringCloudActiveDeployment_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.springCloudActiveDeployment.SpringCloudActiveDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudactivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudactivedeployment"
 
 springcloudactivedeployment.SpringCloudActiveDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudActiveDeployment.SpringCloudActiveDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudactivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudactivedeployment"
 
 &springcloudactivedeployment.SpringCloudActiveDeploymentConfig {
 	Connection: interface{},
@@ -795,7 +795,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudactived
 	DeploymentName: *string,
 	SpringCloudAppId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.springCloudActiveDeployment.SpringCloudActiveDeploymentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.springCloudActiveDeployment.SpringCloudActiveDeploymentTimeouts,
 }
 ```
 
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudActiveDeployment.SpringCloudActiveDeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudactivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudactivedeployment"
 
 &springcloudactivedeployment.SpringCloudActiveDeploymentTimeouts {
 	Create: *string,
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudActiveDeployment.SpringCloudActiveDeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudactivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudactivedeployment"
 
 springcloudactivedeployment.NewSpringCloudActiveDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudActiveDeploymentTimeoutsOutputReference
 ```

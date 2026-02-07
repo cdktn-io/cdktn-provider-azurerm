@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sshPublicKey.SshPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sshpublickey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sshpublickey"
 
 sshpublickey.NewSshPublicKey(scope Construct, id *string, config SshPublicKeyConfig) SshPublicKey
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.sshPublicKey.SshPublicKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sshpublickey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sshpublickey"
 
 sshpublickey.SshPublicKey_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.sshPublicKey.SshPublicKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sshpublickey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sshpublickey"
 
 sshpublickey.SshPublicKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ sshpublickey.SshPublicKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.sshPublicKey.SshPublicKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sshpublickey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sshpublickey"
 
 sshpublickey.SshPublicKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ sshpublickey.SshPublicKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.sshPublicKey.SshPublicKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sshpublickey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sshpublickey"
 
 sshpublickey.SshPublicKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sshPublicKey.SshPublicKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sshpublickey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sshpublickey"
 
 &sshpublickey.SshPublicKeyConfig {
 	Connection: interface{},
@@ -871,7 +871,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sshpublickey"
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.sshPublicKey.SshPublicKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.sshPublicKey.SshPublicKeyTimeouts,
 }
 ```
 
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sshPublicKey.SshPublicKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sshpublickey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sshpublickey"
 
 &sshpublickey.SshPublicKeyTimeouts {
 	Create: *string,
@@ -1136,7 +1136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sshPublicKey.SshPublicKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sshpublickey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sshpublickey"
 
 sshpublickey.NewSshPublicKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SshPublicKeyTimeoutsOutputReference
 ```

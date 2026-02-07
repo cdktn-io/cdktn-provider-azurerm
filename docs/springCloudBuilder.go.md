@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudbuilder"
 
 springcloudbuilder.NewSpringCloudBuilder(scope Construct, id *string, config SpringCloudBuilderConfig) SpringCloudBuilder
 ```
@@ -431,7 +431,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudbuilder"
 
 springcloudbuilder.SpringCloudBuilder_IsConstruct(x interface{}) *bool
 ```
@@ -463,7 +463,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudbuilder"
 
 springcloudbuilder.SpringCloudBuilder_IsTerraformElement(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ springcloudbuilder.SpringCloudBuilder_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudbuilder"
 
 springcloudbuilder.SpringCloudBuilder_IsTerraformResource(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ springcloudbuilder.SpringCloudBuilder_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudbuilder"
 
 springcloudbuilder.SpringCloudBuilder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -852,7 +852,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderBuildPackGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudbuilder"
 
 &springcloudbuilder.SpringCloudBuilderBuildPackGroup {
 	Name: *string,
@@ -898,7 +898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudbuilder"
 
 &springcloudbuilder.SpringCloudBuilderConfig {
 	Connection: interface{},
@@ -911,9 +911,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudbuilder
 	BuildPackGroup: interface{},
 	Name: *string,
 	SpringCloudServiceId: *string,
-	Stack: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.springCloudBuilder.SpringCloudBuilderStack,
+	Stack: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.springCloudBuilder.SpringCloudBuilderStack,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.springCloudBuilder.SpringCloudBuilderTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.springCloudBuilder.SpringCloudBuilderTimeouts,
 }
 ```
 
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderStack.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudbuilder"
 
 &springcloudbuilder.SpringCloudBuilderStack {
 	Id: *string,
@@ -1142,7 +1142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudbuilder"
 
 &springcloudbuilder.SpringCloudBuilderTimeouts {
 	Create: *string,
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderBuildPackGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudbuilder"
 
 springcloudbuilder.NewSpringCloudBuilderBuildPackGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpringCloudBuilderBuildPackGroupList
 ```
@@ -1378,7 +1378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderBuildPackGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudbuilder"
 
 springcloudbuilder.NewSpringCloudBuilderBuildPackGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpringCloudBuilderBuildPackGroupOutputReference
 ```
@@ -1696,7 +1696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderStackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudbuilder"
 
 springcloudbuilder.NewSpringCloudBuilderStackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudBuilderStackOutputReference
 ```
@@ -1989,7 +1989,7 @@ func InternalValue() SpringCloudBuilderStack
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/springcloudbuilder"
 
 springcloudbuilder.NewSpringCloudBuilderTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudBuilderTimeoutsOutputReference
 ```

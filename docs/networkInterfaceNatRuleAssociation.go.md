@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkInterfaceNatRuleAssociation.NetworkInterfaceNatRuleAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkinterfacenatruleassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkinterfacenatruleassociation"
 
 networkinterfacenatruleassociation.NewNetworkInterfaceNatRuleAssociation(scope Construct, id *string, config NetworkInterfaceNatRuleAssociationConfig) NetworkInterfaceNatRuleAssociation
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.networkInterfaceNatRuleAssociation.NetworkInterfaceNatRuleAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkinterfacenatruleassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkinterfacenatruleassociation"
 
 networkinterfacenatruleassociation.NetworkInterfaceNatRuleAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.networkInterfaceNatRuleAssociation.NetworkInterfaceNatRuleAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkinterfacenatruleassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkinterfacenatruleassociation"
 
 networkinterfacenatruleassociation.NetworkInterfaceNatRuleAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ networkinterfacenatruleassociation.NetworkInterfaceNatRuleAssociation_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.networkInterfaceNatRuleAssociation.NetworkInterfaceNatRuleAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkinterfacenatruleassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkinterfacenatruleassociation"
 
 networkinterfacenatruleassociation.NetworkInterfaceNatRuleAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ networkinterfacenatruleassociation.NetworkInterfaceNatRuleAssociation_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.networkInterfaceNatRuleAssociation.NetworkInterfaceNatRuleAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkinterfacenatruleassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkinterfacenatruleassociation"
 
 networkinterfacenatruleassociation.NetworkInterfaceNatRuleAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkInterfaceNatRuleAssociation.NetworkInterfaceNatRuleAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkinterfacenatruleassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkinterfacenatruleassociation"
 
 &networkinterfacenatruleassociation.NetworkInterfaceNatRuleAssociationConfig {
 	Connection: interface{},
@@ -818,7 +818,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkinterfacena
 	NatRuleId: *string,
 	NetworkInterfaceId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.networkInterfaceNatRuleAssociation.NetworkInterfaceNatRuleAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.networkInterfaceNatRuleAssociation.NetworkInterfaceNatRuleAssociationTimeouts,
 }
 ```
 
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkInterfaceNatRuleAssociation.NetworkInterfaceNatRuleAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkinterfacenatruleassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkinterfacenatruleassociation"
 
 &networkinterfacenatruleassociation.NetworkInterfaceNatRuleAssociationTimeouts {
 	Create: *string,
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkInterfaceNatRuleAssociation.NetworkInterfaceNatRuleAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkinterfacenatruleassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkinterfacenatruleassociation"
 
 networkinterfacenatruleassociation.NewNetworkInterfaceNatRuleAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkInterfaceNatRuleAssociationTimeoutsOutputReference
 ```

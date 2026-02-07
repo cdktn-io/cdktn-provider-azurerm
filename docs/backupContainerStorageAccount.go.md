@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.backupContainerStorageAccount.BackupContainerStorageAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/backupcontainerstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/backupcontainerstorageaccount"
 
 backupcontainerstorageaccount.NewBackupContainerStorageAccount(scope Construct, id *string, config BackupContainerStorageAccountConfig) BackupContainerStorageAccount
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.backupContainerStorageAccount.BackupContainerStorageAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/backupcontainerstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/backupcontainerstorageaccount"
 
 backupcontainerstorageaccount.BackupContainerStorageAccount_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.backupContainerStorageAccount.BackupContainerStorageAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/backupcontainerstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/backupcontainerstorageaccount"
 
 backupcontainerstorageaccount.BackupContainerStorageAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ backupcontainerstorageaccount.BackupContainerStorageAccount_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.backupContainerStorageAccount.BackupContainerStorageAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/backupcontainerstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/backupcontainerstorageaccount"
 
 backupcontainerstorageaccount.BackupContainerStorageAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ backupcontainerstorageaccount.BackupContainerStorageAccount_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.backupContainerStorageAccount.BackupContainerStorageAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/backupcontainerstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/backupcontainerstorageaccount"
 
 backupcontainerstorageaccount.BackupContainerStorageAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.backupContainerStorageAccount.BackupContainerStorageAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/backupcontainerstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/backupcontainerstorageaccount"
 
 &backupcontainerstorageaccount.BackupContainerStorageAccountConfig {
 	Connection: interface{},
@@ -818,7 +818,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/backupcontainersto
 	ResourceGroupName: *string,
 	StorageAccountId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.backupContainerStorageAccount.BackupContainerStorageAccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.backupContainerStorageAccount.BackupContainerStorageAccountTimeouts,
 }
 ```
 
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.backupContainerStorageAccount.BackupContainerStorageAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/backupcontainerstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/backupcontainerstorageaccount"
 
 &backupcontainerstorageaccount.BackupContainerStorageAccountTimeouts {
 	Create: *string,
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.backupContainerStorageAccount.BackupContainerStorageAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/backupcontainerstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/backupcontainerstorageaccount"
 
 backupcontainerstorageaccount.NewBackupContainerStorageAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BackupContainerStorageAccountTimeoutsOutputReference
 ```

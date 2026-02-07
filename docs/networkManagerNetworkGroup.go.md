@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerNetworkGroup.NetworkManagerNetworkGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkmanagernetworkgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkmanagernetworkgroup"
 
 networkmanagernetworkgroup.NewNetworkManagerNetworkGroup(scope Construct, id *string, config NetworkManagerNetworkGroupConfig) NetworkManagerNetworkGroup
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.networkManagerNetworkGroup.NetworkManagerNetworkGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkmanagernetworkgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkmanagernetworkgroup"
 
 networkmanagernetworkgroup.NetworkManagerNetworkGroup_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.networkManagerNetworkGroup.NetworkManagerNetworkGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkmanagernetworkgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkmanagernetworkgroup"
 
 networkmanagernetworkgroup.NetworkManagerNetworkGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ networkmanagernetworkgroup.NetworkManagerNetworkGroup_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.networkManagerNetworkGroup.NetworkManagerNetworkGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkmanagernetworkgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkmanagernetworkgroup"
 
 networkmanagernetworkgroup.NetworkManagerNetworkGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ networkmanagernetworkgroup.NetworkManagerNetworkGroup_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.networkManagerNetworkGroup.NetworkManagerNetworkGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkmanagernetworkgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkmanagernetworkgroup"
 
 networkmanagernetworkgroup.NetworkManagerNetworkGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkManagerNetworkGroup.NetworkManagerNetworkGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkmanagernetworkgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkmanagernetworkgroup"
 
 &networkmanagernetworkgroup.NetworkManagerNetworkGroupConfig {
 	Connection: interface{},
@@ -855,7 +855,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkmanagernetw
 	Description: *string,
 	Id: *string,
 	MemberType: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.networkManagerNetworkGroup.NetworkManagerNetworkGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.networkManagerNetworkGroup.NetworkManagerNetworkGroupTimeouts,
 }
 ```
 
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkManagerNetworkGroup.NetworkManagerNetworkGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkmanagernetworkgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkmanagernetworkgroup"
 
 &networkmanagernetworkgroup.NetworkManagerNetworkGroupTimeouts {
 	Create: *string,
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerNetworkGroup.NetworkManagerNetworkGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/networkmanagernetworkgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/networkmanagernetworkgroup"
 
 networkmanagernetworkgroup.NewNetworkManagerNetworkGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkManagerNetworkGroupTimeoutsOutputReference
 ```

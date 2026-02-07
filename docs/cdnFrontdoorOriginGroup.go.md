@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/cdnfrontdoororigingroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/cdnfrontdoororigingroup"
 
 cdnfrontdoororigingroup.NewCdnFrontdoorOriginGroup(scope Construct, id *string, config CdnFrontdoorOriginGroupConfig) CdnFrontdoorOriginGroup
 ```
@@ -452,7 +452,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/cdnfrontdoororigingroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/cdnfrontdoororigingroup"
 
 cdnfrontdoororigingroup.CdnFrontdoorOriginGroup_IsConstruct(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/cdnfrontdoororigingroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/cdnfrontdoororigingroup"
 
 cdnfrontdoororigingroup.CdnFrontdoorOriginGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ cdnfrontdoororigingroup.CdnFrontdoorOriginGroup_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/cdnfrontdoororigingroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/cdnfrontdoororigingroup"
 
 cdnfrontdoororigingroup.CdnFrontdoorOriginGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ cdnfrontdoororigingroup.CdnFrontdoorOriginGroup_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/cdnfrontdoororigingroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/cdnfrontdoororigingroup"
 
 cdnfrontdoororigingroup.CdnFrontdoorOriginGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/cdnfrontdoororigingroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/cdnfrontdoororigingroup"
 
 &cdnfrontdoororigingroup.CdnFrontdoorOriginGroupConfig {
 	Connection: interface{},
@@ -928,13 +928,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/cdnfrontdoororigin
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	CdnFrontdoorProfileId: *string,
-	LoadBalancing: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroupLoadBalancing,
+	LoadBalancing: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroupLoadBalancing,
 	Name: *string,
-	HealthProbe: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroupHealthProbe,
+	HealthProbe: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroupHealthProbe,
 	Id: *string,
 	RestoreTrafficTimeToHealedOrNewEndpointInMinutes: *f64,
 	SessionAffinityEnabled: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroupTimeouts,
 }
 ```
 
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroupHealthProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/cdnfrontdoororigingroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/cdnfrontdoororigingroup"
 
 &cdnfrontdoororigingroup.CdnFrontdoorOriginGroupHealthProbe {
 	IntervalInSeconds: *f64,
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroupLoadBalancing.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/cdnfrontdoororigingroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/cdnfrontdoororigingroup"
 
 &cdnfrontdoororigingroup.CdnFrontdoorOriginGroupLoadBalancing {
 	AdditionalLatencyInMilliseconds: *f64,
@@ -1274,7 +1274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/cdnfrontdoororigingroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/cdnfrontdoororigingroup"
 
 &cdnfrontdoororigingroup.CdnFrontdoorOriginGroupTimeouts {
 	Create: *string,
@@ -1350,7 +1350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroupHealthProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/cdnfrontdoororigingroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/cdnfrontdoororigingroup"
 
 cdnfrontdoororigingroup.NewCdnFrontdoorOriginGroupHealthProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorOriginGroupHealthProbeOutputReference
 ```
@@ -1701,7 +1701,7 @@ func InternalValue() CdnFrontdoorOriginGroupHealthProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroupLoadBalancingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/cdnfrontdoororigingroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/cdnfrontdoororigingroup"
 
 cdnfrontdoororigingroup.NewCdnFrontdoorOriginGroupLoadBalancingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorOriginGroupLoadBalancingOutputReference
 ```
@@ -2037,7 +2037,7 @@ func InternalValue() CdnFrontdoorOriginGroupLoadBalancing
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorOriginGroup.CdnFrontdoorOriginGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/cdnfrontdoororigingroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/cdnfrontdoororigingroup"
 
 cdnfrontdoororigingroup.NewCdnFrontdoorOriginGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorOriginGroupTimeoutsOutputReference
 ```

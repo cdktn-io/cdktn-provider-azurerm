@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterNetworkConnection.DevCenterNetworkConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devcenternetworkconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devcenternetworkconnection"
 
 devcenternetworkconnection.NewDevCenterNetworkConnection(scope Construct, id *string, config DevCenterNetworkConnectionConfig) DevCenterNetworkConnection
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.devCenterNetworkConnection.DevCenterNetworkConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devcenternetworkconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devcenternetworkconnection"
 
 devcenternetworkconnection.DevCenterNetworkConnection_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.devCenterNetworkConnection.DevCenterNetworkConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devcenternetworkconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devcenternetworkconnection"
 
 devcenternetworkconnection.DevCenterNetworkConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ devcenternetworkconnection.DevCenterNetworkConnection_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.devCenterNetworkConnection.DevCenterNetworkConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devcenternetworkconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devcenternetworkconnection"
 
 devcenternetworkconnection.DevCenterNetworkConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ devcenternetworkconnection.DevCenterNetworkConnection_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.devCenterNetworkConnection.DevCenterNetworkConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devcenternetworkconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devcenternetworkconnection"
 
 devcenternetworkconnection.DevCenterNetworkConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -993,7 +993,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devCenterNetworkConnection.DevCenterNetworkConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devcenternetworkconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devcenternetworkconnection"
 
 &devcenternetworkconnection.DevCenterNetworkConnectionConfig {
 	Connection: interface{},
@@ -1014,7 +1014,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devcenternetworkco
 	Id: *string,
 	OrganizationUnit: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.devCenterNetworkConnection.DevCenterNetworkConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.devCenterNetworkConnection.DevCenterNetworkConnectionTimeouts,
 }
 ```
 
@@ -1268,7 +1268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devCenterNetworkConnection.DevCenterNetworkConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devcenternetworkconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devcenternetworkconnection"
 
 &devcenternetworkconnection.DevCenterNetworkConnectionTimeouts {
 	Create: *string,
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterNetworkConnection.DevCenterNetworkConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/devcenternetworkconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/devcenternetworkconnection"
 
 devcenternetworkconnection.NewDevCenterNetworkConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DevCenterNetworkConnectionTimeoutsOutputReference
 ```

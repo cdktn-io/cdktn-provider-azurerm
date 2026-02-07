@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 appconfigurationkey.NewAppConfigurationKey(scope Construct, id *string, config AppConfigurationKeyConfig) AppConfigurationKey
 ```
@@ -461,7 +461,7 @@ func ResetVaultKeyReference()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 appconfigurationkey.AppConfigurationKey_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 appconfigurationkey.AppConfigurationKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ appconfigurationkey.AppConfigurationKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 appconfigurationkey.AppConfigurationKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ appconfigurationkey.AppConfigurationKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 appconfigurationkey.AppConfigurationKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1014,7 +1014,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 &appconfigurationkey.AppConfigurationKeyConfig {
 	Connection: interface{},
@@ -1032,7 +1032,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/appconfigurationke
 	Label: *string,
 	Locked: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.appConfigurationKey.AppConfigurationKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.appConfigurationKey.AppConfigurationKeyTimeouts,
 	Type: *string,
 	Value: *string,
 	VaultKeyReference: *string,
@@ -1289,7 +1289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 &appconfigurationkey.AppConfigurationKeyTimeouts {
 	Create: *string,
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 appconfigurationkey.NewAppConfigurationKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppConfigurationKeyTimeoutsOutputReference
 ```

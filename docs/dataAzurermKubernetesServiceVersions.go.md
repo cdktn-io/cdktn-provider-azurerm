@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermKubernetesServiceVersions.DataAzurermKubernetesServiceVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkubernetesserviceversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkubernetesserviceversions"
 
 dataazurermkubernetesserviceversions.NewDataAzurermKubernetesServiceVersions(scope Construct, id *string, config DataAzurermKubernetesServiceVersionsConfig) DataAzurermKubernetesServiceVersions
 ```
@@ -317,7 +317,7 @@ func ResetVersionPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermKubernetesServiceVersions.DataAzurermKubernetesServiceVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkubernetesserviceversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkubernetesserviceversions"
 
 dataazurermkubernetesserviceversions.DataAzurermKubernetesServiceVersions_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermKubernetesServiceVersions.DataAzurermKubernetesServiceVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkubernetesserviceversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkubernetesserviceversions"
 
 dataazurermkubernetesserviceversions.DataAzurermKubernetesServiceVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataazurermkubernetesserviceversions.DataAzurermKubernetesServiceVersions_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermKubernetesServiceVersions.DataAzurermKubernetesServiceVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkubernetesserviceversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkubernetesserviceversions"
 
 dataazurermkubernetesserviceversions.DataAzurermKubernetesServiceVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ dataazurermkubernetesserviceversions.DataAzurermKubernetesServiceVersions_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermKubernetesServiceVersions.DataAzurermKubernetesServiceVersions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkubernetesserviceversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkubernetesserviceversions"
 
 dataazurermkubernetesserviceversions.DataAzurermKubernetesServiceVersions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -727,7 +727,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermKubernetesServiceVersions.DataAzurermKubernetesServiceVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkubernetesserviceversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkubernetesserviceversions"
 
 &dataazurermkubernetesserviceversions.DataAzurermKubernetesServiceVersionsConfig {
 	Connection: interface{},
@@ -740,7 +740,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkuberne
 	Location: *string,
 	Id: *string,
 	IncludePreview: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.dataAzurermKubernetesServiceVersions.DataAzurermKubernetesServiceVersionsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.dataAzurermKubernetesServiceVersions.DataAzurermKubernetesServiceVersionsTimeouts,
 	VersionPrefix: *string,
 }
 ```
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermKubernetesServiceVersions.DataAzurermKubernetesServiceVersionsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkubernetesserviceversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkubernetesserviceversions"
 
 &dataazurermkubernetesserviceversions.DataAzurermKubernetesServiceVersionsTimeouts {
 	Read: *string,
@@ -938,7 +938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermKubernetesServiceVersions.DataAzurermKubernetesServiceVersionsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkubernetesserviceversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkubernetesserviceversions"
 
 dataazurermkubernetesserviceversions.NewDataAzurermKubernetesServiceVersionsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermKubernetesServiceVersionsTimeoutsOutputReference
 ```

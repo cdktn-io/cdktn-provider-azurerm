@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/kustoscript"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/kustoscript"
 
 kustoscript.NewKustoScript(scope Construct, id *string, config KustoScriptConfig) KustoScript
 ```
@@ -454,7 +454,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.kustoScript.KustoScript.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/kustoscript"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/kustoscript"
 
 kustoscript.KustoScript_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.kustoScript.KustoScript.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/kustoscript"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/kustoscript"
 
 kustoscript.KustoScript_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ kustoscript.KustoScript_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.kustoScript.KustoScript.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/kustoscript"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/kustoscript"
 
 kustoscript.KustoScript_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ kustoscript.KustoScript_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.kustoScript.KustoScript.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/kustoscript"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/kustoscript"
 
 kustoscript.KustoScript_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -985,7 +985,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/kustoscript"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/kustoscript"
 
 &kustoscript.KustoScriptConfig {
 	Connection: interface{},
@@ -1004,7 +1004,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/kustoscript"
 	SasToken: *string,
 	ScriptContent: *string,
 	ScriptLevel: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.kustoScript.KustoScriptTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.kustoScript.KustoScriptTimeouts,
 	Url: *string,
 }
 ```
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kustoScript.KustoScriptTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/kustoscript"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/kustoscript"
 
 &kustoscript.KustoScriptTimeouts {
 	Create: *string,
@@ -1322,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kustoScript.KustoScriptTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/kustoscript"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/kustoscript"
 
 kustoscript.NewKustoScriptTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KustoScriptTimeoutsOutputReference
 ```

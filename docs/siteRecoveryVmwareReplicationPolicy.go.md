@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.siteRecoveryVmwareReplicationPolicy.SiteRecoveryVmwareReplicationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/siterecoveryvmwarereplicationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/siterecoveryvmwarereplicationpolicy"
 
 siterecoveryvmwarereplicationpolicy.NewSiteRecoveryVmwareReplicationPolicy(scope Construct, id *string, config SiteRecoveryVmwareReplicationPolicyConfig) SiteRecoveryVmwareReplicationPolicy
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.siteRecoveryVmwareReplicationPolicy.SiteRecoveryVmwareReplicationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/siterecoveryvmwarereplicationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/siterecoveryvmwarereplicationpolicy"
 
 siterecoveryvmwarereplicationpolicy.SiteRecoveryVmwareReplicationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.siteRecoveryVmwareReplicationPolicy.SiteRecoveryVmwareReplicationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/siterecoveryvmwarereplicationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/siterecoveryvmwarereplicationpolicy"
 
 siterecoveryvmwarereplicationpolicy.SiteRecoveryVmwareReplicationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ siterecoveryvmwarereplicationpolicy.SiteRecoveryVmwareReplicationPolicy_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.siteRecoveryVmwareReplicationPolicy.SiteRecoveryVmwareReplicationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/siterecoveryvmwarereplicationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/siterecoveryvmwarereplicationpolicy"
 
 siterecoveryvmwarereplicationpolicy.SiteRecoveryVmwareReplicationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ siterecoveryvmwarereplicationpolicy.SiteRecoveryVmwareReplicationPolicy_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.siteRecoveryVmwareReplicationPolicy.SiteRecoveryVmwareReplicationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/siterecoveryvmwarereplicationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/siterecoveryvmwarereplicationpolicy"
 
 siterecoveryvmwarereplicationpolicy.SiteRecoveryVmwareReplicationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.siteRecoveryVmwareReplicationPolicy.SiteRecoveryVmwareReplicationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/siterecoveryvmwarereplicationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/siterecoveryvmwarereplicationpolicy"
 
 &siterecoveryvmwarereplicationpolicy.SiteRecoveryVmwareReplicationPolicyConfig {
 	Connection: interface{},
@@ -841,7 +841,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/siterecoveryvmware
 	RecoveryPointRetentionInMinutes: *f64,
 	RecoveryVaultId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.siteRecoveryVmwareReplicationPolicy.SiteRecoveryVmwareReplicationPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.siteRecoveryVmwareReplicationPolicy.SiteRecoveryVmwareReplicationPolicyTimeouts,
 }
 ```
 
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.siteRecoveryVmwareReplicationPolicy.SiteRecoveryVmwareReplicationPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/siterecoveryvmwarereplicationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/siterecoveryvmwarereplicationpolicy"
 
 &siterecoveryvmwarereplicationpolicy.SiteRecoveryVmwareReplicationPolicyTimeouts {
 	Create: *string,
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.siteRecoveryVmwareReplicationPolicy.SiteRecoveryVmwareReplicationPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/siterecoveryvmwarereplicationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/siterecoveryvmwarereplicationpolicy"
 
 siterecoveryvmwarereplicationpolicy.NewSiteRecoveryVmwareReplicationPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SiteRecoveryVmwareReplicationPolicyTimeoutsOutputReference
 ```

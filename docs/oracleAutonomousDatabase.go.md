@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.oracleAutonomousDatabase.OracleAutonomousDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/oracleautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/oracleautonomousdatabase"
 
 oracleautonomousdatabase.NewOracleAutonomousDatabase(scope Construct, id *string, config OracleAutonomousDatabaseConfig) OracleAutonomousDatabase
 ```
@@ -460,7 +460,7 @@ func ResetVirtualNetworkId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.oracleAutonomousDatabase.OracleAutonomousDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/oracleautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/oracleautonomousdatabase"
 
 oracleautonomousdatabase.OracleAutonomousDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.oracleAutonomousDatabase.OracleAutonomousDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/oracleautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/oracleautonomousdatabase"
 
 oracleautonomousdatabase.OracleAutonomousDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ oracleautonomousdatabase.OracleAutonomousDatabase_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.oracleAutonomousDatabase.OracleAutonomousDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/oracleautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/oracleautonomousdatabase"
 
 oracleautonomousdatabase.OracleAutonomousDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ oracleautonomousdatabase.OracleAutonomousDatabase_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.oracleAutonomousDatabase.OracleAutonomousDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/oracleautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/oracleautonomousdatabase"
 
 oracleautonomousdatabase.OracleAutonomousDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1299,7 +1299,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.oracleAutonomousDatabase.OracleAutonomousDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/oracleautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/oracleautonomousdatabase"
 
 &oracleautonomousdatabase.OracleAutonomousDatabaseConfig {
 	Connection: interface{},
@@ -1329,10 +1329,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/oracleautonomousda
 	AllowedIps: *[]*string,
 	CustomerContacts: *[]*string,
 	Id: *string,
-	LongTermBackupSchedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.oracleAutonomousDatabase.OracleAutonomousDatabaseLongTermBackupSchedule,
+	LongTermBackupSchedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.oracleAutonomousDatabase.OracleAutonomousDatabaseLongTermBackupSchedule,
 	SubnetId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.oracleAutonomousDatabase.OracleAutonomousDatabaseTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.oracleAutonomousDatabase.OracleAutonomousDatabaseTimeouts,
 	VirtualNetworkId: *string,
 }
 ```
@@ -1758,7 +1758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.oracleAutonomousDatabase.OracleAutonomousDatabaseLongTermBackupSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/oracleautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/oracleautonomousdatabase"
 
 &oracleautonomousdatabase.OracleAutonomousDatabaseLongTermBackupSchedule {
 	Enabled: interface{},
@@ -1832,7 +1832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.oracleAutonomousDatabase.OracleAutonomousDatabaseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/oracleautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/oracleautonomousdatabase"
 
 &oracleautonomousdatabase.OracleAutonomousDatabaseTimeouts {
 	Create: *string,
@@ -1908,7 +1908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.oracleAutonomousDatabase.OracleAutonomousDatabaseLongTermBackupScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/oracleautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/oracleautonomousdatabase"
 
 oracleautonomousdatabase.NewOracleAutonomousDatabaseLongTermBackupScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleAutonomousDatabaseLongTermBackupScheduleOutputReference
 ```
@@ -2245,7 +2245,7 @@ func InternalValue() OracleAutonomousDatabaseLongTermBackupSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.oracleAutonomousDatabase.OracleAutonomousDatabaseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/oracleautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/oracleautonomousdatabase"
 
 oracleautonomousdatabase.NewOracleAutonomousDatabaseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleAutonomousDatabaseTimeoutsOutputReference
 ```

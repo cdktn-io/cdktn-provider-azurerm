@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceTrust.ActiveDirectoryDomainServiceTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/activedirectorydomainservicetrust"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/activedirectorydomainservicetrust"
 
 activedirectorydomainservicetrust.NewActiveDirectoryDomainServiceTrust(scope Construct, id *string, config ActiveDirectoryDomainServiceTrustConfig) ActiveDirectoryDomainServiceTrust
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceTrust.ActiveDirectoryDomainServiceTrust.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/activedirectorydomainservicetrust"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/activedirectorydomainservicetrust"
 
 activedirectorydomainservicetrust.ActiveDirectoryDomainServiceTrust_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceTrust.ActiveDirectoryDomainServiceTrust.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/activedirectorydomainservicetrust"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/activedirectorydomainservicetrust"
 
 activedirectorydomainservicetrust.ActiveDirectoryDomainServiceTrust_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ activedirectorydomainservicetrust.ActiveDirectoryDomainServiceTrust_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceTrust.ActiveDirectoryDomainServiceTrust.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/activedirectorydomainservicetrust"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/activedirectorydomainservicetrust"
 
 activedirectorydomainservicetrust.ActiveDirectoryDomainServiceTrust_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ activedirectorydomainservicetrust.ActiveDirectoryDomainServiceTrust_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceTrust.ActiveDirectoryDomainServiceTrust.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/activedirectorydomainservicetrust"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/activedirectorydomainservicetrust"
 
 activedirectorydomainservicetrust.ActiveDirectoryDomainServiceTrust_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceTrust.ActiveDirectoryDomainServiceTrustConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/activedirectorydomainservicetrust"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/activedirectorydomainservicetrust"
 
 &activedirectorydomainservicetrust.ActiveDirectoryDomainServiceTrustConfig {
 	Connection: interface{},
@@ -864,7 +864,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/activedirectorydom
 	TrustedDomainDnsIps: *[]*string,
 	TrustedDomainFqdn: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.activeDirectoryDomainServiceTrust.ActiveDirectoryDomainServiceTrustTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.activeDirectoryDomainServiceTrust.ActiveDirectoryDomainServiceTrustTimeouts,
 }
 ```
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceTrust.ActiveDirectoryDomainServiceTrustTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/activedirectorydomainservicetrust"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/activedirectorydomainservicetrust"
 
 &activedirectorydomainservicetrust.ActiveDirectoryDomainServiceTrustTimeouts {
 	Create: *string,
@@ -1129,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceTrust.ActiveDirectoryDomainServiceTrustTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/activedirectorydomainservicetrust"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/activedirectorydomainservicetrust"
 
 activedirectorydomainservicetrust.NewActiveDirectoryDomainServiceTrustTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActiveDirectoryDomainServiceTrustTimeoutsOutputReference
 ```

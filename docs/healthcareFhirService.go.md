@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 healthcarefhirservice.NewHealthcareFhirService(scope Construct, id *string, config HealthcareFhirServiceConfig) HealthcareFhirService
 ```
@@ -513,7 +513,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 healthcarefhirservice.HealthcareFhirService_IsConstruct(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 healthcarefhirservice.HealthcareFhirService_IsTerraformElement(x interface{}) *bool
 ```
@@ -559,7 +559,7 @@ healthcarefhirservice.HealthcareFhirService_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 healthcarefhirservice.HealthcareFhirService_IsTerraformResource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ healthcarefhirservice.HealthcareFhirService_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 healthcarefhirservice.HealthcareFhirService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1143,7 +1143,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 &healthcarefhirservice.HealthcareFhirServiceAuthentication {
 	Audience: *string,
@@ -1203,7 +1203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 &healthcarefhirservice.HealthcareFhirServiceConfig {
 	Connection: interface{},
@@ -1213,7 +1213,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirserv
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Authentication: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.healthcareFhirService.HealthcareFhirServiceAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.healthcareFhirService.HealthcareFhirServiceAuthentication,
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
@@ -1221,13 +1221,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirserv
 	AccessPolicyObjectIds: *[]*string,
 	ConfigurationExportStorageAccountName: *string,
 	ContainerRegistryLoginServerUrl: *[]*string,
-	Cors: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.healthcareFhirService.HealthcareFhirServiceCors,
+	Cors: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.healthcareFhirService.HealthcareFhirServiceCors,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.healthcareFhirService.HealthcareFhirServiceIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.healthcareFhirService.HealthcareFhirServiceIdentity,
 	Kind: *string,
 	OciArtifact: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.healthcareFhirService.HealthcareFhirServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.healthcareFhirService.HealthcareFhirServiceTimeouts,
 }
 ```
 
@@ -1528,7 +1528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceCors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 &healthcarefhirservice.HealthcareFhirServiceCors {
 	AllowedHeaders: *[]*string,
@@ -1616,7 +1616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 &healthcarefhirservice.HealthcareFhirServiceIdentity {
 	Type: *string,
@@ -1662,7 +1662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceOciArtifact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 &healthcarefhirservice.HealthcareFhirServiceOciArtifact {
 	LoginServer: *string,
@@ -1722,7 +1722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 &healthcarefhirservice.HealthcareFhirServiceTimeouts {
 	Create: *string,
@@ -1798,7 +1798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 healthcarefhirservice.NewHealthcareFhirServiceAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HealthcareFhirServiceAuthenticationOutputReference
 ```
@@ -2120,7 +2120,7 @@ func InternalValue() HealthcareFhirServiceAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 healthcarefhirservice.NewHealthcareFhirServiceCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HealthcareFhirServiceCorsOutputReference
 ```
@@ -2493,7 +2493,7 @@ func InternalValue() HealthcareFhirServiceCors
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 healthcarefhirservice.NewHealthcareFhirServiceIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HealthcareFhirServiceIdentityOutputReference
 ```
@@ -2815,7 +2815,7 @@ func InternalValue() HealthcareFhirServiceIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceOciArtifactList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 healthcarefhirservice.NewHealthcareFhirServiceOciArtifactList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HealthcareFhirServiceOciArtifactList
 ```
@@ -2975,7 +2975,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceOciArtifactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 healthcarefhirservice.NewHealthcareFhirServiceOciArtifactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) HealthcareFhirServiceOciArtifactOutputReference
 ```
@@ -3322,7 +3322,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/healthcarefhirservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/healthcarefhirservice"
 
 healthcarefhirservice.NewHealthcareFhirServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HealthcareFhirServiceTimeoutsOutputReference
 ```

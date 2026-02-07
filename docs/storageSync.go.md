@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageSync.StorageSync.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/storagesync"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/storagesync"
 
 storagesync.NewStorageSync(scope Construct, id *string, config StorageSyncConfig) StorageSync
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.storageSync.StorageSync.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/storagesync"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/storagesync"
 
 storagesync.StorageSync_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.storageSync.StorageSync.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/storagesync"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/storagesync"
 
 storagesync.StorageSync_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ storagesync.StorageSync_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.storageSync.StorageSync.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/storagesync"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/storagesync"
 
 storagesync.StorageSync_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ storagesync.StorageSync_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.storageSync.StorageSync.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/storagesync"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/storagesync"
 
 storagesync.StorageSync_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageSync.StorageSyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/storagesync"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/storagesync"
 
 &storagesync.StorageSyncConfig {
 	Connection: interface{},
@@ -889,7 +889,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/storagesync"
 	Id: *string,
 	IncomingTrafficPolicy: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.storageSync.StorageSyncTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.storageSync.StorageSyncTimeouts,
 }
 ```
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageSync.StorageSyncTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/storagesync"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/storagesync"
 
 &storagesync.StorageSyncTimeouts {
 	Create: *string,
@@ -1154,7 +1154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageSync.StorageSyncTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/storagesync"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/storagesync"
 
 storagesync.NewStorageSyncTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageSyncTimeoutsOutputReference
 ```

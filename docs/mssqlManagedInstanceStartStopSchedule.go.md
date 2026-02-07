@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlManagedInstanceStartStopSchedule.MssqlManagedInstanceStartStopSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlmanagedinstancestartstopschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlmanagedinstancestartstopschedule"
 
 mssqlmanagedinstancestartstopschedule.NewMssqlManagedInstanceStartStopSchedule(scope Construct, id *string, config MssqlManagedInstanceStartStopScheduleConfig) MssqlManagedInstanceStartStopSchedule
 ```
@@ -432,7 +432,7 @@ func ResetTimezoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.mssqlManagedInstanceStartStopSchedule.MssqlManagedInstanceStartStopSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlmanagedinstancestartstopschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlmanagedinstancestartstopschedule"
 
 mssqlmanagedinstancestartstopschedule.MssqlManagedInstanceStartStopSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.mssqlManagedInstanceStartStopSchedule.MssqlManagedInstanceStartStopSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlmanagedinstancestartstopschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlmanagedinstancestartstopschedule"
 
 mssqlmanagedinstancestartstopschedule.MssqlManagedInstanceStartStopSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ mssqlmanagedinstancestartstopschedule.MssqlManagedInstanceStartStopSchedule_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.mssqlManagedInstanceStartStopSchedule.MssqlManagedInstanceStartStopSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlmanagedinstancestartstopschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlmanagedinstancestartstopschedule"
 
 mssqlmanagedinstancestartstopschedule.MssqlManagedInstanceStartStopSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ mssqlmanagedinstancestartstopschedule.MssqlManagedInstanceStartStopSchedule_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.mssqlManagedInstanceStartStopSchedule.MssqlManagedInstanceStartStopSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlmanagedinstancestartstopschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlmanagedinstancestartstopschedule"
 
 mssqlmanagedinstancestartstopschedule.MssqlManagedInstanceStartStopSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlManagedInstanceStartStopSchedule.MssqlManagedInstanceStartStopScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlmanagedinstancestartstopschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlmanagedinstancestartstopschedule"
 
 &mssqlmanagedinstancestartstopschedule.MssqlManagedInstanceStartStopScheduleConfig {
 	Connection: interface{},
@@ -889,7 +889,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlmanagedinstan
 	Schedule: interface{},
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.mssqlManagedInstanceStartStopSchedule.MssqlManagedInstanceStartStopScheduleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.mssqlManagedInstanceStartStopSchedule.MssqlManagedInstanceStartStopScheduleTimeouts,
 	TimezoneId: *string,
 }
 ```
@@ -1068,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlManagedInstanceStartStopSchedule.MssqlManagedInstanceStartStopScheduleSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlmanagedinstancestartstopschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlmanagedinstancestartstopschedule"
 
 &mssqlmanagedinstancestartstopschedule.MssqlManagedInstanceStartStopScheduleSchedule {
 	StartDay: *string,
@@ -1142,7 +1142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlManagedInstanceStartStopSchedule.MssqlManagedInstanceStartStopScheduleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlmanagedinstancestartstopschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlmanagedinstancestartstopschedule"
 
 &mssqlmanagedinstancestartstopschedule.MssqlManagedInstanceStartStopScheduleTimeouts {
 	Create: *string,
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlManagedInstanceStartStopSchedule.MssqlManagedInstanceStartStopScheduleScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlmanagedinstancestartstopschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlmanagedinstancestartstopschedule"
 
 mssqlmanagedinstancestartstopschedule.NewMssqlManagedInstanceStartStopScheduleScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MssqlManagedInstanceStartStopScheduleScheduleList
 ```
@@ -1378,7 +1378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlManagedInstanceStartStopSchedule.MssqlManagedInstanceStartStopScheduleScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlmanagedinstancestartstopschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlmanagedinstancestartstopschedule"
 
 mssqlmanagedinstancestartstopschedule.NewMssqlManagedInstanceStartStopScheduleScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MssqlManagedInstanceStartStopScheduleScheduleOutputReference
 ```
@@ -1733,7 +1733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlManagedInstanceStartStopSchedule.MssqlManagedInstanceStartStopScheduleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlmanagedinstancestartstopschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlmanagedinstancestartstopschedule"
 
 mssqlmanagedinstancestartstopschedule.NewMssqlManagedInstanceStartStopScheduleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MssqlManagedInstanceStartStopScheduleTimeoutsOutputReference
 ```

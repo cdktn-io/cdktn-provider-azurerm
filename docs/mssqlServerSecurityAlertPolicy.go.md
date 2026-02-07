@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlServerSecurityAlertPolicy.MssqlServerSecurityAlertPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlserversecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlserversecurityalertpolicy"
 
 mssqlserversecurityalertpolicy.NewMssqlServerSecurityAlertPolicy(scope Construct, id *string, config MssqlServerSecurityAlertPolicyConfig) MssqlServerSecurityAlertPolicy
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.mssqlServerSecurityAlertPolicy.MssqlServerSecurityAlertPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlserversecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlserversecurityalertpolicy"
 
 mssqlserversecurityalertpolicy.MssqlServerSecurityAlertPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.mssqlServerSecurityAlertPolicy.MssqlServerSecurityAlertPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlserversecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlserversecurityalertpolicy"
 
 mssqlserversecurityalertpolicy.MssqlServerSecurityAlertPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ mssqlserversecurityalertpolicy.MssqlServerSecurityAlertPolicy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.mssqlServerSecurityAlertPolicy.MssqlServerSecurityAlertPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlserversecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlserversecurityalertpolicy"
 
 mssqlserversecurityalertpolicy.MssqlServerSecurityAlertPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ mssqlserversecurityalertpolicy.MssqlServerSecurityAlertPolicy_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.mssqlServerSecurityAlertPolicy.MssqlServerSecurityAlertPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlserversecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlserversecurityalertpolicy"
 
 mssqlserversecurityalertpolicy.MssqlServerSecurityAlertPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -978,7 +978,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlServerSecurityAlertPolicy.MssqlServerSecurityAlertPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlserversecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlserversecurityalertpolicy"
 
 &mssqlserversecurityalertpolicy.MssqlServerSecurityAlertPolicyConfig {
 	Connection: interface{},
@@ -998,7 +998,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlserversecurit
 	RetentionDays: *f64,
 	StorageAccountAccessKey: *string,
 	StorageEndpoint: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.mssqlServerSecurityAlertPolicy.MssqlServerSecurityAlertPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.mssqlServerSecurityAlertPolicy.MssqlServerSecurityAlertPolicyTimeouts,
 }
 ```
 
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlServerSecurityAlertPolicy.MssqlServerSecurityAlertPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlserversecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlserversecurityalertpolicy"
 
 &mssqlserversecurityalertpolicy.MssqlServerSecurityAlertPolicyTimeouts {
 	Create: *string,
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlServerSecurityAlertPolicy.MssqlServerSecurityAlertPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/mssqlserversecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/mssqlserversecurityalertpolicy"
 
 mssqlserversecurityalertpolicy.NewMssqlServerSecurityAlertPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MssqlServerSecurityAlertPolicyTimeoutsOutputReference
 ```

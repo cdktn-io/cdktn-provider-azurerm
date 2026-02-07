@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementSubscription.ApiManagementSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/apimanagementsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/apimanagementsubscription"
 
 apimanagementsubscription.NewApiManagementSubscription(scope Construct, id *string, config ApiManagementSubscriptionConfig) ApiManagementSubscription
 ```
@@ -461,7 +461,7 @@ func ResetUserId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.apiManagementSubscription.ApiManagementSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/apimanagementsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/apimanagementsubscription"
 
 apimanagementsubscription.ApiManagementSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.apiManagementSubscription.ApiManagementSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/apimanagementsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/apimanagementsubscription"
 
 apimanagementsubscription.ApiManagementSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ apimanagementsubscription.ApiManagementSubscription_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.apiManagementSubscription.ApiManagementSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/apimanagementsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/apimanagementsubscription"
 
 apimanagementsubscription.ApiManagementSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ apimanagementsubscription.ApiManagementSubscription_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.apiManagementSubscription.ApiManagementSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/apimanagementsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/apimanagementsubscription"
 
 apimanagementsubscription.ApiManagementSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1036,7 +1036,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementSubscription.ApiManagementSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/apimanagementsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/apimanagementsubscription"
 
 &apimanagementsubscription.ApiManagementSubscriptionConfig {
 	Connection: interface{},
@@ -1057,7 +1057,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/apimanagementsubsc
 	SecondaryKey: *string,
 	State: *string,
 	SubscriptionId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.apiManagementSubscription.ApiManagementSubscriptionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.apiManagementSubscription.ApiManagementSubscriptionTimeouts,
 	UserId: *string,
 }
 ```
@@ -1325,7 +1325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementSubscription.ApiManagementSubscriptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/apimanagementsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/apimanagementsubscription"
 
 &apimanagementsubscription.ApiManagementSubscriptionTimeouts {
 	Create: *string,
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementSubscription.ApiManagementSubscriptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/apimanagementsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/apimanagementsubscription"
 
 apimanagementsubscription.NewApiManagementSubscriptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementSubscriptionTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcMachineExtension.ArcMachineExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arcmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arcmachineextension"
 
 arcmachineextension.NewArcMachineExtension(scope Construct, id *string, config ArcMachineExtensionConfig) ArcMachineExtension
 ```
@@ -447,7 +447,7 @@ func ResetTypeHandlerVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.arcMachineExtension.ArcMachineExtension.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arcmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arcmachineextension"
 
 arcmachineextension.ArcMachineExtension_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.arcMachineExtension.ArcMachineExtension.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arcmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arcmachineextension"
 
 arcmachineextension.ArcMachineExtension_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ arcmachineextension.ArcMachineExtension_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.arcMachineExtension.ArcMachineExtension.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arcmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arcmachineextension"
 
 arcmachineextension.ArcMachineExtension_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ arcmachineextension.ArcMachineExtension_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.arcMachineExtension.ArcMachineExtension.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arcmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arcmachineextension"
 
 arcmachineextension.ArcMachineExtension_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1022,7 +1022,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcMachineExtension.ArcMachineExtensionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arcmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arcmachineextension"
 
 &arcmachineextension.ArcMachineExtensionConfig {
 	Connection: interface{},
@@ -1043,7 +1043,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arcmachineextensio
 	ProtectedSettings: *string,
 	Settings: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.arcMachineExtension.ArcMachineExtensionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.arcMachineExtension.ArcMachineExtensionTimeouts,
 	TypeHandlerVersion: *string,
 }
 ```
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcMachineExtension.ArcMachineExtensionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arcmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arcmachineextension"
 
 &arcmachineextension.ArcMachineExtensionTimeouts {
 	Create: *string,
@@ -1387,7 +1387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcMachineExtension.ArcMachineExtensionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/arcmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/arcmachineextension"
 
 arcmachineextension.NewArcMachineExtensionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArcMachineExtensionTimeoutsOutputReference
 ```

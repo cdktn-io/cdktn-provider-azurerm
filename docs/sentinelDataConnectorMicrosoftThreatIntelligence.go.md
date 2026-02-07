@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftThreatIntelligence.SentinelDataConnectorMicrosoftThreatIntelligence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sentineldataconnectormicrosoftthreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sentineldataconnectormicrosoftthreatintelligence"
 
 sentineldataconnectormicrosoftthreatintelligence.NewSentinelDataConnectorMicrosoftThreatIntelligence(scope Construct, id *string, config SentinelDataConnectorMicrosoftThreatIntelligenceConfig) SentinelDataConnectorMicrosoftThreatIntelligence
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftThreatIntelligence.SentinelDataConnectorMicrosoftThreatIntelligence.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sentineldataconnectormicrosoftthreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sentineldataconnectormicrosoftthreatintelligence"
 
 sentineldataconnectormicrosoftthreatintelligence.SentinelDataConnectorMicrosoftThreatIntelligence_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftThreatIntelligence.SentinelDataConnectorMicrosoftThreatIntelligence.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sentineldataconnectormicrosoftthreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sentineldataconnectormicrosoftthreatintelligence"
 
 sentineldataconnectormicrosoftthreatintelligence.SentinelDataConnectorMicrosoftThreatIntelligence_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ sentineldataconnectormicrosoftthreatintelligence.SentinelDataConnectorMicrosoftT
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftThreatIntelligence.SentinelDataConnectorMicrosoftThreatIntelligence.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sentineldataconnectormicrosoftthreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sentineldataconnectormicrosoftthreatintelligence"
 
 sentineldataconnectormicrosoftthreatintelligence.SentinelDataConnectorMicrosoftThreatIntelligence_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ sentineldataconnectormicrosoftthreatintelligence.SentinelDataConnectorMicrosoftT
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftThreatIntelligence.SentinelDataConnectorMicrosoftThreatIntelligence.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sentineldataconnectormicrosoftthreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sentineldataconnectormicrosoftthreatintelligence"
 
 sentineldataconnectormicrosoftthreatintelligence.SentinelDataConnectorMicrosoftThreatIntelligence_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftThreatIntelligence.SentinelDataConnectorMicrosoftThreatIntelligenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sentineldataconnectormicrosoftthreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sentineldataconnectormicrosoftthreatintelligence"
 
 &sentineldataconnectormicrosoftthreatintelligence.SentinelDataConnectorMicrosoftThreatIntelligenceConfig {
 	Connection: interface{},
@@ -848,7 +848,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sentineldataconnec
 	Name: *string,
 	Id: *string,
 	TenantId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.sentinelDataConnectorMicrosoftThreatIntelligence.SentinelDataConnectorMicrosoftThreatIntelligenceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.sentinelDataConnectorMicrosoftThreatIntelligence.SentinelDataConnectorMicrosoftThreatIntelligenceTimeouts,
 }
 ```
 
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftThreatIntelligence.SentinelDataConnectorMicrosoftThreatIntelligenceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sentineldataconnectormicrosoftthreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sentineldataconnectormicrosoftthreatintelligence"
 
 &sentineldataconnectormicrosoftthreatintelligence.SentinelDataConnectorMicrosoftThreatIntelligenceTimeouts {
 	Create: *string,
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftThreatIntelligence.SentinelDataConnectorMicrosoftThreatIntelligenceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/sentineldataconnectormicrosoftthreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/sentineldataconnectormicrosoftthreatintelligence"
 
 sentineldataconnectormicrosoftthreatintelligence.NewSentinelDataConnectorMicrosoftThreatIntelligenceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SentinelDataConnectorMicrosoftThreatIntelligenceTimeoutsOutputReference
 ```

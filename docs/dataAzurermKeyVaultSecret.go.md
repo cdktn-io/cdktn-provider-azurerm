@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecret.DataAzurermKeyVaultSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkeyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkeyvaultsecret"
 
 dataazurermkeyvaultsecret.NewDataAzurermKeyVaultSecret(scope Construct, id *string, config DataAzurermKeyVaultSecretConfig) DataAzurermKeyVaultSecret
 ```
@@ -310,7 +310,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecret.DataAzurermKeyVaultSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkeyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkeyvaultsecret"
 
 dataazurermkeyvaultsecret.DataAzurermKeyVaultSecret_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecret.DataAzurermKeyVaultSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkeyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkeyvaultsecret"
 
 dataazurermkeyvaultsecret.DataAzurermKeyVaultSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataazurermkeyvaultsecret.DataAzurermKeyVaultSecret_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecret.DataAzurermKeyVaultSecret.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkeyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkeyvaultsecret"
 
 dataazurermkeyvaultsecret.DataAzurermKeyVaultSecret_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataazurermkeyvaultsecret.DataAzurermKeyVaultSecret_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecret.DataAzurermKeyVaultSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkeyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkeyvaultsecret"
 
 dataazurermkeyvaultsecret.DataAzurermKeyVaultSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -775,7 +775,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecret.DataAzurermKeyVaultSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkeyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkeyvaultsecret"
 
 &dataazurermkeyvaultsecret.DataAzurermKeyVaultSecretConfig {
 	Connection: interface{},
@@ -788,7 +788,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkeyvaul
 	KeyVaultId: *string,
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.dataAzurermKeyVaultSecret.DataAzurermKeyVaultSecretTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.dataAzurermKeyVaultSecret.DataAzurermKeyVaultSecretTimeouts,
 	Version: *string,
 }
 ```
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecret.DataAzurermKeyVaultSecretTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkeyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkeyvaultsecret"
 
 &dataazurermkeyvaultsecret.DataAzurermKeyVaultSecretTimeouts {
 	Read: *string,
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecret.DataAzurermKeyVaultSecretTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermkeyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermkeyvaultsecret"
 
 dataazurermkeyvaultsecret.NewDataAzurermKeyVaultSecretTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermKeyVaultSecretTimeoutsOutputReference
 ```

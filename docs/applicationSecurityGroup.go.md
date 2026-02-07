@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationSecurityGroup.ApplicationSecurityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/applicationsecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/applicationsecuritygroup"
 
 applicationsecuritygroup.NewApplicationSecurityGroup(scope Construct, id *string, config ApplicationSecurityGroupConfig) ApplicationSecurityGroup
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.applicationSecurityGroup.ApplicationSecurityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/applicationsecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/applicationsecuritygroup"
 
 applicationsecuritygroup.ApplicationSecurityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.applicationSecurityGroup.ApplicationSecurityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/applicationsecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/applicationsecuritygroup"
 
 applicationsecuritygroup.ApplicationSecurityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ applicationsecuritygroup.ApplicationSecurityGroup_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.applicationSecurityGroup.ApplicationSecurityGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/applicationsecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/applicationsecuritygroup"
 
 applicationsecuritygroup.ApplicationSecurityGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ applicationsecuritygroup.ApplicationSecurityGroup_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.applicationSecurityGroup.ApplicationSecurityGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/applicationsecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/applicationsecuritygroup"
 
 applicationsecuritygroup.ApplicationSecurityGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationSecurityGroup.ApplicationSecurityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/applicationsecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/applicationsecuritygroup"
 
 &applicationsecuritygroup.ApplicationSecurityGroupConfig {
 	Connection: interface{},
@@ -848,7 +848,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/applicationsecurit
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.applicationSecurityGroup.ApplicationSecurityGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.applicationSecurityGroup.ApplicationSecurityGroupTimeouts,
 }
 ```
 
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationSecurityGroup.ApplicationSecurityGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/applicationsecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/applicationsecuritygroup"
 
 &applicationsecuritygroup.ApplicationSecurityGroupTimeouts {
 	Create: *string,
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationSecurityGroup.ApplicationSecurityGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/applicationsecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/applicationsecuritygroup"
 
 applicationsecuritygroup.NewApplicationSecurityGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationSecurityGroupTimeoutsOutputReference
 ```

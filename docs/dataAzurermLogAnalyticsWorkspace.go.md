@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogAnalyticsWorkspace.DataAzurermLogAnalyticsWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermloganalyticsworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermloganalyticsworkspace"
 
 dataazurermloganalyticsworkspace.NewDataAzurermLogAnalyticsWorkspace(scope Construct, id *string, config DataAzurermLogAnalyticsWorkspaceConfig) DataAzurermLogAnalyticsWorkspace
 ```
@@ -303,7 +303,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermLogAnalyticsWorkspace.DataAzurermLogAnalyticsWorkspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermloganalyticsworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermloganalyticsworkspace"
 
 dataazurermloganalyticsworkspace.DataAzurermLogAnalyticsWorkspace_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermLogAnalyticsWorkspace.DataAzurermLogAnalyticsWorkspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermloganalyticsworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermloganalyticsworkspace"
 
 dataazurermloganalyticsworkspace.DataAzurermLogAnalyticsWorkspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ dataazurermloganalyticsworkspace.DataAzurermLogAnalyticsWorkspace_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermLogAnalyticsWorkspace.DataAzurermLogAnalyticsWorkspace.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermloganalyticsworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermloganalyticsworkspace"
 
 dataazurermloganalyticsworkspace.DataAzurermLogAnalyticsWorkspace_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataazurermloganalyticsworkspace.DataAzurermLogAnalyticsWorkspace_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermLogAnalyticsWorkspace.DataAzurermLogAnalyticsWorkspace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermloganalyticsworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermloganalyticsworkspace"
 
 dataazurermloganalyticsworkspace.DataAzurermLogAnalyticsWorkspace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogAnalyticsWorkspace.DataAzurermLogAnalyticsWorkspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermloganalyticsworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermloganalyticsworkspace"
 
 &dataazurermloganalyticsworkspace.DataAzurermLogAnalyticsWorkspaceConfig {
 	Connection: interface{},
@@ -759,7 +759,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermloganal
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.dataAzurermLogAnalyticsWorkspace.DataAzurermLogAnalyticsWorkspaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.dataAzurermLogAnalyticsWorkspace.DataAzurermLogAnalyticsWorkspaceTimeouts,
 }
 ```
 
@@ -909,7 +909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogAnalyticsWorkspace.DataAzurermLogAnalyticsWorkspaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermloganalyticsworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermloganalyticsworkspace"
 
 &dataazurermloganalyticsworkspace.DataAzurermLogAnalyticsWorkspaceTimeouts {
 	Read: *string,
@@ -943,7 +943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogAnalyticsWorkspace.DataAzurermLogAnalyticsWorkspaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermloganalyticsworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermloganalyticsworkspace"
 
 dataazurermloganalyticsworkspace.NewDataAzurermLogAnalyticsWorkspaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermLogAnalyticsWorkspaceTimeoutsOutputReference
 ```

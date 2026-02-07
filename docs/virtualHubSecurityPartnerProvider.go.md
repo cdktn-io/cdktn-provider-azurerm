@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualHubSecurityPartnerProvider.VirtualHubSecurityPartnerProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/virtualhubsecuritypartnerprovider"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/virtualhubsecuritypartnerprovider"
 
 virtualhubsecuritypartnerprovider.NewVirtualHubSecurityPartnerProvider(scope Construct, id *string, config VirtualHubSecurityPartnerProviderConfig) VirtualHubSecurityPartnerProvider
 ```
@@ -419,7 +419,7 @@ func ResetVirtualHubId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.virtualHubSecurityPartnerProvider.VirtualHubSecurityPartnerProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/virtualhubsecuritypartnerprovider"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/virtualhubsecuritypartnerprovider"
 
 virtualhubsecuritypartnerprovider.VirtualHubSecurityPartnerProvider_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.virtualHubSecurityPartnerProvider.VirtualHubSecurityPartnerProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/virtualhubsecuritypartnerprovider"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/virtualhubsecuritypartnerprovider"
 
 virtualhubsecuritypartnerprovider.VirtualHubSecurityPartnerProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ virtualhubsecuritypartnerprovider.VirtualHubSecurityPartnerProvider_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.virtualHubSecurityPartnerProvider.VirtualHubSecurityPartnerProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/virtualhubsecuritypartnerprovider"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/virtualhubsecuritypartnerprovider"
 
 virtualhubsecuritypartnerprovider.VirtualHubSecurityPartnerProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ virtualhubsecuritypartnerprovider.VirtualHubSecurityPartnerProvider_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.virtualHubSecurityPartnerProvider.VirtualHubSecurityPartnerProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/virtualhubsecuritypartnerprovider"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/virtualhubsecuritypartnerprovider"
 
 virtualhubsecuritypartnerprovider.VirtualHubSecurityPartnerProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualHubSecurityPartnerProvider.VirtualHubSecurityPartnerProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/virtualhubsecuritypartnerprovider"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/virtualhubsecuritypartnerprovider"
 
 &virtualhubsecuritypartnerprovider.VirtualHubSecurityPartnerProviderConfig {
 	Connection: interface{},
@@ -900,7 +900,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/virtualhubsecurity
 	SecurityProviderName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.virtualHubSecurityPartnerProvider.VirtualHubSecurityPartnerProviderTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.virtualHubSecurityPartnerProvider.VirtualHubSecurityPartnerProviderTimeouts,
 	VirtualHubId: *string,
 }
 ```
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualHubSecurityPartnerProvider.VirtualHubSecurityPartnerProviderTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/virtualhubsecuritypartnerprovider"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/virtualhubsecuritypartnerprovider"
 
 &virtualhubsecuritypartnerprovider.VirtualHubSecurityPartnerProviderTimeouts {
 	Create: *string,
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualHubSecurityPartnerProvider.VirtualHubSecurityPartnerProviderTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/virtualhubsecuritypartnerprovider"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/virtualhubsecuritypartnerprovider"
 
 virtualhubsecuritypartnerprovider.NewVirtualHubSecurityPartnerProviderTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualHubSecurityPartnerProviderTimeoutsOutputReference
 ```

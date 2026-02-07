@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.servicebusSubscription.ServicebusSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/servicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/servicebussubscription"
 
 servicebussubscription.NewServicebusSubscription(scope Construct, id *string, config ServicebusSubscriptionConfig) ServicebusSubscription
 ```
@@ -502,7 +502,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.servicebusSubscription.ServicebusSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/servicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/servicebussubscription"
 
 servicebussubscription.ServicebusSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.servicebusSubscription.ServicebusSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/servicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/servicebussubscription"
 
 servicebussubscription.ServicebusSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ servicebussubscription.ServicebusSubscription_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.servicebusSubscription.ServicebusSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/servicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/servicebussubscription"
 
 servicebussubscription.ServicebusSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ servicebussubscription.ServicebusSubscription_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.servicebusSubscription.ServicebusSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/servicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/servicebussubscription"
 
 servicebussubscription.ServicebusSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1165,7 +1165,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.servicebusSubscription.ServicebusSubscriptionClientScopedSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/servicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/servicebussubscription"
 
 &servicebussubscription.ServicebusSubscriptionClientScopedSubscription {
 	ClientId: *string,
@@ -1211,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.servicebusSubscription.ServicebusSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/servicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/servicebussubscription"
 
 &servicebussubscription.ServicebusSubscriptionConfig {
 	Connection: interface{},
@@ -1226,7 +1226,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/servicebussubscrip
 	TopicId: *string,
 	AutoDeleteOnIdle: *string,
 	BatchedOperationsEnabled: interface{},
-	ClientScopedSubscription: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.servicebusSubscription.ServicebusSubscriptionClientScopedSubscription,
+	ClientScopedSubscription: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.servicebusSubscription.ServicebusSubscriptionClientScopedSubscription,
 	ClientScopedSubscriptionEnabled: interface{},
 	DeadLetteringOnFilterEvaluationError: interface{},
 	DeadLetteringOnMessageExpiration: interface{},
@@ -1237,7 +1237,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/servicebussubscrip
 	LockDuration: *string,
 	RequiresSession: interface{},
 	Status: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.servicebusSubscription.ServicebusSubscriptionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.servicebusSubscription.ServicebusSubscriptionTimeouts,
 }
 ```
 
@@ -1558,7 +1558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.servicebusSubscription.ServicebusSubscriptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/servicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/servicebussubscription"
 
 &servicebussubscription.ServicebusSubscriptionTimeouts {
 	Create: *string,
@@ -1634,7 +1634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.servicebusSubscription.ServicebusSubscriptionClientScopedSubscriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/servicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/servicebussubscription"
 
 servicebussubscription.NewServicebusSubscriptionClientScopedSubscriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicebusSubscriptionClientScopedSubscriptionOutputReference
 ```
@@ -1952,7 +1952,7 @@ func InternalValue() ServicebusSubscriptionClientScopedSubscription
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.servicebusSubscription.ServicebusSubscriptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/servicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/servicebussubscription"
 
 servicebussubscription.NewServicebusSubscriptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicebusSubscriptionTimeoutsOutputReference
 ```

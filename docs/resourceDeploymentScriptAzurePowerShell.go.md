@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShell.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 resourcedeploymentscriptazurepowershell.NewResourceDeploymentScriptAzurePowerShell(scope Construct, id *string, config ResourceDeploymentScriptAzurePowerShellConfig) ResourceDeploymentScriptAzurePowerShell
 ```
@@ -541,7 +541,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShell.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 resourcedeploymentscriptazurepowershell.ResourceDeploymentScriptAzurePowerShell_IsConstruct(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShell.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 resourcedeploymentscriptazurepowershell.ResourceDeploymentScriptAzurePowerShell_IsTerraformElement(x interface{}) *bool
 ```
@@ -587,7 +587,7 @@ resourcedeploymentscriptazurepowershell.ResourceDeploymentScriptAzurePowerShell_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShell.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 resourcedeploymentscriptazurepowershell.ResourceDeploymentScriptAzurePowerShell_IsTerraformResource(x interface{}) *bool
 ```
@@ -601,7 +601,7 @@ resourcedeploymentscriptazurepowershell.ResourceDeploymentScriptAzurePowerShell_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShell.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 resourcedeploymentscriptazurepowershell.ResourceDeploymentScriptAzurePowerShell_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1259,7 +1259,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 &resourcedeploymentscriptazurepowershell.ResourceDeploymentScriptAzurePowerShellConfig {
 	Connection: interface{},
@@ -1276,18 +1276,18 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeployment
 	Version: *string,
 	CleanupPreference: *string,
 	CommandLine: *string,
-	Container: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellContainer,
+	Container: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellContainer,
 	EnvironmentVariable: interface{},
 	ForceUpdateTag: *string,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellIdentity,
 	PrimaryScriptUri: *string,
 	ScriptContent: *string,
-	StorageAccount: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellStorageAccount,
+	StorageAccount: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellStorageAccount,
 	SupportingScriptUris: *[]*string,
 	Tags: *map[string]*string,
 	Timeout: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellTimeouts,
 }
 ```
 
@@ -1640,7 +1640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 &resourcedeploymentscriptazurepowershell.ResourceDeploymentScriptAzurePowerShellContainer {
 	ContainerGroupName: *string,
@@ -1672,7 +1672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellEnvironmentVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 &resourcedeploymentscriptazurepowershell.ResourceDeploymentScriptAzurePowerShellEnvironmentVariable {
 	Name: *string,
@@ -1732,7 +1732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 &resourcedeploymentscriptazurepowershell.ResourceDeploymentScriptAzurePowerShellIdentity {
 	IdentityIds: *[]*string,
@@ -1778,7 +1778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellStorageAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 &resourcedeploymentscriptazurepowershell.ResourceDeploymentScriptAzurePowerShellStorageAccount {
 	Key: *string,
@@ -1824,7 +1824,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 &resourcedeploymentscriptazurepowershell.ResourceDeploymentScriptAzurePowerShellTimeouts {
 	Create: *string,
@@ -1900,7 +1900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 resourcedeploymentscriptazurepowershell.NewResourceDeploymentScriptAzurePowerShellContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceDeploymentScriptAzurePowerShellContainerOutputReference
 ```
@@ -2178,7 +2178,7 @@ func InternalValue() ResourceDeploymentScriptAzurePowerShellContainer
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellEnvironmentVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 resourcedeploymentscriptazurepowershell.NewResourceDeploymentScriptAzurePowerShellEnvironmentVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResourceDeploymentScriptAzurePowerShellEnvironmentVariableList
 ```
@@ -2338,7 +2338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellEnvironmentVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 resourcedeploymentscriptazurepowershell.NewResourceDeploymentScriptAzurePowerShellEnvironmentVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ResourceDeploymentScriptAzurePowerShellEnvironmentVariableOutputReference
 ```
@@ -2685,7 +2685,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 resourcedeploymentscriptazurepowershell.NewResourceDeploymentScriptAzurePowerShellIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceDeploymentScriptAzurePowerShellIdentityOutputReference
 ```
@@ -2978,7 +2978,7 @@ func InternalValue() ResourceDeploymentScriptAzurePowerShellIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellStorageAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 resourcedeploymentscriptazurepowershell.NewResourceDeploymentScriptAzurePowerShellStorageAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceDeploymentScriptAzurePowerShellStorageAccountOutputReference
 ```
@@ -3271,7 +3271,7 @@ func InternalValue() ResourceDeploymentScriptAzurePowerShellStorageAccount
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzurePowerShell.ResourceDeploymentScriptAzurePowerShellTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/resourcedeploymentscriptazurepowershell"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/resourcedeploymentscriptazurepowershell"
 
 resourcedeploymentscriptazurepowershell.NewResourceDeploymentScriptAzurePowerShellTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceDeploymentScriptAzurePowerShellTimeoutsOutputReference
 ```

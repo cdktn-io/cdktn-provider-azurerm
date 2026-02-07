@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermWebApplicationFirewallPolicy.DataAzurermWebApplicationFirewallPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermwebapplicationfirewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermwebapplicationfirewallpolicy"
 
 dataazurermwebapplicationfirewallpolicy.NewDataAzurermWebApplicationFirewallPolicy(scope Construct, id *string, config DataAzurermWebApplicationFirewallPolicyConfig) DataAzurermWebApplicationFirewallPolicy
 ```
@@ -310,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermWebApplicationFirewallPolicy.DataAzurermWebApplicationFirewallPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermwebapplicationfirewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermwebapplicationfirewallpolicy"
 
 dataazurermwebapplicationfirewallpolicy.DataAzurermWebApplicationFirewallPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermWebApplicationFirewallPolicy.DataAzurermWebApplicationFirewallPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermwebapplicationfirewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermwebapplicationfirewallpolicy"
 
 dataazurermwebapplicationfirewallpolicy.DataAzurermWebApplicationFirewallPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataazurermwebapplicationfirewallpolicy.DataAzurermWebApplicationFirewallPolicy_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermWebApplicationFirewallPolicy.DataAzurermWebApplicationFirewallPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermwebapplicationfirewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermwebapplicationfirewallpolicy"
 
 dataazurermwebapplicationfirewallpolicy.DataAzurermWebApplicationFirewallPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataazurermwebapplicationfirewallpolicy.DataAzurermWebApplicationFirewallPolicy_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermWebApplicationFirewallPolicy.DataAzurermWebApplicationFirewallPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermwebapplicationfirewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermwebapplicationfirewallpolicy"
 
 dataazurermwebapplicationfirewallpolicy.DataAzurermWebApplicationFirewallPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -698,7 +698,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermWebApplicationFirewallPolicy.DataAzurermWebApplicationFirewallPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermwebapplicationfirewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermwebapplicationfirewallpolicy"
 
 &dataazurermwebapplicationfirewallpolicy.DataAzurermWebApplicationFirewallPolicyConfig {
 	Connection: interface{},
@@ -712,7 +712,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermwebappl
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.dataAzurermWebApplicationFirewallPolicy.DataAzurermWebApplicationFirewallPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.dataAzurermWebApplicationFirewallPolicy.DataAzurermWebApplicationFirewallPolicyTimeouts,
 }
 ```
 
@@ -875,7 +875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermWebApplicationFirewallPolicy.DataAzurermWebApplicationFirewallPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermwebapplicationfirewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermwebapplicationfirewallpolicy"
 
 &dataazurermwebapplicationfirewallpolicy.DataAzurermWebApplicationFirewallPolicyTimeouts {
 	Read: *string,
@@ -909,7 +909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermWebApplicationFirewallPolicy.DataAzurermWebApplicationFirewallPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/dataazurermwebapplicationfirewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermwebapplicationfirewallpolicy"
 
 dataazurermwebapplicationfirewallpolicy.NewDataAzurermWebApplicationFirewallPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermWebApplicationFirewallPolicyTimeoutsOutputReference
 ```

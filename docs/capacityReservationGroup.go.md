@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/capacityreservationgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/capacityreservationgroup"
 
 capacityreservationgroup.NewCapacityReservationGroup(scope Construct, id *string, config CapacityReservationGroupConfig) CapacityReservationGroup
 ```
@@ -419,7 +419,7 @@ func ResetZones()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/capacityreservationgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/capacityreservationgroup"
 
 capacityreservationgroup.CapacityReservationGroup_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/capacityreservationgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/capacityreservationgroup"
 
 capacityreservationgroup.CapacityReservationGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ capacityreservationgroup.CapacityReservationGroup_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/capacityreservationgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/capacityreservationgroup"
 
 capacityreservationgroup.CapacityReservationGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ capacityreservationgroup.CapacityReservationGroup_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/capacityreservationgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/capacityreservationgroup"
 
 capacityreservationgroup.CapacityReservationGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/capacityreservationgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/capacityreservationgroup"
 
 &capacityreservationgroup.CapacityReservationGroupConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/capacityreservatio
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm.capacityReservationGroup.CapacityReservationGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.capacityReservationGroup.CapacityReservationGroupTimeouts,
 	Zones: *[]*string,
 }
 ```
@@ -1067,7 +1067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/capacityreservationgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/capacityreservationgroup"
 
 &capacityreservationgroup.CapacityReservationGroupTimeouts {
 	Create: *string,
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/capacityreservationgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/capacityreservationgroup"
 
 capacityreservationgroup.NewCapacityReservationGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CapacityReservationGroupTimeoutsOutputReference
 ```
