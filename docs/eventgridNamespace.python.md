@@ -1,15 +1,15 @@
-# `eventgridNamespace` Submodule <a name="`eventgridNamespace` Submodule" id="@cdktf/provider-azurerm.eventgridNamespace"></a>
+# `eventgridNamespace` Submodule <a name="`eventgridNamespace` Submodule" id="@cdktn/provider-azurerm.eventgridNamespace"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### EventgridNamespace <a name="EventgridNamespace" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace"></a>
+### EventgridNamespace <a name="EventgridNamespace" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace azurerm_eventgrid_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace azurerm_eventgrid_namespace}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespace(
   scope: Construct,
@@ -38,31 +38,31 @@ eventgridNamespace.EventgridNamespace(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#location EventgridNamespace#location}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#name EventgridNamespace#name}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#resource_group_name EventgridNamespace#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.capacity">capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#capacity EventgridNamespace#capacity}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#id EventgridNamespace#id}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a></code> | identity block. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.inboundIpRule">inbound_ip_rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]</code> | inbound_ip_rule block. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.publicNetworkAccess">public_network_access</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#public_network_access EventgridNamespace#public_network_access}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.sku">sku</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#sku EventgridNamespace#sku}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#tags EventgridNamespace#tags}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.topicSpacesConfiguration">topic_spaces_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]</code> | topic_spaces_configuration block. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#location EventgridNamespace#location}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#name EventgridNamespace#name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#resource_group_name EventgridNamespace#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.capacity">capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#capacity EventgridNamespace#capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#id EventgridNamespace#id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a></code> | identity block. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.inboundIpRule">inbound_ip_rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]</code> | inbound_ip_rule block. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.publicNetworkAccess">public_network_access</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#public_network_access EventgridNamespace#public_network_access}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.sku">sku</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#sku EventgridNamespace#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#tags EventgridNamespace#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.topicSpacesConfiguration">topic_spaces_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]</code> | topic_spaces_configuration block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -70,7 +70,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -80,152 +80,152 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.location"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#location EventgridNamespace#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#location EventgridNamespace#location}.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#name EventgridNamespace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#name EventgridNamespace#name}.
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.resourceGroupName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#resource_group_name EventgridNamespace#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#resource_group_name EventgridNamespace#resource_group_name}.
 
 ---
 
-##### `capacity`<sup>Optional</sup> <a name="capacity" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.capacity"></a>
+##### `capacity`<sup>Optional</sup> <a name="capacity" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.capacity"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#capacity EventgridNamespace#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#capacity EventgridNamespace#capacity}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#id EventgridNamespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#id EventgridNamespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.identity"></a>
+##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.identity"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a>
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#identity EventgridNamespace#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#identity EventgridNamespace#identity}
 
 ---
 
-##### `inbound_ip_rule`<sup>Optional</sup> <a name="inbound_ip_rule" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.inboundIpRule"></a>
+##### `inbound_ip_rule`<sup>Optional</sup> <a name="inbound_ip_rule" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.inboundIpRule"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]
 
 inbound_ip_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#inbound_ip_rule EventgridNamespace#inbound_ip_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#inbound_ip_rule EventgridNamespace#inbound_ip_rule}
 
 ---
 
-##### `public_network_access`<sup>Optional</sup> <a name="public_network_access" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.publicNetworkAccess"></a>
+##### `public_network_access`<sup>Optional</sup> <a name="public_network_access" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.publicNetworkAccess"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#public_network_access EventgridNamespace#public_network_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#public_network_access EventgridNamespace#public_network_access}.
 
 ---
 
-##### `sku`<sup>Optional</sup> <a name="sku" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.sku"></a>
+##### `sku`<sup>Optional</sup> <a name="sku" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.sku"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#sku EventgridNamespace#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#sku EventgridNamespace#sku}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.tags"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#tags EventgridNamespace#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#tags EventgridNamespace#tags}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#timeouts EventgridNamespace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#timeouts EventgridNamespace#timeouts}
 
 ---
 
-##### `topic_spaces_configuration`<sup>Optional</sup> <a name="topic_spaces_configuration" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.topicSpacesConfiguration"></a>
+##### `topic_spaces_configuration`<sup>Optional</sup> <a name="topic_spaces_configuration" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer.parameter.topicSpacesConfiguration"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]
 
 topic_spaces_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#topic_spaces_configuration EventgridNamespace#topic_spaces_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#topic_spaces_configuration EventgridNamespace#topic_spaces_configuration}
 
 ---
 
@@ -233,46 +233,46 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putIdentity">put_identity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putInboundIpRule">put_inbound_ip_rule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putTopicSpacesConfiguration">put_topic_spaces_configuration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetCapacity">reset_capacity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetIdentity">reset_identity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetInboundIpRule">reset_inbound_ip_rule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetPublicNetworkAccess">reset_public_network_access</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetSku">reset_sku</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetTags">reset_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetTimeouts">reset_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetTopicSpacesConfiguration">reset_topic_spaces_configuration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putIdentity">put_identity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putInboundIpRule">put_inbound_ip_rule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putTopicSpacesConfiguration">put_topic_spaces_configuration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetCapacity">reset_capacity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetIdentity">reset_identity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetInboundIpRule">reset_inbound_ip_rule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetPublicNetworkAccess">reset_public_network_access</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetSku">reset_sku</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetTopicSpacesConfiguration">reset_topic_spaces_configuration</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.toString"></a>
 
 ```python
 def to_string() -> str
@@ -280,7 +280,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.addOverride"></a>
 
 ```python
 def add_override(
@@ -289,19 +289,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -311,7 +311,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -319,7 +319,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -327,19 +327,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -347,7 +347,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -357,7 +357,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -365,7 +365,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -373,13 +373,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -387,13 +387,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -401,13 +401,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -415,13 +415,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -429,13 +429,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -443,13 +443,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -457,13 +457,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -471,13 +471,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -485,19 +485,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.importFrom"></a>
 
 ```python
 def import_from(
@@ -506,19 +506,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -526,13 +526,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -544,7 +544,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -552,7 +552,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.moveTo"></a>
 
 ```python
 def move_to(
@@ -563,7 +563,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -571,7 +571,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -579,7 +579,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -589,7 +589,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -597,7 +597,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_identity` <a name="put_identity" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putIdentity"></a>
+##### `put_identity` <a name="put_identity" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putIdentity"></a>
 
 ```python
 def put_identity(
@@ -606,23 +606,23 @@ def put_identity(
 ) -> None
 ```
 
-###### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putIdentity.parameter.type"></a>
+###### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putIdentity.parameter.type"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#type EventgridNamespace#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#type EventgridNamespace#type}.
 
 ---
 
-###### `identity_ids`<sup>Optional</sup> <a name="identity_ids" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putIdentity.parameter.identityIds"></a>
+###### `identity_ids`<sup>Optional</sup> <a name="identity_ids" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putIdentity.parameter.identityIds"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#identity_ids EventgridNamespace#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#identity_ids EventgridNamespace#identity_ids}.
 
 ---
 
-##### `put_inbound_ip_rule` <a name="put_inbound_ip_rule" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putInboundIpRule"></a>
+##### `put_inbound_ip_rule` <a name="put_inbound_ip_rule" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putInboundIpRule"></a>
 
 ```python
 def put_inbound_ip_rule(
@@ -630,13 +630,13 @@ def put_inbound_ip_rule(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putInboundIpRule.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putInboundIpRule.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -647,39 +647,39 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#create EventgridNamespace#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#create EventgridNamespace#create}.
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#delete EventgridNamespace#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#delete EventgridNamespace#delete}.
 
 ---
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#read EventgridNamespace#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#read EventgridNamespace#read}.
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#update EventgridNamespace#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#update EventgridNamespace#update}.
 
 ---
 
-##### `put_topic_spaces_configuration` <a name="put_topic_spaces_configuration" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putTopicSpacesConfiguration"></a>
+##### `put_topic_spaces_configuration` <a name="put_topic_spaces_configuration" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putTopicSpacesConfiguration"></a>
 
 ```python
 def put_topic_spaces_configuration(
@@ -687,61 +687,61 @@ def put_topic_spaces_configuration(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.putTopicSpacesConfiguration.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.putTopicSpacesConfiguration.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]
 
 ---
 
-##### `reset_capacity` <a name="reset_capacity" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetCapacity"></a>
+##### `reset_capacity` <a name="reset_capacity" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetCapacity"></a>
 
 ```python
 def reset_capacity() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_identity` <a name="reset_identity" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetIdentity"></a>
+##### `reset_identity` <a name="reset_identity" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetIdentity"></a>
 
 ```python
 def reset_identity() -> None
 ```
 
-##### `reset_inbound_ip_rule` <a name="reset_inbound_ip_rule" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetInboundIpRule"></a>
+##### `reset_inbound_ip_rule` <a name="reset_inbound_ip_rule" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetInboundIpRule"></a>
 
 ```python
 def reset_inbound_ip_rule() -> None
 ```
 
-##### `reset_public_network_access` <a name="reset_public_network_access" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetPublicNetworkAccess"></a>
+##### `reset_public_network_access` <a name="reset_public_network_access" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetPublicNetworkAccess"></a>
 
 ```python
 def reset_public_network_access() -> None
 ```
 
-##### `reset_sku` <a name="reset_sku" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetSku"></a>
+##### `reset_sku` <a name="reset_sku" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetSku"></a>
 
 ```python
 def reset_sku() -> None
 ```
 
-##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetTags"></a>
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetTags"></a>
 
 ```python
 def reset_tags() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
 ```
 
-##### `reset_topic_spaces_configuration` <a name="reset_topic_spaces_configuration" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.resetTopicSpacesConfiguration"></a>
+##### `reset_topic_spaces_configuration` <a name="reset_topic_spaces_configuration" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.resetTopicSpacesConfiguration"></a>
 
 ```python
 def reset_topic_spaces_configuration() -> None
@@ -751,17 +751,17 @@ def reset_topic_spaces_configuration() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a EventgridNamespace resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a EventgridNamespace resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespace.is_construct(
   x: typing.Any
@@ -784,7 +784,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -792,42 +792,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespace.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespace.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespace.generate_config_for_import(
   scope: Construct,
@@ -839,7 +839,7 @@ eventgridNamespace.EventgridNamespace.generate_config_for_import(
 
 Generates CDKTF code for importing a EventgridNamespace resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -847,7 +847,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -855,17 +855,17 @@ The construct id used in the generated config for the EventgridNamespace to impo
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing EventgridNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -877,48 +877,48 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.identity">identity</a></code> | <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference">EventgridNamespaceIdentityOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.inboundIpRule">inbound_ip_rule</a></code> | <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList">EventgridNamespaceInboundIpRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference">EventgridNamespaceTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.topicSpacesConfiguration">topic_spaces_configuration</a></code> | <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList">EventgridNamespaceTopicSpacesConfigurationList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.capacityInput">capacity_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.identityInput">identity_input</a></code> | <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.inboundIpRuleInput">inbound_ip_rule_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.publicNetworkAccessInput">public_network_access_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.skuInput">sku_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.topicSpacesConfigurationInput">topic_spaces_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.capacity">capacity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.location">location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.publicNetworkAccess">public_network_access</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.sku">sku</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference">EventgridNamespaceIdentityOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.inboundIpRule">inbound_ip_rule</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList">EventgridNamespaceInboundIpRuleList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference">EventgridNamespaceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.topicSpacesConfiguration">topic_spaces_configuration</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList">EventgridNamespaceTopicSpacesConfigurationList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.capacityInput">capacity_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.identityInput">identity_input</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.inboundIpRuleInput">inbound_ip_rule_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.publicNetworkAccessInput">public_network_access_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.skuInput">sku_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.topicSpacesConfigurationInput">topic_spaces_configuration_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.capacity">capacity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.publicNetworkAccess">public_network_access</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.sku">sku</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.node"></a>
 
 ```python
 node: Node
@@ -930,7 +930,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -940,7 +940,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.fqn"></a>
 
 ```python
 fqn: str
@@ -950,7 +950,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -960,7 +960,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -970,7 +970,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -980,7 +980,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -990,7 +990,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1000,7 +1000,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1010,7 +1010,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1020,7 +1020,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1030,7 +1030,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1040,7 +1040,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1050,7 +1050,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1060,47 +1060,47 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `identity`<sup>Required</sup> <a name="identity" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.identity"></a>
+##### `identity`<sup>Required</sup> <a name="identity" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.identity"></a>
 
 ```python
 identity: EventgridNamespaceIdentityOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference">EventgridNamespaceIdentityOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference">EventgridNamespaceIdentityOutputReference</a>
 
 ---
 
-##### `inbound_ip_rule`<sup>Required</sup> <a name="inbound_ip_rule" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.inboundIpRule"></a>
+##### `inbound_ip_rule`<sup>Required</sup> <a name="inbound_ip_rule" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.inboundIpRule"></a>
 
 ```python
 inbound_ip_rule: EventgridNamespaceInboundIpRuleList
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList">EventgridNamespaceInboundIpRuleList</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList">EventgridNamespaceInboundIpRuleList</a>
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.timeouts"></a>
 
 ```python
 timeouts: EventgridNamespaceTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference">EventgridNamespaceTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference">EventgridNamespaceTimeoutsOutputReference</a>
 
 ---
 
-##### `topic_spaces_configuration`<sup>Required</sup> <a name="topic_spaces_configuration" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.topicSpacesConfiguration"></a>
+##### `topic_spaces_configuration`<sup>Required</sup> <a name="topic_spaces_configuration" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.topicSpacesConfiguration"></a>
 
 ```python
 topic_spaces_configuration: EventgridNamespaceTopicSpacesConfigurationList
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList">EventgridNamespaceTopicSpacesConfigurationList</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList">EventgridNamespaceTopicSpacesConfigurationList</a>
 
 ---
 
-##### `capacity_input`<sup>Optional</sup> <a name="capacity_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.capacityInput"></a>
+##### `capacity_input`<sup>Optional</sup> <a name="capacity_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.capacityInput"></a>
 
 ```python
 capacity_input: typing.Union[int, float]
@@ -1110,17 +1110,17 @@ capacity_input: typing.Union[int, float]
 
 ---
 
-##### `identity_input`<sup>Optional</sup> <a name="identity_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.identityInput"></a>
+##### `identity_input`<sup>Optional</sup> <a name="identity_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.identityInput"></a>
 
 ```python
 identity_input: EventgridNamespaceIdentity
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a>
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1130,17 +1130,17 @@ id_input: str
 
 ---
 
-##### `inbound_ip_rule_input`<sup>Optional</sup> <a name="inbound_ip_rule_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.inboundIpRuleInput"></a>
+##### `inbound_ip_rule_input`<sup>Optional</sup> <a name="inbound_ip_rule_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.inboundIpRuleInput"></a>
 
 ```python
 inbound_ip_rule_input: IResolvable | typing.List[EventgridNamespaceInboundIpRule]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]
 
 ---
 
-##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.locationInput"></a>
+##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.locationInput"></a>
 
 ```python
 location_input: str
@@ -1150,7 +1150,7 @@ location_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1160,7 +1160,7 @@ name_input: str
 
 ---
 
-##### `public_network_access_input`<sup>Optional</sup> <a name="public_network_access_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.publicNetworkAccessInput"></a>
+##### `public_network_access_input`<sup>Optional</sup> <a name="public_network_access_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.publicNetworkAccessInput"></a>
 
 ```python
 public_network_access_input: str
@@ -1170,7 +1170,7 @@ public_network_access_input: str
 
 ---
 
-##### `resource_group_name_input`<sup>Optional</sup> <a name="resource_group_name_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.resourceGroupNameInput"></a>
+##### `resource_group_name_input`<sup>Optional</sup> <a name="resource_group_name_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.resourceGroupNameInput"></a>
 
 ```python
 resource_group_name_input: str
@@ -1180,7 +1180,7 @@ resource_group_name_input: str
 
 ---
 
-##### `sku_input`<sup>Optional</sup> <a name="sku_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.skuInput"></a>
+##### `sku_input`<sup>Optional</sup> <a name="sku_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.skuInput"></a>
 
 ```python
 sku_input: str
@@ -1190,7 +1190,7 @@ sku_input: str
 
 ---
 
-##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.tagsInput"></a>
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.tagsInput"></a>
 
 ```python
 tags_input: typing.Mapping[str]
@@ -1200,27 +1200,27 @@ tags_input: typing.Mapping[str]
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | EventgridNamespaceTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a>
 
 ---
 
-##### `topic_spaces_configuration_input`<sup>Optional</sup> <a name="topic_spaces_configuration_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.topicSpacesConfigurationInput"></a>
+##### `topic_spaces_configuration_input`<sup>Optional</sup> <a name="topic_spaces_configuration_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.topicSpacesConfigurationInput"></a>
 
 ```python
 topic_spaces_configuration_input: IResolvable | typing.List[EventgridNamespaceTopicSpacesConfiguration]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]
 
 ---
 
-##### `capacity`<sup>Required</sup> <a name="capacity" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.capacity"></a>
+##### `capacity`<sup>Required</sup> <a name="capacity" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.capacity"></a>
 
 ```python
 capacity: typing.Union[int, float]
@@ -1230,7 +1230,7 @@ capacity: typing.Union[int, float]
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.id"></a>
 
 ```python
 id: str
@@ -1240,7 +1240,7 @@ id: str
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.location"></a>
 
 ```python
 location: str
@@ -1250,7 +1250,7 @@ location: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.name"></a>
 
 ```python
 name: str
@@ -1260,7 +1260,7 @@ name: str
 
 ---
 
-##### `public_network_access`<sup>Required</sup> <a name="public_network_access" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.publicNetworkAccess"></a>
+##### `public_network_access`<sup>Required</sup> <a name="public_network_access" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.publicNetworkAccess"></a>
 
 ```python
 public_network_access: str
@@ -1270,7 +1270,7 @@ public_network_access: str
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.resourceGroupName"></a>
 
 ```python
 resource_group_name: str
@@ -1280,7 +1280,7 @@ resource_group_name: str
 
 ---
 
-##### `sku`<sup>Required</sup> <a name="sku" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.sku"></a>
+##### `sku`<sup>Required</sup> <a name="sku" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.sku"></a>
 
 ```python
 sku: str
@@ -1290,7 +1290,7 @@ sku: str
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1304,11 +1304,11 @@ tags: typing.Mapping[str]
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespace.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1320,12 +1320,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### EventgridNamespaceConfig <a name="EventgridNamespaceConfig" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig"></a>
+### EventgridNamespaceConfig <a name="EventgridNamespaceConfig" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1354,29 +1354,29 @@ eventgridNamespace.EventgridNamespaceConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#location EventgridNamespace#location}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#name EventgridNamespace#name}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#resource_group_name EventgridNamespace#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.capacity">capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#capacity EventgridNamespace#capacity}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#id EventgridNamespace#id}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.identity">identity</a></code> | <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a></code> | identity block. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.inboundIpRule">inbound_ip_rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]</code> | inbound_ip_rule block. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.publicNetworkAccess">public_network_access</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#public_network_access EventgridNamespace#public_network_access}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.sku">sku</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#sku EventgridNamespace#sku}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#tags EventgridNamespace#tags}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.topicSpacesConfiguration">topic_spaces_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]</code> | topic_spaces_configuration block. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#location EventgridNamespace#location}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#name EventgridNamespace#name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#resource_group_name EventgridNamespace#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.capacity">capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#capacity EventgridNamespace#capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#id EventgridNamespace#id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a></code> | identity block. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.inboundIpRule">inbound_ip_rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]</code> | inbound_ip_rule block. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.publicNetworkAccess">public_network_access</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#public_network_access EventgridNamespace#public_network_access}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.sku">sku</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#sku EventgridNamespace#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#tags EventgridNamespace#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.topicSpacesConfiguration">topic_spaces_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]</code> | topic_spaces_configuration block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1386,7 +1386,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1396,7 +1396,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1406,7 +1406,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1416,7 +1416,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1426,7 +1426,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1436,7 +1436,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1446,7 +1446,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.location"></a>
 
 ```python
 location: str
@@ -1454,11 +1454,11 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#location EventgridNamespace#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#location EventgridNamespace#location}.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.name"></a>
 
 ```python
 name: str
@@ -1466,11 +1466,11 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#name EventgridNamespace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#name EventgridNamespace#name}.
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.resourceGroupName"></a>
 
 ```python
 resource_group_name: str
@@ -1478,11 +1478,11 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#resource_group_name EventgridNamespace#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#resource_group_name EventgridNamespace#resource_group_name}.
 
 ---
 
-##### `capacity`<sup>Optional</sup> <a name="capacity" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.capacity"></a>
+##### `capacity`<sup>Optional</sup> <a name="capacity" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.capacity"></a>
 
 ```python
 capacity: typing.Union[int, float]
@@ -1490,11 +1490,11 @@ capacity: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#capacity EventgridNamespace#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#capacity EventgridNamespace#capacity}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.id"></a>
 
 ```python
 id: str
@@ -1502,42 +1502,42 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#id EventgridNamespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#id EventgridNamespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.identity"></a>
+##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.identity"></a>
 
 ```python
 identity: EventgridNamespaceIdentity
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a>
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#identity EventgridNamespace#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#identity EventgridNamespace#identity}
 
 ---
 
-##### `inbound_ip_rule`<sup>Optional</sup> <a name="inbound_ip_rule" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.inboundIpRule"></a>
+##### `inbound_ip_rule`<sup>Optional</sup> <a name="inbound_ip_rule" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.inboundIpRule"></a>
 
 ```python
 inbound_ip_rule: IResolvable | typing.List[EventgridNamespaceInboundIpRule]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]
 
 inbound_ip_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#inbound_ip_rule EventgridNamespace#inbound_ip_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#inbound_ip_rule EventgridNamespace#inbound_ip_rule}
 
 ---
 
-##### `public_network_access`<sup>Optional</sup> <a name="public_network_access" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.publicNetworkAccess"></a>
+##### `public_network_access`<sup>Optional</sup> <a name="public_network_access" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.publicNetworkAccess"></a>
 
 ```python
 public_network_access: str
@@ -1545,11 +1545,11 @@ public_network_access: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#public_network_access EventgridNamespace#public_network_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#public_network_access EventgridNamespace#public_network_access}.
 
 ---
 
-##### `sku`<sup>Optional</sup> <a name="sku" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.sku"></a>
+##### `sku`<sup>Optional</sup> <a name="sku" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.sku"></a>
 
 ```python
 sku: str
@@ -1557,11 +1557,11 @@ sku: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#sku EventgridNamespace#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#sku EventgridNamespace#sku}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1569,44 +1569,44 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#tags EventgridNamespace#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#tags EventgridNamespace#tags}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.timeouts"></a>
 
 ```python
 timeouts: EventgridNamespaceTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#timeouts EventgridNamespace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#timeouts EventgridNamespace#timeouts}
 
 ---
 
-##### `topic_spaces_configuration`<sup>Optional</sup> <a name="topic_spaces_configuration" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.topicSpacesConfiguration"></a>
+##### `topic_spaces_configuration`<sup>Optional</sup> <a name="topic_spaces_configuration" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.topicSpacesConfiguration"></a>
 
 ```python
 topic_spaces_configuration: IResolvable | typing.List[EventgridNamespaceTopicSpacesConfiguration]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]
 
 topic_spaces_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#topic_spaces_configuration EventgridNamespace#topic_spaces_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#topic_spaces_configuration EventgridNamespace#topic_spaces_configuration}
 
 ---
 
-### EventgridNamespaceIdentity <a name="EventgridNamespaceIdentity" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity"></a>
+### EventgridNamespaceIdentity <a name="EventgridNamespaceIdentity" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceIdentity(
   type: str,
@@ -1618,12 +1618,12 @@ eventgridNamespace.EventgridNamespaceIdentity(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#type EventgridNamespace#type}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#identity_ids EventgridNamespace#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#type EventgridNamespace#type}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#identity_ids EventgridNamespace#identity_ids}. |
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity.property.type"></a>
 
 ```python
 type: str
@@ -1631,11 +1631,11 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#type EventgridNamespace#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#type EventgridNamespace#type}.
 
 ---
 
-##### `identity_ids`<sup>Optional</sup> <a name="identity_ids" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity.property.identityIds"></a>
+##### `identity_ids`<sup>Optional</sup> <a name="identity_ids" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity.property.identityIds"></a>
 
 ```python
 identity_ids: typing.List[str]
@@ -1643,16 +1643,16 @@ identity_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#identity_ids EventgridNamespace#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#identity_ids EventgridNamespace#identity_ids}.
 
 ---
 
-### EventgridNamespaceInboundIpRule <a name="EventgridNamespaceInboundIpRule" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule"></a>
+### EventgridNamespaceInboundIpRule <a name="EventgridNamespaceInboundIpRule" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceInboundIpRule(
   ip_mask: str,
@@ -1664,12 +1664,12 @@ eventgridNamespace.EventgridNamespaceInboundIpRule(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule.property.ipMask">ip_mask</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#ip_mask EventgridNamespace#ip_mask}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule.property.action">action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#action EventgridNamespace#action}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule.property.ipMask">ip_mask</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#ip_mask EventgridNamespace#ip_mask}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule.property.action">action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#action EventgridNamespace#action}. |
 
 ---
 
-##### `ip_mask`<sup>Required</sup> <a name="ip_mask" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule.property.ipMask"></a>
+##### `ip_mask`<sup>Required</sup> <a name="ip_mask" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule.property.ipMask"></a>
 
 ```python
 ip_mask: str
@@ -1677,11 +1677,11 @@ ip_mask: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#ip_mask EventgridNamespace#ip_mask}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#ip_mask EventgridNamespace#ip_mask}.
 
 ---
 
-##### `action`<sup>Optional</sup> <a name="action" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule.property.action"></a>
+##### `action`<sup>Optional</sup> <a name="action" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule.property.action"></a>
 
 ```python
 action: str
@@ -1689,16 +1689,16 @@ action: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#action EventgridNamespace#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#action EventgridNamespace#action}.
 
 ---
 
-### EventgridNamespaceTimeouts <a name="EventgridNamespaceTimeouts" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts"></a>
+### EventgridNamespaceTimeouts <a name="EventgridNamespaceTimeouts" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceTimeouts(
   create: str = None,
@@ -1712,14 +1712,14 @@ eventgridNamespace.EventgridNamespaceTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#create EventgridNamespace#create}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#delete EventgridNamespace#delete}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#read EventgridNamespace#read}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#update EventgridNamespace#update}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#create EventgridNamespace#create}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#delete EventgridNamespace#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#read EventgridNamespace#read}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#update EventgridNamespace#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1727,11 +1727,11 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#create EventgridNamespace#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#create EventgridNamespace#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1739,11 +1739,11 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#delete EventgridNamespace#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#delete EventgridNamespace#delete}.
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -1751,11 +1751,11 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#read EventgridNamespace#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#read EventgridNamespace#read}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -1763,16 +1763,16 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#update EventgridNamespace#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#update EventgridNamespace#update}.
 
 ---
 
-### EventgridNamespaceTopicSpacesConfiguration <a name="EventgridNamespaceTopicSpacesConfiguration" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration"></a>
+### EventgridNamespaceTopicSpacesConfiguration <a name="EventgridNamespaceTopicSpacesConfiguration" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration(
   alternative_authentication_name_source: typing.List[str] = None,
@@ -1788,16 +1788,16 @@ eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.alternativeAuthenticationNameSource">alternative_authentication_name_source</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#alternative_authentication_name_source EventgridNamespace#alternative_authentication_name_source}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.dynamicRoutingEnrichment">dynamic_routing_enrichment</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>]</code> | dynamic_routing_enrichment block. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.maximumClientSessionsPerAuthenticationName">maximum_client_sessions_per_authentication_name</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#maximum_client_sessions_per_authentication_name EventgridNamespace#maximum_client_sessions_per_authentication_name}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.maximumSessionExpiryInHours">maximum_session_expiry_in_hours</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#maximum_session_expiry_in_hours EventgridNamespace#maximum_session_expiry_in_hours}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.routeTopicId">route_topic_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#route_topic_id EventgridNamespace#route_topic_id}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.staticRoutingEnrichment">static_routing_enrichment</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>]</code> | static_routing_enrichment block. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.alternativeAuthenticationNameSource">alternative_authentication_name_source</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#alternative_authentication_name_source EventgridNamespace#alternative_authentication_name_source}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.dynamicRoutingEnrichment">dynamic_routing_enrichment</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>]</code> | dynamic_routing_enrichment block. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.maximumClientSessionsPerAuthenticationName">maximum_client_sessions_per_authentication_name</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#maximum_client_sessions_per_authentication_name EventgridNamespace#maximum_client_sessions_per_authentication_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.maximumSessionExpiryInHours">maximum_session_expiry_in_hours</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#maximum_session_expiry_in_hours EventgridNamespace#maximum_session_expiry_in_hours}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.routeTopicId">route_topic_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#route_topic_id EventgridNamespace#route_topic_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.staticRoutingEnrichment">static_routing_enrichment</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>]</code> | static_routing_enrichment block. |
 
 ---
 
-##### `alternative_authentication_name_source`<sup>Optional</sup> <a name="alternative_authentication_name_source" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.alternativeAuthenticationNameSource"></a>
+##### `alternative_authentication_name_source`<sup>Optional</sup> <a name="alternative_authentication_name_source" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.alternativeAuthenticationNameSource"></a>
 
 ```python
 alternative_authentication_name_source: typing.List[str]
@@ -1805,25 +1805,25 @@ alternative_authentication_name_source: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#alternative_authentication_name_source EventgridNamespace#alternative_authentication_name_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#alternative_authentication_name_source EventgridNamespace#alternative_authentication_name_source}.
 
 ---
 
-##### `dynamic_routing_enrichment`<sup>Optional</sup> <a name="dynamic_routing_enrichment" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.dynamicRoutingEnrichment"></a>
+##### `dynamic_routing_enrichment`<sup>Optional</sup> <a name="dynamic_routing_enrichment" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.dynamicRoutingEnrichment"></a>
 
 ```python
 dynamic_routing_enrichment: IResolvable | typing.List[EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>]
 
 dynamic_routing_enrichment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#dynamic_routing_enrichment EventgridNamespace#dynamic_routing_enrichment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#dynamic_routing_enrichment EventgridNamespace#dynamic_routing_enrichment}
 
 ---
 
-##### `maximum_client_sessions_per_authentication_name`<sup>Optional</sup> <a name="maximum_client_sessions_per_authentication_name" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.maximumClientSessionsPerAuthenticationName"></a>
+##### `maximum_client_sessions_per_authentication_name`<sup>Optional</sup> <a name="maximum_client_sessions_per_authentication_name" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.maximumClientSessionsPerAuthenticationName"></a>
 
 ```python
 maximum_client_sessions_per_authentication_name: typing.Union[int, float]
@@ -1831,11 +1831,11 @@ maximum_client_sessions_per_authentication_name: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#maximum_client_sessions_per_authentication_name EventgridNamespace#maximum_client_sessions_per_authentication_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#maximum_client_sessions_per_authentication_name EventgridNamespace#maximum_client_sessions_per_authentication_name}.
 
 ---
 
-##### `maximum_session_expiry_in_hours`<sup>Optional</sup> <a name="maximum_session_expiry_in_hours" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.maximumSessionExpiryInHours"></a>
+##### `maximum_session_expiry_in_hours`<sup>Optional</sup> <a name="maximum_session_expiry_in_hours" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.maximumSessionExpiryInHours"></a>
 
 ```python
 maximum_session_expiry_in_hours: typing.Union[int, float]
@@ -1843,11 +1843,11 @@ maximum_session_expiry_in_hours: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#maximum_session_expiry_in_hours EventgridNamespace#maximum_session_expiry_in_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#maximum_session_expiry_in_hours EventgridNamespace#maximum_session_expiry_in_hours}.
 
 ---
 
-##### `route_topic_id`<sup>Optional</sup> <a name="route_topic_id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.routeTopicId"></a>
+##### `route_topic_id`<sup>Optional</sup> <a name="route_topic_id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.routeTopicId"></a>
 
 ```python
 route_topic_id: str
@@ -1855,30 +1855,30 @@ route_topic_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#route_topic_id EventgridNamespace#route_topic_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#route_topic_id EventgridNamespace#route_topic_id}.
 
 ---
 
-##### `static_routing_enrichment`<sup>Optional</sup> <a name="static_routing_enrichment" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.staticRoutingEnrichment"></a>
+##### `static_routing_enrichment`<sup>Optional</sup> <a name="static_routing_enrichment" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.staticRoutingEnrichment"></a>
 
 ```python
 static_routing_enrichment: IResolvable | typing.List[EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>]
 
 static_routing_enrichment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#static_routing_enrichment EventgridNamespace#static_routing_enrichment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#static_routing_enrichment EventgridNamespace#static_routing_enrichment}
 
 ---
 
-### EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment <a name="EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment"></a>
+### EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment <a name="EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment(
   key: str,
@@ -1890,12 +1890,12 @@ eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnric
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}. |
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment.property.key"></a>
 
 ```python
 key: str
@@ -1903,11 +1903,11 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}.
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment.property.value"></a>
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment.property.value"></a>
 
 ```python
 value: str
@@ -1915,16 +1915,16 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}.
 
 ---
 
-### EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment <a name="EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment"></a>
+### EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment <a name="EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment(
   key: str,
@@ -1936,12 +1936,12 @@ eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrich
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}. |
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment.property.key"></a>
 
 ```python
 key: str
@@ -1949,11 +1949,11 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}.
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment.property.value"></a>
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment.property.value"></a>
 
 ```python
 value: str
@@ -1961,18 +1961,18 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### EventgridNamespaceIdentityOutputReference <a name="EventgridNamespaceIdentityOutputReference" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference"></a>
+### EventgridNamespaceIdentityOutputReference <a name="EventgridNamespaceIdentityOutputReference" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceIdentityOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1982,12 +1982,12 @@ eventgridNamespace.EventgridNamespaceIdentityOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1995,7 +1995,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2007,30 +2007,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.resetIdentityIds">reset_identity_ids</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.resetIdentityIds">reset_identity_ids</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2038,13 +2038,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2052,13 +2052,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2066,13 +2066,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2080,13 +2080,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2094,13 +2094,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2108,13 +2108,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2122,13 +2122,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2136,13 +2136,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2150,13 +2150,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2164,13 +2164,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2180,13 +2180,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2196,7 +2196,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_identity_ids` <a name="reset_identity_ids" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.resetIdentityIds"></a>
+##### `reset_identity_ids` <a name="reset_identity_ids" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.resetIdentityIds"></a>
 
 ```python
 def reset_identity_ids() -> None
@@ -2207,19 +2207,19 @@ def reset_identity_ids() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.principalId">principal_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.tenantId">tenant_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.identityIdsInput">identity_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.principalId">principal_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.tenantId">tenant_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.identityIdsInput">identity_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2233,7 +2233,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2243,7 +2243,7 @@ fqn: str
 
 ---
 
-##### `principal_id`<sup>Required</sup> <a name="principal_id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.principalId"></a>
+##### `principal_id`<sup>Required</sup> <a name="principal_id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.principalId"></a>
 
 ```python
 principal_id: str
@@ -2253,7 +2253,7 @@ principal_id: str
 
 ---
 
-##### `tenant_id`<sup>Required</sup> <a name="tenant_id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.tenantId"></a>
+##### `tenant_id`<sup>Required</sup> <a name="tenant_id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.tenantId"></a>
 
 ```python
 tenant_id: str
@@ -2263,7 +2263,7 @@ tenant_id: str
 
 ---
 
-##### `identity_ids_input`<sup>Optional</sup> <a name="identity_ids_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.identityIdsInput"></a>
+##### `identity_ids_input`<sup>Optional</sup> <a name="identity_ids_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.identityIdsInput"></a>
 
 ```python
 identity_ids_input: typing.List[str]
@@ -2273,7 +2273,7 @@ identity_ids_input: typing.List[str]
 
 ---
 
-##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.typeInput"></a>
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.typeInput"></a>
 
 ```python
 type_input: str
@@ -2283,7 +2283,7 @@ type_input: str
 
 ---
 
-##### `identity_ids`<sup>Required</sup> <a name="identity_ids" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.identityIds"></a>
+##### `identity_ids`<sup>Required</sup> <a name="identity_ids" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.identityIds"></a>
 
 ```python
 identity_ids: typing.List[str]
@@ -2293,7 +2293,7 @@ identity_ids: typing.List[str]
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.type"></a>
 
 ```python
 type: str
@@ -2303,23 +2303,23 @@ type: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: EventgridNamespaceIdentity
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a>
 
 ---
 
 
-### EventgridNamespaceInboundIpRuleList <a name="EventgridNamespaceInboundIpRuleList" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList"></a>
+### EventgridNamespaceInboundIpRuleList <a name="EventgridNamespaceInboundIpRuleList" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceInboundIpRuleList(
   terraform_resource: IInterpolatingParent,
@@ -2330,13 +2330,13 @@ eventgridNamespace.EventgridNamespaceInboundIpRuleList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2344,7 +2344,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2352,7 +2352,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -2364,15 +2364,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -2384,19 +2384,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.resolve"></a>
 
 ```python
 def resolve(
@@ -2406,13 +2406,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2422,7 +2422,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.get"></a>
 
 ```python
 def get(
@@ -2430,7 +2430,7 @@ def get(
 ) -> EventgridNamespaceInboundIpRuleOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2443,13 +2443,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2463,7 +2463,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2473,23 +2473,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[EventgridNamespaceInboundIpRule]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>]
 
 ---
 
 
-### EventgridNamespaceInboundIpRuleOutputReference <a name="EventgridNamespaceInboundIpRuleOutputReference" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference"></a>
+### EventgridNamespaceInboundIpRuleOutputReference <a name="EventgridNamespaceInboundIpRuleOutputReference" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2501,14 +2501,14 @@ eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2516,7 +2516,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2524,7 +2524,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2532,7 +2532,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -2544,30 +2544,30 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.resetAction">reset_action</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.resetAction">reset_action</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2575,13 +2575,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2589,13 +2589,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2603,13 +2603,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2617,13 +2617,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2631,13 +2631,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2645,13 +2645,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2659,13 +2659,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2673,13 +2673,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2687,13 +2687,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2701,13 +2701,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2717,13 +2717,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2733,7 +2733,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_action` <a name="reset_action" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.resetAction"></a>
+##### `reset_action` <a name="reset_action" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.resetAction"></a>
 
 ```python
 def reset_action() -> None
@@ -2744,17 +2744,17 @@ def reset_action() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.actionInput">action_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.ipMaskInput">ip_mask_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.action">action</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.ipMask">ip_mask</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.actionInput">action_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.ipMaskInput">ip_mask_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.action">action</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.ipMask">ip_mask</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2768,7 +2768,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2778,7 +2778,7 @@ fqn: str
 
 ---
 
-##### `action_input`<sup>Optional</sup> <a name="action_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.actionInput"></a>
+##### `action_input`<sup>Optional</sup> <a name="action_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.actionInput"></a>
 
 ```python
 action_input: str
@@ -2788,7 +2788,7 @@ action_input: str
 
 ---
 
-##### `ip_mask_input`<sup>Optional</sup> <a name="ip_mask_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.ipMaskInput"></a>
+##### `ip_mask_input`<sup>Optional</sup> <a name="ip_mask_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.ipMaskInput"></a>
 
 ```python
 ip_mask_input: str
@@ -2798,7 +2798,7 @@ ip_mask_input: str
 
 ---
 
-##### `action`<sup>Required</sup> <a name="action" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.action"></a>
+##### `action`<sup>Required</sup> <a name="action" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.action"></a>
 
 ```python
 action: str
@@ -2808,7 +2808,7 @@ action: str
 
 ---
 
-##### `ip_mask`<sup>Required</sup> <a name="ip_mask" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.ipMask"></a>
+##### `ip_mask`<sup>Required</sup> <a name="ip_mask" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.ipMask"></a>
 
 ```python
 ip_mask: str
@@ -2818,23 +2818,23 @@ ip_mask: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | EventgridNamespaceInboundIpRule
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>
 
 ---
 
 
-### EventgridNamespaceTimeoutsOutputReference <a name="EventgridNamespaceTimeoutsOutputReference" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference"></a>
+### EventgridNamespaceTimeoutsOutputReference <a name="EventgridNamespaceTimeoutsOutputReference" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2844,12 +2844,12 @@ eventgridNamespace.EventgridNamespaceTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2857,7 +2857,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2869,33 +2869,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2903,13 +2903,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2917,13 +2917,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2931,13 +2931,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2945,13 +2945,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2959,13 +2959,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2973,13 +2973,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2987,13 +2987,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3001,13 +3001,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3015,13 +3015,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3029,13 +3029,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3045,13 +3045,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3061,25 +3061,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -3090,21 +3090,21 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3118,7 +3118,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3128,7 +3128,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -3138,7 +3138,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -3148,7 +3148,7 @@ delete_input: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -3158,7 +3158,7 @@ read_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -3168,7 +3168,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -3178,7 +3178,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -3188,7 +3188,7 @@ delete: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -3198,7 +3198,7 @@ read: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -3208,23 +3208,23 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | EventgridNamespaceTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a>
 
 ---
 
 
-### EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList <a name="EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList"></a>
+### EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList <a name="EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList(
   terraform_resource: IInterpolatingParent,
@@ -3235,13 +3235,13 @@ eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnric
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3249,7 +3249,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3257,7 +3257,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -3269,15 +3269,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -3289,19 +3289,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.resolve"></a>
 
 ```python
 def resolve(
@@ -3311,13 +3311,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3327,7 +3327,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.get"></a>
 
 ```python
 def get(
@@ -3335,7 +3335,7 @@ def get(
 ) -> EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3348,13 +3348,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3368,7 +3368,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3378,23 +3378,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>]
 
 ---
 
 
-### EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference <a name="EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference"></a>
+### EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference <a name="EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3406,14 +3406,14 @@ eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnric
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3421,7 +3421,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3429,7 +3429,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3437,7 +3437,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -3449,29 +3449,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3479,13 +3479,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3493,13 +3493,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3507,13 +3507,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3521,13 +3521,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3535,13 +3535,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3549,13 +3549,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3563,13 +3563,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3577,13 +3577,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3591,13 +3591,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3605,13 +3605,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3621,13 +3621,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3642,17 +3642,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3666,7 +3666,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3676,7 +3676,7 @@ fqn: str
 
 ---
 
-##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.keyInput"></a>
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.keyInput"></a>
 
 ```python
 key_input: str
@@ -3686,7 +3686,7 @@ key_input: str
 
 ---
 
-##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.valueInput"></a>
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.valueInput"></a>
 
 ```python
 value_input: str
@@ -3696,7 +3696,7 @@ value_input: str
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.key"></a>
 
 ```python
 key: str
@@ -3706,7 +3706,7 @@ key: str
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.value"></a>
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.value"></a>
 
 ```python
 value: str
@@ -3716,23 +3716,23 @@ value: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>
 
 ---
 
 
-### EventgridNamespaceTopicSpacesConfigurationList <a name="EventgridNamespaceTopicSpacesConfigurationList" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList"></a>
+### EventgridNamespaceTopicSpacesConfigurationList <a name="EventgridNamespaceTopicSpacesConfigurationList" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList(
   terraform_resource: IInterpolatingParent,
@@ -3743,13 +3743,13 @@ eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3757,7 +3757,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3765,7 +3765,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -3777,15 +3777,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -3797,19 +3797,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.resolve"></a>
 
 ```python
 def resolve(
@@ -3819,13 +3819,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3835,7 +3835,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.get"></a>
 
 ```python
 def get(
@@ -3843,7 +3843,7 @@ def get(
 ) -> EventgridNamespaceTopicSpacesConfigurationOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3856,13 +3856,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3876,7 +3876,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3886,23 +3886,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[EventgridNamespaceTopicSpacesConfiguration]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>]
 
 ---
 
 
-### EventgridNamespaceTopicSpacesConfigurationOutputReference <a name="EventgridNamespaceTopicSpacesConfigurationOutputReference" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference"></a>
+### EventgridNamespaceTopicSpacesConfigurationOutputReference <a name="EventgridNamespaceTopicSpacesConfigurationOutputReference" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3914,14 +3914,14 @@ eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3929,7 +3929,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3937,7 +3937,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3945,7 +3945,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -3957,37 +3957,37 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.putDynamicRoutingEnrichment">put_dynamic_routing_enrichment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.putStaticRoutingEnrichment">put_static_routing_enrichment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetAlternativeAuthenticationNameSource">reset_alternative_authentication_name_source</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetDynamicRoutingEnrichment">reset_dynamic_routing_enrichment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetMaximumClientSessionsPerAuthenticationName">reset_maximum_client_sessions_per_authentication_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetMaximumSessionExpiryInHours">reset_maximum_session_expiry_in_hours</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetRouteTopicId">reset_route_topic_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetStaticRoutingEnrichment">reset_static_routing_enrichment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.putDynamicRoutingEnrichment">put_dynamic_routing_enrichment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.putStaticRoutingEnrichment">put_static_routing_enrichment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetAlternativeAuthenticationNameSource">reset_alternative_authentication_name_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetDynamicRoutingEnrichment">reset_dynamic_routing_enrichment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetMaximumClientSessionsPerAuthenticationName">reset_maximum_client_sessions_per_authentication_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetMaximumSessionExpiryInHours">reset_maximum_session_expiry_in_hours</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetRouteTopicId">reset_route_topic_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetStaticRoutingEnrichment">reset_static_routing_enrichment</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3995,13 +3995,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4009,13 +4009,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4023,13 +4023,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4037,13 +4037,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4051,13 +4051,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4065,13 +4065,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4079,13 +4079,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4093,13 +4093,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4107,13 +4107,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4121,13 +4121,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4137,13 +4137,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4153,7 +4153,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_dynamic_routing_enrichment` <a name="put_dynamic_routing_enrichment" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.putDynamicRoutingEnrichment"></a>
+##### `put_dynamic_routing_enrichment` <a name="put_dynamic_routing_enrichment" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.putDynamicRoutingEnrichment"></a>
 
 ```python
 def put_dynamic_routing_enrichment(
@@ -4161,13 +4161,13 @@ def put_dynamic_routing_enrichment(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.putDynamicRoutingEnrichment.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.putDynamicRoutingEnrichment.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>]
 
 ---
 
-##### `put_static_routing_enrichment` <a name="put_static_routing_enrichment" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.putStaticRoutingEnrichment"></a>
+##### `put_static_routing_enrichment` <a name="put_static_routing_enrichment" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.putStaticRoutingEnrichment"></a>
 
 ```python
 def put_static_routing_enrichment(
@@ -4175,43 +4175,43 @@ def put_static_routing_enrichment(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.putStaticRoutingEnrichment.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.putStaticRoutingEnrichment.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>]
 
 ---
 
-##### `reset_alternative_authentication_name_source` <a name="reset_alternative_authentication_name_source" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetAlternativeAuthenticationNameSource"></a>
+##### `reset_alternative_authentication_name_source` <a name="reset_alternative_authentication_name_source" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetAlternativeAuthenticationNameSource"></a>
 
 ```python
 def reset_alternative_authentication_name_source() -> None
 ```
 
-##### `reset_dynamic_routing_enrichment` <a name="reset_dynamic_routing_enrichment" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetDynamicRoutingEnrichment"></a>
+##### `reset_dynamic_routing_enrichment` <a name="reset_dynamic_routing_enrichment" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetDynamicRoutingEnrichment"></a>
 
 ```python
 def reset_dynamic_routing_enrichment() -> None
 ```
 
-##### `reset_maximum_client_sessions_per_authentication_name` <a name="reset_maximum_client_sessions_per_authentication_name" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetMaximumClientSessionsPerAuthenticationName"></a>
+##### `reset_maximum_client_sessions_per_authentication_name` <a name="reset_maximum_client_sessions_per_authentication_name" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetMaximumClientSessionsPerAuthenticationName"></a>
 
 ```python
 def reset_maximum_client_sessions_per_authentication_name() -> None
 ```
 
-##### `reset_maximum_session_expiry_in_hours` <a name="reset_maximum_session_expiry_in_hours" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetMaximumSessionExpiryInHours"></a>
+##### `reset_maximum_session_expiry_in_hours` <a name="reset_maximum_session_expiry_in_hours" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetMaximumSessionExpiryInHours"></a>
 
 ```python
 def reset_maximum_session_expiry_in_hours() -> None
 ```
 
-##### `reset_route_topic_id` <a name="reset_route_topic_id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetRouteTopicId"></a>
+##### `reset_route_topic_id` <a name="reset_route_topic_id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetRouteTopicId"></a>
 
 ```python
 def reset_route_topic_id() -> None
 ```
 
-##### `reset_static_routing_enrichment` <a name="reset_static_routing_enrichment" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetStaticRoutingEnrichment"></a>
+##### `reset_static_routing_enrichment` <a name="reset_static_routing_enrichment" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.resetStaticRoutingEnrichment"></a>
 
 ```python
 def reset_static_routing_enrichment() -> None
@@ -4222,25 +4222,25 @@ def reset_static_routing_enrichment() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.dynamicRoutingEnrichment">dynamic_routing_enrichment</a></code> | <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.staticRoutingEnrichment">static_routing_enrichment</a></code> | <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.alternativeAuthenticationNameSourceInput">alternative_authentication_name_source_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.dynamicRoutingEnrichmentInput">dynamic_routing_enrichment_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumClientSessionsPerAuthenticationNameInput">maximum_client_sessions_per_authentication_name_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumSessionExpiryInHoursInput">maximum_session_expiry_in_hours_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.routeTopicIdInput">route_topic_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.staticRoutingEnrichmentInput">static_routing_enrichment_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.alternativeAuthenticationNameSource">alternative_authentication_name_source</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumClientSessionsPerAuthenticationName">maximum_client_sessions_per_authentication_name</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumSessionExpiryInHours">maximum_session_expiry_in_hours</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.routeTopicId">route_topic_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.dynamicRoutingEnrichment">dynamic_routing_enrichment</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.staticRoutingEnrichment">static_routing_enrichment</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.alternativeAuthenticationNameSourceInput">alternative_authentication_name_source_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.dynamicRoutingEnrichmentInput">dynamic_routing_enrichment_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumClientSessionsPerAuthenticationNameInput">maximum_client_sessions_per_authentication_name_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumSessionExpiryInHoursInput">maximum_session_expiry_in_hours_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.routeTopicIdInput">route_topic_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.staticRoutingEnrichmentInput">static_routing_enrichment_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.alternativeAuthenticationNameSource">alternative_authentication_name_source</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumClientSessionsPerAuthenticationName">maximum_client_sessions_per_authentication_name</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumSessionExpiryInHours">maximum_session_expiry_in_hours</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.routeTopicId">route_topic_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4254,7 +4254,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4264,27 +4264,27 @@ fqn: str
 
 ---
 
-##### `dynamic_routing_enrichment`<sup>Required</sup> <a name="dynamic_routing_enrichment" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.dynamicRoutingEnrichment"></a>
+##### `dynamic_routing_enrichment`<sup>Required</sup> <a name="dynamic_routing_enrichment" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.dynamicRoutingEnrichment"></a>
 
 ```python
 dynamic_routing_enrichment: EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList</a>
 
 ---
 
-##### `static_routing_enrichment`<sup>Required</sup> <a name="static_routing_enrichment" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.staticRoutingEnrichment"></a>
+##### `static_routing_enrichment`<sup>Required</sup> <a name="static_routing_enrichment" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.staticRoutingEnrichment"></a>
 
 ```python
 static_routing_enrichment: EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList</a>
 
 ---
 
-##### `alternative_authentication_name_source_input`<sup>Optional</sup> <a name="alternative_authentication_name_source_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.alternativeAuthenticationNameSourceInput"></a>
+##### `alternative_authentication_name_source_input`<sup>Optional</sup> <a name="alternative_authentication_name_source_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.alternativeAuthenticationNameSourceInput"></a>
 
 ```python
 alternative_authentication_name_source_input: typing.List[str]
@@ -4294,17 +4294,17 @@ alternative_authentication_name_source_input: typing.List[str]
 
 ---
 
-##### `dynamic_routing_enrichment_input`<sup>Optional</sup> <a name="dynamic_routing_enrichment_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.dynamicRoutingEnrichmentInput"></a>
+##### `dynamic_routing_enrichment_input`<sup>Optional</sup> <a name="dynamic_routing_enrichment_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.dynamicRoutingEnrichmentInput"></a>
 
 ```python
 dynamic_routing_enrichment_input: IResolvable | typing.List[EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>]
 
 ---
 
-##### `maximum_client_sessions_per_authentication_name_input`<sup>Optional</sup> <a name="maximum_client_sessions_per_authentication_name_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumClientSessionsPerAuthenticationNameInput"></a>
+##### `maximum_client_sessions_per_authentication_name_input`<sup>Optional</sup> <a name="maximum_client_sessions_per_authentication_name_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumClientSessionsPerAuthenticationNameInput"></a>
 
 ```python
 maximum_client_sessions_per_authentication_name_input: typing.Union[int, float]
@@ -4314,7 +4314,7 @@ maximum_client_sessions_per_authentication_name_input: typing.Union[int, float]
 
 ---
 
-##### `maximum_session_expiry_in_hours_input`<sup>Optional</sup> <a name="maximum_session_expiry_in_hours_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumSessionExpiryInHoursInput"></a>
+##### `maximum_session_expiry_in_hours_input`<sup>Optional</sup> <a name="maximum_session_expiry_in_hours_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumSessionExpiryInHoursInput"></a>
 
 ```python
 maximum_session_expiry_in_hours_input: typing.Union[int, float]
@@ -4324,7 +4324,7 @@ maximum_session_expiry_in_hours_input: typing.Union[int, float]
 
 ---
 
-##### `route_topic_id_input`<sup>Optional</sup> <a name="route_topic_id_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.routeTopicIdInput"></a>
+##### `route_topic_id_input`<sup>Optional</sup> <a name="route_topic_id_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.routeTopicIdInput"></a>
 
 ```python
 route_topic_id_input: str
@@ -4334,17 +4334,17 @@ route_topic_id_input: str
 
 ---
 
-##### `static_routing_enrichment_input`<sup>Optional</sup> <a name="static_routing_enrichment_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.staticRoutingEnrichmentInput"></a>
+##### `static_routing_enrichment_input`<sup>Optional</sup> <a name="static_routing_enrichment_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.staticRoutingEnrichmentInput"></a>
 
 ```python
 static_routing_enrichment_input: IResolvable | typing.List[EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>]
 
 ---
 
-##### `alternative_authentication_name_source`<sup>Required</sup> <a name="alternative_authentication_name_source" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.alternativeAuthenticationNameSource"></a>
+##### `alternative_authentication_name_source`<sup>Required</sup> <a name="alternative_authentication_name_source" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.alternativeAuthenticationNameSource"></a>
 
 ```python
 alternative_authentication_name_source: typing.List[str]
@@ -4354,7 +4354,7 @@ alternative_authentication_name_source: typing.List[str]
 
 ---
 
-##### `maximum_client_sessions_per_authentication_name`<sup>Required</sup> <a name="maximum_client_sessions_per_authentication_name" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumClientSessionsPerAuthenticationName"></a>
+##### `maximum_client_sessions_per_authentication_name`<sup>Required</sup> <a name="maximum_client_sessions_per_authentication_name" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumClientSessionsPerAuthenticationName"></a>
 
 ```python
 maximum_client_sessions_per_authentication_name: typing.Union[int, float]
@@ -4364,7 +4364,7 @@ maximum_client_sessions_per_authentication_name: typing.Union[int, float]
 
 ---
 
-##### `maximum_session_expiry_in_hours`<sup>Required</sup> <a name="maximum_session_expiry_in_hours" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumSessionExpiryInHours"></a>
+##### `maximum_session_expiry_in_hours`<sup>Required</sup> <a name="maximum_session_expiry_in_hours" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.maximumSessionExpiryInHours"></a>
 
 ```python
 maximum_session_expiry_in_hours: typing.Union[int, float]
@@ -4374,7 +4374,7 @@ maximum_session_expiry_in_hours: typing.Union[int, float]
 
 ---
 
-##### `route_topic_id`<sup>Required</sup> <a name="route_topic_id" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.routeTopicId"></a>
+##### `route_topic_id`<sup>Required</sup> <a name="route_topic_id" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.routeTopicId"></a>
 
 ```python
 route_topic_id: str
@@ -4384,23 +4384,23 @@ route_topic_id: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | EventgridNamespaceTopicSpacesConfiguration
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>
 
 ---
 
 
-### EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList <a name="EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList"></a>
+### EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList <a name="EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList(
   terraform_resource: IInterpolatingParent,
@@ -4411,13 +4411,13 @@ eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrich
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4425,7 +4425,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4433,7 +4433,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -4445,15 +4445,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -4465,19 +4465,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.resolve"></a>
 
 ```python
 def resolve(
@@ -4487,13 +4487,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4503,7 +4503,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.get"></a>
 
 ```python
 def get(
@@ -4511,7 +4511,7 @@ def get(
 ) -> EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4524,13 +4524,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4544,7 +4544,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4554,23 +4554,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>]
 
 ---
 
 
-### EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference <a name="EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference"></a>
+### EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference <a name="EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import eventgrid_namespace
+from cdktn_provider_azurerm import eventgrid_namespace
 
 eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -4582,14 +4582,14 @@ eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrich
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4597,7 +4597,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4605,7 +4605,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4613,7 +4613,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -4625,29 +4625,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4655,13 +4655,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4669,13 +4669,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4683,13 +4683,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4697,13 +4697,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4711,13 +4711,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4725,13 +4725,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4739,13 +4739,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4753,13 +4753,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4767,13 +4767,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4781,13 +4781,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4797,13 +4797,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4818,17 +4818,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4842,7 +4842,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4852,7 +4852,7 @@ fqn: str
 
 ---
 
-##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.keyInput"></a>
+##### `key_input`<sup>Optional</sup> <a name="key_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.keyInput"></a>
 
 ```python
 key_input: str
@@ -4862,7 +4862,7 @@ key_input: str
 
 ---
 
-##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.valueInput"></a>
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.valueInput"></a>
 
 ```python
 value_input: str
@@ -4872,7 +4872,7 @@ value_input: str
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.key"></a>
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.key"></a>
 
 ```python
 key: str
@@ -4882,7 +4882,7 @@ key: str
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.value"></a>
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.value"></a>
 
 ```python
 value: str
@@ -4892,13 +4892,13 @@ value: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>
 
 ---
 

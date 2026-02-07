@@ -1,9 +1,9 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/network_manager_network_group
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/network_manager_network_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkManagerNetworkGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/network_manager_network_group#description NetworkManagerNetworkGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/network_manager_network_group#description NetworkManagerNetworkGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/network_manager_network_group#id NetworkManagerNetworkGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/network_manager_network_group#id NetworkManagerNetworkGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/network_manager_network_group#name NetworkManagerNetworkGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/network_manager_network_group#member_type NetworkManagerNetworkGroup#member_type}
+  */
+  readonly memberType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/network_manager_network_group#name NetworkManagerNetworkGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/network_manager_network_group#network_manager_id NetworkManagerNetworkGroup#network_manager_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/network_manager_network_group#network_manager_id NetworkManagerNetworkGroup#network_manager_id}
   */
   readonly networkManagerId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/network_manager_network_group#timeouts NetworkManagerNetworkGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/network_manager_network_group#timeouts NetworkManagerNetworkGroup#timeouts}
   */
   readonly timeouts?: NetworkManagerNetworkGroupTimeouts;
 }
 export interface NetworkManagerNetworkGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/network_manager_network_group#create NetworkManagerNetworkGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/network_manager_network_group#create NetworkManagerNetworkGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/network_manager_network_group#delete NetworkManagerNetworkGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/network_manager_network_group#delete NetworkManagerNetworkGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/network_manager_network_group#read NetworkManagerNetworkGroup#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/network_manager_network_group#read NetworkManagerNetworkGroup#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/network_manager_network_group#update NetworkManagerNetworkGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/network_manager_network_group#update NetworkManagerNetworkGroup#update}
   */
   readonly update?: string;
 }
@@ -233,7 +237,7 @@ export class NetworkManagerNetworkGroupTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/network_manager_network_group azurerm_network_manager_network_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/network_manager_network_group azurerm_network_manager_network_group}
 */
 export class NetworkManagerNetworkGroup extends cdktf.TerraformResource {
 
@@ -249,7 +253,7 @@ export class NetworkManagerNetworkGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkManagerNetworkGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkManagerNetworkGroup to import
-  * @param importFromId The id of the existing NetworkManagerNetworkGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/network_manager_network_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkManagerNetworkGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/network_manager_network_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkManagerNetworkGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -261,7 +265,7 @@ export class NetworkManagerNetworkGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/network_manager_network_group azurerm_network_manager_network_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/network_manager_network_group azurerm_network_manager_network_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -272,7 +276,7 @@ export class NetworkManagerNetworkGroup extends cdktf.TerraformResource {
       terraformResourceType: 'azurerm_network_manager_network_group',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.55.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -285,6 +289,7 @@ export class NetworkManagerNetworkGroup extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._id = config.id;
+    this._memberType = config.memberType;
     this._name = config.name;
     this._networkManagerId = config.networkManagerId;
     this._timeouts.internalValue = config.timeouts;
@@ -324,6 +329,22 @@ export class NetworkManagerNetworkGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // member_type - computed: false, optional: true, required: false
+  private _memberType?: string; 
+  public get memberType() {
+    return this.getStringAttribute('member_type');
+  }
+  public set memberType(value: string) {
+    this._memberType = value;
+  }
+  public resetMemberType() {
+    this._memberType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memberTypeInput() {
+    return this._memberType;
   }
 
   // name - computed: false, optional: false, required: true
@@ -376,6 +397,7 @@ export class NetworkManagerNetworkGroup extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
+      member_type: cdktf.stringToTerraform(this._memberType),
       name: cdktf.stringToTerraform(this._name),
       network_manager_id: cdktf.stringToTerraform(this._networkManagerId),
       timeouts: networkManagerNetworkGroupTimeoutsToTerraform(this._timeouts.internalValue),
@@ -392,6 +414,12 @@ export class NetworkManagerNetworkGroup extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      member_type: {
+        value: cdktf.stringToHclTerraform(this._memberType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

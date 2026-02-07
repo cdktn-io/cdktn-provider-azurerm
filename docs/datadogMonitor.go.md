@@ -1,28 +1,28 @@
-# `datadogMonitor` Submodule <a name="`datadogMonitor` Submodule" id="@cdktf/provider-azurerm.datadogMonitor"></a>
+# `datadogMonitor` Submodule <a name="`datadogMonitor` Submodule" id="@cdktn/provider-azurerm.datadogMonitor"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DatadogMonitor <a name="DatadogMonitor" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor"></a>
+### DatadogMonitor <a name="DatadogMonitor" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor azurerm_datadog_monitor}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor azurerm_datadog_monitor}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 datadogmonitor.NewDatadogMonitor(scope Construct, id *string, config DatadogMonitorConfig) DatadogMonitor
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig">DatadogMonitorConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig">DatadogMonitorConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig">DatadogMonitorConfig</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig">DatadogMonitorConfig</a>
 
 ---
 
@@ -50,42 +50,42 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.putDatadogOrganization">PutDatadogOrganization</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.putIdentity">PutIdentity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.putUser">PutUser</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.resetIdentity">ResetIdentity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.resetMonitoringEnabled">ResetMonitoringEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.resetTags">ResetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.putDatadogOrganization">PutDatadogOrganization</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.putIdentity">PutIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.putUser">PutUser</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.resetIdentity">ResetIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.resetMonitoringEnabled">ResetMonitoringEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.toString"></a>
 
 ```go
 func ToString() *string
@@ -93,25 +93,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -119,7 +119,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -127,7 +127,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -135,19 +135,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -155,7 +155,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -163,7 +163,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -171,151 +171,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -325,7 +325,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -333,7 +333,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -341,7 +341,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -349,7 +349,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -357,7 +357,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -365,7 +365,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -373,79 +373,79 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutDatadogOrganization` <a name="PutDatadogOrganization" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.putDatadogOrganization"></a>
+##### `PutDatadogOrganization` <a name="PutDatadogOrganization" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.putDatadogOrganization"></a>
 
 ```go
 func PutDatadogOrganization(value DatadogMonitorDatadogOrganization)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.putDatadogOrganization.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.putDatadogOrganization.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization">DatadogMonitorDatadogOrganization</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization">DatadogMonitorDatadogOrganization</a>
 
 ---
 
-##### `PutIdentity` <a name="PutIdentity" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.putIdentity"></a>
+##### `PutIdentity` <a name="PutIdentity" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.putIdentity"></a>
 
 ```go
 func PutIdentity(value DatadogMonitorIdentity)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.putIdentity.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.putIdentity.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentity">DatadogMonitorIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentity">DatadogMonitorIdentity</a>
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value DatadogMonitorTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts">DatadogMonitorTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts">DatadogMonitorTimeouts</a>
 
 ---
 
-##### `PutUser` <a name="PutUser" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.putUser"></a>
+##### `PutUser` <a name="PutUser" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.putUser"></a>
 
 ```go
 func PutUser(value DatadogMonitorUser)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.putUser.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.putUser.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUser">DatadogMonitorUser</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUser">DatadogMonitorUser</a>
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetIdentity` <a name="ResetIdentity" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.resetIdentity"></a>
+##### `ResetIdentity` <a name="ResetIdentity" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.resetIdentity"></a>
 
 ```go
 func ResetIdentity()
 ```
 
-##### `ResetMonitoringEnabled` <a name="ResetMonitoringEnabled" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.resetMonitoringEnabled"></a>
+##### `ResetMonitoringEnabled` <a name="ResetMonitoringEnabled" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.resetMonitoringEnabled"></a>
 
 ```go
 func ResetMonitoringEnabled()
 ```
 
-##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.resetTags"></a>
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.resetTags"></a>
 
 ```go
 func ResetTags()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
@@ -455,17 +455,17 @@ func ResetTimeouts()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DatadogMonitor resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DatadogMonitor resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 datadogmonitor.DatadogMonitor_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -494,45 +494,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 datadogmonitor.DatadogMonitor_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 datadogmonitor.DatadogMonitor_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 datadogmonitor.DatadogMonitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a DatadogMonitor resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -540,7 +540,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -548,17 +548,17 @@ The construct id used in the generated config for the DatadogMonitor to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing DatadogMonitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -570,47 +570,47 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.datadogOrganization">DatadogOrganization</a></code> | <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference">DatadogMonitorDatadogOrganizationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.identity">Identity</a></code> | <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference">DatadogMonitorIdentityOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.marketplaceSubscriptionStatus">MarketplaceSubscriptionStatus</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference">DatadogMonitorTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.user">User</a></code> | <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference">DatadogMonitorUserOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.datadogOrganizationInput">DatadogOrganizationInput</a></code> | <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization">DatadogMonitorDatadogOrganization</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.identityInput">IdentityInput</a></code> | <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentity">DatadogMonitorIdentity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.monitoringEnabledInput">MonitoringEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.resourceGroupNameInput">ResourceGroupNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.skuNameInput">SkuNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.userInput">UserInput</a></code> | <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUser">DatadogMonitorUser</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.location">Location</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.monitoringEnabled">MonitoringEnabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.skuName">SkuName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.datadogOrganization">DatadogOrganization</a></code> | <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference">DatadogMonitorDatadogOrganizationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference">DatadogMonitorIdentityOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.marketplaceSubscriptionStatus">MarketplaceSubscriptionStatus</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference">DatadogMonitorTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.user">User</a></code> | <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference">DatadogMonitorUserOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.datadogOrganizationInput">DatadogOrganizationInput</a></code> | <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization">DatadogMonitorDatadogOrganization</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.identityInput">IdentityInput</a></code> | <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentity">DatadogMonitorIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.monitoringEnabledInput">MonitoringEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.resourceGroupNameInput">ResourceGroupNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.skuNameInput">SkuNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.userInput">UserInput</a></code> | <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUser">DatadogMonitorUser</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.location">Location</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.monitoringEnabled">MonitoringEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.skuName">SkuName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.node"></a>
 
 ```go
 func Node() Node
@@ -622,7 +622,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -632,7 +632,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -642,7 +642,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -652,7 +652,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -662,7 +662,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -672,7 +672,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -682,7 +682,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -692,7 +692,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -702,7 +702,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -712,7 +712,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -722,7 +722,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -732,7 +732,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -742,7 +742,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -752,27 +752,27 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `DatadogOrganization`<sup>Required</sup> <a name="DatadogOrganization" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.datadogOrganization"></a>
+##### `DatadogOrganization`<sup>Required</sup> <a name="DatadogOrganization" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.datadogOrganization"></a>
 
 ```go
 func DatadogOrganization() DatadogMonitorDatadogOrganizationOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference">DatadogMonitorDatadogOrganizationOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference">DatadogMonitorDatadogOrganizationOutputReference</a>
 
 ---
 
-##### `Identity`<sup>Required</sup> <a name="Identity" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.identity"></a>
+##### `Identity`<sup>Required</sup> <a name="Identity" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.identity"></a>
 
 ```go
 func Identity() DatadogMonitorIdentityOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference">DatadogMonitorIdentityOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference">DatadogMonitorIdentityOutputReference</a>
 
 ---
 
-##### `MarketplaceSubscriptionStatus`<sup>Required</sup> <a name="MarketplaceSubscriptionStatus" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.marketplaceSubscriptionStatus"></a>
+##### `MarketplaceSubscriptionStatus`<sup>Required</sup> <a name="MarketplaceSubscriptionStatus" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.marketplaceSubscriptionStatus"></a>
 
 ```go
 func MarketplaceSubscriptionStatus() *string
@@ -782,47 +782,47 @@ func MarketplaceSubscriptionStatus() *string
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.timeouts"></a>
 
 ```go
 func Timeouts() DatadogMonitorTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference">DatadogMonitorTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference">DatadogMonitorTimeoutsOutputReference</a>
 
 ---
 
-##### `User`<sup>Required</sup> <a name="User" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.user"></a>
+##### `User`<sup>Required</sup> <a name="User" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.user"></a>
 
 ```go
 func User() DatadogMonitorUserOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference">DatadogMonitorUserOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference">DatadogMonitorUserOutputReference</a>
 
 ---
 
-##### `DatadogOrganizationInput`<sup>Optional</sup> <a name="DatadogOrganizationInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.datadogOrganizationInput"></a>
+##### `DatadogOrganizationInput`<sup>Optional</sup> <a name="DatadogOrganizationInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.datadogOrganizationInput"></a>
 
 ```go
 func DatadogOrganizationInput() DatadogMonitorDatadogOrganization
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization">DatadogMonitorDatadogOrganization</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization">DatadogMonitorDatadogOrganization</a>
 
 ---
 
-##### `IdentityInput`<sup>Optional</sup> <a name="IdentityInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.identityInput"></a>
+##### `IdentityInput`<sup>Optional</sup> <a name="IdentityInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.identityInput"></a>
 
 ```go
 func IdentityInput() DatadogMonitorIdentity
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentity">DatadogMonitorIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentity">DatadogMonitorIdentity</a>
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -832,7 +832,7 @@ func IdInput() *string
 
 ---
 
-##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.locationInput"></a>
+##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.locationInput"></a>
 
 ```go
 func LocationInput() *string
@@ -842,7 +842,7 @@ func LocationInput() *string
 
 ---
 
-##### `MonitoringEnabledInput`<sup>Optional</sup> <a name="MonitoringEnabledInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.monitoringEnabledInput"></a>
+##### `MonitoringEnabledInput`<sup>Optional</sup> <a name="MonitoringEnabledInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.monitoringEnabledInput"></a>
 
 ```go
 func MonitoringEnabledInput() interface{}
@@ -852,7 +852,7 @@ func MonitoringEnabledInput() interface{}
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -862,7 +862,7 @@ func NameInput() *string
 
 ---
 
-##### `ResourceGroupNameInput`<sup>Optional</sup> <a name="ResourceGroupNameInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.resourceGroupNameInput"></a>
+##### `ResourceGroupNameInput`<sup>Optional</sup> <a name="ResourceGroupNameInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.resourceGroupNameInput"></a>
 
 ```go
 func ResourceGroupNameInput() *string
@@ -872,7 +872,7 @@ func ResourceGroupNameInput() *string
 
 ---
 
-##### `SkuNameInput`<sup>Optional</sup> <a name="SkuNameInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.skuNameInput"></a>
+##### `SkuNameInput`<sup>Optional</sup> <a name="SkuNameInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.skuNameInput"></a>
 
 ```go
 func SkuNameInput() *string
@@ -882,7 +882,7 @@ func SkuNameInput() *string
 
 ---
 
-##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.tagsInput"></a>
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.tagsInput"></a>
 
 ```go
 func TagsInput() *map[string]*string
@@ -892,7 +892,7 @@ func TagsInput() *map[string]*string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -902,17 +902,17 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `UserInput`<sup>Optional</sup> <a name="UserInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.userInput"></a>
+##### `UserInput`<sup>Optional</sup> <a name="UserInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.userInput"></a>
 
 ```go
 func UserInput() DatadogMonitorUser
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUser">DatadogMonitorUser</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUser">DatadogMonitorUser</a>
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.id"></a>
 
 ```go
 func Id() *string
@@ -922,7 +922,7 @@ func Id() *string
 
 ---
 
-##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.location"></a>
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.location"></a>
 
 ```go
 func Location() *string
@@ -932,7 +932,7 @@ func Location() *string
 
 ---
 
-##### `MonitoringEnabled`<sup>Required</sup> <a name="MonitoringEnabled" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.monitoringEnabled"></a>
+##### `MonitoringEnabled`<sup>Required</sup> <a name="MonitoringEnabled" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.monitoringEnabled"></a>
 
 ```go
 func MonitoringEnabled() interface{}
@@ -942,7 +942,7 @@ func MonitoringEnabled() interface{}
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.name"></a>
 
 ```go
 func Name() *string
@@ -952,7 +952,7 @@ func Name() *string
 
 ---
 
-##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.resourceGroupName"></a>
+##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.resourceGroupName"></a>
 
 ```go
 func ResourceGroupName() *string
@@ -962,7 +962,7 @@ func ResourceGroupName() *string
 
 ---
 
-##### `SkuName`<sup>Required</sup> <a name="SkuName" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.skuName"></a>
+##### `SkuName`<sup>Required</sup> <a name="SkuName" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.skuName"></a>
 
 ```go
 func SkuName() *string
@@ -972,7 +972,7 @@ func SkuName() *string
 
 ---
 
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.tags"></a>
 
 ```go
 func Tags() *map[string]*string
@@ -986,11 +986,11 @@ func Tags() *map[string]*string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitor.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitor.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1002,12 +1002,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DatadogMonitorConfig <a name="DatadogMonitorConfig" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig"></a>
+### DatadogMonitorConfig <a name="DatadogMonitorConfig" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 &datadogmonitor.DatadogMonitorConfig {
 	Connection: interface{},
@@ -1017,17 +1017,17 @@ import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	DatadogOrganization: github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14.datadogMonitor.DatadogMonitorDatadogOrganization,
+	DatadogOrganization: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.datadogMonitor.DatadogMonitorDatadogOrganization,
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
 	SkuName: *string,
-	User: github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14.datadogMonitor.DatadogMonitorUser,
+	User: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.datadogMonitor.DatadogMonitorUser,
 	Id: *string,
-	Identity: github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14.datadogMonitor.DatadogMonitorIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.datadogMonitor.DatadogMonitorIdentity,
 	MonitoringEnabled: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14.datadogMonitor.DatadogMonitorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.datadogMonitor.DatadogMonitorTimeouts,
 }
 ```
 
@@ -1035,28 +1035,28 @@ import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.datadogOrganization">DatadogOrganization</a></code> | <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization">DatadogMonitorDatadogOrganization</a></code> | datadog_organization block. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#location DatadogMonitor#location}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#name DatadogMonitor#name}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#resource_group_name DatadogMonitor#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.skuName">SkuName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#sku_name DatadogMonitor#sku_name}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.user">User</a></code> | <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUser">DatadogMonitorUser</a></code> | user block. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#id DatadogMonitor#id}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.identity">Identity</a></code> | <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentity">DatadogMonitorIdentity</a></code> | identity block. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.monitoringEnabled">MonitoringEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#monitoring_enabled DatadogMonitor#monitoring_enabled}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#tags DatadogMonitor#tags}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts">DatadogMonitorTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.datadogOrganization">DatadogOrganization</a></code> | <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization">DatadogMonitorDatadogOrganization</a></code> | datadog_organization block. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#location DatadogMonitor#location}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#name DatadogMonitor#name}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#resource_group_name DatadogMonitor#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.skuName">SkuName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#sku_name DatadogMonitor#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.user">User</a></code> | <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUser">DatadogMonitorUser</a></code> | user block. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#id DatadogMonitor#id}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentity">DatadogMonitorIdentity</a></code> | identity block. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.monitoringEnabled">MonitoringEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#monitoring_enabled DatadogMonitor#monitoring_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#tags DatadogMonitor#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts">DatadogMonitorTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1066,7 +1066,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1076,7 +1076,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -1086,7 +1086,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -1096,7 +1096,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -1106,7 +1106,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -1116,7 +1116,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1126,21 +1126,21 @@ Provisioners *[]interface{}
 
 ---
 
-##### `DatadogOrganization`<sup>Required</sup> <a name="DatadogOrganization" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.datadogOrganization"></a>
+##### `DatadogOrganization`<sup>Required</sup> <a name="DatadogOrganization" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.datadogOrganization"></a>
 
 ```go
 DatadogOrganization DatadogMonitorDatadogOrganization
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization">DatadogMonitorDatadogOrganization</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization">DatadogMonitorDatadogOrganization</a>
 
 datadog_organization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#datadog_organization DatadogMonitor#datadog_organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#datadog_organization DatadogMonitor#datadog_organization}
 
 ---
 
-##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.location"></a>
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.location"></a>
 
 ```go
 Location *string
@@ -1148,11 +1148,11 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#location DatadogMonitor#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#location DatadogMonitor#location}.
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.name"></a>
 
 ```go
 Name *string
@@ -1160,11 +1160,11 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#name DatadogMonitor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#name DatadogMonitor#name}.
 
 ---
 
-##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.resourceGroupName"></a>
+##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.resourceGroupName"></a>
 
 ```go
 ResourceGroupName *string
@@ -1172,11 +1172,11 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#resource_group_name DatadogMonitor#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#resource_group_name DatadogMonitor#resource_group_name}.
 
 ---
 
-##### `SkuName`<sup>Required</sup> <a name="SkuName" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.skuName"></a>
+##### `SkuName`<sup>Required</sup> <a name="SkuName" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.skuName"></a>
 
 ```go
 SkuName *string
@@ -1184,25 +1184,25 @@ SkuName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#sku_name DatadogMonitor#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#sku_name DatadogMonitor#sku_name}.
 
 ---
 
-##### `User`<sup>Required</sup> <a name="User" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.user"></a>
+##### `User`<sup>Required</sup> <a name="User" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.user"></a>
 
 ```go
 User DatadogMonitorUser
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUser">DatadogMonitorUser</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUser">DatadogMonitorUser</a>
 
 user block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#user DatadogMonitor#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#user DatadogMonitor#user}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1210,28 +1210,28 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#id DatadogMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#id DatadogMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `Identity`<sup>Optional</sup> <a name="Identity" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.identity"></a>
+##### `Identity`<sup>Optional</sup> <a name="Identity" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.identity"></a>
 
 ```go
 Identity DatadogMonitorIdentity
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentity">DatadogMonitorIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentity">DatadogMonitorIdentity</a>
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#identity DatadogMonitor#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#identity DatadogMonitor#identity}
 
 ---
 
-##### `MonitoringEnabled`<sup>Optional</sup> <a name="MonitoringEnabled" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.monitoringEnabled"></a>
+##### `MonitoringEnabled`<sup>Optional</sup> <a name="MonitoringEnabled" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.monitoringEnabled"></a>
 
 ```go
 MonitoringEnabled interface{}
@@ -1239,11 +1239,11 @@ MonitoringEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#monitoring_enabled DatadogMonitor#monitoring_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#monitoring_enabled DatadogMonitor#monitoring_enabled}.
 
 ---
 
-##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.tags"></a>
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.tags"></a>
 
 ```go
 Tags *map[string]*string
@@ -1251,30 +1251,30 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#tags DatadogMonitor#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#tags DatadogMonitor#tags}.
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorConfig.property.timeouts"></a>
 
 ```go
 Timeouts DatadogMonitorTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts">DatadogMonitorTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts">DatadogMonitorTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#timeouts DatadogMonitor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#timeouts DatadogMonitor#timeouts}
 
 ---
 
-### DatadogMonitorDatadogOrganization <a name="DatadogMonitorDatadogOrganization" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization"></a>
+### DatadogMonitorDatadogOrganization <a name="DatadogMonitorDatadogOrganization" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 &datadogmonitor.DatadogMonitorDatadogOrganization {
 	ApiKey: *string,
@@ -1290,16 +1290,16 @@ import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.apiKey">ApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#api_key DatadogMonitor#api_key}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.applicationKey">ApplicationKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#application_key DatadogMonitor#application_key}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.enterpriseAppId">EnterpriseAppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#enterprise_app_id DatadogMonitor#enterprise_app_id}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.linkingAuthCode">LinkingAuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#linking_auth_code DatadogMonitor#linking_auth_code}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.linkingClientId">LinkingClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#linking_client_id DatadogMonitor#linking_client_id}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#redirect_uri DatadogMonitor#redirect_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.apiKey">ApiKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#api_key DatadogMonitor#api_key}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.applicationKey">ApplicationKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#application_key DatadogMonitor#application_key}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.enterpriseAppId">EnterpriseAppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#enterprise_app_id DatadogMonitor#enterprise_app_id}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.linkingAuthCode">LinkingAuthCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#linking_auth_code DatadogMonitor#linking_auth_code}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.linkingClientId">LinkingClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#linking_client_id DatadogMonitor#linking_client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#redirect_uri DatadogMonitor#redirect_uri}. |
 
 ---
 
-##### `ApiKey`<sup>Required</sup> <a name="ApiKey" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.apiKey"></a>
+##### `ApiKey`<sup>Required</sup> <a name="ApiKey" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.apiKey"></a>
 
 ```go
 ApiKey *string
@@ -1307,11 +1307,11 @@ ApiKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#api_key DatadogMonitor#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#api_key DatadogMonitor#api_key}.
 
 ---
 
-##### `ApplicationKey`<sup>Required</sup> <a name="ApplicationKey" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.applicationKey"></a>
+##### `ApplicationKey`<sup>Required</sup> <a name="ApplicationKey" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.applicationKey"></a>
 
 ```go
 ApplicationKey *string
@@ -1319,11 +1319,11 @@ ApplicationKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#application_key DatadogMonitor#application_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#application_key DatadogMonitor#application_key}.
 
 ---
 
-##### `EnterpriseAppId`<sup>Optional</sup> <a name="EnterpriseAppId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.enterpriseAppId"></a>
+##### `EnterpriseAppId`<sup>Optional</sup> <a name="EnterpriseAppId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.enterpriseAppId"></a>
 
 ```go
 EnterpriseAppId *string
@@ -1331,11 +1331,11 @@ EnterpriseAppId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#enterprise_app_id DatadogMonitor#enterprise_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#enterprise_app_id DatadogMonitor#enterprise_app_id}.
 
 ---
 
-##### `LinkingAuthCode`<sup>Optional</sup> <a name="LinkingAuthCode" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.linkingAuthCode"></a>
+##### `LinkingAuthCode`<sup>Optional</sup> <a name="LinkingAuthCode" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.linkingAuthCode"></a>
 
 ```go
 LinkingAuthCode *string
@@ -1343,11 +1343,11 @@ LinkingAuthCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#linking_auth_code DatadogMonitor#linking_auth_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#linking_auth_code DatadogMonitor#linking_auth_code}.
 
 ---
 
-##### `LinkingClientId`<sup>Optional</sup> <a name="LinkingClientId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.linkingClientId"></a>
+##### `LinkingClientId`<sup>Optional</sup> <a name="LinkingClientId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.linkingClientId"></a>
 
 ```go
 LinkingClientId *string
@@ -1355,11 +1355,11 @@ LinkingClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#linking_client_id DatadogMonitor#linking_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#linking_client_id DatadogMonitor#linking_client_id}.
 
 ---
 
-##### `RedirectUri`<sup>Optional</sup> <a name="RedirectUri" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.redirectUri"></a>
+##### `RedirectUri`<sup>Optional</sup> <a name="RedirectUri" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization.property.redirectUri"></a>
 
 ```go
 RedirectUri *string
@@ -1367,16 +1367,16 @@ RedirectUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#redirect_uri DatadogMonitor#redirect_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#redirect_uri DatadogMonitor#redirect_uri}.
 
 ---
 
-### DatadogMonitorIdentity <a name="DatadogMonitorIdentity" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentity"></a>
+### DatadogMonitorIdentity <a name="DatadogMonitorIdentity" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentity"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentity.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 &datadogmonitor.DatadogMonitorIdentity {
 	Type: *string,
@@ -1387,11 +1387,11 @@ import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#type DatadogMonitor#type}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#type DatadogMonitor#type}. |
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentity.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentity.property.type"></a>
 
 ```go
 Type *string
@@ -1399,16 +1399,16 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#type DatadogMonitor#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#type DatadogMonitor#type}.
 
 ---
 
-### DatadogMonitorTimeouts <a name="DatadogMonitorTimeouts" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts"></a>
+### DatadogMonitorTimeouts <a name="DatadogMonitorTimeouts" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 &datadogmonitor.DatadogMonitorTimeouts {
 	Create: *string,
@@ -1422,14 +1422,14 @@ import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#create DatadogMonitor#create}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#delete DatadogMonitor#delete}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#read DatadogMonitor#read}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#update DatadogMonitor#update}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#create DatadogMonitor#create}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#delete DatadogMonitor#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#read DatadogMonitor#read}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#update DatadogMonitor#update}. |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -1437,11 +1437,11 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#create DatadogMonitor#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#create DatadogMonitor#create}.
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -1449,11 +1449,11 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#delete DatadogMonitor#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#delete DatadogMonitor#delete}.
 
 ---
 
-##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.read"></a>
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.read"></a>
 
 ```go
 Read *string
@@ -1461,11 +1461,11 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#read DatadogMonitor#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#read DatadogMonitor#read}.
 
 ---
 
-##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.update"></a>
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeouts.property.update"></a>
 
 ```go
 Update *string
@@ -1473,16 +1473,16 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#update DatadogMonitor#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#update DatadogMonitor#update}.
 
 ---
 
-### DatadogMonitorUser <a name="DatadogMonitorUser" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUser"></a>
+### DatadogMonitorUser <a name="DatadogMonitorUser" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUser"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUser.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 &datadogmonitor.DatadogMonitorUser {
 	Email: *string,
@@ -1495,13 +1495,13 @@ import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUser.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#email DatadogMonitor#email}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUser.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#name DatadogMonitor#name}. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUser.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#phone_number DatadogMonitor#phone_number}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUser.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#email DatadogMonitor#email}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUser.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#name DatadogMonitor#name}. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUser.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#phone_number DatadogMonitor#phone_number}. |
 
 ---
 
-##### `Email`<sup>Required</sup> <a name="Email" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUser.property.email"></a>
+##### `Email`<sup>Required</sup> <a name="Email" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUser.property.email"></a>
 
 ```go
 Email *string
@@ -1509,11 +1509,11 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#email DatadogMonitor#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#email DatadogMonitor#email}.
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUser.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUser.property.name"></a>
 
 ```go
 Name *string
@@ -1521,11 +1521,11 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#name DatadogMonitor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#name DatadogMonitor#name}.
 
 ---
 
-##### `PhoneNumber`<sup>Optional</sup> <a name="PhoneNumber" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUser.property.phoneNumber"></a>
+##### `PhoneNumber`<sup>Optional</sup> <a name="PhoneNumber" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUser.property.phoneNumber"></a>
 
 ```go
 PhoneNumber *string
@@ -1533,30 +1533,30 @@ PhoneNumber *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/datadog_monitor#phone_number DatadogMonitor#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/datadog_monitor#phone_number DatadogMonitor#phone_number}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DatadogMonitorDatadogOrganizationOutputReference <a name="DatadogMonitorDatadogOrganizationOutputReference" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference"></a>
+### DatadogMonitorDatadogOrganizationOutputReference <a name="DatadogMonitorDatadogOrganizationOutputReference" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 datadogmonitor.NewDatadogMonitorDatadogOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatadogMonitorDatadogOrganizationOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1564,7 +1564,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1576,153 +1576,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetEnterpriseAppId">ResetEnterpriseAppId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetLinkingAuthCode">ResetLinkingAuthCode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetLinkingClientId">ResetLinkingClientId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetRedirectUri">ResetRedirectUri</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetEnterpriseAppId">ResetEnterpriseAppId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetLinkingAuthCode">ResetLinkingAuthCode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetLinkingClientId">ResetLinkingClientId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetRedirectUri">ResetRedirectUri</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1730,13 +1730,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1746,25 +1746,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetEnterpriseAppId` <a name="ResetEnterpriseAppId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetEnterpriseAppId"></a>
+##### `ResetEnterpriseAppId` <a name="ResetEnterpriseAppId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetEnterpriseAppId"></a>
 
 ```go
 func ResetEnterpriseAppId()
 ```
 
-##### `ResetLinkingAuthCode` <a name="ResetLinkingAuthCode" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetLinkingAuthCode"></a>
+##### `ResetLinkingAuthCode` <a name="ResetLinkingAuthCode" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetLinkingAuthCode"></a>
 
 ```go
 func ResetLinkingAuthCode()
 ```
 
-##### `ResetLinkingClientId` <a name="ResetLinkingClientId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetLinkingClientId"></a>
+##### `ResetLinkingClientId` <a name="ResetLinkingClientId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetLinkingClientId"></a>
 
 ```go
 func ResetLinkingClientId()
 ```
 
-##### `ResetRedirectUri` <a name="ResetRedirectUri" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetRedirectUri"></a>
+##### `ResetRedirectUri` <a name="ResetRedirectUri" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.resetRedirectUri"></a>
 
 ```go
 func ResetRedirectUri()
@@ -1775,27 +1775,27 @@ func ResetRedirectUri()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.apiKeyInput">ApiKeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.applicationKeyInput">ApplicationKeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.enterpriseAppIdInput">EnterpriseAppIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingAuthCodeInput">LinkingAuthCodeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingClientIdInput">LinkingClientIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.redirectUriInput">RedirectUriInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.apiKey">ApiKey</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.applicationKey">ApplicationKey</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.enterpriseAppId">EnterpriseAppId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingAuthCode">LinkingAuthCode</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingClientId">LinkingClientId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization">DatadogMonitorDatadogOrganization</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.apiKeyInput">ApiKeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.applicationKeyInput">ApplicationKeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.enterpriseAppIdInput">EnterpriseAppIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingAuthCodeInput">LinkingAuthCodeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingClientIdInput">LinkingClientIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.redirectUriInput">RedirectUriInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.apiKey">ApiKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.applicationKey">ApplicationKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.enterpriseAppId">EnterpriseAppId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingAuthCode">LinkingAuthCode</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingClientId">LinkingClientId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.redirectUri">RedirectUri</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization">DatadogMonitorDatadogOrganization</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1809,7 +1809,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1819,7 +1819,7 @@ func Fqn() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.id"></a>
 
 ```go
 func Id() *string
@@ -1829,7 +1829,7 @@ func Id() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.name"></a>
 
 ```go
 func Name() *string
@@ -1839,7 +1839,7 @@ func Name() *string
 
 ---
 
-##### `ApiKeyInput`<sup>Optional</sup> <a name="ApiKeyInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.apiKeyInput"></a>
+##### `ApiKeyInput`<sup>Optional</sup> <a name="ApiKeyInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.apiKeyInput"></a>
 
 ```go
 func ApiKeyInput() *string
@@ -1849,7 +1849,7 @@ func ApiKeyInput() *string
 
 ---
 
-##### `ApplicationKeyInput`<sup>Optional</sup> <a name="ApplicationKeyInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.applicationKeyInput"></a>
+##### `ApplicationKeyInput`<sup>Optional</sup> <a name="ApplicationKeyInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.applicationKeyInput"></a>
 
 ```go
 func ApplicationKeyInput() *string
@@ -1859,7 +1859,7 @@ func ApplicationKeyInput() *string
 
 ---
 
-##### `EnterpriseAppIdInput`<sup>Optional</sup> <a name="EnterpriseAppIdInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.enterpriseAppIdInput"></a>
+##### `EnterpriseAppIdInput`<sup>Optional</sup> <a name="EnterpriseAppIdInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.enterpriseAppIdInput"></a>
 
 ```go
 func EnterpriseAppIdInput() *string
@@ -1869,7 +1869,7 @@ func EnterpriseAppIdInput() *string
 
 ---
 
-##### `LinkingAuthCodeInput`<sup>Optional</sup> <a name="LinkingAuthCodeInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingAuthCodeInput"></a>
+##### `LinkingAuthCodeInput`<sup>Optional</sup> <a name="LinkingAuthCodeInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingAuthCodeInput"></a>
 
 ```go
 func LinkingAuthCodeInput() *string
@@ -1879,7 +1879,7 @@ func LinkingAuthCodeInput() *string
 
 ---
 
-##### `LinkingClientIdInput`<sup>Optional</sup> <a name="LinkingClientIdInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingClientIdInput"></a>
+##### `LinkingClientIdInput`<sup>Optional</sup> <a name="LinkingClientIdInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingClientIdInput"></a>
 
 ```go
 func LinkingClientIdInput() *string
@@ -1889,7 +1889,7 @@ func LinkingClientIdInput() *string
 
 ---
 
-##### `RedirectUriInput`<sup>Optional</sup> <a name="RedirectUriInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.redirectUriInput"></a>
+##### `RedirectUriInput`<sup>Optional</sup> <a name="RedirectUriInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.redirectUriInput"></a>
 
 ```go
 func RedirectUriInput() *string
@@ -1899,7 +1899,7 @@ func RedirectUriInput() *string
 
 ---
 
-##### `ApiKey`<sup>Required</sup> <a name="ApiKey" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.apiKey"></a>
+##### `ApiKey`<sup>Required</sup> <a name="ApiKey" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.apiKey"></a>
 
 ```go
 func ApiKey() *string
@@ -1909,7 +1909,7 @@ func ApiKey() *string
 
 ---
 
-##### `ApplicationKey`<sup>Required</sup> <a name="ApplicationKey" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.applicationKey"></a>
+##### `ApplicationKey`<sup>Required</sup> <a name="ApplicationKey" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.applicationKey"></a>
 
 ```go
 func ApplicationKey() *string
@@ -1919,7 +1919,7 @@ func ApplicationKey() *string
 
 ---
 
-##### `EnterpriseAppId`<sup>Required</sup> <a name="EnterpriseAppId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.enterpriseAppId"></a>
+##### `EnterpriseAppId`<sup>Required</sup> <a name="EnterpriseAppId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.enterpriseAppId"></a>
 
 ```go
 func EnterpriseAppId() *string
@@ -1929,7 +1929,7 @@ func EnterpriseAppId() *string
 
 ---
 
-##### `LinkingAuthCode`<sup>Required</sup> <a name="LinkingAuthCode" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingAuthCode"></a>
+##### `LinkingAuthCode`<sup>Required</sup> <a name="LinkingAuthCode" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingAuthCode"></a>
 
 ```go
 func LinkingAuthCode() *string
@@ -1939,7 +1939,7 @@ func LinkingAuthCode() *string
 
 ---
 
-##### `LinkingClientId`<sup>Required</sup> <a name="LinkingClientId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingClientId"></a>
+##### `LinkingClientId`<sup>Required</sup> <a name="LinkingClientId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.linkingClientId"></a>
 
 ```go
 func LinkingClientId() *string
@@ -1949,7 +1949,7 @@ func LinkingClientId() *string
 
 ---
 
-##### `RedirectUri`<sup>Required</sup> <a name="RedirectUri" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.redirectUri"></a>
+##### `RedirectUri`<sup>Required</sup> <a name="RedirectUri" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.redirectUri"></a>
 
 ```go
 func RedirectUri() *string
@@ -1959,35 +1959,35 @@ func RedirectUri() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganizationOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() DatadogMonitorDatadogOrganization
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization">DatadogMonitorDatadogOrganization</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorDatadogOrganization">DatadogMonitorDatadogOrganization</a>
 
 ---
 
 
-### DatadogMonitorIdentityOutputReference <a name="DatadogMonitorIdentityOutputReference" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference"></a>
+### DatadogMonitorIdentityOutputReference <a name="DatadogMonitorIdentityOutputReference" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 datadogmonitor.NewDatadogMonitorIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatadogMonitorIdentityOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1995,7 +1995,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -2007,149 +2007,149 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -2157,13 +2157,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -2178,17 +2178,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.principalId">PrincipalId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.tenantId">TenantId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentity">DatadogMonitorIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.principalId">PrincipalId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.tenantId">TenantId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentity">DatadogMonitorIdentity</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -2202,7 +2202,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2212,7 +2212,7 @@ func Fqn() *string
 
 ---
 
-##### `PrincipalId`<sup>Required</sup> <a name="PrincipalId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.principalId"></a>
+##### `PrincipalId`<sup>Required</sup> <a name="PrincipalId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.principalId"></a>
 
 ```go
 func PrincipalId() *string
@@ -2222,7 +2222,7 @@ func PrincipalId() *string
 
 ---
 
-##### `TenantId`<sup>Required</sup> <a name="TenantId" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.tenantId"></a>
+##### `TenantId`<sup>Required</sup> <a name="TenantId" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.tenantId"></a>
 
 ```go
 func TenantId() *string
@@ -2232,7 +2232,7 @@ func TenantId() *string
 
 ---
 
-##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.typeInput"></a>
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.typeInput"></a>
 
 ```go
 func TypeInput() *string
@@ -2242,7 +2242,7 @@ func TypeInput() *string
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.type"></a>
 
 ```go
 func Type() *string
@@ -2252,35 +2252,35 @@ func Type() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentityOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() DatadogMonitorIdentity
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorIdentity">DatadogMonitorIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorIdentity">DatadogMonitorIdentity</a>
 
 ---
 
 
-### DatadogMonitorTimeoutsOutputReference <a name="DatadogMonitorTimeoutsOutputReference" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference"></a>
+### DatadogMonitorTimeoutsOutputReference <a name="DatadogMonitorTimeoutsOutputReference" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 datadogmonitor.NewDatadogMonitorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatadogMonitorTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -2288,7 +2288,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -2300,153 +2300,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -2454,13 +2454,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -2470,25 +2470,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
 ```
 
-##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetRead"></a>
+##### `ResetRead` <a name="ResetRead" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetRead"></a>
 
 ```go
 func ResetRead()
 ```
 
-##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetUpdate"></a>
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.resetUpdate"></a>
 
 ```go
 func ResetUpdate()
@@ -2499,21 +2499,21 @@ func ResetUpdate()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -2527,7 +2527,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2537,7 +2537,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -2547,7 +2547,7 @@ func CreateInput() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -2557,7 +2557,7 @@ func DeleteInput() *string
 
 ---
 
-##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.readInput"></a>
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.readInput"></a>
 
 ```go
 func ReadInput() *string
@@ -2567,7 +2567,7 @@ func ReadInput() *string
 
 ---
 
-##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.updateInput"></a>
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.updateInput"></a>
 
 ```go
 func UpdateInput() *string
@@ -2577,7 +2577,7 @@ func UpdateInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -2587,7 +2587,7 @@ func Create() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -2597,7 +2597,7 @@ func Delete() *string
 
 ---
 
-##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.read"></a>
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.read"></a>
 
 ```go
 func Read() *string
@@ -2607,7 +2607,7 @@ func Read() *string
 
 ---
 
-##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.update"></a>
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.update"></a>
 
 ```go
 func Update() *string
@@ -2617,7 +2617,7 @@ func Update() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -2628,24 +2628,24 @@ func InternalValue() interface{}
 ---
 
 
-### DatadogMonitorUserOutputReference <a name="DatadogMonitorUserOutputReference" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference"></a>
+### DatadogMonitorUserOutputReference <a name="DatadogMonitorUserOutputReference" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/datadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/datadogmonitor"
 
 datadogmonitor.NewDatadogMonitorUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatadogMonitorUserOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -2653,7 +2653,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -2665,150 +2665,150 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.resetPhoneNumber">ResetPhoneNumber</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.resetPhoneNumber">ResetPhoneNumber</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -2816,13 +2816,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -2832,7 +2832,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetPhoneNumber` <a name="ResetPhoneNumber" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.resetPhoneNumber"></a>
+##### `ResetPhoneNumber` <a name="ResetPhoneNumber" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.resetPhoneNumber"></a>
 
 ```go
 func ResetPhoneNumber()
@@ -2843,19 +2843,19 @@ func ResetPhoneNumber()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.emailInput">EmailInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.phoneNumberInput">PhoneNumberInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.email">Email</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUser">DatadogMonitorUser</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.emailInput">EmailInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.phoneNumberInput">PhoneNumberInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.email">Email</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUser">DatadogMonitorUser</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -2869,7 +2869,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2879,7 +2879,7 @@ func Fqn() *string
 
 ---
 
-##### `EmailInput`<sup>Optional</sup> <a name="EmailInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.emailInput"></a>
+##### `EmailInput`<sup>Optional</sup> <a name="EmailInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.emailInput"></a>
 
 ```go
 func EmailInput() *string
@@ -2889,7 +2889,7 @@ func EmailInput() *string
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -2899,7 +2899,7 @@ func NameInput() *string
 
 ---
 
-##### `PhoneNumberInput`<sup>Optional</sup> <a name="PhoneNumberInput" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.phoneNumberInput"></a>
+##### `PhoneNumberInput`<sup>Optional</sup> <a name="PhoneNumberInput" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.phoneNumberInput"></a>
 
 ```go
 func PhoneNumberInput() *string
@@ -2909,7 +2909,7 @@ func PhoneNumberInput() *string
 
 ---
 
-##### `Email`<sup>Required</sup> <a name="Email" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.email"></a>
+##### `Email`<sup>Required</sup> <a name="Email" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.email"></a>
 
 ```go
 func Email() *string
@@ -2919,7 +2919,7 @@ func Email() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.name"></a>
 
 ```go
 func Name() *string
@@ -2929,7 +2929,7 @@ func Name() *string
 
 ---
 
-##### `PhoneNumber`<sup>Required</sup> <a name="PhoneNumber" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.phoneNumber"></a>
+##### `PhoneNumber`<sup>Required</sup> <a name="PhoneNumber" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.phoneNumber"></a>
 
 ```go
 func PhoneNumber() *string
@@ -2939,13 +2939,13 @@ func PhoneNumber() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUserOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() DatadogMonitorUser
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.datadogMonitor.DatadogMonitorUser">DatadogMonitorUser</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.datadogMonitor.DatadogMonitorUser">DatadogMonitorUser</a>
 
 ---
 

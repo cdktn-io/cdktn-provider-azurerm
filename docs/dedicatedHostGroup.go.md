@@ -1,28 +1,28 @@
-# `dedicatedHostGroup` Submodule <a name="`dedicatedHostGroup` Submodule" id="@cdktf/provider-azurerm.dedicatedHostGroup"></a>
+# `dedicatedHostGroup` Submodule <a name="`dedicatedHostGroup` Submodule" id="@cdktn/provider-azurerm.dedicatedHostGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DedicatedHostGroup <a name="DedicatedHostGroup" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup"></a>
+### DedicatedHostGroup <a name="DedicatedHostGroup" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group azurerm_dedicated_host_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group azurerm_dedicated_host_group}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
 
 dedicatedhostgroup.NewDedicatedHostGroup(scope Construct, id *string, config DedicatedHostGroupConfig) DedicatedHostGroup
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig">DedicatedHostGroupConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig">DedicatedHostGroupConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig">DedicatedHostGroupConfig</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig">DedicatedHostGroupConfig</a>
 
 ---
 
@@ -50,39 +50,39 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetAutomaticPlacementEnabled">ResetAutomaticPlacementEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetTags">ResetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetZone">ResetZone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetAutomaticPlacementEnabled">ResetAutomaticPlacementEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetZone">ResetZone</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toString"></a>
 
 ```go
 func ToString() *string
@@ -90,25 +90,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -116,7 +116,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -124,7 +124,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -132,19 +132,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -152,7 +152,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -160,7 +160,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -168,151 +168,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -322,7 +322,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -330,7 +330,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -338,7 +338,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -346,7 +346,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -354,7 +354,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -362,7 +362,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -370,43 +370,43 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value DedicatedHostGroupTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts">DedicatedHostGroupTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts">DedicatedHostGroupTimeouts</a>
 
 ---
 
-##### `ResetAutomaticPlacementEnabled` <a name="ResetAutomaticPlacementEnabled" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetAutomaticPlacementEnabled"></a>
+##### `ResetAutomaticPlacementEnabled` <a name="ResetAutomaticPlacementEnabled" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetAutomaticPlacementEnabled"></a>
 
 ```go
 func ResetAutomaticPlacementEnabled()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetTags"></a>
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetTags"></a>
 
 ```go
 func ResetTags()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
 ```
 
-##### `ResetZone` <a name="ResetZone" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetZone"></a>
+##### `ResetZone` <a name="ResetZone" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.resetZone"></a>
 
 ```go
 func ResetZone()
@@ -416,17 +416,17 @@ func ResetZone()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DedicatedHostGroup resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DedicatedHostGroup resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
 
 dedicatedhostgroup.DedicatedHostGroup_IsConstruct(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -455,45 +455,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
 
 dedicatedhostgroup.DedicatedHostGroup_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
 
 dedicatedhostgroup.DedicatedHostGroup_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
 
 dedicatedhostgroup.DedicatedHostGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a DedicatedHostGroup resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -501,7 +501,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -509,17 +509,17 @@ The construct id used in the generated config for the DedicatedHostGroup to impo
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing DedicatedHostGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -531,42 +531,42 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference">DedicatedHostGroupTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.automaticPlacementEnabledInput">AutomaticPlacementEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.platformFaultDomainCountInput">PlatformFaultDomainCountInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.resourceGroupNameInput">ResourceGroupNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.zoneInput">ZoneInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.automaticPlacementEnabled">AutomaticPlacementEnabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.location">Location</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.platformFaultDomainCount">PlatformFaultDomainCount</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.zone">Zone</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference">DedicatedHostGroupTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.automaticPlacementEnabledInput">AutomaticPlacementEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.platformFaultDomainCountInput">PlatformFaultDomainCountInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.resourceGroupNameInput">ResourceGroupNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.zoneInput">ZoneInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.automaticPlacementEnabled">AutomaticPlacementEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.location">Location</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.platformFaultDomainCount">PlatformFaultDomainCount</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.zone">Zone</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.node"></a>
 
 ```go
 func Node() Node
@@ -578,7 +578,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -588,7 +588,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -598,7 +598,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -608,7 +608,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -618,7 +618,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -628,7 +628,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -638,7 +638,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -648,7 +648,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -658,7 +658,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -668,7 +668,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -678,7 +678,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -688,7 +688,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -698,7 +698,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -708,17 +708,17 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.timeouts"></a>
 
 ```go
 func Timeouts() DedicatedHostGroupTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference">DedicatedHostGroupTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference">DedicatedHostGroupTimeoutsOutputReference</a>
 
 ---
 
-##### `AutomaticPlacementEnabledInput`<sup>Optional</sup> <a name="AutomaticPlacementEnabledInput" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.automaticPlacementEnabledInput"></a>
+##### `AutomaticPlacementEnabledInput`<sup>Optional</sup> <a name="AutomaticPlacementEnabledInput" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.automaticPlacementEnabledInput"></a>
 
 ```go
 func AutomaticPlacementEnabledInput() interface{}
@@ -728,7 +728,7 @@ func AutomaticPlacementEnabledInput() interface{}
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -738,7 +738,7 @@ func IdInput() *string
 
 ---
 
-##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.locationInput"></a>
+##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.locationInput"></a>
 
 ```go
 func LocationInput() *string
@@ -748,7 +748,7 @@ func LocationInput() *string
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -758,7 +758,7 @@ func NameInput() *string
 
 ---
 
-##### `PlatformFaultDomainCountInput`<sup>Optional</sup> <a name="PlatformFaultDomainCountInput" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.platformFaultDomainCountInput"></a>
+##### `PlatformFaultDomainCountInput`<sup>Optional</sup> <a name="PlatformFaultDomainCountInput" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.platformFaultDomainCountInput"></a>
 
 ```go
 func PlatformFaultDomainCountInput() *f64
@@ -768,7 +768,7 @@ func PlatformFaultDomainCountInput() *f64
 
 ---
 
-##### `ResourceGroupNameInput`<sup>Optional</sup> <a name="ResourceGroupNameInput" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.resourceGroupNameInput"></a>
+##### `ResourceGroupNameInput`<sup>Optional</sup> <a name="ResourceGroupNameInput" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.resourceGroupNameInput"></a>
 
 ```go
 func ResourceGroupNameInput() *string
@@ -778,7 +778,7 @@ func ResourceGroupNameInput() *string
 
 ---
 
-##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.tagsInput"></a>
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.tagsInput"></a>
 
 ```go
 func TagsInput() *map[string]*string
@@ -788,7 +788,7 @@ func TagsInput() *map[string]*string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -798,7 +798,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `ZoneInput`<sup>Optional</sup> <a name="ZoneInput" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.zoneInput"></a>
+##### `ZoneInput`<sup>Optional</sup> <a name="ZoneInput" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.zoneInput"></a>
 
 ```go
 func ZoneInput() *string
@@ -808,7 +808,7 @@ func ZoneInput() *string
 
 ---
 
-##### `AutomaticPlacementEnabled`<sup>Required</sup> <a name="AutomaticPlacementEnabled" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.automaticPlacementEnabled"></a>
+##### `AutomaticPlacementEnabled`<sup>Required</sup> <a name="AutomaticPlacementEnabled" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.automaticPlacementEnabled"></a>
 
 ```go
 func AutomaticPlacementEnabled() interface{}
@@ -818,7 +818,7 @@ func AutomaticPlacementEnabled() interface{}
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.id"></a>
 
 ```go
 func Id() *string
@@ -828,7 +828,7 @@ func Id() *string
 
 ---
 
-##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.location"></a>
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.location"></a>
 
 ```go
 func Location() *string
@@ -838,7 +838,7 @@ func Location() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.name"></a>
 
 ```go
 func Name() *string
@@ -848,7 +848,7 @@ func Name() *string
 
 ---
 
-##### `PlatformFaultDomainCount`<sup>Required</sup> <a name="PlatformFaultDomainCount" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.platformFaultDomainCount"></a>
+##### `PlatformFaultDomainCount`<sup>Required</sup> <a name="PlatformFaultDomainCount" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.platformFaultDomainCount"></a>
 
 ```go
 func PlatformFaultDomainCount() *f64
@@ -858,7 +858,7 @@ func PlatformFaultDomainCount() *f64
 
 ---
 
-##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.resourceGroupName"></a>
+##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.resourceGroupName"></a>
 
 ```go
 func ResourceGroupName() *string
@@ -868,7 +868,7 @@ func ResourceGroupName() *string
 
 ---
 
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.tags"></a>
 
 ```go
 func Tags() *map[string]*string
@@ -878,7 +878,7 @@ func Tags() *map[string]*string
 
 ---
 
-##### `Zone`<sup>Required</sup> <a name="Zone" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.zone"></a>
+##### `Zone`<sup>Required</sup> <a name="Zone" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.zone"></a>
 
 ```go
 func Zone() *string
@@ -892,11 +892,11 @@ func Zone() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroup.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -908,12 +908,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DedicatedHostGroupConfig <a name="DedicatedHostGroupConfig" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig"></a>
+### DedicatedHostGroupConfig <a name="DedicatedHostGroupConfig" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
 
 &dedicatedhostgroup.DedicatedHostGroupConfig {
 	Connection: interface{},
@@ -930,7 +930,7 @@ import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/dedicatedhostgrou
 	AutomaticPlacementEnabled: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14.dedicatedHostGroup.DedicatedHostGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.dedicatedHostGroup.DedicatedHostGroupTimeouts,
 	Zone: *string,
 }
 ```
@@ -939,26 +939,26 @@ import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/dedicatedhostgrou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#location DedicatedHostGroup#location}. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#name DedicatedHostGroup#name}. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.platformFaultDomainCount">PlatformFaultDomainCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#platform_fault_domain_count DedicatedHostGroup#platform_fault_domain_count}. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#resource_group_name DedicatedHostGroup#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.automaticPlacementEnabled">AutomaticPlacementEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#automatic_placement_enabled DedicatedHostGroup#automatic_placement_enabled}. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#id DedicatedHostGroup#id}. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#tags DedicatedHostGroup#tags}. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts">DedicatedHostGroupTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#zone DedicatedHostGroup#zone}. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#location DedicatedHostGroup#location}. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#name DedicatedHostGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.platformFaultDomainCount">PlatformFaultDomainCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#platform_fault_domain_count DedicatedHostGroup#platform_fault_domain_count}. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#resource_group_name DedicatedHostGroup#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.automaticPlacementEnabled">AutomaticPlacementEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#automatic_placement_enabled DedicatedHostGroup#automatic_placement_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#id DedicatedHostGroup#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#tags DedicatedHostGroup#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts">DedicatedHostGroupTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#zone DedicatedHostGroup#zone}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -968,7 +968,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -978,7 +978,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -988,7 +988,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -998,7 +998,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -1008,7 +1008,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -1018,7 +1018,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1028,7 +1028,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.location"></a>
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.location"></a>
 
 ```go
 Location *string
@@ -1036,11 +1036,11 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#location DedicatedHostGroup#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#location DedicatedHostGroup#location}.
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.name"></a>
 
 ```go
 Name *string
@@ -1048,11 +1048,11 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#name DedicatedHostGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#name DedicatedHostGroup#name}.
 
 ---
 
-##### `PlatformFaultDomainCount`<sup>Required</sup> <a name="PlatformFaultDomainCount" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.platformFaultDomainCount"></a>
+##### `PlatformFaultDomainCount`<sup>Required</sup> <a name="PlatformFaultDomainCount" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.platformFaultDomainCount"></a>
 
 ```go
 PlatformFaultDomainCount *f64
@@ -1060,11 +1060,11 @@ PlatformFaultDomainCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#platform_fault_domain_count DedicatedHostGroup#platform_fault_domain_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#platform_fault_domain_count DedicatedHostGroup#platform_fault_domain_count}.
 
 ---
 
-##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.resourceGroupName"></a>
+##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.resourceGroupName"></a>
 
 ```go
 ResourceGroupName *string
@@ -1072,11 +1072,11 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#resource_group_name DedicatedHostGroup#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#resource_group_name DedicatedHostGroup#resource_group_name}.
 
 ---
 
-##### `AutomaticPlacementEnabled`<sup>Optional</sup> <a name="AutomaticPlacementEnabled" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.automaticPlacementEnabled"></a>
+##### `AutomaticPlacementEnabled`<sup>Optional</sup> <a name="AutomaticPlacementEnabled" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.automaticPlacementEnabled"></a>
 
 ```go
 AutomaticPlacementEnabled interface{}
@@ -1084,11 +1084,11 @@ AutomaticPlacementEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#automatic_placement_enabled DedicatedHostGroup#automatic_placement_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#automatic_placement_enabled DedicatedHostGroup#automatic_placement_enabled}.
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1096,14 +1096,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#id DedicatedHostGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#id DedicatedHostGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.tags"></a>
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.tags"></a>
 
 ```go
 Tags *map[string]*string
@@ -1111,25 +1111,25 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#tags DedicatedHostGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#tags DedicatedHostGroup#tags}.
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.timeouts"></a>
 
 ```go
 Timeouts DedicatedHostGroupTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts">DedicatedHostGroupTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts">DedicatedHostGroupTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#timeouts DedicatedHostGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#timeouts DedicatedHostGroup#timeouts}
 
 ---
 
-##### `Zone`<sup>Optional</sup> <a name="Zone" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.zone"></a>
+##### `Zone`<sup>Optional</sup> <a name="Zone" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupConfig.property.zone"></a>
 
 ```go
 Zone *string
@@ -1137,16 +1137,16 @@ Zone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#zone DedicatedHostGroup#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#zone DedicatedHostGroup#zone}.
 
 ---
 
-### DedicatedHostGroupTimeouts <a name="DedicatedHostGroupTimeouts" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts"></a>
+### DedicatedHostGroupTimeouts <a name="DedicatedHostGroupTimeouts" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
 
 &dedicatedhostgroup.DedicatedHostGroupTimeouts {
 	Create: *string,
@@ -1160,14 +1160,14 @@ import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/dedicatedhostgrou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#create DedicatedHostGroup#create}. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#delete DedicatedHostGroup#delete}. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#read DedicatedHostGroup#read}. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#update DedicatedHostGroup#update}. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#create DedicatedHostGroup#create}. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#delete DedicatedHostGroup#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#read DedicatedHostGroup#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#update DedicatedHostGroup#update}. |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -1175,11 +1175,11 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#create DedicatedHostGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#create DedicatedHostGroup#create}.
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -1187,11 +1187,11 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#delete DedicatedHostGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#delete DedicatedHostGroup#delete}.
 
 ---
 
-##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.read"></a>
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.read"></a>
 
 ```go
 Read *string
@@ -1199,11 +1199,11 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#read DedicatedHostGroup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#read DedicatedHostGroup#read}.
 
 ---
 
-##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.update"></a>
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeouts.property.update"></a>
 
 ```go
 Update *string
@@ -1211,30 +1211,30 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dedicated_host_group#update DedicatedHostGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dedicated_host_group#update DedicatedHostGroup#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DedicatedHostGroupTimeoutsOutputReference <a name="DedicatedHostGroupTimeoutsOutputReference" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference"></a>
+### DedicatedHostGroupTimeoutsOutputReference <a name="DedicatedHostGroupTimeoutsOutputReference" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dedicatedhostgroup"
 
 dedicatedhostgroup.NewDedicatedHostGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DedicatedHostGroupTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1242,7 +1242,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1254,153 +1254,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1408,13 +1408,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1424,25 +1424,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
 ```
 
-##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetRead"></a>
+##### `ResetRead` <a name="ResetRead" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetRead"></a>
 
 ```go
 func ResetRead()
 ```
 
-##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetUpdate"></a>
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.resetUpdate"></a>
 
 ```go
 func ResetUpdate()
@@ -1453,21 +1453,21 @@ func ResetUpdate()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1481,7 +1481,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1491,7 +1491,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -1501,7 +1501,7 @@ func CreateInput() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -1511,7 +1511,7 @@ func DeleteInput() *string
 
 ---
 
-##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.readInput"></a>
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.readInput"></a>
 
 ```go
 func ReadInput() *string
@@ -1521,7 +1521,7 @@ func ReadInput() *string
 
 ---
 
-##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.updateInput"></a>
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.updateInput"></a>
 
 ```go
 func UpdateInput() *string
@@ -1531,7 +1531,7 @@ func UpdateInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -1541,7 +1541,7 @@ func Create() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -1551,7 +1551,7 @@ func Delete() *string
 
 ---
 
-##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.read"></a>
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.read"></a>
 
 ```go
 func Read() *string
@@ -1561,7 +1561,7 @@ func Read() *string
 
 ---
 
-##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.update"></a>
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.update"></a>
 
 ```go
 func Update() *string
@@ -1571,7 +1571,7 @@ func Update() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.dedicatedHostGroup.DedicatedHostGroupTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

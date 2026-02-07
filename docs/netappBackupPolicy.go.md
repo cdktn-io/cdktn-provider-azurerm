@@ -1,28 +1,28 @@
-# `netappBackupPolicy` Submodule <a name="`netappBackupPolicy` Submodule" id="@cdktf/provider-azurerm.netappBackupPolicy"></a>
+# `netappBackupPolicy` Submodule <a name="`netappBackupPolicy` Submodule" id="@cdktn/provider-azurerm.netappBackupPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### NetappBackupPolicy <a name="NetappBackupPolicy" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy"></a>
+### NetappBackupPolicy <a name="NetappBackupPolicy" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy azurerm_netapp_backup_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy azurerm_netapp_backup_policy}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
 
 netappbackuppolicy.NewNetappBackupPolicy(scope Construct, id *string, config NetappBackupPolicyConfig) NetappBackupPolicy
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig">NetappBackupPolicyConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig">NetappBackupPolicyConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig">NetappBackupPolicyConfig</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig">NetappBackupPolicyConfig</a>
 
 ---
 
@@ -50,41 +50,41 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetDailyBackupsToKeep">ResetDailyBackupsToKeep</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetEnabled">ResetEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetMonthlyBackupsToKeep">ResetMonthlyBackupsToKeep</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetTags">ResetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetWeeklyBackupsToKeep">ResetWeeklyBackupsToKeep</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetDailyBackupsToKeep">ResetDailyBackupsToKeep</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetEnabled">ResetEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetMonthlyBackupsToKeep">ResetMonthlyBackupsToKeep</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetWeeklyBackupsToKeep">ResetWeeklyBackupsToKeep</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toString"></a>
 
 ```go
 func ToString() *string
@@ -92,25 +92,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -118,7 +118,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -126,7 +126,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -134,19 +134,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -154,7 +154,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -162,7 +162,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -170,151 +170,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -324,7 +324,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -332,7 +332,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -340,7 +340,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -348,7 +348,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -356,7 +356,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -364,7 +364,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -372,55 +372,55 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value NetappBackupPolicyTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts">NetappBackupPolicyTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts">NetappBackupPolicyTimeouts</a>
 
 ---
 
-##### `ResetDailyBackupsToKeep` <a name="ResetDailyBackupsToKeep" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetDailyBackupsToKeep"></a>
+##### `ResetDailyBackupsToKeep` <a name="ResetDailyBackupsToKeep" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetDailyBackupsToKeep"></a>
 
 ```go
 func ResetDailyBackupsToKeep()
 ```
 
-##### `ResetEnabled` <a name="ResetEnabled" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetEnabled"></a>
+##### `ResetEnabled` <a name="ResetEnabled" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetEnabled"></a>
 
 ```go
 func ResetEnabled()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetMonthlyBackupsToKeep` <a name="ResetMonthlyBackupsToKeep" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetMonthlyBackupsToKeep"></a>
+##### `ResetMonthlyBackupsToKeep` <a name="ResetMonthlyBackupsToKeep" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetMonthlyBackupsToKeep"></a>
 
 ```go
 func ResetMonthlyBackupsToKeep()
 ```
 
-##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetTags"></a>
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetTags"></a>
 
 ```go
 func ResetTags()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
 ```
 
-##### `ResetWeeklyBackupsToKeep` <a name="ResetWeeklyBackupsToKeep" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetWeeklyBackupsToKeep"></a>
+##### `ResetWeeklyBackupsToKeep` <a name="ResetWeeklyBackupsToKeep" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.resetWeeklyBackupsToKeep"></a>
 
 ```go
 func ResetWeeklyBackupsToKeep()
@@ -430,17 +430,17 @@ func ResetWeeklyBackupsToKeep()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a NetappBackupPolicy resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a NetappBackupPolicy resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
 
 netappbackuppolicy.NetappBackupPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -461,7 +461,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -469,45 +469,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
 
 netappbackuppolicy.NetappBackupPolicy_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
 
 netappbackuppolicy.NetappBackupPolicy_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
 
 netappbackuppolicy.NetappBackupPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a NetappBackupPolicy resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -515,7 +515,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -523,17 +523,17 @@ The construct id used in the generated config for the NetappBackupPolicy to impo
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing NetappBackupPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -545,46 +545,46 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference">NetappBackupPolicyTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.accountNameInput">AccountNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.dailyBackupsToKeepInput">DailyBackupsToKeepInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.monthlyBackupsToKeepInput">MonthlyBackupsToKeepInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.resourceGroupNameInput">ResourceGroupNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.weeklyBackupsToKeepInput">WeeklyBackupsToKeepInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.accountName">AccountName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.dailyBackupsToKeep">DailyBackupsToKeep</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.location">Location</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.monthlyBackupsToKeep">MonthlyBackupsToKeep</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.weeklyBackupsToKeep">WeeklyBackupsToKeep</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference">NetappBackupPolicyTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.accountNameInput">AccountNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.dailyBackupsToKeepInput">DailyBackupsToKeepInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.monthlyBackupsToKeepInput">MonthlyBackupsToKeepInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.resourceGroupNameInput">ResourceGroupNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.weeklyBackupsToKeepInput">WeeklyBackupsToKeepInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.accountName">AccountName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.dailyBackupsToKeep">DailyBackupsToKeep</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.location">Location</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.monthlyBackupsToKeep">MonthlyBackupsToKeep</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.weeklyBackupsToKeep">WeeklyBackupsToKeep</a></code> | <code>*f64</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.node"></a>
 
 ```go
 func Node() Node
@@ -596,7 +596,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -606,7 +606,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -616,7 +616,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -626,7 +626,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -636,7 +636,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -646,7 +646,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -656,7 +656,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -666,7 +666,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -676,7 +676,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -686,7 +686,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -696,7 +696,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -706,7 +706,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -716,7 +716,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -726,17 +726,17 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.timeouts"></a>
 
 ```go
 func Timeouts() NetappBackupPolicyTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference">NetappBackupPolicyTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference">NetappBackupPolicyTimeoutsOutputReference</a>
 
 ---
 
-##### `AccountNameInput`<sup>Optional</sup> <a name="AccountNameInput" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.accountNameInput"></a>
+##### `AccountNameInput`<sup>Optional</sup> <a name="AccountNameInput" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.accountNameInput"></a>
 
 ```go
 func AccountNameInput() *string
@@ -746,7 +746,7 @@ func AccountNameInput() *string
 
 ---
 
-##### `DailyBackupsToKeepInput`<sup>Optional</sup> <a name="DailyBackupsToKeepInput" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.dailyBackupsToKeepInput"></a>
+##### `DailyBackupsToKeepInput`<sup>Optional</sup> <a name="DailyBackupsToKeepInput" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.dailyBackupsToKeepInput"></a>
 
 ```go
 func DailyBackupsToKeepInput() *f64
@@ -756,7 +756,7 @@ func DailyBackupsToKeepInput() *f64
 
 ---
 
-##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.enabledInput"></a>
+##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.enabledInput"></a>
 
 ```go
 func EnabledInput() interface{}
@@ -766,7 +766,7 @@ func EnabledInput() interface{}
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -776,7 +776,7 @@ func IdInput() *string
 
 ---
 
-##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.locationInput"></a>
+##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.locationInput"></a>
 
 ```go
 func LocationInput() *string
@@ -786,7 +786,7 @@ func LocationInput() *string
 
 ---
 
-##### `MonthlyBackupsToKeepInput`<sup>Optional</sup> <a name="MonthlyBackupsToKeepInput" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.monthlyBackupsToKeepInput"></a>
+##### `MonthlyBackupsToKeepInput`<sup>Optional</sup> <a name="MonthlyBackupsToKeepInput" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.monthlyBackupsToKeepInput"></a>
 
 ```go
 func MonthlyBackupsToKeepInput() *f64
@@ -796,7 +796,7 @@ func MonthlyBackupsToKeepInput() *f64
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -806,7 +806,7 @@ func NameInput() *string
 
 ---
 
-##### `ResourceGroupNameInput`<sup>Optional</sup> <a name="ResourceGroupNameInput" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.resourceGroupNameInput"></a>
+##### `ResourceGroupNameInput`<sup>Optional</sup> <a name="ResourceGroupNameInput" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.resourceGroupNameInput"></a>
 
 ```go
 func ResourceGroupNameInput() *string
@@ -816,7 +816,7 @@ func ResourceGroupNameInput() *string
 
 ---
 
-##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.tagsInput"></a>
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.tagsInput"></a>
 
 ```go
 func TagsInput() *map[string]*string
@@ -826,7 +826,7 @@ func TagsInput() *map[string]*string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -836,7 +836,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `WeeklyBackupsToKeepInput`<sup>Optional</sup> <a name="WeeklyBackupsToKeepInput" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.weeklyBackupsToKeepInput"></a>
+##### `WeeklyBackupsToKeepInput`<sup>Optional</sup> <a name="WeeklyBackupsToKeepInput" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.weeklyBackupsToKeepInput"></a>
 
 ```go
 func WeeklyBackupsToKeepInput() *f64
@@ -846,7 +846,7 @@ func WeeklyBackupsToKeepInput() *f64
 
 ---
 
-##### `AccountName`<sup>Required</sup> <a name="AccountName" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.accountName"></a>
+##### `AccountName`<sup>Required</sup> <a name="AccountName" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.accountName"></a>
 
 ```go
 func AccountName() *string
@@ -856,7 +856,7 @@ func AccountName() *string
 
 ---
 
-##### `DailyBackupsToKeep`<sup>Required</sup> <a name="DailyBackupsToKeep" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.dailyBackupsToKeep"></a>
+##### `DailyBackupsToKeep`<sup>Required</sup> <a name="DailyBackupsToKeep" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.dailyBackupsToKeep"></a>
 
 ```go
 func DailyBackupsToKeep() *f64
@@ -866,7 +866,7 @@ func DailyBackupsToKeep() *f64
 
 ---
 
-##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.enabled"></a>
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.enabled"></a>
 
 ```go
 func Enabled() interface{}
@@ -876,7 +876,7 @@ func Enabled() interface{}
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.id"></a>
 
 ```go
 func Id() *string
@@ -886,7 +886,7 @@ func Id() *string
 
 ---
 
-##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.location"></a>
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.location"></a>
 
 ```go
 func Location() *string
@@ -896,7 +896,7 @@ func Location() *string
 
 ---
 
-##### `MonthlyBackupsToKeep`<sup>Required</sup> <a name="MonthlyBackupsToKeep" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.monthlyBackupsToKeep"></a>
+##### `MonthlyBackupsToKeep`<sup>Required</sup> <a name="MonthlyBackupsToKeep" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.monthlyBackupsToKeep"></a>
 
 ```go
 func MonthlyBackupsToKeep() *f64
@@ -906,7 +906,7 @@ func MonthlyBackupsToKeep() *f64
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.name"></a>
 
 ```go
 func Name() *string
@@ -916,7 +916,7 @@ func Name() *string
 
 ---
 
-##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.resourceGroupName"></a>
+##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.resourceGroupName"></a>
 
 ```go
 func ResourceGroupName() *string
@@ -926,7 +926,7 @@ func ResourceGroupName() *string
 
 ---
 
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.tags"></a>
 
 ```go
 func Tags() *map[string]*string
@@ -936,7 +936,7 @@ func Tags() *map[string]*string
 
 ---
 
-##### `WeeklyBackupsToKeep`<sup>Required</sup> <a name="WeeklyBackupsToKeep" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.weeklyBackupsToKeep"></a>
+##### `WeeklyBackupsToKeep`<sup>Required</sup> <a name="WeeklyBackupsToKeep" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.weeklyBackupsToKeep"></a>
 
 ```go
 func WeeklyBackupsToKeep() *f64
@@ -950,11 +950,11 @@ func WeeklyBackupsToKeep() *f64
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicy.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -966,12 +966,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### NetappBackupPolicyConfig <a name="NetappBackupPolicyConfig" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig"></a>
+### NetappBackupPolicyConfig <a name="NetappBackupPolicyConfig" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
 
 &netappbackuppolicy.NetappBackupPolicyConfig {
 	Connection: interface{},
@@ -990,7 +990,7 @@ import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/netappbackuppolic
 	Id: *string,
 	MonthlyBackupsToKeep: *f64,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14.netappBackupPolicy.NetappBackupPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.netappBackupPolicy.NetappBackupPolicyTimeouts,
 	WeeklyBackupsToKeep: *f64,
 }
 ```
@@ -999,28 +999,28 @@ import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/netappbackuppolic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.accountName">AccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#account_name NetappBackupPolicy#account_name}. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#location NetappBackupPolicy#location}. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#name NetappBackupPolicy#name}. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#resource_group_name NetappBackupPolicy#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.dailyBackupsToKeep">DailyBackupsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#daily_backups_to_keep NetappBackupPolicy#daily_backups_to_keep}. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#enabled NetappBackupPolicy#enabled}. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#id NetappBackupPolicy#id}. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.monthlyBackupsToKeep">MonthlyBackupsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#monthly_backups_to_keep NetappBackupPolicy#monthly_backups_to_keep}. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#tags NetappBackupPolicy#tags}. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts">NetappBackupPolicyTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.weeklyBackupsToKeep">WeeklyBackupsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#weekly_backups_to_keep NetappBackupPolicy#weekly_backups_to_keep}. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.accountName">AccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#account_name NetappBackupPolicy#account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#location NetappBackupPolicy#location}. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#name NetappBackupPolicy#name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#resource_group_name NetappBackupPolicy#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.dailyBackupsToKeep">DailyBackupsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#daily_backups_to_keep NetappBackupPolicy#daily_backups_to_keep}. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#enabled NetappBackupPolicy#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#id NetappBackupPolicy#id}. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.monthlyBackupsToKeep">MonthlyBackupsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#monthly_backups_to_keep NetappBackupPolicy#monthly_backups_to_keep}. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#tags NetappBackupPolicy#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts">NetappBackupPolicyTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.weeklyBackupsToKeep">WeeklyBackupsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#weekly_backups_to_keep NetappBackupPolicy#weekly_backups_to_keep}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1030,7 +1030,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1040,7 +1040,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -1050,7 +1050,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -1060,7 +1060,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -1070,7 +1070,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -1080,7 +1080,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1090,7 +1090,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AccountName`<sup>Required</sup> <a name="AccountName" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.accountName"></a>
+##### `AccountName`<sup>Required</sup> <a name="AccountName" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.accountName"></a>
 
 ```go
 AccountName *string
@@ -1098,11 +1098,11 @@ AccountName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#account_name NetappBackupPolicy#account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#account_name NetappBackupPolicy#account_name}.
 
 ---
 
-##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.location"></a>
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.location"></a>
 
 ```go
 Location *string
@@ -1110,11 +1110,11 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#location NetappBackupPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#location NetappBackupPolicy#location}.
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.name"></a>
 
 ```go
 Name *string
@@ -1122,11 +1122,11 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#name NetappBackupPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#name NetappBackupPolicy#name}.
 
 ---
 
-##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.resourceGroupName"></a>
+##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.resourceGroupName"></a>
 
 ```go
 ResourceGroupName *string
@@ -1134,11 +1134,11 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#resource_group_name NetappBackupPolicy#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#resource_group_name NetappBackupPolicy#resource_group_name}.
 
 ---
 
-##### `DailyBackupsToKeep`<sup>Optional</sup> <a name="DailyBackupsToKeep" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.dailyBackupsToKeep"></a>
+##### `DailyBackupsToKeep`<sup>Optional</sup> <a name="DailyBackupsToKeep" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.dailyBackupsToKeep"></a>
 
 ```go
 DailyBackupsToKeep *f64
@@ -1146,11 +1146,11 @@ DailyBackupsToKeep *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#daily_backups_to_keep NetappBackupPolicy#daily_backups_to_keep}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#daily_backups_to_keep NetappBackupPolicy#daily_backups_to_keep}.
 
 ---
 
-##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.enabled"></a>
+##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.enabled"></a>
 
 ```go
 Enabled interface{}
@@ -1158,11 +1158,11 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#enabled NetappBackupPolicy#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#enabled NetappBackupPolicy#enabled}.
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1170,14 +1170,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#id NetappBackupPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#id NetappBackupPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `MonthlyBackupsToKeep`<sup>Optional</sup> <a name="MonthlyBackupsToKeep" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.monthlyBackupsToKeep"></a>
+##### `MonthlyBackupsToKeep`<sup>Optional</sup> <a name="MonthlyBackupsToKeep" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.monthlyBackupsToKeep"></a>
 
 ```go
 MonthlyBackupsToKeep *f64
@@ -1185,11 +1185,11 @@ MonthlyBackupsToKeep *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#monthly_backups_to_keep NetappBackupPolicy#monthly_backups_to_keep}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#monthly_backups_to_keep NetappBackupPolicy#monthly_backups_to_keep}.
 
 ---
 
-##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.tags"></a>
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.tags"></a>
 
 ```go
 Tags *map[string]*string
@@ -1197,25 +1197,25 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#tags NetappBackupPolicy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#tags NetappBackupPolicy#tags}.
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.timeouts"></a>
 
 ```go
 Timeouts NetappBackupPolicyTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts">NetappBackupPolicyTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts">NetappBackupPolicyTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#timeouts NetappBackupPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#timeouts NetappBackupPolicy#timeouts}
 
 ---
 
-##### `WeeklyBackupsToKeep`<sup>Optional</sup> <a name="WeeklyBackupsToKeep" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.weeklyBackupsToKeep"></a>
+##### `WeeklyBackupsToKeep`<sup>Optional</sup> <a name="WeeklyBackupsToKeep" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyConfig.property.weeklyBackupsToKeep"></a>
 
 ```go
 WeeklyBackupsToKeep *f64
@@ -1223,16 +1223,16 @@ WeeklyBackupsToKeep *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#weekly_backups_to_keep NetappBackupPolicy#weekly_backups_to_keep}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#weekly_backups_to_keep NetappBackupPolicy#weekly_backups_to_keep}.
 
 ---
 
-### NetappBackupPolicyTimeouts <a name="NetappBackupPolicyTimeouts" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts"></a>
+### NetappBackupPolicyTimeouts <a name="NetappBackupPolicyTimeouts" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
 
 &netappbackuppolicy.NetappBackupPolicyTimeouts {
 	Create: *string,
@@ -1246,14 +1246,14 @@ import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/netappbackuppolic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#create NetappBackupPolicy#create}. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#delete NetappBackupPolicy#delete}. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#read NetappBackupPolicy#read}. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#update NetappBackupPolicy#update}. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#create NetappBackupPolicy#create}. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#delete NetappBackupPolicy#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#read NetappBackupPolicy#read}. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#update NetappBackupPolicy#update}. |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -1261,11 +1261,11 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#create NetappBackupPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#create NetappBackupPolicy#create}.
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -1273,11 +1273,11 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#delete NetappBackupPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#delete NetappBackupPolicy#delete}.
 
 ---
 
-##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.read"></a>
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.read"></a>
 
 ```go
 Read *string
@@ -1285,11 +1285,11 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#read NetappBackupPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#read NetappBackupPolicy#read}.
 
 ---
 
-##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.update"></a>
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeouts.property.update"></a>
 
 ```go
 Update *string
@@ -1297,30 +1297,30 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_backup_policy#update NetappBackupPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_backup_policy#update NetappBackupPolicy#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### NetappBackupPolicyTimeoutsOutputReference <a name="NetappBackupPolicyTimeoutsOutputReference" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference"></a>
+### NetappBackupPolicyTimeoutsOutputReference <a name="NetappBackupPolicyTimeoutsOutputReference" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/netappbackuppolicy"
 
 netappbackuppolicy.NewNetappBackupPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappBackupPolicyTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1328,7 +1328,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1340,153 +1340,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1494,13 +1494,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1510,25 +1510,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
 ```
 
-##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetRead"></a>
+##### `ResetRead` <a name="ResetRead" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetRead"></a>
 
 ```go
 func ResetRead()
 ```
 
-##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetUpdate"></a>
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.resetUpdate"></a>
 
 ```go
 func ResetUpdate()
@@ -1539,21 +1539,21 @@ func ResetUpdate()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1567,7 +1567,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1577,7 +1577,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -1587,7 +1587,7 @@ func CreateInput() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -1597,7 +1597,7 @@ func DeleteInput() *string
 
 ---
 
-##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.readInput"></a>
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.readInput"></a>
 
 ```go
 func ReadInput() *string
@@ -1607,7 +1607,7 @@ func ReadInput() *string
 
 ---
 
-##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.updateInput"></a>
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.updateInput"></a>
 
 ```go
 func UpdateInput() *string
@@ -1617,7 +1617,7 @@ func UpdateInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -1627,7 +1627,7 @@ func Create() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -1637,7 +1637,7 @@ func Delete() *string
 
 ---
 
-##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.read"></a>
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.read"></a>
 
 ```go
 func Read() *string
@@ -1647,7 +1647,7 @@ func Read() *string
 
 ---
 
-##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.update"></a>
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.update"></a>
 
 ```go
 func Update() *string
@@ -1657,7 +1657,7 @@ func Update() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

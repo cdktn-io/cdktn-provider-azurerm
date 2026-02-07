@@ -1,28 +1,28 @@
-# `appConfigurationKey` Submodule <a name="`appConfigurationKey` Submodule" id="@cdktf/provider-azurerm.appConfigurationKey"></a>
+# `appConfigurationKey` Submodule <a name="`appConfigurationKey` Submodule" id="@cdktn/provider-azurerm.appConfigurationKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### AppConfigurationKey <a name="AppConfigurationKey" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey"></a>
+### AppConfigurationKey <a name="AppConfigurationKey" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key azurerm_app_configuration_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key azurerm_app_configuration_key}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 appconfigurationkey.NewAppConfigurationKey(scope Construct, id *string, config AppConfigurationKeyConfig) AppConfigurationKey
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig">AppConfigurationKeyConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig">AppConfigurationKeyConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig">AppConfigurationKeyConfig</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig">AppConfigurationKeyConfig</a>
 
 ---
 
@@ -50,44 +50,44 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetContentType">ResetContentType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetEtag">ResetEtag</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetLabel">ResetLabel</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetLocked">ResetLocked</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetTags">ResetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetType">ResetType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetValue">ResetValue</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetVaultKeyReference">ResetVaultKeyReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetContentType">ResetContentType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetEtag">ResetEtag</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetLabel">ResetLabel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetLocked">ResetLocked</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetType">ResetType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetValue">ResetValue</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetVaultKeyReference">ResetVaultKeyReference</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.toString"></a>
 
 ```go
 func ToString() *string
@@ -95,25 +95,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -121,7 +121,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -129,7 +129,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -137,19 +137,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -157,7 +157,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -165,7 +165,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -173,151 +173,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -327,7 +327,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -335,7 +335,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -343,7 +343,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -351,7 +351,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -359,7 +359,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -367,7 +367,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -375,73 +375,73 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value AppConfigurationKeyTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts">AppConfigurationKeyTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts">AppConfigurationKeyTimeouts</a>
 
 ---
 
-##### `ResetContentType` <a name="ResetContentType" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetContentType"></a>
+##### `ResetContentType` <a name="ResetContentType" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetContentType"></a>
 
 ```go
 func ResetContentType()
 ```
 
-##### `ResetEtag` <a name="ResetEtag" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetEtag"></a>
+##### `ResetEtag` <a name="ResetEtag" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetEtag"></a>
 
 ```go
 func ResetEtag()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetLabel` <a name="ResetLabel" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetLabel"></a>
+##### `ResetLabel` <a name="ResetLabel" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetLabel"></a>
 
 ```go
 func ResetLabel()
 ```
 
-##### `ResetLocked` <a name="ResetLocked" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetLocked"></a>
+##### `ResetLocked` <a name="ResetLocked" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetLocked"></a>
 
 ```go
 func ResetLocked()
 ```
 
-##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetTags"></a>
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetTags"></a>
 
 ```go
 func ResetTags()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
 ```
 
-##### `ResetType` <a name="ResetType" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetType"></a>
+##### `ResetType` <a name="ResetType" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetType"></a>
 
 ```go
 func ResetType()
 ```
 
-##### `ResetValue` <a name="ResetValue" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetValue"></a>
+##### `ResetValue` <a name="ResetValue" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetValue"></a>
 
 ```go
 func ResetValue()
 ```
 
-##### `ResetVaultKeyReference` <a name="ResetVaultKeyReference" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetVaultKeyReference"></a>
+##### `ResetVaultKeyReference` <a name="ResetVaultKeyReference" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.resetVaultKeyReference"></a>
 
 ```go
 func ResetVaultKeyReference()
@@ -451,17 +451,17 @@ func ResetVaultKeyReference()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a AppConfigurationKey resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a AppConfigurationKey resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 appconfigurationkey.AppConfigurationKey_IsConstruct(x interface{}) *bool
 ```
@@ -482,7 +482,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -490,45 +490,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 appconfigurationkey.AppConfigurationKey_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 appconfigurationkey.AppConfigurationKey_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 appconfigurationkey.AppConfigurationKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a AppConfigurationKey resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -536,7 +536,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -544,17 +544,17 @@ The construct id used in the generated config for the AppConfigurationKey to imp
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing AppConfigurationKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -566,48 +566,48 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference">AppConfigurationKeyTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.configurationStoreIdInput">ConfigurationStoreIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.contentTypeInput">ContentTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.etagInput">EtagInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.keyInput">KeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.labelInput">LabelInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.lockedInput">LockedInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.vaultKeyReferenceInput">VaultKeyReferenceInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.configurationStoreId">ConfigurationStoreId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.contentType">ContentType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.etag">Etag</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.key">Key</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.label">Label</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.locked">Locked</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.type">Type</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.value">Value</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.vaultKeyReference">VaultKeyReference</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference">AppConfigurationKeyTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.configurationStoreIdInput">ConfigurationStoreIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.contentTypeInput">ContentTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.etagInput">EtagInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.keyInput">KeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.labelInput">LabelInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.lockedInput">LockedInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.vaultKeyReferenceInput">VaultKeyReferenceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.configurationStoreId">ConfigurationStoreId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.contentType">ContentType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.etag">Etag</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.key">Key</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.label">Label</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.locked">Locked</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.vaultKeyReference">VaultKeyReference</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.node"></a>
 
 ```go
 func Node() Node
@@ -619,7 +619,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -629,7 +629,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -639,7 +639,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -649,7 +649,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -659,7 +659,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -669,7 +669,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -679,7 +679,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -689,7 +689,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -699,7 +699,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -709,7 +709,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -719,7 +719,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -729,7 +729,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -739,7 +739,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -749,17 +749,17 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.timeouts"></a>
 
 ```go
 func Timeouts() AppConfigurationKeyTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference">AppConfigurationKeyTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference">AppConfigurationKeyTimeoutsOutputReference</a>
 
 ---
 
-##### `ConfigurationStoreIdInput`<sup>Optional</sup> <a name="ConfigurationStoreIdInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.configurationStoreIdInput"></a>
+##### `ConfigurationStoreIdInput`<sup>Optional</sup> <a name="ConfigurationStoreIdInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.configurationStoreIdInput"></a>
 
 ```go
 func ConfigurationStoreIdInput() *string
@@ -769,7 +769,7 @@ func ConfigurationStoreIdInput() *string
 
 ---
 
-##### `ContentTypeInput`<sup>Optional</sup> <a name="ContentTypeInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.contentTypeInput"></a>
+##### `ContentTypeInput`<sup>Optional</sup> <a name="ContentTypeInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.contentTypeInput"></a>
 
 ```go
 func ContentTypeInput() *string
@@ -779,7 +779,7 @@ func ContentTypeInput() *string
 
 ---
 
-##### `EtagInput`<sup>Optional</sup> <a name="EtagInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.etagInput"></a>
+##### `EtagInput`<sup>Optional</sup> <a name="EtagInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.etagInput"></a>
 
 ```go
 func EtagInput() *string
@@ -789,7 +789,7 @@ func EtagInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -799,7 +799,7 @@ func IdInput() *string
 
 ---
 
-##### `KeyInput`<sup>Optional</sup> <a name="KeyInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.keyInput"></a>
+##### `KeyInput`<sup>Optional</sup> <a name="KeyInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.keyInput"></a>
 
 ```go
 func KeyInput() *string
@@ -809,7 +809,7 @@ func KeyInput() *string
 
 ---
 
-##### `LabelInput`<sup>Optional</sup> <a name="LabelInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.labelInput"></a>
+##### `LabelInput`<sup>Optional</sup> <a name="LabelInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.labelInput"></a>
 
 ```go
 func LabelInput() *string
@@ -819,7 +819,7 @@ func LabelInput() *string
 
 ---
 
-##### `LockedInput`<sup>Optional</sup> <a name="LockedInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.lockedInput"></a>
+##### `LockedInput`<sup>Optional</sup> <a name="LockedInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.lockedInput"></a>
 
 ```go
 func LockedInput() interface{}
@@ -829,7 +829,7 @@ func LockedInput() interface{}
 
 ---
 
-##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.tagsInput"></a>
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.tagsInput"></a>
 
 ```go
 func TagsInput() *map[string]*string
@@ -839,7 +839,7 @@ func TagsInput() *map[string]*string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -849,7 +849,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.typeInput"></a>
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.typeInput"></a>
 
 ```go
 func TypeInput() *string
@@ -859,7 +859,7 @@ func TypeInput() *string
 
 ---
 
-##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.valueInput"></a>
+##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.valueInput"></a>
 
 ```go
 func ValueInput() *string
@@ -869,7 +869,7 @@ func ValueInput() *string
 
 ---
 
-##### `VaultKeyReferenceInput`<sup>Optional</sup> <a name="VaultKeyReferenceInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.vaultKeyReferenceInput"></a>
+##### `VaultKeyReferenceInput`<sup>Optional</sup> <a name="VaultKeyReferenceInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.vaultKeyReferenceInput"></a>
 
 ```go
 func VaultKeyReferenceInput() *string
@@ -879,7 +879,7 @@ func VaultKeyReferenceInput() *string
 
 ---
 
-##### `ConfigurationStoreId`<sup>Required</sup> <a name="ConfigurationStoreId" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.configurationStoreId"></a>
+##### `ConfigurationStoreId`<sup>Required</sup> <a name="ConfigurationStoreId" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.configurationStoreId"></a>
 
 ```go
 func ConfigurationStoreId() *string
@@ -889,7 +889,7 @@ func ConfigurationStoreId() *string
 
 ---
 
-##### `ContentType`<sup>Required</sup> <a name="ContentType" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.contentType"></a>
+##### `ContentType`<sup>Required</sup> <a name="ContentType" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.contentType"></a>
 
 ```go
 func ContentType() *string
@@ -899,7 +899,7 @@ func ContentType() *string
 
 ---
 
-##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.etag"></a>
+##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.etag"></a>
 
 ```go
 func Etag() *string
@@ -909,7 +909,7 @@ func Etag() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.id"></a>
 
 ```go
 func Id() *string
@@ -919,7 +919,7 @@ func Id() *string
 
 ---
 
-##### `Key`<sup>Required</sup> <a name="Key" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.key"></a>
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.key"></a>
 
 ```go
 func Key() *string
@@ -929,7 +929,7 @@ func Key() *string
 
 ---
 
-##### `Label`<sup>Required</sup> <a name="Label" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.label"></a>
+##### `Label`<sup>Required</sup> <a name="Label" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.label"></a>
 
 ```go
 func Label() *string
@@ -939,7 +939,7 @@ func Label() *string
 
 ---
 
-##### `Locked`<sup>Required</sup> <a name="Locked" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.locked"></a>
+##### `Locked`<sup>Required</sup> <a name="Locked" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.locked"></a>
 
 ```go
 func Locked() interface{}
@@ -949,7 +949,7 @@ func Locked() interface{}
 
 ---
 
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.tags"></a>
 
 ```go
 func Tags() *map[string]*string
@@ -959,7 +959,7 @@ func Tags() *map[string]*string
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.type"></a>
 
 ```go
 func Type() *string
@@ -969,7 +969,7 @@ func Type() *string
 
 ---
 
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.value"></a>
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.value"></a>
 
 ```go
 func Value() *string
@@ -979,7 +979,7 @@ func Value() *string
 
 ---
 
-##### `VaultKeyReference`<sup>Required</sup> <a name="VaultKeyReference" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.vaultKeyReference"></a>
+##### `VaultKeyReference`<sup>Required</sup> <a name="VaultKeyReference" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.vaultKeyReference"></a>
 
 ```go
 func VaultKeyReference() *string
@@ -993,11 +993,11 @@ func VaultKeyReference() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1009,12 +1009,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AppConfigurationKeyConfig <a name="AppConfigurationKeyConfig" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig"></a>
+### AppConfigurationKeyConfig <a name="AppConfigurationKeyConfig" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 &appconfigurationkey.AppConfigurationKeyConfig {
 	Connection: interface{},
@@ -1032,7 +1032,7 @@ import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/appconfigurationk
 	Label: *string,
 	Locked: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14.appConfigurationKey.AppConfigurationKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.appConfigurationKey.AppConfigurationKeyTimeouts,
 	Type: *string,
 	Value: *string,
 	VaultKeyReference: *string,
@@ -1043,29 +1043,29 @@ import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/appconfigurationk
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.configurationStoreId">ConfigurationStoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#configuration_store_id AppConfigurationKey#configuration_store_id}. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#key AppConfigurationKey#key}. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.contentType">ContentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#content_type AppConfigurationKey#content_type}. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.etag">Etag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#etag AppConfigurationKey#etag}. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#id AppConfigurationKey#id}. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#label AppConfigurationKey#label}. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.locked">Locked</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#locked AppConfigurationKey#locked}. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#tags AppConfigurationKey#tags}. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts">AppConfigurationKeyTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#type AppConfigurationKey#type}. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#value AppConfigurationKey#value}. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.vaultKeyReference">VaultKeyReference</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#vault_key_reference AppConfigurationKey#vault_key_reference}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.configurationStoreId">ConfigurationStoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#configuration_store_id AppConfigurationKey#configuration_store_id}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#key AppConfigurationKey#key}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.contentType">ContentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#content_type AppConfigurationKey#content_type}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.etag">Etag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#etag AppConfigurationKey#etag}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#id AppConfigurationKey#id}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#label AppConfigurationKey#label}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.locked">Locked</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#locked AppConfigurationKey#locked}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#tags AppConfigurationKey#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts">AppConfigurationKeyTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#type AppConfigurationKey#type}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#value AppConfigurationKey#value}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.vaultKeyReference">VaultKeyReference</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#vault_key_reference AppConfigurationKey#vault_key_reference}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1075,7 +1075,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1085,7 +1085,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -1095,7 +1095,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -1105,7 +1105,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -1115,7 +1115,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -1125,7 +1125,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1135,7 +1135,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `ConfigurationStoreId`<sup>Required</sup> <a name="ConfigurationStoreId" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.configurationStoreId"></a>
+##### `ConfigurationStoreId`<sup>Required</sup> <a name="ConfigurationStoreId" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.configurationStoreId"></a>
 
 ```go
 ConfigurationStoreId *string
@@ -1143,11 +1143,11 @@ ConfigurationStoreId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#configuration_store_id AppConfigurationKey#configuration_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#configuration_store_id AppConfigurationKey#configuration_store_id}.
 
 ---
 
-##### `Key`<sup>Required</sup> <a name="Key" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.key"></a>
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.key"></a>
 
 ```go
 Key *string
@@ -1155,11 +1155,11 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#key AppConfigurationKey#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#key AppConfigurationKey#key}.
 
 ---
 
-##### `ContentType`<sup>Optional</sup> <a name="ContentType" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.contentType"></a>
+##### `ContentType`<sup>Optional</sup> <a name="ContentType" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.contentType"></a>
 
 ```go
 ContentType *string
@@ -1167,11 +1167,11 @@ ContentType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#content_type AppConfigurationKey#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#content_type AppConfigurationKey#content_type}.
 
 ---
 
-##### `Etag`<sup>Optional</sup> <a name="Etag" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.etag"></a>
+##### `Etag`<sup>Optional</sup> <a name="Etag" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.etag"></a>
 
 ```go
 Etag *string
@@ -1179,11 +1179,11 @@ Etag *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#etag AppConfigurationKey#etag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#etag AppConfigurationKey#etag}.
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1191,14 +1191,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#id AppConfigurationKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#id AppConfigurationKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `Label`<sup>Optional</sup> <a name="Label" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.label"></a>
+##### `Label`<sup>Optional</sup> <a name="Label" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.label"></a>
 
 ```go
 Label *string
@@ -1206,11 +1206,11 @@ Label *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#label AppConfigurationKey#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#label AppConfigurationKey#label}.
 
 ---
 
-##### `Locked`<sup>Optional</sup> <a name="Locked" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.locked"></a>
+##### `Locked`<sup>Optional</sup> <a name="Locked" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.locked"></a>
 
 ```go
 Locked interface{}
@@ -1218,11 +1218,11 @@ Locked interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#locked AppConfigurationKey#locked}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#locked AppConfigurationKey#locked}.
 
 ---
 
-##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.tags"></a>
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.tags"></a>
 
 ```go
 Tags *map[string]*string
@@ -1230,25 +1230,25 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#tags AppConfigurationKey#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#tags AppConfigurationKey#tags}.
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.timeouts"></a>
 
 ```go
 Timeouts AppConfigurationKeyTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts">AppConfigurationKeyTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts">AppConfigurationKeyTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#timeouts AppConfigurationKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#timeouts AppConfigurationKey#timeouts}
 
 ---
 
-##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.type"></a>
+##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.type"></a>
 
 ```go
 Type *string
@@ -1256,11 +1256,11 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#type AppConfigurationKey#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#type AppConfigurationKey#type}.
 
 ---
 
-##### `Value`<sup>Optional</sup> <a name="Value" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.value"></a>
+##### `Value`<sup>Optional</sup> <a name="Value" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.value"></a>
 
 ```go
 Value *string
@@ -1268,11 +1268,11 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#value AppConfigurationKey#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#value AppConfigurationKey#value}.
 
 ---
 
-##### `VaultKeyReference`<sup>Optional</sup> <a name="VaultKeyReference" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.vaultKeyReference"></a>
+##### `VaultKeyReference`<sup>Optional</sup> <a name="VaultKeyReference" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.vaultKeyReference"></a>
 
 ```go
 VaultKeyReference *string
@@ -1280,16 +1280,16 @@ VaultKeyReference *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#vault_key_reference AppConfigurationKey#vault_key_reference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#vault_key_reference AppConfigurationKey#vault_key_reference}.
 
 ---
 
-### AppConfigurationKeyTimeouts <a name="AppConfigurationKeyTimeouts" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts"></a>
+### AppConfigurationKeyTimeouts <a name="AppConfigurationKeyTimeouts" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 &appconfigurationkey.AppConfigurationKeyTimeouts {
 	Create: *string,
@@ -1303,14 +1303,14 @@ import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/appconfigurationk
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#create AppConfigurationKey#create}. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#delete AppConfigurationKey#delete}. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#read AppConfigurationKey#read}. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#update AppConfigurationKey#update}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#create AppConfigurationKey#create}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#delete AppConfigurationKey#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#read AppConfigurationKey#read}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#update AppConfigurationKey#update}. |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -1318,11 +1318,11 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#create AppConfigurationKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#create AppConfigurationKey#create}.
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -1330,11 +1330,11 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#delete AppConfigurationKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#delete AppConfigurationKey#delete}.
 
 ---
 
-##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.read"></a>
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.read"></a>
 
 ```go
 Read *string
@@ -1342,11 +1342,11 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#read AppConfigurationKey#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#read AppConfigurationKey#read}.
 
 ---
 
-##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.update"></a>
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.update"></a>
 
 ```go
 Update *string
@@ -1354,30 +1354,30 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/app_configuration_key#update AppConfigurationKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/app_configuration_key#update AppConfigurationKey#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### AppConfigurationKeyTimeoutsOutputReference <a name="AppConfigurationKeyTimeoutsOutputReference" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference"></a>
+### AppConfigurationKeyTimeoutsOutputReference <a name="AppConfigurationKeyTimeoutsOutputReference" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azurerm-go/azurerm/v14/appconfigurationkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/appconfigurationkey"
 
 appconfigurationkey.NewAppConfigurationKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppConfigurationKeyTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1385,7 +1385,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1397,153 +1397,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1551,13 +1551,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1567,25 +1567,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
 ```
 
-##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetRead"></a>
+##### `ResetRead` <a name="ResetRead" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetRead"></a>
 
 ```go
 func ResetRead()
 ```
 
-##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetUpdate"></a>
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.resetUpdate"></a>
 
 ```go
 func ResetUpdate()
@@ -1596,21 +1596,21 @@ func ResetUpdate()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1624,7 +1624,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1634,7 +1634,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -1644,7 +1644,7 @@ func CreateInput() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -1654,7 +1654,7 @@ func DeleteInput() *string
 
 ---
 
-##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.readInput"></a>
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.readInput"></a>
 
 ```go
 func ReadInput() *string
@@ -1664,7 +1664,7 @@ func ReadInput() *string
 
 ---
 
-##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.updateInput"></a>
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.updateInput"></a>
 
 ```go
 func UpdateInput() *string
@@ -1674,7 +1674,7 @@ func UpdateInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -1684,7 +1684,7 @@ func Create() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -1694,7 +1694,7 @@ func Delete() *string
 
 ---
 
-##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.read"></a>
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.read"></a>
 
 ```go
 func Read() *string
@@ -1704,7 +1704,7 @@ func Read() *string
 
 ---
 
-##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.update"></a>
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.update"></a>
 
 ```go
 func Update() *string
@@ -1714,7 +1714,7 @@ func Update() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

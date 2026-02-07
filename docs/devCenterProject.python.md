@@ -1,15 +1,15 @@
-# `devCenterProject` Submodule <a name="`devCenterProject` Submodule" id="@cdktf/provider-azurerm.devCenterProject"></a>
+# `devCenterProject` Submodule <a name="`devCenterProject` Submodule" id="@cdktn/provider-azurerm.devCenterProject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DevCenterProject <a name="DevCenterProject" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject"></a>
+### DevCenterProject <a name="DevCenterProject" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project azurerm_dev_center_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project azurerm_dev_center_project}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import dev_center_project
+from cdktn_provider_azurerm import dev_center_project
 
 devCenterProject.DevCenterProject(
   scope: Construct,
@@ -36,29 +36,29 @@ devCenterProject.DevCenterProject(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.devCenterId">dev_center_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#dev_center_id DevCenterProject#dev_center_id}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#location DevCenterProject#location}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#name DevCenterProject#name}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#resource_group_name DevCenterProject#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#description DevCenterProject#description}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#id DevCenterProject#id}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a></code> | identity block. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.maximumDevBoxesPerUser">maximum_dev_boxes_per_user</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#maximum_dev_boxes_per_user DevCenterProject#maximum_dev_boxes_per_user}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#tags DevCenterProject#tags}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.devCenterId">dev_center_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#dev_center_id DevCenterProject#dev_center_id}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#location DevCenterProject#location}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#name DevCenterProject#name}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#resource_group_name DevCenterProject#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#description DevCenterProject#description}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#id DevCenterProject#id}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a></code> | identity block. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.maximumDevBoxesPerUser">maximum_dev_boxes_per_user</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#maximum_dev_boxes_per_user DevCenterProject#maximum_dev_boxes_per_user}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#tags DevCenterProject#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -66,7 +66,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -76,132 +76,132 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `dev_center_id`<sup>Required</sup> <a name="dev_center_id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.devCenterId"></a>
+##### `dev_center_id`<sup>Required</sup> <a name="dev_center_id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.devCenterId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#dev_center_id DevCenterProject#dev_center_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#dev_center_id DevCenterProject#dev_center_id}.
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.location"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#location DevCenterProject#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#location DevCenterProject#location}.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#name DevCenterProject#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#name DevCenterProject#name}.
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.resourceGroupName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#resource_group_name DevCenterProject#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#resource_group_name DevCenterProject#resource_group_name}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.description"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#description DevCenterProject#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#description DevCenterProject#description}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#id DevCenterProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#id DevCenterProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.identity"></a>
+##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.identity"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a>
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#identity DevCenterProject#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#identity DevCenterProject#identity}
 
 ---
 
-##### `maximum_dev_boxes_per_user`<sup>Optional</sup> <a name="maximum_dev_boxes_per_user" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.maximumDevBoxesPerUser"></a>
+##### `maximum_dev_boxes_per_user`<sup>Optional</sup> <a name="maximum_dev_boxes_per_user" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.maximumDevBoxesPerUser"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#maximum_dev_boxes_per_user DevCenterProject#maximum_dev_boxes_per_user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#maximum_dev_boxes_per_user DevCenterProject#maximum_dev_boxes_per_user}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.tags"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#tags DevCenterProject#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#tags DevCenterProject#tags}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#timeouts DevCenterProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#timeouts DevCenterProject#timeouts}
 
 ---
 
@@ -209,41 +209,41 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.putIdentity">put_identity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.resetIdentity">reset_identity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.resetMaximumDevBoxesPerUser">reset_maximum_dev_boxes_per_user</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.resetTags">reset_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.putIdentity">put_identity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.resetIdentity">reset_identity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.resetMaximumDevBoxesPerUser">reset_maximum_dev_boxes_per_user</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.toString"></a>
 
 ```python
 def to_string() -> str
@@ -251,7 +251,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.addOverride"></a>
 
 ```python
 def add_override(
@@ -260,19 +260,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -282,7 +282,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -290,7 +290,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -298,19 +298,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -318,7 +318,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -328,7 +328,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -336,7 +336,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -344,13 +344,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -358,13 +358,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -372,13 +372,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -386,13 +386,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -400,13 +400,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -414,13 +414,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -428,13 +428,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -442,13 +442,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -456,19 +456,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.importFrom"></a>
 
 ```python
 def import_from(
@@ -477,19 +477,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -497,13 +497,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -515,7 +515,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -523,7 +523,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.moveTo"></a>
 
 ```python
 def move_to(
@@ -534,7 +534,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -542,7 +542,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -550,7 +550,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -560,7 +560,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -568,7 +568,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_identity` <a name="put_identity" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.putIdentity"></a>
+##### `put_identity` <a name="put_identity" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.putIdentity"></a>
 
 ```python
 def put_identity(
@@ -577,23 +577,23 @@ def put_identity(
 ) -> None
 ```
 
-###### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.putIdentity.parameter.type"></a>
+###### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.putIdentity.parameter.type"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#type DevCenterProject#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#type DevCenterProject#type}.
 
 ---
 
-###### `identity_ids`<sup>Optional</sup> <a name="identity_ids" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.putIdentity.parameter.identityIds"></a>
+###### `identity_ids`<sup>Optional</sup> <a name="identity_ids" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.putIdentity.parameter.identityIds"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#identity_ids DevCenterProject#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#identity_ids DevCenterProject#identity_ids}.
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -604,69 +604,69 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#create DevCenterProject#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#create DevCenterProject#create}.
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#delete DevCenterProject#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#delete DevCenterProject#delete}.
 
 ---
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#read DevCenterProject#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#read DevCenterProject#read}.
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#update DevCenterProject#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#update DevCenterProject#update}.
 
 ---
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_identity` <a name="reset_identity" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.resetIdentity"></a>
+##### `reset_identity` <a name="reset_identity" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.resetIdentity"></a>
 
 ```python
 def reset_identity() -> None
 ```
 
-##### `reset_maximum_dev_boxes_per_user` <a name="reset_maximum_dev_boxes_per_user" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.resetMaximumDevBoxesPerUser"></a>
+##### `reset_maximum_dev_boxes_per_user` <a name="reset_maximum_dev_boxes_per_user" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.resetMaximumDevBoxesPerUser"></a>
 
 ```python
 def reset_maximum_dev_boxes_per_user() -> None
 ```
 
-##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.resetTags"></a>
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.resetTags"></a>
 
 ```python
 def reset_tags() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -676,17 +676,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DevCenterProject resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DevCenterProject resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import dev_center_project
+from cdktn_provider_azurerm import dev_center_project
 
 devCenterProject.DevCenterProject.is_construct(
   x: typing.Any
@@ -709,7 +709,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -717,42 +717,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import dev_center_project
+from cdktn_provider_azurerm import dev_center_project
 
 devCenterProject.DevCenterProject.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import dev_center_project
+from cdktn_provider_azurerm import dev_center_project
 
 devCenterProject.DevCenterProject.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import dev_center_project
+from cdktn_provider_azurerm import dev_center_project
 
 devCenterProject.DevCenterProject.generate_config_for_import(
   scope: Construct,
@@ -764,7 +764,7 @@ devCenterProject.DevCenterProject.generate_config_for_import(
 
 Generates CDKTF code for importing a DevCenterProject resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -772,7 +772,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -780,17 +780,17 @@ The construct id used in the generated config for the DevCenterProject to import
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing DevCenterProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -802,45 +802,45 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.devCenterUri">dev_center_uri</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.identity">identity</a></code> | <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference">DevCenterProjectIdentityOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference">DevCenterProjectTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.devCenterIdInput">dev_center_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.identityInput">identity_input</a></code> | <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.maximumDevBoxesPerUserInput">maximum_dev_boxes_per_user_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.devCenterId">dev_center_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.location">location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.maximumDevBoxesPerUser">maximum_dev_boxes_per_user</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.devCenterUri">dev_center_uri</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference">DevCenterProjectIdentityOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference">DevCenterProjectTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.devCenterIdInput">dev_center_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.identityInput">identity_input</a></code> | <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.maximumDevBoxesPerUserInput">maximum_dev_boxes_per_user_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.devCenterId">dev_center_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.maximumDevBoxesPerUser">maximum_dev_boxes_per_user</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.node"></a>
 
 ```python
 node: Node
@@ -852,7 +852,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -862,7 +862,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.fqn"></a>
 
 ```python
 fqn: str
@@ -872,7 +872,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -882,7 +882,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -892,7 +892,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -902,7 +902,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -912,7 +912,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -922,7 +922,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -932,7 +932,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -942,7 +942,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -952,7 +952,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -962,7 +962,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -972,7 +972,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -982,7 +982,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `dev_center_uri`<sup>Required</sup> <a name="dev_center_uri" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.devCenterUri"></a>
+##### `dev_center_uri`<sup>Required</sup> <a name="dev_center_uri" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.devCenterUri"></a>
 
 ```python
 dev_center_uri: str
@@ -992,27 +992,27 @@ dev_center_uri: str
 
 ---
 
-##### `identity`<sup>Required</sup> <a name="identity" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.identity"></a>
+##### `identity`<sup>Required</sup> <a name="identity" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.identity"></a>
 
 ```python
 identity: DevCenterProjectIdentityOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference">DevCenterProjectIdentityOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference">DevCenterProjectIdentityOutputReference</a>
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.timeouts"></a>
 
 ```python
 timeouts: DevCenterProjectTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference">DevCenterProjectTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference">DevCenterProjectTimeoutsOutputReference</a>
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1022,7 +1022,7 @@ description_input: str
 
 ---
 
-##### `dev_center_id_input`<sup>Optional</sup> <a name="dev_center_id_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.devCenterIdInput"></a>
+##### `dev_center_id_input`<sup>Optional</sup> <a name="dev_center_id_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.devCenterIdInput"></a>
 
 ```python
 dev_center_id_input: str
@@ -1032,17 +1032,17 @@ dev_center_id_input: str
 
 ---
 
-##### `identity_input`<sup>Optional</sup> <a name="identity_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.identityInput"></a>
+##### `identity_input`<sup>Optional</sup> <a name="identity_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.identityInput"></a>
 
 ```python
 identity_input: DevCenterProjectIdentity
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a>
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1052,7 +1052,7 @@ id_input: str
 
 ---
 
-##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.locationInput"></a>
+##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.locationInput"></a>
 
 ```python
 location_input: str
@@ -1062,7 +1062,7 @@ location_input: str
 
 ---
 
-##### `maximum_dev_boxes_per_user_input`<sup>Optional</sup> <a name="maximum_dev_boxes_per_user_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.maximumDevBoxesPerUserInput"></a>
+##### `maximum_dev_boxes_per_user_input`<sup>Optional</sup> <a name="maximum_dev_boxes_per_user_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.maximumDevBoxesPerUserInput"></a>
 
 ```python
 maximum_dev_boxes_per_user_input: typing.Union[int, float]
@@ -1072,7 +1072,7 @@ maximum_dev_boxes_per_user_input: typing.Union[int, float]
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1082,7 +1082,7 @@ name_input: str
 
 ---
 
-##### `resource_group_name_input`<sup>Optional</sup> <a name="resource_group_name_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.resourceGroupNameInput"></a>
+##### `resource_group_name_input`<sup>Optional</sup> <a name="resource_group_name_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.resourceGroupNameInput"></a>
 
 ```python
 resource_group_name_input: str
@@ -1092,7 +1092,7 @@ resource_group_name_input: str
 
 ---
 
-##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.tagsInput"></a>
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.tagsInput"></a>
 
 ```python
 tags_input: typing.Mapping[str]
@@ -1102,17 +1102,17 @@ tags_input: typing.Mapping[str]
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | DevCenterProjectTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a>
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.description"></a>
 
 ```python
 description: str
@@ -1122,7 +1122,7 @@ description: str
 
 ---
 
-##### `dev_center_id`<sup>Required</sup> <a name="dev_center_id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.devCenterId"></a>
+##### `dev_center_id`<sup>Required</sup> <a name="dev_center_id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.devCenterId"></a>
 
 ```python
 dev_center_id: str
@@ -1132,7 +1132,7 @@ dev_center_id: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.id"></a>
 
 ```python
 id: str
@@ -1142,7 +1142,7 @@ id: str
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.location"></a>
 
 ```python
 location: str
@@ -1152,7 +1152,7 @@ location: str
 
 ---
 
-##### `maximum_dev_boxes_per_user`<sup>Required</sup> <a name="maximum_dev_boxes_per_user" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.maximumDevBoxesPerUser"></a>
+##### `maximum_dev_boxes_per_user`<sup>Required</sup> <a name="maximum_dev_boxes_per_user" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.maximumDevBoxesPerUser"></a>
 
 ```python
 maximum_dev_boxes_per_user: typing.Union[int, float]
@@ -1162,7 +1162,7 @@ maximum_dev_boxes_per_user: typing.Union[int, float]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.name"></a>
 
 ```python
 name: str
@@ -1172,7 +1172,7 @@ name: str
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.resourceGroupName"></a>
 
 ```python
 resource_group_name: str
@@ -1182,7 +1182,7 @@ resource_group_name: str
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1196,11 +1196,11 @@ tags: typing.Mapping[str]
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProject.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProject.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1212,12 +1212,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DevCenterProjectConfig <a name="DevCenterProjectConfig" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig"></a>
+### DevCenterProjectConfig <a name="DevCenterProjectConfig" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import dev_center_project
+from cdktn_provider_azurerm import dev_center_project
 
 devCenterProject.DevCenterProjectConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1244,27 +1244,27 @@ devCenterProject.DevCenterProjectConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.devCenterId">dev_center_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#dev_center_id DevCenterProject#dev_center_id}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#location DevCenterProject#location}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#name DevCenterProject#name}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#resource_group_name DevCenterProject#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#description DevCenterProject#description}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#id DevCenterProject#id}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.identity">identity</a></code> | <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a></code> | identity block. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.maximumDevBoxesPerUser">maximum_dev_boxes_per_user</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#maximum_dev_boxes_per_user DevCenterProject#maximum_dev_boxes_per_user}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#tags DevCenterProject#tags}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.devCenterId">dev_center_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#dev_center_id DevCenterProject#dev_center_id}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#location DevCenterProject#location}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#name DevCenterProject#name}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#resource_group_name DevCenterProject#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#description DevCenterProject#description}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#id DevCenterProject#id}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a></code> | identity block. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.maximumDevBoxesPerUser">maximum_dev_boxes_per_user</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#maximum_dev_boxes_per_user DevCenterProject#maximum_dev_boxes_per_user}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#tags DevCenterProject#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1274,7 +1274,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1284,7 +1284,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1294,7 +1294,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1304,7 +1304,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1314,7 +1314,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1324,7 +1324,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1334,7 +1334,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `dev_center_id`<sup>Required</sup> <a name="dev_center_id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.devCenterId"></a>
+##### `dev_center_id`<sup>Required</sup> <a name="dev_center_id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.devCenterId"></a>
 
 ```python
 dev_center_id: str
@@ -1342,11 +1342,11 @@ dev_center_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#dev_center_id DevCenterProject#dev_center_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#dev_center_id DevCenterProject#dev_center_id}.
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.location"></a>
 
 ```python
 location: str
@@ -1354,11 +1354,11 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#location DevCenterProject#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#location DevCenterProject#location}.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.name"></a>
 
 ```python
 name: str
@@ -1366,11 +1366,11 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#name DevCenterProject#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#name DevCenterProject#name}.
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.resourceGroupName"></a>
 
 ```python
 resource_group_name: str
@@ -1378,11 +1378,11 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#resource_group_name DevCenterProject#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#resource_group_name DevCenterProject#resource_group_name}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.description"></a>
 
 ```python
 description: str
@@ -1390,11 +1390,11 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#description DevCenterProject#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#description DevCenterProject#description}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.id"></a>
 
 ```python
 id: str
@@ -1402,28 +1402,28 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#id DevCenterProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#id DevCenterProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.identity"></a>
+##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.identity"></a>
 
 ```python
 identity: DevCenterProjectIdentity
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a>
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#identity DevCenterProject#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#identity DevCenterProject#identity}
 
 ---
 
-##### `maximum_dev_boxes_per_user`<sup>Optional</sup> <a name="maximum_dev_boxes_per_user" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.maximumDevBoxesPerUser"></a>
+##### `maximum_dev_boxes_per_user`<sup>Optional</sup> <a name="maximum_dev_boxes_per_user" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.maximumDevBoxesPerUser"></a>
 
 ```python
 maximum_dev_boxes_per_user: typing.Union[int, float]
@@ -1431,11 +1431,11 @@ maximum_dev_boxes_per_user: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#maximum_dev_boxes_per_user DevCenterProject#maximum_dev_boxes_per_user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#maximum_dev_boxes_per_user DevCenterProject#maximum_dev_boxes_per_user}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1443,30 +1443,30 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#tags DevCenterProject#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#tags DevCenterProject#tags}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectConfig.property.timeouts"></a>
 
 ```python
 timeouts: DevCenterProjectTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#timeouts DevCenterProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#timeouts DevCenterProject#timeouts}
 
 ---
 
-### DevCenterProjectIdentity <a name="DevCenterProjectIdentity" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentity"></a>
+### DevCenterProjectIdentity <a name="DevCenterProjectIdentity" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentity"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentity.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentity.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import dev_center_project
+from cdktn_provider_azurerm import dev_center_project
 
 devCenterProject.DevCenterProjectIdentity(
   type: str,
@@ -1478,12 +1478,12 @@ devCenterProject.DevCenterProjectIdentity(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#type DevCenterProject#type}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#identity_ids DevCenterProject#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#type DevCenterProject#type}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#identity_ids DevCenterProject#identity_ids}. |
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentity.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentity.property.type"></a>
 
 ```python
 type: str
@@ -1491,11 +1491,11 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#type DevCenterProject#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#type DevCenterProject#type}.
 
 ---
 
-##### `identity_ids`<sup>Optional</sup> <a name="identity_ids" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentity.property.identityIds"></a>
+##### `identity_ids`<sup>Optional</sup> <a name="identity_ids" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentity.property.identityIds"></a>
 
 ```python
 identity_ids: typing.List[str]
@@ -1503,16 +1503,16 @@ identity_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#identity_ids DevCenterProject#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#identity_ids DevCenterProject#identity_ids}.
 
 ---
 
-### DevCenterProjectTimeouts <a name="DevCenterProjectTimeouts" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts"></a>
+### DevCenterProjectTimeouts <a name="DevCenterProjectTimeouts" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import dev_center_project
+from cdktn_provider_azurerm import dev_center_project
 
 devCenterProject.DevCenterProjectTimeouts(
   create: str = None,
@@ -1526,14 +1526,14 @@ devCenterProject.DevCenterProjectTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#create DevCenterProject#create}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#delete DevCenterProject#delete}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#read DevCenterProject#read}. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#update DevCenterProject#update}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#create DevCenterProject#create}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#delete DevCenterProject#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#read DevCenterProject#read}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#update DevCenterProject#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1541,11 +1541,11 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#create DevCenterProject#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#create DevCenterProject#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1553,11 +1553,11 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#delete DevCenterProject#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#delete DevCenterProject#delete}.
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -1565,11 +1565,11 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#read DevCenterProject#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#read DevCenterProject#read}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -1577,18 +1577,18 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/dev_center_project#update DevCenterProject#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/dev_center_project#update DevCenterProject#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DevCenterProjectIdentityOutputReference <a name="DevCenterProjectIdentityOutputReference" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference"></a>
+### DevCenterProjectIdentityOutputReference <a name="DevCenterProjectIdentityOutputReference" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import dev_center_project
+from cdktn_provider_azurerm import dev_center_project
 
 devCenterProject.DevCenterProjectIdentityOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1598,12 +1598,12 @@ devCenterProject.DevCenterProjectIdentityOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1611,7 +1611,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1623,30 +1623,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.resetIdentityIds">reset_identity_ids</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.resetIdentityIds">reset_identity_ids</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1654,13 +1654,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1668,13 +1668,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1682,13 +1682,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1696,13 +1696,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1710,13 +1710,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1724,13 +1724,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1738,13 +1738,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1752,13 +1752,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1766,13 +1766,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1780,13 +1780,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1796,13 +1796,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1812,7 +1812,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_identity_ids` <a name="reset_identity_ids" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.resetIdentityIds"></a>
+##### `reset_identity_ids` <a name="reset_identity_ids" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.resetIdentityIds"></a>
 
 ```python
 def reset_identity_ids() -> None
@@ -1823,19 +1823,19 @@ def reset_identity_ids() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.principalId">principal_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.tenantId">tenant_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.identityIdsInput">identity_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.principalId">principal_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.tenantId">tenant_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.identityIdsInput">identity_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1849,7 +1849,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1859,7 +1859,7 @@ fqn: str
 
 ---
 
-##### `principal_id`<sup>Required</sup> <a name="principal_id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.principalId"></a>
+##### `principal_id`<sup>Required</sup> <a name="principal_id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.principalId"></a>
 
 ```python
 principal_id: str
@@ -1869,7 +1869,7 @@ principal_id: str
 
 ---
 
-##### `tenant_id`<sup>Required</sup> <a name="tenant_id" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.tenantId"></a>
+##### `tenant_id`<sup>Required</sup> <a name="tenant_id" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.tenantId"></a>
 
 ```python
 tenant_id: str
@@ -1879,7 +1879,7 @@ tenant_id: str
 
 ---
 
-##### `identity_ids_input`<sup>Optional</sup> <a name="identity_ids_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.identityIdsInput"></a>
+##### `identity_ids_input`<sup>Optional</sup> <a name="identity_ids_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.identityIdsInput"></a>
 
 ```python
 identity_ids_input: typing.List[str]
@@ -1889,7 +1889,7 @@ identity_ids_input: typing.List[str]
 
 ---
 
-##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.typeInput"></a>
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.typeInput"></a>
 
 ```python
 type_input: str
@@ -1899,7 +1899,7 @@ type_input: str
 
 ---
 
-##### `identity_ids`<sup>Required</sup> <a name="identity_ids" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.identityIds"></a>
+##### `identity_ids`<sup>Required</sup> <a name="identity_ids" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.identityIds"></a>
 
 ```python
 identity_ids: typing.List[str]
@@ -1909,7 +1909,7 @@ identity_ids: typing.List[str]
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.type"></a>
 
 ```python
 type: str
@@ -1919,23 +1919,23 @@ type: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentityOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: DevCenterProjectIdentity
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectIdentity">DevCenterProjectIdentity</a>
 
 ---
 
 
-### DevCenterProjectTimeoutsOutputReference <a name="DevCenterProjectTimeoutsOutputReference" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference"></a>
+### DevCenterProjectTimeoutsOutputReference <a name="DevCenterProjectTimeoutsOutputReference" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import dev_center_project
+from cdktn_provider_azurerm import dev_center_project
 
 devCenterProject.DevCenterProjectTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1945,12 +1945,12 @@ devCenterProject.DevCenterProjectTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1958,7 +1958,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1970,33 +1970,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2004,13 +2004,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2018,13 +2018,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2032,13 +2032,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2046,13 +2046,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2060,13 +2060,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2074,13 +2074,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2088,13 +2088,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2102,13 +2102,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2116,13 +2116,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2130,13 +2130,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2146,13 +2146,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2162,25 +2162,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -2191,21 +2191,21 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2219,7 +2219,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2229,7 +2229,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -2239,7 +2239,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -2249,7 +2249,7 @@ delete_input: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -2259,7 +2259,7 @@ read_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -2269,7 +2269,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -2279,7 +2279,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -2289,7 +2289,7 @@ delete: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -2299,7 +2299,7 @@ read: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -2309,13 +2309,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | DevCenterProjectTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.devCenterProject.DevCenterProjectTimeouts">DevCenterProjectTimeouts</a>
 
 ---
 

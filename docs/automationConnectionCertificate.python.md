@@ -1,15 +1,15 @@
-# `automationConnectionCertificate` Submodule <a name="`automationConnectionCertificate` Submodule" id="@cdktf/provider-azurerm.automationConnectionCertificate"></a>
+# `automationConnectionCertificate` Submodule <a name="`automationConnectionCertificate` Submodule" id="@cdktn/provider-azurerm.automationConnectionCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### AutomationConnectionCertificate <a name="AutomationConnectionCertificate" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate"></a>
+### AutomationConnectionCertificate <a name="AutomationConnectionCertificate" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate azurerm_automation_connection_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate azurerm_automation_connection_certificate}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import automation_connection_certificate
+from cdktn_provider_azurerm import automation_connection_certificate
 
 automationConnectionCertificate.AutomationConnectionCertificate(
   scope: Construct,
@@ -34,27 +34,27 @@ automationConnectionCertificate.AutomationConnectionCertificate(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.automationAccountName">automation_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#automation_account_name AutomationConnectionCertificate#automation_account_name}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.automationCertificateName">automation_certificate_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#automation_certificate_name AutomationConnectionCertificate#automation_certificate_name}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#name AutomationConnectionCertificate#name}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#resource_group_name AutomationConnectionCertificate#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.subscriptionId">subscription_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#subscription_id AutomationConnectionCertificate#subscription_id}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#description AutomationConnectionCertificate#description}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#id AutomationConnectionCertificate#id}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.automationAccountName">automation_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#automation_account_name AutomationConnectionCertificate#automation_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.automationCertificateName">automation_certificate_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#automation_certificate_name AutomationConnectionCertificate#automation_certificate_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#name AutomationConnectionCertificate#name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#resource_group_name AutomationConnectionCertificate#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.subscriptionId">subscription_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#subscription_id AutomationConnectionCertificate#subscription_id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#description AutomationConnectionCertificate#description}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#id AutomationConnectionCertificate#id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -62,7 +62,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -72,114 +72,114 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `automation_account_name`<sup>Required</sup> <a name="automation_account_name" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.automationAccountName"></a>
+##### `automation_account_name`<sup>Required</sup> <a name="automation_account_name" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.automationAccountName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#automation_account_name AutomationConnectionCertificate#automation_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#automation_account_name AutomationConnectionCertificate#automation_account_name}.
 
 ---
 
-##### `automation_certificate_name`<sup>Required</sup> <a name="automation_certificate_name" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.automationCertificateName"></a>
+##### `automation_certificate_name`<sup>Required</sup> <a name="automation_certificate_name" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.automationCertificateName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#automation_certificate_name AutomationConnectionCertificate#automation_certificate_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#automation_certificate_name AutomationConnectionCertificate#automation_certificate_name}.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#name AutomationConnectionCertificate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#name AutomationConnectionCertificate#name}.
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.resourceGroupName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#resource_group_name AutomationConnectionCertificate#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#resource_group_name AutomationConnectionCertificate#resource_group_name}.
 
 ---
 
-##### `subscription_id`<sup>Required</sup> <a name="subscription_id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.subscriptionId"></a>
+##### `subscription_id`<sup>Required</sup> <a name="subscription_id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.subscriptionId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#subscription_id AutomationConnectionCertificate#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#subscription_id AutomationConnectionCertificate#subscription_id}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.description"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#description AutomationConnectionCertificate#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#description AutomationConnectionCertificate#description}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#id AutomationConnectionCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#id AutomationConnectionCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#timeouts AutomationConnectionCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#timeouts AutomationConnectionCertificate#timeouts}
 
 ---
 
@@ -187,37 +187,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toString"></a>
 
 ```python
 def to_string() -> str
@@ -225,7 +225,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.addOverride"></a>
 
 ```python
 def add_override(
@@ -234,19 +234,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -256,7 +256,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -264,7 +264,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -272,19 +272,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -292,7 +292,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -302,7 +302,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -310,7 +310,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -318,13 +318,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -332,13 +332,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -346,13 +346,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -360,13 +360,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -374,13 +374,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -388,13 +388,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -402,13 +402,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -416,13 +416,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -430,19 +430,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.importFrom"></a>
 
 ```python
 def import_from(
@@ -451,19 +451,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -471,13 +471,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -489,7 +489,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -497,7 +497,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveTo"></a>
 
 ```python
 def move_to(
@@ -508,7 +508,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -516,7 +516,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -524,7 +524,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -534,7 +534,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -542,7 +542,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -553,51 +553,51 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#create AutomationConnectionCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#create AutomationConnectionCertificate#create}.
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#delete AutomationConnectionCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#delete AutomationConnectionCertificate#delete}.
 
 ---
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#read AutomationConnectionCertificate#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#read AutomationConnectionCertificate#read}.
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#update AutomationConnectionCertificate#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#update AutomationConnectionCertificate#update}.
 
 ---
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -607,17 +607,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a AutomationConnectionCertificate resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a AutomationConnectionCertificate resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import automation_connection_certificate
+from cdktn_provider_azurerm import automation_connection_certificate
 
 automationConnectionCertificate.AutomationConnectionCertificate.is_construct(
   x: typing.Any
@@ -640,7 +640,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -648,42 +648,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import automation_connection_certificate
+from cdktn_provider_azurerm import automation_connection_certificate
 
 automationConnectionCertificate.AutomationConnectionCertificate.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import automation_connection_certificate
+from cdktn_provider_azurerm import automation_connection_certificate
 
 automationConnectionCertificate.AutomationConnectionCertificate.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import automation_connection_certificate
+from cdktn_provider_azurerm import automation_connection_certificate
 
 automationConnectionCertificate.AutomationConnectionCertificate.generate_config_for_import(
   scope: Construct,
@@ -695,7 +695,7 @@ automationConnectionCertificate.AutomationConnectionCertificate.generate_config_
 
 Generates CDKTF code for importing a AutomationConnectionCertificate resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -703,7 +703,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -711,17 +711,17 @@ The construct id used in the generated config for the AutomationConnectionCertif
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing AutomationConnectionCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -733,40 +733,40 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference">AutomationConnectionCertificateTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationAccountNameInput">automation_account_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationCertificateNameInput">automation_certificate_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.subscriptionIdInput">subscription_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationAccountName">automation_account_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationCertificateName">automation_certificate_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.subscriptionId">subscription_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference">AutomationConnectionCertificateTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationAccountNameInput">automation_account_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationCertificateNameInput">automation_certificate_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.subscriptionIdInput">subscription_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationAccountName">automation_account_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationCertificateName">automation_certificate_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.subscriptionId">subscription_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.node"></a>
 
 ```python
 node: Node
@@ -778,7 +778,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -788,7 +788,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.fqn"></a>
 
 ```python
 fqn: str
@@ -798,7 +798,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -808,7 +808,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -818,7 +818,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -828,7 +828,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -838,7 +838,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -848,7 +848,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -858,7 +858,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -868,7 +868,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -878,7 +878,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -888,7 +888,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -898,7 +898,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -908,17 +908,17 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.timeouts"></a>
 
 ```python
 timeouts: AutomationConnectionCertificateTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference">AutomationConnectionCertificateTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference">AutomationConnectionCertificateTimeoutsOutputReference</a>
 
 ---
 
-##### `automation_account_name_input`<sup>Optional</sup> <a name="automation_account_name_input" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationAccountNameInput"></a>
+##### `automation_account_name_input`<sup>Optional</sup> <a name="automation_account_name_input" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationAccountNameInput"></a>
 
 ```python
 automation_account_name_input: str
@@ -928,7 +928,7 @@ automation_account_name_input: str
 
 ---
 
-##### `automation_certificate_name_input`<sup>Optional</sup> <a name="automation_certificate_name_input" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationCertificateNameInput"></a>
+##### `automation_certificate_name_input`<sup>Optional</sup> <a name="automation_certificate_name_input" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationCertificateNameInput"></a>
 
 ```python
 automation_certificate_name_input: str
@@ -938,7 +938,7 @@ automation_certificate_name_input: str
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -948,7 +948,7 @@ description_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.idInput"></a>
 
 ```python
 id_input: str
@@ -958,7 +958,7 @@ id_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -968,7 +968,7 @@ name_input: str
 
 ---
 
-##### `resource_group_name_input`<sup>Optional</sup> <a name="resource_group_name_input" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.resourceGroupNameInput"></a>
+##### `resource_group_name_input`<sup>Optional</sup> <a name="resource_group_name_input" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.resourceGroupNameInput"></a>
 
 ```python
 resource_group_name_input: str
@@ -978,7 +978,7 @@ resource_group_name_input: str
 
 ---
 
-##### `subscription_id_input`<sup>Optional</sup> <a name="subscription_id_input" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.subscriptionIdInput"></a>
+##### `subscription_id_input`<sup>Optional</sup> <a name="subscription_id_input" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.subscriptionIdInput"></a>
 
 ```python
 subscription_id_input: str
@@ -988,17 +988,17 @@ subscription_id_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | AutomationConnectionCertificateTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a>
 
 ---
 
-##### `automation_account_name`<sup>Required</sup> <a name="automation_account_name" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationAccountName"></a>
+##### `automation_account_name`<sup>Required</sup> <a name="automation_account_name" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationAccountName"></a>
 
 ```python
 automation_account_name: str
@@ -1008,7 +1008,7 @@ automation_account_name: str
 
 ---
 
-##### `automation_certificate_name`<sup>Required</sup> <a name="automation_certificate_name" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationCertificateName"></a>
+##### `automation_certificate_name`<sup>Required</sup> <a name="automation_certificate_name" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.automationCertificateName"></a>
 
 ```python
 automation_certificate_name: str
@@ -1018,7 +1018,7 @@ automation_certificate_name: str
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.description"></a>
 
 ```python
 description: str
@@ -1028,7 +1028,7 @@ description: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.id"></a>
 
 ```python
 id: str
@@ -1038,7 +1038,7 @@ id: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.name"></a>
 
 ```python
 name: str
@@ -1048,7 +1048,7 @@ name: str
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.resourceGroupName"></a>
 
 ```python
 resource_group_name: str
@@ -1058,7 +1058,7 @@ resource_group_name: str
 
 ---
 
-##### `subscription_id`<sup>Required</sup> <a name="subscription_id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.subscriptionId"></a>
+##### `subscription_id`<sup>Required</sup> <a name="subscription_id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.subscriptionId"></a>
 
 ```python
 subscription_id: str
@@ -1072,11 +1072,11 @@ subscription_id: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificate.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1088,12 +1088,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AutomationConnectionCertificateConfig <a name="AutomationConnectionCertificateConfig" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig"></a>
+### AutomationConnectionCertificateConfig <a name="AutomationConnectionCertificateConfig" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import automation_connection_certificate
+from cdktn_provider_azurerm import automation_connection_certificate
 
 automationConnectionCertificate.AutomationConnectionCertificateConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1118,25 +1118,25 @@ automationConnectionCertificate.AutomationConnectionCertificateConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.automationAccountName">automation_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#automation_account_name AutomationConnectionCertificate#automation_account_name}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.automationCertificateName">automation_certificate_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#automation_certificate_name AutomationConnectionCertificate#automation_certificate_name}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#name AutomationConnectionCertificate#name}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#resource_group_name AutomationConnectionCertificate#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.subscriptionId">subscription_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#subscription_id AutomationConnectionCertificate#subscription_id}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#description AutomationConnectionCertificate#description}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#id AutomationConnectionCertificate#id}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.automationAccountName">automation_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#automation_account_name AutomationConnectionCertificate#automation_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.automationCertificateName">automation_certificate_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#automation_certificate_name AutomationConnectionCertificate#automation_certificate_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#name AutomationConnectionCertificate#name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#resource_group_name AutomationConnectionCertificate#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.subscriptionId">subscription_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#subscription_id AutomationConnectionCertificate#subscription_id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#description AutomationConnectionCertificate#description}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#id AutomationConnectionCertificate#id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1146,7 +1146,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1156,7 +1156,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1166,7 +1166,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1176,7 +1176,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1186,7 +1186,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1196,7 +1196,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1206,7 +1206,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `automation_account_name`<sup>Required</sup> <a name="automation_account_name" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.automationAccountName"></a>
+##### `automation_account_name`<sup>Required</sup> <a name="automation_account_name" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.automationAccountName"></a>
 
 ```python
 automation_account_name: str
@@ -1214,11 +1214,11 @@ automation_account_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#automation_account_name AutomationConnectionCertificate#automation_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#automation_account_name AutomationConnectionCertificate#automation_account_name}.
 
 ---
 
-##### `automation_certificate_name`<sup>Required</sup> <a name="automation_certificate_name" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.automationCertificateName"></a>
+##### `automation_certificate_name`<sup>Required</sup> <a name="automation_certificate_name" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.automationCertificateName"></a>
 
 ```python
 automation_certificate_name: str
@@ -1226,11 +1226,11 @@ automation_certificate_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#automation_certificate_name AutomationConnectionCertificate#automation_certificate_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#automation_certificate_name AutomationConnectionCertificate#automation_certificate_name}.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.name"></a>
 
 ```python
 name: str
@@ -1238,11 +1238,11 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#name AutomationConnectionCertificate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#name AutomationConnectionCertificate#name}.
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.resourceGroupName"></a>
 
 ```python
 resource_group_name: str
@@ -1250,11 +1250,11 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#resource_group_name AutomationConnectionCertificate#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#resource_group_name AutomationConnectionCertificate#resource_group_name}.
 
 ---
 
-##### `subscription_id`<sup>Required</sup> <a name="subscription_id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.subscriptionId"></a>
+##### `subscription_id`<sup>Required</sup> <a name="subscription_id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.subscriptionId"></a>
 
 ```python
 subscription_id: str
@@ -1262,11 +1262,11 @@ subscription_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#subscription_id AutomationConnectionCertificate#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#subscription_id AutomationConnectionCertificate#subscription_id}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.description"></a>
 
 ```python
 description: str
@@ -1274,11 +1274,11 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#description AutomationConnectionCertificate#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#description AutomationConnectionCertificate#description}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.id"></a>
 
 ```python
 id: str
@@ -1286,33 +1286,33 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#id AutomationConnectionCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#id AutomationConnectionCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateConfig.property.timeouts"></a>
 
 ```python
 timeouts: AutomationConnectionCertificateTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#timeouts AutomationConnectionCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#timeouts AutomationConnectionCertificate#timeouts}
 
 ---
 
-### AutomationConnectionCertificateTimeouts <a name="AutomationConnectionCertificateTimeouts" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts"></a>
+### AutomationConnectionCertificateTimeouts <a name="AutomationConnectionCertificateTimeouts" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import automation_connection_certificate
+from cdktn_provider_azurerm import automation_connection_certificate
 
 automationConnectionCertificate.AutomationConnectionCertificateTimeouts(
   create: str = None,
@@ -1326,14 +1326,14 @@ automationConnectionCertificate.AutomationConnectionCertificateTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#create AutomationConnectionCertificate#create}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#delete AutomationConnectionCertificate#delete}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#read AutomationConnectionCertificate#read}. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#update AutomationConnectionCertificate#update}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#create AutomationConnectionCertificate#create}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#delete AutomationConnectionCertificate#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#read AutomationConnectionCertificate#read}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#update AutomationConnectionCertificate#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1341,11 +1341,11 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#create AutomationConnectionCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#create AutomationConnectionCertificate#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1353,11 +1353,11 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#delete AutomationConnectionCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#delete AutomationConnectionCertificate#delete}.
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -1365,11 +1365,11 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#read AutomationConnectionCertificate#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#read AutomationConnectionCertificate#read}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -1377,18 +1377,18 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/automation_connection_certificate#update AutomationConnectionCertificate#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/automation_connection_certificate#update AutomationConnectionCertificate#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### AutomationConnectionCertificateTimeoutsOutputReference <a name="AutomationConnectionCertificateTimeoutsOutputReference" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference"></a>
+### AutomationConnectionCertificateTimeoutsOutputReference <a name="AutomationConnectionCertificateTimeoutsOutputReference" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import automation_connection_certificate
+from cdktn_provider_azurerm import automation_connection_certificate
 
 automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1398,12 +1398,12 @@ automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1411,7 +1411,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1423,33 +1423,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1457,13 +1457,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1471,13 +1471,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1485,13 +1485,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1499,13 +1499,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1513,13 +1513,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1527,13 +1527,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1541,13 +1541,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1555,13 +1555,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1569,13 +1569,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1583,13 +1583,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1599,13 +1599,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1615,25 +1615,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -1644,21 +1644,21 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1672,7 +1672,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1682,7 +1682,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -1692,7 +1692,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -1702,7 +1702,7 @@ delete_input: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -1712,7 +1712,7 @@ read_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -1722,7 +1722,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -1732,7 +1732,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -1742,7 +1742,7 @@ delete: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -1752,7 +1752,7 @@ read: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -1762,13 +1762,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | AutomationConnectionCertificateTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.automationConnectionCertificate.AutomationConnectionCertificateTimeouts">AutomationConnectionCertificateTimeouts</a>
 
 ---
 

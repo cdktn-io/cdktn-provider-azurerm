@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -132,6 +132,7 @@ Object.defineProperty(exports, 'automationModule', { get: function () { return r
 Object.defineProperty(exports, 'automationPowershell72Module', { get: function () { return require('./automation-powershell72-module'); } });
 Object.defineProperty(exports, 'automationPython3Package', { get: function () { return require('./automation-python3-package'); } });
 Object.defineProperty(exports, 'automationRunbook', { get: function () { return require('./automation-runbook'); } });
+Object.defineProperty(exports, 'automationRuntimeEnvironment', { get: function () { return require('./automation-runtime-environment'); } });
 Object.defineProperty(exports, 'automationSchedule', { get: function () { return require('./automation-schedule'); } });
 Object.defineProperty(exports, 'automationSoftwareUpdateConfiguration', { get: function () { return require('./automation-software-update-configuration'); } });
 Object.defineProperty(exports, 'automationSourceControl', { get: function () { return require('./automation-source-control'); } });
@@ -596,17 +597,6 @@ Object.defineProperty(exports, 'mapsAccount', { get: function () { return requir
 Object.defineProperty(exports, 'mapsCreator', { get: function () { return require('./maps-creator'); } });
 Object.defineProperty(exports, 'marketplaceAgreement', { get: function () { return require('./marketplace-agreement'); } });
 Object.defineProperty(exports, 'marketplaceRoleAssignment', { get: function () { return require('./marketplace-role-assignment'); } });
-Object.defineProperty(exports, 'mobileNetwork', { get: function () { return require('./mobile-network'); } });
-Object.defineProperty(exports, 'mobileNetworkAttachedDataNetwork', { get: function () { return require('./mobile-network-attached-data-network'); } });
-Object.defineProperty(exports, 'mobileNetworkDataNetwork', { get: function () { return require('./mobile-network-data-network'); } });
-Object.defineProperty(exports, 'mobileNetworkPacketCoreControlPlane', { get: function () { return require('./mobile-network-packet-core-control-plane'); } });
-Object.defineProperty(exports, 'mobileNetworkPacketCoreDataPlane', { get: function () { return require('./mobile-network-packet-core-data-plane'); } });
-Object.defineProperty(exports, 'mobileNetworkService', { get: function () { return require('./mobile-network-service'); } });
-Object.defineProperty(exports, 'mobileNetworkSim', { get: function () { return require('./mobile-network-sim'); } });
-Object.defineProperty(exports, 'mobileNetworkSimGroup', { get: function () { return require('./mobile-network-sim-group'); } });
-Object.defineProperty(exports, 'mobileNetworkSimPolicy', { get: function () { return require('./mobile-network-sim-policy'); } });
-Object.defineProperty(exports, 'mobileNetworkSite', { get: function () { return require('./mobile-network-site'); } });
-Object.defineProperty(exports, 'mobileNetworkSlice', { get: function () { return require('./mobile-network-slice'); } });
 Object.defineProperty(exports, 'mongoCluster', { get: function () { return require('./mongo-cluster'); } });
 Object.defineProperty(exports, 'mongoClusterFirewallRule', { get: function () { return require('./mongo-cluster-firewall-rule'); } });
 Object.defineProperty(exports, 'mongoClusterUser', { get: function () { return require('./mongo-cluster-user'); } });
@@ -711,6 +701,10 @@ Object.defineProperty(exports, 'networkManagerVerifierWorkspaceReachabilityAnaly
 Object.defineProperty(exports, 'networkPacketCapture', { get: function () { return require('./network-packet-capture'); } });
 Object.defineProperty(exports, 'networkProfile', { get: function () { return require('./network-profile'); } });
 Object.defineProperty(exports, 'networkSecurityGroup', { get: function () { return require('./network-security-group'); } });
+Object.defineProperty(exports, 'networkSecurityPerimeter', { get: function () { return require('./network-security-perimeter'); } });
+Object.defineProperty(exports, 'networkSecurityPerimeterAccessRule', { get: function () { return require('./network-security-perimeter-access-rule'); } });
+Object.defineProperty(exports, 'networkSecurityPerimeterAssociation', { get: function () { return require('./network-security-perimeter-association'); } });
+Object.defineProperty(exports, 'networkSecurityPerimeterProfile', { get: function () { return require('./network-security-perimeter-profile'); } });
 Object.defineProperty(exports, 'networkSecurityRule', { get: function () { return require('./network-security-rule'); } });
 Object.defineProperty(exports, 'networkWatcher', { get: function () { return require('./network-watcher'); } });
 Object.defineProperty(exports, 'networkWatcherFlowLog', { get: function () { return require('./network-watcher-flow-log'); } });
@@ -1338,17 +1332,6 @@ Object.defineProperty(exports, 'dataAzurermManagementGroup', { get: function () 
 Object.defineProperty(exports, 'dataAzurermManagementGroupTemplateDeployment', { get: function () { return require('./data-azurerm-management-group-template-deployment'); } });
 Object.defineProperty(exports, 'dataAzurermMapsAccount', { get: function () { return require('./data-azurerm-maps-account'); } });
 Object.defineProperty(exports, 'dataAzurermMarketplaceAgreement', { get: function () { return require('./data-azurerm-marketplace-agreement'); } });
-Object.defineProperty(exports, 'dataAzurermMobileNetwork', { get: function () { return require('./data-azurerm-mobile-network'); } });
-Object.defineProperty(exports, 'dataAzurermMobileNetworkAttachedDataNetwork', { get: function () { return require('./data-azurerm-mobile-network-attached-data-network'); } });
-Object.defineProperty(exports, 'dataAzurermMobileNetworkDataNetwork', { get: function () { return require('./data-azurerm-mobile-network-data-network'); } });
-Object.defineProperty(exports, 'dataAzurermMobileNetworkPacketCoreControlPlane', { get: function () { return require('./data-azurerm-mobile-network-packet-core-control-plane'); } });
-Object.defineProperty(exports, 'dataAzurermMobileNetworkPacketCoreDataPlane', { get: function () { return require('./data-azurerm-mobile-network-packet-core-data-plane'); } });
-Object.defineProperty(exports, 'dataAzurermMobileNetworkService', { get: function () { return require('./data-azurerm-mobile-network-service'); } });
-Object.defineProperty(exports, 'dataAzurermMobileNetworkSim', { get: function () { return require('./data-azurerm-mobile-network-sim'); } });
-Object.defineProperty(exports, 'dataAzurermMobileNetworkSimGroup', { get: function () { return require('./data-azurerm-mobile-network-sim-group'); } });
-Object.defineProperty(exports, 'dataAzurermMobileNetworkSimPolicy', { get: function () { return require('./data-azurerm-mobile-network-sim-policy'); } });
-Object.defineProperty(exports, 'dataAzurermMobileNetworkSite', { get: function () { return require('./data-azurerm-mobile-network-site'); } });
-Object.defineProperty(exports, 'dataAzurermMobileNetworkSlice', { get: function () { return require('./data-azurerm-mobile-network-slice'); } });
 Object.defineProperty(exports, 'dataAzurermMonitorActionGroup', { get: function () { return require('./data-azurerm-monitor-action-group'); } });
 Object.defineProperty(exports, 'dataAzurermMonitorDataCollectionEndpoint', { get: function () { return require('./data-azurerm-monitor-data-collection-endpoint'); } });
 Object.defineProperty(exports, 'dataAzurermMonitorDataCollectionRule', { get: function () { return require('./data-azurerm-monitor-data-collection-rule'); } });
@@ -1382,6 +1365,8 @@ Object.defineProperty(exports, 'dataAzurermNetworkManagerConnectivityConfigurati
 Object.defineProperty(exports, 'dataAzurermNetworkManagerIpamPool', { get: function () { return require('./data-azurerm-network-manager-ipam-pool'); } });
 Object.defineProperty(exports, 'dataAzurermNetworkManagerNetworkGroup', { get: function () { return require('./data-azurerm-network-manager-network-group'); } });
 Object.defineProperty(exports, 'dataAzurermNetworkSecurityGroup', { get: function () { return require('./data-azurerm-network-security-group'); } });
+Object.defineProperty(exports, 'dataAzurermNetworkSecurityPerimeter', { get: function () { return require('./data-azurerm-network-security-perimeter'); } });
+Object.defineProperty(exports, 'dataAzurermNetworkSecurityPerimeterProfile', { get: function () { return require('./data-azurerm-network-security-perimeter-profile'); } });
 Object.defineProperty(exports, 'dataAzurermNetworkServiceTags', { get: function () { return require('./data-azurerm-network-service-tags'); } });
 Object.defineProperty(exports, 'dataAzurermNetworkWatcher', { get: function () { return require('./data-azurerm-network-watcher'); } });
 Object.defineProperty(exports, 'dataAzurermNginxApiKey', { get: function () { return require('./data-azurerm-nginx-api-key'); } });

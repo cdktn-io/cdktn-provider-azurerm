@@ -1,15 +1,15 @@
-# `dataAzurermKeyVaultSecrets` Submodule <a name="`dataAzurermKeyVaultSecrets` Submodule" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets"></a>
+# `dataAzurermKeyVaultSecrets` Submodule <a name="`dataAzurermKeyVaultSecrets` Submodule" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataAzurermKeyVaultSecrets <a name="DataAzurermKeyVaultSecrets" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets"></a>
+### DataAzurermKeyVaultSecrets <a name="DataAzurermKeyVaultSecrets" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/key_vault_secrets azurerm_key_vault_secrets}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/key_vault_secrets azurerm_key_vault_secrets}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_key_vault_secrets
+from cdktn_provider_azurerm import data_azurerm_key_vault_secrets
 
 dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets(
   scope: Construct,
@@ -29,22 +29,22 @@ dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.keyVaultId">key_vault_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/key_vault_secrets#key_vault_id DataAzurermKeyVaultSecrets#key_vault_id}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/key_vault_secrets#id DataAzurermKeyVaultSecrets#id}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.keyVaultId">key_vault_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/key_vault_secrets#key_vault_id DataAzurermKeyVaultSecrets#key_vault_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/key_vault_secrets#id DataAzurermKeyVaultSecrets#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -52,7 +52,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -62,74 +62,74 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `key_vault_id`<sup>Required</sup> <a name="key_vault_id" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.keyVaultId"></a>
+##### `key_vault_id`<sup>Required</sup> <a name="key_vault_id" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.keyVaultId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/key_vault_secrets#key_vault_id DataAzurermKeyVaultSecrets#key_vault_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/key_vault_secrets#key_vault_id DataAzurermKeyVaultSecrets#key_vault_id}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/key_vault_secrets#id DataAzurermKeyVaultSecrets#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/key_vault_secrets#id DataAzurermKeyVaultSecrets#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/key_vault_secrets#timeouts DataAzurermKeyVaultSecrets#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/key_vault_secrets#timeouts DataAzurermKeyVaultSecrets#timeouts}
 
 ---
 
@@ -137,30 +137,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toString"></a>
 
 ```python
 def to_string() -> str
@@ -168,7 +168,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.addOverride"></a>
 
 ```python
 def add_override(
@@ -177,19 +177,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -199,7 +199,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -207,7 +207,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -215,7 +215,7 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
@@ -223,13 +223,13 @@ def to_hcl_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -237,7 +237,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -245,13 +245,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -259,13 +259,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -273,13 +273,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -287,13 +287,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -301,13 +301,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -315,13 +315,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -329,13 +329,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -343,13 +343,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -357,13 +357,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -371,13 +371,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -385,21 +385,21 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/key_vault_secrets#read DataAzurermKeyVaultSecrets#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/key_vault_secrets#read DataAzurermKeyVaultSecrets#read}.
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -409,17 +409,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataAzurermKeyVaultSecrets resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataAzurermKeyVaultSecrets resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_key_vault_secrets
+from cdktn_provider_azurerm import data_azurerm_key_vault_secrets
 
 dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.is_construct(
   x: typing.Any
@@ -442,7 +442,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -450,42 +450,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_key_vault_secrets
+from cdktn_provider_azurerm import data_azurerm_key_vault_secrets
 
 dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isTerraformDataSource"></a>
+##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isTerraformDataSource"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_key_vault_secrets
+from cdktn_provider_azurerm import data_azurerm_key_vault_secrets
 
 dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.is_terraform_data_source(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_key_vault_secrets
+from cdktn_provider_azurerm import data_azurerm_key_vault_secrets
 
 dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.generate_config_for_import(
   scope: Construct,
@@ -497,7 +497,7 @@ dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.generate_config_for_import
 
 Generates CDKTF code for importing a DataAzurermKeyVaultSecrets resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -505,7 +505,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -513,17 +513,17 @@ The construct id used in the generated config for the DataAzurermKeyVaultSecrets
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing DataAzurermKeyVaultSecrets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/key_vault_secrets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/key_vault_secrets#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -535,30 +535,30 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.names">names</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.secrets">secrets</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList">DataAzurermKeyVaultSecretsSecretsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference">DataAzurermKeyVaultSecretsTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.keyVaultIdInput">key_vault_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.keyVaultId">key_vault_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.names">names</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.secrets">secrets</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList">DataAzurermKeyVaultSecretsSecretsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference">DataAzurermKeyVaultSecretsTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.keyVaultIdInput">key_vault_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.keyVaultId">key_vault_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.node"></a>
 
 ```python
 node: Node
@@ -570,7 +570,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -580,7 +580,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.fqn"></a>
 
 ```python
 fqn: str
@@ -590,7 +590,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -600,7 +600,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -610,7 +610,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -620,7 +620,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -630,7 +630,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -640,7 +640,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -650,7 +650,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -660,7 +660,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -670,7 +670,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -680,7 +680,7 @@ provider: TerraformProvider
 
 ---
 
-##### `names`<sup>Required</sup> <a name="names" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.names"></a>
+##### `names`<sup>Required</sup> <a name="names" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.names"></a>
 
 ```python
 names: typing.List[str]
@@ -690,27 +690,27 @@ names: typing.List[str]
 
 ---
 
-##### `secrets`<sup>Required</sup> <a name="secrets" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.secrets"></a>
+##### `secrets`<sup>Required</sup> <a name="secrets" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.secrets"></a>
 
 ```python
 secrets: DataAzurermKeyVaultSecretsSecretsList
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList">DataAzurermKeyVaultSecretsSecretsList</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList">DataAzurermKeyVaultSecretsSecretsList</a>
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.timeouts"></a>
 
 ```python
 timeouts: DataAzurermKeyVaultSecretsTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference">DataAzurermKeyVaultSecretsTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference">DataAzurermKeyVaultSecretsTimeoutsOutputReference</a>
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.idInput"></a>
 
 ```python
 id_input: str
@@ -720,7 +720,7 @@ id_input: str
 
 ---
 
-##### `key_vault_id_input`<sup>Optional</sup> <a name="key_vault_id_input" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.keyVaultIdInput"></a>
+##### `key_vault_id_input`<sup>Optional</sup> <a name="key_vault_id_input" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.keyVaultIdInput"></a>
 
 ```python
 key_vault_id_input: str
@@ -730,17 +730,17 @@ key_vault_id_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | DataAzurermKeyVaultSecretsTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a>
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.id"></a>
 
 ```python
 id: str
@@ -750,7 +750,7 @@ id: str
 
 ---
 
-##### `key_vault_id`<sup>Required</sup> <a name="key_vault_id" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.keyVaultId"></a>
+##### `key_vault_id`<sup>Required</sup> <a name="key_vault_id" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.keyVaultId"></a>
 
 ```python
 key_vault_id: str
@@ -764,11 +764,11 @@ key_vault_id: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecrets.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -780,12 +780,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataAzurermKeyVaultSecretsConfig <a name="DataAzurermKeyVaultSecretsConfig" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig"></a>
+### DataAzurermKeyVaultSecretsConfig <a name="DataAzurermKeyVaultSecretsConfig" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_key_vault_secrets
+from cdktn_provider_azurerm import data_azurerm_key_vault_secrets
 
 dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -805,20 +805,20 @@ dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.keyVaultId">key_vault_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/key_vault_secrets#key_vault_id DataAzurermKeyVaultSecrets#key_vault_id}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/key_vault_secrets#id DataAzurermKeyVaultSecrets#id}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.keyVaultId">key_vault_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/key_vault_secrets#key_vault_id DataAzurermKeyVaultSecrets#key_vault_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/key_vault_secrets#id DataAzurermKeyVaultSecrets#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -828,7 +828,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -838,7 +838,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -848,7 +848,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -858,7 +858,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -868,7 +868,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -878,7 +878,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -888,7 +888,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `key_vault_id`<sup>Required</sup> <a name="key_vault_id" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.keyVaultId"></a>
+##### `key_vault_id`<sup>Required</sup> <a name="key_vault_id" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.keyVaultId"></a>
 
 ```python
 key_vault_id: str
@@ -896,11 +896,11 @@ key_vault_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/key_vault_secrets#key_vault_id DataAzurermKeyVaultSecrets#key_vault_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/key_vault_secrets#key_vault_id DataAzurermKeyVaultSecrets#key_vault_id}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.id"></a>
 
 ```python
 id: str
@@ -908,44 +908,44 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/key_vault_secrets#id DataAzurermKeyVaultSecrets#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/key_vault_secrets#id DataAzurermKeyVaultSecrets#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsConfig.property.timeouts"></a>
 
 ```python
 timeouts: DataAzurermKeyVaultSecretsTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/key_vault_secrets#timeouts DataAzurermKeyVaultSecrets#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/key_vault_secrets#timeouts DataAzurermKeyVaultSecrets#timeouts}
 
 ---
 
-### DataAzurermKeyVaultSecretsSecrets <a name="DataAzurermKeyVaultSecretsSecrets" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecrets"></a>
+### DataAzurermKeyVaultSecretsSecrets <a name="DataAzurermKeyVaultSecretsSecrets" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecrets"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecrets.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecrets.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_key_vault_secrets
+from cdktn_provider_azurerm import data_azurerm_key_vault_secrets
 
 dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecrets()
 ```
 
 
-### DataAzurermKeyVaultSecretsTimeouts <a name="DataAzurermKeyVaultSecretsTimeouts" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts"></a>
+### DataAzurermKeyVaultSecretsTimeouts <a name="DataAzurermKeyVaultSecretsTimeouts" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_key_vault_secrets
+from cdktn_provider_azurerm import data_azurerm_key_vault_secrets
 
 dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts(
   read: str = None
@@ -956,11 +956,11 @@ dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/key_vault_secrets#read DataAzurermKeyVaultSecrets#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/key_vault_secrets#read DataAzurermKeyVaultSecrets#read}. |
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -968,18 +968,18 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/key_vault_secrets#read DataAzurermKeyVaultSecrets#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/key_vault_secrets#read DataAzurermKeyVaultSecrets#read}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DataAzurermKeyVaultSecretsSecretsList <a name="DataAzurermKeyVaultSecretsSecretsList" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList"></a>
+### DataAzurermKeyVaultSecretsSecretsList <a name="DataAzurermKeyVaultSecretsSecretsList" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_key_vault_secrets
+from cdktn_provider_azurerm import data_azurerm_key_vault_secrets
 
 dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList(
   terraform_resource: IInterpolatingParent,
@@ -990,13 +990,13 @@ dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1004,7 +1004,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1012,7 +1012,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -1024,15 +1024,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -1044,19 +1044,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.resolve"></a>
 
 ```python
 def resolve(
@@ -1066,13 +1066,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1082,7 +1082,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.get"></a>
 
 ```python
 def get(
@@ -1090,7 +1090,7 @@ def get(
 ) -> DataAzurermKeyVaultSecretsSecretsOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1103,12 +1103,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1122,7 +1122,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1133,12 +1133,12 @@ fqn: str
 ---
 
 
-### DataAzurermKeyVaultSecretsSecretsOutputReference <a name="DataAzurermKeyVaultSecretsSecretsOutputReference" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference"></a>
+### DataAzurermKeyVaultSecretsSecretsOutputReference <a name="DataAzurermKeyVaultSecretsSecretsOutputReference" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_key_vault_secrets
+from cdktn_provider_azurerm import data_azurerm_key_vault_secrets
 
 dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1150,14 +1150,14 @@ dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1165,7 +1165,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1173,7 +1173,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1181,7 +1181,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -1193,29 +1193,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1223,13 +1223,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1237,13 +1237,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1251,13 +1251,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1265,13 +1265,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1279,13 +1279,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1293,13 +1293,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1307,13 +1307,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1321,13 +1321,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1335,13 +1335,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1349,13 +1349,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1365,13 +1365,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1386,17 +1386,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.tags">tags</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecrets">DataAzurermKeyVaultSecretsSecrets</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.tags">tags</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecrets">DataAzurermKeyVaultSecretsSecrets</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1410,7 +1410,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1420,7 +1420,7 @@ fqn: str
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.enabled"></a>
 
 ```python
 enabled: IResolvable
@@ -1430,7 +1430,7 @@ enabled: IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.id"></a>
 
 ```python
 id: str
@@ -1440,7 +1440,7 @@ id: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.name"></a>
 
 ```python
 name: str
@@ -1450,7 +1450,7 @@ name: str
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.tags"></a>
 
 ```python
 tags: StringMap
@@ -1460,23 +1460,23 @@ tags: StringMap
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecretsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: DataAzurermKeyVaultSecretsSecrets
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecrets">DataAzurermKeyVaultSecretsSecrets</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsSecrets">DataAzurermKeyVaultSecretsSecrets</a>
 
 ---
 
 
-### DataAzurermKeyVaultSecretsTimeoutsOutputReference <a name="DataAzurermKeyVaultSecretsTimeoutsOutputReference" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference"></a>
+### DataAzurermKeyVaultSecretsTimeoutsOutputReference <a name="DataAzurermKeyVaultSecretsTimeoutsOutputReference" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_key_vault_secrets
+from cdktn_provider_azurerm import data_azurerm_key_vault_secrets
 
 dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1486,12 +1486,12 @@ dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1499,7 +1499,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1511,30 +1511,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1542,13 +1542,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1556,13 +1556,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1570,13 +1570,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1584,13 +1584,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1598,13 +1598,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1612,13 +1612,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1626,13 +1626,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1640,13 +1640,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1654,13 +1654,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1668,13 +1668,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1684,13 +1684,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1700,7 +1700,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
@@ -1711,15 +1711,15 @@ def reset_read() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1733,7 +1733,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1743,7 +1743,7 @@ fqn: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -1753,7 +1753,7 @@ read_input: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -1763,13 +1763,13 @@ read: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | DataAzurermKeyVaultSecretsTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.dataAzurermKeyVaultSecrets.DataAzurermKeyVaultSecretsTimeouts">DataAzurermKeyVaultSecretsTimeouts</a>
 
 ---
 

@@ -1,28 +1,28 @@
-# `dataAzurermHealthcareWorkspace` Submodule <a name="`dataAzurermHealthcareWorkspace` Submodule" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace"></a>
+# `dataAzurermHealthcareWorkspace` Submodule <a name="`dataAzurermHealthcareWorkspace` Submodule" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataAzurermHealthcareWorkspace <a name="DataAzurermHealthcareWorkspace" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace"></a>
+### DataAzurermHealthcareWorkspace <a name="DataAzurermHealthcareWorkspace" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/healthcare_workspace azurerm_healthcare_workspace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/healthcare_workspace azurerm_healthcare_workspace}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.Initializer"></a>
 
 ```typescript
-import { dataAzurermHealthcareWorkspace } from '@cdktf/provider-azurerm'
+import { dataAzurermHealthcareWorkspace } from '@cdktn/provider-azurerm'
 
 new dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace(scope: Construct, id: string, config: DataAzurermHealthcareWorkspaceConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig">DataAzurermHealthcareWorkspaceConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig">DataAzurermHealthcareWorkspaceConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig">DataAzurermHealthcareWorkspaceConfig</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig">DataAzurermHealthcareWorkspaceConfig</a>
 
 ---
 
@@ -50,30 +50,30 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toHclTerraform">toHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toHclTerraform">toHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toString"></a>
 
 ```typescript
 public toString(): string
@@ -81,25 +81,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -107,7 +107,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -115,7 +115,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -123,7 +123,7 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
@@ -131,13 +131,13 @@ public toHclTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -145,145 +145,145 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.putTimeouts"></a>
 
 ```typescript
 public putTimeouts(value: DataAzurermHealthcareWorkspaceTimeouts): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts">DataAzurermHealthcareWorkspaceTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts">DataAzurermHealthcareWorkspaceTimeouts</a>
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts(): void
@@ -293,17 +293,17 @@ public resetTimeouts(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataAzurermHealthcareWorkspace resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataAzurermHealthcareWorkspace resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isConstruct"></a>
 
 ```typescript
-import { dataAzurermHealthcareWorkspace } from '@cdktf/provider-azurerm'
+import { dataAzurermHealthcareWorkspace } from '@cdktn/provider-azurerm'
 
 dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isConstruct(x: any)
 ```
@@ -324,7 +324,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -332,45 +332,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isTerraformElement"></a>
 
 ```typescript
-import { dataAzurermHealthcareWorkspace } from '@cdktf/provider-azurerm'
+import { dataAzurermHealthcareWorkspace } from '@cdktn/provider-azurerm'
 
 dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isTerraformDataSource"></a>
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isTerraformDataSource"></a>
 
 ```typescript
-import { dataAzurermHealthcareWorkspace } from '@cdktf/provider-azurerm'
+import { dataAzurermHealthcareWorkspace } from '@cdktn/provider-azurerm'
 
 dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isTerraformDataSource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.generateConfigForImport"></a>
 
 ```typescript
-import { dataAzurermHealthcareWorkspace } from '@cdktf/provider-azurerm'
+import { dataAzurermHealthcareWorkspace } from '@cdktn/provider-azurerm'
 
 dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a DataAzurermHealthcareWorkspace resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -378,7 +378,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -386,17 +386,17 @@ The construct id used in the generated config for the DataAzurermHealthcareWorks
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing DataAzurermHealthcareWorkspace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/healthcare_workspace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/healthcare_workspace#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -408,32 +408,32 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.location">location</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.tags">tags</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference">DataAzurermHealthcareWorkspaceTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts">DataAzurermHealthcareWorkspaceTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.location">location</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.tags">tags</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference">DataAzurermHealthcareWorkspaceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts">DataAzurermHealthcareWorkspaceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -445,7 +445,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -455,7 +455,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -465,7 +465,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -475,7 +475,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -485,7 +485,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -495,7 +495,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -505,7 +505,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -515,7 +515,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -525,7 +525,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -535,7 +535,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -545,7 +545,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -555,7 +555,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.location"></a>
 
 ```typescript
 public readonly location: string;
@@ -565,7 +565,7 @@ public readonly location: string;
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.tags"></a>
 
 ```typescript
 public readonly tags: StringMap;
@@ -575,17 +575,17 @@ public readonly tags: StringMap;
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: DataAzurermHealthcareWorkspaceTimeoutsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference">DataAzurermHealthcareWorkspaceTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference">DataAzurermHealthcareWorkspaceTimeoutsOutputReference</a>
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -595,7 +595,7 @@ public readonly idInput: string;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -605,7 +605,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `resourceGroupNameInput`<sup>Optional</sup> <a name="resourceGroupNameInput" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.resourceGroupNameInput"></a>
+##### `resourceGroupNameInput`<sup>Optional</sup> <a name="resourceGroupNameInput" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.resourceGroupNameInput"></a>
 
 ```typescript
 public readonly resourceGroupNameInput: string;
@@ -615,17 +615,17 @@ public readonly resourceGroupNameInput: string;
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.timeoutsInput"></a>
 
 ```typescript
 public readonly timeoutsInput: IResolvable | DataAzurermHealthcareWorkspaceTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts">DataAzurermHealthcareWorkspaceTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts">DataAzurermHealthcareWorkspaceTimeouts</a>
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -635,7 +635,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -645,7 +645,7 @@ public readonly name: string;
 
 ---
 
-##### `resourceGroupName`<sup>Required</sup> <a name="resourceGroupName" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.resourceGroupName"></a>
+##### `resourceGroupName`<sup>Required</sup> <a name="resourceGroupName" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.resourceGroupName"></a>
 
 ```typescript
 public readonly resourceGroupName: string;
@@ -659,11 +659,11 @@ public readonly resourceGroupName: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -675,12 +675,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataAzurermHealthcareWorkspaceConfig <a name="DataAzurermHealthcareWorkspaceConfig" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig"></a>
+### DataAzurermHealthcareWorkspaceConfig <a name="DataAzurermHealthcareWorkspaceConfig" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.Initializer"></a>
 
 ```typescript
-import { dataAzurermHealthcareWorkspace } from '@cdktf/provider-azurerm'
+import { dataAzurermHealthcareWorkspace } from '@cdktn/provider-azurerm'
 
 const dataAzurermHealthcareWorkspaceConfig: dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig = { ... }
 ```
@@ -689,21 +689,21 @@ const dataAzurermHealthcareWorkspaceConfig: dataAzurermHealthcareWorkspace.DataA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/healthcare_workspace#name DataAzurermHealthcareWorkspace#name}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/healthcare_workspace#resource_group_name DataAzurermHealthcareWorkspace#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/healthcare_workspace#id DataAzurermHealthcareWorkspace#id}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts">DataAzurermHealthcareWorkspaceTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/healthcare_workspace#name DataAzurermHealthcareWorkspace#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/healthcare_workspace#resource_group_name DataAzurermHealthcareWorkspace#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/healthcare_workspace#id DataAzurermHealthcareWorkspace#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts">DataAzurermHealthcareWorkspaceTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -713,7 +713,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -723,7 +723,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -733,7 +733,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -743,7 +743,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -753,7 +753,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -763,7 +763,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -773,7 +773,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -781,11 +781,11 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/healthcare_workspace#name DataAzurermHealthcareWorkspace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/healthcare_workspace#name DataAzurermHealthcareWorkspace#name}.
 
 ---
 
-##### `resourceGroupName`<sup>Required</sup> <a name="resourceGroupName" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.resourceGroupName"></a>
+##### `resourceGroupName`<sup>Required</sup> <a name="resourceGroupName" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.resourceGroupName"></a>
 
 ```typescript
 public readonly resourceGroupName: string;
@@ -793,11 +793,11 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/healthcare_workspace#resource_group_name DataAzurermHealthcareWorkspace#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/healthcare_workspace#resource_group_name DataAzurermHealthcareWorkspace#resource_group_name}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -805,33 +805,33 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/healthcare_workspace#id DataAzurermHealthcareWorkspace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/healthcare_workspace#id DataAzurermHealthcareWorkspace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: DataAzurermHealthcareWorkspaceTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts">DataAzurermHealthcareWorkspaceTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts">DataAzurermHealthcareWorkspaceTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/healthcare_workspace#timeouts DataAzurermHealthcareWorkspace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/healthcare_workspace#timeouts DataAzurermHealthcareWorkspace#timeouts}
 
 ---
 
-### DataAzurermHealthcareWorkspaceTimeouts <a name="DataAzurermHealthcareWorkspaceTimeouts" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts"></a>
+### DataAzurermHealthcareWorkspaceTimeouts <a name="DataAzurermHealthcareWorkspaceTimeouts" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts.Initializer"></a>
 
 ```typescript
-import { dataAzurermHealthcareWorkspace } from '@cdktf/provider-azurerm'
+import { dataAzurermHealthcareWorkspace } from '@cdktn/provider-azurerm'
 
 const dataAzurermHealthcareWorkspaceTimeouts: dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts = { ... }
 ```
@@ -840,11 +840,11 @@ const dataAzurermHealthcareWorkspaceTimeouts: dataAzurermHealthcareWorkspace.Dat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/healthcare_workspace#read DataAzurermHealthcareWorkspace#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/healthcare_workspace#read DataAzurermHealthcareWorkspace#read}. |
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -852,30 +852,30 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/healthcare_workspace#read DataAzurermHealthcareWorkspace#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/healthcare_workspace#read DataAzurermHealthcareWorkspace#read}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DataAzurermHealthcareWorkspaceTimeoutsOutputReference <a name="DataAzurermHealthcareWorkspaceTimeoutsOutputReference" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference"></a>
+### DataAzurermHealthcareWorkspaceTimeoutsOutputReference <a name="DataAzurermHealthcareWorkspaceTimeoutsOutputReference" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.Initializer"></a>
 
 ```typescript
-import { dataAzurermHealthcareWorkspace } from '@cdktf/provider-azurerm'
+import { dataAzurermHealthcareWorkspace } from '@cdktn/provider-azurerm'
 
 new dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -883,7 +883,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -895,150 +895,150 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1046,13 +1046,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1062,7 +1062,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetRead` <a name="resetRead" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.resetRead"></a>
+##### `resetRead` <a name="resetRead" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.resetRead"></a>
 
 ```typescript
 public resetRead(): void
@@ -1073,15 +1073,15 @@ public resetRead(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts">DataAzurermHealthcareWorkspaceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts">DataAzurermHealthcareWorkspaceTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1095,7 +1095,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1105,7 +1105,7 @@ public readonly fqn: string;
 
 ---
 
-##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.readInput"></a>
+##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.readInput"></a>
 
 ```typescript
 public readonly readInput: string;
@@ -1115,7 +1115,7 @@ public readonly readInput: string;
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -1125,13 +1125,13 @@ public readonly read: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | DataAzurermHealthcareWorkspaceTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts">DataAzurermHealthcareWorkspaceTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts">DataAzurermHealthcareWorkspaceTimeouts</a>
 
 ---
 

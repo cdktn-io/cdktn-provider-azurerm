@@ -1,15 +1,15 @@
-# `mssqlManagedInstance` Submodule <a name="`mssqlManagedInstance` Submodule" id="@cdktf/provider-azurerm.mssqlManagedInstance"></a>
+# `mssqlManagedInstance` Submodule <a name="`mssqlManagedInstance` Submodule" id="@cdktn/provider-azurerm.mssqlManagedInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### MssqlManagedInstance <a name="MssqlManagedInstance" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance"></a>
+### MssqlManagedInstance <a name="MssqlManagedInstance" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import mssql_managed_instance
+from cdktn_provider_azurerm import mssql_managed_instance
 
 mssqlManagedInstance.MssqlManagedInstance(
   scope: Construct,
@@ -53,46 +53,46 @@ mssqlManagedInstance.MssqlManagedInstance(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.licenseType">license_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#license_type MssqlManagedInstance#license_type}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#location MssqlManagedInstance#location}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#name MssqlManagedInstance#name}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#resource_group_name MssqlManagedInstance#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.skuName">sku_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#sku_name MssqlManagedInstance#sku_name}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.storageSizeInGb">storage_size_in_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#storage_size_in_gb MssqlManagedInstance#storage_size_in_gb}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#subnet_id MssqlManagedInstance#subnet_id}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.vcores">vcores</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#vcores MssqlManagedInstance#vcores}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.administratorLogin">administrator_login</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#administrator_login MssqlManagedInstance#administrator_login}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.administratorLoginPassword">administrator_login_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#administrator_login_password MssqlManagedInstance#administrator_login_password}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.azureActiveDirectoryAdministrator">azure_active_directory_administrator</a></code> | <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a></code> | azure_active_directory_administrator block. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.collation">collation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#collation MssqlManagedInstance#collation}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.databaseFormat">database_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#database_format MssqlManagedInstance#database_format}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.dnsZonePartnerId">dns_zone_partner_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#dns_zone_partner_id MssqlManagedInstance#dns_zone_partner_id}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.hybridSecondaryUsage">hybrid_secondary_usage</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#hybrid_secondary_usage MssqlManagedInstance#hybrid_secondary_usage}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#id MssqlManagedInstance#id}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a></code> | identity block. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.maintenanceConfigurationName">maintenance_configuration_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#maintenance_configuration_name MssqlManagedInstance#maintenance_configuration_name}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.minimumTlsVersion">minimum_tls_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#minimum_tls_version MssqlManagedInstance#minimum_tls_version}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.proxyOverride">proxy_override</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#proxy_override MssqlManagedInstance#proxy_override}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.publicDataEndpointEnabled">public_data_endpoint_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#public_data_endpoint_enabled MssqlManagedInstance#public_data_endpoint_enabled}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.servicePrincipalType">service_principal_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#service_principal_type MssqlManagedInstance#service_principal_type}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.storageAccountType">storage_account_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#storage_account_type MssqlManagedInstance#storage_account_type}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#tags MssqlManagedInstance#tags}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.timezoneId">timezone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#timezone_id MssqlManagedInstance#timezone_id}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.zoneRedundantEnabled">zone_redundant_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#zone_redundant_enabled MssqlManagedInstance#zone_redundant_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.licenseType">license_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#license_type MssqlManagedInstance#license_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#location MssqlManagedInstance#location}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#name MssqlManagedInstance#name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#resource_group_name MssqlManagedInstance#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.skuName">sku_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#sku_name MssqlManagedInstance#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.storageSizeInGb">storage_size_in_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#storage_size_in_gb MssqlManagedInstance#storage_size_in_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#subnet_id MssqlManagedInstance#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.vcores">vcores</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#vcores MssqlManagedInstance#vcores}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.administratorLogin">administrator_login</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#administrator_login MssqlManagedInstance#administrator_login}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.administratorLoginPassword">administrator_login_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#administrator_login_password MssqlManagedInstance#administrator_login_password}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.azureActiveDirectoryAdministrator">azure_active_directory_administrator</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a></code> | azure_active_directory_administrator block. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.collation">collation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#collation MssqlManagedInstance#collation}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.databaseFormat">database_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#database_format MssqlManagedInstance#database_format}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.dnsZonePartnerId">dns_zone_partner_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#dns_zone_partner_id MssqlManagedInstance#dns_zone_partner_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.hybridSecondaryUsage">hybrid_secondary_usage</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#hybrid_secondary_usage MssqlManagedInstance#hybrid_secondary_usage}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#id MssqlManagedInstance#id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a></code> | identity block. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.maintenanceConfigurationName">maintenance_configuration_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#maintenance_configuration_name MssqlManagedInstance#maintenance_configuration_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.minimumTlsVersion">minimum_tls_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#minimum_tls_version MssqlManagedInstance#minimum_tls_version}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.proxyOverride">proxy_override</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#proxy_override MssqlManagedInstance#proxy_override}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.publicDataEndpointEnabled">public_data_endpoint_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#public_data_endpoint_enabled MssqlManagedInstance#public_data_endpoint_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.servicePrincipalType">service_principal_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#service_principal_type MssqlManagedInstance#service_principal_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.storageAccountType">storage_account_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#storage_account_type MssqlManagedInstance#storage_account_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#tags MssqlManagedInstance#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.timezoneId">timezone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#timezone_id MssqlManagedInstance#timezone_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.zoneRedundantEnabled">zone_redundant_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#zone_redundant_enabled MssqlManagedInstance#zone_redundant_enabled}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -100,7 +100,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -110,270 +110,270 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `license_type`<sup>Required</sup> <a name="license_type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.licenseType"></a>
+##### `license_type`<sup>Required</sup> <a name="license_type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.licenseType"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#license_type MssqlManagedInstance#license_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#license_type MssqlManagedInstance#license_type}.
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.location"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#location MssqlManagedInstance#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#location MssqlManagedInstance#location}.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#name MssqlManagedInstance#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#name MssqlManagedInstance#name}.
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.resourceGroupName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#resource_group_name MssqlManagedInstance#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#resource_group_name MssqlManagedInstance#resource_group_name}.
 
 ---
 
-##### `sku_name`<sup>Required</sup> <a name="sku_name" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.skuName"></a>
+##### `sku_name`<sup>Required</sup> <a name="sku_name" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.skuName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#sku_name MssqlManagedInstance#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#sku_name MssqlManagedInstance#sku_name}.
 
 ---
 
-##### `storage_size_in_gb`<sup>Required</sup> <a name="storage_size_in_gb" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.storageSizeInGb"></a>
+##### `storage_size_in_gb`<sup>Required</sup> <a name="storage_size_in_gb" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.storageSizeInGb"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#storage_size_in_gb MssqlManagedInstance#storage_size_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#storage_size_in_gb MssqlManagedInstance#storage_size_in_gb}.
 
 ---
 
-##### `subnet_id`<sup>Required</sup> <a name="subnet_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.subnetId"></a>
+##### `subnet_id`<sup>Required</sup> <a name="subnet_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.subnetId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#subnet_id MssqlManagedInstance#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#subnet_id MssqlManagedInstance#subnet_id}.
 
 ---
 
-##### `vcores`<sup>Required</sup> <a name="vcores" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.vcores"></a>
+##### `vcores`<sup>Required</sup> <a name="vcores" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.vcores"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#vcores MssqlManagedInstance#vcores}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#vcores MssqlManagedInstance#vcores}.
 
 ---
 
-##### `administrator_login`<sup>Optional</sup> <a name="administrator_login" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.administratorLogin"></a>
+##### `administrator_login`<sup>Optional</sup> <a name="administrator_login" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.administratorLogin"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#administrator_login MssqlManagedInstance#administrator_login}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#administrator_login MssqlManagedInstance#administrator_login}.
 
 ---
 
-##### `administrator_login_password`<sup>Optional</sup> <a name="administrator_login_password" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.administratorLoginPassword"></a>
+##### `administrator_login_password`<sup>Optional</sup> <a name="administrator_login_password" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.administratorLoginPassword"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#administrator_login_password MssqlManagedInstance#administrator_login_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#administrator_login_password MssqlManagedInstance#administrator_login_password}.
 
 ---
 
-##### `azure_active_directory_administrator`<sup>Optional</sup> <a name="azure_active_directory_administrator" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.azureActiveDirectoryAdministrator"></a>
+##### `azure_active_directory_administrator`<sup>Optional</sup> <a name="azure_active_directory_administrator" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.azureActiveDirectoryAdministrator"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a>
 
 azure_active_directory_administrator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#azure_active_directory_administrator MssqlManagedInstance#azure_active_directory_administrator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#azure_active_directory_administrator MssqlManagedInstance#azure_active_directory_administrator}
 
 ---
 
-##### `collation`<sup>Optional</sup> <a name="collation" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.collation"></a>
+##### `collation`<sup>Optional</sup> <a name="collation" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.collation"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#collation MssqlManagedInstance#collation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#collation MssqlManagedInstance#collation}.
 
 ---
 
-##### `database_format`<sup>Optional</sup> <a name="database_format" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.databaseFormat"></a>
+##### `database_format`<sup>Optional</sup> <a name="database_format" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.databaseFormat"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#database_format MssqlManagedInstance#database_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#database_format MssqlManagedInstance#database_format}.
 
 ---
 
-##### `dns_zone_partner_id`<sup>Optional</sup> <a name="dns_zone_partner_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.dnsZonePartnerId"></a>
+##### `dns_zone_partner_id`<sup>Optional</sup> <a name="dns_zone_partner_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.dnsZonePartnerId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#dns_zone_partner_id MssqlManagedInstance#dns_zone_partner_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#dns_zone_partner_id MssqlManagedInstance#dns_zone_partner_id}.
 
 ---
 
-##### `hybrid_secondary_usage`<sup>Optional</sup> <a name="hybrid_secondary_usage" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.hybridSecondaryUsage"></a>
+##### `hybrid_secondary_usage`<sup>Optional</sup> <a name="hybrid_secondary_usage" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.hybridSecondaryUsage"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#hybrid_secondary_usage MssqlManagedInstance#hybrid_secondary_usage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#hybrid_secondary_usage MssqlManagedInstance#hybrid_secondary_usage}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#id MssqlManagedInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#id MssqlManagedInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.identity"></a>
+##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.identity"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a>
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#identity MssqlManagedInstance#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#identity MssqlManagedInstance#identity}
 
 ---
 
-##### `maintenance_configuration_name`<sup>Optional</sup> <a name="maintenance_configuration_name" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.maintenanceConfigurationName"></a>
+##### `maintenance_configuration_name`<sup>Optional</sup> <a name="maintenance_configuration_name" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.maintenanceConfigurationName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#maintenance_configuration_name MssqlManagedInstance#maintenance_configuration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#maintenance_configuration_name MssqlManagedInstance#maintenance_configuration_name}.
 
 ---
 
-##### `minimum_tls_version`<sup>Optional</sup> <a name="minimum_tls_version" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.minimumTlsVersion"></a>
+##### `minimum_tls_version`<sup>Optional</sup> <a name="minimum_tls_version" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.minimumTlsVersion"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#minimum_tls_version MssqlManagedInstance#minimum_tls_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#minimum_tls_version MssqlManagedInstance#minimum_tls_version}.
 
 ---
 
-##### `proxy_override`<sup>Optional</sup> <a name="proxy_override" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.proxyOverride"></a>
+##### `proxy_override`<sup>Optional</sup> <a name="proxy_override" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.proxyOverride"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#proxy_override MssqlManagedInstance#proxy_override}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#proxy_override MssqlManagedInstance#proxy_override}.
 
 ---
 
-##### `public_data_endpoint_enabled`<sup>Optional</sup> <a name="public_data_endpoint_enabled" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.publicDataEndpointEnabled"></a>
+##### `public_data_endpoint_enabled`<sup>Optional</sup> <a name="public_data_endpoint_enabled" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.publicDataEndpointEnabled"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#public_data_endpoint_enabled MssqlManagedInstance#public_data_endpoint_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#public_data_endpoint_enabled MssqlManagedInstance#public_data_endpoint_enabled}.
 
 ---
 
-##### `service_principal_type`<sup>Optional</sup> <a name="service_principal_type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.servicePrincipalType"></a>
+##### `service_principal_type`<sup>Optional</sup> <a name="service_principal_type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.servicePrincipalType"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#service_principal_type MssqlManagedInstance#service_principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#service_principal_type MssqlManagedInstance#service_principal_type}.
 
 ---
 
-##### `storage_account_type`<sup>Optional</sup> <a name="storage_account_type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.storageAccountType"></a>
+##### `storage_account_type`<sup>Optional</sup> <a name="storage_account_type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.storageAccountType"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#storage_account_type MssqlManagedInstance#storage_account_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#storage_account_type MssqlManagedInstance#storage_account_type}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.tags"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#tags MssqlManagedInstance#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#tags MssqlManagedInstance#tags}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#timeouts MssqlManagedInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#timeouts MssqlManagedInstance#timeouts}
 
 ---
 
-##### `timezone_id`<sup>Optional</sup> <a name="timezone_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.timezoneId"></a>
+##### `timezone_id`<sup>Optional</sup> <a name="timezone_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.timezoneId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#timezone_id MssqlManagedInstance#timezone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#timezone_id MssqlManagedInstance#timezone_id}.
 
 ---
 
-##### `zone_redundant_enabled`<sup>Optional</sup> <a name="zone_redundant_enabled" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.zoneRedundantEnabled"></a>
+##### `zone_redundant_enabled`<sup>Optional</sup> <a name="zone_redundant_enabled" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.Initializer.parameter.zoneRedundantEnabled"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#zone_redundant_enabled MssqlManagedInstance#zone_redundant_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#zone_redundant_enabled MssqlManagedInstance#zone_redundant_enabled}.
 
 ---
 
@@ -381,55 +381,55 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putAzureActiveDirectoryAdministrator">put_azure_active_directory_administrator</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putIdentity">put_identity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetAdministratorLogin">reset_administrator_login</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetAdministratorLoginPassword">reset_administrator_login_password</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetAzureActiveDirectoryAdministrator">reset_azure_active_directory_administrator</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetCollation">reset_collation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetDatabaseFormat">reset_database_format</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetDnsZonePartnerId">reset_dns_zone_partner_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetHybridSecondaryUsage">reset_hybrid_secondary_usage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetIdentity">reset_identity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetMaintenanceConfigurationName">reset_maintenance_configuration_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetMinimumTlsVersion">reset_minimum_tls_version</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetProxyOverride">reset_proxy_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetPublicDataEndpointEnabled">reset_public_data_endpoint_enabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetServicePrincipalType">reset_service_principal_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetStorageAccountType">reset_storage_account_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetTags">reset_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetTimeouts">reset_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetTimezoneId">reset_timezone_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetZoneRedundantEnabled">reset_zone_redundant_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putAzureActiveDirectoryAdministrator">put_azure_active_directory_administrator</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putIdentity">put_identity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetAdministratorLogin">reset_administrator_login</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetAdministratorLoginPassword">reset_administrator_login_password</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetAzureActiveDirectoryAdministrator">reset_azure_active_directory_administrator</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetCollation">reset_collation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetDatabaseFormat">reset_database_format</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetDnsZonePartnerId">reset_dns_zone_partner_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetHybridSecondaryUsage">reset_hybrid_secondary_usage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetIdentity">reset_identity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetMaintenanceConfigurationName">reset_maintenance_configuration_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetMinimumTlsVersion">reset_minimum_tls_version</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetProxyOverride">reset_proxy_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetPublicDataEndpointEnabled">reset_public_data_endpoint_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetServicePrincipalType">reset_service_principal_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetStorageAccountType">reset_storage_account_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetTimezoneId">reset_timezone_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetZoneRedundantEnabled">reset_zone_redundant_enabled</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toString"></a>
 
 ```python
 def to_string() -> str
@@ -437,7 +437,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.addOverride"></a>
 
 ```python
 def add_override(
@@ -446,19 +446,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -468,7 +468,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -476,7 +476,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -484,19 +484,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -504,7 +504,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -514,7 +514,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -522,7 +522,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -530,13 +530,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -544,13 +544,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -558,13 +558,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -572,13 +572,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -586,13 +586,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -600,13 +600,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -614,13 +614,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -628,13 +628,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -642,19 +642,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.importFrom"></a>
 
 ```python
 def import_from(
@@ -663,19 +663,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -683,13 +683,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -701,7 +701,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -709,7 +709,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveTo"></a>
 
 ```python
 def move_to(
@@ -720,7 +720,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -728,7 +728,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -736,7 +736,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -746,7 +746,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -754,7 +754,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_azure_active_directory_administrator` <a name="put_azure_active_directory_administrator" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putAzureActiveDirectoryAdministrator"></a>
+##### `put_azure_active_directory_administrator` <a name="put_azure_active_directory_administrator" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putAzureActiveDirectoryAdministrator"></a>
 
 ```python
 def put_azure_active_directory_administrator(
@@ -766,47 +766,47 @@ def put_azure_active_directory_administrator(
 ) -> None
 ```
 
-###### `login_username`<sup>Required</sup> <a name="login_username" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putAzureActiveDirectoryAdministrator.parameter.loginUsername"></a>
+###### `login_username`<sup>Required</sup> <a name="login_username" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putAzureActiveDirectoryAdministrator.parameter.loginUsername"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#login_username MssqlManagedInstance#login_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#login_username MssqlManagedInstance#login_username}.
 
 ---
 
-###### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putAzureActiveDirectoryAdministrator.parameter.objectId"></a>
+###### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putAzureActiveDirectoryAdministrator.parameter.objectId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#object_id MssqlManagedInstance#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#object_id MssqlManagedInstance#object_id}.
 
 ---
 
-###### `principal_type`<sup>Required</sup> <a name="principal_type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putAzureActiveDirectoryAdministrator.parameter.principalType"></a>
+###### `principal_type`<sup>Required</sup> <a name="principal_type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putAzureActiveDirectoryAdministrator.parameter.principalType"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#principal_type MssqlManagedInstance#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#principal_type MssqlManagedInstance#principal_type}.
 
 ---
 
-###### `azuread_authentication_only_enabled`<sup>Optional</sup> <a name="azuread_authentication_only_enabled" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putAzureActiveDirectoryAdministrator.parameter.azureadAuthenticationOnlyEnabled"></a>
+###### `azuread_authentication_only_enabled`<sup>Optional</sup> <a name="azuread_authentication_only_enabled" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putAzureActiveDirectoryAdministrator.parameter.azureadAuthenticationOnlyEnabled"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#azuread_authentication_only_enabled MssqlManagedInstance#azuread_authentication_only_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#azuread_authentication_only_enabled MssqlManagedInstance#azuread_authentication_only_enabled}.
 
 ---
 
-###### `tenant_id`<sup>Optional</sup> <a name="tenant_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putAzureActiveDirectoryAdministrator.parameter.tenantId"></a>
+###### `tenant_id`<sup>Optional</sup> <a name="tenant_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putAzureActiveDirectoryAdministrator.parameter.tenantId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#tenant_id MssqlManagedInstance#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#tenant_id MssqlManagedInstance#tenant_id}.
 
 ---
 
-##### `put_identity` <a name="put_identity" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putIdentity"></a>
+##### `put_identity` <a name="put_identity" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putIdentity"></a>
 
 ```python
 def put_identity(
@@ -815,23 +815,23 @@ def put_identity(
 ) -> None
 ```
 
-###### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putIdentity.parameter.type"></a>
+###### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putIdentity.parameter.type"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#type MssqlManagedInstance#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#type MssqlManagedInstance#type}.
 
 ---
 
-###### `identity_ids`<sup>Optional</sup> <a name="identity_ids" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putIdentity.parameter.identityIds"></a>
+###### `identity_ids`<sup>Optional</sup> <a name="identity_ids" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putIdentity.parameter.identityIds"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#identity_ids MssqlManagedInstance#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#identity_ids MssqlManagedInstance#identity_ids}.
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -842,147 +842,147 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#create MssqlManagedInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#create MssqlManagedInstance#create}.
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#delete MssqlManagedInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#delete MssqlManagedInstance#delete}.
 
 ---
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#read MssqlManagedInstance#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#read MssqlManagedInstance#read}.
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#update MssqlManagedInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#update MssqlManagedInstance#update}.
 
 ---
 
-##### `reset_administrator_login` <a name="reset_administrator_login" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetAdministratorLogin"></a>
+##### `reset_administrator_login` <a name="reset_administrator_login" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetAdministratorLogin"></a>
 
 ```python
 def reset_administrator_login() -> None
 ```
 
-##### `reset_administrator_login_password` <a name="reset_administrator_login_password" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetAdministratorLoginPassword"></a>
+##### `reset_administrator_login_password` <a name="reset_administrator_login_password" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetAdministratorLoginPassword"></a>
 
 ```python
 def reset_administrator_login_password() -> None
 ```
 
-##### `reset_azure_active_directory_administrator` <a name="reset_azure_active_directory_administrator" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetAzureActiveDirectoryAdministrator"></a>
+##### `reset_azure_active_directory_administrator` <a name="reset_azure_active_directory_administrator" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetAzureActiveDirectoryAdministrator"></a>
 
 ```python
 def reset_azure_active_directory_administrator() -> None
 ```
 
-##### `reset_collation` <a name="reset_collation" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetCollation"></a>
+##### `reset_collation` <a name="reset_collation" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetCollation"></a>
 
 ```python
 def reset_collation() -> None
 ```
 
-##### `reset_database_format` <a name="reset_database_format" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetDatabaseFormat"></a>
+##### `reset_database_format` <a name="reset_database_format" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetDatabaseFormat"></a>
 
 ```python
 def reset_database_format() -> None
 ```
 
-##### `reset_dns_zone_partner_id` <a name="reset_dns_zone_partner_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetDnsZonePartnerId"></a>
+##### `reset_dns_zone_partner_id` <a name="reset_dns_zone_partner_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetDnsZonePartnerId"></a>
 
 ```python
 def reset_dns_zone_partner_id() -> None
 ```
 
-##### `reset_hybrid_secondary_usage` <a name="reset_hybrid_secondary_usage" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetHybridSecondaryUsage"></a>
+##### `reset_hybrid_secondary_usage` <a name="reset_hybrid_secondary_usage" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetHybridSecondaryUsage"></a>
 
 ```python
 def reset_hybrid_secondary_usage() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_identity` <a name="reset_identity" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetIdentity"></a>
+##### `reset_identity` <a name="reset_identity" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetIdentity"></a>
 
 ```python
 def reset_identity() -> None
 ```
 
-##### `reset_maintenance_configuration_name` <a name="reset_maintenance_configuration_name" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetMaintenanceConfigurationName"></a>
+##### `reset_maintenance_configuration_name` <a name="reset_maintenance_configuration_name" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetMaintenanceConfigurationName"></a>
 
 ```python
 def reset_maintenance_configuration_name() -> None
 ```
 
-##### `reset_minimum_tls_version` <a name="reset_minimum_tls_version" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetMinimumTlsVersion"></a>
+##### `reset_minimum_tls_version` <a name="reset_minimum_tls_version" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetMinimumTlsVersion"></a>
 
 ```python
 def reset_minimum_tls_version() -> None
 ```
 
-##### `reset_proxy_override` <a name="reset_proxy_override" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetProxyOverride"></a>
+##### `reset_proxy_override` <a name="reset_proxy_override" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetProxyOverride"></a>
 
 ```python
 def reset_proxy_override() -> None
 ```
 
-##### `reset_public_data_endpoint_enabled` <a name="reset_public_data_endpoint_enabled" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetPublicDataEndpointEnabled"></a>
+##### `reset_public_data_endpoint_enabled` <a name="reset_public_data_endpoint_enabled" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetPublicDataEndpointEnabled"></a>
 
 ```python
 def reset_public_data_endpoint_enabled() -> None
 ```
 
-##### `reset_service_principal_type` <a name="reset_service_principal_type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetServicePrincipalType"></a>
+##### `reset_service_principal_type` <a name="reset_service_principal_type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetServicePrincipalType"></a>
 
 ```python
 def reset_service_principal_type() -> None
 ```
 
-##### `reset_storage_account_type` <a name="reset_storage_account_type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetStorageAccountType"></a>
+##### `reset_storage_account_type` <a name="reset_storage_account_type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetStorageAccountType"></a>
 
 ```python
 def reset_storage_account_type() -> None
 ```
 
-##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetTags"></a>
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetTags"></a>
 
 ```python
 def reset_tags() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
 ```
 
-##### `reset_timezone_id` <a name="reset_timezone_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetTimezoneId"></a>
+##### `reset_timezone_id` <a name="reset_timezone_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetTimezoneId"></a>
 
 ```python
 def reset_timezone_id() -> None
 ```
 
-##### `reset_zone_redundant_enabled` <a name="reset_zone_redundant_enabled" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetZoneRedundantEnabled"></a>
+##### `reset_zone_redundant_enabled` <a name="reset_zone_redundant_enabled" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.resetZoneRedundantEnabled"></a>
 
 ```python
 def reset_zone_redundant_enabled() -> None
@@ -992,17 +992,17 @@ def reset_zone_redundant_enabled() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a MssqlManagedInstance resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a MssqlManagedInstance resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import mssql_managed_instance
+from cdktn_provider_azurerm import mssql_managed_instance
 
 mssqlManagedInstance.MssqlManagedInstance.is_construct(
   x: typing.Any
@@ -1025,7 +1025,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -1033,42 +1033,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import mssql_managed_instance
+from cdktn_provider_azurerm import mssql_managed_instance
 
 mssqlManagedInstance.MssqlManagedInstance.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import mssql_managed_instance
+from cdktn_provider_azurerm import mssql_managed_instance
 
 mssqlManagedInstance.MssqlManagedInstance.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import mssql_managed_instance
+from cdktn_provider_azurerm import mssql_managed_instance
 
 mssqlManagedInstance.MssqlManagedInstance.generate_config_for_import(
   scope: Construct,
@@ -1080,7 +1080,7 @@ mssqlManagedInstance.MssqlManagedInstance.generate_config_for_import(
 
 Generates CDKTF code for importing a MssqlManagedInstance resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -1088,7 +1088,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -1096,17 +1096,17 @@ The construct id used in the generated config for the MssqlManagedInstance to im
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing MssqlManagedInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -1118,80 +1118,80 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.azureActiveDirectoryAdministrator">azure_active_directory_administrator</a></code> | <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference">MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dnsZone">dns_zone</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.fqdn">fqdn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.identity">identity</a></code> | <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference">MssqlManagedInstanceIdentityOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference">MssqlManagedInstanceTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLoginInput">administrator_login_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLoginPasswordInput">administrator_login_password_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.azureActiveDirectoryAdministratorInput">azure_active_directory_administrator_input</a></code> | <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.collationInput">collation_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.databaseFormatInput">database_format_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dnsZonePartnerIdInput">dns_zone_partner_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.hybridSecondaryUsageInput">hybrid_secondary_usage_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.identityInput">identity_input</a></code> | <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.licenseTypeInput">license_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.maintenanceConfigurationNameInput">maintenance_configuration_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.minimumTlsVersionInput">minimum_tls_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.proxyOverrideInput">proxy_override_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.publicDataEndpointEnabledInput">public_data_endpoint_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.servicePrincipalTypeInput">service_principal_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.skuNameInput">sku_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageAccountTypeInput">storage_account_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageSizeInGbInput">storage_size_in_gb_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.subnetIdInput">subnet_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timezoneIdInput">timezone_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.vcoresInput">vcores_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.zoneRedundantEnabledInput">zone_redundant_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLogin">administrator_login</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLoginPassword">administrator_login_password</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.collation">collation</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.databaseFormat">database_format</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dnsZonePartnerId">dns_zone_partner_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.hybridSecondaryUsage">hybrid_secondary_usage</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.licenseType">license_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.location">location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.maintenanceConfigurationName">maintenance_configuration_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.minimumTlsVersion">minimum_tls_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.proxyOverride">proxy_override</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.publicDataEndpointEnabled">public_data_endpoint_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.servicePrincipalType">service_principal_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.skuName">sku_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageAccountType">storage_account_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageSizeInGb">storage_size_in_gb</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.subnetId">subnet_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timezoneId">timezone_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.vcores">vcores</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.zoneRedundantEnabled">zone_redundant_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.azureActiveDirectoryAdministrator">azure_active_directory_administrator</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference">MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dnsZone">dns_zone</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.fqdn">fqdn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference">MssqlManagedInstanceIdentityOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference">MssqlManagedInstanceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLoginInput">administrator_login_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLoginPasswordInput">administrator_login_password_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.azureActiveDirectoryAdministratorInput">azure_active_directory_administrator_input</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.collationInput">collation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.databaseFormatInput">database_format_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dnsZonePartnerIdInput">dns_zone_partner_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.hybridSecondaryUsageInput">hybrid_secondary_usage_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.identityInput">identity_input</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.licenseTypeInput">license_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.maintenanceConfigurationNameInput">maintenance_configuration_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.minimumTlsVersionInput">minimum_tls_version_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.proxyOverrideInput">proxy_override_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.publicDataEndpointEnabledInput">public_data_endpoint_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.servicePrincipalTypeInput">service_principal_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.skuNameInput">sku_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageAccountTypeInput">storage_account_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageSizeInGbInput">storage_size_in_gb_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.subnetIdInput">subnet_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timezoneIdInput">timezone_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.vcoresInput">vcores_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.zoneRedundantEnabledInput">zone_redundant_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLogin">administrator_login</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLoginPassword">administrator_login_password</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.collation">collation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.databaseFormat">database_format</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dnsZonePartnerId">dns_zone_partner_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.hybridSecondaryUsage">hybrid_secondary_usage</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.licenseType">license_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.maintenanceConfigurationName">maintenance_configuration_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.minimumTlsVersion">minimum_tls_version</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.proxyOverride">proxy_override</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.publicDataEndpointEnabled">public_data_endpoint_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.servicePrincipalType">service_principal_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.skuName">sku_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageAccountType">storage_account_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageSizeInGb">storage_size_in_gb</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.subnetId">subnet_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timezoneId">timezone_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.vcores">vcores</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.zoneRedundantEnabled">zone_redundant_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.node"></a>
 
 ```python
 node: Node
@@ -1203,7 +1203,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -1213,7 +1213,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1223,7 +1223,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1233,7 +1233,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1243,7 +1243,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1253,7 +1253,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -1263,7 +1263,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1273,7 +1273,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1283,7 +1283,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1293,7 +1293,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1303,7 +1303,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1313,7 +1313,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1323,7 +1323,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1333,17 +1333,17 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `azure_active_directory_administrator`<sup>Required</sup> <a name="azure_active_directory_administrator" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.azureActiveDirectoryAdministrator"></a>
+##### `azure_active_directory_administrator`<sup>Required</sup> <a name="azure_active_directory_administrator" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.azureActiveDirectoryAdministrator"></a>
 
 ```python
 azure_active_directory_administrator: MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference">MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference">MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference</a>
 
 ---
 
-##### `dns_zone`<sup>Required</sup> <a name="dns_zone" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dnsZone"></a>
+##### `dns_zone`<sup>Required</sup> <a name="dns_zone" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dnsZone"></a>
 
 ```python
 dns_zone: str
@@ -1353,7 +1353,7 @@ dns_zone: str
 
 ---
 
-##### `fqdn`<sup>Required</sup> <a name="fqdn" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.fqdn"></a>
+##### `fqdn`<sup>Required</sup> <a name="fqdn" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.fqdn"></a>
 
 ```python
 fqdn: str
@@ -1363,27 +1363,27 @@ fqdn: str
 
 ---
 
-##### `identity`<sup>Required</sup> <a name="identity" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.identity"></a>
+##### `identity`<sup>Required</sup> <a name="identity" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.identity"></a>
 
 ```python
 identity: MssqlManagedInstanceIdentityOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference">MssqlManagedInstanceIdentityOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference">MssqlManagedInstanceIdentityOutputReference</a>
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timeouts"></a>
 
 ```python
 timeouts: MssqlManagedInstanceTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference">MssqlManagedInstanceTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference">MssqlManagedInstanceTimeoutsOutputReference</a>
 
 ---
 
-##### `administrator_login_input`<sup>Optional</sup> <a name="administrator_login_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLoginInput"></a>
+##### `administrator_login_input`<sup>Optional</sup> <a name="administrator_login_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLoginInput"></a>
 
 ```python
 administrator_login_input: str
@@ -1393,7 +1393,7 @@ administrator_login_input: str
 
 ---
 
-##### `administrator_login_password_input`<sup>Optional</sup> <a name="administrator_login_password_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLoginPasswordInput"></a>
+##### `administrator_login_password_input`<sup>Optional</sup> <a name="administrator_login_password_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLoginPasswordInput"></a>
 
 ```python
 administrator_login_password_input: str
@@ -1403,17 +1403,17 @@ administrator_login_password_input: str
 
 ---
 
-##### `azure_active_directory_administrator_input`<sup>Optional</sup> <a name="azure_active_directory_administrator_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.azureActiveDirectoryAdministratorInput"></a>
+##### `azure_active_directory_administrator_input`<sup>Optional</sup> <a name="azure_active_directory_administrator_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.azureActiveDirectoryAdministratorInput"></a>
 
 ```python
 azure_active_directory_administrator_input: MssqlManagedInstanceAzureActiveDirectoryAdministrator
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a>
 
 ---
 
-##### `collation_input`<sup>Optional</sup> <a name="collation_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.collationInput"></a>
+##### `collation_input`<sup>Optional</sup> <a name="collation_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.collationInput"></a>
 
 ```python
 collation_input: str
@@ -1423,7 +1423,7 @@ collation_input: str
 
 ---
 
-##### `database_format_input`<sup>Optional</sup> <a name="database_format_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.databaseFormatInput"></a>
+##### `database_format_input`<sup>Optional</sup> <a name="database_format_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.databaseFormatInput"></a>
 
 ```python
 database_format_input: str
@@ -1433,7 +1433,7 @@ database_format_input: str
 
 ---
 
-##### `dns_zone_partner_id_input`<sup>Optional</sup> <a name="dns_zone_partner_id_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dnsZonePartnerIdInput"></a>
+##### `dns_zone_partner_id_input`<sup>Optional</sup> <a name="dns_zone_partner_id_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dnsZonePartnerIdInput"></a>
 
 ```python
 dns_zone_partner_id_input: str
@@ -1443,7 +1443,7 @@ dns_zone_partner_id_input: str
 
 ---
 
-##### `hybrid_secondary_usage_input`<sup>Optional</sup> <a name="hybrid_secondary_usage_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.hybridSecondaryUsageInput"></a>
+##### `hybrid_secondary_usage_input`<sup>Optional</sup> <a name="hybrid_secondary_usage_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.hybridSecondaryUsageInput"></a>
 
 ```python
 hybrid_secondary_usage_input: str
@@ -1453,17 +1453,17 @@ hybrid_secondary_usage_input: str
 
 ---
 
-##### `identity_input`<sup>Optional</sup> <a name="identity_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.identityInput"></a>
+##### `identity_input`<sup>Optional</sup> <a name="identity_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.identityInput"></a>
 
 ```python
 identity_input: MssqlManagedInstanceIdentity
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a>
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1473,7 +1473,7 @@ id_input: str
 
 ---
 
-##### `license_type_input`<sup>Optional</sup> <a name="license_type_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.licenseTypeInput"></a>
+##### `license_type_input`<sup>Optional</sup> <a name="license_type_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.licenseTypeInput"></a>
 
 ```python
 license_type_input: str
@@ -1483,7 +1483,7 @@ license_type_input: str
 
 ---
 
-##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.locationInput"></a>
+##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.locationInput"></a>
 
 ```python
 location_input: str
@@ -1493,7 +1493,7 @@ location_input: str
 
 ---
 
-##### `maintenance_configuration_name_input`<sup>Optional</sup> <a name="maintenance_configuration_name_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.maintenanceConfigurationNameInput"></a>
+##### `maintenance_configuration_name_input`<sup>Optional</sup> <a name="maintenance_configuration_name_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.maintenanceConfigurationNameInput"></a>
 
 ```python
 maintenance_configuration_name_input: str
@@ -1503,7 +1503,7 @@ maintenance_configuration_name_input: str
 
 ---
 
-##### `minimum_tls_version_input`<sup>Optional</sup> <a name="minimum_tls_version_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.minimumTlsVersionInput"></a>
+##### `minimum_tls_version_input`<sup>Optional</sup> <a name="minimum_tls_version_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.minimumTlsVersionInput"></a>
 
 ```python
 minimum_tls_version_input: str
@@ -1513,7 +1513,7 @@ minimum_tls_version_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1523,7 +1523,7 @@ name_input: str
 
 ---
 
-##### `proxy_override_input`<sup>Optional</sup> <a name="proxy_override_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.proxyOverrideInput"></a>
+##### `proxy_override_input`<sup>Optional</sup> <a name="proxy_override_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.proxyOverrideInput"></a>
 
 ```python
 proxy_override_input: str
@@ -1533,7 +1533,7 @@ proxy_override_input: str
 
 ---
 
-##### `public_data_endpoint_enabled_input`<sup>Optional</sup> <a name="public_data_endpoint_enabled_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.publicDataEndpointEnabledInput"></a>
+##### `public_data_endpoint_enabled_input`<sup>Optional</sup> <a name="public_data_endpoint_enabled_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.publicDataEndpointEnabledInput"></a>
 
 ```python
 public_data_endpoint_enabled_input: bool | IResolvable
@@ -1543,7 +1543,7 @@ public_data_endpoint_enabled_input: bool | IResolvable
 
 ---
 
-##### `resource_group_name_input`<sup>Optional</sup> <a name="resource_group_name_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.resourceGroupNameInput"></a>
+##### `resource_group_name_input`<sup>Optional</sup> <a name="resource_group_name_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.resourceGroupNameInput"></a>
 
 ```python
 resource_group_name_input: str
@@ -1553,7 +1553,7 @@ resource_group_name_input: str
 
 ---
 
-##### `service_principal_type_input`<sup>Optional</sup> <a name="service_principal_type_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.servicePrincipalTypeInput"></a>
+##### `service_principal_type_input`<sup>Optional</sup> <a name="service_principal_type_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.servicePrincipalTypeInput"></a>
 
 ```python
 service_principal_type_input: str
@@ -1563,7 +1563,7 @@ service_principal_type_input: str
 
 ---
 
-##### `sku_name_input`<sup>Optional</sup> <a name="sku_name_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.skuNameInput"></a>
+##### `sku_name_input`<sup>Optional</sup> <a name="sku_name_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.skuNameInput"></a>
 
 ```python
 sku_name_input: str
@@ -1573,7 +1573,7 @@ sku_name_input: str
 
 ---
 
-##### `storage_account_type_input`<sup>Optional</sup> <a name="storage_account_type_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageAccountTypeInput"></a>
+##### `storage_account_type_input`<sup>Optional</sup> <a name="storage_account_type_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageAccountTypeInput"></a>
 
 ```python
 storage_account_type_input: str
@@ -1583,7 +1583,7 @@ storage_account_type_input: str
 
 ---
 
-##### `storage_size_in_gb_input`<sup>Optional</sup> <a name="storage_size_in_gb_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageSizeInGbInput"></a>
+##### `storage_size_in_gb_input`<sup>Optional</sup> <a name="storage_size_in_gb_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageSizeInGbInput"></a>
 
 ```python
 storage_size_in_gb_input: typing.Union[int, float]
@@ -1593,7 +1593,7 @@ storage_size_in_gb_input: typing.Union[int, float]
 
 ---
 
-##### `subnet_id_input`<sup>Optional</sup> <a name="subnet_id_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.subnetIdInput"></a>
+##### `subnet_id_input`<sup>Optional</sup> <a name="subnet_id_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.subnetIdInput"></a>
 
 ```python
 subnet_id_input: str
@@ -1603,7 +1603,7 @@ subnet_id_input: str
 
 ---
 
-##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.tagsInput"></a>
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.tagsInput"></a>
 
 ```python
 tags_input: typing.Mapping[str]
@@ -1613,17 +1613,17 @@ tags_input: typing.Mapping[str]
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | MssqlManagedInstanceTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a>
 
 ---
 
-##### `timezone_id_input`<sup>Optional</sup> <a name="timezone_id_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timezoneIdInput"></a>
+##### `timezone_id_input`<sup>Optional</sup> <a name="timezone_id_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timezoneIdInput"></a>
 
 ```python
 timezone_id_input: str
@@ -1633,7 +1633,7 @@ timezone_id_input: str
 
 ---
 
-##### `vcores_input`<sup>Optional</sup> <a name="vcores_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.vcoresInput"></a>
+##### `vcores_input`<sup>Optional</sup> <a name="vcores_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.vcoresInput"></a>
 
 ```python
 vcores_input: typing.Union[int, float]
@@ -1643,7 +1643,7 @@ vcores_input: typing.Union[int, float]
 
 ---
 
-##### `zone_redundant_enabled_input`<sup>Optional</sup> <a name="zone_redundant_enabled_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.zoneRedundantEnabledInput"></a>
+##### `zone_redundant_enabled_input`<sup>Optional</sup> <a name="zone_redundant_enabled_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.zoneRedundantEnabledInput"></a>
 
 ```python
 zone_redundant_enabled_input: bool | IResolvable
@@ -1653,7 +1653,7 @@ zone_redundant_enabled_input: bool | IResolvable
 
 ---
 
-##### `administrator_login`<sup>Required</sup> <a name="administrator_login" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLogin"></a>
+##### `administrator_login`<sup>Required</sup> <a name="administrator_login" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLogin"></a>
 
 ```python
 administrator_login: str
@@ -1663,7 +1663,7 @@ administrator_login: str
 
 ---
 
-##### `administrator_login_password`<sup>Required</sup> <a name="administrator_login_password" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLoginPassword"></a>
+##### `administrator_login_password`<sup>Required</sup> <a name="administrator_login_password" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.administratorLoginPassword"></a>
 
 ```python
 administrator_login_password: str
@@ -1673,7 +1673,7 @@ administrator_login_password: str
 
 ---
 
-##### `collation`<sup>Required</sup> <a name="collation" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.collation"></a>
+##### `collation`<sup>Required</sup> <a name="collation" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.collation"></a>
 
 ```python
 collation: str
@@ -1683,7 +1683,7 @@ collation: str
 
 ---
 
-##### `database_format`<sup>Required</sup> <a name="database_format" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.databaseFormat"></a>
+##### `database_format`<sup>Required</sup> <a name="database_format" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.databaseFormat"></a>
 
 ```python
 database_format: str
@@ -1693,7 +1693,7 @@ database_format: str
 
 ---
 
-##### `dns_zone_partner_id`<sup>Required</sup> <a name="dns_zone_partner_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dnsZonePartnerId"></a>
+##### `dns_zone_partner_id`<sup>Required</sup> <a name="dns_zone_partner_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.dnsZonePartnerId"></a>
 
 ```python
 dns_zone_partner_id: str
@@ -1703,7 +1703,7 @@ dns_zone_partner_id: str
 
 ---
 
-##### `hybrid_secondary_usage`<sup>Required</sup> <a name="hybrid_secondary_usage" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.hybridSecondaryUsage"></a>
+##### `hybrid_secondary_usage`<sup>Required</sup> <a name="hybrid_secondary_usage" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.hybridSecondaryUsage"></a>
 
 ```python
 hybrid_secondary_usage: str
@@ -1713,7 +1713,7 @@ hybrid_secondary_usage: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.id"></a>
 
 ```python
 id: str
@@ -1723,7 +1723,7 @@ id: str
 
 ---
 
-##### `license_type`<sup>Required</sup> <a name="license_type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.licenseType"></a>
+##### `license_type`<sup>Required</sup> <a name="license_type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.licenseType"></a>
 
 ```python
 license_type: str
@@ -1733,7 +1733,7 @@ license_type: str
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.location"></a>
 
 ```python
 location: str
@@ -1743,7 +1743,7 @@ location: str
 
 ---
 
-##### `maintenance_configuration_name`<sup>Required</sup> <a name="maintenance_configuration_name" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.maintenanceConfigurationName"></a>
+##### `maintenance_configuration_name`<sup>Required</sup> <a name="maintenance_configuration_name" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.maintenanceConfigurationName"></a>
 
 ```python
 maintenance_configuration_name: str
@@ -1753,7 +1753,7 @@ maintenance_configuration_name: str
 
 ---
 
-##### `minimum_tls_version`<sup>Required</sup> <a name="minimum_tls_version" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.minimumTlsVersion"></a>
+##### `minimum_tls_version`<sup>Required</sup> <a name="minimum_tls_version" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.minimumTlsVersion"></a>
 
 ```python
 minimum_tls_version: str
@@ -1763,7 +1763,7 @@ minimum_tls_version: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.name"></a>
 
 ```python
 name: str
@@ -1773,7 +1773,7 @@ name: str
 
 ---
 
-##### `proxy_override`<sup>Required</sup> <a name="proxy_override" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.proxyOverride"></a>
+##### `proxy_override`<sup>Required</sup> <a name="proxy_override" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.proxyOverride"></a>
 
 ```python
 proxy_override: str
@@ -1783,7 +1783,7 @@ proxy_override: str
 
 ---
 
-##### `public_data_endpoint_enabled`<sup>Required</sup> <a name="public_data_endpoint_enabled" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.publicDataEndpointEnabled"></a>
+##### `public_data_endpoint_enabled`<sup>Required</sup> <a name="public_data_endpoint_enabled" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.publicDataEndpointEnabled"></a>
 
 ```python
 public_data_endpoint_enabled: bool | IResolvable
@@ -1793,7 +1793,7 @@ public_data_endpoint_enabled: bool | IResolvable
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.resourceGroupName"></a>
 
 ```python
 resource_group_name: str
@@ -1803,7 +1803,7 @@ resource_group_name: str
 
 ---
 
-##### `service_principal_type`<sup>Required</sup> <a name="service_principal_type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.servicePrincipalType"></a>
+##### `service_principal_type`<sup>Required</sup> <a name="service_principal_type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.servicePrincipalType"></a>
 
 ```python
 service_principal_type: str
@@ -1813,7 +1813,7 @@ service_principal_type: str
 
 ---
 
-##### `sku_name`<sup>Required</sup> <a name="sku_name" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.skuName"></a>
+##### `sku_name`<sup>Required</sup> <a name="sku_name" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.skuName"></a>
 
 ```python
 sku_name: str
@@ -1823,7 +1823,7 @@ sku_name: str
 
 ---
 
-##### `storage_account_type`<sup>Required</sup> <a name="storage_account_type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageAccountType"></a>
+##### `storage_account_type`<sup>Required</sup> <a name="storage_account_type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageAccountType"></a>
 
 ```python
 storage_account_type: str
@@ -1833,7 +1833,7 @@ storage_account_type: str
 
 ---
 
-##### `storage_size_in_gb`<sup>Required</sup> <a name="storage_size_in_gb" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageSizeInGb"></a>
+##### `storage_size_in_gb`<sup>Required</sup> <a name="storage_size_in_gb" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.storageSizeInGb"></a>
 
 ```python
 storage_size_in_gb: typing.Union[int, float]
@@ -1843,7 +1843,7 @@ storage_size_in_gb: typing.Union[int, float]
 
 ---
 
-##### `subnet_id`<sup>Required</sup> <a name="subnet_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.subnetId"></a>
+##### `subnet_id`<sup>Required</sup> <a name="subnet_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.subnetId"></a>
 
 ```python
 subnet_id: str
@@ -1853,7 +1853,7 @@ subnet_id: str
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -1863,7 +1863,7 @@ tags: typing.Mapping[str]
 
 ---
 
-##### `timezone_id`<sup>Required</sup> <a name="timezone_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timezoneId"></a>
+##### `timezone_id`<sup>Required</sup> <a name="timezone_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.timezoneId"></a>
 
 ```python
 timezone_id: str
@@ -1873,7 +1873,7 @@ timezone_id: str
 
 ---
 
-##### `vcores`<sup>Required</sup> <a name="vcores" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.vcores"></a>
+##### `vcores`<sup>Required</sup> <a name="vcores" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.vcores"></a>
 
 ```python
 vcores: typing.Union[int, float]
@@ -1883,7 +1883,7 @@ vcores: typing.Union[int, float]
 
 ---
 
-##### `zone_redundant_enabled`<sup>Required</sup> <a name="zone_redundant_enabled" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.zoneRedundantEnabled"></a>
+##### `zone_redundant_enabled`<sup>Required</sup> <a name="zone_redundant_enabled" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.zoneRedundantEnabled"></a>
 
 ```python
 zone_redundant_enabled: bool | IResolvable
@@ -1897,11 +1897,11 @@ zone_redundant_enabled: bool | IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstance.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1913,12 +1913,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### MssqlManagedInstanceAzureActiveDirectoryAdministrator <a name="MssqlManagedInstanceAzureActiveDirectoryAdministrator" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator"></a>
+### MssqlManagedInstanceAzureActiveDirectoryAdministrator <a name="MssqlManagedInstanceAzureActiveDirectoryAdministrator" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import mssql_managed_instance
+from cdktn_provider_azurerm import mssql_managed_instance
 
 mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator(
   login_username: str,
@@ -1933,15 +1933,15 @@ mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.loginUsername">login_username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#login_username MssqlManagedInstance#login_username}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.objectId">object_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#object_id MssqlManagedInstance#object_id}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.principalType">principal_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#principal_type MssqlManagedInstance#principal_type}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.azureadAuthenticationOnlyEnabled">azuread_authentication_only_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#azuread_authentication_only_enabled MssqlManagedInstance#azuread_authentication_only_enabled}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#tenant_id MssqlManagedInstance#tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.loginUsername">login_username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#login_username MssqlManagedInstance#login_username}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.objectId">object_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#object_id MssqlManagedInstance#object_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.principalType">principal_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#principal_type MssqlManagedInstance#principal_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.azureadAuthenticationOnlyEnabled">azuread_authentication_only_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#azuread_authentication_only_enabled MssqlManagedInstance#azuread_authentication_only_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#tenant_id MssqlManagedInstance#tenant_id}. |
 
 ---
 
-##### `login_username`<sup>Required</sup> <a name="login_username" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.loginUsername"></a>
+##### `login_username`<sup>Required</sup> <a name="login_username" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.loginUsername"></a>
 
 ```python
 login_username: str
@@ -1949,11 +1949,11 @@ login_username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#login_username MssqlManagedInstance#login_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#login_username MssqlManagedInstance#login_username}.
 
 ---
 
-##### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.objectId"></a>
+##### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.objectId"></a>
 
 ```python
 object_id: str
@@ -1961,11 +1961,11 @@ object_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#object_id MssqlManagedInstance#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#object_id MssqlManagedInstance#object_id}.
 
 ---
 
-##### `principal_type`<sup>Required</sup> <a name="principal_type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.principalType"></a>
+##### `principal_type`<sup>Required</sup> <a name="principal_type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.principalType"></a>
 
 ```python
 principal_type: str
@@ -1973,11 +1973,11 @@ principal_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#principal_type MssqlManagedInstance#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#principal_type MssqlManagedInstance#principal_type}.
 
 ---
 
-##### `azuread_authentication_only_enabled`<sup>Optional</sup> <a name="azuread_authentication_only_enabled" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.azureadAuthenticationOnlyEnabled"></a>
+##### `azuread_authentication_only_enabled`<sup>Optional</sup> <a name="azuread_authentication_only_enabled" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.azureadAuthenticationOnlyEnabled"></a>
 
 ```python
 azuread_authentication_only_enabled: bool | IResolvable
@@ -1985,11 +1985,11 @@ azuread_authentication_only_enabled: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#azuread_authentication_only_enabled MssqlManagedInstance#azuread_authentication_only_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#azuread_authentication_only_enabled MssqlManagedInstance#azuread_authentication_only_enabled}.
 
 ---
 
-##### `tenant_id`<sup>Optional</sup> <a name="tenant_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.tenantId"></a>
+##### `tenant_id`<sup>Optional</sup> <a name="tenant_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator.property.tenantId"></a>
 
 ```python
 tenant_id: str
@@ -1997,16 +1997,16 @@ tenant_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#tenant_id MssqlManagedInstance#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#tenant_id MssqlManagedInstance#tenant_id}.
 
 ---
 
-### MssqlManagedInstanceConfig <a name="MssqlManagedInstanceConfig" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig"></a>
+### MssqlManagedInstanceConfig <a name="MssqlManagedInstanceConfig" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import mssql_managed_instance
+from cdktn_provider_azurerm import mssql_managed_instance
 
 mssqlManagedInstance.MssqlManagedInstanceConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -2050,44 +2050,44 @@ mssqlManagedInstance.MssqlManagedInstanceConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.licenseType">license_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#license_type MssqlManagedInstance#license_type}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#location MssqlManagedInstance#location}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#name MssqlManagedInstance#name}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#resource_group_name MssqlManagedInstance#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.skuName">sku_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#sku_name MssqlManagedInstance#sku_name}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.storageSizeInGb">storage_size_in_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#storage_size_in_gb MssqlManagedInstance#storage_size_in_gb}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#subnet_id MssqlManagedInstance#subnet_id}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.vcores">vcores</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#vcores MssqlManagedInstance#vcores}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.administratorLogin">administrator_login</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#administrator_login MssqlManagedInstance#administrator_login}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.administratorLoginPassword">administrator_login_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#administrator_login_password MssqlManagedInstance#administrator_login_password}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.azureActiveDirectoryAdministrator">azure_active_directory_administrator</a></code> | <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a></code> | azure_active_directory_administrator block. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.collation">collation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#collation MssqlManagedInstance#collation}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.databaseFormat">database_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#database_format MssqlManagedInstance#database_format}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.dnsZonePartnerId">dns_zone_partner_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#dns_zone_partner_id MssqlManagedInstance#dns_zone_partner_id}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.hybridSecondaryUsage">hybrid_secondary_usage</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#hybrid_secondary_usage MssqlManagedInstance#hybrid_secondary_usage}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#id MssqlManagedInstance#id}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.identity">identity</a></code> | <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a></code> | identity block. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.maintenanceConfigurationName">maintenance_configuration_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#maintenance_configuration_name MssqlManagedInstance#maintenance_configuration_name}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.minimumTlsVersion">minimum_tls_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#minimum_tls_version MssqlManagedInstance#minimum_tls_version}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.proxyOverride">proxy_override</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#proxy_override MssqlManagedInstance#proxy_override}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.publicDataEndpointEnabled">public_data_endpoint_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#public_data_endpoint_enabled MssqlManagedInstance#public_data_endpoint_enabled}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.servicePrincipalType">service_principal_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#service_principal_type MssqlManagedInstance#service_principal_type}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.storageAccountType">storage_account_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#storage_account_type MssqlManagedInstance#storage_account_type}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#tags MssqlManagedInstance#tags}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.timezoneId">timezone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#timezone_id MssqlManagedInstance#timezone_id}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.zoneRedundantEnabled">zone_redundant_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#zone_redundant_enabled MssqlManagedInstance#zone_redundant_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.licenseType">license_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#license_type MssqlManagedInstance#license_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#location MssqlManagedInstance#location}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#name MssqlManagedInstance#name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#resource_group_name MssqlManagedInstance#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.skuName">sku_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#sku_name MssqlManagedInstance#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.storageSizeInGb">storage_size_in_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#storage_size_in_gb MssqlManagedInstance#storage_size_in_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.subnetId">subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#subnet_id MssqlManagedInstance#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.vcores">vcores</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#vcores MssqlManagedInstance#vcores}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.administratorLogin">administrator_login</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#administrator_login MssqlManagedInstance#administrator_login}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.administratorLoginPassword">administrator_login_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#administrator_login_password MssqlManagedInstance#administrator_login_password}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.azureActiveDirectoryAdministrator">azure_active_directory_administrator</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a></code> | azure_active_directory_administrator block. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.collation">collation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#collation MssqlManagedInstance#collation}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.databaseFormat">database_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#database_format MssqlManagedInstance#database_format}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.dnsZonePartnerId">dns_zone_partner_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#dns_zone_partner_id MssqlManagedInstance#dns_zone_partner_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.hybridSecondaryUsage">hybrid_secondary_usage</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#hybrid_secondary_usage MssqlManagedInstance#hybrid_secondary_usage}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#id MssqlManagedInstance#id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a></code> | identity block. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.maintenanceConfigurationName">maintenance_configuration_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#maintenance_configuration_name MssqlManagedInstance#maintenance_configuration_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.minimumTlsVersion">minimum_tls_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#minimum_tls_version MssqlManagedInstance#minimum_tls_version}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.proxyOverride">proxy_override</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#proxy_override MssqlManagedInstance#proxy_override}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.publicDataEndpointEnabled">public_data_endpoint_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#public_data_endpoint_enabled MssqlManagedInstance#public_data_endpoint_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.servicePrincipalType">service_principal_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#service_principal_type MssqlManagedInstance#service_principal_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.storageAccountType">storage_account_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#storage_account_type MssqlManagedInstance#storage_account_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#tags MssqlManagedInstance#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.timezoneId">timezone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#timezone_id MssqlManagedInstance#timezone_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.zoneRedundantEnabled">zone_redundant_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#zone_redundant_enabled MssqlManagedInstance#zone_redundant_enabled}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -2097,7 +2097,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -2107,7 +2107,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -2117,7 +2117,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -2127,7 +2127,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -2137,7 +2137,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -2147,7 +2147,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -2157,7 +2157,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `license_type`<sup>Required</sup> <a name="license_type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.licenseType"></a>
+##### `license_type`<sup>Required</sup> <a name="license_type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.licenseType"></a>
 
 ```python
 license_type: str
@@ -2165,11 +2165,11 @@ license_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#license_type MssqlManagedInstance#license_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#license_type MssqlManagedInstance#license_type}.
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.location"></a>
 
 ```python
 location: str
@@ -2177,11 +2177,11 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#location MssqlManagedInstance#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#location MssqlManagedInstance#location}.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.name"></a>
 
 ```python
 name: str
@@ -2189,11 +2189,11 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#name MssqlManagedInstance#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#name MssqlManagedInstance#name}.
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.resourceGroupName"></a>
 
 ```python
 resource_group_name: str
@@ -2201,11 +2201,11 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#resource_group_name MssqlManagedInstance#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#resource_group_name MssqlManagedInstance#resource_group_name}.
 
 ---
 
-##### `sku_name`<sup>Required</sup> <a name="sku_name" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.skuName"></a>
+##### `sku_name`<sup>Required</sup> <a name="sku_name" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.skuName"></a>
 
 ```python
 sku_name: str
@@ -2213,11 +2213,11 @@ sku_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#sku_name MssqlManagedInstance#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#sku_name MssqlManagedInstance#sku_name}.
 
 ---
 
-##### `storage_size_in_gb`<sup>Required</sup> <a name="storage_size_in_gb" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.storageSizeInGb"></a>
+##### `storage_size_in_gb`<sup>Required</sup> <a name="storage_size_in_gb" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.storageSizeInGb"></a>
 
 ```python
 storage_size_in_gb: typing.Union[int, float]
@@ -2225,11 +2225,11 @@ storage_size_in_gb: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#storage_size_in_gb MssqlManagedInstance#storage_size_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#storage_size_in_gb MssqlManagedInstance#storage_size_in_gb}.
 
 ---
 
-##### `subnet_id`<sup>Required</sup> <a name="subnet_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.subnetId"></a>
+##### `subnet_id`<sup>Required</sup> <a name="subnet_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.subnetId"></a>
 
 ```python
 subnet_id: str
@@ -2237,11 +2237,11 @@ subnet_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#subnet_id MssqlManagedInstance#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#subnet_id MssqlManagedInstance#subnet_id}.
 
 ---
 
-##### `vcores`<sup>Required</sup> <a name="vcores" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.vcores"></a>
+##### `vcores`<sup>Required</sup> <a name="vcores" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.vcores"></a>
 
 ```python
 vcores: typing.Union[int, float]
@@ -2249,11 +2249,11 @@ vcores: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#vcores MssqlManagedInstance#vcores}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#vcores MssqlManagedInstance#vcores}.
 
 ---
 
-##### `administrator_login`<sup>Optional</sup> <a name="administrator_login" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.administratorLogin"></a>
+##### `administrator_login`<sup>Optional</sup> <a name="administrator_login" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.administratorLogin"></a>
 
 ```python
 administrator_login: str
@@ -2261,11 +2261,11 @@ administrator_login: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#administrator_login MssqlManagedInstance#administrator_login}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#administrator_login MssqlManagedInstance#administrator_login}.
 
 ---
 
-##### `administrator_login_password`<sup>Optional</sup> <a name="administrator_login_password" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.administratorLoginPassword"></a>
+##### `administrator_login_password`<sup>Optional</sup> <a name="administrator_login_password" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.administratorLoginPassword"></a>
 
 ```python
 administrator_login_password: str
@@ -2273,25 +2273,25 @@ administrator_login_password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#administrator_login_password MssqlManagedInstance#administrator_login_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#administrator_login_password MssqlManagedInstance#administrator_login_password}.
 
 ---
 
-##### `azure_active_directory_administrator`<sup>Optional</sup> <a name="azure_active_directory_administrator" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.azureActiveDirectoryAdministrator"></a>
+##### `azure_active_directory_administrator`<sup>Optional</sup> <a name="azure_active_directory_administrator" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.azureActiveDirectoryAdministrator"></a>
 
 ```python
 azure_active_directory_administrator: MssqlManagedInstanceAzureActiveDirectoryAdministrator
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a>
 
 azure_active_directory_administrator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#azure_active_directory_administrator MssqlManagedInstance#azure_active_directory_administrator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#azure_active_directory_administrator MssqlManagedInstance#azure_active_directory_administrator}
 
 ---
 
-##### `collation`<sup>Optional</sup> <a name="collation" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.collation"></a>
+##### `collation`<sup>Optional</sup> <a name="collation" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.collation"></a>
 
 ```python
 collation: str
@@ -2299,11 +2299,11 @@ collation: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#collation MssqlManagedInstance#collation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#collation MssqlManagedInstance#collation}.
 
 ---
 
-##### `database_format`<sup>Optional</sup> <a name="database_format" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.databaseFormat"></a>
+##### `database_format`<sup>Optional</sup> <a name="database_format" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.databaseFormat"></a>
 
 ```python
 database_format: str
@@ -2311,11 +2311,11 @@ database_format: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#database_format MssqlManagedInstance#database_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#database_format MssqlManagedInstance#database_format}.
 
 ---
 
-##### `dns_zone_partner_id`<sup>Optional</sup> <a name="dns_zone_partner_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.dnsZonePartnerId"></a>
+##### `dns_zone_partner_id`<sup>Optional</sup> <a name="dns_zone_partner_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.dnsZonePartnerId"></a>
 
 ```python
 dns_zone_partner_id: str
@@ -2323,11 +2323,11 @@ dns_zone_partner_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#dns_zone_partner_id MssqlManagedInstance#dns_zone_partner_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#dns_zone_partner_id MssqlManagedInstance#dns_zone_partner_id}.
 
 ---
 
-##### `hybrid_secondary_usage`<sup>Optional</sup> <a name="hybrid_secondary_usage" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.hybridSecondaryUsage"></a>
+##### `hybrid_secondary_usage`<sup>Optional</sup> <a name="hybrid_secondary_usage" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.hybridSecondaryUsage"></a>
 
 ```python
 hybrid_secondary_usage: str
@@ -2335,11 +2335,11 @@ hybrid_secondary_usage: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#hybrid_secondary_usage MssqlManagedInstance#hybrid_secondary_usage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#hybrid_secondary_usage MssqlManagedInstance#hybrid_secondary_usage}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.id"></a>
 
 ```python
 id: str
@@ -2347,28 +2347,28 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#id MssqlManagedInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#id MssqlManagedInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.identity"></a>
+##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.identity"></a>
 
 ```python
 identity: MssqlManagedInstanceIdentity
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a>
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#identity MssqlManagedInstance#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#identity MssqlManagedInstance#identity}
 
 ---
 
-##### `maintenance_configuration_name`<sup>Optional</sup> <a name="maintenance_configuration_name" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.maintenanceConfigurationName"></a>
+##### `maintenance_configuration_name`<sup>Optional</sup> <a name="maintenance_configuration_name" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.maintenanceConfigurationName"></a>
 
 ```python
 maintenance_configuration_name: str
@@ -2376,11 +2376,11 @@ maintenance_configuration_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#maintenance_configuration_name MssqlManagedInstance#maintenance_configuration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#maintenance_configuration_name MssqlManagedInstance#maintenance_configuration_name}.
 
 ---
 
-##### `minimum_tls_version`<sup>Optional</sup> <a name="minimum_tls_version" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.minimumTlsVersion"></a>
+##### `minimum_tls_version`<sup>Optional</sup> <a name="minimum_tls_version" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.minimumTlsVersion"></a>
 
 ```python
 minimum_tls_version: str
@@ -2388,11 +2388,11 @@ minimum_tls_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#minimum_tls_version MssqlManagedInstance#minimum_tls_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#minimum_tls_version MssqlManagedInstance#minimum_tls_version}.
 
 ---
 
-##### `proxy_override`<sup>Optional</sup> <a name="proxy_override" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.proxyOverride"></a>
+##### `proxy_override`<sup>Optional</sup> <a name="proxy_override" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.proxyOverride"></a>
 
 ```python
 proxy_override: str
@@ -2400,11 +2400,11 @@ proxy_override: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#proxy_override MssqlManagedInstance#proxy_override}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#proxy_override MssqlManagedInstance#proxy_override}.
 
 ---
 
-##### `public_data_endpoint_enabled`<sup>Optional</sup> <a name="public_data_endpoint_enabled" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.publicDataEndpointEnabled"></a>
+##### `public_data_endpoint_enabled`<sup>Optional</sup> <a name="public_data_endpoint_enabled" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.publicDataEndpointEnabled"></a>
 
 ```python
 public_data_endpoint_enabled: bool | IResolvable
@@ -2412,11 +2412,11 @@ public_data_endpoint_enabled: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#public_data_endpoint_enabled MssqlManagedInstance#public_data_endpoint_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#public_data_endpoint_enabled MssqlManagedInstance#public_data_endpoint_enabled}.
 
 ---
 
-##### `service_principal_type`<sup>Optional</sup> <a name="service_principal_type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.servicePrincipalType"></a>
+##### `service_principal_type`<sup>Optional</sup> <a name="service_principal_type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.servicePrincipalType"></a>
 
 ```python
 service_principal_type: str
@@ -2424,11 +2424,11 @@ service_principal_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#service_principal_type MssqlManagedInstance#service_principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#service_principal_type MssqlManagedInstance#service_principal_type}.
 
 ---
 
-##### `storage_account_type`<sup>Optional</sup> <a name="storage_account_type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.storageAccountType"></a>
+##### `storage_account_type`<sup>Optional</sup> <a name="storage_account_type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.storageAccountType"></a>
 
 ```python
 storage_account_type: str
@@ -2436,11 +2436,11 @@ storage_account_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#storage_account_type MssqlManagedInstance#storage_account_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#storage_account_type MssqlManagedInstance#storage_account_type}.
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.tags"></a>
 
 ```python
 tags: typing.Mapping[str]
@@ -2448,25 +2448,25 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#tags MssqlManagedInstance#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#tags MssqlManagedInstance#tags}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.timeouts"></a>
 
 ```python
 timeouts: MssqlManagedInstanceTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#timeouts MssqlManagedInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#timeouts MssqlManagedInstance#timeouts}
 
 ---
 
-##### `timezone_id`<sup>Optional</sup> <a name="timezone_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.timezoneId"></a>
+##### `timezone_id`<sup>Optional</sup> <a name="timezone_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.timezoneId"></a>
 
 ```python
 timezone_id: str
@@ -2474,11 +2474,11 @@ timezone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#timezone_id MssqlManagedInstance#timezone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#timezone_id MssqlManagedInstance#timezone_id}.
 
 ---
 
-##### `zone_redundant_enabled`<sup>Optional</sup> <a name="zone_redundant_enabled" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.zoneRedundantEnabled"></a>
+##### `zone_redundant_enabled`<sup>Optional</sup> <a name="zone_redundant_enabled" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceConfig.property.zoneRedundantEnabled"></a>
 
 ```python
 zone_redundant_enabled: bool | IResolvable
@@ -2486,16 +2486,16 @@ zone_redundant_enabled: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#zone_redundant_enabled MssqlManagedInstance#zone_redundant_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#zone_redundant_enabled MssqlManagedInstance#zone_redundant_enabled}.
 
 ---
 
-### MssqlManagedInstanceIdentity <a name="MssqlManagedInstanceIdentity" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity"></a>
+### MssqlManagedInstanceIdentity <a name="MssqlManagedInstanceIdentity" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import mssql_managed_instance
+from cdktn_provider_azurerm import mssql_managed_instance
 
 mssqlManagedInstance.MssqlManagedInstanceIdentity(
   type: str,
@@ -2507,12 +2507,12 @@ mssqlManagedInstance.MssqlManagedInstanceIdentity(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#type MssqlManagedInstance#type}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#identity_ids MssqlManagedInstance#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#type MssqlManagedInstance#type}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#identity_ids MssqlManagedInstance#identity_ids}. |
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity.property.type"></a>
 
 ```python
 type: str
@@ -2520,11 +2520,11 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#type MssqlManagedInstance#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#type MssqlManagedInstance#type}.
 
 ---
 
-##### `identity_ids`<sup>Optional</sup> <a name="identity_ids" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity.property.identityIds"></a>
+##### `identity_ids`<sup>Optional</sup> <a name="identity_ids" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity.property.identityIds"></a>
 
 ```python
 identity_ids: typing.List[str]
@@ -2532,16 +2532,16 @@ identity_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#identity_ids MssqlManagedInstance#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#identity_ids MssqlManagedInstance#identity_ids}.
 
 ---
 
-### MssqlManagedInstanceTimeouts <a name="MssqlManagedInstanceTimeouts" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts"></a>
+### MssqlManagedInstanceTimeouts <a name="MssqlManagedInstanceTimeouts" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import mssql_managed_instance
+from cdktn_provider_azurerm import mssql_managed_instance
 
 mssqlManagedInstance.MssqlManagedInstanceTimeouts(
   create: str = None,
@@ -2555,14 +2555,14 @@ mssqlManagedInstance.MssqlManagedInstanceTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#create MssqlManagedInstance#create}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#delete MssqlManagedInstance#delete}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#read MssqlManagedInstance#read}. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#update MssqlManagedInstance#update}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#create MssqlManagedInstance#create}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#delete MssqlManagedInstance#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#read MssqlManagedInstance#read}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#update MssqlManagedInstance#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -2570,11 +2570,11 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#create MssqlManagedInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#create MssqlManagedInstance#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -2582,11 +2582,11 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#delete MssqlManagedInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#delete MssqlManagedInstance#delete}.
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -2594,11 +2594,11 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#read MssqlManagedInstance#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#read MssqlManagedInstance#read}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -2606,18 +2606,18 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/mssql_managed_instance#update MssqlManagedInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/mssql_managed_instance#update MssqlManagedInstance#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference <a name="MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference"></a>
+### MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference <a name="MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import mssql_managed_instance
+from cdktn_provider_azurerm import mssql_managed_instance
 
 mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2627,12 +2627,12 @@ mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2640,7 +2640,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2652,31 +2652,31 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.resetAzureadAuthenticationOnlyEnabled">reset_azuread_authentication_only_enabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.resetTenantId">reset_tenant_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.resetAzureadAuthenticationOnlyEnabled">reset_azuread_authentication_only_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.resetTenantId">reset_tenant_id</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2684,13 +2684,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2698,13 +2698,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2712,13 +2712,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2726,13 +2726,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2740,13 +2740,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2754,13 +2754,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2768,13 +2768,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2782,13 +2782,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2796,13 +2796,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2810,13 +2810,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2826,13 +2826,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2842,13 +2842,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_azuread_authentication_only_enabled` <a name="reset_azuread_authentication_only_enabled" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.resetAzureadAuthenticationOnlyEnabled"></a>
+##### `reset_azuread_authentication_only_enabled` <a name="reset_azuread_authentication_only_enabled" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.resetAzureadAuthenticationOnlyEnabled"></a>
 
 ```python
 def reset_azuread_authentication_only_enabled() -> None
 ```
 
-##### `reset_tenant_id` <a name="reset_tenant_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.resetTenantId"></a>
+##### `reset_tenant_id` <a name="reset_tenant_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.resetTenantId"></a>
 
 ```python
 def reset_tenant_id() -> None
@@ -2859,23 +2859,23 @@ def reset_tenant_id() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.azureadAuthenticationOnlyEnabledInput">azuread_authentication_only_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.loginUsernameInput">login_username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.objectIdInput">object_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.principalTypeInput">principal_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.tenantIdInput">tenant_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.azureadAuthenticationOnlyEnabled">azuread_authentication_only_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.loginUsername">login_username</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.objectId">object_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.principalType">principal_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.tenantId">tenant_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.azureadAuthenticationOnlyEnabledInput">azuread_authentication_only_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.loginUsernameInput">login_username_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.objectIdInput">object_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.principalTypeInput">principal_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.tenantIdInput">tenant_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.azureadAuthenticationOnlyEnabled">azuread_authentication_only_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.loginUsername">login_username</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.objectId">object_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.principalType">principal_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.tenantId">tenant_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2889,7 +2889,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2899,7 +2899,7 @@ fqn: str
 
 ---
 
-##### `azuread_authentication_only_enabled_input`<sup>Optional</sup> <a name="azuread_authentication_only_enabled_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.azureadAuthenticationOnlyEnabledInput"></a>
+##### `azuread_authentication_only_enabled_input`<sup>Optional</sup> <a name="azuread_authentication_only_enabled_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.azureadAuthenticationOnlyEnabledInput"></a>
 
 ```python
 azuread_authentication_only_enabled_input: bool | IResolvable
@@ -2909,7 +2909,7 @@ azuread_authentication_only_enabled_input: bool | IResolvable
 
 ---
 
-##### `login_username_input`<sup>Optional</sup> <a name="login_username_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.loginUsernameInput"></a>
+##### `login_username_input`<sup>Optional</sup> <a name="login_username_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.loginUsernameInput"></a>
 
 ```python
 login_username_input: str
@@ -2919,7 +2919,7 @@ login_username_input: str
 
 ---
 
-##### `object_id_input`<sup>Optional</sup> <a name="object_id_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.objectIdInput"></a>
+##### `object_id_input`<sup>Optional</sup> <a name="object_id_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.objectIdInput"></a>
 
 ```python
 object_id_input: str
@@ -2929,7 +2929,7 @@ object_id_input: str
 
 ---
 
-##### `principal_type_input`<sup>Optional</sup> <a name="principal_type_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.principalTypeInput"></a>
+##### `principal_type_input`<sup>Optional</sup> <a name="principal_type_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.principalTypeInput"></a>
 
 ```python
 principal_type_input: str
@@ -2939,7 +2939,7 @@ principal_type_input: str
 
 ---
 
-##### `tenant_id_input`<sup>Optional</sup> <a name="tenant_id_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.tenantIdInput"></a>
+##### `tenant_id_input`<sup>Optional</sup> <a name="tenant_id_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.tenantIdInput"></a>
 
 ```python
 tenant_id_input: str
@@ -2949,7 +2949,7 @@ tenant_id_input: str
 
 ---
 
-##### `azuread_authentication_only_enabled`<sup>Required</sup> <a name="azuread_authentication_only_enabled" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.azureadAuthenticationOnlyEnabled"></a>
+##### `azuread_authentication_only_enabled`<sup>Required</sup> <a name="azuread_authentication_only_enabled" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.azureadAuthenticationOnlyEnabled"></a>
 
 ```python
 azuread_authentication_only_enabled: bool | IResolvable
@@ -2959,7 +2959,7 @@ azuread_authentication_only_enabled: bool | IResolvable
 
 ---
 
-##### `login_username`<sup>Required</sup> <a name="login_username" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.loginUsername"></a>
+##### `login_username`<sup>Required</sup> <a name="login_username" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.loginUsername"></a>
 
 ```python
 login_username: str
@@ -2969,7 +2969,7 @@ login_username: str
 
 ---
 
-##### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.objectId"></a>
+##### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.objectId"></a>
 
 ```python
 object_id: str
@@ -2979,7 +2979,7 @@ object_id: str
 
 ---
 
-##### `principal_type`<sup>Required</sup> <a name="principal_type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.principalType"></a>
+##### `principal_type`<sup>Required</sup> <a name="principal_type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.principalType"></a>
 
 ```python
 principal_type: str
@@ -2989,7 +2989,7 @@ principal_type: str
 
 ---
 
-##### `tenant_id`<sup>Required</sup> <a name="tenant_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.tenantId"></a>
+##### `tenant_id`<sup>Required</sup> <a name="tenant_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.tenantId"></a>
 
 ```python
 tenant_id: str
@@ -2999,23 +2999,23 @@ tenant_id: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: MssqlManagedInstanceAzureActiveDirectoryAdministrator
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceAzureActiveDirectoryAdministrator">MssqlManagedInstanceAzureActiveDirectoryAdministrator</a>
 
 ---
 
 
-### MssqlManagedInstanceIdentityOutputReference <a name="MssqlManagedInstanceIdentityOutputReference" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference"></a>
+### MssqlManagedInstanceIdentityOutputReference <a name="MssqlManagedInstanceIdentityOutputReference" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import mssql_managed_instance
+from cdktn_provider_azurerm import mssql_managed_instance
 
 mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3025,12 +3025,12 @@ mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3038,7 +3038,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3050,30 +3050,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.resetIdentityIds">reset_identity_ids</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.resetIdentityIds">reset_identity_ids</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3081,13 +3081,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3095,13 +3095,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3109,13 +3109,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3123,13 +3123,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3137,13 +3137,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3151,13 +3151,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3165,13 +3165,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3179,13 +3179,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3193,13 +3193,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3207,13 +3207,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3223,13 +3223,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3239,7 +3239,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_identity_ids` <a name="reset_identity_ids" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.resetIdentityIds"></a>
+##### `reset_identity_ids` <a name="reset_identity_ids" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.resetIdentityIds"></a>
 
 ```python
 def reset_identity_ids() -> None
@@ -3250,19 +3250,19 @@ def reset_identity_ids() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.principalId">principal_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.tenantId">tenant_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.identityIdsInput">identity_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.principalId">principal_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.tenantId">tenant_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.identityIdsInput">identity_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3276,7 +3276,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3286,7 +3286,7 @@ fqn: str
 
 ---
 
-##### `principal_id`<sup>Required</sup> <a name="principal_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.principalId"></a>
+##### `principal_id`<sup>Required</sup> <a name="principal_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.principalId"></a>
 
 ```python
 principal_id: str
@@ -3296,7 +3296,7 @@ principal_id: str
 
 ---
 
-##### `tenant_id`<sup>Required</sup> <a name="tenant_id" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.tenantId"></a>
+##### `tenant_id`<sup>Required</sup> <a name="tenant_id" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.tenantId"></a>
 
 ```python
 tenant_id: str
@@ -3306,7 +3306,7 @@ tenant_id: str
 
 ---
 
-##### `identity_ids_input`<sup>Optional</sup> <a name="identity_ids_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.identityIdsInput"></a>
+##### `identity_ids_input`<sup>Optional</sup> <a name="identity_ids_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.identityIdsInput"></a>
 
 ```python
 identity_ids_input: typing.List[str]
@@ -3316,7 +3316,7 @@ identity_ids_input: typing.List[str]
 
 ---
 
-##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.typeInput"></a>
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.typeInput"></a>
 
 ```python
 type_input: str
@@ -3326,7 +3326,7 @@ type_input: str
 
 ---
 
-##### `identity_ids`<sup>Required</sup> <a name="identity_ids" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.identityIds"></a>
+##### `identity_ids`<sup>Required</sup> <a name="identity_ids" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.identityIds"></a>
 
 ```python
 identity_ids: typing.List[str]
@@ -3336,7 +3336,7 @@ identity_ids: typing.List[str]
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.type"></a>
 
 ```python
 type: str
@@ -3346,23 +3346,23 @@ type: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentityOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: MssqlManagedInstanceIdentity
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceIdentity">MssqlManagedInstanceIdentity</a>
 
 ---
 
 
-### MssqlManagedInstanceTimeoutsOutputReference <a name="MssqlManagedInstanceTimeoutsOutputReference" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference"></a>
+### MssqlManagedInstanceTimeoutsOutputReference <a name="MssqlManagedInstanceTimeoutsOutputReference" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import mssql_managed_instance
+from cdktn_provider_azurerm import mssql_managed_instance
 
 mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3372,12 +3372,12 @@ mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3385,7 +3385,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3397,33 +3397,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3431,13 +3431,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3445,13 +3445,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3459,13 +3459,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3473,13 +3473,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3487,13 +3487,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3501,13 +3501,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3515,13 +3515,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3529,13 +3529,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3543,13 +3543,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3557,13 +3557,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3573,13 +3573,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3589,25 +3589,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -3618,21 +3618,21 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3646,7 +3646,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3656,7 +3656,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -3666,7 +3666,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -3676,7 +3676,7 @@ delete_input: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -3686,7 +3686,7 @@ read_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -3696,7 +3696,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -3706,7 +3706,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -3716,7 +3716,7 @@ delete: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -3726,7 +3726,7 @@ read: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -3736,13 +3736,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | MssqlManagedInstanceTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.mssqlManagedInstance.MssqlManagedInstanceTimeouts">MssqlManagedInstanceTimeouts</a>
 
 ---
 

@@ -1,15 +1,15 @@
-# `apiManagementIdentityProviderGoogle` Submodule <a name="`apiManagementIdentityProviderGoogle` Submodule" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle"></a>
+# `apiManagementIdentityProviderGoogle` Submodule <a name="`apiManagementIdentityProviderGoogle` Submodule" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### ApiManagementIdentityProviderGoogle <a name="ApiManagementIdentityProviderGoogle" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle"></a>
+### ApiManagementIdentityProviderGoogle <a name="ApiManagementIdentityProviderGoogle" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google azurerm_api_management_identity_provider_google}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google azurerm_api_management_identity_provider_google}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import api_management_identity_provider_google
+from cdktn_provider_azurerm import api_management_identity_provider_google
 
 apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle(
   scope: Construct,
@@ -32,25 +32,25 @@ apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.apiManagementName">api_management_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#api_management_name ApiManagementIdentityProviderGoogle#api_management_name}. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#client_id ApiManagementIdentityProviderGoogle#client_id}. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#client_secret ApiManagementIdentityProviderGoogle#client_secret}. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#resource_group_name ApiManagementIdentityProviderGoogle#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#id ApiManagementIdentityProviderGoogle#id}. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.apiManagementName">api_management_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#api_management_name ApiManagementIdentityProviderGoogle#api_management_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#client_id ApiManagementIdentityProviderGoogle#client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#client_secret ApiManagementIdentityProviderGoogle#client_secret}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#resource_group_name ApiManagementIdentityProviderGoogle#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#id ApiManagementIdentityProviderGoogle#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -58,7 +58,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -68,98 +68,98 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `api_management_name`<sup>Required</sup> <a name="api_management_name" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.apiManagementName"></a>
+##### `api_management_name`<sup>Required</sup> <a name="api_management_name" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.apiManagementName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#api_management_name ApiManagementIdentityProviderGoogle#api_management_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#api_management_name ApiManagementIdentityProviderGoogle#api_management_name}.
 
 ---
 
-##### `client_id`<sup>Required</sup> <a name="client_id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.clientId"></a>
+##### `client_id`<sup>Required</sup> <a name="client_id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.clientId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#client_id ApiManagementIdentityProviderGoogle#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#client_id ApiManagementIdentityProviderGoogle#client_id}.
 
 ---
 
-##### `client_secret`<sup>Required</sup> <a name="client_secret" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.clientSecret"></a>
+##### `client_secret`<sup>Required</sup> <a name="client_secret" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.clientSecret"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#client_secret ApiManagementIdentityProviderGoogle#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#client_secret ApiManagementIdentityProviderGoogle#client_secret}.
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.resourceGroupName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#resource_group_name ApiManagementIdentityProviderGoogle#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#resource_group_name ApiManagementIdentityProviderGoogle#resource_group_name}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#id ApiManagementIdentityProviderGoogle#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#id ApiManagementIdentityProviderGoogle#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#timeouts ApiManagementIdentityProviderGoogle#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#timeouts ApiManagementIdentityProviderGoogle#timeouts}
 
 ---
 
@@ -167,36 +167,36 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toString"></a>
 
 ```python
 def to_string() -> str
@@ -204,7 +204,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.addOverride"></a>
 
 ```python
 def add_override(
@@ -213,19 +213,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -235,7 +235,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -243,7 +243,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -251,19 +251,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -271,7 +271,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -281,7 +281,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -289,7 +289,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -297,13 +297,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -311,13 +311,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -325,13 +325,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -339,13 +339,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -353,13 +353,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -367,13 +367,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -381,13 +381,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -395,13 +395,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -409,19 +409,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.importFrom"></a>
 
 ```python
 def import_from(
@@ -430,19 +430,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -450,13 +450,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -468,7 +468,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -476,7 +476,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveTo"></a>
 
 ```python
 def move_to(
@@ -487,7 +487,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -495,7 +495,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -503,7 +503,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -513,7 +513,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -521,7 +521,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -532,45 +532,45 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#create ApiManagementIdentityProviderGoogle#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#create ApiManagementIdentityProviderGoogle#create}.
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#delete ApiManagementIdentityProviderGoogle#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#delete ApiManagementIdentityProviderGoogle#delete}.
 
 ---
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#read ApiManagementIdentityProviderGoogle#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#read ApiManagementIdentityProviderGoogle#read}.
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#update ApiManagementIdentityProviderGoogle#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#update ApiManagementIdentityProviderGoogle#update}.
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -580,17 +580,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ApiManagementIdentityProviderGoogle resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ApiManagementIdentityProviderGoogle resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import api_management_identity_provider_google
+from cdktn_provider_azurerm import api_management_identity_provider_google
 
 apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.is_construct(
   x: typing.Any
@@ -613,7 +613,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -621,42 +621,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import api_management_identity_provider_google
+from cdktn_provider_azurerm import api_management_identity_provider_google
 
 apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import api_management_identity_provider_google
+from cdktn_provider_azurerm import api_management_identity_provider_google
 
 apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import api_management_identity_provider_google
+from cdktn_provider_azurerm import api_management_identity_provider_google
 
 apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.generate_config_for_import(
   scope: Construct,
@@ -668,7 +668,7 @@ apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.generate
 
 Generates CDKTF code for importing a ApiManagementIdentityProviderGoogle resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -676,7 +676,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -684,17 +684,17 @@ The construct id used in the generated config for the ApiManagementIdentityProvi
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing ApiManagementIdentityProviderGoogle that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -706,36 +706,36 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference">ApiManagementIdentityProviderGoogleTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.apiManagementNameInput">api_management_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientSecretInput">client_secret_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.apiManagementName">api_management_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference">ApiManagementIdentityProviderGoogleTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.apiManagementNameInput">api_management_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientSecretInput">client_secret_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.apiManagementName">api_management_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.node"></a>
 
 ```python
 node: Node
@@ -747,7 +747,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -757,7 +757,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.fqn"></a>
 
 ```python
 fqn: str
@@ -767,7 +767,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -777,7 +777,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -787,7 +787,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -797,7 +797,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -807,7 +807,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -817,7 +817,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -827,7 +827,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -837,7 +837,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -847,7 +847,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -857,7 +857,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -867,7 +867,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -877,17 +877,17 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.timeouts"></a>
 
 ```python
 timeouts: ApiManagementIdentityProviderGoogleTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference">ApiManagementIdentityProviderGoogleTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference">ApiManagementIdentityProviderGoogleTimeoutsOutputReference</a>
 
 ---
 
-##### `api_management_name_input`<sup>Optional</sup> <a name="api_management_name_input" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.apiManagementNameInput"></a>
+##### `api_management_name_input`<sup>Optional</sup> <a name="api_management_name_input" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.apiManagementNameInput"></a>
 
 ```python
 api_management_name_input: str
@@ -897,7 +897,7 @@ api_management_name_input: str
 
 ---
 
-##### `client_id_input`<sup>Optional</sup> <a name="client_id_input" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientIdInput"></a>
+##### `client_id_input`<sup>Optional</sup> <a name="client_id_input" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientIdInput"></a>
 
 ```python
 client_id_input: str
@@ -907,7 +907,7 @@ client_id_input: str
 
 ---
 
-##### `client_secret_input`<sup>Optional</sup> <a name="client_secret_input" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientSecretInput"></a>
+##### `client_secret_input`<sup>Optional</sup> <a name="client_secret_input" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientSecretInput"></a>
 
 ```python
 client_secret_input: str
@@ -917,7 +917,7 @@ client_secret_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.idInput"></a>
 
 ```python
 id_input: str
@@ -927,7 +927,7 @@ id_input: str
 
 ---
 
-##### `resource_group_name_input`<sup>Optional</sup> <a name="resource_group_name_input" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.resourceGroupNameInput"></a>
+##### `resource_group_name_input`<sup>Optional</sup> <a name="resource_group_name_input" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.resourceGroupNameInput"></a>
 
 ```python
 resource_group_name_input: str
@@ -937,17 +937,17 @@ resource_group_name_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | ApiManagementIdentityProviderGoogleTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a>
 
 ---
 
-##### `api_management_name`<sup>Required</sup> <a name="api_management_name" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.apiManagementName"></a>
+##### `api_management_name`<sup>Required</sup> <a name="api_management_name" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.apiManagementName"></a>
 
 ```python
 api_management_name: str
@@ -957,7 +957,7 @@ api_management_name: str
 
 ---
 
-##### `client_id`<sup>Required</sup> <a name="client_id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientId"></a>
+##### `client_id`<sup>Required</sup> <a name="client_id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientId"></a>
 
 ```python
 client_id: str
@@ -967,7 +967,7 @@ client_id: str
 
 ---
 
-##### `client_secret`<sup>Required</sup> <a name="client_secret" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientSecret"></a>
+##### `client_secret`<sup>Required</sup> <a name="client_secret" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.clientSecret"></a>
 
 ```python
 client_secret: str
@@ -977,7 +977,7 @@ client_secret: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.id"></a>
 
 ```python
 id: str
@@ -987,7 +987,7 @@ id: str
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.resourceGroupName"></a>
 
 ```python
 resource_group_name: str
@@ -1001,11 +1001,11 @@ resource_group_name: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogle.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1017,12 +1017,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ApiManagementIdentityProviderGoogleConfig <a name="ApiManagementIdentityProviderGoogleConfig" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig"></a>
+### ApiManagementIdentityProviderGoogleConfig <a name="ApiManagementIdentityProviderGoogleConfig" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import api_management_identity_provider_google
+from cdktn_provider_azurerm import api_management_identity_provider_google
 
 apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1045,23 +1045,23 @@ apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.apiManagementName">api_management_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#api_management_name ApiManagementIdentityProviderGoogle#api_management_name}. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#client_id ApiManagementIdentityProviderGoogle#client_id}. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#client_secret ApiManagementIdentityProviderGoogle#client_secret}. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#resource_group_name ApiManagementIdentityProviderGoogle#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#id ApiManagementIdentityProviderGoogle#id}. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.apiManagementName">api_management_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#api_management_name ApiManagementIdentityProviderGoogle#api_management_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#client_id ApiManagementIdentityProviderGoogle#client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#client_secret ApiManagementIdentityProviderGoogle#client_secret}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#resource_group_name ApiManagementIdentityProviderGoogle#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#id ApiManagementIdentityProviderGoogle#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1071,7 +1071,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1081,7 +1081,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1091,7 +1091,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1101,7 +1101,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1111,7 +1111,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1121,7 +1121,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1131,7 +1131,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `api_management_name`<sup>Required</sup> <a name="api_management_name" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.apiManagementName"></a>
+##### `api_management_name`<sup>Required</sup> <a name="api_management_name" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.apiManagementName"></a>
 
 ```python
 api_management_name: str
@@ -1139,11 +1139,11 @@ api_management_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#api_management_name ApiManagementIdentityProviderGoogle#api_management_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#api_management_name ApiManagementIdentityProviderGoogle#api_management_name}.
 
 ---
 
-##### `client_id`<sup>Required</sup> <a name="client_id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.clientId"></a>
+##### `client_id`<sup>Required</sup> <a name="client_id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.clientId"></a>
 
 ```python
 client_id: str
@@ -1151,11 +1151,11 @@ client_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#client_id ApiManagementIdentityProviderGoogle#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#client_id ApiManagementIdentityProviderGoogle#client_id}.
 
 ---
 
-##### `client_secret`<sup>Required</sup> <a name="client_secret" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.clientSecret"></a>
+##### `client_secret`<sup>Required</sup> <a name="client_secret" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.clientSecret"></a>
 
 ```python
 client_secret: str
@@ -1163,11 +1163,11 @@ client_secret: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#client_secret ApiManagementIdentityProviderGoogle#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#client_secret ApiManagementIdentityProviderGoogle#client_secret}.
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.resourceGroupName"></a>
 
 ```python
 resource_group_name: str
@@ -1175,11 +1175,11 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#resource_group_name ApiManagementIdentityProviderGoogle#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#resource_group_name ApiManagementIdentityProviderGoogle#resource_group_name}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.id"></a>
 
 ```python
 id: str
@@ -1187,33 +1187,33 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#id ApiManagementIdentityProviderGoogle#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#id ApiManagementIdentityProviderGoogle#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleConfig.property.timeouts"></a>
 
 ```python
 timeouts: ApiManagementIdentityProviderGoogleTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#timeouts ApiManagementIdentityProviderGoogle#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#timeouts ApiManagementIdentityProviderGoogle#timeouts}
 
 ---
 
-### ApiManagementIdentityProviderGoogleTimeouts <a name="ApiManagementIdentityProviderGoogleTimeouts" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts"></a>
+### ApiManagementIdentityProviderGoogleTimeouts <a name="ApiManagementIdentityProviderGoogleTimeouts" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import api_management_identity_provider_google
+from cdktn_provider_azurerm import api_management_identity_provider_google
 
 apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts(
   create: str = None,
@@ -1227,14 +1227,14 @@ apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#create ApiManagementIdentityProviderGoogle#create}. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#delete ApiManagementIdentityProviderGoogle#delete}. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#read ApiManagementIdentityProviderGoogle#read}. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#update ApiManagementIdentityProviderGoogle#update}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#create ApiManagementIdentityProviderGoogle#create}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#delete ApiManagementIdentityProviderGoogle#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#read ApiManagementIdentityProviderGoogle#read}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#update ApiManagementIdentityProviderGoogle#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1242,11 +1242,11 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#create ApiManagementIdentityProviderGoogle#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#create ApiManagementIdentityProviderGoogle#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1254,11 +1254,11 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#delete ApiManagementIdentityProviderGoogle#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#delete ApiManagementIdentityProviderGoogle#delete}.
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -1266,11 +1266,11 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#read ApiManagementIdentityProviderGoogle#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#read ApiManagementIdentityProviderGoogle#read}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -1278,18 +1278,18 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/api_management_identity_provider_google#update ApiManagementIdentityProviderGoogle#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/api_management_identity_provider_google#update ApiManagementIdentityProviderGoogle#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ApiManagementIdentityProviderGoogleTimeoutsOutputReference <a name="ApiManagementIdentityProviderGoogleTimeoutsOutputReference" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference"></a>
+### ApiManagementIdentityProviderGoogleTimeoutsOutputReference <a name="ApiManagementIdentityProviderGoogleTimeoutsOutputReference" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import api_management_identity_provider_google
+from cdktn_provider_azurerm import api_management_identity_provider_google
 
 apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1299,12 +1299,12 @@ apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1312,7 +1312,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1324,33 +1324,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1358,13 +1358,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1372,13 +1372,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1386,13 +1386,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1400,13 +1400,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1414,13 +1414,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1428,13 +1428,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1442,13 +1442,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1456,13 +1456,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1470,13 +1470,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1484,13 +1484,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1500,13 +1500,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1516,25 +1516,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -1545,21 +1545,21 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1573,7 +1573,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1583,7 +1583,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -1593,7 +1593,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -1603,7 +1603,7 @@ delete_input: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -1613,7 +1613,7 @@ read_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -1623,7 +1623,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -1633,7 +1633,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -1643,7 +1643,7 @@ delete: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -1653,7 +1653,7 @@ read: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -1663,13 +1663,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | ApiManagementIdentityProviderGoogleTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementIdentityProviderGoogle.ApiManagementIdentityProviderGoogleTimeouts">ApiManagementIdentityProviderGoogleTimeouts</a>
 
 ---
 

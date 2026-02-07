@@ -1,15 +1,15 @@
-# `dataAzurermStorageContainer` Submodule <a name="`dataAzurermStorageContainer` Submodule" id="@cdktf/provider-azurerm.dataAzurermStorageContainer"></a>
+# `dataAzurermStorageContainer` Submodule <a name="`dataAzurermStorageContainer` Submodule" id="@cdktn/provider-azurerm.dataAzurermStorageContainer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataAzurermStorageContainer <a name="DataAzurermStorageContainer" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer"></a>
+### DataAzurermStorageContainer <a name="DataAzurermStorageContainer" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container azurerm_storage_container}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container azurerm_storage_container}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_storage_container
+from cdktn_provider_azurerm import data_azurerm_storage_container
 
 dataAzurermStorageContainer.DataAzurermStorageContainer(
   scope: Construct,
@@ -32,25 +32,25 @@ dataAzurermStorageContainer.DataAzurermStorageContainer(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#name DataAzurermStorageContainer#name}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#id DataAzurermStorageContainer#id}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#metadata DataAzurermStorageContainer#metadata}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.storageAccountId">storage_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#storage_account_id DataAzurermStorageContainer#storage_account_id}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.storageAccountName">storage_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#storage_account_name DataAzurermStorageContainer#storage_account_name}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#name DataAzurermStorageContainer#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#id DataAzurermStorageContainer#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#metadata DataAzurermStorageContainer#metadata}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.storageAccountId">storage_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#storage_account_id DataAzurermStorageContainer#storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.storageAccountName">storage_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#storage_account_name DataAzurermStorageContainer#storage_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -58,7 +58,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -68,98 +68,98 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#name DataAzurermStorageContainer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#name DataAzurermStorageContainer#name}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#id DataAzurermStorageContainer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#id DataAzurermStorageContainer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.metadata"></a>
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.metadata"></a>
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#metadata DataAzurermStorageContainer#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#metadata DataAzurermStorageContainer#metadata}.
 
 ---
 
-##### `storage_account_id`<sup>Optional</sup> <a name="storage_account_id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.storageAccountId"></a>
+##### `storage_account_id`<sup>Optional</sup> <a name="storage_account_id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.storageAccountId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#storage_account_id DataAzurermStorageContainer#storage_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#storage_account_id DataAzurermStorageContainer#storage_account_id}.
 
 ---
 
-##### `storage_account_name`<sup>Optional</sup> <a name="storage_account_name" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.storageAccountName"></a>
+##### `storage_account_name`<sup>Optional</sup> <a name="storage_account_name" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.storageAccountName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#storage_account_name DataAzurermStorageContainer#storage_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#storage_account_name DataAzurermStorageContainer#storage_account_name}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#timeouts DataAzurermStorageContainer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#timeouts DataAzurermStorageContainer#timeouts}
 
 ---
 
@@ -167,33 +167,33 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetMetadata">reset_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetStorageAccountId">reset_storage_account_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetStorageAccountName">reset_storage_account_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetMetadata">reset_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetStorageAccountId">reset_storage_account_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetStorageAccountName">reset_storage_account_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toString"></a>
 
 ```python
 def to_string() -> str
@@ -201,7 +201,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.addOverride"></a>
 
 ```python
 def add_override(
@@ -210,19 +210,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -232,7 +232,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -240,7 +240,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -248,7 +248,7 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
@@ -256,13 +256,13 @@ def to_hcl_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -270,7 +270,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -278,13 +278,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -292,13 +292,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -306,13 +306,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -320,13 +320,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -334,13 +334,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -348,13 +348,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -362,13 +362,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -376,13 +376,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -390,13 +390,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -404,13 +404,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -418,39 +418,39 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#read DataAzurermStorageContainer#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#read DataAzurermStorageContainer#read}.
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_metadata` <a name="reset_metadata" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetMetadata"></a>
+##### `reset_metadata` <a name="reset_metadata" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetMetadata"></a>
 
 ```python
 def reset_metadata() -> None
 ```
 
-##### `reset_storage_account_id` <a name="reset_storage_account_id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetStorageAccountId"></a>
+##### `reset_storage_account_id` <a name="reset_storage_account_id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetStorageAccountId"></a>
 
 ```python
 def reset_storage_account_id() -> None
 ```
 
-##### `reset_storage_account_name` <a name="reset_storage_account_name" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetStorageAccountName"></a>
+##### `reset_storage_account_name` <a name="reset_storage_account_name" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetStorageAccountName"></a>
 
 ```python
 def reset_storage_account_name() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -460,17 +460,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataAzurermStorageContainer resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataAzurermStorageContainer resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_storage_container
+from cdktn_provider_azurerm import data_azurerm_storage_container
 
 dataAzurermStorageContainer.DataAzurermStorageContainer.is_construct(
   x: typing.Any
@@ -493,7 +493,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -501,42 +501,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_storage_container
+from cdktn_provider_azurerm import data_azurerm_storage_container
 
 dataAzurermStorageContainer.DataAzurermStorageContainer.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isTerraformDataSource"></a>
+##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isTerraformDataSource"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_storage_container
+from cdktn_provider_azurerm import data_azurerm_storage_container
 
 dataAzurermStorageContainer.DataAzurermStorageContainer.is_terraform_data_source(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_storage_container
+from cdktn_provider_azurerm import data_azurerm_storage_container
 
 dataAzurermStorageContainer.DataAzurermStorageContainer.generate_config_for_import(
   scope: Construct,
@@ -548,7 +548,7 @@ dataAzurermStorageContainer.DataAzurermStorageContainer.generate_config_for_impo
 
 Generates CDKTF code for importing a DataAzurermStorageContainer resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -556,7 +556,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -564,17 +564,17 @@ The construct id used in the generated config for the DataAzurermStorageContaine
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing DataAzurermStorageContainer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -586,40 +586,40 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.containerAccessType">container_access_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.defaultEncryptionScope">default_encryption_scope</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.encryptionScopeOverrideEnabled">encryption_scope_override_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.hasImmutabilityPolicy">has_immutability_policy</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.hasLegalHold">has_legal_hold</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.resourceManagerId">resource_manager_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference">DataAzurermStorageContainerTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.metadataInput">metadata_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountIdInput">storage_account_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountNameInput">storage_account_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountId">storage_account_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountName">storage_account_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.containerAccessType">container_access_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.defaultEncryptionScope">default_encryption_scope</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.encryptionScopeOverrideEnabled">encryption_scope_override_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.hasImmutabilityPolicy">has_immutability_policy</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.hasLegalHold">has_legal_hold</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.resourceManagerId">resource_manager_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference">DataAzurermStorageContainerTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.metadataInput">metadata_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountIdInput">storage_account_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountNameInput">storage_account_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountId">storage_account_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountName">storage_account_name</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.node"></a>
 
 ```python
 node: Node
@@ -631,7 +631,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -641,7 +641,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.fqn"></a>
 
 ```python
 fqn: str
@@ -651,7 +651,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -661,7 +661,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -671,7 +671,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -681,7 +681,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -691,7 +691,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -701,7 +701,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -711,7 +711,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -721,7 +721,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -731,7 +731,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -741,7 +741,7 @@ provider: TerraformProvider
 
 ---
 
-##### `container_access_type`<sup>Required</sup> <a name="container_access_type" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.containerAccessType"></a>
+##### `container_access_type`<sup>Required</sup> <a name="container_access_type" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.containerAccessType"></a>
 
 ```python
 container_access_type: str
@@ -751,7 +751,7 @@ container_access_type: str
 
 ---
 
-##### `default_encryption_scope`<sup>Required</sup> <a name="default_encryption_scope" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.defaultEncryptionScope"></a>
+##### `default_encryption_scope`<sup>Required</sup> <a name="default_encryption_scope" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.defaultEncryptionScope"></a>
 
 ```python
 default_encryption_scope: str
@@ -761,7 +761,7 @@ default_encryption_scope: str
 
 ---
 
-##### `encryption_scope_override_enabled`<sup>Required</sup> <a name="encryption_scope_override_enabled" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.encryptionScopeOverrideEnabled"></a>
+##### `encryption_scope_override_enabled`<sup>Required</sup> <a name="encryption_scope_override_enabled" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.encryptionScopeOverrideEnabled"></a>
 
 ```python
 encryption_scope_override_enabled: IResolvable
@@ -771,7 +771,7 @@ encryption_scope_override_enabled: IResolvable
 
 ---
 
-##### `has_immutability_policy`<sup>Required</sup> <a name="has_immutability_policy" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.hasImmutabilityPolicy"></a>
+##### `has_immutability_policy`<sup>Required</sup> <a name="has_immutability_policy" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.hasImmutabilityPolicy"></a>
 
 ```python
 has_immutability_policy: IResolvable
@@ -781,7 +781,7 @@ has_immutability_policy: IResolvable
 
 ---
 
-##### `has_legal_hold`<sup>Required</sup> <a name="has_legal_hold" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.hasLegalHold"></a>
+##### `has_legal_hold`<sup>Required</sup> <a name="has_legal_hold" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.hasLegalHold"></a>
 
 ```python
 has_legal_hold: IResolvable
@@ -791,7 +791,7 @@ has_legal_hold: IResolvable
 
 ---
 
-##### `resource_manager_id`<sup>Required</sup> <a name="resource_manager_id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.resourceManagerId"></a>
+##### `resource_manager_id`<sup>Required</sup> <a name="resource_manager_id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.resourceManagerId"></a>
 
 ```python
 resource_manager_id: str
@@ -801,17 +801,17 @@ resource_manager_id: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.timeouts"></a>
 
 ```python
 timeouts: DataAzurermStorageContainerTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference">DataAzurermStorageContainerTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference">DataAzurermStorageContainerTimeoutsOutputReference</a>
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.idInput"></a>
 
 ```python
 id_input: str
@@ -821,7 +821,7 @@ id_input: str
 
 ---
 
-##### `metadata_input`<sup>Optional</sup> <a name="metadata_input" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.metadataInput"></a>
+##### `metadata_input`<sup>Optional</sup> <a name="metadata_input" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.metadataInput"></a>
 
 ```python
 metadata_input: typing.Mapping[str]
@@ -831,7 +831,7 @@ metadata_input: typing.Mapping[str]
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -841,7 +841,7 @@ name_input: str
 
 ---
 
-##### `storage_account_id_input`<sup>Optional</sup> <a name="storage_account_id_input" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountIdInput"></a>
+##### `storage_account_id_input`<sup>Optional</sup> <a name="storage_account_id_input" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountIdInput"></a>
 
 ```python
 storage_account_id_input: str
@@ -851,7 +851,7 @@ storage_account_id_input: str
 
 ---
 
-##### `storage_account_name_input`<sup>Optional</sup> <a name="storage_account_name_input" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountNameInput"></a>
+##### `storage_account_name_input`<sup>Optional</sup> <a name="storage_account_name_input" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountNameInput"></a>
 
 ```python
 storage_account_name_input: str
@@ -861,17 +861,17 @@ storage_account_name_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | DataAzurermStorageContainerTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a>
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.id"></a>
 
 ```python
 id: str
@@ -881,7 +881,7 @@ id: str
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.metadata"></a>
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.metadata"></a>
 
 ```python
 metadata: typing.Mapping[str]
@@ -891,7 +891,7 @@ metadata: typing.Mapping[str]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.name"></a>
 
 ```python
 name: str
@@ -901,7 +901,7 @@ name: str
 
 ---
 
-##### `storage_account_id`<sup>Required</sup> <a name="storage_account_id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountId"></a>
+##### `storage_account_id`<sup>Required</sup> <a name="storage_account_id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountId"></a>
 
 ```python
 storage_account_id: str
@@ -911,7 +911,7 @@ storage_account_id: str
 
 ---
 
-##### `storage_account_name`<sup>Required</sup> <a name="storage_account_name" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountName"></a>
+##### `storage_account_name`<sup>Required</sup> <a name="storage_account_name" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.storageAccountName"></a>
 
 ```python
 storage_account_name: str
@@ -925,11 +925,11 @@ storage_account_name: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainer.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -941,12 +941,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataAzurermStorageContainerConfig <a name="DataAzurermStorageContainerConfig" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig"></a>
+### DataAzurermStorageContainerConfig <a name="DataAzurermStorageContainerConfig" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_storage_container
+from cdktn_provider_azurerm import data_azurerm_storage_container
 
 dataAzurermStorageContainer.DataAzurermStorageContainerConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -969,23 +969,23 @@ dataAzurermStorageContainer.DataAzurermStorageContainerConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#name DataAzurermStorageContainer#name}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#id DataAzurermStorageContainer#id}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#metadata DataAzurermStorageContainer#metadata}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.storageAccountId">storage_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#storage_account_id DataAzurermStorageContainer#storage_account_id}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.storageAccountName">storage_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#storage_account_name DataAzurermStorageContainer#storage_account_name}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#name DataAzurermStorageContainer#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#id DataAzurermStorageContainer#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#metadata DataAzurermStorageContainer#metadata}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.storageAccountId">storage_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#storage_account_id DataAzurermStorageContainer#storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.storageAccountName">storage_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#storage_account_name DataAzurermStorageContainer#storage_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -995,7 +995,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1005,7 +1005,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1015,7 +1015,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1025,7 +1025,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1035,7 +1035,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1045,7 +1045,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1055,7 +1055,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.name"></a>
 
 ```python
 name: str
@@ -1063,11 +1063,11 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#name DataAzurermStorageContainer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#name DataAzurermStorageContainer#name}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.id"></a>
 
 ```python
 id: str
@@ -1075,14 +1075,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#id DataAzurermStorageContainer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#id DataAzurermStorageContainer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.metadata"></a>
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.metadata"></a>
 
 ```python
 metadata: typing.Mapping[str]
@@ -1090,11 +1090,11 @@ metadata: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#metadata DataAzurermStorageContainer#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#metadata DataAzurermStorageContainer#metadata}.
 
 ---
 
-##### `storage_account_id`<sup>Optional</sup> <a name="storage_account_id" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.storageAccountId"></a>
+##### `storage_account_id`<sup>Optional</sup> <a name="storage_account_id" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.storageAccountId"></a>
 
 ```python
 storage_account_id: str
@@ -1102,11 +1102,11 @@ storage_account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#storage_account_id DataAzurermStorageContainer#storage_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#storage_account_id DataAzurermStorageContainer#storage_account_id}.
 
 ---
 
-##### `storage_account_name`<sup>Optional</sup> <a name="storage_account_name" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.storageAccountName"></a>
+##### `storage_account_name`<sup>Optional</sup> <a name="storage_account_name" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.storageAccountName"></a>
 
 ```python
 storage_account_name: str
@@ -1114,30 +1114,30 @@ storage_account_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#storage_account_name DataAzurermStorageContainer#storage_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#storage_account_name DataAzurermStorageContainer#storage_account_name}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerConfig.property.timeouts"></a>
 
 ```python
 timeouts: DataAzurermStorageContainerTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#timeouts DataAzurermStorageContainer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#timeouts DataAzurermStorageContainer#timeouts}
 
 ---
 
-### DataAzurermStorageContainerTimeouts <a name="DataAzurermStorageContainerTimeouts" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts"></a>
+### DataAzurermStorageContainerTimeouts <a name="DataAzurermStorageContainerTimeouts" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_storage_container
+from cdktn_provider_azurerm import data_azurerm_storage_container
 
 dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts(
   read: str = None
@@ -1148,11 +1148,11 @@ dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#read DataAzurermStorageContainer#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#read DataAzurermStorageContainer#read}. |
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -1160,18 +1160,18 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/storage_container#read DataAzurermStorageContainer#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/storage_container#read DataAzurermStorageContainer#read}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DataAzurermStorageContainerTimeoutsOutputReference <a name="DataAzurermStorageContainerTimeoutsOutputReference" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference"></a>
+### DataAzurermStorageContainerTimeoutsOutputReference <a name="DataAzurermStorageContainerTimeoutsOutputReference" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_storage_container
+from cdktn_provider_azurerm import data_azurerm_storage_container
 
 dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1181,12 +1181,12 @@ dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1194,7 +1194,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1206,30 +1206,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1237,13 +1237,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1251,13 +1251,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1265,13 +1265,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1279,13 +1279,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1293,13 +1293,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1307,13 +1307,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1321,13 +1321,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1335,13 +1335,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1349,13 +1349,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1363,13 +1363,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1379,13 +1379,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1395,7 +1395,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
@@ -1406,15 +1406,15 @@ def reset_read() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1428,7 +1428,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1438,7 +1438,7 @@ fqn: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -1448,7 +1448,7 @@ read_input: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -1458,13 +1458,13 @@ read: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | DataAzurermStorageContainerTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.dataAzurermStorageContainer.DataAzurermStorageContainerTimeouts">DataAzurermStorageContainerTimeouts</a>
 
 ---
 

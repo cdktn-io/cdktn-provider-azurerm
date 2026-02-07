@@ -1,28 +1,28 @@
-# `relayNamespaceAuthorizationRule` Submodule <a name="`relayNamespaceAuthorizationRule` Submodule" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule"></a>
+# `relayNamespaceAuthorizationRule` Submodule <a name="`relayNamespaceAuthorizationRule` Submodule" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### RelayNamespaceAuthorizationRule <a name="RelayNamespaceAuthorizationRule" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule"></a>
+### RelayNamespaceAuthorizationRule <a name="RelayNamespaceAuthorizationRule" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule azurerm_relay_namespace_authorization_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule azurerm_relay_namespace_authorization_rule}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.Initializer"></a>
 
 ```typescript
-import { relayNamespaceAuthorizationRule } from '@cdktf/provider-azurerm'
+import { relayNamespaceAuthorizationRule } from '@cdktn/provider-azurerm'
 
 new relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule(scope: Construct, id: string, config: RelayNamespaceAuthorizationRuleConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig">RelayNamespaceAuthorizationRuleConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig">RelayNamespaceAuthorizationRuleConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig">RelayNamespaceAuthorizationRuleConfig</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig">RelayNamespaceAuthorizationRuleConfig</a>
 
 ---
 
@@ -50,39 +50,39 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetListen">resetListen</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetManage">resetManage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetSend">resetSend</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetListen">resetListen</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetManage">resetManage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetSend">resetSend</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toString"></a>
 
 ```typescript
 public toString(): string
@@ -90,25 +90,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -116,7 +116,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -124,7 +124,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -132,19 +132,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -152,7 +152,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -160,7 +160,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -168,151 +168,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -322,7 +322,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -330,7 +330,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -338,7 +338,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -346,7 +346,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -354,7 +354,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -362,7 +362,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -370,43 +370,43 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.putTimeouts"></a>
 
 ```typescript
 public putTimeouts(value: RelayNamespaceAuthorizationRuleTimeouts): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts">RelayNamespaceAuthorizationRuleTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts">RelayNamespaceAuthorizationRuleTimeouts</a>
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetListen` <a name="resetListen" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetListen"></a>
+##### `resetListen` <a name="resetListen" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetListen"></a>
 
 ```typescript
 public resetListen(): void
 ```
 
-##### `resetManage` <a name="resetManage" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetManage"></a>
+##### `resetManage` <a name="resetManage" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetManage"></a>
 
 ```typescript
 public resetManage(): void
 ```
 
-##### `resetSend` <a name="resetSend" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetSend"></a>
+##### `resetSend` <a name="resetSend" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetSend"></a>
 
 ```typescript
 public resetSend(): void
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts(): void
@@ -416,17 +416,17 @@ public resetTimeouts(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a RelayNamespaceAuthorizationRule resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a RelayNamespaceAuthorizationRule resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isConstruct"></a>
 
 ```typescript
-import { relayNamespaceAuthorizationRule } from '@cdktf/provider-azurerm'
+import { relayNamespaceAuthorizationRule } from '@cdktn/provider-azurerm'
 
 relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isConstruct(x: any)
 ```
@@ -447,7 +447,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -455,45 +455,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformElement"></a>
 
 ```typescript
-import { relayNamespaceAuthorizationRule } from '@cdktf/provider-azurerm'
+import { relayNamespaceAuthorizationRule } from '@cdktn/provider-azurerm'
 
 relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformResource"></a>
 
 ```typescript
-import { relayNamespaceAuthorizationRule } from '@cdktf/provider-azurerm'
+import { relayNamespaceAuthorizationRule } from '@cdktn/provider-azurerm'
 
 relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.generateConfigForImport"></a>
 
 ```typescript
-import { relayNamespaceAuthorizationRule } from '@cdktf/provider-azurerm'
+import { relayNamespaceAuthorizationRule } from '@cdktn/provider-azurerm'
 
 relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a RelayNamespaceAuthorizationRule resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -501,7 +501,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -509,17 +509,17 @@ The construct id used in the generated config for the RelayNamespaceAuthorizatio
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing RelayNamespaceAuthorizationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -531,44 +531,44 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.primaryConnectionString">primaryConnectionString</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.primaryKey">primaryKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.secondaryConnectionString">secondaryConnectionString</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.secondaryKey">secondaryKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference">RelayNamespaceAuthorizationRuleTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.listenInput">listenInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.manageInput">manageInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.namespaceNameInput">namespaceNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.sendInput">sendInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts">RelayNamespaceAuthorizationRuleTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.listen">listen</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.manage">manage</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.namespaceName">namespaceName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.send">send</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.primaryConnectionString">primaryConnectionString</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.primaryKey">primaryKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.secondaryConnectionString">secondaryConnectionString</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.secondaryKey">secondaryKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference">RelayNamespaceAuthorizationRuleTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.listenInput">listenInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.manageInput">manageInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.namespaceNameInput">namespaceNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.sendInput">sendInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts">RelayNamespaceAuthorizationRuleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.listen">listen</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.manage">manage</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.namespaceName">namespaceName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.send">send</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -580,7 +580,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -590,7 +590,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -600,7 +600,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -610,7 +610,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -620,7 +620,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -630,7 +630,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -640,7 +640,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -650,7 +650,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -660,7 +660,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -670,7 +670,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -680,7 +680,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -690,7 +690,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -700,7 +700,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -710,7 +710,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `primaryConnectionString`<sup>Required</sup> <a name="primaryConnectionString" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.primaryConnectionString"></a>
+##### `primaryConnectionString`<sup>Required</sup> <a name="primaryConnectionString" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.primaryConnectionString"></a>
 
 ```typescript
 public readonly primaryConnectionString: string;
@@ -720,7 +720,7 @@ public readonly primaryConnectionString: string;
 
 ---
 
-##### `primaryKey`<sup>Required</sup> <a name="primaryKey" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.primaryKey"></a>
+##### `primaryKey`<sup>Required</sup> <a name="primaryKey" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.primaryKey"></a>
 
 ```typescript
 public readonly primaryKey: string;
@@ -730,7 +730,7 @@ public readonly primaryKey: string;
 
 ---
 
-##### `secondaryConnectionString`<sup>Required</sup> <a name="secondaryConnectionString" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.secondaryConnectionString"></a>
+##### `secondaryConnectionString`<sup>Required</sup> <a name="secondaryConnectionString" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.secondaryConnectionString"></a>
 
 ```typescript
 public readonly secondaryConnectionString: string;
@@ -740,7 +740,7 @@ public readonly secondaryConnectionString: string;
 
 ---
 
-##### `secondaryKey`<sup>Required</sup> <a name="secondaryKey" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.secondaryKey"></a>
+##### `secondaryKey`<sup>Required</sup> <a name="secondaryKey" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.secondaryKey"></a>
 
 ```typescript
 public readonly secondaryKey: string;
@@ -750,17 +750,17 @@ public readonly secondaryKey: string;
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: RelayNamespaceAuthorizationRuleTimeoutsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference">RelayNamespaceAuthorizationRuleTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference">RelayNamespaceAuthorizationRuleTimeoutsOutputReference</a>
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -770,7 +770,7 @@ public readonly idInput: string;
 
 ---
 
-##### `listenInput`<sup>Optional</sup> <a name="listenInput" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.listenInput"></a>
+##### `listenInput`<sup>Optional</sup> <a name="listenInput" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.listenInput"></a>
 
 ```typescript
 public readonly listenInput: boolean | IResolvable;
@@ -780,7 +780,7 @@ public readonly listenInput: boolean | IResolvable;
 
 ---
 
-##### `manageInput`<sup>Optional</sup> <a name="manageInput" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.manageInput"></a>
+##### `manageInput`<sup>Optional</sup> <a name="manageInput" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.manageInput"></a>
 
 ```typescript
 public readonly manageInput: boolean | IResolvable;
@@ -790,7 +790,7 @@ public readonly manageInput: boolean | IResolvable;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -800,7 +800,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `namespaceNameInput`<sup>Optional</sup> <a name="namespaceNameInput" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.namespaceNameInput"></a>
+##### `namespaceNameInput`<sup>Optional</sup> <a name="namespaceNameInput" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.namespaceNameInput"></a>
 
 ```typescript
 public readonly namespaceNameInput: string;
@@ -810,7 +810,7 @@ public readonly namespaceNameInput: string;
 
 ---
 
-##### `resourceGroupNameInput`<sup>Optional</sup> <a name="resourceGroupNameInput" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.resourceGroupNameInput"></a>
+##### `resourceGroupNameInput`<sup>Optional</sup> <a name="resourceGroupNameInput" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.resourceGroupNameInput"></a>
 
 ```typescript
 public readonly resourceGroupNameInput: string;
@@ -820,7 +820,7 @@ public readonly resourceGroupNameInput: string;
 
 ---
 
-##### `sendInput`<sup>Optional</sup> <a name="sendInput" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.sendInput"></a>
+##### `sendInput`<sup>Optional</sup> <a name="sendInput" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.sendInput"></a>
 
 ```typescript
 public readonly sendInput: boolean | IResolvable;
@@ -830,17 +830,17 @@ public readonly sendInput: boolean | IResolvable;
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.timeoutsInput"></a>
 
 ```typescript
 public readonly timeoutsInput: IResolvable | RelayNamespaceAuthorizationRuleTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts">RelayNamespaceAuthorizationRuleTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts">RelayNamespaceAuthorizationRuleTimeouts</a>
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -850,7 +850,7 @@ public readonly id: string;
 
 ---
 
-##### `listen`<sup>Required</sup> <a name="listen" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.listen"></a>
+##### `listen`<sup>Required</sup> <a name="listen" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.listen"></a>
 
 ```typescript
 public readonly listen: boolean | IResolvable;
@@ -860,7 +860,7 @@ public readonly listen: boolean | IResolvable;
 
 ---
 
-##### `manage`<sup>Required</sup> <a name="manage" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.manage"></a>
+##### `manage`<sup>Required</sup> <a name="manage" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.manage"></a>
 
 ```typescript
 public readonly manage: boolean | IResolvable;
@@ -870,7 +870,7 @@ public readonly manage: boolean | IResolvable;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -880,7 +880,7 @@ public readonly name: string;
 
 ---
 
-##### `namespaceName`<sup>Required</sup> <a name="namespaceName" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.namespaceName"></a>
+##### `namespaceName`<sup>Required</sup> <a name="namespaceName" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.namespaceName"></a>
 
 ```typescript
 public readonly namespaceName: string;
@@ -890,7 +890,7 @@ public readonly namespaceName: string;
 
 ---
 
-##### `resourceGroupName`<sup>Required</sup> <a name="resourceGroupName" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.resourceGroupName"></a>
+##### `resourceGroupName`<sup>Required</sup> <a name="resourceGroupName" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.resourceGroupName"></a>
 
 ```typescript
 public readonly resourceGroupName: string;
@@ -900,7 +900,7 @@ public readonly resourceGroupName: string;
 
 ---
 
-##### `send`<sup>Required</sup> <a name="send" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.send"></a>
+##### `send`<sup>Required</sup> <a name="send" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.send"></a>
 
 ```typescript
 public readonly send: boolean | IResolvable;
@@ -914,11 +914,11 @@ public readonly send: boolean | IResolvable;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -930,12 +930,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### RelayNamespaceAuthorizationRuleConfig <a name="RelayNamespaceAuthorizationRuleConfig" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig"></a>
+### RelayNamespaceAuthorizationRuleConfig <a name="RelayNamespaceAuthorizationRuleConfig" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.Initializer"></a>
 
 ```typescript
-import { relayNamespaceAuthorizationRule } from '@cdktf/provider-azurerm'
+import { relayNamespaceAuthorizationRule } from '@cdktn/provider-azurerm'
 
 const relayNamespaceAuthorizationRuleConfig: relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig = { ... }
 ```
@@ -944,25 +944,25 @@ const relayNamespaceAuthorizationRuleConfig: relayNamespaceAuthorizationRule.Rel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#name RelayNamespaceAuthorizationRule#name}. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.namespaceName">namespaceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#namespace_name RelayNamespaceAuthorizationRule#namespace_name}. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#resource_group_name RelayNamespaceAuthorizationRule#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#id RelayNamespaceAuthorizationRule#id}. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.listen">listen</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#listen RelayNamespaceAuthorizationRule#listen}. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.manage">manage</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#manage RelayNamespaceAuthorizationRule#manage}. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.send">send</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#send RelayNamespaceAuthorizationRule#send}. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts">RelayNamespaceAuthorizationRuleTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#name RelayNamespaceAuthorizationRule#name}. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.namespaceName">namespaceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#namespace_name RelayNamespaceAuthorizationRule#namespace_name}. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#resource_group_name RelayNamespaceAuthorizationRule#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#id RelayNamespaceAuthorizationRule#id}. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.listen">listen</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#listen RelayNamespaceAuthorizationRule#listen}. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.manage">manage</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#manage RelayNamespaceAuthorizationRule#manage}. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.send">send</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#send RelayNamespaceAuthorizationRule#send}. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts">RelayNamespaceAuthorizationRuleTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -972,7 +972,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -982,7 +982,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -992,7 +992,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -1002,7 +1002,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -1012,7 +1012,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -1022,7 +1022,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -1032,7 +1032,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1040,11 +1040,11 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#name RelayNamespaceAuthorizationRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#name RelayNamespaceAuthorizationRule#name}.
 
 ---
 
-##### `namespaceName`<sup>Required</sup> <a name="namespaceName" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.namespaceName"></a>
+##### `namespaceName`<sup>Required</sup> <a name="namespaceName" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.namespaceName"></a>
 
 ```typescript
 public readonly namespaceName: string;
@@ -1052,11 +1052,11 @@ public readonly namespaceName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#namespace_name RelayNamespaceAuthorizationRule#namespace_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#namespace_name RelayNamespaceAuthorizationRule#namespace_name}.
 
 ---
 
-##### `resourceGroupName`<sup>Required</sup> <a name="resourceGroupName" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.resourceGroupName"></a>
+##### `resourceGroupName`<sup>Required</sup> <a name="resourceGroupName" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.resourceGroupName"></a>
 
 ```typescript
 public readonly resourceGroupName: string;
@@ -1064,11 +1064,11 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#resource_group_name RelayNamespaceAuthorizationRule#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#resource_group_name RelayNamespaceAuthorizationRule#resource_group_name}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1076,14 +1076,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#id RelayNamespaceAuthorizationRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#id RelayNamespaceAuthorizationRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `listen`<sup>Optional</sup> <a name="listen" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.listen"></a>
+##### `listen`<sup>Optional</sup> <a name="listen" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.listen"></a>
 
 ```typescript
 public readonly listen: boolean | IResolvable;
@@ -1091,11 +1091,11 @@ public readonly listen: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#listen RelayNamespaceAuthorizationRule#listen}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#listen RelayNamespaceAuthorizationRule#listen}.
 
 ---
 
-##### `manage`<sup>Optional</sup> <a name="manage" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.manage"></a>
+##### `manage`<sup>Optional</sup> <a name="manage" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.manage"></a>
 
 ```typescript
 public readonly manage: boolean | IResolvable;
@@ -1103,11 +1103,11 @@ public readonly manage: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#manage RelayNamespaceAuthorizationRule#manage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#manage RelayNamespaceAuthorizationRule#manage}.
 
 ---
 
-##### `send`<sup>Optional</sup> <a name="send" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.send"></a>
+##### `send`<sup>Optional</sup> <a name="send" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.send"></a>
 
 ```typescript
 public readonly send: boolean | IResolvable;
@@ -1115,30 +1115,30 @@ public readonly send: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#send RelayNamespaceAuthorizationRule#send}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#send RelayNamespaceAuthorizationRule#send}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: RelayNamespaceAuthorizationRuleTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts">RelayNamespaceAuthorizationRuleTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts">RelayNamespaceAuthorizationRuleTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#timeouts RelayNamespaceAuthorizationRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#timeouts RelayNamespaceAuthorizationRule#timeouts}
 
 ---
 
-### RelayNamespaceAuthorizationRuleTimeouts <a name="RelayNamespaceAuthorizationRuleTimeouts" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts"></a>
+### RelayNamespaceAuthorizationRuleTimeouts <a name="RelayNamespaceAuthorizationRuleTimeouts" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.Initializer"></a>
 
 ```typescript
-import { relayNamespaceAuthorizationRule } from '@cdktf/provider-azurerm'
+import { relayNamespaceAuthorizationRule } from '@cdktn/provider-azurerm'
 
 const relayNamespaceAuthorizationRuleTimeouts: relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts = { ... }
 ```
@@ -1147,14 +1147,14 @@ const relayNamespaceAuthorizationRuleTimeouts: relayNamespaceAuthorizationRule.R
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#create RelayNamespaceAuthorizationRule#create}. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#delete RelayNamespaceAuthorizationRule#delete}. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#read RelayNamespaceAuthorizationRule#read}. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#update RelayNamespaceAuthorizationRule#update}. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#create RelayNamespaceAuthorizationRule#create}. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#delete RelayNamespaceAuthorizationRule#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#read RelayNamespaceAuthorizationRule#read}. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#update RelayNamespaceAuthorizationRule#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1162,11 +1162,11 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#create RelayNamespaceAuthorizationRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#create RelayNamespaceAuthorizationRule#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1174,11 +1174,11 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#delete RelayNamespaceAuthorizationRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#delete RelayNamespaceAuthorizationRule#delete}.
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -1186,11 +1186,11 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#read RelayNamespaceAuthorizationRule#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#read RelayNamespaceAuthorizationRule#read}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1198,30 +1198,30 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/relay_namespace_authorization_rule#update RelayNamespaceAuthorizationRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/relay_namespace_authorization_rule#update RelayNamespaceAuthorizationRule#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### RelayNamespaceAuthorizationRuleTimeoutsOutputReference <a name="RelayNamespaceAuthorizationRuleTimeoutsOutputReference" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference"></a>
+### RelayNamespaceAuthorizationRuleTimeoutsOutputReference <a name="RelayNamespaceAuthorizationRuleTimeoutsOutputReference" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.Initializer"></a>
 
 ```typescript
-import { relayNamespaceAuthorizationRule } from '@cdktf/provider-azurerm'
+import { relayNamespaceAuthorizationRule } from '@cdktn/provider-azurerm'
 
 new relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1229,7 +1229,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1241,153 +1241,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1395,13 +1395,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1411,25 +1411,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetCreate"></a>
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetCreate"></a>
 
 ```typescript
 public resetCreate(): void
 ```
 
-##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetDelete"></a>
+##### `resetDelete` <a name="resetDelete" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetDelete"></a>
 
 ```typescript
 public resetDelete(): void
 ```
 
-##### `resetRead` <a name="resetRead" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetRead"></a>
+##### `resetRead` <a name="resetRead" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetRead"></a>
 
 ```typescript
 public resetRead(): void
 ```
 
-##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetUpdate"></a>
+##### `resetUpdate` <a name="resetUpdate" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.resetUpdate"></a>
 
 ```typescript
 public resetUpdate(): void
@@ -1440,21 +1440,21 @@ public resetUpdate(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts">RelayNamespaceAuthorizationRuleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts">RelayNamespaceAuthorizationRuleTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1468,7 +1468,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1478,7 +1478,7 @@ public readonly fqn: string;
 
 ---
 
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.createInput"></a>
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.createInput"></a>
 
 ```typescript
 public readonly createInput: string;
@@ -1488,7 +1488,7 @@ public readonly createInput: string;
 
 ---
 
-##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.deleteInput"></a>
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.deleteInput"></a>
 
 ```typescript
 public readonly deleteInput: string;
@@ -1498,7 +1498,7 @@ public readonly deleteInput: string;
 
 ---
 
-##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.readInput"></a>
+##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.readInput"></a>
 
 ```typescript
 public readonly readInput: string;
@@ -1508,7 +1508,7 @@ public readonly readInput: string;
 
 ---
 
-##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.updateInput"></a>
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.updateInput"></a>
 
 ```typescript
 public readonly updateInput: string;
@@ -1518,7 +1518,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1528,7 +1528,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1538,7 +1538,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -1548,7 +1548,7 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1558,13 +1558,13 @@ public readonly update: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | RelayNamespaceAuthorizationRuleTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts">RelayNamespaceAuthorizationRuleTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts">RelayNamespaceAuthorizationRuleTimeouts</a>
 
 ---
 

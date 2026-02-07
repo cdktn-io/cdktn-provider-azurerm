@@ -1,9 +1,9 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,76 +13,84 @@ import * as cdktf from 'cdktf';
 
 export interface BackupPolicyFileShareConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#id BackupPolicyFileShare#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#backup_tier BackupPolicyFileShare#backup_tier}
+  */
+  readonly backupTier?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#id BackupPolicyFileShare#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#name BackupPolicyFileShare#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#name BackupPolicyFileShare#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#recovery_vault_name BackupPolicyFileShare#recovery_vault_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#recovery_vault_name BackupPolicyFileShare#recovery_vault_name}
   */
   readonly recoveryVaultName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#resource_group_name BackupPolicyFileShare#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#resource_group_name BackupPolicyFileShare#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#timezone BackupPolicyFileShare#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#snapshot_retention_in_days BackupPolicyFileShare#snapshot_retention_in_days}
+  */
+  readonly snapshotRetentionInDays?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#timezone BackupPolicyFileShare#timezone}
   */
   readonly timezone?: string;
   /**
   * backup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#backup BackupPolicyFileShare#backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#backup BackupPolicyFileShare#backup}
   */
   readonly backup: BackupPolicyFileShareBackup;
   /**
   * retention_daily block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#retention_daily BackupPolicyFileShare#retention_daily}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#retention_daily BackupPolicyFileShare#retention_daily}
   */
   readonly retentionDaily: BackupPolicyFileShareRetentionDaily;
   /**
   * retention_monthly block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#retention_monthly BackupPolicyFileShare#retention_monthly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#retention_monthly BackupPolicyFileShare#retention_monthly}
   */
   readonly retentionMonthly?: BackupPolicyFileShareRetentionMonthly;
   /**
   * retention_weekly block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#retention_weekly BackupPolicyFileShare#retention_weekly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#retention_weekly BackupPolicyFileShare#retention_weekly}
   */
   readonly retentionWeekly?: BackupPolicyFileShareRetentionWeekly;
   /**
   * retention_yearly block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#retention_yearly BackupPolicyFileShare#retention_yearly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#retention_yearly BackupPolicyFileShare#retention_yearly}
   */
   readonly retentionYearly?: BackupPolicyFileShareRetentionYearly;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#timeouts BackupPolicyFileShare#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#timeouts BackupPolicyFileShare#timeouts}
   */
   readonly timeouts?: BackupPolicyFileShareTimeouts;
 }
 export interface BackupPolicyFileShareBackupHourly {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#interval BackupPolicyFileShare#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#interval BackupPolicyFileShare#interval}
   */
   readonly interval: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#start_time BackupPolicyFileShare#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#start_time BackupPolicyFileShare#start_time}
   */
   readonly startTime: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#window_duration BackupPolicyFileShare#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#window_duration BackupPolicyFileShare#window_duration}
   */
   readonly windowDuration: number;
 }
@@ -215,17 +223,17 @@ export class BackupPolicyFileShareBackupHourlyOutputReference extends cdktf.Comp
 }
 export interface BackupPolicyFileShareBackup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#frequency BackupPolicyFileShare#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#frequency BackupPolicyFileShare#frequency}
   */
   readonly frequency: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#time BackupPolicyFileShare#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#time BackupPolicyFileShare#time}
   */
   readonly time?: string;
   /**
   * hourly block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#hourly BackupPolicyFileShare#hourly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#hourly BackupPolicyFileShare#hourly}
   */
   readonly hourly?: BackupPolicyFileShareBackupHourly;
 }
@@ -364,7 +372,7 @@ export class BackupPolicyFileShareBackupOutputReference extends cdktf.ComplexObj
 }
 export interface BackupPolicyFileShareRetentionDaily {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#count BackupPolicyFileShare#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#count BackupPolicyFileShare#count}
   */
   readonly count: number;
 }
@@ -445,23 +453,23 @@ export class BackupPolicyFileShareRetentionDailyOutputReference extends cdktf.Co
 }
 export interface BackupPolicyFileShareRetentionMonthly {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#count BackupPolicyFileShare#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#count BackupPolicyFileShare#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#days BackupPolicyFileShare#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#days BackupPolicyFileShare#days}
   */
   readonly days?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#include_last_days BackupPolicyFileShare#include_last_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#include_last_days BackupPolicyFileShare#include_last_days}
   */
   readonly includeLastDays?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#weekdays BackupPolicyFileShare#weekdays}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#weekdays BackupPolicyFileShare#weekdays}
   */
   readonly weekdays?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#weeks BackupPolicyFileShare#weeks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#weeks BackupPolicyFileShare#weeks}
   */
   readonly weeks?: string[];
 }
@@ -658,11 +666,11 @@ export class BackupPolicyFileShareRetentionMonthlyOutputReference extends cdktf.
 }
 export interface BackupPolicyFileShareRetentionWeekly {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#count BackupPolicyFileShare#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#count BackupPolicyFileShare#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#weekdays BackupPolicyFileShare#weekdays}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#weekdays BackupPolicyFileShare#weekdays}
   */
   readonly weekdays: string[];
 }
@@ -769,27 +777,27 @@ export class BackupPolicyFileShareRetentionWeeklyOutputReference extends cdktf.C
 }
 export interface BackupPolicyFileShareRetentionYearly {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#count BackupPolicyFileShare#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#count BackupPolicyFileShare#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#days BackupPolicyFileShare#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#days BackupPolicyFileShare#days}
   */
   readonly days?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#include_last_days BackupPolicyFileShare#include_last_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#include_last_days BackupPolicyFileShare#include_last_days}
   */
   readonly includeLastDays?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#months BackupPolicyFileShare#months}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#months BackupPolicyFileShare#months}
   */
   readonly months: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#weekdays BackupPolicyFileShare#weekdays}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#weekdays BackupPolicyFileShare#weekdays}
   */
   readonly weekdays?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#weeks BackupPolicyFileShare#weeks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#weeks BackupPolicyFileShare#weeks}
   */
   readonly weeks?: string[];
 }
@@ -1012,19 +1020,19 @@ export class BackupPolicyFileShareRetentionYearlyOutputReference extends cdktf.C
 }
 export interface BackupPolicyFileShareTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#create BackupPolicyFileShare#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#create BackupPolicyFileShare#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#delete BackupPolicyFileShare#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#delete BackupPolicyFileShare#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#read BackupPolicyFileShare#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#read BackupPolicyFileShare#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#update BackupPolicyFileShare#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#update BackupPolicyFileShare#update}
   */
   readonly update?: string;
 }
@@ -1205,7 +1213,7 @@ export class BackupPolicyFileShareTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share azurerm_backup_policy_file_share}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share azurerm_backup_policy_file_share}
 */
 export class BackupPolicyFileShare extends cdktf.TerraformResource {
 
@@ -1221,7 +1229,7 @@ export class BackupPolicyFileShare extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a BackupPolicyFileShare resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupPolicyFileShare to import
-  * @param importFromId The id of the existing BackupPolicyFileShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BackupPolicyFileShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupPolicyFileShare to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1233,7 +1241,7 @@ export class BackupPolicyFileShare extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/backup_policy_file_share azurerm_backup_policy_file_share} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/backup_policy_file_share azurerm_backup_policy_file_share} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1244,7 +1252,7 @@ export class BackupPolicyFileShare extends cdktf.TerraformResource {
       terraformResourceType: 'azurerm_backup_policy_file_share',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.55.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1255,10 +1263,12 @@ export class BackupPolicyFileShare extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._backupTier = config.backupTier;
     this._id = config.id;
     this._name = config.name;
     this._recoveryVaultName = config.recoveryVaultName;
     this._resourceGroupName = config.resourceGroupName;
+    this._snapshotRetentionInDays = config.snapshotRetentionInDays;
     this._timezone = config.timezone;
     this._backup.internalValue = config.backup;
     this._retentionDaily.internalValue = config.retentionDaily;
@@ -1271,6 +1281,22 @@ export class BackupPolicyFileShare extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // backup_tier - computed: false, optional: true, required: false
+  private _backupTier?: string; 
+  public get backupTier() {
+    return this.getStringAttribute('backup_tier');
+  }
+  public set backupTier(value: string) {
+    this._backupTier = value;
+  }
+  public resetBackupTier() {
+    this._backupTier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupTierInput() {
+    return this._backupTier;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -1325,6 +1351,22 @@ export class BackupPolicyFileShare extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get resourceGroupNameInput() {
     return this._resourceGroupName;
+  }
+
+  // snapshot_retention_in_days - computed: false, optional: true, required: false
+  private _snapshotRetentionInDays?: number; 
+  public get snapshotRetentionInDays() {
+    return this.getNumberAttribute('snapshot_retention_in_days');
+  }
+  public set snapshotRetentionInDays(value: number) {
+    this._snapshotRetentionInDays = value;
+  }
+  public resetSnapshotRetentionInDays() {
+    this._snapshotRetentionInDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snapshotRetentionInDaysInput() {
+    return this._snapshotRetentionInDays;
   }
 
   // timezone - computed: false, optional: true, required: false
@@ -1439,10 +1481,12 @@ export class BackupPolicyFileShare extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      backup_tier: cdktf.stringToTerraform(this._backupTier),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       recovery_vault_name: cdktf.stringToTerraform(this._recoveryVaultName),
       resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      snapshot_retention_in_days: cdktf.numberToTerraform(this._snapshotRetentionInDays),
       timezone: cdktf.stringToTerraform(this._timezone),
       backup: backupPolicyFileShareBackupToTerraform(this._backup.internalValue),
       retention_daily: backupPolicyFileShareRetentionDailyToTerraform(this._retentionDaily.internalValue),
@@ -1455,6 +1499,12 @@ export class BackupPolicyFileShare extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      backup_tier: {
+        value: cdktf.stringToHclTerraform(this._backupTier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
@@ -1478,6 +1528,12 @@ export class BackupPolicyFileShare extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      snapshot_retention_in_days: {
+        value: cdktf.numberToHclTerraform(this._snapshotRetentionInDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       timezone: {
         value: cdktf.stringToHclTerraform(this._timezone),
