@@ -1,9 +1,9 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,62 +13,70 @@ import * as cdktf from 'cdktf';
 
 export interface KustoScriptConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script#continue_on_errors_enabled KustoScript#continue_on_errors_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#continue_on_errors_enabled KustoScript#continue_on_errors_enabled}
   */
   readonly continueOnErrorsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script#database_id KustoScript#database_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#database_id KustoScript#database_id}
   */
   readonly databaseId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script#force_an_update_when_value_changed KustoScript#force_an_update_when_value_changed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#force_an_update_when_value_changed KustoScript#force_an_update_when_value_changed}
   */
   readonly forceAnUpdateWhenValueChanged?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script#id KustoScript#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#id KustoScript#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script#name KustoScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#name KustoScript#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script#sas_token KustoScript#sas_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#principal_permissions_action KustoScript#principal_permissions_action}
+  */
+  readonly principalPermissionsAction?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#sas_token KustoScript#sas_token}
   */
   readonly sasToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script#script_content KustoScript#script_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#script_content KustoScript#script_content}
   */
   readonly scriptContent?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script#url KustoScript#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#script_level KustoScript#script_level}
+  */
+  readonly scriptLevel?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#url KustoScript#url}
   */
   readonly url?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script#timeouts KustoScript#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#timeouts KustoScript#timeouts}
   */
   readonly timeouts?: KustoScriptTimeouts;
 }
 export interface KustoScriptTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script#create KustoScript#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#create KustoScript#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script#delete KustoScript#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#delete KustoScript#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script#read KustoScript#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#read KustoScript#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script#update KustoScript#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#update KustoScript#update}
   */
   readonly update?: string;
 }
@@ -249,7 +257,7 @@ export class KustoScriptTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script azurerm_kusto_script}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script azurerm_kusto_script}
 */
 export class KustoScript extends cdktf.TerraformResource {
 
@@ -265,7 +273,7 @@ export class KustoScript extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KustoScript resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KustoScript to import
-  * @param importFromId The id of the existing KustoScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KustoScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KustoScript to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -277,7 +285,7 @@ export class KustoScript extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_script azurerm_kusto_script} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_script azurerm_kusto_script} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -288,7 +296,7 @@ export class KustoScript extends cdktf.TerraformResource {
       terraformResourceType: 'azurerm_kusto_script',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.55.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -304,8 +312,10 @@ export class KustoScript extends cdktf.TerraformResource {
     this._forceAnUpdateWhenValueChanged = config.forceAnUpdateWhenValueChanged;
     this._id = config.id;
     this._name = config.name;
+    this._principalPermissionsAction = config.principalPermissionsAction;
     this._sasToken = config.sasToken;
     this._scriptContent = config.scriptContent;
+    this._scriptLevel = config.scriptLevel;
     this._url = config.url;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -388,6 +398,22 @@ export class KustoScript extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // principal_permissions_action - computed: false, optional: true, required: false
+  private _principalPermissionsAction?: string; 
+  public get principalPermissionsAction() {
+    return this.getStringAttribute('principal_permissions_action');
+  }
+  public set principalPermissionsAction(value: string) {
+    this._principalPermissionsAction = value;
+  }
+  public resetPrincipalPermissionsAction() {
+    this._principalPermissionsAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalPermissionsActionInput() {
+    return this._principalPermissionsAction;
+  }
+
   // sas_token - computed: false, optional: true, required: false
   private _sasToken?: string; 
   public get sasToken() {
@@ -418,6 +444,22 @@ export class KustoScript extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get scriptContentInput() {
     return this._scriptContent;
+  }
+
+  // script_level - computed: false, optional: true, required: false
+  private _scriptLevel?: string; 
+  public get scriptLevel() {
+    return this.getStringAttribute('script_level');
+  }
+  public set scriptLevel(value: string) {
+    this._scriptLevel = value;
+  }
+  public resetScriptLevel() {
+    this._scriptLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scriptLevelInput() {
+    return this._scriptLevel;
   }
 
   // url - computed: false, optional: true, required: false
@@ -463,8 +505,10 @@ export class KustoScript extends cdktf.TerraformResource {
       force_an_update_when_value_changed: cdktf.stringToTerraform(this._forceAnUpdateWhenValueChanged),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      principal_permissions_action: cdktf.stringToTerraform(this._principalPermissionsAction),
       sas_token: cdktf.stringToTerraform(this._sasToken),
       script_content: cdktf.stringToTerraform(this._scriptContent),
+      script_level: cdktf.stringToTerraform(this._scriptLevel),
       url: cdktf.stringToTerraform(this._url),
       timeouts: kustoScriptTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -502,6 +546,12 @@ export class KustoScript extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      principal_permissions_action: {
+        value: cdktf.stringToHclTerraform(this._principalPermissionsAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       sas_token: {
         value: cdktf.stringToHclTerraform(this._sasToken),
         isBlock: false,
@@ -510,6 +560,12 @@ export class KustoScript extends cdktf.TerraformResource {
       },
       script_content: {
         value: cdktf.stringToHclTerraform(this._scriptContent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      script_level: {
+        value: cdktf.stringToHclTerraform(this._scriptLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

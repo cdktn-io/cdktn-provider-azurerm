@@ -1,28 +1,28 @@
-# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-azurerm.provider"></a>
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktn/provider-azurerm.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### AzurermProvider <a name="AzurermProvider" id="@cdktf/provider-azurerm.provider.AzurermProvider"></a>
+### AzurermProvider <a name="AzurermProvider" id="@cdktn/provider-azurerm.provider.AzurermProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs azurerm}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs azurerm}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.provider.AzurermProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.provider.AzurermProvider.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 new provider.AzurermProvider(scope: Construct, id: string, config?: AzurermProviderConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig">AzurermProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig">AzurermProviderConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.provider.AzurermProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.provider.AzurermProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-azurerm.provider.AzurermProvider.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig">AzurermProviderConfig</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig">AzurermProviderConfig</a>
 
 ---
 
@@ -50,49 +50,49 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetAdoPipelineServiceConnectionId">resetAdoPipelineServiceConnectionId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetAlias">resetAlias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetAuxiliaryTenantIds">resetAuxiliaryTenantIds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetClientCertificate">resetClientCertificate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetClientCertificatePassword">resetClientCertificatePassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetClientCertificatePath">resetClientCertificatePath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetClientId">resetClientId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetClientIdFilePath">resetClientIdFilePath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetClientSecret">resetClientSecret</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetClientSecretFilePath">resetClientSecretFilePath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetDisableCorrelationRequestId">resetDisableCorrelationRequestId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetDisableTerraformPartnerId">resetDisableTerraformPartnerId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetEnvironment">resetEnvironment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetFeatures">resetFeatures</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetMetadataHost">resetMetadataHost</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetMsiApiVersion">resetMsiApiVersion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetMsiEndpoint">resetMsiEndpoint</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetOidcRequestToken">resetOidcRequestToken</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetOidcRequestUrl">resetOidcRequestUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetOidcToken">resetOidcToken</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetOidcTokenFilePath">resetOidcTokenFilePath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetPartnerId">resetPartnerId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetResourceProviderRegistrations">resetResourceProviderRegistrations</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetResourceProvidersToRegister">resetResourceProvidersToRegister</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetSkipProviderRegistration">resetSkipProviderRegistration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetStorageUseAzuread">resetStorageUseAzuread</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetSubscriptionId">resetSubscriptionId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetTenantId">resetTenantId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetUseAksWorkloadIdentity">resetUseAksWorkloadIdentity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetUseCli">resetUseCli</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetUseMsi">resetUseMsi</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.resetUseOidc">resetUseOidc</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetAdoPipelineServiceConnectionId">resetAdoPipelineServiceConnectionId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetAlias">resetAlias</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetAuxiliaryTenantIds">resetAuxiliaryTenantIds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetClientCertificate">resetClientCertificate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetClientCertificatePassword">resetClientCertificatePassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetClientCertificatePath">resetClientCertificatePath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetClientId">resetClientId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetClientIdFilePath">resetClientIdFilePath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetClientSecret">resetClientSecret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetClientSecretFilePath">resetClientSecretFilePath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetDisableCorrelationRequestId">resetDisableCorrelationRequestId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetDisableTerraformPartnerId">resetDisableTerraformPartnerId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetEnvironment">resetEnvironment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetFeatures">resetFeatures</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetMetadataHost">resetMetadataHost</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetMsiApiVersion">resetMsiApiVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetMsiEndpoint">resetMsiEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetOidcRequestToken">resetOidcRequestToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetOidcRequestUrl">resetOidcRequestUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetOidcToken">resetOidcToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetOidcTokenFilePath">resetOidcTokenFilePath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetPartnerId">resetPartnerId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetResourceProviderRegistrations">resetResourceProviderRegistrations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetResourceProvidersToRegister">resetResourceProvidersToRegister</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetSkipProviderRegistration">resetSkipProviderRegistration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetStorageUseAzuread">resetStorageUseAzuread</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetSubscriptionId">resetSubscriptionId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetTenantId">resetTenantId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetUseAksWorkloadIdentity">resetUseAksWorkloadIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetUseCli">resetUseCli</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetUseMsi">resetUseMsi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.resetUseOidc">resetUseOidc</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-azurerm.provider.AzurermProvider.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-azurerm.provider.AzurermProvider.toString"></a>
 
 ```typescript
 public toString(): string
@@ -100,25 +100,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-azurerm.provider.AzurermProvider.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-azurerm.provider.AzurermProvider.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.provider.AzurermProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.provider.AzurermProvider.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.provider.AzurermProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.provider.AzurermProvider.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-azurerm.provider.AzurermProvider.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-azurerm.provider.AzurermProvider.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -126,7 +126,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-azurerm.provider.AzurermProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-azurerm.provider.AzurermProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -134,7 +134,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -142,19 +142,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-azurerm.provider.AzurermProvider.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-azurerm.provider.AzurermProvider.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-azurerm.provider.AzurermProvider.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-azurerm.provider.AzurermProvider.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-azurerm.provider.AzurermProvider.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-azurerm.provider.AzurermProvider.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -162,193 +162,193 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `resetAdoPipelineServiceConnectionId` <a name="resetAdoPipelineServiceConnectionId" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetAdoPipelineServiceConnectionId"></a>
+##### `resetAdoPipelineServiceConnectionId` <a name="resetAdoPipelineServiceConnectionId" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetAdoPipelineServiceConnectionId"></a>
 
 ```typescript
 public resetAdoPipelineServiceConnectionId(): void
 ```
 
-##### `resetAlias` <a name="resetAlias" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetAlias"></a>
+##### `resetAlias` <a name="resetAlias" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetAlias"></a>
 
 ```typescript
 public resetAlias(): void
 ```
 
-##### `resetAuxiliaryTenantIds` <a name="resetAuxiliaryTenantIds" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetAuxiliaryTenantIds"></a>
+##### `resetAuxiliaryTenantIds` <a name="resetAuxiliaryTenantIds" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetAuxiliaryTenantIds"></a>
 
 ```typescript
 public resetAuxiliaryTenantIds(): void
 ```
 
-##### `resetClientCertificate` <a name="resetClientCertificate" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetClientCertificate"></a>
+##### `resetClientCertificate` <a name="resetClientCertificate" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetClientCertificate"></a>
 
 ```typescript
 public resetClientCertificate(): void
 ```
 
-##### `resetClientCertificatePassword` <a name="resetClientCertificatePassword" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetClientCertificatePassword"></a>
+##### `resetClientCertificatePassword` <a name="resetClientCertificatePassword" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetClientCertificatePassword"></a>
 
 ```typescript
 public resetClientCertificatePassword(): void
 ```
 
-##### `resetClientCertificatePath` <a name="resetClientCertificatePath" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetClientCertificatePath"></a>
+##### `resetClientCertificatePath` <a name="resetClientCertificatePath" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetClientCertificatePath"></a>
 
 ```typescript
 public resetClientCertificatePath(): void
 ```
 
-##### `resetClientId` <a name="resetClientId" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetClientId"></a>
+##### `resetClientId` <a name="resetClientId" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetClientId"></a>
 
 ```typescript
 public resetClientId(): void
 ```
 
-##### `resetClientIdFilePath` <a name="resetClientIdFilePath" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetClientIdFilePath"></a>
+##### `resetClientIdFilePath` <a name="resetClientIdFilePath" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetClientIdFilePath"></a>
 
 ```typescript
 public resetClientIdFilePath(): void
 ```
 
-##### `resetClientSecret` <a name="resetClientSecret" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetClientSecret"></a>
+##### `resetClientSecret` <a name="resetClientSecret" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetClientSecret"></a>
 
 ```typescript
 public resetClientSecret(): void
 ```
 
-##### `resetClientSecretFilePath` <a name="resetClientSecretFilePath" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetClientSecretFilePath"></a>
+##### `resetClientSecretFilePath` <a name="resetClientSecretFilePath" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetClientSecretFilePath"></a>
 
 ```typescript
 public resetClientSecretFilePath(): void
 ```
 
-##### `resetDisableCorrelationRequestId` <a name="resetDisableCorrelationRequestId" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetDisableCorrelationRequestId"></a>
+##### `resetDisableCorrelationRequestId` <a name="resetDisableCorrelationRequestId" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetDisableCorrelationRequestId"></a>
 
 ```typescript
 public resetDisableCorrelationRequestId(): void
 ```
 
-##### `resetDisableTerraformPartnerId` <a name="resetDisableTerraformPartnerId" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetDisableTerraformPartnerId"></a>
+##### `resetDisableTerraformPartnerId` <a name="resetDisableTerraformPartnerId" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetDisableTerraformPartnerId"></a>
 
 ```typescript
 public resetDisableTerraformPartnerId(): void
 ```
 
-##### `resetEnvironment` <a name="resetEnvironment" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetEnvironment"></a>
+##### `resetEnvironment` <a name="resetEnvironment" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetEnvironment"></a>
 
 ```typescript
 public resetEnvironment(): void
 ```
 
-##### `resetFeatures` <a name="resetFeatures" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetFeatures"></a>
+##### `resetFeatures` <a name="resetFeatures" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetFeatures"></a>
 
 ```typescript
 public resetFeatures(): void
 ```
 
-##### `resetMetadataHost` <a name="resetMetadataHost" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetMetadataHost"></a>
+##### `resetMetadataHost` <a name="resetMetadataHost" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetMetadataHost"></a>
 
 ```typescript
 public resetMetadataHost(): void
 ```
 
-##### `resetMsiApiVersion` <a name="resetMsiApiVersion" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetMsiApiVersion"></a>
+##### `resetMsiApiVersion` <a name="resetMsiApiVersion" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetMsiApiVersion"></a>
 
 ```typescript
 public resetMsiApiVersion(): void
 ```
 
-##### `resetMsiEndpoint` <a name="resetMsiEndpoint" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetMsiEndpoint"></a>
+##### `resetMsiEndpoint` <a name="resetMsiEndpoint" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetMsiEndpoint"></a>
 
 ```typescript
 public resetMsiEndpoint(): void
 ```
 
-##### `resetOidcRequestToken` <a name="resetOidcRequestToken" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetOidcRequestToken"></a>
+##### `resetOidcRequestToken` <a name="resetOidcRequestToken" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetOidcRequestToken"></a>
 
 ```typescript
 public resetOidcRequestToken(): void
 ```
 
-##### `resetOidcRequestUrl` <a name="resetOidcRequestUrl" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetOidcRequestUrl"></a>
+##### `resetOidcRequestUrl` <a name="resetOidcRequestUrl" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetOidcRequestUrl"></a>
 
 ```typescript
 public resetOidcRequestUrl(): void
 ```
 
-##### `resetOidcToken` <a name="resetOidcToken" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetOidcToken"></a>
+##### `resetOidcToken` <a name="resetOidcToken" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetOidcToken"></a>
 
 ```typescript
 public resetOidcToken(): void
 ```
 
-##### `resetOidcTokenFilePath` <a name="resetOidcTokenFilePath" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetOidcTokenFilePath"></a>
+##### `resetOidcTokenFilePath` <a name="resetOidcTokenFilePath" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetOidcTokenFilePath"></a>
 
 ```typescript
 public resetOidcTokenFilePath(): void
 ```
 
-##### `resetPartnerId` <a name="resetPartnerId" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetPartnerId"></a>
+##### `resetPartnerId` <a name="resetPartnerId" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetPartnerId"></a>
 
 ```typescript
 public resetPartnerId(): void
 ```
 
-##### `resetResourceProviderRegistrations` <a name="resetResourceProviderRegistrations" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetResourceProviderRegistrations"></a>
+##### `resetResourceProviderRegistrations` <a name="resetResourceProviderRegistrations" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetResourceProviderRegistrations"></a>
 
 ```typescript
 public resetResourceProviderRegistrations(): void
 ```
 
-##### `resetResourceProvidersToRegister` <a name="resetResourceProvidersToRegister" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetResourceProvidersToRegister"></a>
+##### `resetResourceProvidersToRegister` <a name="resetResourceProvidersToRegister" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetResourceProvidersToRegister"></a>
 
 ```typescript
 public resetResourceProvidersToRegister(): void
 ```
 
-##### `resetSkipProviderRegistration` <a name="resetSkipProviderRegistration" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetSkipProviderRegistration"></a>
+##### `resetSkipProviderRegistration` <a name="resetSkipProviderRegistration" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetSkipProviderRegistration"></a>
 
 ```typescript
 public resetSkipProviderRegistration(): void
 ```
 
-##### `resetStorageUseAzuread` <a name="resetStorageUseAzuread" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetStorageUseAzuread"></a>
+##### `resetStorageUseAzuread` <a name="resetStorageUseAzuread" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetStorageUseAzuread"></a>
 
 ```typescript
 public resetStorageUseAzuread(): void
 ```
 
-##### `resetSubscriptionId` <a name="resetSubscriptionId" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetSubscriptionId"></a>
+##### `resetSubscriptionId` <a name="resetSubscriptionId" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetSubscriptionId"></a>
 
 ```typescript
 public resetSubscriptionId(): void
 ```
 
-##### `resetTenantId` <a name="resetTenantId" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetTenantId"></a>
+##### `resetTenantId` <a name="resetTenantId" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetTenantId"></a>
 
 ```typescript
 public resetTenantId(): void
 ```
 
-##### `resetUseAksWorkloadIdentity` <a name="resetUseAksWorkloadIdentity" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetUseAksWorkloadIdentity"></a>
+##### `resetUseAksWorkloadIdentity` <a name="resetUseAksWorkloadIdentity" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetUseAksWorkloadIdentity"></a>
 
 ```typescript
 public resetUseAksWorkloadIdentity(): void
 ```
 
-##### `resetUseCli` <a name="resetUseCli" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetUseCli"></a>
+##### `resetUseCli` <a name="resetUseCli" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetUseCli"></a>
 
 ```typescript
 public resetUseCli(): void
 ```
 
-##### `resetUseMsi` <a name="resetUseMsi" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetUseMsi"></a>
+##### `resetUseMsi` <a name="resetUseMsi" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetUseMsi"></a>
 
 ```typescript
 public resetUseMsi(): void
 ```
 
-##### `resetUseOidc` <a name="resetUseOidc" id="@cdktf/provider-azurerm.provider.AzurermProvider.resetUseOidc"></a>
+##### `resetUseOidc` <a name="resetUseOidc" id="@cdktn/provider-azurerm.provider.AzurermProvider.resetUseOidc"></a>
 
 ```typescript
 public resetUseOidc(): void
@@ -358,17 +358,17 @@ public resetUseOidc(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a AzurermProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a AzurermProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-azurerm.provider.AzurermProvider.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-azurerm.provider.AzurermProvider.isConstruct"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 provider.AzurermProvider.isConstruct(x: any)
 ```
@@ -389,7 +389,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.provider.AzurermProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.provider.AzurermProvider.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -397,45 +397,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-azurerm.provider.AzurermProvider.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-azurerm.provider.AzurermProvider.isTerraformElement"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 provider.AzurermProvider.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.provider.AzurermProvider.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.provider.AzurermProvider.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktf/provider-azurerm.provider.AzurermProvider.isTerraformProvider"></a>
+##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktn/provider-azurerm.provider.AzurermProvider.isTerraformProvider"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 provider.AzurermProvider.isTerraformProvider(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.provider.AzurermProvider.isTerraformProvider.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.provider.AzurermProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-azurerm.provider.AzurermProvider.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-azurerm.provider.AzurermProvider.generateConfigForImport"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 provider.AzurermProvider.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a AzurermProvider resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.provider.AzurermProvider.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.provider.AzurermProvider.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -443,7 +443,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azurerm.provider.AzurermProvider.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-azurerm.provider.AzurermProvider.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -451,17 +451,17 @@ The construct id used in the generated config for the AzurermProvider to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azurerm.provider.AzurermProvider.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-azurerm.provider.AzurermProvider.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing AzurermProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.provider.AzurermProvider.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.provider.AzurermProvider.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -473,82 +473,82 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.metaAttributes">metaAttributes</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.adoPipelineServiceConnectionIdInput">adoPipelineServiceConnectionIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.auxiliaryTenantIdsInput">auxiliaryTenantIdsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.clientCertificateInput">clientCertificateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.clientCertificatePasswordInput">clientCertificatePasswordInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.clientCertificatePathInput">clientCertificatePathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.clientIdFilePathInput">clientIdFilePathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.clientIdInput">clientIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.clientSecretFilePathInput">clientSecretFilePathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.clientSecretInput">clientSecretInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.disableCorrelationRequestIdInput">disableCorrelationRequestIdInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.disableTerraformPartnerIdInput">disableTerraformPartnerIdInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.environmentInput">environmentInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.featuresInput">featuresInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.metadataHostInput">metadataHostInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.msiApiVersionInput">msiApiVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.msiEndpointInput">msiEndpointInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcRequestTokenInput">oidcRequestTokenInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcRequestUrlInput">oidcRequestUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcTokenFilePathInput">oidcTokenFilePathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcTokenInput">oidcTokenInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.partnerIdInput">partnerIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.resourceProviderRegistrationsInput">resourceProviderRegistrationsInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.resourceProvidersToRegisterInput">resourceProvidersToRegisterInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.skipProviderRegistrationInput">skipProviderRegistrationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.storageUseAzureadInput">storageUseAzureadInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.subscriptionIdInput">subscriptionIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.tenantIdInput">tenantIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.useAksWorkloadIdentityInput">useAksWorkloadIdentityInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.useCliInput">useCliInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.useMsiInput">useMsiInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.useOidcInput">useOidcInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.adoPipelineServiceConnectionId">adoPipelineServiceConnectionId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.auxiliaryTenantIds">auxiliaryTenantIds</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.clientCertificate">clientCertificate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.clientCertificatePassword">clientCertificatePassword</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.clientCertificatePath">clientCertificatePath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.clientId">clientId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.clientIdFilePath">clientIdFilePath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.clientSecret">clientSecret</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.clientSecretFilePath">clientSecretFilePath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.disableCorrelationRequestId">disableCorrelationRequestId</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.disableTerraformPartnerId">disableTerraformPartnerId</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.environment">environment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.features">features</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.metadataHost">metadataHost</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.msiApiVersion">msiApiVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.msiEndpoint">msiEndpoint</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcRequestToken">oidcRequestToken</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcRequestUrl">oidcRequestUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcToken">oidcToken</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcTokenFilePath">oidcTokenFilePath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.partnerId">partnerId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.resourceProviderRegistrations">resourceProviderRegistrations</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.resourceProvidersToRegister">resourceProvidersToRegister</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.skipProviderRegistration">skipProviderRegistration</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.storageUseAzuread">storageUseAzuread</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.tenantId">tenantId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.useAksWorkloadIdentity">useAksWorkloadIdentity</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.useCli">useCli</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.useMsi">useMsi</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.useOidc">useOidc</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.metaAttributes">metaAttributes</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.adoPipelineServiceConnectionIdInput">adoPipelineServiceConnectionIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.auxiliaryTenantIdsInput">auxiliaryTenantIdsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientCertificateInput">clientCertificateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientCertificatePasswordInput">clientCertificatePasswordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientCertificatePathInput">clientCertificatePathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientIdFilePathInput">clientIdFilePathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientIdInput">clientIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientSecretFilePathInput">clientSecretFilePathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientSecretInput">clientSecretInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.disableCorrelationRequestIdInput">disableCorrelationRequestIdInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.disableTerraformPartnerIdInput">disableTerraformPartnerIdInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.environmentInput">environmentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.featuresInput">featuresInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.metadataHostInput">metadataHostInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.msiApiVersionInput">msiApiVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.msiEndpointInput">msiEndpointInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcRequestTokenInput">oidcRequestTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcRequestUrlInput">oidcRequestUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcTokenFilePathInput">oidcTokenFilePathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcTokenInput">oidcTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.partnerIdInput">partnerIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.resourceProviderRegistrationsInput">resourceProviderRegistrationsInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.resourceProvidersToRegisterInput">resourceProvidersToRegisterInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.skipProviderRegistrationInput">skipProviderRegistrationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.storageUseAzureadInput">storageUseAzureadInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.subscriptionIdInput">subscriptionIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.tenantIdInput">tenantIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useAksWorkloadIdentityInput">useAksWorkloadIdentityInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useCliInput">useCliInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useMsiInput">useMsiInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useOidcInput">useOidcInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.adoPipelineServiceConnectionId">adoPipelineServiceConnectionId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.auxiliaryTenantIds">auxiliaryTenantIds</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientCertificate">clientCertificate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientCertificatePassword">clientCertificatePassword</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientCertificatePath">clientCertificatePath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientId">clientId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientIdFilePath">clientIdFilePath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientSecret">clientSecret</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientSecretFilePath">clientSecretFilePath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.disableCorrelationRequestId">disableCorrelationRequestId</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.disableTerraformPartnerId">disableTerraformPartnerId</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.environment">environment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.features">features</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.metadataHost">metadataHost</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.msiApiVersion">msiApiVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.msiEndpoint">msiEndpoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcRequestToken">oidcRequestToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcRequestUrl">oidcRequestUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcToken">oidcToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcTokenFilePath">oidcTokenFilePath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.partnerId">partnerId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.resourceProviderRegistrations">resourceProviderRegistrations</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.resourceProvidersToRegister">resourceProvidersToRegister</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.skipProviderRegistration">skipProviderRegistration</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.storageUseAzuread">storageUseAzuread</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.tenantId">tenantId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useAksWorkloadIdentity">useAksWorkloadIdentity</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useCli">useCli</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useMsi">useMsi</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useOidc">useOidc</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -560,7 +560,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -570,7 +570,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -580,7 +580,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -590,7 +590,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `metaAttributes`<sup>Required</sup> <a name="metaAttributes" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.metaAttributes"></a>
+##### `metaAttributes`<sup>Required</sup> <a name="metaAttributes" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.metaAttributes"></a>
 
 ```typescript
 public readonly metaAttributes: {[ key: string ]: any};
@@ -600,7 +600,7 @@ public readonly metaAttributes: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -610,7 +610,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -620,7 +620,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `terraformProviderSource`<sup>Optional</sup> <a name="terraformProviderSource" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.terraformProviderSource"></a>
+##### `terraformProviderSource`<sup>Optional</sup> <a name="terraformProviderSource" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformProviderSource"></a>
 
 ```typescript
 public readonly terraformProviderSource: string;
@@ -630,7 +630,7 @@ public readonly terraformProviderSource: string;
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.alias"></a>
 
 ```typescript
 public readonly alias: string;
@@ -640,7 +640,7 @@ public readonly alias: string;
 
 ---
 
-##### `adoPipelineServiceConnectionIdInput`<sup>Optional</sup> <a name="adoPipelineServiceConnectionIdInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.adoPipelineServiceConnectionIdInput"></a>
+##### `adoPipelineServiceConnectionIdInput`<sup>Optional</sup> <a name="adoPipelineServiceConnectionIdInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.adoPipelineServiceConnectionIdInput"></a>
 
 ```typescript
 public readonly adoPipelineServiceConnectionIdInput: string;
@@ -650,7 +650,7 @@ public readonly adoPipelineServiceConnectionIdInput: string;
 
 ---
 
-##### `aliasInput`<sup>Optional</sup> <a name="aliasInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.aliasInput"></a>
+##### `aliasInput`<sup>Optional</sup> <a name="aliasInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.aliasInput"></a>
 
 ```typescript
 public readonly aliasInput: string;
@@ -660,7 +660,7 @@ public readonly aliasInput: string;
 
 ---
 
-##### `auxiliaryTenantIdsInput`<sup>Optional</sup> <a name="auxiliaryTenantIdsInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.auxiliaryTenantIdsInput"></a>
+##### `auxiliaryTenantIdsInput`<sup>Optional</sup> <a name="auxiliaryTenantIdsInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.auxiliaryTenantIdsInput"></a>
 
 ```typescript
 public readonly auxiliaryTenantIdsInput: string[];
@@ -670,7 +670,7 @@ public readonly auxiliaryTenantIdsInput: string[];
 
 ---
 
-##### `clientCertificateInput`<sup>Optional</sup> <a name="clientCertificateInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.clientCertificateInput"></a>
+##### `clientCertificateInput`<sup>Optional</sup> <a name="clientCertificateInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.clientCertificateInput"></a>
 
 ```typescript
 public readonly clientCertificateInput: string;
@@ -680,7 +680,7 @@ public readonly clientCertificateInput: string;
 
 ---
 
-##### `clientCertificatePasswordInput`<sup>Optional</sup> <a name="clientCertificatePasswordInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.clientCertificatePasswordInput"></a>
+##### `clientCertificatePasswordInput`<sup>Optional</sup> <a name="clientCertificatePasswordInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.clientCertificatePasswordInput"></a>
 
 ```typescript
 public readonly clientCertificatePasswordInput: string;
@@ -690,7 +690,7 @@ public readonly clientCertificatePasswordInput: string;
 
 ---
 
-##### `clientCertificatePathInput`<sup>Optional</sup> <a name="clientCertificatePathInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.clientCertificatePathInput"></a>
+##### `clientCertificatePathInput`<sup>Optional</sup> <a name="clientCertificatePathInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.clientCertificatePathInput"></a>
 
 ```typescript
 public readonly clientCertificatePathInput: string;
@@ -700,7 +700,7 @@ public readonly clientCertificatePathInput: string;
 
 ---
 
-##### `clientIdFilePathInput`<sup>Optional</sup> <a name="clientIdFilePathInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.clientIdFilePathInput"></a>
+##### `clientIdFilePathInput`<sup>Optional</sup> <a name="clientIdFilePathInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.clientIdFilePathInput"></a>
 
 ```typescript
 public readonly clientIdFilePathInput: string;
@@ -710,7 +710,7 @@ public readonly clientIdFilePathInput: string;
 
 ---
 
-##### `clientIdInput`<sup>Optional</sup> <a name="clientIdInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.clientIdInput"></a>
+##### `clientIdInput`<sup>Optional</sup> <a name="clientIdInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.clientIdInput"></a>
 
 ```typescript
 public readonly clientIdInput: string;
@@ -720,7 +720,7 @@ public readonly clientIdInput: string;
 
 ---
 
-##### `clientSecretFilePathInput`<sup>Optional</sup> <a name="clientSecretFilePathInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.clientSecretFilePathInput"></a>
+##### `clientSecretFilePathInput`<sup>Optional</sup> <a name="clientSecretFilePathInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.clientSecretFilePathInput"></a>
 
 ```typescript
 public readonly clientSecretFilePathInput: string;
@@ -730,7 +730,7 @@ public readonly clientSecretFilePathInput: string;
 
 ---
 
-##### `clientSecretInput`<sup>Optional</sup> <a name="clientSecretInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.clientSecretInput"></a>
+##### `clientSecretInput`<sup>Optional</sup> <a name="clientSecretInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.clientSecretInput"></a>
 
 ```typescript
 public readonly clientSecretInput: string;
@@ -740,7 +740,7 @@ public readonly clientSecretInput: string;
 
 ---
 
-##### `disableCorrelationRequestIdInput`<sup>Optional</sup> <a name="disableCorrelationRequestIdInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.disableCorrelationRequestIdInput"></a>
+##### `disableCorrelationRequestIdInput`<sup>Optional</sup> <a name="disableCorrelationRequestIdInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.disableCorrelationRequestIdInput"></a>
 
 ```typescript
 public readonly disableCorrelationRequestIdInput: boolean | IResolvable;
@@ -750,7 +750,7 @@ public readonly disableCorrelationRequestIdInput: boolean | IResolvable;
 
 ---
 
-##### `disableTerraformPartnerIdInput`<sup>Optional</sup> <a name="disableTerraformPartnerIdInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.disableTerraformPartnerIdInput"></a>
+##### `disableTerraformPartnerIdInput`<sup>Optional</sup> <a name="disableTerraformPartnerIdInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.disableTerraformPartnerIdInput"></a>
 
 ```typescript
 public readonly disableTerraformPartnerIdInput: boolean | IResolvable;
@@ -760,7 +760,7 @@ public readonly disableTerraformPartnerIdInput: boolean | IResolvable;
 
 ---
 
-##### `environmentInput`<sup>Optional</sup> <a name="environmentInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.environmentInput"></a>
+##### `environmentInput`<sup>Optional</sup> <a name="environmentInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.environmentInput"></a>
 
 ```typescript
 public readonly environmentInput: string;
@@ -770,17 +770,17 @@ public readonly environmentInput: string;
 
 ---
 
-##### `featuresInput`<sup>Optional</sup> <a name="featuresInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.featuresInput"></a>
+##### `featuresInput`<sup>Optional</sup> <a name="featuresInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.featuresInput"></a>
 
 ```typescript
 public readonly featuresInput: IResolvable | AzurermProviderFeatures[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>[]
 
 ---
 
-##### `metadataHostInput`<sup>Optional</sup> <a name="metadataHostInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.metadataHostInput"></a>
+##### `metadataHostInput`<sup>Optional</sup> <a name="metadataHostInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.metadataHostInput"></a>
 
 ```typescript
 public readonly metadataHostInput: string;
@@ -790,7 +790,7 @@ public readonly metadataHostInput: string;
 
 ---
 
-##### `msiApiVersionInput`<sup>Optional</sup> <a name="msiApiVersionInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.msiApiVersionInput"></a>
+##### `msiApiVersionInput`<sup>Optional</sup> <a name="msiApiVersionInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.msiApiVersionInput"></a>
 
 ```typescript
 public readonly msiApiVersionInput: string;
@@ -800,7 +800,7 @@ public readonly msiApiVersionInput: string;
 
 ---
 
-##### `msiEndpointInput`<sup>Optional</sup> <a name="msiEndpointInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.msiEndpointInput"></a>
+##### `msiEndpointInput`<sup>Optional</sup> <a name="msiEndpointInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.msiEndpointInput"></a>
 
 ```typescript
 public readonly msiEndpointInput: string;
@@ -810,7 +810,7 @@ public readonly msiEndpointInput: string;
 
 ---
 
-##### `oidcRequestTokenInput`<sup>Optional</sup> <a name="oidcRequestTokenInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcRequestTokenInput"></a>
+##### `oidcRequestTokenInput`<sup>Optional</sup> <a name="oidcRequestTokenInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcRequestTokenInput"></a>
 
 ```typescript
 public readonly oidcRequestTokenInput: string;
@@ -820,7 +820,7 @@ public readonly oidcRequestTokenInput: string;
 
 ---
 
-##### `oidcRequestUrlInput`<sup>Optional</sup> <a name="oidcRequestUrlInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcRequestUrlInput"></a>
+##### `oidcRequestUrlInput`<sup>Optional</sup> <a name="oidcRequestUrlInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcRequestUrlInput"></a>
 
 ```typescript
 public readonly oidcRequestUrlInput: string;
@@ -830,7 +830,7 @@ public readonly oidcRequestUrlInput: string;
 
 ---
 
-##### `oidcTokenFilePathInput`<sup>Optional</sup> <a name="oidcTokenFilePathInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcTokenFilePathInput"></a>
+##### `oidcTokenFilePathInput`<sup>Optional</sup> <a name="oidcTokenFilePathInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcTokenFilePathInput"></a>
 
 ```typescript
 public readonly oidcTokenFilePathInput: string;
@@ -840,7 +840,7 @@ public readonly oidcTokenFilePathInput: string;
 
 ---
 
-##### `oidcTokenInput`<sup>Optional</sup> <a name="oidcTokenInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcTokenInput"></a>
+##### `oidcTokenInput`<sup>Optional</sup> <a name="oidcTokenInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcTokenInput"></a>
 
 ```typescript
 public readonly oidcTokenInput: string;
@@ -850,7 +850,7 @@ public readonly oidcTokenInput: string;
 
 ---
 
-##### `partnerIdInput`<sup>Optional</sup> <a name="partnerIdInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.partnerIdInput"></a>
+##### `partnerIdInput`<sup>Optional</sup> <a name="partnerIdInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.partnerIdInput"></a>
 
 ```typescript
 public readonly partnerIdInput: string;
@@ -860,7 +860,7 @@ public readonly partnerIdInput: string;
 
 ---
 
-##### `resourceProviderRegistrationsInput`<sup>Optional</sup> <a name="resourceProviderRegistrationsInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.resourceProviderRegistrationsInput"></a>
+##### `resourceProviderRegistrationsInput`<sup>Optional</sup> <a name="resourceProviderRegistrationsInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.resourceProviderRegistrationsInput"></a>
 
 ```typescript
 public readonly resourceProviderRegistrationsInput: string;
@@ -870,7 +870,7 @@ public readonly resourceProviderRegistrationsInput: string;
 
 ---
 
-##### `resourceProvidersToRegisterInput`<sup>Optional</sup> <a name="resourceProvidersToRegisterInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.resourceProvidersToRegisterInput"></a>
+##### `resourceProvidersToRegisterInput`<sup>Optional</sup> <a name="resourceProvidersToRegisterInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.resourceProvidersToRegisterInput"></a>
 
 ```typescript
 public readonly resourceProvidersToRegisterInput: string[];
@@ -880,7 +880,7 @@ public readonly resourceProvidersToRegisterInput: string[];
 
 ---
 
-##### `skipProviderRegistrationInput`<sup>Optional</sup> <a name="skipProviderRegistrationInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.skipProviderRegistrationInput"></a>
+##### `skipProviderRegistrationInput`<sup>Optional</sup> <a name="skipProviderRegistrationInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.skipProviderRegistrationInput"></a>
 
 ```typescript
 public readonly skipProviderRegistrationInput: boolean | IResolvable;
@@ -890,7 +890,7 @@ public readonly skipProviderRegistrationInput: boolean | IResolvable;
 
 ---
 
-##### `storageUseAzureadInput`<sup>Optional</sup> <a name="storageUseAzureadInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.storageUseAzureadInput"></a>
+##### `storageUseAzureadInput`<sup>Optional</sup> <a name="storageUseAzureadInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.storageUseAzureadInput"></a>
 
 ```typescript
 public readonly storageUseAzureadInput: boolean | IResolvable;
@@ -900,7 +900,7 @@ public readonly storageUseAzureadInput: boolean | IResolvable;
 
 ---
 
-##### `subscriptionIdInput`<sup>Optional</sup> <a name="subscriptionIdInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.subscriptionIdInput"></a>
+##### `subscriptionIdInput`<sup>Optional</sup> <a name="subscriptionIdInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.subscriptionIdInput"></a>
 
 ```typescript
 public readonly subscriptionIdInput: string;
@@ -910,7 +910,7 @@ public readonly subscriptionIdInput: string;
 
 ---
 
-##### `tenantIdInput`<sup>Optional</sup> <a name="tenantIdInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.tenantIdInput"></a>
+##### `tenantIdInput`<sup>Optional</sup> <a name="tenantIdInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.tenantIdInput"></a>
 
 ```typescript
 public readonly tenantIdInput: string;
@@ -920,7 +920,7 @@ public readonly tenantIdInput: string;
 
 ---
 
-##### `useAksWorkloadIdentityInput`<sup>Optional</sup> <a name="useAksWorkloadIdentityInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.useAksWorkloadIdentityInput"></a>
+##### `useAksWorkloadIdentityInput`<sup>Optional</sup> <a name="useAksWorkloadIdentityInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.useAksWorkloadIdentityInput"></a>
 
 ```typescript
 public readonly useAksWorkloadIdentityInput: boolean | IResolvable;
@@ -930,7 +930,7 @@ public readonly useAksWorkloadIdentityInput: boolean | IResolvable;
 
 ---
 
-##### `useCliInput`<sup>Optional</sup> <a name="useCliInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.useCliInput"></a>
+##### `useCliInput`<sup>Optional</sup> <a name="useCliInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.useCliInput"></a>
 
 ```typescript
 public readonly useCliInput: boolean | IResolvable;
@@ -940,7 +940,7 @@ public readonly useCliInput: boolean | IResolvable;
 
 ---
 
-##### `useMsiInput`<sup>Optional</sup> <a name="useMsiInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.useMsiInput"></a>
+##### `useMsiInput`<sup>Optional</sup> <a name="useMsiInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.useMsiInput"></a>
 
 ```typescript
 public readonly useMsiInput: boolean | IResolvable;
@@ -950,7 +950,7 @@ public readonly useMsiInput: boolean | IResolvable;
 
 ---
 
-##### `useOidcInput`<sup>Optional</sup> <a name="useOidcInput" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.useOidcInput"></a>
+##### `useOidcInput`<sup>Optional</sup> <a name="useOidcInput" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.useOidcInput"></a>
 
 ```typescript
 public readonly useOidcInput: boolean | IResolvable;
@@ -960,7 +960,7 @@ public readonly useOidcInput: boolean | IResolvable;
 
 ---
 
-##### `adoPipelineServiceConnectionId`<sup>Optional</sup> <a name="adoPipelineServiceConnectionId" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.adoPipelineServiceConnectionId"></a>
+##### `adoPipelineServiceConnectionId`<sup>Optional</sup> <a name="adoPipelineServiceConnectionId" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.adoPipelineServiceConnectionId"></a>
 
 ```typescript
 public readonly adoPipelineServiceConnectionId: string;
@@ -970,7 +970,7 @@ public readonly adoPipelineServiceConnectionId: string;
 
 ---
 
-##### `auxiliaryTenantIds`<sup>Optional</sup> <a name="auxiliaryTenantIds" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.auxiliaryTenantIds"></a>
+##### `auxiliaryTenantIds`<sup>Optional</sup> <a name="auxiliaryTenantIds" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.auxiliaryTenantIds"></a>
 
 ```typescript
 public readonly auxiliaryTenantIds: string[];
@@ -980,7 +980,7 @@ public readonly auxiliaryTenantIds: string[];
 
 ---
 
-##### `clientCertificate`<sup>Optional</sup> <a name="clientCertificate" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.clientCertificate"></a>
+##### `clientCertificate`<sup>Optional</sup> <a name="clientCertificate" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.clientCertificate"></a>
 
 ```typescript
 public readonly clientCertificate: string;
@@ -990,7 +990,7 @@ public readonly clientCertificate: string;
 
 ---
 
-##### `clientCertificatePassword`<sup>Optional</sup> <a name="clientCertificatePassword" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.clientCertificatePassword"></a>
+##### `clientCertificatePassword`<sup>Optional</sup> <a name="clientCertificatePassword" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.clientCertificatePassword"></a>
 
 ```typescript
 public readonly clientCertificatePassword: string;
@@ -1000,7 +1000,7 @@ public readonly clientCertificatePassword: string;
 
 ---
 
-##### `clientCertificatePath`<sup>Optional</sup> <a name="clientCertificatePath" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.clientCertificatePath"></a>
+##### `clientCertificatePath`<sup>Optional</sup> <a name="clientCertificatePath" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.clientCertificatePath"></a>
 
 ```typescript
 public readonly clientCertificatePath: string;
@@ -1010,7 +1010,7 @@ public readonly clientCertificatePath: string;
 
 ---
 
-##### `clientId`<sup>Optional</sup> <a name="clientId" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.clientId"></a>
+##### `clientId`<sup>Optional</sup> <a name="clientId" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.clientId"></a>
 
 ```typescript
 public readonly clientId: string;
@@ -1020,7 +1020,7 @@ public readonly clientId: string;
 
 ---
 
-##### `clientIdFilePath`<sup>Optional</sup> <a name="clientIdFilePath" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.clientIdFilePath"></a>
+##### `clientIdFilePath`<sup>Optional</sup> <a name="clientIdFilePath" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.clientIdFilePath"></a>
 
 ```typescript
 public readonly clientIdFilePath: string;
@@ -1030,7 +1030,7 @@ public readonly clientIdFilePath: string;
 
 ---
 
-##### `clientSecret`<sup>Optional</sup> <a name="clientSecret" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.clientSecret"></a>
+##### `clientSecret`<sup>Optional</sup> <a name="clientSecret" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.clientSecret"></a>
 
 ```typescript
 public readonly clientSecret: string;
@@ -1040,7 +1040,7 @@ public readonly clientSecret: string;
 
 ---
 
-##### `clientSecretFilePath`<sup>Optional</sup> <a name="clientSecretFilePath" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.clientSecretFilePath"></a>
+##### `clientSecretFilePath`<sup>Optional</sup> <a name="clientSecretFilePath" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.clientSecretFilePath"></a>
 
 ```typescript
 public readonly clientSecretFilePath: string;
@@ -1050,7 +1050,7 @@ public readonly clientSecretFilePath: string;
 
 ---
 
-##### `disableCorrelationRequestId`<sup>Optional</sup> <a name="disableCorrelationRequestId" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.disableCorrelationRequestId"></a>
+##### `disableCorrelationRequestId`<sup>Optional</sup> <a name="disableCorrelationRequestId" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.disableCorrelationRequestId"></a>
 
 ```typescript
 public readonly disableCorrelationRequestId: boolean | IResolvable;
@@ -1060,7 +1060,7 @@ public readonly disableCorrelationRequestId: boolean | IResolvable;
 
 ---
 
-##### `disableTerraformPartnerId`<sup>Optional</sup> <a name="disableTerraformPartnerId" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.disableTerraformPartnerId"></a>
+##### `disableTerraformPartnerId`<sup>Optional</sup> <a name="disableTerraformPartnerId" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.disableTerraformPartnerId"></a>
 
 ```typescript
 public readonly disableTerraformPartnerId: boolean | IResolvable;
@@ -1070,7 +1070,7 @@ public readonly disableTerraformPartnerId: boolean | IResolvable;
 
 ---
 
-##### `environment`<sup>Optional</sup> <a name="environment" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.environment"></a>
+##### `environment`<sup>Optional</sup> <a name="environment" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.environment"></a>
 
 ```typescript
 public readonly environment: string;
@@ -1080,17 +1080,17 @@ public readonly environment: string;
 
 ---
 
-##### `features`<sup>Optional</sup> <a name="features" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.features"></a>
+##### `features`<sup>Optional</sup> <a name="features" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.features"></a>
 
 ```typescript
 public readonly features: IResolvable | AzurermProviderFeatures[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>[]
 
 ---
 
-##### `metadataHost`<sup>Optional</sup> <a name="metadataHost" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.metadataHost"></a>
+##### `metadataHost`<sup>Optional</sup> <a name="metadataHost" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.metadataHost"></a>
 
 ```typescript
 public readonly metadataHost: string;
@@ -1100,7 +1100,7 @@ public readonly metadataHost: string;
 
 ---
 
-##### `msiApiVersion`<sup>Optional</sup> <a name="msiApiVersion" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.msiApiVersion"></a>
+##### `msiApiVersion`<sup>Optional</sup> <a name="msiApiVersion" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.msiApiVersion"></a>
 
 ```typescript
 public readonly msiApiVersion: string;
@@ -1110,7 +1110,7 @@ public readonly msiApiVersion: string;
 
 ---
 
-##### `msiEndpoint`<sup>Optional</sup> <a name="msiEndpoint" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.msiEndpoint"></a>
+##### `msiEndpoint`<sup>Optional</sup> <a name="msiEndpoint" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.msiEndpoint"></a>
 
 ```typescript
 public readonly msiEndpoint: string;
@@ -1120,7 +1120,7 @@ public readonly msiEndpoint: string;
 
 ---
 
-##### `oidcRequestToken`<sup>Optional</sup> <a name="oidcRequestToken" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcRequestToken"></a>
+##### `oidcRequestToken`<sup>Optional</sup> <a name="oidcRequestToken" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcRequestToken"></a>
 
 ```typescript
 public readonly oidcRequestToken: string;
@@ -1130,7 +1130,7 @@ public readonly oidcRequestToken: string;
 
 ---
 
-##### `oidcRequestUrl`<sup>Optional</sup> <a name="oidcRequestUrl" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcRequestUrl"></a>
+##### `oidcRequestUrl`<sup>Optional</sup> <a name="oidcRequestUrl" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcRequestUrl"></a>
 
 ```typescript
 public readonly oidcRequestUrl: string;
@@ -1140,7 +1140,7 @@ public readonly oidcRequestUrl: string;
 
 ---
 
-##### `oidcToken`<sup>Optional</sup> <a name="oidcToken" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcToken"></a>
+##### `oidcToken`<sup>Optional</sup> <a name="oidcToken" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcToken"></a>
 
 ```typescript
 public readonly oidcToken: string;
@@ -1150,7 +1150,7 @@ public readonly oidcToken: string;
 
 ---
 
-##### `oidcTokenFilePath`<sup>Optional</sup> <a name="oidcTokenFilePath" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.oidcTokenFilePath"></a>
+##### `oidcTokenFilePath`<sup>Optional</sup> <a name="oidcTokenFilePath" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.oidcTokenFilePath"></a>
 
 ```typescript
 public readonly oidcTokenFilePath: string;
@@ -1160,7 +1160,7 @@ public readonly oidcTokenFilePath: string;
 
 ---
 
-##### `partnerId`<sup>Optional</sup> <a name="partnerId" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.partnerId"></a>
+##### `partnerId`<sup>Optional</sup> <a name="partnerId" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.partnerId"></a>
 
 ```typescript
 public readonly partnerId: string;
@@ -1170,7 +1170,7 @@ public readonly partnerId: string;
 
 ---
 
-##### `resourceProviderRegistrations`<sup>Optional</sup> <a name="resourceProviderRegistrations" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.resourceProviderRegistrations"></a>
+##### `resourceProviderRegistrations`<sup>Optional</sup> <a name="resourceProviderRegistrations" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.resourceProviderRegistrations"></a>
 
 ```typescript
 public readonly resourceProviderRegistrations: string;
@@ -1180,7 +1180,7 @@ public readonly resourceProviderRegistrations: string;
 
 ---
 
-##### `resourceProvidersToRegister`<sup>Optional</sup> <a name="resourceProvidersToRegister" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.resourceProvidersToRegister"></a>
+##### `resourceProvidersToRegister`<sup>Optional</sup> <a name="resourceProvidersToRegister" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.resourceProvidersToRegister"></a>
 
 ```typescript
 public readonly resourceProvidersToRegister: string[];
@@ -1190,7 +1190,7 @@ public readonly resourceProvidersToRegister: string[];
 
 ---
 
-##### `skipProviderRegistration`<sup>Optional</sup> <a name="skipProviderRegistration" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.skipProviderRegistration"></a>
+##### `skipProviderRegistration`<sup>Optional</sup> <a name="skipProviderRegistration" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.skipProviderRegistration"></a>
 
 ```typescript
 public readonly skipProviderRegistration: boolean | IResolvable;
@@ -1200,7 +1200,7 @@ public readonly skipProviderRegistration: boolean | IResolvable;
 
 ---
 
-##### `storageUseAzuread`<sup>Optional</sup> <a name="storageUseAzuread" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.storageUseAzuread"></a>
+##### `storageUseAzuread`<sup>Optional</sup> <a name="storageUseAzuread" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.storageUseAzuread"></a>
 
 ```typescript
 public readonly storageUseAzuread: boolean | IResolvable;
@@ -1210,7 +1210,7 @@ public readonly storageUseAzuread: boolean | IResolvable;
 
 ---
 
-##### `subscriptionId`<sup>Optional</sup> <a name="subscriptionId" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.subscriptionId"></a>
+##### `subscriptionId`<sup>Optional</sup> <a name="subscriptionId" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.subscriptionId"></a>
 
 ```typescript
 public readonly subscriptionId: string;
@@ -1220,7 +1220,7 @@ public readonly subscriptionId: string;
 
 ---
 
-##### `tenantId`<sup>Optional</sup> <a name="tenantId" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.tenantId"></a>
+##### `tenantId`<sup>Optional</sup> <a name="tenantId" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.tenantId"></a>
 
 ```typescript
 public readonly tenantId: string;
@@ -1230,7 +1230,7 @@ public readonly tenantId: string;
 
 ---
 
-##### `useAksWorkloadIdentity`<sup>Optional</sup> <a name="useAksWorkloadIdentity" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.useAksWorkloadIdentity"></a>
+##### `useAksWorkloadIdentity`<sup>Optional</sup> <a name="useAksWorkloadIdentity" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.useAksWorkloadIdentity"></a>
 
 ```typescript
 public readonly useAksWorkloadIdentity: boolean | IResolvable;
@@ -1240,7 +1240,7 @@ public readonly useAksWorkloadIdentity: boolean | IResolvable;
 
 ---
 
-##### `useCli`<sup>Optional</sup> <a name="useCli" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.useCli"></a>
+##### `useCli`<sup>Optional</sup> <a name="useCli" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.useCli"></a>
 
 ```typescript
 public readonly useCli: boolean | IResolvable;
@@ -1250,7 +1250,7 @@ public readonly useCli: boolean | IResolvable;
 
 ---
 
-##### `useMsi`<sup>Optional</sup> <a name="useMsi" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.useMsi"></a>
+##### `useMsi`<sup>Optional</sup> <a name="useMsi" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.useMsi"></a>
 
 ```typescript
 public readonly useMsi: boolean | IResolvable;
@@ -1260,7 +1260,7 @@ public readonly useMsi: boolean | IResolvable;
 
 ---
 
-##### `useOidc`<sup>Optional</sup> <a name="useOidc" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.useOidc"></a>
+##### `useOidc`<sup>Optional</sup> <a name="useOidc" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.useOidc"></a>
 
 ```typescript
 public readonly useOidc: boolean | IResolvable;
@@ -1274,11 +1274,11 @@ public readonly useOidc: boolean | IResolvable;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProvider.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azurerm.provider.AzurermProvider.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1290,12 +1290,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AzurermProviderConfig <a name="AzurermProviderConfig" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig"></a>
+### AzurermProviderConfig <a name="AzurermProviderConfig" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderConfig: provider.AzurermProviderConfig = { ... }
 ```
@@ -1304,42 +1304,42 @@ const azurermProviderConfig: provider.AzurermProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.adoPipelineServiceConnectionId">adoPipelineServiceConnectionId</a></code> | <code>string</code> | The Azure DevOps Pipeline Service Connection ID. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.auxiliaryTenantIds">auxiliaryTenantIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#auxiliary_tenant_ids AzurermProvider#auxiliary_tenant_ids}. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.clientCertificate">clientCertificate</a></code> | <code>string</code> | Base64 encoded PKCS#12 certificate bundle to use when authenticating as a Service Principal using a Client Certificate. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.clientCertificatePassword">clientCertificatePassword</a></code> | <code>string</code> | The password associated with the Client Certificate. For use when authenticating as a Service Principal using a Client Certificate. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.clientCertificatePath">clientCertificatePath</a></code> | <code>string</code> | The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service Principal using a Client Certificate. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.clientId">clientId</a></code> | <code>string</code> | The Client ID which should be used. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.clientIdFilePath">clientIdFilePath</a></code> | <code>string</code> | The path to a file containing the Client ID which should be used. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.clientSecret">clientSecret</a></code> | <code>string</code> | The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.clientSecretFilePath">clientSecretFilePath</a></code> | <code>string</code> | The path to a file containing the Client Secret which should be used. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.disableCorrelationRequestId">disableCorrelationRequestId</a></code> | <code>boolean \| cdktf.IResolvable</code> | This will disable the x-ms-correlation-request-id header. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.disableTerraformPartnerId">disableTerraformPartnerId</a></code> | <code>boolean \| cdktf.IResolvable</code> | This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.environment">environment</a></code> | <code>string</code> | The Cloud Environment which should be used. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.features">features</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>[]</code> | features block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.metadataHost">metadataHost</a></code> | <code>string</code> | The Hostname which should be used for the Azure Metadata Service. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.msiApiVersion">msiApiVersion</a></code> | <code>string</code> | The API version to use for Managed Service Identity (IMDS) - for cases where the default API version is not supported by the endpoint. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.msiEndpoint">msiEndpoint</a></code> | <code>string</code> | The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected automatically. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.oidcRequestToken">oidcRequestToken</a></code> | <code>string</code> | The bearer token for the request to the OIDC provider. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.oidcRequestUrl">oidcRequestUrl</a></code> | <code>string</code> | The URL for the OIDC provider from which to request an ID token. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.oidcToken">oidcToken</a></code> | <code>string</code> | The OIDC ID token for use when authenticating as a Service Principal using OpenID Connect. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.oidcTokenFilePath">oidcTokenFilePath</a></code> | <code>string</code> | The path to a file containing an OIDC ID token for use when authenticating as a Service Principal using OpenID Connect. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.partnerId">partnerId</a></code> | <code>string</code> | A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.resourceProviderRegistrations">resourceProviderRegistrations</a></code> | <code>string</code> | The set of Resource Providers which should be automatically registered for the subscription. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.resourceProvidersToRegister">resourceProvidersToRegister</a></code> | <code>string[]</code> | A list of Resource Providers to explicitly register for the subscription, in addition to those specified by the `resource_provider_registrations` property. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.skipProviderRegistration">skipProviderRegistration</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already registered? |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.storageUseAzuread">storageUseAzuread</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the AzureRM Provider use Azure AD Authentication when accessing the Storage Data Plane APIs? |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | The Subscription ID which should be used. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.tenantId">tenantId</a></code> | <code>string</code> | The Tenant ID which should be used. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.useAksWorkloadIdentity">useAksWorkloadIdentity</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.useCli">useCli</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allow Azure CLI to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.useMsi">useMsi</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allow Managed Service Identity to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.useOidc">useOidc</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allow OpenID Connect to be used for authentication. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.adoPipelineServiceConnectionId">adoPipelineServiceConnectionId</a></code> | <code>string</code> | The Azure DevOps Pipeline Service Connection ID. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.auxiliaryTenantIds">auxiliaryTenantIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#auxiliary_tenant_ids AzurermProvider#auxiliary_tenant_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientCertificate">clientCertificate</a></code> | <code>string</code> | Base64 encoded PKCS#12 certificate bundle to use when authenticating as a Service Principal using a Client Certificate. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientCertificatePassword">clientCertificatePassword</a></code> | <code>string</code> | The password associated with the Client Certificate. For use when authenticating as a Service Principal using a Client Certificate. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientCertificatePath">clientCertificatePath</a></code> | <code>string</code> | The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service Principal using a Client Certificate. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientId">clientId</a></code> | <code>string</code> | The Client ID which should be used. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientIdFilePath">clientIdFilePath</a></code> | <code>string</code> | The path to a file containing the Client ID which should be used. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientSecret">clientSecret</a></code> | <code>string</code> | The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientSecretFilePath">clientSecretFilePath</a></code> | <code>string</code> | The path to a file containing the Client Secret which should be used. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.disableCorrelationRequestId">disableCorrelationRequestId</a></code> | <code>boolean \| cdktf.IResolvable</code> | This will disable the x-ms-correlation-request-id header. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.disableTerraformPartnerId">disableTerraformPartnerId</a></code> | <code>boolean \| cdktf.IResolvable</code> | This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.environment">environment</a></code> | <code>string</code> | The Cloud Environment which should be used. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.features">features</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>[]</code> | features block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.metadataHost">metadataHost</a></code> | <code>string</code> | The Hostname which should be used for the Azure Metadata Service. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.msiApiVersion">msiApiVersion</a></code> | <code>string</code> | The API version to use for Managed Service Identity (IMDS) - for cases where the default API version is not supported by the endpoint. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.msiEndpoint">msiEndpoint</a></code> | <code>string</code> | The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected automatically. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.oidcRequestToken">oidcRequestToken</a></code> | <code>string</code> | The bearer token for the request to the OIDC provider. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.oidcRequestUrl">oidcRequestUrl</a></code> | <code>string</code> | The URL for the OIDC provider from which to request an ID token. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.oidcToken">oidcToken</a></code> | <code>string</code> | The OIDC ID token for use when authenticating as a Service Principal using OpenID Connect. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.oidcTokenFilePath">oidcTokenFilePath</a></code> | <code>string</code> | The path to a file containing an OIDC ID token for use when authenticating as a Service Principal using OpenID Connect. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.partnerId">partnerId</a></code> | <code>string</code> | A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.resourceProviderRegistrations">resourceProviderRegistrations</a></code> | <code>string</code> | The set of Resource Providers which should be automatically registered for the subscription. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.resourceProvidersToRegister">resourceProvidersToRegister</a></code> | <code>string[]</code> | A list of Resource Providers to explicitly register for the subscription, in addition to those specified by the `resource_provider_registrations` property. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.skipProviderRegistration">skipProviderRegistration</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already registered? |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.storageUseAzuread">storageUseAzuread</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the AzureRM Provider use Azure AD Authentication when accessing the Storage Data Plane APIs? |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | The Subscription ID which should be used. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.tenantId">tenantId</a></code> | <code>string</code> | The Tenant ID which should be used. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useAksWorkloadIdentity">useAksWorkloadIdentity</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useCli">useCli</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allow Azure CLI to be used for Authentication. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useMsi">useMsi</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allow Managed Service Identity to be used for Authentication. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useOidc">useOidc</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allow OpenID Connect to be used for authentication. |
 
 ---
 
-##### `adoPipelineServiceConnectionId`<sup>Optional</sup> <a name="adoPipelineServiceConnectionId" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.adoPipelineServiceConnectionId"></a>
+##### `adoPipelineServiceConnectionId`<sup>Optional</sup> <a name="adoPipelineServiceConnectionId" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.adoPipelineServiceConnectionId"></a>
 
 ```typescript
 public readonly adoPipelineServiceConnectionId: string;
@@ -1349,11 +1349,11 @@ public readonly adoPipelineServiceConnectionId: string;
 
 The Azure DevOps Pipeline Service Connection ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#ado_pipeline_service_connection_id AzurermProvider#ado_pipeline_service_connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#ado_pipeline_service_connection_id AzurermProvider#ado_pipeline_service_connection_id}
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.alias"></a>
 
 ```typescript
 public readonly alias: string;
@@ -1363,11 +1363,11 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#alias AzurermProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#alias AzurermProvider#alias}
 
 ---
 
-##### `auxiliaryTenantIds`<sup>Optional</sup> <a name="auxiliaryTenantIds" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.auxiliaryTenantIds"></a>
+##### `auxiliaryTenantIds`<sup>Optional</sup> <a name="auxiliaryTenantIds" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.auxiliaryTenantIds"></a>
 
 ```typescript
 public readonly auxiliaryTenantIds: string[];
@@ -1375,11 +1375,11 @@ public readonly auxiliaryTenantIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#auxiliary_tenant_ids AzurermProvider#auxiliary_tenant_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#auxiliary_tenant_ids AzurermProvider#auxiliary_tenant_ids}.
 
 ---
 
-##### `clientCertificate`<sup>Optional</sup> <a name="clientCertificate" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.clientCertificate"></a>
+##### `clientCertificate`<sup>Optional</sup> <a name="clientCertificate" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientCertificate"></a>
 
 ```typescript
 public readonly clientCertificate: string;
@@ -1389,11 +1389,11 @@ public readonly clientCertificate: string;
 
 Base64 encoded PKCS#12 certificate bundle to use when authenticating as a Service Principal using a Client Certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#client_certificate AzurermProvider#client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#client_certificate AzurermProvider#client_certificate}
 
 ---
 
-##### `clientCertificatePassword`<sup>Optional</sup> <a name="clientCertificatePassword" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.clientCertificatePassword"></a>
+##### `clientCertificatePassword`<sup>Optional</sup> <a name="clientCertificatePassword" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientCertificatePassword"></a>
 
 ```typescript
 public readonly clientCertificatePassword: string;
@@ -1403,11 +1403,11 @@ public readonly clientCertificatePassword: string;
 
 The password associated with the Client Certificate. For use when authenticating as a Service Principal using a Client Certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#client_certificate_password AzurermProvider#client_certificate_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#client_certificate_password AzurermProvider#client_certificate_password}
 
 ---
 
-##### `clientCertificatePath`<sup>Optional</sup> <a name="clientCertificatePath" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.clientCertificatePath"></a>
+##### `clientCertificatePath`<sup>Optional</sup> <a name="clientCertificatePath" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientCertificatePath"></a>
 
 ```typescript
 public readonly clientCertificatePath: string;
@@ -1417,11 +1417,11 @@ public readonly clientCertificatePath: string;
 
 The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service Principal using a Client Certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#client_certificate_path AzurermProvider#client_certificate_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#client_certificate_path AzurermProvider#client_certificate_path}
 
 ---
 
-##### `clientId`<sup>Optional</sup> <a name="clientId" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.clientId"></a>
+##### `clientId`<sup>Optional</sup> <a name="clientId" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientId"></a>
 
 ```typescript
 public readonly clientId: string;
@@ -1431,11 +1431,11 @@ public readonly clientId: string;
 
 The Client ID which should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#client_id AzurermProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#client_id AzurermProvider#client_id}
 
 ---
 
-##### `clientIdFilePath`<sup>Optional</sup> <a name="clientIdFilePath" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.clientIdFilePath"></a>
+##### `clientIdFilePath`<sup>Optional</sup> <a name="clientIdFilePath" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientIdFilePath"></a>
 
 ```typescript
 public readonly clientIdFilePath: string;
@@ -1445,11 +1445,11 @@ public readonly clientIdFilePath: string;
 
 The path to a file containing the Client ID which should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#client_id_file_path AzurermProvider#client_id_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#client_id_file_path AzurermProvider#client_id_file_path}
 
 ---
 
-##### `clientSecret`<sup>Optional</sup> <a name="clientSecret" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.clientSecret"></a>
+##### `clientSecret`<sup>Optional</sup> <a name="clientSecret" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientSecret"></a>
 
 ```typescript
 public readonly clientSecret: string;
@@ -1459,11 +1459,11 @@ public readonly clientSecret: string;
 
 The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#client_secret AzurermProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#client_secret AzurermProvider#client_secret}
 
 ---
 
-##### `clientSecretFilePath`<sup>Optional</sup> <a name="clientSecretFilePath" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.clientSecretFilePath"></a>
+##### `clientSecretFilePath`<sup>Optional</sup> <a name="clientSecretFilePath" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientSecretFilePath"></a>
 
 ```typescript
 public readonly clientSecretFilePath: string;
@@ -1475,11 +1475,11 @@ The path to a file containing the Client Secret which should be used.
 
 For use When authenticating as a Service Principal using a Client Secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#client_secret_file_path AzurermProvider#client_secret_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#client_secret_file_path AzurermProvider#client_secret_file_path}
 
 ---
 
-##### `disableCorrelationRequestId`<sup>Optional</sup> <a name="disableCorrelationRequestId" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.disableCorrelationRequestId"></a>
+##### `disableCorrelationRequestId`<sup>Optional</sup> <a name="disableCorrelationRequestId" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.disableCorrelationRequestId"></a>
 
 ```typescript
 public readonly disableCorrelationRequestId: boolean | IResolvable;
@@ -1489,11 +1489,11 @@ public readonly disableCorrelationRequestId: boolean | IResolvable;
 
 This will disable the x-ms-correlation-request-id header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#disable_correlation_request_id AzurermProvider#disable_correlation_request_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#disable_correlation_request_id AzurermProvider#disable_correlation_request_id}
 
 ---
 
-##### `disableTerraformPartnerId`<sup>Optional</sup> <a name="disableTerraformPartnerId" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.disableTerraformPartnerId"></a>
+##### `disableTerraformPartnerId`<sup>Optional</sup> <a name="disableTerraformPartnerId" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.disableTerraformPartnerId"></a>
 
 ```typescript
 public readonly disableTerraformPartnerId: boolean | IResolvable;
@@ -1503,11 +1503,11 @@ public readonly disableTerraformPartnerId: boolean | IResolvable;
 
 This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#disable_terraform_partner_id AzurermProvider#disable_terraform_partner_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#disable_terraform_partner_id AzurermProvider#disable_terraform_partner_id}
 
 ---
 
-##### `environment`<sup>Optional</sup> <a name="environment" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.environment"></a>
+##### `environment`<sup>Optional</sup> <a name="environment" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.environment"></a>
 
 ```typescript
 public readonly environment: string;
@@ -1519,25 +1519,25 @@ The Cloud Environment which should be used.
 
 Possible values are public, usgovernment, and china. Defaults to public. Not used and should not be specified when `metadata_host` is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#environment AzurermProvider#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#environment AzurermProvider#environment}
 
 ---
 
-##### `features`<sup>Optional</sup> <a name="features" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.features"></a>
+##### `features`<sup>Optional</sup> <a name="features" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.features"></a>
 
 ```typescript
 public readonly features: IResolvable | AzurermProviderFeatures[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>[]
 
 features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#features AzurermProvider#features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#features AzurermProvider#features}
 
 ---
 
-##### `metadataHost`<sup>Optional</sup> <a name="metadataHost" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.metadataHost"></a>
+##### `metadataHost`<sup>Optional</sup> <a name="metadataHost" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.metadataHost"></a>
 
 ```typescript
 public readonly metadataHost: string;
@@ -1547,11 +1547,11 @@ public readonly metadataHost: string;
 
 The Hostname which should be used for the Azure Metadata Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#metadata_host AzurermProvider#metadata_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#metadata_host AzurermProvider#metadata_host}
 
 ---
 
-##### `msiApiVersion`<sup>Optional</sup> <a name="msiApiVersion" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.msiApiVersion"></a>
+##### `msiApiVersion`<sup>Optional</sup> <a name="msiApiVersion" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.msiApiVersion"></a>
 
 ```typescript
 public readonly msiApiVersion: string;
@@ -1563,11 +1563,11 @@ The API version to use for Managed Service Identity (IMDS) - for cases where the
 
 e.g. for Azure Container Apps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#msi_api_version AzurermProvider#msi_api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#msi_api_version AzurermProvider#msi_api_version}
 
 ---
 
-##### `msiEndpoint`<sup>Optional</sup> <a name="msiEndpoint" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.msiEndpoint"></a>
+##### `msiEndpoint`<sup>Optional</sup> <a name="msiEndpoint" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.msiEndpoint"></a>
 
 ```typescript
 public readonly msiEndpoint: string;
@@ -1577,11 +1577,11 @@ public readonly msiEndpoint: string;
 
 The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#msi_endpoint AzurermProvider#msi_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#msi_endpoint AzurermProvider#msi_endpoint}
 
 ---
 
-##### `oidcRequestToken`<sup>Optional</sup> <a name="oidcRequestToken" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.oidcRequestToken"></a>
+##### `oidcRequestToken`<sup>Optional</sup> <a name="oidcRequestToken" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.oidcRequestToken"></a>
 
 ```typescript
 public readonly oidcRequestToken: string;
@@ -1593,11 +1593,11 @@ The bearer token for the request to the OIDC provider.
 
 For use when authenticating as a Service Principal using OpenID Connect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#oidc_request_token AzurermProvider#oidc_request_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#oidc_request_token AzurermProvider#oidc_request_token}
 
 ---
 
-##### `oidcRequestUrl`<sup>Optional</sup> <a name="oidcRequestUrl" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.oidcRequestUrl"></a>
+##### `oidcRequestUrl`<sup>Optional</sup> <a name="oidcRequestUrl" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.oidcRequestUrl"></a>
 
 ```typescript
 public readonly oidcRequestUrl: string;
@@ -1609,11 +1609,11 @@ The URL for the OIDC provider from which to request an ID token.
 
 For use when authenticating as a Service Principal using OpenID Connect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#oidc_request_url AzurermProvider#oidc_request_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#oidc_request_url AzurermProvider#oidc_request_url}
 
 ---
 
-##### `oidcToken`<sup>Optional</sup> <a name="oidcToken" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.oidcToken"></a>
+##### `oidcToken`<sup>Optional</sup> <a name="oidcToken" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.oidcToken"></a>
 
 ```typescript
 public readonly oidcToken: string;
@@ -1623,11 +1623,11 @@ public readonly oidcToken: string;
 
 The OIDC ID token for use when authenticating as a Service Principal using OpenID Connect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#oidc_token AzurermProvider#oidc_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#oidc_token AzurermProvider#oidc_token}
 
 ---
 
-##### `oidcTokenFilePath`<sup>Optional</sup> <a name="oidcTokenFilePath" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.oidcTokenFilePath"></a>
+##### `oidcTokenFilePath`<sup>Optional</sup> <a name="oidcTokenFilePath" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.oidcTokenFilePath"></a>
 
 ```typescript
 public readonly oidcTokenFilePath: string;
@@ -1637,11 +1637,11 @@ public readonly oidcTokenFilePath: string;
 
 The path to a file containing an OIDC ID token for use when authenticating as a Service Principal using OpenID Connect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#oidc_token_file_path AzurermProvider#oidc_token_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#oidc_token_file_path AzurermProvider#oidc_token_file_path}
 
 ---
 
-##### `partnerId`<sup>Optional</sup> <a name="partnerId" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.partnerId"></a>
+##### `partnerId`<sup>Optional</sup> <a name="partnerId" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.partnerId"></a>
 
 ```typescript
 public readonly partnerId: string;
@@ -1651,11 +1651,11 @@ public readonly partnerId: string;
 
 A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#partner_id AzurermProvider#partner_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#partner_id AzurermProvider#partner_id}
 
 ---
 
-##### `resourceProviderRegistrations`<sup>Optional</sup> <a name="resourceProviderRegistrations" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.resourceProviderRegistrations"></a>
+##### `resourceProviderRegistrations`<sup>Optional</sup> <a name="resourceProviderRegistrations" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.resourceProviderRegistrations"></a>
 
 ```typescript
 public readonly resourceProviderRegistrations: string;
@@ -1665,11 +1665,11 @@ public readonly resourceProviderRegistrations: string;
 
 The set of Resource Providers which should be automatically registered for the subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#resource_provider_registrations AzurermProvider#resource_provider_registrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#resource_provider_registrations AzurermProvider#resource_provider_registrations}
 
 ---
 
-##### `resourceProvidersToRegister`<sup>Optional</sup> <a name="resourceProvidersToRegister" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.resourceProvidersToRegister"></a>
+##### `resourceProvidersToRegister`<sup>Optional</sup> <a name="resourceProvidersToRegister" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.resourceProvidersToRegister"></a>
 
 ```typescript
 public readonly resourceProvidersToRegister: string[];
@@ -1679,11 +1679,11 @@ public readonly resourceProvidersToRegister: string[];
 
 A list of Resource Providers to explicitly register for the subscription, in addition to those specified by the `resource_provider_registrations` property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#resource_providers_to_register AzurermProvider#resource_providers_to_register}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#resource_providers_to_register AzurermProvider#resource_providers_to_register}
 
 ---
 
-##### `skipProviderRegistration`<sup>Optional</sup> <a name="skipProviderRegistration" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.skipProviderRegistration"></a>
+##### `skipProviderRegistration`<sup>Optional</sup> <a name="skipProviderRegistration" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.skipProviderRegistration"></a>
 
 ```typescript
 public readonly skipProviderRegistration: boolean | IResolvable;
@@ -1693,11 +1693,11 @@ public readonly skipProviderRegistration: boolean | IResolvable;
 
 Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already registered?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#skip_provider_registration AzurermProvider#skip_provider_registration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#skip_provider_registration AzurermProvider#skip_provider_registration}
 
 ---
 
-##### `storageUseAzuread`<sup>Optional</sup> <a name="storageUseAzuread" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.storageUseAzuread"></a>
+##### `storageUseAzuread`<sup>Optional</sup> <a name="storageUseAzuread" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.storageUseAzuread"></a>
 
 ```typescript
 public readonly storageUseAzuread: boolean | IResolvable;
@@ -1707,11 +1707,11 @@ public readonly storageUseAzuread: boolean | IResolvable;
 
 Should the AzureRM Provider use Azure AD Authentication when accessing the Storage Data Plane APIs?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#storage_use_azuread AzurermProvider#storage_use_azuread}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#storage_use_azuread AzurermProvider#storage_use_azuread}
 
 ---
 
-##### `subscriptionId`<sup>Optional</sup> <a name="subscriptionId" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.subscriptionId"></a>
+##### `subscriptionId`<sup>Optional</sup> <a name="subscriptionId" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.subscriptionId"></a>
 
 ```typescript
 public readonly subscriptionId: string;
@@ -1721,11 +1721,11 @@ public readonly subscriptionId: string;
 
 The Subscription ID which should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#subscription_id AzurermProvider#subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#subscription_id AzurermProvider#subscription_id}
 
 ---
 
-##### `tenantId`<sup>Optional</sup> <a name="tenantId" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.tenantId"></a>
+##### `tenantId`<sup>Optional</sup> <a name="tenantId" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.tenantId"></a>
 
 ```typescript
 public readonly tenantId: string;
@@ -1735,11 +1735,11 @@ public readonly tenantId: string;
 
 The Tenant ID which should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#tenant_id AzurermProvider#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#tenant_id AzurermProvider#tenant_id}
 
 ---
 
-##### `useAksWorkloadIdentity`<sup>Optional</sup> <a name="useAksWorkloadIdentity" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.useAksWorkloadIdentity"></a>
+##### `useAksWorkloadIdentity`<sup>Optional</sup> <a name="useAksWorkloadIdentity" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useAksWorkloadIdentity"></a>
 
 ```typescript
 public readonly useAksWorkloadIdentity: boolean | IResolvable;
@@ -1749,11 +1749,11 @@ public readonly useAksWorkloadIdentity: boolean | IResolvable;
 
 Allow Azure AKS Workload Identity to be used for Authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#use_aks_workload_identity AzurermProvider#use_aks_workload_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#use_aks_workload_identity AzurermProvider#use_aks_workload_identity}
 
 ---
 
-##### `useCli`<sup>Optional</sup> <a name="useCli" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.useCli"></a>
+##### `useCli`<sup>Optional</sup> <a name="useCli" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useCli"></a>
 
 ```typescript
 public readonly useCli: boolean | IResolvable;
@@ -1763,11 +1763,11 @@ public readonly useCli: boolean | IResolvable;
 
 Allow Azure CLI to be used for Authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#use_cli AzurermProvider#use_cli}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#use_cli AzurermProvider#use_cli}
 
 ---
 
-##### `useMsi`<sup>Optional</sup> <a name="useMsi" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.useMsi"></a>
+##### `useMsi`<sup>Optional</sup> <a name="useMsi" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useMsi"></a>
 
 ```typescript
 public readonly useMsi: boolean | IResolvable;
@@ -1777,11 +1777,11 @@ public readonly useMsi: boolean | IResolvable;
 
 Allow Managed Service Identity to be used for Authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#use_msi AzurermProvider#use_msi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#use_msi AzurermProvider#use_msi}
 
 ---
 
-##### `useOidc`<sup>Optional</sup> <a name="useOidc" id="@cdktf/provider-azurerm.provider.AzurermProviderConfig.property.useOidc"></a>
+##### `useOidc`<sup>Optional</sup> <a name="useOidc" id="@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useOidc"></a>
 
 ```typescript
 public readonly useOidc: boolean | IResolvable;
@@ -1791,16 +1791,16 @@ public readonly useOidc: boolean | IResolvable;
 
 Allow OpenID Connect to be used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#use_oidc AzurermProvider#use_oidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#use_oidc AzurermProvider#use_oidc}
 
 ---
 
-### AzurermProviderFeatures <a name="AzurermProviderFeatures" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures"></a>
+### AzurermProviderFeatures <a name="AzurermProviderFeatures" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeatures: provider.AzurermProviderFeatures = { ... }
 ```
@@ -1809,300 +1809,300 @@ const azurermProviderFeatures: provider.AzurermProviderFeatures = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.apiManagement">apiManagement</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesApiManagement">AzurermProviderFeaturesApiManagement</a>[]</code> | api_management block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.appConfiguration">appConfiguration</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration">AzurermProviderFeaturesAppConfiguration</a>[]</code> | app_configuration block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.applicationInsights">applicationInsights</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights">AzurermProviderFeaturesApplicationInsights</a>[]</code> | application_insights block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.cognitiveAccount">cognitiveAccount</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount">AzurermProviderFeaturesCognitiveAccount</a>[]</code> | cognitive_account block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.databricksWorkspace">databricksWorkspace</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace">AzurermProviderFeaturesDatabricksWorkspace</a>[]</code> | databricks_workspace block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.keyVault">keyVault</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault">AzurermProviderFeaturesKeyVault</a>[]</code> | key_vault block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.logAnalyticsWorkspace">logAnalyticsWorkspace</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace">AzurermProviderFeaturesLogAnalyticsWorkspace</a>[]</code> | log_analytics_workspace block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.machineLearning">machineLearning</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning">AzurermProviderFeaturesMachineLearning</a>[]</code> | machine_learning block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.managedDisk">managedDisk</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk">AzurermProviderFeaturesManagedDisk</a>[]</code> | managed_disk block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.netapp">netapp</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesNetapp">AzurermProviderFeaturesNetapp</a>[]</code> | netapp block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.postgresqlFlexibleServer">postgresqlFlexibleServer</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer">AzurermProviderFeaturesPostgresqlFlexibleServer</a>[]</code> | postgresql_flexible_server block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.recoveryService">recoveryService</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService">AzurermProviderFeaturesRecoveryService</a>[]</code> | recovery_service block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.recoveryServicesVaults">recoveryServicesVaults</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults">AzurermProviderFeaturesRecoveryServicesVaults</a>[]</code> | recovery_services_vaults block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.resourceGroup">resourceGroup</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup">AzurermProviderFeaturesResourceGroup</a>[]</code> | resource_group block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.storage">storage</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesStorage">AzurermProviderFeaturesStorage</a>[]</code> | storage block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.subscription">subscription</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesSubscription">AzurermProviderFeaturesSubscription</a>[]</code> | subscription block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.templateDeployment">templateDeployment</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment">AzurermProviderFeaturesTemplateDeployment</a>[]</code> | template_deployment block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.virtualMachine">virtualMachine</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine">AzurermProviderFeaturesVirtualMachine</a>[]</code> | virtual_machine block. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.virtualMachineScaleSet">virtualMachineScaleSet</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet">AzurermProviderFeaturesVirtualMachineScaleSet</a>[]</code> | virtual_machine_scale_set block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.apiManagement">apiManagement</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement">AzurermProviderFeaturesApiManagement</a>[]</code> | api_management block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.appConfiguration">appConfiguration</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration">AzurermProviderFeaturesAppConfiguration</a>[]</code> | app_configuration block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.applicationInsights">applicationInsights</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights">AzurermProviderFeaturesApplicationInsights</a>[]</code> | application_insights block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.cognitiveAccount">cognitiveAccount</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount">AzurermProviderFeaturesCognitiveAccount</a>[]</code> | cognitive_account block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.databricksWorkspace">databricksWorkspace</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace">AzurermProviderFeaturesDatabricksWorkspace</a>[]</code> | databricks_workspace block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.keyVault">keyVault</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault">AzurermProviderFeaturesKeyVault</a>[]</code> | key_vault block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.logAnalyticsWorkspace">logAnalyticsWorkspace</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace">AzurermProviderFeaturesLogAnalyticsWorkspace</a>[]</code> | log_analytics_workspace block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.machineLearning">machineLearning</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning">AzurermProviderFeaturesMachineLearning</a>[]</code> | machine_learning block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.managedDisk">managedDisk</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk">AzurermProviderFeaturesManagedDisk</a>[]</code> | managed_disk block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.netapp">netapp</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp">AzurermProviderFeaturesNetapp</a>[]</code> | netapp block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.postgresqlFlexibleServer">postgresqlFlexibleServer</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer">AzurermProviderFeaturesPostgresqlFlexibleServer</a>[]</code> | postgresql_flexible_server block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.recoveryService">recoveryService</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService">AzurermProviderFeaturesRecoveryService</a>[]</code> | recovery_service block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.recoveryServicesVaults">recoveryServicesVaults</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults">AzurermProviderFeaturesRecoveryServicesVaults</a>[]</code> | recovery_services_vaults block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.resourceGroup">resourceGroup</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup">AzurermProviderFeaturesResourceGroup</a>[]</code> | resource_group block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.storage">storage</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesStorage">AzurermProviderFeaturesStorage</a>[]</code> | storage block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.subscription">subscription</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesSubscription">AzurermProviderFeaturesSubscription</a>[]</code> | subscription block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.templateDeployment">templateDeployment</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment">AzurermProviderFeaturesTemplateDeployment</a>[]</code> | template_deployment block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.virtualMachine">virtualMachine</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine">AzurermProviderFeaturesVirtualMachine</a>[]</code> | virtual_machine block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.virtualMachineScaleSet">virtualMachineScaleSet</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet">AzurermProviderFeaturesVirtualMachineScaleSet</a>[]</code> | virtual_machine_scale_set block. |
 
 ---
 
-##### `apiManagement`<sup>Optional</sup> <a name="apiManagement" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.apiManagement"></a>
+##### `apiManagement`<sup>Optional</sup> <a name="apiManagement" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.apiManagement"></a>
 
 ```typescript
 public readonly apiManagement: IResolvable | AzurermProviderFeaturesApiManagement[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesApiManagement">AzurermProviderFeaturesApiManagement</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement">AzurermProviderFeaturesApiManagement</a>[]
 
 api_management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#api_management AzurermProvider#api_management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#api_management AzurermProvider#api_management}
 
 ---
 
-##### `appConfiguration`<sup>Optional</sup> <a name="appConfiguration" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.appConfiguration"></a>
+##### `appConfiguration`<sup>Optional</sup> <a name="appConfiguration" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.appConfiguration"></a>
 
 ```typescript
 public readonly appConfiguration: IResolvable | AzurermProviderFeaturesAppConfiguration[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration">AzurermProviderFeaturesAppConfiguration</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration">AzurermProviderFeaturesAppConfiguration</a>[]
 
 app_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#app_configuration AzurermProvider#app_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#app_configuration AzurermProvider#app_configuration}
 
 ---
 
-##### `applicationInsights`<sup>Optional</sup> <a name="applicationInsights" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.applicationInsights"></a>
+##### `applicationInsights`<sup>Optional</sup> <a name="applicationInsights" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.applicationInsights"></a>
 
 ```typescript
 public readonly applicationInsights: IResolvable | AzurermProviderFeaturesApplicationInsights[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights">AzurermProviderFeaturesApplicationInsights</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights">AzurermProviderFeaturesApplicationInsights</a>[]
 
 application_insights block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#application_insights AzurermProvider#application_insights}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#application_insights AzurermProvider#application_insights}
 
 ---
 
-##### `cognitiveAccount`<sup>Optional</sup> <a name="cognitiveAccount" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.cognitiveAccount"></a>
+##### `cognitiveAccount`<sup>Optional</sup> <a name="cognitiveAccount" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.cognitiveAccount"></a>
 
 ```typescript
 public readonly cognitiveAccount: IResolvable | AzurermProviderFeaturesCognitiveAccount[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount">AzurermProviderFeaturesCognitiveAccount</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount">AzurermProviderFeaturesCognitiveAccount</a>[]
 
 cognitive_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#cognitive_account AzurermProvider#cognitive_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#cognitive_account AzurermProvider#cognitive_account}
 
 ---
 
-##### `databricksWorkspace`<sup>Optional</sup> <a name="databricksWorkspace" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.databricksWorkspace"></a>
+##### `databricksWorkspace`<sup>Optional</sup> <a name="databricksWorkspace" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.databricksWorkspace"></a>
 
 ```typescript
 public readonly databricksWorkspace: IResolvable | AzurermProviderFeaturesDatabricksWorkspace[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace">AzurermProviderFeaturesDatabricksWorkspace</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace">AzurermProviderFeaturesDatabricksWorkspace</a>[]
 
 databricks_workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#databricks_workspace AzurermProvider#databricks_workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#databricks_workspace AzurermProvider#databricks_workspace}
 
 ---
 
-##### `keyVault`<sup>Optional</sup> <a name="keyVault" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.keyVault"></a>
+##### `keyVault`<sup>Optional</sup> <a name="keyVault" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.keyVault"></a>
 
 ```typescript
 public readonly keyVault: IResolvable | AzurermProviderFeaturesKeyVault[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault">AzurermProviderFeaturesKeyVault</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault">AzurermProviderFeaturesKeyVault</a>[]
 
 key_vault block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#key_vault AzurermProvider#key_vault}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#key_vault AzurermProvider#key_vault}
 
 ---
 
-##### `logAnalyticsWorkspace`<sup>Optional</sup> <a name="logAnalyticsWorkspace" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.logAnalyticsWorkspace"></a>
+##### `logAnalyticsWorkspace`<sup>Optional</sup> <a name="logAnalyticsWorkspace" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.logAnalyticsWorkspace"></a>
 
 ```typescript
 public readonly logAnalyticsWorkspace: IResolvable | AzurermProviderFeaturesLogAnalyticsWorkspace[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace">AzurermProviderFeaturesLogAnalyticsWorkspace</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace">AzurermProviderFeaturesLogAnalyticsWorkspace</a>[]
 
 log_analytics_workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#log_analytics_workspace AzurermProvider#log_analytics_workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#log_analytics_workspace AzurermProvider#log_analytics_workspace}
 
 ---
 
-##### `machineLearning`<sup>Optional</sup> <a name="machineLearning" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.machineLearning"></a>
+##### `machineLearning`<sup>Optional</sup> <a name="machineLearning" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.machineLearning"></a>
 
 ```typescript
 public readonly machineLearning: IResolvable | AzurermProviderFeaturesMachineLearning[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning">AzurermProviderFeaturesMachineLearning</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning">AzurermProviderFeaturesMachineLearning</a>[]
 
 machine_learning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#machine_learning AzurermProvider#machine_learning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#machine_learning AzurermProvider#machine_learning}
 
 ---
 
-##### `managedDisk`<sup>Optional</sup> <a name="managedDisk" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.managedDisk"></a>
+##### `managedDisk`<sup>Optional</sup> <a name="managedDisk" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.managedDisk"></a>
 
 ```typescript
 public readonly managedDisk: IResolvable | AzurermProviderFeaturesManagedDisk[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk">AzurermProviderFeaturesManagedDisk</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk">AzurermProviderFeaturesManagedDisk</a>[]
 
 managed_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#managed_disk AzurermProvider#managed_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#managed_disk AzurermProvider#managed_disk}
 
 ---
 
-##### `netapp`<sup>Optional</sup> <a name="netapp" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.netapp"></a>
+##### `netapp`<sup>Optional</sup> <a name="netapp" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.netapp"></a>
 
 ```typescript
 public readonly netapp: IResolvable | AzurermProviderFeaturesNetapp[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesNetapp">AzurermProviderFeaturesNetapp</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp">AzurermProviderFeaturesNetapp</a>[]
 
 netapp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#netapp AzurermProvider#netapp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#netapp AzurermProvider#netapp}
 
 ---
 
-##### `postgresqlFlexibleServer`<sup>Optional</sup> <a name="postgresqlFlexibleServer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.postgresqlFlexibleServer"></a>
+##### `postgresqlFlexibleServer`<sup>Optional</sup> <a name="postgresqlFlexibleServer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.postgresqlFlexibleServer"></a>
 
 ```typescript
 public readonly postgresqlFlexibleServer: IResolvable | AzurermProviderFeaturesPostgresqlFlexibleServer[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer">AzurermProviderFeaturesPostgresqlFlexibleServer</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer">AzurermProviderFeaturesPostgresqlFlexibleServer</a>[]
 
 postgresql_flexible_server block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#postgresql_flexible_server AzurermProvider#postgresql_flexible_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#postgresql_flexible_server AzurermProvider#postgresql_flexible_server}
 
 ---
 
-##### `recoveryService`<sup>Optional</sup> <a name="recoveryService" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.recoveryService"></a>
+##### `recoveryService`<sup>Optional</sup> <a name="recoveryService" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.recoveryService"></a>
 
 ```typescript
 public readonly recoveryService: IResolvable | AzurermProviderFeaturesRecoveryService[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService">AzurermProviderFeaturesRecoveryService</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService">AzurermProviderFeaturesRecoveryService</a>[]
 
 recovery_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#recovery_service AzurermProvider#recovery_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#recovery_service AzurermProvider#recovery_service}
 
 ---
 
-##### `recoveryServicesVaults`<sup>Optional</sup> <a name="recoveryServicesVaults" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.recoveryServicesVaults"></a>
+##### `recoveryServicesVaults`<sup>Optional</sup> <a name="recoveryServicesVaults" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.recoveryServicesVaults"></a>
 
 ```typescript
 public readonly recoveryServicesVaults: IResolvable | AzurermProviderFeaturesRecoveryServicesVaults[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults">AzurermProviderFeaturesRecoveryServicesVaults</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults">AzurermProviderFeaturesRecoveryServicesVaults</a>[]
 
 recovery_services_vaults block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#recovery_services_vaults AzurermProvider#recovery_services_vaults}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#recovery_services_vaults AzurermProvider#recovery_services_vaults}
 
 ---
 
-##### `resourceGroup`<sup>Optional</sup> <a name="resourceGroup" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.resourceGroup"></a>
+##### `resourceGroup`<sup>Optional</sup> <a name="resourceGroup" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.resourceGroup"></a>
 
 ```typescript
 public readonly resourceGroup: IResolvable | AzurermProviderFeaturesResourceGroup[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup">AzurermProviderFeaturesResourceGroup</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup">AzurermProviderFeaturesResourceGroup</a>[]
 
 resource_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#resource_group AzurermProvider#resource_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#resource_group AzurermProvider#resource_group}
 
 ---
 
-##### `storage`<sup>Optional</sup> <a name="storage" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.storage"></a>
+##### `storage`<sup>Optional</sup> <a name="storage" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.storage"></a>
 
 ```typescript
 public readonly storage: IResolvable | AzurermProviderFeaturesStorage[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesStorage">AzurermProviderFeaturesStorage</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesStorage">AzurermProviderFeaturesStorage</a>[]
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#storage AzurermProvider#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#storage AzurermProvider#storage}
 
 ---
 
-##### `subscription`<sup>Optional</sup> <a name="subscription" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.subscription"></a>
+##### `subscription`<sup>Optional</sup> <a name="subscription" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.subscription"></a>
 
 ```typescript
 public readonly subscription: IResolvable | AzurermProviderFeaturesSubscription[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesSubscription">AzurermProviderFeaturesSubscription</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesSubscription">AzurermProviderFeaturesSubscription</a>[]
 
 subscription block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#subscription AzurermProvider#subscription}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#subscription AzurermProvider#subscription}
 
 ---
 
-##### `templateDeployment`<sup>Optional</sup> <a name="templateDeployment" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.templateDeployment"></a>
+##### `templateDeployment`<sup>Optional</sup> <a name="templateDeployment" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.templateDeployment"></a>
 
 ```typescript
 public readonly templateDeployment: IResolvable | AzurermProviderFeaturesTemplateDeployment[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment">AzurermProviderFeaturesTemplateDeployment</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment">AzurermProviderFeaturesTemplateDeployment</a>[]
 
 template_deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#template_deployment AzurermProvider#template_deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#template_deployment AzurermProvider#template_deployment}
 
 ---
 
-##### `virtualMachine`<sup>Optional</sup> <a name="virtualMachine" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.virtualMachine"></a>
+##### `virtualMachine`<sup>Optional</sup> <a name="virtualMachine" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.virtualMachine"></a>
 
 ```typescript
 public readonly virtualMachine: IResolvable | AzurermProviderFeaturesVirtualMachine[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine">AzurermProviderFeaturesVirtualMachine</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine">AzurermProviderFeaturesVirtualMachine</a>[]
 
 virtual_machine block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#virtual_machine AzurermProvider#virtual_machine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#virtual_machine AzurermProvider#virtual_machine}
 
 ---
 
-##### `virtualMachineScaleSet`<sup>Optional</sup> <a name="virtualMachineScaleSet" id="@cdktf/provider-azurerm.provider.AzurermProviderFeatures.property.virtualMachineScaleSet"></a>
+##### `virtualMachineScaleSet`<sup>Optional</sup> <a name="virtualMachineScaleSet" id="@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.virtualMachineScaleSet"></a>
 
 ```typescript
 public readonly virtualMachineScaleSet: IResolvable | AzurermProviderFeaturesVirtualMachineScaleSet[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet">AzurermProviderFeaturesVirtualMachineScaleSet</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet">AzurermProviderFeaturesVirtualMachineScaleSet</a>[]
 
 virtual_machine_scale_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#virtual_machine_scale_set AzurermProvider#virtual_machine_scale_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#virtual_machine_scale_set AzurermProvider#virtual_machine_scale_set}
 
 ---
 
-### AzurermProviderFeaturesApiManagement <a name="AzurermProviderFeaturesApiManagement" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesApiManagement"></a>
+### AzurermProviderFeaturesApiManagement <a name="AzurermProviderFeaturesApiManagement" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesApiManagement.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesApiManagement: provider.AzurermProviderFeaturesApiManagement = { ... }
 ```
@@ -2111,12 +2111,12 @@ const azurermProviderFeaturesApiManagement: provider.AzurermProviderFeaturesApiM
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesApiManagement.property.purgeSoftDeleteOnDestroy">purgeSoftDeleteOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesApiManagement.property.recoverSoftDeleted">recoverSoftDeleted</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement.property.purgeSoftDeleteOnDestroy">purgeSoftDeleteOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement.property.recoverSoftDeleted">recoverSoftDeleted</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}. |
 
 ---
 
-##### `purgeSoftDeleteOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeleteOnDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesApiManagement.property.purgeSoftDeleteOnDestroy"></a>
+##### `purgeSoftDeleteOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeleteOnDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement.property.purgeSoftDeleteOnDestroy"></a>
 
 ```typescript
 public readonly purgeSoftDeleteOnDestroy: boolean | IResolvable;
@@ -2124,11 +2124,11 @@ public readonly purgeSoftDeleteOnDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}.
 
 ---
 
-##### `recoverSoftDeleted`<sup>Optional</sup> <a name="recoverSoftDeleted" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesApiManagement.property.recoverSoftDeleted"></a>
+##### `recoverSoftDeleted`<sup>Optional</sup> <a name="recoverSoftDeleted" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement.property.recoverSoftDeleted"></a>
 
 ```typescript
 public readonly recoverSoftDeleted: boolean | IResolvable;
@@ -2136,16 +2136,16 @@ public readonly recoverSoftDeleted: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}.
 
 ---
 
-### AzurermProviderFeaturesAppConfiguration <a name="AzurermProviderFeaturesAppConfiguration" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration"></a>
+### AzurermProviderFeaturesAppConfiguration <a name="AzurermProviderFeaturesAppConfiguration" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesAppConfiguration: provider.AzurermProviderFeaturesAppConfiguration = { ... }
 ```
@@ -2154,12 +2154,12 @@ const azurermProviderFeaturesAppConfiguration: provider.AzurermProviderFeaturesA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration.property.purgeSoftDeleteOnDestroy">purgeSoftDeleteOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration.property.recoverSoftDeleted">recoverSoftDeleted</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration.property.purgeSoftDeleteOnDestroy">purgeSoftDeleteOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration.property.recoverSoftDeleted">recoverSoftDeleted</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}. |
 
 ---
 
-##### `purgeSoftDeleteOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeleteOnDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration.property.purgeSoftDeleteOnDestroy"></a>
+##### `purgeSoftDeleteOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeleteOnDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration.property.purgeSoftDeleteOnDestroy"></a>
 
 ```typescript
 public readonly purgeSoftDeleteOnDestroy: boolean | IResolvable;
@@ -2167,11 +2167,11 @@ public readonly purgeSoftDeleteOnDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}.
 
 ---
 
-##### `recoverSoftDeleted`<sup>Optional</sup> <a name="recoverSoftDeleted" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration.property.recoverSoftDeleted"></a>
+##### `recoverSoftDeleted`<sup>Optional</sup> <a name="recoverSoftDeleted" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration.property.recoverSoftDeleted"></a>
 
 ```typescript
 public readonly recoverSoftDeleted: boolean | IResolvable;
@@ -2179,16 +2179,16 @@ public readonly recoverSoftDeleted: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}.
 
 ---
 
-### AzurermProviderFeaturesApplicationInsights <a name="AzurermProviderFeaturesApplicationInsights" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights"></a>
+### AzurermProviderFeaturesApplicationInsights <a name="AzurermProviderFeaturesApplicationInsights" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesApplicationInsights: provider.AzurermProviderFeaturesApplicationInsights = { ... }
 ```
@@ -2197,11 +2197,11 @@ const azurermProviderFeaturesApplicationInsights: provider.AzurermProviderFeatur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights.property.disableGeneratedRule">disableGeneratedRule</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#disable_generated_rule AzurermProvider#disable_generated_rule}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights.property.disableGeneratedRule">disableGeneratedRule</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#disable_generated_rule AzurermProvider#disable_generated_rule}. |
 
 ---
 
-##### `disableGeneratedRule`<sup>Optional</sup> <a name="disableGeneratedRule" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights.property.disableGeneratedRule"></a>
+##### `disableGeneratedRule`<sup>Optional</sup> <a name="disableGeneratedRule" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights.property.disableGeneratedRule"></a>
 
 ```typescript
 public readonly disableGeneratedRule: boolean | IResolvable;
@@ -2209,16 +2209,16 @@ public readonly disableGeneratedRule: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#disable_generated_rule AzurermProvider#disable_generated_rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#disable_generated_rule AzurermProvider#disable_generated_rule}.
 
 ---
 
-### AzurermProviderFeaturesCognitiveAccount <a name="AzurermProviderFeaturesCognitiveAccount" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount"></a>
+### AzurermProviderFeaturesCognitiveAccount <a name="AzurermProviderFeaturesCognitiveAccount" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesCognitiveAccount: provider.AzurermProviderFeaturesCognitiveAccount = { ... }
 ```
@@ -2227,11 +2227,11 @@ const azurermProviderFeaturesCognitiveAccount: provider.AzurermProviderFeaturesC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount.property.purgeSoftDeleteOnDestroy">purgeSoftDeleteOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount.property.purgeSoftDeleteOnDestroy">purgeSoftDeleteOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}. |
 
 ---
 
-##### `purgeSoftDeleteOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeleteOnDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount.property.purgeSoftDeleteOnDestroy"></a>
+##### `purgeSoftDeleteOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeleteOnDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount.property.purgeSoftDeleteOnDestroy"></a>
 
 ```typescript
 public readonly purgeSoftDeleteOnDestroy: boolean | IResolvable;
@@ -2239,16 +2239,16 @@ public readonly purgeSoftDeleteOnDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}.
 
 ---
 
-### AzurermProviderFeaturesDatabricksWorkspace <a name="AzurermProviderFeaturesDatabricksWorkspace" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace"></a>
+### AzurermProviderFeaturesDatabricksWorkspace <a name="AzurermProviderFeaturesDatabricksWorkspace" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesDatabricksWorkspace: provider.AzurermProviderFeaturesDatabricksWorkspace = { ... }
 ```
@@ -2257,11 +2257,11 @@ const azurermProviderFeaturesDatabricksWorkspace: provider.AzurermProviderFeatur
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace.property.forceDelete">forceDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled, the managed resource group that contains the Unity Catalog data will be forcibly deleted when the workspace is destroyed, regardless of contents. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace.property.forceDelete">forceDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled, the managed resource group that contains the Unity Catalog data will be forcibly deleted when the workspace is destroyed, regardless of contents. |
 
 ---
 
-##### `forceDelete`<sup>Optional</sup> <a name="forceDelete" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace.property.forceDelete"></a>
+##### `forceDelete`<sup>Optional</sup> <a name="forceDelete" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace.property.forceDelete"></a>
 
 ```typescript
 public readonly forceDelete: boolean | IResolvable;
@@ -2271,16 +2271,16 @@ public readonly forceDelete: boolean | IResolvable;
 
 When enabled, the managed resource group that contains the Unity Catalog data will be forcibly deleted when the workspace is destroyed, regardless of contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#force_delete AzurermProvider#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#force_delete AzurermProvider#force_delete}
 
 ---
 
-### AzurermProviderFeaturesKeyVault <a name="AzurermProviderFeaturesKeyVault" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault"></a>
+### AzurermProviderFeaturesKeyVault <a name="AzurermProviderFeaturesKeyVault" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesKeyVault: provider.AzurermProviderFeaturesKeyVault = { ... }
 ```
@@ -2289,21 +2289,21 @@ const azurermProviderFeaturesKeyVault: provider.AzurermProviderFeaturesKeyVault 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedCertificatesOnDestroy">purgeSoftDeletedCertificatesOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_certificate` resources will be permanently deleted (e.g purged), when destroyed. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy">purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module_key` resources will be permanently deleted (e.g purged), when destroyed. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedHardwareSecurityModulesOnDestroy">purgeSoftDeletedHardwareSecurityModulesOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module` resources will be permanently deleted (e.g purged), when destroyed. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedKeysOnDestroy">purgeSoftDeletedKeysOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_key` resources will be permanently deleted (e.g purged), when destroyed. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedSecretsOnDestroy">purgeSoftDeletedSecretsOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_secret` resources will be permanently deleted (e.g purged), when destroyed. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeleteOnDestroy">purgeSoftDeleteOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault` resources will be permanently deleted (e.g purged), when destroyed. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedCertificates">recoverSoftDeletedCertificates</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_certificate` resources will be restored, instead of creating new ones. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedHardwareSecurityModuleKeys">recoverSoftDeletedHardwareSecurityModuleKeys</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module_key` resources will be restored, instead of creating new ones. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedKeys">recoverSoftDeletedKeys</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_key` resources will be restored, instead of creating new ones. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedKeyVaults">recoverSoftDeletedKeyVaults</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault` resources will be restored, instead of creating new ones. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedSecrets">recoverSoftDeletedSecrets</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_secret` resources will be restored, instead of creating new ones. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedCertificatesOnDestroy">purgeSoftDeletedCertificatesOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_certificate` resources will be permanently deleted (e.g purged), when destroyed. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy">purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module_key` resources will be permanently deleted (e.g purged), when destroyed. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedHardwareSecurityModulesOnDestroy">purgeSoftDeletedHardwareSecurityModulesOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module` resources will be permanently deleted (e.g purged), when destroyed. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedKeysOnDestroy">purgeSoftDeletedKeysOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_key` resources will be permanently deleted (e.g purged), when destroyed. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedSecretsOnDestroy">purgeSoftDeletedSecretsOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_secret` resources will be permanently deleted (e.g purged), when destroyed. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeleteOnDestroy">purgeSoftDeleteOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault` resources will be permanently deleted (e.g purged), when destroyed. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedCertificates">recoverSoftDeletedCertificates</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_certificate` resources will be restored, instead of creating new ones. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedHardwareSecurityModuleKeys">recoverSoftDeletedHardwareSecurityModuleKeys</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module_key` resources will be restored, instead of creating new ones. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedKeys">recoverSoftDeletedKeys</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_key` resources will be restored, instead of creating new ones. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedKeyVaults">recoverSoftDeletedKeyVaults</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault` resources will be restored, instead of creating new ones. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedSecrets">recoverSoftDeletedSecrets</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_secret` resources will be restored, instead of creating new ones. |
 
 ---
 
-##### `purgeSoftDeletedCertificatesOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeletedCertificatesOnDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedCertificatesOnDestroy"></a>
+##### `purgeSoftDeletedCertificatesOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeletedCertificatesOnDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedCertificatesOnDestroy"></a>
 
 ```typescript
 public readonly purgeSoftDeletedCertificatesOnDestroy: boolean | IResolvable;
@@ -2313,11 +2313,11 @@ public readonly purgeSoftDeletedCertificatesOnDestroy: boolean | IResolvable;
 
 When enabled soft-deleted `azurerm_key_vault_certificate` resources will be permanently deleted (e.g purged), when destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_soft_deleted_certificates_on_destroy AzurermProvider#purge_soft_deleted_certificates_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_soft_deleted_certificates_on_destroy AzurermProvider#purge_soft_deleted_certificates_on_destroy}
 
 ---
 
-##### `purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy"></a>
+##### `purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy"></a>
 
 ```typescript
 public readonly purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy: boolean | IResolvable;
@@ -2327,11 +2327,11 @@ public readonly purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy: boolean | I
 
 When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module_key` resources will be permanently deleted (e.g purged), when destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_soft_deleted_hardware_security_module_keys_on_destroy AzurermProvider#purge_soft_deleted_hardware_security_module_keys_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_soft_deleted_hardware_security_module_keys_on_destroy AzurermProvider#purge_soft_deleted_hardware_security_module_keys_on_destroy}
 
 ---
 
-##### `purgeSoftDeletedHardwareSecurityModulesOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeletedHardwareSecurityModulesOnDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedHardwareSecurityModulesOnDestroy"></a>
+##### `purgeSoftDeletedHardwareSecurityModulesOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeletedHardwareSecurityModulesOnDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedHardwareSecurityModulesOnDestroy"></a>
 
 ```typescript
 public readonly purgeSoftDeletedHardwareSecurityModulesOnDestroy: boolean | IResolvable;
@@ -2341,11 +2341,11 @@ public readonly purgeSoftDeletedHardwareSecurityModulesOnDestroy: boolean | IRes
 
 When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module` resources will be permanently deleted (e.g purged), when destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_soft_deleted_hardware_security_modules_on_destroy AzurermProvider#purge_soft_deleted_hardware_security_modules_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_soft_deleted_hardware_security_modules_on_destroy AzurermProvider#purge_soft_deleted_hardware_security_modules_on_destroy}
 
 ---
 
-##### `purgeSoftDeletedKeysOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeletedKeysOnDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedKeysOnDestroy"></a>
+##### `purgeSoftDeletedKeysOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeletedKeysOnDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedKeysOnDestroy"></a>
 
 ```typescript
 public readonly purgeSoftDeletedKeysOnDestroy: boolean | IResolvable;
@@ -2355,11 +2355,11 @@ public readonly purgeSoftDeletedKeysOnDestroy: boolean | IResolvable;
 
 When enabled soft-deleted `azurerm_key_vault_key` resources will be permanently deleted (e.g purged), when destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_soft_deleted_keys_on_destroy AzurermProvider#purge_soft_deleted_keys_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_soft_deleted_keys_on_destroy AzurermProvider#purge_soft_deleted_keys_on_destroy}
 
 ---
 
-##### `purgeSoftDeletedSecretsOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeletedSecretsOnDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedSecretsOnDestroy"></a>
+##### `purgeSoftDeletedSecretsOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeletedSecretsOnDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedSecretsOnDestroy"></a>
 
 ```typescript
 public readonly purgeSoftDeletedSecretsOnDestroy: boolean | IResolvable;
@@ -2369,11 +2369,11 @@ public readonly purgeSoftDeletedSecretsOnDestroy: boolean | IResolvable;
 
 When enabled soft-deleted `azurerm_key_vault_secret` resources will be permanently deleted (e.g purged), when destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_soft_deleted_secrets_on_destroy AzurermProvider#purge_soft_deleted_secrets_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_soft_deleted_secrets_on_destroy AzurermProvider#purge_soft_deleted_secrets_on_destroy}
 
 ---
 
-##### `purgeSoftDeleteOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeleteOnDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeleteOnDestroy"></a>
+##### `purgeSoftDeleteOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeleteOnDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeleteOnDestroy"></a>
 
 ```typescript
 public readonly purgeSoftDeleteOnDestroy: boolean | IResolvable;
@@ -2383,11 +2383,11 @@ public readonly purgeSoftDeleteOnDestroy: boolean | IResolvable;
 
 When enabled soft-deleted `azurerm_key_vault` resources will be permanently deleted (e.g purged), when destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}
 
 ---
 
-##### `recoverSoftDeletedCertificates`<sup>Optional</sup> <a name="recoverSoftDeletedCertificates" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedCertificates"></a>
+##### `recoverSoftDeletedCertificates`<sup>Optional</sup> <a name="recoverSoftDeletedCertificates" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedCertificates"></a>
 
 ```typescript
 public readonly recoverSoftDeletedCertificates: boolean | IResolvable;
@@ -2397,11 +2397,11 @@ public readonly recoverSoftDeletedCertificates: boolean | IResolvable;
 
 When enabled soft-deleted `azurerm_key_vault_certificate` resources will be restored, instead of creating new ones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#recover_soft_deleted_certificates AzurermProvider#recover_soft_deleted_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#recover_soft_deleted_certificates AzurermProvider#recover_soft_deleted_certificates}
 
 ---
 
-##### `recoverSoftDeletedHardwareSecurityModuleKeys`<sup>Optional</sup> <a name="recoverSoftDeletedHardwareSecurityModuleKeys" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedHardwareSecurityModuleKeys"></a>
+##### `recoverSoftDeletedHardwareSecurityModuleKeys`<sup>Optional</sup> <a name="recoverSoftDeletedHardwareSecurityModuleKeys" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedHardwareSecurityModuleKeys"></a>
 
 ```typescript
 public readonly recoverSoftDeletedHardwareSecurityModuleKeys: boolean | IResolvable;
@@ -2411,11 +2411,11 @@ public readonly recoverSoftDeletedHardwareSecurityModuleKeys: boolean | IResolva
 
 When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module_key` resources will be restored, instead of creating new ones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#recover_soft_deleted_hardware_security_module_keys AzurermProvider#recover_soft_deleted_hardware_security_module_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#recover_soft_deleted_hardware_security_module_keys AzurermProvider#recover_soft_deleted_hardware_security_module_keys}
 
 ---
 
-##### `recoverSoftDeletedKeys`<sup>Optional</sup> <a name="recoverSoftDeletedKeys" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedKeys"></a>
+##### `recoverSoftDeletedKeys`<sup>Optional</sup> <a name="recoverSoftDeletedKeys" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedKeys"></a>
 
 ```typescript
 public readonly recoverSoftDeletedKeys: boolean | IResolvable;
@@ -2425,11 +2425,11 @@ public readonly recoverSoftDeletedKeys: boolean | IResolvable;
 
 When enabled soft-deleted `azurerm_key_vault_key` resources will be restored, instead of creating new ones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#recover_soft_deleted_keys AzurermProvider#recover_soft_deleted_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#recover_soft_deleted_keys AzurermProvider#recover_soft_deleted_keys}
 
 ---
 
-##### `recoverSoftDeletedKeyVaults`<sup>Optional</sup> <a name="recoverSoftDeletedKeyVaults" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedKeyVaults"></a>
+##### `recoverSoftDeletedKeyVaults`<sup>Optional</sup> <a name="recoverSoftDeletedKeyVaults" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedKeyVaults"></a>
 
 ```typescript
 public readonly recoverSoftDeletedKeyVaults: boolean | IResolvable;
@@ -2439,11 +2439,11 @@ public readonly recoverSoftDeletedKeyVaults: boolean | IResolvable;
 
 When enabled soft-deleted `azurerm_key_vault` resources will be restored, instead of creating new ones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#recover_soft_deleted_key_vaults AzurermProvider#recover_soft_deleted_key_vaults}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#recover_soft_deleted_key_vaults AzurermProvider#recover_soft_deleted_key_vaults}
 
 ---
 
-##### `recoverSoftDeletedSecrets`<sup>Optional</sup> <a name="recoverSoftDeletedSecrets" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedSecrets"></a>
+##### `recoverSoftDeletedSecrets`<sup>Optional</sup> <a name="recoverSoftDeletedSecrets" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedSecrets"></a>
 
 ```typescript
 public readonly recoverSoftDeletedSecrets: boolean | IResolvable;
@@ -2453,16 +2453,16 @@ public readonly recoverSoftDeletedSecrets: boolean | IResolvable;
 
 When enabled soft-deleted `azurerm_key_vault_secret` resources will be restored, instead of creating new ones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#recover_soft_deleted_secrets AzurermProvider#recover_soft_deleted_secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#recover_soft_deleted_secrets AzurermProvider#recover_soft_deleted_secrets}
 
 ---
 
-### AzurermProviderFeaturesLogAnalyticsWorkspace <a name="AzurermProviderFeaturesLogAnalyticsWorkspace" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace"></a>
+### AzurermProviderFeaturesLogAnalyticsWorkspace <a name="AzurermProviderFeaturesLogAnalyticsWorkspace" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesLogAnalyticsWorkspace: provider.AzurermProviderFeaturesLogAnalyticsWorkspace = { ... }
 ```
@@ -2471,11 +2471,11 @@ const azurermProviderFeaturesLogAnalyticsWorkspace: provider.AzurermProviderFeat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace.property.permanentlyDeleteOnDestroy">permanentlyDeleteOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#permanently_delete_on_destroy AzurermProvider#permanently_delete_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace.property.permanentlyDeleteOnDestroy">permanentlyDeleteOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#permanently_delete_on_destroy AzurermProvider#permanently_delete_on_destroy}. |
 
 ---
 
-##### `permanentlyDeleteOnDestroy`<sup>Optional</sup> <a name="permanentlyDeleteOnDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace.property.permanentlyDeleteOnDestroy"></a>
+##### `permanentlyDeleteOnDestroy`<sup>Optional</sup> <a name="permanentlyDeleteOnDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace.property.permanentlyDeleteOnDestroy"></a>
 
 ```typescript
 public readonly permanentlyDeleteOnDestroy: boolean | IResolvable;
@@ -2483,16 +2483,16 @@ public readonly permanentlyDeleteOnDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#permanently_delete_on_destroy AzurermProvider#permanently_delete_on_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#permanently_delete_on_destroy AzurermProvider#permanently_delete_on_destroy}.
 
 ---
 
-### AzurermProviderFeaturesMachineLearning <a name="AzurermProviderFeaturesMachineLearning" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning"></a>
+### AzurermProviderFeaturesMachineLearning <a name="AzurermProviderFeaturesMachineLearning" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesMachineLearning: provider.AzurermProviderFeaturesMachineLearning = { ... }
 ```
@@ -2501,11 +2501,11 @@ const azurermProviderFeaturesMachineLearning: provider.AzurermProviderFeaturesMa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning.property.purgeSoftDeletedWorkspaceOnDestroy">purgeSoftDeletedWorkspaceOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_soft_deleted_workspace_on_destroy AzurermProvider#purge_soft_deleted_workspace_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning.property.purgeSoftDeletedWorkspaceOnDestroy">purgeSoftDeletedWorkspaceOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_soft_deleted_workspace_on_destroy AzurermProvider#purge_soft_deleted_workspace_on_destroy}. |
 
 ---
 
-##### `purgeSoftDeletedWorkspaceOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeletedWorkspaceOnDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning.property.purgeSoftDeletedWorkspaceOnDestroy"></a>
+##### `purgeSoftDeletedWorkspaceOnDestroy`<sup>Optional</sup> <a name="purgeSoftDeletedWorkspaceOnDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning.property.purgeSoftDeletedWorkspaceOnDestroy"></a>
 
 ```typescript
 public readonly purgeSoftDeletedWorkspaceOnDestroy: boolean | IResolvable;
@@ -2513,16 +2513,16 @@ public readonly purgeSoftDeletedWorkspaceOnDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_soft_deleted_workspace_on_destroy AzurermProvider#purge_soft_deleted_workspace_on_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_soft_deleted_workspace_on_destroy AzurermProvider#purge_soft_deleted_workspace_on_destroy}.
 
 ---
 
-### AzurermProviderFeaturesManagedDisk <a name="AzurermProviderFeaturesManagedDisk" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk"></a>
+### AzurermProviderFeaturesManagedDisk <a name="AzurermProviderFeaturesManagedDisk" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesManagedDisk: provider.AzurermProviderFeaturesManagedDisk = { ... }
 ```
@@ -2531,11 +2531,11 @@ const azurermProviderFeaturesManagedDisk: provider.AzurermProviderFeaturesManage
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk.property.expandWithoutDowntime">expandWithoutDowntime</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#expand_without_downtime AzurermProvider#expand_without_downtime}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk.property.expandWithoutDowntime">expandWithoutDowntime</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#expand_without_downtime AzurermProvider#expand_without_downtime}. |
 
 ---
 
-##### `expandWithoutDowntime`<sup>Optional</sup> <a name="expandWithoutDowntime" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk.property.expandWithoutDowntime"></a>
+##### `expandWithoutDowntime`<sup>Optional</sup> <a name="expandWithoutDowntime" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk.property.expandWithoutDowntime"></a>
 
 ```typescript
 public readonly expandWithoutDowntime: boolean | IResolvable;
@@ -2543,16 +2543,16 @@ public readonly expandWithoutDowntime: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#expand_without_downtime AzurermProvider#expand_without_downtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#expand_without_downtime AzurermProvider#expand_without_downtime}.
 
 ---
 
-### AzurermProviderFeaturesNetapp <a name="AzurermProviderFeaturesNetapp" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesNetapp"></a>
+### AzurermProviderFeaturesNetapp <a name="AzurermProviderFeaturesNetapp" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesNetapp.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesNetapp: provider.AzurermProviderFeaturesNetapp = { ... }
 ```
@@ -2561,12 +2561,12 @@ const azurermProviderFeaturesNetapp: provider.AzurermProviderFeaturesNetapp = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesNetapp.property.deleteBackupsOnBackupVaultDestroy">deleteBackupsOnBackupVaultDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled, backups will be deleted when the `azurerm_netapp_backup_vault` resource is destroyed. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesNetapp.property.preventVolumeDestruction">preventVolumeDestruction</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled, the volume will not be destroyed, safeguarding from severe data loss. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp.property.deleteBackupsOnBackupVaultDestroy">deleteBackupsOnBackupVaultDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled, backups will be deleted when the `azurerm_netapp_backup_vault` resource is destroyed. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp.property.preventVolumeDestruction">preventVolumeDestruction</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled, the volume will not be destroyed, safeguarding from severe data loss. |
 
 ---
 
-##### `deleteBackupsOnBackupVaultDestroy`<sup>Optional</sup> <a name="deleteBackupsOnBackupVaultDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesNetapp.property.deleteBackupsOnBackupVaultDestroy"></a>
+##### `deleteBackupsOnBackupVaultDestroy`<sup>Optional</sup> <a name="deleteBackupsOnBackupVaultDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp.property.deleteBackupsOnBackupVaultDestroy"></a>
 
 ```typescript
 public readonly deleteBackupsOnBackupVaultDestroy: boolean | IResolvable;
@@ -2576,11 +2576,11 @@ public readonly deleteBackupsOnBackupVaultDestroy: boolean | IResolvable;
 
 When enabled, backups will be deleted when the `azurerm_netapp_backup_vault` resource is destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#delete_backups_on_backup_vault_destroy AzurermProvider#delete_backups_on_backup_vault_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#delete_backups_on_backup_vault_destroy AzurermProvider#delete_backups_on_backup_vault_destroy}
 
 ---
 
-##### `preventVolumeDestruction`<sup>Optional</sup> <a name="preventVolumeDestruction" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesNetapp.property.preventVolumeDestruction"></a>
+##### `preventVolumeDestruction`<sup>Optional</sup> <a name="preventVolumeDestruction" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp.property.preventVolumeDestruction"></a>
 
 ```typescript
 public readonly preventVolumeDestruction: boolean | IResolvable;
@@ -2590,16 +2590,16 @@ public readonly preventVolumeDestruction: boolean | IResolvable;
 
 When enabled, the volume will not be destroyed, safeguarding from severe data loss.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#prevent_volume_destruction AzurermProvider#prevent_volume_destruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#prevent_volume_destruction AzurermProvider#prevent_volume_destruction}
 
 ---
 
-### AzurermProviderFeaturesPostgresqlFlexibleServer <a name="AzurermProviderFeaturesPostgresqlFlexibleServer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer"></a>
+### AzurermProviderFeaturesPostgresqlFlexibleServer <a name="AzurermProviderFeaturesPostgresqlFlexibleServer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesPostgresqlFlexibleServer: provider.AzurermProviderFeaturesPostgresqlFlexibleServer = { ... }
 ```
@@ -2608,11 +2608,11 @@ const azurermProviderFeaturesPostgresqlFlexibleServer: provider.AzurermProviderF
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer.property.restartServerOnConfigurationValueChange">restartServerOnConfigurationValueChange</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#restart_server_on_configuration_value_change AzurermProvider#restart_server_on_configuration_value_change}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer.property.restartServerOnConfigurationValueChange">restartServerOnConfigurationValueChange</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#restart_server_on_configuration_value_change AzurermProvider#restart_server_on_configuration_value_change}. |
 
 ---
 
-##### `restartServerOnConfigurationValueChange`<sup>Optional</sup> <a name="restartServerOnConfigurationValueChange" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer.property.restartServerOnConfigurationValueChange"></a>
+##### `restartServerOnConfigurationValueChange`<sup>Optional</sup> <a name="restartServerOnConfigurationValueChange" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer.property.restartServerOnConfigurationValueChange"></a>
 
 ```typescript
 public readonly restartServerOnConfigurationValueChange: boolean | IResolvable;
@@ -2620,16 +2620,16 @@ public readonly restartServerOnConfigurationValueChange: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#restart_server_on_configuration_value_change AzurermProvider#restart_server_on_configuration_value_change}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#restart_server_on_configuration_value_change AzurermProvider#restart_server_on_configuration_value_change}.
 
 ---
 
-### AzurermProviderFeaturesRecoveryService <a name="AzurermProviderFeaturesRecoveryService" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService"></a>
+### AzurermProviderFeaturesRecoveryService <a name="AzurermProviderFeaturesRecoveryService" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesRecoveryService: provider.AzurermProviderFeaturesRecoveryService = { ... }
 ```
@@ -2638,13 +2638,13 @@ const azurermProviderFeaturesRecoveryService: provider.AzurermProviderFeaturesRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.purgeProtectedItemsFromVaultOnDestroy">purgeProtectedItemsFromVaultOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_protected_items_from_vault_on_destroy AzurermProvider#purge_protected_items_from_vault_on_destroy}. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.vmBackupStopProtectionAndRetainDataOnDestroy">vmBackupStopProtectionAndRetainDataOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#vm_backup_stop_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_stop_protection_and_retain_data_on_destroy}. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.vmBackupSuspendProtectionAndRetainDataOnDestroy">vmBackupSuspendProtectionAndRetainDataOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#vm_backup_suspend_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_suspend_protection_and_retain_data_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.purgeProtectedItemsFromVaultOnDestroy">purgeProtectedItemsFromVaultOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_protected_items_from_vault_on_destroy AzurermProvider#purge_protected_items_from_vault_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.vmBackupStopProtectionAndRetainDataOnDestroy">vmBackupStopProtectionAndRetainDataOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#vm_backup_stop_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_stop_protection_and_retain_data_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.vmBackupSuspendProtectionAndRetainDataOnDestroy">vmBackupSuspendProtectionAndRetainDataOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#vm_backup_suspend_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_suspend_protection_and_retain_data_on_destroy}. |
 
 ---
 
-##### `purgeProtectedItemsFromVaultOnDestroy`<sup>Optional</sup> <a name="purgeProtectedItemsFromVaultOnDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.purgeProtectedItemsFromVaultOnDestroy"></a>
+##### `purgeProtectedItemsFromVaultOnDestroy`<sup>Optional</sup> <a name="purgeProtectedItemsFromVaultOnDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.purgeProtectedItemsFromVaultOnDestroy"></a>
 
 ```typescript
 public readonly purgeProtectedItemsFromVaultOnDestroy: boolean | IResolvable;
@@ -2652,11 +2652,11 @@ public readonly purgeProtectedItemsFromVaultOnDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#purge_protected_items_from_vault_on_destroy AzurermProvider#purge_protected_items_from_vault_on_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#purge_protected_items_from_vault_on_destroy AzurermProvider#purge_protected_items_from_vault_on_destroy}.
 
 ---
 
-##### `vmBackupStopProtectionAndRetainDataOnDestroy`<sup>Optional</sup> <a name="vmBackupStopProtectionAndRetainDataOnDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.vmBackupStopProtectionAndRetainDataOnDestroy"></a>
+##### `vmBackupStopProtectionAndRetainDataOnDestroy`<sup>Optional</sup> <a name="vmBackupStopProtectionAndRetainDataOnDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.vmBackupStopProtectionAndRetainDataOnDestroy"></a>
 
 ```typescript
 public readonly vmBackupStopProtectionAndRetainDataOnDestroy: boolean | IResolvable;
@@ -2664,11 +2664,11 @@ public readonly vmBackupStopProtectionAndRetainDataOnDestroy: boolean | IResolva
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#vm_backup_stop_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_stop_protection_and_retain_data_on_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#vm_backup_stop_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_stop_protection_and_retain_data_on_destroy}.
 
 ---
 
-##### `vmBackupSuspendProtectionAndRetainDataOnDestroy`<sup>Optional</sup> <a name="vmBackupSuspendProtectionAndRetainDataOnDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.vmBackupSuspendProtectionAndRetainDataOnDestroy"></a>
+##### `vmBackupSuspendProtectionAndRetainDataOnDestroy`<sup>Optional</sup> <a name="vmBackupSuspendProtectionAndRetainDataOnDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.vmBackupSuspendProtectionAndRetainDataOnDestroy"></a>
 
 ```typescript
 public readonly vmBackupSuspendProtectionAndRetainDataOnDestroy: boolean | IResolvable;
@@ -2676,16 +2676,16 @@ public readonly vmBackupSuspendProtectionAndRetainDataOnDestroy: boolean | IReso
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#vm_backup_suspend_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_suspend_protection_and_retain_data_on_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#vm_backup_suspend_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_suspend_protection_and_retain_data_on_destroy}.
 
 ---
 
-### AzurermProviderFeaturesRecoveryServicesVaults <a name="AzurermProviderFeaturesRecoveryServicesVaults" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults"></a>
+### AzurermProviderFeaturesRecoveryServicesVaults <a name="AzurermProviderFeaturesRecoveryServicesVaults" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesRecoveryServicesVaults: provider.AzurermProviderFeaturesRecoveryServicesVaults = { ... }
 ```
@@ -2694,11 +2694,11 @@ const azurermProviderFeaturesRecoveryServicesVaults: provider.AzurermProviderFea
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults.property.recoverSoftDeletedBackupProtectedVm">recoverSoftDeletedBackupProtectedVm</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#recover_soft_deleted_backup_protected_vm AzurermProvider#recover_soft_deleted_backup_protected_vm}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults.property.recoverSoftDeletedBackupProtectedVm">recoverSoftDeletedBackupProtectedVm</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#recover_soft_deleted_backup_protected_vm AzurermProvider#recover_soft_deleted_backup_protected_vm}. |
 
 ---
 
-##### `recoverSoftDeletedBackupProtectedVm`<sup>Optional</sup> <a name="recoverSoftDeletedBackupProtectedVm" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults.property.recoverSoftDeletedBackupProtectedVm"></a>
+##### `recoverSoftDeletedBackupProtectedVm`<sup>Optional</sup> <a name="recoverSoftDeletedBackupProtectedVm" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults.property.recoverSoftDeletedBackupProtectedVm"></a>
 
 ```typescript
 public readonly recoverSoftDeletedBackupProtectedVm: boolean | IResolvable;
@@ -2706,16 +2706,16 @@ public readonly recoverSoftDeletedBackupProtectedVm: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#recover_soft_deleted_backup_protected_vm AzurermProvider#recover_soft_deleted_backup_protected_vm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#recover_soft_deleted_backup_protected_vm AzurermProvider#recover_soft_deleted_backup_protected_vm}.
 
 ---
 
-### AzurermProviderFeaturesResourceGroup <a name="AzurermProviderFeaturesResourceGroup" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup"></a>
+### AzurermProviderFeaturesResourceGroup <a name="AzurermProviderFeaturesResourceGroup" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesResourceGroup: provider.AzurermProviderFeaturesResourceGroup = { ... }
 ```
@@ -2724,11 +2724,11 @@ const azurermProviderFeaturesResourceGroup: provider.AzurermProviderFeaturesReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup.property.preventDeletionIfContainsResources">preventDeletionIfContainsResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#prevent_deletion_if_contains_resources AzurermProvider#prevent_deletion_if_contains_resources}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup.property.preventDeletionIfContainsResources">preventDeletionIfContainsResources</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#prevent_deletion_if_contains_resources AzurermProvider#prevent_deletion_if_contains_resources}. |
 
 ---
 
-##### `preventDeletionIfContainsResources`<sup>Optional</sup> <a name="preventDeletionIfContainsResources" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup.property.preventDeletionIfContainsResources"></a>
+##### `preventDeletionIfContainsResources`<sup>Optional</sup> <a name="preventDeletionIfContainsResources" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup.property.preventDeletionIfContainsResources"></a>
 
 ```typescript
 public readonly preventDeletionIfContainsResources: boolean | IResolvable;
@@ -2736,16 +2736,16 @@ public readonly preventDeletionIfContainsResources: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#prevent_deletion_if_contains_resources AzurermProvider#prevent_deletion_if_contains_resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#prevent_deletion_if_contains_resources AzurermProvider#prevent_deletion_if_contains_resources}.
 
 ---
 
-### AzurermProviderFeaturesStorage <a name="AzurermProviderFeaturesStorage" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesStorage"></a>
+### AzurermProviderFeaturesStorage <a name="AzurermProviderFeaturesStorage" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesStorage"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesStorage.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesStorage.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesStorage: provider.AzurermProviderFeaturesStorage = { ... }
 ```
@@ -2754,11 +2754,11 @@ const azurermProviderFeaturesStorage: provider.AzurermProviderFeaturesStorage = 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesStorage.property.dataPlaneAvailable">dataPlaneAvailable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#data_plane_available AzurermProvider#data_plane_available}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesStorage.property.dataPlaneAvailable">dataPlaneAvailable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#data_plane_available AzurermProvider#data_plane_available}. |
 
 ---
 
-##### `dataPlaneAvailable`<sup>Optional</sup> <a name="dataPlaneAvailable" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesStorage.property.dataPlaneAvailable"></a>
+##### `dataPlaneAvailable`<sup>Optional</sup> <a name="dataPlaneAvailable" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesStorage.property.dataPlaneAvailable"></a>
 
 ```typescript
 public readonly dataPlaneAvailable: boolean | IResolvable;
@@ -2766,16 +2766,16 @@ public readonly dataPlaneAvailable: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#data_plane_available AzurermProvider#data_plane_available}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#data_plane_available AzurermProvider#data_plane_available}.
 
 ---
 
-### AzurermProviderFeaturesSubscription <a name="AzurermProviderFeaturesSubscription" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesSubscription"></a>
+### AzurermProviderFeaturesSubscription <a name="AzurermProviderFeaturesSubscription" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesSubscription"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesSubscription.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesSubscription.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesSubscription: provider.AzurermProviderFeaturesSubscription = { ... }
 ```
@@ -2784,11 +2784,11 @@ const azurermProviderFeaturesSubscription: provider.AzurermProviderFeaturesSubsc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesSubscription.property.preventCancellationOnDestroy">preventCancellationOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#prevent_cancellation_on_destroy AzurermProvider#prevent_cancellation_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesSubscription.property.preventCancellationOnDestroy">preventCancellationOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#prevent_cancellation_on_destroy AzurermProvider#prevent_cancellation_on_destroy}. |
 
 ---
 
-##### `preventCancellationOnDestroy`<sup>Optional</sup> <a name="preventCancellationOnDestroy" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesSubscription.property.preventCancellationOnDestroy"></a>
+##### `preventCancellationOnDestroy`<sup>Optional</sup> <a name="preventCancellationOnDestroy" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesSubscription.property.preventCancellationOnDestroy"></a>
 
 ```typescript
 public readonly preventCancellationOnDestroy: boolean | IResolvable;
@@ -2796,16 +2796,16 @@ public readonly preventCancellationOnDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#prevent_cancellation_on_destroy AzurermProvider#prevent_cancellation_on_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#prevent_cancellation_on_destroy AzurermProvider#prevent_cancellation_on_destroy}.
 
 ---
 
-### AzurermProviderFeaturesTemplateDeployment <a name="AzurermProviderFeaturesTemplateDeployment" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment"></a>
+### AzurermProviderFeaturesTemplateDeployment <a name="AzurermProviderFeaturesTemplateDeployment" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesTemplateDeployment: provider.AzurermProviderFeaturesTemplateDeployment = { ... }
 ```
@@ -2814,11 +2814,11 @@ const azurermProviderFeaturesTemplateDeployment: provider.AzurermProviderFeature
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment.property.deleteNestedItemsDuringDeletion">deleteNestedItemsDuringDeletion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#delete_nested_items_during_deletion AzurermProvider#delete_nested_items_during_deletion}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment.property.deleteNestedItemsDuringDeletion">deleteNestedItemsDuringDeletion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#delete_nested_items_during_deletion AzurermProvider#delete_nested_items_during_deletion}. |
 
 ---
 
-##### `deleteNestedItemsDuringDeletion`<sup>Required</sup> <a name="deleteNestedItemsDuringDeletion" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment.property.deleteNestedItemsDuringDeletion"></a>
+##### `deleteNestedItemsDuringDeletion`<sup>Required</sup> <a name="deleteNestedItemsDuringDeletion" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment.property.deleteNestedItemsDuringDeletion"></a>
 
 ```typescript
 public readonly deleteNestedItemsDuringDeletion: boolean | IResolvable;
@@ -2826,16 +2826,16 @@ public readonly deleteNestedItemsDuringDeletion: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#delete_nested_items_during_deletion AzurermProvider#delete_nested_items_during_deletion}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#delete_nested_items_during_deletion AzurermProvider#delete_nested_items_during_deletion}.
 
 ---
 
-### AzurermProviderFeaturesVirtualMachine <a name="AzurermProviderFeaturesVirtualMachine" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine"></a>
+### AzurermProviderFeaturesVirtualMachine <a name="AzurermProviderFeaturesVirtualMachine" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesVirtualMachine: provider.AzurermProviderFeaturesVirtualMachine = { ... }
 ```
@@ -2844,14 +2844,14 @@ const azurermProviderFeaturesVirtualMachine: provider.AzurermProviderFeaturesVir
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.deleteOsDiskOnDeletion">deleteOsDiskOnDeletion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#delete_os_disk_on_deletion AzurermProvider#delete_os_disk_on_deletion}. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.detachImplicitDataDiskOnDeletion">detachImplicitDataDiskOnDeletion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#detach_implicit_data_disk_on_deletion AzurermProvider#detach_implicit_data_disk_on_deletion}. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.gracefulShutdown">gracefulShutdown</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#graceful_shutdown AzurermProvider#graceful_shutdown}. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.skipShutdownAndForceDelete">skipShutdownAndForceDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#skip_shutdown_and_force_delete AzurermProvider#skip_shutdown_and_force_delete}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.deleteOsDiskOnDeletion">deleteOsDiskOnDeletion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#delete_os_disk_on_deletion AzurermProvider#delete_os_disk_on_deletion}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.detachImplicitDataDiskOnDeletion">detachImplicitDataDiskOnDeletion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#detach_implicit_data_disk_on_deletion AzurermProvider#detach_implicit_data_disk_on_deletion}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.gracefulShutdown">gracefulShutdown</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#graceful_shutdown AzurermProvider#graceful_shutdown}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.skipShutdownAndForceDelete">skipShutdownAndForceDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#skip_shutdown_and_force_delete AzurermProvider#skip_shutdown_and_force_delete}. |
 
 ---
 
-##### `deleteOsDiskOnDeletion`<sup>Optional</sup> <a name="deleteOsDiskOnDeletion" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.deleteOsDiskOnDeletion"></a>
+##### `deleteOsDiskOnDeletion`<sup>Optional</sup> <a name="deleteOsDiskOnDeletion" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.deleteOsDiskOnDeletion"></a>
 
 ```typescript
 public readonly deleteOsDiskOnDeletion: boolean | IResolvable;
@@ -2859,11 +2859,11 @@ public readonly deleteOsDiskOnDeletion: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#delete_os_disk_on_deletion AzurermProvider#delete_os_disk_on_deletion}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#delete_os_disk_on_deletion AzurermProvider#delete_os_disk_on_deletion}.
 
 ---
 
-##### `detachImplicitDataDiskOnDeletion`<sup>Optional</sup> <a name="detachImplicitDataDiskOnDeletion" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.detachImplicitDataDiskOnDeletion"></a>
+##### `detachImplicitDataDiskOnDeletion`<sup>Optional</sup> <a name="detachImplicitDataDiskOnDeletion" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.detachImplicitDataDiskOnDeletion"></a>
 
 ```typescript
 public readonly detachImplicitDataDiskOnDeletion: boolean | IResolvable;
@@ -2871,11 +2871,11 @@ public readonly detachImplicitDataDiskOnDeletion: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#detach_implicit_data_disk_on_deletion AzurermProvider#detach_implicit_data_disk_on_deletion}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#detach_implicit_data_disk_on_deletion AzurermProvider#detach_implicit_data_disk_on_deletion}.
 
 ---
 
-##### `gracefulShutdown`<sup>Optional</sup> <a name="gracefulShutdown" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.gracefulShutdown"></a>
+##### `gracefulShutdown`<sup>Optional</sup> <a name="gracefulShutdown" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.gracefulShutdown"></a>
 
 ```typescript
 public readonly gracefulShutdown: boolean | IResolvable;
@@ -2883,11 +2883,11 @@ public readonly gracefulShutdown: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#graceful_shutdown AzurermProvider#graceful_shutdown}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#graceful_shutdown AzurermProvider#graceful_shutdown}.
 
 ---
 
-##### `skipShutdownAndForceDelete`<sup>Optional</sup> <a name="skipShutdownAndForceDelete" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.skipShutdownAndForceDelete"></a>
+##### `skipShutdownAndForceDelete`<sup>Optional</sup> <a name="skipShutdownAndForceDelete" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.skipShutdownAndForceDelete"></a>
 
 ```typescript
 public readonly skipShutdownAndForceDelete: boolean | IResolvable;
@@ -2895,16 +2895,16 @@ public readonly skipShutdownAndForceDelete: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#skip_shutdown_and_force_delete AzurermProvider#skip_shutdown_and_force_delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#skip_shutdown_and_force_delete AzurermProvider#skip_shutdown_and_force_delete}.
 
 ---
 
-### AzurermProviderFeaturesVirtualMachineScaleSet <a name="AzurermProviderFeaturesVirtualMachineScaleSet" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet"></a>
+### AzurermProviderFeaturesVirtualMachineScaleSet <a name="AzurermProviderFeaturesVirtualMachineScaleSet" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-azurerm'
+import { provider } from '@cdktn/provider-azurerm'
 
 const azurermProviderFeaturesVirtualMachineScaleSet: provider.AzurermProviderFeaturesVirtualMachineScaleSet = { ... }
 ```
@@ -2913,14 +2913,14 @@ const azurermProviderFeaturesVirtualMachineScaleSet: provider.AzurermProviderFea
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.forceDelete">forceDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#force_delete AzurermProvider#force_delete}. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.reimageOnManualUpgrade">reimageOnManualUpgrade</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#reimage_on_manual_upgrade AzurermProvider#reimage_on_manual_upgrade}. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.rollInstancesWhenRequired">rollInstancesWhenRequired</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#roll_instances_when_required AzurermProvider#roll_instances_when_required}. |
-| <code><a href="#@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.scaleToZeroBeforeDeletion">scaleToZeroBeforeDeletion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#scale_to_zero_before_deletion AzurermProvider#scale_to_zero_before_deletion}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.forceDelete">forceDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#force_delete AzurermProvider#force_delete}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.reimageOnManualUpgrade">reimageOnManualUpgrade</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#reimage_on_manual_upgrade AzurermProvider#reimage_on_manual_upgrade}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.rollInstancesWhenRequired">rollInstancesWhenRequired</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#roll_instances_when_required AzurermProvider#roll_instances_when_required}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.scaleToZeroBeforeDeletion">scaleToZeroBeforeDeletion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#scale_to_zero_before_deletion AzurermProvider#scale_to_zero_before_deletion}. |
 
 ---
 
-##### `forceDelete`<sup>Optional</sup> <a name="forceDelete" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.forceDelete"></a>
+##### `forceDelete`<sup>Optional</sup> <a name="forceDelete" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.forceDelete"></a>
 
 ```typescript
 public readonly forceDelete: boolean | IResolvable;
@@ -2928,11 +2928,11 @@ public readonly forceDelete: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#force_delete AzurermProvider#force_delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#force_delete AzurermProvider#force_delete}.
 
 ---
 
-##### `reimageOnManualUpgrade`<sup>Optional</sup> <a name="reimageOnManualUpgrade" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.reimageOnManualUpgrade"></a>
+##### `reimageOnManualUpgrade`<sup>Optional</sup> <a name="reimageOnManualUpgrade" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.reimageOnManualUpgrade"></a>
 
 ```typescript
 public readonly reimageOnManualUpgrade: boolean | IResolvable;
@@ -2940,11 +2940,11 @@ public readonly reimageOnManualUpgrade: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#reimage_on_manual_upgrade AzurermProvider#reimage_on_manual_upgrade}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#reimage_on_manual_upgrade AzurermProvider#reimage_on_manual_upgrade}.
 
 ---
 
-##### `rollInstancesWhenRequired`<sup>Optional</sup> <a name="rollInstancesWhenRequired" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.rollInstancesWhenRequired"></a>
+##### `rollInstancesWhenRequired`<sup>Optional</sup> <a name="rollInstancesWhenRequired" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.rollInstancesWhenRequired"></a>
 
 ```typescript
 public readonly rollInstancesWhenRequired: boolean | IResolvable;
@@ -2952,11 +2952,11 @@ public readonly rollInstancesWhenRequired: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#roll_instances_when_required AzurermProvider#roll_instances_when_required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#roll_instances_when_required AzurermProvider#roll_instances_when_required}.
 
 ---
 
-##### `scaleToZeroBeforeDeletion`<sup>Optional</sup> <a name="scaleToZeroBeforeDeletion" id="@cdktf/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.scaleToZeroBeforeDeletion"></a>
+##### `scaleToZeroBeforeDeletion`<sup>Optional</sup> <a name="scaleToZeroBeforeDeletion" id="@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.scaleToZeroBeforeDeletion"></a>
 
 ```typescript
 public readonly scaleToZeroBeforeDeletion: boolean | IResolvable;
@@ -2964,7 +2964,7 @@ public readonly scaleToZeroBeforeDeletion: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs#scale_to_zero_before_deletion AzurermProvider#scale_to_zero_before_deletion}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs#scale_to_zero_before_deletion AzurermProvider#scale_to_zero_before_deletion}.
 
 ---
 

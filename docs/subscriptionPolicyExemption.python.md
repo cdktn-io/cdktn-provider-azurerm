@@ -1,15 +1,15 @@
-# `subscriptionPolicyExemption` Submodule <a name="`subscriptionPolicyExemption` Submodule" id="@cdktf/provider-azurerm.subscriptionPolicyExemption"></a>
+# `subscriptionPolicyExemption` Submodule <a name="`subscriptionPolicyExemption` Submodule" id="@cdktn/provider-azurerm.subscriptionPolicyExemption"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### SubscriptionPolicyExemption <a name="SubscriptionPolicyExemption" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption"></a>
+### SubscriptionPolicyExemption <a name="SubscriptionPolicyExemption" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption azurerm_subscription_policy_exemption}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption azurerm_subscription_policy_exemption}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import subscription_policy_exemption
+from cdktn_provider_azurerm import subscription_policy_exemption
 
 subscriptionPolicyExemption.SubscriptionPolicyExemption(
   scope: Construct,
@@ -37,30 +37,30 @@ subscriptionPolicyExemption.SubscriptionPolicyExemption(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.exemptionCategory">exemption_category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#exemption_category SubscriptionPolicyExemption#exemption_category}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#name SubscriptionPolicyExemption#name}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.policyAssignmentId">policy_assignment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#policy_assignment_id SubscriptionPolicyExemption#policy_assignment_id}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.subscriptionId">subscription_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#subscription_id SubscriptionPolicyExemption#subscription_id}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#description SubscriptionPolicyExemption#description}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#display_name SubscriptionPolicyExemption#display_name}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.expiresOn">expires_on</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#expires_on SubscriptionPolicyExemption#expires_on}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#id SubscriptionPolicyExemption#id}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.metadata">metadata</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#metadata SubscriptionPolicyExemption#metadata}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.policyDefinitionReferenceIds">policy_definition_reference_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#policy_definition_reference_ids SubscriptionPolicyExemption#policy_definition_reference_ids}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.exemptionCategory">exemption_category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#exemption_category SubscriptionPolicyExemption#exemption_category}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#name SubscriptionPolicyExemption#name}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.policyAssignmentId">policy_assignment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#policy_assignment_id SubscriptionPolicyExemption#policy_assignment_id}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.subscriptionId">subscription_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#subscription_id SubscriptionPolicyExemption#subscription_id}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#description SubscriptionPolicyExemption#description}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#display_name SubscriptionPolicyExemption#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.expiresOn">expires_on</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#expires_on SubscriptionPolicyExemption#expires_on}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#id SubscriptionPolicyExemption#id}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.metadata">metadata</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#metadata SubscriptionPolicyExemption#metadata}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.policyDefinitionReferenceIds">policy_definition_reference_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#policy_definition_reference_ids SubscriptionPolicyExemption#policy_definition_reference_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -68,7 +68,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -78,138 +78,138 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `exemption_category`<sup>Required</sup> <a name="exemption_category" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.exemptionCategory"></a>
+##### `exemption_category`<sup>Required</sup> <a name="exemption_category" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.exemptionCategory"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#exemption_category SubscriptionPolicyExemption#exemption_category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#exemption_category SubscriptionPolicyExemption#exemption_category}.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#name SubscriptionPolicyExemption#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#name SubscriptionPolicyExemption#name}.
 
 ---
 
-##### `policy_assignment_id`<sup>Required</sup> <a name="policy_assignment_id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.policyAssignmentId"></a>
+##### `policy_assignment_id`<sup>Required</sup> <a name="policy_assignment_id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.policyAssignmentId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#policy_assignment_id SubscriptionPolicyExemption#policy_assignment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#policy_assignment_id SubscriptionPolicyExemption#policy_assignment_id}.
 
 ---
 
-##### `subscription_id`<sup>Required</sup> <a name="subscription_id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.subscriptionId"></a>
+##### `subscription_id`<sup>Required</sup> <a name="subscription_id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.subscriptionId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#subscription_id SubscriptionPolicyExemption#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#subscription_id SubscriptionPolicyExemption#subscription_id}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.description"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#description SubscriptionPolicyExemption#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#description SubscriptionPolicyExemption#description}.
 
 ---
 
-##### `display_name`<sup>Optional</sup> <a name="display_name" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.displayName"></a>
+##### `display_name`<sup>Optional</sup> <a name="display_name" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.displayName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#display_name SubscriptionPolicyExemption#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#display_name SubscriptionPolicyExemption#display_name}.
 
 ---
 
-##### `expires_on`<sup>Optional</sup> <a name="expires_on" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.expiresOn"></a>
+##### `expires_on`<sup>Optional</sup> <a name="expires_on" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.expiresOn"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#expires_on SubscriptionPolicyExemption#expires_on}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#expires_on SubscriptionPolicyExemption#expires_on}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#id SubscriptionPolicyExemption#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#id SubscriptionPolicyExemption#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.metadata"></a>
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.metadata"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#metadata SubscriptionPolicyExemption#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#metadata SubscriptionPolicyExemption#metadata}.
 
 ---
 
-##### `policy_definition_reference_ids`<sup>Optional</sup> <a name="policy_definition_reference_ids" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.policyDefinitionReferenceIds"></a>
+##### `policy_definition_reference_ids`<sup>Optional</sup> <a name="policy_definition_reference_ids" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.policyDefinitionReferenceIds"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#policy_definition_reference_ids SubscriptionPolicyExemption#policy_definition_reference_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#policy_definition_reference_ids SubscriptionPolicyExemption#policy_definition_reference_ids}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#timeouts SubscriptionPolicyExemption#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#timeouts SubscriptionPolicyExemption#timeouts}
 
 ---
 
@@ -217,41 +217,41 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetDisplayName">reset_display_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetExpiresOn">reset_expires_on</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetMetadata">reset_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetPolicyDefinitionReferenceIds">reset_policy_definition_reference_ids</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetDisplayName">reset_display_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetExpiresOn">reset_expires_on</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetMetadata">reset_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetPolicyDefinitionReferenceIds">reset_policy_definition_reference_ids</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toString"></a>
 
 ```python
 def to_string() -> str
@@ -259,7 +259,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.addOverride"></a>
 
 ```python
 def add_override(
@@ -268,19 +268,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -290,7 +290,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -298,7 +298,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -306,19 +306,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -326,7 +326,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -336,7 +336,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -344,7 +344,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -352,13 +352,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -366,13 +366,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -380,13 +380,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -394,13 +394,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -408,13 +408,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -422,13 +422,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -436,13 +436,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -450,13 +450,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -464,19 +464,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.importFrom"></a>
 
 ```python
 def import_from(
@@ -485,19 +485,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -505,13 +505,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -523,7 +523,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -531,7 +531,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveTo"></a>
 
 ```python
 def move_to(
@@ -542,7 +542,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -550,7 +550,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -558,7 +558,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -568,7 +568,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -576,7 +576,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -587,75 +587,75 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#create SubscriptionPolicyExemption#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#create SubscriptionPolicyExemption#create}.
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#delete SubscriptionPolicyExemption#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#delete SubscriptionPolicyExemption#delete}.
 
 ---
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#read SubscriptionPolicyExemption#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#read SubscriptionPolicyExemption#read}.
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#update SubscriptionPolicyExemption#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#update SubscriptionPolicyExemption#update}.
 
 ---
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_display_name` <a name="reset_display_name" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetDisplayName"></a>
+##### `reset_display_name` <a name="reset_display_name" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetDisplayName"></a>
 
 ```python
 def reset_display_name() -> None
 ```
 
-##### `reset_expires_on` <a name="reset_expires_on" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetExpiresOn"></a>
+##### `reset_expires_on` <a name="reset_expires_on" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetExpiresOn"></a>
 
 ```python
 def reset_expires_on() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_metadata` <a name="reset_metadata" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetMetadata"></a>
+##### `reset_metadata` <a name="reset_metadata" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetMetadata"></a>
 
 ```python
 def reset_metadata() -> None
 ```
 
-##### `reset_policy_definition_reference_ids` <a name="reset_policy_definition_reference_ids" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetPolicyDefinitionReferenceIds"></a>
+##### `reset_policy_definition_reference_ids` <a name="reset_policy_definition_reference_ids" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetPolicyDefinitionReferenceIds"></a>
 
 ```python
 def reset_policy_definition_reference_ids() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -665,17 +665,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a SubscriptionPolicyExemption resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a SubscriptionPolicyExemption resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import subscription_policy_exemption
+from cdktn_provider_azurerm import subscription_policy_exemption
 
 subscriptionPolicyExemption.SubscriptionPolicyExemption.is_construct(
   x: typing.Any
@@ -698,7 +698,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -706,42 +706,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import subscription_policy_exemption
+from cdktn_provider_azurerm import subscription_policy_exemption
 
 subscriptionPolicyExemption.SubscriptionPolicyExemption.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import subscription_policy_exemption
+from cdktn_provider_azurerm import subscription_policy_exemption
 
 subscriptionPolicyExemption.SubscriptionPolicyExemption.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import subscription_policy_exemption
+from cdktn_provider_azurerm import subscription_policy_exemption
 
 subscriptionPolicyExemption.SubscriptionPolicyExemption.generate_config_for_import(
   scope: Construct,
@@ -753,7 +753,7 @@ subscriptionPolicyExemption.SubscriptionPolicyExemption.generate_config_for_impo
 
 Generates CDKTF code for importing a SubscriptionPolicyExemption resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -761,7 +761,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -769,17 +769,17 @@ The construct id used in the generated config for the SubscriptionPolicyExemptio
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing SubscriptionPolicyExemption that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -791,46 +791,46 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference">SubscriptionPolicyExemptionTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.exemptionCategoryInput">exemption_category_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.expiresOnInput">expires_on_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.metadataInput">metadata_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyAssignmentIdInput">policy_assignment_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyDefinitionReferenceIdsInput">policy_definition_reference_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.subscriptionIdInput">subscription_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.exemptionCategory">exemption_category</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.expiresOn">expires_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.metadata">metadata</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyAssignmentId">policy_assignment_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyDefinitionReferenceIds">policy_definition_reference_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.subscriptionId">subscription_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference">SubscriptionPolicyExemptionTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.exemptionCategoryInput">exemption_category_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.expiresOnInput">expires_on_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.metadataInput">metadata_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyAssignmentIdInput">policy_assignment_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyDefinitionReferenceIdsInput">policy_definition_reference_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.subscriptionIdInput">subscription_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.exemptionCategory">exemption_category</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.expiresOn">expires_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.metadata">metadata</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyAssignmentId">policy_assignment_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyDefinitionReferenceIds">policy_definition_reference_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.subscriptionId">subscription_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.node"></a>
 
 ```python
 node: Node
@@ -842,7 +842,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -852,7 +852,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.fqn"></a>
 
 ```python
 fqn: str
@@ -862,7 +862,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -872,7 +872,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -882,7 +882,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -892,7 +892,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -902,7 +902,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -912,7 +912,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -922,7 +922,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -932,7 +932,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -942,7 +942,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -952,7 +952,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -962,7 +962,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -972,17 +972,17 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.timeouts"></a>
 
 ```python
 timeouts: SubscriptionPolicyExemptionTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference">SubscriptionPolicyExemptionTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference">SubscriptionPolicyExemptionTimeoutsOutputReference</a>
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -992,7 +992,7 @@ description_input: str
 
 ---
 
-##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.displayNameInput"></a>
+##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.displayNameInput"></a>
 
 ```python
 display_name_input: str
@@ -1002,7 +1002,7 @@ display_name_input: str
 
 ---
 
-##### `exemption_category_input`<sup>Optional</sup> <a name="exemption_category_input" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.exemptionCategoryInput"></a>
+##### `exemption_category_input`<sup>Optional</sup> <a name="exemption_category_input" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.exemptionCategoryInput"></a>
 
 ```python
 exemption_category_input: str
@@ -1012,7 +1012,7 @@ exemption_category_input: str
 
 ---
 
-##### `expires_on_input`<sup>Optional</sup> <a name="expires_on_input" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.expiresOnInput"></a>
+##### `expires_on_input`<sup>Optional</sup> <a name="expires_on_input" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.expiresOnInput"></a>
 
 ```python
 expires_on_input: str
@@ -1022,7 +1022,7 @@ expires_on_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1032,7 +1032,7 @@ id_input: str
 
 ---
 
-##### `metadata_input`<sup>Optional</sup> <a name="metadata_input" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.metadataInput"></a>
+##### `metadata_input`<sup>Optional</sup> <a name="metadata_input" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.metadataInput"></a>
 
 ```python
 metadata_input: str
@@ -1042,7 +1042,7 @@ metadata_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1052,7 +1052,7 @@ name_input: str
 
 ---
 
-##### `policy_assignment_id_input`<sup>Optional</sup> <a name="policy_assignment_id_input" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyAssignmentIdInput"></a>
+##### `policy_assignment_id_input`<sup>Optional</sup> <a name="policy_assignment_id_input" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyAssignmentIdInput"></a>
 
 ```python
 policy_assignment_id_input: str
@@ -1062,7 +1062,7 @@ policy_assignment_id_input: str
 
 ---
 
-##### `policy_definition_reference_ids_input`<sup>Optional</sup> <a name="policy_definition_reference_ids_input" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyDefinitionReferenceIdsInput"></a>
+##### `policy_definition_reference_ids_input`<sup>Optional</sup> <a name="policy_definition_reference_ids_input" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyDefinitionReferenceIdsInput"></a>
 
 ```python
 policy_definition_reference_ids_input: typing.List[str]
@@ -1072,7 +1072,7 @@ policy_definition_reference_ids_input: typing.List[str]
 
 ---
 
-##### `subscription_id_input`<sup>Optional</sup> <a name="subscription_id_input" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.subscriptionIdInput"></a>
+##### `subscription_id_input`<sup>Optional</sup> <a name="subscription_id_input" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.subscriptionIdInput"></a>
 
 ```python
 subscription_id_input: str
@@ -1082,17 +1082,17 @@ subscription_id_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | SubscriptionPolicyExemptionTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a>
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.description"></a>
 
 ```python
 description: str
@@ -1102,7 +1102,7 @@ description: str
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.displayName"></a>
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.displayName"></a>
 
 ```python
 display_name: str
@@ -1112,7 +1112,7 @@ display_name: str
 
 ---
 
-##### `exemption_category`<sup>Required</sup> <a name="exemption_category" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.exemptionCategory"></a>
+##### `exemption_category`<sup>Required</sup> <a name="exemption_category" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.exemptionCategory"></a>
 
 ```python
 exemption_category: str
@@ -1122,7 +1122,7 @@ exemption_category: str
 
 ---
 
-##### `expires_on`<sup>Required</sup> <a name="expires_on" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.expiresOn"></a>
+##### `expires_on`<sup>Required</sup> <a name="expires_on" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.expiresOn"></a>
 
 ```python
 expires_on: str
@@ -1132,7 +1132,7 @@ expires_on: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.id"></a>
 
 ```python
 id: str
@@ -1142,7 +1142,7 @@ id: str
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.metadata"></a>
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.metadata"></a>
 
 ```python
 metadata: str
@@ -1152,7 +1152,7 @@ metadata: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.name"></a>
 
 ```python
 name: str
@@ -1162,7 +1162,7 @@ name: str
 
 ---
 
-##### `policy_assignment_id`<sup>Required</sup> <a name="policy_assignment_id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyAssignmentId"></a>
+##### `policy_assignment_id`<sup>Required</sup> <a name="policy_assignment_id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyAssignmentId"></a>
 
 ```python
 policy_assignment_id: str
@@ -1172,7 +1172,7 @@ policy_assignment_id: str
 
 ---
 
-##### `policy_definition_reference_ids`<sup>Required</sup> <a name="policy_definition_reference_ids" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyDefinitionReferenceIds"></a>
+##### `policy_definition_reference_ids`<sup>Required</sup> <a name="policy_definition_reference_ids" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.policyDefinitionReferenceIds"></a>
 
 ```python
 policy_definition_reference_ids: typing.List[str]
@@ -1182,7 +1182,7 @@ policy_definition_reference_ids: typing.List[str]
 
 ---
 
-##### `subscription_id`<sup>Required</sup> <a name="subscription_id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.subscriptionId"></a>
+##### `subscription_id`<sup>Required</sup> <a name="subscription_id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.subscriptionId"></a>
 
 ```python
 subscription_id: str
@@ -1196,11 +1196,11 @@ subscription_id: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1212,12 +1212,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### SubscriptionPolicyExemptionConfig <a name="SubscriptionPolicyExemptionConfig" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig"></a>
+### SubscriptionPolicyExemptionConfig <a name="SubscriptionPolicyExemptionConfig" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import subscription_policy_exemption
+from cdktn_provider_azurerm import subscription_policy_exemption
 
 subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1245,28 +1245,28 @@ subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.exemptionCategory">exemption_category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#exemption_category SubscriptionPolicyExemption#exemption_category}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#name SubscriptionPolicyExemption#name}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.policyAssignmentId">policy_assignment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#policy_assignment_id SubscriptionPolicyExemption#policy_assignment_id}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.subscriptionId">subscription_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#subscription_id SubscriptionPolicyExemption#subscription_id}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#description SubscriptionPolicyExemption#description}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#display_name SubscriptionPolicyExemption#display_name}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.expiresOn">expires_on</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#expires_on SubscriptionPolicyExemption#expires_on}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#id SubscriptionPolicyExemption#id}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.metadata">metadata</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#metadata SubscriptionPolicyExemption#metadata}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.policyDefinitionReferenceIds">policy_definition_reference_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#policy_definition_reference_ids SubscriptionPolicyExemption#policy_definition_reference_ids}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.exemptionCategory">exemption_category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#exemption_category SubscriptionPolicyExemption#exemption_category}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#name SubscriptionPolicyExemption#name}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.policyAssignmentId">policy_assignment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#policy_assignment_id SubscriptionPolicyExemption#policy_assignment_id}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.subscriptionId">subscription_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#subscription_id SubscriptionPolicyExemption#subscription_id}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#description SubscriptionPolicyExemption#description}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#display_name SubscriptionPolicyExemption#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.expiresOn">expires_on</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#expires_on SubscriptionPolicyExemption#expires_on}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#id SubscriptionPolicyExemption#id}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.metadata">metadata</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#metadata SubscriptionPolicyExemption#metadata}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.policyDefinitionReferenceIds">policy_definition_reference_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#policy_definition_reference_ids SubscriptionPolicyExemption#policy_definition_reference_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1276,7 +1276,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1286,7 +1286,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1296,7 +1296,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1306,7 +1306,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1316,7 +1316,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1326,7 +1326,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1336,7 +1336,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `exemption_category`<sup>Required</sup> <a name="exemption_category" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.exemptionCategory"></a>
+##### `exemption_category`<sup>Required</sup> <a name="exemption_category" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.exemptionCategory"></a>
 
 ```python
 exemption_category: str
@@ -1344,11 +1344,11 @@ exemption_category: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#exemption_category SubscriptionPolicyExemption#exemption_category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#exemption_category SubscriptionPolicyExemption#exemption_category}.
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.name"></a>
 
 ```python
 name: str
@@ -1356,11 +1356,11 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#name SubscriptionPolicyExemption#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#name SubscriptionPolicyExemption#name}.
 
 ---
 
-##### `policy_assignment_id`<sup>Required</sup> <a name="policy_assignment_id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.policyAssignmentId"></a>
+##### `policy_assignment_id`<sup>Required</sup> <a name="policy_assignment_id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.policyAssignmentId"></a>
 
 ```python
 policy_assignment_id: str
@@ -1368,11 +1368,11 @@ policy_assignment_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#policy_assignment_id SubscriptionPolicyExemption#policy_assignment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#policy_assignment_id SubscriptionPolicyExemption#policy_assignment_id}.
 
 ---
 
-##### `subscription_id`<sup>Required</sup> <a name="subscription_id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.subscriptionId"></a>
+##### `subscription_id`<sup>Required</sup> <a name="subscription_id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.subscriptionId"></a>
 
 ```python
 subscription_id: str
@@ -1380,11 +1380,11 @@ subscription_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#subscription_id SubscriptionPolicyExemption#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#subscription_id SubscriptionPolicyExemption#subscription_id}.
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.description"></a>
 
 ```python
 description: str
@@ -1392,11 +1392,11 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#description SubscriptionPolicyExemption#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#description SubscriptionPolicyExemption#description}.
 
 ---
 
-##### `display_name`<sup>Optional</sup> <a name="display_name" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.displayName"></a>
+##### `display_name`<sup>Optional</sup> <a name="display_name" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.displayName"></a>
 
 ```python
 display_name: str
@@ -1404,11 +1404,11 @@ display_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#display_name SubscriptionPolicyExemption#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#display_name SubscriptionPolicyExemption#display_name}.
 
 ---
 
-##### `expires_on`<sup>Optional</sup> <a name="expires_on" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.expiresOn"></a>
+##### `expires_on`<sup>Optional</sup> <a name="expires_on" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.expiresOn"></a>
 
 ```python
 expires_on: str
@@ -1416,11 +1416,11 @@ expires_on: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#expires_on SubscriptionPolicyExemption#expires_on}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#expires_on SubscriptionPolicyExemption#expires_on}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.id"></a>
 
 ```python
 id: str
@@ -1428,14 +1428,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#id SubscriptionPolicyExemption#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#id SubscriptionPolicyExemption#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.metadata"></a>
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.metadata"></a>
 
 ```python
 metadata: str
@@ -1443,11 +1443,11 @@ metadata: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#metadata SubscriptionPolicyExemption#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#metadata SubscriptionPolicyExemption#metadata}.
 
 ---
 
-##### `policy_definition_reference_ids`<sup>Optional</sup> <a name="policy_definition_reference_ids" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.policyDefinitionReferenceIds"></a>
+##### `policy_definition_reference_ids`<sup>Optional</sup> <a name="policy_definition_reference_ids" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.policyDefinitionReferenceIds"></a>
 
 ```python
 policy_definition_reference_ids: typing.List[str]
@@ -1455,30 +1455,30 @@ policy_definition_reference_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#policy_definition_reference_ids SubscriptionPolicyExemption#policy_definition_reference_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#policy_definition_reference_ids SubscriptionPolicyExemption#policy_definition_reference_ids}.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.property.timeouts"></a>
 
 ```python
 timeouts: SubscriptionPolicyExemptionTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#timeouts SubscriptionPolicyExemption#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#timeouts SubscriptionPolicyExemption#timeouts}
 
 ---
 
-### SubscriptionPolicyExemptionTimeouts <a name="SubscriptionPolicyExemptionTimeouts" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts"></a>
+### SubscriptionPolicyExemptionTimeouts <a name="SubscriptionPolicyExemptionTimeouts" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import subscription_policy_exemption
+from cdktn_provider_azurerm import subscription_policy_exemption
 
 subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts(
   create: str = None,
@@ -1492,14 +1492,14 @@ subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#create SubscriptionPolicyExemption#create}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#delete SubscriptionPolicyExemption#delete}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#read SubscriptionPolicyExemption#read}. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#update SubscriptionPolicyExemption#update}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#create SubscriptionPolicyExemption#create}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#delete SubscriptionPolicyExemption#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#read SubscriptionPolicyExemption#read}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#update SubscriptionPolicyExemption#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1507,11 +1507,11 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#create SubscriptionPolicyExemption#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#create SubscriptionPolicyExemption#create}.
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1519,11 +1519,11 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#delete SubscriptionPolicyExemption#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#delete SubscriptionPolicyExemption#delete}.
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -1531,11 +1531,11 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#read SubscriptionPolicyExemption#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#read SubscriptionPolicyExemption#read}.
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -1543,18 +1543,18 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/subscription_policy_exemption#update SubscriptionPolicyExemption#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/subscription_policy_exemption#update SubscriptionPolicyExemption#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### SubscriptionPolicyExemptionTimeoutsOutputReference <a name="SubscriptionPolicyExemptionTimeoutsOutputReference" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference"></a>
+### SubscriptionPolicyExemptionTimeoutsOutputReference <a name="SubscriptionPolicyExemptionTimeoutsOutputReference" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import subscription_policy_exemption
+from cdktn_provider_azurerm import subscription_policy_exemption
 
 subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1564,12 +1564,12 @@ subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1577,7 +1577,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1589,33 +1589,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1623,13 +1623,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1637,13 +1637,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1651,13 +1651,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1665,13 +1665,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1679,13 +1679,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1693,13 +1693,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1707,13 +1707,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1721,13 +1721,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1735,13 +1735,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1749,13 +1749,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1765,13 +1765,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1781,25 +1781,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -1810,21 +1810,21 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1838,7 +1838,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1848,7 +1848,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -1858,7 +1858,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -1868,7 +1868,7 @@ delete_input: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -1878,7 +1878,7 @@ read_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -1888,7 +1888,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -1898,7 +1898,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -1908,7 +1908,7 @@ delete: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -1918,7 +1918,7 @@ read: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -1928,13 +1928,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | SubscriptionPolicyExemptionTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts">SubscriptionPolicyExemptionTimeouts</a>
 
 ---
 

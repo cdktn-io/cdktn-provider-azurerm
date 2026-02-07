@@ -1,9 +1,9 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,84 +13,92 @@ import * as cdktf from 'cdktf';
 
 export interface KustoIothubDataConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#cluster_name KustoIothubDataConnection#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#cluster_name KustoIothubDataConnection#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#consumer_group KustoIothubDataConnection#consumer_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#consumer_group KustoIothubDataConnection#consumer_group}
   */
   readonly consumerGroup: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#data_format KustoIothubDataConnection#data_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#data_format KustoIothubDataConnection#data_format}
   */
   readonly dataFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#database_name KustoIothubDataConnection#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#database_name KustoIothubDataConnection#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#database_routing_type KustoIothubDataConnection#database_routing_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#database_routing_type KustoIothubDataConnection#database_routing_type}
   */
   readonly databaseRoutingType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#event_system_properties KustoIothubDataConnection#event_system_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#event_system_properties KustoIothubDataConnection#event_system_properties}
   */
   readonly eventSystemProperties?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#id KustoIothubDataConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#id KustoIothubDataConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#iothub_id KustoIothubDataConnection#iothub_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#iothub_id KustoIothubDataConnection#iothub_id}
   */
   readonly iothubId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#location KustoIothubDataConnection#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#location KustoIothubDataConnection#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#mapping_rule_name KustoIothubDataConnection#mapping_rule_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#mapping_rule_name KustoIothubDataConnection#mapping_rule_name}
   */
   readonly mappingRuleName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#name KustoIothubDataConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#name KustoIothubDataConnection#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#resource_group_name KustoIothubDataConnection#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#resource_group_name KustoIothubDataConnection#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#shared_access_policy_name KustoIothubDataConnection#shared_access_policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#retrieval_start_date KustoIothubDataConnection#retrieval_start_date}
+  */
+  readonly retrievalStartDate?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#shared_access_policy_name KustoIothubDataConnection#shared_access_policy_name}
   */
   readonly sharedAccessPolicyName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#table_name KustoIothubDataConnection#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#table_name KustoIothubDataConnection#table_name}
   */
   readonly tableName?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#timeouts KustoIothubDataConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#timeouts KustoIothubDataConnection#timeouts}
   */
   readonly timeouts?: KustoIothubDataConnectionTimeouts;
 }
 export interface KustoIothubDataConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#create KustoIothubDataConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#create KustoIothubDataConnection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#delete KustoIothubDataConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#delete KustoIothubDataConnection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#read KustoIothubDataConnection#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#read KustoIothubDataConnection#read}
   */
   readonly read?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#update KustoIothubDataConnection#update}
+  */
+  readonly update?: string;
 }
 
 export function kustoIothubDataConnectionTimeoutsToTerraform(struct?: KustoIothubDataConnectionTimeouts | cdktf.IResolvable): any {
@@ -102,6 +110,7 @@ export function kustoIothubDataConnectionTimeoutsToTerraform(struct?: KustoIothu
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
     read: cdktf.stringToTerraform(struct!.read),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -126,6 +135,12 @@ export function kustoIothubDataConnectionTimeoutsToHclTerraform(struct?: KustoIo
     },
     read: {
       value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -166,6 +181,10 @@ export class KustoIothubDataConnectionTimeoutsOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.read = this._read;
     }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -176,6 +195,7 @@ export class KustoIothubDataConnectionTimeoutsOutputReference extends cdktf.Comp
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
+      this._update = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -187,6 +207,7 @@ export class KustoIothubDataConnectionTimeoutsOutputReference extends cdktf.Comp
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
+      this._update = value.update;
     }
   }
 
@@ -237,10 +258,26 @@ export class KustoIothubDataConnectionTimeoutsOutputReference extends cdktf.Comp
   public get readInput() {
     return this._read;
   }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection azurerm_kusto_iothub_data_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection azurerm_kusto_iothub_data_connection}
 */
 export class KustoIothubDataConnection extends cdktf.TerraformResource {
 
@@ -256,7 +293,7 @@ export class KustoIothubDataConnection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KustoIothubDataConnection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KustoIothubDataConnection to import
-  * @param importFromId The id of the existing KustoIothubDataConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KustoIothubDataConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KustoIothubDataConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -268,7 +305,7 @@ export class KustoIothubDataConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/kusto_iothub_data_connection azurerm_kusto_iothub_data_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/kusto_iothub_data_connection azurerm_kusto_iothub_data_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -279,7 +316,7 @@ export class KustoIothubDataConnection extends cdktf.TerraformResource {
       terraformResourceType: 'azurerm_kusto_iothub_data_connection',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.55.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -302,6 +339,7 @@ export class KustoIothubDataConnection extends cdktf.TerraformResource {
     this._mappingRuleName = config.mappingRuleName;
     this._name = config.name;
     this._resourceGroupName = config.resourceGroupName;
+    this._retrievalStartDate = config.retrievalStartDate;
     this._sharedAccessPolicyName = config.sharedAccessPolicyName;
     this._tableName = config.tableName;
     this._timeouts.internalValue = config.timeouts;
@@ -482,6 +520,22 @@ export class KustoIothubDataConnection extends cdktf.TerraformResource {
     return this._resourceGroupName;
   }
 
+  // retrieval_start_date - computed: true, optional: true, required: false
+  private _retrievalStartDate?: string; 
+  public get retrievalStartDate() {
+    return this.getStringAttribute('retrieval_start_date');
+  }
+  public set retrievalStartDate(value: string) {
+    this._retrievalStartDate = value;
+  }
+  public resetRetrievalStartDate() {
+    this._retrievalStartDate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retrievalStartDateInput() {
+    return this._retrievalStartDate;
+  }
+
   // shared_access_policy_name - computed: false, optional: false, required: true
   private _sharedAccessPolicyName?: string; 
   public get sharedAccessPolicyName() {
@@ -545,6 +599,7 @@ export class KustoIothubDataConnection extends cdktf.TerraformResource {
       mapping_rule_name: cdktf.stringToTerraform(this._mappingRuleName),
       name: cdktf.stringToTerraform(this._name),
       resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      retrieval_start_date: cdktf.stringToTerraform(this._retrievalStartDate),
       shared_access_policy_name: cdktf.stringToTerraform(this._sharedAccessPolicyName),
       table_name: cdktf.stringToTerraform(this._tableName),
       timeouts: kustoIothubDataConnectionTimeoutsToTerraform(this._timeouts.internalValue),
@@ -621,6 +676,12 @@ export class KustoIothubDataConnection extends cdktf.TerraformResource {
       },
       resource_group_name: {
         value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      retrieval_start_date: {
+        value: cdktf.stringToHclTerraform(this._retrievalStartDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

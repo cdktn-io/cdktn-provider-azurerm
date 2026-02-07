@@ -1,15 +1,15 @@
-# `dataAzurermPostgresqlFlexibleServer` Submodule <a name="`dataAzurermPostgresqlFlexibleServer` Submodule" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer"></a>
+# `dataAzurermPostgresqlFlexibleServer` Submodule <a name="`dataAzurermPostgresqlFlexibleServer` Submodule" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataAzurermPostgresqlFlexibleServer <a name="DataAzurermPostgresqlFlexibleServer" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer"></a>
+### DataAzurermPostgresqlFlexibleServer <a name="DataAzurermPostgresqlFlexibleServer" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server azurerm_postgresql_flexible_server}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server azurerm_postgresql_flexible_server}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_postgresql_flexible_server
+from cdktn_provider_azurerm import data_azurerm_postgresql_flexible_server
 
 dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer(
   scope: Construct,
@@ -30,23 +30,23 @@ dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#name DataAzurermPostgresqlFlexibleServer#name}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#resource_group_name DataAzurermPostgresqlFlexibleServer#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#id DataAzurermPostgresqlFlexibleServer#id}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#name DataAzurermPostgresqlFlexibleServer#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#resource_group_name DataAzurermPostgresqlFlexibleServer#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#id DataAzurermPostgresqlFlexibleServer#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -54,7 +54,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -64,82 +64,82 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#name DataAzurermPostgresqlFlexibleServer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#name DataAzurermPostgresqlFlexibleServer#name}.
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.resourceGroupName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#resource_group_name DataAzurermPostgresqlFlexibleServer#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#resource_group_name DataAzurermPostgresqlFlexibleServer#resource_group_name}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#id DataAzurermPostgresqlFlexibleServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#id DataAzurermPostgresqlFlexibleServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#timeouts DataAzurermPostgresqlFlexibleServer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#timeouts DataAzurermPostgresqlFlexibleServer#timeouts}
 
 ---
 
@@ -147,30 +147,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toString"></a>
 
 ```python
 def to_string() -> str
@@ -178,7 +178,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.addOverride"></a>
 
 ```python
 def add_override(
@@ -187,19 +187,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -209,7 +209,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -217,7 +217,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -225,7 +225,7 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
@@ -233,13 +233,13 @@ def to_hcl_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -247,7 +247,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -255,13 +255,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -269,13 +269,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -283,13 +283,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -297,13 +297,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -311,13 +311,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -325,13 +325,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -339,13 +339,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -353,13 +353,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -367,13 +367,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -381,13 +381,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -395,21 +395,21 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#read DataAzurermPostgresqlFlexibleServer#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#read DataAzurermPostgresqlFlexibleServer#read}.
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -419,17 +419,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataAzurermPostgresqlFlexibleServer resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataAzurermPostgresqlFlexibleServer resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_postgresql_flexible_server
+from cdktn_provider_azurerm import data_azurerm_postgresql_flexible_server
 
 dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.is_construct(
   x: typing.Any
@@ -452,7 +452,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -460,42 +460,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_postgresql_flexible_server
+from cdktn_provider_azurerm import data_azurerm_postgresql_flexible_server
 
 dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isTerraformDataSource"></a>
+##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isTerraformDataSource"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_postgresql_flexible_server
+from cdktn_provider_azurerm import data_azurerm_postgresql_flexible_server
 
 dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.is_terraform_data_source(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_postgresql_flexible_server
+from cdktn_provider_azurerm import data_azurerm_postgresql_flexible_server
 
 dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.generate_config_for_import(
   scope: Construct,
@@ -507,7 +507,7 @@ dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.generate
 
 Generates CDKTF code for importing a DataAzurermPostgresqlFlexibleServer resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -515,7 +515,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -523,17 +523,17 @@ The construct id used in the generated config for the DataAzurermPostgresqlFlexi
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing DataAzurermPostgresqlFlexibleServer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -545,43 +545,43 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.administratorLogin">administrator_login</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.autoGrowEnabled">auto_grow_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.backupRetentionDays">backup_retention_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.delegatedSubnetId">delegated_subnet_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.fqdn">fqdn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.highAvailability">high_availability</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList">DataAzurermPostgresqlFlexibleServerHighAvailabilityList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.location">location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.skuName">sku_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.storageMb">storage_mb</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.tags">tags</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference">DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.version">version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.zone">zone</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.administratorLogin">administrator_login</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.autoGrowEnabled">auto_grow_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.backupRetentionDays">backup_retention_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.delegatedSubnetId">delegated_subnet_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.fqdn">fqdn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.highAvailability">high_availability</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList">DataAzurermPostgresqlFlexibleServerHighAvailabilityList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.skuName">sku_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.storageMb">storage_mb</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.tags">tags</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference">DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.version">version</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.zone">zone</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.node"></a>
 
 ```python
 node: Node
@@ -593,7 +593,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -603,7 +603,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.fqn"></a>
 
 ```python
 fqn: str
@@ -613,7 +613,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -623,7 +623,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -633,7 +633,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -643,7 +643,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -653,7 +653,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -663,7 +663,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -673,7 +673,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -683,7 +683,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -693,7 +693,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -703,7 +703,7 @@ provider: TerraformProvider
 
 ---
 
-##### `administrator_login`<sup>Required</sup> <a name="administrator_login" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.administratorLogin"></a>
+##### `administrator_login`<sup>Required</sup> <a name="administrator_login" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.administratorLogin"></a>
 
 ```python
 administrator_login: str
@@ -713,7 +713,7 @@ administrator_login: str
 
 ---
 
-##### `auto_grow_enabled`<sup>Required</sup> <a name="auto_grow_enabled" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.autoGrowEnabled"></a>
+##### `auto_grow_enabled`<sup>Required</sup> <a name="auto_grow_enabled" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.autoGrowEnabled"></a>
 
 ```python
 auto_grow_enabled: IResolvable
@@ -723,7 +723,7 @@ auto_grow_enabled: IResolvable
 
 ---
 
-##### `backup_retention_days`<sup>Required</sup> <a name="backup_retention_days" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.backupRetentionDays"></a>
+##### `backup_retention_days`<sup>Required</sup> <a name="backup_retention_days" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.backupRetentionDays"></a>
 
 ```python
 backup_retention_days: typing.Union[int, float]
@@ -733,7 +733,7 @@ backup_retention_days: typing.Union[int, float]
 
 ---
 
-##### `delegated_subnet_id`<sup>Required</sup> <a name="delegated_subnet_id" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.delegatedSubnetId"></a>
+##### `delegated_subnet_id`<sup>Required</sup> <a name="delegated_subnet_id" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.delegatedSubnetId"></a>
 
 ```python
 delegated_subnet_id: str
@@ -743,7 +743,7 @@ delegated_subnet_id: str
 
 ---
 
-##### `fqdn`<sup>Required</sup> <a name="fqdn" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.fqdn"></a>
+##### `fqdn`<sup>Required</sup> <a name="fqdn" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.fqdn"></a>
 
 ```python
 fqdn: str
@@ -753,17 +753,17 @@ fqdn: str
 
 ---
 
-##### `high_availability`<sup>Required</sup> <a name="high_availability" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.highAvailability"></a>
+##### `high_availability`<sup>Required</sup> <a name="high_availability" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.highAvailability"></a>
 
 ```python
 high_availability: DataAzurermPostgresqlFlexibleServerHighAvailabilityList
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList">DataAzurermPostgresqlFlexibleServerHighAvailabilityList</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList">DataAzurermPostgresqlFlexibleServerHighAvailabilityList</a>
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.location"></a>
 
 ```python
 location: str
@@ -773,7 +773,7 @@ location: str
 
 ---
 
-##### `public_network_access_enabled`<sup>Required</sup> <a name="public_network_access_enabled" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.publicNetworkAccessEnabled"></a>
+##### `public_network_access_enabled`<sup>Required</sup> <a name="public_network_access_enabled" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.publicNetworkAccessEnabled"></a>
 
 ```python
 public_network_access_enabled: IResolvable
@@ -783,7 +783,7 @@ public_network_access_enabled: IResolvable
 
 ---
 
-##### `sku_name`<sup>Required</sup> <a name="sku_name" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.skuName"></a>
+##### `sku_name`<sup>Required</sup> <a name="sku_name" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.skuName"></a>
 
 ```python
 sku_name: str
@@ -793,7 +793,7 @@ sku_name: str
 
 ---
 
-##### `storage_mb`<sup>Required</sup> <a name="storage_mb" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.storageMb"></a>
+##### `storage_mb`<sup>Required</sup> <a name="storage_mb" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.storageMb"></a>
 
 ```python
 storage_mb: typing.Union[int, float]
@@ -803,7 +803,7 @@ storage_mb: typing.Union[int, float]
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.tags"></a>
 
 ```python
 tags: StringMap
@@ -813,17 +813,17 @@ tags: StringMap
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.timeouts"></a>
 
 ```python
 timeouts: DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference">DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference">DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference</a>
 
 ---
 
-##### `version`<sup>Required</sup> <a name="version" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.version"></a>
+##### `version`<sup>Required</sup> <a name="version" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.version"></a>
 
 ```python
 version: str
@@ -833,7 +833,7 @@ version: str
 
 ---
 
-##### `zone`<sup>Required</sup> <a name="zone" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.zone"></a>
+##### `zone`<sup>Required</sup> <a name="zone" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.zone"></a>
 
 ```python
 zone: str
@@ -843,7 +843,7 @@ zone: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.idInput"></a>
 
 ```python
 id_input: str
@@ -853,7 +853,7 @@ id_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -863,7 +863,7 @@ name_input: str
 
 ---
 
-##### `resource_group_name_input`<sup>Optional</sup> <a name="resource_group_name_input" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.resourceGroupNameInput"></a>
+##### `resource_group_name_input`<sup>Optional</sup> <a name="resource_group_name_input" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.resourceGroupNameInput"></a>
 
 ```python
 resource_group_name_input: str
@@ -873,17 +873,17 @@ resource_group_name_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | DataAzurermPostgresqlFlexibleServerTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a>
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.id"></a>
 
 ```python
 id: str
@@ -893,7 +893,7 @@ id: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.name"></a>
 
 ```python
 name: str
@@ -903,7 +903,7 @@ name: str
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.resourceGroupName"></a>
 
 ```python
 resource_group_name: str
@@ -917,11 +917,11 @@ resource_group_name: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServer.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -933,12 +933,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataAzurermPostgresqlFlexibleServerConfig <a name="DataAzurermPostgresqlFlexibleServerConfig" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig"></a>
+### DataAzurermPostgresqlFlexibleServerConfig <a name="DataAzurermPostgresqlFlexibleServerConfig" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_postgresql_flexible_server
+from cdktn_provider_azurerm import data_azurerm_postgresql_flexible_server
 
 dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -959,21 +959,21 @@ dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#name DataAzurermPostgresqlFlexibleServer#name}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#resource_group_name DataAzurermPostgresqlFlexibleServer#resource_group_name}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#id DataAzurermPostgresqlFlexibleServer#id}. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#name DataAzurermPostgresqlFlexibleServer#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#resource_group_name DataAzurermPostgresqlFlexibleServer#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#id DataAzurermPostgresqlFlexibleServer#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -983,7 +983,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -993,7 +993,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1003,7 +1003,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1013,7 +1013,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1023,7 +1023,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1033,7 +1033,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1043,7 +1043,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.name"></a>
 
 ```python
 name: str
@@ -1051,11 +1051,11 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#name DataAzurermPostgresqlFlexibleServer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#name DataAzurermPostgresqlFlexibleServer#name}.
 
 ---
 
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.resourceGroupName"></a>
+##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.resourceGroupName"></a>
 
 ```python
 resource_group_name: str
@@ -1063,11 +1063,11 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#resource_group_name DataAzurermPostgresqlFlexibleServer#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#resource_group_name DataAzurermPostgresqlFlexibleServer#resource_group_name}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.id"></a>
 
 ```python
 id: str
@@ -1075,44 +1075,44 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#id DataAzurermPostgresqlFlexibleServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#id DataAzurermPostgresqlFlexibleServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerConfig.property.timeouts"></a>
 
 ```python
 timeouts: DataAzurermPostgresqlFlexibleServerTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a>
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#timeouts DataAzurermPostgresqlFlexibleServer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#timeouts DataAzurermPostgresqlFlexibleServer#timeouts}
 
 ---
 
-### DataAzurermPostgresqlFlexibleServerHighAvailability <a name="DataAzurermPostgresqlFlexibleServerHighAvailability" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailability"></a>
+### DataAzurermPostgresqlFlexibleServerHighAvailability <a name="DataAzurermPostgresqlFlexibleServerHighAvailability" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailability"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailability.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailability.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_postgresql_flexible_server
+from cdktn_provider_azurerm import data_azurerm_postgresql_flexible_server
 
 dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailability()
 ```
 
 
-### DataAzurermPostgresqlFlexibleServerTimeouts <a name="DataAzurermPostgresqlFlexibleServerTimeouts" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts"></a>
+### DataAzurermPostgresqlFlexibleServerTimeouts <a name="DataAzurermPostgresqlFlexibleServerTimeouts" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_postgresql_flexible_server
+from cdktn_provider_azurerm import data_azurerm_postgresql_flexible_server
 
 dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts(
   read: str = None
@@ -1123,11 +1123,11 @@ dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#read DataAzurermPostgresqlFlexibleServer#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#read DataAzurermPostgresqlFlexibleServer#read}. |
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -1135,18 +1135,18 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/data-sources/postgresql_flexible_server#read DataAzurermPostgresqlFlexibleServer#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/postgresql_flexible_server#read DataAzurermPostgresqlFlexibleServer#read}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DataAzurermPostgresqlFlexibleServerHighAvailabilityList <a name="DataAzurermPostgresqlFlexibleServerHighAvailabilityList" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList"></a>
+### DataAzurermPostgresqlFlexibleServerHighAvailabilityList <a name="DataAzurermPostgresqlFlexibleServerHighAvailabilityList" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_postgresql_flexible_server
+from cdktn_provider_azurerm import data_azurerm_postgresql_flexible_server
 
 dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList(
   terraform_resource: IInterpolatingParent,
@@ -1157,13 +1157,13 @@ dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvail
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1171,7 +1171,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1179,7 +1179,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -1191,15 +1191,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -1211,19 +1211,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.resolve"></a>
 
 ```python
 def resolve(
@@ -1233,13 +1233,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1249,7 +1249,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.get"></a>
 
 ```python
 def get(
@@ -1257,7 +1257,7 @@ def get(
 ) -> DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1270,12 +1270,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1289,7 +1289,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1300,12 +1300,12 @@ fqn: str
 ---
 
 
-### DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference <a name="DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference"></a>
+### DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference <a name="DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_postgresql_flexible_server
+from cdktn_provider_azurerm import data_azurerm_postgresql_flexible_server
 
 dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1317,14 +1317,14 @@ dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvail
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1332,7 +1332,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1340,7 +1340,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1348,7 +1348,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -1360,29 +1360,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1390,13 +1390,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1404,13 +1404,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1418,13 +1418,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1432,13 +1432,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1446,13 +1446,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1460,13 +1460,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1474,13 +1474,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1488,13 +1488,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1502,13 +1502,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1516,13 +1516,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1532,13 +1532,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1553,15 +1553,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.mode">mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.standbyAvailabilityZone">standby_availability_zone</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailability">DataAzurermPostgresqlFlexibleServerHighAvailability</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.mode">mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.standbyAvailabilityZone">standby_availability_zone</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailability">DataAzurermPostgresqlFlexibleServerHighAvailability</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1575,7 +1575,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1585,7 +1585,7 @@ fqn: str
 
 ---
 
-##### `mode`<sup>Required</sup> <a name="mode" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.mode"></a>
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.mode"></a>
 
 ```python
 mode: str
@@ -1595,7 +1595,7 @@ mode: str
 
 ---
 
-##### `standby_availability_zone`<sup>Required</sup> <a name="standby_availability_zone" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.standbyAvailabilityZone"></a>
+##### `standby_availability_zone`<sup>Required</sup> <a name="standby_availability_zone" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.standbyAvailabilityZone"></a>
 
 ```python
 standby_availability_zone: str
@@ -1605,23 +1605,23 @@ standby_availability_zone: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailabilityOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: DataAzurermPostgresqlFlexibleServerHighAvailability
 ```
 
-- *Type:* <a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailability">DataAzurermPostgresqlFlexibleServerHighAvailability</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerHighAvailability">DataAzurermPostgresqlFlexibleServerHighAvailability</a>
 
 ---
 
 
-### DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference <a name="DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference"></a>
+### DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference <a name="DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azurerm import data_azurerm_postgresql_flexible_server
+from cdktn_provider_azurerm import data_azurerm_postgresql_flexible_server
 
 dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1631,12 +1631,12 @@ dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1644,7 +1644,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1656,30 +1656,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1687,13 +1687,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1701,13 +1701,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1715,13 +1715,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1729,13 +1729,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1743,13 +1743,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1757,13 +1757,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1771,13 +1771,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1785,13 +1785,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1799,13 +1799,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1813,13 +1813,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1829,13 +1829,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1845,7 +1845,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
@@ -1856,15 +1856,15 @@ def reset_read() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1878,7 +1878,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1888,7 +1888,7 @@ fqn: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -1898,7 +1898,7 @@ read_input: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -1908,13 +1908,13 @@ read: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | DataAzurermPostgresqlFlexibleServerTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.dataAzurermPostgresqlFlexibleServer.DataAzurermPostgresqlFlexibleServerTimeouts">DataAzurermPostgresqlFlexibleServerTimeouts</a>
 
 ---
 

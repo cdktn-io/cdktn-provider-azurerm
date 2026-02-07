@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -132,6 +132,7 @@ export * as automationModule from './automation-module';
 export * as automationPowershell72Module from './automation-powershell72-module';
 export * as automationPython3Package from './automation-python3-package';
 export * as automationRunbook from './automation-runbook';
+export * as automationRuntimeEnvironment from './automation-runtime-environment';
 export * as automationSchedule from './automation-schedule';
 export * as automationSoftwareUpdateConfiguration from './automation-software-update-configuration';
 export * as automationSourceControl from './automation-source-control';
@@ -596,17 +597,6 @@ export * as mapsAccount from './maps-account';
 export * as mapsCreator from './maps-creator';
 export * as marketplaceAgreement from './marketplace-agreement';
 export * as marketplaceRoleAssignment from './marketplace-role-assignment';
-export * as mobileNetwork from './mobile-network';
-export * as mobileNetworkAttachedDataNetwork from './mobile-network-attached-data-network';
-export * as mobileNetworkDataNetwork from './mobile-network-data-network';
-export * as mobileNetworkPacketCoreControlPlane from './mobile-network-packet-core-control-plane';
-export * as mobileNetworkPacketCoreDataPlane from './mobile-network-packet-core-data-plane';
-export * as mobileNetworkService from './mobile-network-service';
-export * as mobileNetworkSim from './mobile-network-sim';
-export * as mobileNetworkSimGroup from './mobile-network-sim-group';
-export * as mobileNetworkSimPolicy from './mobile-network-sim-policy';
-export * as mobileNetworkSite from './mobile-network-site';
-export * as mobileNetworkSlice from './mobile-network-slice';
 export * as mongoCluster from './mongo-cluster';
 export * as mongoClusterFirewallRule from './mongo-cluster-firewall-rule';
 export * as mongoClusterUser from './mongo-cluster-user';
@@ -711,6 +701,10 @@ export * as networkManagerVerifierWorkspaceReachabilityAnalysisIntent from './ne
 export * as networkPacketCapture from './network-packet-capture';
 export * as networkProfile from './network-profile';
 export * as networkSecurityGroup from './network-security-group';
+export * as networkSecurityPerimeter from './network-security-perimeter';
+export * as networkSecurityPerimeterAccessRule from './network-security-perimeter-access-rule';
+export * as networkSecurityPerimeterAssociation from './network-security-perimeter-association';
+export * as networkSecurityPerimeterProfile from './network-security-perimeter-profile';
 export * as networkSecurityRule from './network-security-rule';
 export * as networkWatcher from './network-watcher';
 export * as networkWatcherFlowLog from './network-watcher-flow-log';
@@ -1338,17 +1332,6 @@ export * as dataAzurermManagementGroup from './data-azurerm-management-group';
 export * as dataAzurermManagementGroupTemplateDeployment from './data-azurerm-management-group-template-deployment';
 export * as dataAzurermMapsAccount from './data-azurerm-maps-account';
 export * as dataAzurermMarketplaceAgreement from './data-azurerm-marketplace-agreement';
-export * as dataAzurermMobileNetwork from './data-azurerm-mobile-network';
-export * as dataAzurermMobileNetworkAttachedDataNetwork from './data-azurerm-mobile-network-attached-data-network';
-export * as dataAzurermMobileNetworkDataNetwork from './data-azurerm-mobile-network-data-network';
-export * as dataAzurermMobileNetworkPacketCoreControlPlane from './data-azurerm-mobile-network-packet-core-control-plane';
-export * as dataAzurermMobileNetworkPacketCoreDataPlane from './data-azurerm-mobile-network-packet-core-data-plane';
-export * as dataAzurermMobileNetworkService from './data-azurerm-mobile-network-service';
-export * as dataAzurermMobileNetworkSim from './data-azurerm-mobile-network-sim';
-export * as dataAzurermMobileNetworkSimGroup from './data-azurerm-mobile-network-sim-group';
-export * as dataAzurermMobileNetworkSimPolicy from './data-azurerm-mobile-network-sim-policy';
-export * as dataAzurermMobileNetworkSite from './data-azurerm-mobile-network-site';
-export * as dataAzurermMobileNetworkSlice from './data-azurerm-mobile-network-slice';
 export * as dataAzurermMonitorActionGroup from './data-azurerm-monitor-action-group';
 export * as dataAzurermMonitorDataCollectionEndpoint from './data-azurerm-monitor-data-collection-endpoint';
 export * as dataAzurermMonitorDataCollectionRule from './data-azurerm-monitor-data-collection-rule';
@@ -1382,6 +1365,8 @@ export * as dataAzurermNetworkManagerConnectivityConfiguration from './data-azur
 export * as dataAzurermNetworkManagerIpamPool from './data-azurerm-network-manager-ipam-pool';
 export * as dataAzurermNetworkManagerNetworkGroup from './data-azurerm-network-manager-network-group';
 export * as dataAzurermNetworkSecurityGroup from './data-azurerm-network-security-group';
+export * as dataAzurermNetworkSecurityPerimeter from './data-azurerm-network-security-perimeter';
+export * as dataAzurermNetworkSecurityPerimeterProfile from './data-azurerm-network-security-perimeter-profile';
 export * as dataAzurermNetworkServiceTags from './data-azurerm-network-service-tags';
 export * as dataAzurermNetworkWatcher from './data-azurerm-network-watcher';
 export * as dataAzurermNginxApiKey from './data-azurerm-nginx-api-key';

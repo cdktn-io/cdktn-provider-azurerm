@@ -1,9 +1,9 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,64 +13,64 @@ import * as cdktf from 'cdktf';
 
 export interface NetappVolumeGroupSapHanaConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#account_name NetappVolumeGroupSapHana#account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#account_name NetappVolumeGroupSapHana#account_name}
   */
   readonly accountName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#application_identifier NetappVolumeGroupSapHana#application_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#application_identifier NetappVolumeGroupSapHana#application_identifier}
   */
   readonly applicationIdentifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#group_description NetappVolumeGroupSapHana#group_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#group_description NetappVolumeGroupSapHana#group_description}
   */
   readonly groupDescription: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#id NetappVolumeGroupSapHana#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#id NetappVolumeGroupSapHana#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#location NetappVolumeGroupSapHana#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#location NetappVolumeGroupSapHana#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#name NetappVolumeGroupSapHana#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#name NetappVolumeGroupSapHana#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#resource_group_name NetappVolumeGroupSapHana#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#resource_group_name NetappVolumeGroupSapHana#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#timeouts NetappVolumeGroupSapHana#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#timeouts NetappVolumeGroupSapHana#timeouts}
   */
   readonly timeouts?: NetappVolumeGroupSapHanaTimeouts;
   /**
   * volume block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#volume NetappVolumeGroupSapHana#volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#volume NetappVolumeGroupSapHana#volume}
   */
   readonly volume: NetappVolumeGroupSapHanaVolume[] | cdktf.IResolvable;
 }
 export interface NetappVolumeGroupSapHanaTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#create NetappVolumeGroupSapHana#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#create NetappVolumeGroupSapHana#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#delete NetappVolumeGroupSapHana#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#delete NetappVolumeGroupSapHana#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#read NetappVolumeGroupSapHana#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#read NetappVolumeGroupSapHana#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#update NetappVolumeGroupSapHana#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#update NetappVolumeGroupSapHana#update}
   */
   readonly update?: string;
 }
@@ -251,19 +251,19 @@ export class NetappVolumeGroupSapHanaTimeoutsOutputReference extends cdktf.Compl
 }
 export interface NetappVolumeGroupSapHanaVolumeDataProtectionReplication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#endpoint_type NetappVolumeGroupSapHana#endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#endpoint_type NetappVolumeGroupSapHana#endpoint_type}
   */
   readonly endpointType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#remote_volume_location NetappVolumeGroupSapHana#remote_volume_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#remote_volume_location NetappVolumeGroupSapHana#remote_volume_location}
   */
   readonly remoteVolumeLocation: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#remote_volume_resource_id NetappVolumeGroupSapHana#remote_volume_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#remote_volume_resource_id NetappVolumeGroupSapHana#remote_volume_resource_id}
   */
   readonly remoteVolumeResourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#replication_frequency NetappVolumeGroupSapHana#replication_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#replication_frequency NetappVolumeGroupSapHana#replication_frequency}
   */
   readonly replicationFrequency: string;
 }
@@ -425,7 +425,7 @@ export class NetappVolumeGroupSapHanaVolumeDataProtectionReplicationOutputRefere
 }
 export interface NetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#snapshot_policy_id NetappVolumeGroupSapHana#snapshot_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#snapshot_policy_id NetappVolumeGroupSapHana#snapshot_policy_id}
   */
   readonly snapshotPolicyId: string;
 }
@@ -506,31 +506,31 @@ export class NetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPolicyOutputRef
 }
 export interface NetappVolumeGroupSapHanaVolumeExportPolicyRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#allowed_clients NetappVolumeGroupSapHana#allowed_clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#allowed_clients NetappVolumeGroupSapHana#allowed_clients}
   */
   readonly allowedClients: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#nfsv3_enabled NetappVolumeGroupSapHana#nfsv3_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#nfsv3_enabled NetappVolumeGroupSapHana#nfsv3_enabled}
   */
   readonly nfsv3Enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#nfsv41_enabled NetappVolumeGroupSapHana#nfsv41_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#nfsv41_enabled NetappVolumeGroupSapHana#nfsv41_enabled}
   */
   readonly nfsv41Enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#root_access_enabled NetappVolumeGroupSapHana#root_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#root_access_enabled NetappVolumeGroupSapHana#root_access_enabled}
   */
   readonly rootAccessEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#rule_index NetappVolumeGroupSapHana#rule_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#rule_index NetappVolumeGroupSapHana#rule_index}
   */
   readonly ruleIndex: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#unix_read_only NetappVolumeGroupSapHana#unix_read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#unix_read_only NetappVolumeGroupSapHana#unix_read_only}
   */
   readonly unixReadOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#unix_read_write NetappVolumeGroupSapHana#unix_read_write}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#unix_read_write NetappVolumeGroupSapHana#unix_read_write}
   */
   readonly unixReadWrite?: boolean | cdktf.IResolvable;
 }
@@ -808,73 +808,89 @@ export class NetappVolumeGroupSapHanaVolumeExportPolicyRuleList extends cdktf.Co
 }
 export interface NetappVolumeGroupSapHanaVolume {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#capacity_pool_id NetappVolumeGroupSapHana#capacity_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#capacity_pool_id NetappVolumeGroupSapHana#capacity_pool_id}
   */
   readonly capacityPoolId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#name NetappVolumeGroupSapHana#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#encryption_key_source NetappVolumeGroupSapHana#encryption_key_source}
+  */
+  readonly encryptionKeySource?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#key_vault_private_endpoint_id NetappVolumeGroupSapHana#key_vault_private_endpoint_id}
+  */
+  readonly keyVaultPrivateEndpointId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#name NetappVolumeGroupSapHana#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#protocols NetappVolumeGroupSapHana#protocols}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#network_features NetappVolumeGroupSapHana#network_features}
+  */
+  readonly networkFeatures?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#protocols NetappVolumeGroupSapHana#protocols}
   */
   readonly protocols: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#proximity_placement_group_id NetappVolumeGroupSapHana#proximity_placement_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#proximity_placement_group_id NetappVolumeGroupSapHana#proximity_placement_group_id}
   */
   readonly proximityPlacementGroupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#security_style NetappVolumeGroupSapHana#security_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#security_style NetappVolumeGroupSapHana#security_style}
   */
   readonly securityStyle: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#service_level NetappVolumeGroupSapHana#service_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#service_level NetappVolumeGroupSapHana#service_level}
   */
   readonly serviceLevel: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#snapshot_directory_visible NetappVolumeGroupSapHana#snapshot_directory_visible}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#snapshot_directory_visible NetappVolumeGroupSapHana#snapshot_directory_visible}
   */
   readonly snapshotDirectoryVisible: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#storage_quota_in_gb NetappVolumeGroupSapHana#storage_quota_in_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#storage_quota_in_gb NetappVolumeGroupSapHana#storage_quota_in_gb}
   */
   readonly storageQuotaInGb: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#subnet_id NetappVolumeGroupSapHana#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#subnet_id NetappVolumeGroupSapHana#subnet_id}
   */
   readonly subnetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#tags NetappVolumeGroupSapHana#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#tags NetappVolumeGroupSapHana#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#throughput_in_mibps NetappVolumeGroupSapHana#throughput_in_mibps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#throughput_in_mibps NetappVolumeGroupSapHana#throughput_in_mibps}
   */
   readonly throughputInMibps: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#volume_path NetappVolumeGroupSapHana#volume_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#volume_path NetappVolumeGroupSapHana#volume_path}
   */
   readonly volumePath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#volume_spec_name NetappVolumeGroupSapHana#volume_spec_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#volume_spec_name NetappVolumeGroupSapHana#volume_spec_name}
   */
   readonly volumeSpecName: string;
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#zone NetappVolumeGroupSapHana#zone}
+  */
+  readonly zone?: string;
+  /**
   * data_protection_replication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#data_protection_replication NetappVolumeGroupSapHana#data_protection_replication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#data_protection_replication NetappVolumeGroupSapHana#data_protection_replication}
   */
   readonly dataProtectionReplication?: NetappVolumeGroupSapHanaVolumeDataProtectionReplication;
   /**
   * data_protection_snapshot_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#data_protection_snapshot_policy NetappVolumeGroupSapHana#data_protection_snapshot_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#data_protection_snapshot_policy NetappVolumeGroupSapHana#data_protection_snapshot_policy}
   */
   readonly dataProtectionSnapshotPolicy?: NetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPolicy;
   /**
   * export_policy_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#export_policy_rule NetappVolumeGroupSapHana#export_policy_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#export_policy_rule NetappVolumeGroupSapHana#export_policy_rule}
   */
   readonly exportPolicyRule: NetappVolumeGroupSapHanaVolumeExportPolicyRule[] | cdktf.IResolvable;
 }
@@ -886,7 +902,10 @@ export function netappVolumeGroupSapHanaVolumeToTerraform(struct?: NetappVolumeG
   }
   return {
     capacity_pool_id: cdktf.stringToTerraform(struct!.capacityPoolId),
+    encryption_key_source: cdktf.stringToTerraform(struct!.encryptionKeySource),
+    key_vault_private_endpoint_id: cdktf.stringToTerraform(struct!.keyVaultPrivateEndpointId),
     name: cdktf.stringToTerraform(struct!.name),
+    network_features: cdktf.stringToTerraform(struct!.networkFeatures),
     protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.protocols),
     proximity_placement_group_id: cdktf.stringToTerraform(struct!.proximityPlacementGroupId),
     security_style: cdktf.stringToTerraform(struct!.securityStyle),
@@ -898,6 +917,7 @@ export function netappVolumeGroupSapHanaVolumeToTerraform(struct?: NetappVolumeG
     throughput_in_mibps: cdktf.numberToTerraform(struct!.throughputInMibps),
     volume_path: cdktf.stringToTerraform(struct!.volumePath),
     volume_spec_name: cdktf.stringToTerraform(struct!.volumeSpecName),
+    zone: cdktf.stringToTerraform(struct!.zone),
     data_protection_replication: netappVolumeGroupSapHanaVolumeDataProtectionReplicationToTerraform(struct!.dataProtectionReplication),
     data_protection_snapshot_policy: netappVolumeGroupSapHanaVolumeDataProtectionSnapshotPolicyToTerraform(struct!.dataProtectionSnapshotPolicy),
     export_policy_rule: cdktf.listMapper(netappVolumeGroupSapHanaVolumeExportPolicyRuleToTerraform, true)(struct!.exportPolicyRule),
@@ -917,8 +937,26 @@ export function netappVolumeGroupSapHanaVolumeToHclTerraform(struct?: NetappVolu
       type: "simple",
       storageClassType: "string",
     },
+    encryption_key_source: {
+      value: cdktf.stringToHclTerraform(struct!.encryptionKeySource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_vault_private_endpoint_id: {
+      value: cdktf.stringToHclTerraform(struct!.keyVaultPrivateEndpointId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     name: {
       value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    network_features: {
+      value: cdktf.stringToHclTerraform(struct!.networkFeatures),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -989,6 +1027,12 @@ export function netappVolumeGroupSapHanaVolumeToHclTerraform(struct?: NetappVolu
       type: "simple",
       storageClassType: "string",
     },
+    zone: {
+      value: cdktf.stringToHclTerraform(struct!.zone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     data_protection_replication: {
       value: netappVolumeGroupSapHanaVolumeDataProtectionReplicationToHclTerraform(struct!.dataProtectionReplication),
       isBlock: true,
@@ -1037,9 +1081,21 @@ export class NetappVolumeGroupSapHanaVolumeOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.capacityPoolId = this._capacityPoolId;
     }
+    if (this._encryptionKeySource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.encryptionKeySource = this._encryptionKeySource;
+    }
+    if (this._keyVaultPrivateEndpointId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keyVaultPrivateEndpointId = this._keyVaultPrivateEndpointId;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
+    }
+    if (this._networkFeatures !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkFeatures = this._networkFeatures;
     }
     if (this._protocols !== undefined) {
       hasAnyValues = true;
@@ -1085,6 +1141,10 @@ export class NetappVolumeGroupSapHanaVolumeOutputReference extends cdktf.Complex
       hasAnyValues = true;
       internalValueResult.volumeSpecName = this._volumeSpecName;
     }
+    if (this._zone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.zone = this._zone;
+    }
     if (this._dataProtectionReplication?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.dataProtectionReplication = this._dataProtectionReplication?.internalValue;
@@ -1105,7 +1165,10 @@ export class NetappVolumeGroupSapHanaVolumeOutputReference extends cdktf.Complex
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._capacityPoolId = undefined;
+      this._encryptionKeySource = undefined;
+      this._keyVaultPrivateEndpointId = undefined;
       this._name = undefined;
+      this._networkFeatures = undefined;
       this._protocols = undefined;
       this._proximityPlacementGroupId = undefined;
       this._securityStyle = undefined;
@@ -1117,6 +1180,7 @@ export class NetappVolumeGroupSapHanaVolumeOutputReference extends cdktf.Complex
       this._throughputInMibps = undefined;
       this._volumePath = undefined;
       this._volumeSpecName = undefined;
+      this._zone = undefined;
       this._dataProtectionReplication.internalValue = undefined;
       this._dataProtectionSnapshotPolicy.internalValue = undefined;
       this._exportPolicyRule.internalValue = undefined;
@@ -1129,7 +1193,10 @@ export class NetappVolumeGroupSapHanaVolumeOutputReference extends cdktf.Complex
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._capacityPoolId = value.capacityPoolId;
+      this._encryptionKeySource = value.encryptionKeySource;
+      this._keyVaultPrivateEndpointId = value.keyVaultPrivateEndpointId;
       this._name = value.name;
+      this._networkFeatures = value.networkFeatures;
       this._protocols = value.protocols;
       this._proximityPlacementGroupId = value.proximityPlacementGroupId;
       this._securityStyle = value.securityStyle;
@@ -1141,6 +1208,7 @@ export class NetappVolumeGroupSapHanaVolumeOutputReference extends cdktf.Complex
       this._throughputInMibps = value.throughputInMibps;
       this._volumePath = value.volumePath;
       this._volumeSpecName = value.volumeSpecName;
+      this._zone = value.zone;
       this._dataProtectionReplication.internalValue = value.dataProtectionReplication;
       this._dataProtectionSnapshotPolicy.internalValue = value.dataProtectionSnapshotPolicy;
       this._exportPolicyRule.internalValue = value.exportPolicyRule;
@@ -1160,9 +1228,41 @@ export class NetappVolumeGroupSapHanaVolumeOutputReference extends cdktf.Complex
     return this._capacityPoolId;
   }
 
+  // encryption_key_source - computed: true, optional: true, required: false
+  private _encryptionKeySource?: string; 
+  public get encryptionKeySource() {
+    return this.getStringAttribute('encryption_key_source');
+  }
+  public set encryptionKeySource(value: string) {
+    this._encryptionKeySource = value;
+  }
+  public resetEncryptionKeySource() {
+    this._encryptionKeySource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionKeySourceInput() {
+    return this._encryptionKeySource;
+  }
+
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // key_vault_private_endpoint_id - computed: true, optional: true, required: false
+  private _keyVaultPrivateEndpointId?: string; 
+  public get keyVaultPrivateEndpointId() {
+    return this.getStringAttribute('key_vault_private_endpoint_id');
+  }
+  public set keyVaultPrivateEndpointId(value: string) {
+    this._keyVaultPrivateEndpointId = value;
+  }
+  public resetKeyVaultPrivateEndpointId() {
+    this._keyVaultPrivateEndpointId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyVaultPrivateEndpointIdInput() {
+    return this._keyVaultPrivateEndpointId;
   }
 
   // mount_ip_addresses - computed: true, optional: false, required: false
@@ -1181,6 +1281,22 @@ export class NetappVolumeGroupSapHanaVolumeOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // network_features - computed: true, optional: true, required: false
+  private _networkFeatures?: string; 
+  public get networkFeatures() {
+    return this.getStringAttribute('network_features');
+  }
+  public set networkFeatures(value: string) {
+    this._networkFeatures = value;
+  }
+  public resetNetworkFeatures() {
+    this._networkFeatures = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkFeaturesInput() {
+    return this._networkFeatures;
   }
 
   // protocols - computed: false, optional: false, required: true
@@ -1332,6 +1448,22 @@ export class NetappVolumeGroupSapHanaVolumeOutputReference extends cdktf.Complex
     return this._volumeSpecName;
   }
 
+  // zone - computed: false, optional: true, required: false
+  private _zone?: string; 
+  public get zone() {
+    return this.getStringAttribute('zone');
+  }
+  public set zone(value: string) {
+    this._zone = value;
+  }
+  public resetZone() {
+    this._zone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zoneInput() {
+    return this._zone;
+  }
+
   // data_protection_replication - computed: false, optional: true, required: false
   private _dataProtectionReplication = new NetappVolumeGroupSapHanaVolumeDataProtectionReplicationOutputReference(this, "data_protection_replication");
   public get dataProtectionReplication() {
@@ -1399,7 +1531,7 @@ export class NetappVolumeGroupSapHanaVolumeList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana}
 */
 export class NetappVolumeGroupSapHana extends cdktf.TerraformResource {
 
@@ -1415,7 +1547,7 @@ export class NetappVolumeGroupSapHana extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetappVolumeGroupSapHana resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetappVolumeGroupSapHana to import
-  * @param importFromId The id of the existing NetappVolumeGroupSapHana that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetappVolumeGroupSapHana that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetappVolumeGroupSapHana to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1427,7 +1559,7 @@ export class NetappVolumeGroupSapHana extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.55.0/docs/resources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/resources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1438,7 +1570,7 @@ export class NetappVolumeGroupSapHana extends cdktf.TerraformResource {
       terraformResourceType: 'azurerm_netapp_volume_group_sap_hana',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.55.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
