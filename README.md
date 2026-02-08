@@ -19,17 +19,17 @@ The PyPI package is available at [https://pypi.org/project/cdktn-provider-azurer
 
 ### Nuget
 
-The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Cdktn.Providers.Azurerm](https://www.nuget.org/packages/Io.Cdktn.Cdktn.Providers.Azurerm).
+The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Providers.Azurerm](https://www.nuget.org/packages/Io.Cdktn.Providers.Azurerm).
 
-`dotnet add package Io.Cdktn.Cdktn.Providers.Azurerm`
+`dotnet add package Io.Cdktn.Providers.Azurerm`
 
 ### Maven
 
-The Maven package is available at [https://mvnrepository.com/artifact/com.Io.Cdktn/cdktn-provider-azurerm](https://mvnrepository.com/artifact/com.Io.Cdktn/cdktn-provider-azurerm).
+The Maven package is available at [https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-azurerm](https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-azurerm).
 
 ```
 <dependency>
-    <groupId>com.Io.Cdktn</groupId>
+    <groupId>io.cdktn</groupId>
     <artifactId>cdktn-provider-azurerm</artifactId>
     <version>[REPLACE WITH DESIRED VERSION]</version>
 </dependency>
