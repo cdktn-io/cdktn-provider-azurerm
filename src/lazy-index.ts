@@ -66,6 +66,7 @@ Object.defineProperty(exports, 'apiManagementUser', { get: function () { return 
 Object.defineProperty(exports, 'apiManagementWorkspace', { get: function () { return require('./api-management-workspace'); } });
 Object.defineProperty(exports, 'apiManagementWorkspaceApiVersionSet', { get: function () { return require('./api-management-workspace-api-version-set'); } });
 Object.defineProperty(exports, 'apiManagementWorkspaceCertificate', { get: function () { return require('./api-management-workspace-certificate'); } });
+Object.defineProperty(exports, 'apiManagementWorkspaceNamedValue', { get: function () { return require('./api-management-workspace-named-value'); } });
 Object.defineProperty(exports, 'apiManagementWorkspacePolicy', { get: function () { return require('./api-management-workspace-policy'); } });
 Object.defineProperty(exports, 'apiManagementWorkspacePolicyFragment', { get: function () { return require('./api-management-workspace-policy-fragment'); } });
 Object.defineProperty(exports, 'appConfiguration', { get: function () { return require('./app-configuration'); } });
@@ -296,6 +297,7 @@ Object.defineProperty(exports, 'dataFactoryLinkedServiceOdbc', { get: function (
 Object.defineProperty(exports, 'dataFactoryLinkedServicePostgresql', { get: function () { return require('./data-factory-linked-service-postgresql'); } });
 Object.defineProperty(exports, 'dataFactoryLinkedServiceSftp', { get: function () { return require('./data-factory-linked-service-sftp'); } });
 Object.defineProperty(exports, 'dataFactoryLinkedServiceSnowflake', { get: function () { return require('./data-factory-linked-service-snowflake'); } });
+Object.defineProperty(exports, 'dataFactoryLinkedServiceSqlManagedInstance', { get: function () { return require('./data-factory-linked-service-sql-managed-instance'); } });
 Object.defineProperty(exports, 'dataFactoryLinkedServiceSqlServer', { get: function () { return require('./data-factory-linked-service-sql-server'); } });
 Object.defineProperty(exports, 'dataFactoryLinkedServiceSynapse', { get: function () { return require('./data-factory-linked-service-synapse'); } });
 Object.defineProperty(exports, 'dataFactoryLinkedServiceWeb', { get: function () { return require('./data-factory-linked-service-web'); } });
@@ -584,6 +586,7 @@ Object.defineProperty(exports, 'managedDisk', { get: function () { return requir
 Object.defineProperty(exports, 'managedDiskSasToken', { get: function () { return require('./managed-disk-sas-token'); } });
 Object.defineProperty(exports, 'managedLustreFileSystem', { get: function () { return require('./managed-lustre-file-system'); } });
 Object.defineProperty(exports, 'managedRedis', { get: function () { return require('./managed-redis'); } });
+Object.defineProperty(exports, 'managedRedisAccessPolicyAssignment', { get: function () { return require('./managed-redis-access-policy-assignment'); } });
 Object.defineProperty(exports, 'managedRedisGeoReplication', { get: function () { return require('./managed-redis-geo-replication'); } });
 Object.defineProperty(exports, 'managementGroup', { get: function () { return require('./management-group'); } });
 Object.defineProperty(exports, 'managementGroupPolicyAssignment', { get: function () { return require('./management-group-policy-assignment'); } });
@@ -1184,6 +1187,7 @@ Object.defineProperty(exports, 'dataAzurermCdnFrontdoorSecret', { get: function 
 Object.defineProperty(exports, 'dataAzurermCdnProfile', { get: function () { return require('./data-azurerm-cdn-profile'); } });
 Object.defineProperty(exports, 'dataAzurermClientConfig', { get: function () { return require('./data-azurerm-client-config'); } });
 Object.defineProperty(exports, 'dataAzurermCognitiveAccount', { get: function () { return require('./data-azurerm-cognitive-account'); } });
+Object.defineProperty(exports, 'dataAzurermCognitiveAccountProject', { get: function () { return require('./data-azurerm-cognitive-account-project'); } });
 Object.defineProperty(exports, 'dataAzurermCommunicationService', { get: function () { return require('./data-azurerm-communication-service'); } });
 Object.defineProperty(exports, 'dataAzurermConfidentialLedger', { get: function () { return require('./data-azurerm-confidential-ledger'); } });
 Object.defineProperty(exports, 'dataAzurermConsumptionBudgetResourceGroup', { get: function () { return require('./data-azurerm-consumption-budget-resource-group'); } });
@@ -1328,6 +1332,7 @@ Object.defineProperty(exports, 'dataAzurermManagedApplicationDefinition', { get:
 Object.defineProperty(exports, 'dataAzurermManagedDisk', { get: function () { return require('./data-azurerm-managed-disk'); } });
 Object.defineProperty(exports, 'dataAzurermManagedDisks', { get: function () { return require('./data-azurerm-managed-disks'); } });
 Object.defineProperty(exports, 'dataAzurermManagedRedis', { get: function () { return require('./data-azurerm-managed-redis'); } });
+Object.defineProperty(exports, 'dataAzurermManagedRedisAccessPolicyAssignment', { get: function () { return require('./data-azurerm-managed-redis-access-policy-assignment'); } });
 Object.defineProperty(exports, 'dataAzurermManagementGroup', { get: function () { return require('./data-azurerm-management-group'); } });
 Object.defineProperty(exports, 'dataAzurermManagementGroupTemplateDeployment', { get: function () { return require('./data-azurerm-management-group-template-deployment'); } });
 Object.defineProperty(exports, 'dataAzurermMapsAccount', { get: function () { return require('./data-azurerm-maps-account'); } });
@@ -1383,6 +1388,7 @@ Object.defineProperty(exports, 'dataAzurermOracleAutonomousDatabaseBackups', { g
 Object.defineProperty(exports, 'dataAzurermOracleAutonomousDatabaseCloneFromBackup', { get: function () { return require('./data-azurerm-oracle-autonomous-database-clone-from-backup'); } });
 Object.defineProperty(exports, 'dataAzurermOracleAutonomousDatabaseCloneFromDatabase', { get: function () { return require('./data-azurerm-oracle-autonomous-database-clone-from-database'); } });
 Object.defineProperty(exports, 'dataAzurermOracleCloudVmCluster', { get: function () { return require('./data-azurerm-oracle-cloud-vm-cluster'); } });
+Object.defineProperty(exports, 'dataAzurermOracleDatabaseSystemVersions', { get: function () { return require('./data-azurerm-oracle-database-system-versions'); } });
 Object.defineProperty(exports, 'dataAzurermOracleDbNodes', { get: function () { return require('./data-azurerm-oracle-db-nodes'); } });
 Object.defineProperty(exports, 'dataAzurermOracleDbServers', { get: function () { return require('./data-azurerm-oracle-db-servers'); } });
 Object.defineProperty(exports, 'dataAzurermOracleDbSystemShapes', { get: function () { return require('./data-azurerm-oracle-db-system-shapes'); } });
