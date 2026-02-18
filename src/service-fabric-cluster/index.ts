@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServiceFabricClusterConfig extends cdktf.TerraformMetaArguments {
+export interface ServiceFabricClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#add_on_features ServiceFabricCluster#add_on_features}
   */
@@ -90,13 +90,13 @@ export interface ServiceFabricClusterConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#client_certificate_common_name ServiceFabricCluster#client_certificate_common_name}
   */
-  readonly clientCertificateCommonName?: ServiceFabricClusterClientCertificateCommonName[] | cdktf.IResolvable;
+  readonly clientCertificateCommonName?: ServiceFabricClusterClientCertificateCommonName[] | cdktn.IResolvable;
   /**
   * client_certificate_thumbprint block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#client_certificate_thumbprint ServiceFabricCluster#client_certificate_thumbprint}
   */
-  readonly clientCertificateThumbprint?: ServiceFabricClusterClientCertificateThumbprint[] | cdktf.IResolvable;
+  readonly clientCertificateThumbprint?: ServiceFabricClusterClientCertificateThumbprint[] | cdktn.IResolvable;
   /**
   * diagnostics_config block
   *
@@ -108,13 +108,13 @@ export interface ServiceFabricClusterConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#fabric_settings ServiceFabricCluster#fabric_settings}
   */
-  readonly fabricSettings?: ServiceFabricClusterFabricSettings[] | cdktf.IResolvable;
+  readonly fabricSettings?: ServiceFabricClusterFabricSettings[] | cdktn.IResolvable;
   /**
   * node_type block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#node_type ServiceFabricCluster#node_type}
   */
-  readonly nodeType: ServiceFabricClusterNodeType[] | cdktf.IResolvable;
+  readonly nodeType: ServiceFabricClusterNodeType[] | cdktn.IResolvable;
   /**
   * reverse_proxy_certificate block
   *
@@ -156,38 +156,38 @@ export interface ServiceFabricClusterAzureActiveDirectory {
 }
 
 export function serviceFabricClusterAzureActiveDirectoryToTerraform(struct?: ServiceFabricClusterAzureActiveDirectoryOutputReference | ServiceFabricClusterAzureActiveDirectory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_application_id: cdktf.stringToTerraform(struct!.clientApplicationId),
-    cluster_application_id: cdktf.stringToTerraform(struct!.clusterApplicationId),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    client_application_id: cdktn.stringToTerraform(struct!.clientApplicationId),
+    cluster_application_id: cdktn.stringToTerraform(struct!.clusterApplicationId),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
   }
 }
 
 
 export function serviceFabricClusterAzureActiveDirectoryToHclTerraform(struct?: ServiceFabricClusterAzureActiveDirectoryOutputReference | ServiceFabricClusterAzureActiveDirectory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_application_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientApplicationId),
+      value: cdktn.stringToHclTerraform(struct!.clientApplicationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cluster_application_id: {
-      value: cdktf.stringToHclTerraform(struct!.clusterApplicationId),
+      value: cdktn.stringToHclTerraform(struct!.clusterApplicationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -198,14 +198,14 @@ export function serviceFabricClusterAzureActiveDirectoryToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterAzureActiveDirectoryOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterAzureActiveDirectoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -297,38 +297,38 @@ export interface ServiceFabricClusterCertificate {
 }
 
 export function serviceFabricClusterCertificateToTerraform(struct?: ServiceFabricClusterCertificateOutputReference | ServiceFabricClusterCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    thumbprint: cdktf.stringToTerraform(struct!.thumbprint),
-    thumbprint_secondary: cdktf.stringToTerraform(struct!.thumbprintSecondary),
-    x509_store_name: cdktf.stringToTerraform(struct!.x509StoreName),
+    thumbprint: cdktn.stringToTerraform(struct!.thumbprint),
+    thumbprint_secondary: cdktn.stringToTerraform(struct!.thumbprintSecondary),
+    x509_store_name: cdktn.stringToTerraform(struct!.x509StoreName),
   }
 }
 
 
 export function serviceFabricClusterCertificateToHclTerraform(struct?: ServiceFabricClusterCertificateOutputReference | ServiceFabricClusterCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     thumbprint: {
-      value: cdktf.stringToHclTerraform(struct!.thumbprint),
+      value: cdktn.stringToHclTerraform(struct!.thumbprint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     thumbprint_secondary: {
-      value: cdktf.stringToHclTerraform(struct!.thumbprintSecondary),
+      value: cdktn.stringToHclTerraform(struct!.thumbprintSecondary),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     x509_store_name: {
-      value: cdktf.stringToHclTerraform(struct!.x509StoreName),
+      value: cdktn.stringToHclTerraform(struct!.x509StoreName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -339,14 +339,14 @@ export function serviceFabricClusterCertificateToHclTerraform(struct?: ServiceFa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterCertificateOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -436,32 +436,32 @@ export interface ServiceFabricClusterCertificateCommonNamesCommonNames {
   readonly certificateIssuerThumbprint?: string;
 }
 
-export function serviceFabricClusterCertificateCommonNamesCommonNamesToTerraform(struct?: ServiceFabricClusterCertificateCommonNamesCommonNames | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceFabricClusterCertificateCommonNamesCommonNamesToTerraform(struct?: ServiceFabricClusterCertificateCommonNamesCommonNames | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_common_name: cdktf.stringToTerraform(struct!.certificateCommonName),
-    certificate_issuer_thumbprint: cdktf.stringToTerraform(struct!.certificateIssuerThumbprint),
+    certificate_common_name: cdktn.stringToTerraform(struct!.certificateCommonName),
+    certificate_issuer_thumbprint: cdktn.stringToTerraform(struct!.certificateIssuerThumbprint),
   }
 }
 
 
-export function serviceFabricClusterCertificateCommonNamesCommonNamesToHclTerraform(struct?: ServiceFabricClusterCertificateCommonNamesCommonNames | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceFabricClusterCertificateCommonNamesCommonNamesToHclTerraform(struct?: ServiceFabricClusterCertificateCommonNamesCommonNames | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate_common_name: {
-      value: cdktf.stringToHclTerraform(struct!.certificateCommonName),
+      value: cdktn.stringToHclTerraform(struct!.certificateCommonName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate_issuer_thumbprint: {
-      value: cdktf.stringToHclTerraform(struct!.certificateIssuerThumbprint),
+      value: cdktn.stringToHclTerraform(struct!.certificateIssuerThumbprint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -472,9 +472,9 @@ export function serviceFabricClusterCertificateCommonNamesCommonNamesToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterCertificateCommonNamesCommonNamesOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterCertificateCommonNamesCommonNamesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -482,11 +482,11 @@ export class ServiceFabricClusterCertificateCommonNamesCommonNamesOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServiceFabricClusterCertificateCommonNamesCommonNames | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceFabricClusterCertificateCommonNamesCommonNames | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -503,14 +503,14 @@ export class ServiceFabricClusterCertificateCommonNamesCommonNamesOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceFabricClusterCertificateCommonNamesCommonNames | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceFabricClusterCertificateCommonNamesCommonNames | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._certificateCommonName = undefined;
       this._certificateIssuerThumbprint = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -552,15 +552,15 @@ export class ServiceFabricClusterCertificateCommonNamesCommonNamesOutputReferenc
   }
 }
 
-export class ServiceFabricClusterCertificateCommonNamesCommonNamesList extends cdktf.ComplexList {
-  public internalValue? : ServiceFabricClusterCertificateCommonNamesCommonNames[] | cdktf.IResolvable
+export class ServiceFabricClusterCertificateCommonNamesCommonNamesList extends cdktn.ComplexList {
+  public internalValue? : ServiceFabricClusterCertificateCommonNamesCommonNames[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -581,35 +581,35 @@ export interface ServiceFabricClusterCertificateCommonNames {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#common_names ServiceFabricCluster#common_names}
   */
-  readonly commonNames: ServiceFabricClusterCertificateCommonNamesCommonNames[] | cdktf.IResolvable;
+  readonly commonNames: ServiceFabricClusterCertificateCommonNamesCommonNames[] | cdktn.IResolvable;
 }
 
 export function serviceFabricClusterCertificateCommonNamesToTerraform(struct?: ServiceFabricClusterCertificateCommonNamesOutputReference | ServiceFabricClusterCertificateCommonNames): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    x509_store_name: cdktf.stringToTerraform(struct!.x509StoreName),
-    common_names: cdktf.listMapper(serviceFabricClusterCertificateCommonNamesCommonNamesToTerraform, true)(struct!.commonNames),
+    x509_store_name: cdktn.stringToTerraform(struct!.x509StoreName),
+    common_names: cdktn.listMapper(serviceFabricClusterCertificateCommonNamesCommonNamesToTerraform, true)(struct!.commonNames),
   }
 }
 
 
 export function serviceFabricClusterCertificateCommonNamesToHclTerraform(struct?: ServiceFabricClusterCertificateCommonNamesOutputReference | ServiceFabricClusterCertificateCommonNames): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     x509_store_name: {
-      value: cdktf.stringToHclTerraform(struct!.x509StoreName),
+      value: cdktn.stringToHclTerraform(struct!.x509StoreName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     common_names: {
-      value: cdktf.listMapperHcl(serviceFabricClusterCertificateCommonNamesCommonNamesToHclTerraform, true)(struct!.commonNames),
+      value: cdktn.listMapperHcl(serviceFabricClusterCertificateCommonNamesCommonNamesToHclTerraform, true)(struct!.commonNames),
       isBlock: true,
       type: "set",
       storageClassType: "ServiceFabricClusterCertificateCommonNamesCommonNamesList",
@@ -620,14 +620,14 @@ export function serviceFabricClusterCertificateCommonNamesToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterCertificateCommonNamesOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterCertificateCommonNamesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -676,7 +676,7 @@ export class ServiceFabricClusterCertificateCommonNamesOutputReference extends c
   public get commonNames() {
     return this._commonNames;
   }
-  public putCommonNames(value: ServiceFabricClusterCertificateCommonNamesCommonNames[] | cdktf.IResolvable) {
+  public putCommonNames(value: ServiceFabricClusterCertificateCommonNamesCommonNames[] | cdktn.IResolvable) {
     this._commonNames.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -692,46 +692,46 @@ export interface ServiceFabricClusterClientCertificateCommonName {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#is_admin ServiceFabricCluster#is_admin}
   */
-  readonly isAdmin: boolean | cdktf.IResolvable;
+  readonly isAdmin: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#issuer_thumbprint ServiceFabricCluster#issuer_thumbprint}
   */
   readonly issuerThumbprint?: string;
 }
 
-export function serviceFabricClusterClientCertificateCommonNameToTerraform(struct?: ServiceFabricClusterClientCertificateCommonName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceFabricClusterClientCertificateCommonNameToTerraform(struct?: ServiceFabricClusterClientCertificateCommonName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    common_name: cdktf.stringToTerraform(struct!.commonName),
-    is_admin: cdktf.booleanToTerraform(struct!.isAdmin),
-    issuer_thumbprint: cdktf.stringToTerraform(struct!.issuerThumbprint),
+    common_name: cdktn.stringToTerraform(struct!.commonName),
+    is_admin: cdktn.booleanToTerraform(struct!.isAdmin),
+    issuer_thumbprint: cdktn.stringToTerraform(struct!.issuerThumbprint),
   }
 }
 
 
-export function serviceFabricClusterClientCertificateCommonNameToHclTerraform(struct?: ServiceFabricClusterClientCertificateCommonName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceFabricClusterClientCertificateCommonNameToHclTerraform(struct?: ServiceFabricClusterClientCertificateCommonName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     common_name: {
-      value: cdktf.stringToHclTerraform(struct!.commonName),
+      value: cdktn.stringToHclTerraform(struct!.commonName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_admin: {
-      value: cdktf.booleanToHclTerraform(struct!.isAdmin),
+      value: cdktn.booleanToHclTerraform(struct!.isAdmin),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     issuer_thumbprint: {
-      value: cdktf.stringToHclTerraform(struct!.issuerThumbprint),
+      value: cdktn.stringToHclTerraform(struct!.issuerThumbprint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -742,9 +742,9 @@ export function serviceFabricClusterClientCertificateCommonNameToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterClientCertificateCommonNameOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterClientCertificateCommonNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -752,11 +752,11 @@ export class ServiceFabricClusterClientCertificateCommonNameOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServiceFabricClusterClientCertificateCommonName | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceFabricClusterClientCertificateCommonName | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -777,7 +777,7 @@ export class ServiceFabricClusterClientCertificateCommonNameOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceFabricClusterClientCertificateCommonName | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceFabricClusterClientCertificateCommonName | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -785,7 +785,7 @@ export class ServiceFabricClusterClientCertificateCommonNameOutputReference exte
       this._isAdmin = undefined;
       this._issuerThumbprint = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -812,11 +812,11 @@ export class ServiceFabricClusterClientCertificateCommonNameOutputReference exte
   }
 
   // is_admin - computed: false, optional: false, required: true
-  private _isAdmin?: boolean | cdktf.IResolvable; 
+  private _isAdmin?: boolean | cdktn.IResolvable; 
   public get isAdmin() {
     return this.getBooleanAttribute('is_admin');
   }
-  public set isAdmin(value: boolean | cdktf.IResolvable) {
+  public set isAdmin(value: boolean | cdktn.IResolvable) {
     this._isAdmin = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -841,15 +841,15 @@ export class ServiceFabricClusterClientCertificateCommonNameOutputReference exte
   }
 }
 
-export class ServiceFabricClusterClientCertificateCommonNameList extends cdktf.ComplexList {
-  public internalValue? : ServiceFabricClusterClientCertificateCommonName[] | cdktf.IResolvable
+export class ServiceFabricClusterClientCertificateCommonNameList extends cdktn.ComplexList {
+  public internalValue? : ServiceFabricClusterClientCertificateCommonName[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -864,39 +864,39 @@ export interface ServiceFabricClusterClientCertificateThumbprint {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#is_admin ServiceFabricCluster#is_admin}
   */
-  readonly isAdmin: boolean | cdktf.IResolvable;
+  readonly isAdmin: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#thumbprint ServiceFabricCluster#thumbprint}
   */
   readonly thumbprint: string;
 }
 
-export function serviceFabricClusterClientCertificateThumbprintToTerraform(struct?: ServiceFabricClusterClientCertificateThumbprint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceFabricClusterClientCertificateThumbprintToTerraform(struct?: ServiceFabricClusterClientCertificateThumbprint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_admin: cdktf.booleanToTerraform(struct!.isAdmin),
-    thumbprint: cdktf.stringToTerraform(struct!.thumbprint),
+    is_admin: cdktn.booleanToTerraform(struct!.isAdmin),
+    thumbprint: cdktn.stringToTerraform(struct!.thumbprint),
   }
 }
 
 
-export function serviceFabricClusterClientCertificateThumbprintToHclTerraform(struct?: ServiceFabricClusterClientCertificateThumbprint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceFabricClusterClientCertificateThumbprintToHclTerraform(struct?: ServiceFabricClusterClientCertificateThumbprint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_admin: {
-      value: cdktf.booleanToHclTerraform(struct!.isAdmin),
+      value: cdktn.booleanToHclTerraform(struct!.isAdmin),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     thumbprint: {
-      value: cdktf.stringToHclTerraform(struct!.thumbprint),
+      value: cdktn.stringToHclTerraform(struct!.thumbprint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -907,9 +907,9 @@ export function serviceFabricClusterClientCertificateThumbprintToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterClientCertificateThumbprintOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterClientCertificateThumbprintOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -917,11 +917,11 @@ export class ServiceFabricClusterClientCertificateThumbprintOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServiceFabricClusterClientCertificateThumbprint | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceFabricClusterClientCertificateThumbprint | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -938,14 +938,14 @@ export class ServiceFabricClusterClientCertificateThumbprintOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceFabricClusterClientCertificateThumbprint | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceFabricClusterClientCertificateThumbprint | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._isAdmin = undefined;
       this._thumbprint = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -958,11 +958,11 @@ export class ServiceFabricClusterClientCertificateThumbprintOutputReference exte
   }
 
   // is_admin - computed: false, optional: false, required: true
-  private _isAdmin?: boolean | cdktf.IResolvable; 
+  private _isAdmin?: boolean | cdktn.IResolvable; 
   public get isAdmin() {
     return this.getBooleanAttribute('is_admin');
   }
-  public set isAdmin(value: boolean | cdktf.IResolvable) {
+  public set isAdmin(value: boolean | cdktn.IResolvable) {
     this._isAdmin = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -984,15 +984,15 @@ export class ServiceFabricClusterClientCertificateThumbprintOutputReference exte
   }
 }
 
-export class ServiceFabricClusterClientCertificateThumbprintList extends cdktf.ComplexList {
-  public internalValue? : ServiceFabricClusterClientCertificateThumbprint[] | cdktf.IResolvable
+export class ServiceFabricClusterClientCertificateThumbprintList extends cdktn.ComplexList {
+  public internalValue? : ServiceFabricClusterClientCertificateThumbprint[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1027,52 +1027,52 @@ export interface ServiceFabricClusterDiagnosticsConfig {
 }
 
 export function serviceFabricClusterDiagnosticsConfigToTerraform(struct?: ServiceFabricClusterDiagnosticsConfigOutputReference | ServiceFabricClusterDiagnosticsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    blob_endpoint: cdktf.stringToTerraform(struct!.blobEndpoint),
-    protected_account_key_name: cdktf.stringToTerraform(struct!.protectedAccountKeyName),
-    queue_endpoint: cdktf.stringToTerraform(struct!.queueEndpoint),
-    storage_account_name: cdktf.stringToTerraform(struct!.storageAccountName),
-    table_endpoint: cdktf.stringToTerraform(struct!.tableEndpoint),
+    blob_endpoint: cdktn.stringToTerraform(struct!.blobEndpoint),
+    protected_account_key_name: cdktn.stringToTerraform(struct!.protectedAccountKeyName),
+    queue_endpoint: cdktn.stringToTerraform(struct!.queueEndpoint),
+    storage_account_name: cdktn.stringToTerraform(struct!.storageAccountName),
+    table_endpoint: cdktn.stringToTerraform(struct!.tableEndpoint),
   }
 }
 
 
 export function serviceFabricClusterDiagnosticsConfigToHclTerraform(struct?: ServiceFabricClusterDiagnosticsConfigOutputReference | ServiceFabricClusterDiagnosticsConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     blob_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.blobEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.blobEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protected_account_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.protectedAccountKeyName),
+      value: cdktn.stringToHclTerraform(struct!.protectedAccountKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     queue_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.queueEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.queueEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_name: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountName),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.tableEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.tableEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1083,14 +1083,14 @@ export function serviceFabricClusterDiagnosticsConfigToHclTerraform(struct?: Ser
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterDiagnosticsConfigOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterDiagnosticsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1215,32 +1215,32 @@ export interface ServiceFabricClusterFabricSettings {
   readonly parameters?: { [key: string]: string };
 }
 
-export function serviceFabricClusterFabricSettingsToTerraform(struct?: ServiceFabricClusterFabricSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceFabricClusterFabricSettingsToTerraform(struct?: ServiceFabricClusterFabricSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
+    name: cdktn.stringToTerraform(struct!.name),
+    parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
   }
 }
 
 
-export function serviceFabricClusterFabricSettingsToHclTerraform(struct?: ServiceFabricClusterFabricSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceFabricClusterFabricSettingsToHclTerraform(struct?: ServiceFabricClusterFabricSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -1251,9 +1251,9 @@ export function serviceFabricClusterFabricSettingsToHclTerraform(struct?: Servic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterFabricSettingsOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterFabricSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1261,11 +1261,11 @@ export class ServiceFabricClusterFabricSettingsOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServiceFabricClusterFabricSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceFabricClusterFabricSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1282,14 +1282,14 @@ export class ServiceFabricClusterFabricSettingsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceFabricClusterFabricSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceFabricClusterFabricSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._parameters = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1331,15 +1331,15 @@ export class ServiceFabricClusterFabricSettingsOutputReference extends cdktf.Com
   }
 }
 
-export class ServiceFabricClusterFabricSettingsList extends cdktf.ComplexList {
-  public internalValue? : ServiceFabricClusterFabricSettings[] | cdktf.IResolvable
+export class ServiceFabricClusterFabricSettingsList extends cdktn.ComplexList {
+  public internalValue? : ServiceFabricClusterFabricSettings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1362,31 +1362,31 @@ export interface ServiceFabricClusterNodeTypeApplicationPorts {
 }
 
 export function serviceFabricClusterNodeTypeApplicationPortsToTerraform(struct?: ServiceFabricClusterNodeTypeApplicationPortsOutputReference | ServiceFabricClusterNodeTypeApplicationPorts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_port: cdktf.numberToTerraform(struct!.endPort),
-    start_port: cdktf.numberToTerraform(struct!.startPort),
+    end_port: cdktn.numberToTerraform(struct!.endPort),
+    start_port: cdktn.numberToTerraform(struct!.startPort),
   }
 }
 
 
 export function serviceFabricClusterNodeTypeApplicationPortsToHclTerraform(struct?: ServiceFabricClusterNodeTypeApplicationPortsOutputReference | ServiceFabricClusterNodeTypeApplicationPorts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_port: {
-      value: cdktf.numberToHclTerraform(struct!.endPort),
+      value: cdktn.numberToHclTerraform(struct!.endPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start_port: {
-      value: cdktf.numberToHclTerraform(struct!.startPort),
+      value: cdktn.numberToHclTerraform(struct!.startPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1397,14 +1397,14 @@ export function serviceFabricClusterNodeTypeApplicationPortsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterNodeTypeApplicationPortsOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterNodeTypeApplicationPortsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1473,31 +1473,31 @@ export interface ServiceFabricClusterNodeTypeEphemeralPorts {
 }
 
 export function serviceFabricClusterNodeTypeEphemeralPortsToTerraform(struct?: ServiceFabricClusterNodeTypeEphemeralPortsOutputReference | ServiceFabricClusterNodeTypeEphemeralPorts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_port: cdktf.numberToTerraform(struct!.endPort),
-    start_port: cdktf.numberToTerraform(struct!.startPort),
+    end_port: cdktn.numberToTerraform(struct!.endPort),
+    start_port: cdktn.numberToTerraform(struct!.startPort),
   }
 }
 
 
 export function serviceFabricClusterNodeTypeEphemeralPortsToHclTerraform(struct?: ServiceFabricClusterNodeTypeEphemeralPortsOutputReference | ServiceFabricClusterNodeTypeEphemeralPorts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_port: {
-      value: cdktf.numberToHclTerraform(struct!.endPort),
+      value: cdktn.numberToHclTerraform(struct!.endPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start_port: {
-      value: cdktf.numberToHclTerraform(struct!.startPort),
+      value: cdktn.numberToHclTerraform(struct!.startPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1508,14 +1508,14 @@ export function serviceFabricClusterNodeTypeEphemeralPortsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterNodeTypeEphemeralPortsOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterNodeTypeEphemeralPortsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1596,15 +1596,15 @@ export interface ServiceFabricClusterNodeType {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#is_primary ServiceFabricCluster#is_primary}
   */
-  readonly isPrimary: boolean | cdktf.IResolvable;
+  readonly isPrimary: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#is_stateless ServiceFabricCluster#is_stateless}
   */
-  readonly isStateless?: boolean | cdktf.IResolvable;
+  readonly isStateless?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#multiple_availability_zones ServiceFabricCluster#multiple_availability_zones}
   */
-  readonly multipleAvailabilityZones?: boolean | cdktf.IResolvable;
+  readonly multipleAvailabilityZones?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#name ServiceFabricCluster#name}
   */
@@ -1631,97 +1631,97 @@ export interface ServiceFabricClusterNodeType {
   readonly ephemeralPorts?: ServiceFabricClusterNodeTypeEphemeralPorts;
 }
 
-export function serviceFabricClusterNodeTypeToTerraform(struct?: ServiceFabricClusterNodeType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceFabricClusterNodeTypeToTerraform(struct?: ServiceFabricClusterNodeType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacities: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.capacities),
-    client_endpoint_port: cdktf.numberToTerraform(struct!.clientEndpointPort),
-    durability_level: cdktf.stringToTerraform(struct!.durabilityLevel),
-    http_endpoint_port: cdktf.numberToTerraform(struct!.httpEndpointPort),
-    instance_count: cdktf.numberToTerraform(struct!.instanceCount),
-    is_primary: cdktf.booleanToTerraform(struct!.isPrimary),
-    is_stateless: cdktf.booleanToTerraform(struct!.isStateless),
-    multiple_availability_zones: cdktf.booleanToTerraform(struct!.multipleAvailabilityZones),
-    name: cdktf.stringToTerraform(struct!.name),
-    placement_properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.placementProperties),
-    reverse_proxy_endpoint_port: cdktf.numberToTerraform(struct!.reverseProxyEndpointPort),
+    capacities: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.capacities),
+    client_endpoint_port: cdktn.numberToTerraform(struct!.clientEndpointPort),
+    durability_level: cdktn.stringToTerraform(struct!.durabilityLevel),
+    http_endpoint_port: cdktn.numberToTerraform(struct!.httpEndpointPort),
+    instance_count: cdktn.numberToTerraform(struct!.instanceCount),
+    is_primary: cdktn.booleanToTerraform(struct!.isPrimary),
+    is_stateless: cdktn.booleanToTerraform(struct!.isStateless),
+    multiple_availability_zones: cdktn.booleanToTerraform(struct!.multipleAvailabilityZones),
+    name: cdktn.stringToTerraform(struct!.name),
+    placement_properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.placementProperties),
+    reverse_proxy_endpoint_port: cdktn.numberToTerraform(struct!.reverseProxyEndpointPort),
     application_ports: serviceFabricClusterNodeTypeApplicationPortsToTerraform(struct!.applicationPorts),
     ephemeral_ports: serviceFabricClusterNodeTypeEphemeralPortsToTerraform(struct!.ephemeralPorts),
   }
 }
 
 
-export function serviceFabricClusterNodeTypeToHclTerraform(struct?: ServiceFabricClusterNodeType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceFabricClusterNodeTypeToHclTerraform(struct?: ServiceFabricClusterNodeType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacities: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.capacities),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.capacities),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     client_endpoint_port: {
-      value: cdktf.numberToHclTerraform(struct!.clientEndpointPort),
+      value: cdktn.numberToHclTerraform(struct!.clientEndpointPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     durability_level: {
-      value: cdktf.stringToHclTerraform(struct!.durabilityLevel),
+      value: cdktn.stringToHclTerraform(struct!.durabilityLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_endpoint_port: {
-      value: cdktf.numberToHclTerraform(struct!.httpEndpointPort),
+      value: cdktn.numberToHclTerraform(struct!.httpEndpointPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     instance_count: {
-      value: cdktf.numberToHclTerraform(struct!.instanceCount),
+      value: cdktn.numberToHclTerraform(struct!.instanceCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     is_primary: {
-      value: cdktf.booleanToHclTerraform(struct!.isPrimary),
+      value: cdktn.booleanToHclTerraform(struct!.isPrimary),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_stateless: {
-      value: cdktf.booleanToHclTerraform(struct!.isStateless),
+      value: cdktn.booleanToHclTerraform(struct!.isStateless),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     multiple_availability_zones: {
-      value: cdktf.booleanToHclTerraform(struct!.multipleAvailabilityZones),
+      value: cdktn.booleanToHclTerraform(struct!.multipleAvailabilityZones),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     placement_properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.placementProperties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.placementProperties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     reverse_proxy_endpoint_port: {
-      value: cdktf.numberToHclTerraform(struct!.reverseProxyEndpointPort),
+      value: cdktn.numberToHclTerraform(struct!.reverseProxyEndpointPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1744,9 +1744,9 @@ export function serviceFabricClusterNodeTypeToHclTerraform(struct?: ServiceFabri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterNodeTypeOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterNodeTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1754,11 +1754,11 @@ export class ServiceFabricClusterNodeTypeOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServiceFabricClusterNodeType | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceFabricClusterNodeType | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1819,7 +1819,7 @@ export class ServiceFabricClusterNodeTypeOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceFabricClusterNodeType | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceFabricClusterNodeType | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1837,7 +1837,7 @@ export class ServiceFabricClusterNodeTypeOutputReference extends cdktf.ComplexOb
       this._applicationPorts.internalValue = undefined;
       this._ephemeralPorts.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1932,11 +1932,11 @@ export class ServiceFabricClusterNodeTypeOutputReference extends cdktf.ComplexOb
   }
 
   // is_primary - computed: false, optional: false, required: true
-  private _isPrimary?: boolean | cdktf.IResolvable; 
+  private _isPrimary?: boolean | cdktn.IResolvable; 
   public get isPrimary() {
     return this.getBooleanAttribute('is_primary');
   }
-  public set isPrimary(value: boolean | cdktf.IResolvable) {
+  public set isPrimary(value: boolean | cdktn.IResolvable) {
     this._isPrimary = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1945,11 +1945,11 @@ export class ServiceFabricClusterNodeTypeOutputReference extends cdktf.ComplexOb
   }
 
   // is_stateless - computed: false, optional: true, required: false
-  private _isStateless?: boolean | cdktf.IResolvable; 
+  private _isStateless?: boolean | cdktn.IResolvable; 
   public get isStateless() {
     return this.getBooleanAttribute('is_stateless');
   }
-  public set isStateless(value: boolean | cdktf.IResolvable) {
+  public set isStateless(value: boolean | cdktn.IResolvable) {
     this._isStateless = value;
   }
   public resetIsStateless() {
@@ -1961,11 +1961,11 @@ export class ServiceFabricClusterNodeTypeOutputReference extends cdktf.ComplexOb
   }
 
   // multiple_availability_zones - computed: false, optional: true, required: false
-  private _multipleAvailabilityZones?: boolean | cdktf.IResolvable; 
+  private _multipleAvailabilityZones?: boolean | cdktn.IResolvable; 
   public get multipleAvailabilityZones() {
     return this.getBooleanAttribute('multiple_availability_zones');
   }
-  public set multipleAvailabilityZones(value: boolean | cdktf.IResolvable) {
+  public set multipleAvailabilityZones(value: boolean | cdktn.IResolvable) {
     this._multipleAvailabilityZones = value;
   }
   public resetMultipleAvailabilityZones() {
@@ -2054,15 +2054,15 @@ export class ServiceFabricClusterNodeTypeOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class ServiceFabricClusterNodeTypeList extends cdktf.ComplexList {
-  public internalValue? : ServiceFabricClusterNodeType[] | cdktf.IResolvable
+export class ServiceFabricClusterNodeTypeList extends cdktn.ComplexList {
+  public internalValue? : ServiceFabricClusterNodeType[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2089,38 +2089,38 @@ export interface ServiceFabricClusterReverseProxyCertificate {
 }
 
 export function serviceFabricClusterReverseProxyCertificateToTerraform(struct?: ServiceFabricClusterReverseProxyCertificateOutputReference | ServiceFabricClusterReverseProxyCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    thumbprint: cdktf.stringToTerraform(struct!.thumbprint),
-    thumbprint_secondary: cdktf.stringToTerraform(struct!.thumbprintSecondary),
-    x509_store_name: cdktf.stringToTerraform(struct!.x509StoreName),
+    thumbprint: cdktn.stringToTerraform(struct!.thumbprint),
+    thumbprint_secondary: cdktn.stringToTerraform(struct!.thumbprintSecondary),
+    x509_store_name: cdktn.stringToTerraform(struct!.x509StoreName),
   }
 }
 
 
 export function serviceFabricClusterReverseProxyCertificateToHclTerraform(struct?: ServiceFabricClusterReverseProxyCertificateOutputReference | ServiceFabricClusterReverseProxyCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     thumbprint: {
-      value: cdktf.stringToHclTerraform(struct!.thumbprint),
+      value: cdktn.stringToHclTerraform(struct!.thumbprint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     thumbprint_secondary: {
-      value: cdktf.stringToHclTerraform(struct!.thumbprintSecondary),
+      value: cdktn.stringToHclTerraform(struct!.thumbprintSecondary),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     x509_store_name: {
-      value: cdktf.stringToHclTerraform(struct!.x509StoreName),
+      value: cdktn.stringToHclTerraform(struct!.x509StoreName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2131,14 +2131,14 @@ export function serviceFabricClusterReverseProxyCertificateToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterReverseProxyCertificateOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterReverseProxyCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2228,32 +2228,32 @@ export interface ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNam
   readonly certificateIssuerThumbprint?: string;
 }
 
-export function serviceFabricClusterReverseProxyCertificateCommonNamesCommonNamesToTerraform(struct?: ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceFabricClusterReverseProxyCertificateCommonNamesCommonNamesToTerraform(struct?: ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_common_name: cdktf.stringToTerraform(struct!.certificateCommonName),
-    certificate_issuer_thumbprint: cdktf.stringToTerraform(struct!.certificateIssuerThumbprint),
+    certificate_common_name: cdktn.stringToTerraform(struct!.certificateCommonName),
+    certificate_issuer_thumbprint: cdktn.stringToTerraform(struct!.certificateIssuerThumbprint),
   }
 }
 
 
-export function serviceFabricClusterReverseProxyCertificateCommonNamesCommonNamesToHclTerraform(struct?: ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceFabricClusterReverseProxyCertificateCommonNamesCommonNamesToHclTerraform(struct?: ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate_common_name: {
-      value: cdktf.stringToHclTerraform(struct!.certificateCommonName),
+      value: cdktn.stringToHclTerraform(struct!.certificateCommonName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate_issuer_thumbprint: {
-      value: cdktf.stringToHclTerraform(struct!.certificateIssuerThumbprint),
+      value: cdktn.stringToHclTerraform(struct!.certificateIssuerThumbprint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2264,9 +2264,9 @@ export function serviceFabricClusterReverseProxyCertificateCommonNamesCommonName
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNamesOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNamesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2274,11 +2274,11 @@ export class ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNamesOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2295,14 +2295,14 @@ export class ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNamesOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._certificateCommonName = undefined;
       this._certificateIssuerThumbprint = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2344,15 +2344,15 @@ export class ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNamesOu
   }
 }
 
-export class ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNamesList extends cdktf.ComplexList {
-  public internalValue? : ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames[] | cdktf.IResolvable
+export class ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNamesList extends cdktn.ComplexList {
+  public internalValue? : ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2373,35 +2373,35 @@ export interface ServiceFabricClusterReverseProxyCertificateCommonNames {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#common_names ServiceFabricCluster#common_names}
   */
-  readonly commonNames: ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames[] | cdktf.IResolvable;
+  readonly commonNames: ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames[] | cdktn.IResolvable;
 }
 
 export function serviceFabricClusterReverseProxyCertificateCommonNamesToTerraform(struct?: ServiceFabricClusterReverseProxyCertificateCommonNamesOutputReference | ServiceFabricClusterReverseProxyCertificateCommonNames): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    x509_store_name: cdktf.stringToTerraform(struct!.x509StoreName),
-    common_names: cdktf.listMapper(serviceFabricClusterReverseProxyCertificateCommonNamesCommonNamesToTerraform, true)(struct!.commonNames),
+    x509_store_name: cdktn.stringToTerraform(struct!.x509StoreName),
+    common_names: cdktn.listMapper(serviceFabricClusterReverseProxyCertificateCommonNamesCommonNamesToTerraform, true)(struct!.commonNames),
   }
 }
 
 
 export function serviceFabricClusterReverseProxyCertificateCommonNamesToHclTerraform(struct?: ServiceFabricClusterReverseProxyCertificateCommonNamesOutputReference | ServiceFabricClusterReverseProxyCertificateCommonNames): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     x509_store_name: {
-      value: cdktf.stringToHclTerraform(struct!.x509StoreName),
+      value: cdktn.stringToHclTerraform(struct!.x509StoreName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     common_names: {
-      value: cdktf.listMapperHcl(serviceFabricClusterReverseProxyCertificateCommonNamesCommonNamesToHclTerraform, true)(struct!.commonNames),
+      value: cdktn.listMapperHcl(serviceFabricClusterReverseProxyCertificateCommonNamesCommonNamesToHclTerraform, true)(struct!.commonNames),
       isBlock: true,
       type: "set",
       storageClassType: "ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNamesList",
@@ -2412,14 +2412,14 @@ export function serviceFabricClusterReverseProxyCertificateCommonNamesToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterReverseProxyCertificateCommonNamesOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterReverseProxyCertificateCommonNamesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2468,7 +2468,7 @@ export class ServiceFabricClusterReverseProxyCertificateCommonNamesOutputReferen
   public get commonNames() {
     return this._commonNames;
   }
-  public putCommonNames(value: ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames[] | cdktf.IResolvable) {
+  public putCommonNames(value: ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames[] | cdktn.IResolvable) {
     this._commonNames.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2495,46 +2495,46 @@ export interface ServiceFabricClusterTimeouts {
   readonly update?: string;
 }
 
-export function serviceFabricClusterTimeoutsToTerraform(struct?: ServiceFabricClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceFabricClusterTimeoutsToTerraform(struct?: ServiceFabricClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function serviceFabricClusterTimeoutsToHclTerraform(struct?: ServiceFabricClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function serviceFabricClusterTimeoutsToHclTerraform(struct?: ServiceFabricClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2545,19 +2545,19 @@ export function serviceFabricClusterTimeoutsToHclTerraform(struct?: ServiceFabri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ServiceFabricClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ServiceFabricClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2582,7 +2582,7 @@ export class ServiceFabricClusterTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServiceFabricClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServiceFabricClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2591,7 +2591,7 @@ export class ServiceFabricClusterTimeoutsOutputReference extends cdktf.ComplexOb
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2685,38 +2685,38 @@ export interface ServiceFabricClusterUpgradePolicyDeltaHealthPolicy {
 }
 
 export function serviceFabricClusterUpgradePolicyDeltaHealthPolicyToTerraform(struct?: ServiceFabricClusterUpgradePolicyDeltaHealthPolicyOutputReference | ServiceFabricClusterUpgradePolicyDeltaHealthPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_delta_unhealthy_applications_percent: cdktf.numberToTerraform(struct!.maxDeltaUnhealthyApplicationsPercent),
-    max_delta_unhealthy_nodes_percent: cdktf.numberToTerraform(struct!.maxDeltaUnhealthyNodesPercent),
-    max_upgrade_domain_delta_unhealthy_nodes_percent: cdktf.numberToTerraform(struct!.maxUpgradeDomainDeltaUnhealthyNodesPercent),
+    max_delta_unhealthy_applications_percent: cdktn.numberToTerraform(struct!.maxDeltaUnhealthyApplicationsPercent),
+    max_delta_unhealthy_nodes_percent: cdktn.numberToTerraform(struct!.maxDeltaUnhealthyNodesPercent),
+    max_upgrade_domain_delta_unhealthy_nodes_percent: cdktn.numberToTerraform(struct!.maxUpgradeDomainDeltaUnhealthyNodesPercent),
   }
 }
 
 
 export function serviceFabricClusterUpgradePolicyDeltaHealthPolicyToHclTerraform(struct?: ServiceFabricClusterUpgradePolicyDeltaHealthPolicyOutputReference | ServiceFabricClusterUpgradePolicyDeltaHealthPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_delta_unhealthy_applications_percent: {
-      value: cdktf.numberToHclTerraform(struct!.maxDeltaUnhealthyApplicationsPercent),
+      value: cdktn.numberToHclTerraform(struct!.maxDeltaUnhealthyApplicationsPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_delta_unhealthy_nodes_percent: {
-      value: cdktf.numberToHclTerraform(struct!.maxDeltaUnhealthyNodesPercent),
+      value: cdktn.numberToHclTerraform(struct!.maxDeltaUnhealthyNodesPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_upgrade_domain_delta_unhealthy_nodes_percent: {
-      value: cdktf.numberToHclTerraform(struct!.maxUpgradeDomainDeltaUnhealthyNodesPercent),
+      value: cdktn.numberToHclTerraform(struct!.maxUpgradeDomainDeltaUnhealthyNodesPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2727,14 +2727,14 @@ export function serviceFabricClusterUpgradePolicyDeltaHealthPolicyToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterUpgradePolicyDeltaHealthPolicyOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterUpgradePolicyDeltaHealthPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2831,31 +2831,31 @@ export interface ServiceFabricClusterUpgradePolicyHealthPolicy {
 }
 
 export function serviceFabricClusterUpgradePolicyHealthPolicyToTerraform(struct?: ServiceFabricClusterUpgradePolicyHealthPolicyOutputReference | ServiceFabricClusterUpgradePolicyHealthPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_unhealthy_applications_percent: cdktf.numberToTerraform(struct!.maxUnhealthyApplicationsPercent),
-    max_unhealthy_nodes_percent: cdktf.numberToTerraform(struct!.maxUnhealthyNodesPercent),
+    max_unhealthy_applications_percent: cdktn.numberToTerraform(struct!.maxUnhealthyApplicationsPercent),
+    max_unhealthy_nodes_percent: cdktn.numberToTerraform(struct!.maxUnhealthyNodesPercent),
   }
 }
 
 
 export function serviceFabricClusterUpgradePolicyHealthPolicyToHclTerraform(struct?: ServiceFabricClusterUpgradePolicyHealthPolicyOutputReference | ServiceFabricClusterUpgradePolicyHealthPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_unhealthy_applications_percent: {
-      value: cdktf.numberToHclTerraform(struct!.maxUnhealthyApplicationsPercent),
+      value: cdktn.numberToHclTerraform(struct!.maxUnhealthyApplicationsPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_unhealthy_nodes_percent: {
-      value: cdktf.numberToHclTerraform(struct!.maxUnhealthyNodesPercent),
+      value: cdktn.numberToHclTerraform(struct!.maxUnhealthyNodesPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2866,14 +2866,14 @@ export function serviceFabricClusterUpgradePolicyHealthPolicyToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterUpgradePolicyHealthPolicyOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterUpgradePolicyHealthPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2940,7 +2940,7 @@ export interface ServiceFabricClusterUpgradePolicy {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#force_restart_enabled ServiceFabricCluster#force_restart_enabled}
   */
-  readonly forceRestartEnabled?: boolean | cdktf.IResolvable;
+  readonly forceRestartEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#health_check_retry_timeout ServiceFabricCluster#health_check_retry_timeout}
   */
@@ -2980,18 +2980,18 @@ export interface ServiceFabricClusterUpgradePolicy {
 }
 
 export function serviceFabricClusterUpgradePolicyToTerraform(struct?: ServiceFabricClusterUpgradePolicyOutputReference | ServiceFabricClusterUpgradePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    force_restart_enabled: cdktf.booleanToTerraform(struct!.forceRestartEnabled),
-    health_check_retry_timeout: cdktf.stringToTerraform(struct!.healthCheckRetryTimeout),
-    health_check_stable_duration: cdktf.stringToTerraform(struct!.healthCheckStableDuration),
-    health_check_wait_duration: cdktf.stringToTerraform(struct!.healthCheckWaitDuration),
-    upgrade_domain_timeout: cdktf.stringToTerraform(struct!.upgradeDomainTimeout),
-    upgrade_replica_set_check_timeout: cdktf.stringToTerraform(struct!.upgradeReplicaSetCheckTimeout),
-    upgrade_timeout: cdktf.stringToTerraform(struct!.upgradeTimeout),
+    force_restart_enabled: cdktn.booleanToTerraform(struct!.forceRestartEnabled),
+    health_check_retry_timeout: cdktn.stringToTerraform(struct!.healthCheckRetryTimeout),
+    health_check_stable_duration: cdktn.stringToTerraform(struct!.healthCheckStableDuration),
+    health_check_wait_duration: cdktn.stringToTerraform(struct!.healthCheckWaitDuration),
+    upgrade_domain_timeout: cdktn.stringToTerraform(struct!.upgradeDomainTimeout),
+    upgrade_replica_set_check_timeout: cdktn.stringToTerraform(struct!.upgradeReplicaSetCheckTimeout),
+    upgrade_timeout: cdktn.stringToTerraform(struct!.upgradeTimeout),
     delta_health_policy: serviceFabricClusterUpgradePolicyDeltaHealthPolicyToTerraform(struct!.deltaHealthPolicy),
     health_policy: serviceFabricClusterUpgradePolicyHealthPolicyToTerraform(struct!.healthPolicy),
   }
@@ -2999,49 +2999,49 @@ export function serviceFabricClusterUpgradePolicyToTerraform(struct?: ServiceFab
 
 
 export function serviceFabricClusterUpgradePolicyToHclTerraform(struct?: ServiceFabricClusterUpgradePolicyOutputReference | ServiceFabricClusterUpgradePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     force_restart_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.forceRestartEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.forceRestartEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     health_check_retry_timeout: {
-      value: cdktf.stringToHclTerraform(struct!.healthCheckRetryTimeout),
+      value: cdktn.stringToHclTerraform(struct!.healthCheckRetryTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     health_check_stable_duration: {
-      value: cdktf.stringToHclTerraform(struct!.healthCheckStableDuration),
+      value: cdktn.stringToHclTerraform(struct!.healthCheckStableDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     health_check_wait_duration: {
-      value: cdktf.stringToHclTerraform(struct!.healthCheckWaitDuration),
+      value: cdktn.stringToHclTerraform(struct!.healthCheckWaitDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     upgrade_domain_timeout: {
-      value: cdktf.stringToHclTerraform(struct!.upgradeDomainTimeout),
+      value: cdktn.stringToHclTerraform(struct!.upgradeDomainTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     upgrade_replica_set_check_timeout: {
-      value: cdktf.stringToHclTerraform(struct!.upgradeReplicaSetCheckTimeout),
+      value: cdktn.stringToHclTerraform(struct!.upgradeReplicaSetCheckTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     upgrade_timeout: {
-      value: cdktf.stringToHclTerraform(struct!.upgradeTimeout),
+      value: cdktn.stringToHclTerraform(struct!.upgradeTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3064,14 +3064,14 @@ export function serviceFabricClusterUpgradePolicyToHclTerraform(struct?: Service
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServiceFabricClusterUpgradePolicyOutputReference extends cdktf.ComplexObject {
+export class ServiceFabricClusterUpgradePolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3145,11 +3145,11 @@ export class ServiceFabricClusterUpgradePolicyOutputReference extends cdktf.Comp
   }
 
   // force_restart_enabled - computed: false, optional: true, required: false
-  private _forceRestartEnabled?: boolean | cdktf.IResolvable; 
+  private _forceRestartEnabled?: boolean | cdktn.IResolvable; 
   public get forceRestartEnabled() {
     return this.getBooleanAttribute('force_restart_enabled');
   }
-  public set forceRestartEnabled(value: boolean | cdktf.IResolvable) {
+  public set forceRestartEnabled(value: boolean | cdktn.IResolvable) {
     this._forceRestartEnabled = value;
   }
   public resetForceRestartEnabled() {
@@ -3292,7 +3292,7 @@ export class ServiceFabricClusterUpgradePolicyOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster}
 */
-export class ServiceFabricCluster extends cdktf.TerraformResource {
+export class ServiceFabricCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -3303,14 +3303,14 @@ export class ServiceFabricCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServiceFabricCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServiceFabricCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceFabricCluster to import
   * @param importFromId The id of the existing ServiceFabricCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/service_fabric_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceFabricCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_service_fabric_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_service_fabric_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -3374,7 +3374,7 @@ export class ServiceFabricCluster extends cdktf.TerraformResource {
   // add_on_features - computed: false, optional: true, required: false
   private _addOnFeatures?: string[]; 
   public get addOnFeatures() {
-    return cdktf.Fn.tolist(this.getListAttribute('add_on_features'));
+    return cdktn.Fn.tolist(this.getListAttribute('add_on_features'));
   }
   public set addOnFeatures(value: string[]) {
     this._addOnFeatures = value;
@@ -3616,7 +3616,7 @@ export class ServiceFabricCluster extends cdktf.TerraformResource {
   public get clientCertificateCommonName() {
     return this._clientCertificateCommonName;
   }
-  public putClientCertificateCommonName(value: ServiceFabricClusterClientCertificateCommonName[] | cdktf.IResolvable) {
+  public putClientCertificateCommonName(value: ServiceFabricClusterClientCertificateCommonName[] | cdktn.IResolvable) {
     this._clientCertificateCommonName.internalValue = value;
   }
   public resetClientCertificateCommonName() {
@@ -3632,7 +3632,7 @@ export class ServiceFabricCluster extends cdktf.TerraformResource {
   public get clientCertificateThumbprint() {
     return this._clientCertificateThumbprint;
   }
-  public putClientCertificateThumbprint(value: ServiceFabricClusterClientCertificateThumbprint[] | cdktf.IResolvable) {
+  public putClientCertificateThumbprint(value: ServiceFabricClusterClientCertificateThumbprint[] | cdktn.IResolvable) {
     this._clientCertificateThumbprint.internalValue = value;
   }
   public resetClientCertificateThumbprint() {
@@ -3664,7 +3664,7 @@ export class ServiceFabricCluster extends cdktf.TerraformResource {
   public get fabricSettings() {
     return this._fabricSettings;
   }
-  public putFabricSettings(value: ServiceFabricClusterFabricSettings[] | cdktf.IResolvable) {
+  public putFabricSettings(value: ServiceFabricClusterFabricSettings[] | cdktn.IResolvable) {
     this._fabricSettings.internalValue = value;
   }
   public resetFabricSettings() {
@@ -3680,7 +3680,7 @@ export class ServiceFabricCluster extends cdktf.TerraformResource {
   public get nodeType() {
     return this._nodeType;
   }
-  public putNodeType(value: ServiceFabricClusterNodeType[] | cdktf.IResolvable) {
+  public putNodeType(value: ServiceFabricClusterNodeType[] | cdktn.IResolvable) {
     this._nodeType.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3758,27 +3758,27 @@ export class ServiceFabricCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      add_on_features: cdktf.listMapper(cdktf.stringToTerraform, false)(this._addOnFeatures),
-      cluster_code_version: cdktf.stringToTerraform(this._clusterCodeVersion),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      management_endpoint: cdktf.stringToTerraform(this._managementEndpoint),
-      name: cdktf.stringToTerraform(this._name),
-      reliability_level: cdktf.stringToTerraform(this._reliabilityLevel),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      service_fabric_zonal_upgrade_mode: cdktf.stringToTerraform(this._serviceFabricZonalUpgradeMode),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      upgrade_mode: cdktf.stringToTerraform(this._upgradeMode),
-      vm_image: cdktf.stringToTerraform(this._vmImage),
-      vmss_zonal_upgrade_mode: cdktf.stringToTerraform(this._vmssZonalUpgradeMode),
+      add_on_features: cdktn.listMapper(cdktn.stringToTerraform, false)(this._addOnFeatures),
+      cluster_code_version: cdktn.stringToTerraform(this._clusterCodeVersion),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      management_endpoint: cdktn.stringToTerraform(this._managementEndpoint),
+      name: cdktn.stringToTerraform(this._name),
+      reliability_level: cdktn.stringToTerraform(this._reliabilityLevel),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      service_fabric_zonal_upgrade_mode: cdktn.stringToTerraform(this._serviceFabricZonalUpgradeMode),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      upgrade_mode: cdktn.stringToTerraform(this._upgradeMode),
+      vm_image: cdktn.stringToTerraform(this._vmImage),
+      vmss_zonal_upgrade_mode: cdktn.stringToTerraform(this._vmssZonalUpgradeMode),
       azure_active_directory: serviceFabricClusterAzureActiveDirectoryToTerraform(this._azureActiveDirectory.internalValue),
       certificate: serviceFabricClusterCertificateToTerraform(this._certificate.internalValue),
       certificate_common_names: serviceFabricClusterCertificateCommonNamesToTerraform(this._certificateCommonNames.internalValue),
-      client_certificate_common_name: cdktf.listMapper(serviceFabricClusterClientCertificateCommonNameToTerraform, true)(this._clientCertificateCommonName.internalValue),
-      client_certificate_thumbprint: cdktf.listMapper(serviceFabricClusterClientCertificateThumbprintToTerraform, true)(this._clientCertificateThumbprint.internalValue),
+      client_certificate_common_name: cdktn.listMapper(serviceFabricClusterClientCertificateCommonNameToTerraform, true)(this._clientCertificateCommonName.internalValue),
+      client_certificate_thumbprint: cdktn.listMapper(serviceFabricClusterClientCertificateThumbprintToTerraform, true)(this._clientCertificateThumbprint.internalValue),
       diagnostics_config: serviceFabricClusterDiagnosticsConfigToTerraform(this._diagnosticsConfig.internalValue),
-      fabric_settings: cdktf.listMapper(serviceFabricClusterFabricSettingsToTerraform, true)(this._fabricSettings.internalValue),
-      node_type: cdktf.listMapper(serviceFabricClusterNodeTypeToTerraform, true)(this._nodeType.internalValue),
+      fabric_settings: cdktn.listMapper(serviceFabricClusterFabricSettingsToTerraform, true)(this._fabricSettings.internalValue),
+      node_type: cdktn.listMapper(serviceFabricClusterNodeTypeToTerraform, true)(this._nodeType.internalValue),
       reverse_proxy_certificate: serviceFabricClusterReverseProxyCertificateToTerraform(this._reverseProxyCertificate.internalValue),
       reverse_proxy_certificate_common_names: serviceFabricClusterReverseProxyCertificateCommonNamesToTerraform(this._reverseProxyCertificateCommonNames.internalValue),
       timeouts: serviceFabricClusterTimeoutsToTerraform(this._timeouts.internalValue),
@@ -3789,79 +3789,79 @@ export class ServiceFabricCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       add_on_features: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._addOnFeatures),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._addOnFeatures),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       cluster_code_version: {
-        value: cdktf.stringToHclTerraform(this._clusterCodeVersion),
+        value: cdktn.stringToHclTerraform(this._clusterCodeVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       management_endpoint: {
-        value: cdktf.stringToHclTerraform(this._managementEndpoint),
+        value: cdktn.stringToHclTerraform(this._managementEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reliability_level: {
-        value: cdktf.stringToHclTerraform(this._reliabilityLevel),
+        value: cdktn.stringToHclTerraform(this._reliabilityLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_fabric_zonal_upgrade_mode: {
-        value: cdktf.stringToHclTerraform(this._serviceFabricZonalUpgradeMode),
+        value: cdktn.stringToHclTerraform(this._serviceFabricZonalUpgradeMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       upgrade_mode: {
-        value: cdktf.stringToHclTerraform(this._upgradeMode),
+        value: cdktn.stringToHclTerraform(this._upgradeMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vm_image: {
-        value: cdktf.stringToHclTerraform(this._vmImage),
+        value: cdktn.stringToHclTerraform(this._vmImage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vmss_zonal_upgrade_mode: {
-        value: cdktf.stringToHclTerraform(this._vmssZonalUpgradeMode),
+        value: cdktn.stringToHclTerraform(this._vmssZonalUpgradeMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -3885,13 +3885,13 @@ export class ServiceFabricCluster extends cdktf.TerraformResource {
         storageClassType: "ServiceFabricClusterCertificateCommonNamesList",
       },
       client_certificate_common_name: {
-        value: cdktf.listMapperHcl(serviceFabricClusterClientCertificateCommonNameToHclTerraform, true)(this._clientCertificateCommonName.internalValue),
+        value: cdktn.listMapperHcl(serviceFabricClusterClientCertificateCommonNameToHclTerraform, true)(this._clientCertificateCommonName.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ServiceFabricClusterClientCertificateCommonNameList",
       },
       client_certificate_thumbprint: {
-        value: cdktf.listMapperHcl(serviceFabricClusterClientCertificateThumbprintToHclTerraform, true)(this._clientCertificateThumbprint.internalValue),
+        value: cdktn.listMapperHcl(serviceFabricClusterClientCertificateThumbprintToHclTerraform, true)(this._clientCertificateThumbprint.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ServiceFabricClusterClientCertificateThumbprintList",
@@ -3903,13 +3903,13 @@ export class ServiceFabricCluster extends cdktf.TerraformResource {
         storageClassType: "ServiceFabricClusterDiagnosticsConfigList",
       },
       fabric_settings: {
-        value: cdktf.listMapperHcl(serviceFabricClusterFabricSettingsToHclTerraform, true)(this._fabricSettings.internalValue),
+        value: cdktn.listMapperHcl(serviceFabricClusterFabricSettingsToHclTerraform, true)(this._fabricSettings.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ServiceFabricClusterFabricSettingsList",
       },
       node_type: {
-        value: cdktf.listMapperHcl(serviceFabricClusterNodeTypeToHclTerraform, true)(this._nodeType.internalValue),
+        value: cdktn.listMapperHcl(serviceFabricClusterNodeTypeToHclTerraform, true)(this._nodeType.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ServiceFabricClusterNodeTypeList",

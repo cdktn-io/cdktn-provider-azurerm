@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ResourceDeploymentScriptAzureCliConfig extends cdktf.TerraformMetaArguments {
+export interface ResourceDeploymentScriptAzureCliConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/resource_deployment_script_azure_cli#cleanup_preference ResourceDeploymentScriptAzureCli#cleanup_preference}
   */
@@ -82,7 +82,7 @@ export interface ResourceDeploymentScriptAzureCliConfig extends cdktf.TerraformM
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/resource_deployment_script_azure_cli#environment_variable ResourceDeploymentScriptAzureCli#environment_variable}
   */
-  readonly environmentVariable?: ResourceDeploymentScriptAzureCliEnvironmentVariable[] | cdktf.IResolvable;
+  readonly environmentVariable?: ResourceDeploymentScriptAzureCliEnvironmentVariable[] | cdktn.IResolvable;
   /**
   * identity block
   *
@@ -110,24 +110,24 @@ export interface ResourceDeploymentScriptAzureCliContainer {
 }
 
 export function resourceDeploymentScriptAzureCliContainerToTerraform(struct?: ResourceDeploymentScriptAzureCliContainerOutputReference | ResourceDeploymentScriptAzureCliContainer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_group_name: cdktf.stringToTerraform(struct!.containerGroupName),
+    container_group_name: cdktn.stringToTerraform(struct!.containerGroupName),
   }
 }
 
 
 export function resourceDeploymentScriptAzureCliContainerToHclTerraform(struct?: ResourceDeploymentScriptAzureCliContainerOutputReference | ResourceDeploymentScriptAzureCliContainer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.containerGroupName),
+      value: cdktn.stringToHclTerraform(struct!.containerGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -138,14 +138,14 @@ export function resourceDeploymentScriptAzureCliContainerToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResourceDeploymentScriptAzureCliContainerOutputReference extends cdktf.ComplexObject {
+export class ResourceDeploymentScriptAzureCliContainerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -201,39 +201,39 @@ export interface ResourceDeploymentScriptAzureCliEnvironmentVariable {
   readonly value?: string;
 }
 
-export function resourceDeploymentScriptAzureCliEnvironmentVariableToTerraform(struct?: ResourceDeploymentScriptAzureCliEnvironmentVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourceDeploymentScriptAzureCliEnvironmentVariableToTerraform(struct?: ResourceDeploymentScriptAzureCliEnvironmentVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    secure_value: cdktf.stringToTerraform(struct!.secureValue),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    secure_value: cdktn.stringToTerraform(struct!.secureValue),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function resourceDeploymentScriptAzureCliEnvironmentVariableToHclTerraform(struct?: ResourceDeploymentScriptAzureCliEnvironmentVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourceDeploymentScriptAzureCliEnvironmentVariableToHclTerraform(struct?: ResourceDeploymentScriptAzureCliEnvironmentVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secure_value: {
-      value: cdktf.stringToHclTerraform(struct!.secureValue),
+      value: cdktn.stringToHclTerraform(struct!.secureValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -244,9 +244,9 @@ export function resourceDeploymentScriptAzureCliEnvironmentVariableToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResourceDeploymentScriptAzureCliEnvironmentVariableOutputReference extends cdktf.ComplexObject {
+export class ResourceDeploymentScriptAzureCliEnvironmentVariableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -254,11 +254,11 @@ export class ResourceDeploymentScriptAzureCliEnvironmentVariableOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ResourceDeploymentScriptAzureCliEnvironmentVariable | cdktf.IResolvable | undefined {
+  public get internalValue(): ResourceDeploymentScriptAzureCliEnvironmentVariable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -279,7 +279,7 @@ export class ResourceDeploymentScriptAzureCliEnvironmentVariableOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ResourceDeploymentScriptAzureCliEnvironmentVariable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ResourceDeploymentScriptAzureCliEnvironmentVariable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -287,7 +287,7 @@ export class ResourceDeploymentScriptAzureCliEnvironmentVariableOutputReference 
       this._secureValue = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -346,15 +346,15 @@ export class ResourceDeploymentScriptAzureCliEnvironmentVariableOutputReference 
   }
 }
 
-export class ResourceDeploymentScriptAzureCliEnvironmentVariableList extends cdktf.ComplexList {
-  public internalValue? : ResourceDeploymentScriptAzureCliEnvironmentVariable[] | cdktf.IResolvable
+export class ResourceDeploymentScriptAzureCliEnvironmentVariableList extends cdktn.ComplexList {
+  public internalValue? : ResourceDeploymentScriptAzureCliEnvironmentVariable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -377,31 +377,31 @@ export interface ResourceDeploymentScriptAzureCliIdentity {
 }
 
 export function resourceDeploymentScriptAzureCliIdentityToTerraform(struct?: ResourceDeploymentScriptAzureCliIdentityOutputReference | ResourceDeploymentScriptAzureCliIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function resourceDeploymentScriptAzureCliIdentityToHclTerraform(struct?: ResourceDeploymentScriptAzureCliIdentityOutputReference | ResourceDeploymentScriptAzureCliIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -412,14 +412,14 @@ export function resourceDeploymentScriptAzureCliIdentityToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResourceDeploymentScriptAzureCliIdentityOutputReference extends cdktf.ComplexObject {
+export class ResourceDeploymentScriptAzureCliIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -453,7 +453,7 @@ export class ResourceDeploymentScriptAzureCliIdentityOutputReference extends cdk
   // identity_ids - computed: false, optional: false, required: true
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -488,31 +488,31 @@ export interface ResourceDeploymentScriptAzureCliStorageAccount {
 }
 
 export function resourceDeploymentScriptAzureCliStorageAccountToTerraform(struct?: ResourceDeploymentScriptAzureCliStorageAccountOutputReference | ResourceDeploymentScriptAzureCliStorageAccount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    name: cdktf.stringToTerraform(struct!.name),
+    key: cdktn.stringToTerraform(struct!.key),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function resourceDeploymentScriptAzureCliStorageAccountToHclTerraform(struct?: ResourceDeploymentScriptAzureCliStorageAccountOutputReference | ResourceDeploymentScriptAzureCliStorageAccount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -523,14 +523,14 @@ export function resourceDeploymentScriptAzureCliStorageAccountToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResourceDeploymentScriptAzureCliStorageAccountOutputReference extends cdktf.ComplexObject {
+export class ResourceDeploymentScriptAzureCliStorageAccountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -606,46 +606,46 @@ export interface ResourceDeploymentScriptAzureCliTimeouts {
   readonly update?: string;
 }
 
-export function resourceDeploymentScriptAzureCliTimeoutsToTerraform(struct?: ResourceDeploymentScriptAzureCliTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourceDeploymentScriptAzureCliTimeoutsToTerraform(struct?: ResourceDeploymentScriptAzureCliTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function resourceDeploymentScriptAzureCliTimeoutsToHclTerraform(struct?: ResourceDeploymentScriptAzureCliTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourceDeploymentScriptAzureCliTimeoutsToHclTerraform(struct?: ResourceDeploymentScriptAzureCliTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -656,19 +656,19 @@ export function resourceDeploymentScriptAzureCliTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResourceDeploymentScriptAzureCliTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ResourceDeploymentScriptAzureCliTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ResourceDeploymentScriptAzureCliTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ResourceDeploymentScriptAzureCliTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -693,7 +693,7 @@ export class ResourceDeploymentScriptAzureCliTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ResourceDeploymentScriptAzureCliTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ResourceDeploymentScriptAzureCliTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -702,7 +702,7 @@ export class ResourceDeploymentScriptAzureCliTimeoutsOutputReference extends cdk
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -784,7 +784,7 @@ export class ResourceDeploymentScriptAzureCliTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/resource_deployment_script_azure_cli azurerm_resource_deployment_script_azure_cli}
 */
-export class ResourceDeploymentScriptAzureCli extends cdktf.TerraformResource {
+export class ResourceDeploymentScriptAzureCli extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -795,14 +795,14 @@ export class ResourceDeploymentScriptAzureCli extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ResourceDeploymentScriptAzureCli resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ResourceDeploymentScriptAzureCli resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ResourceDeploymentScriptAzureCli to import
   * @param importFromId The id of the existing ResourceDeploymentScriptAzureCli that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/resource_deployment_script_azure_cli#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ResourceDeploymentScriptAzureCli to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_resource_deployment_script_azure_cli", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_resource_deployment_script_azure_cli", importId: importFromId, provider });
       }
 
   // ===========
@@ -1092,7 +1092,7 @@ export class ResourceDeploymentScriptAzureCli extends cdktf.TerraformResource {
   public get environmentVariable() {
     return this._environmentVariable;
   }
-  public putEnvironmentVariable(value: ResourceDeploymentScriptAzureCliEnvironmentVariable[] | cdktf.IResolvable) {
+  public putEnvironmentVariable(value: ResourceDeploymentScriptAzureCliEnvironmentVariable[] | cdktn.IResolvable) {
     this._environmentVariable.internalValue = value;
   }
   public resetEnvironmentVariable() {
@@ -1157,22 +1157,22 @@ export class ResourceDeploymentScriptAzureCli extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cleanup_preference: cdktf.stringToTerraform(this._cleanupPreference),
-      command_line: cdktf.stringToTerraform(this._commandLine),
-      force_update_tag: cdktf.stringToTerraform(this._forceUpdateTag),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      primary_script_uri: cdktf.stringToTerraform(this._primaryScriptUri),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      retention_interval: cdktf.stringToTerraform(this._retentionInterval),
-      script_content: cdktf.stringToTerraform(this._scriptContent),
-      supporting_script_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportingScriptUris),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      timeout: cdktf.stringToTerraform(this._timeout),
-      version: cdktf.stringToTerraform(this._version),
+      cleanup_preference: cdktn.stringToTerraform(this._cleanupPreference),
+      command_line: cdktn.stringToTerraform(this._commandLine),
+      force_update_tag: cdktn.stringToTerraform(this._forceUpdateTag),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      primary_script_uri: cdktn.stringToTerraform(this._primaryScriptUri),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      retention_interval: cdktn.stringToTerraform(this._retentionInterval),
+      script_content: cdktn.stringToTerraform(this._scriptContent),
+      supporting_script_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(this._supportingScriptUris),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      timeout: cdktn.stringToTerraform(this._timeout),
+      version: cdktn.stringToTerraform(this._version),
       container: resourceDeploymentScriptAzureCliContainerToTerraform(this._container.internalValue),
-      environment_variable: cdktf.listMapper(resourceDeploymentScriptAzureCliEnvironmentVariableToTerraform, true)(this._environmentVariable.internalValue),
+      environment_variable: cdktn.listMapper(resourceDeploymentScriptAzureCliEnvironmentVariableToTerraform, true)(this._environmentVariable.internalValue),
       identity: resourceDeploymentScriptAzureCliIdentityToTerraform(this._identity.internalValue),
       storage_account: resourceDeploymentScriptAzureCliStorageAccountToTerraform(this._storageAccount.internalValue),
       timeouts: resourceDeploymentScriptAzureCliTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1182,85 +1182,85 @@ export class ResourceDeploymentScriptAzureCli extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cleanup_preference: {
-        value: cdktf.stringToHclTerraform(this._cleanupPreference),
+        value: cdktn.stringToHclTerraform(this._cleanupPreference),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       command_line: {
-        value: cdktf.stringToHclTerraform(this._commandLine),
+        value: cdktn.stringToHclTerraform(this._commandLine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_update_tag: {
-        value: cdktf.stringToHclTerraform(this._forceUpdateTag),
+        value: cdktn.stringToHclTerraform(this._forceUpdateTag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       primary_script_uri: {
-        value: cdktf.stringToHclTerraform(this._primaryScriptUri),
+        value: cdktn.stringToHclTerraform(this._primaryScriptUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_interval: {
-        value: cdktf.stringToHclTerraform(this._retentionInterval),
+        value: cdktn.stringToHclTerraform(this._retentionInterval),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       script_content: {
-        value: cdktf.stringToHclTerraform(this._scriptContent),
+        value: cdktn.stringToHclTerraform(this._scriptContent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       supporting_script_uris: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._supportingScriptUris),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._supportingScriptUris),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       timeout: {
-        value: cdktf.stringToHclTerraform(this._timeout),
+        value: cdktn.stringToHclTerraform(this._timeout),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1272,7 +1272,7 @@ export class ResourceDeploymentScriptAzureCli extends cdktf.TerraformResource {
         storageClassType: "ResourceDeploymentScriptAzureCliContainerList",
       },
       environment_variable: {
-        value: cdktf.listMapperHcl(resourceDeploymentScriptAzureCliEnvironmentVariableToHclTerraform, true)(this._environmentVariable.internalValue),
+        value: cdktn.listMapperHcl(resourceDeploymentScriptAzureCliEnvironmentVariableToHclTerraform, true)(this._environmentVariable.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ResourceDeploymentScriptAzureCliEnvironmentVariableList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogicAppIntegrationAccountPartnerConfig extends cdktf.TerraformMetaArguments {
+export interface LogicAppIntegrationAccountPartnerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/logic_app_integration_account_partner#id LogicAppIntegrationAccountPartner#id}
   *
@@ -40,7 +40,7 @@ export interface LogicAppIntegrationAccountPartnerConfig extends cdktf.Terraform
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/logic_app_integration_account_partner#business_identity LogicAppIntegrationAccountPartner#business_identity}
   */
-  readonly businessIdentity: LogicAppIntegrationAccountPartnerBusinessIdentity[] | cdktf.IResolvable;
+  readonly businessIdentity: LogicAppIntegrationAccountPartnerBusinessIdentity[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -59,32 +59,32 @@ export interface LogicAppIntegrationAccountPartnerBusinessIdentity {
   readonly value: string;
 }
 
-export function logicAppIntegrationAccountPartnerBusinessIdentityToTerraform(struct?: LogicAppIntegrationAccountPartnerBusinessIdentity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logicAppIntegrationAccountPartnerBusinessIdentityToTerraform(struct?: LogicAppIntegrationAccountPartnerBusinessIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    qualifier: cdktf.stringToTerraform(struct!.qualifier),
-    value: cdktf.stringToTerraform(struct!.value),
+    qualifier: cdktn.stringToTerraform(struct!.qualifier),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function logicAppIntegrationAccountPartnerBusinessIdentityToHclTerraform(struct?: LogicAppIntegrationAccountPartnerBusinessIdentity | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logicAppIntegrationAccountPartnerBusinessIdentityToHclTerraform(struct?: LogicAppIntegrationAccountPartnerBusinessIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     qualifier: {
-      value: cdktf.stringToHclTerraform(struct!.qualifier),
+      value: cdktn.stringToHclTerraform(struct!.qualifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -95,9 +95,9 @@ export function logicAppIntegrationAccountPartnerBusinessIdentityToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogicAppIntegrationAccountPartnerBusinessIdentityOutputReference extends cdktf.ComplexObject {
+export class LogicAppIntegrationAccountPartnerBusinessIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -105,11 +105,11 @@ export class LogicAppIntegrationAccountPartnerBusinessIdentityOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogicAppIntegrationAccountPartnerBusinessIdentity | cdktf.IResolvable | undefined {
+  public get internalValue(): LogicAppIntegrationAccountPartnerBusinessIdentity | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -126,14 +126,14 @@ export class LogicAppIntegrationAccountPartnerBusinessIdentityOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogicAppIntegrationAccountPartnerBusinessIdentity | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogicAppIntegrationAccountPartnerBusinessIdentity | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._qualifier = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -172,15 +172,15 @@ export class LogicAppIntegrationAccountPartnerBusinessIdentityOutputReference ex
   }
 }
 
-export class LogicAppIntegrationAccountPartnerBusinessIdentityList extends cdktf.ComplexList {
-  public internalValue? : LogicAppIntegrationAccountPartnerBusinessIdentity[] | cdktf.IResolvable
+export class LogicAppIntegrationAccountPartnerBusinessIdentityList extends cdktn.ComplexList {
+  public internalValue? : LogicAppIntegrationAccountPartnerBusinessIdentity[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -210,46 +210,46 @@ export interface LogicAppIntegrationAccountPartnerTimeouts {
   readonly update?: string;
 }
 
-export function logicAppIntegrationAccountPartnerTimeoutsToTerraform(struct?: LogicAppIntegrationAccountPartnerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logicAppIntegrationAccountPartnerTimeoutsToTerraform(struct?: LogicAppIntegrationAccountPartnerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function logicAppIntegrationAccountPartnerTimeoutsToHclTerraform(struct?: LogicAppIntegrationAccountPartnerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logicAppIntegrationAccountPartnerTimeoutsToHclTerraform(struct?: LogicAppIntegrationAccountPartnerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -260,19 +260,19 @@ export function logicAppIntegrationAccountPartnerTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogicAppIntegrationAccountPartnerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LogicAppIntegrationAccountPartnerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LogicAppIntegrationAccountPartnerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LogicAppIntegrationAccountPartnerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -297,7 +297,7 @@ export class LogicAppIntegrationAccountPartnerTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogicAppIntegrationAccountPartnerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogicAppIntegrationAccountPartnerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -306,7 +306,7 @@ export class LogicAppIntegrationAccountPartnerTimeoutsOutputReference extends cd
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -388,7 +388,7 @@ export class LogicAppIntegrationAccountPartnerTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/logic_app_integration_account_partner azurerm_logic_app_integration_account_partner}
 */
-export class LogicAppIntegrationAccountPartner extends cdktf.TerraformResource {
+export class LogicAppIntegrationAccountPartner extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -399,14 +399,14 @@ export class LogicAppIntegrationAccountPartner extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogicAppIntegrationAccountPartner resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogicAppIntegrationAccountPartner resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogicAppIntegrationAccountPartner to import
   * @param importFromId The id of the existing LogicAppIntegrationAccountPartner that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/logic_app_integration_account_partner#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogicAppIntegrationAccountPartner to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_logic_app_integration_account_partner", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_logic_app_integration_account_partner", importId: importFromId, provider });
       }
 
   // ===========
@@ -525,7 +525,7 @@ export class LogicAppIntegrationAccountPartner extends cdktf.TerraformResource {
   public get businessIdentity() {
     return this._businessIdentity;
   }
-  public putBusinessIdentity(value: LogicAppIntegrationAccountPartnerBusinessIdentity[] | cdktf.IResolvable) {
+  public putBusinessIdentity(value: LogicAppIntegrationAccountPartnerBusinessIdentity[] | cdktn.IResolvable) {
     this._businessIdentity.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -555,12 +555,12 @@ export class LogicAppIntegrationAccountPartner extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      integration_account_name: cdktf.stringToTerraform(this._integrationAccountName),
-      metadata: cdktf.stringToTerraform(this._metadata),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      business_identity: cdktf.listMapper(logicAppIntegrationAccountPartnerBusinessIdentityToTerraform, true)(this._businessIdentity.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      integration_account_name: cdktn.stringToTerraform(this._integrationAccountName),
+      metadata: cdktn.stringToTerraform(this._metadata),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      business_identity: cdktn.listMapper(logicAppIntegrationAccountPartnerBusinessIdentityToTerraform, true)(this._businessIdentity.internalValue),
       timeouts: logicAppIntegrationAccountPartnerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -568,37 +568,37 @@ export class LogicAppIntegrationAccountPartner extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_account_name: {
-        value: cdktf.stringToHclTerraform(this._integrationAccountName),
+        value: cdktn.stringToHclTerraform(this._integrationAccountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata: {
-        value: cdktf.stringToHclTerraform(this._metadata),
+        value: cdktn.stringToHclTerraform(this._metadata),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       business_identity: {
-        value: cdktf.listMapperHcl(logicAppIntegrationAccountPartnerBusinessIdentityToHclTerraform, true)(this._businessIdentity.internalValue),
+        value: cdktn.listMapperHcl(logicAppIntegrationAccountPartnerBusinessIdentityToHclTerraform, true)(this._businessIdentity.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LogicAppIntegrationAccountPartnerBusinessIdentityList",

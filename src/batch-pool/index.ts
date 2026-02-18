@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BatchPoolConfig extends cdktf.TerraformMetaArguments {
+export interface BatchPoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#account_name BatchPool#account_name}
   */
@@ -62,7 +62,7 @@ export interface BatchPoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#stop_pending_resize_operation BatchPool#stop_pending_resize_operation}
   */
-  readonly stopPendingResizeOperation?: boolean | cdktf.IResolvable;
+  readonly stopPendingResizeOperation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#target_node_communication_mode BatchPool#target_node_communication_mode}
   */
@@ -82,7 +82,7 @@ export interface BatchPoolConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#certificate BatchPool#certificate}
   */
-  readonly certificate?: BatchPoolCertificate[] | cdktf.IResolvable;
+  readonly certificate?: BatchPoolCertificate[] | cdktn.IResolvable;
   /**
   * container_configuration block
   *
@@ -94,19 +94,19 @@ export interface BatchPoolConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#data_disks BatchPool#data_disks}
   */
-  readonly dataDisks?: BatchPoolDataDisks[] | cdktf.IResolvable;
+  readonly dataDisks?: BatchPoolDataDisks[] | cdktn.IResolvable;
   /**
   * disk_encryption block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#disk_encryption BatchPool#disk_encryption}
   */
-  readonly diskEncryption?: BatchPoolDiskEncryption[] | cdktf.IResolvable;
+  readonly diskEncryption?: BatchPoolDiskEncryption[] | cdktn.IResolvable;
   /**
   * extensions block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#extensions BatchPool#extensions}
   */
-  readonly extensions?: BatchPoolExtensions[] | cdktf.IResolvable;
+  readonly extensions?: BatchPoolExtensions[] | cdktn.IResolvable;
   /**
   * fixed_scale block
   *
@@ -124,7 +124,7 @@ export interface BatchPoolConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#mount BatchPool#mount}
   */
-  readonly mount?: BatchPoolMount[] | cdktf.IResolvable;
+  readonly mount?: BatchPoolMount[] | cdktn.IResolvable;
   /**
   * network_configuration block
   *
@@ -136,7 +136,7 @@ export interface BatchPoolConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#node_placement BatchPool#node_placement}
   */
-  readonly nodePlacement?: BatchPoolNodePlacement[] | cdktf.IResolvable;
+  readonly nodePlacement?: BatchPoolNodePlacement[] | cdktn.IResolvable;
   /**
   * security_profile block
   *
@@ -160,7 +160,7 @@ export interface BatchPoolConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#task_scheduling_policy BatchPool#task_scheduling_policy}
   */
-  readonly taskSchedulingPolicy?: BatchPoolTaskSchedulingPolicy[] | cdktf.IResolvable;
+  readonly taskSchedulingPolicy?: BatchPoolTaskSchedulingPolicy[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -172,13 +172,13 @@ export interface BatchPoolConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#user_accounts BatchPool#user_accounts}
   */
-  readonly userAccounts?: BatchPoolUserAccounts[] | cdktf.IResolvable;
+  readonly userAccounts?: BatchPoolUserAccounts[] | cdktn.IResolvable;
   /**
   * windows block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#windows BatchPool#windows}
   */
-  readonly windows?: BatchPoolWindows[] | cdktf.IResolvable;
+  readonly windows?: BatchPoolWindows[] | cdktn.IResolvable;
 }
 export interface BatchPoolAutoScale {
   /**
@@ -192,31 +192,31 @@ export interface BatchPoolAutoScale {
 }
 
 export function batchPoolAutoScaleToTerraform(struct?: BatchPoolAutoScaleOutputReference | BatchPoolAutoScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    evaluation_interval: cdktf.stringToTerraform(struct!.evaluationInterval),
-    formula: cdktf.stringToTerraform(struct!.formula),
+    evaluation_interval: cdktn.stringToTerraform(struct!.evaluationInterval),
+    formula: cdktn.stringToTerraform(struct!.formula),
   }
 }
 
 
 export function batchPoolAutoScaleToHclTerraform(struct?: BatchPoolAutoScaleOutputReference | BatchPoolAutoScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     evaluation_interval: {
-      value: cdktf.stringToHclTerraform(struct!.evaluationInterval),
+      value: cdktn.stringToHclTerraform(struct!.evaluationInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     formula: {
-      value: cdktf.stringToHclTerraform(struct!.formula),
+      value: cdktn.stringToHclTerraform(struct!.formula),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -227,14 +227,14 @@ export function batchPoolAutoScaleToHclTerraform(struct?: BatchPoolAutoScaleOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolAutoScaleOutputReference extends cdktf.ComplexObject {
+export class BatchPoolAutoScaleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -316,46 +316,46 @@ export interface BatchPoolCertificate {
   readonly visibility?: string[];
 }
 
-export function batchPoolCertificateToTerraform(struct?: BatchPoolCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolCertificateToTerraform(struct?: BatchPoolCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    store_location: cdktf.stringToTerraform(struct!.storeLocation),
-    store_name: cdktf.stringToTerraform(struct!.storeName),
-    visibility: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.visibility),
+    id: cdktn.stringToTerraform(struct!.id),
+    store_location: cdktn.stringToTerraform(struct!.storeLocation),
+    store_name: cdktn.stringToTerraform(struct!.storeName),
+    visibility: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.visibility),
   }
 }
 
 
-export function batchPoolCertificateToHclTerraform(struct?: BatchPoolCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolCertificateToHclTerraform(struct?: BatchPoolCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     store_location: {
-      value: cdktf.stringToHclTerraform(struct!.storeLocation),
+      value: cdktn.stringToHclTerraform(struct!.storeLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     store_name: {
-      value: cdktf.stringToHclTerraform(struct!.storeName),
+      value: cdktn.stringToHclTerraform(struct!.storeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     visibility: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.visibility),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.visibility),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -366,9 +366,9 @@ export function batchPoolCertificateToHclTerraform(struct?: BatchPoolCertificate
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolCertificateOutputReference extends cdktf.ComplexObject {
+export class BatchPoolCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -376,11 +376,11 @@ export class BatchPoolCertificateOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -405,7 +405,7 @@ export class BatchPoolCertificateOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -414,7 +414,7 @@ export class BatchPoolCertificateOutputReference extends cdktf.ComplexObject {
       this._storeName = undefined;
       this._visibility = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -473,7 +473,7 @@ export class BatchPoolCertificateOutputReference extends cdktf.ComplexObject {
   // visibility - computed: false, optional: true, required: false
   private _visibility?: string[]; 
   public get visibility() {
-    return cdktf.Fn.tolist(this.getListAttribute('visibility'));
+    return cdktn.Fn.tolist(this.getListAttribute('visibility'));
   }
   public set visibility(value: string[]) {
     this._visibility = value;
@@ -487,15 +487,15 @@ export class BatchPoolCertificateOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class BatchPoolCertificateList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolCertificate[] | cdktf.IResolvable
+export class BatchPoolCertificateList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolCertificate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -525,46 +525,46 @@ export interface BatchPoolContainerConfigurationContainerRegistries {
   readonly userName?: string;
 }
 
-export function batchPoolContainerConfigurationContainerRegistriesToTerraform(struct?: BatchPoolContainerConfigurationContainerRegistries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolContainerConfigurationContainerRegistriesToTerraform(struct?: BatchPoolContainerConfigurationContainerRegistries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    registry_server: cdktf.stringToTerraform(struct!.registryServer),
-    user_assigned_identity_id: cdktf.stringToTerraform(struct!.userAssignedIdentityId),
-    user_name: cdktf.stringToTerraform(struct!.userName),
+    password: cdktn.stringToTerraform(struct!.password),
+    registry_server: cdktn.stringToTerraform(struct!.registryServer),
+    user_assigned_identity_id: cdktn.stringToTerraform(struct!.userAssignedIdentityId),
+    user_name: cdktn.stringToTerraform(struct!.userName),
   }
 }
 
 
-export function batchPoolContainerConfigurationContainerRegistriesToHclTerraform(struct?: BatchPoolContainerConfigurationContainerRegistries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolContainerConfigurationContainerRegistriesToHclTerraform(struct?: BatchPoolContainerConfigurationContainerRegistries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     registry_server: {
-      value: cdktf.stringToHclTerraform(struct!.registryServer),
+      value: cdktn.stringToHclTerraform(struct!.registryServer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_assigned_identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.userAssignedIdentityId),
+      value: cdktn.stringToHclTerraform(struct!.userAssignedIdentityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_name: {
-      value: cdktf.stringToHclTerraform(struct!.userName),
+      value: cdktn.stringToHclTerraform(struct!.userName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -575,9 +575,9 @@ export function batchPoolContainerConfigurationContainerRegistriesToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolContainerConfigurationContainerRegistriesOutputReference extends cdktf.ComplexObject {
+export class BatchPoolContainerConfigurationContainerRegistriesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -585,11 +585,11 @@ export class BatchPoolContainerConfigurationContainerRegistriesOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolContainerConfigurationContainerRegistries | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolContainerConfigurationContainerRegistries | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -614,7 +614,7 @@ export class BatchPoolContainerConfigurationContainerRegistriesOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolContainerConfigurationContainerRegistries | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolContainerConfigurationContainerRegistries | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -623,7 +623,7 @@ export class BatchPoolContainerConfigurationContainerRegistriesOutputReference e
       this._userAssignedIdentityId = undefined;
       this._userName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -702,15 +702,15 @@ export class BatchPoolContainerConfigurationContainerRegistriesOutputReference e
   }
 }
 
-export class BatchPoolContainerConfigurationContainerRegistriesList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolContainerConfigurationContainerRegistries[] | cdktf.IResolvable
+export class BatchPoolContainerConfigurationContainerRegistriesList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolContainerConfigurationContainerRegistries[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -729,7 +729,7 @@ export interface BatchPoolContainerConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#container_registries BatchPool#container_registries}
   */
-  readonly containerRegistries?: BatchPoolContainerConfigurationContainerRegistries[] | cdktf.IResolvable;
+  readonly containerRegistries?: BatchPoolContainerConfigurationContainerRegistries[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#type BatchPool#type}
   */
@@ -737,38 +737,38 @@ export interface BatchPoolContainerConfiguration {
 }
 
 export function batchPoolContainerConfigurationToTerraform(struct?: BatchPoolContainerConfigurationOutputReference | BatchPoolContainerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_image_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.containerImageNames),
-    container_registries: cdktf.listMapper(batchPoolContainerConfigurationContainerRegistriesToTerraform, false)(struct!.containerRegistries),
-    type: cdktf.stringToTerraform(struct!.type),
+    container_image_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.containerImageNames),
+    container_registries: cdktn.listMapper(batchPoolContainerConfigurationContainerRegistriesToTerraform, false)(struct!.containerRegistries),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function batchPoolContainerConfigurationToHclTerraform(struct?: BatchPoolContainerConfigurationOutputReference | BatchPoolContainerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_image_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.containerImageNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.containerImageNames),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     container_registries: {
-      value: cdktf.listMapperHcl(batchPoolContainerConfigurationContainerRegistriesToHclTerraform, false)(struct!.containerRegistries),
+      value: cdktn.listMapperHcl(batchPoolContainerConfigurationContainerRegistriesToHclTerraform, false)(struct!.containerRegistries),
       isBlock: true,
       type: "list",
       storageClassType: "BatchPoolContainerConfigurationContainerRegistriesList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -779,14 +779,14 @@ export function batchPoolContainerConfigurationToHclTerraform(struct?: BatchPool
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolContainerConfigurationOutputReference extends cdktf.ComplexObject {
+export class BatchPoolContainerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -826,7 +826,7 @@ export class BatchPoolContainerConfigurationOutputReference extends cdktf.Comple
   // container_image_names - computed: false, optional: true, required: false
   private _containerImageNames?: string[]; 
   public get containerImageNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('container_image_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('container_image_names'));
   }
   public set containerImageNames(value: string[]) {
     this._containerImageNames = value;
@@ -844,7 +844,7 @@ export class BatchPoolContainerConfigurationOutputReference extends cdktf.Comple
   public get containerRegistries() {
     return this._containerRegistries;
   }
-  public putContainerRegistries(value: BatchPoolContainerConfigurationContainerRegistries[] | cdktf.IResolvable) {
+  public putContainerRegistries(value: BatchPoolContainerConfigurationContainerRegistries[] | cdktn.IResolvable) {
     this._containerRegistries.internalValue = value;
   }
   public resetContainerRegistries() {
@@ -890,46 +890,46 @@ export interface BatchPoolDataDisks {
   readonly storageAccountType?: string;
 }
 
-export function batchPoolDataDisksToTerraform(struct?: BatchPoolDataDisks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolDataDisksToTerraform(struct?: BatchPoolDataDisks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    caching: cdktf.stringToTerraform(struct!.caching),
-    disk_size_gb: cdktf.numberToTerraform(struct!.diskSizeGb),
-    lun: cdktf.numberToTerraform(struct!.lun),
-    storage_account_type: cdktf.stringToTerraform(struct!.storageAccountType),
+    caching: cdktn.stringToTerraform(struct!.caching),
+    disk_size_gb: cdktn.numberToTerraform(struct!.diskSizeGb),
+    lun: cdktn.numberToTerraform(struct!.lun),
+    storage_account_type: cdktn.stringToTerraform(struct!.storageAccountType),
   }
 }
 
 
-export function batchPoolDataDisksToHclTerraform(struct?: BatchPoolDataDisks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolDataDisksToHclTerraform(struct?: BatchPoolDataDisks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     caching: {
-      value: cdktf.stringToHclTerraform(struct!.caching),
+      value: cdktn.stringToHclTerraform(struct!.caching),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk_size_gb: {
-      value: cdktf.numberToHclTerraform(struct!.diskSizeGb),
+      value: cdktn.numberToHclTerraform(struct!.diskSizeGb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     lun: {
-      value: cdktf.numberToHclTerraform(struct!.lun),
+      value: cdktn.numberToHclTerraform(struct!.lun),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     storage_account_type: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountType),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -940,9 +940,9 @@ export function batchPoolDataDisksToHclTerraform(struct?: BatchPoolDataDisks | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolDataDisksOutputReference extends cdktf.ComplexObject {
+export class BatchPoolDataDisksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -950,11 +950,11 @@ export class BatchPoolDataDisksOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolDataDisks | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolDataDisks | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -979,7 +979,7 @@ export class BatchPoolDataDisksOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolDataDisks | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolDataDisks | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -988,7 +988,7 @@ export class BatchPoolDataDisksOutputReference extends cdktf.ComplexObject {
       this._lun = undefined;
       this._storageAccountType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1061,15 +1061,15 @@ export class BatchPoolDataDisksOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class BatchPoolDataDisksList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolDataDisks[] | cdktf.IResolvable
+export class BatchPoolDataDisksList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolDataDisks[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1087,25 +1087,25 @@ export interface BatchPoolDiskEncryption {
   readonly diskEncryptionTarget: string;
 }
 
-export function batchPoolDiskEncryptionToTerraform(struct?: BatchPoolDiskEncryption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolDiskEncryptionToTerraform(struct?: BatchPoolDiskEncryption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disk_encryption_target: cdktf.stringToTerraform(struct!.diskEncryptionTarget),
+    disk_encryption_target: cdktn.stringToTerraform(struct!.diskEncryptionTarget),
   }
 }
 
 
-export function batchPoolDiskEncryptionToHclTerraform(struct?: BatchPoolDiskEncryption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolDiskEncryptionToHclTerraform(struct?: BatchPoolDiskEncryption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disk_encryption_target: {
-      value: cdktf.stringToHclTerraform(struct!.diskEncryptionTarget),
+      value: cdktn.stringToHclTerraform(struct!.diskEncryptionTarget),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1116,9 +1116,9 @@ export function batchPoolDiskEncryptionToHclTerraform(struct?: BatchPoolDiskEncr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolDiskEncryptionOutputReference extends cdktf.ComplexObject {
+export class BatchPoolDiskEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1126,11 +1126,11 @@ export class BatchPoolDiskEncryptionOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolDiskEncryption | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolDiskEncryption | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1143,13 +1143,13 @@ export class BatchPoolDiskEncryptionOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolDiskEncryption | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolDiskEncryption | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._diskEncryptionTarget = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1174,15 +1174,15 @@ export class BatchPoolDiskEncryptionOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class BatchPoolDiskEncryptionList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolDiskEncryption[] | cdktf.IResolvable
+export class BatchPoolDiskEncryptionList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolDiskEncryption[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1197,11 +1197,11 @@ export interface BatchPoolExtensions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#auto_upgrade_minor_version BatchPool#auto_upgrade_minor_version}
   */
-  readonly autoUpgradeMinorVersion?: boolean | cdktf.IResolvable;
+  readonly autoUpgradeMinorVersion?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#automatic_upgrade_enabled BatchPool#automatic_upgrade_enabled}
   */
-  readonly automaticUpgradeEnabled?: boolean | cdktf.IResolvable;
+  readonly automaticUpgradeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#name BatchPool#name}
   */
@@ -1232,81 +1232,81 @@ export interface BatchPoolExtensions {
   readonly typeHandlerVersion?: string;
 }
 
-export function batchPoolExtensionsToTerraform(struct?: BatchPoolExtensions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolExtensionsToTerraform(struct?: BatchPoolExtensions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auto_upgrade_minor_version: cdktf.booleanToTerraform(struct!.autoUpgradeMinorVersion),
-    automatic_upgrade_enabled: cdktf.booleanToTerraform(struct!.automaticUpgradeEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    protected_settings: cdktf.stringToTerraform(struct!.protectedSettings),
-    provision_after_extensions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.provisionAfterExtensions),
-    publisher: cdktf.stringToTerraform(struct!.publisher),
-    settings_json: cdktf.stringToTerraform(struct!.settingsJson),
-    type: cdktf.stringToTerraform(struct!.type),
-    type_handler_version: cdktf.stringToTerraform(struct!.typeHandlerVersion),
+    auto_upgrade_minor_version: cdktn.booleanToTerraform(struct!.autoUpgradeMinorVersion),
+    automatic_upgrade_enabled: cdktn.booleanToTerraform(struct!.automaticUpgradeEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    protected_settings: cdktn.stringToTerraform(struct!.protectedSettings),
+    provision_after_extensions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.provisionAfterExtensions),
+    publisher: cdktn.stringToTerraform(struct!.publisher),
+    settings_json: cdktn.stringToTerraform(struct!.settingsJson),
+    type: cdktn.stringToTerraform(struct!.type),
+    type_handler_version: cdktn.stringToTerraform(struct!.typeHandlerVersion),
   }
 }
 
 
-export function batchPoolExtensionsToHclTerraform(struct?: BatchPoolExtensions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolExtensionsToHclTerraform(struct?: BatchPoolExtensions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auto_upgrade_minor_version: {
-      value: cdktf.booleanToHclTerraform(struct!.autoUpgradeMinorVersion),
+      value: cdktn.booleanToHclTerraform(struct!.autoUpgradeMinorVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     automatic_upgrade_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.automaticUpgradeEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.automaticUpgradeEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protected_settings: {
-      value: cdktf.stringToHclTerraform(struct!.protectedSettings),
+      value: cdktn.stringToHclTerraform(struct!.protectedSettings),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     provision_after_extensions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.provisionAfterExtensions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.provisionAfterExtensions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     publisher: {
-      value: cdktf.stringToHclTerraform(struct!.publisher),
+      value: cdktn.stringToHclTerraform(struct!.publisher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     settings_json: {
-      value: cdktf.stringToHclTerraform(struct!.settingsJson),
+      value: cdktn.stringToHclTerraform(struct!.settingsJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type_handler_version: {
-      value: cdktf.stringToHclTerraform(struct!.typeHandlerVersion),
+      value: cdktn.stringToHclTerraform(struct!.typeHandlerVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1317,9 +1317,9 @@ export function batchPoolExtensionsToHclTerraform(struct?: BatchPoolExtensions |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolExtensionsOutputReference extends cdktf.ComplexObject {
+export class BatchPoolExtensionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1327,11 +1327,11 @@ export class BatchPoolExtensionsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolExtensions | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolExtensions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1376,7 +1376,7 @@ export class BatchPoolExtensionsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolExtensions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolExtensions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1390,7 +1390,7 @@ export class BatchPoolExtensionsOutputReference extends cdktf.ComplexObject {
       this._type = undefined;
       this._typeHandlerVersion = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1410,11 +1410,11 @@ export class BatchPoolExtensionsOutputReference extends cdktf.ComplexObject {
   }
 
   // auto_upgrade_minor_version - computed: false, optional: true, required: false
-  private _autoUpgradeMinorVersion?: boolean | cdktf.IResolvable; 
+  private _autoUpgradeMinorVersion?: boolean | cdktn.IResolvable; 
   public get autoUpgradeMinorVersion() {
     return this.getBooleanAttribute('auto_upgrade_minor_version');
   }
-  public set autoUpgradeMinorVersion(value: boolean | cdktf.IResolvable) {
+  public set autoUpgradeMinorVersion(value: boolean | cdktn.IResolvable) {
     this._autoUpgradeMinorVersion = value;
   }
   public resetAutoUpgradeMinorVersion() {
@@ -1426,11 +1426,11 @@ export class BatchPoolExtensionsOutputReference extends cdktf.ComplexObject {
   }
 
   // automatic_upgrade_enabled - computed: false, optional: true, required: false
-  private _automaticUpgradeEnabled?: boolean | cdktf.IResolvable; 
+  private _automaticUpgradeEnabled?: boolean | cdktn.IResolvable; 
   public get automaticUpgradeEnabled() {
     return this.getBooleanAttribute('automatic_upgrade_enabled');
   }
-  public set automaticUpgradeEnabled(value: boolean | cdktf.IResolvable) {
+  public set automaticUpgradeEnabled(value: boolean | cdktn.IResolvable) {
     this._automaticUpgradeEnabled = value;
   }
   public resetAutomaticUpgradeEnabled() {
@@ -1473,7 +1473,7 @@ export class BatchPoolExtensionsOutputReference extends cdktf.ComplexObject {
   // provision_after_extensions - computed: false, optional: true, required: false
   private _provisionAfterExtensions?: string[]; 
   public get provisionAfterExtensions() {
-    return cdktf.Fn.tolist(this.getListAttribute('provision_after_extensions'));
+    return cdktn.Fn.tolist(this.getListAttribute('provision_after_extensions'));
   }
   public set provisionAfterExtensions(value: string[]) {
     this._provisionAfterExtensions = value;
@@ -1545,15 +1545,15 @@ export class BatchPoolExtensionsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class BatchPoolExtensionsList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolExtensions[] | cdktf.IResolvable
+export class BatchPoolExtensionsList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolExtensions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1584,45 +1584,45 @@ export interface BatchPoolFixedScale {
 }
 
 export function batchPoolFixedScaleToTerraform(struct?: BatchPoolFixedScaleOutputReference | BatchPoolFixedScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    node_deallocation_method: cdktf.stringToTerraform(struct!.nodeDeallocationMethod),
-    resize_timeout: cdktf.stringToTerraform(struct!.resizeTimeout),
-    target_dedicated_nodes: cdktf.numberToTerraform(struct!.targetDedicatedNodes),
-    target_low_priority_nodes: cdktf.numberToTerraform(struct!.targetLowPriorityNodes),
+    node_deallocation_method: cdktn.stringToTerraform(struct!.nodeDeallocationMethod),
+    resize_timeout: cdktn.stringToTerraform(struct!.resizeTimeout),
+    target_dedicated_nodes: cdktn.numberToTerraform(struct!.targetDedicatedNodes),
+    target_low_priority_nodes: cdktn.numberToTerraform(struct!.targetLowPriorityNodes),
   }
 }
 
 
 export function batchPoolFixedScaleToHclTerraform(struct?: BatchPoolFixedScaleOutputReference | BatchPoolFixedScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     node_deallocation_method: {
-      value: cdktf.stringToHclTerraform(struct!.nodeDeallocationMethod),
+      value: cdktn.stringToHclTerraform(struct!.nodeDeallocationMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resize_timeout: {
-      value: cdktf.stringToHclTerraform(struct!.resizeTimeout),
+      value: cdktn.stringToHclTerraform(struct!.resizeTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_dedicated_nodes: {
-      value: cdktf.numberToHclTerraform(struct!.targetDedicatedNodes),
+      value: cdktn.numberToHclTerraform(struct!.targetDedicatedNodes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     target_low_priority_nodes: {
-      value: cdktf.numberToHclTerraform(struct!.targetLowPriorityNodes),
+      value: cdktn.numberToHclTerraform(struct!.targetLowPriorityNodes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1633,14 +1633,14 @@ export function batchPoolFixedScaleToHclTerraform(struct?: BatchPoolFixedScaleOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolFixedScaleOutputReference extends cdktf.ComplexObject {
+export class BatchPoolFixedScaleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1759,31 +1759,31 @@ export interface BatchPoolIdentity {
 }
 
 export function batchPoolIdentityToTerraform(struct?: BatchPoolIdentityOutputReference | BatchPoolIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function batchPoolIdentityToHclTerraform(struct?: BatchPoolIdentityOutputReference | BatchPoolIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1794,14 +1794,14 @@ export function batchPoolIdentityToHclTerraform(struct?: BatchPoolIdentityOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolIdentityOutputReference extends cdktf.ComplexObject {
+export class BatchPoolIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1835,7 +1835,7 @@ export class BatchPoolIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: false, required: true
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -1890,66 +1890,66 @@ export interface BatchPoolMountAzureBlobFileSystem {
 }
 
 export function batchPoolMountAzureBlobFileSystemToTerraform(struct?: BatchPoolMountAzureBlobFileSystemOutputReference | BatchPoolMountAzureBlobFileSystem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_key: cdktf.stringToTerraform(struct!.accountKey),
-    account_name: cdktf.stringToTerraform(struct!.accountName),
-    blobfuse_options: cdktf.stringToTerraform(struct!.blobfuseOptions),
-    container_name: cdktf.stringToTerraform(struct!.containerName),
-    identity_id: cdktf.stringToTerraform(struct!.identityId),
-    relative_mount_path: cdktf.stringToTerraform(struct!.relativeMountPath),
-    sas_key: cdktf.stringToTerraform(struct!.sasKey),
+    account_key: cdktn.stringToTerraform(struct!.accountKey),
+    account_name: cdktn.stringToTerraform(struct!.accountName),
+    blobfuse_options: cdktn.stringToTerraform(struct!.blobfuseOptions),
+    container_name: cdktn.stringToTerraform(struct!.containerName),
+    identity_id: cdktn.stringToTerraform(struct!.identityId),
+    relative_mount_path: cdktn.stringToTerraform(struct!.relativeMountPath),
+    sas_key: cdktn.stringToTerraform(struct!.sasKey),
   }
 }
 
 
 export function batchPoolMountAzureBlobFileSystemToHclTerraform(struct?: BatchPoolMountAzureBlobFileSystemOutputReference | BatchPoolMountAzureBlobFileSystem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_key: {
-      value: cdktf.stringToHclTerraform(struct!.accountKey),
+      value: cdktn.stringToHclTerraform(struct!.accountKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     account_name: {
-      value: cdktf.stringToHclTerraform(struct!.accountName),
+      value: cdktn.stringToHclTerraform(struct!.accountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     blobfuse_options: {
-      value: cdktf.stringToHclTerraform(struct!.blobfuseOptions),
+      value: cdktn.stringToHclTerraform(struct!.blobfuseOptions),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     container_name: {
-      value: cdktf.stringToHclTerraform(struct!.containerName),
+      value: cdktn.stringToHclTerraform(struct!.containerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityId),
+      value: cdktn.stringToHclTerraform(struct!.identityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     relative_mount_path: {
-      value: cdktf.stringToHclTerraform(struct!.relativeMountPath),
+      value: cdktn.stringToHclTerraform(struct!.relativeMountPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sas_key: {
-      value: cdktf.stringToHclTerraform(struct!.sasKey),
+      value: cdktn.stringToHclTerraform(struct!.sasKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1960,14 +1960,14 @@ export function batchPoolMountAzureBlobFileSystemToHclTerraform(struct?: BatchPo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolMountAzureBlobFileSystemOutputReference extends cdktf.ComplexObject {
+export class BatchPoolMountAzureBlobFileSystemOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2154,53 +2154,53 @@ export interface BatchPoolMountAzureFileShare {
   readonly relativeMountPath: string;
 }
 
-export function batchPoolMountAzureFileShareToTerraform(struct?: BatchPoolMountAzureFileShare | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolMountAzureFileShareToTerraform(struct?: BatchPoolMountAzureFileShare | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_key: cdktf.stringToTerraform(struct!.accountKey),
-    account_name: cdktf.stringToTerraform(struct!.accountName),
-    azure_file_url: cdktf.stringToTerraform(struct!.azureFileUrl),
-    mount_options: cdktf.stringToTerraform(struct!.mountOptions),
-    relative_mount_path: cdktf.stringToTerraform(struct!.relativeMountPath),
+    account_key: cdktn.stringToTerraform(struct!.accountKey),
+    account_name: cdktn.stringToTerraform(struct!.accountName),
+    azure_file_url: cdktn.stringToTerraform(struct!.azureFileUrl),
+    mount_options: cdktn.stringToTerraform(struct!.mountOptions),
+    relative_mount_path: cdktn.stringToTerraform(struct!.relativeMountPath),
   }
 }
 
 
-export function batchPoolMountAzureFileShareToHclTerraform(struct?: BatchPoolMountAzureFileShare | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolMountAzureFileShareToHclTerraform(struct?: BatchPoolMountAzureFileShare | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_key: {
-      value: cdktf.stringToHclTerraform(struct!.accountKey),
+      value: cdktn.stringToHclTerraform(struct!.accountKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     account_name: {
-      value: cdktf.stringToHclTerraform(struct!.accountName),
+      value: cdktn.stringToHclTerraform(struct!.accountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     azure_file_url: {
-      value: cdktf.stringToHclTerraform(struct!.azureFileUrl),
+      value: cdktn.stringToHclTerraform(struct!.azureFileUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount_options: {
-      value: cdktf.stringToHclTerraform(struct!.mountOptions),
+      value: cdktn.stringToHclTerraform(struct!.mountOptions),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     relative_mount_path: {
-      value: cdktf.stringToHclTerraform(struct!.relativeMountPath),
+      value: cdktn.stringToHclTerraform(struct!.relativeMountPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2211,9 +2211,9 @@ export function batchPoolMountAzureFileShareToHclTerraform(struct?: BatchPoolMou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolMountAzureFileShareOutputReference extends cdktf.ComplexObject {
+export class BatchPoolMountAzureFileShareOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2221,11 +2221,11 @@ export class BatchPoolMountAzureFileShareOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolMountAzureFileShare | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolMountAzureFileShare | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2254,7 +2254,7 @@ export class BatchPoolMountAzureFileShareOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolMountAzureFileShare | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolMountAzureFileShare | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2264,7 +2264,7 @@ export class BatchPoolMountAzureFileShareOutputReference extends cdktf.ComplexOb
       this._mountOptions = undefined;
       this._relativeMountPath = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2348,15 +2348,15 @@ export class BatchPoolMountAzureFileShareOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class BatchPoolMountAzureFileShareList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolMountAzureFileShare[] | cdktf.IResolvable
+export class BatchPoolMountAzureFileShareList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolMountAzureFileShare[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2390,53 +2390,53 @@ export interface BatchPoolMountCifsMount {
   readonly userName: string;
 }
 
-export function batchPoolMountCifsMountToTerraform(struct?: BatchPoolMountCifsMount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolMountCifsMountToTerraform(struct?: BatchPoolMountCifsMount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mount_options: cdktf.stringToTerraform(struct!.mountOptions),
-    password: cdktf.stringToTerraform(struct!.password),
-    relative_mount_path: cdktf.stringToTerraform(struct!.relativeMountPath),
-    source: cdktf.stringToTerraform(struct!.source),
-    user_name: cdktf.stringToTerraform(struct!.userName),
+    mount_options: cdktn.stringToTerraform(struct!.mountOptions),
+    password: cdktn.stringToTerraform(struct!.password),
+    relative_mount_path: cdktn.stringToTerraform(struct!.relativeMountPath),
+    source: cdktn.stringToTerraform(struct!.source),
+    user_name: cdktn.stringToTerraform(struct!.userName),
   }
 }
 
 
-export function batchPoolMountCifsMountToHclTerraform(struct?: BatchPoolMountCifsMount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolMountCifsMountToHclTerraform(struct?: BatchPoolMountCifsMount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mount_options: {
-      value: cdktf.stringToHclTerraform(struct!.mountOptions),
+      value: cdktn.stringToHclTerraform(struct!.mountOptions),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     relative_mount_path: {
-      value: cdktf.stringToHclTerraform(struct!.relativeMountPath),
+      value: cdktn.stringToHclTerraform(struct!.relativeMountPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_name: {
-      value: cdktf.stringToHclTerraform(struct!.userName),
+      value: cdktn.stringToHclTerraform(struct!.userName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2447,9 +2447,9 @@ export function batchPoolMountCifsMountToHclTerraform(struct?: BatchPoolMountCif
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolMountCifsMountOutputReference extends cdktf.ComplexObject {
+export class BatchPoolMountCifsMountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2457,11 +2457,11 @@ export class BatchPoolMountCifsMountOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolMountCifsMount | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolMountCifsMount | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2490,7 +2490,7 @@ export class BatchPoolMountCifsMountOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolMountCifsMount | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolMountCifsMount | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2500,7 +2500,7 @@ export class BatchPoolMountCifsMountOutputReference extends cdktf.ComplexObject 
       this._source = undefined;
       this._userName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2584,15 +2584,15 @@ export class BatchPoolMountCifsMountOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class BatchPoolMountCifsMountList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolMountCifsMount[] | cdktf.IResolvable
+export class BatchPoolMountCifsMountList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolMountCifsMount[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2618,39 +2618,39 @@ export interface BatchPoolMountNfsMount {
   readonly source: string;
 }
 
-export function batchPoolMountNfsMountToTerraform(struct?: BatchPoolMountNfsMount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolMountNfsMountToTerraform(struct?: BatchPoolMountNfsMount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mount_options: cdktf.stringToTerraform(struct!.mountOptions),
-    relative_mount_path: cdktf.stringToTerraform(struct!.relativeMountPath),
-    source: cdktf.stringToTerraform(struct!.source),
+    mount_options: cdktn.stringToTerraform(struct!.mountOptions),
+    relative_mount_path: cdktn.stringToTerraform(struct!.relativeMountPath),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function batchPoolMountNfsMountToHclTerraform(struct?: BatchPoolMountNfsMount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolMountNfsMountToHclTerraform(struct?: BatchPoolMountNfsMount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mount_options: {
-      value: cdktf.stringToHclTerraform(struct!.mountOptions),
+      value: cdktn.stringToHclTerraform(struct!.mountOptions),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     relative_mount_path: {
-      value: cdktf.stringToHclTerraform(struct!.relativeMountPath),
+      value: cdktn.stringToHclTerraform(struct!.relativeMountPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2661,9 +2661,9 @@ export function batchPoolMountNfsMountToHclTerraform(struct?: BatchPoolMountNfsM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolMountNfsMountOutputReference extends cdktf.ComplexObject {
+export class BatchPoolMountNfsMountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2671,11 +2671,11 @@ export class BatchPoolMountNfsMountOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolMountNfsMount | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolMountNfsMount | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2696,7 +2696,7 @@ export class BatchPoolMountNfsMountOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolMountNfsMount | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolMountNfsMount | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2704,7 +2704,7 @@ export class BatchPoolMountNfsMountOutputReference extends cdktf.ComplexObject {
       this._relativeMountPath = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2760,15 +2760,15 @@ export class BatchPoolMountNfsMountOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class BatchPoolMountNfsMountList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolMountNfsMount[] | cdktf.IResolvable
+export class BatchPoolMountNfsMountList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolMountNfsMount[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2791,38 +2791,38 @@ export interface BatchPoolMount {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#azure_file_share BatchPool#azure_file_share}
   */
-  readonly azureFileShare?: BatchPoolMountAzureFileShare[] | cdktf.IResolvable;
+  readonly azureFileShare?: BatchPoolMountAzureFileShare[] | cdktn.IResolvable;
   /**
   * cifs_mount block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#cifs_mount BatchPool#cifs_mount}
   */
-  readonly cifsMount?: BatchPoolMountCifsMount[] | cdktf.IResolvable;
+  readonly cifsMount?: BatchPoolMountCifsMount[] | cdktn.IResolvable;
   /**
   * nfs_mount block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#nfs_mount BatchPool#nfs_mount}
   */
-  readonly nfsMount?: BatchPoolMountNfsMount[] | cdktf.IResolvable;
+  readonly nfsMount?: BatchPoolMountNfsMount[] | cdktn.IResolvable;
 }
 
-export function batchPoolMountToTerraform(struct?: BatchPoolMount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolMountToTerraform(struct?: BatchPoolMount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     azure_blob_file_system: batchPoolMountAzureBlobFileSystemToTerraform(struct!.azureBlobFileSystem),
-    azure_file_share: cdktf.listMapper(batchPoolMountAzureFileShareToTerraform, true)(struct!.azureFileShare),
-    cifs_mount: cdktf.listMapper(batchPoolMountCifsMountToTerraform, true)(struct!.cifsMount),
-    nfs_mount: cdktf.listMapper(batchPoolMountNfsMountToTerraform, true)(struct!.nfsMount),
+    azure_file_share: cdktn.listMapper(batchPoolMountAzureFileShareToTerraform, true)(struct!.azureFileShare),
+    cifs_mount: cdktn.listMapper(batchPoolMountCifsMountToTerraform, true)(struct!.cifsMount),
+    nfs_mount: cdktn.listMapper(batchPoolMountNfsMountToTerraform, true)(struct!.nfsMount),
   }
 }
 
 
-export function batchPoolMountToHclTerraform(struct?: BatchPoolMount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolMountToHclTerraform(struct?: BatchPoolMount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2833,19 +2833,19 @@ export function batchPoolMountToHclTerraform(struct?: BatchPoolMount | cdktf.IRe
       storageClassType: "BatchPoolMountAzureBlobFileSystemList",
     },
     azure_file_share: {
-      value: cdktf.listMapperHcl(batchPoolMountAzureFileShareToHclTerraform, true)(struct!.azureFileShare),
+      value: cdktn.listMapperHcl(batchPoolMountAzureFileShareToHclTerraform, true)(struct!.azureFileShare),
       isBlock: true,
       type: "list",
       storageClassType: "BatchPoolMountAzureFileShareList",
     },
     cifs_mount: {
-      value: cdktf.listMapperHcl(batchPoolMountCifsMountToHclTerraform, true)(struct!.cifsMount),
+      value: cdktn.listMapperHcl(batchPoolMountCifsMountToHclTerraform, true)(struct!.cifsMount),
       isBlock: true,
       type: "list",
       storageClassType: "BatchPoolMountCifsMountList",
     },
     nfs_mount: {
-      value: cdktf.listMapperHcl(batchPoolMountNfsMountToHclTerraform, true)(struct!.nfsMount),
+      value: cdktn.listMapperHcl(batchPoolMountNfsMountToHclTerraform, true)(struct!.nfsMount),
       isBlock: true,
       type: "list",
       storageClassType: "BatchPoolMountNfsMountList",
@@ -2856,9 +2856,9 @@ export function batchPoolMountToHclTerraform(struct?: BatchPoolMount | cdktf.IRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolMountOutputReference extends cdktf.ComplexObject {
+export class BatchPoolMountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2866,11 +2866,11 @@ export class BatchPoolMountOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolMount | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolMount | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2895,7 +2895,7 @@ export class BatchPoolMountOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolMount | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolMount | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2904,7 +2904,7 @@ export class BatchPoolMountOutputReference extends cdktf.ComplexObject {
       this._cifsMount.internalValue = undefined;
       this._nfsMount.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2939,7 +2939,7 @@ export class BatchPoolMountOutputReference extends cdktf.ComplexObject {
   public get azureFileShare() {
     return this._azureFileShare;
   }
-  public putAzureFileShare(value: BatchPoolMountAzureFileShare[] | cdktf.IResolvable) {
+  public putAzureFileShare(value: BatchPoolMountAzureFileShare[] | cdktn.IResolvable) {
     this._azureFileShare.internalValue = value;
   }
   public resetAzureFileShare() {
@@ -2955,7 +2955,7 @@ export class BatchPoolMountOutputReference extends cdktf.ComplexObject {
   public get cifsMount() {
     return this._cifsMount;
   }
-  public putCifsMount(value: BatchPoolMountCifsMount[] | cdktf.IResolvable) {
+  public putCifsMount(value: BatchPoolMountCifsMount[] | cdktn.IResolvable) {
     this._cifsMount.internalValue = value;
   }
   public resetCifsMount() {
@@ -2971,7 +2971,7 @@ export class BatchPoolMountOutputReference extends cdktf.ComplexObject {
   public get nfsMount() {
     return this._nfsMount;
   }
-  public putNfsMount(value: BatchPoolMountNfsMount[] | cdktf.IResolvable) {
+  public putNfsMount(value: BatchPoolMountNfsMount[] | cdktn.IResolvable) {
     this._nfsMount.internalValue = value;
   }
   public resetNfsMount() {
@@ -2983,15 +2983,15 @@ export class BatchPoolMountOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class BatchPoolMountList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolMount[] | cdktf.IResolvable
+export class BatchPoolMountList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolMount[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3021,46 +3021,46 @@ export interface BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecuri
   readonly sourcePortRanges?: string[];
 }
 
-export function batchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesToTerraform(struct?: BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesToTerraform(struct?: BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access: cdktf.stringToTerraform(struct!.access),
-    priority: cdktf.numberToTerraform(struct!.priority),
-    source_address_prefix: cdktf.stringToTerraform(struct!.sourceAddressPrefix),
-    source_port_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sourcePortRanges),
+    access: cdktn.stringToTerraform(struct!.access),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    source_address_prefix: cdktn.stringToTerraform(struct!.sourceAddressPrefix),
+    source_port_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sourcePortRanges),
   }
 }
 
 
-export function batchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesToHclTerraform(struct?: BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesToHclTerraform(struct?: BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access: {
-      value: cdktf.stringToHclTerraform(struct!.access),
+      value: cdktn.stringToHclTerraform(struct!.access),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     source_address_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.sourceAddressPrefix),
+      value: cdktn.stringToHclTerraform(struct!.sourceAddressPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_port_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourcePortRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sourcePortRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -3071,9 +3071,9 @@ export function batchPoolNetworkConfigurationEndpointConfigurationNetworkSecurit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesOutputReference extends cdktf.ComplexObject {
+export class BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3081,11 +3081,11 @@ export class BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3110,7 +3110,7 @@ export class BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGr
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3119,7 +3119,7 @@ export class BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGr
       this._sourceAddressPrefix = undefined;
       this._sourcePortRanges = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3189,15 +3189,15 @@ export class BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGr
   }
 }
 
-export class BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules[] | cdktf.IResolvable
+export class BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3230,56 +3230,56 @@ export interface BatchPoolNetworkConfigurationEndpointConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#network_security_group_rules BatchPool#network_security_group_rules}
   */
-  readonly networkSecurityGroupRules?: BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules[] | cdktf.IResolvable;
+  readonly networkSecurityGroupRules?: BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules[] | cdktn.IResolvable;
 }
 
-export function batchPoolNetworkConfigurationEndpointConfigurationToTerraform(struct?: BatchPoolNetworkConfigurationEndpointConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolNetworkConfigurationEndpointConfigurationToTerraform(struct?: BatchPoolNetworkConfigurationEndpointConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backend_port: cdktf.numberToTerraform(struct!.backendPort),
-    frontend_port_range: cdktf.stringToTerraform(struct!.frontendPortRange),
-    name: cdktf.stringToTerraform(struct!.name),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    network_security_group_rules: cdktf.listMapper(batchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesToTerraform, true)(struct!.networkSecurityGroupRules),
+    backend_port: cdktn.numberToTerraform(struct!.backendPort),
+    frontend_port_range: cdktn.stringToTerraform(struct!.frontendPortRange),
+    name: cdktn.stringToTerraform(struct!.name),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    network_security_group_rules: cdktn.listMapper(batchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesToTerraform, true)(struct!.networkSecurityGroupRules),
   }
 }
 
 
-export function batchPoolNetworkConfigurationEndpointConfigurationToHclTerraform(struct?: BatchPoolNetworkConfigurationEndpointConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolNetworkConfigurationEndpointConfigurationToHclTerraform(struct?: BatchPoolNetworkConfigurationEndpointConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backend_port: {
-      value: cdktf.numberToHclTerraform(struct!.backendPort),
+      value: cdktn.numberToHclTerraform(struct!.backendPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     frontend_port_range: {
-      value: cdktf.stringToHclTerraform(struct!.frontendPortRange),
+      value: cdktn.stringToHclTerraform(struct!.frontendPortRange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_security_group_rules: {
-      value: cdktf.listMapperHcl(batchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesToHclTerraform, true)(struct!.networkSecurityGroupRules),
+      value: cdktn.listMapperHcl(batchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesToHclTerraform, true)(struct!.networkSecurityGroupRules),
       isBlock: true,
       type: "list",
       storageClassType: "BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRulesList",
@@ -3290,9 +3290,9 @@ export function batchPoolNetworkConfigurationEndpointConfigurationToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolNetworkConfigurationEndpointConfigurationOutputReference extends cdktf.ComplexObject {
+export class BatchPoolNetworkConfigurationEndpointConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3300,11 +3300,11 @@ export class BatchPoolNetworkConfigurationEndpointConfigurationOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolNetworkConfigurationEndpointConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolNetworkConfigurationEndpointConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3333,7 +3333,7 @@ export class BatchPoolNetworkConfigurationEndpointConfigurationOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolNetworkConfigurationEndpointConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolNetworkConfigurationEndpointConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3343,7 +3343,7 @@ export class BatchPoolNetworkConfigurationEndpointConfigurationOutputReference e
       this._protocol = undefined;
       this._networkSecurityGroupRules.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3415,7 +3415,7 @@ export class BatchPoolNetworkConfigurationEndpointConfigurationOutputReference e
   public get networkSecurityGroupRules() {
     return this._networkSecurityGroupRules;
   }
-  public putNetworkSecurityGroupRules(value: BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules[] | cdktf.IResolvable) {
+  public putNetworkSecurityGroupRules(value: BatchPoolNetworkConfigurationEndpointConfigurationNetworkSecurityGroupRules[] | cdktn.IResolvable) {
     this._networkSecurityGroupRules.internalValue = value;
   }
   public resetNetworkSecurityGroupRules() {
@@ -3427,15 +3427,15 @@ export class BatchPoolNetworkConfigurationEndpointConfigurationOutputReference e
   }
 }
 
-export class BatchPoolNetworkConfigurationEndpointConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolNetworkConfigurationEndpointConfiguration[] | cdktf.IResolvable
+export class BatchPoolNetworkConfigurationEndpointConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolNetworkConfigurationEndpointConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3450,7 +3450,7 @@ export interface BatchPoolNetworkConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#accelerated_networking_enabled BatchPool#accelerated_networking_enabled}
   */
-  readonly acceleratedNetworkingEnabled?: boolean | cdktf.IResolvable;
+  readonly acceleratedNetworkingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#dynamic_vnet_assignment_scope BatchPool#dynamic_vnet_assignment_scope}
   */
@@ -3472,63 +3472,63 @@ export interface BatchPoolNetworkConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#endpoint_configuration BatchPool#endpoint_configuration}
   */
-  readonly endpointConfiguration?: BatchPoolNetworkConfigurationEndpointConfiguration[] | cdktf.IResolvable;
+  readonly endpointConfiguration?: BatchPoolNetworkConfigurationEndpointConfiguration[] | cdktn.IResolvable;
 }
 
 export function batchPoolNetworkConfigurationToTerraform(struct?: BatchPoolNetworkConfigurationOutputReference | BatchPoolNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    accelerated_networking_enabled: cdktf.booleanToTerraform(struct!.acceleratedNetworkingEnabled),
-    dynamic_vnet_assignment_scope: cdktf.stringToTerraform(struct!.dynamicVnetAssignmentScope),
-    public_address_provisioning_type: cdktf.stringToTerraform(struct!.publicAddressProvisioningType),
-    public_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.publicIps),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
-    endpoint_configuration: cdktf.listMapper(batchPoolNetworkConfigurationEndpointConfigurationToTerraform, true)(struct!.endpointConfiguration),
+    accelerated_networking_enabled: cdktn.booleanToTerraform(struct!.acceleratedNetworkingEnabled),
+    dynamic_vnet_assignment_scope: cdktn.stringToTerraform(struct!.dynamicVnetAssignmentScope),
+    public_address_provisioning_type: cdktn.stringToTerraform(struct!.publicAddressProvisioningType),
+    public_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.publicIps),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
+    endpoint_configuration: cdktn.listMapper(batchPoolNetworkConfigurationEndpointConfigurationToTerraform, true)(struct!.endpointConfiguration),
   }
 }
 
 
 export function batchPoolNetworkConfigurationToHclTerraform(struct?: BatchPoolNetworkConfigurationOutputReference | BatchPoolNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     accelerated_networking_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.acceleratedNetworkingEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.acceleratedNetworkingEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     dynamic_vnet_assignment_scope: {
-      value: cdktf.stringToHclTerraform(struct!.dynamicVnetAssignmentScope),
+      value: cdktn.stringToHclTerraform(struct!.dynamicVnetAssignmentScope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     public_address_provisioning_type: {
-      value: cdktf.stringToHclTerraform(struct!.publicAddressProvisioningType),
+      value: cdktn.stringToHclTerraform(struct!.publicAddressProvisioningType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     public_ips: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.publicIps),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.publicIps),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint_configuration: {
-      value: cdktf.listMapperHcl(batchPoolNetworkConfigurationEndpointConfigurationToHclTerraform, true)(struct!.endpointConfiguration),
+      value: cdktn.listMapperHcl(batchPoolNetworkConfigurationEndpointConfigurationToHclTerraform, true)(struct!.endpointConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BatchPoolNetworkConfigurationEndpointConfigurationList",
@@ -3539,14 +3539,14 @@ export function batchPoolNetworkConfigurationToHclTerraform(struct?: BatchPoolNe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+export class BatchPoolNetworkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3602,11 +3602,11 @@ export class BatchPoolNetworkConfigurationOutputReference extends cdktf.ComplexO
   }
 
   // accelerated_networking_enabled - computed: false, optional: true, required: false
-  private _acceleratedNetworkingEnabled?: boolean | cdktf.IResolvable; 
+  private _acceleratedNetworkingEnabled?: boolean | cdktn.IResolvable; 
   public get acceleratedNetworkingEnabled() {
     return this.getBooleanAttribute('accelerated_networking_enabled');
   }
-  public set acceleratedNetworkingEnabled(value: boolean | cdktf.IResolvable) {
+  public set acceleratedNetworkingEnabled(value: boolean | cdktn.IResolvable) {
     this._acceleratedNetworkingEnabled = value;
   }
   public resetAcceleratedNetworkingEnabled() {
@@ -3652,7 +3652,7 @@ export class BatchPoolNetworkConfigurationOutputReference extends cdktf.ComplexO
   // public_ips - computed: false, optional: true, required: false
   private _publicIps?: string[]; 
   public get publicIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('public_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('public_ips'));
   }
   public set publicIps(value: string[]) {
     this._publicIps = value;
@@ -3686,7 +3686,7 @@ export class BatchPoolNetworkConfigurationOutputReference extends cdktf.ComplexO
   public get endpointConfiguration() {
     return this._endpointConfiguration;
   }
-  public putEndpointConfiguration(value: BatchPoolNetworkConfigurationEndpointConfiguration[] | cdktf.IResolvable) {
+  public putEndpointConfiguration(value: BatchPoolNetworkConfigurationEndpointConfiguration[] | cdktn.IResolvable) {
     this._endpointConfiguration.internalValue = value;
   }
   public resetEndpointConfiguration() {
@@ -3704,25 +3704,25 @@ export interface BatchPoolNodePlacement {
   readonly policy?: string;
 }
 
-export function batchPoolNodePlacementToTerraform(struct?: BatchPoolNodePlacement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolNodePlacementToTerraform(struct?: BatchPoolNodePlacement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    policy: cdktf.stringToTerraform(struct!.policy),
+    policy: cdktn.stringToTerraform(struct!.policy),
   }
 }
 
 
-export function batchPoolNodePlacementToHclTerraform(struct?: BatchPoolNodePlacement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolNodePlacementToHclTerraform(struct?: BatchPoolNodePlacement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     policy: {
-      value: cdktf.stringToHclTerraform(struct!.policy),
+      value: cdktn.stringToHclTerraform(struct!.policy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3733,9 +3733,9 @@ export function batchPoolNodePlacementToHclTerraform(struct?: BatchPoolNodePlace
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolNodePlacementOutputReference extends cdktf.ComplexObject {
+export class BatchPoolNodePlacementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3743,11 +3743,11 @@ export class BatchPoolNodePlacementOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolNodePlacement | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolNodePlacement | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3760,13 +3760,13 @@ export class BatchPoolNodePlacementOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolNodePlacement | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolNodePlacement | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._policy = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3794,15 +3794,15 @@ export class BatchPoolNodePlacementOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class BatchPoolNodePlacementList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolNodePlacement[] | cdktf.IResolvable
+export class BatchPoolNodePlacementList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolNodePlacement[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3817,11 +3817,11 @@ export interface BatchPoolSecurityProfile {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#host_encryption_enabled BatchPool#host_encryption_enabled}
   */
-  readonly hostEncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly hostEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#secure_boot_enabled BatchPool#secure_boot_enabled}
   */
-  readonly secureBootEnabled?: boolean | cdktf.IResolvable;
+  readonly secureBootEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#security_type BatchPool#security_type}
   */
@@ -3829,49 +3829,49 @@ export interface BatchPoolSecurityProfile {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#vtpm_enabled BatchPool#vtpm_enabled}
   */
-  readonly vtpmEnabled?: boolean | cdktf.IResolvable;
+  readonly vtpmEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function batchPoolSecurityProfileToTerraform(struct?: BatchPoolSecurityProfileOutputReference | BatchPoolSecurityProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_encryption_enabled: cdktf.booleanToTerraform(struct!.hostEncryptionEnabled),
-    secure_boot_enabled: cdktf.booleanToTerraform(struct!.secureBootEnabled),
-    security_type: cdktf.stringToTerraform(struct!.securityType),
-    vtpm_enabled: cdktf.booleanToTerraform(struct!.vtpmEnabled),
+    host_encryption_enabled: cdktn.booleanToTerraform(struct!.hostEncryptionEnabled),
+    secure_boot_enabled: cdktn.booleanToTerraform(struct!.secureBootEnabled),
+    security_type: cdktn.stringToTerraform(struct!.securityType),
+    vtpm_enabled: cdktn.booleanToTerraform(struct!.vtpmEnabled),
   }
 }
 
 
 export function batchPoolSecurityProfileToHclTerraform(struct?: BatchPoolSecurityProfileOutputReference | BatchPoolSecurityProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_encryption_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.hostEncryptionEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.hostEncryptionEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     secure_boot_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.secureBootEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.secureBootEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     security_type: {
-      value: cdktf.stringToHclTerraform(struct!.securityType),
+      value: cdktn.stringToHclTerraform(struct!.securityType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vtpm_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.vtpmEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.vtpmEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3882,14 +3882,14 @@ export function batchPoolSecurityProfileToHclTerraform(struct?: BatchPoolSecurit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolSecurityProfileOutputReference extends cdktf.ComplexObject {
+export class BatchPoolSecurityProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3933,11 +3933,11 @@ export class BatchPoolSecurityProfileOutputReference extends cdktf.ComplexObject
   }
 
   // host_encryption_enabled - computed: false, optional: true, required: false
-  private _hostEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _hostEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get hostEncryptionEnabled() {
     return this.getBooleanAttribute('host_encryption_enabled');
   }
-  public set hostEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set hostEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._hostEncryptionEnabled = value;
   }
   public resetHostEncryptionEnabled() {
@@ -3949,11 +3949,11 @@ export class BatchPoolSecurityProfileOutputReference extends cdktf.ComplexObject
   }
 
   // secure_boot_enabled - computed: false, optional: true, required: false
-  private _secureBootEnabled?: boolean | cdktf.IResolvable; 
+  private _secureBootEnabled?: boolean | cdktn.IResolvable; 
   public get secureBootEnabled() {
     return this.getBooleanAttribute('secure_boot_enabled');
   }
-  public set secureBootEnabled(value: boolean | cdktf.IResolvable) {
+  public set secureBootEnabled(value: boolean | cdktn.IResolvable) {
     this._secureBootEnabled = value;
   }
   public resetSecureBootEnabled() {
@@ -3981,11 +3981,11 @@ export class BatchPoolSecurityProfileOutputReference extends cdktf.ComplexObject
   }
 
   // vtpm_enabled - computed: false, optional: true, required: false
-  private _vtpmEnabled?: boolean | cdktf.IResolvable; 
+  private _vtpmEnabled?: boolean | cdktn.IResolvable; 
   public get vtpmEnabled() {
     return this.getBooleanAttribute('vtpm_enabled');
   }
-  public set vtpmEnabled(value: boolean | cdktf.IResolvable) {
+  public set vtpmEnabled(value: boolean | cdktn.IResolvable) {
     this._vtpmEnabled = value;
   }
   public resetVtpmEnabled() {
@@ -4017,46 +4017,46 @@ export interface BatchPoolStartTaskContainerRegistry {
   readonly userName?: string;
 }
 
-export function batchPoolStartTaskContainerRegistryToTerraform(struct?: BatchPoolStartTaskContainerRegistry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolStartTaskContainerRegistryToTerraform(struct?: BatchPoolStartTaskContainerRegistry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    registry_server: cdktf.stringToTerraform(struct!.registryServer),
-    user_assigned_identity_id: cdktf.stringToTerraform(struct!.userAssignedIdentityId),
-    user_name: cdktf.stringToTerraform(struct!.userName),
+    password: cdktn.stringToTerraform(struct!.password),
+    registry_server: cdktn.stringToTerraform(struct!.registryServer),
+    user_assigned_identity_id: cdktn.stringToTerraform(struct!.userAssignedIdentityId),
+    user_name: cdktn.stringToTerraform(struct!.userName),
   }
 }
 
 
-export function batchPoolStartTaskContainerRegistryToHclTerraform(struct?: BatchPoolStartTaskContainerRegistry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolStartTaskContainerRegistryToHclTerraform(struct?: BatchPoolStartTaskContainerRegistry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     registry_server: {
-      value: cdktf.stringToHclTerraform(struct!.registryServer),
+      value: cdktn.stringToHclTerraform(struct!.registryServer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_assigned_identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.userAssignedIdentityId),
+      value: cdktn.stringToHclTerraform(struct!.userAssignedIdentityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_name: {
-      value: cdktf.stringToHclTerraform(struct!.userName),
+      value: cdktn.stringToHclTerraform(struct!.userName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4067,9 +4067,9 @@ export function batchPoolStartTaskContainerRegistryToHclTerraform(struct?: Batch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolStartTaskContainerRegistryOutputReference extends cdktf.ComplexObject {
+export class BatchPoolStartTaskContainerRegistryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4077,11 +4077,11 @@ export class BatchPoolStartTaskContainerRegistryOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolStartTaskContainerRegistry | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolStartTaskContainerRegistry | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4106,7 +4106,7 @@ export class BatchPoolStartTaskContainerRegistryOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolStartTaskContainerRegistry | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolStartTaskContainerRegistry | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4115,7 +4115,7 @@ export class BatchPoolStartTaskContainerRegistryOutputReference extends cdktf.Co
       this._userAssignedIdentityId = undefined;
       this._userName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4191,15 +4191,15 @@ export class BatchPoolStartTaskContainerRegistryOutputReference extends cdktf.Co
   }
 }
 
-export class BatchPoolStartTaskContainerRegistryList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolStartTaskContainerRegistry[] | cdktf.IResolvable
+export class BatchPoolStartTaskContainerRegistryList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolStartTaskContainerRegistry[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4228,49 +4228,49 @@ export interface BatchPoolStartTaskContainer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#registry BatchPool#registry}
   */
-  readonly registry?: BatchPoolStartTaskContainerRegistry[] | cdktf.IResolvable;
+  readonly registry?: BatchPoolStartTaskContainerRegistry[] | cdktn.IResolvable;
 }
 
-export function batchPoolStartTaskContainerToTerraform(struct?: BatchPoolStartTaskContainer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolStartTaskContainerToTerraform(struct?: BatchPoolStartTaskContainer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    image_name: cdktf.stringToTerraform(struct!.imageName),
-    run_options: cdktf.stringToTerraform(struct!.runOptions),
-    working_directory: cdktf.stringToTerraform(struct!.workingDirectory),
-    registry: cdktf.listMapper(batchPoolStartTaskContainerRegistryToTerraform, true)(struct!.registry),
+    image_name: cdktn.stringToTerraform(struct!.imageName),
+    run_options: cdktn.stringToTerraform(struct!.runOptions),
+    working_directory: cdktn.stringToTerraform(struct!.workingDirectory),
+    registry: cdktn.listMapper(batchPoolStartTaskContainerRegistryToTerraform, true)(struct!.registry),
   }
 }
 
 
-export function batchPoolStartTaskContainerToHclTerraform(struct?: BatchPoolStartTaskContainer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolStartTaskContainerToHclTerraform(struct?: BatchPoolStartTaskContainer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     image_name: {
-      value: cdktf.stringToHclTerraform(struct!.imageName),
+      value: cdktn.stringToHclTerraform(struct!.imageName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     run_options: {
-      value: cdktf.stringToHclTerraform(struct!.runOptions),
+      value: cdktn.stringToHclTerraform(struct!.runOptions),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     working_directory: {
-      value: cdktf.stringToHclTerraform(struct!.workingDirectory),
+      value: cdktn.stringToHclTerraform(struct!.workingDirectory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     registry: {
-      value: cdktf.listMapperHcl(batchPoolStartTaskContainerRegistryToHclTerraform, true)(struct!.registry),
+      value: cdktn.listMapperHcl(batchPoolStartTaskContainerRegistryToHclTerraform, true)(struct!.registry),
       isBlock: true,
       type: "list",
       storageClassType: "BatchPoolStartTaskContainerRegistryList",
@@ -4281,9 +4281,9 @@ export function batchPoolStartTaskContainerToHclTerraform(struct?: BatchPoolStar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolStartTaskContainerOutputReference extends cdktf.ComplexObject {
+export class BatchPoolStartTaskContainerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4291,11 +4291,11 @@ export class BatchPoolStartTaskContainerOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolStartTaskContainer | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolStartTaskContainer | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4320,7 +4320,7 @@ export class BatchPoolStartTaskContainerOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolStartTaskContainer | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolStartTaskContainer | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4329,7 +4329,7 @@ export class BatchPoolStartTaskContainerOutputReference extends cdktf.ComplexObj
       this._workingDirectory = undefined;
       this._registry.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4393,7 +4393,7 @@ export class BatchPoolStartTaskContainerOutputReference extends cdktf.ComplexObj
   public get registry() {
     return this._registry;
   }
-  public putRegistry(value: BatchPoolStartTaskContainerRegistry[] | cdktf.IResolvable) {
+  public putRegistry(value: BatchPoolStartTaskContainerRegistry[] | cdktn.IResolvable) {
     this._registry.internalValue = value;
   }
   public resetRegistry() {
@@ -4405,15 +4405,15 @@ export class BatchPoolStartTaskContainerOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class BatchPoolStartTaskContainerList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolStartTaskContainer[] | cdktf.IResolvable
+export class BatchPoolStartTaskContainerList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolStartTaskContainer[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4455,67 +4455,67 @@ export interface BatchPoolStartTaskResourceFile {
   readonly userAssignedIdentityId?: string;
 }
 
-export function batchPoolStartTaskResourceFileToTerraform(struct?: BatchPoolStartTaskResourceFile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolStartTaskResourceFileToTerraform(struct?: BatchPoolStartTaskResourceFile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auto_storage_container_name: cdktf.stringToTerraform(struct!.autoStorageContainerName),
-    blob_prefix: cdktf.stringToTerraform(struct!.blobPrefix),
-    file_mode: cdktf.stringToTerraform(struct!.fileMode),
-    file_path: cdktf.stringToTerraform(struct!.filePath),
-    http_url: cdktf.stringToTerraform(struct!.httpUrl),
-    storage_container_url: cdktf.stringToTerraform(struct!.storageContainerUrl),
-    user_assigned_identity_id: cdktf.stringToTerraform(struct!.userAssignedIdentityId),
+    auto_storage_container_name: cdktn.stringToTerraform(struct!.autoStorageContainerName),
+    blob_prefix: cdktn.stringToTerraform(struct!.blobPrefix),
+    file_mode: cdktn.stringToTerraform(struct!.fileMode),
+    file_path: cdktn.stringToTerraform(struct!.filePath),
+    http_url: cdktn.stringToTerraform(struct!.httpUrl),
+    storage_container_url: cdktn.stringToTerraform(struct!.storageContainerUrl),
+    user_assigned_identity_id: cdktn.stringToTerraform(struct!.userAssignedIdentityId),
   }
 }
 
 
-export function batchPoolStartTaskResourceFileToHclTerraform(struct?: BatchPoolStartTaskResourceFile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolStartTaskResourceFileToHclTerraform(struct?: BatchPoolStartTaskResourceFile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auto_storage_container_name: {
-      value: cdktf.stringToHclTerraform(struct!.autoStorageContainerName),
+      value: cdktn.stringToHclTerraform(struct!.autoStorageContainerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     blob_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.blobPrefix),
+      value: cdktn.stringToHclTerraform(struct!.blobPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     file_mode: {
-      value: cdktf.stringToHclTerraform(struct!.fileMode),
+      value: cdktn.stringToHclTerraform(struct!.fileMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     file_path: {
-      value: cdktf.stringToHclTerraform(struct!.filePath),
+      value: cdktn.stringToHclTerraform(struct!.filePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_url: {
-      value: cdktf.stringToHclTerraform(struct!.httpUrl),
+      value: cdktn.stringToHclTerraform(struct!.httpUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_container_url: {
-      value: cdktf.stringToHclTerraform(struct!.storageContainerUrl),
+      value: cdktn.stringToHclTerraform(struct!.storageContainerUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_assigned_identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.userAssignedIdentityId),
+      value: cdktn.stringToHclTerraform(struct!.userAssignedIdentityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4526,9 +4526,9 @@ export function batchPoolStartTaskResourceFileToHclTerraform(struct?: BatchPoolS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolStartTaskResourceFileOutputReference extends cdktf.ComplexObject {
+export class BatchPoolStartTaskResourceFileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4536,11 +4536,11 @@ export class BatchPoolStartTaskResourceFileOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolStartTaskResourceFile | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolStartTaskResourceFile | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4577,7 +4577,7 @@ export class BatchPoolStartTaskResourceFileOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolStartTaskResourceFile | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolStartTaskResourceFile | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4589,7 +4589,7 @@ export class BatchPoolStartTaskResourceFileOutputReference extends cdktf.Complex
       this._storageContainerUrl = undefined;
       this._userAssignedIdentityId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4719,15 +4719,15 @@ export class BatchPoolStartTaskResourceFileOutputReference extends cdktf.Complex
   }
 }
 
-export class BatchPoolStartTaskResourceFileList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolStartTaskResourceFile[] | cdktf.IResolvable
+export class BatchPoolStartTaskResourceFileList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolStartTaskResourceFile[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4750,31 +4750,31 @@ export interface BatchPoolStartTaskUserIdentityAutoUser {
 }
 
 export function batchPoolStartTaskUserIdentityAutoUserToTerraform(struct?: BatchPoolStartTaskUserIdentityAutoUserOutputReference | BatchPoolStartTaskUserIdentityAutoUser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    elevation_level: cdktf.stringToTerraform(struct!.elevationLevel),
-    scope: cdktf.stringToTerraform(struct!.scope),
+    elevation_level: cdktn.stringToTerraform(struct!.elevationLevel),
+    scope: cdktn.stringToTerraform(struct!.scope),
   }
 }
 
 
 export function batchPoolStartTaskUserIdentityAutoUserToHclTerraform(struct?: BatchPoolStartTaskUserIdentityAutoUserOutputReference | BatchPoolStartTaskUserIdentityAutoUser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     elevation_level: {
-      value: cdktf.stringToHclTerraform(struct!.elevationLevel),
+      value: cdktn.stringToHclTerraform(struct!.elevationLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4785,14 +4785,14 @@ export function batchPoolStartTaskUserIdentityAutoUserToHclTerraform(struct?: Ba
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolStartTaskUserIdentityAutoUserOutputReference extends cdktf.ComplexObject {
+export class BatchPoolStartTaskUserIdentityAutoUserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4869,25 +4869,25 @@ export interface BatchPoolStartTaskUserIdentity {
 }
 
 export function batchPoolStartTaskUserIdentityToTerraform(struct?: BatchPoolStartTaskUserIdentityOutputReference | BatchPoolStartTaskUserIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    user_name: cdktf.stringToTerraform(struct!.userName),
+    user_name: cdktn.stringToTerraform(struct!.userName),
     auto_user: batchPoolStartTaskUserIdentityAutoUserToTerraform(struct!.autoUser),
   }
 }
 
 
 export function batchPoolStartTaskUserIdentityToHclTerraform(struct?: BatchPoolStartTaskUserIdentityOutputReference | BatchPoolStartTaskUserIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     user_name: {
-      value: cdktf.stringToHclTerraform(struct!.userName),
+      value: cdktn.stringToHclTerraform(struct!.userName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4904,14 +4904,14 @@ export function batchPoolStartTaskUserIdentityToHclTerraform(struct?: BatchPoolS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolStartTaskUserIdentityOutputReference extends cdktf.ComplexObject {
+export class BatchPoolStartTaskUserIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4990,19 +4990,19 @@ export interface BatchPoolStartTask {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#wait_for_success BatchPool#wait_for_success}
   */
-  readonly waitForSuccess?: boolean | cdktf.IResolvable;
+  readonly waitForSuccess?: boolean | cdktn.IResolvable;
   /**
   * container block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#container BatchPool#container}
   */
-  readonly container?: BatchPoolStartTaskContainer[] | cdktf.IResolvable;
+  readonly container?: BatchPoolStartTaskContainer[] | cdktn.IResolvable;
   /**
   * resource_file block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#resource_file BatchPool#resource_file}
   */
-  readonly resourceFile?: BatchPoolStartTaskResourceFile[] | cdktf.IResolvable;
+  readonly resourceFile?: BatchPoolStartTaskResourceFile[] | cdktn.IResolvable;
   /**
   * user_identity block
   *
@@ -5012,60 +5012,60 @@ export interface BatchPoolStartTask {
 }
 
 export function batchPoolStartTaskToTerraform(struct?: BatchPoolStartTaskOutputReference | BatchPoolStartTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command_line: cdktf.stringToTerraform(struct!.commandLine),
-    common_environment_properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.commonEnvironmentProperties),
-    task_retry_maximum: cdktf.numberToTerraform(struct!.taskRetryMaximum),
-    wait_for_success: cdktf.booleanToTerraform(struct!.waitForSuccess),
-    container: cdktf.listMapper(batchPoolStartTaskContainerToTerraform, true)(struct!.container),
-    resource_file: cdktf.listMapper(batchPoolStartTaskResourceFileToTerraform, true)(struct!.resourceFile),
+    command_line: cdktn.stringToTerraform(struct!.commandLine),
+    common_environment_properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.commonEnvironmentProperties),
+    task_retry_maximum: cdktn.numberToTerraform(struct!.taskRetryMaximum),
+    wait_for_success: cdktn.booleanToTerraform(struct!.waitForSuccess),
+    container: cdktn.listMapper(batchPoolStartTaskContainerToTerraform, true)(struct!.container),
+    resource_file: cdktn.listMapper(batchPoolStartTaskResourceFileToTerraform, true)(struct!.resourceFile),
     user_identity: batchPoolStartTaskUserIdentityToTerraform(struct!.userIdentity),
   }
 }
 
 
 export function batchPoolStartTaskToHclTerraform(struct?: BatchPoolStartTaskOutputReference | BatchPoolStartTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command_line: {
-      value: cdktf.stringToHclTerraform(struct!.commandLine),
+      value: cdktn.stringToHclTerraform(struct!.commandLine),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     common_environment_properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.commonEnvironmentProperties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.commonEnvironmentProperties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     task_retry_maximum: {
-      value: cdktf.numberToHclTerraform(struct!.taskRetryMaximum),
+      value: cdktn.numberToHclTerraform(struct!.taskRetryMaximum),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     wait_for_success: {
-      value: cdktf.booleanToHclTerraform(struct!.waitForSuccess),
+      value: cdktn.booleanToHclTerraform(struct!.waitForSuccess),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     container: {
-      value: cdktf.listMapperHcl(batchPoolStartTaskContainerToHclTerraform, true)(struct!.container),
+      value: cdktn.listMapperHcl(batchPoolStartTaskContainerToHclTerraform, true)(struct!.container),
       isBlock: true,
       type: "list",
       storageClassType: "BatchPoolStartTaskContainerList",
     },
     resource_file: {
-      value: cdktf.listMapperHcl(batchPoolStartTaskResourceFileToHclTerraform, true)(struct!.resourceFile),
+      value: cdktn.listMapperHcl(batchPoolStartTaskResourceFileToHclTerraform, true)(struct!.resourceFile),
       isBlock: true,
       type: "list",
       storageClassType: "BatchPoolStartTaskResourceFileList",
@@ -5082,14 +5082,14 @@ export function batchPoolStartTaskToHclTerraform(struct?: BatchPoolStartTaskOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolStartTaskOutputReference extends cdktf.ComplexObject {
+export class BatchPoolStartTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5196,11 +5196,11 @@ export class BatchPoolStartTaskOutputReference extends cdktf.ComplexObject {
   }
 
   // wait_for_success - computed: false, optional: true, required: false
-  private _waitForSuccess?: boolean | cdktf.IResolvable; 
+  private _waitForSuccess?: boolean | cdktn.IResolvable; 
   public get waitForSuccess() {
     return this.getBooleanAttribute('wait_for_success');
   }
-  public set waitForSuccess(value: boolean | cdktf.IResolvable) {
+  public set waitForSuccess(value: boolean | cdktn.IResolvable) {
     this._waitForSuccess = value;
   }
   public resetWaitForSuccess() {
@@ -5216,7 +5216,7 @@ export class BatchPoolStartTaskOutputReference extends cdktf.ComplexObject {
   public get container() {
     return this._container;
   }
-  public putContainer(value: BatchPoolStartTaskContainer[] | cdktf.IResolvable) {
+  public putContainer(value: BatchPoolStartTaskContainer[] | cdktn.IResolvable) {
     this._container.internalValue = value;
   }
   public resetContainer() {
@@ -5232,7 +5232,7 @@ export class BatchPoolStartTaskOutputReference extends cdktf.ComplexObject {
   public get resourceFile() {
     return this._resourceFile;
   }
-  public putResourceFile(value: BatchPoolStartTaskResourceFile[] | cdktf.IResolvable) {
+  public putResourceFile(value: BatchPoolStartTaskResourceFile[] | cdktn.IResolvable) {
     this._resourceFile.internalValue = value;
   }
   public resetResourceFile() {
@@ -5283,52 +5283,52 @@ export interface BatchPoolStorageImageReference {
 }
 
 export function batchPoolStorageImageReferenceToTerraform(struct?: BatchPoolStorageImageReferenceOutputReference | BatchPoolStorageImageReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    offer: cdktf.stringToTerraform(struct!.offer),
-    publisher: cdktf.stringToTerraform(struct!.publisher),
-    sku: cdktf.stringToTerraform(struct!.sku),
-    version: cdktf.stringToTerraform(struct!.version),
+    id: cdktn.stringToTerraform(struct!.id),
+    offer: cdktn.stringToTerraform(struct!.offer),
+    publisher: cdktn.stringToTerraform(struct!.publisher),
+    sku: cdktn.stringToTerraform(struct!.sku),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function batchPoolStorageImageReferenceToHclTerraform(struct?: BatchPoolStorageImageReferenceOutputReference | BatchPoolStorageImageReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     offer: {
-      value: cdktf.stringToHclTerraform(struct!.offer),
+      value: cdktn.stringToHclTerraform(struct!.offer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publisher: {
-      value: cdktf.stringToHclTerraform(struct!.publisher),
+      value: cdktn.stringToHclTerraform(struct!.publisher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sku: {
-      value: cdktf.stringToHclTerraform(struct!.sku),
+      value: cdktn.stringToHclTerraform(struct!.sku),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5339,14 +5339,14 @@ export function batchPoolStorageImageReferenceToHclTerraform(struct?: BatchPoolS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolStorageImageReferenceOutputReference extends cdktf.ComplexObject {
+export class BatchPoolStorageImageReferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5482,25 +5482,25 @@ export interface BatchPoolTaskSchedulingPolicy {
   readonly nodeFillType?: string;
 }
 
-export function batchPoolTaskSchedulingPolicyToTerraform(struct?: BatchPoolTaskSchedulingPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolTaskSchedulingPolicyToTerraform(struct?: BatchPoolTaskSchedulingPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    node_fill_type: cdktf.stringToTerraform(struct!.nodeFillType),
+    node_fill_type: cdktn.stringToTerraform(struct!.nodeFillType),
   }
 }
 
 
-export function batchPoolTaskSchedulingPolicyToHclTerraform(struct?: BatchPoolTaskSchedulingPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolTaskSchedulingPolicyToHclTerraform(struct?: BatchPoolTaskSchedulingPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     node_fill_type: {
-      value: cdktf.stringToHclTerraform(struct!.nodeFillType),
+      value: cdktn.stringToHclTerraform(struct!.nodeFillType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5511,9 +5511,9 @@ export function batchPoolTaskSchedulingPolicyToHclTerraform(struct?: BatchPoolTa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolTaskSchedulingPolicyOutputReference extends cdktf.ComplexObject {
+export class BatchPoolTaskSchedulingPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5521,11 +5521,11 @@ export class BatchPoolTaskSchedulingPolicyOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolTaskSchedulingPolicy | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolTaskSchedulingPolicy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5538,13 +5538,13 @@ export class BatchPoolTaskSchedulingPolicyOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolTaskSchedulingPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolTaskSchedulingPolicy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._nodeFillType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5572,15 +5572,15 @@ export class BatchPoolTaskSchedulingPolicyOutputReference extends cdktf.ComplexO
   }
 }
 
-export class BatchPoolTaskSchedulingPolicyList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolTaskSchedulingPolicy[] | cdktf.IResolvable
+export class BatchPoolTaskSchedulingPolicyList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolTaskSchedulingPolicy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5610,46 +5610,46 @@ export interface BatchPoolTimeouts {
   readonly update?: string;
 }
 
-export function batchPoolTimeoutsToTerraform(struct?: BatchPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolTimeoutsToTerraform(struct?: BatchPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function batchPoolTimeoutsToHclTerraform(struct?: BatchPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolTimeoutsToHclTerraform(struct?: BatchPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5660,19 +5660,19 @@ export function batchPoolTimeoutsToHclTerraform(struct?: BatchPoolTimeouts | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BatchPoolTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BatchPoolTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5697,7 +5697,7 @@ export class BatchPoolTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5706,7 +5706,7 @@ export class BatchPoolTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5799,39 +5799,39 @@ export interface BatchPoolUserAccountsLinuxUserConfiguration {
   readonly uid?: number;
 }
 
-export function batchPoolUserAccountsLinuxUserConfigurationToTerraform(struct?: BatchPoolUserAccountsLinuxUserConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolUserAccountsLinuxUserConfigurationToTerraform(struct?: BatchPoolUserAccountsLinuxUserConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    gid: cdktf.numberToTerraform(struct!.gid),
-    ssh_private_key: cdktf.stringToTerraform(struct!.sshPrivateKey),
-    uid: cdktf.numberToTerraform(struct!.uid),
+    gid: cdktn.numberToTerraform(struct!.gid),
+    ssh_private_key: cdktn.stringToTerraform(struct!.sshPrivateKey),
+    uid: cdktn.numberToTerraform(struct!.uid),
   }
 }
 
 
-export function batchPoolUserAccountsLinuxUserConfigurationToHclTerraform(struct?: BatchPoolUserAccountsLinuxUserConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolUserAccountsLinuxUserConfigurationToHclTerraform(struct?: BatchPoolUserAccountsLinuxUserConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     gid: {
-      value: cdktf.numberToHclTerraform(struct!.gid),
+      value: cdktn.numberToHclTerraform(struct!.gid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ssh_private_key: {
-      value: cdktf.stringToHclTerraform(struct!.sshPrivateKey),
+      value: cdktn.stringToHclTerraform(struct!.sshPrivateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uid: {
-      value: cdktf.numberToHclTerraform(struct!.uid),
+      value: cdktn.numberToHclTerraform(struct!.uid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -5842,9 +5842,9 @@ export function batchPoolUserAccountsLinuxUserConfigurationToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolUserAccountsLinuxUserConfigurationOutputReference extends cdktf.ComplexObject {
+export class BatchPoolUserAccountsLinuxUserConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5852,11 +5852,11 @@ export class BatchPoolUserAccountsLinuxUserConfigurationOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolUserAccountsLinuxUserConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolUserAccountsLinuxUserConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5877,7 +5877,7 @@ export class BatchPoolUserAccountsLinuxUserConfigurationOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolUserAccountsLinuxUserConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolUserAccountsLinuxUserConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5885,7 +5885,7 @@ export class BatchPoolUserAccountsLinuxUserConfigurationOutputReference extends 
       this._sshPrivateKey = undefined;
       this._uid = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5947,15 +5947,15 @@ export class BatchPoolUserAccountsLinuxUserConfigurationOutputReference extends 
   }
 }
 
-export class BatchPoolUserAccountsLinuxUserConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolUserAccountsLinuxUserConfiguration[] | cdktf.IResolvable
+export class BatchPoolUserAccountsLinuxUserConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolUserAccountsLinuxUserConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5973,25 +5973,25 @@ export interface BatchPoolUserAccountsWindowsUserConfiguration {
   readonly loginMode: string;
 }
 
-export function batchPoolUserAccountsWindowsUserConfigurationToTerraform(struct?: BatchPoolUserAccountsWindowsUserConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolUserAccountsWindowsUserConfigurationToTerraform(struct?: BatchPoolUserAccountsWindowsUserConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    login_mode: cdktf.stringToTerraform(struct!.loginMode),
+    login_mode: cdktn.stringToTerraform(struct!.loginMode),
   }
 }
 
 
-export function batchPoolUserAccountsWindowsUserConfigurationToHclTerraform(struct?: BatchPoolUserAccountsWindowsUserConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolUserAccountsWindowsUserConfigurationToHclTerraform(struct?: BatchPoolUserAccountsWindowsUserConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     login_mode: {
-      value: cdktf.stringToHclTerraform(struct!.loginMode),
+      value: cdktn.stringToHclTerraform(struct!.loginMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6002,9 +6002,9 @@ export function batchPoolUserAccountsWindowsUserConfigurationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolUserAccountsWindowsUserConfigurationOutputReference extends cdktf.ComplexObject {
+export class BatchPoolUserAccountsWindowsUserConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6012,11 +6012,11 @@ export class BatchPoolUserAccountsWindowsUserConfigurationOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolUserAccountsWindowsUserConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolUserAccountsWindowsUserConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6029,13 +6029,13 @@ export class BatchPoolUserAccountsWindowsUserConfigurationOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolUserAccountsWindowsUserConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolUserAccountsWindowsUserConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._loginMode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6060,15 +6060,15 @@ export class BatchPoolUserAccountsWindowsUserConfigurationOutputReference extend
   }
 }
 
-export class BatchPoolUserAccountsWindowsUserConfigurationList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolUserAccountsWindowsUserConfiguration[] | cdktf.IResolvable
+export class BatchPoolUserAccountsWindowsUserConfigurationList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolUserAccountsWindowsUserConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6097,62 +6097,62 @@ export interface BatchPoolUserAccounts {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#linux_user_configuration BatchPool#linux_user_configuration}
   */
-  readonly linuxUserConfiguration?: BatchPoolUserAccountsLinuxUserConfiguration[] | cdktf.IResolvable;
+  readonly linuxUserConfiguration?: BatchPoolUserAccountsLinuxUserConfiguration[] | cdktn.IResolvable;
   /**
   * windows_user_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#windows_user_configuration BatchPool#windows_user_configuration}
   */
-  readonly windowsUserConfiguration?: BatchPoolUserAccountsWindowsUserConfiguration[] | cdktf.IResolvable;
+  readonly windowsUserConfiguration?: BatchPoolUserAccountsWindowsUserConfiguration[] | cdktn.IResolvable;
 }
 
-export function batchPoolUserAccountsToTerraform(struct?: BatchPoolUserAccounts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolUserAccountsToTerraform(struct?: BatchPoolUserAccounts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    elevation_level: cdktf.stringToTerraform(struct!.elevationLevel),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    linux_user_configuration: cdktf.listMapper(batchPoolUserAccountsLinuxUserConfigurationToTerraform, true)(struct!.linuxUserConfiguration),
-    windows_user_configuration: cdktf.listMapper(batchPoolUserAccountsWindowsUserConfigurationToTerraform, true)(struct!.windowsUserConfiguration),
+    elevation_level: cdktn.stringToTerraform(struct!.elevationLevel),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    linux_user_configuration: cdktn.listMapper(batchPoolUserAccountsLinuxUserConfigurationToTerraform, true)(struct!.linuxUserConfiguration),
+    windows_user_configuration: cdktn.listMapper(batchPoolUserAccountsWindowsUserConfigurationToTerraform, true)(struct!.windowsUserConfiguration),
   }
 }
 
 
-export function batchPoolUserAccountsToHclTerraform(struct?: BatchPoolUserAccounts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolUserAccountsToHclTerraform(struct?: BatchPoolUserAccounts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     elevation_level: {
-      value: cdktf.stringToHclTerraform(struct!.elevationLevel),
+      value: cdktn.stringToHclTerraform(struct!.elevationLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     linux_user_configuration: {
-      value: cdktf.listMapperHcl(batchPoolUserAccountsLinuxUserConfigurationToHclTerraform, true)(struct!.linuxUserConfiguration),
+      value: cdktn.listMapperHcl(batchPoolUserAccountsLinuxUserConfigurationToHclTerraform, true)(struct!.linuxUserConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BatchPoolUserAccountsLinuxUserConfigurationList",
     },
     windows_user_configuration: {
-      value: cdktf.listMapperHcl(batchPoolUserAccountsWindowsUserConfigurationToHclTerraform, true)(struct!.windowsUserConfiguration),
+      value: cdktn.listMapperHcl(batchPoolUserAccountsWindowsUserConfigurationToHclTerraform, true)(struct!.windowsUserConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "BatchPoolUserAccountsWindowsUserConfigurationList",
@@ -6163,9 +6163,9 @@ export function batchPoolUserAccountsToHclTerraform(struct?: BatchPoolUserAccoun
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolUserAccountsOutputReference extends cdktf.ComplexObject {
+export class BatchPoolUserAccountsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6173,11 +6173,11 @@ export class BatchPoolUserAccountsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolUserAccounts | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolUserAccounts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6206,7 +6206,7 @@ export class BatchPoolUserAccountsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolUserAccounts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolUserAccounts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6216,7 +6216,7 @@ export class BatchPoolUserAccountsOutputReference extends cdktf.ComplexObject {
       this._linuxUserConfiguration.internalValue = undefined;
       this._windowsUserConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6275,7 +6275,7 @@ export class BatchPoolUserAccountsOutputReference extends cdktf.ComplexObject {
   public get linuxUserConfiguration() {
     return this._linuxUserConfiguration;
   }
-  public putLinuxUserConfiguration(value: BatchPoolUserAccountsLinuxUserConfiguration[] | cdktf.IResolvable) {
+  public putLinuxUserConfiguration(value: BatchPoolUserAccountsLinuxUserConfiguration[] | cdktn.IResolvable) {
     this._linuxUserConfiguration.internalValue = value;
   }
   public resetLinuxUserConfiguration() {
@@ -6291,7 +6291,7 @@ export class BatchPoolUserAccountsOutputReference extends cdktf.ComplexObject {
   public get windowsUserConfiguration() {
     return this._windowsUserConfiguration;
   }
-  public putWindowsUserConfiguration(value: BatchPoolUserAccountsWindowsUserConfiguration[] | cdktf.IResolvable) {
+  public putWindowsUserConfiguration(value: BatchPoolUserAccountsWindowsUserConfiguration[] | cdktn.IResolvable) {
     this._windowsUserConfiguration.internalValue = value;
   }
   public resetWindowsUserConfiguration() {
@@ -6303,15 +6303,15 @@ export class BatchPoolUserAccountsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class BatchPoolUserAccountsList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolUserAccounts[] | cdktf.IResolvable
+export class BatchPoolUserAccountsList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolUserAccounts[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6326,28 +6326,28 @@ export interface BatchPoolWindows {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#enable_automatic_updates BatchPool#enable_automatic_updates}
   */
-  readonly enableAutomaticUpdates?: boolean | cdktf.IResolvable;
+  readonly enableAutomaticUpdates?: boolean | cdktn.IResolvable;
 }
 
-export function batchPoolWindowsToTerraform(struct?: BatchPoolWindows | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolWindowsToTerraform(struct?: BatchPoolWindows | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_automatic_updates: cdktf.booleanToTerraform(struct!.enableAutomaticUpdates),
+    enable_automatic_updates: cdktn.booleanToTerraform(struct!.enableAutomaticUpdates),
   }
 }
 
 
-export function batchPoolWindowsToHclTerraform(struct?: BatchPoolWindows | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchPoolWindowsToHclTerraform(struct?: BatchPoolWindows | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_automatic_updates: {
-      value: cdktf.booleanToHclTerraform(struct!.enableAutomaticUpdates),
+      value: cdktn.booleanToHclTerraform(struct!.enableAutomaticUpdates),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -6358,9 +6358,9 @@ export function batchPoolWindowsToHclTerraform(struct?: BatchPoolWindows | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchPoolWindowsOutputReference extends cdktf.ComplexObject {
+export class BatchPoolWindowsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6368,11 +6368,11 @@ export class BatchPoolWindowsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchPoolWindows | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchPoolWindows | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6385,13 +6385,13 @@ export class BatchPoolWindowsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchPoolWindows | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchPoolWindows | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enableAutomaticUpdates = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6403,11 +6403,11 @@ export class BatchPoolWindowsOutputReference extends cdktf.ComplexObject {
   }
 
   // enable_automatic_updates - computed: false, optional: true, required: false
-  private _enableAutomaticUpdates?: boolean | cdktf.IResolvable; 
+  private _enableAutomaticUpdates?: boolean | cdktn.IResolvable; 
   public get enableAutomaticUpdates() {
     return this.getBooleanAttribute('enable_automatic_updates');
   }
-  public set enableAutomaticUpdates(value: boolean | cdktf.IResolvable) {
+  public set enableAutomaticUpdates(value: boolean | cdktn.IResolvable) {
     this._enableAutomaticUpdates = value;
   }
   public resetEnableAutomaticUpdates() {
@@ -6419,15 +6419,15 @@ export class BatchPoolWindowsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class BatchPoolWindowsList extends cdktf.ComplexList {
-  public internalValue? : BatchPoolWindows[] | cdktf.IResolvable
+export class BatchPoolWindowsList extends cdktn.ComplexList {
+  public internalValue? : BatchPoolWindows[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6442,7 +6442,7 @@ export class BatchPoolWindowsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool azurerm_batch_pool}
 */
-export class BatchPool extends cdktf.TerraformResource {
+export class BatchPool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -6453,14 +6453,14 @@ export class BatchPool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BatchPool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BatchPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BatchPool to import
   * @param importFromId The id of the existing BatchPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BatchPool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_batch_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_batch_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -6693,11 +6693,11 @@ export class BatchPool extends cdktf.TerraformResource {
   }
 
   // stop_pending_resize_operation - computed: false, optional: true, required: false
-  private _stopPendingResizeOperation?: boolean | cdktf.IResolvable; 
+  private _stopPendingResizeOperation?: boolean | cdktn.IResolvable; 
   public get stopPendingResizeOperation() {
     return this.getBooleanAttribute('stop_pending_resize_operation');
   }
-  public set stopPendingResizeOperation(value: boolean | cdktf.IResolvable) {
+  public set stopPendingResizeOperation(value: boolean | cdktn.IResolvable) {
     this._stopPendingResizeOperation = value;
   }
   public resetStopPendingResizeOperation() {
@@ -6758,7 +6758,7 @@ export class BatchPool extends cdktf.TerraformResource {
   public get certificate() {
     return this._certificate;
   }
-  public putCertificate(value: BatchPoolCertificate[] | cdktf.IResolvable) {
+  public putCertificate(value: BatchPoolCertificate[] | cdktn.IResolvable) {
     this._certificate.internalValue = value;
   }
   public resetCertificate() {
@@ -6790,7 +6790,7 @@ export class BatchPool extends cdktf.TerraformResource {
   public get dataDisks() {
     return this._dataDisks;
   }
-  public putDataDisks(value: BatchPoolDataDisks[] | cdktf.IResolvable) {
+  public putDataDisks(value: BatchPoolDataDisks[] | cdktn.IResolvable) {
     this._dataDisks.internalValue = value;
   }
   public resetDataDisks() {
@@ -6806,7 +6806,7 @@ export class BatchPool extends cdktf.TerraformResource {
   public get diskEncryption() {
     return this._diskEncryption;
   }
-  public putDiskEncryption(value: BatchPoolDiskEncryption[] | cdktf.IResolvable) {
+  public putDiskEncryption(value: BatchPoolDiskEncryption[] | cdktn.IResolvable) {
     this._diskEncryption.internalValue = value;
   }
   public resetDiskEncryption() {
@@ -6822,7 +6822,7 @@ export class BatchPool extends cdktf.TerraformResource {
   public get extensions() {
     return this._extensions;
   }
-  public putExtensions(value: BatchPoolExtensions[] | cdktf.IResolvable) {
+  public putExtensions(value: BatchPoolExtensions[] | cdktn.IResolvable) {
     this._extensions.internalValue = value;
   }
   public resetExtensions() {
@@ -6870,7 +6870,7 @@ export class BatchPool extends cdktf.TerraformResource {
   public get mount() {
     return this._mount;
   }
-  public putMount(value: BatchPoolMount[] | cdktf.IResolvable) {
+  public putMount(value: BatchPoolMount[] | cdktn.IResolvable) {
     this._mount.internalValue = value;
   }
   public resetMount() {
@@ -6902,7 +6902,7 @@ export class BatchPool extends cdktf.TerraformResource {
   public get nodePlacement() {
     return this._nodePlacement;
   }
-  public putNodePlacement(value: BatchPoolNodePlacement[] | cdktf.IResolvable) {
+  public putNodePlacement(value: BatchPoolNodePlacement[] | cdktn.IResolvable) {
     this._nodePlacement.internalValue = value;
   }
   public resetNodePlacement() {
@@ -6963,7 +6963,7 @@ export class BatchPool extends cdktf.TerraformResource {
   public get taskSchedulingPolicy() {
     return this._taskSchedulingPolicy;
   }
-  public putTaskSchedulingPolicy(value: BatchPoolTaskSchedulingPolicy[] | cdktf.IResolvable) {
+  public putTaskSchedulingPolicy(value: BatchPoolTaskSchedulingPolicy[] | cdktn.IResolvable) {
     this._taskSchedulingPolicy.internalValue = value;
   }
   public resetTaskSchedulingPolicy() {
@@ -6995,7 +6995,7 @@ export class BatchPool extends cdktf.TerraformResource {
   public get userAccounts() {
     return this._userAccounts;
   }
-  public putUserAccounts(value: BatchPoolUserAccounts[] | cdktf.IResolvable) {
+  public putUserAccounts(value: BatchPoolUserAccounts[] | cdktn.IResolvable) {
     this._userAccounts.internalValue = value;
   }
   public resetUserAccounts() {
@@ -7011,7 +7011,7 @@ export class BatchPool extends cdktf.TerraformResource {
   public get windows() {
     return this._windows;
   }
-  public putWindows(value: BatchPoolWindows[] | cdktf.IResolvable) {
+  public putWindows(value: BatchPoolWindows[] | cdktn.IResolvable) {
     this._windows.internalValue = value;
   }
   public resetWindows() {
@@ -7028,123 +7028,123 @@ export class BatchPool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_name: cdktf.stringToTerraform(this._accountName),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      inter_node_communication: cdktf.stringToTerraform(this._interNodeCommunication),
-      license_type: cdktf.stringToTerraform(this._licenseType),
-      max_tasks_per_node: cdktf.numberToTerraform(this._maxTasksPerNode),
-      metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
-      name: cdktf.stringToTerraform(this._name),
-      node_agent_sku_id: cdktf.stringToTerraform(this._nodeAgentSkuId),
-      os_disk_placement: cdktf.stringToTerraform(this._osDiskPlacement),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      stop_pending_resize_operation: cdktf.booleanToTerraform(this._stopPendingResizeOperation),
-      target_node_communication_mode: cdktf.stringToTerraform(this._targetNodeCommunicationMode),
-      vm_size: cdktf.stringToTerraform(this._vmSize),
+      account_name: cdktn.stringToTerraform(this._accountName),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      inter_node_communication: cdktn.stringToTerraform(this._interNodeCommunication),
+      license_type: cdktn.stringToTerraform(this._licenseType),
+      max_tasks_per_node: cdktn.numberToTerraform(this._maxTasksPerNode),
+      metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._metadata),
+      name: cdktn.stringToTerraform(this._name),
+      node_agent_sku_id: cdktn.stringToTerraform(this._nodeAgentSkuId),
+      os_disk_placement: cdktn.stringToTerraform(this._osDiskPlacement),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      stop_pending_resize_operation: cdktn.booleanToTerraform(this._stopPendingResizeOperation),
+      target_node_communication_mode: cdktn.stringToTerraform(this._targetNodeCommunicationMode),
+      vm_size: cdktn.stringToTerraform(this._vmSize),
       auto_scale: batchPoolAutoScaleToTerraform(this._autoScale.internalValue),
-      certificate: cdktf.listMapper(batchPoolCertificateToTerraform, true)(this._certificate.internalValue),
+      certificate: cdktn.listMapper(batchPoolCertificateToTerraform, true)(this._certificate.internalValue),
       container_configuration: batchPoolContainerConfigurationToTerraform(this._containerConfiguration.internalValue),
-      data_disks: cdktf.listMapper(batchPoolDataDisksToTerraform, true)(this._dataDisks.internalValue),
-      disk_encryption: cdktf.listMapper(batchPoolDiskEncryptionToTerraform, true)(this._diskEncryption.internalValue),
-      extensions: cdktf.listMapper(batchPoolExtensionsToTerraform, true)(this._extensions.internalValue),
+      data_disks: cdktn.listMapper(batchPoolDataDisksToTerraform, true)(this._dataDisks.internalValue),
+      disk_encryption: cdktn.listMapper(batchPoolDiskEncryptionToTerraform, true)(this._diskEncryption.internalValue),
+      extensions: cdktn.listMapper(batchPoolExtensionsToTerraform, true)(this._extensions.internalValue),
       fixed_scale: batchPoolFixedScaleToTerraform(this._fixedScale.internalValue),
       identity: batchPoolIdentityToTerraform(this._identity.internalValue),
-      mount: cdktf.listMapper(batchPoolMountToTerraform, true)(this._mount.internalValue),
+      mount: cdktn.listMapper(batchPoolMountToTerraform, true)(this._mount.internalValue),
       network_configuration: batchPoolNetworkConfigurationToTerraform(this._networkConfiguration.internalValue),
-      node_placement: cdktf.listMapper(batchPoolNodePlacementToTerraform, true)(this._nodePlacement.internalValue),
+      node_placement: cdktn.listMapper(batchPoolNodePlacementToTerraform, true)(this._nodePlacement.internalValue),
       security_profile: batchPoolSecurityProfileToTerraform(this._securityProfile.internalValue),
       start_task: batchPoolStartTaskToTerraform(this._startTask.internalValue),
       storage_image_reference: batchPoolStorageImageReferenceToTerraform(this._storageImageReference.internalValue),
-      task_scheduling_policy: cdktf.listMapper(batchPoolTaskSchedulingPolicyToTerraform, true)(this._taskSchedulingPolicy.internalValue),
+      task_scheduling_policy: cdktn.listMapper(batchPoolTaskSchedulingPolicyToTerraform, true)(this._taskSchedulingPolicy.internalValue),
       timeouts: batchPoolTimeoutsToTerraform(this._timeouts.internalValue),
-      user_accounts: cdktf.listMapper(batchPoolUserAccountsToTerraform, true)(this._userAccounts.internalValue),
-      windows: cdktf.listMapper(batchPoolWindowsToTerraform, true)(this._windows.internalValue),
+      user_accounts: cdktn.listMapper(batchPoolUserAccountsToTerraform, true)(this._userAccounts.internalValue),
+      windows: cdktn.listMapper(batchPoolWindowsToTerraform, true)(this._windows.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_name: {
-        value: cdktf.stringToHclTerraform(this._accountName),
+        value: cdktn.stringToHclTerraform(this._accountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       inter_node_communication: {
-        value: cdktf.stringToHclTerraform(this._interNodeCommunication),
+        value: cdktn.stringToHclTerraform(this._interNodeCommunication),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       license_type: {
-        value: cdktf.stringToHclTerraform(this._licenseType),
+        value: cdktn.stringToHclTerraform(this._licenseType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_tasks_per_node: {
-        value: cdktf.numberToHclTerraform(this._maxTasksPerNode),
+        value: cdktn.numberToHclTerraform(this._maxTasksPerNode),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._metadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._metadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       node_agent_sku_id: {
-        value: cdktf.stringToHclTerraform(this._nodeAgentSkuId),
+        value: cdktn.stringToHclTerraform(this._nodeAgentSkuId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       os_disk_placement: {
-        value: cdktf.stringToHclTerraform(this._osDiskPlacement),
+        value: cdktn.stringToHclTerraform(this._osDiskPlacement),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stop_pending_resize_operation: {
-        value: cdktf.booleanToHclTerraform(this._stopPendingResizeOperation),
+        value: cdktn.booleanToHclTerraform(this._stopPendingResizeOperation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       target_node_communication_mode: {
-        value: cdktf.stringToHclTerraform(this._targetNodeCommunicationMode),
+        value: cdktn.stringToHclTerraform(this._targetNodeCommunicationMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vm_size: {
-        value: cdktf.stringToHclTerraform(this._vmSize),
+        value: cdktn.stringToHclTerraform(this._vmSize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -7156,7 +7156,7 @@ export class BatchPool extends cdktf.TerraformResource {
         storageClassType: "BatchPoolAutoScaleList",
       },
       certificate: {
-        value: cdktf.listMapperHcl(batchPoolCertificateToHclTerraform, true)(this._certificate.internalValue),
+        value: cdktn.listMapperHcl(batchPoolCertificateToHclTerraform, true)(this._certificate.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BatchPoolCertificateList",
@@ -7168,19 +7168,19 @@ export class BatchPool extends cdktf.TerraformResource {
         storageClassType: "BatchPoolContainerConfigurationList",
       },
       data_disks: {
-        value: cdktf.listMapperHcl(batchPoolDataDisksToHclTerraform, true)(this._dataDisks.internalValue),
+        value: cdktn.listMapperHcl(batchPoolDataDisksToHclTerraform, true)(this._dataDisks.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BatchPoolDataDisksList",
       },
       disk_encryption: {
-        value: cdktf.listMapperHcl(batchPoolDiskEncryptionToHclTerraform, true)(this._diskEncryption.internalValue),
+        value: cdktn.listMapperHcl(batchPoolDiskEncryptionToHclTerraform, true)(this._diskEncryption.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BatchPoolDiskEncryptionList",
       },
       extensions: {
-        value: cdktf.listMapperHcl(batchPoolExtensionsToHclTerraform, true)(this._extensions.internalValue),
+        value: cdktn.listMapperHcl(batchPoolExtensionsToHclTerraform, true)(this._extensions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BatchPoolExtensionsList",
@@ -7198,7 +7198,7 @@ export class BatchPool extends cdktf.TerraformResource {
         storageClassType: "BatchPoolIdentityList",
       },
       mount: {
-        value: cdktf.listMapperHcl(batchPoolMountToHclTerraform, true)(this._mount.internalValue),
+        value: cdktn.listMapperHcl(batchPoolMountToHclTerraform, true)(this._mount.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BatchPoolMountList",
@@ -7210,7 +7210,7 @@ export class BatchPool extends cdktf.TerraformResource {
         storageClassType: "BatchPoolNetworkConfigurationList",
       },
       node_placement: {
-        value: cdktf.listMapperHcl(batchPoolNodePlacementToHclTerraform, true)(this._nodePlacement.internalValue),
+        value: cdktn.listMapperHcl(batchPoolNodePlacementToHclTerraform, true)(this._nodePlacement.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BatchPoolNodePlacementList",
@@ -7234,7 +7234,7 @@ export class BatchPool extends cdktf.TerraformResource {
         storageClassType: "BatchPoolStorageImageReferenceList",
       },
       task_scheduling_policy: {
-        value: cdktf.listMapperHcl(batchPoolTaskSchedulingPolicyToHclTerraform, true)(this._taskSchedulingPolicy.internalValue),
+        value: cdktn.listMapperHcl(batchPoolTaskSchedulingPolicyToHclTerraform, true)(this._taskSchedulingPolicy.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BatchPoolTaskSchedulingPolicyList",
@@ -7246,13 +7246,13 @@ export class BatchPool extends cdktf.TerraformResource {
         storageClassType: "BatchPoolTimeouts",
       },
       user_accounts: {
-        value: cdktf.listMapperHcl(batchPoolUserAccountsToHclTerraform, true)(this._userAccounts.internalValue),
+        value: cdktn.listMapperHcl(batchPoolUserAccountsToHclTerraform, true)(this._userAccounts.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BatchPoolUserAccountsList",
       },
       windows: {
-        value: cdktf.listMapperHcl(batchPoolWindowsToHclTerraform, true)(this._windows.internalValue),
+        value: cdktn.listMapperHcl(batchPoolWindowsToHclTerraform, true)(this._windows.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BatchPoolWindowsList",

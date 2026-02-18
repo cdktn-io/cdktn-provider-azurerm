@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppServiceVirtualNetworkSwiftConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface AppServiceVirtualNetworkSwiftConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_virtual_network_swift_connection#app_service_id AppServiceVirtualNetworkSwiftConnection#app_service_id}
   */
@@ -53,46 +53,46 @@ export interface AppServiceVirtualNetworkSwiftConnectionTimeouts {
   readonly update?: string;
 }
 
-export function appServiceVirtualNetworkSwiftConnectionTimeoutsToTerraform(struct?: AppServiceVirtualNetworkSwiftConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appServiceVirtualNetworkSwiftConnectionTimeoutsToTerraform(struct?: AppServiceVirtualNetworkSwiftConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function appServiceVirtualNetworkSwiftConnectionTimeoutsToHclTerraform(struct?: AppServiceVirtualNetworkSwiftConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appServiceVirtualNetworkSwiftConnectionTimeoutsToHclTerraform(struct?: AppServiceVirtualNetworkSwiftConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,19 +103,19 @@ export function appServiceVirtualNetworkSwiftConnectionTimeoutsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppServiceVirtualNetworkSwiftConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AppServiceVirtualNetworkSwiftConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppServiceVirtualNetworkSwiftConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AppServiceVirtualNetworkSwiftConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -140,7 +140,7 @@ export class AppServiceVirtualNetworkSwiftConnectionTimeoutsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppServiceVirtualNetworkSwiftConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppServiceVirtualNetworkSwiftConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -149,7 +149,7 @@ export class AppServiceVirtualNetworkSwiftConnectionTimeoutsOutputReference exte
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -231,7 +231,7 @@ export class AppServiceVirtualNetworkSwiftConnectionTimeoutsOutputReference exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_virtual_network_swift_connection azurerm_app_service_virtual_network_swift_connection}
 */
-export class AppServiceVirtualNetworkSwiftConnection extends cdktf.TerraformResource {
+export class AppServiceVirtualNetworkSwiftConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -242,14 +242,14 @@ export class AppServiceVirtualNetworkSwiftConnection extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppServiceVirtualNetworkSwiftConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppServiceVirtualNetworkSwiftConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppServiceVirtualNetworkSwiftConnection to import
   * @param importFromId The id of the existing AppServiceVirtualNetworkSwiftConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_virtual_network_swift_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppServiceVirtualNetworkSwiftConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_app_service_virtual_network_swift_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_app_service_virtual_network_swift_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -353,9 +353,9 @@ export class AppServiceVirtualNetworkSwiftConnection extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_service_id: cdktf.stringToTerraform(this._appServiceId),
-      id: cdktf.stringToTerraform(this._id),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      app_service_id: cdktn.stringToTerraform(this._appServiceId),
+      id: cdktn.stringToTerraform(this._id),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
       timeouts: appServiceVirtualNetworkSwiftConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -363,19 +363,19 @@ export class AppServiceVirtualNetworkSwiftConnection extends cdktf.TerraformReso
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_service_id: {
-        value: cdktf.stringToHclTerraform(this._appServiceId),
+        value: cdktn.stringToHclTerraform(this._appServiceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

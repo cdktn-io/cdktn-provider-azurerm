@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DnsCaaRecordConfig extends cdktf.TerraformMetaArguments {
+export interface DnsCaaRecordConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dns_caa_record#id DnsCaaRecord#id}
   *
@@ -44,7 +44,7 @@ export interface DnsCaaRecordConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dns_caa_record#record DnsCaaRecord#record}
   */
-  readonly record: DnsCaaRecordRecord[] | cdktf.IResolvable;
+  readonly record: DnsCaaRecordRecord[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -67,39 +67,39 @@ export interface DnsCaaRecordRecord {
   readonly value: string;
 }
 
-export function dnsCaaRecordRecordToTerraform(struct?: DnsCaaRecordRecord | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsCaaRecordRecordToTerraform(struct?: DnsCaaRecordRecord | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    flags: cdktf.numberToTerraform(struct!.flags),
-    tag: cdktf.stringToTerraform(struct!.tag),
-    value: cdktf.stringToTerraform(struct!.value),
+    flags: cdktn.numberToTerraform(struct!.flags),
+    tag: cdktn.stringToTerraform(struct!.tag),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dnsCaaRecordRecordToHclTerraform(struct?: DnsCaaRecordRecord | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsCaaRecordRecordToHclTerraform(struct?: DnsCaaRecordRecord | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     flags: {
-      value: cdktf.numberToHclTerraform(struct!.flags),
+      value: cdktn.numberToHclTerraform(struct!.flags),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag: {
-      value: cdktf.stringToHclTerraform(struct!.tag),
+      value: cdktn.stringToHclTerraform(struct!.tag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -110,9 +110,9 @@ export function dnsCaaRecordRecordToHclTerraform(struct?: DnsCaaRecordRecord | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsCaaRecordRecordOutputReference extends cdktf.ComplexObject {
+export class DnsCaaRecordRecordOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -120,11 +120,11 @@ export class DnsCaaRecordRecordOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DnsCaaRecordRecord | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsCaaRecordRecord | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -145,7 +145,7 @@ export class DnsCaaRecordRecordOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsCaaRecordRecord | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsCaaRecordRecord | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -153,7 +153,7 @@ export class DnsCaaRecordRecordOutputReference extends cdktf.ComplexObject {
       this._tag = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -206,15 +206,15 @@ export class DnsCaaRecordRecordOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DnsCaaRecordRecordList extends cdktf.ComplexList {
-  public internalValue? : DnsCaaRecordRecord[] | cdktf.IResolvable
+export class DnsCaaRecordRecordList extends cdktn.ComplexList {
+  public internalValue? : DnsCaaRecordRecord[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -244,46 +244,46 @@ export interface DnsCaaRecordTimeouts {
   readonly update?: string;
 }
 
-export function dnsCaaRecordTimeoutsToTerraform(struct?: DnsCaaRecordTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsCaaRecordTimeoutsToTerraform(struct?: DnsCaaRecordTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dnsCaaRecordTimeoutsToHclTerraform(struct?: DnsCaaRecordTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsCaaRecordTimeoutsToHclTerraform(struct?: DnsCaaRecordTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -294,19 +294,19 @@ export function dnsCaaRecordTimeoutsToHclTerraform(struct?: DnsCaaRecordTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsCaaRecordTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DnsCaaRecordTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DnsCaaRecordTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsCaaRecordTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -331,7 +331,7 @@ export class DnsCaaRecordTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsCaaRecordTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsCaaRecordTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -340,7 +340,7 @@ export class DnsCaaRecordTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -422,7 +422,7 @@ export class DnsCaaRecordTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dns_caa_record azurerm_dns_caa_record}
 */
-export class DnsCaaRecord extends cdktf.TerraformResource {
+export class DnsCaaRecord extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -433,14 +433,14 @@ export class DnsCaaRecord extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DnsCaaRecord resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DnsCaaRecord resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsCaaRecord to import
   * @param importFromId The id of the existing DnsCaaRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dns_caa_record#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsCaaRecord to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dns_caa_record", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dns_caa_record", importId: importFromId, provider });
       }
 
   // ===========
@@ -578,7 +578,7 @@ export class DnsCaaRecord extends cdktf.TerraformResource {
   public get record() {
     return this._record;
   }
-  public putRecord(value: DnsCaaRecordRecord[] | cdktf.IResolvable) {
+  public putRecord(value: DnsCaaRecordRecord[] | cdktn.IResolvable) {
     this._record.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -608,13 +608,13 @@ export class DnsCaaRecord extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      ttl: cdktf.numberToTerraform(this._ttl),
-      zone_name: cdktf.stringToTerraform(this._zoneName),
-      record: cdktf.listMapper(dnsCaaRecordRecordToTerraform, true)(this._record.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      ttl: cdktn.numberToTerraform(this._ttl),
+      zone_name: cdktn.stringToTerraform(this._zoneName),
+      record: cdktn.listMapper(dnsCaaRecordRecordToTerraform, true)(this._record.internalValue),
       timeouts: dnsCaaRecordTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -622,43 +622,43 @@ export class DnsCaaRecord extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       zone_name: {
-        value: cdktf.stringToHclTerraform(this._zoneName),
+        value: cdktn.stringToHclTerraform(this._zoneName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       record: {
-        value: cdktf.listMapperHcl(dnsCaaRecordRecordToHclTerraform, true)(this._record.internalValue),
+        value: cdktn.listMapperHcl(dnsCaaRecordRecordToHclTerraform, true)(this._record.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DnsCaaRecordRecordList",

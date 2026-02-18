@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpringCloudContainerDeploymentConfig extends cdktf.TerraformMetaArguments {
+export interface SpringCloudContainerDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_container_deployment#addon_json SpringCloudContainerDeployment#addon_json}
   */
@@ -88,31 +88,31 @@ export interface SpringCloudContainerDeploymentQuota {
 }
 
 export function springCloudContainerDeploymentQuotaToTerraform(struct?: SpringCloudContainerDeploymentQuotaOutputReference | SpringCloudContainerDeploymentQuota): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cpu: cdktf.stringToTerraform(struct!.cpu),
-    memory: cdktf.stringToTerraform(struct!.memory),
+    cpu: cdktn.stringToTerraform(struct!.cpu),
+    memory: cdktn.stringToTerraform(struct!.memory),
   }
 }
 
 
 export function springCloudContainerDeploymentQuotaToHclTerraform(struct?: SpringCloudContainerDeploymentQuotaOutputReference | SpringCloudContainerDeploymentQuota): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cpu: {
-      value: cdktf.stringToHclTerraform(struct!.cpu),
+      value: cdktn.stringToHclTerraform(struct!.cpu),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     memory: {
-      value: cdktf.stringToHclTerraform(struct!.memory),
+      value: cdktn.stringToHclTerraform(struct!.memory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,14 +123,14 @@ export function springCloudContainerDeploymentQuotaToHclTerraform(struct?: Sprin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudContainerDeploymentQuotaOutputReference extends cdktf.ComplexObject {
+export class SpringCloudContainerDeploymentQuotaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -212,46 +212,46 @@ export interface SpringCloudContainerDeploymentTimeouts {
   readonly update?: string;
 }
 
-export function springCloudContainerDeploymentTimeoutsToTerraform(struct?: SpringCloudContainerDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudContainerDeploymentTimeoutsToTerraform(struct?: SpringCloudContainerDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function springCloudContainerDeploymentTimeoutsToHclTerraform(struct?: SpringCloudContainerDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudContainerDeploymentTimeoutsToHclTerraform(struct?: SpringCloudContainerDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -262,19 +262,19 @@ export function springCloudContainerDeploymentTimeoutsToHclTerraform(struct?: Sp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudContainerDeploymentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SpringCloudContainerDeploymentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpringCloudContainerDeploymentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SpringCloudContainerDeploymentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -299,7 +299,7 @@ export class SpringCloudContainerDeploymentTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpringCloudContainerDeploymentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpringCloudContainerDeploymentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -308,7 +308,7 @@ export class SpringCloudContainerDeploymentTimeoutsOutputReference extends cdktf
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -390,7 +390,7 @@ export class SpringCloudContainerDeploymentTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_container_deployment azurerm_spring_cloud_container_deployment}
 */
-export class SpringCloudContainerDeployment extends cdktf.TerraformResource {
+export class SpringCloudContainerDeployment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -401,14 +401,14 @@ export class SpringCloudContainerDeployment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpringCloudContainerDeployment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpringCloudContainerDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpringCloudContainerDeployment to import
   * @param importFromId The id of the existing SpringCloudContainerDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_container_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpringCloudContainerDeployment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_container_deployment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_container_deployment", importId: importFromId, provider });
       }
 
   // ===========
@@ -676,18 +676,18 @@ export class SpringCloudContainerDeployment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      addon_json: cdktf.stringToTerraform(this._addonJson),
-      application_performance_monitoring_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._applicationPerformanceMonitoringIds),
-      arguments: cdktf.listMapper(cdktf.stringToTerraform, false)(this._arguments),
-      commands: cdktf.listMapper(cdktf.stringToTerraform, false)(this._commands),
-      environment_variables: cdktf.hashMapper(cdktf.stringToTerraform)(this._environmentVariables),
-      id: cdktf.stringToTerraform(this._id),
-      image: cdktf.stringToTerraform(this._image),
-      instance_count: cdktf.numberToTerraform(this._instanceCount),
-      language_framework: cdktf.stringToTerraform(this._languageFramework),
-      name: cdktf.stringToTerraform(this._name),
-      server: cdktf.stringToTerraform(this._server),
-      spring_cloud_app_id: cdktf.stringToTerraform(this._springCloudAppId),
+      addon_json: cdktn.stringToTerraform(this._addonJson),
+      application_performance_monitoring_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._applicationPerformanceMonitoringIds),
+      arguments: cdktn.listMapper(cdktn.stringToTerraform, false)(this._arguments),
+      commands: cdktn.listMapper(cdktn.stringToTerraform, false)(this._commands),
+      environment_variables: cdktn.hashMapper(cdktn.stringToTerraform)(this._environmentVariables),
+      id: cdktn.stringToTerraform(this._id),
+      image: cdktn.stringToTerraform(this._image),
+      instance_count: cdktn.numberToTerraform(this._instanceCount),
+      language_framework: cdktn.stringToTerraform(this._languageFramework),
+      name: cdktn.stringToTerraform(this._name),
+      server: cdktn.stringToTerraform(this._server),
+      spring_cloud_app_id: cdktn.stringToTerraform(this._springCloudAppId),
       quota: springCloudContainerDeploymentQuotaToTerraform(this._quota.internalValue),
       timeouts: springCloudContainerDeploymentTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -696,73 +696,73 @@ export class SpringCloudContainerDeployment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       addon_json: {
-        value: cdktf.stringToHclTerraform(this._addonJson),
+        value: cdktn.stringToHclTerraform(this._addonJson),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       application_performance_monitoring_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._applicationPerformanceMonitoringIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._applicationPerformanceMonitoringIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       arguments: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._arguments),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._arguments),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       commands: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._commands),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._commands),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       environment_variables: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._environmentVariables),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._environmentVariables),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image: {
-        value: cdktf.stringToHclTerraform(this._image),
+        value: cdktn.stringToHclTerraform(this._image),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_count: {
-        value: cdktf.numberToHclTerraform(this._instanceCount),
+        value: cdktn.numberToHclTerraform(this._instanceCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       language_framework: {
-        value: cdktf.stringToHclTerraform(this._languageFramework),
+        value: cdktn.stringToHclTerraform(this._languageFramework),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server: {
-        value: cdktf.stringToHclTerraform(this._server),
+        value: cdktn.stringToHclTerraform(this._server),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       spring_cloud_app_id: {
-        value: cdktf.stringToHclTerraform(this._springCloudAppId),
+        value: cdktn.stringToHclTerraform(this._springCloudAppId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

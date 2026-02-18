@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkConnectionMonitorConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkConnectionMonitorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_connection_monitor#id NetworkConnectionMonitor#id}
   *
@@ -48,19 +48,19 @@ export interface NetworkConnectionMonitorConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_connection_monitor#endpoint NetworkConnectionMonitor#endpoint}
   */
-  readonly endpoint: NetworkConnectionMonitorEndpoint[] | cdktf.IResolvable;
+  readonly endpoint: NetworkConnectionMonitorEndpoint[] | cdktn.IResolvable;
   /**
   * test_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_connection_monitor#test_configuration NetworkConnectionMonitor#test_configuration}
   */
-  readonly testConfiguration: NetworkConnectionMonitorTestConfiguration[] | cdktf.IResolvable;
+  readonly testConfiguration: NetworkConnectionMonitorTestConfiguration[] | cdktn.IResolvable;
   /**
   * test_group block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_connection_monitor#test_group NetworkConnectionMonitor#test_group}
   */
-  readonly testGroup: NetworkConnectionMonitorTestGroup[] | cdktf.IResolvable;
+  readonly testGroup: NetworkConnectionMonitorTestGroup[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -79,32 +79,32 @@ export interface NetworkConnectionMonitorEndpointFilterItem {
   readonly type?: string;
 }
 
-export function networkConnectionMonitorEndpointFilterItemToTerraform(struct?: NetworkConnectionMonitorEndpointFilterItem | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectionMonitorEndpointFilterItemToTerraform(struct?: NetworkConnectionMonitorEndpointFilterItem | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address: cdktf.stringToTerraform(struct!.address),
-    type: cdktf.stringToTerraform(struct!.type),
+    address: cdktn.stringToTerraform(struct!.address),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function networkConnectionMonitorEndpointFilterItemToHclTerraform(struct?: NetworkConnectionMonitorEndpointFilterItem | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectionMonitorEndpointFilterItemToHclTerraform(struct?: NetworkConnectionMonitorEndpointFilterItem | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address: {
-      value: cdktf.stringToHclTerraform(struct!.address),
+      value: cdktn.stringToHclTerraform(struct!.address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,9 +115,9 @@ export function networkConnectionMonitorEndpointFilterItemToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectionMonitorEndpointFilterItemOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectionMonitorEndpointFilterItemOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -125,11 +125,11 @@ export class NetworkConnectionMonitorEndpointFilterItemOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkConnectionMonitorEndpointFilterItem | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkConnectionMonitorEndpointFilterItem | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -146,14 +146,14 @@ export class NetworkConnectionMonitorEndpointFilterItemOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkConnectionMonitorEndpointFilterItem | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkConnectionMonitorEndpointFilterItem | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._address = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -198,15 +198,15 @@ export class NetworkConnectionMonitorEndpointFilterItemOutputReference extends c
   }
 }
 
-export class NetworkConnectionMonitorEndpointFilterItemList extends cdktf.ComplexList {
-  public internalValue? : NetworkConnectionMonitorEndpointFilterItem[] | cdktf.IResolvable
+export class NetworkConnectionMonitorEndpointFilterItemList extends cdktn.ComplexList {
+  public internalValue? : NetworkConnectionMonitorEndpointFilterItem[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -227,35 +227,35 @@ export interface NetworkConnectionMonitorEndpointFilter {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_connection_monitor#item NetworkConnectionMonitor#item}
   */
-  readonly item?: NetworkConnectionMonitorEndpointFilterItem[] | cdktf.IResolvable;
+  readonly item?: NetworkConnectionMonitorEndpointFilterItem[] | cdktn.IResolvable;
 }
 
 export function networkConnectionMonitorEndpointFilterToTerraform(struct?: NetworkConnectionMonitorEndpointFilterOutputReference | NetworkConnectionMonitorEndpointFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    item: cdktf.listMapper(networkConnectionMonitorEndpointFilterItemToTerraform, true)(struct!.item),
+    type: cdktn.stringToTerraform(struct!.type),
+    item: cdktn.listMapper(networkConnectionMonitorEndpointFilterItemToTerraform, true)(struct!.item),
   }
 }
 
 
 export function networkConnectionMonitorEndpointFilterToHclTerraform(struct?: NetworkConnectionMonitorEndpointFilterOutputReference | NetworkConnectionMonitorEndpointFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     item: {
-      value: cdktf.listMapperHcl(networkConnectionMonitorEndpointFilterItemToHclTerraform, true)(struct!.item),
+      value: cdktn.listMapperHcl(networkConnectionMonitorEndpointFilterItemToHclTerraform, true)(struct!.item),
       isBlock: true,
       type: "set",
       storageClassType: "NetworkConnectionMonitorEndpointFilterItemList",
@@ -266,14 +266,14 @@ export function networkConnectionMonitorEndpointFilterToHclTerraform(struct?: Ne
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectionMonitorEndpointFilterOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectionMonitorEndpointFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -325,7 +325,7 @@ export class NetworkConnectionMonitorEndpointFilterOutputReference extends cdktf
   public get item() {
     return this._item;
   }
-  public putItem(value: NetworkConnectionMonitorEndpointFilterItem[] | cdktf.IResolvable) {
+  public putItem(value: NetworkConnectionMonitorEndpointFilterItem[] | cdktn.IResolvable) {
     this._item.internalValue = value;
   }
   public resetItem() {
@@ -373,68 +373,68 @@ export interface NetworkConnectionMonitorEndpoint {
   readonly filter?: NetworkConnectionMonitorEndpointFilter;
 }
 
-export function networkConnectionMonitorEndpointToTerraform(struct?: NetworkConnectionMonitorEndpoint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectionMonitorEndpointToTerraform(struct?: NetworkConnectionMonitorEndpoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address: cdktf.stringToTerraform(struct!.address),
-    coverage_level: cdktf.stringToTerraform(struct!.coverageLevel),
-    excluded_ip_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedIpAddresses),
-    included_ip_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedIpAddresses),
-    name: cdktf.stringToTerraform(struct!.name),
-    target_resource_id: cdktf.stringToTerraform(struct!.targetResourceId),
-    target_resource_type: cdktf.stringToTerraform(struct!.targetResourceType),
+    address: cdktn.stringToTerraform(struct!.address),
+    coverage_level: cdktn.stringToTerraform(struct!.coverageLevel),
+    excluded_ip_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedIpAddresses),
+    included_ip_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedIpAddresses),
+    name: cdktn.stringToTerraform(struct!.name),
+    target_resource_id: cdktn.stringToTerraform(struct!.targetResourceId),
+    target_resource_type: cdktn.stringToTerraform(struct!.targetResourceType),
     filter: networkConnectionMonitorEndpointFilterToTerraform(struct!.filter),
   }
 }
 
 
-export function networkConnectionMonitorEndpointToHclTerraform(struct?: NetworkConnectionMonitorEndpoint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectionMonitorEndpointToHclTerraform(struct?: NetworkConnectionMonitorEndpoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address: {
-      value: cdktf.stringToHclTerraform(struct!.address),
+      value: cdktn.stringToHclTerraform(struct!.address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     coverage_level: {
-      value: cdktf.stringToHclTerraform(struct!.coverageLevel),
+      value: cdktn.stringToHclTerraform(struct!.coverageLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     excluded_ip_addresses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedIpAddresses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedIpAddresses),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     included_ip_addresses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedIpAddresses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includedIpAddresses),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.targetResourceId),
+      value: cdktn.stringToHclTerraform(struct!.targetResourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_resource_type: {
-      value: cdktf.stringToHclTerraform(struct!.targetResourceType),
+      value: cdktn.stringToHclTerraform(struct!.targetResourceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -451,9 +451,9 @@ export function networkConnectionMonitorEndpointToHclTerraform(struct?: NetworkC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectionMonitorEndpointOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectionMonitorEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -461,11 +461,11 @@ export class NetworkConnectionMonitorEndpointOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkConnectionMonitorEndpoint | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkConnectionMonitorEndpoint | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -506,7 +506,7 @@ export class NetworkConnectionMonitorEndpointOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkConnectionMonitorEndpoint | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkConnectionMonitorEndpoint | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -519,7 +519,7 @@ export class NetworkConnectionMonitorEndpointOutputReference extends cdktf.Compl
       this._targetResourceType = undefined;
       this._filter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -572,7 +572,7 @@ export class NetworkConnectionMonitorEndpointOutputReference extends cdktf.Compl
   // excluded_ip_addresses - computed: false, optional: true, required: false
   private _excludedIpAddresses?: string[]; 
   public get excludedIpAddresses() {
-    return cdktf.Fn.tolist(this.getListAttribute('excluded_ip_addresses'));
+    return cdktn.Fn.tolist(this.getListAttribute('excluded_ip_addresses'));
   }
   public set excludedIpAddresses(value: string[]) {
     this._excludedIpAddresses = value;
@@ -588,7 +588,7 @@ export class NetworkConnectionMonitorEndpointOutputReference extends cdktf.Compl
   // included_ip_addresses - computed: false, optional: true, required: false
   private _includedIpAddresses?: string[]; 
   public get includedIpAddresses() {
-    return cdktf.Fn.tolist(this.getListAttribute('included_ip_addresses'));
+    return cdktn.Fn.tolist(this.getListAttribute('included_ip_addresses'));
   }
   public set includedIpAddresses(value: string[]) {
     this._includedIpAddresses = value;
@@ -663,15 +663,15 @@ export class NetworkConnectionMonitorEndpointOutputReference extends cdktf.Compl
   }
 }
 
-export class NetworkConnectionMonitorEndpointList extends cdktf.ComplexList {
-  public internalValue? : NetworkConnectionMonitorEndpoint[] | cdktf.IResolvable
+export class NetworkConnectionMonitorEndpointList extends cdktn.ComplexList {
+  public internalValue? : NetworkConnectionMonitorEndpoint[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -693,32 +693,32 @@ export interface NetworkConnectionMonitorTestConfigurationHttpConfigurationReque
   readonly value: string;
 }
 
-export function networkConnectionMonitorTestConfigurationHttpConfigurationRequestHeaderToTerraform(struct?: NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectionMonitorTestConfigurationHttpConfigurationRequestHeaderToTerraform(struct?: NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function networkConnectionMonitorTestConfigurationHttpConfigurationRequestHeaderToHclTerraform(struct?: NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectionMonitorTestConfigurationHttpConfigurationRequestHeaderToHclTerraform(struct?: NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -729,9 +729,9 @@ export function networkConnectionMonitorTestConfigurationHttpConfigurationReques
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeaderOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -739,11 +739,11 @@ export class NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -760,14 +760,14 @@ export class NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -806,15 +806,15 @@ export class NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHe
   }
 }
 
-export class NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeaderList extends cdktf.ComplexList {
-  public internalValue? : NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeader[] | cdktf.IResolvable
+export class NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeaderList extends cdktn.ComplexList {
+  public internalValue? : NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -841,7 +841,7 @@ export interface NetworkConnectionMonitorTestConfigurationHttpConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_connection_monitor#prefer_https NetworkConnectionMonitor#prefer_https}
   */
-  readonly preferHttps?: boolean | cdktf.IResolvable;
+  readonly preferHttps?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_connection_monitor#valid_status_code_ranges NetworkConnectionMonitor#valid_status_code_ranges}
   */
@@ -851,63 +851,63 @@ export interface NetworkConnectionMonitorTestConfigurationHttpConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_connection_monitor#request_header NetworkConnectionMonitor#request_header}
   */
-  readonly requestHeader?: NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeader[] | cdktf.IResolvable;
+  readonly requestHeader?: NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeader[] | cdktn.IResolvable;
 }
 
 export function networkConnectionMonitorTestConfigurationHttpConfigurationToTerraform(struct?: NetworkConnectionMonitorTestConfigurationHttpConfigurationOutputReference | NetworkConnectionMonitorTestConfigurationHttpConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    method: cdktf.stringToTerraform(struct!.method),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.numberToTerraform(struct!.port),
-    prefer_https: cdktf.booleanToTerraform(struct!.preferHttps),
-    valid_status_code_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.validStatusCodeRanges),
-    request_header: cdktf.listMapper(networkConnectionMonitorTestConfigurationHttpConfigurationRequestHeaderToTerraform, true)(struct!.requestHeader),
+    method: cdktn.stringToTerraform(struct!.method),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.numberToTerraform(struct!.port),
+    prefer_https: cdktn.booleanToTerraform(struct!.preferHttps),
+    valid_status_code_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.validStatusCodeRanges),
+    request_header: cdktn.listMapper(networkConnectionMonitorTestConfigurationHttpConfigurationRequestHeaderToTerraform, true)(struct!.requestHeader),
   }
 }
 
 
 export function networkConnectionMonitorTestConfigurationHttpConfigurationToHclTerraform(struct?: NetworkConnectionMonitorTestConfigurationHttpConfigurationOutputReference | NetworkConnectionMonitorTestConfigurationHttpConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     method: {
-      value: cdktf.stringToHclTerraform(struct!.method),
+      value: cdktn.stringToHclTerraform(struct!.method),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     prefer_https: {
-      value: cdktf.booleanToHclTerraform(struct!.preferHttps),
+      value: cdktn.booleanToHclTerraform(struct!.preferHttps),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     valid_status_code_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.validStatusCodeRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.validStatusCodeRanges),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     request_header: {
-      value: cdktf.listMapperHcl(networkConnectionMonitorTestConfigurationHttpConfigurationRequestHeaderToHclTerraform, true)(struct!.requestHeader),
+      value: cdktn.listMapperHcl(networkConnectionMonitorTestConfigurationHttpConfigurationRequestHeaderToHclTerraform, true)(struct!.requestHeader),
       isBlock: true,
       type: "set",
       storageClassType: "NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeaderList",
@@ -918,14 +918,14 @@ export function networkConnectionMonitorTestConfigurationHttpConfigurationToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectionMonitorTestConfigurationHttpConfigurationOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectionMonitorTestConfigurationHttpConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1029,11 +1029,11 @@ export class NetworkConnectionMonitorTestConfigurationHttpConfigurationOutputRef
   }
 
   // prefer_https - computed: false, optional: true, required: false
-  private _preferHttps?: boolean | cdktf.IResolvable; 
+  private _preferHttps?: boolean | cdktn.IResolvable; 
   public get preferHttps() {
     return this.getBooleanAttribute('prefer_https');
   }
-  public set preferHttps(value: boolean | cdktf.IResolvable) {
+  public set preferHttps(value: boolean | cdktn.IResolvable) {
     this._preferHttps = value;
   }
   public resetPreferHttps() {
@@ -1047,7 +1047,7 @@ export class NetworkConnectionMonitorTestConfigurationHttpConfigurationOutputRef
   // valid_status_code_ranges - computed: false, optional: true, required: false
   private _validStatusCodeRanges?: string[]; 
   public get validStatusCodeRanges() {
-    return cdktf.Fn.tolist(this.getListAttribute('valid_status_code_ranges'));
+    return cdktn.Fn.tolist(this.getListAttribute('valid_status_code_ranges'));
   }
   public set validStatusCodeRanges(value: string[]) {
     this._validStatusCodeRanges = value;
@@ -1065,7 +1065,7 @@ export class NetworkConnectionMonitorTestConfigurationHttpConfigurationOutputRef
   public get requestHeader() {
     return this._requestHeader;
   }
-  public putRequestHeader(value: NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeader[] | cdktf.IResolvable) {
+  public putRequestHeader(value: NetworkConnectionMonitorTestConfigurationHttpConfigurationRequestHeader[] | cdktn.IResolvable) {
     this._requestHeader.internalValue = value;
   }
   public resetRequestHeader() {
@@ -1080,28 +1080,28 @@ export interface NetworkConnectionMonitorTestConfigurationIcmpConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_connection_monitor#trace_route_enabled NetworkConnectionMonitor#trace_route_enabled}
   */
-  readonly traceRouteEnabled?: boolean | cdktf.IResolvable;
+  readonly traceRouteEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function networkConnectionMonitorTestConfigurationIcmpConfigurationToTerraform(struct?: NetworkConnectionMonitorTestConfigurationIcmpConfigurationOutputReference | NetworkConnectionMonitorTestConfigurationIcmpConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    trace_route_enabled: cdktf.booleanToTerraform(struct!.traceRouteEnabled),
+    trace_route_enabled: cdktn.booleanToTerraform(struct!.traceRouteEnabled),
   }
 }
 
 
 export function networkConnectionMonitorTestConfigurationIcmpConfigurationToHclTerraform(struct?: NetworkConnectionMonitorTestConfigurationIcmpConfigurationOutputReference | NetworkConnectionMonitorTestConfigurationIcmpConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     trace_route_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.traceRouteEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.traceRouteEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1112,14 +1112,14 @@ export function networkConnectionMonitorTestConfigurationIcmpConfigurationToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectionMonitorTestConfigurationIcmpConfigurationOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectionMonitorTestConfigurationIcmpConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1145,11 +1145,11 @@ export class NetworkConnectionMonitorTestConfigurationIcmpConfigurationOutputRef
   }
 
   // trace_route_enabled - computed: false, optional: true, required: false
-  private _traceRouteEnabled?: boolean | cdktf.IResolvable; 
+  private _traceRouteEnabled?: boolean | cdktn.IResolvable; 
   public get traceRouteEnabled() {
     return this.getBooleanAttribute('trace_route_enabled');
   }
-  public set traceRouteEnabled(value: boolean | cdktf.IResolvable) {
+  public set traceRouteEnabled(value: boolean | cdktn.IResolvable) {
     this._traceRouteEnabled = value;
   }
   public resetTraceRouteEnabled() {
@@ -1172,31 +1172,31 @@ export interface NetworkConnectionMonitorTestConfigurationSuccessThreshold {
 }
 
 export function networkConnectionMonitorTestConfigurationSuccessThresholdToTerraform(struct?: NetworkConnectionMonitorTestConfigurationSuccessThresholdOutputReference | NetworkConnectionMonitorTestConfigurationSuccessThreshold): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    checks_failed_percent: cdktf.numberToTerraform(struct!.checksFailedPercent),
-    round_trip_time_ms: cdktf.numberToTerraform(struct!.roundTripTimeMs),
+    checks_failed_percent: cdktn.numberToTerraform(struct!.checksFailedPercent),
+    round_trip_time_ms: cdktn.numberToTerraform(struct!.roundTripTimeMs),
   }
 }
 
 
 export function networkConnectionMonitorTestConfigurationSuccessThresholdToHclTerraform(struct?: NetworkConnectionMonitorTestConfigurationSuccessThresholdOutputReference | NetworkConnectionMonitorTestConfigurationSuccessThreshold): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     checks_failed_percent: {
-      value: cdktf.numberToHclTerraform(struct!.checksFailedPercent),
+      value: cdktn.numberToHclTerraform(struct!.checksFailedPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     round_trip_time_ms: {
-      value: cdktf.numberToHclTerraform(struct!.roundTripTimeMs),
+      value: cdktn.numberToHclTerraform(struct!.roundTripTimeMs),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1207,14 +1207,14 @@ export function networkConnectionMonitorTestConfigurationSuccessThresholdToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectionMonitorTestConfigurationSuccessThresholdOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectionMonitorTestConfigurationSuccessThresholdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1289,42 +1289,42 @@ export interface NetworkConnectionMonitorTestConfigurationTcpConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_connection_monitor#trace_route_enabled NetworkConnectionMonitor#trace_route_enabled}
   */
-  readonly traceRouteEnabled?: boolean | cdktf.IResolvable;
+  readonly traceRouteEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function networkConnectionMonitorTestConfigurationTcpConfigurationToTerraform(struct?: NetworkConnectionMonitorTestConfigurationTcpConfigurationOutputReference | NetworkConnectionMonitorTestConfigurationTcpConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination_port_behavior: cdktf.stringToTerraform(struct!.destinationPortBehavior),
-    port: cdktf.numberToTerraform(struct!.port),
-    trace_route_enabled: cdktf.booleanToTerraform(struct!.traceRouteEnabled),
+    destination_port_behavior: cdktn.stringToTerraform(struct!.destinationPortBehavior),
+    port: cdktn.numberToTerraform(struct!.port),
+    trace_route_enabled: cdktn.booleanToTerraform(struct!.traceRouteEnabled),
   }
 }
 
 
 export function networkConnectionMonitorTestConfigurationTcpConfigurationToHclTerraform(struct?: NetworkConnectionMonitorTestConfigurationTcpConfigurationOutputReference | NetworkConnectionMonitorTestConfigurationTcpConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination_port_behavior: {
-      value: cdktf.stringToHclTerraform(struct!.destinationPortBehavior),
+      value: cdktn.stringToHclTerraform(struct!.destinationPortBehavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     trace_route_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.traceRouteEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.traceRouteEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1335,14 +1335,14 @@ export function networkConnectionMonitorTestConfigurationTcpConfigurationToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectionMonitorTestConfigurationTcpConfigurationOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectionMonitorTestConfigurationTcpConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1409,11 +1409,11 @@ export class NetworkConnectionMonitorTestConfigurationTcpConfigurationOutputRefe
   }
 
   // trace_route_enabled - computed: false, optional: true, required: false
-  private _traceRouteEnabled?: boolean | cdktf.IResolvable; 
+  private _traceRouteEnabled?: boolean | cdktn.IResolvable; 
   public get traceRouteEnabled() {
     return this.getBooleanAttribute('trace_route_enabled');
   }
-  public set traceRouteEnabled(value: boolean | cdktf.IResolvable) {
+  public set traceRouteEnabled(value: boolean | cdktn.IResolvable) {
     this._traceRouteEnabled = value;
   }
   public resetTraceRouteEnabled() {
@@ -1467,16 +1467,16 @@ export interface NetworkConnectionMonitorTestConfiguration {
   readonly tcpConfiguration?: NetworkConnectionMonitorTestConfigurationTcpConfiguration;
 }
 
-export function networkConnectionMonitorTestConfigurationToTerraform(struct?: NetworkConnectionMonitorTestConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectionMonitorTestConfigurationToTerraform(struct?: NetworkConnectionMonitorTestConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    preferred_ip_version: cdktf.stringToTerraform(struct!.preferredIpVersion),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    test_frequency_in_seconds: cdktf.numberToTerraform(struct!.testFrequencyInSeconds),
+    name: cdktn.stringToTerraform(struct!.name),
+    preferred_ip_version: cdktn.stringToTerraform(struct!.preferredIpVersion),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    test_frequency_in_seconds: cdktn.numberToTerraform(struct!.testFrequencyInSeconds),
     http_configuration: networkConnectionMonitorTestConfigurationHttpConfigurationToTerraform(struct!.httpConfiguration),
     icmp_configuration: networkConnectionMonitorTestConfigurationIcmpConfigurationToTerraform(struct!.icmpConfiguration),
     success_threshold: networkConnectionMonitorTestConfigurationSuccessThresholdToTerraform(struct!.successThreshold),
@@ -1485,32 +1485,32 @@ export function networkConnectionMonitorTestConfigurationToTerraform(struct?: Ne
 }
 
 
-export function networkConnectionMonitorTestConfigurationToHclTerraform(struct?: NetworkConnectionMonitorTestConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectionMonitorTestConfigurationToHclTerraform(struct?: NetworkConnectionMonitorTestConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     preferred_ip_version: {
-      value: cdktf.stringToHclTerraform(struct!.preferredIpVersion),
+      value: cdktn.stringToHclTerraform(struct!.preferredIpVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     test_frequency_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.testFrequencyInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.testFrequencyInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1545,9 +1545,9 @@ export function networkConnectionMonitorTestConfigurationToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectionMonitorTestConfigurationOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectionMonitorTestConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1555,11 +1555,11 @@ export class NetworkConnectionMonitorTestConfigurationOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkConnectionMonitorTestConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkConnectionMonitorTestConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1600,7 +1600,7 @@ export class NetworkConnectionMonitorTestConfigurationOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkConnectionMonitorTestConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkConnectionMonitorTestConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1613,7 +1613,7 @@ export class NetworkConnectionMonitorTestConfigurationOutputReference extends cd
       this._successThreshold.internalValue = undefined;
       this._tcpConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1754,15 +1754,15 @@ export class NetworkConnectionMonitorTestConfigurationOutputReference extends cd
   }
 }
 
-export class NetworkConnectionMonitorTestConfigurationList extends cdktf.ComplexList {
-  public internalValue? : NetworkConnectionMonitorTestConfiguration[] | cdktf.IResolvable
+export class NetworkConnectionMonitorTestConfigurationList extends cdktn.ComplexList {
+  public internalValue? : NetworkConnectionMonitorTestConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1781,7 +1781,7 @@ export interface NetworkConnectionMonitorTestGroup {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_connection_monitor#enabled NetworkConnectionMonitor#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_connection_monitor#name NetworkConnectionMonitor#name}
   */
@@ -1796,53 +1796,53 @@ export interface NetworkConnectionMonitorTestGroup {
   readonly testConfigurationNames: string[];
 }
 
-export function networkConnectionMonitorTestGroupToTerraform(struct?: NetworkConnectionMonitorTestGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectionMonitorTestGroupToTerraform(struct?: NetworkConnectionMonitorTestGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination_endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destinationEndpoints),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    source_endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sourceEndpoints),
-    test_configuration_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.testConfigurationNames),
+    destination_endpoints: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinationEndpoints),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    source_endpoints: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sourceEndpoints),
+    test_configuration_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.testConfigurationNames),
   }
 }
 
 
-export function networkConnectionMonitorTestGroupToHclTerraform(struct?: NetworkConnectionMonitorTestGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectionMonitorTestGroupToHclTerraform(struct?: NetworkConnectionMonitorTestGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination_endpoints: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinationEndpoints),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destinationEndpoints),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_endpoints: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceEndpoints),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sourceEndpoints),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     test_configuration_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.testConfigurationNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.testConfigurationNames),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1853,9 +1853,9 @@ export function networkConnectionMonitorTestGroupToHclTerraform(struct?: Network
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectionMonitorTestGroupOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectionMonitorTestGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1863,11 +1863,11 @@ export class NetworkConnectionMonitorTestGroupOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkConnectionMonitorTestGroup | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkConnectionMonitorTestGroup | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1896,7 +1896,7 @@ export class NetworkConnectionMonitorTestGroupOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkConnectionMonitorTestGroup | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkConnectionMonitorTestGroup | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1906,7 +1906,7 @@ export class NetworkConnectionMonitorTestGroupOutputReference extends cdktf.Comp
       this._sourceEndpoints = undefined;
       this._testConfigurationNames = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1924,7 +1924,7 @@ export class NetworkConnectionMonitorTestGroupOutputReference extends cdktf.Comp
   // destination_endpoints - computed: false, optional: false, required: true
   private _destinationEndpoints?: string[]; 
   public get destinationEndpoints() {
-    return cdktf.Fn.tolist(this.getListAttribute('destination_endpoints'));
+    return cdktn.Fn.tolist(this.getListAttribute('destination_endpoints'));
   }
   public set destinationEndpoints(value: string[]) {
     this._destinationEndpoints = value;
@@ -1935,11 +1935,11 @@ export class NetworkConnectionMonitorTestGroupOutputReference extends cdktf.Comp
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1966,7 +1966,7 @@ export class NetworkConnectionMonitorTestGroupOutputReference extends cdktf.Comp
   // source_endpoints - computed: false, optional: false, required: true
   private _sourceEndpoints?: string[]; 
   public get sourceEndpoints() {
-    return cdktf.Fn.tolist(this.getListAttribute('source_endpoints'));
+    return cdktn.Fn.tolist(this.getListAttribute('source_endpoints'));
   }
   public set sourceEndpoints(value: string[]) {
     this._sourceEndpoints = value;
@@ -1979,7 +1979,7 @@ export class NetworkConnectionMonitorTestGroupOutputReference extends cdktf.Comp
   // test_configuration_names - computed: false, optional: false, required: true
   private _testConfigurationNames?: string[]; 
   public get testConfigurationNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('test_configuration_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('test_configuration_names'));
   }
   public set testConfigurationNames(value: string[]) {
     this._testConfigurationNames = value;
@@ -1990,15 +1990,15 @@ export class NetworkConnectionMonitorTestGroupOutputReference extends cdktf.Comp
   }
 }
 
-export class NetworkConnectionMonitorTestGroupList extends cdktf.ComplexList {
-  public internalValue? : NetworkConnectionMonitorTestGroup[] | cdktf.IResolvable
+export class NetworkConnectionMonitorTestGroupList extends cdktn.ComplexList {
+  public internalValue? : NetworkConnectionMonitorTestGroup[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2028,46 +2028,46 @@ export interface NetworkConnectionMonitorTimeouts {
   readonly update?: string;
 }
 
-export function networkConnectionMonitorTimeoutsToTerraform(struct?: NetworkConnectionMonitorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectionMonitorTimeoutsToTerraform(struct?: NetworkConnectionMonitorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkConnectionMonitorTimeoutsToHclTerraform(struct?: NetworkConnectionMonitorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkConnectionMonitorTimeoutsToHclTerraform(struct?: NetworkConnectionMonitorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2078,19 +2078,19 @@ export function networkConnectionMonitorTimeoutsToHclTerraform(struct?: NetworkC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkConnectionMonitorTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkConnectionMonitorTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkConnectionMonitorTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkConnectionMonitorTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2115,7 +2115,7 @@ export class NetworkConnectionMonitorTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkConnectionMonitorTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkConnectionMonitorTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2124,7 +2124,7 @@ export class NetworkConnectionMonitorTimeoutsOutputReference extends cdktf.Compl
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2206,7 +2206,7 @@ export class NetworkConnectionMonitorTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_connection_monitor azurerm_network_connection_monitor}
 */
-export class NetworkConnectionMonitor extends cdktf.TerraformResource {
+export class NetworkConnectionMonitor extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2217,14 +2217,14 @@ export class NetworkConnectionMonitor extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkConnectionMonitor resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkConnectionMonitor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkConnectionMonitor to import
   * @param importFromId The id of the existing NetworkConnectionMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_connection_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkConnectionMonitor to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_connection_monitor", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_connection_monitor", importId: importFromId, provider });
       }
 
   // ===========
@@ -2345,7 +2345,7 @@ export class NetworkConnectionMonitor extends cdktf.TerraformResource {
   // output_workspace_resource_ids - computed: false, optional: true, required: false
   private _outputWorkspaceResourceIds?: string[]; 
   public get outputWorkspaceResourceIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('output_workspace_resource_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('output_workspace_resource_ids'));
   }
   public set outputWorkspaceResourceIds(value: string[]) {
     this._outputWorkspaceResourceIds = value;
@@ -2379,7 +2379,7 @@ export class NetworkConnectionMonitor extends cdktf.TerraformResource {
   public get endpoint() {
     return this._endpoint;
   }
-  public putEndpoint(value: NetworkConnectionMonitorEndpoint[] | cdktf.IResolvable) {
+  public putEndpoint(value: NetworkConnectionMonitorEndpoint[] | cdktn.IResolvable) {
     this._endpoint.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2392,7 +2392,7 @@ export class NetworkConnectionMonitor extends cdktf.TerraformResource {
   public get testConfiguration() {
     return this._testConfiguration;
   }
-  public putTestConfiguration(value: NetworkConnectionMonitorTestConfiguration[] | cdktf.IResolvable) {
+  public putTestConfiguration(value: NetworkConnectionMonitorTestConfiguration[] | cdktn.IResolvable) {
     this._testConfiguration.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2405,7 +2405,7 @@ export class NetworkConnectionMonitor extends cdktf.TerraformResource {
   public get testGroup() {
     return this._testGroup;
   }
-  public putTestGroup(value: NetworkConnectionMonitorTestGroup[] | cdktf.IResolvable) {
+  public putTestGroup(value: NetworkConnectionMonitorTestGroup[] | cdktn.IResolvable) {
     this._testGroup.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2435,16 +2435,16 @@ export class NetworkConnectionMonitor extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      network_watcher_id: cdktf.stringToTerraform(this._networkWatcherId),
-      notes: cdktf.stringToTerraform(this._notes),
-      output_workspace_resource_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._outputWorkspaceResourceIds),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      endpoint: cdktf.listMapper(networkConnectionMonitorEndpointToTerraform, true)(this._endpoint.internalValue),
-      test_configuration: cdktf.listMapper(networkConnectionMonitorTestConfigurationToTerraform, true)(this._testConfiguration.internalValue),
-      test_group: cdktf.listMapper(networkConnectionMonitorTestGroupToTerraform, true)(this._testGroup.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      network_watcher_id: cdktn.stringToTerraform(this._networkWatcherId),
+      notes: cdktn.stringToTerraform(this._notes),
+      output_workspace_resource_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._outputWorkspaceResourceIds),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      endpoint: cdktn.listMapper(networkConnectionMonitorEndpointToTerraform, true)(this._endpoint.internalValue),
+      test_configuration: cdktn.listMapper(networkConnectionMonitorTestConfigurationToTerraform, true)(this._testConfiguration.internalValue),
+      test_group: cdktn.listMapper(networkConnectionMonitorTestGroupToTerraform, true)(this._testGroup.internalValue),
       timeouts: networkConnectionMonitorTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -2452,61 +2452,61 @@ export class NetworkConnectionMonitor extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_watcher_id: {
-        value: cdktf.stringToHclTerraform(this._networkWatcherId),
+        value: cdktn.stringToHclTerraform(this._networkWatcherId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notes: {
-        value: cdktf.stringToHclTerraform(this._notes),
+        value: cdktn.stringToHclTerraform(this._notes),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       output_workspace_resource_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._outputWorkspaceResourceIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._outputWorkspaceResourceIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       endpoint: {
-        value: cdktf.listMapperHcl(networkConnectionMonitorEndpointToHclTerraform, true)(this._endpoint.internalValue),
+        value: cdktn.listMapperHcl(networkConnectionMonitorEndpointToHclTerraform, true)(this._endpoint.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "NetworkConnectionMonitorEndpointList",
       },
       test_configuration: {
-        value: cdktf.listMapperHcl(networkConnectionMonitorTestConfigurationToHclTerraform, true)(this._testConfiguration.internalValue),
+        value: cdktn.listMapperHcl(networkConnectionMonitorTestConfigurationToHclTerraform, true)(this._testConfiguration.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "NetworkConnectionMonitorTestConfigurationList",
       },
       test_group: {
-        value: cdktf.listMapperHcl(networkConnectionMonitorTestGroupToHclTerraform, true)(this._testGroup.internalValue),
+        value: cdktn.listMapperHcl(networkConnectionMonitorTestGroupToHclTerraform, true)(this._testGroup.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "NetworkConnectionMonitorTestGroupList",

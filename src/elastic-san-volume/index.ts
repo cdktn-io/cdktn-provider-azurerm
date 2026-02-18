@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ElasticSanVolumeConfig extends cdktf.TerraformMetaArguments {
+export interface ElasticSanVolumeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/elastic_san_volume#id ElasticSanVolume#id}
   *
@@ -56,31 +56,31 @@ export interface ElasticSanVolumeCreateSource {
 }
 
 export function elasticSanVolumeCreateSourceToTerraform(struct?: ElasticSanVolumeCreateSourceOutputReference | ElasticSanVolumeCreateSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source_id: cdktf.stringToTerraform(struct!.sourceId),
-    source_type: cdktf.stringToTerraform(struct!.sourceType),
+    source_id: cdktn.stringToTerraform(struct!.sourceId),
+    source_type: cdktn.stringToTerraform(struct!.sourceType),
   }
 }
 
 
 export function elasticSanVolumeCreateSourceToHclTerraform(struct?: ElasticSanVolumeCreateSourceOutputReference | ElasticSanVolumeCreateSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source_id: {
-      value: cdktf.stringToHclTerraform(struct!.sourceId),
+      value: cdktn.stringToHclTerraform(struct!.sourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_type: {
-      value: cdktf.stringToHclTerraform(struct!.sourceType),
+      value: cdktn.stringToHclTerraform(struct!.sourceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,14 +91,14 @@ export function elasticSanVolumeCreateSourceToHclTerraform(struct?: ElasticSanVo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticSanVolumeCreateSourceOutputReference extends cdktf.ComplexObject {
+export class ElasticSanVolumeCreateSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -174,46 +174,46 @@ export interface ElasticSanVolumeTimeouts {
   readonly update?: string;
 }
 
-export function elasticSanVolumeTimeoutsToTerraform(struct?: ElasticSanVolumeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticSanVolumeTimeoutsToTerraform(struct?: ElasticSanVolumeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function elasticSanVolumeTimeoutsToHclTerraform(struct?: ElasticSanVolumeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticSanVolumeTimeoutsToHclTerraform(struct?: ElasticSanVolumeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -224,19 +224,19 @@ export function elasticSanVolumeTimeoutsToHclTerraform(struct?: ElasticSanVolume
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticSanVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ElasticSanVolumeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ElasticSanVolumeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ElasticSanVolumeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -261,7 +261,7 @@ export class ElasticSanVolumeTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElasticSanVolumeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElasticSanVolumeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -270,7 +270,7 @@ export class ElasticSanVolumeTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -352,7 +352,7 @@ export class ElasticSanVolumeTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/elastic_san_volume azurerm_elastic_san_volume}
 */
-export class ElasticSanVolume extends cdktf.TerraformResource {
+export class ElasticSanVolume extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -363,14 +363,14 @@ export class ElasticSanVolume extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ElasticSanVolume resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ElasticSanVolume resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElasticSanVolume to import
   * @param importFromId The id of the existing ElasticSanVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/elastic_san_volume#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElasticSanVolume to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_elastic_san_volume", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_elastic_san_volume", importId: importFromId, provider });
       }
 
   // ===========
@@ -525,10 +525,10 @@ export class ElasticSanVolume extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      size_in_gib: cdktf.numberToTerraform(this._sizeInGib),
-      volume_group_id: cdktf.stringToTerraform(this._volumeGroupId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      size_in_gib: cdktn.numberToTerraform(this._sizeInGib),
+      volume_group_id: cdktn.stringToTerraform(this._volumeGroupId),
       create_source: elasticSanVolumeCreateSourceToTerraform(this._createSource.internalValue),
       timeouts: elasticSanVolumeTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -537,25 +537,25 @@ export class ElasticSanVolume extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       size_in_gib: {
-        value: cdktf.numberToHclTerraform(this._sizeInGib),
+        value: cdktn.numberToHclTerraform(this._sizeInGib),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       volume_group_id: {
-        value: cdktf.stringToHclTerraform(this._volumeGroupId),
+        value: cdktn.stringToHclTerraform(this._volumeGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkSecurityPerimeterAccessRuleConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkSecurityPerimeterAccessRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_security_perimeter_access_rule#address_prefixes NetworkSecurityPerimeterAccessRule#address_prefixes}
   */
@@ -73,46 +73,46 @@ export interface NetworkSecurityPerimeterAccessRuleTimeouts {
   readonly update?: string;
 }
 
-export function networkSecurityPerimeterAccessRuleTimeoutsToTerraform(struct?: NetworkSecurityPerimeterAccessRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecurityPerimeterAccessRuleTimeoutsToTerraform(struct?: NetworkSecurityPerimeterAccessRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkSecurityPerimeterAccessRuleTimeoutsToHclTerraform(struct?: NetworkSecurityPerimeterAccessRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecurityPerimeterAccessRuleTimeoutsToHclTerraform(struct?: NetworkSecurityPerimeterAccessRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,19 +123,19 @@ export function networkSecurityPerimeterAccessRuleTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkSecurityPerimeterAccessRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkSecurityPerimeterAccessRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkSecurityPerimeterAccessRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkSecurityPerimeterAccessRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -160,7 +160,7 @@ export class NetworkSecurityPerimeterAccessRuleTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkSecurityPerimeterAccessRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkSecurityPerimeterAccessRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class NetworkSecurityPerimeterAccessRuleTimeoutsOutputReference extends c
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -251,7 +251,7 @@ export class NetworkSecurityPerimeterAccessRuleTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_security_perimeter_access_rule azurerm_network_security_perimeter_access_rule}
 */
-export class NetworkSecurityPerimeterAccessRule extends cdktf.TerraformResource {
+export class NetworkSecurityPerimeterAccessRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -262,14 +262,14 @@ export class NetworkSecurityPerimeterAccessRule extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkSecurityPerimeterAccessRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkSecurityPerimeterAccessRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityPerimeterAccessRule to import
   * @param importFromId The id of the existing NetworkSecurityPerimeterAccessRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_security_perimeter_access_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityPerimeterAccessRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_security_perimeter_access_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_security_perimeter_access_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -455,14 +455,14 @@ export class NetworkSecurityPerimeterAccessRule extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._addressPrefixes),
-      direction: cdktf.stringToTerraform(this._direction),
-      fqdns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._fqdns),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      network_security_perimeter_profile_id: cdktf.stringToTerraform(this._networkSecurityPerimeterProfileId),
-      service_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._serviceTags),
-      subscription_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subscriptionIds),
+      address_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._addressPrefixes),
+      direction: cdktn.stringToTerraform(this._direction),
+      fqdns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._fqdns),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      network_security_perimeter_profile_id: cdktn.stringToTerraform(this._networkSecurityPerimeterProfileId),
+      service_tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._serviceTags),
+      subscription_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subscriptionIds),
       timeouts: networkSecurityPerimeterAccessRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -470,49 +470,49 @@ export class NetworkSecurityPerimeterAccessRule extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       address_prefixes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._addressPrefixes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._addressPrefixes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       direction: {
-        value: cdktf.stringToHclTerraform(this._direction),
+        value: cdktn.stringToHclTerraform(this._direction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       fqdns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._fqdns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._fqdns),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_security_perimeter_profile_id: {
-        value: cdktf.stringToHclTerraform(this._networkSecurityPerimeterProfileId),
+        value: cdktn.stringToHclTerraform(this._networkSecurityPerimeterProfileId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._serviceTags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._serviceTags),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       subscription_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subscriptionIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subscriptionIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

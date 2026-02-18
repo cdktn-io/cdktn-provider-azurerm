@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppServiceSourceControlSlotConfig extends cdktf.TerraformMetaArguments {
+export interface AppServiceSourceControlSlotConfig extends cdktn.TerraformMetaArguments {
   /**
   * The URL for the repository
   *
@@ -36,7 +36,7 @@ export interface AppServiceSourceControlSlotConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_source_control_slot#rollback_enabled AppServiceSourceControlSlot#rollback_enabled}
   */
-  readonly rollbackEnabled?: boolean | cdktf.IResolvable;
+  readonly rollbackEnabled?: boolean | cdktn.IResolvable;
   /**
   * The ID of the Linux or Windows Web App Slot.
   *
@@ -48,19 +48,19 @@ export interface AppServiceSourceControlSlotConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_source_control_slot#use_local_git AppServiceSourceControlSlot#use_local_git}
   */
-  readonly useLocalGit?: boolean | cdktf.IResolvable;
+  readonly useLocalGit?: boolean | cdktn.IResolvable;
   /**
   * Should code be deployed manually. Set to `true` to disable continuous integration, such as webhooks into online repos such as GitHub. Defaults to `false`
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_source_control_slot#use_manual_integration AppServiceSourceControlSlot#use_manual_integration}
   */
-  readonly useManualIntegration?: boolean | cdktf.IResolvable;
+  readonly useManualIntegration?: boolean | cdktn.IResolvable;
   /**
   * The repository specified is Mercurial. Defaults to `false`.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_source_control_slot#use_mercurial AppServiceSourceControlSlot#use_mercurial}
   */
-  readonly useMercurial?: boolean | cdktf.IResolvable;
+  readonly useMercurial?: boolean | cdktn.IResolvable;
   /**
   * github_action_configuration block
   *
@@ -90,31 +90,31 @@ export interface AppServiceSourceControlSlotGithubActionConfigurationCodeConfigu
 }
 
 export function appServiceSourceControlSlotGithubActionConfigurationCodeConfigurationToTerraform(struct?: AppServiceSourceControlSlotGithubActionConfigurationCodeConfigurationOutputReference | AppServiceSourceControlSlotGithubActionConfigurationCodeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    runtime_stack: cdktf.stringToTerraform(struct!.runtimeStack),
-    runtime_version: cdktf.stringToTerraform(struct!.runtimeVersion),
+    runtime_stack: cdktn.stringToTerraform(struct!.runtimeStack),
+    runtime_version: cdktn.stringToTerraform(struct!.runtimeVersion),
   }
 }
 
 
 export function appServiceSourceControlSlotGithubActionConfigurationCodeConfigurationToHclTerraform(struct?: AppServiceSourceControlSlotGithubActionConfigurationCodeConfigurationOutputReference | AppServiceSourceControlSlotGithubActionConfigurationCodeConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     runtime_stack: {
-      value: cdktf.stringToHclTerraform(struct!.runtimeStack),
+      value: cdktn.stringToHclTerraform(struct!.runtimeStack),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runtime_version: {
-      value: cdktf.stringToHclTerraform(struct!.runtimeVersion),
+      value: cdktn.stringToHclTerraform(struct!.runtimeVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,14 +125,14 @@ export function appServiceSourceControlSlotGithubActionConfigurationCodeConfigur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppServiceSourceControlSlotGithubActionConfigurationCodeConfigurationOutputReference extends cdktf.ComplexObject {
+export class AppServiceSourceControlSlotGithubActionConfigurationCodeConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -217,45 +217,45 @@ export interface AppServiceSourceControlSlotGithubActionConfigurationContainerCo
 }
 
 export function appServiceSourceControlSlotGithubActionConfigurationContainerConfigurationToTerraform(struct?: AppServiceSourceControlSlotGithubActionConfigurationContainerConfigurationOutputReference | AppServiceSourceControlSlotGithubActionConfigurationContainerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    image_name: cdktf.stringToTerraform(struct!.imageName),
-    registry_password: cdktf.stringToTerraform(struct!.registryPassword),
-    registry_url: cdktf.stringToTerraform(struct!.registryUrl),
-    registry_username: cdktf.stringToTerraform(struct!.registryUsername),
+    image_name: cdktn.stringToTerraform(struct!.imageName),
+    registry_password: cdktn.stringToTerraform(struct!.registryPassword),
+    registry_url: cdktn.stringToTerraform(struct!.registryUrl),
+    registry_username: cdktn.stringToTerraform(struct!.registryUsername),
   }
 }
 
 
 export function appServiceSourceControlSlotGithubActionConfigurationContainerConfigurationToHclTerraform(struct?: AppServiceSourceControlSlotGithubActionConfigurationContainerConfigurationOutputReference | AppServiceSourceControlSlotGithubActionConfigurationContainerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     image_name: {
-      value: cdktf.stringToHclTerraform(struct!.imageName),
+      value: cdktn.stringToHclTerraform(struct!.imageName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     registry_password: {
-      value: cdktf.stringToHclTerraform(struct!.registryPassword),
+      value: cdktn.stringToHclTerraform(struct!.registryPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     registry_url: {
-      value: cdktf.stringToHclTerraform(struct!.registryUrl),
+      value: cdktn.stringToHclTerraform(struct!.registryUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     registry_username: {
-      value: cdktf.stringToHclTerraform(struct!.registryUsername),
+      value: cdktn.stringToHclTerraform(struct!.registryUsername),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -266,14 +266,14 @@ export function appServiceSourceControlSlotGithubActionConfigurationContainerCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppServiceSourceControlSlotGithubActionConfigurationContainerConfigurationOutputReference extends cdktf.ComplexObject {
+export class AppServiceSourceControlSlotGithubActionConfigurationContainerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -380,7 +380,7 @@ export interface AppServiceSourceControlSlotGithubActionConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_source_control_slot#generate_workflow_file AppServiceSourceControlSlot#generate_workflow_file}
   */
-  readonly generateWorkflowFile?: boolean | cdktf.IResolvable;
+  readonly generateWorkflowFile?: boolean | cdktn.IResolvable;
   /**
   * code_configuration block
   *
@@ -396,12 +396,12 @@ export interface AppServiceSourceControlSlotGithubActionConfiguration {
 }
 
 export function appServiceSourceControlSlotGithubActionConfigurationToTerraform(struct?: AppServiceSourceControlSlotGithubActionConfigurationOutputReference | AppServiceSourceControlSlotGithubActionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    generate_workflow_file: cdktf.booleanToTerraform(struct!.generateWorkflowFile),
+    generate_workflow_file: cdktn.booleanToTerraform(struct!.generateWorkflowFile),
     code_configuration: appServiceSourceControlSlotGithubActionConfigurationCodeConfigurationToTerraform(struct!.codeConfiguration),
     container_configuration: appServiceSourceControlSlotGithubActionConfigurationContainerConfigurationToTerraform(struct!.containerConfiguration),
   }
@@ -409,13 +409,13 @@ export function appServiceSourceControlSlotGithubActionConfigurationToTerraform(
 
 
 export function appServiceSourceControlSlotGithubActionConfigurationToHclTerraform(struct?: AppServiceSourceControlSlotGithubActionConfigurationOutputReference | AppServiceSourceControlSlotGithubActionConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     generate_workflow_file: {
-      value: cdktf.booleanToHclTerraform(struct!.generateWorkflowFile),
+      value: cdktn.booleanToHclTerraform(struct!.generateWorkflowFile),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -438,14 +438,14 @@ export function appServiceSourceControlSlotGithubActionConfigurationToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppServiceSourceControlSlotGithubActionConfigurationOutputReference extends cdktf.ComplexObject {
+export class AppServiceSourceControlSlotGithubActionConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -483,11 +483,11 @@ export class AppServiceSourceControlSlotGithubActionConfigurationOutputReference
   }
 
   // generate_workflow_file - computed: false, optional: true, required: false
-  private _generateWorkflowFile?: boolean | cdktf.IResolvable; 
+  private _generateWorkflowFile?: boolean | cdktn.IResolvable; 
   public get generateWorkflowFile() {
     return this.getBooleanAttribute('generate_workflow_file');
   }
-  public set generateWorkflowFile(value: boolean | cdktf.IResolvable) {
+  public set generateWorkflowFile(value: boolean | cdktn.IResolvable) {
     this._generateWorkflowFile = value;
   }
   public resetGenerateWorkflowFile() {
@@ -550,39 +550,39 @@ export interface AppServiceSourceControlSlotTimeouts {
   readonly read?: string;
 }
 
-export function appServiceSourceControlSlotTimeoutsToTerraform(struct?: AppServiceSourceControlSlotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appServiceSourceControlSlotTimeoutsToTerraform(struct?: AppServiceSourceControlSlotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function appServiceSourceControlSlotTimeoutsToHclTerraform(struct?: AppServiceSourceControlSlotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appServiceSourceControlSlotTimeoutsToHclTerraform(struct?: AppServiceSourceControlSlotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -593,19 +593,19 @@ export function appServiceSourceControlSlotTimeoutsToHclTerraform(struct?: AppSe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppServiceSourceControlSlotTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AppServiceSourceControlSlotTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppServiceSourceControlSlotTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AppServiceSourceControlSlotTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -626,7 +626,7 @@ export class AppServiceSourceControlSlotTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppServiceSourceControlSlotTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppServiceSourceControlSlotTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -634,7 +634,7 @@ export class AppServiceSourceControlSlotTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -699,7 +699,7 @@ export class AppServiceSourceControlSlotTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_source_control_slot azurerm_app_service_source_control_slot}
 */
-export class AppServiceSourceControlSlot extends cdktf.TerraformResource {
+export class AppServiceSourceControlSlot extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -710,14 +710,14 @@ export class AppServiceSourceControlSlot extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppServiceSourceControlSlot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppServiceSourceControlSlot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppServiceSourceControlSlot to import
   * @param importFromId The id of the existing AppServiceSourceControlSlot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_source_control_slot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppServiceSourceControlSlot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_app_service_source_control_slot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_app_service_source_control_slot", importId: importFromId, provider });
       }
 
   // ===========
@@ -812,11 +812,11 @@ export class AppServiceSourceControlSlot extends cdktf.TerraformResource {
   }
 
   // rollback_enabled - computed: false, optional: true, required: false
-  private _rollbackEnabled?: boolean | cdktf.IResolvable; 
+  private _rollbackEnabled?: boolean | cdktn.IResolvable; 
   public get rollbackEnabled() {
     return this.getBooleanAttribute('rollback_enabled');
   }
-  public set rollbackEnabled(value: boolean | cdktf.IResolvable) {
+  public set rollbackEnabled(value: boolean | cdktn.IResolvable) {
     this._rollbackEnabled = value;
   }
   public resetRollbackEnabled() {
@@ -846,11 +846,11 @@ export class AppServiceSourceControlSlot extends cdktf.TerraformResource {
   }
 
   // use_local_git - computed: false, optional: true, required: false
-  private _useLocalGit?: boolean | cdktf.IResolvable; 
+  private _useLocalGit?: boolean | cdktn.IResolvable; 
   public get useLocalGit() {
     return this.getBooleanAttribute('use_local_git');
   }
-  public set useLocalGit(value: boolean | cdktf.IResolvable) {
+  public set useLocalGit(value: boolean | cdktn.IResolvable) {
     this._useLocalGit = value;
   }
   public resetUseLocalGit() {
@@ -862,11 +862,11 @@ export class AppServiceSourceControlSlot extends cdktf.TerraformResource {
   }
 
   // use_manual_integration - computed: false, optional: true, required: false
-  private _useManualIntegration?: boolean | cdktf.IResolvable; 
+  private _useManualIntegration?: boolean | cdktn.IResolvable; 
   public get useManualIntegration() {
     return this.getBooleanAttribute('use_manual_integration');
   }
-  public set useManualIntegration(value: boolean | cdktf.IResolvable) {
+  public set useManualIntegration(value: boolean | cdktn.IResolvable) {
     this._useManualIntegration = value;
   }
   public resetUseManualIntegration() {
@@ -878,11 +878,11 @@ export class AppServiceSourceControlSlot extends cdktf.TerraformResource {
   }
 
   // use_mercurial - computed: false, optional: true, required: false
-  private _useMercurial?: boolean | cdktf.IResolvable; 
+  private _useMercurial?: boolean | cdktn.IResolvable; 
   public get useMercurial() {
     return this.getBooleanAttribute('use_mercurial');
   }
-  public set useMercurial(value: boolean | cdktf.IResolvable) {
+  public set useMercurial(value: boolean | cdktn.IResolvable) {
     this._useMercurial = value;
   }
   public resetUseMercurial() {
@@ -936,14 +936,14 @@ export class AppServiceSourceControlSlot extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      branch: cdktf.stringToTerraform(this._branch),
-      id: cdktf.stringToTerraform(this._id),
-      repo_url: cdktf.stringToTerraform(this._repoUrl),
-      rollback_enabled: cdktf.booleanToTerraform(this._rollbackEnabled),
-      slot_id: cdktf.stringToTerraform(this._slotId),
-      use_local_git: cdktf.booleanToTerraform(this._useLocalGit),
-      use_manual_integration: cdktf.booleanToTerraform(this._useManualIntegration),
-      use_mercurial: cdktf.booleanToTerraform(this._useMercurial),
+      branch: cdktn.stringToTerraform(this._branch),
+      id: cdktn.stringToTerraform(this._id),
+      repo_url: cdktn.stringToTerraform(this._repoUrl),
+      rollback_enabled: cdktn.booleanToTerraform(this._rollbackEnabled),
+      slot_id: cdktn.stringToTerraform(this._slotId),
+      use_local_git: cdktn.booleanToTerraform(this._useLocalGit),
+      use_manual_integration: cdktn.booleanToTerraform(this._useManualIntegration),
+      use_mercurial: cdktn.booleanToTerraform(this._useMercurial),
       github_action_configuration: appServiceSourceControlSlotGithubActionConfigurationToTerraform(this._githubActionConfiguration.internalValue),
       timeouts: appServiceSourceControlSlotTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -952,49 +952,49 @@ export class AppServiceSourceControlSlot extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       branch: {
-        value: cdktf.stringToHclTerraform(this._branch),
+        value: cdktn.stringToHclTerraform(this._branch),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repo_url: {
-        value: cdktf.stringToHclTerraform(this._repoUrl),
+        value: cdktn.stringToHclTerraform(this._repoUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rollback_enabled: {
-        value: cdktf.booleanToHclTerraform(this._rollbackEnabled),
+        value: cdktn.booleanToHclTerraform(this._rollbackEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       slot_id: {
-        value: cdktf.stringToHclTerraform(this._slotId),
+        value: cdktn.stringToHclTerraform(this._slotId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_local_git: {
-        value: cdktf.booleanToHclTerraform(this._useLocalGit),
+        value: cdktn.booleanToHclTerraform(this._useLocalGit),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       use_manual_integration: {
-        value: cdktf.booleanToHclTerraform(this._useManualIntegration),
+        value: cdktn.booleanToHclTerraform(this._useManualIntegration),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       use_mercurial: {
-        value: cdktf.booleanToHclTerraform(this._useMercurial),
+        value: cdktn.booleanToHclTerraform(this._useMercurial),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IotcentralApplicationNetworkRuleSetConfig extends cdktf.TerraformMetaArguments {
+export interface IotcentralApplicationNetworkRuleSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iotcentral_application_network_rule_set#apply_to_device IotcentralApplicationNetworkRuleSet#apply_to_device}
   */
-  readonly applyToDevice?: boolean | cdktf.IResolvable;
+  readonly applyToDevice?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iotcentral_application_network_rule_set#default_action IotcentralApplicationNetworkRuleSet#default_action}
   */
@@ -36,7 +36,7 @@ export interface IotcentralApplicationNetworkRuleSetConfig extends cdktf.Terrafo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iotcentral_application_network_rule_set#ip_rule IotcentralApplicationNetworkRuleSet#ip_rule}
   */
-  readonly ipRule?: IotcentralApplicationNetworkRuleSetIpRule[] | cdktf.IResolvable;
+  readonly ipRule?: IotcentralApplicationNetworkRuleSetIpRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -55,32 +55,32 @@ export interface IotcentralApplicationNetworkRuleSetIpRule {
   readonly name: string;
 }
 
-export function iotcentralApplicationNetworkRuleSetIpRuleToTerraform(struct?: IotcentralApplicationNetworkRuleSetIpRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotcentralApplicationNetworkRuleSetIpRuleToTerraform(struct?: IotcentralApplicationNetworkRuleSetIpRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_mask: cdktf.stringToTerraform(struct!.ipMask),
-    name: cdktf.stringToTerraform(struct!.name),
+    ip_mask: cdktn.stringToTerraform(struct!.ipMask),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function iotcentralApplicationNetworkRuleSetIpRuleToHclTerraform(struct?: IotcentralApplicationNetworkRuleSetIpRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotcentralApplicationNetworkRuleSetIpRuleToHclTerraform(struct?: IotcentralApplicationNetworkRuleSetIpRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_mask: {
-      value: cdktf.stringToHclTerraform(struct!.ipMask),
+      value: cdktn.stringToHclTerraform(struct!.ipMask),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,9 +91,9 @@ export function iotcentralApplicationNetworkRuleSetIpRuleToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotcentralApplicationNetworkRuleSetIpRuleOutputReference extends cdktf.ComplexObject {
+export class IotcentralApplicationNetworkRuleSetIpRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -101,11 +101,11 @@ export class IotcentralApplicationNetworkRuleSetIpRuleOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotcentralApplicationNetworkRuleSetIpRule | cdktf.IResolvable | undefined {
+  public get internalValue(): IotcentralApplicationNetworkRuleSetIpRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -122,14 +122,14 @@ export class IotcentralApplicationNetworkRuleSetIpRuleOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotcentralApplicationNetworkRuleSetIpRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotcentralApplicationNetworkRuleSetIpRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ipMask = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -168,15 +168,15 @@ export class IotcentralApplicationNetworkRuleSetIpRuleOutputReference extends cd
   }
 }
 
-export class IotcentralApplicationNetworkRuleSetIpRuleList extends cdktf.ComplexList {
-  public internalValue? : IotcentralApplicationNetworkRuleSetIpRule[] | cdktf.IResolvable
+export class IotcentralApplicationNetworkRuleSetIpRuleList extends cdktn.ComplexList {
+  public internalValue? : IotcentralApplicationNetworkRuleSetIpRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -206,46 +206,46 @@ export interface IotcentralApplicationNetworkRuleSetTimeouts {
   readonly update?: string;
 }
 
-export function iotcentralApplicationNetworkRuleSetTimeoutsToTerraform(struct?: IotcentralApplicationNetworkRuleSetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotcentralApplicationNetworkRuleSetTimeoutsToTerraform(struct?: IotcentralApplicationNetworkRuleSetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function iotcentralApplicationNetworkRuleSetTimeoutsToHclTerraform(struct?: IotcentralApplicationNetworkRuleSetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotcentralApplicationNetworkRuleSetTimeoutsToHclTerraform(struct?: IotcentralApplicationNetworkRuleSetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -256,19 +256,19 @@ export function iotcentralApplicationNetworkRuleSetTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotcentralApplicationNetworkRuleSetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IotcentralApplicationNetworkRuleSetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IotcentralApplicationNetworkRuleSetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IotcentralApplicationNetworkRuleSetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -293,7 +293,7 @@ export class IotcentralApplicationNetworkRuleSetTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotcentralApplicationNetworkRuleSetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotcentralApplicationNetworkRuleSetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -302,7 +302,7 @@ export class IotcentralApplicationNetworkRuleSetTimeoutsOutputReference extends 
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -384,7 +384,7 @@ export class IotcentralApplicationNetworkRuleSetTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iotcentral_application_network_rule_set azurerm_iotcentral_application_network_rule_set}
 */
-export class IotcentralApplicationNetworkRuleSet extends cdktf.TerraformResource {
+export class IotcentralApplicationNetworkRuleSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -395,14 +395,14 @@ export class IotcentralApplicationNetworkRuleSet extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IotcentralApplicationNetworkRuleSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IotcentralApplicationNetworkRuleSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotcentralApplicationNetworkRuleSet to import
   * @param importFromId The id of the existing IotcentralApplicationNetworkRuleSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iotcentral_application_network_rule_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotcentralApplicationNetworkRuleSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_iotcentral_application_network_rule_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_iotcentral_application_network_rule_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -445,11 +445,11 @@ export class IotcentralApplicationNetworkRuleSet extends cdktf.TerraformResource
   // ==========
 
   // apply_to_device - computed: false, optional: true, required: false
-  private _applyToDevice?: boolean | cdktf.IResolvable; 
+  private _applyToDevice?: boolean | cdktn.IResolvable; 
   public get applyToDevice() {
     return this.getBooleanAttribute('apply_to_device');
   }
-  public set applyToDevice(value: boolean | cdktf.IResolvable) {
+  public set applyToDevice(value: boolean | cdktn.IResolvable) {
     this._applyToDevice = value;
   }
   public resetApplyToDevice() {
@@ -510,7 +510,7 @@ export class IotcentralApplicationNetworkRuleSet extends cdktf.TerraformResource
   public get ipRule() {
     return this._ipRule;
   }
-  public putIpRule(value: IotcentralApplicationNetworkRuleSetIpRule[] | cdktf.IResolvable) {
+  public putIpRule(value: IotcentralApplicationNetworkRuleSetIpRule[] | cdktn.IResolvable) {
     this._ipRule.internalValue = value;
   }
   public resetIpRule() {
@@ -543,11 +543,11 @@ export class IotcentralApplicationNetworkRuleSet extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_to_device: cdktf.booleanToTerraform(this._applyToDevice),
-      default_action: cdktf.stringToTerraform(this._defaultAction),
-      id: cdktf.stringToTerraform(this._id),
-      iotcentral_application_id: cdktf.stringToTerraform(this._iotcentralApplicationId),
-      ip_rule: cdktf.listMapper(iotcentralApplicationNetworkRuleSetIpRuleToTerraform, true)(this._ipRule.internalValue),
+      apply_to_device: cdktn.booleanToTerraform(this._applyToDevice),
+      default_action: cdktn.stringToTerraform(this._defaultAction),
+      id: cdktn.stringToTerraform(this._id),
+      iotcentral_application_id: cdktn.stringToTerraform(this._iotcentralApplicationId),
+      ip_rule: cdktn.listMapper(iotcentralApplicationNetworkRuleSetIpRuleToTerraform, true)(this._ipRule.internalValue),
       timeouts: iotcentralApplicationNetworkRuleSetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -555,31 +555,31 @@ export class IotcentralApplicationNetworkRuleSet extends cdktf.TerraformResource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       apply_to_device: {
-        value: cdktf.booleanToHclTerraform(this._applyToDevice),
+        value: cdktn.booleanToHclTerraform(this._applyToDevice),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       default_action: {
-        value: cdktf.stringToHclTerraform(this._defaultAction),
+        value: cdktn.stringToHclTerraform(this._defaultAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iotcentral_application_id: {
-        value: cdktf.stringToHclTerraform(this._iotcentralApplicationId),
+        value: cdktn.stringToHclTerraform(this._iotcentralApplicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_rule: {
-        value: cdktf.listMapperHcl(iotcentralApplicationNetworkRuleSetIpRuleToHclTerraform, true)(this._ipRule.internalValue),
+        value: cdktn.listMapperHcl(iotcentralApplicationNetworkRuleSetIpRuleToHclTerraform, true)(this._ipRule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "IotcentralApplicationNetworkRuleSetIpRuleList",

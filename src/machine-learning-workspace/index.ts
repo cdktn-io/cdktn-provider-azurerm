@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MachineLearningWorkspaceConfig extends cdktf.TerraformMetaArguments {
+export interface MachineLearningWorkspaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace#application_insights_id MachineLearningWorkspace#application_insights_id}
   */
@@ -31,7 +31,7 @@ export interface MachineLearningWorkspaceConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace#high_business_impact MachineLearningWorkspace#high_business_impact}
   */
-  readonly highBusinessImpact?: boolean | cdktf.IResolvable;
+  readonly highBusinessImpact?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace#id MachineLearningWorkspace#id}
   *
@@ -66,7 +66,7 @@ export interface MachineLearningWorkspaceConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace#public_network_access_enabled MachineLearningWorkspace#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace#resource_group_name MachineLearningWorkspace#resource_group_name}
   */
@@ -74,7 +74,7 @@ export interface MachineLearningWorkspaceConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace#service_side_encryption_enabled MachineLearningWorkspace#service_side_encryption_enabled}
   */
-  readonly serviceSideEncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly serviceSideEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace#sku_name MachineLearningWorkspace#sku_name}
   */
@@ -90,7 +90,7 @@ export interface MachineLearningWorkspaceConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace#v1_legacy_mode_enabled MachineLearningWorkspace#v1_legacy_mode_enabled}
   */
-  readonly v1LegacyModeEnabled?: boolean | cdktf.IResolvable;
+  readonly v1LegacyModeEnabled?: boolean | cdktn.IResolvable;
   /**
   * encryption block
   *
@@ -144,38 +144,38 @@ export interface MachineLearningWorkspaceEncryption {
 }
 
 export function machineLearningWorkspaceEncryptionToTerraform(struct?: MachineLearningWorkspaceEncryptionOutputReference | MachineLearningWorkspaceEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_id: cdktf.stringToTerraform(struct!.keyId),
-    key_vault_id: cdktf.stringToTerraform(struct!.keyVaultId),
-    user_assigned_identity_id: cdktf.stringToTerraform(struct!.userAssignedIdentityId),
+    key_id: cdktn.stringToTerraform(struct!.keyId),
+    key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
+    user_assigned_identity_id: cdktn.stringToTerraform(struct!.userAssignedIdentityId),
   }
 }
 
 
 export function machineLearningWorkspaceEncryptionToHclTerraform(struct?: MachineLearningWorkspaceEncryptionOutputReference | MachineLearningWorkspaceEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyId),
+      value: cdktn.stringToHclTerraform(struct!.keyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_assigned_identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.userAssignedIdentityId),
+      value: cdktn.stringToHclTerraform(struct!.userAssignedIdentityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -186,14 +186,14 @@ export function machineLearningWorkspaceEncryptionToHclTerraform(struct?: Machin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MachineLearningWorkspaceEncryptionOutputReference extends cdktf.ComplexObject {
+export class MachineLearningWorkspaceEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -288,38 +288,38 @@ export interface MachineLearningWorkspaceFeatureStore {
 }
 
 export function machineLearningWorkspaceFeatureStoreToTerraform(struct?: MachineLearningWorkspaceFeatureStoreOutputReference | MachineLearningWorkspaceFeatureStore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    computer_spark_runtime_version: cdktf.stringToTerraform(struct!.computerSparkRuntimeVersion),
-    offline_connection_name: cdktf.stringToTerraform(struct!.offlineConnectionName),
-    online_connection_name: cdktf.stringToTerraform(struct!.onlineConnectionName),
+    computer_spark_runtime_version: cdktn.stringToTerraform(struct!.computerSparkRuntimeVersion),
+    offline_connection_name: cdktn.stringToTerraform(struct!.offlineConnectionName),
+    online_connection_name: cdktn.stringToTerraform(struct!.onlineConnectionName),
   }
 }
 
 
 export function machineLearningWorkspaceFeatureStoreToHclTerraform(struct?: MachineLearningWorkspaceFeatureStoreOutputReference | MachineLearningWorkspaceFeatureStore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     computer_spark_runtime_version: {
-      value: cdktf.stringToHclTerraform(struct!.computerSparkRuntimeVersion),
+      value: cdktn.stringToHclTerraform(struct!.computerSparkRuntimeVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     offline_connection_name: {
-      value: cdktf.stringToHclTerraform(struct!.offlineConnectionName),
+      value: cdktn.stringToHclTerraform(struct!.offlineConnectionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     online_connection_name: {
-      value: cdktf.stringToHclTerraform(struct!.onlineConnectionName),
+      value: cdktn.stringToHclTerraform(struct!.onlineConnectionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -330,14 +330,14 @@ export function machineLearningWorkspaceFeatureStoreToHclTerraform(struct?: Mach
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MachineLearningWorkspaceFeatureStoreOutputReference extends cdktf.ComplexObject {
+export class MachineLearningWorkspaceFeatureStoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -434,31 +434,31 @@ export interface MachineLearningWorkspaceIdentity {
 }
 
 export function machineLearningWorkspaceIdentityToTerraform(struct?: MachineLearningWorkspaceIdentityOutputReference | MachineLearningWorkspaceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function machineLearningWorkspaceIdentityToHclTerraform(struct?: MachineLearningWorkspaceIdentityOutputReference | MachineLearningWorkspaceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -469,14 +469,14 @@ export function machineLearningWorkspaceIdentityToHclTerraform(struct?: MachineL
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MachineLearningWorkspaceIdentityOutputReference extends cdktf.ComplexObject {
+export class MachineLearningWorkspaceIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -510,7 +510,7 @@ export class MachineLearningWorkspaceIdentityOutputReference extends cdktf.Compl
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -554,35 +554,35 @@ export interface MachineLearningWorkspaceManagedNetwork {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace#provision_on_creation_enabled MachineLearningWorkspace#provision_on_creation_enabled}
   */
-  readonly provisionOnCreationEnabled?: boolean | cdktf.IResolvable;
+  readonly provisionOnCreationEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function machineLearningWorkspaceManagedNetworkToTerraform(struct?: MachineLearningWorkspaceManagedNetworkOutputReference | MachineLearningWorkspaceManagedNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    isolation_mode: cdktf.stringToTerraform(struct!.isolationMode),
-    provision_on_creation_enabled: cdktf.booleanToTerraform(struct!.provisionOnCreationEnabled),
+    isolation_mode: cdktn.stringToTerraform(struct!.isolationMode),
+    provision_on_creation_enabled: cdktn.booleanToTerraform(struct!.provisionOnCreationEnabled),
   }
 }
 
 
 export function machineLearningWorkspaceManagedNetworkToHclTerraform(struct?: MachineLearningWorkspaceManagedNetworkOutputReference | MachineLearningWorkspaceManagedNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     isolation_mode: {
-      value: cdktf.stringToHclTerraform(struct!.isolationMode),
+      value: cdktn.stringToHclTerraform(struct!.isolationMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     provision_on_creation_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.provisionOnCreationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.provisionOnCreationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -593,14 +593,14 @@ export function machineLearningWorkspaceManagedNetworkToHclTerraform(struct?: Ma
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MachineLearningWorkspaceManagedNetworkOutputReference extends cdktf.ComplexObject {
+export class MachineLearningWorkspaceManagedNetworkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -648,11 +648,11 @@ export class MachineLearningWorkspaceManagedNetworkOutputReference extends cdktf
   }
 
   // provision_on_creation_enabled - computed: false, optional: true, required: false
-  private _provisionOnCreationEnabled?: boolean | cdktf.IResolvable; 
+  private _provisionOnCreationEnabled?: boolean | cdktn.IResolvable; 
   public get provisionOnCreationEnabled() {
     return this.getBooleanAttribute('provision_on_creation_enabled');
   }
-  public set provisionOnCreationEnabled(value: boolean | cdktf.IResolvable) {
+  public set provisionOnCreationEnabled(value: boolean | cdktn.IResolvable) {
     this._provisionOnCreationEnabled = value;
   }
   public resetProvisionOnCreationEnabled() {
@@ -667,7 +667,7 @@ export interface MachineLearningWorkspaceServerlessCompute {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace#public_ip_enabled MachineLearningWorkspace#public_ip_enabled}
   */
-  readonly publicIpEnabled?: boolean | cdktf.IResolvable;
+  readonly publicIpEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace#subnet_id MachineLearningWorkspace#subnet_id}
   */
@@ -675,31 +675,31 @@ export interface MachineLearningWorkspaceServerlessCompute {
 }
 
 export function machineLearningWorkspaceServerlessComputeToTerraform(struct?: MachineLearningWorkspaceServerlessComputeOutputReference | MachineLearningWorkspaceServerlessCompute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    public_ip_enabled: cdktf.booleanToTerraform(struct!.publicIpEnabled),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    public_ip_enabled: cdktn.booleanToTerraform(struct!.publicIpEnabled),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
 export function machineLearningWorkspaceServerlessComputeToHclTerraform(struct?: MachineLearningWorkspaceServerlessComputeOutputReference | MachineLearningWorkspaceServerlessCompute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     public_ip_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.publicIpEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.publicIpEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -710,14 +710,14 @@ export function machineLearningWorkspaceServerlessComputeToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MachineLearningWorkspaceServerlessComputeOutputReference extends cdktf.ComplexObject {
+export class MachineLearningWorkspaceServerlessComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -749,11 +749,11 @@ export class MachineLearningWorkspaceServerlessComputeOutputReference extends cd
   }
 
   // public_ip_enabled - computed: false, optional: true, required: false
-  private _publicIpEnabled?: boolean | cdktf.IResolvable; 
+  private _publicIpEnabled?: boolean | cdktn.IResolvable; 
   public get publicIpEnabled() {
     return this.getBooleanAttribute('public_ip_enabled');
   }
-  public set publicIpEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicIpEnabled(value: boolean | cdktn.IResolvable) {
     this._publicIpEnabled = value;
   }
   public resetPublicIpEnabled() {
@@ -799,46 +799,46 @@ export interface MachineLearningWorkspaceTimeouts {
   readonly update?: string;
 }
 
-export function machineLearningWorkspaceTimeoutsToTerraform(struct?: MachineLearningWorkspaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function machineLearningWorkspaceTimeoutsToTerraform(struct?: MachineLearningWorkspaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function machineLearningWorkspaceTimeoutsToHclTerraform(struct?: MachineLearningWorkspaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function machineLearningWorkspaceTimeoutsToHclTerraform(struct?: MachineLearningWorkspaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -849,19 +849,19 @@ export function machineLearningWorkspaceTimeoutsToHclTerraform(struct?: MachineL
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MachineLearningWorkspaceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MachineLearningWorkspaceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MachineLearningWorkspaceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MachineLearningWorkspaceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -886,7 +886,7 @@ export class MachineLearningWorkspaceTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MachineLearningWorkspaceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MachineLearningWorkspaceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -895,7 +895,7 @@ export class MachineLearningWorkspaceTimeoutsOutputReference extends cdktf.Compl
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -977,7 +977,7 @@ export class MachineLearningWorkspaceTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace azurerm_machine_learning_workspace}
 */
-export class MachineLearningWorkspace extends cdktf.TerraformResource {
+export class MachineLearningWorkspace extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -988,14 +988,14 @@ export class MachineLearningWorkspace extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MachineLearningWorkspace resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MachineLearningWorkspace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MachineLearningWorkspace to import
   * @param importFromId The id of the existing MachineLearningWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MachineLearningWorkspace to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_machine_learning_workspace", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_machine_learning_workspace", importId: importFromId, provider });
       }
 
   // ===========
@@ -1123,11 +1123,11 @@ export class MachineLearningWorkspace extends cdktf.TerraformResource {
   }
 
   // high_business_impact - computed: false, optional: true, required: false
-  private _highBusinessImpact?: boolean | cdktf.IResolvable; 
+  private _highBusinessImpact?: boolean | cdktn.IResolvable; 
   public get highBusinessImpact() {
     return this.getBooleanAttribute('high_business_impact');
   }
-  public set highBusinessImpact(value: boolean | cdktf.IResolvable) {
+  public set highBusinessImpact(value: boolean | cdktn.IResolvable) {
     this._highBusinessImpact = value;
   }
   public resetHighBusinessImpact() {
@@ -1242,11 +1242,11 @@ export class MachineLearningWorkspace extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -1271,11 +1271,11 @@ export class MachineLearningWorkspace extends cdktf.TerraformResource {
   }
 
   // service_side_encryption_enabled - computed: false, optional: true, required: false
-  private _serviceSideEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _serviceSideEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get serviceSideEncryptionEnabled() {
     return this.getBooleanAttribute('service_side_encryption_enabled');
   }
-  public set serviceSideEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set serviceSideEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._serviceSideEncryptionEnabled = value;
   }
   public resetServiceSideEncryptionEnabled() {
@@ -1332,11 +1332,11 @@ export class MachineLearningWorkspace extends cdktf.TerraformResource {
   }
 
   // v1_legacy_mode_enabled - computed: false, optional: true, required: false
-  private _v1LegacyModeEnabled?: boolean | cdktf.IResolvable; 
+  private _v1LegacyModeEnabled?: boolean | cdktn.IResolvable; 
   public get v1LegacyModeEnabled() {
     return this.getBooleanAttribute('v1_legacy_mode_enabled');
   }
-  public set v1LegacyModeEnabled(value: boolean | cdktf.IResolvable) {
+  public set v1LegacyModeEnabled(value: boolean | cdktn.IResolvable) {
     this._v1LegacyModeEnabled = value;
   }
   public resetV1LegacyModeEnabled() {
@@ -1451,25 +1451,25 @@ export class MachineLearningWorkspace extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_insights_id: cdktf.stringToTerraform(this._applicationInsightsId),
-      container_registry_id: cdktf.stringToTerraform(this._containerRegistryId),
-      description: cdktf.stringToTerraform(this._description),
-      friendly_name: cdktf.stringToTerraform(this._friendlyName),
-      high_business_impact: cdktf.booleanToTerraform(this._highBusinessImpact),
-      id: cdktf.stringToTerraform(this._id),
-      image_build_compute_name: cdktf.stringToTerraform(this._imageBuildComputeName),
-      key_vault_id: cdktf.stringToTerraform(this._keyVaultId),
-      kind: cdktf.stringToTerraform(this._kind),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      primary_user_assigned_identity: cdktf.stringToTerraform(this._primaryUserAssignedIdentity),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      service_side_encryption_enabled: cdktf.booleanToTerraform(this._serviceSideEncryptionEnabled),
-      sku_name: cdktf.stringToTerraform(this._skuName),
-      storage_account_id: cdktf.stringToTerraform(this._storageAccountId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      v1_legacy_mode_enabled: cdktf.booleanToTerraform(this._v1LegacyModeEnabled),
+      application_insights_id: cdktn.stringToTerraform(this._applicationInsightsId),
+      container_registry_id: cdktn.stringToTerraform(this._containerRegistryId),
+      description: cdktn.stringToTerraform(this._description),
+      friendly_name: cdktn.stringToTerraform(this._friendlyName),
+      high_business_impact: cdktn.booleanToTerraform(this._highBusinessImpact),
+      id: cdktn.stringToTerraform(this._id),
+      image_build_compute_name: cdktn.stringToTerraform(this._imageBuildComputeName),
+      key_vault_id: cdktn.stringToTerraform(this._keyVaultId),
+      kind: cdktn.stringToTerraform(this._kind),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      primary_user_assigned_identity: cdktn.stringToTerraform(this._primaryUserAssignedIdentity),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      service_side_encryption_enabled: cdktn.booleanToTerraform(this._serviceSideEncryptionEnabled),
+      sku_name: cdktn.stringToTerraform(this._skuName),
+      storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      v1_legacy_mode_enabled: cdktn.booleanToTerraform(this._v1LegacyModeEnabled),
       encryption: machineLearningWorkspaceEncryptionToTerraform(this._encryption.internalValue),
       feature_store: machineLearningWorkspaceFeatureStoreToTerraform(this._featureStore.internalValue),
       identity: machineLearningWorkspaceIdentityToTerraform(this._identity.internalValue),
@@ -1482,115 +1482,115 @@ export class MachineLearningWorkspace extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_insights_id: {
-        value: cdktf.stringToHclTerraform(this._applicationInsightsId),
+        value: cdktn.stringToHclTerraform(this._applicationInsightsId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       container_registry_id: {
-        value: cdktf.stringToHclTerraform(this._containerRegistryId),
+        value: cdktn.stringToHclTerraform(this._containerRegistryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       friendly_name: {
-        value: cdktf.stringToHclTerraform(this._friendlyName),
+        value: cdktn.stringToHclTerraform(this._friendlyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       high_business_impact: {
-        value: cdktf.booleanToHclTerraform(this._highBusinessImpact),
+        value: cdktn.booleanToHclTerraform(this._highBusinessImpact),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_build_compute_name: {
-        value: cdktf.stringToHclTerraform(this._imageBuildComputeName),
+        value: cdktn.stringToHclTerraform(this._imageBuildComputeName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_vault_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultId),
+        value: cdktn.stringToHclTerraform(this._keyVaultId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kind: {
-        value: cdktf.stringToHclTerraform(this._kind),
+        value: cdktn.stringToHclTerraform(this._kind),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       primary_user_assigned_identity: {
-        value: cdktf.stringToHclTerraform(this._primaryUserAssignedIdentity),
+        value: cdktn.stringToHclTerraform(this._primaryUserAssignedIdentity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_side_encryption_enabled: {
-        value: cdktf.booleanToHclTerraform(this._serviceSideEncryptionEnabled),
+        value: cdktn.booleanToHclTerraform(this._serviceSideEncryptionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       sku_name: {
-        value: cdktf.stringToHclTerraform(this._skuName),
+        value: cdktn.stringToHclTerraform(this._skuName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountId),
+        value: cdktn.stringToHclTerraform(this._storageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       v1_legacy_mode_enabled: {
-        value: cdktf.booleanToHclTerraform(this._v1LegacyModeEnabled),
+        value: cdktn.booleanToHclTerraform(this._v1LegacyModeEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

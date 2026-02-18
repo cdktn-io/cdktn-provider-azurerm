@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EventhubNamespaceSchemaGroupConfig extends cdktf.TerraformMetaArguments {
+export interface EventhubNamespaceSchemaGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace_schema_group#id EventhubNamespaceSchemaGroup#id}
   *
@@ -57,39 +57,39 @@ export interface EventhubNamespaceSchemaGroupTimeouts {
   readonly read?: string;
 }
 
-export function eventhubNamespaceSchemaGroupTimeoutsToTerraform(struct?: EventhubNamespaceSchemaGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventhubNamespaceSchemaGroupTimeoutsToTerraform(struct?: EventhubNamespaceSchemaGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function eventhubNamespaceSchemaGroupTimeoutsToHclTerraform(struct?: EventhubNamespaceSchemaGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventhubNamespaceSchemaGroupTimeoutsToHclTerraform(struct?: EventhubNamespaceSchemaGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,19 +100,19 @@ export function eventhubNamespaceSchemaGroupTimeoutsToHclTerraform(struct?: Even
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventhubNamespaceSchemaGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EventhubNamespaceSchemaGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EventhubNamespaceSchemaGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EventhubNamespaceSchemaGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,7 +133,7 @@ export class EventhubNamespaceSchemaGroupTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventhubNamespaceSchemaGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventhubNamespaceSchemaGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -141,7 +141,7 @@ export class EventhubNamespaceSchemaGroupTimeoutsOutputReference extends cdktf.C
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -206,7 +206,7 @@ export class EventhubNamespaceSchemaGroupTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace_schema_group azurerm_eventhub_namespace_schema_group}
 */
-export class EventhubNamespaceSchemaGroup extends cdktf.TerraformResource {
+export class EventhubNamespaceSchemaGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -217,14 +217,14 @@ export class EventhubNamespaceSchemaGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EventhubNamespaceSchemaGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EventhubNamespaceSchemaGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventhubNamespaceSchemaGroup to import
   * @param importFromId The id of the existing EventhubNamespaceSchemaGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace_schema_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventhubNamespaceSchemaGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_eventhub_namespace_schema_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_eventhub_namespace_schema_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -356,11 +356,11 @@ export class EventhubNamespaceSchemaGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      namespace_id: cdktf.stringToTerraform(this._namespaceId),
-      schema_compatibility: cdktf.stringToTerraform(this._schemaCompatibility),
-      schema_type: cdktf.stringToTerraform(this._schemaType),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      namespace_id: cdktn.stringToTerraform(this._namespaceId),
+      schema_compatibility: cdktn.stringToTerraform(this._schemaCompatibility),
+      schema_type: cdktn.stringToTerraform(this._schemaType),
       timeouts: eventhubNamespaceSchemaGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -368,31 +368,31 @@ export class EventhubNamespaceSchemaGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace_id: {
-        value: cdktf.stringToHclTerraform(this._namespaceId),
+        value: cdktn.stringToHclTerraform(this._namespaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema_compatibility: {
-        value: cdktf.stringToHclTerraform(this._schemaCompatibility),
+        value: cdktn.stringToHclTerraform(this._schemaCompatibility),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema_type: {
-        value: cdktf.stringToHclTerraform(this._schemaType),
+        value: cdktn.stringToHclTerraform(this._schemaType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

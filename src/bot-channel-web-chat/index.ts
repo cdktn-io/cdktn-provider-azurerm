@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BotChannelWebChatConfig extends cdktf.TerraformMetaArguments {
+export interface BotChannelWebChatConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_web_chat#bot_name BotChannelWebChat#bot_name}
   */
@@ -36,7 +36,7 @@ export interface BotChannelWebChatConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_web_chat#site BotChannelWebChat#site}
   */
-  readonly site?: BotChannelWebChatSite[] | cdktf.IResolvable;
+  readonly site?: BotChannelWebChatSite[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -48,7 +48,7 @@ export interface BotChannelWebChatSite {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_web_chat#endpoint_parameters_enabled BotChannelWebChat#endpoint_parameters_enabled}
   */
-  readonly endpointParametersEnabled?: boolean | cdktf.IResolvable;
+  readonly endpointParametersEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_web_chat#name BotChannelWebChat#name}
   */
@@ -56,53 +56,53 @@ export interface BotChannelWebChatSite {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_web_chat#storage_enabled BotChannelWebChat#storage_enabled}
   */
-  readonly storageEnabled?: boolean | cdktf.IResolvable;
+  readonly storageEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_web_chat#user_upload_enabled BotChannelWebChat#user_upload_enabled}
   */
-  readonly userUploadEnabled?: boolean | cdktf.IResolvable;
+  readonly userUploadEnabled?: boolean | cdktn.IResolvable;
 }
 
-export function botChannelWebChatSiteToTerraform(struct?: BotChannelWebChatSite | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelWebChatSiteToTerraform(struct?: BotChannelWebChatSite | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint_parameters_enabled: cdktf.booleanToTerraform(struct!.endpointParametersEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    storage_enabled: cdktf.booleanToTerraform(struct!.storageEnabled),
-    user_upload_enabled: cdktf.booleanToTerraform(struct!.userUploadEnabled),
+    endpoint_parameters_enabled: cdktn.booleanToTerraform(struct!.endpointParametersEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    storage_enabled: cdktn.booleanToTerraform(struct!.storageEnabled),
+    user_upload_enabled: cdktn.booleanToTerraform(struct!.userUploadEnabled),
   }
 }
 
 
-export function botChannelWebChatSiteToHclTerraform(struct?: BotChannelWebChatSite | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelWebChatSiteToHclTerraform(struct?: BotChannelWebChatSite | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint_parameters_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.endpointParametersEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.endpointParametersEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.storageEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.storageEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     user_upload_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.userUploadEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.userUploadEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -113,9 +113,9 @@ export function botChannelWebChatSiteToHclTerraform(struct?: BotChannelWebChatSi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BotChannelWebChatSiteOutputReference extends cdktf.ComplexObject {
+export class BotChannelWebChatSiteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -123,11 +123,11 @@ export class BotChannelWebChatSiteOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BotChannelWebChatSite | cdktf.IResolvable | undefined {
+  public get internalValue(): BotChannelWebChatSite | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,7 +152,7 @@ export class BotChannelWebChatSiteOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BotChannelWebChatSite | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BotChannelWebChatSite | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class BotChannelWebChatSiteOutputReference extends cdktf.ComplexObject {
       this._storageEnabled = undefined;
       this._userUploadEnabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -176,11 +176,11 @@ export class BotChannelWebChatSiteOutputReference extends cdktf.ComplexObject {
   }
 
   // endpoint_parameters_enabled - computed: false, optional: true, required: false
-  private _endpointParametersEnabled?: boolean | cdktf.IResolvable; 
+  private _endpointParametersEnabled?: boolean | cdktn.IResolvable; 
   public get endpointParametersEnabled() {
     return this.getBooleanAttribute('endpoint_parameters_enabled');
   }
-  public set endpointParametersEnabled(value: boolean | cdktf.IResolvable) {
+  public set endpointParametersEnabled(value: boolean | cdktn.IResolvable) {
     this._endpointParametersEnabled = value;
   }
   public resetEndpointParametersEnabled() {
@@ -205,11 +205,11 @@ export class BotChannelWebChatSiteOutputReference extends cdktf.ComplexObject {
   }
 
   // storage_enabled - computed: false, optional: true, required: false
-  private _storageEnabled?: boolean | cdktf.IResolvable; 
+  private _storageEnabled?: boolean | cdktn.IResolvable; 
   public get storageEnabled() {
     return this.getBooleanAttribute('storage_enabled');
   }
-  public set storageEnabled(value: boolean | cdktf.IResolvable) {
+  public set storageEnabled(value: boolean | cdktn.IResolvable) {
     this._storageEnabled = value;
   }
   public resetStorageEnabled() {
@@ -221,11 +221,11 @@ export class BotChannelWebChatSiteOutputReference extends cdktf.ComplexObject {
   }
 
   // user_upload_enabled - computed: false, optional: true, required: false
-  private _userUploadEnabled?: boolean | cdktf.IResolvable; 
+  private _userUploadEnabled?: boolean | cdktn.IResolvable; 
   public get userUploadEnabled() {
     return this.getBooleanAttribute('user_upload_enabled');
   }
-  public set userUploadEnabled(value: boolean | cdktf.IResolvable) {
+  public set userUploadEnabled(value: boolean | cdktn.IResolvable) {
     this._userUploadEnabled = value;
   }
   public resetUserUploadEnabled() {
@@ -237,15 +237,15 @@ export class BotChannelWebChatSiteOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class BotChannelWebChatSiteList extends cdktf.ComplexList {
-  public internalValue? : BotChannelWebChatSite[] | cdktf.IResolvable
+export class BotChannelWebChatSiteList extends cdktn.ComplexList {
+  public internalValue? : BotChannelWebChatSite[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -275,46 +275,46 @@ export interface BotChannelWebChatTimeouts {
   readonly update?: string;
 }
 
-export function botChannelWebChatTimeoutsToTerraform(struct?: BotChannelWebChatTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelWebChatTimeoutsToTerraform(struct?: BotChannelWebChatTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function botChannelWebChatTimeoutsToHclTerraform(struct?: BotChannelWebChatTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelWebChatTimeoutsToHclTerraform(struct?: BotChannelWebChatTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -325,19 +325,19 @@ export function botChannelWebChatTimeoutsToHclTerraform(struct?: BotChannelWebCh
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BotChannelWebChatTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BotChannelWebChatTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BotChannelWebChatTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BotChannelWebChatTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -362,7 +362,7 @@ export class BotChannelWebChatTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BotChannelWebChatTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BotChannelWebChatTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -371,7 +371,7 @@ export class BotChannelWebChatTimeoutsOutputReference extends cdktf.ComplexObjec
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -453,7 +453,7 @@ export class BotChannelWebChatTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_web_chat azurerm_bot_channel_web_chat}
 */
-export class BotChannelWebChat extends cdktf.TerraformResource {
+export class BotChannelWebChat extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -464,14 +464,14 @@ export class BotChannelWebChat extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BotChannelWebChat resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BotChannelWebChat resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BotChannelWebChat to import
   * @param importFromId The id of the existing BotChannelWebChat that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_web_chat#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BotChannelWebChat to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_bot_channel_web_chat", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_bot_channel_web_chat", importId: importFromId, provider });
       }
 
   // ===========
@@ -573,7 +573,7 @@ export class BotChannelWebChat extends cdktf.TerraformResource {
   public get site() {
     return this._site;
   }
-  public putSite(value: BotChannelWebChatSite[] | cdktf.IResolvable) {
+  public putSite(value: BotChannelWebChatSite[] | cdktn.IResolvable) {
     this._site.internalValue = value;
   }
   public resetSite() {
@@ -606,11 +606,11 @@ export class BotChannelWebChat extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bot_name: cdktf.stringToTerraform(this._botName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      site: cdktf.listMapper(botChannelWebChatSiteToTerraform, true)(this._site.internalValue),
+      bot_name: cdktn.stringToTerraform(this._botName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      site: cdktn.listMapper(botChannelWebChatSiteToTerraform, true)(this._site.internalValue),
       timeouts: botChannelWebChatTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -618,31 +618,31 @@ export class BotChannelWebChat extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bot_name: {
-        value: cdktf.stringToHclTerraform(this._botName),
+        value: cdktn.stringToHclTerraform(this._botName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       site: {
-        value: cdktf.listMapperHcl(botChannelWebChatSiteToHclTerraform, true)(this._site.internalValue),
+        value: cdktn.listMapperHcl(botChannelWebChatSiteToHclTerraform, true)(this._site.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "BotChannelWebChatSiteList",

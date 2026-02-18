@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DnsZoneConfig extends cdktf.TerraformMetaArguments {
+export interface DnsZoneConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dns_zone#id DnsZone#id}
   *
@@ -80,73 +80,73 @@ export interface DnsZoneSoaRecord {
 }
 
 export function dnsZoneSoaRecordToTerraform(struct?: DnsZoneSoaRecordOutputReference | DnsZoneSoaRecord): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
-    expire_time: cdktf.numberToTerraform(struct!.expireTime),
-    minimum_ttl: cdktf.numberToTerraform(struct!.minimumTtl),
-    refresh_time: cdktf.numberToTerraform(struct!.refreshTime),
-    retry_time: cdktf.numberToTerraform(struct!.retryTime),
-    serial_number: cdktf.numberToTerraform(struct!.serialNumber),
-    tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
-    ttl: cdktf.numberToTerraform(struct!.ttl),
+    email: cdktn.stringToTerraform(struct!.email),
+    expire_time: cdktn.numberToTerraform(struct!.expireTime),
+    minimum_ttl: cdktn.numberToTerraform(struct!.minimumTtl),
+    refresh_time: cdktn.numberToTerraform(struct!.refreshTime),
+    retry_time: cdktn.numberToTerraform(struct!.retryTime),
+    serial_number: cdktn.numberToTerraform(struct!.serialNumber),
+    tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tags),
+    ttl: cdktn.numberToTerraform(struct!.ttl),
   }
 }
 
 
 export function dnsZoneSoaRecordToHclTerraform(struct?: DnsZoneSoaRecordOutputReference | DnsZoneSoaRecord): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expire_time: {
-      value: cdktf.numberToHclTerraform(struct!.expireTime),
+      value: cdktn.numberToHclTerraform(struct!.expireTime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minimum_ttl: {
-      value: cdktf.numberToHclTerraform(struct!.minimumTtl),
+      value: cdktn.numberToHclTerraform(struct!.minimumTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     refresh_time: {
-      value: cdktf.numberToHclTerraform(struct!.refreshTime),
+      value: cdktn.numberToHclTerraform(struct!.refreshTime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     retry_time: {
-      value: cdktf.numberToHclTerraform(struct!.retryTime),
+      value: cdktn.numberToHclTerraform(struct!.retryTime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     serial_number: {
-      value: cdktf.numberToHclTerraform(struct!.serialNumber),
+      value: cdktn.numberToHclTerraform(struct!.serialNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     ttl: {
-      value: cdktf.numberToHclTerraform(struct!.ttl),
+      value: cdktn.numberToHclTerraform(struct!.ttl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -157,14 +157,14 @@ export function dnsZoneSoaRecordToHclTerraform(struct?: DnsZoneSoaRecordOutputRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsZoneSoaRecordOutputReference extends cdktf.ComplexObject {
+export class DnsZoneSoaRecordOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -385,46 +385,46 @@ export interface DnsZoneTimeouts {
   readonly update?: string;
 }
 
-export function dnsZoneTimeoutsToTerraform(struct?: DnsZoneTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsZoneTimeoutsToTerraform(struct?: DnsZoneTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dnsZoneTimeoutsToHclTerraform(struct?: DnsZoneTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsZoneTimeoutsToHclTerraform(struct?: DnsZoneTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -435,19 +435,19 @@ export function dnsZoneTimeoutsToHclTerraform(struct?: DnsZoneTimeouts | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsZoneTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DnsZoneTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DnsZoneTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsZoneTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -472,7 +472,7 @@ export class DnsZoneTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsZoneTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsZoneTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -481,7 +481,7 @@ export class DnsZoneTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -563,7 +563,7 @@ export class DnsZoneTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dns_zone azurerm_dns_zone}
 */
-export class DnsZone extends cdktf.TerraformResource {
+export class DnsZone extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -574,14 +574,14 @@ export class DnsZone extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DnsZone resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DnsZone resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsZone to import
   * @param importFromId The id of the existing DnsZone that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dns_zone#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsZone to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dns_zone", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dns_zone", importId: importFromId, provider });
       }
 
   // ===========
@@ -659,7 +659,7 @@ export class DnsZone extends cdktf.TerraformResource {
 
   // name_servers - computed: true, optional: false, required: false
   public get nameServers() {
-    return cdktf.Fn.tolist(this.getListAttribute('name_servers'));
+    return cdktn.Fn.tolist(this.getListAttribute('name_servers'));
   }
 
   // number_of_record_sets - computed: true, optional: false, required: false
@@ -734,10 +734,10 @@ export class DnsZone extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       soa_record: dnsZoneSoaRecordToTerraform(this._soaRecord.internalValue),
       timeouts: dnsZoneTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -746,25 +746,25 @@ export class DnsZone extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

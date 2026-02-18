@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiManagementApiTagDescriptionConfig extends cdktf.TerraformMetaArguments {
+export interface ApiManagementApiTagDescriptionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_tag_description#api_tag_id ApiManagementApiTagDescription#api_tag_id}
   */
@@ -61,46 +61,46 @@ export interface ApiManagementApiTagDescriptionTimeouts {
   readonly update?: string;
 }
 
-export function apiManagementApiTagDescriptionTimeoutsToTerraform(struct?: ApiManagementApiTagDescriptionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementApiTagDescriptionTimeoutsToTerraform(struct?: ApiManagementApiTagDescriptionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apiManagementApiTagDescriptionTimeoutsToHclTerraform(struct?: ApiManagementApiTagDescriptionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementApiTagDescriptionTimeoutsToHclTerraform(struct?: ApiManagementApiTagDescriptionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,19 +111,19 @@ export function apiManagementApiTagDescriptionTimeoutsToHclTerraform(struct?: Ap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementApiTagDescriptionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApiManagementApiTagDescriptionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApiManagementApiTagDescriptionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementApiTagDescriptionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,7 +148,7 @@ export class ApiManagementApiTagDescriptionTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementApiTagDescriptionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementApiTagDescriptionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -157,7 +157,7 @@ export class ApiManagementApiTagDescriptionTimeoutsOutputReference extends cdktf
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -239,7 +239,7 @@ export class ApiManagementApiTagDescriptionTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_tag_description azurerm_api_management_api_tag_description}
 */
-export class ApiManagementApiTagDescription extends cdktf.TerraformResource {
+export class ApiManagementApiTagDescription extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -250,14 +250,14 @@ export class ApiManagementApiTagDescription extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiManagementApiTagDescription resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiManagementApiTagDescription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementApiTagDescription to import
   * @param importFromId The id of the existing ApiManagementApiTagDescription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_tag_description#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementApiTagDescription to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_api_tag_description", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_api_tag_description", importId: importFromId, provider });
       }
 
   // ===========
@@ -398,11 +398,11 @@ export class ApiManagementApiTagDescription extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_tag_id: cdktf.stringToTerraform(this._apiTagId),
-      description: cdktf.stringToTerraform(this._description),
-      external_documentation_description: cdktf.stringToTerraform(this._externalDocumentationDescription),
-      external_documentation_url: cdktf.stringToTerraform(this._externalDocumentationUrl),
-      id: cdktf.stringToTerraform(this._id),
+      api_tag_id: cdktn.stringToTerraform(this._apiTagId),
+      description: cdktn.stringToTerraform(this._description),
+      external_documentation_description: cdktn.stringToTerraform(this._externalDocumentationDescription),
+      external_documentation_url: cdktn.stringToTerraform(this._externalDocumentationUrl),
+      id: cdktn.stringToTerraform(this._id),
       timeouts: apiManagementApiTagDescriptionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -410,31 +410,31 @@ export class ApiManagementApiTagDescription extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_tag_id: {
-        value: cdktf.stringToHclTerraform(this._apiTagId),
+        value: cdktn.stringToHclTerraform(this._apiTagId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_documentation_description: {
-        value: cdktf.stringToHclTerraform(this._externalDocumentationDescription),
+        value: cdktn.stringToHclTerraform(this._externalDocumentationDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_documentation_url: {
-        value: cdktf.stringToHclTerraform(this._externalDocumentationUrl),
+        value: cdktn.stringToHclTerraform(this._externalDocumentationUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

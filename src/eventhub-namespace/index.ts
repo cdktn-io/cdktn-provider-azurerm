@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EventhubNamespaceConfig extends cdktf.TerraformMetaArguments {
+export interface EventhubNamespaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace#auto_inflate_enabled EventhubNamespace#auto_inflate_enabled}
   */
-  readonly autoInflateEnabled?: boolean | cdktf.IResolvable;
+  readonly autoInflateEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace#capacity EventhubNamespace#capacity}
   */
@@ -34,7 +34,7 @@ export interface EventhubNamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace#local_authentication_enabled EventhubNamespace#local_authentication_enabled}
   */
-  readonly localAuthenticationEnabled?: boolean | cdktf.IResolvable;
+  readonly localAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace#location EventhubNamespace#location}
   */
@@ -54,11 +54,11 @@ export interface EventhubNamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace#network_rulesets EventhubNamespace#network_rulesets}
   */
-  readonly networkRulesets?: EventhubNamespaceNetworkRulesets[] | cdktf.IResolvable;
+  readonly networkRulesets?: EventhubNamespaceNetworkRulesets[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace#public_network_access_enabled EventhubNamespace#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace#resource_group_name EventhubNamespace#resource_group_name}
   */
@@ -95,32 +95,32 @@ export interface EventhubNamespaceNetworkRulesetsIpRule {
   readonly ipMask?: string;
 }
 
-export function eventhubNamespaceNetworkRulesetsIpRuleToTerraform(struct?: EventhubNamespaceNetworkRulesetsIpRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventhubNamespaceNetworkRulesetsIpRuleToTerraform(struct?: EventhubNamespaceNetworkRulesetsIpRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: struct!.action === undefined ? null : cdktf.stringToTerraform(struct!.action),
-    ip_mask: struct!.ipMask === undefined ? null : cdktf.stringToTerraform(struct!.ipMask),
+    action: struct!.action === undefined ? null : cdktn.stringToTerraform(struct!.action),
+    ip_mask: struct!.ipMask === undefined ? null : cdktn.stringToTerraform(struct!.ipMask),
   }
 }
 
 
-export function eventhubNamespaceNetworkRulesetsIpRuleToHclTerraform(struct?: EventhubNamespaceNetworkRulesetsIpRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventhubNamespaceNetworkRulesetsIpRuleToHclTerraform(struct?: EventhubNamespaceNetworkRulesetsIpRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: struct!.action === undefined ? null : cdktf.stringToHclTerraform(struct!.action),
+      value: struct!.action === undefined ? null : cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_mask: {
-      value: struct!.ipMask === undefined ? null : cdktf.stringToHclTerraform(struct!.ipMask),
+      value: struct!.ipMask === undefined ? null : cdktn.stringToHclTerraform(struct!.ipMask),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,9 +131,9 @@ export function eventhubNamespaceNetworkRulesetsIpRuleToHclTerraform(struct?: Ev
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventhubNamespaceNetworkRulesetsIpRuleOutputReference extends cdktf.ComplexObject {
+export class EventhubNamespaceNetworkRulesetsIpRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -141,11 +141,11 @@ export class EventhubNamespaceNetworkRulesetsIpRuleOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventhubNamespaceNetworkRulesetsIpRule | cdktf.IResolvable | undefined {
+  public get internalValue(): EventhubNamespaceNetworkRulesetsIpRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -162,14 +162,14 @@ export class EventhubNamespaceNetworkRulesetsIpRuleOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventhubNamespaceNetworkRulesetsIpRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventhubNamespaceNetworkRulesetsIpRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._action = undefined;
       this._ipMask = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -214,15 +214,15 @@ export class EventhubNamespaceNetworkRulesetsIpRuleOutputReference extends cdktf
   }
 }
 
-export class EventhubNamespaceNetworkRulesetsIpRuleList extends cdktf.ComplexList {
-  public internalValue? : EventhubNamespaceNetworkRulesetsIpRule[] | cdktf.IResolvable
+export class EventhubNamespaceNetworkRulesetsIpRuleList extends cdktn.ComplexList {
+  public internalValue? : EventhubNamespaceNetworkRulesetsIpRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -237,39 +237,39 @@ export interface EventhubNamespaceNetworkRulesetsVirtualNetworkRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace#ignore_missing_virtual_network_service_endpoint EventhubNamespace#ignore_missing_virtual_network_service_endpoint}
   */
-  readonly ignoreMissingVirtualNetworkServiceEndpoint?: boolean | cdktf.IResolvable;
+  readonly ignoreMissingVirtualNetworkServiceEndpoint?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace#subnet_id EventhubNamespace#subnet_id}
   */
   readonly subnetId?: string;
 }
 
-export function eventhubNamespaceNetworkRulesetsVirtualNetworkRuleToTerraform(struct?: EventhubNamespaceNetworkRulesetsVirtualNetworkRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventhubNamespaceNetworkRulesetsVirtualNetworkRuleToTerraform(struct?: EventhubNamespaceNetworkRulesetsVirtualNetworkRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ignore_missing_virtual_network_service_endpoint: struct!.ignoreMissingVirtualNetworkServiceEndpoint === undefined ? null : cdktf.booleanToTerraform(struct!.ignoreMissingVirtualNetworkServiceEndpoint),
-    subnet_id: struct!.subnetId === undefined ? null : cdktf.stringToTerraform(struct!.subnetId),
+    ignore_missing_virtual_network_service_endpoint: struct!.ignoreMissingVirtualNetworkServiceEndpoint === undefined ? null : cdktn.booleanToTerraform(struct!.ignoreMissingVirtualNetworkServiceEndpoint),
+    subnet_id: struct!.subnetId === undefined ? null : cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
-export function eventhubNamespaceNetworkRulesetsVirtualNetworkRuleToHclTerraform(struct?: EventhubNamespaceNetworkRulesetsVirtualNetworkRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventhubNamespaceNetworkRulesetsVirtualNetworkRuleToHclTerraform(struct?: EventhubNamespaceNetworkRulesetsVirtualNetworkRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ignore_missing_virtual_network_service_endpoint: {
-      value: struct!.ignoreMissingVirtualNetworkServiceEndpoint === undefined ? null : cdktf.booleanToHclTerraform(struct!.ignoreMissingVirtualNetworkServiceEndpoint),
+      value: struct!.ignoreMissingVirtualNetworkServiceEndpoint === undefined ? null : cdktn.booleanToHclTerraform(struct!.ignoreMissingVirtualNetworkServiceEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     subnet_id: {
-      value: struct!.subnetId === undefined ? null : cdktf.stringToHclTerraform(struct!.subnetId),
+      value: struct!.subnetId === undefined ? null : cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -280,9 +280,9 @@ export function eventhubNamespaceNetworkRulesetsVirtualNetworkRuleToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventhubNamespaceNetworkRulesetsVirtualNetworkRuleOutputReference extends cdktf.ComplexObject {
+export class EventhubNamespaceNetworkRulesetsVirtualNetworkRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -290,11 +290,11 @@ export class EventhubNamespaceNetworkRulesetsVirtualNetworkRuleOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventhubNamespaceNetworkRulesetsVirtualNetworkRule | cdktf.IResolvable | undefined {
+  public get internalValue(): EventhubNamespaceNetworkRulesetsVirtualNetworkRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -311,14 +311,14 @@ export class EventhubNamespaceNetworkRulesetsVirtualNetworkRuleOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventhubNamespaceNetworkRulesetsVirtualNetworkRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventhubNamespaceNetworkRulesetsVirtualNetworkRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ignoreMissingVirtualNetworkServiceEndpoint = undefined;
       this._subnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -331,11 +331,11 @@ export class EventhubNamespaceNetworkRulesetsVirtualNetworkRuleOutputReference e
   }
 
   // ignore_missing_virtual_network_service_endpoint - computed: true, optional: true, required: false
-  private _ignoreMissingVirtualNetworkServiceEndpoint?: boolean | cdktf.IResolvable; 
+  private _ignoreMissingVirtualNetworkServiceEndpoint?: boolean | cdktn.IResolvable; 
   public get ignoreMissingVirtualNetworkServiceEndpoint() {
     return this.getBooleanAttribute('ignore_missing_virtual_network_service_endpoint');
   }
-  public set ignoreMissingVirtualNetworkServiceEndpoint(value: boolean | cdktf.IResolvable) {
+  public set ignoreMissingVirtualNetworkServiceEndpoint(value: boolean | cdktn.IResolvable) {
     this._ignoreMissingVirtualNetworkServiceEndpoint = value;
   }
   public resetIgnoreMissingVirtualNetworkServiceEndpoint() {
@@ -363,15 +363,15 @@ export class EventhubNamespaceNetworkRulesetsVirtualNetworkRuleOutputReference e
   }
 }
 
-export class EventhubNamespaceNetworkRulesetsVirtualNetworkRuleList extends cdktf.ComplexList {
-  public internalValue? : EventhubNamespaceNetworkRulesetsVirtualNetworkRule[] | cdktf.IResolvable
+export class EventhubNamespaceNetworkRulesetsVirtualNetworkRuleList extends cdktn.ComplexList {
+  public internalValue? : EventhubNamespaceNetworkRulesetsVirtualNetworkRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -390,68 +390,68 @@ export interface EventhubNamespaceNetworkRulesets {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace#ip_rule EventhubNamespace#ip_rule}
   */
-  readonly ipRule?: EventhubNamespaceNetworkRulesetsIpRule[] | cdktf.IResolvable;
+  readonly ipRule?: EventhubNamespaceNetworkRulesetsIpRule[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace#public_network_access_enabled EventhubNamespace#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace#trusted_service_access_enabled EventhubNamespace#trusted_service_access_enabled}
   */
-  readonly trustedServiceAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly trustedServiceAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace#virtual_network_rule EventhubNamespace#virtual_network_rule}
   */
-  readonly virtualNetworkRule?: EventhubNamespaceNetworkRulesetsVirtualNetworkRule[] | cdktf.IResolvable;
+  readonly virtualNetworkRule?: EventhubNamespaceNetworkRulesetsVirtualNetworkRule[] | cdktn.IResolvable;
 }
 
-export function eventhubNamespaceNetworkRulesetsToTerraform(struct?: EventhubNamespaceNetworkRulesets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventhubNamespaceNetworkRulesetsToTerraform(struct?: EventhubNamespaceNetworkRulesets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_action: struct!.defaultAction === undefined ? null : cdktf.stringToTerraform(struct!.defaultAction),
-    ip_rule: struct!.ipRule === undefined ? null : cdktf.listMapper(eventhubNamespaceNetworkRulesetsIpRuleToTerraform, false)(struct!.ipRule),
-    public_network_access_enabled: struct!.publicNetworkAccessEnabled === undefined ? null : cdktf.booleanToTerraform(struct!.publicNetworkAccessEnabled),
-    trusted_service_access_enabled: struct!.trustedServiceAccessEnabled === undefined ? null : cdktf.booleanToTerraform(struct!.trustedServiceAccessEnabled),
-    virtual_network_rule: struct!.virtualNetworkRule === undefined ? null : cdktf.listMapper(eventhubNamespaceNetworkRulesetsVirtualNetworkRuleToTerraform, false)(struct!.virtualNetworkRule),
+    default_action: struct!.defaultAction === undefined ? null : cdktn.stringToTerraform(struct!.defaultAction),
+    ip_rule: struct!.ipRule === undefined ? null : cdktn.listMapper(eventhubNamespaceNetworkRulesetsIpRuleToTerraform, false)(struct!.ipRule),
+    public_network_access_enabled: struct!.publicNetworkAccessEnabled === undefined ? null : cdktn.booleanToTerraform(struct!.publicNetworkAccessEnabled),
+    trusted_service_access_enabled: struct!.trustedServiceAccessEnabled === undefined ? null : cdktn.booleanToTerraform(struct!.trustedServiceAccessEnabled),
+    virtual_network_rule: struct!.virtualNetworkRule === undefined ? null : cdktn.listMapper(eventhubNamespaceNetworkRulesetsVirtualNetworkRuleToTerraform, false)(struct!.virtualNetworkRule),
   }
 }
 
 
-export function eventhubNamespaceNetworkRulesetsToHclTerraform(struct?: EventhubNamespaceNetworkRulesets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventhubNamespaceNetworkRulesetsToHclTerraform(struct?: EventhubNamespaceNetworkRulesets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_action: {
-      value: struct!.defaultAction === undefined ? null : cdktf.stringToHclTerraform(struct!.defaultAction),
+      value: struct!.defaultAction === undefined ? null : cdktn.stringToHclTerraform(struct!.defaultAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_rule: {
-      value: struct!.ipRule === undefined ? null : cdktf.listMapperHcl(eventhubNamespaceNetworkRulesetsIpRuleToHclTerraform, false)(struct!.ipRule),
+      value: struct!.ipRule === undefined ? null : cdktn.listMapperHcl(eventhubNamespaceNetworkRulesetsIpRuleToHclTerraform, false)(struct!.ipRule),
       isBlock: true,
       type: "list",
       storageClassType: "EventhubNamespaceNetworkRulesetsIpRuleList",
     },
     public_network_access_enabled: {
-      value: struct!.publicNetworkAccessEnabled === undefined ? null : cdktf.booleanToHclTerraform(struct!.publicNetworkAccessEnabled),
+      value: struct!.publicNetworkAccessEnabled === undefined ? null : cdktn.booleanToHclTerraform(struct!.publicNetworkAccessEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     trusted_service_access_enabled: {
-      value: struct!.trustedServiceAccessEnabled === undefined ? null : cdktf.booleanToHclTerraform(struct!.trustedServiceAccessEnabled),
+      value: struct!.trustedServiceAccessEnabled === undefined ? null : cdktn.booleanToHclTerraform(struct!.trustedServiceAccessEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     virtual_network_rule: {
-      value: struct!.virtualNetworkRule === undefined ? null : cdktf.listMapperHcl(eventhubNamespaceNetworkRulesetsVirtualNetworkRuleToHclTerraform, false)(struct!.virtualNetworkRule),
+      value: struct!.virtualNetworkRule === undefined ? null : cdktn.listMapperHcl(eventhubNamespaceNetworkRulesetsVirtualNetworkRuleToHclTerraform, false)(struct!.virtualNetworkRule),
       isBlock: true,
       type: "set",
       storageClassType: "EventhubNamespaceNetworkRulesetsVirtualNetworkRuleList",
@@ -462,9 +462,9 @@ export function eventhubNamespaceNetworkRulesetsToHclTerraform(struct?: Eventhub
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventhubNamespaceNetworkRulesetsOutputReference extends cdktf.ComplexObject {
+export class EventhubNamespaceNetworkRulesetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -472,11 +472,11 @@ export class EventhubNamespaceNetworkRulesetsOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventhubNamespaceNetworkRulesets | cdktf.IResolvable | undefined {
+  public get internalValue(): EventhubNamespaceNetworkRulesets | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -505,7 +505,7 @@ export class EventhubNamespaceNetworkRulesetsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventhubNamespaceNetworkRulesets | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventhubNamespaceNetworkRulesets | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -515,7 +515,7 @@ export class EventhubNamespaceNetworkRulesetsOutputReference extends cdktf.Compl
       this._trustedServiceAccessEnabled = undefined;
       this._virtualNetworkRule.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -551,7 +551,7 @@ export class EventhubNamespaceNetworkRulesetsOutputReference extends cdktf.Compl
   public get ipRule() {
     return this._ipRule;
   }
-  public putIpRule(value: EventhubNamespaceNetworkRulesetsIpRule[] | cdktf.IResolvable) {
+  public putIpRule(value: EventhubNamespaceNetworkRulesetsIpRule[] | cdktn.IResolvable) {
     this._ipRule.internalValue = value;
   }
   public resetIpRule() {
@@ -563,11 +563,11 @@ export class EventhubNamespaceNetworkRulesetsOutputReference extends cdktf.Compl
   }
 
   // public_network_access_enabled - computed: true, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -579,11 +579,11 @@ export class EventhubNamespaceNetworkRulesetsOutputReference extends cdktf.Compl
   }
 
   // trusted_service_access_enabled - computed: true, optional: true, required: false
-  private _trustedServiceAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _trustedServiceAccessEnabled?: boolean | cdktn.IResolvable; 
   public get trustedServiceAccessEnabled() {
     return this.getBooleanAttribute('trusted_service_access_enabled');
   }
-  public set trustedServiceAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set trustedServiceAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._trustedServiceAccessEnabled = value;
   }
   public resetTrustedServiceAccessEnabled() {
@@ -599,7 +599,7 @@ export class EventhubNamespaceNetworkRulesetsOutputReference extends cdktf.Compl
   public get virtualNetworkRule() {
     return this._virtualNetworkRule;
   }
-  public putVirtualNetworkRule(value: EventhubNamespaceNetworkRulesetsVirtualNetworkRule[] | cdktf.IResolvable) {
+  public putVirtualNetworkRule(value: EventhubNamespaceNetworkRulesetsVirtualNetworkRule[] | cdktn.IResolvable) {
     this._virtualNetworkRule.internalValue = value;
   }
   public resetVirtualNetworkRule() {
@@ -611,15 +611,15 @@ export class EventhubNamespaceNetworkRulesetsOutputReference extends cdktf.Compl
   }
 }
 
-export class EventhubNamespaceNetworkRulesetsList extends cdktf.ComplexList {
-  public internalValue? : EventhubNamespaceNetworkRulesets[] | cdktf.IResolvable
+export class EventhubNamespaceNetworkRulesetsList extends cdktn.ComplexList {
+  public internalValue? : EventhubNamespaceNetworkRulesets[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -642,31 +642,31 @@ export interface EventhubNamespaceIdentity {
 }
 
 export function eventhubNamespaceIdentityToTerraform(struct?: EventhubNamespaceIdentityOutputReference | EventhubNamespaceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function eventhubNamespaceIdentityToHclTerraform(struct?: EventhubNamespaceIdentityOutputReference | EventhubNamespaceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -677,14 +677,14 @@ export function eventhubNamespaceIdentityToHclTerraform(struct?: EventhubNamespa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventhubNamespaceIdentityOutputReference extends cdktf.ComplexObject {
+export class EventhubNamespaceIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -718,7 +718,7 @@ export class EventhubNamespaceIdentityOutputReference extends cdktf.ComplexObjec
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -773,46 +773,46 @@ export interface EventhubNamespaceTimeouts {
   readonly update?: string;
 }
 
-export function eventhubNamespaceTimeoutsToTerraform(struct?: EventhubNamespaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventhubNamespaceTimeoutsToTerraform(struct?: EventhubNamespaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function eventhubNamespaceTimeoutsToHclTerraform(struct?: EventhubNamespaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventhubNamespaceTimeoutsToHclTerraform(struct?: EventhubNamespaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -823,19 +823,19 @@ export function eventhubNamespaceTimeoutsToHclTerraform(struct?: EventhubNamespa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventhubNamespaceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EventhubNamespaceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EventhubNamespaceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EventhubNamespaceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -860,7 +860,7 @@ export class EventhubNamespaceTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventhubNamespaceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventhubNamespaceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -869,7 +869,7 @@ export class EventhubNamespaceTimeoutsOutputReference extends cdktf.ComplexObjec
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -951,7 +951,7 @@ export class EventhubNamespaceTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace azurerm_eventhub_namespace}
 */
-export class EventhubNamespace extends cdktf.TerraformResource {
+export class EventhubNamespace extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -962,14 +962,14 @@ export class EventhubNamespace extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EventhubNamespace resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EventhubNamespace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventhubNamespace to import
   * @param importFromId The id of the existing EventhubNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventhubNamespace to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_eventhub_namespace", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_eventhub_namespace", importId: importFromId, provider });
       }
 
   // ===========
@@ -1022,11 +1022,11 @@ export class EventhubNamespace extends cdktf.TerraformResource {
   // ==========
 
   // auto_inflate_enabled - computed: false, optional: true, required: false
-  private _autoInflateEnabled?: boolean | cdktf.IResolvable; 
+  private _autoInflateEnabled?: boolean | cdktn.IResolvable; 
   public get autoInflateEnabled() {
     return this.getBooleanAttribute('auto_inflate_enabled');
   }
-  public set autoInflateEnabled(value: boolean | cdktf.IResolvable) {
+  public set autoInflateEnabled(value: boolean | cdktn.IResolvable) {
     this._autoInflateEnabled = value;
   }
   public resetAutoInflateEnabled() {
@@ -1116,11 +1116,11 @@ export class EventhubNamespace extends cdktf.TerraformResource {
   }
 
   // local_authentication_enabled - computed: false, optional: true, required: false
-  private _localAuthenticationEnabled?: boolean | cdktf.IResolvable; 
+  private _localAuthenticationEnabled?: boolean | cdktn.IResolvable; 
   public get localAuthenticationEnabled() {
     return this.getBooleanAttribute('local_authentication_enabled');
   }
-  public set localAuthenticationEnabled(value: boolean | cdktf.IResolvable) {
+  public set localAuthenticationEnabled(value: boolean | cdktn.IResolvable) {
     this._localAuthenticationEnabled = value;
   }
   public resetLocalAuthenticationEnabled() {
@@ -1194,7 +1194,7 @@ export class EventhubNamespace extends cdktf.TerraformResource {
   public get networkRulesets() {
     return this._networkRulesets;
   }
-  public putNetworkRulesets(value: EventhubNamespaceNetworkRulesets[] | cdktf.IResolvable) {
+  public putNetworkRulesets(value: EventhubNamespaceNetworkRulesets[] | cdktn.IResolvable) {
     this._networkRulesets.internalValue = value;
   }
   public resetNetworkRulesets() {
@@ -1206,11 +1206,11 @@ export class EventhubNamespace extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -1301,20 +1301,20 @@ export class EventhubNamespace extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_inflate_enabled: cdktf.booleanToTerraform(this._autoInflateEnabled),
-      capacity: cdktf.numberToTerraform(this._capacity),
-      dedicated_cluster_id: cdktf.stringToTerraform(this._dedicatedClusterId),
-      id: cdktf.stringToTerraform(this._id),
-      local_authentication_enabled: cdktf.booleanToTerraform(this._localAuthenticationEnabled),
-      location: cdktf.stringToTerraform(this._location),
-      maximum_throughput_units: cdktf.numberToTerraform(this._maximumThroughputUnits),
-      minimum_tls_version: cdktf.stringToTerraform(this._minimumTlsVersion),
-      name: cdktf.stringToTerraform(this._name),
-      network_rulesets: cdktf.listMapper(eventhubNamespaceNetworkRulesetsToTerraform, false)(this._networkRulesets.internalValue),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku: cdktf.stringToTerraform(this._sku),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      auto_inflate_enabled: cdktn.booleanToTerraform(this._autoInflateEnabled),
+      capacity: cdktn.numberToTerraform(this._capacity),
+      dedicated_cluster_id: cdktn.stringToTerraform(this._dedicatedClusterId),
+      id: cdktn.stringToTerraform(this._id),
+      local_authentication_enabled: cdktn.booleanToTerraform(this._localAuthenticationEnabled),
+      location: cdktn.stringToTerraform(this._location),
+      maximum_throughput_units: cdktn.numberToTerraform(this._maximumThroughputUnits),
+      minimum_tls_version: cdktn.stringToTerraform(this._minimumTlsVersion),
+      name: cdktn.stringToTerraform(this._name),
+      network_rulesets: cdktn.listMapper(eventhubNamespaceNetworkRulesetsToTerraform, false)(this._networkRulesets.internalValue),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku: cdktn.stringToTerraform(this._sku),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       identity: eventhubNamespaceIdentityToTerraform(this._identity.internalValue),
       timeouts: eventhubNamespaceTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1323,85 +1323,85 @@ export class EventhubNamespace extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_inflate_enabled: {
-        value: cdktf.booleanToHclTerraform(this._autoInflateEnabled),
+        value: cdktn.booleanToHclTerraform(this._autoInflateEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       capacity: {
-        value: cdktf.numberToHclTerraform(this._capacity),
+        value: cdktn.numberToHclTerraform(this._capacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       dedicated_cluster_id: {
-        value: cdktf.stringToHclTerraform(this._dedicatedClusterId),
+        value: cdktn.stringToHclTerraform(this._dedicatedClusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local_authentication_enabled: {
-        value: cdktf.booleanToHclTerraform(this._localAuthenticationEnabled),
+        value: cdktn.booleanToHclTerraform(this._localAuthenticationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       maximum_throughput_units: {
-        value: cdktf.numberToHclTerraform(this._maximumThroughputUnits),
+        value: cdktn.numberToHclTerraform(this._maximumThroughputUnits),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       minimum_tls_version: {
-        value: cdktf.stringToHclTerraform(this._minimumTlsVersion),
+        value: cdktn.stringToHclTerraform(this._minimumTlsVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_rulesets: {
-        value: cdktf.listMapperHcl(eventhubNamespaceNetworkRulesetsToHclTerraform, false)(this._networkRulesets.internalValue),
+        value: cdktn.listMapperHcl(eventhubNamespaceNetworkRulesetsToHclTerraform, false)(this._networkRulesets.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EventhubNamespaceNetworkRulesetsList",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku: {
-        value: cdktf.stringToHclTerraform(this._sku),
+        value: cdktn.stringToHclTerraform(this._sku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

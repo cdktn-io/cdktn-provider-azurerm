@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PrivateDnsResolverForwardingRuleConfig extends cdktf.TerraformMetaArguments {
+export interface PrivateDnsResolverForwardingRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_resolver_forwarding_rule#dns_forwarding_ruleset_id PrivateDnsResolverForwardingRule#dns_forwarding_ruleset_id}
   */
@@ -23,7 +23,7 @@ export interface PrivateDnsResolverForwardingRuleConfig extends cdktf.TerraformM
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_resolver_forwarding_rule#enabled PrivateDnsResolverForwardingRule#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_resolver_forwarding_rule#id PrivateDnsResolverForwardingRule#id}
   *
@@ -44,7 +44,7 @@ export interface PrivateDnsResolverForwardingRuleConfig extends cdktf.TerraformM
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_resolver_forwarding_rule#target_dns_servers PrivateDnsResolverForwardingRule#target_dns_servers}
   */
-  readonly targetDnsServers: PrivateDnsResolverForwardingRuleTargetDnsServers[] | cdktf.IResolvable;
+  readonly targetDnsServers: PrivateDnsResolverForwardingRuleTargetDnsServers[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -63,32 +63,32 @@ export interface PrivateDnsResolverForwardingRuleTargetDnsServers {
   readonly port?: number;
 }
 
-export function privateDnsResolverForwardingRuleTargetDnsServersToTerraform(struct?: PrivateDnsResolverForwardingRuleTargetDnsServers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateDnsResolverForwardingRuleTargetDnsServersToTerraform(struct?: PrivateDnsResolverForwardingRuleTargetDnsServers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
-    port: cdktf.numberToTerraform(struct!.port),
+    ip_address: cdktn.stringToTerraform(struct!.ipAddress),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
-export function privateDnsResolverForwardingRuleTargetDnsServersToHclTerraform(struct?: PrivateDnsResolverForwardingRuleTargetDnsServers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateDnsResolverForwardingRuleTargetDnsServersToHclTerraform(struct?: PrivateDnsResolverForwardingRuleTargetDnsServers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      value: cdktn.stringToHclTerraform(struct!.ipAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -99,9 +99,9 @@ export function privateDnsResolverForwardingRuleTargetDnsServersToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivateDnsResolverForwardingRuleTargetDnsServersOutputReference extends cdktf.ComplexObject {
+export class PrivateDnsResolverForwardingRuleTargetDnsServersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -109,11 +109,11 @@ export class PrivateDnsResolverForwardingRuleTargetDnsServersOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrivateDnsResolverForwardingRuleTargetDnsServers | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivateDnsResolverForwardingRuleTargetDnsServers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -130,14 +130,14 @@ export class PrivateDnsResolverForwardingRuleTargetDnsServersOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivateDnsResolverForwardingRuleTargetDnsServers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivateDnsResolverForwardingRuleTargetDnsServers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ipAddress = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -179,15 +179,15 @@ export class PrivateDnsResolverForwardingRuleTargetDnsServersOutputReference ext
   }
 }
 
-export class PrivateDnsResolverForwardingRuleTargetDnsServersList extends cdktf.ComplexList {
-  public internalValue? : PrivateDnsResolverForwardingRuleTargetDnsServers[] | cdktf.IResolvable
+export class PrivateDnsResolverForwardingRuleTargetDnsServersList extends cdktn.ComplexList {
+  public internalValue? : PrivateDnsResolverForwardingRuleTargetDnsServers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -217,46 +217,46 @@ export interface PrivateDnsResolverForwardingRuleTimeouts {
   readonly update?: string;
 }
 
-export function privateDnsResolverForwardingRuleTimeoutsToTerraform(struct?: PrivateDnsResolverForwardingRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateDnsResolverForwardingRuleTimeoutsToTerraform(struct?: PrivateDnsResolverForwardingRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function privateDnsResolverForwardingRuleTimeoutsToHclTerraform(struct?: PrivateDnsResolverForwardingRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateDnsResolverForwardingRuleTimeoutsToHclTerraform(struct?: PrivateDnsResolverForwardingRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -267,19 +267,19 @@ export function privateDnsResolverForwardingRuleTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivateDnsResolverForwardingRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PrivateDnsResolverForwardingRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PrivateDnsResolverForwardingRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivateDnsResolverForwardingRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -304,7 +304,7 @@ export class PrivateDnsResolverForwardingRuleTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivateDnsResolverForwardingRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivateDnsResolverForwardingRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -313,7 +313,7 @@ export class PrivateDnsResolverForwardingRuleTimeoutsOutputReference extends cdk
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -395,7 +395,7 @@ export class PrivateDnsResolverForwardingRuleTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_resolver_forwarding_rule azurerm_private_dns_resolver_forwarding_rule}
 */
-export class PrivateDnsResolverForwardingRule extends cdktf.TerraformResource {
+export class PrivateDnsResolverForwardingRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -406,14 +406,14 @@ export class PrivateDnsResolverForwardingRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PrivateDnsResolverForwardingRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PrivateDnsResolverForwardingRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrivateDnsResolverForwardingRule to import
   * @param importFromId The id of the existing PrivateDnsResolverForwardingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_resolver_forwarding_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrivateDnsResolverForwardingRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_private_dns_resolver_forwarding_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_private_dns_resolver_forwarding_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -484,11 +484,11 @@ export class PrivateDnsResolverForwardingRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -549,7 +549,7 @@ export class PrivateDnsResolverForwardingRule extends cdktf.TerraformResource {
   public get targetDnsServers() {
     return this._targetDnsServers;
   }
-  public putTargetDnsServers(value: PrivateDnsResolverForwardingRuleTargetDnsServers[] | cdktf.IResolvable) {
+  public putTargetDnsServers(value: PrivateDnsResolverForwardingRuleTargetDnsServers[] | cdktn.IResolvable) {
     this._targetDnsServers.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -579,13 +579,13 @@ export class PrivateDnsResolverForwardingRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dns_forwarding_ruleset_id: cdktf.stringToTerraform(this._dnsForwardingRulesetId),
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
-      name: cdktf.stringToTerraform(this._name),
-      target_dns_servers: cdktf.listMapper(privateDnsResolverForwardingRuleTargetDnsServersToTerraform, true)(this._targetDnsServers.internalValue),
+      dns_forwarding_ruleset_id: cdktn.stringToTerraform(this._dnsForwardingRulesetId),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._metadata),
+      name: cdktn.stringToTerraform(this._name),
+      target_dns_servers: cdktn.listMapper(privateDnsResolverForwardingRuleTargetDnsServersToTerraform, true)(this._targetDnsServers.internalValue),
       timeouts: privateDnsResolverForwardingRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -593,43 +593,43 @@ export class PrivateDnsResolverForwardingRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       dns_forwarding_ruleset_id: {
-        value: cdktf.stringToHclTerraform(this._dnsForwardingRulesetId),
+        value: cdktn.stringToHclTerraform(this._dnsForwardingRulesetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._metadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._metadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_dns_servers: {
-        value: cdktf.listMapperHcl(privateDnsResolverForwardingRuleTargetDnsServersToHclTerraform, true)(this._targetDnsServers.internalValue),
+        value: cdktn.listMapperHcl(privateDnsResolverForwardingRuleTargetDnsServersToHclTerraform, true)(this._targetDnsServers.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "PrivateDnsResolverForwardingRuleTargetDnsServersList",

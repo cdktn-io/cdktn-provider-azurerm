@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ManagedDiskConfig extends cdktf.TerraformMetaArguments {
+export interface ManagedDiskConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_disk#create_option ManagedDisk#create_option}
   */
@@ -90,11 +90,11 @@ export interface ManagedDiskConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_disk#on_demand_bursting_enabled ManagedDisk#on_demand_bursting_enabled}
   */
-  readonly onDemandBurstingEnabled?: boolean | cdktf.IResolvable;
+  readonly onDemandBurstingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_disk#optimized_frequent_attach_enabled ManagedDisk#optimized_frequent_attach_enabled}
   */
-  readonly optimizedFrequentAttachEnabled?: boolean | cdktf.IResolvable;
+  readonly optimizedFrequentAttachEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_disk#os_type ManagedDisk#os_type}
   */
@@ -102,11 +102,11 @@ export interface ManagedDiskConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_disk#performance_plus_enabled ManagedDisk#performance_plus_enabled}
   */
-  readonly performancePlusEnabled?: boolean | cdktf.IResolvable;
+  readonly performancePlusEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_disk#public_network_access_enabled ManagedDisk#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_disk#resource_group_name ManagedDisk#resource_group_name}
   */
@@ -146,7 +146,7 @@ export interface ManagedDiskConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_disk#trusted_launch_enabled ManagedDisk#trusted_launch_enabled}
   */
-  readonly trustedLaunchEnabled?: boolean | cdktf.IResolvable;
+  readonly trustedLaunchEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_disk#upload_size_bytes ManagedDisk#upload_size_bytes}
   */
@@ -180,31 +180,31 @@ export interface ManagedDiskEncryptionSettingsDiskEncryptionKey {
 }
 
 export function managedDiskEncryptionSettingsDiskEncryptionKeyToTerraform(struct?: ManagedDiskEncryptionSettingsDiskEncryptionKeyOutputReference | ManagedDiskEncryptionSettingsDiskEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_url: cdktf.stringToTerraform(struct!.secretUrl),
-    source_vault_id: cdktf.stringToTerraform(struct!.sourceVaultId),
+    secret_url: cdktn.stringToTerraform(struct!.secretUrl),
+    source_vault_id: cdktn.stringToTerraform(struct!.sourceVaultId),
   }
 }
 
 
 export function managedDiskEncryptionSettingsDiskEncryptionKeyToHclTerraform(struct?: ManagedDiskEncryptionSettingsDiskEncryptionKeyOutputReference | ManagedDiskEncryptionSettingsDiskEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_url: {
-      value: cdktf.stringToHclTerraform(struct!.secretUrl),
+      value: cdktn.stringToHclTerraform(struct!.secretUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.sourceVaultId),
+      value: cdktn.stringToHclTerraform(struct!.sourceVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -215,14 +215,14 @@ export function managedDiskEncryptionSettingsDiskEncryptionKeyToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedDiskEncryptionSettingsDiskEncryptionKeyOutputReference extends cdktf.ComplexObject {
+export class ManagedDiskEncryptionSettingsDiskEncryptionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -291,31 +291,31 @@ export interface ManagedDiskEncryptionSettingsKeyEncryptionKey {
 }
 
 export function managedDiskEncryptionSettingsKeyEncryptionKeyToTerraform(struct?: ManagedDiskEncryptionSettingsKeyEncryptionKeyOutputReference | ManagedDiskEncryptionSettingsKeyEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_url: cdktf.stringToTerraform(struct!.keyUrl),
-    source_vault_id: cdktf.stringToTerraform(struct!.sourceVaultId),
+    key_url: cdktn.stringToTerraform(struct!.keyUrl),
+    source_vault_id: cdktn.stringToTerraform(struct!.sourceVaultId),
   }
 }
 
 
 export function managedDiskEncryptionSettingsKeyEncryptionKeyToHclTerraform(struct?: ManagedDiskEncryptionSettingsKeyEncryptionKeyOutputReference | ManagedDiskEncryptionSettingsKeyEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_url: {
-      value: cdktf.stringToHclTerraform(struct!.keyUrl),
+      value: cdktn.stringToHclTerraform(struct!.keyUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.sourceVaultId),
+      value: cdktn.stringToHclTerraform(struct!.sourceVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -326,14 +326,14 @@ export function managedDiskEncryptionSettingsKeyEncryptionKeyToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedDiskEncryptionSettingsKeyEncryptionKeyOutputReference extends cdktf.ComplexObject {
+export class ManagedDiskEncryptionSettingsKeyEncryptionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -406,8 +406,8 @@ export interface ManagedDiskEncryptionSettings {
 }
 
 export function managedDiskEncryptionSettingsToTerraform(struct?: ManagedDiskEncryptionSettingsOutputReference | ManagedDiskEncryptionSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -418,8 +418,8 @@ export function managedDiskEncryptionSettingsToTerraform(struct?: ManagedDiskEnc
 
 
 export function managedDiskEncryptionSettingsToHclTerraform(struct?: ManagedDiskEncryptionSettingsOutputReference | ManagedDiskEncryptionSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -441,14 +441,14 @@ export function managedDiskEncryptionSettingsToHclTerraform(struct?: ManagedDisk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedDiskEncryptionSettingsOutputReference extends cdktf.ComplexObject {
+export class ManagedDiskEncryptionSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -527,46 +527,46 @@ export interface ManagedDiskTimeouts {
   readonly update?: string;
 }
 
-export function managedDiskTimeoutsToTerraform(struct?: ManagedDiskTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedDiskTimeoutsToTerraform(struct?: ManagedDiskTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function managedDiskTimeoutsToHclTerraform(struct?: ManagedDiskTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedDiskTimeoutsToHclTerraform(struct?: ManagedDiskTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -577,19 +577,19 @@ export function managedDiskTimeoutsToHclTerraform(struct?: ManagedDiskTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedDiskTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ManagedDiskTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ManagedDiskTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ManagedDiskTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -614,7 +614,7 @@ export class ManagedDiskTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ManagedDiskTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ManagedDiskTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -623,7 +623,7 @@ export class ManagedDiskTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -705,7 +705,7 @@ export class ManagedDiskTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_disk azurerm_managed_disk}
 */
-export class ManagedDisk extends cdktf.TerraformResource {
+export class ManagedDisk extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -716,14 +716,14 @@ export class ManagedDisk extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ManagedDisk resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ManagedDisk resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedDisk to import
   * @param importFromId The id of the existing ManagedDisk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_disk#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedDisk to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_managed_disk", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_managed_disk", importId: importFromId, provider });
       }
 
   // ===========
@@ -1076,11 +1076,11 @@ export class ManagedDisk extends cdktf.TerraformResource {
   }
 
   // on_demand_bursting_enabled - computed: false, optional: true, required: false
-  private _onDemandBurstingEnabled?: boolean | cdktf.IResolvable; 
+  private _onDemandBurstingEnabled?: boolean | cdktn.IResolvable; 
   public get onDemandBurstingEnabled() {
     return this.getBooleanAttribute('on_demand_bursting_enabled');
   }
-  public set onDemandBurstingEnabled(value: boolean | cdktf.IResolvable) {
+  public set onDemandBurstingEnabled(value: boolean | cdktn.IResolvable) {
     this._onDemandBurstingEnabled = value;
   }
   public resetOnDemandBurstingEnabled() {
@@ -1092,11 +1092,11 @@ export class ManagedDisk extends cdktf.TerraformResource {
   }
 
   // optimized_frequent_attach_enabled - computed: false, optional: true, required: false
-  private _optimizedFrequentAttachEnabled?: boolean | cdktf.IResolvable; 
+  private _optimizedFrequentAttachEnabled?: boolean | cdktn.IResolvable; 
   public get optimizedFrequentAttachEnabled() {
     return this.getBooleanAttribute('optimized_frequent_attach_enabled');
   }
-  public set optimizedFrequentAttachEnabled(value: boolean | cdktf.IResolvable) {
+  public set optimizedFrequentAttachEnabled(value: boolean | cdktn.IResolvable) {
     this._optimizedFrequentAttachEnabled = value;
   }
   public resetOptimizedFrequentAttachEnabled() {
@@ -1124,11 +1124,11 @@ export class ManagedDisk extends cdktf.TerraformResource {
   }
 
   // performance_plus_enabled - computed: false, optional: true, required: false
-  private _performancePlusEnabled?: boolean | cdktf.IResolvable; 
+  private _performancePlusEnabled?: boolean | cdktn.IResolvable; 
   public get performancePlusEnabled() {
     return this.getBooleanAttribute('performance_plus_enabled');
   }
-  public set performancePlusEnabled(value: boolean | cdktf.IResolvable) {
+  public set performancePlusEnabled(value: boolean | cdktn.IResolvable) {
     this._performancePlusEnabled = value;
   }
   public resetPerformancePlusEnabled() {
@@ -1140,11 +1140,11 @@ export class ManagedDisk extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -1294,11 +1294,11 @@ export class ManagedDisk extends cdktf.TerraformResource {
   }
 
   // trusted_launch_enabled - computed: false, optional: true, required: false
-  private _trustedLaunchEnabled?: boolean | cdktf.IResolvable; 
+  private _trustedLaunchEnabled?: boolean | cdktn.IResolvable; 
   public get trustedLaunchEnabled() {
     return this.getBooleanAttribute('trusted_launch_enabled');
   }
-  public set trustedLaunchEnabled(value: boolean | cdktf.IResolvable) {
+  public set trustedLaunchEnabled(value: boolean | cdktn.IResolvable) {
     this._trustedLaunchEnabled = value;
   }
   public resetTrustedLaunchEnabled() {
@@ -1379,41 +1379,41 @@ export class ManagedDisk extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      create_option: cdktf.stringToTerraform(this._createOption),
-      disk_access_id: cdktf.stringToTerraform(this._diskAccessId),
-      disk_encryption_set_id: cdktf.stringToTerraform(this._diskEncryptionSetId),
-      disk_iops_read_only: cdktf.numberToTerraform(this._diskIopsReadOnly),
-      disk_iops_read_write: cdktf.numberToTerraform(this._diskIopsReadWrite),
-      disk_mbps_read_only: cdktf.numberToTerraform(this._diskMbpsReadOnly),
-      disk_mbps_read_write: cdktf.numberToTerraform(this._diskMbpsReadWrite),
-      disk_size_gb: cdktf.numberToTerraform(this._diskSizeGb),
-      edge_zone: cdktf.stringToTerraform(this._edgeZone),
-      gallery_image_reference_id: cdktf.stringToTerraform(this._galleryImageReferenceId),
-      hyper_v_generation: cdktf.stringToTerraform(this._hyperVGeneration),
-      id: cdktf.stringToTerraform(this._id),
-      image_reference_id: cdktf.stringToTerraform(this._imageReferenceId),
-      location: cdktf.stringToTerraform(this._location),
-      logical_sector_size: cdktf.numberToTerraform(this._logicalSectorSize),
-      max_shares: cdktf.numberToTerraform(this._maxShares),
-      name: cdktf.stringToTerraform(this._name),
-      network_access_policy: cdktf.stringToTerraform(this._networkAccessPolicy),
-      on_demand_bursting_enabled: cdktf.booleanToTerraform(this._onDemandBurstingEnabled),
-      optimized_frequent_attach_enabled: cdktf.booleanToTerraform(this._optimizedFrequentAttachEnabled),
-      os_type: cdktf.stringToTerraform(this._osType),
-      performance_plus_enabled: cdktf.booleanToTerraform(this._performancePlusEnabled),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      secure_vm_disk_encryption_set_id: cdktf.stringToTerraform(this._secureVmDiskEncryptionSetId),
-      security_type: cdktf.stringToTerraform(this._securityType),
-      source_resource_id: cdktf.stringToTerraform(this._sourceResourceId),
-      source_uri: cdktf.stringToTerraform(this._sourceUri),
-      storage_account_id: cdktf.stringToTerraform(this._storageAccountId),
-      storage_account_type: cdktf.stringToTerraform(this._storageAccountType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tier: cdktf.stringToTerraform(this._tier),
-      trusted_launch_enabled: cdktf.booleanToTerraform(this._trustedLaunchEnabled),
-      upload_size_bytes: cdktf.numberToTerraform(this._uploadSizeBytes),
-      zone: cdktf.stringToTerraform(this._zone),
+      create_option: cdktn.stringToTerraform(this._createOption),
+      disk_access_id: cdktn.stringToTerraform(this._diskAccessId),
+      disk_encryption_set_id: cdktn.stringToTerraform(this._diskEncryptionSetId),
+      disk_iops_read_only: cdktn.numberToTerraform(this._diskIopsReadOnly),
+      disk_iops_read_write: cdktn.numberToTerraform(this._diskIopsReadWrite),
+      disk_mbps_read_only: cdktn.numberToTerraform(this._diskMbpsReadOnly),
+      disk_mbps_read_write: cdktn.numberToTerraform(this._diskMbpsReadWrite),
+      disk_size_gb: cdktn.numberToTerraform(this._diskSizeGb),
+      edge_zone: cdktn.stringToTerraform(this._edgeZone),
+      gallery_image_reference_id: cdktn.stringToTerraform(this._galleryImageReferenceId),
+      hyper_v_generation: cdktn.stringToTerraform(this._hyperVGeneration),
+      id: cdktn.stringToTerraform(this._id),
+      image_reference_id: cdktn.stringToTerraform(this._imageReferenceId),
+      location: cdktn.stringToTerraform(this._location),
+      logical_sector_size: cdktn.numberToTerraform(this._logicalSectorSize),
+      max_shares: cdktn.numberToTerraform(this._maxShares),
+      name: cdktn.stringToTerraform(this._name),
+      network_access_policy: cdktn.stringToTerraform(this._networkAccessPolicy),
+      on_demand_bursting_enabled: cdktn.booleanToTerraform(this._onDemandBurstingEnabled),
+      optimized_frequent_attach_enabled: cdktn.booleanToTerraform(this._optimizedFrequentAttachEnabled),
+      os_type: cdktn.stringToTerraform(this._osType),
+      performance_plus_enabled: cdktn.booleanToTerraform(this._performancePlusEnabled),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      secure_vm_disk_encryption_set_id: cdktn.stringToTerraform(this._secureVmDiskEncryptionSetId),
+      security_type: cdktn.stringToTerraform(this._securityType),
+      source_resource_id: cdktn.stringToTerraform(this._sourceResourceId),
+      source_uri: cdktn.stringToTerraform(this._sourceUri),
+      storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
+      storage_account_type: cdktn.stringToTerraform(this._storageAccountType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tier: cdktn.stringToTerraform(this._tier),
+      trusted_launch_enabled: cdktn.booleanToTerraform(this._trustedLaunchEnabled),
+      upload_size_bytes: cdktn.numberToTerraform(this._uploadSizeBytes),
+      zone: cdktn.stringToTerraform(this._zone),
       encryption_settings: managedDiskEncryptionSettingsToTerraform(this._encryptionSettings.internalValue),
       timeouts: managedDiskTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1422,211 +1422,211 @@ export class ManagedDisk extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       create_option: {
-        value: cdktf.stringToHclTerraform(this._createOption),
+        value: cdktn.stringToHclTerraform(this._createOption),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disk_access_id: {
-        value: cdktf.stringToHclTerraform(this._diskAccessId),
+        value: cdktn.stringToHclTerraform(this._diskAccessId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disk_encryption_set_id: {
-        value: cdktf.stringToHclTerraform(this._diskEncryptionSetId),
+        value: cdktn.stringToHclTerraform(this._diskEncryptionSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disk_iops_read_only: {
-        value: cdktf.numberToHclTerraform(this._diskIopsReadOnly),
+        value: cdktn.numberToHclTerraform(this._diskIopsReadOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       disk_iops_read_write: {
-        value: cdktf.numberToHclTerraform(this._diskIopsReadWrite),
+        value: cdktn.numberToHclTerraform(this._diskIopsReadWrite),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       disk_mbps_read_only: {
-        value: cdktf.numberToHclTerraform(this._diskMbpsReadOnly),
+        value: cdktn.numberToHclTerraform(this._diskMbpsReadOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       disk_mbps_read_write: {
-        value: cdktf.numberToHclTerraform(this._diskMbpsReadWrite),
+        value: cdktn.numberToHclTerraform(this._diskMbpsReadWrite),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       disk_size_gb: {
-        value: cdktf.numberToHclTerraform(this._diskSizeGb),
+        value: cdktn.numberToHclTerraform(this._diskSizeGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       edge_zone: {
-        value: cdktf.stringToHclTerraform(this._edgeZone),
+        value: cdktn.stringToHclTerraform(this._edgeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gallery_image_reference_id: {
-        value: cdktf.stringToHclTerraform(this._galleryImageReferenceId),
+        value: cdktn.stringToHclTerraform(this._galleryImageReferenceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hyper_v_generation: {
-        value: cdktf.stringToHclTerraform(this._hyperVGeneration),
+        value: cdktn.stringToHclTerraform(this._hyperVGeneration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_reference_id: {
-        value: cdktf.stringToHclTerraform(this._imageReferenceId),
+        value: cdktn.stringToHclTerraform(this._imageReferenceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       logical_sector_size: {
-        value: cdktf.numberToHclTerraform(this._logicalSectorSize),
+        value: cdktn.numberToHclTerraform(this._logicalSectorSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_shares: {
-        value: cdktf.numberToHclTerraform(this._maxShares),
+        value: cdktn.numberToHclTerraform(this._maxShares),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_access_policy: {
-        value: cdktf.stringToHclTerraform(this._networkAccessPolicy),
+        value: cdktn.stringToHclTerraform(this._networkAccessPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       on_demand_bursting_enabled: {
-        value: cdktf.booleanToHclTerraform(this._onDemandBurstingEnabled),
+        value: cdktn.booleanToHclTerraform(this._onDemandBurstingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       optimized_frequent_attach_enabled: {
-        value: cdktf.booleanToHclTerraform(this._optimizedFrequentAttachEnabled),
+        value: cdktn.booleanToHclTerraform(this._optimizedFrequentAttachEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       os_type: {
-        value: cdktf.stringToHclTerraform(this._osType),
+        value: cdktn.stringToHclTerraform(this._osType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       performance_plus_enabled: {
-        value: cdktf.booleanToHclTerraform(this._performancePlusEnabled),
+        value: cdktn.booleanToHclTerraform(this._performancePlusEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secure_vm_disk_encryption_set_id: {
-        value: cdktf.stringToHclTerraform(this._secureVmDiskEncryptionSetId),
+        value: cdktn.stringToHclTerraform(this._secureVmDiskEncryptionSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_type: {
-        value: cdktf.stringToHclTerraform(this._securityType),
+        value: cdktn.stringToHclTerraform(this._securityType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_resource_id: {
-        value: cdktf.stringToHclTerraform(this._sourceResourceId),
+        value: cdktn.stringToHclTerraform(this._sourceResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_uri: {
-        value: cdktf.stringToHclTerraform(this._sourceUri),
+        value: cdktn.stringToHclTerraform(this._sourceUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountId),
+        value: cdktn.stringToHclTerraform(this._storageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_type: {
-        value: cdktf.stringToHclTerraform(this._storageAccountType),
+        value: cdktn.stringToHclTerraform(this._storageAccountType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tier: {
-        value: cdktf.stringToHclTerraform(this._tier),
+        value: cdktn.stringToHclTerraform(this._tier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trusted_launch_enabled: {
-        value: cdktf.booleanToHclTerraform(this._trustedLaunchEnabled),
+        value: cdktn.booleanToHclTerraform(this._trustedLaunchEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       upload_size_bytes: {
-        value: cdktf.numberToHclTerraform(this._uploadSizeBytes),
+        value: cdktn.numberToHclTerraform(this._uploadSizeBytes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

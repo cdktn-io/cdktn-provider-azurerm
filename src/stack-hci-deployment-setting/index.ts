@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StackHciDeploymentSettingConfig extends cdktf.TerraformMetaArguments {
+export interface StackHciDeploymentSettingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#arc_resource_ids StackHciDeploymentSetting#arc_resource_ids}
   */
@@ -36,7 +36,7 @@ export interface StackHciDeploymentSettingConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#scale_unit StackHciDeploymentSetting#scale_unit}
   */
-  readonly scaleUnit: StackHciDeploymentSettingScaleUnit[] | cdktf.IResolvable;
+  readonly scaleUnit: StackHciDeploymentSettingScaleUnit[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -68,52 +68,52 @@ export interface StackHciDeploymentSettingScaleUnitCluster {
 }
 
 export function stackHciDeploymentSettingScaleUnitClusterToTerraform(struct?: StackHciDeploymentSettingScaleUnitClusterOutputReference | StackHciDeploymentSettingScaleUnitCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    azure_service_endpoint: cdktf.stringToTerraform(struct!.azureServiceEndpoint),
-    cloud_account_name: cdktf.stringToTerraform(struct!.cloudAccountName),
-    name: cdktf.stringToTerraform(struct!.name),
-    witness_path: cdktf.stringToTerraform(struct!.witnessPath),
-    witness_type: cdktf.stringToTerraform(struct!.witnessType),
+    azure_service_endpoint: cdktn.stringToTerraform(struct!.azureServiceEndpoint),
+    cloud_account_name: cdktn.stringToTerraform(struct!.cloudAccountName),
+    name: cdktn.stringToTerraform(struct!.name),
+    witness_path: cdktn.stringToTerraform(struct!.witnessPath),
+    witness_type: cdktn.stringToTerraform(struct!.witnessType),
   }
 }
 
 
 export function stackHciDeploymentSettingScaleUnitClusterToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitClusterOutputReference | StackHciDeploymentSettingScaleUnitCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     azure_service_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.azureServiceEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.azureServiceEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cloud_account_name: {
-      value: cdktf.stringToHclTerraform(struct!.cloudAccountName),
+      value: cdktn.stringToHclTerraform(struct!.cloudAccountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     witness_path: {
-      value: cdktf.stringToHclTerraform(struct!.witnessPath),
+      value: cdktn.stringToHclTerraform(struct!.witnessPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     witness_type: {
-      value: cdktf.stringToHclTerraform(struct!.witnessType),
+      value: cdktn.stringToHclTerraform(struct!.witnessType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -124,14 +124,14 @@ export function stackHciDeploymentSettingScaleUnitClusterToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StackHciDeploymentSettingScaleUnitClusterOutputReference extends cdktf.ComplexObject {
+export class StackHciDeploymentSettingScaleUnitClusterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -261,38 +261,38 @@ export interface StackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPrope
 }
 
 export function stackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverrideToTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverrideOutputReference | StackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverride): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    jumbo_packet: cdktf.stringToTerraform(struct!.jumboPacket),
-    network_direct: cdktf.stringToTerraform(struct!.networkDirect),
-    network_direct_technology: cdktf.stringToTerraform(struct!.networkDirectTechnology),
+    jumbo_packet: cdktn.stringToTerraform(struct!.jumboPacket),
+    network_direct: cdktn.stringToTerraform(struct!.networkDirect),
+    network_direct_technology: cdktn.stringToTerraform(struct!.networkDirectTechnology),
   }
 }
 
 
 export function stackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverrideToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverrideOutputReference | StackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverride): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     jumbo_packet: {
-      value: cdktf.stringToHclTerraform(struct!.jumboPacket),
+      value: cdktn.stringToHclTerraform(struct!.jumboPacket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_direct: {
-      value: cdktf.stringToHclTerraform(struct!.networkDirect),
+      value: cdktn.stringToHclTerraform(struct!.networkDirect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_direct_technology: {
-      value: cdktf.stringToHclTerraform(struct!.networkDirectTechnology),
+      value: cdktn.stringToHclTerraform(struct!.networkDirectTechnology),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -303,14 +303,14 @@ export function stackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterProper
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverrideOutputReference extends cdktf.ComplexObject {
+export class StackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverrideOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -411,38 +411,38 @@ export interface StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOve
 }
 
 export function stackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverrideToTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverrideOutputReference | StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverride): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bandwidth_percentage_smb: cdktf.stringToTerraform(struct!.bandwidthPercentageSmb),
-    priority_value8021_action_cluster: cdktf.stringToTerraform(struct!.priorityValue8021ActionCluster),
-    priority_value8021_action_smb: cdktf.stringToTerraform(struct!.priorityValue8021ActionSmb),
+    bandwidth_percentage_smb: cdktn.stringToTerraform(struct!.bandwidthPercentageSmb),
+    priority_value8021_action_cluster: cdktn.stringToTerraform(struct!.priorityValue8021ActionCluster),
+    priority_value8021_action_smb: cdktn.stringToTerraform(struct!.priorityValue8021ActionSmb),
   }
 }
 
 
 export function stackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverrideToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverrideOutputReference | StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverride): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bandwidth_percentage_smb: {
-      value: cdktf.stringToHclTerraform(struct!.bandwidthPercentageSmb),
+      value: cdktn.stringToHclTerraform(struct!.bandwidthPercentageSmb),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority_value8021_action_cluster: {
-      value: cdktf.stringToHclTerraform(struct!.priorityValue8021ActionCluster),
+      value: cdktn.stringToHclTerraform(struct!.priorityValue8021ActionCluster),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority_value8021_action_smb: {
-      value: cdktf.stringToHclTerraform(struct!.priorityValue8021ActionSmb),
+      value: cdktn.stringToHclTerraform(struct!.priorityValue8021ActionSmb),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -453,14 +453,14 @@ export function stackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOver
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverrideOutputReference extends cdktf.ComplexObject {
+export class StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverrideOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -557,31 +557,31 @@ export interface StackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitc
 }
 
 export function stackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverrideToTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverrideOutputReference | StackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverride): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_iov: cdktf.stringToTerraform(struct!.enableIov),
-    load_balancing_algorithm: cdktf.stringToTerraform(struct!.loadBalancingAlgorithm),
+    enable_iov: cdktn.stringToTerraform(struct!.enableIov),
+    load_balancing_algorithm: cdktn.stringToTerraform(struct!.loadBalancingAlgorithm),
   }
 }
 
 
 export function stackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverrideToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverrideOutputReference | StackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverride): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_iov: {
-      value: cdktf.stringToHclTerraform(struct!.enableIov),
+      value: cdktn.stringToHclTerraform(struct!.enableIov),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     load_balancing_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.loadBalancingAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.loadBalancingAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -592,14 +592,14 @@ export function stackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverrideOutputReference extends cdktf.ComplexObject {
+export class StackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverrideOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -670,7 +670,7 @@ export interface StackHciDeploymentSettingScaleUnitHostNetworkIntent {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#adapter_property_override_enabled StackHciDeploymentSetting#adapter_property_override_enabled}
   */
-  readonly adapterPropertyOverrideEnabled?: boolean | cdktf.IResolvable;
+  readonly adapterPropertyOverrideEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#name StackHciDeploymentSetting#name}
   */
@@ -678,7 +678,7 @@ export interface StackHciDeploymentSettingScaleUnitHostNetworkIntent {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#qos_policy_override_enabled StackHciDeploymentSetting#qos_policy_override_enabled}
   */
-  readonly qosPolicyOverrideEnabled?: boolean | cdktf.IResolvable;
+  readonly qosPolicyOverrideEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#traffic_type StackHciDeploymentSetting#traffic_type}
   */
@@ -686,7 +686,7 @@ export interface StackHciDeploymentSettingScaleUnitHostNetworkIntent {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#virtual_switch_configuration_override_enabled StackHciDeploymentSetting#virtual_switch_configuration_override_enabled}
   */
-  readonly virtualSwitchConfigurationOverrideEnabled?: boolean | cdktf.IResolvable;
+  readonly virtualSwitchConfigurationOverrideEnabled?: boolean | cdktn.IResolvable;
   /**
   * adapter_property_override block
   *
@@ -707,18 +707,18 @@ export interface StackHciDeploymentSettingScaleUnitHostNetworkIntent {
   readonly virtualSwitchConfigurationOverride?: StackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverride;
 }
 
-export function stackHciDeploymentSettingScaleUnitHostNetworkIntentToTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkIntent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciDeploymentSettingScaleUnitHostNetworkIntentToTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkIntent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    adapter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.adapter),
-    adapter_property_override_enabled: cdktf.booleanToTerraform(struct!.adapterPropertyOverrideEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    qos_policy_override_enabled: cdktf.booleanToTerraform(struct!.qosPolicyOverrideEnabled),
-    traffic_type: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.trafficType),
-    virtual_switch_configuration_override_enabled: cdktf.booleanToTerraform(struct!.virtualSwitchConfigurationOverrideEnabled),
+    adapter: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.adapter),
+    adapter_property_override_enabled: cdktn.booleanToTerraform(struct!.adapterPropertyOverrideEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    qos_policy_override_enabled: cdktn.booleanToTerraform(struct!.qosPolicyOverrideEnabled),
+    traffic_type: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.trafficType),
+    virtual_switch_configuration_override_enabled: cdktn.booleanToTerraform(struct!.virtualSwitchConfigurationOverrideEnabled),
     adapter_property_override: stackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverrideToTerraform(struct!.adapterPropertyOverride),
     qos_policy_override: stackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverrideToTerraform(struct!.qosPolicyOverride),
     virtual_switch_configuration_override: stackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverrideToTerraform(struct!.virtualSwitchConfigurationOverride),
@@ -726,44 +726,44 @@ export function stackHciDeploymentSettingScaleUnitHostNetworkIntentToTerraform(s
 }
 
 
-export function stackHciDeploymentSettingScaleUnitHostNetworkIntentToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkIntent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciDeploymentSettingScaleUnitHostNetworkIntentToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkIntent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     adapter: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.adapter),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.adapter),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     adapter_property_override_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.adapterPropertyOverrideEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.adapterPropertyOverrideEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     qos_policy_override_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.qosPolicyOverrideEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.qosPolicyOverrideEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     traffic_type: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.trafficType),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.trafficType),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     virtual_switch_configuration_override_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.virtualSwitchConfigurationOverrideEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.virtualSwitchConfigurationOverrideEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -792,9 +792,9 @@ export function stackHciDeploymentSettingScaleUnitHostNetworkIntentToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StackHciDeploymentSettingScaleUnitHostNetworkIntentOutputReference extends cdktf.ComplexObject {
+export class StackHciDeploymentSettingScaleUnitHostNetworkIntentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -802,11 +802,11 @@ export class StackHciDeploymentSettingScaleUnitHostNetworkIntentOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): StackHciDeploymentSettingScaleUnitHostNetworkIntent | cdktf.IResolvable | undefined {
+  public get internalValue(): StackHciDeploymentSettingScaleUnitHostNetworkIntent | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -851,7 +851,7 @@ export class StackHciDeploymentSettingScaleUnitHostNetworkIntentOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StackHciDeploymentSettingScaleUnitHostNetworkIntent | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StackHciDeploymentSettingScaleUnitHostNetworkIntent | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -865,7 +865,7 @@ export class StackHciDeploymentSettingScaleUnitHostNetworkIntentOutputReference 
       this._qosPolicyOverride.internalValue = undefined;
       this._virtualSwitchConfigurationOverride.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -898,11 +898,11 @@ export class StackHciDeploymentSettingScaleUnitHostNetworkIntentOutputReference 
   }
 
   // adapter_property_override_enabled - computed: false, optional: true, required: false
-  private _adapterPropertyOverrideEnabled?: boolean | cdktf.IResolvable; 
+  private _adapterPropertyOverrideEnabled?: boolean | cdktn.IResolvable; 
   public get adapterPropertyOverrideEnabled() {
     return this.getBooleanAttribute('adapter_property_override_enabled');
   }
-  public set adapterPropertyOverrideEnabled(value: boolean | cdktf.IResolvable) {
+  public set adapterPropertyOverrideEnabled(value: boolean | cdktn.IResolvable) {
     this._adapterPropertyOverrideEnabled = value;
   }
   public resetAdapterPropertyOverrideEnabled() {
@@ -927,11 +927,11 @@ export class StackHciDeploymentSettingScaleUnitHostNetworkIntentOutputReference 
   }
 
   // qos_policy_override_enabled - computed: false, optional: true, required: false
-  private _qosPolicyOverrideEnabled?: boolean | cdktf.IResolvable; 
+  private _qosPolicyOverrideEnabled?: boolean | cdktn.IResolvable; 
   public get qosPolicyOverrideEnabled() {
     return this.getBooleanAttribute('qos_policy_override_enabled');
   }
-  public set qosPolicyOverrideEnabled(value: boolean | cdktf.IResolvable) {
+  public set qosPolicyOverrideEnabled(value: boolean | cdktn.IResolvable) {
     this._qosPolicyOverrideEnabled = value;
   }
   public resetQosPolicyOverrideEnabled() {
@@ -956,11 +956,11 @@ export class StackHciDeploymentSettingScaleUnitHostNetworkIntentOutputReference 
   }
 
   // virtual_switch_configuration_override_enabled - computed: false, optional: true, required: false
-  private _virtualSwitchConfigurationOverrideEnabled?: boolean | cdktf.IResolvable; 
+  private _virtualSwitchConfigurationOverrideEnabled?: boolean | cdktn.IResolvable; 
   public get virtualSwitchConfigurationOverrideEnabled() {
     return this.getBooleanAttribute('virtual_switch_configuration_override_enabled');
   }
-  public set virtualSwitchConfigurationOverrideEnabled(value: boolean | cdktf.IResolvable) {
+  public set virtualSwitchConfigurationOverrideEnabled(value: boolean | cdktn.IResolvable) {
     this._virtualSwitchConfigurationOverrideEnabled = value;
   }
   public resetVirtualSwitchConfigurationOverrideEnabled() {
@@ -1020,15 +1020,15 @@ export class StackHciDeploymentSettingScaleUnitHostNetworkIntentOutputReference 
   }
 }
 
-export class StackHciDeploymentSettingScaleUnitHostNetworkIntentList extends cdktf.ComplexList {
-  public internalValue? : StackHciDeploymentSettingScaleUnitHostNetworkIntent[] | cdktf.IResolvable
+export class StackHciDeploymentSettingScaleUnitHostNetworkIntentList extends cdktn.ComplexList {
+  public internalValue? : StackHciDeploymentSettingScaleUnitHostNetworkIntent[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1054,39 +1054,39 @@ export interface StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork {
   readonly vlanId: string;
 }
 
-export function stackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkToTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkToTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    network_adapter_name: cdktf.stringToTerraform(struct!.networkAdapterName),
-    vlan_id: cdktf.stringToTerraform(struct!.vlanId),
+    name: cdktn.stringToTerraform(struct!.name),
+    network_adapter_name: cdktn.stringToTerraform(struct!.networkAdapterName),
+    vlan_id: cdktn.stringToTerraform(struct!.vlanId),
   }
 }
 
 
-export function stackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_adapter_name: {
-      value: cdktf.stringToHclTerraform(struct!.networkAdapterName),
+      value: cdktn.stringToHclTerraform(struct!.networkAdapterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vlan_id: {
-      value: cdktf.stringToHclTerraform(struct!.vlanId),
+      value: cdktn.stringToHclTerraform(struct!.vlanId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1097,9 +1097,9 @@ export function stackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkOutputReference extends cdktf.ComplexObject {
+export class StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1107,11 +1107,11 @@ export class StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork | cdktf.IResolvable | undefined {
+  public get internalValue(): StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1132,7 +1132,7 @@ export class StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1140,7 +1140,7 @@ export class StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkOutputRe
       this._networkAdapterName = undefined;
       this._vlanId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1193,15 +1193,15 @@ export class StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkOutputRe
   }
 }
 
-export class StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkList extends cdktf.ComplexList {
-  public internalValue? : StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork[] | cdktf.IResolvable
+export class StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkList extends cdktn.ComplexList {
+  public internalValue? : StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1216,65 +1216,65 @@ export interface StackHciDeploymentSettingScaleUnitHostNetwork {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#storage_auto_ip_enabled StackHciDeploymentSetting#storage_auto_ip_enabled}
   */
-  readonly storageAutoIpEnabled?: boolean | cdktf.IResolvable;
+  readonly storageAutoIpEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#storage_connectivity_switchless_enabled StackHciDeploymentSetting#storage_connectivity_switchless_enabled}
   */
-  readonly storageConnectivitySwitchlessEnabled?: boolean | cdktf.IResolvable;
+  readonly storageConnectivitySwitchlessEnabled?: boolean | cdktn.IResolvable;
   /**
   * intent block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#intent StackHciDeploymentSetting#intent}
   */
-  readonly intent: StackHciDeploymentSettingScaleUnitHostNetworkIntent[] | cdktf.IResolvable;
+  readonly intent: StackHciDeploymentSettingScaleUnitHostNetworkIntent[] | cdktn.IResolvable;
   /**
   * storage_network block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#storage_network StackHciDeploymentSetting#storage_network}
   */
-  readonly storageNetwork: StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork[] | cdktf.IResolvable;
+  readonly storageNetwork: StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork[] | cdktn.IResolvable;
 }
 
 export function stackHciDeploymentSettingScaleUnitHostNetworkToTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkOutputReference | StackHciDeploymentSettingScaleUnitHostNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    storage_auto_ip_enabled: cdktf.booleanToTerraform(struct!.storageAutoIpEnabled),
-    storage_connectivity_switchless_enabled: cdktf.booleanToTerraform(struct!.storageConnectivitySwitchlessEnabled),
-    intent: cdktf.listMapper(stackHciDeploymentSettingScaleUnitHostNetworkIntentToTerraform, true)(struct!.intent),
-    storage_network: cdktf.listMapper(stackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkToTerraform, true)(struct!.storageNetwork),
+    storage_auto_ip_enabled: cdktn.booleanToTerraform(struct!.storageAutoIpEnabled),
+    storage_connectivity_switchless_enabled: cdktn.booleanToTerraform(struct!.storageConnectivitySwitchlessEnabled),
+    intent: cdktn.listMapper(stackHciDeploymentSettingScaleUnitHostNetworkIntentToTerraform, true)(struct!.intent),
+    storage_network: cdktn.listMapper(stackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkToTerraform, true)(struct!.storageNetwork),
   }
 }
 
 
 export function stackHciDeploymentSettingScaleUnitHostNetworkToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitHostNetworkOutputReference | StackHciDeploymentSettingScaleUnitHostNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     storage_auto_ip_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.storageAutoIpEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.storageAutoIpEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     storage_connectivity_switchless_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.storageConnectivitySwitchlessEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.storageConnectivitySwitchlessEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     intent: {
-      value: cdktf.listMapperHcl(stackHciDeploymentSettingScaleUnitHostNetworkIntentToHclTerraform, true)(struct!.intent),
+      value: cdktn.listMapperHcl(stackHciDeploymentSettingScaleUnitHostNetworkIntentToHclTerraform, true)(struct!.intent),
       isBlock: true,
       type: "list",
       storageClassType: "StackHciDeploymentSettingScaleUnitHostNetworkIntentList",
     },
     storage_network: {
-      value: cdktf.listMapperHcl(stackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkToHclTerraform, true)(struct!.storageNetwork),
+      value: cdktn.listMapperHcl(stackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkToHclTerraform, true)(struct!.storageNetwork),
       isBlock: true,
       type: "list",
       storageClassType: "StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkList",
@@ -1285,14 +1285,14 @@ export function stackHciDeploymentSettingScaleUnitHostNetworkToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StackHciDeploymentSettingScaleUnitHostNetworkOutputReference extends cdktf.ComplexObject {
+export class StackHciDeploymentSettingScaleUnitHostNetworkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1336,11 +1336,11 @@ export class StackHciDeploymentSettingScaleUnitHostNetworkOutputReference extend
   }
 
   // storage_auto_ip_enabled - computed: false, optional: true, required: false
-  private _storageAutoIpEnabled?: boolean | cdktf.IResolvable; 
+  private _storageAutoIpEnabled?: boolean | cdktn.IResolvable; 
   public get storageAutoIpEnabled() {
     return this.getBooleanAttribute('storage_auto_ip_enabled');
   }
-  public set storageAutoIpEnabled(value: boolean | cdktf.IResolvable) {
+  public set storageAutoIpEnabled(value: boolean | cdktn.IResolvable) {
     this._storageAutoIpEnabled = value;
   }
   public resetStorageAutoIpEnabled() {
@@ -1352,11 +1352,11 @@ export class StackHciDeploymentSettingScaleUnitHostNetworkOutputReference extend
   }
 
   // storage_connectivity_switchless_enabled - computed: false, optional: true, required: false
-  private _storageConnectivitySwitchlessEnabled?: boolean | cdktf.IResolvable; 
+  private _storageConnectivitySwitchlessEnabled?: boolean | cdktn.IResolvable; 
   public get storageConnectivitySwitchlessEnabled() {
     return this.getBooleanAttribute('storage_connectivity_switchless_enabled');
   }
-  public set storageConnectivitySwitchlessEnabled(value: boolean | cdktf.IResolvable) {
+  public set storageConnectivitySwitchlessEnabled(value: boolean | cdktn.IResolvable) {
     this._storageConnectivitySwitchlessEnabled = value;
   }
   public resetStorageConnectivitySwitchlessEnabled() {
@@ -1372,7 +1372,7 @@ export class StackHciDeploymentSettingScaleUnitHostNetworkOutputReference extend
   public get intent() {
     return this._intent;
   }
-  public putIntent(value: StackHciDeploymentSettingScaleUnitHostNetworkIntent[] | cdktf.IResolvable) {
+  public putIntent(value: StackHciDeploymentSettingScaleUnitHostNetworkIntent[] | cdktn.IResolvable) {
     this._intent.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1385,7 +1385,7 @@ export class StackHciDeploymentSettingScaleUnitHostNetworkOutputReference extend
   public get storageNetwork() {
     return this._storageNetwork;
   }
-  public putStorageNetwork(value: StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork[] | cdktf.IResolvable) {
+  public putStorageNetwork(value: StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork[] | cdktn.IResolvable) {
     this._storageNetwork.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1404,32 +1404,32 @@ export interface StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool {
   readonly startingAddress: string;
 }
 
-export function stackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolToTerraform(struct?: StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolToTerraform(struct?: StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ending_address: cdktf.stringToTerraform(struct!.endingAddress),
-    starting_address: cdktf.stringToTerraform(struct!.startingAddress),
+    ending_address: cdktn.stringToTerraform(struct!.endingAddress),
+    starting_address: cdktn.stringToTerraform(struct!.startingAddress),
   }
 }
 
 
-export function stackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ending_address: {
-      value: cdktf.stringToHclTerraform(struct!.endingAddress),
+      value: cdktn.stringToHclTerraform(struct!.endingAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     starting_address: {
-      value: cdktf.stringToHclTerraform(struct!.startingAddress),
+      value: cdktn.stringToHclTerraform(struct!.startingAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1440,9 +1440,9 @@ export function stackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolOutputReference extends cdktf.ComplexObject {
+export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1450,11 +1450,11 @@ export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool | cdktf.IResolvable | undefined {
+  public get internalValue(): StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1471,14 +1471,14 @@ export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._endingAddress = undefined;
       this._startingAddress = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1517,15 +1517,15 @@ export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolOutput
   }
 }
 
-export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolList extends cdktf.ComplexList {
-  public internalValue? : StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool[] | cdktf.IResolvable
+export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolList extends cdktn.ComplexList {
+  public internalValue? : StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1540,7 +1540,7 @@ export interface StackHciDeploymentSettingScaleUnitInfrastructureNetwork {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#dhcp_enabled StackHciDeploymentSetting#dhcp_enabled}
   */
-  readonly dhcpEnabled?: boolean | cdktf.IResolvable;
+  readonly dhcpEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#dns_server StackHciDeploymentSetting#dns_server}
   */
@@ -1558,56 +1558,56 @@ export interface StackHciDeploymentSettingScaleUnitInfrastructureNetwork {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#ip_pool StackHciDeploymentSetting#ip_pool}
   */
-  readonly ipPool: StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool[] | cdktf.IResolvable;
+  readonly ipPool: StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool[] | cdktn.IResolvable;
 }
 
-export function stackHciDeploymentSettingScaleUnitInfrastructureNetworkToTerraform(struct?: StackHciDeploymentSettingScaleUnitInfrastructureNetwork | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciDeploymentSettingScaleUnitInfrastructureNetworkToTerraform(struct?: StackHciDeploymentSettingScaleUnitInfrastructureNetwork | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dhcp_enabled: cdktf.booleanToTerraform(struct!.dhcpEnabled),
-    dns_server: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dnsServer),
-    gateway: cdktf.stringToTerraform(struct!.gateway),
-    subnet_mask: cdktf.stringToTerraform(struct!.subnetMask),
-    ip_pool: cdktf.listMapper(stackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolToTerraform, true)(struct!.ipPool),
+    dhcp_enabled: cdktn.booleanToTerraform(struct!.dhcpEnabled),
+    dns_server: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dnsServer),
+    gateway: cdktn.stringToTerraform(struct!.gateway),
+    subnet_mask: cdktn.stringToTerraform(struct!.subnetMask),
+    ip_pool: cdktn.listMapper(stackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolToTerraform, true)(struct!.ipPool),
   }
 }
 
 
-export function stackHciDeploymentSettingScaleUnitInfrastructureNetworkToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitInfrastructureNetwork | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciDeploymentSettingScaleUnitInfrastructureNetworkToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitInfrastructureNetwork | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dhcp_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.dhcpEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.dhcpEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     dns_server: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsServer),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dnsServer),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     gateway: {
-      value: cdktf.stringToHclTerraform(struct!.gateway),
+      value: cdktn.stringToHclTerraform(struct!.gateway),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_mask: {
-      value: cdktf.stringToHclTerraform(struct!.subnetMask),
+      value: cdktn.stringToHclTerraform(struct!.subnetMask),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_pool: {
-      value: cdktf.listMapperHcl(stackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolToHclTerraform, true)(struct!.ipPool),
+      value: cdktn.listMapperHcl(stackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolToHclTerraform, true)(struct!.ipPool),
       isBlock: true,
       type: "list",
       storageClassType: "StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolList",
@@ -1618,9 +1618,9 @@ export function stackHciDeploymentSettingScaleUnitInfrastructureNetworkToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkOutputReference extends cdktf.ComplexObject {
+export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1628,11 +1628,11 @@ export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): StackHciDeploymentSettingScaleUnitInfrastructureNetwork | cdktf.IResolvable | undefined {
+  public get internalValue(): StackHciDeploymentSettingScaleUnitInfrastructureNetwork | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1661,7 +1661,7 @@ export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StackHciDeploymentSettingScaleUnitInfrastructureNetwork | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StackHciDeploymentSettingScaleUnitInfrastructureNetwork | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1671,7 +1671,7 @@ export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkOutputRefere
       this._subnetMask = undefined;
       this._ipPool.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1687,11 +1687,11 @@ export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkOutputRefere
   }
 
   // dhcp_enabled - computed: false, optional: true, required: false
-  private _dhcpEnabled?: boolean | cdktf.IResolvable; 
+  private _dhcpEnabled?: boolean | cdktn.IResolvable; 
   public get dhcpEnabled() {
     return this.getBooleanAttribute('dhcp_enabled');
   }
-  public set dhcpEnabled(value: boolean | cdktf.IResolvable) {
+  public set dhcpEnabled(value: boolean | cdktn.IResolvable) {
     this._dhcpEnabled = value;
   }
   public resetDhcpEnabled() {
@@ -1746,7 +1746,7 @@ export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkOutputRefere
   public get ipPool() {
     return this._ipPool;
   }
-  public putIpPool(value: StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool[] | cdktf.IResolvable) {
+  public putIpPool(value: StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool[] | cdktn.IResolvable) {
     this._ipPool.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1755,15 +1755,15 @@ export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkOutputRefere
   }
 }
 
-export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkList extends cdktf.ComplexList {
-  public internalValue? : StackHciDeploymentSettingScaleUnitInfrastructureNetwork[] | cdktf.IResolvable
+export class StackHciDeploymentSettingScaleUnitInfrastructureNetworkList extends cdktn.ComplexList {
+  public internalValue? : StackHciDeploymentSettingScaleUnitInfrastructureNetwork[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1782,24 +1782,24 @@ export interface StackHciDeploymentSettingScaleUnitOptionalService {
 }
 
 export function stackHciDeploymentSettingScaleUnitOptionalServiceToTerraform(struct?: StackHciDeploymentSettingScaleUnitOptionalServiceOutputReference | StackHciDeploymentSettingScaleUnitOptionalService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_location: cdktf.stringToTerraform(struct!.customLocation),
+    custom_location: cdktn.stringToTerraform(struct!.customLocation),
   }
 }
 
 
 export function stackHciDeploymentSettingScaleUnitOptionalServiceToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitOptionalServiceOutputReference | StackHciDeploymentSettingScaleUnitOptionalService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_location: {
-      value: cdktf.stringToHclTerraform(struct!.customLocation),
+      value: cdktn.stringToHclTerraform(struct!.customLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1810,14 +1810,14 @@ export function stackHciDeploymentSettingScaleUnitOptionalServiceToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StackHciDeploymentSettingScaleUnitOptionalServiceOutputReference extends cdktf.ComplexObject {
+export class StackHciDeploymentSettingScaleUnitOptionalServiceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1866,32 +1866,32 @@ export interface StackHciDeploymentSettingScaleUnitPhysicalNode {
   readonly name: string;
 }
 
-export function stackHciDeploymentSettingScaleUnitPhysicalNodeToTerraform(struct?: StackHciDeploymentSettingScaleUnitPhysicalNode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciDeploymentSettingScaleUnitPhysicalNodeToTerraform(struct?: StackHciDeploymentSettingScaleUnitPhysicalNode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ipv4_address: cdktf.stringToTerraform(struct!.ipv4Address),
-    name: cdktf.stringToTerraform(struct!.name),
+    ipv4_address: cdktn.stringToTerraform(struct!.ipv4Address),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function stackHciDeploymentSettingScaleUnitPhysicalNodeToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitPhysicalNode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciDeploymentSettingScaleUnitPhysicalNodeToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitPhysicalNode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ipv4_address: {
-      value: cdktf.stringToHclTerraform(struct!.ipv4Address),
+      value: cdktn.stringToHclTerraform(struct!.ipv4Address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1902,9 +1902,9 @@ export function stackHciDeploymentSettingScaleUnitPhysicalNodeToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StackHciDeploymentSettingScaleUnitPhysicalNodeOutputReference extends cdktf.ComplexObject {
+export class StackHciDeploymentSettingScaleUnitPhysicalNodeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1912,11 +1912,11 @@ export class StackHciDeploymentSettingScaleUnitPhysicalNodeOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): StackHciDeploymentSettingScaleUnitPhysicalNode | cdktf.IResolvable | undefined {
+  public get internalValue(): StackHciDeploymentSettingScaleUnitPhysicalNode | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1933,14 +1933,14 @@ export class StackHciDeploymentSettingScaleUnitPhysicalNodeOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StackHciDeploymentSettingScaleUnitPhysicalNode | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StackHciDeploymentSettingScaleUnitPhysicalNode | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ipv4Address = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1979,15 +1979,15 @@ export class StackHciDeploymentSettingScaleUnitPhysicalNodeOutputReference exten
   }
 }
 
-export class StackHciDeploymentSettingScaleUnitPhysicalNodeList extends cdktf.ComplexList {
-  public internalValue? : StackHciDeploymentSettingScaleUnitPhysicalNode[] | cdktf.IResolvable
+export class StackHciDeploymentSettingScaleUnitPhysicalNodeList extends cdktn.ComplexList {
+  public internalValue? : StackHciDeploymentSettingScaleUnitPhysicalNode[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2006,24 +2006,24 @@ export interface StackHciDeploymentSettingScaleUnitStorage {
 }
 
 export function stackHciDeploymentSettingScaleUnitStorageToTerraform(struct?: StackHciDeploymentSettingScaleUnitStorageOutputReference | StackHciDeploymentSettingScaleUnitStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    configuration_mode: cdktf.stringToTerraform(struct!.configurationMode),
+    configuration_mode: cdktn.stringToTerraform(struct!.configurationMode),
   }
 }
 
 
 export function stackHciDeploymentSettingScaleUnitStorageToHclTerraform(struct?: StackHciDeploymentSettingScaleUnitStorageOutputReference | StackHciDeploymentSettingScaleUnitStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     configuration_mode: {
-      value: cdktf.stringToHclTerraform(struct!.configurationMode),
+      value: cdktn.stringToHclTerraform(struct!.configurationMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2034,14 +2034,14 @@ export function stackHciDeploymentSettingScaleUnitStorageToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StackHciDeploymentSettingScaleUnitStorageOutputReference extends cdktf.ComplexObject {
+export class StackHciDeploymentSettingScaleUnitStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2087,15 +2087,15 @@ export interface StackHciDeploymentSettingScaleUnit {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#bitlocker_boot_volume_enabled StackHciDeploymentSetting#bitlocker_boot_volume_enabled}
   */
-  readonly bitlockerBootVolumeEnabled?: boolean | cdktf.IResolvable;
+  readonly bitlockerBootVolumeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#bitlocker_data_volume_enabled StackHciDeploymentSetting#bitlocker_data_volume_enabled}
   */
-  readonly bitlockerDataVolumeEnabled?: boolean | cdktf.IResolvable;
+  readonly bitlockerDataVolumeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#credential_guard_enabled StackHciDeploymentSetting#credential_guard_enabled}
   */
-  readonly credentialGuardEnabled?: boolean | cdktf.IResolvable;
+  readonly credentialGuardEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#domain_fqdn StackHciDeploymentSetting#domain_fqdn}
   */
@@ -2103,23 +2103,23 @@ export interface StackHciDeploymentSettingScaleUnit {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#drift_control_enabled StackHciDeploymentSetting#drift_control_enabled}
   */
-  readonly driftControlEnabled?: boolean | cdktf.IResolvable;
+  readonly driftControlEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#drtm_protection_enabled StackHciDeploymentSetting#drtm_protection_enabled}
   */
-  readonly drtmProtectionEnabled?: boolean | cdktf.IResolvable;
+  readonly drtmProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#episodic_data_upload_enabled StackHciDeploymentSetting#episodic_data_upload_enabled}
   */
-  readonly episodicDataUploadEnabled?: boolean | cdktf.IResolvable;
+  readonly episodicDataUploadEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#eu_location_enabled StackHciDeploymentSetting#eu_location_enabled}
   */
-  readonly euLocationEnabled?: boolean | cdktf.IResolvable;
+  readonly euLocationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#hvci_protection_enabled StackHciDeploymentSetting#hvci_protection_enabled}
   */
-  readonly hvciProtectionEnabled?: boolean | cdktf.IResolvable;
+  readonly hvciProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#name_prefix StackHciDeploymentSetting#name_prefix}
   */
@@ -2131,23 +2131,23 @@ export interface StackHciDeploymentSettingScaleUnit {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#side_channel_mitigation_enabled StackHciDeploymentSetting#side_channel_mitigation_enabled}
   */
-  readonly sideChannelMitigationEnabled?: boolean | cdktf.IResolvable;
+  readonly sideChannelMitigationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#smb_cluster_encryption_enabled StackHciDeploymentSetting#smb_cluster_encryption_enabled}
   */
-  readonly smbClusterEncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly smbClusterEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#smb_signing_enabled StackHciDeploymentSetting#smb_signing_enabled}
   */
-  readonly smbSigningEnabled?: boolean | cdktf.IResolvable;
+  readonly smbSigningEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#streaming_data_client_enabled StackHciDeploymentSetting#streaming_data_client_enabled}
   */
-  readonly streamingDataClientEnabled?: boolean | cdktf.IResolvable;
+  readonly streamingDataClientEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#wdac_enabled StackHciDeploymentSetting#wdac_enabled}
   */
-  readonly wdacEnabled?: boolean | cdktf.IResolvable;
+  readonly wdacEnabled?: boolean | cdktn.IResolvable;
   /**
   * cluster block
   *
@@ -2165,7 +2165,7 @@ export interface StackHciDeploymentSettingScaleUnit {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#infrastructure_network StackHciDeploymentSetting#infrastructure_network}
   */
-  readonly infrastructureNetwork: StackHciDeploymentSettingScaleUnitInfrastructureNetwork[] | cdktf.IResolvable;
+  readonly infrastructureNetwork: StackHciDeploymentSettingScaleUnitInfrastructureNetwork[] | cdktn.IResolvable;
   /**
   * optional_service block
   *
@@ -2177,7 +2177,7 @@ export interface StackHciDeploymentSettingScaleUnit {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#physical_node StackHciDeploymentSetting#physical_node}
   */
-  readonly physicalNode: StackHciDeploymentSettingScaleUnitPhysicalNode[] | cdktf.IResolvable;
+  readonly physicalNode: StackHciDeploymentSettingScaleUnitPhysicalNode[] | cdktn.IResolvable;
   /**
   * storage block
   *
@@ -2186,143 +2186,143 @@ export interface StackHciDeploymentSettingScaleUnit {
   readonly storage: StackHciDeploymentSettingScaleUnitStorage;
 }
 
-export function stackHciDeploymentSettingScaleUnitToTerraform(struct?: StackHciDeploymentSettingScaleUnit | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciDeploymentSettingScaleUnitToTerraform(struct?: StackHciDeploymentSettingScaleUnit | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    active_directory_organizational_unit_path: cdktf.stringToTerraform(struct!.activeDirectoryOrganizationalUnitPath),
-    bitlocker_boot_volume_enabled: cdktf.booleanToTerraform(struct!.bitlockerBootVolumeEnabled),
-    bitlocker_data_volume_enabled: cdktf.booleanToTerraform(struct!.bitlockerDataVolumeEnabled),
-    credential_guard_enabled: cdktf.booleanToTerraform(struct!.credentialGuardEnabled),
-    domain_fqdn: cdktf.stringToTerraform(struct!.domainFqdn),
-    drift_control_enabled: cdktf.booleanToTerraform(struct!.driftControlEnabled),
-    drtm_protection_enabled: cdktf.booleanToTerraform(struct!.drtmProtectionEnabled),
-    episodic_data_upload_enabled: cdktf.booleanToTerraform(struct!.episodicDataUploadEnabled),
-    eu_location_enabled: cdktf.booleanToTerraform(struct!.euLocationEnabled),
-    hvci_protection_enabled: cdktf.booleanToTerraform(struct!.hvciProtectionEnabled),
-    name_prefix: cdktf.stringToTerraform(struct!.namePrefix),
-    secrets_location: cdktf.stringToTerraform(struct!.secretsLocation),
-    side_channel_mitigation_enabled: cdktf.booleanToTerraform(struct!.sideChannelMitigationEnabled),
-    smb_cluster_encryption_enabled: cdktf.booleanToTerraform(struct!.smbClusterEncryptionEnabled),
-    smb_signing_enabled: cdktf.booleanToTerraform(struct!.smbSigningEnabled),
-    streaming_data_client_enabled: cdktf.booleanToTerraform(struct!.streamingDataClientEnabled),
-    wdac_enabled: cdktf.booleanToTerraform(struct!.wdacEnabled),
+    active_directory_organizational_unit_path: cdktn.stringToTerraform(struct!.activeDirectoryOrganizationalUnitPath),
+    bitlocker_boot_volume_enabled: cdktn.booleanToTerraform(struct!.bitlockerBootVolumeEnabled),
+    bitlocker_data_volume_enabled: cdktn.booleanToTerraform(struct!.bitlockerDataVolumeEnabled),
+    credential_guard_enabled: cdktn.booleanToTerraform(struct!.credentialGuardEnabled),
+    domain_fqdn: cdktn.stringToTerraform(struct!.domainFqdn),
+    drift_control_enabled: cdktn.booleanToTerraform(struct!.driftControlEnabled),
+    drtm_protection_enabled: cdktn.booleanToTerraform(struct!.drtmProtectionEnabled),
+    episodic_data_upload_enabled: cdktn.booleanToTerraform(struct!.episodicDataUploadEnabled),
+    eu_location_enabled: cdktn.booleanToTerraform(struct!.euLocationEnabled),
+    hvci_protection_enabled: cdktn.booleanToTerraform(struct!.hvciProtectionEnabled),
+    name_prefix: cdktn.stringToTerraform(struct!.namePrefix),
+    secrets_location: cdktn.stringToTerraform(struct!.secretsLocation),
+    side_channel_mitigation_enabled: cdktn.booleanToTerraform(struct!.sideChannelMitigationEnabled),
+    smb_cluster_encryption_enabled: cdktn.booleanToTerraform(struct!.smbClusterEncryptionEnabled),
+    smb_signing_enabled: cdktn.booleanToTerraform(struct!.smbSigningEnabled),
+    streaming_data_client_enabled: cdktn.booleanToTerraform(struct!.streamingDataClientEnabled),
+    wdac_enabled: cdktn.booleanToTerraform(struct!.wdacEnabled),
     cluster: stackHciDeploymentSettingScaleUnitClusterToTerraform(struct!.cluster),
     host_network: stackHciDeploymentSettingScaleUnitHostNetworkToTerraform(struct!.hostNetwork),
-    infrastructure_network: cdktf.listMapper(stackHciDeploymentSettingScaleUnitInfrastructureNetworkToTerraform, true)(struct!.infrastructureNetwork),
+    infrastructure_network: cdktn.listMapper(stackHciDeploymentSettingScaleUnitInfrastructureNetworkToTerraform, true)(struct!.infrastructureNetwork),
     optional_service: stackHciDeploymentSettingScaleUnitOptionalServiceToTerraform(struct!.optionalService),
-    physical_node: cdktf.listMapper(stackHciDeploymentSettingScaleUnitPhysicalNodeToTerraform, true)(struct!.physicalNode),
+    physical_node: cdktn.listMapper(stackHciDeploymentSettingScaleUnitPhysicalNodeToTerraform, true)(struct!.physicalNode),
     storage: stackHciDeploymentSettingScaleUnitStorageToTerraform(struct!.storage),
   }
 }
 
 
-export function stackHciDeploymentSettingScaleUnitToHclTerraform(struct?: StackHciDeploymentSettingScaleUnit | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciDeploymentSettingScaleUnitToHclTerraform(struct?: StackHciDeploymentSettingScaleUnit | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     active_directory_organizational_unit_path: {
-      value: cdktf.stringToHclTerraform(struct!.activeDirectoryOrganizationalUnitPath),
+      value: cdktn.stringToHclTerraform(struct!.activeDirectoryOrganizationalUnitPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bitlocker_boot_volume_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.bitlockerBootVolumeEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.bitlockerBootVolumeEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     bitlocker_data_volume_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.bitlockerDataVolumeEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.bitlockerDataVolumeEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     credential_guard_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.credentialGuardEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.credentialGuardEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     domain_fqdn: {
-      value: cdktf.stringToHclTerraform(struct!.domainFqdn),
+      value: cdktn.stringToHclTerraform(struct!.domainFqdn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     drift_control_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.driftControlEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.driftControlEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     drtm_protection_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.drtmProtectionEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.drtmProtectionEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     episodic_data_upload_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.episodicDataUploadEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.episodicDataUploadEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     eu_location_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.euLocationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.euLocationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     hvci_protection_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.hvciProtectionEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.hvciProtectionEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.namePrefix),
+      value: cdktn.stringToHclTerraform(struct!.namePrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secrets_location: {
-      value: cdktf.stringToHclTerraform(struct!.secretsLocation),
+      value: cdktn.stringToHclTerraform(struct!.secretsLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     side_channel_mitigation_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.sideChannelMitigationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.sideChannelMitigationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     smb_cluster_encryption_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.smbClusterEncryptionEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.smbClusterEncryptionEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     smb_signing_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.smbSigningEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.smbSigningEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     streaming_data_client_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.streamingDataClientEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.streamingDataClientEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     wdac_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.wdacEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.wdacEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2340,7 +2340,7 @@ export function stackHciDeploymentSettingScaleUnitToHclTerraform(struct?: StackH
       storageClassType: "StackHciDeploymentSettingScaleUnitHostNetworkList",
     },
     infrastructure_network: {
-      value: cdktf.listMapperHcl(stackHciDeploymentSettingScaleUnitInfrastructureNetworkToHclTerraform, true)(struct!.infrastructureNetwork),
+      value: cdktn.listMapperHcl(stackHciDeploymentSettingScaleUnitInfrastructureNetworkToHclTerraform, true)(struct!.infrastructureNetwork),
       isBlock: true,
       type: "list",
       storageClassType: "StackHciDeploymentSettingScaleUnitInfrastructureNetworkList",
@@ -2352,7 +2352,7 @@ export function stackHciDeploymentSettingScaleUnitToHclTerraform(struct?: StackH
       storageClassType: "StackHciDeploymentSettingScaleUnitOptionalServiceList",
     },
     physical_node: {
-      value: cdktf.listMapperHcl(stackHciDeploymentSettingScaleUnitPhysicalNodeToHclTerraform, true)(struct!.physicalNode),
+      value: cdktn.listMapperHcl(stackHciDeploymentSettingScaleUnitPhysicalNodeToHclTerraform, true)(struct!.physicalNode),
       isBlock: true,
       type: "list",
       storageClassType: "StackHciDeploymentSettingScaleUnitPhysicalNodeList",
@@ -2369,9 +2369,9 @@ export function stackHciDeploymentSettingScaleUnitToHclTerraform(struct?: StackH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.ComplexObject {
+export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2379,11 +2379,11 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): StackHciDeploymentSettingScaleUnit | cdktf.IResolvable | undefined {
+  public get internalValue(): StackHciDeploymentSettingScaleUnit | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2484,7 +2484,7 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StackHciDeploymentSettingScaleUnit | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StackHciDeploymentSettingScaleUnit | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2512,7 +2512,7 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
       this._physicalNode.internalValue = undefined;
       this._storage.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2559,11 +2559,11 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   }
 
   // bitlocker_boot_volume_enabled - computed: false, optional: true, required: false
-  private _bitlockerBootVolumeEnabled?: boolean | cdktf.IResolvable; 
+  private _bitlockerBootVolumeEnabled?: boolean | cdktn.IResolvable; 
   public get bitlockerBootVolumeEnabled() {
     return this.getBooleanAttribute('bitlocker_boot_volume_enabled');
   }
-  public set bitlockerBootVolumeEnabled(value: boolean | cdktf.IResolvable) {
+  public set bitlockerBootVolumeEnabled(value: boolean | cdktn.IResolvable) {
     this._bitlockerBootVolumeEnabled = value;
   }
   public resetBitlockerBootVolumeEnabled() {
@@ -2575,11 +2575,11 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   }
 
   // bitlocker_data_volume_enabled - computed: false, optional: true, required: false
-  private _bitlockerDataVolumeEnabled?: boolean | cdktf.IResolvable; 
+  private _bitlockerDataVolumeEnabled?: boolean | cdktn.IResolvable; 
   public get bitlockerDataVolumeEnabled() {
     return this.getBooleanAttribute('bitlocker_data_volume_enabled');
   }
-  public set bitlockerDataVolumeEnabled(value: boolean | cdktf.IResolvable) {
+  public set bitlockerDataVolumeEnabled(value: boolean | cdktn.IResolvable) {
     this._bitlockerDataVolumeEnabled = value;
   }
   public resetBitlockerDataVolumeEnabled() {
@@ -2591,11 +2591,11 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   }
 
   // credential_guard_enabled - computed: false, optional: true, required: false
-  private _credentialGuardEnabled?: boolean | cdktf.IResolvable; 
+  private _credentialGuardEnabled?: boolean | cdktn.IResolvable; 
   public get credentialGuardEnabled() {
     return this.getBooleanAttribute('credential_guard_enabled');
   }
-  public set credentialGuardEnabled(value: boolean | cdktf.IResolvable) {
+  public set credentialGuardEnabled(value: boolean | cdktn.IResolvable) {
     this._credentialGuardEnabled = value;
   }
   public resetCredentialGuardEnabled() {
@@ -2620,11 +2620,11 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   }
 
   // drift_control_enabled - computed: false, optional: true, required: false
-  private _driftControlEnabled?: boolean | cdktf.IResolvable; 
+  private _driftControlEnabled?: boolean | cdktn.IResolvable; 
   public get driftControlEnabled() {
     return this.getBooleanAttribute('drift_control_enabled');
   }
-  public set driftControlEnabled(value: boolean | cdktf.IResolvable) {
+  public set driftControlEnabled(value: boolean | cdktn.IResolvable) {
     this._driftControlEnabled = value;
   }
   public resetDriftControlEnabled() {
@@ -2636,11 +2636,11 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   }
 
   // drtm_protection_enabled - computed: false, optional: true, required: false
-  private _drtmProtectionEnabled?: boolean | cdktf.IResolvable; 
+  private _drtmProtectionEnabled?: boolean | cdktn.IResolvable; 
   public get drtmProtectionEnabled() {
     return this.getBooleanAttribute('drtm_protection_enabled');
   }
-  public set drtmProtectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set drtmProtectionEnabled(value: boolean | cdktn.IResolvable) {
     this._drtmProtectionEnabled = value;
   }
   public resetDrtmProtectionEnabled() {
@@ -2652,11 +2652,11 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   }
 
   // episodic_data_upload_enabled - computed: false, optional: true, required: false
-  private _episodicDataUploadEnabled?: boolean | cdktf.IResolvable; 
+  private _episodicDataUploadEnabled?: boolean | cdktn.IResolvable; 
   public get episodicDataUploadEnabled() {
     return this.getBooleanAttribute('episodic_data_upload_enabled');
   }
-  public set episodicDataUploadEnabled(value: boolean | cdktf.IResolvable) {
+  public set episodicDataUploadEnabled(value: boolean | cdktn.IResolvable) {
     this._episodicDataUploadEnabled = value;
   }
   public resetEpisodicDataUploadEnabled() {
@@ -2668,11 +2668,11 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   }
 
   // eu_location_enabled - computed: false, optional: true, required: false
-  private _euLocationEnabled?: boolean | cdktf.IResolvable; 
+  private _euLocationEnabled?: boolean | cdktn.IResolvable; 
   public get euLocationEnabled() {
     return this.getBooleanAttribute('eu_location_enabled');
   }
-  public set euLocationEnabled(value: boolean | cdktf.IResolvable) {
+  public set euLocationEnabled(value: boolean | cdktn.IResolvable) {
     this._euLocationEnabled = value;
   }
   public resetEuLocationEnabled() {
@@ -2684,11 +2684,11 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   }
 
   // hvci_protection_enabled - computed: false, optional: true, required: false
-  private _hvciProtectionEnabled?: boolean | cdktf.IResolvable; 
+  private _hvciProtectionEnabled?: boolean | cdktn.IResolvable; 
   public get hvciProtectionEnabled() {
     return this.getBooleanAttribute('hvci_protection_enabled');
   }
-  public set hvciProtectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set hvciProtectionEnabled(value: boolean | cdktn.IResolvable) {
     this._hvciProtectionEnabled = value;
   }
   public resetHvciProtectionEnabled() {
@@ -2726,11 +2726,11 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   }
 
   // side_channel_mitigation_enabled - computed: false, optional: true, required: false
-  private _sideChannelMitigationEnabled?: boolean | cdktf.IResolvable; 
+  private _sideChannelMitigationEnabled?: boolean | cdktn.IResolvable; 
   public get sideChannelMitigationEnabled() {
     return this.getBooleanAttribute('side_channel_mitigation_enabled');
   }
-  public set sideChannelMitigationEnabled(value: boolean | cdktf.IResolvable) {
+  public set sideChannelMitigationEnabled(value: boolean | cdktn.IResolvable) {
     this._sideChannelMitigationEnabled = value;
   }
   public resetSideChannelMitigationEnabled() {
@@ -2742,11 +2742,11 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   }
 
   // smb_cluster_encryption_enabled - computed: false, optional: true, required: false
-  private _smbClusterEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _smbClusterEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get smbClusterEncryptionEnabled() {
     return this.getBooleanAttribute('smb_cluster_encryption_enabled');
   }
-  public set smbClusterEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set smbClusterEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._smbClusterEncryptionEnabled = value;
   }
   public resetSmbClusterEncryptionEnabled() {
@@ -2758,11 +2758,11 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   }
 
   // smb_signing_enabled - computed: false, optional: true, required: false
-  private _smbSigningEnabled?: boolean | cdktf.IResolvable; 
+  private _smbSigningEnabled?: boolean | cdktn.IResolvable; 
   public get smbSigningEnabled() {
     return this.getBooleanAttribute('smb_signing_enabled');
   }
-  public set smbSigningEnabled(value: boolean | cdktf.IResolvable) {
+  public set smbSigningEnabled(value: boolean | cdktn.IResolvable) {
     this._smbSigningEnabled = value;
   }
   public resetSmbSigningEnabled() {
@@ -2774,11 +2774,11 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   }
 
   // streaming_data_client_enabled - computed: false, optional: true, required: false
-  private _streamingDataClientEnabled?: boolean | cdktf.IResolvable; 
+  private _streamingDataClientEnabled?: boolean | cdktn.IResolvable; 
   public get streamingDataClientEnabled() {
     return this.getBooleanAttribute('streaming_data_client_enabled');
   }
-  public set streamingDataClientEnabled(value: boolean | cdktf.IResolvable) {
+  public set streamingDataClientEnabled(value: boolean | cdktn.IResolvable) {
     this._streamingDataClientEnabled = value;
   }
   public resetStreamingDataClientEnabled() {
@@ -2790,11 +2790,11 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   }
 
   // wdac_enabled - computed: false, optional: true, required: false
-  private _wdacEnabled?: boolean | cdktf.IResolvable; 
+  private _wdacEnabled?: boolean | cdktn.IResolvable; 
   public get wdacEnabled() {
     return this.getBooleanAttribute('wdac_enabled');
   }
-  public set wdacEnabled(value: boolean | cdktf.IResolvable) {
+  public set wdacEnabled(value: boolean | cdktn.IResolvable) {
     this._wdacEnabled = value;
   }
   public resetWdacEnabled() {
@@ -2836,7 +2836,7 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   public get infrastructureNetwork() {
     return this._infrastructureNetwork;
   }
-  public putInfrastructureNetwork(value: StackHciDeploymentSettingScaleUnitInfrastructureNetwork[] | cdktf.IResolvable) {
+  public putInfrastructureNetwork(value: StackHciDeploymentSettingScaleUnitInfrastructureNetwork[] | cdktn.IResolvable) {
     this._infrastructureNetwork.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2862,7 +2862,7 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   public get physicalNode() {
     return this._physicalNode;
   }
-  public putPhysicalNode(value: StackHciDeploymentSettingScaleUnitPhysicalNode[] | cdktf.IResolvable) {
+  public putPhysicalNode(value: StackHciDeploymentSettingScaleUnitPhysicalNode[] | cdktn.IResolvable) {
     this._physicalNode.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2884,15 +2884,15 @@ export class StackHciDeploymentSettingScaleUnitOutputReference extends cdktf.Com
   }
 }
 
-export class StackHciDeploymentSettingScaleUnitList extends cdktf.ComplexList {
-  public internalValue? : StackHciDeploymentSettingScaleUnit[] | cdktf.IResolvable
+export class StackHciDeploymentSettingScaleUnitList extends cdktn.ComplexList {
+  public internalValue? : StackHciDeploymentSettingScaleUnit[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2918,39 +2918,39 @@ export interface StackHciDeploymentSettingTimeouts {
   readonly read?: string;
 }
 
-export function stackHciDeploymentSettingTimeoutsToTerraform(struct?: StackHciDeploymentSettingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciDeploymentSettingTimeoutsToTerraform(struct?: StackHciDeploymentSettingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function stackHciDeploymentSettingTimeoutsToHclTerraform(struct?: StackHciDeploymentSettingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciDeploymentSettingTimeoutsToHclTerraform(struct?: StackHciDeploymentSettingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2961,19 +2961,19 @@ export function stackHciDeploymentSettingTimeoutsToHclTerraform(struct?: StackHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StackHciDeploymentSettingTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StackHciDeploymentSettingTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StackHciDeploymentSettingTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StackHciDeploymentSettingTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2994,7 +2994,7 @@ export class StackHciDeploymentSettingTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StackHciDeploymentSettingTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StackHciDeploymentSettingTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3002,7 +3002,7 @@ export class StackHciDeploymentSettingTimeoutsOutputReference extends cdktf.Comp
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3067,7 +3067,7 @@ export class StackHciDeploymentSettingTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting azurerm_stack_hci_deployment_setting}
 */
-export class StackHciDeploymentSetting extends cdktf.TerraformResource {
+export class StackHciDeploymentSetting extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -3078,14 +3078,14 @@ export class StackHciDeploymentSetting extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StackHciDeploymentSetting resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StackHciDeploymentSetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StackHciDeploymentSetting to import
   * @param importFromId The id of the existing StackHciDeploymentSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_deployment_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StackHciDeploymentSetting to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_stack_hci_deployment_setting", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_stack_hci_deployment_setting", importId: importFromId, provider });
       }
 
   // ===========
@@ -3187,7 +3187,7 @@ export class StackHciDeploymentSetting extends cdktf.TerraformResource {
   public get scaleUnit() {
     return this._scaleUnit;
   }
-  public putScaleUnit(value: StackHciDeploymentSettingScaleUnit[] | cdktf.IResolvable) {
+  public putScaleUnit(value: StackHciDeploymentSettingScaleUnit[] | cdktn.IResolvable) {
     this._scaleUnit.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3217,11 +3217,11 @@ export class StackHciDeploymentSetting extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arc_resource_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._arcResourceIds),
-      id: cdktf.stringToTerraform(this._id),
-      stack_hci_cluster_id: cdktf.stringToTerraform(this._stackHciClusterId),
-      version: cdktf.stringToTerraform(this._version),
-      scale_unit: cdktf.listMapper(stackHciDeploymentSettingScaleUnitToTerraform, true)(this._scaleUnit.internalValue),
+      arc_resource_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._arcResourceIds),
+      id: cdktn.stringToTerraform(this._id),
+      stack_hci_cluster_id: cdktn.stringToTerraform(this._stackHciClusterId),
+      version: cdktn.stringToTerraform(this._version),
+      scale_unit: cdktn.listMapper(stackHciDeploymentSettingScaleUnitToTerraform, true)(this._scaleUnit.internalValue),
       timeouts: stackHciDeploymentSettingTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -3229,31 +3229,31 @@ export class StackHciDeploymentSetting extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       arc_resource_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._arcResourceIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._arcResourceIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stack_hci_cluster_id: {
-        value: cdktf.stringToHclTerraform(this._stackHciClusterId),
+        value: cdktn.stringToHclTerraform(this._stackHciClusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scale_unit: {
-        value: cdktf.listMapperHcl(stackHciDeploymentSettingScaleUnitToHclTerraform, true)(this._scaleUnit.internalValue),
+        value: cdktn.listMapperHcl(stackHciDeploymentSettingScaleUnitToHclTerraform, true)(this._scaleUnit.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "StackHciDeploymentSettingScaleUnitList",

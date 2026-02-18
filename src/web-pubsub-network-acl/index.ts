@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WebPubsubNetworkAclConfig extends cdktf.TerraformMetaArguments {
+export interface WebPubsubNetworkAclConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_network_acl#default_action WebPubsubNetworkAcl#default_action}
   */
@@ -32,7 +32,7 @@ export interface WebPubsubNetworkAclConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_network_acl#private_endpoint WebPubsubNetworkAcl#private_endpoint}
   */
-  readonly privateEndpoint?: WebPubsubNetworkAclPrivateEndpoint[] | cdktf.IResolvable;
+  readonly privateEndpoint?: WebPubsubNetworkAclPrivateEndpoint[] | cdktn.IResolvable;
   /**
   * public_network block
   *
@@ -64,39 +64,39 @@ export interface WebPubsubNetworkAclPrivateEndpoint {
   readonly id: string;
 }
 
-export function webPubsubNetworkAclPrivateEndpointToTerraform(struct?: WebPubsubNetworkAclPrivateEndpoint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webPubsubNetworkAclPrivateEndpointToTerraform(struct?: WebPubsubNetworkAclPrivateEndpoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_request_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRequestTypes),
-    denied_request_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.deniedRequestTypes),
-    id: cdktf.stringToTerraform(struct!.id),
+    allowed_request_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRequestTypes),
+    denied_request_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.deniedRequestTypes),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function webPubsubNetworkAclPrivateEndpointToHclTerraform(struct?: WebPubsubNetworkAclPrivateEndpoint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webPubsubNetworkAclPrivateEndpointToHclTerraform(struct?: WebPubsubNetworkAclPrivateEndpoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_request_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRequestTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRequestTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     denied_request_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.deniedRequestTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.deniedRequestTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -107,9 +107,9 @@ export function webPubsubNetworkAclPrivateEndpointToHclTerraform(struct?: WebPub
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebPubsubNetworkAclPrivateEndpointOutputReference extends cdktf.ComplexObject {
+export class WebPubsubNetworkAclPrivateEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -117,11 +117,11 @@ export class WebPubsubNetworkAclPrivateEndpointOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WebPubsubNetworkAclPrivateEndpoint | cdktf.IResolvable | undefined {
+  public get internalValue(): WebPubsubNetworkAclPrivateEndpoint | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -142,7 +142,7 @@ export class WebPubsubNetworkAclPrivateEndpointOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WebPubsubNetworkAclPrivateEndpoint | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WebPubsubNetworkAclPrivateEndpoint | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -150,7 +150,7 @@ export class WebPubsubNetworkAclPrivateEndpointOutputReference extends cdktf.Com
       this._deniedRequestTypes = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -166,7 +166,7 @@ export class WebPubsubNetworkAclPrivateEndpointOutputReference extends cdktf.Com
   // allowed_request_types - computed: false, optional: true, required: false
   private _allowedRequestTypes?: string[]; 
   public get allowedRequestTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_request_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_request_types'));
   }
   public set allowedRequestTypes(value: string[]) {
     this._allowedRequestTypes = value;
@@ -182,7 +182,7 @@ export class WebPubsubNetworkAclPrivateEndpointOutputReference extends cdktf.Com
   // denied_request_types - computed: false, optional: true, required: false
   private _deniedRequestTypes?: string[]; 
   public get deniedRequestTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('denied_request_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('denied_request_types'));
   }
   public set deniedRequestTypes(value: string[]) {
     this._deniedRequestTypes = value;
@@ -209,15 +209,15 @@ export class WebPubsubNetworkAclPrivateEndpointOutputReference extends cdktf.Com
   }
 }
 
-export class WebPubsubNetworkAclPrivateEndpointList extends cdktf.ComplexList {
-  public internalValue? : WebPubsubNetworkAclPrivateEndpoint[] | cdktf.IResolvable
+export class WebPubsubNetworkAclPrivateEndpointList extends cdktn.ComplexList {
+  public internalValue? : WebPubsubNetworkAclPrivateEndpoint[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -240,31 +240,31 @@ export interface WebPubsubNetworkAclPublicNetwork {
 }
 
 export function webPubsubNetworkAclPublicNetworkToTerraform(struct?: WebPubsubNetworkAclPublicNetworkOutputReference | WebPubsubNetworkAclPublicNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_request_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRequestTypes),
-    denied_request_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.deniedRequestTypes),
+    allowed_request_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRequestTypes),
+    denied_request_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.deniedRequestTypes),
   }
 }
 
 
 export function webPubsubNetworkAclPublicNetworkToHclTerraform(struct?: WebPubsubNetworkAclPublicNetworkOutputReference | WebPubsubNetworkAclPublicNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_request_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRequestTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRequestTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     denied_request_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.deniedRequestTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.deniedRequestTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -275,14 +275,14 @@ export function webPubsubNetworkAclPublicNetworkToHclTerraform(struct?: WebPubsu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebPubsubNetworkAclPublicNetworkOutputReference extends cdktf.ComplexObject {
+export class WebPubsubNetworkAclPublicNetworkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -316,7 +316,7 @@ export class WebPubsubNetworkAclPublicNetworkOutputReference extends cdktf.Compl
   // allowed_request_types - computed: false, optional: true, required: false
   private _allowedRequestTypes?: string[]; 
   public get allowedRequestTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_request_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_request_types'));
   }
   public set allowedRequestTypes(value: string[]) {
     this._allowedRequestTypes = value;
@@ -332,7 +332,7 @@ export class WebPubsubNetworkAclPublicNetworkOutputReference extends cdktf.Compl
   // denied_request_types - computed: false, optional: true, required: false
   private _deniedRequestTypes?: string[]; 
   public get deniedRequestTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('denied_request_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('denied_request_types'));
   }
   public set deniedRequestTypes(value: string[]) {
     this._deniedRequestTypes = value;
@@ -364,46 +364,46 @@ export interface WebPubsubNetworkAclTimeouts {
   readonly update?: string;
 }
 
-export function webPubsubNetworkAclTimeoutsToTerraform(struct?: WebPubsubNetworkAclTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webPubsubNetworkAclTimeoutsToTerraform(struct?: WebPubsubNetworkAclTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function webPubsubNetworkAclTimeoutsToHclTerraform(struct?: WebPubsubNetworkAclTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webPubsubNetworkAclTimeoutsToHclTerraform(struct?: WebPubsubNetworkAclTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -414,19 +414,19 @@ export function webPubsubNetworkAclTimeoutsToHclTerraform(struct?: WebPubsubNetw
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebPubsubNetworkAclTimeoutsOutputReference extends cdktf.ComplexObject {
+export class WebPubsubNetworkAclTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WebPubsubNetworkAclTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): WebPubsubNetworkAclTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -451,7 +451,7 @@ export class WebPubsubNetworkAclTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WebPubsubNetworkAclTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WebPubsubNetworkAclTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -460,7 +460,7 @@ export class WebPubsubNetworkAclTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -542,7 +542,7 @@ export class WebPubsubNetworkAclTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_network_acl azurerm_web_pubsub_network_acl}
 */
-export class WebPubsubNetworkAcl extends cdktf.TerraformResource {
+export class WebPubsubNetworkAcl extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -553,14 +553,14 @@ export class WebPubsubNetworkAcl extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WebPubsubNetworkAcl resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WebPubsubNetworkAcl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WebPubsubNetworkAcl to import
   * @param importFromId The id of the existing WebPubsubNetworkAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_network_acl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WebPubsubNetworkAcl to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_web_pubsub_network_acl", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_web_pubsub_network_acl", importId: importFromId, provider });
       }
 
   // ===========
@@ -652,7 +652,7 @@ export class WebPubsubNetworkAcl extends cdktf.TerraformResource {
   public get privateEndpoint() {
     return this._privateEndpoint;
   }
-  public putPrivateEndpoint(value: WebPubsubNetworkAclPrivateEndpoint[] | cdktf.IResolvable) {
+  public putPrivateEndpoint(value: WebPubsubNetworkAclPrivateEndpoint[] | cdktn.IResolvable) {
     this._privateEndpoint.internalValue = value;
   }
   public resetPrivateEndpoint() {
@@ -698,10 +698,10 @@ export class WebPubsubNetworkAcl extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      default_action: cdktf.stringToTerraform(this._defaultAction),
-      id: cdktf.stringToTerraform(this._id),
-      web_pubsub_id: cdktf.stringToTerraform(this._webPubsubId),
-      private_endpoint: cdktf.listMapper(webPubsubNetworkAclPrivateEndpointToTerraform, true)(this._privateEndpoint.internalValue),
+      default_action: cdktn.stringToTerraform(this._defaultAction),
+      id: cdktn.stringToTerraform(this._id),
+      web_pubsub_id: cdktn.stringToTerraform(this._webPubsubId),
+      private_endpoint: cdktn.listMapper(webPubsubNetworkAclPrivateEndpointToTerraform, true)(this._privateEndpoint.internalValue),
       public_network: webPubsubNetworkAclPublicNetworkToTerraform(this._publicNetwork.internalValue),
       timeouts: webPubsubNetworkAclTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -710,25 +710,25 @@ export class WebPubsubNetworkAcl extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       default_action: {
-        value: cdktf.stringToHclTerraform(this._defaultAction),
+        value: cdktn.stringToHclTerraform(this._defaultAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       web_pubsub_id: {
-        value: cdktf.stringToHclTerraform(this._webPubsubId),
+        value: cdktn.stringToHclTerraform(this._webPubsubId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_endpoint: {
-        value: cdktf.listMapperHcl(webPubsubNetworkAclPrivateEndpointToHclTerraform, true)(this._privateEndpoint.internalValue),
+        value: cdktn.listMapperHcl(webPubsubNetworkAclPrivateEndpointToHclTerraform, true)(this._privateEndpoint.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "WebPubsubNetworkAclPrivateEndpointList",

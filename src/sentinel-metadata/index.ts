@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SentinelMetadataConfig extends cdktf.TerraformMetaArguments {
+export interface SentinelMetadataConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_metadata#content_id SentinelMetadata#content_id}
   */
@@ -134,38 +134,38 @@ export interface SentinelMetadataAuthor {
 }
 
 export function sentinelMetadataAuthorToTerraform(struct?: SentinelMetadataAuthorOutputReference | SentinelMetadataAuthor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
-    link: cdktf.stringToTerraform(struct!.link),
-    name: cdktf.stringToTerraform(struct!.name),
+    email: cdktn.stringToTerraform(struct!.email),
+    link: cdktn.stringToTerraform(struct!.link),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function sentinelMetadataAuthorToHclTerraform(struct?: SentinelMetadataAuthorOutputReference | SentinelMetadataAuthor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     link: {
-      value: cdktf.stringToHclTerraform(struct!.link),
+      value: cdktn.stringToHclTerraform(struct!.link),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -176,14 +176,14 @@ export function sentinelMetadataAuthorToHclTerraform(struct?: SentinelMetadataAu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelMetadataAuthorOutputReference extends cdktf.ComplexObject {
+export class SentinelMetadataAuthorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -280,31 +280,31 @@ export interface SentinelMetadataCategory {
 }
 
 export function sentinelMetadataCategoryToTerraform(struct?: SentinelMetadataCategoryOutputReference | SentinelMetadataCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.domains),
-    verticals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.verticals),
+    domains: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.domains),
+    verticals: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.verticals),
   }
 }
 
 
 export function sentinelMetadataCategoryToHclTerraform(struct?: SentinelMetadataCategoryOutputReference | SentinelMetadataCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domains: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.domains),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.domains),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     verticals: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.verticals),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.verticals),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -315,14 +315,14 @@ export function sentinelMetadataCategoryToHclTerraform(struct?: SentinelMetadata
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelMetadataCategoryOutputReference extends cdktf.ComplexObject {
+export class SentinelMetadataCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -404,38 +404,38 @@ export interface SentinelMetadataSource {
 }
 
 export function sentinelMetadataSourceToTerraform(struct?: SentinelMetadataSourceOutputReference | SentinelMetadataSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    kind: cdktf.stringToTerraform(struct!.kind),
-    name: cdktf.stringToTerraform(struct!.name),
+    id: cdktn.stringToTerraform(struct!.id),
+    kind: cdktn.stringToTerraform(struct!.kind),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function sentinelMetadataSourceToHclTerraform(struct?: SentinelMetadataSourceOutputReference | SentinelMetadataSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kind: {
-      value: cdktf.stringToHclTerraform(struct!.kind),
+      value: cdktn.stringToHclTerraform(struct!.kind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -446,14 +446,14 @@ export function sentinelMetadataSourceToHclTerraform(struct?: SentinelMetadataSo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelMetadataSourceOutputReference extends cdktf.ComplexObject {
+export class SentinelMetadataSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -555,45 +555,45 @@ export interface SentinelMetadataSupport {
 }
 
 export function sentinelMetadataSupportToTerraform(struct?: SentinelMetadataSupportOutputReference | SentinelMetadataSupport): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
-    link: cdktf.stringToTerraform(struct!.link),
-    name: cdktf.stringToTerraform(struct!.name),
-    tier: cdktf.stringToTerraform(struct!.tier),
+    email: cdktn.stringToTerraform(struct!.email),
+    link: cdktn.stringToTerraform(struct!.link),
+    name: cdktn.stringToTerraform(struct!.name),
+    tier: cdktn.stringToTerraform(struct!.tier),
   }
 }
 
 
 export function sentinelMetadataSupportToHclTerraform(struct?: SentinelMetadataSupportOutputReference | SentinelMetadataSupport): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     link: {
-      value: cdktf.stringToHclTerraform(struct!.link),
+      value: cdktn.stringToHclTerraform(struct!.link),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tier: {
-      value: cdktf.stringToHclTerraform(struct!.tier),
+      value: cdktn.stringToHclTerraform(struct!.tier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -604,14 +604,14 @@ export function sentinelMetadataSupportToHclTerraform(struct?: SentinelMetadataS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelMetadataSupportOutputReference extends cdktf.ComplexObject {
+export class SentinelMetadataSupportOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -734,46 +734,46 @@ export interface SentinelMetadataTimeouts {
   readonly update?: string;
 }
 
-export function sentinelMetadataTimeoutsToTerraform(struct?: SentinelMetadataTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelMetadataTimeoutsToTerraform(struct?: SentinelMetadataTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function sentinelMetadataTimeoutsToHclTerraform(struct?: SentinelMetadataTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelMetadataTimeoutsToHclTerraform(struct?: SentinelMetadataTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -784,19 +784,19 @@ export function sentinelMetadataTimeoutsToHclTerraform(struct?: SentinelMetadata
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelMetadataTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SentinelMetadataTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SentinelMetadataTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelMetadataTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -821,7 +821,7 @@ export class SentinelMetadataTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelMetadataTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelMetadataTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -830,7 +830,7 @@ export class SentinelMetadataTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -912,7 +912,7 @@ export class SentinelMetadataTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_metadata azurerm_sentinel_metadata}
 */
-export class SentinelMetadata extends cdktf.TerraformResource {
+export class SentinelMetadata extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -923,14 +923,14 @@ export class SentinelMetadata extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SentinelMetadata resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SentinelMetadata resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SentinelMetadata to import
   * @param importFromId The id of the existing SentinelMetadata that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_metadata#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SentinelMetadata to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_sentinel_metadata", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_sentinel_metadata", importId: importFromId, provider });
       }
 
   // ===========
@@ -1348,24 +1348,24 @@ export class SentinelMetadata extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content_id: cdktf.stringToTerraform(this._contentId),
-      content_schema_version: cdktf.stringToTerraform(this._contentSchemaVersion),
-      custom_version: cdktf.stringToTerraform(this._customVersion),
-      dependency: cdktf.stringToTerraform(this._dependency),
-      first_publish_date: cdktf.stringToTerraform(this._firstPublishDate),
-      icon_id: cdktf.stringToTerraform(this._iconId),
-      id: cdktf.stringToTerraform(this._id),
-      kind: cdktf.stringToTerraform(this._kind),
-      last_publish_date: cdktf.stringToTerraform(this._lastPublishDate),
-      name: cdktf.stringToTerraform(this._name),
-      parent_id: cdktf.stringToTerraform(this._parentId),
-      preview_images: cdktf.listMapper(cdktf.stringToTerraform, false)(this._previewImages),
-      preview_images_dark: cdktf.listMapper(cdktf.stringToTerraform, false)(this._previewImagesDark),
-      providers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._providers),
-      threat_analysis_tactics: cdktf.listMapper(cdktf.stringToTerraform, false)(this._threatAnalysisTactics),
-      threat_analysis_techniques: cdktf.listMapper(cdktf.stringToTerraform, false)(this._threatAnalysisTechniques),
-      version: cdktf.stringToTerraform(this._version),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
+      content_id: cdktn.stringToTerraform(this._contentId),
+      content_schema_version: cdktn.stringToTerraform(this._contentSchemaVersion),
+      custom_version: cdktn.stringToTerraform(this._customVersion),
+      dependency: cdktn.stringToTerraform(this._dependency),
+      first_publish_date: cdktn.stringToTerraform(this._firstPublishDate),
+      icon_id: cdktn.stringToTerraform(this._iconId),
+      id: cdktn.stringToTerraform(this._id),
+      kind: cdktn.stringToTerraform(this._kind),
+      last_publish_date: cdktn.stringToTerraform(this._lastPublishDate),
+      name: cdktn.stringToTerraform(this._name),
+      parent_id: cdktn.stringToTerraform(this._parentId),
+      preview_images: cdktn.listMapper(cdktn.stringToTerraform, false)(this._previewImages),
+      preview_images_dark: cdktn.listMapper(cdktn.stringToTerraform, false)(this._previewImagesDark),
+      providers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._providers),
+      threat_analysis_tactics: cdktn.listMapper(cdktn.stringToTerraform, false)(this._threatAnalysisTactics),
+      threat_analysis_techniques: cdktn.listMapper(cdktn.stringToTerraform, false)(this._threatAnalysisTechniques),
+      version: cdktn.stringToTerraform(this._version),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
       author: sentinelMetadataAuthorToTerraform(this._author.internalValue),
       category: sentinelMetadataCategoryToTerraform(this._category.internalValue),
       source: sentinelMetadataSourceToTerraform(this._source.internalValue),
@@ -1377,109 +1377,109 @@ export class SentinelMetadata extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       content_id: {
-        value: cdktf.stringToHclTerraform(this._contentId),
+        value: cdktn.stringToHclTerraform(this._contentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_schema_version: {
-        value: cdktf.stringToHclTerraform(this._contentSchemaVersion),
+        value: cdktn.stringToHclTerraform(this._contentSchemaVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_version: {
-        value: cdktf.stringToHclTerraform(this._customVersion),
+        value: cdktn.stringToHclTerraform(this._customVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dependency: {
-        value: cdktf.stringToHclTerraform(this._dependency),
+        value: cdktn.stringToHclTerraform(this._dependency),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       first_publish_date: {
-        value: cdktf.stringToHclTerraform(this._firstPublishDate),
+        value: cdktn.stringToHclTerraform(this._firstPublishDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       icon_id: {
-        value: cdktf.stringToHclTerraform(this._iconId),
+        value: cdktn.stringToHclTerraform(this._iconId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kind: {
-        value: cdktf.stringToHclTerraform(this._kind),
+        value: cdktn.stringToHclTerraform(this._kind),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       last_publish_date: {
-        value: cdktf.stringToHclTerraform(this._lastPublishDate),
+        value: cdktn.stringToHclTerraform(this._lastPublishDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent_id: {
-        value: cdktf.stringToHclTerraform(this._parentId),
+        value: cdktn.stringToHclTerraform(this._parentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preview_images: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._previewImages),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._previewImages),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       preview_images_dark: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._previewImagesDark),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._previewImagesDark),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       providers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._providers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._providers),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       threat_analysis_tactics: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._threatAnalysisTactics),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._threatAnalysisTactics),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       threat_analysis_techniques: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._threatAnalysisTechniques),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._threatAnalysisTechniques),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VirtualMachineRunCommandConfig extends cdktf.TerraformMetaArguments {
+export interface VirtualMachineRunCommandConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_run_command#error_blob_uri VirtualMachineRunCommand#error_blob_uri}
   */
@@ -68,13 +68,13 @@ export interface VirtualMachineRunCommandConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_run_command#parameter VirtualMachineRunCommand#parameter}
   */
-  readonly parameter?: VirtualMachineRunCommandParameter[] | cdktf.IResolvable;
+  readonly parameter?: VirtualMachineRunCommandParameter[] | cdktn.IResolvable;
   /**
   * protected_parameter block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_run_command#protected_parameter VirtualMachineRunCommand#protected_parameter}
   */
-  readonly protectedParameter?: VirtualMachineRunCommandProtectedParameter[] | cdktf.IResolvable;
+  readonly protectedParameter?: VirtualMachineRunCommandProtectedParameter[] | cdktn.IResolvable;
   /**
   * source block
   *
@@ -92,8 +92,8 @@ export interface VirtualMachineRunCommandInstanceView {
 }
 
 export function virtualMachineRunCommandInstanceViewToTerraform(struct?: VirtualMachineRunCommandInstanceView): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -102,8 +102,8 @@ export function virtualMachineRunCommandInstanceViewToTerraform(struct?: Virtual
 
 
 export function virtualMachineRunCommandInstanceViewToHclTerraform(struct?: VirtualMachineRunCommandInstanceView): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -111,7 +111,7 @@ export function virtualMachineRunCommandInstanceViewToHclTerraform(struct?: Virt
   return attrs;
 }
 
-export class VirtualMachineRunCommandInstanceViewOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineRunCommandInstanceViewOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -120,7 +120,7 @@ export class VirtualMachineRunCommandInstanceViewOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -175,14 +175,14 @@ export class VirtualMachineRunCommandInstanceViewOutputReference extends cdktf.C
   }
 }
 
-export class VirtualMachineRunCommandInstanceViewList extends cdktf.ComplexList {
+export class VirtualMachineRunCommandInstanceViewList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -205,31 +205,31 @@ export interface VirtualMachineRunCommandErrorBlobManagedIdentity {
 }
 
 export function virtualMachineRunCommandErrorBlobManagedIdentityToTerraform(struct?: VirtualMachineRunCommandErrorBlobManagedIdentityOutputReference | VirtualMachineRunCommandErrorBlobManagedIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    object_id: cdktf.stringToTerraform(struct!.objectId),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    object_id: cdktn.stringToTerraform(struct!.objectId),
   }
 }
 
 
 export function virtualMachineRunCommandErrorBlobManagedIdentityToHclTerraform(struct?: VirtualMachineRunCommandErrorBlobManagedIdentityOutputReference | VirtualMachineRunCommandErrorBlobManagedIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     object_id: {
-      value: cdktf.stringToHclTerraform(struct!.objectId),
+      value: cdktn.stringToHclTerraform(struct!.objectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -240,14 +240,14 @@ export function virtualMachineRunCommandErrorBlobManagedIdentityToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualMachineRunCommandErrorBlobManagedIdentityOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineRunCommandErrorBlobManagedIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -322,31 +322,31 @@ export interface VirtualMachineRunCommandOutputBlobManagedIdentity {
 }
 
 export function virtualMachineRunCommandOutputBlobManagedIdentityToTerraform(struct?: VirtualMachineRunCommandOutputBlobManagedIdentityOutputReference | VirtualMachineRunCommandOutputBlobManagedIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    object_id: cdktf.stringToTerraform(struct!.objectId),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    object_id: cdktn.stringToTerraform(struct!.objectId),
   }
 }
 
 
 export function virtualMachineRunCommandOutputBlobManagedIdentityToHclTerraform(struct?: VirtualMachineRunCommandOutputBlobManagedIdentityOutputReference | VirtualMachineRunCommandOutputBlobManagedIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     object_id: {
-      value: cdktf.stringToHclTerraform(struct!.objectId),
+      value: cdktn.stringToHclTerraform(struct!.objectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -357,14 +357,14 @@ export function virtualMachineRunCommandOutputBlobManagedIdentityToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualMachineRunCommandOutputBlobManagedIdentityOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineRunCommandOutputBlobManagedIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -438,32 +438,32 @@ export interface VirtualMachineRunCommandParameter {
   readonly value: string;
 }
 
-export function virtualMachineRunCommandParameterToTerraform(struct?: VirtualMachineRunCommandParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineRunCommandParameterToTerraform(struct?: VirtualMachineRunCommandParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function virtualMachineRunCommandParameterToHclTerraform(struct?: VirtualMachineRunCommandParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineRunCommandParameterToHclTerraform(struct?: VirtualMachineRunCommandParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -474,9 +474,9 @@ export function virtualMachineRunCommandParameterToHclTerraform(struct?: Virtual
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualMachineRunCommandParameterOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineRunCommandParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -484,11 +484,11 @@ export class VirtualMachineRunCommandParameterOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VirtualMachineRunCommandParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualMachineRunCommandParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -505,14 +505,14 @@ export class VirtualMachineRunCommandParameterOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualMachineRunCommandParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualMachineRunCommandParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -551,15 +551,15 @@ export class VirtualMachineRunCommandParameterOutputReference extends cdktf.Comp
   }
 }
 
-export class VirtualMachineRunCommandParameterList extends cdktf.ComplexList {
-  public internalValue? : VirtualMachineRunCommandParameter[] | cdktf.IResolvable
+export class VirtualMachineRunCommandParameterList extends cdktn.ComplexList {
+  public internalValue? : VirtualMachineRunCommandParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -581,32 +581,32 @@ export interface VirtualMachineRunCommandProtectedParameter {
   readonly value: string;
 }
 
-export function virtualMachineRunCommandProtectedParameterToTerraform(struct?: VirtualMachineRunCommandProtectedParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineRunCommandProtectedParameterToTerraform(struct?: VirtualMachineRunCommandProtectedParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function virtualMachineRunCommandProtectedParameterToHclTerraform(struct?: VirtualMachineRunCommandProtectedParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineRunCommandProtectedParameterToHclTerraform(struct?: VirtualMachineRunCommandProtectedParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -617,9 +617,9 @@ export function virtualMachineRunCommandProtectedParameterToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualMachineRunCommandProtectedParameterOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineRunCommandProtectedParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -627,11 +627,11 @@ export class VirtualMachineRunCommandProtectedParameterOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VirtualMachineRunCommandProtectedParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualMachineRunCommandProtectedParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -648,14 +648,14 @@ export class VirtualMachineRunCommandProtectedParameterOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualMachineRunCommandProtectedParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualMachineRunCommandProtectedParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -694,15 +694,15 @@ export class VirtualMachineRunCommandProtectedParameterOutputReference extends c
   }
 }
 
-export class VirtualMachineRunCommandProtectedParameterList extends cdktf.ComplexList {
-  public internalValue? : VirtualMachineRunCommandProtectedParameter[] | cdktf.IResolvable
+export class VirtualMachineRunCommandProtectedParameterList extends cdktn.ComplexList {
+  public internalValue? : VirtualMachineRunCommandProtectedParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -725,31 +725,31 @@ export interface VirtualMachineRunCommandSourceScriptUriManagedIdentity {
 }
 
 export function virtualMachineRunCommandSourceScriptUriManagedIdentityToTerraform(struct?: VirtualMachineRunCommandSourceScriptUriManagedIdentityOutputReference | VirtualMachineRunCommandSourceScriptUriManagedIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    object_id: cdktf.stringToTerraform(struct!.objectId),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    object_id: cdktn.stringToTerraform(struct!.objectId),
   }
 }
 
 
 export function virtualMachineRunCommandSourceScriptUriManagedIdentityToHclTerraform(struct?: VirtualMachineRunCommandSourceScriptUriManagedIdentityOutputReference | VirtualMachineRunCommandSourceScriptUriManagedIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     object_id: {
-      value: cdktf.stringToHclTerraform(struct!.objectId),
+      value: cdktn.stringToHclTerraform(struct!.objectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -760,14 +760,14 @@ export function virtualMachineRunCommandSourceScriptUriManagedIdentityToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualMachineRunCommandSourceScriptUriManagedIdentityOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineRunCommandSourceScriptUriManagedIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -852,39 +852,39 @@ export interface VirtualMachineRunCommandSource {
 }
 
 export function virtualMachineRunCommandSourceToTerraform(struct?: VirtualMachineRunCommandSourceOutputReference | VirtualMachineRunCommandSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command_id: cdktf.stringToTerraform(struct!.commandId),
-    script: cdktf.stringToTerraform(struct!.script),
-    script_uri: cdktf.stringToTerraform(struct!.scriptUri),
+    command_id: cdktn.stringToTerraform(struct!.commandId),
+    script: cdktn.stringToTerraform(struct!.script),
+    script_uri: cdktn.stringToTerraform(struct!.scriptUri),
     script_uri_managed_identity: virtualMachineRunCommandSourceScriptUriManagedIdentityToTerraform(struct!.scriptUriManagedIdentity),
   }
 }
 
 
 export function virtualMachineRunCommandSourceToHclTerraform(struct?: VirtualMachineRunCommandSourceOutputReference | VirtualMachineRunCommandSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command_id: {
-      value: cdktf.stringToHclTerraform(struct!.commandId),
+      value: cdktn.stringToHclTerraform(struct!.commandId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     script: {
-      value: cdktf.stringToHclTerraform(struct!.script),
+      value: cdktn.stringToHclTerraform(struct!.script),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     script_uri: {
-      value: cdktf.stringToHclTerraform(struct!.scriptUri),
+      value: cdktn.stringToHclTerraform(struct!.scriptUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -901,14 +901,14 @@ export function virtualMachineRunCommandSourceToHclTerraform(struct?: VirtualMac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualMachineRunCommandSourceOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineRunCommandSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1034,46 +1034,46 @@ export interface VirtualMachineRunCommandTimeouts {
   readonly update?: string;
 }
 
-export function virtualMachineRunCommandTimeoutsToTerraform(struct?: VirtualMachineRunCommandTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineRunCommandTimeoutsToTerraform(struct?: VirtualMachineRunCommandTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function virtualMachineRunCommandTimeoutsToHclTerraform(struct?: VirtualMachineRunCommandTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineRunCommandTimeoutsToHclTerraform(struct?: VirtualMachineRunCommandTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1084,19 +1084,19 @@ export function virtualMachineRunCommandTimeoutsToHclTerraform(struct?: VirtualM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualMachineRunCommandTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineRunCommandTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VirtualMachineRunCommandTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualMachineRunCommandTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1121,7 +1121,7 @@ export class VirtualMachineRunCommandTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualMachineRunCommandTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualMachineRunCommandTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1130,7 +1130,7 @@ export class VirtualMachineRunCommandTimeoutsOutputReference extends cdktf.Compl
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1212,7 +1212,7 @@ export class VirtualMachineRunCommandTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_run_command azurerm_virtual_machine_run_command}
 */
-export class VirtualMachineRunCommand extends cdktf.TerraformResource {
+export class VirtualMachineRunCommand extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1223,14 +1223,14 @@ export class VirtualMachineRunCommand extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VirtualMachineRunCommand resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VirtualMachineRunCommand resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualMachineRunCommand to import
   * @param importFromId The id of the existing VirtualMachineRunCommand that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_run_command#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualMachineRunCommand to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_machine_run_command", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_machine_run_command", importId: importFromId, provider });
       }
 
   // ===========
@@ -1459,7 +1459,7 @@ export class VirtualMachineRunCommand extends cdktf.TerraformResource {
   public get parameter() {
     return this._parameter;
   }
-  public putParameter(value: VirtualMachineRunCommandParameter[] | cdktf.IResolvable) {
+  public putParameter(value: VirtualMachineRunCommandParameter[] | cdktn.IResolvable) {
     this._parameter.internalValue = value;
   }
   public resetParameter() {
@@ -1475,7 +1475,7 @@ export class VirtualMachineRunCommand extends cdktf.TerraformResource {
   public get protectedParameter() {
     return this._protectedParameter;
   }
-  public putProtectedParameter(value: VirtualMachineRunCommandProtectedParameter[] | cdktf.IResolvable) {
+  public putProtectedParameter(value: VirtualMachineRunCommandProtectedParameter[] | cdktn.IResolvable) {
     this._protectedParameter.internalValue = value;
   }
   public resetProtectedParameter() {
@@ -1521,19 +1521,19 @@ export class VirtualMachineRunCommand extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      error_blob_uri: cdktf.stringToTerraform(this._errorBlobUri),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      output_blob_uri: cdktf.stringToTerraform(this._outputBlobUri),
-      run_as_password: cdktf.stringToTerraform(this._runAsPassword),
-      run_as_user: cdktf.stringToTerraform(this._runAsUser),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      virtual_machine_id: cdktf.stringToTerraform(this._virtualMachineId),
+      error_blob_uri: cdktn.stringToTerraform(this._errorBlobUri),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      output_blob_uri: cdktn.stringToTerraform(this._outputBlobUri),
+      run_as_password: cdktn.stringToTerraform(this._runAsPassword),
+      run_as_user: cdktn.stringToTerraform(this._runAsUser),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      virtual_machine_id: cdktn.stringToTerraform(this._virtualMachineId),
       error_blob_managed_identity: virtualMachineRunCommandErrorBlobManagedIdentityToTerraform(this._errorBlobManagedIdentity.internalValue),
       output_blob_managed_identity: virtualMachineRunCommandOutputBlobManagedIdentityToTerraform(this._outputBlobManagedIdentity.internalValue),
-      parameter: cdktf.listMapper(virtualMachineRunCommandParameterToTerraform, true)(this._parameter.internalValue),
-      protected_parameter: cdktf.listMapper(virtualMachineRunCommandProtectedParameterToTerraform, true)(this._protectedParameter.internalValue),
+      parameter: cdktn.listMapper(virtualMachineRunCommandParameterToTerraform, true)(this._parameter.internalValue),
+      protected_parameter: cdktn.listMapper(virtualMachineRunCommandProtectedParameterToTerraform, true)(this._protectedParameter.internalValue),
       source: virtualMachineRunCommandSourceToTerraform(this._source.internalValue),
       timeouts: virtualMachineRunCommandTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1542,55 +1542,55 @@ export class VirtualMachineRunCommand extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       error_blob_uri: {
-        value: cdktf.stringToHclTerraform(this._errorBlobUri),
+        value: cdktn.stringToHclTerraform(this._errorBlobUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       output_blob_uri: {
-        value: cdktf.stringToHclTerraform(this._outputBlobUri),
+        value: cdktn.stringToHclTerraform(this._outputBlobUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       run_as_password: {
-        value: cdktf.stringToHclTerraform(this._runAsPassword),
+        value: cdktn.stringToHclTerraform(this._runAsPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       run_as_user: {
-        value: cdktf.stringToHclTerraform(this._runAsUser),
+        value: cdktn.stringToHclTerraform(this._runAsUser),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       virtual_machine_id: {
-        value: cdktf.stringToHclTerraform(this._virtualMachineId),
+        value: cdktn.stringToHclTerraform(this._virtualMachineId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1608,13 +1608,13 @@ export class VirtualMachineRunCommand extends cdktf.TerraformResource {
         storageClassType: "VirtualMachineRunCommandOutputBlobManagedIdentityList",
       },
       parameter: {
-        value: cdktf.listMapperHcl(virtualMachineRunCommandParameterToHclTerraform, true)(this._parameter.internalValue),
+        value: cdktn.listMapperHcl(virtualMachineRunCommandParameterToHclTerraform, true)(this._parameter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VirtualMachineRunCommandParameterList",
       },
       protected_parameter: {
-        value: cdktf.listMapperHcl(virtualMachineRunCommandProtectedParameterToHclTerraform, true)(this._protectedParameter.internalValue),
+        value: cdktn.listMapperHcl(virtualMachineRunCommandProtectedParameterToHclTerraform, true)(this._protectedParameter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VirtualMachineRunCommandProtectedParameterList",

@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApplicationGatewayConfig extends cdktf.TerraformMetaArguments {
+export interface ApplicationGatewayConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#enable_http2 ApplicationGateway#enable_http2}
   */
-  readonly enableHttp2?: boolean | cdktf.IResolvable;
+  readonly enableHttp2?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#fips_enabled ApplicationGateway#fips_enabled}
   */
-  readonly fipsEnabled?: boolean | cdktf.IResolvable;
+  readonly fipsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#firewall_policy_id ApplicationGateway#firewall_policy_id}
   */
@@ -27,7 +27,7 @@ export interface ApplicationGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#force_firewall_policy_association ApplicationGateway#force_firewall_policy_association}
   */
-  readonly forceFirewallPolicyAssociation?: boolean | cdktf.IResolvable;
+  readonly forceFirewallPolicyAssociation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#id ApplicationGateway#id}
   *
@@ -60,7 +60,7 @@ export interface ApplicationGatewayConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#authentication_certificate ApplicationGateway#authentication_certificate}
   */
-  readonly authenticationCertificate?: ApplicationGatewayAuthenticationCertificate[] | cdktf.IResolvable;
+  readonly authenticationCertificate?: ApplicationGatewayAuthenticationCertificate[] | cdktn.IResolvable;
   /**
   * autoscale_configuration block
   *
@@ -72,37 +72,37 @@ export interface ApplicationGatewayConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#backend_address_pool ApplicationGateway#backend_address_pool}
   */
-  readonly backendAddressPool: ApplicationGatewayBackendAddressPool[] | cdktf.IResolvable;
+  readonly backendAddressPool: ApplicationGatewayBackendAddressPool[] | cdktn.IResolvable;
   /**
   * backend_http_settings block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#backend_http_settings ApplicationGateway#backend_http_settings}
   */
-  readonly backendHttpSettings: ApplicationGatewayBackendHttpSettings[] | cdktf.IResolvable;
+  readonly backendHttpSettings: ApplicationGatewayBackendHttpSettings[] | cdktn.IResolvable;
   /**
   * custom_error_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#custom_error_configuration ApplicationGateway#custom_error_configuration}
   */
-  readonly customErrorConfiguration?: ApplicationGatewayCustomErrorConfiguration[] | cdktf.IResolvable;
+  readonly customErrorConfiguration?: ApplicationGatewayCustomErrorConfiguration[] | cdktn.IResolvable;
   /**
   * frontend_ip_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#frontend_ip_configuration ApplicationGateway#frontend_ip_configuration}
   */
-  readonly frontendIpConfiguration: ApplicationGatewayFrontendIpConfiguration[] | cdktf.IResolvable;
+  readonly frontendIpConfiguration: ApplicationGatewayFrontendIpConfiguration[] | cdktn.IResolvable;
   /**
   * frontend_port block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#frontend_port ApplicationGateway#frontend_port}
   */
-  readonly frontendPort: ApplicationGatewayFrontendPort[] | cdktf.IResolvable;
+  readonly frontendPort: ApplicationGatewayFrontendPort[] | cdktn.IResolvable;
   /**
   * gateway_ip_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#gateway_ip_configuration ApplicationGateway#gateway_ip_configuration}
   */
-  readonly gatewayIpConfiguration: ApplicationGatewayGatewayIpConfiguration[] | cdktf.IResolvable;
+  readonly gatewayIpConfiguration: ApplicationGatewayGatewayIpConfiguration[] | cdktn.IResolvable;
   /**
   * global block
   *
@@ -114,7 +114,7 @@ export interface ApplicationGatewayConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#http_listener ApplicationGateway#http_listener}
   */
-  readonly httpListener: ApplicationGatewayHttpListener[] | cdktf.IResolvable;
+  readonly httpListener: ApplicationGatewayHttpListener[] | cdktn.IResolvable;
   /**
   * identity block
   *
@@ -126,31 +126,31 @@ export interface ApplicationGatewayConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#private_link_configuration ApplicationGateway#private_link_configuration}
   */
-  readonly privateLinkConfiguration?: ApplicationGatewayPrivateLinkConfiguration[] | cdktf.IResolvable;
+  readonly privateLinkConfiguration?: ApplicationGatewayPrivateLinkConfiguration[] | cdktn.IResolvable;
   /**
   * probe block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#probe ApplicationGateway#probe}
   */
-  readonly probe?: ApplicationGatewayProbe[] | cdktf.IResolvable;
+  readonly probe?: ApplicationGatewayProbe[] | cdktn.IResolvable;
   /**
   * redirect_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#redirect_configuration ApplicationGateway#redirect_configuration}
   */
-  readonly redirectConfiguration?: ApplicationGatewayRedirectConfiguration[] | cdktf.IResolvable;
+  readonly redirectConfiguration?: ApplicationGatewayRedirectConfiguration[] | cdktn.IResolvable;
   /**
   * request_routing_rule block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#request_routing_rule ApplicationGateway#request_routing_rule}
   */
-  readonly requestRoutingRule: ApplicationGatewayRequestRoutingRule[] | cdktf.IResolvable;
+  readonly requestRoutingRule: ApplicationGatewayRequestRoutingRule[] | cdktn.IResolvable;
   /**
   * rewrite_rule_set block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#rewrite_rule_set ApplicationGateway#rewrite_rule_set}
   */
-  readonly rewriteRuleSet?: ApplicationGatewayRewriteRuleSet[] | cdktf.IResolvable;
+  readonly rewriteRuleSet?: ApplicationGatewayRewriteRuleSet[] | cdktn.IResolvable;
   /**
   * sku block
   *
@@ -162,7 +162,7 @@ export interface ApplicationGatewayConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#ssl_certificate ApplicationGateway#ssl_certificate}
   */
-  readonly sslCertificate?: ApplicationGatewaySslCertificate[] | cdktf.IResolvable;
+  readonly sslCertificate?: ApplicationGatewaySslCertificate[] | cdktn.IResolvable;
   /**
   * ssl_policy block
   *
@@ -174,7 +174,7 @@ export interface ApplicationGatewayConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#ssl_profile ApplicationGateway#ssl_profile}
   */
-  readonly sslProfile?: ApplicationGatewaySslProfile[] | cdktf.IResolvable;
+  readonly sslProfile?: ApplicationGatewaySslProfile[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -186,19 +186,19 @@ export interface ApplicationGatewayConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#trusted_client_certificate ApplicationGateway#trusted_client_certificate}
   */
-  readonly trustedClientCertificate?: ApplicationGatewayTrustedClientCertificate[] | cdktf.IResolvable;
+  readonly trustedClientCertificate?: ApplicationGatewayTrustedClientCertificate[] | cdktn.IResolvable;
   /**
   * trusted_root_certificate block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#trusted_root_certificate ApplicationGateway#trusted_root_certificate}
   */
-  readonly trustedRootCertificate?: ApplicationGatewayTrustedRootCertificate[] | cdktf.IResolvable;
+  readonly trustedRootCertificate?: ApplicationGatewayTrustedRootCertificate[] | cdktn.IResolvable;
   /**
   * url_path_map block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#url_path_map ApplicationGateway#url_path_map}
   */
-  readonly urlPathMap?: ApplicationGatewayUrlPathMap[] | cdktf.IResolvable;
+  readonly urlPathMap?: ApplicationGatewayUrlPathMap[] | cdktn.IResolvable;
   /**
   * waf_configuration block
   *
@@ -210,8 +210,8 @@ export interface ApplicationGatewayPrivateEndpointConnection {
 }
 
 export function applicationGatewayPrivateEndpointConnectionToTerraform(struct?: ApplicationGatewayPrivateEndpointConnection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -220,8 +220,8 @@ export function applicationGatewayPrivateEndpointConnectionToTerraform(struct?: 
 
 
 export function applicationGatewayPrivateEndpointConnectionToHclTerraform(struct?: ApplicationGatewayPrivateEndpointConnection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -229,7 +229,7 @@ export function applicationGatewayPrivateEndpointConnectionToHclTerraform(struct
   return attrs;
 }
 
-export class ApplicationGatewayPrivateEndpointConnectionOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayPrivateEndpointConnectionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -238,7 +238,7 @@ export class ApplicationGatewayPrivateEndpointConnectionOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -268,14 +268,14 @@ export class ApplicationGatewayPrivateEndpointConnectionOutputReference extends 
   }
 }
 
-export class ApplicationGatewayPrivateEndpointConnectionList extends cdktf.ComplexList {
+export class ApplicationGatewayPrivateEndpointConnectionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -297,32 +297,32 @@ export interface ApplicationGatewayAuthenticationCertificate {
   readonly name: string;
 }
 
-export function applicationGatewayAuthenticationCertificateToTerraform(struct?: ApplicationGatewayAuthenticationCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayAuthenticationCertificateToTerraform(struct?: ApplicationGatewayAuthenticationCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data: cdktf.stringToTerraform(struct!.data),
-    name: cdktf.stringToTerraform(struct!.name),
+    data: cdktn.stringToTerraform(struct!.data),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function applicationGatewayAuthenticationCertificateToHclTerraform(struct?: ApplicationGatewayAuthenticationCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayAuthenticationCertificateToHclTerraform(struct?: ApplicationGatewayAuthenticationCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data: {
-      value: cdktf.stringToHclTerraform(struct!.data),
+      value: cdktn.stringToHclTerraform(struct!.data),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -333,9 +333,9 @@ export function applicationGatewayAuthenticationCertificateToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayAuthenticationCertificateOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayAuthenticationCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -343,11 +343,11 @@ export class ApplicationGatewayAuthenticationCertificateOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayAuthenticationCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayAuthenticationCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -364,14 +364,14 @@ export class ApplicationGatewayAuthenticationCertificateOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayAuthenticationCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayAuthenticationCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._data = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -415,15 +415,15 @@ export class ApplicationGatewayAuthenticationCertificateOutputReference extends 
   }
 }
 
-export class ApplicationGatewayAuthenticationCertificateList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayAuthenticationCertificate[] | cdktf.IResolvable
+export class ApplicationGatewayAuthenticationCertificateList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayAuthenticationCertificate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -446,31 +446,31 @@ export interface ApplicationGatewayAutoscaleConfiguration {
 }
 
 export function applicationGatewayAutoscaleConfigurationToTerraform(struct?: ApplicationGatewayAutoscaleConfigurationOutputReference | ApplicationGatewayAutoscaleConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_capacity: cdktf.numberToTerraform(struct!.maxCapacity),
-    min_capacity: cdktf.numberToTerraform(struct!.minCapacity),
+    max_capacity: cdktn.numberToTerraform(struct!.maxCapacity),
+    min_capacity: cdktn.numberToTerraform(struct!.minCapacity),
   }
 }
 
 
 export function applicationGatewayAutoscaleConfigurationToHclTerraform(struct?: ApplicationGatewayAutoscaleConfigurationOutputReference | ApplicationGatewayAutoscaleConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_capacity: {
-      value: cdktf.numberToHclTerraform(struct!.maxCapacity),
+      value: cdktn.numberToHclTerraform(struct!.maxCapacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_capacity: {
-      value: cdktf.numberToHclTerraform(struct!.minCapacity),
+      value: cdktn.numberToHclTerraform(struct!.minCapacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -481,14 +481,14 @@ export function applicationGatewayAutoscaleConfigurationToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayAutoscaleConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayAutoscaleConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -563,39 +563,39 @@ export interface ApplicationGatewayBackendAddressPool {
   readonly name: string;
 }
 
-export function applicationGatewayBackendAddressPoolToTerraform(struct?: ApplicationGatewayBackendAddressPool | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayBackendAddressPoolToTerraform(struct?: ApplicationGatewayBackendAddressPool | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fqdns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fqdns),
-    ip_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipAddresses),
-    name: cdktf.stringToTerraform(struct!.name),
+    fqdns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fqdns),
+    ip_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipAddresses),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function applicationGatewayBackendAddressPoolToHclTerraform(struct?: ApplicationGatewayBackendAddressPool | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayBackendAddressPoolToHclTerraform(struct?: ApplicationGatewayBackendAddressPool | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fqdns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fqdns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.fqdns),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     ip_addresses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipAddresses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ipAddresses),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -606,9 +606,9 @@ export function applicationGatewayBackendAddressPoolToHclTerraform(struct?: Appl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayBackendAddressPoolOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayBackendAddressPoolOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -616,11 +616,11 @@ export class ApplicationGatewayBackendAddressPoolOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayBackendAddressPool | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayBackendAddressPool | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -641,7 +641,7 @@ export class ApplicationGatewayBackendAddressPoolOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayBackendAddressPool | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayBackendAddressPool | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -649,7 +649,7 @@ export class ApplicationGatewayBackendAddressPoolOutputReference extends cdktf.C
       this._ipAddresses = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -665,7 +665,7 @@ export class ApplicationGatewayBackendAddressPoolOutputReference extends cdktf.C
   // fqdns - computed: false, optional: true, required: false
   private _fqdns?: string[]; 
   public get fqdns() {
-    return cdktf.Fn.tolist(this.getListAttribute('fqdns'));
+    return cdktn.Fn.tolist(this.getListAttribute('fqdns'));
   }
   public set fqdns(value: string[]) {
     this._fqdns = value;
@@ -686,7 +686,7 @@ export class ApplicationGatewayBackendAddressPoolOutputReference extends cdktf.C
   // ip_addresses - computed: false, optional: true, required: false
   private _ipAddresses?: string[]; 
   public get ipAddresses() {
-    return cdktf.Fn.tolist(this.getListAttribute('ip_addresses'));
+    return cdktn.Fn.tolist(this.getListAttribute('ip_addresses'));
   }
   public set ipAddresses(value: string[]) {
     this._ipAddresses = value;
@@ -713,15 +713,15 @@ export class ApplicationGatewayBackendAddressPoolOutputReference extends cdktf.C
   }
 }
 
-export class ApplicationGatewayBackendAddressPoolList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayBackendAddressPool[] | cdktf.IResolvable
+export class ApplicationGatewayBackendAddressPoolList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayBackendAddressPool[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -739,25 +739,25 @@ export interface ApplicationGatewayBackendHttpSettingsAuthenticationCertificate 
   readonly name: string;
 }
 
-export function applicationGatewayBackendHttpSettingsAuthenticationCertificateToTerraform(struct?: ApplicationGatewayBackendHttpSettingsAuthenticationCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayBackendHttpSettingsAuthenticationCertificateToTerraform(struct?: ApplicationGatewayBackendHttpSettingsAuthenticationCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function applicationGatewayBackendHttpSettingsAuthenticationCertificateToHclTerraform(struct?: ApplicationGatewayBackendHttpSettingsAuthenticationCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayBackendHttpSettingsAuthenticationCertificateToHclTerraform(struct?: ApplicationGatewayBackendHttpSettingsAuthenticationCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -768,9 +768,9 @@ export function applicationGatewayBackendHttpSettingsAuthenticationCertificateTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -778,11 +778,11 @@ export class ApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayBackendHttpSettingsAuthenticationCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayBackendHttpSettingsAuthenticationCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -795,13 +795,13 @@ export class ApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayBackendHttpSettingsAuthenticationCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayBackendHttpSettingsAuthenticationCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -831,15 +831,15 @@ export class ApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutpu
   }
 }
 
-export class ApplicationGatewayBackendHttpSettingsAuthenticationCertificateList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayBackendHttpSettingsAuthenticationCertificate[] | cdktf.IResolvable
+export class ApplicationGatewayBackendHttpSettingsAuthenticationCertificateList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayBackendHttpSettingsAuthenticationCertificate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -858,35 +858,35 @@ export interface ApplicationGatewayBackendHttpSettingsConnectionDraining {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#enabled ApplicationGateway#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
 }
 
 export function applicationGatewayBackendHttpSettingsConnectionDrainingToTerraform(struct?: ApplicationGatewayBackendHttpSettingsConnectionDrainingOutputReference | ApplicationGatewayBackendHttpSettingsConnectionDraining): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    drain_timeout_sec: cdktf.numberToTerraform(struct!.drainTimeoutSec),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    drain_timeout_sec: cdktn.numberToTerraform(struct!.drainTimeoutSec),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function applicationGatewayBackendHttpSettingsConnectionDrainingToHclTerraform(struct?: ApplicationGatewayBackendHttpSettingsConnectionDrainingOutputReference | ApplicationGatewayBackendHttpSettingsConnectionDraining): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     drain_timeout_sec: {
-      value: cdktf.numberToHclTerraform(struct!.drainTimeoutSec),
+      value: cdktn.numberToHclTerraform(struct!.drainTimeoutSec),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -897,14 +897,14 @@ export function applicationGatewayBackendHttpSettingsConnectionDrainingToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayBackendHttpSettingsConnectionDrainingOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayBackendHttpSettingsConnectionDrainingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -949,11 +949,11 @@ export class ApplicationGatewayBackendHttpSettingsConnectionDrainingOutputRefere
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -973,7 +973,7 @@ export interface ApplicationGatewayBackendHttpSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#dedicated_backend_connection_enabled ApplicationGateway#dedicated_backend_connection_enabled}
   */
-  readonly dedicatedBackendConnectionEnabled?: boolean | cdktf.IResolvable;
+  readonly dedicatedBackendConnectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#host_name ApplicationGateway#host_name}
   */
@@ -989,7 +989,7 @@ export interface ApplicationGatewayBackendHttpSettings {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#pick_host_name_from_backend_address ApplicationGateway#pick_host_name_from_backend_address}
   */
-  readonly pickHostNameFromBackendAddress?: boolean | cdktf.IResolvable;
+  readonly pickHostNameFromBackendAddress?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#port ApplicationGateway#port}
   */
@@ -1015,7 +1015,7 @@ export interface ApplicationGatewayBackendHttpSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#authentication_certificate ApplicationGateway#authentication_certificate}
   */
-  readonly authenticationCertificate?: ApplicationGatewayBackendHttpSettingsAuthenticationCertificate[] | cdktf.IResolvable;
+  readonly authenticationCertificate?: ApplicationGatewayBackendHttpSettingsAuthenticationCertificate[] | cdktn.IResolvable;
   /**
   * connection_draining block
   *
@@ -1024,110 +1024,110 @@ export interface ApplicationGatewayBackendHttpSettings {
   readonly connectionDraining?: ApplicationGatewayBackendHttpSettingsConnectionDraining;
 }
 
-export function applicationGatewayBackendHttpSettingsToTerraform(struct?: ApplicationGatewayBackendHttpSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayBackendHttpSettingsToTerraform(struct?: ApplicationGatewayBackendHttpSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    affinity_cookie_name: cdktf.stringToTerraform(struct!.affinityCookieName),
-    cookie_based_affinity: cdktf.stringToTerraform(struct!.cookieBasedAffinity),
-    dedicated_backend_connection_enabled: cdktf.booleanToTerraform(struct!.dedicatedBackendConnectionEnabled),
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    name: cdktf.stringToTerraform(struct!.name),
-    path: cdktf.stringToTerraform(struct!.path),
-    pick_host_name_from_backend_address: cdktf.booleanToTerraform(struct!.pickHostNameFromBackendAddress),
-    port: cdktf.numberToTerraform(struct!.port),
-    probe_name: cdktf.stringToTerraform(struct!.probeName),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    request_timeout: cdktf.numberToTerraform(struct!.requestTimeout),
-    trusted_root_certificate_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.trustedRootCertificateNames),
-    authentication_certificate: cdktf.listMapper(applicationGatewayBackendHttpSettingsAuthenticationCertificateToTerraform, true)(struct!.authenticationCertificate),
+    affinity_cookie_name: cdktn.stringToTerraform(struct!.affinityCookieName),
+    cookie_based_affinity: cdktn.stringToTerraform(struct!.cookieBasedAffinity),
+    dedicated_backend_connection_enabled: cdktn.booleanToTerraform(struct!.dedicatedBackendConnectionEnabled),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    name: cdktn.stringToTerraform(struct!.name),
+    path: cdktn.stringToTerraform(struct!.path),
+    pick_host_name_from_backend_address: cdktn.booleanToTerraform(struct!.pickHostNameFromBackendAddress),
+    port: cdktn.numberToTerraform(struct!.port),
+    probe_name: cdktn.stringToTerraform(struct!.probeName),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    request_timeout: cdktn.numberToTerraform(struct!.requestTimeout),
+    trusted_root_certificate_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.trustedRootCertificateNames),
+    authentication_certificate: cdktn.listMapper(applicationGatewayBackendHttpSettingsAuthenticationCertificateToTerraform, true)(struct!.authenticationCertificate),
     connection_draining: applicationGatewayBackendHttpSettingsConnectionDrainingToTerraform(struct!.connectionDraining),
   }
 }
 
 
-export function applicationGatewayBackendHttpSettingsToHclTerraform(struct?: ApplicationGatewayBackendHttpSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayBackendHttpSettingsToHclTerraform(struct?: ApplicationGatewayBackendHttpSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     affinity_cookie_name: {
-      value: cdktf.stringToHclTerraform(struct!.affinityCookieName),
+      value: cdktn.stringToHclTerraform(struct!.affinityCookieName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cookie_based_affinity: {
-      value: cdktf.stringToHclTerraform(struct!.cookieBasedAffinity),
+      value: cdktn.stringToHclTerraform(struct!.cookieBasedAffinity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dedicated_backend_connection_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.dedicatedBackendConnectionEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.dedicatedBackendConnectionEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pick_host_name_from_backend_address: {
-      value: cdktf.booleanToHclTerraform(struct!.pickHostNameFromBackendAddress),
+      value: cdktn.booleanToHclTerraform(struct!.pickHostNameFromBackendAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     probe_name: {
-      value: cdktf.stringToHclTerraform(struct!.probeName),
+      value: cdktn.stringToHclTerraform(struct!.probeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     request_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.requestTimeout),
+      value: cdktn.numberToHclTerraform(struct!.requestTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     trusted_root_certificate_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.trustedRootCertificateNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.trustedRootCertificateNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     authentication_certificate: {
-      value: cdktf.listMapperHcl(applicationGatewayBackendHttpSettingsAuthenticationCertificateToHclTerraform, true)(struct!.authenticationCertificate),
+      value: cdktn.listMapperHcl(applicationGatewayBackendHttpSettingsAuthenticationCertificateToHclTerraform, true)(struct!.authenticationCertificate),
       isBlock: true,
       type: "list",
       storageClassType: "ApplicationGatewayBackendHttpSettingsAuthenticationCertificateList",
@@ -1144,9 +1144,9 @@ export function applicationGatewayBackendHttpSettingsToHclTerraform(struct?: App
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayBackendHttpSettingsOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayBackendHttpSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1154,11 +1154,11 @@ export class ApplicationGatewayBackendHttpSettingsOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayBackendHttpSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayBackendHttpSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1223,7 +1223,7 @@ export class ApplicationGatewayBackendHttpSettingsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayBackendHttpSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayBackendHttpSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1242,7 +1242,7 @@ export class ApplicationGatewayBackendHttpSettingsOutputReference extends cdktf.
       this._authenticationCertificate.internalValue = undefined;
       this._connectionDraining.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1296,11 +1296,11 @@ export class ApplicationGatewayBackendHttpSettingsOutputReference extends cdktf.
   }
 
   // dedicated_backend_connection_enabled - computed: false, optional: true, required: false
-  private _dedicatedBackendConnectionEnabled?: boolean | cdktf.IResolvable; 
+  private _dedicatedBackendConnectionEnabled?: boolean | cdktn.IResolvable; 
   public get dedicatedBackendConnectionEnabled() {
     return this.getBooleanAttribute('dedicated_backend_connection_enabled');
   }
-  public set dedicatedBackendConnectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set dedicatedBackendConnectionEnabled(value: boolean | cdktn.IResolvable) {
     this._dedicatedBackendConnectionEnabled = value;
   }
   public resetDedicatedBackendConnectionEnabled() {
@@ -1362,11 +1362,11 @@ export class ApplicationGatewayBackendHttpSettingsOutputReference extends cdktf.
   }
 
   // pick_host_name_from_backend_address - computed: false, optional: true, required: false
-  private _pickHostNameFromBackendAddress?: boolean | cdktf.IResolvable; 
+  private _pickHostNameFromBackendAddress?: boolean | cdktn.IResolvable; 
   public get pickHostNameFromBackendAddress() {
     return this.getBooleanAttribute('pick_host_name_from_backend_address');
   }
-  public set pickHostNameFromBackendAddress(value: boolean | cdktf.IResolvable) {
+  public set pickHostNameFromBackendAddress(value: boolean | cdktn.IResolvable) {
     this._pickHostNameFromBackendAddress = value;
   }
   public resetPickHostNameFromBackendAddress() {
@@ -1461,7 +1461,7 @@ export class ApplicationGatewayBackendHttpSettingsOutputReference extends cdktf.
   public get authenticationCertificate() {
     return this._authenticationCertificate;
   }
-  public putAuthenticationCertificate(value: ApplicationGatewayBackendHttpSettingsAuthenticationCertificate[] | cdktf.IResolvable) {
+  public putAuthenticationCertificate(value: ApplicationGatewayBackendHttpSettingsAuthenticationCertificate[] | cdktn.IResolvable) {
     this._authenticationCertificate.internalValue = value;
   }
   public resetAuthenticationCertificate() {
@@ -1489,15 +1489,15 @@ export class ApplicationGatewayBackendHttpSettingsOutputReference extends cdktf.
   }
 }
 
-export class ApplicationGatewayBackendHttpSettingsList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayBackendHttpSettings[] | cdktf.IResolvable
+export class ApplicationGatewayBackendHttpSettingsList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayBackendHttpSettings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1519,32 +1519,32 @@ export interface ApplicationGatewayCustomErrorConfiguration {
   readonly statusCode: string;
 }
 
-export function applicationGatewayCustomErrorConfigurationToTerraform(struct?: ApplicationGatewayCustomErrorConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayCustomErrorConfigurationToTerraform(struct?: ApplicationGatewayCustomErrorConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_error_page_url: cdktf.stringToTerraform(struct!.customErrorPageUrl),
-    status_code: cdktf.stringToTerraform(struct!.statusCode),
+    custom_error_page_url: cdktn.stringToTerraform(struct!.customErrorPageUrl),
+    status_code: cdktn.stringToTerraform(struct!.statusCode),
   }
 }
 
 
-export function applicationGatewayCustomErrorConfigurationToHclTerraform(struct?: ApplicationGatewayCustomErrorConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayCustomErrorConfigurationToHclTerraform(struct?: ApplicationGatewayCustomErrorConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_error_page_url: {
-      value: cdktf.stringToHclTerraform(struct!.customErrorPageUrl),
+      value: cdktn.stringToHclTerraform(struct!.customErrorPageUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status_code: {
-      value: cdktf.stringToHclTerraform(struct!.statusCode),
+      value: cdktn.stringToHclTerraform(struct!.statusCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1555,9 +1555,9 @@ export function applicationGatewayCustomErrorConfigurationToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayCustomErrorConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayCustomErrorConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1565,11 +1565,11 @@ export class ApplicationGatewayCustomErrorConfigurationOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayCustomErrorConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayCustomErrorConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1586,14 +1586,14 @@ export class ApplicationGatewayCustomErrorConfigurationOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayCustomErrorConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayCustomErrorConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._customErrorPageUrl = undefined;
       this._statusCode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1637,15 +1637,15 @@ export class ApplicationGatewayCustomErrorConfigurationOutputReference extends c
   }
 }
 
-export class ApplicationGatewayCustomErrorConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayCustomErrorConfiguration[] | cdktf.IResolvable
+export class ApplicationGatewayCustomErrorConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayCustomErrorConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1683,60 +1683,60 @@ export interface ApplicationGatewayFrontendIpConfiguration {
   readonly subnetId?: string;
 }
 
-export function applicationGatewayFrontendIpConfigurationToTerraform(struct?: ApplicationGatewayFrontendIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayFrontendIpConfigurationToTerraform(struct?: ApplicationGatewayFrontendIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    private_ip_address: cdktf.stringToTerraform(struct!.privateIpAddress),
-    private_ip_address_allocation: cdktf.stringToTerraform(struct!.privateIpAddressAllocation),
-    private_link_configuration_name: cdktf.stringToTerraform(struct!.privateLinkConfigurationName),
-    public_ip_address_id: cdktf.stringToTerraform(struct!.publicIpAddressId),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    name: cdktn.stringToTerraform(struct!.name),
+    private_ip_address: cdktn.stringToTerraform(struct!.privateIpAddress),
+    private_ip_address_allocation: cdktn.stringToTerraform(struct!.privateIpAddressAllocation),
+    private_link_configuration_name: cdktn.stringToTerraform(struct!.privateLinkConfigurationName),
+    public_ip_address_id: cdktn.stringToTerraform(struct!.publicIpAddressId),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
-export function applicationGatewayFrontendIpConfigurationToHclTerraform(struct?: ApplicationGatewayFrontendIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayFrontendIpConfigurationToHclTerraform(struct?: ApplicationGatewayFrontendIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.privateIpAddress),
+      value: cdktn.stringToHclTerraform(struct!.privateIpAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_ip_address_allocation: {
-      value: cdktf.stringToHclTerraform(struct!.privateIpAddressAllocation),
+      value: cdktn.stringToHclTerraform(struct!.privateIpAddressAllocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_link_configuration_name: {
-      value: cdktf.stringToHclTerraform(struct!.privateLinkConfigurationName),
+      value: cdktn.stringToHclTerraform(struct!.privateLinkConfigurationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     public_ip_address_id: {
-      value: cdktf.stringToHclTerraform(struct!.publicIpAddressId),
+      value: cdktn.stringToHclTerraform(struct!.publicIpAddressId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1747,9 +1747,9 @@ export function applicationGatewayFrontendIpConfigurationToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayFrontendIpConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayFrontendIpConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1757,11 +1757,11 @@ export class ApplicationGatewayFrontendIpConfigurationOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayFrontendIpConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayFrontendIpConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1794,7 +1794,7 @@ export class ApplicationGatewayFrontendIpConfigurationOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayFrontendIpConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayFrontendIpConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1805,7 +1805,7 @@ export class ApplicationGatewayFrontendIpConfigurationOutputReference extends cd
       this._publicIpAddressId = undefined;
       this._subnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1925,15 +1925,15 @@ export class ApplicationGatewayFrontendIpConfigurationOutputReference extends cd
   }
 }
 
-export class ApplicationGatewayFrontendIpConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayFrontendIpConfiguration[] | cdktf.IResolvable
+export class ApplicationGatewayFrontendIpConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayFrontendIpConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1955,32 +1955,32 @@ export interface ApplicationGatewayFrontendPort {
   readonly port: number;
 }
 
-export function applicationGatewayFrontendPortToTerraform(struct?: ApplicationGatewayFrontendPort | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayFrontendPortToTerraform(struct?: ApplicationGatewayFrontendPort | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    port: cdktf.numberToTerraform(struct!.port),
+    name: cdktn.stringToTerraform(struct!.name),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
-export function applicationGatewayFrontendPortToHclTerraform(struct?: ApplicationGatewayFrontendPort | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayFrontendPortToHclTerraform(struct?: ApplicationGatewayFrontendPort | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1991,9 +1991,9 @@ export function applicationGatewayFrontendPortToHclTerraform(struct?: Applicatio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayFrontendPortOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayFrontendPortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2001,11 +2001,11 @@ export class ApplicationGatewayFrontendPortOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayFrontendPort | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayFrontendPort | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2022,14 +2022,14 @@ export class ApplicationGatewayFrontendPortOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayFrontendPort | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayFrontendPort | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2073,15 +2073,15 @@ export class ApplicationGatewayFrontendPortOutputReference extends cdktf.Complex
   }
 }
 
-export class ApplicationGatewayFrontendPortList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayFrontendPort[] | cdktf.IResolvable
+export class ApplicationGatewayFrontendPortList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayFrontendPort[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2103,32 +2103,32 @@ export interface ApplicationGatewayGatewayIpConfiguration {
   readonly subnetId: string;
 }
 
-export function applicationGatewayGatewayIpConfigurationToTerraform(struct?: ApplicationGatewayGatewayIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayGatewayIpConfigurationToTerraform(struct?: ApplicationGatewayGatewayIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    name: cdktn.stringToTerraform(struct!.name),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
-export function applicationGatewayGatewayIpConfigurationToHclTerraform(struct?: ApplicationGatewayGatewayIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayGatewayIpConfigurationToHclTerraform(struct?: ApplicationGatewayGatewayIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2139,9 +2139,9 @@ export function applicationGatewayGatewayIpConfigurationToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayGatewayIpConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayGatewayIpConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2149,11 +2149,11 @@ export class ApplicationGatewayGatewayIpConfigurationOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayGatewayIpConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayGatewayIpConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2170,14 +2170,14 @@ export class ApplicationGatewayGatewayIpConfigurationOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayGatewayIpConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayGatewayIpConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._subnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2221,15 +2221,15 @@ export class ApplicationGatewayGatewayIpConfigurationOutputReference extends cdk
   }
 }
 
-export class ApplicationGatewayGatewayIpConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayGatewayIpConfiguration[] | cdktf.IResolvable
+export class ApplicationGatewayGatewayIpConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayGatewayIpConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2244,39 +2244,39 @@ export interface ApplicationGatewayGlobal {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#request_buffering_enabled ApplicationGateway#request_buffering_enabled}
   */
-  readonly requestBufferingEnabled: boolean | cdktf.IResolvable;
+  readonly requestBufferingEnabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#response_buffering_enabled ApplicationGateway#response_buffering_enabled}
   */
-  readonly responseBufferingEnabled: boolean | cdktf.IResolvable;
+  readonly responseBufferingEnabled: boolean | cdktn.IResolvable;
 }
 
 export function applicationGatewayGlobalToTerraform(struct?: ApplicationGatewayGlobalOutputReference | ApplicationGatewayGlobal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    request_buffering_enabled: cdktf.booleanToTerraform(struct!.requestBufferingEnabled),
-    response_buffering_enabled: cdktf.booleanToTerraform(struct!.responseBufferingEnabled),
+    request_buffering_enabled: cdktn.booleanToTerraform(struct!.requestBufferingEnabled),
+    response_buffering_enabled: cdktn.booleanToTerraform(struct!.responseBufferingEnabled),
   }
 }
 
 
 export function applicationGatewayGlobalToHclTerraform(struct?: ApplicationGatewayGlobalOutputReference | ApplicationGatewayGlobal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     request_buffering_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.requestBufferingEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.requestBufferingEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     response_buffering_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.responseBufferingEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.responseBufferingEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2287,14 +2287,14 @@ export function applicationGatewayGlobalToHclTerraform(struct?: ApplicationGatew
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayGlobalOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayGlobalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2326,11 +2326,11 @@ export class ApplicationGatewayGlobalOutputReference extends cdktf.ComplexObject
   }
 
   // request_buffering_enabled - computed: false, optional: false, required: true
-  private _requestBufferingEnabled?: boolean | cdktf.IResolvable; 
+  private _requestBufferingEnabled?: boolean | cdktn.IResolvable; 
   public get requestBufferingEnabled() {
     return this.getBooleanAttribute('request_buffering_enabled');
   }
-  public set requestBufferingEnabled(value: boolean | cdktf.IResolvable) {
+  public set requestBufferingEnabled(value: boolean | cdktn.IResolvable) {
     this._requestBufferingEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2339,11 +2339,11 @@ export class ApplicationGatewayGlobalOutputReference extends cdktf.ComplexObject
   }
 
   // response_buffering_enabled - computed: false, optional: false, required: true
-  private _responseBufferingEnabled?: boolean | cdktf.IResolvable; 
+  private _responseBufferingEnabled?: boolean | cdktn.IResolvable; 
   public get responseBufferingEnabled() {
     return this.getBooleanAttribute('response_buffering_enabled');
   }
-  public set responseBufferingEnabled(value: boolean | cdktf.IResolvable) {
+  public set responseBufferingEnabled(value: boolean | cdktn.IResolvable) {
     this._responseBufferingEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2362,32 +2362,32 @@ export interface ApplicationGatewayHttpListenerCustomErrorConfiguration {
   readonly statusCode: string;
 }
 
-export function applicationGatewayHttpListenerCustomErrorConfigurationToTerraform(struct?: ApplicationGatewayHttpListenerCustomErrorConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayHttpListenerCustomErrorConfigurationToTerraform(struct?: ApplicationGatewayHttpListenerCustomErrorConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_error_page_url: cdktf.stringToTerraform(struct!.customErrorPageUrl),
-    status_code: cdktf.stringToTerraform(struct!.statusCode),
+    custom_error_page_url: cdktn.stringToTerraform(struct!.customErrorPageUrl),
+    status_code: cdktn.stringToTerraform(struct!.statusCode),
   }
 }
 
 
-export function applicationGatewayHttpListenerCustomErrorConfigurationToHclTerraform(struct?: ApplicationGatewayHttpListenerCustomErrorConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayHttpListenerCustomErrorConfigurationToHclTerraform(struct?: ApplicationGatewayHttpListenerCustomErrorConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_error_page_url: {
-      value: cdktf.stringToHclTerraform(struct!.customErrorPageUrl),
+      value: cdktn.stringToHclTerraform(struct!.customErrorPageUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status_code: {
-      value: cdktf.stringToHclTerraform(struct!.statusCode),
+      value: cdktn.stringToHclTerraform(struct!.statusCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2398,9 +2398,9 @@ export function applicationGatewayHttpListenerCustomErrorConfigurationToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayHttpListenerCustomErrorConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayHttpListenerCustomErrorConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2408,11 +2408,11 @@ export class ApplicationGatewayHttpListenerCustomErrorConfigurationOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayHttpListenerCustomErrorConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayHttpListenerCustomErrorConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2429,14 +2429,14 @@ export class ApplicationGatewayHttpListenerCustomErrorConfigurationOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayHttpListenerCustomErrorConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayHttpListenerCustomErrorConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._customErrorPageUrl = undefined;
       this._statusCode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2480,15 +2480,15 @@ export class ApplicationGatewayHttpListenerCustomErrorConfigurationOutputReferen
   }
 }
 
-export class ApplicationGatewayHttpListenerCustomErrorConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayHttpListenerCustomErrorConfiguration[] | cdktf.IResolvable
+export class ApplicationGatewayHttpListenerCustomErrorConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayHttpListenerCustomErrorConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2531,7 +2531,7 @@ export interface ApplicationGatewayHttpListener {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#require_sni ApplicationGateway#require_sni}
   */
-  readonly requireSni?: boolean | cdktf.IResolvable;
+  readonly requireSni?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#ssl_certificate_name ApplicationGateway#ssl_certificate_name}
   */
@@ -2545,98 +2545,98 @@ export interface ApplicationGatewayHttpListener {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#custom_error_configuration ApplicationGateway#custom_error_configuration}
   */
-  readonly customErrorConfiguration?: ApplicationGatewayHttpListenerCustomErrorConfiguration[] | cdktf.IResolvable;
+  readonly customErrorConfiguration?: ApplicationGatewayHttpListenerCustomErrorConfiguration[] | cdktn.IResolvable;
 }
 
-export function applicationGatewayHttpListenerToTerraform(struct?: ApplicationGatewayHttpListener | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayHttpListenerToTerraform(struct?: ApplicationGatewayHttpListener | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    firewall_policy_id: cdktf.stringToTerraform(struct!.firewallPolicyId),
-    frontend_ip_configuration_name: cdktf.stringToTerraform(struct!.frontendIpConfigurationName),
-    frontend_port_name: cdktf.stringToTerraform(struct!.frontendPortName),
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    host_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hostNames),
-    name: cdktf.stringToTerraform(struct!.name),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    require_sni: cdktf.booleanToTerraform(struct!.requireSni),
-    ssl_certificate_name: cdktf.stringToTerraform(struct!.sslCertificateName),
-    ssl_profile_name: cdktf.stringToTerraform(struct!.sslProfileName),
-    custom_error_configuration: cdktf.listMapper(applicationGatewayHttpListenerCustomErrorConfigurationToTerraform, true)(struct!.customErrorConfiguration),
+    firewall_policy_id: cdktn.stringToTerraform(struct!.firewallPolicyId),
+    frontend_ip_configuration_name: cdktn.stringToTerraform(struct!.frontendIpConfigurationName),
+    frontend_port_name: cdktn.stringToTerraform(struct!.frontendPortName),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    host_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.hostNames),
+    name: cdktn.stringToTerraform(struct!.name),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    require_sni: cdktn.booleanToTerraform(struct!.requireSni),
+    ssl_certificate_name: cdktn.stringToTerraform(struct!.sslCertificateName),
+    ssl_profile_name: cdktn.stringToTerraform(struct!.sslProfileName),
+    custom_error_configuration: cdktn.listMapper(applicationGatewayHttpListenerCustomErrorConfigurationToTerraform, true)(struct!.customErrorConfiguration),
   }
 }
 
 
-export function applicationGatewayHttpListenerToHclTerraform(struct?: ApplicationGatewayHttpListener | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayHttpListenerToHclTerraform(struct?: ApplicationGatewayHttpListener | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     firewall_policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.firewallPolicyId),
+      value: cdktn.stringToHclTerraform(struct!.firewallPolicyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     frontend_ip_configuration_name: {
-      value: cdktf.stringToHclTerraform(struct!.frontendIpConfigurationName),
+      value: cdktn.stringToHclTerraform(struct!.frontendIpConfigurationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     frontend_port_name: {
-      value: cdktf.stringToHclTerraform(struct!.frontendPortName),
+      value: cdktn.stringToHclTerraform(struct!.frontendPortName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.hostNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.hostNames),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     require_sni: {
-      value: cdktf.booleanToHclTerraform(struct!.requireSni),
+      value: cdktn.booleanToHclTerraform(struct!.requireSni),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ssl_certificate_name: {
-      value: cdktf.stringToHclTerraform(struct!.sslCertificateName),
+      value: cdktn.stringToHclTerraform(struct!.sslCertificateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssl_profile_name: {
-      value: cdktf.stringToHclTerraform(struct!.sslProfileName),
+      value: cdktn.stringToHclTerraform(struct!.sslProfileName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_error_configuration: {
-      value: cdktf.listMapperHcl(applicationGatewayHttpListenerCustomErrorConfigurationToHclTerraform, true)(struct!.customErrorConfiguration),
+      value: cdktn.listMapperHcl(applicationGatewayHttpListenerCustomErrorConfigurationToHclTerraform, true)(struct!.customErrorConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "ApplicationGatewayHttpListenerCustomErrorConfigurationList",
@@ -2647,9 +2647,9 @@ export function applicationGatewayHttpListenerToHclTerraform(struct?: Applicatio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayHttpListenerOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayHttpListenerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2657,11 +2657,11 @@ export class ApplicationGatewayHttpListenerOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayHttpListener | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayHttpListener | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2714,7 +2714,7 @@ export class ApplicationGatewayHttpListenerOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayHttpListener | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayHttpListener | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2730,7 +2730,7 @@ export class ApplicationGatewayHttpListenerOutputReference extends cdktf.Complex
       this._sslProfileName = undefined;
       this._customErrorConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2822,7 +2822,7 @@ export class ApplicationGatewayHttpListenerOutputReference extends cdktf.Complex
   // host_names - computed: false, optional: true, required: false
   private _hostNames?: string[]; 
   public get hostNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('host_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('host_names'));
   }
   public set hostNames(value: string[]) {
     this._hostNames = value;
@@ -2867,11 +2867,11 @@ export class ApplicationGatewayHttpListenerOutputReference extends cdktf.Complex
   }
 
   // require_sni - computed: false, optional: true, required: false
-  private _requireSni?: boolean | cdktf.IResolvable; 
+  private _requireSni?: boolean | cdktn.IResolvable; 
   public get requireSni() {
     return this.getBooleanAttribute('require_sni');
   }
-  public set requireSni(value: boolean | cdktf.IResolvable) {
+  public set requireSni(value: boolean | cdktn.IResolvable) {
     this._requireSni = value;
   }
   public resetRequireSni() {
@@ -2929,7 +2929,7 @@ export class ApplicationGatewayHttpListenerOutputReference extends cdktf.Complex
   public get customErrorConfiguration() {
     return this._customErrorConfiguration;
   }
-  public putCustomErrorConfiguration(value: ApplicationGatewayHttpListenerCustomErrorConfiguration[] | cdktf.IResolvable) {
+  public putCustomErrorConfiguration(value: ApplicationGatewayHttpListenerCustomErrorConfiguration[] | cdktn.IResolvable) {
     this._customErrorConfiguration.internalValue = value;
   }
   public resetCustomErrorConfiguration() {
@@ -2941,15 +2941,15 @@ export class ApplicationGatewayHttpListenerOutputReference extends cdktf.Complex
   }
 }
 
-export class ApplicationGatewayHttpListenerList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayHttpListener[] | cdktf.IResolvable
+export class ApplicationGatewayHttpListenerList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayHttpListener[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2972,31 +2972,31 @@ export interface ApplicationGatewayIdentity {
 }
 
 export function applicationGatewayIdentityToTerraform(struct?: ApplicationGatewayIdentityOutputReference | ApplicationGatewayIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function applicationGatewayIdentityToHclTerraform(struct?: ApplicationGatewayIdentityOutputReference | ApplicationGatewayIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3007,14 +3007,14 @@ export function applicationGatewayIdentityToHclTerraform(struct?: ApplicationGat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayIdentityOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3048,7 +3048,7 @@ export class ApplicationGatewayIdentityOutputReference extends cdktf.ComplexObje
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -3092,7 +3092,7 @@ export interface ApplicationGatewayPrivateLinkConfigurationIpConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#primary ApplicationGateway#primary}
   */
-  readonly primary: boolean | cdktf.IResolvable;
+  readonly primary: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#private_ip_address ApplicationGateway#private_ip_address}
   */
@@ -3107,53 +3107,53 @@ export interface ApplicationGatewayPrivateLinkConfigurationIpConfiguration {
   readonly subnetId: string;
 }
 
-export function applicationGatewayPrivateLinkConfigurationIpConfigurationToTerraform(struct?: ApplicationGatewayPrivateLinkConfigurationIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayPrivateLinkConfigurationIpConfigurationToTerraform(struct?: ApplicationGatewayPrivateLinkConfigurationIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    primary: cdktf.booleanToTerraform(struct!.primary),
-    private_ip_address: cdktf.stringToTerraform(struct!.privateIpAddress),
-    private_ip_address_allocation: cdktf.stringToTerraform(struct!.privateIpAddressAllocation),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    name: cdktn.stringToTerraform(struct!.name),
+    primary: cdktn.booleanToTerraform(struct!.primary),
+    private_ip_address: cdktn.stringToTerraform(struct!.privateIpAddress),
+    private_ip_address_allocation: cdktn.stringToTerraform(struct!.privateIpAddressAllocation),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
-export function applicationGatewayPrivateLinkConfigurationIpConfigurationToHclTerraform(struct?: ApplicationGatewayPrivateLinkConfigurationIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayPrivateLinkConfigurationIpConfigurationToHclTerraform(struct?: ApplicationGatewayPrivateLinkConfigurationIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary: {
-      value: cdktf.booleanToHclTerraform(struct!.primary),
+      value: cdktn.booleanToHclTerraform(struct!.primary),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     private_ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.privateIpAddress),
+      value: cdktn.stringToHclTerraform(struct!.privateIpAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_ip_address_allocation: {
-      value: cdktf.stringToHclTerraform(struct!.privateIpAddressAllocation),
+      value: cdktn.stringToHclTerraform(struct!.privateIpAddressAllocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3164,9 +3164,9 @@ export function applicationGatewayPrivateLinkConfigurationIpConfigurationToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayPrivateLinkConfigurationIpConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayPrivateLinkConfigurationIpConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3174,11 +3174,11 @@ export class ApplicationGatewayPrivateLinkConfigurationIpConfigurationOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayPrivateLinkConfigurationIpConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayPrivateLinkConfigurationIpConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3207,7 +3207,7 @@ export class ApplicationGatewayPrivateLinkConfigurationIpConfigurationOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayPrivateLinkConfigurationIpConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayPrivateLinkConfigurationIpConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3217,7 +3217,7 @@ export class ApplicationGatewayPrivateLinkConfigurationIpConfigurationOutputRefe
       this._privateIpAddressAllocation = undefined;
       this._subnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3246,11 +3246,11 @@ export class ApplicationGatewayPrivateLinkConfigurationIpConfigurationOutputRefe
   }
 
   // primary - computed: false, optional: false, required: true
-  private _primary?: boolean | cdktf.IResolvable; 
+  private _primary?: boolean | cdktn.IResolvable; 
   public get primary() {
     return this.getBooleanAttribute('primary');
   }
-  public set primary(value: boolean | cdktf.IResolvable) {
+  public set primary(value: boolean | cdktn.IResolvable) {
     this._primary = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3301,15 +3301,15 @@ export class ApplicationGatewayPrivateLinkConfigurationIpConfigurationOutputRefe
   }
 }
 
-export class ApplicationGatewayPrivateLinkConfigurationIpConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayPrivateLinkConfigurationIpConfiguration[] | cdktf.IResolvable
+export class ApplicationGatewayPrivateLinkConfigurationIpConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayPrivateLinkConfigurationIpConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3330,35 +3330,35 @@ export interface ApplicationGatewayPrivateLinkConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#ip_configuration ApplicationGateway#ip_configuration}
   */
-  readonly ipConfiguration: ApplicationGatewayPrivateLinkConfigurationIpConfiguration[] | cdktf.IResolvable;
+  readonly ipConfiguration: ApplicationGatewayPrivateLinkConfigurationIpConfiguration[] | cdktn.IResolvable;
 }
 
-export function applicationGatewayPrivateLinkConfigurationToTerraform(struct?: ApplicationGatewayPrivateLinkConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayPrivateLinkConfigurationToTerraform(struct?: ApplicationGatewayPrivateLinkConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    ip_configuration: cdktf.listMapper(applicationGatewayPrivateLinkConfigurationIpConfigurationToTerraform, true)(struct!.ipConfiguration),
+    name: cdktn.stringToTerraform(struct!.name),
+    ip_configuration: cdktn.listMapper(applicationGatewayPrivateLinkConfigurationIpConfigurationToTerraform, true)(struct!.ipConfiguration),
   }
 }
 
 
-export function applicationGatewayPrivateLinkConfigurationToHclTerraform(struct?: ApplicationGatewayPrivateLinkConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayPrivateLinkConfigurationToHclTerraform(struct?: ApplicationGatewayPrivateLinkConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_configuration: {
-      value: cdktf.listMapperHcl(applicationGatewayPrivateLinkConfigurationIpConfigurationToHclTerraform, true)(struct!.ipConfiguration),
+      value: cdktn.listMapperHcl(applicationGatewayPrivateLinkConfigurationIpConfigurationToHclTerraform, true)(struct!.ipConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "ApplicationGatewayPrivateLinkConfigurationIpConfigurationList",
@@ -3369,9 +3369,9 @@ export function applicationGatewayPrivateLinkConfigurationToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayPrivateLinkConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayPrivateLinkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3379,11 +3379,11 @@ export class ApplicationGatewayPrivateLinkConfigurationOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayPrivateLinkConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayPrivateLinkConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3400,14 +3400,14 @@ export class ApplicationGatewayPrivateLinkConfigurationOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayPrivateLinkConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayPrivateLinkConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._ipConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3442,7 +3442,7 @@ export class ApplicationGatewayPrivateLinkConfigurationOutputReference extends c
   public get ipConfiguration() {
     return this._ipConfiguration;
   }
-  public putIpConfiguration(value: ApplicationGatewayPrivateLinkConfigurationIpConfiguration[] | cdktf.IResolvable) {
+  public putIpConfiguration(value: ApplicationGatewayPrivateLinkConfigurationIpConfiguration[] | cdktn.IResolvable) {
     this._ipConfiguration.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3451,15 +3451,15 @@ export class ApplicationGatewayPrivateLinkConfigurationOutputReference extends c
   }
 }
 
-export class ApplicationGatewayPrivateLinkConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayPrivateLinkConfiguration[] | cdktf.IResolvable
+export class ApplicationGatewayPrivateLinkConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayPrivateLinkConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3482,31 +3482,31 @@ export interface ApplicationGatewayProbeMatch {
 }
 
 export function applicationGatewayProbeMatchToTerraform(struct?: ApplicationGatewayProbeMatchOutputReference | ApplicationGatewayProbeMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    body: cdktf.stringToTerraform(struct!.body),
-    status_code: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.statusCode),
+    body: cdktn.stringToTerraform(struct!.body),
+    status_code: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.statusCode),
   }
 }
 
 
 export function applicationGatewayProbeMatchToHclTerraform(struct?: ApplicationGatewayProbeMatchOutputReference | ApplicationGatewayProbeMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     body: {
-      value: cdktf.stringToHclTerraform(struct!.body),
+      value: cdktn.stringToHclTerraform(struct!.body),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status_code: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.statusCode),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.statusCode),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -3517,14 +3517,14 @@ export function applicationGatewayProbeMatchToHclTerraform(struct?: ApplicationG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayProbeMatchOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayProbeMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3608,7 +3608,7 @@ export interface ApplicationGatewayProbe {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#pick_host_name_from_backend_http_settings ApplicationGateway#pick_host_name_from_backend_http_settings}
   */
-  readonly pickHostNameFromBackendHttpSettings?: boolean | cdktf.IResolvable;
+  readonly pickHostNameFromBackendHttpSettings?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#port ApplicationGateway#port}
   */
@@ -3633,89 +3633,89 @@ export interface ApplicationGatewayProbe {
   readonly match?: ApplicationGatewayProbeMatch;
 }
 
-export function applicationGatewayProbeToTerraform(struct?: ApplicationGatewayProbe | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayProbeToTerraform(struct?: ApplicationGatewayProbe | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    interval: cdktf.numberToTerraform(struct!.interval),
-    minimum_servers: cdktf.numberToTerraform(struct!.minimumServers),
-    name: cdktf.stringToTerraform(struct!.name),
-    path: cdktf.stringToTerraform(struct!.path),
-    pick_host_name_from_backend_http_settings: cdktf.booleanToTerraform(struct!.pickHostNameFromBackendHttpSettings),
-    port: cdktf.numberToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    timeout: cdktf.numberToTerraform(struct!.timeout),
-    unhealthy_threshold: cdktf.numberToTerraform(struct!.unhealthyThreshold),
+    host: cdktn.stringToTerraform(struct!.host),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    minimum_servers: cdktn.numberToTerraform(struct!.minimumServers),
+    name: cdktn.stringToTerraform(struct!.name),
+    path: cdktn.stringToTerraform(struct!.path),
+    pick_host_name_from_backend_http_settings: cdktn.booleanToTerraform(struct!.pickHostNameFromBackendHttpSettings),
+    port: cdktn.numberToTerraform(struct!.port),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    timeout: cdktn.numberToTerraform(struct!.timeout),
+    unhealthy_threshold: cdktn.numberToTerraform(struct!.unhealthyThreshold),
     match: applicationGatewayProbeMatchToTerraform(struct!.match),
   }
 }
 
 
-export function applicationGatewayProbeToHclTerraform(struct?: ApplicationGatewayProbe | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayProbeToHclTerraform(struct?: ApplicationGatewayProbe | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minimum_servers: {
-      value: cdktf.numberToHclTerraform(struct!.minimumServers),
+      value: cdktn.numberToHclTerraform(struct!.minimumServers),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pick_host_name_from_backend_http_settings: {
-      value: cdktf.booleanToHclTerraform(struct!.pickHostNameFromBackendHttpSettings),
+      value: cdktn.booleanToHclTerraform(struct!.pickHostNameFromBackendHttpSettings),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout: {
-      value: cdktf.numberToHclTerraform(struct!.timeout),
+      value: cdktn.numberToHclTerraform(struct!.timeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     unhealthy_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.unhealthyThreshold),
+      value: cdktn.numberToHclTerraform(struct!.unhealthyThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3732,9 +3732,9 @@ export function applicationGatewayProbeToHclTerraform(struct?: ApplicationGatewa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayProbeOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayProbeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3742,11 +3742,11 @@ export class ApplicationGatewayProbeOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayProbe | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayProbe | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3799,7 +3799,7 @@ export class ApplicationGatewayProbeOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayProbe | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayProbe | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3815,7 +3815,7 @@ export class ApplicationGatewayProbeOutputReference extends cdktf.ComplexObject 
       this._unhealthyThreshold = undefined;
       this._match.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3913,11 +3913,11 @@ export class ApplicationGatewayProbeOutputReference extends cdktf.ComplexObject 
   }
 
   // pick_host_name_from_backend_http_settings - computed: false, optional: true, required: false
-  private _pickHostNameFromBackendHttpSettings?: boolean | cdktf.IResolvable; 
+  private _pickHostNameFromBackendHttpSettings?: boolean | cdktn.IResolvable; 
   public get pickHostNameFromBackendHttpSettings() {
     return this.getBooleanAttribute('pick_host_name_from_backend_http_settings');
   }
-  public set pickHostNameFromBackendHttpSettings(value: boolean | cdktf.IResolvable) {
+  public set pickHostNameFromBackendHttpSettings(value: boolean | cdktn.IResolvable) {
     this._pickHostNameFromBackendHttpSettings = value;
   }
   public resetPickHostNameFromBackendHttpSettings() {
@@ -4000,15 +4000,15 @@ export class ApplicationGatewayProbeOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class ApplicationGatewayProbeList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayProbe[] | cdktf.IResolvable
+export class ApplicationGatewayProbeList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayProbe[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4023,11 +4023,11 @@ export interface ApplicationGatewayRedirectConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#include_path ApplicationGateway#include_path}
   */
-  readonly includePath?: boolean | cdktf.IResolvable;
+  readonly includePath?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#include_query_string ApplicationGateway#include_query_string}
   */
-  readonly includeQueryString?: boolean | cdktf.IResolvable;
+  readonly includeQueryString?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#name ApplicationGateway#name}
   */
@@ -4046,60 +4046,60 @@ export interface ApplicationGatewayRedirectConfiguration {
   readonly targetUrl?: string;
 }
 
-export function applicationGatewayRedirectConfigurationToTerraform(struct?: ApplicationGatewayRedirectConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayRedirectConfigurationToTerraform(struct?: ApplicationGatewayRedirectConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_path: cdktf.booleanToTerraform(struct!.includePath),
-    include_query_string: cdktf.booleanToTerraform(struct!.includeQueryString),
-    name: cdktf.stringToTerraform(struct!.name),
-    redirect_type: cdktf.stringToTerraform(struct!.redirectType),
-    target_listener_name: cdktf.stringToTerraform(struct!.targetListenerName),
-    target_url: cdktf.stringToTerraform(struct!.targetUrl),
+    include_path: cdktn.booleanToTerraform(struct!.includePath),
+    include_query_string: cdktn.booleanToTerraform(struct!.includeQueryString),
+    name: cdktn.stringToTerraform(struct!.name),
+    redirect_type: cdktn.stringToTerraform(struct!.redirectType),
+    target_listener_name: cdktn.stringToTerraform(struct!.targetListenerName),
+    target_url: cdktn.stringToTerraform(struct!.targetUrl),
   }
 }
 
 
-export function applicationGatewayRedirectConfigurationToHclTerraform(struct?: ApplicationGatewayRedirectConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayRedirectConfigurationToHclTerraform(struct?: ApplicationGatewayRedirectConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_path: {
-      value: cdktf.booleanToHclTerraform(struct!.includePath),
+      value: cdktn.booleanToHclTerraform(struct!.includePath),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_query_string: {
-      value: cdktf.booleanToHclTerraform(struct!.includeQueryString),
+      value: cdktn.booleanToHclTerraform(struct!.includeQueryString),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_type: {
-      value: cdktf.stringToHclTerraform(struct!.redirectType),
+      value: cdktn.stringToHclTerraform(struct!.redirectType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_listener_name: {
-      value: cdktf.stringToHclTerraform(struct!.targetListenerName),
+      value: cdktn.stringToHclTerraform(struct!.targetListenerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_url: {
-      value: cdktf.stringToHclTerraform(struct!.targetUrl),
+      value: cdktn.stringToHclTerraform(struct!.targetUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4110,9 +4110,9 @@ export function applicationGatewayRedirectConfigurationToHclTerraform(struct?: A
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayRedirectConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayRedirectConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4120,11 +4120,11 @@ export class ApplicationGatewayRedirectConfigurationOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayRedirectConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayRedirectConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4157,7 +4157,7 @@ export class ApplicationGatewayRedirectConfigurationOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayRedirectConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayRedirectConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4168,7 +4168,7 @@ export class ApplicationGatewayRedirectConfigurationOutputReference extends cdkt
       this._targetListenerName = undefined;
       this._targetUrl = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4190,11 +4190,11 @@ export class ApplicationGatewayRedirectConfigurationOutputReference extends cdkt
   }
 
   // include_path - computed: false, optional: true, required: false
-  private _includePath?: boolean | cdktf.IResolvable; 
+  private _includePath?: boolean | cdktn.IResolvable; 
   public get includePath() {
     return this.getBooleanAttribute('include_path');
   }
-  public set includePath(value: boolean | cdktf.IResolvable) {
+  public set includePath(value: boolean | cdktn.IResolvable) {
     this._includePath = value;
   }
   public resetIncludePath() {
@@ -4206,11 +4206,11 @@ export class ApplicationGatewayRedirectConfigurationOutputReference extends cdkt
   }
 
   // include_query_string - computed: false, optional: true, required: false
-  private _includeQueryString?: boolean | cdktf.IResolvable; 
+  private _includeQueryString?: boolean | cdktn.IResolvable; 
   public get includeQueryString() {
     return this.getBooleanAttribute('include_query_string');
   }
-  public set includeQueryString(value: boolean | cdktf.IResolvable) {
+  public set includeQueryString(value: boolean | cdktn.IResolvable) {
     this._includeQueryString = value;
   }
   public resetIncludeQueryString() {
@@ -4285,15 +4285,15 @@ export class ApplicationGatewayRedirectConfigurationOutputReference extends cdkt
   }
 }
 
-export class ApplicationGatewayRedirectConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayRedirectConfiguration[] | cdktf.IResolvable
+export class ApplicationGatewayRedirectConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayRedirectConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4343,81 +4343,81 @@ export interface ApplicationGatewayRequestRoutingRule {
   readonly urlPathMapName?: string;
 }
 
-export function applicationGatewayRequestRoutingRuleToTerraform(struct?: ApplicationGatewayRequestRoutingRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayRequestRoutingRuleToTerraform(struct?: ApplicationGatewayRequestRoutingRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backend_address_pool_name: cdktf.stringToTerraform(struct!.backendAddressPoolName),
-    backend_http_settings_name: cdktf.stringToTerraform(struct!.backendHttpSettingsName),
-    http_listener_name: cdktf.stringToTerraform(struct!.httpListenerName),
-    name: cdktf.stringToTerraform(struct!.name),
-    priority: cdktf.numberToTerraform(struct!.priority),
-    redirect_configuration_name: cdktf.stringToTerraform(struct!.redirectConfigurationName),
-    rewrite_rule_set_name: cdktf.stringToTerraform(struct!.rewriteRuleSetName),
-    rule_type: cdktf.stringToTerraform(struct!.ruleType),
-    url_path_map_name: cdktf.stringToTerraform(struct!.urlPathMapName),
+    backend_address_pool_name: cdktn.stringToTerraform(struct!.backendAddressPoolName),
+    backend_http_settings_name: cdktn.stringToTerraform(struct!.backendHttpSettingsName),
+    http_listener_name: cdktn.stringToTerraform(struct!.httpListenerName),
+    name: cdktn.stringToTerraform(struct!.name),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    redirect_configuration_name: cdktn.stringToTerraform(struct!.redirectConfigurationName),
+    rewrite_rule_set_name: cdktn.stringToTerraform(struct!.rewriteRuleSetName),
+    rule_type: cdktn.stringToTerraform(struct!.ruleType),
+    url_path_map_name: cdktn.stringToTerraform(struct!.urlPathMapName),
   }
 }
 
 
-export function applicationGatewayRequestRoutingRuleToHclTerraform(struct?: ApplicationGatewayRequestRoutingRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayRequestRoutingRuleToHclTerraform(struct?: ApplicationGatewayRequestRoutingRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backend_address_pool_name: {
-      value: cdktf.stringToHclTerraform(struct!.backendAddressPoolName),
+      value: cdktn.stringToHclTerraform(struct!.backendAddressPoolName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     backend_http_settings_name: {
-      value: cdktf.stringToHclTerraform(struct!.backendHttpSettingsName),
+      value: cdktn.stringToHclTerraform(struct!.backendHttpSettingsName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_listener_name: {
-      value: cdktf.stringToHclTerraform(struct!.httpListenerName),
+      value: cdktn.stringToHclTerraform(struct!.httpListenerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     redirect_configuration_name: {
-      value: cdktf.stringToHclTerraform(struct!.redirectConfigurationName),
+      value: cdktn.stringToHclTerraform(struct!.redirectConfigurationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rewrite_rule_set_name: {
-      value: cdktf.stringToHclTerraform(struct!.rewriteRuleSetName),
+      value: cdktn.stringToHclTerraform(struct!.rewriteRuleSetName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_type: {
-      value: cdktf.stringToHclTerraform(struct!.ruleType),
+      value: cdktn.stringToHclTerraform(struct!.ruleType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url_path_map_name: {
-      value: cdktf.stringToHclTerraform(struct!.urlPathMapName),
+      value: cdktn.stringToHclTerraform(struct!.urlPathMapName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4428,9 +4428,9 @@ export function applicationGatewayRequestRoutingRuleToHclTerraform(struct?: Appl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayRequestRoutingRuleOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayRequestRoutingRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4438,11 +4438,11 @@ export class ApplicationGatewayRequestRoutingRuleOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayRequestRoutingRule | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayRequestRoutingRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4487,7 +4487,7 @@ export class ApplicationGatewayRequestRoutingRuleOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayRequestRoutingRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayRequestRoutingRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4501,7 +4501,7 @@ export class ApplicationGatewayRequestRoutingRuleOutputReference extends cdktf.C
       this._ruleType = undefined;
       this._urlPathMapName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4691,15 +4691,15 @@ export class ApplicationGatewayRequestRoutingRuleOutputReference extends cdktf.C
   }
 }
 
-export class ApplicationGatewayRequestRoutingRuleList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayRequestRoutingRule[] | cdktf.IResolvable
+export class ApplicationGatewayRequestRoutingRuleList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayRequestRoutingRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4714,11 +4714,11 @@ export interface ApplicationGatewayRewriteRuleSetRewriteRuleCondition {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#ignore_case ApplicationGateway#ignore_case}
   */
-  readonly ignoreCase?: boolean | cdktf.IResolvable;
+  readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#negate ApplicationGateway#negate}
   */
-  readonly negate?: boolean | cdktf.IResolvable;
+  readonly negate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#pattern ApplicationGateway#pattern}
   */
@@ -4729,46 +4729,46 @@ export interface ApplicationGatewayRewriteRuleSetRewriteRuleCondition {
   readonly variable: string;
 }
 
-export function applicationGatewayRewriteRuleSetRewriteRuleConditionToTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRuleCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayRewriteRuleSetRewriteRuleConditionToTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRuleCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ignore_case: cdktf.booleanToTerraform(struct!.ignoreCase),
-    negate: cdktf.booleanToTerraform(struct!.negate),
-    pattern: cdktf.stringToTerraform(struct!.pattern),
-    variable: cdktf.stringToTerraform(struct!.variable),
+    ignore_case: cdktn.booleanToTerraform(struct!.ignoreCase),
+    negate: cdktn.booleanToTerraform(struct!.negate),
+    pattern: cdktn.stringToTerraform(struct!.pattern),
+    variable: cdktn.stringToTerraform(struct!.variable),
   }
 }
 
 
-export function applicationGatewayRewriteRuleSetRewriteRuleConditionToHclTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRuleCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayRewriteRuleSetRewriteRuleConditionToHclTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRuleCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ignore_case: {
-      value: cdktf.booleanToHclTerraform(struct!.ignoreCase),
+      value: cdktn.booleanToHclTerraform(struct!.ignoreCase),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     negate: {
-      value: cdktf.booleanToHclTerraform(struct!.negate),
+      value: cdktn.booleanToHclTerraform(struct!.negate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     pattern: {
-      value: cdktf.stringToHclTerraform(struct!.pattern),
+      value: cdktn.stringToHclTerraform(struct!.pattern),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     variable: {
-      value: cdktf.stringToHclTerraform(struct!.variable),
+      value: cdktn.stringToHclTerraform(struct!.variable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4779,9 +4779,9 @@ export function applicationGatewayRewriteRuleSetRewriteRuleConditionToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayRewriteRuleSetRewriteRuleConditionOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayRewriteRuleSetRewriteRuleConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4789,11 +4789,11 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleConditionOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayRewriteRuleSetRewriteRuleCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayRewriteRuleSetRewriteRuleCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4818,7 +4818,7 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleConditionOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayRewriteRuleSetRewriteRuleCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayRewriteRuleSetRewriteRuleCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4827,7 +4827,7 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleConditionOutputReference
       this._pattern = undefined;
       this._variable = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4842,11 +4842,11 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleConditionOutputReference
   }
 
   // ignore_case - computed: false, optional: true, required: false
-  private _ignoreCase?: boolean | cdktf.IResolvable; 
+  private _ignoreCase?: boolean | cdktn.IResolvable; 
   public get ignoreCase() {
     return this.getBooleanAttribute('ignore_case');
   }
-  public set ignoreCase(value: boolean | cdktf.IResolvable) {
+  public set ignoreCase(value: boolean | cdktn.IResolvable) {
     this._ignoreCase = value;
   }
   public resetIgnoreCase() {
@@ -4858,11 +4858,11 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleConditionOutputReference
   }
 
   // negate - computed: false, optional: true, required: false
-  private _negate?: boolean | cdktf.IResolvable; 
+  private _negate?: boolean | cdktn.IResolvable; 
   public get negate() {
     return this.getBooleanAttribute('negate');
   }
-  public set negate(value: boolean | cdktf.IResolvable) {
+  public set negate(value: boolean | cdktn.IResolvable) {
     this._negate = value;
   }
   public resetNegate() {
@@ -4900,15 +4900,15 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleConditionOutputReference
   }
 }
 
-export class ApplicationGatewayRewriteRuleSetRewriteRuleConditionList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayRewriteRuleSetRewriteRuleCondition[] | cdktf.IResolvable
+export class ApplicationGatewayRewriteRuleSetRewriteRuleConditionList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayRewriteRuleSetRewriteRuleCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4930,32 +4930,32 @@ export interface ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigu
   readonly headerValue: string;
 }
 
-export function applicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationToTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationToTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
   }
 }
 
 
-export function applicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationToHclTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationToHclTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4966,9 +4966,9 @@ export function applicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4976,11 +4976,11 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurati
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4997,14 +4997,14 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurati
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._headerName = undefined;
       this._headerValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5043,15 +5043,15 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurati
   }
 }
 
-export class ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration[] | cdktf.IResolvable
+export class ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5073,32 +5073,32 @@ export interface ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfig
   readonly headerValue: string;
 }
 
-export function applicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationToTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationToTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
   }
 }
 
 
-export function applicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationToHclTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationToHclTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5109,9 +5109,9 @@ export function applicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5119,11 +5119,11 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurat
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5140,14 +5140,14 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurat
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._headerName = undefined;
       this._headerValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5186,15 +5186,15 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurat
   }
 }
 
-export class ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration[] | cdktf.IResolvable
+export class ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5221,49 +5221,49 @@ export interface ApplicationGatewayRewriteRuleSetRewriteRuleUrl {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#reroute ApplicationGateway#reroute}
   */
-  readonly reroute?: boolean | cdktf.IResolvable;
+  readonly reroute?: boolean | cdktn.IResolvable;
 }
 
 export function applicationGatewayRewriteRuleSetRewriteRuleUrlToTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRuleUrlOutputReference | ApplicationGatewayRewriteRuleSetRewriteRuleUrl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    components: cdktf.stringToTerraform(struct!.components),
-    path: cdktf.stringToTerraform(struct!.path),
-    query_string: cdktf.stringToTerraform(struct!.queryString),
-    reroute: cdktf.booleanToTerraform(struct!.reroute),
+    components: cdktn.stringToTerraform(struct!.components),
+    path: cdktn.stringToTerraform(struct!.path),
+    query_string: cdktn.stringToTerraform(struct!.queryString),
+    reroute: cdktn.booleanToTerraform(struct!.reroute),
   }
 }
 
 
 export function applicationGatewayRewriteRuleSetRewriteRuleUrlToHclTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRuleUrlOutputReference | ApplicationGatewayRewriteRuleSetRewriteRuleUrl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     components: {
-      value: cdktf.stringToHclTerraform(struct!.components),
+      value: cdktn.stringToHclTerraform(struct!.components),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query_string: {
-      value: cdktf.stringToHclTerraform(struct!.queryString),
+      value: cdktn.stringToHclTerraform(struct!.queryString),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     reroute: {
-      value: cdktf.booleanToHclTerraform(struct!.reroute),
+      value: cdktn.booleanToHclTerraform(struct!.reroute),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -5274,14 +5274,14 @@ export function applicationGatewayRewriteRuleSetRewriteRuleUrlToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayRewriteRuleSetRewriteRuleUrlOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayRewriteRuleSetRewriteRuleUrlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5373,11 +5373,11 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleUrlOutputReference exten
   }
 
   // reroute - computed: false, optional: true, required: false
-  private _reroute?: boolean | cdktf.IResolvable; 
+  private _reroute?: boolean | cdktn.IResolvable; 
   public get reroute() {
     return this.getBooleanAttribute('reroute');
   }
-  public set reroute(value: boolean | cdktf.IResolvable) {
+  public set reroute(value: boolean | cdktn.IResolvable) {
     this._reroute = value;
   }
   public resetReroute() {
@@ -5402,19 +5402,19 @@ export interface ApplicationGatewayRewriteRuleSetRewriteRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#condition ApplicationGateway#condition}
   */
-  readonly condition?: ApplicationGatewayRewriteRuleSetRewriteRuleCondition[] | cdktf.IResolvable;
+  readonly condition?: ApplicationGatewayRewriteRuleSetRewriteRuleCondition[] | cdktn.IResolvable;
   /**
   * request_header_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#request_header_configuration ApplicationGateway#request_header_configuration}
   */
-  readonly requestHeaderConfiguration?: ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration[] | cdktf.IResolvable;
+  readonly requestHeaderConfiguration?: ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration[] | cdktn.IResolvable;
   /**
   * response_header_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#response_header_configuration ApplicationGateway#response_header_configuration}
   */
-  readonly responseHeaderConfiguration?: ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration[] | cdktf.IResolvable;
+  readonly responseHeaderConfiguration?: ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration[] | cdktn.IResolvable;
   /**
   * url block
   *
@@ -5423,54 +5423,54 @@ export interface ApplicationGatewayRewriteRuleSetRewriteRule {
   readonly url?: ApplicationGatewayRewriteRuleSetRewriteRuleUrl;
 }
 
-export function applicationGatewayRewriteRuleSetRewriteRuleToTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayRewriteRuleSetRewriteRuleToTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    rule_sequence: cdktf.numberToTerraform(struct!.ruleSequence),
-    condition: cdktf.listMapper(applicationGatewayRewriteRuleSetRewriteRuleConditionToTerraform, true)(struct!.condition),
-    request_header_configuration: cdktf.listMapper(applicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationToTerraform, true)(struct!.requestHeaderConfiguration),
-    response_header_configuration: cdktf.listMapper(applicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationToTerraform, true)(struct!.responseHeaderConfiguration),
+    name: cdktn.stringToTerraform(struct!.name),
+    rule_sequence: cdktn.numberToTerraform(struct!.ruleSequence),
+    condition: cdktn.listMapper(applicationGatewayRewriteRuleSetRewriteRuleConditionToTerraform, true)(struct!.condition),
+    request_header_configuration: cdktn.listMapper(applicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationToTerraform, true)(struct!.requestHeaderConfiguration),
+    response_header_configuration: cdktn.listMapper(applicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationToTerraform, true)(struct!.responseHeaderConfiguration),
     url: applicationGatewayRewriteRuleSetRewriteRuleUrlToTerraform(struct!.url),
   }
 }
 
 
-export function applicationGatewayRewriteRuleSetRewriteRuleToHclTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayRewriteRuleSetRewriteRuleToHclTerraform(struct?: ApplicationGatewayRewriteRuleSetRewriteRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_sequence: {
-      value: cdktf.numberToHclTerraform(struct!.ruleSequence),
+      value: cdktn.numberToHclTerraform(struct!.ruleSequence),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     condition: {
-      value: cdktf.listMapperHcl(applicationGatewayRewriteRuleSetRewriteRuleConditionToHclTerraform, true)(struct!.condition),
+      value: cdktn.listMapperHcl(applicationGatewayRewriteRuleSetRewriteRuleConditionToHclTerraform, true)(struct!.condition),
       isBlock: true,
       type: "list",
       storageClassType: "ApplicationGatewayRewriteRuleSetRewriteRuleConditionList",
     },
     request_header_configuration: {
-      value: cdktf.listMapperHcl(applicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationToHclTerraform, true)(struct!.requestHeaderConfiguration),
+      value: cdktn.listMapperHcl(applicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationToHclTerraform, true)(struct!.requestHeaderConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationList",
     },
     response_header_configuration: {
-      value: cdktf.listMapperHcl(applicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationToHclTerraform, true)(struct!.responseHeaderConfiguration),
+      value: cdktn.listMapperHcl(applicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationToHclTerraform, true)(struct!.responseHeaderConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationList",
@@ -5487,9 +5487,9 @@ export function applicationGatewayRewriteRuleSetRewriteRuleToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayRewriteRuleSetRewriteRuleOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayRewriteRuleSetRewriteRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5497,11 +5497,11 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayRewriteRuleSetRewriteRule | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayRewriteRuleSetRewriteRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5534,7 +5534,7 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayRewriteRuleSetRewriteRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayRewriteRuleSetRewriteRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5545,7 +5545,7 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleOutputReference extends 
       this._responseHeaderConfiguration.internalValue = undefined;
       this._url.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5592,7 +5592,7 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleOutputReference extends 
   public get condition() {
     return this._condition;
   }
-  public putCondition(value: ApplicationGatewayRewriteRuleSetRewriteRuleCondition[] | cdktf.IResolvable) {
+  public putCondition(value: ApplicationGatewayRewriteRuleSetRewriteRuleCondition[] | cdktn.IResolvable) {
     this._condition.internalValue = value;
   }
   public resetCondition() {
@@ -5608,7 +5608,7 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleOutputReference extends 
   public get requestHeaderConfiguration() {
     return this._requestHeaderConfiguration;
   }
-  public putRequestHeaderConfiguration(value: ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration[] | cdktf.IResolvable) {
+  public putRequestHeaderConfiguration(value: ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration[] | cdktn.IResolvable) {
     this._requestHeaderConfiguration.internalValue = value;
   }
   public resetRequestHeaderConfiguration() {
@@ -5624,7 +5624,7 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleOutputReference extends 
   public get responseHeaderConfiguration() {
     return this._responseHeaderConfiguration;
   }
-  public putResponseHeaderConfiguration(value: ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration[] | cdktf.IResolvable) {
+  public putResponseHeaderConfiguration(value: ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration[] | cdktn.IResolvable) {
     this._responseHeaderConfiguration.internalValue = value;
   }
   public resetResponseHeaderConfiguration() {
@@ -5652,15 +5652,15 @@ export class ApplicationGatewayRewriteRuleSetRewriteRuleOutputReference extends 
   }
 }
 
-export class ApplicationGatewayRewriteRuleSetRewriteRuleList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayRewriteRuleSetRewriteRule[] | cdktf.IResolvable
+export class ApplicationGatewayRewriteRuleSetRewriteRuleList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayRewriteRuleSetRewriteRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5681,35 +5681,35 @@ export interface ApplicationGatewayRewriteRuleSet {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#rewrite_rule ApplicationGateway#rewrite_rule}
   */
-  readonly rewriteRule?: ApplicationGatewayRewriteRuleSetRewriteRule[] | cdktf.IResolvable;
+  readonly rewriteRule?: ApplicationGatewayRewriteRuleSetRewriteRule[] | cdktn.IResolvable;
 }
 
-export function applicationGatewayRewriteRuleSetToTerraform(struct?: ApplicationGatewayRewriteRuleSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayRewriteRuleSetToTerraform(struct?: ApplicationGatewayRewriteRuleSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    rewrite_rule: cdktf.listMapper(applicationGatewayRewriteRuleSetRewriteRuleToTerraform, true)(struct!.rewriteRule),
+    name: cdktn.stringToTerraform(struct!.name),
+    rewrite_rule: cdktn.listMapper(applicationGatewayRewriteRuleSetRewriteRuleToTerraform, true)(struct!.rewriteRule),
   }
 }
 
 
-export function applicationGatewayRewriteRuleSetToHclTerraform(struct?: ApplicationGatewayRewriteRuleSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayRewriteRuleSetToHclTerraform(struct?: ApplicationGatewayRewriteRuleSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rewrite_rule: {
-      value: cdktf.listMapperHcl(applicationGatewayRewriteRuleSetRewriteRuleToHclTerraform, true)(struct!.rewriteRule),
+      value: cdktn.listMapperHcl(applicationGatewayRewriteRuleSetRewriteRuleToHclTerraform, true)(struct!.rewriteRule),
       isBlock: true,
       type: "list",
       storageClassType: "ApplicationGatewayRewriteRuleSetRewriteRuleList",
@@ -5720,9 +5720,9 @@ export function applicationGatewayRewriteRuleSetToHclTerraform(struct?: Applicat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayRewriteRuleSetOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayRewriteRuleSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5730,11 +5730,11 @@ export class ApplicationGatewayRewriteRuleSetOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayRewriteRuleSet | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayRewriteRuleSet | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5751,14 +5751,14 @@ export class ApplicationGatewayRewriteRuleSetOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayRewriteRuleSet | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayRewriteRuleSet | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._rewriteRule.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5793,7 +5793,7 @@ export class ApplicationGatewayRewriteRuleSetOutputReference extends cdktf.Compl
   public get rewriteRule() {
     return this._rewriteRule;
   }
-  public putRewriteRule(value: ApplicationGatewayRewriteRuleSetRewriteRule[] | cdktf.IResolvable) {
+  public putRewriteRule(value: ApplicationGatewayRewriteRuleSetRewriteRule[] | cdktn.IResolvable) {
     this._rewriteRule.internalValue = value;
   }
   public resetRewriteRule() {
@@ -5805,15 +5805,15 @@ export class ApplicationGatewayRewriteRuleSetOutputReference extends cdktf.Compl
   }
 }
 
-export class ApplicationGatewayRewriteRuleSetList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayRewriteRuleSet[] | cdktf.IResolvable
+export class ApplicationGatewayRewriteRuleSetList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayRewriteRuleSet[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5840,38 +5840,38 @@ export interface ApplicationGatewaySku {
 }
 
 export function applicationGatewaySkuToTerraform(struct?: ApplicationGatewaySkuOutputReference | ApplicationGatewaySku): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity: cdktf.numberToTerraform(struct!.capacity),
-    name: cdktf.stringToTerraform(struct!.name),
-    tier: cdktf.stringToTerraform(struct!.tier),
+    capacity: cdktn.numberToTerraform(struct!.capacity),
+    name: cdktn.stringToTerraform(struct!.name),
+    tier: cdktn.stringToTerraform(struct!.tier),
   }
 }
 
 
 export function applicationGatewaySkuToHclTerraform(struct?: ApplicationGatewaySkuOutputReference | ApplicationGatewaySku): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity: {
-      value: cdktf.numberToHclTerraform(struct!.capacity),
+      value: cdktn.numberToHclTerraform(struct!.capacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tier: {
-      value: cdktf.stringToHclTerraform(struct!.tier),
+      value: cdktn.stringToHclTerraform(struct!.tier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5882,14 +5882,14 @@ export function applicationGatewaySkuToHclTerraform(struct?: ApplicationGatewayS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewaySkuOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewaySkuOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5987,46 +5987,46 @@ export interface ApplicationGatewaySslCertificate {
   readonly password?: string;
 }
 
-export function applicationGatewaySslCertificateToTerraform(struct?: ApplicationGatewaySslCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewaySslCertificateToTerraform(struct?: ApplicationGatewaySslCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data: cdktf.stringToTerraform(struct!.data),
-    key_vault_secret_id: cdktf.stringToTerraform(struct!.keyVaultSecretId),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
+    data: cdktn.stringToTerraform(struct!.data),
+    key_vault_secret_id: cdktn.stringToTerraform(struct!.keyVaultSecretId),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
   }
 }
 
 
-export function applicationGatewaySslCertificateToHclTerraform(struct?: ApplicationGatewaySslCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewaySslCertificateToHclTerraform(struct?: ApplicationGatewaySslCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data: {
-      value: cdktf.stringToHclTerraform(struct!.data),
+      value: cdktn.stringToHclTerraform(struct!.data),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_secret_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultSecretId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultSecretId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6037,9 +6037,9 @@ export function applicationGatewaySslCertificateToHclTerraform(struct?: Applicat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewaySslCertificateOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewaySslCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6047,11 +6047,11 @@ export class ApplicationGatewaySslCertificateOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewaySslCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewaySslCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6076,7 +6076,7 @@ export class ApplicationGatewaySslCertificateOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewaySslCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewaySslCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6085,7 +6085,7 @@ export class ApplicationGatewaySslCertificateOutputReference extends cdktf.Compl
       this._name = undefined;
       this._password = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6171,15 +6171,15 @@ export class ApplicationGatewaySslCertificateOutputReference extends cdktf.Compl
   }
 }
 
-export class ApplicationGatewaySslCertificateList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewaySslCertificate[] | cdktf.IResolvable
+export class ApplicationGatewaySslCertificateList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewaySslCertificate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6214,52 +6214,52 @@ export interface ApplicationGatewaySslPolicy {
 }
 
 export function applicationGatewaySslPolicyToTerraform(struct?: ApplicationGatewaySslPolicyOutputReference | ApplicationGatewaySslPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cipher_suites: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cipherSuites),
-    disabled_protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.disabledProtocols),
-    min_protocol_version: cdktf.stringToTerraform(struct!.minProtocolVersion),
-    policy_name: cdktf.stringToTerraform(struct!.policyName),
-    policy_type: cdktf.stringToTerraform(struct!.policyType),
+    cipher_suites: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cipherSuites),
+    disabled_protocols: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.disabledProtocols),
+    min_protocol_version: cdktn.stringToTerraform(struct!.minProtocolVersion),
+    policy_name: cdktn.stringToTerraform(struct!.policyName),
+    policy_type: cdktn.stringToTerraform(struct!.policyType),
   }
 }
 
 
 export function applicationGatewaySslPolicyToHclTerraform(struct?: ApplicationGatewaySslPolicyOutputReference | ApplicationGatewaySslPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cipher_suites: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cipherSuites),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.cipherSuites),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     disabled_protocols: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.disabledProtocols),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.disabledProtocols),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     min_protocol_version: {
-      value: cdktf.stringToHclTerraform(struct!.minProtocolVersion),
+      value: cdktn.stringToHclTerraform(struct!.minProtocolVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     policy_name: {
-      value: cdktf.stringToHclTerraform(struct!.policyName),
+      value: cdktn.stringToHclTerraform(struct!.policyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     policy_type: {
-      value: cdktf.stringToHclTerraform(struct!.policyType),
+      value: cdktn.stringToHclTerraform(struct!.policyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6270,14 +6270,14 @@ export function applicationGatewaySslPolicyToHclTerraform(struct?: ApplicationGa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewaySslPolicyOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewaySslPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6430,52 +6430,52 @@ export interface ApplicationGatewaySslProfileSslPolicy {
 }
 
 export function applicationGatewaySslProfileSslPolicyToTerraform(struct?: ApplicationGatewaySslProfileSslPolicyOutputReference | ApplicationGatewaySslProfileSslPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cipher_suites: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cipherSuites),
-    disabled_protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.disabledProtocols),
-    min_protocol_version: cdktf.stringToTerraform(struct!.minProtocolVersion),
-    policy_name: cdktf.stringToTerraform(struct!.policyName),
-    policy_type: cdktf.stringToTerraform(struct!.policyType),
+    cipher_suites: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cipherSuites),
+    disabled_protocols: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.disabledProtocols),
+    min_protocol_version: cdktn.stringToTerraform(struct!.minProtocolVersion),
+    policy_name: cdktn.stringToTerraform(struct!.policyName),
+    policy_type: cdktn.stringToTerraform(struct!.policyType),
   }
 }
 
 
 export function applicationGatewaySslProfileSslPolicyToHclTerraform(struct?: ApplicationGatewaySslProfileSslPolicyOutputReference | ApplicationGatewaySslProfileSslPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cipher_suites: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cipherSuites),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.cipherSuites),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     disabled_protocols: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.disabledProtocols),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.disabledProtocols),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     min_protocol_version: {
-      value: cdktf.stringToHclTerraform(struct!.minProtocolVersion),
+      value: cdktn.stringToHclTerraform(struct!.minProtocolVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     policy_name: {
-      value: cdktf.stringToHclTerraform(struct!.policyName),
+      value: cdktn.stringToHclTerraform(struct!.policyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     policy_type: {
-      value: cdktf.stringToHclTerraform(struct!.policyType),
+      value: cdktn.stringToHclTerraform(struct!.policyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6486,14 +6486,14 @@ export function applicationGatewaySslProfileSslPolicyToHclTerraform(struct?: App
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewaySslProfileSslPolicyOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewaySslProfileSslPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6634,7 +6634,7 @@ export interface ApplicationGatewaySslProfile {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#verify_client_cert_issuer_dn ApplicationGateway#verify_client_cert_issuer_dn}
   */
-  readonly verifyClientCertIssuerDn?: boolean | cdktf.IResolvable;
+  readonly verifyClientCertIssuerDn?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#verify_client_certificate_revocation ApplicationGateway#verify_client_certificate_revocation}
   */
@@ -6647,47 +6647,47 @@ export interface ApplicationGatewaySslProfile {
   readonly sslPolicy?: ApplicationGatewaySslProfileSslPolicy;
 }
 
-export function applicationGatewaySslProfileToTerraform(struct?: ApplicationGatewaySslProfile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewaySslProfileToTerraform(struct?: ApplicationGatewaySslProfile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    trusted_client_certificate_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.trustedClientCertificateNames),
-    verify_client_cert_issuer_dn: cdktf.booleanToTerraform(struct!.verifyClientCertIssuerDn),
-    verify_client_certificate_revocation: cdktf.stringToTerraform(struct!.verifyClientCertificateRevocation),
+    name: cdktn.stringToTerraform(struct!.name),
+    trusted_client_certificate_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.trustedClientCertificateNames),
+    verify_client_cert_issuer_dn: cdktn.booleanToTerraform(struct!.verifyClientCertIssuerDn),
+    verify_client_certificate_revocation: cdktn.stringToTerraform(struct!.verifyClientCertificateRevocation),
     ssl_policy: applicationGatewaySslProfileSslPolicyToTerraform(struct!.sslPolicy),
   }
 }
 
 
-export function applicationGatewaySslProfileToHclTerraform(struct?: ApplicationGatewaySslProfile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewaySslProfileToHclTerraform(struct?: ApplicationGatewaySslProfile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     trusted_client_certificate_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.trustedClientCertificateNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.trustedClientCertificateNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     verify_client_cert_issuer_dn: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyClientCertIssuerDn),
+      value: cdktn.booleanToHclTerraform(struct!.verifyClientCertIssuerDn),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     verify_client_certificate_revocation: {
-      value: cdktf.stringToHclTerraform(struct!.verifyClientCertificateRevocation),
+      value: cdktn.stringToHclTerraform(struct!.verifyClientCertificateRevocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6704,9 +6704,9 @@ export function applicationGatewaySslProfileToHclTerraform(struct?: ApplicationG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewaySslProfileOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewaySslProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6714,11 +6714,11 @@ export class ApplicationGatewaySslProfileOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewaySslProfile | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewaySslProfile | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6747,7 +6747,7 @@ export class ApplicationGatewaySslProfileOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewaySslProfile | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewaySslProfile | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6757,7 +6757,7 @@ export class ApplicationGatewaySslProfileOutputReference extends cdktf.ComplexOb
       this._verifyClientCertificateRevocation = undefined;
       this._sslPolicy.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6807,11 +6807,11 @@ export class ApplicationGatewaySslProfileOutputReference extends cdktf.ComplexOb
   }
 
   // verify_client_cert_issuer_dn - computed: false, optional: true, required: false
-  private _verifyClientCertIssuerDn?: boolean | cdktf.IResolvable; 
+  private _verifyClientCertIssuerDn?: boolean | cdktn.IResolvable; 
   public get verifyClientCertIssuerDn() {
     return this.getBooleanAttribute('verify_client_cert_issuer_dn');
   }
-  public set verifyClientCertIssuerDn(value: boolean | cdktf.IResolvable) {
+  public set verifyClientCertIssuerDn(value: boolean | cdktn.IResolvable) {
     this._verifyClientCertIssuerDn = value;
   }
   public resetVerifyClientCertIssuerDn() {
@@ -6855,15 +6855,15 @@ export class ApplicationGatewaySslProfileOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class ApplicationGatewaySslProfileList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewaySslProfile[] | cdktf.IResolvable
+export class ApplicationGatewaySslProfileList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewaySslProfile[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6893,46 +6893,46 @@ export interface ApplicationGatewayTimeouts {
   readonly update?: string;
 }
 
-export function applicationGatewayTimeoutsToTerraform(struct?: ApplicationGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayTimeoutsToTerraform(struct?: ApplicationGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function applicationGatewayTimeoutsToHclTerraform(struct?: ApplicationGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayTimeoutsToHclTerraform(struct?: ApplicationGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6943,19 +6943,19 @@ export function applicationGatewayTimeoutsToHclTerraform(struct?: ApplicationGat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApplicationGatewayTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6980,7 +6980,7 @@ export class ApplicationGatewayTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6989,7 +6989,7 @@ export class ApplicationGatewayTimeoutsOutputReference extends cdktf.ComplexObje
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7078,32 +7078,32 @@ export interface ApplicationGatewayTrustedClientCertificate {
   readonly name: string;
 }
 
-export function applicationGatewayTrustedClientCertificateToTerraform(struct?: ApplicationGatewayTrustedClientCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayTrustedClientCertificateToTerraform(struct?: ApplicationGatewayTrustedClientCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data: cdktf.stringToTerraform(struct!.data),
-    name: cdktf.stringToTerraform(struct!.name),
+    data: cdktn.stringToTerraform(struct!.data),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function applicationGatewayTrustedClientCertificateToHclTerraform(struct?: ApplicationGatewayTrustedClientCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayTrustedClientCertificateToHclTerraform(struct?: ApplicationGatewayTrustedClientCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data: {
-      value: cdktf.stringToHclTerraform(struct!.data),
+      value: cdktn.stringToHclTerraform(struct!.data),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7114,9 +7114,9 @@ export function applicationGatewayTrustedClientCertificateToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayTrustedClientCertificateOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayTrustedClientCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7124,11 +7124,11 @@ export class ApplicationGatewayTrustedClientCertificateOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayTrustedClientCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayTrustedClientCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7145,14 +7145,14 @@ export class ApplicationGatewayTrustedClientCertificateOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayTrustedClientCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayTrustedClientCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._data = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7196,15 +7196,15 @@ export class ApplicationGatewayTrustedClientCertificateOutputReference extends c
   }
 }
 
-export class ApplicationGatewayTrustedClientCertificateList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayTrustedClientCertificate[] | cdktf.IResolvable
+export class ApplicationGatewayTrustedClientCertificateList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayTrustedClientCertificate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7230,39 +7230,39 @@ export interface ApplicationGatewayTrustedRootCertificate {
   readonly name: string;
 }
 
-export function applicationGatewayTrustedRootCertificateToTerraform(struct?: ApplicationGatewayTrustedRootCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayTrustedRootCertificateToTerraform(struct?: ApplicationGatewayTrustedRootCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data: cdktf.stringToTerraform(struct!.data),
-    key_vault_secret_id: cdktf.stringToTerraform(struct!.keyVaultSecretId),
-    name: cdktf.stringToTerraform(struct!.name),
+    data: cdktn.stringToTerraform(struct!.data),
+    key_vault_secret_id: cdktn.stringToTerraform(struct!.keyVaultSecretId),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function applicationGatewayTrustedRootCertificateToHclTerraform(struct?: ApplicationGatewayTrustedRootCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayTrustedRootCertificateToHclTerraform(struct?: ApplicationGatewayTrustedRootCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data: {
-      value: cdktf.stringToHclTerraform(struct!.data),
+      value: cdktn.stringToHclTerraform(struct!.data),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_secret_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultSecretId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultSecretId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7273,9 +7273,9 @@ export function applicationGatewayTrustedRootCertificateToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayTrustedRootCertificateOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayTrustedRootCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7283,11 +7283,11 @@ export class ApplicationGatewayTrustedRootCertificateOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayTrustedRootCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayTrustedRootCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7308,7 +7308,7 @@ export class ApplicationGatewayTrustedRootCertificateOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayTrustedRootCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayTrustedRootCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7316,7 +7316,7 @@ export class ApplicationGatewayTrustedRootCertificateOutputReference extends cdk
       this._keyVaultSecretId = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7380,15 +7380,15 @@ export class ApplicationGatewayTrustedRootCertificateOutputReference extends cdk
   }
 }
 
-export class ApplicationGatewayTrustedRootCertificateList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayTrustedRootCertificate[] | cdktf.IResolvable
+export class ApplicationGatewayTrustedRootCertificateList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayTrustedRootCertificate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7430,67 +7430,67 @@ export interface ApplicationGatewayUrlPathMapPathRule {
   readonly rewriteRuleSetName?: string;
 }
 
-export function applicationGatewayUrlPathMapPathRuleToTerraform(struct?: ApplicationGatewayUrlPathMapPathRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayUrlPathMapPathRuleToTerraform(struct?: ApplicationGatewayUrlPathMapPathRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backend_address_pool_name: cdktf.stringToTerraform(struct!.backendAddressPoolName),
-    backend_http_settings_name: cdktf.stringToTerraform(struct!.backendHttpSettingsName),
-    firewall_policy_id: cdktf.stringToTerraform(struct!.firewallPolicyId),
-    name: cdktf.stringToTerraform(struct!.name),
-    paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.paths),
-    redirect_configuration_name: cdktf.stringToTerraform(struct!.redirectConfigurationName),
-    rewrite_rule_set_name: cdktf.stringToTerraform(struct!.rewriteRuleSetName),
+    backend_address_pool_name: cdktn.stringToTerraform(struct!.backendAddressPoolName),
+    backend_http_settings_name: cdktn.stringToTerraform(struct!.backendHttpSettingsName),
+    firewall_policy_id: cdktn.stringToTerraform(struct!.firewallPolicyId),
+    name: cdktn.stringToTerraform(struct!.name),
+    paths: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.paths),
+    redirect_configuration_name: cdktn.stringToTerraform(struct!.redirectConfigurationName),
+    rewrite_rule_set_name: cdktn.stringToTerraform(struct!.rewriteRuleSetName),
   }
 }
 
 
-export function applicationGatewayUrlPathMapPathRuleToHclTerraform(struct?: ApplicationGatewayUrlPathMapPathRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayUrlPathMapPathRuleToHclTerraform(struct?: ApplicationGatewayUrlPathMapPathRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backend_address_pool_name: {
-      value: cdktf.stringToHclTerraform(struct!.backendAddressPoolName),
+      value: cdktn.stringToHclTerraform(struct!.backendAddressPoolName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     backend_http_settings_name: {
-      value: cdktf.stringToHclTerraform(struct!.backendHttpSettingsName),
+      value: cdktn.stringToHclTerraform(struct!.backendHttpSettingsName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     firewall_policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.firewallPolicyId),
+      value: cdktn.stringToHclTerraform(struct!.firewallPolicyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     paths: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.paths),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.paths),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     redirect_configuration_name: {
-      value: cdktf.stringToHclTerraform(struct!.redirectConfigurationName),
+      value: cdktn.stringToHclTerraform(struct!.redirectConfigurationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rewrite_rule_set_name: {
-      value: cdktf.stringToHclTerraform(struct!.rewriteRuleSetName),
+      value: cdktn.stringToHclTerraform(struct!.rewriteRuleSetName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7501,9 +7501,9 @@ export function applicationGatewayUrlPathMapPathRuleToHclTerraform(struct?: Appl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayUrlPathMapPathRuleOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayUrlPathMapPathRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7511,11 +7511,11 @@ export class ApplicationGatewayUrlPathMapPathRuleOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayUrlPathMapPathRule | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayUrlPathMapPathRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7552,7 +7552,7 @@ export class ApplicationGatewayUrlPathMapPathRuleOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayUrlPathMapPathRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayUrlPathMapPathRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7564,7 +7564,7 @@ export class ApplicationGatewayUrlPathMapPathRuleOutputReference extends cdktf.C
       this._redirectConfigurationName = undefined;
       this._rewriteRuleSetName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7713,15 +7713,15 @@ export class ApplicationGatewayUrlPathMapPathRuleOutputReference extends cdktf.C
   }
 }
 
-export class ApplicationGatewayUrlPathMapPathRuleList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayUrlPathMapPathRule[] | cdktf.IResolvable
+export class ApplicationGatewayUrlPathMapPathRuleList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayUrlPathMapPathRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7758,63 +7758,63 @@ export interface ApplicationGatewayUrlPathMap {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#path_rule ApplicationGateway#path_rule}
   */
-  readonly pathRule: ApplicationGatewayUrlPathMapPathRule[] | cdktf.IResolvable;
+  readonly pathRule: ApplicationGatewayUrlPathMapPathRule[] | cdktn.IResolvable;
 }
 
-export function applicationGatewayUrlPathMapToTerraform(struct?: ApplicationGatewayUrlPathMap | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayUrlPathMapToTerraform(struct?: ApplicationGatewayUrlPathMap | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_backend_address_pool_name: cdktf.stringToTerraform(struct!.defaultBackendAddressPoolName),
-    default_backend_http_settings_name: cdktf.stringToTerraform(struct!.defaultBackendHttpSettingsName),
-    default_redirect_configuration_name: cdktf.stringToTerraform(struct!.defaultRedirectConfigurationName),
-    default_rewrite_rule_set_name: cdktf.stringToTerraform(struct!.defaultRewriteRuleSetName),
-    name: cdktf.stringToTerraform(struct!.name),
-    path_rule: cdktf.listMapper(applicationGatewayUrlPathMapPathRuleToTerraform, true)(struct!.pathRule),
+    default_backend_address_pool_name: cdktn.stringToTerraform(struct!.defaultBackendAddressPoolName),
+    default_backend_http_settings_name: cdktn.stringToTerraform(struct!.defaultBackendHttpSettingsName),
+    default_redirect_configuration_name: cdktn.stringToTerraform(struct!.defaultRedirectConfigurationName),
+    default_rewrite_rule_set_name: cdktn.stringToTerraform(struct!.defaultRewriteRuleSetName),
+    name: cdktn.stringToTerraform(struct!.name),
+    path_rule: cdktn.listMapper(applicationGatewayUrlPathMapPathRuleToTerraform, true)(struct!.pathRule),
   }
 }
 
 
-export function applicationGatewayUrlPathMapToHclTerraform(struct?: ApplicationGatewayUrlPathMap | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayUrlPathMapToHclTerraform(struct?: ApplicationGatewayUrlPathMap | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_backend_address_pool_name: {
-      value: cdktf.stringToHclTerraform(struct!.defaultBackendAddressPoolName),
+      value: cdktn.stringToHclTerraform(struct!.defaultBackendAddressPoolName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default_backend_http_settings_name: {
-      value: cdktf.stringToHclTerraform(struct!.defaultBackendHttpSettingsName),
+      value: cdktn.stringToHclTerraform(struct!.defaultBackendHttpSettingsName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default_redirect_configuration_name: {
-      value: cdktf.stringToHclTerraform(struct!.defaultRedirectConfigurationName),
+      value: cdktn.stringToHclTerraform(struct!.defaultRedirectConfigurationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default_rewrite_rule_set_name: {
-      value: cdktf.stringToHclTerraform(struct!.defaultRewriteRuleSetName),
+      value: cdktn.stringToHclTerraform(struct!.defaultRewriteRuleSetName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path_rule: {
-      value: cdktf.listMapperHcl(applicationGatewayUrlPathMapPathRuleToHclTerraform, true)(struct!.pathRule),
+      value: cdktn.listMapperHcl(applicationGatewayUrlPathMapPathRuleToHclTerraform, true)(struct!.pathRule),
       isBlock: true,
       type: "list",
       storageClassType: "ApplicationGatewayUrlPathMapPathRuleList",
@@ -7825,9 +7825,9 @@ export function applicationGatewayUrlPathMapToHclTerraform(struct?: ApplicationG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayUrlPathMapOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayUrlPathMapOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7835,11 +7835,11 @@ export class ApplicationGatewayUrlPathMapOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayUrlPathMap | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayUrlPathMap | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7872,7 +7872,7 @@ export class ApplicationGatewayUrlPathMapOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayUrlPathMap | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayUrlPathMap | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7883,7 +7883,7 @@ export class ApplicationGatewayUrlPathMapOutputReference extends cdktf.ComplexOb
       this._name = undefined;
       this._pathRule.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8006,7 +8006,7 @@ export class ApplicationGatewayUrlPathMapOutputReference extends cdktf.ComplexOb
   public get pathRule() {
     return this._pathRule;
   }
-  public putPathRule(value: ApplicationGatewayUrlPathMapPathRule[] | cdktf.IResolvable) {
+  public putPathRule(value: ApplicationGatewayUrlPathMapPathRule[] | cdktn.IResolvable) {
     this._pathRule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -8015,15 +8015,15 @@ export class ApplicationGatewayUrlPathMapOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class ApplicationGatewayUrlPathMapList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayUrlPathMap[] | cdktf.IResolvable
+export class ApplicationGatewayUrlPathMapList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayUrlPathMap[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8045,32 +8045,32 @@ export interface ApplicationGatewayWafConfigurationDisabledRuleGroup {
   readonly rules?: number[];
 }
 
-export function applicationGatewayWafConfigurationDisabledRuleGroupToTerraform(struct?: ApplicationGatewayWafConfigurationDisabledRuleGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayWafConfigurationDisabledRuleGroupToTerraform(struct?: ApplicationGatewayWafConfigurationDisabledRuleGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rule_group_name: cdktf.stringToTerraform(struct!.ruleGroupName),
-    rules: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.rules),
+    rule_group_name: cdktn.stringToTerraform(struct!.ruleGroupName),
+    rules: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.rules),
   }
 }
 
 
-export function applicationGatewayWafConfigurationDisabledRuleGroupToHclTerraform(struct?: ApplicationGatewayWafConfigurationDisabledRuleGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayWafConfigurationDisabledRuleGroupToHclTerraform(struct?: ApplicationGatewayWafConfigurationDisabledRuleGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rule_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.ruleGroupName),
+      value: cdktn.stringToHclTerraform(struct!.ruleGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rules: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.rules),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.rules),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
@@ -8081,9 +8081,9 @@ export function applicationGatewayWafConfigurationDisabledRuleGroupToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayWafConfigurationDisabledRuleGroupOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayWafConfigurationDisabledRuleGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8091,11 +8091,11 @@ export class ApplicationGatewayWafConfigurationDisabledRuleGroupOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayWafConfigurationDisabledRuleGroup | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayWafConfigurationDisabledRuleGroup | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8112,14 +8112,14 @@ export class ApplicationGatewayWafConfigurationDisabledRuleGroupOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayWafConfigurationDisabledRuleGroup | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayWafConfigurationDisabledRuleGroup | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ruleGroupName = undefined;
       this._rules = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8161,15 +8161,15 @@ export class ApplicationGatewayWafConfigurationDisabledRuleGroupOutputReference 
   }
 }
 
-export class ApplicationGatewayWafConfigurationDisabledRuleGroupList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayWafConfigurationDisabledRuleGroup[] | cdktf.IResolvable
+export class ApplicationGatewayWafConfigurationDisabledRuleGroupList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayWafConfigurationDisabledRuleGroup[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8195,39 +8195,39 @@ export interface ApplicationGatewayWafConfigurationExclusion {
   readonly selectorMatchOperator?: string;
 }
 
-export function applicationGatewayWafConfigurationExclusionToTerraform(struct?: ApplicationGatewayWafConfigurationExclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayWafConfigurationExclusionToTerraform(struct?: ApplicationGatewayWafConfigurationExclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_variable: cdktf.stringToTerraform(struct!.matchVariable),
-    selector: cdktf.stringToTerraform(struct!.selector),
-    selector_match_operator: cdktf.stringToTerraform(struct!.selectorMatchOperator),
+    match_variable: cdktn.stringToTerraform(struct!.matchVariable),
+    selector: cdktn.stringToTerraform(struct!.selector),
+    selector_match_operator: cdktn.stringToTerraform(struct!.selectorMatchOperator),
   }
 }
 
 
-export function applicationGatewayWafConfigurationExclusionToHclTerraform(struct?: ApplicationGatewayWafConfigurationExclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationGatewayWafConfigurationExclusionToHclTerraform(struct?: ApplicationGatewayWafConfigurationExclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_variable: {
-      value: cdktf.stringToHclTerraform(struct!.matchVariable),
+      value: cdktn.stringToHclTerraform(struct!.matchVariable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     selector: {
-      value: cdktf.stringToHclTerraform(struct!.selector),
+      value: cdktn.stringToHclTerraform(struct!.selector),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     selector_match_operator: {
-      value: cdktf.stringToHclTerraform(struct!.selectorMatchOperator),
+      value: cdktn.stringToHclTerraform(struct!.selectorMatchOperator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8238,9 +8238,9 @@ export function applicationGatewayWafConfigurationExclusionToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayWafConfigurationExclusionOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayWafConfigurationExclusionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8248,11 +8248,11 @@ export class ApplicationGatewayWafConfigurationExclusionOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationGatewayWafConfigurationExclusion | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationGatewayWafConfigurationExclusion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8273,7 +8273,7 @@ export class ApplicationGatewayWafConfigurationExclusionOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationGatewayWafConfigurationExclusion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationGatewayWafConfigurationExclusion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8281,7 +8281,7 @@ export class ApplicationGatewayWafConfigurationExclusionOutputReference extends 
       this._selector = undefined;
       this._selectorMatchOperator = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8340,15 +8340,15 @@ export class ApplicationGatewayWafConfigurationExclusionOutputReference extends 
   }
 }
 
-export class ApplicationGatewayWafConfigurationExclusionList extends cdktf.ComplexList {
-  public internalValue? : ApplicationGatewayWafConfigurationExclusion[] | cdktf.IResolvable
+export class ApplicationGatewayWafConfigurationExclusionList extends cdktn.ComplexList {
+  public internalValue? : ApplicationGatewayWafConfigurationExclusion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8363,7 +8363,7 @@ export interface ApplicationGatewayWafConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#enabled ApplicationGateway#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#file_upload_limit_mb ApplicationGateway#file_upload_limit_mb}
   */
@@ -8379,7 +8379,7 @@ export interface ApplicationGatewayWafConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#request_body_check ApplicationGateway#request_body_check}
   */
-  readonly requestBodyCheck?: boolean | cdktf.IResolvable;
+  readonly requestBodyCheck?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#rule_set_type ApplicationGateway#rule_set_type}
   */
@@ -8393,90 +8393,90 @@ export interface ApplicationGatewayWafConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#disabled_rule_group ApplicationGateway#disabled_rule_group}
   */
-  readonly disabledRuleGroup?: ApplicationGatewayWafConfigurationDisabledRuleGroup[] | cdktf.IResolvable;
+  readonly disabledRuleGroup?: ApplicationGatewayWafConfigurationDisabledRuleGroup[] | cdktn.IResolvable;
   /**
   * exclusion block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#exclusion ApplicationGateway#exclusion}
   */
-  readonly exclusion?: ApplicationGatewayWafConfigurationExclusion[] | cdktf.IResolvable;
+  readonly exclusion?: ApplicationGatewayWafConfigurationExclusion[] | cdktn.IResolvable;
 }
 
 export function applicationGatewayWafConfigurationToTerraform(struct?: ApplicationGatewayWafConfigurationOutputReference | ApplicationGatewayWafConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    file_upload_limit_mb: cdktf.numberToTerraform(struct!.fileUploadLimitMb),
-    firewall_mode: cdktf.stringToTerraform(struct!.firewallMode),
-    max_request_body_size_kb: cdktf.numberToTerraform(struct!.maxRequestBodySizeKb),
-    request_body_check: cdktf.booleanToTerraform(struct!.requestBodyCheck),
-    rule_set_type: cdktf.stringToTerraform(struct!.ruleSetType),
-    rule_set_version: cdktf.stringToTerraform(struct!.ruleSetVersion),
-    disabled_rule_group: cdktf.listMapper(applicationGatewayWafConfigurationDisabledRuleGroupToTerraform, true)(struct!.disabledRuleGroup),
-    exclusion: cdktf.listMapper(applicationGatewayWafConfigurationExclusionToTerraform, true)(struct!.exclusion),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    file_upload_limit_mb: cdktn.numberToTerraform(struct!.fileUploadLimitMb),
+    firewall_mode: cdktn.stringToTerraform(struct!.firewallMode),
+    max_request_body_size_kb: cdktn.numberToTerraform(struct!.maxRequestBodySizeKb),
+    request_body_check: cdktn.booleanToTerraform(struct!.requestBodyCheck),
+    rule_set_type: cdktn.stringToTerraform(struct!.ruleSetType),
+    rule_set_version: cdktn.stringToTerraform(struct!.ruleSetVersion),
+    disabled_rule_group: cdktn.listMapper(applicationGatewayWafConfigurationDisabledRuleGroupToTerraform, true)(struct!.disabledRuleGroup),
+    exclusion: cdktn.listMapper(applicationGatewayWafConfigurationExclusionToTerraform, true)(struct!.exclusion),
   }
 }
 
 
 export function applicationGatewayWafConfigurationToHclTerraform(struct?: ApplicationGatewayWafConfigurationOutputReference | ApplicationGatewayWafConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     file_upload_limit_mb: {
-      value: cdktf.numberToHclTerraform(struct!.fileUploadLimitMb),
+      value: cdktn.numberToHclTerraform(struct!.fileUploadLimitMb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     firewall_mode: {
-      value: cdktf.stringToHclTerraform(struct!.firewallMode),
+      value: cdktn.stringToHclTerraform(struct!.firewallMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_request_body_size_kb: {
-      value: cdktf.numberToHclTerraform(struct!.maxRequestBodySizeKb),
+      value: cdktn.numberToHclTerraform(struct!.maxRequestBodySizeKb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     request_body_check: {
-      value: cdktf.booleanToHclTerraform(struct!.requestBodyCheck),
+      value: cdktn.booleanToHclTerraform(struct!.requestBodyCheck),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     rule_set_type: {
-      value: cdktf.stringToHclTerraform(struct!.ruleSetType),
+      value: cdktn.stringToHclTerraform(struct!.ruleSetType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_set_version: {
-      value: cdktf.stringToHclTerraform(struct!.ruleSetVersion),
+      value: cdktn.stringToHclTerraform(struct!.ruleSetVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disabled_rule_group: {
-      value: cdktf.listMapperHcl(applicationGatewayWafConfigurationDisabledRuleGroupToHclTerraform, true)(struct!.disabledRuleGroup),
+      value: cdktn.listMapperHcl(applicationGatewayWafConfigurationDisabledRuleGroupToHclTerraform, true)(struct!.disabledRuleGroup),
       isBlock: true,
       type: "list",
       storageClassType: "ApplicationGatewayWafConfigurationDisabledRuleGroupList",
     },
     exclusion: {
-      value: cdktf.listMapperHcl(applicationGatewayWafConfigurationExclusionToHclTerraform, true)(struct!.exclusion),
+      value: cdktn.listMapperHcl(applicationGatewayWafConfigurationExclusionToHclTerraform, true)(struct!.exclusion),
       isBlock: true,
       type: "list",
       storageClassType: "ApplicationGatewayWafConfigurationExclusionList",
@@ -8487,14 +8487,14 @@ export function applicationGatewayWafConfigurationToHclTerraform(struct?: Applic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationGatewayWafConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApplicationGatewayWafConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8568,11 +8568,11 @@ export class ApplicationGatewayWafConfigurationOutputReference extends cdktf.Com
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -8626,11 +8626,11 @@ export class ApplicationGatewayWafConfigurationOutputReference extends cdktf.Com
   }
 
   // request_body_check - computed: false, optional: true, required: false
-  private _requestBodyCheck?: boolean | cdktf.IResolvable; 
+  private _requestBodyCheck?: boolean | cdktn.IResolvable; 
   public get requestBodyCheck() {
     return this.getBooleanAttribute('request_body_check');
   }
-  public set requestBodyCheck(value: boolean | cdktf.IResolvable) {
+  public set requestBodyCheck(value: boolean | cdktn.IResolvable) {
     this._requestBodyCheck = value;
   }
   public resetRequestBodyCheck() {
@@ -8675,7 +8675,7 @@ export class ApplicationGatewayWafConfigurationOutputReference extends cdktf.Com
   public get disabledRuleGroup() {
     return this._disabledRuleGroup;
   }
-  public putDisabledRuleGroup(value: ApplicationGatewayWafConfigurationDisabledRuleGroup[] | cdktf.IResolvable) {
+  public putDisabledRuleGroup(value: ApplicationGatewayWafConfigurationDisabledRuleGroup[] | cdktn.IResolvable) {
     this._disabledRuleGroup.internalValue = value;
   }
   public resetDisabledRuleGroup() {
@@ -8691,7 +8691,7 @@ export class ApplicationGatewayWafConfigurationOutputReference extends cdktf.Com
   public get exclusion() {
     return this._exclusion;
   }
-  public putExclusion(value: ApplicationGatewayWafConfigurationExclusion[] | cdktf.IResolvable) {
+  public putExclusion(value: ApplicationGatewayWafConfigurationExclusion[] | cdktn.IResolvable) {
     this._exclusion.internalValue = value;
   }
   public resetExclusion() {
@@ -8706,7 +8706,7 @@ export class ApplicationGatewayWafConfigurationOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway azurerm_application_gateway}
 */
-export class ApplicationGateway extends cdktf.TerraformResource {
+export class ApplicationGateway extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -8717,14 +8717,14 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApplicationGateway resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApplicationGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationGateway to import
   * @param importFromId The id of the existing ApplicationGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationGateway to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_application_gateway", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_application_gateway", importId: importFromId, provider });
       }
 
   // ===========
@@ -8796,11 +8796,11 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   // ==========
 
   // enable_http2 - computed: false, optional: true, required: false
-  private _enableHttp2?: boolean | cdktf.IResolvable; 
+  private _enableHttp2?: boolean | cdktn.IResolvable; 
   public get enableHttp2() {
     return this.getBooleanAttribute('enable_http2');
   }
-  public set enableHttp2(value: boolean | cdktf.IResolvable) {
+  public set enableHttp2(value: boolean | cdktn.IResolvable) {
     this._enableHttp2 = value;
   }
   public resetEnableHttp2() {
@@ -8812,11 +8812,11 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   }
 
   // fips_enabled - computed: false, optional: true, required: false
-  private _fipsEnabled?: boolean | cdktf.IResolvable; 
+  private _fipsEnabled?: boolean | cdktn.IResolvable; 
   public get fipsEnabled() {
     return this.getBooleanAttribute('fips_enabled');
   }
-  public set fipsEnabled(value: boolean | cdktf.IResolvable) {
+  public set fipsEnabled(value: boolean | cdktn.IResolvable) {
     this._fipsEnabled = value;
   }
   public resetFipsEnabled() {
@@ -8844,11 +8844,11 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   }
 
   // force_firewall_policy_association - computed: false, optional: true, required: false
-  private _forceFirewallPolicyAssociation?: boolean | cdktf.IResolvable; 
+  private _forceFirewallPolicyAssociation?: boolean | cdktn.IResolvable; 
   public get forceFirewallPolicyAssociation() {
     return this.getBooleanAttribute('force_firewall_policy_association');
   }
-  public set forceFirewallPolicyAssociation(value: boolean | cdktf.IResolvable) {
+  public set forceFirewallPolicyAssociation(value: boolean | cdktn.IResolvable) {
     this._forceFirewallPolicyAssociation = value;
   }
   public resetForceFirewallPolicyAssociation() {
@@ -8939,7 +8939,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   // zones - computed: false, optional: true, required: false
   private _zones?: string[]; 
   public get zones() {
-    return cdktf.Fn.tolist(this.getListAttribute('zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('zones'));
   }
   public set zones(value: string[]) {
     this._zones = value;
@@ -8957,7 +8957,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get authenticationCertificate() {
     return this._authenticationCertificate;
   }
-  public putAuthenticationCertificate(value: ApplicationGatewayAuthenticationCertificate[] | cdktf.IResolvable) {
+  public putAuthenticationCertificate(value: ApplicationGatewayAuthenticationCertificate[] | cdktn.IResolvable) {
     this._authenticationCertificate.internalValue = value;
   }
   public resetAuthenticationCertificate() {
@@ -8989,7 +8989,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get backendAddressPool() {
     return this._backendAddressPool;
   }
-  public putBackendAddressPool(value: ApplicationGatewayBackendAddressPool[] | cdktf.IResolvable) {
+  public putBackendAddressPool(value: ApplicationGatewayBackendAddressPool[] | cdktn.IResolvable) {
     this._backendAddressPool.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9002,7 +9002,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get backendHttpSettings() {
     return this._backendHttpSettings;
   }
-  public putBackendHttpSettings(value: ApplicationGatewayBackendHttpSettings[] | cdktf.IResolvable) {
+  public putBackendHttpSettings(value: ApplicationGatewayBackendHttpSettings[] | cdktn.IResolvable) {
     this._backendHttpSettings.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9015,7 +9015,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get customErrorConfiguration() {
     return this._customErrorConfiguration;
   }
-  public putCustomErrorConfiguration(value: ApplicationGatewayCustomErrorConfiguration[] | cdktf.IResolvable) {
+  public putCustomErrorConfiguration(value: ApplicationGatewayCustomErrorConfiguration[] | cdktn.IResolvable) {
     this._customErrorConfiguration.internalValue = value;
   }
   public resetCustomErrorConfiguration() {
@@ -9031,7 +9031,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get frontendIpConfiguration() {
     return this._frontendIpConfiguration;
   }
-  public putFrontendIpConfiguration(value: ApplicationGatewayFrontendIpConfiguration[] | cdktf.IResolvable) {
+  public putFrontendIpConfiguration(value: ApplicationGatewayFrontendIpConfiguration[] | cdktn.IResolvable) {
     this._frontendIpConfiguration.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9044,7 +9044,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get frontendPort() {
     return this._frontendPort;
   }
-  public putFrontendPort(value: ApplicationGatewayFrontendPort[] | cdktf.IResolvable) {
+  public putFrontendPort(value: ApplicationGatewayFrontendPort[] | cdktn.IResolvable) {
     this._frontendPort.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9057,7 +9057,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get gatewayIpConfiguration() {
     return this._gatewayIpConfiguration;
   }
-  public putGatewayIpConfiguration(value: ApplicationGatewayGatewayIpConfiguration[] | cdktf.IResolvable) {
+  public putGatewayIpConfiguration(value: ApplicationGatewayGatewayIpConfiguration[] | cdktn.IResolvable) {
     this._gatewayIpConfiguration.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9086,7 +9086,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get httpListener() {
     return this._httpListener;
   }
-  public putHttpListener(value: ApplicationGatewayHttpListener[] | cdktf.IResolvable) {
+  public putHttpListener(value: ApplicationGatewayHttpListener[] | cdktn.IResolvable) {
     this._httpListener.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9115,7 +9115,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get privateLinkConfiguration() {
     return this._privateLinkConfiguration;
   }
-  public putPrivateLinkConfiguration(value: ApplicationGatewayPrivateLinkConfiguration[] | cdktf.IResolvable) {
+  public putPrivateLinkConfiguration(value: ApplicationGatewayPrivateLinkConfiguration[] | cdktn.IResolvable) {
     this._privateLinkConfiguration.internalValue = value;
   }
   public resetPrivateLinkConfiguration() {
@@ -9131,7 +9131,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get probe() {
     return this._probe;
   }
-  public putProbe(value: ApplicationGatewayProbe[] | cdktf.IResolvable) {
+  public putProbe(value: ApplicationGatewayProbe[] | cdktn.IResolvable) {
     this._probe.internalValue = value;
   }
   public resetProbe() {
@@ -9147,7 +9147,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get redirectConfiguration() {
     return this._redirectConfiguration;
   }
-  public putRedirectConfiguration(value: ApplicationGatewayRedirectConfiguration[] | cdktf.IResolvable) {
+  public putRedirectConfiguration(value: ApplicationGatewayRedirectConfiguration[] | cdktn.IResolvable) {
     this._redirectConfiguration.internalValue = value;
   }
   public resetRedirectConfiguration() {
@@ -9163,7 +9163,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get requestRoutingRule() {
     return this._requestRoutingRule;
   }
-  public putRequestRoutingRule(value: ApplicationGatewayRequestRoutingRule[] | cdktf.IResolvable) {
+  public putRequestRoutingRule(value: ApplicationGatewayRequestRoutingRule[] | cdktn.IResolvable) {
     this._requestRoutingRule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9176,7 +9176,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get rewriteRuleSet() {
     return this._rewriteRuleSet;
   }
-  public putRewriteRuleSet(value: ApplicationGatewayRewriteRuleSet[] | cdktf.IResolvable) {
+  public putRewriteRuleSet(value: ApplicationGatewayRewriteRuleSet[] | cdktn.IResolvable) {
     this._rewriteRuleSet.internalValue = value;
   }
   public resetRewriteRuleSet() {
@@ -9205,7 +9205,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get sslCertificate() {
     return this._sslCertificate;
   }
-  public putSslCertificate(value: ApplicationGatewaySslCertificate[] | cdktf.IResolvable) {
+  public putSslCertificate(value: ApplicationGatewaySslCertificate[] | cdktn.IResolvable) {
     this._sslCertificate.internalValue = value;
   }
   public resetSslCertificate() {
@@ -9237,7 +9237,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get sslProfile() {
     return this._sslProfile;
   }
-  public putSslProfile(value: ApplicationGatewaySslProfile[] | cdktf.IResolvable) {
+  public putSslProfile(value: ApplicationGatewaySslProfile[] | cdktn.IResolvable) {
     this._sslProfile.internalValue = value;
   }
   public resetSslProfile() {
@@ -9269,7 +9269,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get trustedClientCertificate() {
     return this._trustedClientCertificate;
   }
-  public putTrustedClientCertificate(value: ApplicationGatewayTrustedClientCertificate[] | cdktf.IResolvable) {
+  public putTrustedClientCertificate(value: ApplicationGatewayTrustedClientCertificate[] | cdktn.IResolvable) {
     this._trustedClientCertificate.internalValue = value;
   }
   public resetTrustedClientCertificate() {
@@ -9285,7 +9285,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get trustedRootCertificate() {
     return this._trustedRootCertificate;
   }
-  public putTrustedRootCertificate(value: ApplicationGatewayTrustedRootCertificate[] | cdktf.IResolvable) {
+  public putTrustedRootCertificate(value: ApplicationGatewayTrustedRootCertificate[] | cdktn.IResolvable) {
     this._trustedRootCertificate.internalValue = value;
   }
   public resetTrustedRootCertificate() {
@@ -9301,7 +9301,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   public get urlPathMap() {
     return this._urlPathMap;
   }
-  public putUrlPathMap(value: ApplicationGatewayUrlPathMap[] | cdktf.IResolvable) {
+  public putUrlPathMap(value: ApplicationGatewayUrlPathMap[] | cdktn.IResolvable) {
     this._urlPathMap.internalValue = value;
   }
   public resetUrlPathMap() {
@@ -9334,40 +9334,40 @@ export class ApplicationGateway extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enable_http2: cdktf.booleanToTerraform(this._enableHttp2),
-      fips_enabled: cdktf.booleanToTerraform(this._fipsEnabled),
-      firewall_policy_id: cdktf.stringToTerraform(this._firewallPolicyId),
-      force_firewall_policy_association: cdktf.booleanToTerraform(this._forceFirewallPolicyAssociation),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._zones),
-      authentication_certificate: cdktf.listMapper(applicationGatewayAuthenticationCertificateToTerraform, true)(this._authenticationCertificate.internalValue),
+      enable_http2: cdktn.booleanToTerraform(this._enableHttp2),
+      fips_enabled: cdktn.booleanToTerraform(this._fipsEnabled),
+      firewall_policy_id: cdktn.stringToTerraform(this._firewallPolicyId),
+      force_firewall_policy_association: cdktn.booleanToTerraform(this._forceFirewallPolicyAssociation),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      zones: cdktn.listMapper(cdktn.stringToTerraform, false)(this._zones),
+      authentication_certificate: cdktn.listMapper(applicationGatewayAuthenticationCertificateToTerraform, true)(this._authenticationCertificate.internalValue),
       autoscale_configuration: applicationGatewayAutoscaleConfigurationToTerraform(this._autoscaleConfiguration.internalValue),
-      backend_address_pool: cdktf.listMapper(applicationGatewayBackendAddressPoolToTerraform, true)(this._backendAddressPool.internalValue),
-      backend_http_settings: cdktf.listMapper(applicationGatewayBackendHttpSettingsToTerraform, true)(this._backendHttpSettings.internalValue),
-      custom_error_configuration: cdktf.listMapper(applicationGatewayCustomErrorConfigurationToTerraform, true)(this._customErrorConfiguration.internalValue),
-      frontend_ip_configuration: cdktf.listMapper(applicationGatewayFrontendIpConfigurationToTerraform, true)(this._frontendIpConfiguration.internalValue),
-      frontend_port: cdktf.listMapper(applicationGatewayFrontendPortToTerraform, true)(this._frontendPort.internalValue),
-      gateway_ip_configuration: cdktf.listMapper(applicationGatewayGatewayIpConfigurationToTerraform, true)(this._gatewayIpConfiguration.internalValue),
+      backend_address_pool: cdktn.listMapper(applicationGatewayBackendAddressPoolToTerraform, true)(this._backendAddressPool.internalValue),
+      backend_http_settings: cdktn.listMapper(applicationGatewayBackendHttpSettingsToTerraform, true)(this._backendHttpSettings.internalValue),
+      custom_error_configuration: cdktn.listMapper(applicationGatewayCustomErrorConfigurationToTerraform, true)(this._customErrorConfiguration.internalValue),
+      frontend_ip_configuration: cdktn.listMapper(applicationGatewayFrontendIpConfigurationToTerraform, true)(this._frontendIpConfiguration.internalValue),
+      frontend_port: cdktn.listMapper(applicationGatewayFrontendPortToTerraform, true)(this._frontendPort.internalValue),
+      gateway_ip_configuration: cdktn.listMapper(applicationGatewayGatewayIpConfigurationToTerraform, true)(this._gatewayIpConfiguration.internalValue),
       global: applicationGatewayGlobalToTerraform(this._global.internalValue),
-      http_listener: cdktf.listMapper(applicationGatewayHttpListenerToTerraform, true)(this._httpListener.internalValue),
+      http_listener: cdktn.listMapper(applicationGatewayHttpListenerToTerraform, true)(this._httpListener.internalValue),
       identity: applicationGatewayIdentityToTerraform(this._identity.internalValue),
-      private_link_configuration: cdktf.listMapper(applicationGatewayPrivateLinkConfigurationToTerraform, true)(this._privateLinkConfiguration.internalValue),
-      probe: cdktf.listMapper(applicationGatewayProbeToTerraform, true)(this._probe.internalValue),
-      redirect_configuration: cdktf.listMapper(applicationGatewayRedirectConfigurationToTerraform, true)(this._redirectConfiguration.internalValue),
-      request_routing_rule: cdktf.listMapper(applicationGatewayRequestRoutingRuleToTerraform, true)(this._requestRoutingRule.internalValue),
-      rewrite_rule_set: cdktf.listMapper(applicationGatewayRewriteRuleSetToTerraform, true)(this._rewriteRuleSet.internalValue),
+      private_link_configuration: cdktn.listMapper(applicationGatewayPrivateLinkConfigurationToTerraform, true)(this._privateLinkConfiguration.internalValue),
+      probe: cdktn.listMapper(applicationGatewayProbeToTerraform, true)(this._probe.internalValue),
+      redirect_configuration: cdktn.listMapper(applicationGatewayRedirectConfigurationToTerraform, true)(this._redirectConfiguration.internalValue),
+      request_routing_rule: cdktn.listMapper(applicationGatewayRequestRoutingRuleToTerraform, true)(this._requestRoutingRule.internalValue),
+      rewrite_rule_set: cdktn.listMapper(applicationGatewayRewriteRuleSetToTerraform, true)(this._rewriteRuleSet.internalValue),
       sku: applicationGatewaySkuToTerraform(this._sku.internalValue),
-      ssl_certificate: cdktf.listMapper(applicationGatewaySslCertificateToTerraform, true)(this._sslCertificate.internalValue),
+      ssl_certificate: cdktn.listMapper(applicationGatewaySslCertificateToTerraform, true)(this._sslCertificate.internalValue),
       ssl_policy: applicationGatewaySslPolicyToTerraform(this._sslPolicy.internalValue),
-      ssl_profile: cdktf.listMapper(applicationGatewaySslProfileToTerraform, true)(this._sslProfile.internalValue),
+      ssl_profile: cdktn.listMapper(applicationGatewaySslProfileToTerraform, true)(this._sslProfile.internalValue),
       timeouts: applicationGatewayTimeoutsToTerraform(this._timeouts.internalValue),
-      trusted_client_certificate: cdktf.listMapper(applicationGatewayTrustedClientCertificateToTerraform, true)(this._trustedClientCertificate.internalValue),
-      trusted_root_certificate: cdktf.listMapper(applicationGatewayTrustedRootCertificateToTerraform, true)(this._trustedRootCertificate.internalValue),
-      url_path_map: cdktf.listMapper(applicationGatewayUrlPathMapToTerraform, true)(this._urlPathMap.internalValue),
+      trusted_client_certificate: cdktn.listMapper(applicationGatewayTrustedClientCertificateToTerraform, true)(this._trustedClientCertificate.internalValue),
+      trusted_root_certificate: cdktn.listMapper(applicationGatewayTrustedRootCertificateToTerraform, true)(this._trustedRootCertificate.internalValue),
+      url_path_map: cdktn.listMapper(applicationGatewayUrlPathMapToTerraform, true)(this._urlPathMap.internalValue),
       waf_configuration: applicationGatewayWafConfigurationToTerraform(this._wafConfiguration.internalValue),
     };
   }
@@ -9375,67 +9375,67 @@ export class ApplicationGateway extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enable_http2: {
-        value: cdktf.booleanToHclTerraform(this._enableHttp2),
+        value: cdktn.booleanToHclTerraform(this._enableHttp2),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       fips_enabled: {
-        value: cdktf.booleanToHclTerraform(this._fipsEnabled),
+        value: cdktn.booleanToHclTerraform(this._fipsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       firewall_policy_id: {
-        value: cdktf.stringToHclTerraform(this._firewallPolicyId),
+        value: cdktn.stringToHclTerraform(this._firewallPolicyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_firewall_policy_association: {
-        value: cdktf.booleanToHclTerraform(this._forceFirewallPolicyAssociation),
+        value: cdktn.booleanToHclTerraform(this._forceFirewallPolicyAssociation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       zones: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._zones),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._zones),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       authentication_certificate: {
-        value: cdktf.listMapperHcl(applicationGatewayAuthenticationCertificateToHclTerraform, true)(this._authenticationCertificate.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayAuthenticationCertificateToHclTerraform, true)(this._authenticationCertificate.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApplicationGatewayAuthenticationCertificateList",
@@ -9447,37 +9447,37 @@ export class ApplicationGateway extends cdktf.TerraformResource {
         storageClassType: "ApplicationGatewayAutoscaleConfigurationList",
       },
       backend_address_pool: {
-        value: cdktf.listMapperHcl(applicationGatewayBackendAddressPoolToHclTerraform, true)(this._backendAddressPool.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayBackendAddressPoolToHclTerraform, true)(this._backendAddressPool.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ApplicationGatewayBackendAddressPoolList",
       },
       backend_http_settings: {
-        value: cdktf.listMapperHcl(applicationGatewayBackendHttpSettingsToHclTerraform, true)(this._backendHttpSettings.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayBackendHttpSettingsToHclTerraform, true)(this._backendHttpSettings.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ApplicationGatewayBackendHttpSettingsList",
       },
       custom_error_configuration: {
-        value: cdktf.listMapperHcl(applicationGatewayCustomErrorConfigurationToHclTerraform, true)(this._customErrorConfiguration.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayCustomErrorConfigurationToHclTerraform, true)(this._customErrorConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApplicationGatewayCustomErrorConfigurationList",
       },
       frontend_ip_configuration: {
-        value: cdktf.listMapperHcl(applicationGatewayFrontendIpConfigurationToHclTerraform, true)(this._frontendIpConfiguration.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayFrontendIpConfigurationToHclTerraform, true)(this._frontendIpConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApplicationGatewayFrontendIpConfigurationList",
       },
       frontend_port: {
-        value: cdktf.listMapperHcl(applicationGatewayFrontendPortToHclTerraform, true)(this._frontendPort.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayFrontendPortToHclTerraform, true)(this._frontendPort.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ApplicationGatewayFrontendPortList",
       },
       gateway_ip_configuration: {
-        value: cdktf.listMapperHcl(applicationGatewayGatewayIpConfigurationToHclTerraform, true)(this._gatewayIpConfiguration.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayGatewayIpConfigurationToHclTerraform, true)(this._gatewayIpConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApplicationGatewayGatewayIpConfigurationList",
@@ -9489,7 +9489,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
         storageClassType: "ApplicationGatewayGlobalList",
       },
       http_listener: {
-        value: cdktf.listMapperHcl(applicationGatewayHttpListenerToHclTerraform, true)(this._httpListener.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayHttpListenerToHclTerraform, true)(this._httpListener.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ApplicationGatewayHttpListenerList",
@@ -9501,31 +9501,31 @@ export class ApplicationGateway extends cdktf.TerraformResource {
         storageClassType: "ApplicationGatewayIdentityList",
       },
       private_link_configuration: {
-        value: cdktf.listMapperHcl(applicationGatewayPrivateLinkConfigurationToHclTerraform, true)(this._privateLinkConfiguration.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayPrivateLinkConfigurationToHclTerraform, true)(this._privateLinkConfiguration.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ApplicationGatewayPrivateLinkConfigurationList",
       },
       probe: {
-        value: cdktf.listMapperHcl(applicationGatewayProbeToHclTerraform, true)(this._probe.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayProbeToHclTerraform, true)(this._probe.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ApplicationGatewayProbeList",
       },
       redirect_configuration: {
-        value: cdktf.listMapperHcl(applicationGatewayRedirectConfigurationToHclTerraform, true)(this._redirectConfiguration.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayRedirectConfigurationToHclTerraform, true)(this._redirectConfiguration.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ApplicationGatewayRedirectConfigurationList",
       },
       request_routing_rule: {
-        value: cdktf.listMapperHcl(applicationGatewayRequestRoutingRuleToHclTerraform, true)(this._requestRoutingRule.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayRequestRoutingRuleToHclTerraform, true)(this._requestRoutingRule.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ApplicationGatewayRequestRoutingRuleList",
       },
       rewrite_rule_set: {
-        value: cdktf.listMapperHcl(applicationGatewayRewriteRuleSetToHclTerraform, true)(this._rewriteRuleSet.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayRewriteRuleSetToHclTerraform, true)(this._rewriteRuleSet.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApplicationGatewayRewriteRuleSetList",
@@ -9537,7 +9537,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
         storageClassType: "ApplicationGatewaySkuList",
       },
       ssl_certificate: {
-        value: cdktf.listMapperHcl(applicationGatewaySslCertificateToHclTerraform, true)(this._sslCertificate.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewaySslCertificateToHclTerraform, true)(this._sslCertificate.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ApplicationGatewaySslCertificateList",
@@ -9549,7 +9549,7 @@ export class ApplicationGateway extends cdktf.TerraformResource {
         storageClassType: "ApplicationGatewaySslPolicyList",
       },
       ssl_profile: {
-        value: cdktf.listMapperHcl(applicationGatewaySslProfileToHclTerraform, true)(this._sslProfile.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewaySslProfileToHclTerraform, true)(this._sslProfile.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApplicationGatewaySslProfileList",
@@ -9561,19 +9561,19 @@ export class ApplicationGateway extends cdktf.TerraformResource {
         storageClassType: "ApplicationGatewayTimeouts",
       },
       trusted_client_certificate: {
-        value: cdktf.listMapperHcl(applicationGatewayTrustedClientCertificateToHclTerraform, true)(this._trustedClientCertificate.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayTrustedClientCertificateToHclTerraform, true)(this._trustedClientCertificate.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApplicationGatewayTrustedClientCertificateList",
       },
       trusted_root_certificate: {
-        value: cdktf.listMapperHcl(applicationGatewayTrustedRootCertificateToHclTerraform, true)(this._trustedRootCertificate.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayTrustedRootCertificateToHclTerraform, true)(this._trustedRootCertificate.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApplicationGatewayTrustedRootCertificateList",
       },
       url_path_map: {
-        value: cdktf.listMapperHcl(applicationGatewayUrlPathMapToHclTerraform, true)(this._urlPathMap.internalValue),
+        value: cdktn.listMapperHcl(applicationGatewayUrlPathMapToHclTerraform, true)(this._urlPathMap.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApplicationGatewayUrlPathMapList",

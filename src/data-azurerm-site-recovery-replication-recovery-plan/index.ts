@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermSiteRecoveryReplicationRecoveryPlanConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermSiteRecoveryReplicationRecoveryPlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/site_recovery_replication_recovery_plan#id DataAzurermSiteRecoveryReplicationRecoveryPlan#id}
   *
@@ -38,8 +38,8 @@ export interface DataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSetti
 }
 
 export function dataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsToTerraform(struct?: DataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettin
 
 
 export function dataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsToHclTerraform(struct?: DataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettin
   return attrs;
 }
 
-export class DataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -106,14 +106,14 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsO
   }
 }
 
-export class DataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsList extends cdktf.ComplexList {
+export class DataAzurermSiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -128,8 +128,8 @@ export interface DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPost
 }
 
 export function dataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionToTerraform(struct?: DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -138,8 +138,8 @@ export function dataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostA
 
 
 export function dataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionToHclTerraform(struct?: DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -147,7 +147,7 @@ export function dataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostA
   return attrs;
 }
 
-export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -156,7 +156,7 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -182,12 +182,12 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActi
 
   // fail_over_directions - computed: true, optional: false, required: false
   public get failOverDirections() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_directions'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_directions'));
   }
 
   // fail_over_types - computed: true, optional: false, required: false
   public get failOverTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_types'));
   }
 
   // manual_action_instruction - computed: true, optional: false, required: false
@@ -216,14 +216,14 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActi
   }
 }
 
-export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionListList extends cdktf.MapList {
+export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionListList extends cdktn.MapList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -235,14 +235,14 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActi
   }
 }
 
-export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionList extends cdktf.ComplexList {
+export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPostActionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -257,8 +257,8 @@ export interface DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreA
 }
 
 export function dataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActionToTerraform(struct?: DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -267,8 +267,8 @@ export function dataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreAc
 
 
 export function dataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActionToHclTerraform(struct?: DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -276,7 +276,7 @@ export function dataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreAc
   return attrs;
 }
 
-export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActionOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -285,7 +285,7 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActio
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -311,12 +311,12 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActio
 
   // fail_over_directions - computed: true, optional: false, required: false
   public get failOverDirections() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_directions'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_directions'));
   }
 
   // fail_over_types - computed: true, optional: false, required: false
   public get failOverTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_types'));
   }
 
   // manual_action_instruction - computed: true, optional: false, required: false
@@ -345,14 +345,14 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActio
   }
 }
 
-export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActionListList extends cdktf.MapList {
+export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActionListList extends cdktn.MapList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -364,14 +364,14 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActio
   }
 }
 
-export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActionList extends cdktf.ComplexList {
+export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupPreActionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -386,8 +386,8 @@ export interface DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroup {
 }
 
 export function dataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupToTerraform(struct?: DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -396,8 +396,8 @@ export function dataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupToTer
 
 
 export function dataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupToHclTerraform(struct?: DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -405,7 +405,7 @@ export function dataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupToHcl
   return attrs;
 }
 
-export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -414,7 +414,7 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -456,14 +456,14 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupOutputRe
   }
 }
 
-export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupList extends cdktf.ComplexList {
+export class DataAzurermSiteRecoveryReplicationRecoveryPlanRecoveryGroupList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -481,25 +481,25 @@ export interface DataAzurermSiteRecoveryReplicationRecoveryPlanTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermSiteRecoveryReplicationRecoveryPlanTimeoutsToTerraform(struct?: DataAzurermSiteRecoveryReplicationRecoveryPlanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermSiteRecoveryReplicationRecoveryPlanTimeoutsToTerraform(struct?: DataAzurermSiteRecoveryReplicationRecoveryPlanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermSiteRecoveryReplicationRecoveryPlanTimeoutsToHclTerraform(struct?: DataAzurermSiteRecoveryReplicationRecoveryPlanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermSiteRecoveryReplicationRecoveryPlanTimeoutsToHclTerraform(struct?: DataAzurermSiteRecoveryReplicationRecoveryPlanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -510,19 +510,19 @@ export function dataAzurermSiteRecoveryReplicationRecoveryPlanTimeoutsToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermSiteRecoveryReplicationRecoveryPlanTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSiteRecoveryReplicationRecoveryPlanTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermSiteRecoveryReplicationRecoveryPlanTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermSiteRecoveryReplicationRecoveryPlanTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -535,13 +535,13 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlanTimeoutsOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermSiteRecoveryReplicationRecoveryPlanTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermSiteRecoveryReplicationRecoveryPlanTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -572,7 +572,7 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlanTimeoutsOutputReferen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan}
 */
-export class DataAzurermSiteRecoveryReplicationRecoveryPlan extends cdktf.TerraformDataSource {
+export class DataAzurermSiteRecoveryReplicationRecoveryPlan extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -583,14 +583,14 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlan extends cdktf.Terraf
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermSiteRecoveryReplicationRecoveryPlan resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermSiteRecoveryReplicationRecoveryPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermSiteRecoveryReplicationRecoveryPlan to import
   * @param importFromId The id of the existing DataAzurermSiteRecoveryReplicationRecoveryPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/site_recovery_replication_recovery_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermSiteRecoveryReplicationRecoveryPlan to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_site_recovery_replication_recovery_plan", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_site_recovery_replication_recovery_plan", importId: importFromId, provider });
       }
 
   // ===========
@@ -721,9 +721,9 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlan extends cdktf.Terraf
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      recovery_vault_id: cdktf.stringToTerraform(this._recoveryVaultId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      recovery_vault_id: cdktn.stringToTerraform(this._recoveryVaultId),
       timeouts: dataAzurermSiteRecoveryReplicationRecoveryPlanTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -731,19 +731,19 @@ export class DataAzurermSiteRecoveryReplicationRecoveryPlan extends cdktf.Terraf
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_vault_id: {
-        value: cdktf.stringToHclTerraform(this._recoveryVaultId),
+        value: cdktn.stringToHclTerraform(this._recoveryVaultId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CostManagementScheduledActionConfig extends cdktf.TerraformMetaArguments {
+export interface CostManagementScheduledActionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cost_management_scheduled_action#day_of_month CostManagementScheduledAction#day_of_month}
   */
@@ -101,46 +101,46 @@ export interface CostManagementScheduledActionTimeouts {
   readonly update?: string;
 }
 
-export function costManagementScheduledActionTimeoutsToTerraform(struct?: CostManagementScheduledActionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function costManagementScheduledActionTimeoutsToTerraform(struct?: CostManagementScheduledActionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function costManagementScheduledActionTimeoutsToHclTerraform(struct?: CostManagementScheduledActionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function costManagementScheduledActionTimeoutsToHclTerraform(struct?: CostManagementScheduledActionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -151,19 +151,19 @@ export function costManagementScheduledActionTimeoutsToHclTerraform(struct?: Cos
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CostManagementScheduledActionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CostManagementScheduledActionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CostManagementScheduledActionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CostManagementScheduledActionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -188,7 +188,7 @@ export class CostManagementScheduledActionTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CostManagementScheduledActionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CostManagementScheduledActionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -197,7 +197,7 @@ export class CostManagementScheduledActionTimeoutsOutputReference extends cdktf.
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -279,7 +279,7 @@ export class CostManagementScheduledActionTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cost_management_scheduled_action azurerm_cost_management_scheduled_action}
 */
-export class CostManagementScheduledAction extends cdktf.TerraformResource {
+export class CostManagementScheduledAction extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -290,14 +290,14 @@ export class CostManagementScheduledAction extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CostManagementScheduledAction resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CostManagementScheduledAction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CostManagementScheduledAction to import
   * @param importFromId The id of the existing CostManagementScheduledAction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cost_management_scheduled_action#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CostManagementScheduledAction to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cost_management_scheduled_action", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cost_management_scheduled_action", importId: importFromId, provider });
       }
 
   // ===========
@@ -584,21 +584,21 @@ export class CostManagementScheduledAction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      day_of_month: cdktf.numberToTerraform(this._dayOfMonth),
-      days_of_week: cdktf.listMapper(cdktf.stringToTerraform, false)(this._daysOfWeek),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      email_address_sender: cdktf.stringToTerraform(this._emailAddressSender),
-      email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._emailAddresses),
-      email_subject: cdktf.stringToTerraform(this._emailSubject),
-      end_date: cdktf.stringToTerraform(this._endDate),
-      frequency: cdktf.stringToTerraform(this._frequency),
-      hour_of_day: cdktf.numberToTerraform(this._hourOfDay),
-      id: cdktf.stringToTerraform(this._id),
-      message: cdktf.stringToTerraform(this._message),
-      name: cdktf.stringToTerraform(this._name),
-      start_date: cdktf.stringToTerraform(this._startDate),
-      view_id: cdktf.stringToTerraform(this._viewId),
-      weeks_of_month: cdktf.listMapper(cdktf.stringToTerraform, false)(this._weeksOfMonth),
+      day_of_month: cdktn.numberToTerraform(this._dayOfMonth),
+      days_of_week: cdktn.listMapper(cdktn.stringToTerraform, false)(this._daysOfWeek),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      email_address_sender: cdktn.stringToTerraform(this._emailAddressSender),
+      email_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._emailAddresses),
+      email_subject: cdktn.stringToTerraform(this._emailSubject),
+      end_date: cdktn.stringToTerraform(this._endDate),
+      frequency: cdktn.stringToTerraform(this._frequency),
+      hour_of_day: cdktn.numberToTerraform(this._hourOfDay),
+      id: cdktn.stringToTerraform(this._id),
+      message: cdktn.stringToTerraform(this._message),
+      name: cdktn.stringToTerraform(this._name),
+      start_date: cdktn.stringToTerraform(this._startDate),
+      view_id: cdktn.stringToTerraform(this._viewId),
+      weeks_of_month: cdktn.listMapper(cdktn.stringToTerraform, false)(this._weeksOfMonth),
       timeouts: costManagementScheduledActionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -606,91 +606,91 @@ export class CostManagementScheduledAction extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       day_of_month: {
-        value: cdktf.numberToHclTerraform(this._dayOfMonth),
+        value: cdktn.numberToHclTerraform(this._dayOfMonth),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       days_of_week: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._daysOfWeek),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._daysOfWeek),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email_address_sender: {
-        value: cdktf.stringToHclTerraform(this._emailAddressSender),
+        value: cdktn.stringToHclTerraform(this._emailAddressSender),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email_addresses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._emailAddresses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._emailAddresses),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       email_subject: {
-        value: cdktf.stringToHclTerraform(this._emailSubject),
+        value: cdktn.stringToHclTerraform(this._emailSubject),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       end_date: {
-        value: cdktf.stringToHclTerraform(this._endDate),
+        value: cdktn.stringToHclTerraform(this._endDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       frequency: {
-        value: cdktf.stringToHclTerraform(this._frequency),
+        value: cdktn.stringToHclTerraform(this._frequency),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hour_of_day: {
-        value: cdktf.numberToHclTerraform(this._hourOfDay),
+        value: cdktn.numberToHclTerraform(this._hourOfDay),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       message: {
-        value: cdktf.stringToHclTerraform(this._message),
+        value: cdktn.stringToHclTerraform(this._message),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_date: {
-        value: cdktf.stringToHclTerraform(this._startDate),
+        value: cdktn.stringToHclTerraform(this._startDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       view_id: {
-        value: cdktf.stringToHclTerraform(this._viewId),
+        value: cdktn.stringToHclTerraform(this._viewId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       weeks_of_month: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._weeksOfMonth),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._weeksOfMonth),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

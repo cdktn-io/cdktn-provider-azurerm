@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BatchAccountConfig extends cdktf.TerraformMetaArguments {
+export interface BatchAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_account#allowed_authentication_modes BatchAccount#allowed_authentication_modes}
   */
@@ -19,7 +19,7 @@ export interface BatchAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_account#encryption BatchAccount#encryption}
   */
-  readonly encryption?: BatchAccountEncryption[] | cdktf.IResolvable;
+  readonly encryption?: BatchAccountEncryption[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_account#id BatchAccount#id}
   *
@@ -42,7 +42,7 @@ export interface BatchAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_account#public_network_access_enabled BatchAccount#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_account#resource_group_name BatchAccount#resource_group_name}
   */
@@ -95,25 +95,25 @@ export interface BatchAccountEncryption {
   readonly keyVaultKeyId?: string;
 }
 
-export function batchAccountEncryptionToTerraform(struct?: BatchAccountEncryption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchAccountEncryptionToTerraform(struct?: BatchAccountEncryption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_vault_key_id: cdktf.stringToTerraform(struct!.keyVaultKeyId),
+    key_vault_key_id: cdktn.stringToTerraform(struct!.keyVaultKeyId),
   }
 }
 
 
-export function batchAccountEncryptionToHclTerraform(struct?: BatchAccountEncryption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchAccountEncryptionToHclTerraform(struct?: BatchAccountEncryption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_vault_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultKeyId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -124,9 +124,9 @@ export function batchAccountEncryptionToHclTerraform(struct?: BatchAccountEncryp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchAccountEncryptionOutputReference extends cdktf.ComplexObject {
+export class BatchAccountEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -134,11 +134,11 @@ export class BatchAccountEncryptionOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchAccountEncryption | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchAccountEncryption | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -151,13 +151,13 @@ export class BatchAccountEncryptionOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchAccountEncryption | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchAccountEncryption | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._keyVaultKeyId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -185,15 +185,15 @@ export class BatchAccountEncryptionOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class BatchAccountEncryptionList extends cdktf.ComplexList {
-  public internalValue? : BatchAccountEncryption[] | cdktf.IResolvable
+export class BatchAccountEncryptionList extends cdktn.ComplexList {
+  public internalValue? : BatchAccountEncryption[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -216,31 +216,31 @@ export interface BatchAccountIdentity {
 }
 
 export function batchAccountIdentityToTerraform(struct?: BatchAccountIdentityOutputReference | BatchAccountIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function batchAccountIdentityToHclTerraform(struct?: BatchAccountIdentityOutputReference | BatchAccountIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -251,14 +251,14 @@ export function batchAccountIdentityToHclTerraform(struct?: BatchAccountIdentity
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchAccountIdentityOutputReference extends cdktf.ComplexObject {
+export class BatchAccountIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -292,7 +292,7 @@ export class BatchAccountIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -343,31 +343,31 @@ export interface BatchAccountKeyVaultReference {
 }
 
 export function batchAccountKeyVaultReferenceToTerraform(struct?: BatchAccountKeyVaultReferenceOutputReference | BatchAccountKeyVaultReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    url: cdktf.stringToTerraform(struct!.url),
+    id: cdktn.stringToTerraform(struct!.id),
+    url: cdktn.stringToTerraform(struct!.url),
   }
 }
 
 
 export function batchAccountKeyVaultReferenceToHclTerraform(struct?: BatchAccountKeyVaultReferenceOutputReference | BatchAccountKeyVaultReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -378,14 +378,14 @@ export function batchAccountKeyVaultReferenceToHclTerraform(struct?: BatchAccoun
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchAccountKeyVaultReferenceOutputReference extends cdktf.ComplexObject {
+export class BatchAccountKeyVaultReferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -453,32 +453,32 @@ export interface BatchAccountNetworkProfileAccountAccessIpRule {
   readonly ipRange: string;
 }
 
-export function batchAccountNetworkProfileAccountAccessIpRuleToTerraform(struct?: BatchAccountNetworkProfileAccountAccessIpRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchAccountNetworkProfileAccountAccessIpRuleToTerraform(struct?: BatchAccountNetworkProfileAccountAccessIpRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    ip_range: cdktf.stringToTerraform(struct!.ipRange),
+    action: cdktn.stringToTerraform(struct!.action),
+    ip_range: cdktn.stringToTerraform(struct!.ipRange),
   }
 }
 
 
-export function batchAccountNetworkProfileAccountAccessIpRuleToHclTerraform(struct?: BatchAccountNetworkProfileAccountAccessIpRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchAccountNetworkProfileAccountAccessIpRuleToHclTerraform(struct?: BatchAccountNetworkProfileAccountAccessIpRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_range: {
-      value: cdktf.stringToHclTerraform(struct!.ipRange),
+      value: cdktn.stringToHclTerraform(struct!.ipRange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -489,9 +489,9 @@ export function batchAccountNetworkProfileAccountAccessIpRuleToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchAccountNetworkProfileAccountAccessIpRuleOutputReference extends cdktf.ComplexObject {
+export class BatchAccountNetworkProfileAccountAccessIpRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -499,11 +499,11 @@ export class BatchAccountNetworkProfileAccountAccessIpRuleOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchAccountNetworkProfileAccountAccessIpRule | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchAccountNetworkProfileAccountAccessIpRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -520,14 +520,14 @@ export class BatchAccountNetworkProfileAccountAccessIpRuleOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchAccountNetworkProfileAccountAccessIpRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchAccountNetworkProfileAccountAccessIpRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._action = undefined;
       this._ipRange = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -569,15 +569,15 @@ export class BatchAccountNetworkProfileAccountAccessIpRuleOutputReference extend
   }
 }
 
-export class BatchAccountNetworkProfileAccountAccessIpRuleList extends cdktf.ComplexList {
-  public internalValue? : BatchAccountNetworkProfileAccountAccessIpRule[] | cdktf.IResolvable
+export class BatchAccountNetworkProfileAccountAccessIpRuleList extends cdktn.ComplexList {
+  public internalValue? : BatchAccountNetworkProfileAccountAccessIpRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -598,35 +598,35 @@ export interface BatchAccountNetworkProfileAccountAccess {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_account#ip_rule BatchAccount#ip_rule}
   */
-  readonly ipRule?: BatchAccountNetworkProfileAccountAccessIpRule[] | cdktf.IResolvable;
+  readonly ipRule?: BatchAccountNetworkProfileAccountAccessIpRule[] | cdktn.IResolvable;
 }
 
 export function batchAccountNetworkProfileAccountAccessToTerraform(struct?: BatchAccountNetworkProfileAccountAccessOutputReference | BatchAccountNetworkProfileAccountAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_action: cdktf.stringToTerraform(struct!.defaultAction),
-    ip_rule: cdktf.listMapper(batchAccountNetworkProfileAccountAccessIpRuleToTerraform, true)(struct!.ipRule),
+    default_action: cdktn.stringToTerraform(struct!.defaultAction),
+    ip_rule: cdktn.listMapper(batchAccountNetworkProfileAccountAccessIpRuleToTerraform, true)(struct!.ipRule),
   }
 }
 
 
 export function batchAccountNetworkProfileAccountAccessToHclTerraform(struct?: BatchAccountNetworkProfileAccountAccessOutputReference | BatchAccountNetworkProfileAccountAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_action: {
-      value: cdktf.stringToHclTerraform(struct!.defaultAction),
+      value: cdktn.stringToHclTerraform(struct!.defaultAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_rule: {
-      value: cdktf.listMapperHcl(batchAccountNetworkProfileAccountAccessIpRuleToHclTerraform, true)(struct!.ipRule),
+      value: cdktn.listMapperHcl(batchAccountNetworkProfileAccountAccessIpRuleToHclTerraform, true)(struct!.ipRule),
       isBlock: true,
       type: "list",
       storageClassType: "BatchAccountNetworkProfileAccountAccessIpRuleList",
@@ -637,14 +637,14 @@ export function batchAccountNetworkProfileAccountAccessToHclTerraform(struct?: B
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchAccountNetworkProfileAccountAccessOutputReference extends cdktf.ComplexObject {
+export class BatchAccountNetworkProfileAccountAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -696,7 +696,7 @@ export class BatchAccountNetworkProfileAccountAccessOutputReference extends cdkt
   public get ipRule() {
     return this._ipRule;
   }
-  public putIpRule(value: BatchAccountNetworkProfileAccountAccessIpRule[] | cdktf.IResolvable) {
+  public putIpRule(value: BatchAccountNetworkProfileAccountAccessIpRule[] | cdktn.IResolvable) {
     this._ipRule.internalValue = value;
   }
   public resetIpRule() {
@@ -718,32 +718,32 @@ export interface BatchAccountNetworkProfileNodeManagementAccessIpRule {
   readonly ipRange: string;
 }
 
-export function batchAccountNetworkProfileNodeManagementAccessIpRuleToTerraform(struct?: BatchAccountNetworkProfileNodeManagementAccessIpRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchAccountNetworkProfileNodeManagementAccessIpRuleToTerraform(struct?: BatchAccountNetworkProfileNodeManagementAccessIpRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    ip_range: cdktf.stringToTerraform(struct!.ipRange),
+    action: cdktn.stringToTerraform(struct!.action),
+    ip_range: cdktn.stringToTerraform(struct!.ipRange),
   }
 }
 
 
-export function batchAccountNetworkProfileNodeManagementAccessIpRuleToHclTerraform(struct?: BatchAccountNetworkProfileNodeManagementAccessIpRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchAccountNetworkProfileNodeManagementAccessIpRuleToHclTerraform(struct?: BatchAccountNetworkProfileNodeManagementAccessIpRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_range: {
-      value: cdktf.stringToHclTerraform(struct!.ipRange),
+      value: cdktn.stringToHclTerraform(struct!.ipRange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -754,9 +754,9 @@ export function batchAccountNetworkProfileNodeManagementAccessIpRuleToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchAccountNetworkProfileNodeManagementAccessIpRuleOutputReference extends cdktf.ComplexObject {
+export class BatchAccountNetworkProfileNodeManagementAccessIpRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -764,11 +764,11 @@ export class BatchAccountNetworkProfileNodeManagementAccessIpRuleOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BatchAccountNetworkProfileNodeManagementAccessIpRule | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchAccountNetworkProfileNodeManagementAccessIpRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -785,14 +785,14 @@ export class BatchAccountNetworkProfileNodeManagementAccessIpRuleOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchAccountNetworkProfileNodeManagementAccessIpRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchAccountNetworkProfileNodeManagementAccessIpRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._action = undefined;
       this._ipRange = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -834,15 +834,15 @@ export class BatchAccountNetworkProfileNodeManagementAccessIpRuleOutputReference
   }
 }
 
-export class BatchAccountNetworkProfileNodeManagementAccessIpRuleList extends cdktf.ComplexList {
-  public internalValue? : BatchAccountNetworkProfileNodeManagementAccessIpRule[] | cdktf.IResolvable
+export class BatchAccountNetworkProfileNodeManagementAccessIpRuleList extends cdktn.ComplexList {
+  public internalValue? : BatchAccountNetworkProfileNodeManagementAccessIpRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -863,35 +863,35 @@ export interface BatchAccountNetworkProfileNodeManagementAccess {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_account#ip_rule BatchAccount#ip_rule}
   */
-  readonly ipRule?: BatchAccountNetworkProfileNodeManagementAccessIpRule[] | cdktf.IResolvable;
+  readonly ipRule?: BatchAccountNetworkProfileNodeManagementAccessIpRule[] | cdktn.IResolvable;
 }
 
 export function batchAccountNetworkProfileNodeManagementAccessToTerraform(struct?: BatchAccountNetworkProfileNodeManagementAccessOutputReference | BatchAccountNetworkProfileNodeManagementAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_action: cdktf.stringToTerraform(struct!.defaultAction),
-    ip_rule: cdktf.listMapper(batchAccountNetworkProfileNodeManagementAccessIpRuleToTerraform, true)(struct!.ipRule),
+    default_action: cdktn.stringToTerraform(struct!.defaultAction),
+    ip_rule: cdktn.listMapper(batchAccountNetworkProfileNodeManagementAccessIpRuleToTerraform, true)(struct!.ipRule),
   }
 }
 
 
 export function batchAccountNetworkProfileNodeManagementAccessToHclTerraform(struct?: BatchAccountNetworkProfileNodeManagementAccessOutputReference | BatchAccountNetworkProfileNodeManagementAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_action: {
-      value: cdktf.stringToHclTerraform(struct!.defaultAction),
+      value: cdktn.stringToHclTerraform(struct!.defaultAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_rule: {
-      value: cdktf.listMapperHcl(batchAccountNetworkProfileNodeManagementAccessIpRuleToHclTerraform, true)(struct!.ipRule),
+      value: cdktn.listMapperHcl(batchAccountNetworkProfileNodeManagementAccessIpRuleToHclTerraform, true)(struct!.ipRule),
       isBlock: true,
       type: "list",
       storageClassType: "BatchAccountNetworkProfileNodeManagementAccessIpRuleList",
@@ -902,14 +902,14 @@ export function batchAccountNetworkProfileNodeManagementAccessToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchAccountNetworkProfileNodeManagementAccessOutputReference extends cdktf.ComplexObject {
+export class BatchAccountNetworkProfileNodeManagementAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -961,7 +961,7 @@ export class BatchAccountNetworkProfileNodeManagementAccessOutputReference exten
   public get ipRule() {
     return this._ipRule;
   }
-  public putIpRule(value: BatchAccountNetworkProfileNodeManagementAccessIpRule[] | cdktf.IResolvable) {
+  public putIpRule(value: BatchAccountNetworkProfileNodeManagementAccessIpRule[] | cdktn.IResolvable) {
     this._ipRule.internalValue = value;
   }
   public resetIpRule() {
@@ -988,8 +988,8 @@ export interface BatchAccountNetworkProfile {
 }
 
 export function batchAccountNetworkProfileToTerraform(struct?: BatchAccountNetworkProfileOutputReference | BatchAccountNetworkProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1000,8 +1000,8 @@ export function batchAccountNetworkProfileToTerraform(struct?: BatchAccountNetwo
 
 
 export function batchAccountNetworkProfileToHclTerraform(struct?: BatchAccountNetworkProfileOutputReference | BatchAccountNetworkProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1023,14 +1023,14 @@ export function batchAccountNetworkProfileToHclTerraform(struct?: BatchAccountNe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchAccountNetworkProfileOutputReference extends cdktf.ComplexObject {
+export class BatchAccountNetworkProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1112,46 +1112,46 @@ export interface BatchAccountTimeouts {
   readonly update?: string;
 }
 
-export function batchAccountTimeoutsToTerraform(struct?: BatchAccountTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchAccountTimeoutsToTerraform(struct?: BatchAccountTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function batchAccountTimeoutsToHclTerraform(struct?: BatchAccountTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function batchAccountTimeoutsToHclTerraform(struct?: BatchAccountTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1162,19 +1162,19 @@ export function batchAccountTimeoutsToHclTerraform(struct?: BatchAccountTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BatchAccountTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BatchAccountTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BatchAccountTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BatchAccountTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1199,7 +1199,7 @@ export class BatchAccountTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BatchAccountTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BatchAccountTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1208,7 +1208,7 @@ export class BatchAccountTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1290,7 +1290,7 @@ export class BatchAccountTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_account azurerm_batch_account}
 */
-export class BatchAccount extends cdktf.TerraformResource {
+export class BatchAccount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1301,14 +1301,14 @@ export class BatchAccount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BatchAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BatchAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BatchAccount to import
   * @param importFromId The id of the existing BatchAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/batch_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BatchAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_batch_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_batch_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -1368,7 +1368,7 @@ export class BatchAccount extends cdktf.TerraformResource {
   // allowed_authentication_modes - computed: true, optional: true, required: false
   private _allowedAuthenticationModes?: string[]; 
   public get allowedAuthenticationModes() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_authentication_modes'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_authentication_modes'));
   }
   public set allowedAuthenticationModes(value: string[]) {
     this._allowedAuthenticationModes = value;
@@ -1386,7 +1386,7 @@ export class BatchAccount extends cdktf.TerraformResource {
   public get encryption() {
     return this._encryption;
   }
-  public putEncryption(value: BatchAccountEncryption[] | cdktf.IResolvable) {
+  public putEncryption(value: BatchAccountEncryption[] | cdktn.IResolvable) {
     this._encryption.internalValue = value;
   }
   public resetEncryption() {
@@ -1461,11 +1461,11 @@ export class BatchAccount extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -1628,18 +1628,18 @@ export class BatchAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_authentication_modes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedAuthenticationModes),
-      encryption: cdktf.listMapper(batchAccountEncryptionToTerraform, false)(this._encryption.internalValue),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      pool_allocation_mode: cdktf.stringToTerraform(this._poolAllocationMode),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      storage_account_authentication_mode: cdktf.stringToTerraform(this._storageAccountAuthenticationMode),
-      storage_account_id: cdktf.stringToTerraform(this._storageAccountId),
-      storage_account_node_identity: cdktf.stringToTerraform(this._storageAccountNodeIdentity),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      allowed_authentication_modes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedAuthenticationModes),
+      encryption: cdktn.listMapper(batchAccountEncryptionToTerraform, false)(this._encryption.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      pool_allocation_mode: cdktn.stringToTerraform(this._poolAllocationMode),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      storage_account_authentication_mode: cdktn.stringToTerraform(this._storageAccountAuthenticationMode),
+      storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
+      storage_account_node_identity: cdktn.stringToTerraform(this._storageAccountNodeIdentity),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       identity: batchAccountIdentityToTerraform(this._identity.internalValue),
       key_vault_reference: batchAccountKeyVaultReferenceToTerraform(this._keyVaultReference.internalValue),
       network_profile: batchAccountNetworkProfileToTerraform(this._networkProfile.internalValue),
@@ -1650,73 +1650,73 @@ export class BatchAccount extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_authentication_modes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedAuthenticationModes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedAuthenticationModes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       encryption: {
-        value: cdktf.listMapperHcl(batchAccountEncryptionToHclTerraform, false)(this._encryption.internalValue),
+        value: cdktn.listMapperHcl(batchAccountEncryptionToHclTerraform, false)(this._encryption.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BatchAccountEncryptionList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pool_allocation_mode: {
-        value: cdktf.stringToHclTerraform(this._poolAllocationMode),
+        value: cdktn.stringToHclTerraform(this._poolAllocationMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_authentication_mode: {
-        value: cdktf.stringToHclTerraform(this._storageAccountAuthenticationMode),
+        value: cdktn.stringToHclTerraform(this._storageAccountAuthenticationMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountId),
+        value: cdktn.stringToHclTerraform(this._storageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_node_identity: {
-        value: cdktf.stringToHclTerraform(this._storageAccountNodeIdentity),
+        value: cdktn.stringToHclTerraform(this._storageAccountNodeIdentity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

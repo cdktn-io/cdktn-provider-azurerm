@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EventgridDomainConfig extends cdktf.TerraformMetaArguments {
+export interface EventgridDomainConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_domain#auto_create_topic_with_first_subscription EventgridDomain#auto_create_topic_with_first_subscription}
   */
-  readonly autoCreateTopicWithFirstSubscription?: boolean | cdktf.IResolvable;
+  readonly autoCreateTopicWithFirstSubscription?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_domain#auto_delete_topic_with_last_subscription EventgridDomain#auto_delete_topic_with_last_subscription}
   */
-  readonly autoDeleteTopicWithLastSubscription?: boolean | cdktf.IResolvable;
+  readonly autoDeleteTopicWithLastSubscription?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_domain#id EventgridDomain#id}
   *
@@ -30,7 +30,7 @@ export interface EventgridDomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_domain#inbound_ip_rule EventgridDomain#inbound_ip_rule}
   */
-  readonly inboundIpRule?: EventgridDomainInboundIpRule[] | cdktf.IResolvable;
+  readonly inboundIpRule?: EventgridDomainInboundIpRule[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_domain#input_schema EventgridDomain#input_schema}
   */
@@ -38,7 +38,7 @@ export interface EventgridDomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_domain#local_auth_enabled EventgridDomain#local_auth_enabled}
   */
-  readonly localAuthEnabled?: boolean | cdktf.IResolvable;
+  readonly localAuthEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_domain#location EventgridDomain#location}
   */
@@ -50,7 +50,7 @@ export interface EventgridDomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_domain#public_network_access_enabled EventgridDomain#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_domain#resource_group_name EventgridDomain#resource_group_name}
   */
@@ -95,32 +95,32 @@ export interface EventgridDomainInboundIpRule {
   readonly ipMask?: string;
 }
 
-export function eventgridDomainInboundIpRuleToTerraform(struct?: EventgridDomainInboundIpRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridDomainInboundIpRuleToTerraform(struct?: EventgridDomainInboundIpRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: struct!.action === undefined ? null : cdktf.stringToTerraform(struct!.action),
-    ip_mask: struct!.ipMask === undefined ? null : cdktf.stringToTerraform(struct!.ipMask),
+    action: struct!.action === undefined ? null : cdktn.stringToTerraform(struct!.action),
+    ip_mask: struct!.ipMask === undefined ? null : cdktn.stringToTerraform(struct!.ipMask),
   }
 }
 
 
-export function eventgridDomainInboundIpRuleToHclTerraform(struct?: EventgridDomainInboundIpRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridDomainInboundIpRuleToHclTerraform(struct?: EventgridDomainInboundIpRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: struct!.action === undefined ? null : cdktf.stringToHclTerraform(struct!.action),
+      value: struct!.action === undefined ? null : cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_mask: {
-      value: struct!.ipMask === undefined ? null : cdktf.stringToHclTerraform(struct!.ipMask),
+      value: struct!.ipMask === undefined ? null : cdktn.stringToHclTerraform(struct!.ipMask),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,9 +131,9 @@ export function eventgridDomainInboundIpRuleToHclTerraform(struct?: EventgridDom
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridDomainInboundIpRuleOutputReference extends cdktf.ComplexObject {
+export class EventgridDomainInboundIpRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -141,11 +141,11 @@ export class EventgridDomainInboundIpRuleOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridDomainInboundIpRule | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridDomainInboundIpRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -162,14 +162,14 @@ export class EventgridDomainInboundIpRuleOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridDomainInboundIpRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridDomainInboundIpRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._action = undefined;
       this._ipMask = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -214,15 +214,15 @@ export class EventgridDomainInboundIpRuleOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class EventgridDomainInboundIpRuleList extends cdktf.ComplexList {
-  public internalValue? : EventgridDomainInboundIpRule[] | cdktf.IResolvable
+export class EventgridDomainInboundIpRuleList extends cdktn.ComplexList {
+  public internalValue? : EventgridDomainInboundIpRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -245,31 +245,31 @@ export interface EventgridDomainIdentity {
 }
 
 export function eventgridDomainIdentityToTerraform(struct?: EventgridDomainIdentityOutputReference | EventgridDomainIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function eventgridDomainIdentityToHclTerraform(struct?: EventgridDomainIdentityOutputReference | EventgridDomainIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -280,14 +280,14 @@ export function eventgridDomainIdentityToHclTerraform(struct?: EventgridDomainId
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridDomainIdentityOutputReference extends cdktf.ComplexObject {
+export class EventgridDomainIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -321,7 +321,7 @@ export class EventgridDomainIdentityOutputReference extends cdktf.ComplexObject 
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -373,38 +373,38 @@ export interface EventgridDomainInputMappingDefaultValues {
 }
 
 export function eventgridDomainInputMappingDefaultValuesToTerraform(struct?: EventgridDomainInputMappingDefaultValuesOutputReference | EventgridDomainInputMappingDefaultValues): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_version: cdktf.stringToTerraform(struct!.dataVersion),
-    event_type: cdktf.stringToTerraform(struct!.eventType),
-    subject: cdktf.stringToTerraform(struct!.subject),
+    data_version: cdktn.stringToTerraform(struct!.dataVersion),
+    event_type: cdktn.stringToTerraform(struct!.eventType),
+    subject: cdktn.stringToTerraform(struct!.subject),
   }
 }
 
 
 export function eventgridDomainInputMappingDefaultValuesToHclTerraform(struct?: EventgridDomainInputMappingDefaultValuesOutputReference | EventgridDomainInputMappingDefaultValues): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_version: {
-      value: cdktf.stringToHclTerraform(struct!.dataVersion),
+      value: cdktn.stringToHclTerraform(struct!.dataVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     event_type: {
-      value: cdktf.stringToHclTerraform(struct!.eventType),
+      value: cdktn.stringToHclTerraform(struct!.eventType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject: {
-      value: cdktf.stringToHclTerraform(struct!.subject),
+      value: cdktn.stringToHclTerraform(struct!.subject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -415,14 +415,14 @@ export function eventgridDomainInputMappingDefaultValuesToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridDomainInputMappingDefaultValuesOutputReference extends cdktf.ComplexObject {
+export class EventgridDomainInputMappingDefaultValuesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -538,59 +538,59 @@ export interface EventgridDomainInputMappingFields {
 }
 
 export function eventgridDomainInputMappingFieldsToTerraform(struct?: EventgridDomainInputMappingFieldsOutputReference | EventgridDomainInputMappingFields): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_version: cdktf.stringToTerraform(struct!.dataVersion),
-    event_time: cdktf.stringToTerraform(struct!.eventTime),
-    event_type: cdktf.stringToTerraform(struct!.eventType),
-    id: cdktf.stringToTerraform(struct!.id),
-    subject: cdktf.stringToTerraform(struct!.subject),
-    topic: cdktf.stringToTerraform(struct!.topic),
+    data_version: cdktn.stringToTerraform(struct!.dataVersion),
+    event_time: cdktn.stringToTerraform(struct!.eventTime),
+    event_type: cdktn.stringToTerraform(struct!.eventType),
+    id: cdktn.stringToTerraform(struct!.id),
+    subject: cdktn.stringToTerraform(struct!.subject),
+    topic: cdktn.stringToTerraform(struct!.topic),
   }
 }
 
 
 export function eventgridDomainInputMappingFieldsToHclTerraform(struct?: EventgridDomainInputMappingFieldsOutputReference | EventgridDomainInputMappingFields): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_version: {
-      value: cdktf.stringToHclTerraform(struct!.dataVersion),
+      value: cdktn.stringToHclTerraform(struct!.dataVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     event_time: {
-      value: cdktf.stringToHclTerraform(struct!.eventTime),
+      value: cdktn.stringToHclTerraform(struct!.eventTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     event_type: {
-      value: cdktf.stringToHclTerraform(struct!.eventType),
+      value: cdktn.stringToHclTerraform(struct!.eventType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject: {
-      value: cdktf.stringToHclTerraform(struct!.subject),
+      value: cdktn.stringToHclTerraform(struct!.subject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic: {
-      value: cdktf.stringToHclTerraform(struct!.topic),
+      value: cdktn.stringToHclTerraform(struct!.topic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -601,14 +601,14 @@ export function eventgridDomainInputMappingFieldsToHclTerraform(struct?: Eventgr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridDomainInputMappingFieldsOutputReference extends cdktf.ComplexObject {
+export class EventgridDomainInputMappingFieldsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -778,46 +778,46 @@ export interface EventgridDomainTimeouts {
   readonly update?: string;
 }
 
-export function eventgridDomainTimeoutsToTerraform(struct?: EventgridDomainTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridDomainTimeoutsToTerraform(struct?: EventgridDomainTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function eventgridDomainTimeoutsToHclTerraform(struct?: EventgridDomainTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridDomainTimeoutsToHclTerraform(struct?: EventgridDomainTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -828,19 +828,19 @@ export function eventgridDomainTimeoutsToHclTerraform(struct?: EventgridDomainTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridDomainTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EventgridDomainTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EventgridDomainTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridDomainTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -865,7 +865,7 @@ export class EventgridDomainTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridDomainTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridDomainTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -874,7 +874,7 @@ export class EventgridDomainTimeoutsOutputReference extends cdktf.ComplexObject 
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -956,7 +956,7 @@ export class EventgridDomainTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_domain azurerm_eventgrid_domain}
 */
-export class EventgridDomain extends cdktf.TerraformResource {
+export class EventgridDomain extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -967,14 +967,14 @@ export class EventgridDomain extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EventgridDomain resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EventgridDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventgridDomain to import
   * @param importFromId The id of the existing EventgridDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventgridDomain to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_eventgrid_domain", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_eventgrid_domain", importId: importFromId, provider });
       }
 
   // ===========
@@ -1026,11 +1026,11 @@ export class EventgridDomain extends cdktf.TerraformResource {
   // ==========
 
   // auto_create_topic_with_first_subscription - computed: false, optional: true, required: false
-  private _autoCreateTopicWithFirstSubscription?: boolean | cdktf.IResolvable; 
+  private _autoCreateTopicWithFirstSubscription?: boolean | cdktn.IResolvable; 
   public get autoCreateTopicWithFirstSubscription() {
     return this.getBooleanAttribute('auto_create_topic_with_first_subscription');
   }
-  public set autoCreateTopicWithFirstSubscription(value: boolean | cdktf.IResolvable) {
+  public set autoCreateTopicWithFirstSubscription(value: boolean | cdktn.IResolvable) {
     this._autoCreateTopicWithFirstSubscription = value;
   }
   public resetAutoCreateTopicWithFirstSubscription() {
@@ -1042,11 +1042,11 @@ export class EventgridDomain extends cdktf.TerraformResource {
   }
 
   // auto_delete_topic_with_last_subscription - computed: false, optional: true, required: false
-  private _autoDeleteTopicWithLastSubscription?: boolean | cdktf.IResolvable; 
+  private _autoDeleteTopicWithLastSubscription?: boolean | cdktn.IResolvable; 
   public get autoDeleteTopicWithLastSubscription() {
     return this.getBooleanAttribute('auto_delete_topic_with_last_subscription');
   }
-  public set autoDeleteTopicWithLastSubscription(value: boolean | cdktf.IResolvable) {
+  public set autoDeleteTopicWithLastSubscription(value: boolean | cdktn.IResolvable) {
     this._autoDeleteTopicWithLastSubscription = value;
   }
   public resetAutoDeleteTopicWithLastSubscription() {
@@ -1083,7 +1083,7 @@ export class EventgridDomain extends cdktf.TerraformResource {
   public get inboundIpRule() {
     return this._inboundIpRule;
   }
-  public putInboundIpRule(value: EventgridDomainInboundIpRule[] | cdktf.IResolvable) {
+  public putInboundIpRule(value: EventgridDomainInboundIpRule[] | cdktn.IResolvable) {
     this._inboundIpRule.internalValue = value;
   }
   public resetInboundIpRule() {
@@ -1111,11 +1111,11 @@ export class EventgridDomain extends cdktf.TerraformResource {
   }
 
   // local_auth_enabled - computed: false, optional: true, required: false
-  private _localAuthEnabled?: boolean | cdktf.IResolvable; 
+  private _localAuthEnabled?: boolean | cdktn.IResolvable; 
   public get localAuthEnabled() {
     return this.getBooleanAttribute('local_auth_enabled');
   }
-  public set localAuthEnabled(value: boolean | cdktf.IResolvable) {
+  public set localAuthEnabled(value: boolean | cdktn.IResolvable) {
     this._localAuthEnabled = value;
   }
   public resetLocalAuthEnabled() {
@@ -1158,11 +1158,11 @@ export class EventgridDomain extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -1277,17 +1277,17 @@ export class EventgridDomain extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_create_topic_with_first_subscription: cdktf.booleanToTerraform(this._autoCreateTopicWithFirstSubscription),
-      auto_delete_topic_with_last_subscription: cdktf.booleanToTerraform(this._autoDeleteTopicWithLastSubscription),
-      id: cdktf.stringToTerraform(this._id),
-      inbound_ip_rule: cdktf.listMapper(eventgridDomainInboundIpRuleToTerraform, false)(this._inboundIpRule.internalValue),
-      input_schema: cdktf.stringToTerraform(this._inputSchema),
-      local_auth_enabled: cdktf.booleanToTerraform(this._localAuthEnabled),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      auto_create_topic_with_first_subscription: cdktn.booleanToTerraform(this._autoCreateTopicWithFirstSubscription),
+      auto_delete_topic_with_last_subscription: cdktn.booleanToTerraform(this._autoDeleteTopicWithLastSubscription),
+      id: cdktn.stringToTerraform(this._id),
+      inbound_ip_rule: cdktn.listMapper(eventgridDomainInboundIpRuleToTerraform, false)(this._inboundIpRule.internalValue),
+      input_schema: cdktn.stringToTerraform(this._inputSchema),
+      local_auth_enabled: cdktn.booleanToTerraform(this._localAuthEnabled),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       identity: eventgridDomainIdentityToTerraform(this._identity.internalValue),
       input_mapping_default_values: eventgridDomainInputMappingDefaultValuesToTerraform(this._inputMappingDefaultValues.internalValue),
       input_mapping_fields: eventgridDomainInputMappingFieldsToTerraform(this._inputMappingFields.internalValue),
@@ -1298,67 +1298,67 @@ export class EventgridDomain extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_create_topic_with_first_subscription: {
-        value: cdktf.booleanToHclTerraform(this._autoCreateTopicWithFirstSubscription),
+        value: cdktn.booleanToHclTerraform(this._autoCreateTopicWithFirstSubscription),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auto_delete_topic_with_last_subscription: {
-        value: cdktf.booleanToHclTerraform(this._autoDeleteTopicWithLastSubscription),
+        value: cdktn.booleanToHclTerraform(this._autoDeleteTopicWithLastSubscription),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       inbound_ip_rule: {
-        value: cdktf.listMapperHcl(eventgridDomainInboundIpRuleToHclTerraform, false)(this._inboundIpRule.internalValue),
+        value: cdktn.listMapperHcl(eventgridDomainInboundIpRuleToHclTerraform, false)(this._inboundIpRule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EventgridDomainInboundIpRuleList",
       },
       input_schema: {
-        value: cdktf.stringToHclTerraform(this._inputSchema),
+        value: cdktn.stringToHclTerraform(this._inputSchema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local_auth_enabled: {
-        value: cdktf.booleanToHclTerraform(this._localAuthEnabled),
+        value: cdktn.booleanToHclTerraform(this._localAuthEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

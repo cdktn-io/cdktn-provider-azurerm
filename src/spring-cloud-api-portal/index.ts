@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpringCloudApiPortalConfig extends cdktf.TerraformMetaArguments {
+export interface SpringCloudApiPortalConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_api_portal#api_try_out_enabled SpringCloudApiPortal#api_try_out_enabled}
   */
-  readonly apiTryOutEnabled?: boolean | cdktf.IResolvable;
+  readonly apiTryOutEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_api_portal#gateway_ids SpringCloudApiPortal#gateway_ids}
   */
@@ -23,7 +23,7 @@ export interface SpringCloudApiPortalConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_api_portal#https_only_enabled SpringCloudApiPortal#https_only_enabled}
   */
-  readonly httpsOnlyEnabled?: boolean | cdktf.IResolvable;
+  readonly httpsOnlyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_api_portal#id SpringCloudApiPortal#id}
   *
@@ -42,7 +42,7 @@ export interface SpringCloudApiPortalConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_api_portal#public_network_access_enabled SpringCloudApiPortal#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_api_portal#spring_cloud_service_id SpringCloudApiPortal#spring_cloud_service_id}
   */
@@ -80,45 +80,45 @@ export interface SpringCloudApiPortalSso {
 }
 
 export function springCloudApiPortalSsoToTerraform(struct?: SpringCloudApiPortalSsoOutputReference | SpringCloudApiPortalSso): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    issuer_uri: cdktf.stringToTerraform(struct!.issuerUri),
-    scope: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scope),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    issuer_uri: cdktn.stringToTerraform(struct!.issuerUri),
+    scope: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.scope),
   }
 }
 
 
 export function springCloudApiPortalSsoToHclTerraform(struct?: SpringCloudApiPortalSsoOutputReference | SpringCloudApiPortalSso): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     issuer_uri: {
-      value: cdktf.stringToHclTerraform(struct!.issuerUri),
+      value: cdktn.stringToHclTerraform(struct!.issuerUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scope: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scope),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.scope),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -129,14 +129,14 @@ export function springCloudApiPortalSsoToHclTerraform(struct?: SpringCloudApiPor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudApiPortalSsoOutputReference extends cdktf.ComplexObject {
+export class SpringCloudApiPortalSsoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -230,7 +230,7 @@ export class SpringCloudApiPortalSsoOutputReference extends cdktf.ComplexObject 
   // scope - computed: false, optional: true, required: false
   private _scope?: string[]; 
   public get scope() {
-    return cdktf.Fn.tolist(this.getListAttribute('scope'));
+    return cdktn.Fn.tolist(this.getListAttribute('scope'));
   }
   public set scope(value: string[]) {
     this._scope = value;
@@ -262,46 +262,46 @@ export interface SpringCloudApiPortalTimeouts {
   readonly update?: string;
 }
 
-export function springCloudApiPortalTimeoutsToTerraform(struct?: SpringCloudApiPortalTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudApiPortalTimeoutsToTerraform(struct?: SpringCloudApiPortalTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function springCloudApiPortalTimeoutsToHclTerraform(struct?: SpringCloudApiPortalTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudApiPortalTimeoutsToHclTerraform(struct?: SpringCloudApiPortalTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -312,19 +312,19 @@ export function springCloudApiPortalTimeoutsToHclTerraform(struct?: SpringCloudA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudApiPortalTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SpringCloudApiPortalTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpringCloudApiPortalTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SpringCloudApiPortalTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -349,7 +349,7 @@ export class SpringCloudApiPortalTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpringCloudApiPortalTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpringCloudApiPortalTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -358,7 +358,7 @@ export class SpringCloudApiPortalTimeoutsOutputReference extends cdktf.ComplexOb
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -440,7 +440,7 @@ export class SpringCloudApiPortalTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_api_portal azurerm_spring_cloud_api_portal}
 */
-export class SpringCloudApiPortal extends cdktf.TerraformResource {
+export class SpringCloudApiPortal extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -451,14 +451,14 @@ export class SpringCloudApiPortal extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpringCloudApiPortal resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpringCloudApiPortal resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpringCloudApiPortal to import
   * @param importFromId The id of the existing SpringCloudApiPortal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_api_portal#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpringCloudApiPortal to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_api_portal", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_api_portal", importId: importFromId, provider });
       }
 
   // ===========
@@ -505,11 +505,11 @@ export class SpringCloudApiPortal extends cdktf.TerraformResource {
   // ==========
 
   // api_try_out_enabled - computed: false, optional: true, required: false
-  private _apiTryOutEnabled?: boolean | cdktf.IResolvable; 
+  private _apiTryOutEnabled?: boolean | cdktn.IResolvable; 
   public get apiTryOutEnabled() {
     return this.getBooleanAttribute('api_try_out_enabled');
   }
-  public set apiTryOutEnabled(value: boolean | cdktf.IResolvable) {
+  public set apiTryOutEnabled(value: boolean | cdktn.IResolvable) {
     this._apiTryOutEnabled = value;
   }
   public resetApiTryOutEnabled() {
@@ -523,7 +523,7 @@ export class SpringCloudApiPortal extends cdktf.TerraformResource {
   // gateway_ids - computed: false, optional: true, required: false
   private _gatewayIds?: string[]; 
   public get gatewayIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('gateway_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('gateway_ids'));
   }
   public set gatewayIds(value: string[]) {
     this._gatewayIds = value;
@@ -537,11 +537,11 @@ export class SpringCloudApiPortal extends cdktf.TerraformResource {
   }
 
   // https_only_enabled - computed: false, optional: true, required: false
-  private _httpsOnlyEnabled?: boolean | cdktf.IResolvable; 
+  private _httpsOnlyEnabled?: boolean | cdktn.IResolvable; 
   public get httpsOnlyEnabled() {
     return this.getBooleanAttribute('https_only_enabled');
   }
-  public set httpsOnlyEnabled(value: boolean | cdktf.IResolvable) {
+  public set httpsOnlyEnabled(value: boolean | cdktn.IResolvable) {
     this._httpsOnlyEnabled = value;
   }
   public resetHttpsOnlyEnabled() {
@@ -598,11 +598,11 @@ export class SpringCloudApiPortal extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -669,14 +669,14 @@ export class SpringCloudApiPortal extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_try_out_enabled: cdktf.booleanToTerraform(this._apiTryOutEnabled),
-      gateway_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._gatewayIds),
-      https_only_enabled: cdktf.booleanToTerraform(this._httpsOnlyEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      instance_count: cdktf.numberToTerraform(this._instanceCount),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      spring_cloud_service_id: cdktf.stringToTerraform(this._springCloudServiceId),
+      api_try_out_enabled: cdktn.booleanToTerraform(this._apiTryOutEnabled),
+      gateway_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._gatewayIds),
+      https_only_enabled: cdktn.booleanToTerraform(this._httpsOnlyEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      instance_count: cdktn.numberToTerraform(this._instanceCount),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      spring_cloud_service_id: cdktn.stringToTerraform(this._springCloudServiceId),
       sso: springCloudApiPortalSsoToTerraform(this._sso.internalValue),
       timeouts: springCloudApiPortalTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -685,49 +685,49 @@ export class SpringCloudApiPortal extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_try_out_enabled: {
-        value: cdktf.booleanToHclTerraform(this._apiTryOutEnabled),
+        value: cdktn.booleanToHclTerraform(this._apiTryOutEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       gateway_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._gatewayIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._gatewayIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       https_only_enabled: {
-        value: cdktf.booleanToHclTerraform(this._httpsOnlyEnabled),
+        value: cdktn.booleanToHclTerraform(this._httpsOnlyEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_count: {
-        value: cdktf.numberToHclTerraform(this._instanceCount),
+        value: cdktn.numberToHclTerraform(this._instanceCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       spring_cloud_service_id: {
-        value: cdktf.stringToHclTerraform(this._springCloudServiceId),
+        value: cdktn.stringToHclTerraform(this._springCloudServiceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

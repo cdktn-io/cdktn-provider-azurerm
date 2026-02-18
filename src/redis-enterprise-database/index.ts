@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedisEnterpriseDatabaseConfig extends cdktf.TerraformMetaArguments {
+export interface RedisEnterpriseDatabaseConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_enterprise_database#client_protocol RedisEnterpriseDatabase#client_protocol}
   */
@@ -56,7 +56,7 @@ export interface RedisEnterpriseDatabaseConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_enterprise_database#module RedisEnterpriseDatabase#module}
   */
-  readonly module?: RedisEnterpriseDatabaseModule[] | cdktf.IResolvable;
+  readonly module?: RedisEnterpriseDatabaseModule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -75,32 +75,32 @@ export interface RedisEnterpriseDatabaseModule {
   readonly name: string;
 }
 
-export function redisEnterpriseDatabaseModuleToTerraform(struct?: RedisEnterpriseDatabaseModule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisEnterpriseDatabaseModuleToTerraform(struct?: RedisEnterpriseDatabaseModule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    args: cdktf.stringToTerraform(struct!.args),
-    name: cdktf.stringToTerraform(struct!.name),
+    args: cdktn.stringToTerraform(struct!.args),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function redisEnterpriseDatabaseModuleToHclTerraform(struct?: RedisEnterpriseDatabaseModule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisEnterpriseDatabaseModuleToHclTerraform(struct?: RedisEnterpriseDatabaseModule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     args: {
-      value: cdktf.stringToHclTerraform(struct!.args),
+      value: cdktn.stringToHclTerraform(struct!.args),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,9 +111,9 @@ export function redisEnterpriseDatabaseModuleToHclTerraform(struct?: RedisEnterp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisEnterpriseDatabaseModuleOutputReference extends cdktf.ComplexObject {
+export class RedisEnterpriseDatabaseModuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -121,11 +121,11 @@ export class RedisEnterpriseDatabaseModuleOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedisEnterpriseDatabaseModule | cdktf.IResolvable | undefined {
+  public get internalValue(): RedisEnterpriseDatabaseModule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -142,14 +142,14 @@ export class RedisEnterpriseDatabaseModuleOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedisEnterpriseDatabaseModule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedisEnterpriseDatabaseModule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._args = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -196,15 +196,15 @@ export class RedisEnterpriseDatabaseModuleOutputReference extends cdktf.ComplexO
   }
 }
 
-export class RedisEnterpriseDatabaseModuleList extends cdktf.ComplexList {
-  public internalValue? : RedisEnterpriseDatabaseModule[] | cdktf.IResolvable
+export class RedisEnterpriseDatabaseModuleList extends cdktn.ComplexList {
+  public internalValue? : RedisEnterpriseDatabaseModule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -234,46 +234,46 @@ export interface RedisEnterpriseDatabaseTimeouts {
   readonly update?: string;
 }
 
-export function redisEnterpriseDatabaseTimeoutsToTerraform(struct?: RedisEnterpriseDatabaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisEnterpriseDatabaseTimeoutsToTerraform(struct?: RedisEnterpriseDatabaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function redisEnterpriseDatabaseTimeoutsToHclTerraform(struct?: RedisEnterpriseDatabaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisEnterpriseDatabaseTimeoutsToHclTerraform(struct?: RedisEnterpriseDatabaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -284,19 +284,19 @@ export function redisEnterpriseDatabaseTimeoutsToHclTerraform(struct?: RedisEnte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisEnterpriseDatabaseTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RedisEnterpriseDatabaseTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RedisEnterpriseDatabaseTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RedisEnterpriseDatabaseTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -321,7 +321,7 @@ export class RedisEnterpriseDatabaseTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedisEnterpriseDatabaseTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedisEnterpriseDatabaseTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -330,7 +330,7 @@ export class RedisEnterpriseDatabaseTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -412,7 +412,7 @@ export class RedisEnterpriseDatabaseTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_enterprise_database azurerm_redis_enterprise_database}
 */
-export class RedisEnterpriseDatabase extends cdktf.TerraformResource {
+export class RedisEnterpriseDatabase extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -423,14 +423,14 @@ export class RedisEnterpriseDatabase extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedisEnterpriseDatabase resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedisEnterpriseDatabase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedisEnterpriseDatabase to import
   * @param importFromId The id of the existing RedisEnterpriseDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_enterprise_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedisEnterpriseDatabase to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_redis_enterprise_database", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_redis_enterprise_database", importId: importFromId, provider });
       }
 
   // ===========
@@ -573,7 +573,7 @@ export class RedisEnterpriseDatabase extends cdktf.TerraformResource {
   // linked_database_id - computed: false, optional: true, required: false
   private _linkedDatabaseId?: string[]; 
   public get linkedDatabaseId() {
-    return cdktf.Fn.tolist(this.getListAttribute('linked_database_id'));
+    return cdktn.Fn.tolist(this.getListAttribute('linked_database_id'));
   }
   public set linkedDatabaseId(value: string[]) {
     this._linkedDatabaseId = value;
@@ -633,7 +633,7 @@ export class RedisEnterpriseDatabase extends cdktf.TerraformResource {
   public get module() {
     return this._module;
   }
-  public putModule(value: RedisEnterpriseDatabaseModule[] | cdktf.IResolvable) {
+  public putModule(value: RedisEnterpriseDatabaseModule[] | cdktn.IResolvable) {
     this._module.internalValue = value;
   }
   public resetModule() {
@@ -666,16 +666,16 @@ export class RedisEnterpriseDatabase extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_protocol: cdktf.stringToTerraform(this._clientProtocol),
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      clustering_policy: cdktf.stringToTerraform(this._clusteringPolicy),
-      eviction_policy: cdktf.stringToTerraform(this._evictionPolicy),
-      id: cdktf.stringToTerraform(this._id),
-      linked_database_group_nickname: cdktf.stringToTerraform(this._linkedDatabaseGroupNickname),
-      linked_database_id: cdktf.listMapper(cdktf.stringToTerraform, false)(this._linkedDatabaseId),
-      name: cdktf.stringToTerraform(this._name),
-      port: cdktf.numberToTerraform(this._port),
-      module: cdktf.listMapper(redisEnterpriseDatabaseModuleToTerraform, true)(this._module.internalValue),
+      client_protocol: cdktn.stringToTerraform(this._clientProtocol),
+      cluster_id: cdktn.stringToTerraform(this._clusterId),
+      clustering_policy: cdktn.stringToTerraform(this._clusteringPolicy),
+      eviction_policy: cdktn.stringToTerraform(this._evictionPolicy),
+      id: cdktn.stringToTerraform(this._id),
+      linked_database_group_nickname: cdktn.stringToTerraform(this._linkedDatabaseGroupNickname),
+      linked_database_id: cdktn.listMapper(cdktn.stringToTerraform, false)(this._linkedDatabaseId),
+      name: cdktn.stringToTerraform(this._name),
+      port: cdktn.numberToTerraform(this._port),
+      module: cdktn.listMapper(redisEnterpriseDatabaseModuleToTerraform, true)(this._module.internalValue),
       timeouts: redisEnterpriseDatabaseTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -683,61 +683,61 @@ export class RedisEnterpriseDatabase extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       client_protocol: {
-        value: cdktf.stringToHclTerraform(this._clientProtocol),
+        value: cdktn.stringToHclTerraform(this._clientProtocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_id: {
-        value: cdktf.stringToHclTerraform(this._clusterId),
+        value: cdktn.stringToHclTerraform(this._clusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       clustering_policy: {
-        value: cdktf.stringToHclTerraform(this._clusteringPolicy),
+        value: cdktn.stringToHclTerraform(this._clusteringPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eviction_policy: {
-        value: cdktf.stringToHclTerraform(this._evictionPolicy),
+        value: cdktn.stringToHclTerraform(this._evictionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       linked_database_group_nickname: {
-        value: cdktf.stringToHclTerraform(this._linkedDatabaseGroupNickname),
+        value: cdktn.stringToHclTerraform(this._linkedDatabaseGroupNickname),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       linked_database_id: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._linkedDatabaseId),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._linkedDatabaseId),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       module: {
-        value: cdktf.listMapperHcl(redisEnterpriseDatabaseModuleToHclTerraform, true)(this._module.internalValue),
+        value: cdktn.listMapperHcl(redisEnterpriseDatabaseModuleToHclTerraform, true)(this._module.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RedisEnterpriseDatabaseModuleList",

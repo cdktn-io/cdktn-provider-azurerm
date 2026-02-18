@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServicebusNamespaceConfig extends cdktf.TerraformMetaArguments {
+export interface ServicebusNamespaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace#capacity ServicebusNamespace#capacity}
   */
@@ -26,7 +26,7 @@ export interface ServicebusNamespaceConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace#local_auth_enabled ServicebusNamespace#local_auth_enabled}
   */
-  readonly localAuthEnabled?: boolean | cdktf.IResolvable;
+  readonly localAuthEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace#location ServicebusNamespace#location}
   */
@@ -46,7 +46,7 @@ export interface ServicebusNamespaceConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace#public_network_access_enabled ServicebusNamespace#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace#resource_group_name ServicebusNamespace#resource_group_name}
   */
@@ -92,7 +92,7 @@ export interface ServicebusNamespaceCustomerManagedKey {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace#infrastructure_encryption_enabled ServicebusNamespace#infrastructure_encryption_enabled}
   */
-  readonly infrastructureEncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly infrastructureEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace#key_vault_key_id ServicebusNamespace#key_vault_key_id}
   */
@@ -100,38 +100,38 @@ export interface ServicebusNamespaceCustomerManagedKey {
 }
 
 export function servicebusNamespaceCustomerManagedKeyToTerraform(struct?: ServicebusNamespaceCustomerManagedKeyOutputReference | ServicebusNamespaceCustomerManagedKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_id: cdktf.stringToTerraform(struct!.identityId),
-    infrastructure_encryption_enabled: cdktf.booleanToTerraform(struct!.infrastructureEncryptionEnabled),
-    key_vault_key_id: cdktf.stringToTerraform(struct!.keyVaultKeyId),
+    identity_id: cdktn.stringToTerraform(struct!.identityId),
+    infrastructure_encryption_enabled: cdktn.booleanToTerraform(struct!.infrastructureEncryptionEnabled),
+    key_vault_key_id: cdktn.stringToTerraform(struct!.keyVaultKeyId),
   }
 }
 
 
 export function servicebusNamespaceCustomerManagedKeyToHclTerraform(struct?: ServicebusNamespaceCustomerManagedKeyOutputReference | ServicebusNamespaceCustomerManagedKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityId),
+      value: cdktn.stringToHclTerraform(struct!.identityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     infrastructure_encryption_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.infrastructureEncryptionEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.infrastructureEncryptionEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     key_vault_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultKeyId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -142,14 +142,14 @@ export function servicebusNamespaceCustomerManagedKeyToHclTerraform(struct?: Ser
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicebusNamespaceCustomerManagedKeyOutputReference extends cdktf.ComplexObject {
+export class ServicebusNamespaceCustomerManagedKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -200,11 +200,11 @@ export class ServicebusNamespaceCustomerManagedKeyOutputReference extends cdktf.
   }
 
   // infrastructure_encryption_enabled - computed: false, optional: true, required: false
-  private _infrastructureEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _infrastructureEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get infrastructureEncryptionEnabled() {
     return this.getBooleanAttribute('infrastructure_encryption_enabled');
   }
-  public set infrastructureEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set infrastructureEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._infrastructureEncryptionEnabled = value;
   }
   public resetInfrastructureEncryptionEnabled() {
@@ -240,31 +240,31 @@ export interface ServicebusNamespaceIdentity {
 }
 
 export function servicebusNamespaceIdentityToTerraform(struct?: ServicebusNamespaceIdentityOutputReference | ServicebusNamespaceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function servicebusNamespaceIdentityToHclTerraform(struct?: ServicebusNamespaceIdentityOutputReference | ServicebusNamespaceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -275,14 +275,14 @@ export function servicebusNamespaceIdentityToHclTerraform(struct?: ServicebusNam
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicebusNamespaceIdentityOutputReference extends cdktf.ComplexObject {
+export class ServicebusNamespaceIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -316,7 +316,7 @@ export class ServicebusNamespaceIdentityOutputReference extends cdktf.ComplexObj
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -356,39 +356,39 @@ export interface ServicebusNamespaceNetworkRuleSetNetworkRules {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace#ignore_missing_vnet_service_endpoint ServicebusNamespace#ignore_missing_vnet_service_endpoint}
   */
-  readonly ignoreMissingVnetServiceEndpoint?: boolean | cdktf.IResolvable;
+  readonly ignoreMissingVnetServiceEndpoint?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace#subnet_id ServicebusNamespace#subnet_id}
   */
   readonly subnetId: string;
 }
 
-export function servicebusNamespaceNetworkRuleSetNetworkRulesToTerraform(struct?: ServicebusNamespaceNetworkRuleSetNetworkRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicebusNamespaceNetworkRuleSetNetworkRulesToTerraform(struct?: ServicebusNamespaceNetworkRuleSetNetworkRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ignore_missing_vnet_service_endpoint: cdktf.booleanToTerraform(struct!.ignoreMissingVnetServiceEndpoint),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    ignore_missing_vnet_service_endpoint: cdktn.booleanToTerraform(struct!.ignoreMissingVnetServiceEndpoint),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
-export function servicebusNamespaceNetworkRuleSetNetworkRulesToHclTerraform(struct?: ServicebusNamespaceNetworkRuleSetNetworkRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicebusNamespaceNetworkRuleSetNetworkRulesToHclTerraform(struct?: ServicebusNamespaceNetworkRuleSetNetworkRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ignore_missing_vnet_service_endpoint: {
-      value: cdktf.booleanToHclTerraform(struct!.ignoreMissingVnetServiceEndpoint),
+      value: cdktn.booleanToHclTerraform(struct!.ignoreMissingVnetServiceEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -399,9 +399,9 @@ export function servicebusNamespaceNetworkRuleSetNetworkRulesToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicebusNamespaceNetworkRuleSetNetworkRulesOutputReference extends cdktf.ComplexObject {
+export class ServicebusNamespaceNetworkRuleSetNetworkRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -409,11 +409,11 @@ export class ServicebusNamespaceNetworkRuleSetNetworkRulesOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServicebusNamespaceNetworkRuleSetNetworkRules | cdktf.IResolvable | undefined {
+  public get internalValue(): ServicebusNamespaceNetworkRuleSetNetworkRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -430,14 +430,14 @@ export class ServicebusNamespaceNetworkRuleSetNetworkRulesOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicebusNamespaceNetworkRuleSetNetworkRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServicebusNamespaceNetworkRuleSetNetworkRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ignoreMissingVnetServiceEndpoint = undefined;
       this._subnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -450,11 +450,11 @@ export class ServicebusNamespaceNetworkRuleSetNetworkRulesOutputReference extend
   }
 
   // ignore_missing_vnet_service_endpoint - computed: false, optional: true, required: false
-  private _ignoreMissingVnetServiceEndpoint?: boolean | cdktf.IResolvable; 
+  private _ignoreMissingVnetServiceEndpoint?: boolean | cdktn.IResolvable; 
   public get ignoreMissingVnetServiceEndpoint() {
     return this.getBooleanAttribute('ignore_missing_vnet_service_endpoint');
   }
-  public set ignoreMissingVnetServiceEndpoint(value: boolean | cdktf.IResolvable) {
+  public set ignoreMissingVnetServiceEndpoint(value: boolean | cdktn.IResolvable) {
     this._ignoreMissingVnetServiceEndpoint = value;
   }
   public resetIgnoreMissingVnetServiceEndpoint() {
@@ -479,15 +479,15 @@ export class ServicebusNamespaceNetworkRuleSetNetworkRulesOutputReference extend
   }
 }
 
-export class ServicebusNamespaceNetworkRuleSetNetworkRulesList extends cdktf.ComplexList {
-  public internalValue? : ServicebusNamespaceNetworkRuleSetNetworkRules[] | cdktf.IResolvable
+export class ServicebusNamespaceNetworkRuleSetNetworkRulesList extends cdktn.ComplexList {
+  public internalValue? : ServicebusNamespaceNetworkRuleSetNetworkRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -510,66 +510,66 @@ export interface ServicebusNamespaceNetworkRuleSet {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace#public_network_access_enabled ServicebusNamespace#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace#trusted_services_allowed ServicebusNamespace#trusted_services_allowed}
   */
-  readonly trustedServicesAllowed?: boolean | cdktf.IResolvable;
+  readonly trustedServicesAllowed?: boolean | cdktn.IResolvable;
   /**
   * network_rules block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace#network_rules ServicebusNamespace#network_rules}
   */
-  readonly networkRules?: ServicebusNamespaceNetworkRuleSetNetworkRules[] | cdktf.IResolvable;
+  readonly networkRules?: ServicebusNamespaceNetworkRuleSetNetworkRules[] | cdktn.IResolvable;
 }
 
 export function servicebusNamespaceNetworkRuleSetToTerraform(struct?: ServicebusNamespaceNetworkRuleSetOutputReference | ServicebusNamespaceNetworkRuleSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_action: cdktf.stringToTerraform(struct!.defaultAction),
-    ip_rules: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipRules),
-    public_network_access_enabled: cdktf.booleanToTerraform(struct!.publicNetworkAccessEnabled),
-    trusted_services_allowed: cdktf.booleanToTerraform(struct!.trustedServicesAllowed),
-    network_rules: cdktf.listMapper(servicebusNamespaceNetworkRuleSetNetworkRulesToTerraform, true)(struct!.networkRules),
+    default_action: cdktn.stringToTerraform(struct!.defaultAction),
+    ip_rules: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipRules),
+    public_network_access_enabled: cdktn.booleanToTerraform(struct!.publicNetworkAccessEnabled),
+    trusted_services_allowed: cdktn.booleanToTerraform(struct!.trustedServicesAllowed),
+    network_rules: cdktn.listMapper(servicebusNamespaceNetworkRuleSetNetworkRulesToTerraform, true)(struct!.networkRules),
   }
 }
 
 
 export function servicebusNamespaceNetworkRuleSetToHclTerraform(struct?: ServicebusNamespaceNetworkRuleSetOutputReference | ServicebusNamespaceNetworkRuleSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_action: {
-      value: cdktf.stringToHclTerraform(struct!.defaultAction),
+      value: cdktn.stringToHclTerraform(struct!.defaultAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_rules: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipRules),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ipRules),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     public_network_access_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.publicNetworkAccessEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.publicNetworkAccessEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     trusted_services_allowed: {
-      value: cdktf.booleanToHclTerraform(struct!.trustedServicesAllowed),
+      value: cdktn.booleanToHclTerraform(struct!.trustedServicesAllowed),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     network_rules: {
-      value: cdktf.listMapperHcl(servicebusNamespaceNetworkRuleSetNetworkRulesToHclTerraform, true)(struct!.networkRules),
+      value: cdktn.listMapperHcl(servicebusNamespaceNetworkRuleSetNetworkRulesToHclTerraform, true)(struct!.networkRules),
       isBlock: true,
       type: "set",
       storageClassType: "ServicebusNamespaceNetworkRuleSetNetworkRulesList",
@@ -580,14 +580,14 @@ export function servicebusNamespaceNetworkRuleSetToHclTerraform(struct?: Service
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicebusNamespaceNetworkRuleSetOutputReference extends cdktf.ComplexObject {
+export class ServicebusNamespaceNetworkRuleSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -655,7 +655,7 @@ export class ServicebusNamespaceNetworkRuleSetOutputReference extends cdktf.Comp
   // ip_rules - computed: false, optional: true, required: false
   private _ipRules?: string[]; 
   public get ipRules() {
-    return cdktf.Fn.tolist(this.getListAttribute('ip_rules'));
+    return cdktn.Fn.tolist(this.getListAttribute('ip_rules'));
   }
   public set ipRules(value: string[]) {
     this._ipRules = value;
@@ -669,11 +669,11 @@ export class ServicebusNamespaceNetworkRuleSetOutputReference extends cdktf.Comp
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -685,11 +685,11 @@ export class ServicebusNamespaceNetworkRuleSetOutputReference extends cdktf.Comp
   }
 
   // trusted_services_allowed - computed: false, optional: true, required: false
-  private _trustedServicesAllowed?: boolean | cdktf.IResolvable; 
+  private _trustedServicesAllowed?: boolean | cdktn.IResolvable; 
   public get trustedServicesAllowed() {
     return this.getBooleanAttribute('trusted_services_allowed');
   }
-  public set trustedServicesAllowed(value: boolean | cdktf.IResolvable) {
+  public set trustedServicesAllowed(value: boolean | cdktn.IResolvable) {
     this._trustedServicesAllowed = value;
   }
   public resetTrustedServicesAllowed() {
@@ -705,7 +705,7 @@ export class ServicebusNamespaceNetworkRuleSetOutputReference extends cdktf.Comp
   public get networkRules() {
     return this._networkRules;
   }
-  public putNetworkRules(value: ServicebusNamespaceNetworkRuleSetNetworkRules[] | cdktf.IResolvable) {
+  public putNetworkRules(value: ServicebusNamespaceNetworkRuleSetNetworkRules[] | cdktn.IResolvable) {
     this._networkRules.internalValue = value;
   }
   public resetNetworkRules() {
@@ -735,46 +735,46 @@ export interface ServicebusNamespaceTimeouts {
   readonly update?: string;
 }
 
-export function servicebusNamespaceTimeoutsToTerraform(struct?: ServicebusNamespaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicebusNamespaceTimeoutsToTerraform(struct?: ServicebusNamespaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function servicebusNamespaceTimeoutsToHclTerraform(struct?: ServicebusNamespaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicebusNamespaceTimeoutsToHclTerraform(struct?: ServicebusNamespaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -785,19 +785,19 @@ export function servicebusNamespaceTimeoutsToHclTerraform(struct?: ServicebusNam
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicebusNamespaceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ServicebusNamespaceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ServicebusNamespaceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ServicebusNamespaceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -822,7 +822,7 @@ export class ServicebusNamespaceTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicebusNamespaceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServicebusNamespaceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -831,7 +831,7 @@ export class ServicebusNamespaceTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -913,7 +913,7 @@ export class ServicebusNamespaceTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace azurerm_servicebus_namespace}
 */
-export class ServicebusNamespace extends cdktf.TerraformResource {
+export class ServicebusNamespace extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -924,14 +924,14 @@ export class ServicebusNamespace extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServicebusNamespace resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServicebusNamespace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicebusNamespace to import
   * @param importFromId The id of the existing ServicebusNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicebusNamespace to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_servicebus_namespace", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_servicebus_namespace", importId: importFromId, provider });
       }
 
   // ===========
@@ -1040,11 +1040,11 @@ export class ServicebusNamespace extends cdktf.TerraformResource {
   }
 
   // local_auth_enabled - computed: false, optional: true, required: false
-  private _localAuthEnabled?: boolean | cdktf.IResolvable; 
+  private _localAuthEnabled?: boolean | cdktn.IResolvable; 
   public get localAuthEnabled() {
     return this.getBooleanAttribute('local_auth_enabled');
   }
-  public set localAuthEnabled(value: boolean | cdktf.IResolvable) {
+  public set localAuthEnabled(value: boolean | cdktn.IResolvable) {
     this._localAuthEnabled = value;
   }
   public resetLocalAuthEnabled() {
@@ -1114,11 +1114,11 @@ export class ServicebusNamespace extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -1241,17 +1241,17 @@ export class ServicebusNamespace extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capacity: cdktf.numberToTerraform(this._capacity),
-      id: cdktf.stringToTerraform(this._id),
-      local_auth_enabled: cdktf.booleanToTerraform(this._localAuthEnabled),
-      location: cdktf.stringToTerraform(this._location),
-      minimum_tls_version: cdktf.stringToTerraform(this._minimumTlsVersion),
-      name: cdktf.stringToTerraform(this._name),
-      premium_messaging_partitions: cdktf.numberToTerraform(this._premiumMessagingPartitions),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku: cdktf.stringToTerraform(this._sku),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      capacity: cdktn.numberToTerraform(this._capacity),
+      id: cdktn.stringToTerraform(this._id),
+      local_auth_enabled: cdktn.booleanToTerraform(this._localAuthEnabled),
+      location: cdktn.stringToTerraform(this._location),
+      minimum_tls_version: cdktn.stringToTerraform(this._minimumTlsVersion),
+      name: cdktn.stringToTerraform(this._name),
+      premium_messaging_partitions: cdktn.numberToTerraform(this._premiumMessagingPartitions),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku: cdktn.stringToTerraform(this._sku),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       customer_managed_key: servicebusNamespaceCustomerManagedKeyToTerraform(this._customerManagedKey.internalValue),
       identity: servicebusNamespaceIdentityToTerraform(this._identity.internalValue),
       network_rule_set: servicebusNamespaceNetworkRuleSetToTerraform(this._networkRuleSet.internalValue),
@@ -1262,67 +1262,67 @@ export class ServicebusNamespace extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       capacity: {
-        value: cdktf.numberToHclTerraform(this._capacity),
+        value: cdktn.numberToHclTerraform(this._capacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local_auth_enabled: {
-        value: cdktf.booleanToHclTerraform(this._localAuthEnabled),
+        value: cdktn.booleanToHclTerraform(this._localAuthEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       minimum_tls_version: {
-        value: cdktf.stringToHclTerraform(this._minimumTlsVersion),
+        value: cdktn.stringToHclTerraform(this._minimumTlsVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       premium_messaging_partitions: {
-        value: cdktf.numberToHclTerraform(this._premiumMessagingPartitions),
+        value: cdktn.numberToHclTerraform(this._premiumMessagingPartitions),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku: {
-        value: cdktf.stringToHclTerraform(this._sku),
+        value: cdktn.stringToHclTerraform(this._sku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

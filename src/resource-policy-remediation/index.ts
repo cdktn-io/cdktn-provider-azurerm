@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ResourcePolicyRemediationConfig extends cdktf.TerraformMetaArguments {
+export interface ResourcePolicyRemediationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/resource_policy_remediation#failure_percentage ResourcePolicyRemediation#failure_percentage}
   */
@@ -81,46 +81,46 @@ export interface ResourcePolicyRemediationTimeouts {
   readonly update?: string;
 }
 
-export function resourcePolicyRemediationTimeoutsToTerraform(struct?: ResourcePolicyRemediationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourcePolicyRemediationTimeoutsToTerraform(struct?: ResourcePolicyRemediationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function resourcePolicyRemediationTimeoutsToHclTerraform(struct?: ResourcePolicyRemediationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function resourcePolicyRemediationTimeoutsToHclTerraform(struct?: ResourcePolicyRemediationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,19 +131,19 @@ export function resourcePolicyRemediationTimeoutsToHclTerraform(struct?: Resourc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ResourcePolicyRemediationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ResourcePolicyRemediationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ResourcePolicyRemediationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ResourcePolicyRemediationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,7 +168,7 @@ export class ResourcePolicyRemediationTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ResourcePolicyRemediationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ResourcePolicyRemediationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class ResourcePolicyRemediationTimeoutsOutputReference extends cdktf.Comp
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,7 +259,7 @@ export class ResourcePolicyRemediationTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/resource_policy_remediation azurerm_resource_policy_remediation}
 */
-export class ResourcePolicyRemediation extends cdktf.TerraformResource {
+export class ResourcePolicyRemediation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -270,14 +270,14 @@ export class ResourcePolicyRemediation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ResourcePolicyRemediation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ResourcePolicyRemediation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ResourcePolicyRemediation to import
   * @param importFromId The id of the existing ResourcePolicyRemediation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/resource_policy_remediation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ResourcePolicyRemediation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_resource_policy_remediation", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_resource_policy_remediation", importId: importFromId, provider });
       }
 
   // ===========
@@ -497,16 +497,16 @@ export class ResourcePolicyRemediation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      failure_percentage: cdktf.numberToTerraform(this._failurePercentage),
-      id: cdktf.stringToTerraform(this._id),
-      location_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(this._locationFilters),
-      name: cdktf.stringToTerraform(this._name),
-      parallel_deployments: cdktf.numberToTerraform(this._parallelDeployments),
-      policy_assignment_id: cdktf.stringToTerraform(this._policyAssignmentId),
-      policy_definition_reference_id: cdktf.stringToTerraform(this._policyDefinitionReferenceId),
-      resource_count: cdktf.numberToTerraform(this._resourceCount),
-      resource_discovery_mode: cdktf.stringToTerraform(this._resourceDiscoveryMode),
-      resource_id: cdktf.stringToTerraform(this._resourceId),
+      failure_percentage: cdktn.numberToTerraform(this._failurePercentage),
+      id: cdktn.stringToTerraform(this._id),
+      location_filters: cdktn.listMapper(cdktn.stringToTerraform, false)(this._locationFilters),
+      name: cdktn.stringToTerraform(this._name),
+      parallel_deployments: cdktn.numberToTerraform(this._parallelDeployments),
+      policy_assignment_id: cdktn.stringToTerraform(this._policyAssignmentId),
+      policy_definition_reference_id: cdktn.stringToTerraform(this._policyDefinitionReferenceId),
+      resource_count: cdktn.numberToTerraform(this._resourceCount),
+      resource_discovery_mode: cdktn.stringToTerraform(this._resourceDiscoveryMode),
+      resource_id: cdktn.stringToTerraform(this._resourceId),
       timeouts: resourcePolicyRemediationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -514,61 +514,61 @@ export class ResourcePolicyRemediation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       failure_percentage: {
-        value: cdktf.numberToHclTerraform(this._failurePercentage),
+        value: cdktn.numberToHclTerraform(this._failurePercentage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location_filters: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._locationFilters),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._locationFilters),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parallel_deployments: {
-        value: cdktf.numberToHclTerraform(this._parallelDeployments),
+        value: cdktn.numberToHclTerraform(this._parallelDeployments),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       policy_assignment_id: {
-        value: cdktf.stringToHclTerraform(this._policyAssignmentId),
+        value: cdktn.stringToHclTerraform(this._policyAssignmentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_definition_reference_id: {
-        value: cdktf.stringToHclTerraform(this._policyDefinitionReferenceId),
+        value: cdktn.stringToHclTerraform(this._policyDefinitionReferenceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_count: {
-        value: cdktf.numberToHclTerraform(this._resourceCount),
+        value: cdktn.numberToHclTerraform(this._resourceCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       resource_discovery_mode: {
-        value: cdktf.stringToHclTerraform(this._resourceDiscoveryMode),
+        value: cdktn.stringToHclTerraform(this._resourceDiscoveryMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_id: {
-        value: cdktf.stringToHclTerraform(this._resourceId),
+        value: cdktn.stringToHclTerraform(this._resourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpringCloudNewRelicApplicationPerformanceMonitoringConfig extends cdktf.TerraformMetaArguments {
+export interface SpringCloudNewRelicApplicationPerformanceMonitoringConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_new_relic_application_performance_monitoring#agent_enabled SpringCloudNewRelicApplicationPerformanceMonitoring#agent_enabled}
   */
-  readonly agentEnabled?: boolean | cdktf.IResolvable;
+  readonly agentEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_new_relic_application_performance_monitoring#app_name SpringCloudNewRelicApplicationPerformanceMonitoring#app_name}
   */
@@ -27,23 +27,23 @@ export interface SpringCloudNewRelicApplicationPerformanceMonitoringConfig exten
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_new_relic_application_performance_monitoring#audit_mode_enabled SpringCloudNewRelicApplicationPerformanceMonitoring#audit_mode_enabled}
   */
-  readonly auditModeEnabled?: boolean | cdktf.IResolvable;
+  readonly auditModeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_new_relic_application_performance_monitoring#auto_app_naming_enabled SpringCloudNewRelicApplicationPerformanceMonitoring#auto_app_naming_enabled}
   */
-  readonly autoAppNamingEnabled?: boolean | cdktf.IResolvable;
+  readonly autoAppNamingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_new_relic_application_performance_monitoring#auto_transaction_naming_enabled SpringCloudNewRelicApplicationPerformanceMonitoring#auto_transaction_naming_enabled}
   */
-  readonly autoTransactionNamingEnabled?: boolean | cdktf.IResolvable;
+  readonly autoTransactionNamingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_new_relic_application_performance_monitoring#custom_tracing_enabled SpringCloudNewRelicApplicationPerformanceMonitoring#custom_tracing_enabled}
   */
-  readonly customTracingEnabled?: boolean | cdktf.IResolvable;
+  readonly customTracingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_new_relic_application_performance_monitoring#globally_enabled SpringCloudNewRelicApplicationPerformanceMonitoring#globally_enabled}
   */
-  readonly globallyEnabled?: boolean | cdktf.IResolvable;
+  readonly globallyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_new_relic_application_performance_monitoring#id SpringCloudNewRelicApplicationPerformanceMonitoring#id}
   *
@@ -93,46 +93,46 @@ export interface SpringCloudNewRelicApplicationPerformanceMonitoringTimeouts {
   readonly update?: string;
 }
 
-export function springCloudNewRelicApplicationPerformanceMonitoringTimeoutsToTerraform(struct?: SpringCloudNewRelicApplicationPerformanceMonitoringTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudNewRelicApplicationPerformanceMonitoringTimeoutsToTerraform(struct?: SpringCloudNewRelicApplicationPerformanceMonitoringTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function springCloudNewRelicApplicationPerformanceMonitoringTimeoutsToHclTerraform(struct?: SpringCloudNewRelicApplicationPerformanceMonitoringTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudNewRelicApplicationPerformanceMonitoringTimeoutsToHclTerraform(struct?: SpringCloudNewRelicApplicationPerformanceMonitoringTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -143,19 +143,19 @@ export function springCloudNewRelicApplicationPerformanceMonitoringTimeoutsToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudNewRelicApplicationPerformanceMonitoringTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SpringCloudNewRelicApplicationPerformanceMonitoringTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpringCloudNewRelicApplicationPerformanceMonitoringTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SpringCloudNewRelicApplicationPerformanceMonitoringTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -180,7 +180,7 @@ export class SpringCloudNewRelicApplicationPerformanceMonitoringTimeoutsOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpringCloudNewRelicApplicationPerformanceMonitoringTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpringCloudNewRelicApplicationPerformanceMonitoringTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -189,7 +189,7 @@ export class SpringCloudNewRelicApplicationPerformanceMonitoringTimeoutsOutputRe
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -271,7 +271,7 @@ export class SpringCloudNewRelicApplicationPerformanceMonitoringTimeoutsOutputRe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_new_relic_application_performance_monitoring azurerm_spring_cloud_new_relic_application_performance_monitoring}
 */
-export class SpringCloudNewRelicApplicationPerformanceMonitoring extends cdktf.TerraformResource {
+export class SpringCloudNewRelicApplicationPerformanceMonitoring extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -282,14 +282,14 @@ export class SpringCloudNewRelicApplicationPerformanceMonitoring extends cdktf.T
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpringCloudNewRelicApplicationPerformanceMonitoring resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpringCloudNewRelicApplicationPerformanceMonitoring resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpringCloudNewRelicApplicationPerformanceMonitoring to import
   * @param importFromId The id of the existing SpringCloudNewRelicApplicationPerformanceMonitoring that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_new_relic_application_performance_monitoring#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpringCloudNewRelicApplicationPerformanceMonitoring to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_new_relic_application_performance_monitoring", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_new_relic_application_performance_monitoring", importId: importFromId, provider });
       }
 
   // ===========
@@ -340,11 +340,11 @@ export class SpringCloudNewRelicApplicationPerformanceMonitoring extends cdktf.T
   // ==========
 
   // agent_enabled - computed: false, optional: true, required: false
-  private _agentEnabled?: boolean | cdktf.IResolvable; 
+  private _agentEnabled?: boolean | cdktn.IResolvable; 
   public get agentEnabled() {
     return this.getBooleanAttribute('agent_enabled');
   }
-  public set agentEnabled(value: boolean | cdktf.IResolvable) {
+  public set agentEnabled(value: boolean | cdktn.IResolvable) {
     this._agentEnabled = value;
   }
   public resetAgentEnabled() {
@@ -385,11 +385,11 @@ export class SpringCloudNewRelicApplicationPerformanceMonitoring extends cdktf.T
   }
 
   // audit_mode_enabled - computed: false, optional: true, required: false
-  private _auditModeEnabled?: boolean | cdktf.IResolvable; 
+  private _auditModeEnabled?: boolean | cdktn.IResolvable; 
   public get auditModeEnabled() {
     return this.getBooleanAttribute('audit_mode_enabled');
   }
-  public set auditModeEnabled(value: boolean | cdktf.IResolvable) {
+  public set auditModeEnabled(value: boolean | cdktn.IResolvable) {
     this._auditModeEnabled = value;
   }
   public resetAuditModeEnabled() {
@@ -401,11 +401,11 @@ export class SpringCloudNewRelicApplicationPerformanceMonitoring extends cdktf.T
   }
 
   // auto_app_naming_enabled - computed: false, optional: true, required: false
-  private _autoAppNamingEnabled?: boolean | cdktf.IResolvable; 
+  private _autoAppNamingEnabled?: boolean | cdktn.IResolvable; 
   public get autoAppNamingEnabled() {
     return this.getBooleanAttribute('auto_app_naming_enabled');
   }
-  public set autoAppNamingEnabled(value: boolean | cdktf.IResolvable) {
+  public set autoAppNamingEnabled(value: boolean | cdktn.IResolvable) {
     this._autoAppNamingEnabled = value;
   }
   public resetAutoAppNamingEnabled() {
@@ -417,11 +417,11 @@ export class SpringCloudNewRelicApplicationPerformanceMonitoring extends cdktf.T
   }
 
   // auto_transaction_naming_enabled - computed: false, optional: true, required: false
-  private _autoTransactionNamingEnabled?: boolean | cdktf.IResolvable; 
+  private _autoTransactionNamingEnabled?: boolean | cdktn.IResolvable; 
   public get autoTransactionNamingEnabled() {
     return this.getBooleanAttribute('auto_transaction_naming_enabled');
   }
-  public set autoTransactionNamingEnabled(value: boolean | cdktf.IResolvable) {
+  public set autoTransactionNamingEnabled(value: boolean | cdktn.IResolvable) {
     this._autoTransactionNamingEnabled = value;
   }
   public resetAutoTransactionNamingEnabled() {
@@ -433,11 +433,11 @@ export class SpringCloudNewRelicApplicationPerformanceMonitoring extends cdktf.T
   }
 
   // custom_tracing_enabled - computed: false, optional: true, required: false
-  private _customTracingEnabled?: boolean | cdktf.IResolvable; 
+  private _customTracingEnabled?: boolean | cdktn.IResolvable; 
   public get customTracingEnabled() {
     return this.getBooleanAttribute('custom_tracing_enabled');
   }
-  public set customTracingEnabled(value: boolean | cdktf.IResolvable) {
+  public set customTracingEnabled(value: boolean | cdktn.IResolvable) {
     this._customTracingEnabled = value;
   }
   public resetCustomTracingEnabled() {
@@ -449,11 +449,11 @@ export class SpringCloudNewRelicApplicationPerformanceMonitoring extends cdktf.T
   }
 
   // globally_enabled - computed: false, optional: true, required: false
-  private _globallyEnabled?: boolean | cdktf.IResolvable; 
+  private _globallyEnabled?: boolean | cdktn.IResolvable; 
   public get globallyEnabled() {
     return this.getBooleanAttribute('globally_enabled');
   }
-  public set globallyEnabled(value: boolean | cdktf.IResolvable) {
+  public set globallyEnabled(value: boolean | cdktn.IResolvable) {
     this._globallyEnabled = value;
   }
   public resetGloballyEnabled() {
@@ -557,19 +557,19 @@ export class SpringCloudNewRelicApplicationPerformanceMonitoring extends cdktf.T
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      agent_enabled: cdktf.booleanToTerraform(this._agentEnabled),
-      app_name: cdktf.stringToTerraform(this._appName),
-      app_server_port: cdktf.numberToTerraform(this._appServerPort),
-      audit_mode_enabled: cdktf.booleanToTerraform(this._auditModeEnabled),
-      auto_app_naming_enabled: cdktf.booleanToTerraform(this._autoAppNamingEnabled),
-      auto_transaction_naming_enabled: cdktf.booleanToTerraform(this._autoTransactionNamingEnabled),
-      custom_tracing_enabled: cdktf.booleanToTerraform(this._customTracingEnabled),
-      globally_enabled: cdktf.booleanToTerraform(this._globallyEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      license_key: cdktf.stringToTerraform(this._licenseKey),
-      name: cdktf.stringToTerraform(this._name),
-      spring_cloud_service_id: cdktf.stringToTerraform(this._springCloudServiceId),
+      agent_enabled: cdktn.booleanToTerraform(this._agentEnabled),
+      app_name: cdktn.stringToTerraform(this._appName),
+      app_server_port: cdktn.numberToTerraform(this._appServerPort),
+      audit_mode_enabled: cdktn.booleanToTerraform(this._auditModeEnabled),
+      auto_app_naming_enabled: cdktn.booleanToTerraform(this._autoAppNamingEnabled),
+      auto_transaction_naming_enabled: cdktn.booleanToTerraform(this._autoTransactionNamingEnabled),
+      custom_tracing_enabled: cdktn.booleanToTerraform(this._customTracingEnabled),
+      globally_enabled: cdktn.booleanToTerraform(this._globallyEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      license_key: cdktn.stringToTerraform(this._licenseKey),
+      name: cdktn.stringToTerraform(this._name),
+      spring_cloud_service_id: cdktn.stringToTerraform(this._springCloudServiceId),
       timeouts: springCloudNewRelicApplicationPerformanceMonitoringTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -577,79 +577,79 @@ export class SpringCloudNewRelicApplicationPerformanceMonitoring extends cdktf.T
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       agent_enabled: {
-        value: cdktf.booleanToHclTerraform(this._agentEnabled),
+        value: cdktn.booleanToHclTerraform(this._agentEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       app_name: {
-        value: cdktf.stringToHclTerraform(this._appName),
+        value: cdktn.stringToHclTerraform(this._appName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       app_server_port: {
-        value: cdktf.numberToHclTerraform(this._appServerPort),
+        value: cdktn.numberToHclTerraform(this._appServerPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       audit_mode_enabled: {
-        value: cdktf.booleanToHclTerraform(this._auditModeEnabled),
+        value: cdktn.booleanToHclTerraform(this._auditModeEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auto_app_naming_enabled: {
-        value: cdktf.booleanToHclTerraform(this._autoAppNamingEnabled),
+        value: cdktn.booleanToHclTerraform(this._autoAppNamingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auto_transaction_naming_enabled: {
-        value: cdktf.booleanToHclTerraform(this._autoTransactionNamingEnabled),
+        value: cdktn.booleanToHclTerraform(this._autoTransactionNamingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       custom_tracing_enabled: {
-        value: cdktf.booleanToHclTerraform(this._customTracingEnabled),
+        value: cdktn.booleanToHclTerraform(this._customTracingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       globally_enabled: {
-        value: cdktf.booleanToHclTerraform(this._globallyEnabled),
+        value: cdktn.booleanToHclTerraform(this._globallyEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       license_key: {
-        value: cdktf.stringToHclTerraform(this._licenseKey),
+        value: cdktn.stringToHclTerraform(this._licenseKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       spring_cloud_service_id: {
-        value: cdktf.stringToHclTerraform(this._springCloudServiceId),
+        value: cdktn.stringToHclTerraform(this._springCloudServiceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

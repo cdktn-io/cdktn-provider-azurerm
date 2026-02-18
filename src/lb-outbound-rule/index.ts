@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LbOutboundRuleConfig extends cdktf.TerraformMetaArguments {
+export interface LbOutboundRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_outbound_rule#allocated_outbound_ports LbOutboundRule#allocated_outbound_ports}
   */
@@ -23,7 +23,7 @@ export interface LbOutboundRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_outbound_rule#enable_tcp_reset LbOutboundRule#enable_tcp_reset}
   */
-  readonly enableTcpReset?: boolean | cdktf.IResolvable;
+  readonly enableTcpReset?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_outbound_rule#id LbOutboundRule#id}
   *
@@ -50,13 +50,13 @@ export interface LbOutboundRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_outbound_rule#tcp_reset_enabled LbOutboundRule#tcp_reset_enabled}
   */
-  readonly tcpResetEnabled?: boolean | cdktf.IResolvable;
+  readonly tcpResetEnabled?: boolean | cdktn.IResolvable;
   /**
   * frontend_ip_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_outbound_rule#frontend_ip_configuration LbOutboundRule#frontend_ip_configuration}
   */
-  readonly frontendIpConfiguration?: LbOutboundRuleFrontendIpConfiguration[] | cdktf.IResolvable;
+  readonly frontendIpConfiguration?: LbOutboundRuleFrontendIpConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -71,25 +71,25 @@ export interface LbOutboundRuleFrontendIpConfiguration {
   readonly name: string;
 }
 
-export function lbOutboundRuleFrontendIpConfigurationToTerraform(struct?: LbOutboundRuleFrontendIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lbOutboundRuleFrontendIpConfigurationToTerraform(struct?: LbOutboundRuleFrontendIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function lbOutboundRuleFrontendIpConfigurationToHclTerraform(struct?: LbOutboundRuleFrontendIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lbOutboundRuleFrontendIpConfigurationToHclTerraform(struct?: LbOutboundRuleFrontendIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,9 +100,9 @@ export function lbOutboundRuleFrontendIpConfigurationToHclTerraform(struct?: LbO
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LbOutboundRuleFrontendIpConfigurationOutputReference extends cdktf.ComplexObject {
+export class LbOutboundRuleFrontendIpConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -110,11 +110,11 @@ export class LbOutboundRuleFrontendIpConfigurationOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LbOutboundRuleFrontendIpConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): LbOutboundRuleFrontendIpConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -127,13 +127,13 @@ export class LbOutboundRuleFrontendIpConfigurationOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LbOutboundRuleFrontendIpConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LbOutboundRuleFrontendIpConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -163,15 +163,15 @@ export class LbOutboundRuleFrontendIpConfigurationOutputReference extends cdktf.
   }
 }
 
-export class LbOutboundRuleFrontendIpConfigurationList extends cdktf.ComplexList {
-  public internalValue? : LbOutboundRuleFrontendIpConfiguration[] | cdktf.IResolvable
+export class LbOutboundRuleFrontendIpConfigurationList extends cdktn.ComplexList {
+  public internalValue? : LbOutboundRuleFrontendIpConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -201,46 +201,46 @@ export interface LbOutboundRuleTimeouts {
   readonly update?: string;
 }
 
-export function lbOutboundRuleTimeoutsToTerraform(struct?: LbOutboundRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lbOutboundRuleTimeoutsToTerraform(struct?: LbOutboundRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function lbOutboundRuleTimeoutsToHclTerraform(struct?: LbOutboundRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lbOutboundRuleTimeoutsToHclTerraform(struct?: LbOutboundRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -251,19 +251,19 @@ export function lbOutboundRuleTimeoutsToHclTerraform(struct?: LbOutboundRuleTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LbOutboundRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LbOutboundRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LbOutboundRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LbOutboundRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -288,7 +288,7 @@ export class LbOutboundRuleTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LbOutboundRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LbOutboundRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -297,7 +297,7 @@ export class LbOutboundRuleTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -379,7 +379,7 @@ export class LbOutboundRuleTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_outbound_rule azurerm_lb_outbound_rule}
 */
-export class LbOutboundRule extends cdktf.TerraformResource {
+export class LbOutboundRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -390,14 +390,14 @@ export class LbOutboundRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LbOutboundRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LbOutboundRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LbOutboundRule to import
   * @param importFromId The id of the existing LbOutboundRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_outbound_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LbOutboundRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_lb_outbound_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_lb_outbound_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -474,11 +474,11 @@ export class LbOutboundRule extends cdktf.TerraformResource {
   }
 
   // enable_tcp_reset - computed: true, optional: true, required: false
-  private _enableTcpReset?: boolean | cdktf.IResolvable; 
+  private _enableTcpReset?: boolean | cdktn.IResolvable; 
   public get enableTcpReset() {
     return this.getBooleanAttribute('enable_tcp_reset');
   }
-  public set enableTcpReset(value: boolean | cdktf.IResolvable) {
+  public set enableTcpReset(value: boolean | cdktn.IResolvable) {
     this._enableTcpReset = value;
   }
   public resetEnableTcpReset() {
@@ -561,11 +561,11 @@ export class LbOutboundRule extends cdktf.TerraformResource {
   }
 
   // tcp_reset_enabled - computed: true, optional: true, required: false
-  private _tcpResetEnabled?: boolean | cdktf.IResolvable; 
+  private _tcpResetEnabled?: boolean | cdktn.IResolvable; 
   public get tcpResetEnabled() {
     return this.getBooleanAttribute('tcp_reset_enabled');
   }
-  public set tcpResetEnabled(value: boolean | cdktf.IResolvable) {
+  public set tcpResetEnabled(value: boolean | cdktn.IResolvable) {
     this._tcpResetEnabled = value;
   }
   public resetTcpResetEnabled() {
@@ -581,7 +581,7 @@ export class LbOutboundRule extends cdktf.TerraformResource {
   public get frontendIpConfiguration() {
     return this._frontendIpConfiguration;
   }
-  public putFrontendIpConfiguration(value: LbOutboundRuleFrontendIpConfiguration[] | cdktf.IResolvable) {
+  public putFrontendIpConfiguration(value: LbOutboundRuleFrontendIpConfiguration[] | cdktn.IResolvable) {
     this._frontendIpConfiguration.internalValue = value;
   }
   public resetFrontendIpConfiguration() {
@@ -614,16 +614,16 @@ export class LbOutboundRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocated_outbound_ports: cdktf.numberToTerraform(this._allocatedOutboundPorts),
-      backend_address_pool_id: cdktf.stringToTerraform(this._backendAddressPoolId),
-      enable_tcp_reset: cdktf.booleanToTerraform(this._enableTcpReset),
-      id: cdktf.stringToTerraform(this._id),
-      idle_timeout_in_minutes: cdktf.numberToTerraform(this._idleTimeoutInMinutes),
-      loadbalancer_id: cdktf.stringToTerraform(this._loadbalancerId),
-      name: cdktf.stringToTerraform(this._name),
-      protocol: cdktf.stringToTerraform(this._protocol),
-      tcp_reset_enabled: cdktf.booleanToTerraform(this._tcpResetEnabled),
-      frontend_ip_configuration: cdktf.listMapper(lbOutboundRuleFrontendIpConfigurationToTerraform, true)(this._frontendIpConfiguration.internalValue),
+      allocated_outbound_ports: cdktn.numberToTerraform(this._allocatedOutboundPorts),
+      backend_address_pool_id: cdktn.stringToTerraform(this._backendAddressPoolId),
+      enable_tcp_reset: cdktn.booleanToTerraform(this._enableTcpReset),
+      id: cdktn.stringToTerraform(this._id),
+      idle_timeout_in_minutes: cdktn.numberToTerraform(this._idleTimeoutInMinutes),
+      loadbalancer_id: cdktn.stringToTerraform(this._loadbalancerId),
+      name: cdktn.stringToTerraform(this._name),
+      protocol: cdktn.stringToTerraform(this._protocol),
+      tcp_reset_enabled: cdktn.booleanToTerraform(this._tcpResetEnabled),
+      frontend_ip_configuration: cdktn.listMapper(lbOutboundRuleFrontendIpConfigurationToTerraform, true)(this._frontendIpConfiguration.internalValue),
       timeouts: lbOutboundRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -631,61 +631,61 @@ export class LbOutboundRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allocated_outbound_ports: {
-        value: cdktf.numberToHclTerraform(this._allocatedOutboundPorts),
+        value: cdktn.numberToHclTerraform(this._allocatedOutboundPorts),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       backend_address_pool_id: {
-        value: cdktf.stringToHclTerraform(this._backendAddressPoolId),
+        value: cdktn.stringToHclTerraform(this._backendAddressPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_tcp_reset: {
-        value: cdktf.booleanToHclTerraform(this._enableTcpReset),
+        value: cdktn.booleanToHclTerraform(this._enableTcpReset),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idle_timeout_in_minutes: {
-        value: cdktf.numberToHclTerraform(this._idleTimeoutInMinutes),
+        value: cdktn.numberToHclTerraform(this._idleTimeoutInMinutes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       loadbalancer_id: {
-        value: cdktf.stringToHclTerraform(this._loadbalancerId),
+        value: cdktn.stringToHclTerraform(this._loadbalancerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocol: {
-        value: cdktf.stringToHclTerraform(this._protocol),
+        value: cdktn.stringToHclTerraform(this._protocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tcp_reset_enabled: {
-        value: cdktf.booleanToHclTerraform(this._tcpResetEnabled),
+        value: cdktn.booleanToHclTerraform(this._tcpResetEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       frontend_ip_configuration: {
-        value: cdktf.listMapperHcl(lbOutboundRuleFrontendIpConfigurationToHclTerraform, true)(this._frontendIpConfiguration.internalValue),
+        value: cdktn.listMapperHcl(lbOutboundRuleFrontendIpConfigurationToHclTerraform, true)(this._frontendIpConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LbOutboundRuleFrontendIpConfigurationList",

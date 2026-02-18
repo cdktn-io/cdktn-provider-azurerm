@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VirtualDesktopHostPoolConfig extends cdktf.TerraformMetaArguments {
+export interface VirtualDesktopHostPoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_host_pool#custom_rdp_properties VirtualDesktopHostPool#custom_rdp_properties}
   */
@@ -68,7 +68,7 @@ export interface VirtualDesktopHostPoolConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_host_pool#start_vm_on_connect VirtualDesktopHostPool#start_vm_on_connect}
   */
-  readonly startVmOnConnect?: boolean | cdktf.IResolvable;
+  readonly startVmOnConnect?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_host_pool#tags VirtualDesktopHostPool#tags}
   */
@@ -80,7 +80,7 @@ export interface VirtualDesktopHostPoolConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_host_pool#validate_environment VirtualDesktopHostPool#validate_environment}
   */
-  readonly validateEnvironment?: boolean | cdktf.IResolvable;
+  readonly validateEnvironment?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_host_pool#vm_template VirtualDesktopHostPool#vm_template}
   */
@@ -109,32 +109,32 @@ export interface VirtualDesktopHostPoolScheduledAgentUpdatesSchedule {
   readonly hourOfDay: number;
 }
 
-export function virtualDesktopHostPoolScheduledAgentUpdatesScheduleToTerraform(struct?: VirtualDesktopHostPoolScheduledAgentUpdatesSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualDesktopHostPoolScheduledAgentUpdatesScheduleToTerraform(struct?: VirtualDesktopHostPoolScheduledAgentUpdatesSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_week: cdktf.stringToTerraform(struct!.dayOfWeek),
-    hour_of_day: cdktf.numberToTerraform(struct!.hourOfDay),
+    day_of_week: cdktn.stringToTerraform(struct!.dayOfWeek),
+    hour_of_day: cdktn.numberToTerraform(struct!.hourOfDay),
   }
 }
 
 
-export function virtualDesktopHostPoolScheduledAgentUpdatesScheduleToHclTerraform(struct?: VirtualDesktopHostPoolScheduledAgentUpdatesSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualDesktopHostPoolScheduledAgentUpdatesScheduleToHclTerraform(struct?: VirtualDesktopHostPoolScheduledAgentUpdatesSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_week: {
-      value: cdktf.stringToHclTerraform(struct!.dayOfWeek),
+      value: cdktn.stringToHclTerraform(struct!.dayOfWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hour_of_day: {
-      value: cdktf.numberToHclTerraform(struct!.hourOfDay),
+      value: cdktn.numberToHclTerraform(struct!.hourOfDay),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -145,9 +145,9 @@ export function virtualDesktopHostPoolScheduledAgentUpdatesScheduleToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualDesktopHostPoolScheduledAgentUpdatesScheduleOutputReference extends cdktf.ComplexObject {
+export class VirtualDesktopHostPoolScheduledAgentUpdatesScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -155,11 +155,11 @@ export class VirtualDesktopHostPoolScheduledAgentUpdatesScheduleOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VirtualDesktopHostPoolScheduledAgentUpdatesSchedule | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualDesktopHostPoolScheduledAgentUpdatesSchedule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -176,14 +176,14 @@ export class VirtualDesktopHostPoolScheduledAgentUpdatesScheduleOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualDesktopHostPoolScheduledAgentUpdatesSchedule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualDesktopHostPoolScheduledAgentUpdatesSchedule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dayOfWeek = undefined;
       this._hourOfDay = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -222,15 +222,15 @@ export class VirtualDesktopHostPoolScheduledAgentUpdatesScheduleOutputReference 
   }
 }
 
-export class VirtualDesktopHostPoolScheduledAgentUpdatesScheduleList extends cdktf.ComplexList {
-  public internalValue? : VirtualDesktopHostPoolScheduledAgentUpdatesSchedule[] | cdktf.IResolvable
+export class VirtualDesktopHostPoolScheduledAgentUpdatesScheduleList extends cdktn.ComplexList {
+  public internalValue? : VirtualDesktopHostPoolScheduledAgentUpdatesSchedule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -245,7 +245,7 @@ export interface VirtualDesktopHostPoolScheduledAgentUpdates {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_host_pool#enabled VirtualDesktopHostPool#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_host_pool#timezone VirtualDesktopHostPool#timezone}
   */
@@ -253,55 +253,55 @@ export interface VirtualDesktopHostPoolScheduledAgentUpdates {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_host_pool#use_session_host_timezone VirtualDesktopHostPool#use_session_host_timezone}
   */
-  readonly useSessionHostTimezone?: boolean | cdktf.IResolvable;
+  readonly useSessionHostTimezone?: boolean | cdktn.IResolvable;
   /**
   * schedule block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_host_pool#schedule VirtualDesktopHostPool#schedule}
   */
-  readonly schedule?: VirtualDesktopHostPoolScheduledAgentUpdatesSchedule[] | cdktf.IResolvable;
+  readonly schedule?: VirtualDesktopHostPoolScheduledAgentUpdatesSchedule[] | cdktn.IResolvable;
 }
 
 export function virtualDesktopHostPoolScheduledAgentUpdatesToTerraform(struct?: VirtualDesktopHostPoolScheduledAgentUpdatesOutputReference | VirtualDesktopHostPoolScheduledAgentUpdates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    timezone: cdktf.stringToTerraform(struct!.timezone),
-    use_session_host_timezone: cdktf.booleanToTerraform(struct!.useSessionHostTimezone),
-    schedule: cdktf.listMapper(virtualDesktopHostPoolScheduledAgentUpdatesScheduleToTerraform, true)(struct!.schedule),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    timezone: cdktn.stringToTerraform(struct!.timezone),
+    use_session_host_timezone: cdktn.booleanToTerraform(struct!.useSessionHostTimezone),
+    schedule: cdktn.listMapper(virtualDesktopHostPoolScheduledAgentUpdatesScheduleToTerraform, true)(struct!.schedule),
   }
 }
 
 
 export function virtualDesktopHostPoolScheduledAgentUpdatesToHclTerraform(struct?: VirtualDesktopHostPoolScheduledAgentUpdatesOutputReference | VirtualDesktopHostPoolScheduledAgentUpdates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     timezone: {
-      value: cdktf.stringToHclTerraform(struct!.timezone),
+      value: cdktn.stringToHclTerraform(struct!.timezone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_session_host_timezone: {
-      value: cdktf.booleanToHclTerraform(struct!.useSessionHostTimezone),
+      value: cdktn.booleanToHclTerraform(struct!.useSessionHostTimezone),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     schedule: {
-      value: cdktf.listMapperHcl(virtualDesktopHostPoolScheduledAgentUpdatesScheduleToHclTerraform, true)(struct!.schedule),
+      value: cdktn.listMapperHcl(virtualDesktopHostPoolScheduledAgentUpdatesScheduleToHclTerraform, true)(struct!.schedule),
       isBlock: true,
       type: "list",
       storageClassType: "VirtualDesktopHostPoolScheduledAgentUpdatesScheduleList",
@@ -312,14 +312,14 @@ export function virtualDesktopHostPoolScheduledAgentUpdatesToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualDesktopHostPoolScheduledAgentUpdatesOutputReference extends cdktf.ComplexObject {
+export class VirtualDesktopHostPoolScheduledAgentUpdatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -363,11 +363,11 @@ export class VirtualDesktopHostPoolScheduledAgentUpdatesOutputReference extends 
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -395,11 +395,11 @@ export class VirtualDesktopHostPoolScheduledAgentUpdatesOutputReference extends 
   }
 
   // use_session_host_timezone - computed: false, optional: true, required: false
-  private _useSessionHostTimezone?: boolean | cdktf.IResolvable; 
+  private _useSessionHostTimezone?: boolean | cdktn.IResolvable; 
   public get useSessionHostTimezone() {
     return this.getBooleanAttribute('use_session_host_timezone');
   }
-  public set useSessionHostTimezone(value: boolean | cdktf.IResolvable) {
+  public set useSessionHostTimezone(value: boolean | cdktn.IResolvable) {
     this._useSessionHostTimezone = value;
   }
   public resetUseSessionHostTimezone() {
@@ -415,7 +415,7 @@ export class VirtualDesktopHostPoolScheduledAgentUpdatesOutputReference extends 
   public get schedule() {
     return this._schedule;
   }
-  public putSchedule(value: VirtualDesktopHostPoolScheduledAgentUpdatesSchedule[] | cdktf.IResolvable) {
+  public putSchedule(value: VirtualDesktopHostPoolScheduledAgentUpdatesSchedule[] | cdktn.IResolvable) {
     this._schedule.internalValue = value;
   }
   public resetSchedule() {
@@ -445,46 +445,46 @@ export interface VirtualDesktopHostPoolTimeouts {
   readonly update?: string;
 }
 
-export function virtualDesktopHostPoolTimeoutsToTerraform(struct?: VirtualDesktopHostPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualDesktopHostPoolTimeoutsToTerraform(struct?: VirtualDesktopHostPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function virtualDesktopHostPoolTimeoutsToHclTerraform(struct?: VirtualDesktopHostPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualDesktopHostPoolTimeoutsToHclTerraform(struct?: VirtualDesktopHostPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -495,19 +495,19 @@ export function virtualDesktopHostPoolTimeoutsToHclTerraform(struct?: VirtualDes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualDesktopHostPoolTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VirtualDesktopHostPoolTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VirtualDesktopHostPoolTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualDesktopHostPoolTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -532,7 +532,7 @@ export class VirtualDesktopHostPoolTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualDesktopHostPoolTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualDesktopHostPoolTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -541,7 +541,7 @@ export class VirtualDesktopHostPoolTimeoutsOutputReference extends cdktf.Complex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -623,7 +623,7 @@ export class VirtualDesktopHostPoolTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_host_pool azurerm_virtual_desktop_host_pool}
 */
-export class VirtualDesktopHostPool extends cdktf.TerraformResource {
+export class VirtualDesktopHostPool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -634,14 +634,14 @@ export class VirtualDesktopHostPool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VirtualDesktopHostPool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VirtualDesktopHostPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualDesktopHostPool to import
   * @param importFromId The id of the existing VirtualDesktopHostPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_host_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualDesktopHostPool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_desktop_host_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_desktop_host_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -877,11 +877,11 @@ export class VirtualDesktopHostPool extends cdktf.TerraformResource {
   }
 
   // start_vm_on_connect - computed: false, optional: true, required: false
-  private _startVmOnConnect?: boolean | cdktf.IResolvable; 
+  private _startVmOnConnect?: boolean | cdktn.IResolvable; 
   public get startVmOnConnect() {
     return this.getBooleanAttribute('start_vm_on_connect');
   }
-  public set startVmOnConnect(value: boolean | cdktf.IResolvable) {
+  public set startVmOnConnect(value: boolean | cdktn.IResolvable) {
     this._startVmOnConnect = value;
   }
   public resetStartVmOnConnect() {
@@ -922,11 +922,11 @@ export class VirtualDesktopHostPool extends cdktf.TerraformResource {
   }
 
   // validate_environment - computed: false, optional: true, required: false
-  private _validateEnvironment?: boolean | cdktf.IResolvable; 
+  private _validateEnvironment?: boolean | cdktn.IResolvable; 
   public get validateEnvironment() {
     return this.getBooleanAttribute('validate_environment');
   }
-  public set validateEnvironment(value: boolean | cdktf.IResolvable) {
+  public set validateEnvironment(value: boolean | cdktn.IResolvable) {
     this._validateEnvironment = value;
   }
   public resetValidateEnvironment() {
@@ -991,23 +991,23 @@ export class VirtualDesktopHostPool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      custom_rdp_properties: cdktf.stringToTerraform(this._customRdpProperties),
-      description: cdktf.stringToTerraform(this._description),
-      friendly_name: cdktf.stringToTerraform(this._friendlyName),
-      id: cdktf.stringToTerraform(this._id),
-      load_balancer_type: cdktf.stringToTerraform(this._loadBalancerType),
-      location: cdktf.stringToTerraform(this._location),
-      maximum_sessions_allowed: cdktf.numberToTerraform(this._maximumSessionsAllowed),
-      name: cdktf.stringToTerraform(this._name),
-      personal_desktop_assignment_type: cdktf.stringToTerraform(this._personalDesktopAssignmentType),
-      preferred_app_group_type: cdktf.stringToTerraform(this._preferredAppGroupType),
-      public_network_access: cdktf.stringToTerraform(this._publicNetworkAccess),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      start_vm_on_connect: cdktf.booleanToTerraform(this._startVmOnConnect),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      type: cdktf.stringToTerraform(this._type),
-      validate_environment: cdktf.booleanToTerraform(this._validateEnvironment),
-      vm_template: cdktf.stringToTerraform(this._vmTemplate),
+      custom_rdp_properties: cdktn.stringToTerraform(this._customRdpProperties),
+      description: cdktn.stringToTerraform(this._description),
+      friendly_name: cdktn.stringToTerraform(this._friendlyName),
+      id: cdktn.stringToTerraform(this._id),
+      load_balancer_type: cdktn.stringToTerraform(this._loadBalancerType),
+      location: cdktn.stringToTerraform(this._location),
+      maximum_sessions_allowed: cdktn.numberToTerraform(this._maximumSessionsAllowed),
+      name: cdktn.stringToTerraform(this._name),
+      personal_desktop_assignment_type: cdktn.stringToTerraform(this._personalDesktopAssignmentType),
+      preferred_app_group_type: cdktn.stringToTerraform(this._preferredAppGroupType),
+      public_network_access: cdktn.stringToTerraform(this._publicNetworkAccess),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      start_vm_on_connect: cdktn.booleanToTerraform(this._startVmOnConnect),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      type: cdktn.stringToTerraform(this._type),
+      validate_environment: cdktn.booleanToTerraform(this._validateEnvironment),
+      vm_template: cdktn.stringToTerraform(this._vmTemplate),
       scheduled_agent_updates: virtualDesktopHostPoolScheduledAgentUpdatesToTerraform(this._scheduledAgentUpdates.internalValue),
       timeouts: virtualDesktopHostPoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1016,103 +1016,103 @@ export class VirtualDesktopHostPool extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       custom_rdp_properties: {
-        value: cdktf.stringToHclTerraform(this._customRdpProperties),
+        value: cdktn.stringToHclTerraform(this._customRdpProperties),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       friendly_name: {
-        value: cdktf.stringToHclTerraform(this._friendlyName),
+        value: cdktn.stringToHclTerraform(this._friendlyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       load_balancer_type: {
-        value: cdktf.stringToHclTerraform(this._loadBalancerType),
+        value: cdktn.stringToHclTerraform(this._loadBalancerType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       maximum_sessions_allowed: {
-        value: cdktf.numberToHclTerraform(this._maximumSessionsAllowed),
+        value: cdktn.numberToHclTerraform(this._maximumSessionsAllowed),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       personal_desktop_assignment_type: {
-        value: cdktf.stringToHclTerraform(this._personalDesktopAssignmentType),
+        value: cdktn.stringToHclTerraform(this._personalDesktopAssignmentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_app_group_type: {
-        value: cdktf.stringToHclTerraform(this._preferredAppGroupType),
+        value: cdktn.stringToHclTerraform(this._preferredAppGroupType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access: {
-        value: cdktf.stringToHclTerraform(this._publicNetworkAccess),
+        value: cdktn.stringToHclTerraform(this._publicNetworkAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_vm_on_connect: {
-        value: cdktf.booleanToHclTerraform(this._startVmOnConnect),
+        value: cdktn.booleanToHclTerraform(this._startVmOnConnect),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       validate_environment: {
-        value: cdktf.booleanToHclTerraform(this._validateEnvironment),
+        value: cdktn.booleanToHclTerraform(this._validateEnvironment),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       vm_template: {
-        value: cdktf.stringToHclTerraform(this._vmTemplate),
+        value: cdktn.stringToHclTerraform(this._vmTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

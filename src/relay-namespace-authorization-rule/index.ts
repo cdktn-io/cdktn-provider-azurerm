@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RelayNamespaceAuthorizationRuleConfig extends cdktf.TerraformMetaArguments {
+export interface RelayNamespaceAuthorizationRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/relay_namespace_authorization_rule#id RelayNamespaceAuthorizationRule#id}
   *
@@ -22,11 +22,11 @@ export interface RelayNamespaceAuthorizationRuleConfig extends cdktf.TerraformMe
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/relay_namespace_authorization_rule#listen RelayNamespaceAuthorizationRule#listen}
   */
-  readonly listen?: boolean | cdktf.IResolvable;
+  readonly listen?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/relay_namespace_authorization_rule#manage RelayNamespaceAuthorizationRule#manage}
   */
-  readonly manage?: boolean | cdktf.IResolvable;
+  readonly manage?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/relay_namespace_authorization_rule#name RelayNamespaceAuthorizationRule#name}
   */
@@ -42,7 +42,7 @@ export interface RelayNamespaceAuthorizationRuleConfig extends cdktf.TerraformMe
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/relay_namespace_authorization_rule#send RelayNamespaceAuthorizationRule#send}
   */
-  readonly send?: boolean | cdktf.IResolvable;
+  readonly send?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -69,46 +69,46 @@ export interface RelayNamespaceAuthorizationRuleTimeouts {
   readonly update?: string;
 }
 
-export function relayNamespaceAuthorizationRuleTimeoutsToTerraform(struct?: RelayNamespaceAuthorizationRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function relayNamespaceAuthorizationRuleTimeoutsToTerraform(struct?: RelayNamespaceAuthorizationRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function relayNamespaceAuthorizationRuleTimeoutsToHclTerraform(struct?: RelayNamespaceAuthorizationRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function relayNamespaceAuthorizationRuleTimeoutsToHclTerraform(struct?: RelayNamespaceAuthorizationRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,19 +119,19 @@ export function relayNamespaceAuthorizationRuleTimeoutsToHclTerraform(struct?: R
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RelayNamespaceAuthorizationRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RelayNamespaceAuthorizationRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RelayNamespaceAuthorizationRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RelayNamespaceAuthorizationRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class RelayNamespaceAuthorizationRuleTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RelayNamespaceAuthorizationRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RelayNamespaceAuthorizationRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class RelayNamespaceAuthorizationRuleTimeoutsOutputReference extends cdkt
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,7 +247,7 @@ export class RelayNamespaceAuthorizationRuleTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/relay_namespace_authorization_rule azurerm_relay_namespace_authorization_rule}
 */
-export class RelayNamespaceAuthorizationRule extends cdktf.TerraformResource {
+export class RelayNamespaceAuthorizationRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -258,14 +258,14 @@ export class RelayNamespaceAuthorizationRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RelayNamespaceAuthorizationRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RelayNamespaceAuthorizationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RelayNamespaceAuthorizationRule to import
   * @param importFromId The id of the existing RelayNamespaceAuthorizationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/relay_namespace_authorization_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RelayNamespaceAuthorizationRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_relay_namespace_authorization_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_relay_namespace_authorization_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -326,11 +326,11 @@ export class RelayNamespaceAuthorizationRule extends cdktf.TerraformResource {
   }
 
   // listen - computed: false, optional: true, required: false
-  private _listen?: boolean | cdktf.IResolvable; 
+  private _listen?: boolean | cdktn.IResolvable; 
   public get listen() {
     return this.getBooleanAttribute('listen');
   }
-  public set listen(value: boolean | cdktf.IResolvable) {
+  public set listen(value: boolean | cdktn.IResolvable) {
     this._listen = value;
   }
   public resetListen() {
@@ -342,11 +342,11 @@ export class RelayNamespaceAuthorizationRule extends cdktf.TerraformResource {
   }
 
   // manage - computed: false, optional: true, required: false
-  private _manage?: boolean | cdktf.IResolvable; 
+  private _manage?: boolean | cdktn.IResolvable; 
   public get manage() {
     return this.getBooleanAttribute('manage');
   }
-  public set manage(value: boolean | cdktf.IResolvable) {
+  public set manage(value: boolean | cdktn.IResolvable) {
     this._manage = value;
   }
   public resetManage() {
@@ -417,11 +417,11 @@ export class RelayNamespaceAuthorizationRule extends cdktf.TerraformResource {
   }
 
   // send - computed: false, optional: true, required: false
-  private _send?: boolean | cdktf.IResolvable; 
+  private _send?: boolean | cdktn.IResolvable; 
   public get send() {
     return this.getBooleanAttribute('send');
   }
-  public set send(value: boolean | cdktf.IResolvable) {
+  public set send(value: boolean | cdktn.IResolvable) {
     this._send = value;
   }
   public resetSend() {
@@ -454,13 +454,13 @@ export class RelayNamespaceAuthorizationRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      listen: cdktf.booleanToTerraform(this._listen),
-      manage: cdktf.booleanToTerraform(this._manage),
-      name: cdktf.stringToTerraform(this._name),
-      namespace_name: cdktf.stringToTerraform(this._namespaceName),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      send: cdktf.booleanToTerraform(this._send),
+      id: cdktn.stringToTerraform(this._id),
+      listen: cdktn.booleanToTerraform(this._listen),
+      manage: cdktn.booleanToTerraform(this._manage),
+      name: cdktn.stringToTerraform(this._name),
+      namespace_name: cdktn.stringToTerraform(this._namespaceName),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      send: cdktn.booleanToTerraform(this._send),
       timeouts: relayNamespaceAuthorizationRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -468,43 +468,43 @@ export class RelayNamespaceAuthorizationRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       listen: {
-        value: cdktf.booleanToHclTerraform(this._listen),
+        value: cdktn.booleanToHclTerraform(this._listen),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       manage: {
-        value: cdktf.booleanToHclTerraform(this._manage),
+        value: cdktn.booleanToHclTerraform(this._manage),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace_name: {
-        value: cdktf.stringToHclTerraform(this._namespaceName),
+        value: cdktn.stringToHclTerraform(this._namespaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       send: {
-        value: cdktf.booleanToHclTerraform(this._send),
+        value: cdktn.booleanToHclTerraform(this._send),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

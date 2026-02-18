@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PrivateEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface PrivateEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_endpoint#custom_network_interface_name PrivateEndpoint#custom_network_interface_name}
   */
@@ -48,7 +48,7 @@ export interface PrivateEndpointConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_endpoint#ip_configuration PrivateEndpoint#ip_configuration}
   */
-  readonly ipConfiguration?: PrivateEndpointIpConfiguration[] | cdktf.IResolvable;
+  readonly ipConfiguration?: PrivateEndpointIpConfiguration[] | cdktn.IResolvable;
   /**
   * private_dns_zone_group block
   *
@@ -72,8 +72,8 @@ export interface PrivateEndpointCustomDnsConfigs {
 }
 
 export function privateEndpointCustomDnsConfigsToTerraform(struct?: PrivateEndpointCustomDnsConfigs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -82,8 +82,8 @@ export function privateEndpointCustomDnsConfigsToTerraform(struct?: PrivateEndpo
 
 
 export function privateEndpointCustomDnsConfigsToHclTerraform(struct?: PrivateEndpointCustomDnsConfigs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -91,7 +91,7 @@ export function privateEndpointCustomDnsConfigsToHclTerraform(struct?: PrivateEn
   return attrs;
 }
 
-export class PrivateEndpointCustomDnsConfigsOutputReference extends cdktf.ComplexObject {
+export class PrivateEndpointCustomDnsConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -100,7 +100,7 @@ export class PrivateEndpointCustomDnsConfigsOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -130,14 +130,14 @@ export class PrivateEndpointCustomDnsConfigsOutputReference extends cdktf.Comple
   }
 }
 
-export class PrivateEndpointCustomDnsConfigsList extends cdktf.ComplexList {
+export class PrivateEndpointCustomDnsConfigsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -152,8 +152,8 @@ export interface PrivateEndpointNetworkInterface {
 }
 
 export function privateEndpointNetworkInterfaceToTerraform(struct?: PrivateEndpointNetworkInterface): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -162,8 +162,8 @@ export function privateEndpointNetworkInterfaceToTerraform(struct?: PrivateEndpo
 
 
 export function privateEndpointNetworkInterfaceToHclTerraform(struct?: PrivateEndpointNetworkInterface): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -171,7 +171,7 @@ export function privateEndpointNetworkInterfaceToHclTerraform(struct?: PrivateEn
   return attrs;
 }
 
-export class PrivateEndpointNetworkInterfaceOutputReference extends cdktf.ComplexObject {
+export class PrivateEndpointNetworkInterfaceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -180,7 +180,7 @@ export class PrivateEndpointNetworkInterfaceOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -210,14 +210,14 @@ export class PrivateEndpointNetworkInterfaceOutputReference extends cdktf.Comple
   }
 }
 
-export class PrivateEndpointNetworkInterfaceList extends cdktf.ComplexList {
+export class PrivateEndpointNetworkInterfaceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -232,8 +232,8 @@ export interface PrivateEndpointPrivateDnsZoneConfigsRecordSets {
 }
 
 export function privateEndpointPrivateDnsZoneConfigsRecordSetsToTerraform(struct?: PrivateEndpointPrivateDnsZoneConfigsRecordSets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -242,8 +242,8 @@ export function privateEndpointPrivateDnsZoneConfigsRecordSetsToTerraform(struct
 
 
 export function privateEndpointPrivateDnsZoneConfigsRecordSetsToHclTerraform(struct?: PrivateEndpointPrivateDnsZoneConfigsRecordSets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -251,7 +251,7 @@ export function privateEndpointPrivateDnsZoneConfigsRecordSetsToHclTerraform(str
   return attrs;
 }
 
-export class PrivateEndpointPrivateDnsZoneConfigsRecordSetsOutputReference extends cdktf.ComplexObject {
+export class PrivateEndpointPrivateDnsZoneConfigsRecordSetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -260,7 +260,7 @@ export class PrivateEndpointPrivateDnsZoneConfigsRecordSetsOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -305,14 +305,14 @@ export class PrivateEndpointPrivateDnsZoneConfigsRecordSetsOutputReference exten
   }
 }
 
-export class PrivateEndpointPrivateDnsZoneConfigsRecordSetsList extends cdktf.ComplexList {
+export class PrivateEndpointPrivateDnsZoneConfigsRecordSetsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -327,8 +327,8 @@ export interface PrivateEndpointPrivateDnsZoneConfigs {
 }
 
 export function privateEndpointPrivateDnsZoneConfigsToTerraform(struct?: PrivateEndpointPrivateDnsZoneConfigs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -337,8 +337,8 @@ export function privateEndpointPrivateDnsZoneConfigsToTerraform(struct?: Private
 
 
 export function privateEndpointPrivateDnsZoneConfigsToHclTerraform(struct?: PrivateEndpointPrivateDnsZoneConfigs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -346,7 +346,7 @@ export function privateEndpointPrivateDnsZoneConfigsToHclTerraform(struct?: Priv
   return attrs;
 }
 
-export class PrivateEndpointPrivateDnsZoneConfigsOutputReference extends cdktf.ComplexObject {
+export class PrivateEndpointPrivateDnsZoneConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -355,7 +355,7 @@ export class PrivateEndpointPrivateDnsZoneConfigsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -396,14 +396,14 @@ export class PrivateEndpointPrivateDnsZoneConfigsOutputReference extends cdktf.C
   }
 }
 
-export class PrivateEndpointPrivateDnsZoneConfigsList extends cdktf.ComplexList {
+export class PrivateEndpointPrivateDnsZoneConfigsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -433,46 +433,46 @@ export interface PrivateEndpointIpConfiguration {
   readonly subresourceName?: string;
 }
 
-export function privateEndpointIpConfigurationToTerraform(struct?: PrivateEndpointIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateEndpointIpConfigurationToTerraform(struct?: PrivateEndpointIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    member_name: cdktf.stringToTerraform(struct!.memberName),
-    name: cdktf.stringToTerraform(struct!.name),
-    private_ip_address: cdktf.stringToTerraform(struct!.privateIpAddress),
-    subresource_name: cdktf.stringToTerraform(struct!.subresourceName),
+    member_name: cdktn.stringToTerraform(struct!.memberName),
+    name: cdktn.stringToTerraform(struct!.name),
+    private_ip_address: cdktn.stringToTerraform(struct!.privateIpAddress),
+    subresource_name: cdktn.stringToTerraform(struct!.subresourceName),
   }
 }
 
 
-export function privateEndpointIpConfigurationToHclTerraform(struct?: PrivateEndpointIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateEndpointIpConfigurationToHclTerraform(struct?: PrivateEndpointIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     member_name: {
-      value: cdktf.stringToHclTerraform(struct!.memberName),
+      value: cdktn.stringToHclTerraform(struct!.memberName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.privateIpAddress),
+      value: cdktn.stringToHclTerraform(struct!.privateIpAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subresource_name: {
-      value: cdktf.stringToHclTerraform(struct!.subresourceName),
+      value: cdktn.stringToHclTerraform(struct!.subresourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -483,9 +483,9 @@ export function privateEndpointIpConfigurationToHclTerraform(struct?: PrivateEnd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivateEndpointIpConfigurationOutputReference extends cdktf.ComplexObject {
+export class PrivateEndpointIpConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -493,11 +493,11 @@ export class PrivateEndpointIpConfigurationOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrivateEndpointIpConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivateEndpointIpConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -522,7 +522,7 @@ export class PrivateEndpointIpConfigurationOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivateEndpointIpConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivateEndpointIpConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -531,7 +531,7 @@ export class PrivateEndpointIpConfigurationOutputReference extends cdktf.Complex
       this._privateIpAddress = undefined;
       this._subresourceName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -604,15 +604,15 @@ export class PrivateEndpointIpConfigurationOutputReference extends cdktf.Complex
   }
 }
 
-export class PrivateEndpointIpConfigurationList extends cdktf.ComplexList {
-  public internalValue? : PrivateEndpointIpConfiguration[] | cdktf.IResolvable
+export class PrivateEndpointIpConfigurationList extends cdktn.ComplexList {
+  public internalValue? : PrivateEndpointIpConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -635,31 +635,31 @@ export interface PrivateEndpointPrivateDnsZoneGroup {
 }
 
 export function privateEndpointPrivateDnsZoneGroupToTerraform(struct?: PrivateEndpointPrivateDnsZoneGroupOutputReference | PrivateEndpointPrivateDnsZoneGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    private_dns_zone_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.privateDnsZoneIds),
+    name: cdktn.stringToTerraform(struct!.name),
+    private_dns_zone_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.privateDnsZoneIds),
   }
 }
 
 
 export function privateEndpointPrivateDnsZoneGroupToHclTerraform(struct?: PrivateEndpointPrivateDnsZoneGroupOutputReference | PrivateEndpointPrivateDnsZoneGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_dns_zone_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.privateDnsZoneIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.privateDnsZoneIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -670,14 +670,14 @@ export function privateEndpointPrivateDnsZoneGroupToHclTerraform(struct?: Privat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivateEndpointPrivateDnsZoneGroupOutputReference extends cdktf.ComplexObject {
+export class PrivateEndpointPrivateDnsZoneGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -743,7 +743,7 @@ export interface PrivateEndpointPrivateServiceConnection {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_endpoint#is_manual_connection PrivateEndpoint#is_manual_connection}
   */
-  readonly isManualConnection: boolean | cdktf.IResolvable;
+  readonly isManualConnection: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_endpoint#name PrivateEndpoint#name}
   */
@@ -767,59 +767,59 @@ export interface PrivateEndpointPrivateServiceConnection {
 }
 
 export function privateEndpointPrivateServiceConnectionToTerraform(struct?: PrivateEndpointPrivateServiceConnectionOutputReference | PrivateEndpointPrivateServiceConnection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_manual_connection: cdktf.booleanToTerraform(struct!.isManualConnection),
-    name: cdktf.stringToTerraform(struct!.name),
-    private_connection_resource_alias: cdktf.stringToTerraform(struct!.privateConnectionResourceAlias),
-    private_connection_resource_id: cdktf.stringToTerraform(struct!.privateConnectionResourceId),
-    request_message: cdktf.stringToTerraform(struct!.requestMessage),
-    subresource_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subresourceNames),
+    is_manual_connection: cdktn.booleanToTerraform(struct!.isManualConnection),
+    name: cdktn.stringToTerraform(struct!.name),
+    private_connection_resource_alias: cdktn.stringToTerraform(struct!.privateConnectionResourceAlias),
+    private_connection_resource_id: cdktn.stringToTerraform(struct!.privateConnectionResourceId),
+    request_message: cdktn.stringToTerraform(struct!.requestMessage),
+    subresource_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subresourceNames),
   }
 }
 
 
 export function privateEndpointPrivateServiceConnectionToHclTerraform(struct?: PrivateEndpointPrivateServiceConnectionOutputReference | PrivateEndpointPrivateServiceConnection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_manual_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.isManualConnection),
+      value: cdktn.booleanToHclTerraform(struct!.isManualConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_connection_resource_alias: {
-      value: cdktf.stringToHclTerraform(struct!.privateConnectionResourceAlias),
+      value: cdktn.stringToHclTerraform(struct!.privateConnectionResourceAlias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_connection_resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.privateConnectionResourceId),
+      value: cdktn.stringToHclTerraform(struct!.privateConnectionResourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     request_message: {
-      value: cdktf.stringToHclTerraform(struct!.requestMessage),
+      value: cdktn.stringToHclTerraform(struct!.requestMessage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subresource_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subresourceNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subresourceNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -830,14 +830,14 @@ export function privateEndpointPrivateServiceConnectionToHclTerraform(struct?: P
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivateEndpointPrivateServiceConnectionOutputReference extends cdktf.ComplexObject {
+export class PrivateEndpointPrivateServiceConnectionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -893,11 +893,11 @@ export class PrivateEndpointPrivateServiceConnectionOutputReference extends cdkt
   }
 
   // is_manual_connection - computed: false, optional: false, required: true
-  private _isManualConnection?: boolean | cdktf.IResolvable; 
+  private _isManualConnection?: boolean | cdktn.IResolvable; 
   public get isManualConnection() {
     return this.getBooleanAttribute('is_manual_connection');
   }
-  public set isManualConnection(value: boolean | cdktf.IResolvable) {
+  public set isManualConnection(value: boolean | cdktn.IResolvable) {
     this._isManualConnection = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1006,46 +1006,46 @@ export interface PrivateEndpointTimeouts {
   readonly update?: string;
 }
 
-export function privateEndpointTimeoutsToTerraform(struct?: PrivateEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateEndpointTimeoutsToTerraform(struct?: PrivateEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function privateEndpointTimeoutsToHclTerraform(struct?: PrivateEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateEndpointTimeoutsToHclTerraform(struct?: PrivateEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1056,19 +1056,19 @@ export function privateEndpointTimeoutsToHclTerraform(struct?: PrivateEndpointTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivateEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PrivateEndpointTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PrivateEndpointTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivateEndpointTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1093,7 +1093,7 @@ export class PrivateEndpointTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivateEndpointTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivateEndpointTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1102,7 +1102,7 @@ export class PrivateEndpointTimeoutsOutputReference extends cdktf.ComplexObject 
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1184,7 +1184,7 @@ export class PrivateEndpointTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_endpoint azurerm_private_endpoint}
 */
-export class PrivateEndpoint extends cdktf.TerraformResource {
+export class PrivateEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1195,14 +1195,14 @@ export class PrivateEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PrivateEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PrivateEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrivateEndpoint to import
   * @param importFromId The id of the existing PrivateEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrivateEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_private_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_private_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -1372,7 +1372,7 @@ export class PrivateEndpoint extends cdktf.TerraformResource {
   public get ipConfiguration() {
     return this._ipConfiguration;
   }
-  public putIpConfiguration(value: PrivateEndpointIpConfiguration[] | cdktf.IResolvable) {
+  public putIpConfiguration(value: PrivateEndpointIpConfiguration[] | cdktn.IResolvable) {
     this._ipConfiguration.internalValue = value;
   }
   public resetIpConfiguration() {
@@ -1434,14 +1434,14 @@ export class PrivateEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      custom_network_interface_name: cdktf.stringToTerraform(this._customNetworkInterfaceName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      ip_configuration: cdktf.listMapper(privateEndpointIpConfigurationToTerraform, true)(this._ipConfiguration.internalValue),
+      custom_network_interface_name: cdktn.stringToTerraform(this._customNetworkInterfaceName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      ip_configuration: cdktn.listMapper(privateEndpointIpConfigurationToTerraform, true)(this._ipConfiguration.internalValue),
       private_dns_zone_group: privateEndpointPrivateDnsZoneGroupToTerraform(this._privateDnsZoneGroup.internalValue),
       private_service_connection: privateEndpointPrivateServiceConnectionToTerraform(this._privateServiceConnection.internalValue),
       timeouts: privateEndpointTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1451,49 +1451,49 @@ export class PrivateEndpoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       custom_network_interface_name: {
-        value: cdktf.stringToHclTerraform(this._customNetworkInterfaceName),
+        value: cdktn.stringToHclTerraform(this._customNetworkInterfaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       ip_configuration: {
-        value: cdktf.listMapperHcl(privateEndpointIpConfigurationToHclTerraform, true)(this._ipConfiguration.internalValue),
+        value: cdktn.listMapperHcl(privateEndpointIpConfigurationToHclTerraform, true)(this._ipConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "PrivateEndpointIpConfigurationList",

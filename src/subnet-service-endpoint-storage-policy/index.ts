@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SubnetServiceEndpointStoragePolicyConfig extends cdktf.TerraformMetaArguments {
+export interface SubnetServiceEndpointStoragePolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/subnet_service_endpoint_storage_policy#id SubnetServiceEndpointStoragePolicy#id}
   *
@@ -40,7 +40,7 @@ export interface SubnetServiceEndpointStoragePolicyConfig extends cdktf.Terrafor
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/subnet_service_endpoint_storage_policy#definition SubnetServiceEndpointStoragePolicy#definition}
   */
-  readonly definition?: SubnetServiceEndpointStoragePolicyDefinition[] | cdktf.IResolvable;
+  readonly definition?: SubnetServiceEndpointStoragePolicyDefinition[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -67,46 +67,46 @@ export interface SubnetServiceEndpointStoragePolicyDefinition {
   readonly serviceResources: string[];
 }
 
-export function subnetServiceEndpointStoragePolicyDefinitionToTerraform(struct?: SubnetServiceEndpointStoragePolicyDefinition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function subnetServiceEndpointStoragePolicyDefinitionToTerraform(struct?: SubnetServiceEndpointStoragePolicyDefinition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    service: cdktf.stringToTerraform(struct!.service),
-    service_resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceResources),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    service: cdktn.stringToTerraform(struct!.service),
+    service_resources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.serviceResources),
   }
 }
 
 
-export function subnetServiceEndpointStoragePolicyDefinitionToHclTerraform(struct?: SubnetServiceEndpointStoragePolicyDefinition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function subnetServiceEndpointStoragePolicyDefinitionToHclTerraform(struct?: SubnetServiceEndpointStoragePolicyDefinition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_resources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.serviceResources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.serviceResources),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -117,9 +117,9 @@ export function subnetServiceEndpointStoragePolicyDefinitionToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SubnetServiceEndpointStoragePolicyDefinitionOutputReference extends cdktf.ComplexObject {
+export class SubnetServiceEndpointStoragePolicyDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -127,11 +127,11 @@ export class SubnetServiceEndpointStoragePolicyDefinitionOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SubnetServiceEndpointStoragePolicyDefinition | cdktf.IResolvable | undefined {
+  public get internalValue(): SubnetServiceEndpointStoragePolicyDefinition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class SubnetServiceEndpointStoragePolicyDefinitionOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SubnetServiceEndpointStoragePolicyDefinition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SubnetServiceEndpointStoragePolicyDefinition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class SubnetServiceEndpointStoragePolicyDefinitionOutputReference extends
       this._service = undefined;
       this._serviceResources = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -227,7 +227,7 @@ export class SubnetServiceEndpointStoragePolicyDefinitionOutputReference extends
   // service_resources - computed: false, optional: false, required: true
   private _serviceResources?: string[]; 
   public get serviceResources() {
-    return cdktf.Fn.tolist(this.getListAttribute('service_resources'));
+    return cdktn.Fn.tolist(this.getListAttribute('service_resources'));
   }
   public set serviceResources(value: string[]) {
     this._serviceResources = value;
@@ -238,15 +238,15 @@ export class SubnetServiceEndpointStoragePolicyDefinitionOutputReference extends
   }
 }
 
-export class SubnetServiceEndpointStoragePolicyDefinitionList extends cdktf.ComplexList {
-  public internalValue? : SubnetServiceEndpointStoragePolicyDefinition[] | cdktf.IResolvable
+export class SubnetServiceEndpointStoragePolicyDefinitionList extends cdktn.ComplexList {
+  public internalValue? : SubnetServiceEndpointStoragePolicyDefinition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -276,46 +276,46 @@ export interface SubnetServiceEndpointStoragePolicyTimeouts {
   readonly update?: string;
 }
 
-export function subnetServiceEndpointStoragePolicyTimeoutsToTerraform(struct?: SubnetServiceEndpointStoragePolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function subnetServiceEndpointStoragePolicyTimeoutsToTerraform(struct?: SubnetServiceEndpointStoragePolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function subnetServiceEndpointStoragePolicyTimeoutsToHclTerraform(struct?: SubnetServiceEndpointStoragePolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function subnetServiceEndpointStoragePolicyTimeoutsToHclTerraform(struct?: SubnetServiceEndpointStoragePolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -326,19 +326,19 @@ export function subnetServiceEndpointStoragePolicyTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SubnetServiceEndpointStoragePolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SubnetServiceEndpointStoragePolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SubnetServiceEndpointStoragePolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SubnetServiceEndpointStoragePolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -363,7 +363,7 @@ export class SubnetServiceEndpointStoragePolicyTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SubnetServiceEndpointStoragePolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SubnetServiceEndpointStoragePolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -372,7 +372,7 @@ export class SubnetServiceEndpointStoragePolicyTimeoutsOutputReference extends c
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -454,7 +454,7 @@ export class SubnetServiceEndpointStoragePolicyTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/subnet_service_endpoint_storage_policy azurerm_subnet_service_endpoint_storage_policy}
 */
-export class SubnetServiceEndpointStoragePolicy extends cdktf.TerraformResource {
+export class SubnetServiceEndpointStoragePolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -465,14 +465,14 @@ export class SubnetServiceEndpointStoragePolicy extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SubnetServiceEndpointStoragePolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SubnetServiceEndpointStoragePolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SubnetServiceEndpointStoragePolicy to import
   * @param importFromId The id of the existing SubnetServiceEndpointStoragePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/subnet_service_endpoint_storage_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SubnetServiceEndpointStoragePolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_subnet_service_endpoint_storage_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_subnet_service_endpoint_storage_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -591,7 +591,7 @@ export class SubnetServiceEndpointStoragePolicy extends cdktf.TerraformResource 
   public get definition() {
     return this._definition;
   }
-  public putDefinition(value: SubnetServiceEndpointStoragePolicyDefinition[] | cdktf.IResolvable) {
+  public putDefinition(value: SubnetServiceEndpointStoragePolicyDefinition[] | cdktn.IResolvable) {
     this._definition.internalValue = value;
   }
   public resetDefinition() {
@@ -624,12 +624,12 @@ export class SubnetServiceEndpointStoragePolicy extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      definition: cdktf.listMapper(subnetServiceEndpointStoragePolicyDefinitionToTerraform, true)(this._definition.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      definition: cdktn.listMapper(subnetServiceEndpointStoragePolicyDefinitionToTerraform, true)(this._definition.internalValue),
       timeouts: subnetServiceEndpointStoragePolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -637,37 +637,37 @@ export class SubnetServiceEndpointStoragePolicy extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       definition: {
-        value: cdktf.listMapperHcl(subnetServiceEndpointStoragePolicyDefinitionToHclTerraform, true)(this._definition.internalValue),
+        value: cdktn.listMapperHcl(subnetServiceEndpointStoragePolicyDefinitionToHclTerraform, true)(this._definition.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SubnetServiceEndpointStoragePolicyDefinitionList",

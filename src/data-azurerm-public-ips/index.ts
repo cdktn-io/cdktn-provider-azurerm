@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermPublicIpsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermPublicIpsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/public_ips#allocation_type DataAzurermPublicIps#allocation_type}
   */
@@ -46,8 +46,8 @@ export interface DataAzurermPublicIpsPublicIps {
 }
 
 export function dataAzurermPublicIpsPublicIpsToTerraform(struct?: DataAzurermPublicIpsPublicIps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -56,8 +56,8 @@ export function dataAzurermPublicIpsPublicIpsToTerraform(struct?: DataAzurermPub
 
 
 export function dataAzurermPublicIpsPublicIpsToHclTerraform(struct?: DataAzurermPublicIpsPublicIps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -65,7 +65,7 @@ export function dataAzurermPublicIpsPublicIpsToHclTerraform(struct?: DataAzurerm
   return attrs;
 }
 
-export class DataAzurermPublicIpsPublicIpsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermPublicIpsPublicIpsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -74,7 +74,7 @@ export class DataAzurermPublicIpsPublicIpsOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -119,14 +119,14 @@ export class DataAzurermPublicIpsPublicIpsOutputReference extends cdktf.ComplexO
   }
 }
 
-export class DataAzurermPublicIpsPublicIpsList extends cdktf.ComplexList {
+export class DataAzurermPublicIpsPublicIpsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -144,25 +144,25 @@ export interface DataAzurermPublicIpsTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermPublicIpsTimeoutsToTerraform(struct?: DataAzurermPublicIpsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermPublicIpsTimeoutsToTerraform(struct?: DataAzurermPublicIpsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermPublicIpsTimeoutsToHclTerraform(struct?: DataAzurermPublicIpsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermPublicIpsTimeoutsToHclTerraform(struct?: DataAzurermPublicIpsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -173,19 +173,19 @@ export function dataAzurermPublicIpsTimeoutsToHclTerraform(struct?: DataAzurermP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermPublicIpsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermPublicIpsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermPublicIpsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermPublicIpsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -198,13 +198,13 @@ export class DataAzurermPublicIpsTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermPublicIpsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermPublicIpsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -235,7 +235,7 @@ export class DataAzurermPublicIpsTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/public_ips azurerm_public_ips}
 */
-export class DataAzurermPublicIps extends cdktf.TerraformDataSource {
+export class DataAzurermPublicIps extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -246,14 +246,14 @@ export class DataAzurermPublicIps extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermPublicIps resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermPublicIps resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermPublicIps to import
   * @param importFromId The id of the existing DataAzurermPublicIps that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/public_ips#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermPublicIps to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_public_ips", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_public_ips", importId: importFromId, provider });
       }
 
   // ===========
@@ -400,11 +400,11 @@ export class DataAzurermPublicIps extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocation_type: cdktf.stringToTerraform(this._allocationType),
-      attachment_status: cdktf.stringToTerraform(this._attachmentStatus),
-      id: cdktf.stringToTerraform(this._id),
-      name_prefix: cdktf.stringToTerraform(this._namePrefix),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      allocation_type: cdktn.stringToTerraform(this._allocationType),
+      attachment_status: cdktn.stringToTerraform(this._attachmentStatus),
+      id: cdktn.stringToTerraform(this._id),
+      name_prefix: cdktn.stringToTerraform(this._namePrefix),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurermPublicIpsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -412,31 +412,31 @@ export class DataAzurermPublicIps extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allocation_type: {
-        value: cdktf.stringToHclTerraform(this._allocationType),
+        value: cdktn.stringToHclTerraform(this._allocationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       attachment_status: {
-        value: cdktf.stringToHclTerraform(this._attachmentStatus),
+        value: cdktn.stringToHclTerraform(this._attachmentStatus),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_prefix: {
-        value: cdktf.stringToHclTerraform(this._namePrefix),
+        value: cdktn.stringToHclTerraform(this._namePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

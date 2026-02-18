@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpringCloudBuildPackBindingConfig extends cdktf.TerraformMetaArguments {
+export interface SpringCloudBuildPackBindingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_build_pack_binding#binding_type SpringCloudBuildPackBinding#binding_type}
   */
@@ -56,31 +56,31 @@ export interface SpringCloudBuildPackBindingLaunch {
 }
 
 export function springCloudBuildPackBindingLaunchToTerraform(struct?: SpringCloudBuildPackBindingLaunchOutputReference | SpringCloudBuildPackBindingLaunch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
-    secrets: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.secrets),
+    properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.properties),
+    secrets: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.secrets),
   }
 }
 
 
 export function springCloudBuildPackBindingLaunchToHclTerraform(struct?: SpringCloudBuildPackBindingLaunchOutputReference | SpringCloudBuildPackBindingLaunch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.properties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     secrets: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.secrets),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.secrets),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -91,14 +91,14 @@ export function springCloudBuildPackBindingLaunchToHclTerraform(struct?: SpringC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudBuildPackBindingLaunchOutputReference extends cdktf.ComplexObject {
+export class SpringCloudBuildPackBindingLaunchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -180,46 +180,46 @@ export interface SpringCloudBuildPackBindingTimeouts {
   readonly update?: string;
 }
 
-export function springCloudBuildPackBindingTimeoutsToTerraform(struct?: SpringCloudBuildPackBindingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudBuildPackBindingTimeoutsToTerraform(struct?: SpringCloudBuildPackBindingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function springCloudBuildPackBindingTimeoutsToHclTerraform(struct?: SpringCloudBuildPackBindingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudBuildPackBindingTimeoutsToHclTerraform(struct?: SpringCloudBuildPackBindingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -230,19 +230,19 @@ export function springCloudBuildPackBindingTimeoutsToHclTerraform(struct?: Sprin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudBuildPackBindingTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SpringCloudBuildPackBindingTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpringCloudBuildPackBindingTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SpringCloudBuildPackBindingTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -267,7 +267,7 @@ export class SpringCloudBuildPackBindingTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpringCloudBuildPackBindingTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpringCloudBuildPackBindingTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -276,7 +276,7 @@ export class SpringCloudBuildPackBindingTimeoutsOutputReference extends cdktf.Co
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -358,7 +358,7 @@ export class SpringCloudBuildPackBindingTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_build_pack_binding azurerm_spring_cloud_build_pack_binding}
 */
-export class SpringCloudBuildPackBinding extends cdktf.TerraformResource {
+export class SpringCloudBuildPackBinding extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -369,14 +369,14 @@ export class SpringCloudBuildPackBinding extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpringCloudBuildPackBinding resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpringCloudBuildPackBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpringCloudBuildPackBinding to import
   * @param importFromId The id of the existing SpringCloudBuildPackBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_build_pack_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpringCloudBuildPackBinding to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_build_pack_binding", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_build_pack_binding", importId: importFromId, provider });
       }
 
   // ===========
@@ -514,10 +514,10 @@ export class SpringCloudBuildPackBinding extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      binding_type: cdktf.stringToTerraform(this._bindingType),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      spring_cloud_builder_id: cdktf.stringToTerraform(this._springCloudBuilderId),
+      binding_type: cdktn.stringToTerraform(this._bindingType),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      spring_cloud_builder_id: cdktn.stringToTerraform(this._springCloudBuilderId),
       launch: springCloudBuildPackBindingLaunchToTerraform(this._launch.internalValue),
       timeouts: springCloudBuildPackBindingTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -526,25 +526,25 @@ export class SpringCloudBuildPackBinding extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       binding_type: {
-        value: cdktf.stringToHclTerraform(this._bindingType),
+        value: cdktn.stringToHclTerraform(this._bindingType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       spring_cloud_builder_id: {
-        value: cdktf.stringToHclTerraform(this._springCloudBuilderId),
+        value: cdktn.stringToHclTerraform(this._springCloudBuilderId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

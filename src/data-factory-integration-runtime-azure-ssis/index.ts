@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataFactoryIntegrationRuntimeAzureSsisConfig extends cdktf.TerraformMetaArguments {
+export interface DataFactoryIntegrationRuntimeAzureSsisConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_azure_ssis#credential_name DataFactoryIntegrationRuntimeAzureSsis#credential_name}
   */
@@ -94,7 +94,7 @@ export interface DataFactoryIntegrationRuntimeAzureSsisConfig extends cdktf.Terr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_azure_ssis#package_store DataFactoryIntegrationRuntimeAzureSsis#package_store}
   */
-  readonly packageStore?: DataFactoryIntegrationRuntimeAzureSsisPackageStore[] | cdktf.IResolvable;
+  readonly packageStore?: DataFactoryIntegrationRuntimeAzureSsisPackageStore[] | cdktn.IResolvable;
   /**
   * pipeline_external_compute_scale block
   *
@@ -148,59 +148,59 @@ export interface DataFactoryIntegrationRuntimeAzureSsisCatalogInfo {
 }
 
 export function dataFactoryIntegrationRuntimeAzureSsisCatalogInfoToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference | DataFactoryIntegrationRuntimeAzureSsisCatalogInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    administrator_login: cdktf.stringToTerraform(struct!.administratorLogin),
-    administrator_password: cdktf.stringToTerraform(struct!.administratorPassword),
-    dual_standby_pair_name: cdktf.stringToTerraform(struct!.dualStandbyPairName),
-    elastic_pool_name: cdktf.stringToTerraform(struct!.elasticPoolName),
-    pricing_tier: cdktf.stringToTerraform(struct!.pricingTier),
-    server_endpoint: cdktf.stringToTerraform(struct!.serverEndpoint),
+    administrator_login: cdktn.stringToTerraform(struct!.administratorLogin),
+    administrator_password: cdktn.stringToTerraform(struct!.administratorPassword),
+    dual_standby_pair_name: cdktn.stringToTerraform(struct!.dualStandbyPairName),
+    elastic_pool_name: cdktn.stringToTerraform(struct!.elasticPoolName),
+    pricing_tier: cdktn.stringToTerraform(struct!.pricingTier),
+    server_endpoint: cdktn.stringToTerraform(struct!.serverEndpoint),
   }
 }
 
 
 export function dataFactoryIntegrationRuntimeAzureSsisCatalogInfoToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference | DataFactoryIntegrationRuntimeAzureSsisCatalogInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     administrator_login: {
-      value: cdktf.stringToHclTerraform(struct!.administratorLogin),
+      value: cdktn.stringToHclTerraform(struct!.administratorLogin),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     administrator_password: {
-      value: cdktf.stringToHclTerraform(struct!.administratorPassword),
+      value: cdktn.stringToHclTerraform(struct!.administratorPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dual_standby_pair_name: {
-      value: cdktf.stringToHclTerraform(struct!.dualStandbyPairName),
+      value: cdktn.stringToHclTerraform(struct!.dualStandbyPairName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     elastic_pool_name: {
-      value: cdktf.stringToHclTerraform(struct!.elasticPoolName),
+      value: cdktn.stringToHclTerraform(struct!.elasticPoolName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pricing_tier: {
-      value: cdktf.stringToHclTerraform(struct!.pricingTier),
+      value: cdktn.stringToHclTerraform(struct!.pricingTier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     server_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.serverEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.serverEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -211,14 +211,14 @@ export function dataFactoryIntegrationRuntimeAzureSsisCatalogInfoToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeAzureSsisCatalogInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -378,31 +378,31 @@ export interface DataFactoryIntegrationRuntimeAzureSsisCopyComputeScale {
 }
 
 export function dataFactoryIntegrationRuntimeAzureSsisCopyComputeScaleToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisCopyComputeScaleOutputReference | DataFactoryIntegrationRuntimeAzureSsisCopyComputeScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_integration_unit: cdktf.numberToTerraform(struct!.dataIntegrationUnit),
-    time_to_live: cdktf.numberToTerraform(struct!.timeToLive),
+    data_integration_unit: cdktn.numberToTerraform(struct!.dataIntegrationUnit),
+    time_to_live: cdktn.numberToTerraform(struct!.timeToLive),
   }
 }
 
 
 export function dataFactoryIntegrationRuntimeAzureSsisCopyComputeScaleToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisCopyComputeScaleOutputReference | DataFactoryIntegrationRuntimeAzureSsisCopyComputeScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_integration_unit: {
-      value: cdktf.numberToHclTerraform(struct!.dataIntegrationUnit),
+      value: cdktn.numberToHclTerraform(struct!.dataIntegrationUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     time_to_live: {
-      value: cdktf.numberToHclTerraform(struct!.timeToLive),
+      value: cdktn.numberToHclTerraform(struct!.timeToLive),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -413,14 +413,14 @@ export function dataFactoryIntegrationRuntimeAzureSsisCopyComputeScaleToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisCopyComputeScaleOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeAzureSsisCopyComputeScaleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -495,31 +495,31 @@ export interface DataFactoryIntegrationRuntimeAzureSsisCustomSetupScript {
 }
 
 export function dataFactoryIntegrationRuntimeAzureSsisCustomSetupScriptToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisCustomSetupScriptOutputReference | DataFactoryIntegrationRuntimeAzureSsisCustomSetupScript): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    blob_container_uri: cdktf.stringToTerraform(struct!.blobContainerUri),
-    sas_token: cdktf.stringToTerraform(struct!.sasToken),
+    blob_container_uri: cdktn.stringToTerraform(struct!.blobContainerUri),
+    sas_token: cdktn.stringToTerraform(struct!.sasToken),
   }
 }
 
 
 export function dataFactoryIntegrationRuntimeAzureSsisCustomSetupScriptToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisCustomSetupScriptOutputReference | DataFactoryIntegrationRuntimeAzureSsisCustomSetupScript): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     blob_container_uri: {
-      value: cdktf.stringToHclTerraform(struct!.blobContainerUri),
+      value: cdktn.stringToHclTerraform(struct!.blobContainerUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sas_token: {
-      value: cdktf.stringToHclTerraform(struct!.sasToken),
+      value: cdktn.stringToHclTerraform(struct!.sasToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -530,14 +530,14 @@ export function dataFactoryIntegrationRuntimeAzureSsisCustomSetupScriptToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisCustomSetupScriptOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeAzureSsisCustomSetupScriptOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -614,45 +614,45 @@ export interface DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommand
 }
 
 export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyKeyVaultPasswordToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyKeyVaultPasswordOutputReference | DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyKeyVaultPassword): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    linked_service_name: cdktf.stringToTerraform(struct!.linkedServiceName),
-    parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
-    secret_name: cdktf.stringToTerraform(struct!.secretName),
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    linked_service_name: cdktn.stringToTerraform(struct!.linkedServiceName),
+    parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
+    secret_name: cdktn.stringToTerraform(struct!.secretName),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyKeyVaultPasswordToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyKeyVaultPasswordOutputReference | DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyKeyVaultPassword): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     linked_service_name: {
-      value: cdktf.stringToHclTerraform(struct!.linkedServiceName),
+      value: cdktn.stringToHclTerraform(struct!.linkedServiceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     secret_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretName),
+      value: cdktn.stringToHclTerraform(struct!.secretName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -663,14 +663,14 @@ export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandK
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyKeyVaultPasswordOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyKeyVaultPasswordOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -792,40 +792,40 @@ export interface DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommand
   readonly keyVaultPassword?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyKeyVaultPassword;
 }
 
-export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    target_name: cdktf.stringToTerraform(struct!.targetName),
-    user_name: cdktf.stringToTerraform(struct!.userName),
+    password: cdktn.stringToTerraform(struct!.password),
+    target_name: cdktn.stringToTerraform(struct!.targetName),
+    user_name: cdktn.stringToTerraform(struct!.userName),
     key_vault_password: dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyKeyVaultPasswordToTerraform(struct!.keyVaultPassword),
   }
 }
 
 
-export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_name: {
-      value: cdktf.stringToHclTerraform(struct!.targetName),
+      value: cdktn.stringToHclTerraform(struct!.targetName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_name: {
-      value: cdktf.stringToHclTerraform(struct!.userName),
+      value: cdktn.stringToHclTerraform(struct!.userName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -842,9 +842,9 @@ export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandK
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -852,11 +852,11 @@ export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKey | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKey | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -881,7 +881,7 @@ export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKey | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKey | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -890,7 +890,7 @@ export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyO
       this._userName = undefined;
       this._keyVaultPassword.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -963,15 +963,15 @@ export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyO
   }
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyList extends cdktf.ComplexList {
-  public internalValue? : DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKey[] | cdktf.IResolvable
+export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyList extends cdktn.ComplexList {
+  public internalValue? : DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKey[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1002,45 +1002,45 @@ export interface DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCompone
 }
 
 export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentKeyVaultLicenseToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentKeyVaultLicenseOutputReference | DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentKeyVaultLicense): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    linked_service_name: cdktf.stringToTerraform(struct!.linkedServiceName),
-    parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
-    secret_name: cdktf.stringToTerraform(struct!.secretName),
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    linked_service_name: cdktn.stringToTerraform(struct!.linkedServiceName),
+    parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
+    secret_name: cdktn.stringToTerraform(struct!.secretName),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentKeyVaultLicenseToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentKeyVaultLicenseOutputReference | DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentKeyVaultLicense): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     linked_service_name: {
-      value: cdktf.stringToHclTerraform(struct!.linkedServiceName),
+      value: cdktn.stringToHclTerraform(struct!.linkedServiceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     secret_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretName),
+      value: cdktn.stringToHclTerraform(struct!.secretName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1051,14 +1051,14 @@ export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentKeyVaultLicenseOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentKeyVaultLicenseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1176,33 +1176,33 @@ export interface DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCompone
   readonly keyVaultLicense?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentKeyVaultLicense;
 }
 
-export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    license: cdktf.stringToTerraform(struct!.license),
-    name: cdktf.stringToTerraform(struct!.name),
+    license: cdktn.stringToTerraform(struct!.license),
+    name: cdktn.stringToTerraform(struct!.name),
     key_vault_license: dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentKeyVaultLicenseToTerraform(struct!.keyVaultLicense),
   }
 }
 
 
-export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     license: {
-      value: cdktf.stringToHclTerraform(struct!.license),
+      value: cdktn.stringToHclTerraform(struct!.license),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1219,9 +1219,9 @@ export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1229,11 +1229,11 @@ export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponent | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponent | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1254,7 +1254,7 @@ export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponent | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponent | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1262,7 +1262,7 @@ export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentOu
       this._name = undefined;
       this._keyVaultLicense.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1321,15 +1321,15 @@ export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentOu
   }
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentList extends cdktf.ComplexList {
-  public internalValue? : DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponent[] | cdktf.IResolvable
+export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentList extends cdktn.ComplexList {
+  public internalValue? : DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponent[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1354,55 +1354,55 @@ export interface DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetup {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_azure_ssis#command_key DataFactoryIntegrationRuntimeAzureSsis#command_key}
   */
-  readonly commandKey?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKey[] | cdktf.IResolvable;
+  readonly commandKey?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKey[] | cdktn.IResolvable;
   /**
   * component block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_azure_ssis#component DataFactoryIntegrationRuntimeAzureSsis#component}
   */
-  readonly component?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponent[] | cdktf.IResolvable;
+  readonly component?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponent[] | cdktn.IResolvable;
 }
 
 export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupOutputReference | DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    environment: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.environment),
-    powershell_version: cdktf.stringToTerraform(struct!.powershellVersion),
-    command_key: cdktf.listMapper(dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyToTerraform, true)(struct!.commandKey),
-    component: cdktf.listMapper(dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentToTerraform, true)(struct!.component),
+    environment: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.environment),
+    powershell_version: cdktn.stringToTerraform(struct!.powershellVersion),
+    command_key: cdktn.listMapper(dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyToTerraform, true)(struct!.commandKey),
+    component: cdktn.listMapper(dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentToTerraform, true)(struct!.component),
   }
 }
 
 
 export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupOutputReference | DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     environment: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.environment),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.environment),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     powershell_version: {
-      value: cdktf.stringToHclTerraform(struct!.powershellVersion),
+      value: cdktn.stringToHclTerraform(struct!.powershellVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     command_key: {
-      value: cdktf.listMapperHcl(dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyToHclTerraform, true)(struct!.commandKey),
+      value: cdktn.listMapperHcl(dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyToHclTerraform, true)(struct!.commandKey),
       isBlock: true,
       type: "list",
       storageClassType: "DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKeyList",
     },
     component: {
-      value: cdktf.listMapperHcl(dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentToHclTerraform, true)(struct!.component),
+      value: cdktn.listMapperHcl(dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentToHclTerraform, true)(struct!.component),
       isBlock: true,
       type: "list",
       storageClassType: "DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponentList",
@@ -1413,14 +1413,14 @@ export function dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1500,7 +1500,7 @@ export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupOutputRefer
   public get commandKey() {
     return this._commandKey;
   }
-  public putCommandKey(value: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKey[] | cdktf.IResolvable) {
+  public putCommandKey(value: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupCommandKey[] | cdktn.IResolvable) {
     this._commandKey.internalValue = value;
   }
   public resetCommandKey() {
@@ -1516,7 +1516,7 @@ export class DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupOutputRefer
   public get component() {
     return this._component;
   }
-  public putComponent(value: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponent[] | cdktf.IResolvable) {
+  public putComponent(value: DataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupComponent[] | cdktn.IResolvable) {
     this._component.internalValue = value;
   }
   public resetComponent() {
@@ -1535,24 +1535,24 @@ export interface DataFactoryIntegrationRuntimeAzureSsisExpressVnetIntegration {
 }
 
 export function dataFactoryIntegrationRuntimeAzureSsisExpressVnetIntegrationToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressVnetIntegrationOutputReference | DataFactoryIntegrationRuntimeAzureSsisExpressVnetIntegration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
 export function dataFactoryIntegrationRuntimeAzureSsisExpressVnetIntegrationToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisExpressVnetIntegrationOutputReference | DataFactoryIntegrationRuntimeAzureSsisExpressVnetIntegration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1563,14 +1563,14 @@ export function dataFactoryIntegrationRuntimeAzureSsisExpressVnetIntegrationToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisExpressVnetIntegrationOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeAzureSsisExpressVnetIntegrationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1619,32 +1619,32 @@ export interface DataFactoryIntegrationRuntimeAzureSsisPackageStore {
   readonly name: string;
 }
 
-export function dataFactoryIntegrationRuntimeAzureSsisPackageStoreToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisPackageStore | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryIntegrationRuntimeAzureSsisPackageStoreToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisPackageStore | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    linked_service_name: cdktf.stringToTerraform(struct!.linkedServiceName),
-    name: cdktf.stringToTerraform(struct!.name),
+    linked_service_name: cdktn.stringToTerraform(struct!.linkedServiceName),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function dataFactoryIntegrationRuntimeAzureSsisPackageStoreToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisPackageStore | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryIntegrationRuntimeAzureSsisPackageStoreToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisPackageStore | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     linked_service_name: {
-      value: cdktf.stringToHclTerraform(struct!.linkedServiceName),
+      value: cdktn.stringToHclTerraform(struct!.linkedServiceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1655,9 +1655,9 @@ export function dataFactoryIntegrationRuntimeAzureSsisPackageStoreToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisPackageStoreOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeAzureSsisPackageStoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1665,11 +1665,11 @@ export class DataFactoryIntegrationRuntimeAzureSsisPackageStoreOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataFactoryIntegrationRuntimeAzureSsisPackageStore | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryIntegrationRuntimeAzureSsisPackageStore | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1686,14 +1686,14 @@ export class DataFactoryIntegrationRuntimeAzureSsisPackageStoreOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryIntegrationRuntimeAzureSsisPackageStore | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryIntegrationRuntimeAzureSsisPackageStore | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._linkedServiceName = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1732,15 +1732,15 @@ export class DataFactoryIntegrationRuntimeAzureSsisPackageStoreOutputReference e
   }
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisPackageStoreList extends cdktf.ComplexList {
-  public internalValue? : DataFactoryIntegrationRuntimeAzureSsisPackageStore[] | cdktf.IResolvable
+export class DataFactoryIntegrationRuntimeAzureSsisPackageStoreList extends cdktn.ComplexList {
+  public internalValue? : DataFactoryIntegrationRuntimeAzureSsisPackageStore[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1767,38 +1767,38 @@ export interface DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeSc
 }
 
 export function dataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScaleToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScaleOutputReference | DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    number_of_external_nodes: cdktf.numberToTerraform(struct!.numberOfExternalNodes),
-    number_of_pipeline_nodes: cdktf.numberToTerraform(struct!.numberOfPipelineNodes),
-    time_to_live: cdktf.numberToTerraform(struct!.timeToLive),
+    number_of_external_nodes: cdktn.numberToTerraform(struct!.numberOfExternalNodes),
+    number_of_pipeline_nodes: cdktn.numberToTerraform(struct!.numberOfPipelineNodes),
+    time_to_live: cdktn.numberToTerraform(struct!.timeToLive),
   }
 }
 
 
 export function dataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScaleToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScaleOutputReference | DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     number_of_external_nodes: {
-      value: cdktf.numberToHclTerraform(struct!.numberOfExternalNodes),
+      value: cdktn.numberToHclTerraform(struct!.numberOfExternalNodes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     number_of_pipeline_nodes: {
-      value: cdktf.numberToHclTerraform(struct!.numberOfPipelineNodes),
+      value: cdktn.numberToHclTerraform(struct!.numberOfPipelineNodes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     time_to_live: {
-      value: cdktf.numberToHclTerraform(struct!.timeToLive),
+      value: cdktn.numberToHclTerraform(struct!.timeToLive),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1809,14 +1809,14 @@ export function dataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeSca
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScaleOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScaleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1917,38 +1917,38 @@ export interface DataFactoryIntegrationRuntimeAzureSsisProxy {
 }
 
 export function dataFactoryIntegrationRuntimeAzureSsisProxyToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisProxyOutputReference | DataFactoryIntegrationRuntimeAzureSsisProxy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
-    self_hosted_integration_runtime_name: cdktf.stringToTerraform(struct!.selfHostedIntegrationRuntimeName),
-    staging_storage_linked_service_name: cdktf.stringToTerraform(struct!.stagingStorageLinkedServiceName),
+    path: cdktn.stringToTerraform(struct!.path),
+    self_hosted_integration_runtime_name: cdktn.stringToTerraform(struct!.selfHostedIntegrationRuntimeName),
+    staging_storage_linked_service_name: cdktn.stringToTerraform(struct!.stagingStorageLinkedServiceName),
   }
 }
 
 
 export function dataFactoryIntegrationRuntimeAzureSsisProxyToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisProxyOutputReference | DataFactoryIntegrationRuntimeAzureSsisProxy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     self_hosted_integration_runtime_name: {
-      value: cdktf.stringToHclTerraform(struct!.selfHostedIntegrationRuntimeName),
+      value: cdktn.stringToHclTerraform(struct!.selfHostedIntegrationRuntimeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     staging_storage_linked_service_name: {
-      value: cdktf.stringToHclTerraform(struct!.stagingStorageLinkedServiceName),
+      value: cdktn.stringToHclTerraform(struct!.stagingStorageLinkedServiceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1959,14 +1959,14 @@ export function dataFactoryIntegrationRuntimeAzureSsisProxyToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisProxyOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeAzureSsisProxyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2064,46 +2064,46 @@ export interface DataFactoryIntegrationRuntimeAzureSsisTimeouts {
   readonly update?: string;
 }
 
-export function dataFactoryIntegrationRuntimeAzureSsisTimeoutsToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryIntegrationRuntimeAzureSsisTimeoutsToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataFactoryIntegrationRuntimeAzureSsisTimeoutsToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryIntegrationRuntimeAzureSsisTimeoutsToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2114,19 +2114,19 @@ export function dataFactoryIntegrationRuntimeAzureSsisTimeoutsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeAzureSsisTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataFactoryIntegrationRuntimeAzureSsisTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryIntegrationRuntimeAzureSsisTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2151,7 +2151,7 @@ export class DataFactoryIntegrationRuntimeAzureSsisTimeoutsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryIntegrationRuntimeAzureSsisTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryIntegrationRuntimeAzureSsisTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2160,7 +2160,7 @@ export class DataFactoryIntegrationRuntimeAzureSsisTimeoutsOutputReference exten
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2258,45 +2258,45 @@ export interface DataFactoryIntegrationRuntimeAzureSsisVnetIntegration {
 }
 
 export function dataFactoryIntegrationRuntimeAzureSsisVnetIntegrationToTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisVnetIntegrationOutputReference | DataFactoryIntegrationRuntimeAzureSsisVnetIntegration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    public_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.publicIps),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
-    subnet_name: cdktf.stringToTerraform(struct!.subnetName),
-    vnet_id: cdktf.stringToTerraform(struct!.vnetId),
+    public_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.publicIps),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
+    subnet_name: cdktn.stringToTerraform(struct!.subnetName),
+    vnet_id: cdktn.stringToTerraform(struct!.vnetId),
   }
 }
 
 
 export function dataFactoryIntegrationRuntimeAzureSsisVnetIntegrationToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureSsisVnetIntegrationOutputReference | DataFactoryIntegrationRuntimeAzureSsisVnetIntegration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     public_ips: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.publicIps),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.publicIps),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_name: {
-      value: cdktf.stringToHclTerraform(struct!.subnetName),
+      value: cdktn.stringToHclTerraform(struct!.subnetName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.vnetId),
+      value: cdktn.stringToHclTerraform(struct!.vnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2307,14 +2307,14 @@ export function dataFactoryIntegrationRuntimeAzureSsisVnetIntegrationToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeAzureSsisVnetIntegrationOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeAzureSsisVnetIntegrationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2425,7 +2425,7 @@ export class DataFactoryIntegrationRuntimeAzureSsisVnetIntegrationOutputReferenc
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_azure_ssis azurerm_data_factory_integration_runtime_azure_ssis}
 */
-export class DataFactoryIntegrationRuntimeAzureSsis extends cdktf.TerraformResource {
+export class DataFactoryIntegrationRuntimeAzureSsis extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2436,14 +2436,14 @@ export class DataFactoryIntegrationRuntimeAzureSsis extends cdktf.TerraformResou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataFactoryIntegrationRuntimeAzureSsis resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataFactoryIntegrationRuntimeAzureSsis resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryIntegrationRuntimeAzureSsis to import
   * @param importFromId The id of the existing DataFactoryIntegrationRuntimeAzureSsis that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_azure_ssis#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryIntegrationRuntimeAzureSsis to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_integration_runtime_azure_ssis", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_integration_runtime_azure_ssis", importId: importFromId, provider });
       }
 
   // ===========
@@ -2749,7 +2749,7 @@ export class DataFactoryIntegrationRuntimeAzureSsis extends cdktf.TerraformResou
   public get packageStore() {
     return this._packageStore;
   }
-  public putPackageStore(value: DataFactoryIntegrationRuntimeAzureSsisPackageStore[] | cdktf.IResolvable) {
+  public putPackageStore(value: DataFactoryIntegrationRuntimeAzureSsisPackageStore[] | cdktn.IResolvable) {
     this._packageStore.internalValue = value;
   }
   public resetPackageStore() {
@@ -2830,23 +2830,23 @@ export class DataFactoryIntegrationRuntimeAzureSsis extends cdktf.TerraformResou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      credential_name: cdktf.stringToTerraform(this._credentialName),
-      data_factory_id: cdktf.stringToTerraform(this._dataFactoryId),
-      description: cdktf.stringToTerraform(this._description),
-      edition: cdktf.stringToTerraform(this._edition),
-      id: cdktf.stringToTerraform(this._id),
-      license_type: cdktf.stringToTerraform(this._licenseType),
-      location: cdktf.stringToTerraform(this._location),
-      max_parallel_executions_per_node: cdktf.numberToTerraform(this._maxParallelExecutionsPerNode),
-      name: cdktf.stringToTerraform(this._name),
-      node_size: cdktf.stringToTerraform(this._nodeSize),
-      number_of_nodes: cdktf.numberToTerraform(this._numberOfNodes),
+      credential_name: cdktn.stringToTerraform(this._credentialName),
+      data_factory_id: cdktn.stringToTerraform(this._dataFactoryId),
+      description: cdktn.stringToTerraform(this._description),
+      edition: cdktn.stringToTerraform(this._edition),
+      id: cdktn.stringToTerraform(this._id),
+      license_type: cdktn.stringToTerraform(this._licenseType),
+      location: cdktn.stringToTerraform(this._location),
+      max_parallel_executions_per_node: cdktn.numberToTerraform(this._maxParallelExecutionsPerNode),
+      name: cdktn.stringToTerraform(this._name),
+      node_size: cdktn.stringToTerraform(this._nodeSize),
+      number_of_nodes: cdktn.numberToTerraform(this._numberOfNodes),
       catalog_info: dataFactoryIntegrationRuntimeAzureSsisCatalogInfoToTerraform(this._catalogInfo.internalValue),
       copy_compute_scale: dataFactoryIntegrationRuntimeAzureSsisCopyComputeScaleToTerraform(this._copyComputeScale.internalValue),
       custom_setup_script: dataFactoryIntegrationRuntimeAzureSsisCustomSetupScriptToTerraform(this._customSetupScript.internalValue),
       express_custom_setup: dataFactoryIntegrationRuntimeAzureSsisExpressCustomSetupToTerraform(this._expressCustomSetup.internalValue),
       express_vnet_integration: dataFactoryIntegrationRuntimeAzureSsisExpressVnetIntegrationToTerraform(this._expressVnetIntegration.internalValue),
-      package_store: cdktf.listMapper(dataFactoryIntegrationRuntimeAzureSsisPackageStoreToTerraform, true)(this._packageStore.internalValue),
+      package_store: cdktn.listMapper(dataFactoryIntegrationRuntimeAzureSsisPackageStoreToTerraform, true)(this._packageStore.internalValue),
       pipeline_external_compute_scale: dataFactoryIntegrationRuntimeAzureSsisPipelineExternalComputeScaleToTerraform(this._pipelineExternalComputeScale.internalValue),
       proxy: dataFactoryIntegrationRuntimeAzureSsisProxyToTerraform(this._proxy.internalValue),
       timeouts: dataFactoryIntegrationRuntimeAzureSsisTimeoutsToTerraform(this._timeouts.internalValue),
@@ -2857,67 +2857,67 @@ export class DataFactoryIntegrationRuntimeAzureSsis extends cdktf.TerraformResou
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       credential_name: {
-        value: cdktf.stringToHclTerraform(this._credentialName),
+        value: cdktn.stringToHclTerraform(this._credentialName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_factory_id: {
-        value: cdktf.stringToHclTerraform(this._dataFactoryId),
+        value: cdktn.stringToHclTerraform(this._dataFactoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       edition: {
-        value: cdktf.stringToHclTerraform(this._edition),
+        value: cdktn.stringToHclTerraform(this._edition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       license_type: {
-        value: cdktf.stringToHclTerraform(this._licenseType),
+        value: cdktn.stringToHclTerraform(this._licenseType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_parallel_executions_per_node: {
-        value: cdktf.numberToHclTerraform(this._maxParallelExecutionsPerNode),
+        value: cdktn.numberToHclTerraform(this._maxParallelExecutionsPerNode),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       node_size: {
-        value: cdktf.stringToHclTerraform(this._nodeSize),
+        value: cdktn.stringToHclTerraform(this._nodeSize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       number_of_nodes: {
-        value: cdktf.numberToHclTerraform(this._numberOfNodes),
+        value: cdktn.numberToHclTerraform(this._numberOfNodes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
@@ -2953,7 +2953,7 @@ export class DataFactoryIntegrationRuntimeAzureSsis extends cdktf.TerraformResou
         storageClassType: "DataFactoryIntegrationRuntimeAzureSsisExpressVnetIntegrationList",
       },
       package_store: {
-        value: cdktf.listMapperHcl(dataFactoryIntegrationRuntimeAzureSsisPackageStoreToHclTerraform, true)(this._packageStore.internalValue),
+        value: cdktn.listMapperHcl(dataFactoryIntegrationRuntimeAzureSsisPackageStoreToHclTerraform, true)(this._packageStore.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataFactoryIntegrationRuntimeAzureSsisPackageStoreList",

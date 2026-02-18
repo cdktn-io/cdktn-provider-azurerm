@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CognitiveAccountRaiPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface CognitiveAccountRaiPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cognitive_account_rai_policy#base_policy_name CognitiveAccountRaiPolicy#base_policy_name}
   */
@@ -44,7 +44,7 @@ export interface CognitiveAccountRaiPolicyConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cognitive_account_rai_policy#content_filter CognitiveAccountRaiPolicy#content_filter}
   */
-  readonly contentFilter: CognitiveAccountRaiPolicyContentFilter[] | cdktf.IResolvable;
+  readonly contentFilter: CognitiveAccountRaiPolicyContentFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -56,11 +56,11 @@ export interface CognitiveAccountRaiPolicyContentFilter {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cognitive_account_rai_policy#block_enabled CognitiveAccountRaiPolicy#block_enabled}
   */
-  readonly blockEnabled: boolean | cdktf.IResolvable;
+  readonly blockEnabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cognitive_account_rai_policy#filter_enabled CognitiveAccountRaiPolicy#filter_enabled}
   */
-  readonly filterEnabled: boolean | cdktf.IResolvable;
+  readonly filterEnabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cognitive_account_rai_policy#name CognitiveAccountRaiPolicy#name}
   */
@@ -75,53 +75,53 @@ export interface CognitiveAccountRaiPolicyContentFilter {
   readonly source: string;
 }
 
-export function cognitiveAccountRaiPolicyContentFilterToTerraform(struct?: CognitiveAccountRaiPolicyContentFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitiveAccountRaiPolicyContentFilterToTerraform(struct?: CognitiveAccountRaiPolicyContentFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    block_enabled: cdktf.booleanToTerraform(struct!.blockEnabled),
-    filter_enabled: cdktf.booleanToTerraform(struct!.filterEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    severity_threshold: cdktf.stringToTerraform(struct!.severityThreshold),
-    source: cdktf.stringToTerraform(struct!.source),
+    block_enabled: cdktn.booleanToTerraform(struct!.blockEnabled),
+    filter_enabled: cdktn.booleanToTerraform(struct!.filterEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    severity_threshold: cdktn.stringToTerraform(struct!.severityThreshold),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function cognitiveAccountRaiPolicyContentFilterToHclTerraform(struct?: CognitiveAccountRaiPolicyContentFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitiveAccountRaiPolicyContentFilterToHclTerraform(struct?: CognitiveAccountRaiPolicyContentFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     block_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.blockEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.blockEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     filter_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.filterEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.filterEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     severity_threshold: {
-      value: cdktf.stringToHclTerraform(struct!.severityThreshold),
+      value: cdktn.stringToHclTerraform(struct!.severityThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -132,9 +132,9 @@ export function cognitiveAccountRaiPolicyContentFilterToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitiveAccountRaiPolicyContentFilterOutputReference extends cdktf.ComplexObject {
+export class CognitiveAccountRaiPolicyContentFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -142,11 +142,11 @@ export class CognitiveAccountRaiPolicyContentFilterOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CognitiveAccountRaiPolicyContentFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): CognitiveAccountRaiPolicyContentFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -175,7 +175,7 @@ export class CognitiveAccountRaiPolicyContentFilterOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CognitiveAccountRaiPolicyContentFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CognitiveAccountRaiPolicyContentFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -185,7 +185,7 @@ export class CognitiveAccountRaiPolicyContentFilterOutputReference extends cdktf
       this._severityThreshold = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -201,11 +201,11 @@ export class CognitiveAccountRaiPolicyContentFilterOutputReference extends cdktf
   }
 
   // block_enabled - computed: false, optional: false, required: true
-  private _blockEnabled?: boolean | cdktf.IResolvable; 
+  private _blockEnabled?: boolean | cdktn.IResolvable; 
   public get blockEnabled() {
     return this.getBooleanAttribute('block_enabled');
   }
-  public set blockEnabled(value: boolean | cdktf.IResolvable) {
+  public set blockEnabled(value: boolean | cdktn.IResolvable) {
     this._blockEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -214,11 +214,11 @@ export class CognitiveAccountRaiPolicyContentFilterOutputReference extends cdktf
   }
 
   // filter_enabled - computed: false, optional: false, required: true
-  private _filterEnabled?: boolean | cdktf.IResolvable; 
+  private _filterEnabled?: boolean | cdktn.IResolvable; 
   public get filterEnabled() {
     return this.getBooleanAttribute('filter_enabled');
   }
-  public set filterEnabled(value: boolean | cdktf.IResolvable) {
+  public set filterEnabled(value: boolean | cdktn.IResolvable) {
     this._filterEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -266,15 +266,15 @@ export class CognitiveAccountRaiPolicyContentFilterOutputReference extends cdktf
   }
 }
 
-export class CognitiveAccountRaiPolicyContentFilterList extends cdktf.ComplexList {
-  public internalValue? : CognitiveAccountRaiPolicyContentFilter[] | cdktf.IResolvable
+export class CognitiveAccountRaiPolicyContentFilterList extends cdktn.ComplexList {
+  public internalValue? : CognitiveAccountRaiPolicyContentFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -304,46 +304,46 @@ export interface CognitiveAccountRaiPolicyTimeouts {
   readonly update?: string;
 }
 
-export function cognitiveAccountRaiPolicyTimeoutsToTerraform(struct?: CognitiveAccountRaiPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitiveAccountRaiPolicyTimeoutsToTerraform(struct?: CognitiveAccountRaiPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cognitiveAccountRaiPolicyTimeoutsToHclTerraform(struct?: CognitiveAccountRaiPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitiveAccountRaiPolicyTimeoutsToHclTerraform(struct?: CognitiveAccountRaiPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -354,19 +354,19 @@ export function cognitiveAccountRaiPolicyTimeoutsToHclTerraform(struct?: Cogniti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitiveAccountRaiPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CognitiveAccountRaiPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CognitiveAccountRaiPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CognitiveAccountRaiPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -391,7 +391,7 @@ export class CognitiveAccountRaiPolicyTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CognitiveAccountRaiPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CognitiveAccountRaiPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -400,7 +400,7 @@ export class CognitiveAccountRaiPolicyTimeoutsOutputReference extends cdktf.Comp
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -482,7 +482,7 @@ export class CognitiveAccountRaiPolicyTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cognitive_account_rai_policy azurerm_cognitive_account_rai_policy}
 */
-export class CognitiveAccountRaiPolicy extends cdktf.TerraformResource {
+export class CognitiveAccountRaiPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -493,14 +493,14 @@ export class CognitiveAccountRaiPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CognitiveAccountRaiPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CognitiveAccountRaiPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitiveAccountRaiPolicy to import
   * @param importFromId The id of the existing CognitiveAccountRaiPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cognitive_account_rai_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitiveAccountRaiPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cognitive_account_rai_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cognitive_account_rai_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -636,7 +636,7 @@ export class CognitiveAccountRaiPolicy extends cdktf.TerraformResource {
   public get contentFilter() {
     return this._contentFilter;
   }
-  public putContentFilter(value: CognitiveAccountRaiPolicyContentFilter[] | cdktf.IResolvable) {
+  public putContentFilter(value: CognitiveAccountRaiPolicyContentFilter[] | cdktn.IResolvable) {
     this._contentFilter.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -666,13 +666,13 @@ export class CognitiveAccountRaiPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      base_policy_name: cdktf.stringToTerraform(this._basePolicyName),
-      cognitive_account_id: cdktf.stringToTerraform(this._cognitiveAccountId),
-      id: cdktf.stringToTerraform(this._id),
-      mode: cdktf.stringToTerraform(this._mode),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      content_filter: cdktf.listMapper(cognitiveAccountRaiPolicyContentFilterToTerraform, true)(this._contentFilter.internalValue),
+      base_policy_name: cdktn.stringToTerraform(this._basePolicyName),
+      cognitive_account_id: cdktn.stringToTerraform(this._cognitiveAccountId),
+      id: cdktn.stringToTerraform(this._id),
+      mode: cdktn.stringToTerraform(this._mode),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      content_filter: cdktn.listMapper(cognitiveAccountRaiPolicyContentFilterToTerraform, true)(this._contentFilter.internalValue),
       timeouts: cognitiveAccountRaiPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -680,43 +680,43 @@ export class CognitiveAccountRaiPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       base_policy_name: {
-        value: cdktf.stringToHclTerraform(this._basePolicyName),
+        value: cdktn.stringToHclTerraform(this._basePolicyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cognitive_account_id: {
-        value: cdktf.stringToHclTerraform(this._cognitiveAccountId),
+        value: cdktn.stringToHclTerraform(this._cognitiveAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mode: {
-        value: cdktf.stringToHclTerraform(this._mode),
+        value: cdktn.stringToHclTerraform(this._mode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       content_filter: {
-        value: cdktf.listMapperHcl(cognitiveAccountRaiPolicyContentFilterToHclTerraform, true)(this._contentFilter.internalValue),
+        value: cdktn.listMapperHcl(cognitiveAccountRaiPolicyContentFilterToHclTerraform, true)(this._contentFilter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CognitiveAccountRaiPolicyContentFilterList",

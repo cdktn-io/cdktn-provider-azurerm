@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OrchestratedVirtualMachineScaleSetConfig extends cdktf.TerraformMetaArguments {
+export interface OrchestratedVirtualMachineScaleSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#capacity_reservation_group_id OrchestratedVirtualMachineScaleSet#capacity_reservation_group_id}
   */
@@ -19,7 +19,7 @@ export interface OrchestratedVirtualMachineScaleSetConfig extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#encryption_at_host_enabled OrchestratedVirtualMachineScaleSet#encryption_at_host_enabled}
   */
-  readonly encryptionAtHostEnabled?: boolean | cdktf.IResolvable;
+  readonly encryptionAtHostEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#eviction_policy OrchestratedVirtualMachineScaleSet#eviction_policy}
   */
@@ -27,7 +27,7 @@ export interface OrchestratedVirtualMachineScaleSetConfig extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#extension_operations_enabled OrchestratedVirtualMachineScaleSet#extension_operations_enabled}
   */
-  readonly extensionOperationsEnabled?: boolean | cdktf.IResolvable;
+  readonly extensionOperationsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#extensions_time_budget OrchestratedVirtualMachineScaleSet#extensions_time_budget}
   */
@@ -82,7 +82,7 @@ export interface OrchestratedVirtualMachineScaleSetConfig extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#single_placement_group OrchestratedVirtualMachineScaleSet#single_placement_group}
   */
-  readonly singlePlacementGroup?: boolean | cdktf.IResolvable;
+  readonly singlePlacementGroup?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#sku_name OrchestratedVirtualMachineScaleSet#sku_name}
   */
@@ -106,7 +106,7 @@ export interface OrchestratedVirtualMachineScaleSetConfig extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#zone_balance OrchestratedVirtualMachineScaleSet#zone_balance}
   */
-  readonly zoneBalance?: boolean | cdktf.IResolvable;
+  readonly zoneBalance?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#zones OrchestratedVirtualMachineScaleSet#zones}
   */
@@ -134,13 +134,13 @@ export interface OrchestratedVirtualMachineScaleSetConfig extends cdktf.Terrafor
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#data_disk OrchestratedVirtualMachineScaleSet#data_disk}
   */
-  readonly dataDisk?: OrchestratedVirtualMachineScaleSetDataDisk[] | cdktf.IResolvable;
+  readonly dataDisk?: OrchestratedVirtualMachineScaleSetDataDisk[] | cdktn.IResolvable;
   /**
   * extension block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#extension OrchestratedVirtualMachineScaleSet#extension}
   */
-  readonly extension?: OrchestratedVirtualMachineScaleSetExtension[] | cdktf.IResolvable;
+  readonly extension?: OrchestratedVirtualMachineScaleSetExtension[] | cdktn.IResolvable;
   /**
   * identity block
   *
@@ -152,7 +152,7 @@ export interface OrchestratedVirtualMachineScaleSetConfig extends cdktf.Terrafor
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#network_interface OrchestratedVirtualMachineScaleSet#network_interface}
   */
-  readonly networkInterface?: OrchestratedVirtualMachineScaleSetNetworkInterface[] | cdktf.IResolvable;
+  readonly networkInterface?: OrchestratedVirtualMachineScaleSetNetworkInterface[] | cdktn.IResolvable;
   /**
   * os_disk block
   *
@@ -212,28 +212,28 @@ export interface OrchestratedVirtualMachineScaleSetAdditionalCapabilities {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#ultra_ssd_enabled OrchestratedVirtualMachineScaleSet#ultra_ssd_enabled}
   */
-  readonly ultraSsdEnabled?: boolean | cdktf.IResolvable;
+  readonly ultraSsdEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function orchestratedVirtualMachineScaleSetAdditionalCapabilitiesToTerraform(struct?: OrchestratedVirtualMachineScaleSetAdditionalCapabilitiesOutputReference | OrchestratedVirtualMachineScaleSetAdditionalCapabilities): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ultra_ssd_enabled: cdktf.booleanToTerraform(struct!.ultraSsdEnabled),
+    ultra_ssd_enabled: cdktn.booleanToTerraform(struct!.ultraSsdEnabled),
   }
 }
 
 
 export function orchestratedVirtualMachineScaleSetAdditionalCapabilitiesToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetAdditionalCapabilitiesOutputReference | OrchestratedVirtualMachineScaleSetAdditionalCapabilities): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ultra_ssd_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.ultraSsdEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.ultraSsdEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -244,14 +244,14 @@ export function orchestratedVirtualMachineScaleSetAdditionalCapabilitiesToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetAdditionalCapabilitiesOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetAdditionalCapabilitiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -277,11 +277,11 @@ export class OrchestratedVirtualMachineScaleSetAdditionalCapabilitiesOutputRefer
   }
 
   // ultra_ssd_enabled - computed: false, optional: true, required: false
-  private _ultraSsdEnabled?: boolean | cdktf.IResolvable; 
+  private _ultraSsdEnabled?: boolean | cdktn.IResolvable; 
   public get ultraSsdEnabled() {
     return this.getBooleanAttribute('ultra_ssd_enabled');
   }
-  public set ultraSsdEnabled(value: boolean | cdktf.IResolvable) {
+  public set ultraSsdEnabled(value: boolean | cdktn.IResolvable) {
     this._ultraSsdEnabled = value;
   }
   public resetUltraSsdEnabled() {
@@ -300,7 +300,7 @@ export interface OrchestratedVirtualMachineScaleSetAutomaticInstanceRepair {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#enabled OrchestratedVirtualMachineScaleSet#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#grace_period OrchestratedVirtualMachineScaleSet#grace_period}
   */
@@ -308,38 +308,38 @@ export interface OrchestratedVirtualMachineScaleSetAutomaticInstanceRepair {
 }
 
 export function orchestratedVirtualMachineScaleSetAutomaticInstanceRepairToTerraform(struct?: OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference | OrchestratedVirtualMachineScaleSetAutomaticInstanceRepair): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    grace_period: cdktf.stringToTerraform(struct!.gracePeriod),
+    action: cdktn.stringToTerraform(struct!.action),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    grace_period: cdktn.stringToTerraform(struct!.gracePeriod),
   }
 }
 
 
 export function orchestratedVirtualMachineScaleSetAutomaticInstanceRepairToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference | OrchestratedVirtualMachineScaleSetAutomaticInstanceRepair): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     grace_period: {
-      value: cdktf.stringToHclTerraform(struct!.gracePeriod),
+      value: cdktn.stringToHclTerraform(struct!.gracePeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -350,14 +350,14 @@ export function orchestratedVirtualMachineScaleSetAutomaticInstanceRepairToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -411,11 +411,11 @@ export class OrchestratedVirtualMachineScaleSetAutomaticInstanceRepairOutputRefe
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -447,24 +447,24 @@ export interface OrchestratedVirtualMachineScaleSetBootDiagnostics {
 }
 
 export function orchestratedVirtualMachineScaleSetBootDiagnosticsToTerraform(struct?: OrchestratedVirtualMachineScaleSetBootDiagnosticsOutputReference | OrchestratedVirtualMachineScaleSetBootDiagnostics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    storage_account_uri: cdktf.stringToTerraform(struct!.storageAccountUri),
+    storage_account_uri: cdktn.stringToTerraform(struct!.storageAccountUri),
   }
 }
 
 
 export function orchestratedVirtualMachineScaleSetBootDiagnosticsToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetBootDiagnosticsOutputReference | OrchestratedVirtualMachineScaleSetBootDiagnostics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     storage_account_uri: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountUri),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -475,14 +475,14 @@ export function orchestratedVirtualMachineScaleSetBootDiagnosticsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetBootDiagnosticsOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetBootDiagnosticsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -559,84 +559,84 @@ export interface OrchestratedVirtualMachineScaleSetDataDisk {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#write_accelerator_enabled OrchestratedVirtualMachineScaleSet#write_accelerator_enabled}
   */
-  readonly writeAcceleratorEnabled?: boolean | cdktf.IResolvable;
+  readonly writeAcceleratorEnabled?: boolean | cdktn.IResolvable;
 }
 
-export function orchestratedVirtualMachineScaleSetDataDiskToTerraform(struct?: OrchestratedVirtualMachineScaleSetDataDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetDataDiskToTerraform(struct?: OrchestratedVirtualMachineScaleSetDataDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    caching: cdktf.stringToTerraform(struct!.caching),
-    create_option: cdktf.stringToTerraform(struct!.createOption),
-    disk_encryption_set_id: cdktf.stringToTerraform(struct!.diskEncryptionSetId),
-    disk_size_gb: cdktf.numberToTerraform(struct!.diskSizeGb),
-    lun: cdktf.numberToTerraform(struct!.lun),
-    storage_account_type: cdktf.stringToTerraform(struct!.storageAccountType),
-    ultra_ssd_disk_iops_read_write: cdktf.numberToTerraform(struct!.ultraSsdDiskIopsReadWrite),
-    ultra_ssd_disk_mbps_read_write: cdktf.numberToTerraform(struct!.ultraSsdDiskMbpsReadWrite),
-    write_accelerator_enabled: cdktf.booleanToTerraform(struct!.writeAcceleratorEnabled),
+    caching: cdktn.stringToTerraform(struct!.caching),
+    create_option: cdktn.stringToTerraform(struct!.createOption),
+    disk_encryption_set_id: cdktn.stringToTerraform(struct!.diskEncryptionSetId),
+    disk_size_gb: cdktn.numberToTerraform(struct!.diskSizeGb),
+    lun: cdktn.numberToTerraform(struct!.lun),
+    storage_account_type: cdktn.stringToTerraform(struct!.storageAccountType),
+    ultra_ssd_disk_iops_read_write: cdktn.numberToTerraform(struct!.ultraSsdDiskIopsReadWrite),
+    ultra_ssd_disk_mbps_read_write: cdktn.numberToTerraform(struct!.ultraSsdDiskMbpsReadWrite),
+    write_accelerator_enabled: cdktn.booleanToTerraform(struct!.writeAcceleratorEnabled),
   }
 }
 
 
-export function orchestratedVirtualMachineScaleSetDataDiskToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetDataDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetDataDiskToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetDataDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     caching: {
-      value: cdktf.stringToHclTerraform(struct!.caching),
+      value: cdktn.stringToHclTerraform(struct!.caching),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     create_option: {
-      value: cdktf.stringToHclTerraform(struct!.createOption),
+      value: cdktn.stringToHclTerraform(struct!.createOption),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk_encryption_set_id: {
-      value: cdktf.stringToHclTerraform(struct!.diskEncryptionSetId),
+      value: cdktn.stringToHclTerraform(struct!.diskEncryptionSetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk_size_gb: {
-      value: cdktf.numberToHclTerraform(struct!.diskSizeGb),
+      value: cdktn.numberToHclTerraform(struct!.diskSizeGb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     lun: {
-      value: cdktf.numberToHclTerraform(struct!.lun),
+      value: cdktn.numberToHclTerraform(struct!.lun),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     storage_account_type: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountType),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ultra_ssd_disk_iops_read_write: {
-      value: cdktf.numberToHclTerraform(struct!.ultraSsdDiskIopsReadWrite),
+      value: cdktn.numberToHclTerraform(struct!.ultraSsdDiskIopsReadWrite),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ultra_ssd_disk_mbps_read_write: {
-      value: cdktf.numberToHclTerraform(struct!.ultraSsdDiskMbpsReadWrite),
+      value: cdktn.numberToHclTerraform(struct!.ultraSsdDiskMbpsReadWrite),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     write_accelerator_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.writeAcceleratorEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.writeAcceleratorEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -647,9 +647,9 @@ export function orchestratedVirtualMachineScaleSetDataDiskToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetDataDiskOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetDataDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -657,11 +657,11 @@ export class OrchestratedVirtualMachineScaleSetDataDiskOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrchestratedVirtualMachineScaleSetDataDisk | cdktf.IResolvable | undefined {
+  public get internalValue(): OrchestratedVirtualMachineScaleSetDataDisk | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -706,7 +706,7 @@ export class OrchestratedVirtualMachineScaleSetDataDiskOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrchestratedVirtualMachineScaleSetDataDisk | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrchestratedVirtualMachineScaleSetDataDisk | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -720,7 +720,7 @@ export class OrchestratedVirtualMachineScaleSetDataDiskOutputReference extends c
       this._ultraSsdDiskMbpsReadWrite = undefined;
       this._writeAcceleratorEnabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -862,11 +862,11 @@ export class OrchestratedVirtualMachineScaleSetDataDiskOutputReference extends c
   }
 
   // write_accelerator_enabled - computed: false, optional: true, required: false
-  private _writeAcceleratorEnabled?: boolean | cdktf.IResolvable; 
+  private _writeAcceleratorEnabled?: boolean | cdktn.IResolvable; 
   public get writeAcceleratorEnabled() {
     return this.getBooleanAttribute('write_accelerator_enabled');
   }
-  public set writeAcceleratorEnabled(value: boolean | cdktf.IResolvable) {
+  public set writeAcceleratorEnabled(value: boolean | cdktn.IResolvable) {
     this._writeAcceleratorEnabled = value;
   }
   public resetWriteAcceleratorEnabled() {
@@ -878,15 +878,15 @@ export class OrchestratedVirtualMachineScaleSetDataDiskOutputReference extends c
   }
 }
 
-export class OrchestratedVirtualMachineScaleSetDataDiskList extends cdktf.ComplexList {
-  public internalValue? : OrchestratedVirtualMachineScaleSetDataDisk[] | cdktf.IResolvable
+export class OrchestratedVirtualMachineScaleSetDataDiskList extends cdktn.ComplexList {
+  public internalValue? : OrchestratedVirtualMachineScaleSetDataDisk[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -909,31 +909,31 @@ export interface OrchestratedVirtualMachineScaleSetExtensionProtectedSettingsFro
 }
 
 export function orchestratedVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultToTerraform(struct?: OrchestratedVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference | OrchestratedVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_url: cdktf.stringToTerraform(struct!.secretUrl),
-    source_vault_id: cdktf.stringToTerraform(struct!.sourceVaultId),
+    secret_url: cdktn.stringToTerraform(struct!.secretUrl),
+    source_vault_id: cdktn.stringToTerraform(struct!.sourceVaultId),
   }
 }
 
 
 export function orchestratedVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference | OrchestratedVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_url: {
-      value: cdktf.stringToHclTerraform(struct!.secretUrl),
+      value: cdktn.stringToHclTerraform(struct!.secretUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.sourceVaultId),
+      value: cdktn.stringToHclTerraform(struct!.sourceVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -944,14 +944,14 @@ export function orchestratedVirtualMachineScaleSetExtensionProtectedSettingsFrom
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1012,7 +1012,7 @@ export interface OrchestratedVirtualMachineScaleSetExtension {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#auto_upgrade_minor_version_enabled OrchestratedVirtualMachineScaleSet#auto_upgrade_minor_version_enabled}
   */
-  readonly autoUpgradeMinorVersionEnabled?: boolean | cdktf.IResolvable;
+  readonly autoUpgradeMinorVersionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#extensions_to_provision_after_vm_creation OrchestratedVirtualMachineScaleSet#extensions_to_provision_after_vm_creation}
   */
@@ -1020,7 +1020,7 @@ export interface OrchestratedVirtualMachineScaleSetExtension {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#failure_suppression_enabled OrchestratedVirtualMachineScaleSet#failure_suppression_enabled}
   */
-  readonly failureSuppressionEnabled?: boolean | cdktf.IResolvable;
+  readonly failureSuppressionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#force_extension_execution_on_change OrchestratedVirtualMachineScaleSet#force_extension_execution_on_change}
   */
@@ -1057,89 +1057,89 @@ export interface OrchestratedVirtualMachineScaleSetExtension {
   readonly protectedSettingsFromKeyVault?: OrchestratedVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault;
 }
 
-export function orchestratedVirtualMachineScaleSetExtensionToTerraform(struct?: OrchestratedVirtualMachineScaleSetExtension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetExtensionToTerraform(struct?: OrchestratedVirtualMachineScaleSetExtension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auto_upgrade_minor_version_enabled: cdktf.booleanToTerraform(struct!.autoUpgradeMinorVersionEnabled),
-    extensions_to_provision_after_vm_creation: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.extensionsToProvisionAfterVmCreation),
-    failure_suppression_enabled: cdktf.booleanToTerraform(struct!.failureSuppressionEnabled),
-    force_extension_execution_on_change: cdktf.stringToTerraform(struct!.forceExtensionExecutionOnChange),
-    name: cdktf.stringToTerraform(struct!.name),
-    protected_settings: cdktf.stringToTerraform(struct!.protectedSettings),
-    publisher: cdktf.stringToTerraform(struct!.publisher),
-    settings: cdktf.stringToTerraform(struct!.settings),
-    type: cdktf.stringToTerraform(struct!.type),
-    type_handler_version: cdktf.stringToTerraform(struct!.typeHandlerVersion),
+    auto_upgrade_minor_version_enabled: cdktn.booleanToTerraform(struct!.autoUpgradeMinorVersionEnabled),
+    extensions_to_provision_after_vm_creation: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.extensionsToProvisionAfterVmCreation),
+    failure_suppression_enabled: cdktn.booleanToTerraform(struct!.failureSuppressionEnabled),
+    force_extension_execution_on_change: cdktn.stringToTerraform(struct!.forceExtensionExecutionOnChange),
+    name: cdktn.stringToTerraform(struct!.name),
+    protected_settings: cdktn.stringToTerraform(struct!.protectedSettings),
+    publisher: cdktn.stringToTerraform(struct!.publisher),
+    settings: cdktn.stringToTerraform(struct!.settings),
+    type: cdktn.stringToTerraform(struct!.type),
+    type_handler_version: cdktn.stringToTerraform(struct!.typeHandlerVersion),
     protected_settings_from_key_vault: orchestratedVirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultToTerraform(struct!.protectedSettingsFromKeyVault),
   }
 }
 
 
-export function orchestratedVirtualMachineScaleSetExtensionToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetExtension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetExtensionToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetExtension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auto_upgrade_minor_version_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.autoUpgradeMinorVersionEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.autoUpgradeMinorVersionEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     extensions_to_provision_after_vm_creation: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.extensionsToProvisionAfterVmCreation),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.extensionsToProvisionAfterVmCreation),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     failure_suppression_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.failureSuppressionEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.failureSuppressionEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     force_extension_execution_on_change: {
-      value: cdktf.stringToHclTerraform(struct!.forceExtensionExecutionOnChange),
+      value: cdktn.stringToHclTerraform(struct!.forceExtensionExecutionOnChange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protected_settings: {
-      value: cdktf.stringToHclTerraform(struct!.protectedSettings),
+      value: cdktn.stringToHclTerraform(struct!.protectedSettings),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publisher: {
-      value: cdktf.stringToHclTerraform(struct!.publisher),
+      value: cdktn.stringToHclTerraform(struct!.publisher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     settings: {
-      value: cdktf.stringToHclTerraform(struct!.settings),
+      value: cdktn.stringToHclTerraform(struct!.settings),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type_handler_version: {
-      value: cdktf.stringToHclTerraform(struct!.typeHandlerVersion),
+      value: cdktn.stringToHclTerraform(struct!.typeHandlerVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1156,9 +1156,9 @@ export function orchestratedVirtualMachineScaleSetExtensionToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetExtensionOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetExtensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1166,11 +1166,11 @@ export class OrchestratedVirtualMachineScaleSetExtensionOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrchestratedVirtualMachineScaleSetExtension | cdktf.IResolvable | undefined {
+  public get internalValue(): OrchestratedVirtualMachineScaleSetExtension | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1223,7 +1223,7 @@ export class OrchestratedVirtualMachineScaleSetExtensionOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrchestratedVirtualMachineScaleSetExtension | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrchestratedVirtualMachineScaleSetExtension | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1239,7 +1239,7 @@ export class OrchestratedVirtualMachineScaleSetExtensionOutputReference extends 
       this._typeHandlerVersion = undefined;
       this._protectedSettingsFromKeyVault.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1261,11 +1261,11 @@ export class OrchestratedVirtualMachineScaleSetExtensionOutputReference extends 
   }
 
   // auto_upgrade_minor_version_enabled - computed: false, optional: true, required: false
-  private _autoUpgradeMinorVersionEnabled?: boolean | cdktf.IResolvable; 
+  private _autoUpgradeMinorVersionEnabled?: boolean | cdktn.IResolvable; 
   public get autoUpgradeMinorVersionEnabled() {
     return this.getBooleanAttribute('auto_upgrade_minor_version_enabled');
   }
-  public set autoUpgradeMinorVersionEnabled(value: boolean | cdktf.IResolvable) {
+  public set autoUpgradeMinorVersionEnabled(value: boolean | cdktn.IResolvable) {
     this._autoUpgradeMinorVersionEnabled = value;
   }
   public resetAutoUpgradeMinorVersionEnabled() {
@@ -1293,11 +1293,11 @@ export class OrchestratedVirtualMachineScaleSetExtensionOutputReference extends 
   }
 
   // failure_suppression_enabled - computed: false, optional: true, required: false
-  private _failureSuppressionEnabled?: boolean | cdktf.IResolvable; 
+  private _failureSuppressionEnabled?: boolean | cdktn.IResolvable; 
   public get failureSuppressionEnabled() {
     return this.getBooleanAttribute('failure_suppression_enabled');
   }
-  public set failureSuppressionEnabled(value: boolean | cdktf.IResolvable) {
+  public set failureSuppressionEnabled(value: boolean | cdktn.IResolvable) {
     this._failureSuppressionEnabled = value;
   }
   public resetFailureSuppressionEnabled() {
@@ -1425,15 +1425,15 @@ export class OrchestratedVirtualMachineScaleSetExtensionOutputReference extends 
   }
 }
 
-export class OrchestratedVirtualMachineScaleSetExtensionList extends cdktf.ComplexList {
-  public internalValue? : OrchestratedVirtualMachineScaleSetExtension[] | cdktf.IResolvable
+export class OrchestratedVirtualMachineScaleSetExtensionList extends cdktn.ComplexList {
+  public internalValue? : OrchestratedVirtualMachineScaleSetExtension[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1456,31 +1456,31 @@ export interface OrchestratedVirtualMachineScaleSetIdentity {
 }
 
 export function orchestratedVirtualMachineScaleSetIdentityToTerraform(struct?: OrchestratedVirtualMachineScaleSetIdentityOutputReference | OrchestratedVirtualMachineScaleSetIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function orchestratedVirtualMachineScaleSetIdentityToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetIdentityOutputReference | OrchestratedVirtualMachineScaleSetIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1491,14 +1491,14 @@ export function orchestratedVirtualMachineScaleSetIdentityToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetIdentityOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1532,7 +1532,7 @@ export class OrchestratedVirtualMachineScaleSetIdentityOutputReference extends c
   // identity_ids - computed: false, optional: false, required: true
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -1566,32 +1566,32 @@ export interface OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurati
   readonly type: string;
 }
 
-export function orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagToTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagToTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tag: cdktf.stringToTerraform(struct!.tag),
-    type: cdktf.stringToTerraform(struct!.type),
+    tag: cdktn.stringToTerraform(struct!.tag),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     tag: {
-      value: cdktf.stringToHclTerraform(struct!.tag),
+      value: cdktn.stringToHclTerraform(struct!.tag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1602,9 +1602,9 @@ export function orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguratio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1612,11 +1612,11 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag | cdktf.IResolvable | undefined {
+  public get internalValue(): OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1633,14 +1633,14 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._tag = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1679,15 +1679,15 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPu
   }
 }
 
-export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagList extends cdktf.ComplexList {
-  public internalValue? : OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag[] | cdktf.IResolvable
+export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagList extends cdktn.ComplexList {
+  public internalValue? : OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1728,70 +1728,70 @@ export interface OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurati
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#ip_tag OrchestratedVirtualMachineScaleSet#ip_tag}
   */
-  readonly ipTag?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag[] | cdktf.IResolvable;
+  readonly ipTag?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag[] | cdktn.IResolvable;
 }
 
-export function orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressToTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressToTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain_name_label: cdktf.stringToTerraform(struct!.domainNameLabel),
-    idle_timeout_in_minutes: cdktf.numberToTerraform(struct!.idleTimeoutInMinutes),
-    name: cdktf.stringToTerraform(struct!.name),
-    public_ip_prefix_id: cdktf.stringToTerraform(struct!.publicIpPrefixId),
-    sku_name: cdktf.stringToTerraform(struct!.skuName),
-    version: cdktf.stringToTerraform(struct!.version),
-    ip_tag: cdktf.listMapper(orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagToTerraform, true)(struct!.ipTag),
+    domain_name_label: cdktn.stringToTerraform(struct!.domainNameLabel),
+    idle_timeout_in_minutes: cdktn.numberToTerraform(struct!.idleTimeoutInMinutes),
+    name: cdktn.stringToTerraform(struct!.name),
+    public_ip_prefix_id: cdktn.stringToTerraform(struct!.publicIpPrefixId),
+    sku_name: cdktn.stringToTerraform(struct!.skuName),
+    version: cdktn.stringToTerraform(struct!.version),
+    ip_tag: cdktn.listMapper(orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagToTerraform, true)(struct!.ipTag),
   }
 }
 
 
-export function orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain_name_label: {
-      value: cdktf.stringToHclTerraform(struct!.domainNameLabel),
+      value: cdktn.stringToHclTerraform(struct!.domainNameLabel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     idle_timeout_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.idleTimeoutInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.idleTimeoutInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     public_ip_prefix_id: {
-      value: cdktf.stringToHclTerraform(struct!.publicIpPrefixId),
+      value: cdktn.stringToHclTerraform(struct!.publicIpPrefixId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sku_name: {
-      value: cdktf.stringToHclTerraform(struct!.skuName),
+      value: cdktn.stringToHclTerraform(struct!.skuName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_tag: {
-      value: cdktf.listMapperHcl(orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagToHclTerraform, true)(struct!.ipTag),
+      value: cdktn.listMapperHcl(orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagToHclTerraform, true)(struct!.ipTag),
       isBlock: true,
       type: "list",
       storageClassType: "OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagList",
@@ -1802,9 +1802,9 @@ export function orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguratio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1812,11 +1812,11 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress | cdktf.IResolvable | undefined {
+  public get internalValue(): OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1853,7 +1853,7 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1865,7 +1865,7 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPu
       this._version = undefined;
       this._ipTag.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1980,7 +1980,7 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPu
   public get ipTag() {
     return this._ipTag;
   }
-  public putIpTag(value: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag[] | cdktf.IResolvable) {
+  public putIpTag(value: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag[] | cdktn.IResolvable) {
     this._ipTag.internalValue = value;
   }
   public resetIpTag() {
@@ -1992,15 +1992,15 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPu
   }
 }
 
-export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressList extends cdktf.ComplexList {
-  public internalValue? : OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress[] | cdktf.IResolvable
+export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressList extends cdktn.ComplexList {
+  public internalValue? : OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2031,7 +2031,7 @@ export interface OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurati
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#primary OrchestratedVirtualMachineScaleSet#primary}
   */
-  readonly primary?: boolean | cdktf.IResolvable;
+  readonly primary?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#subnet_id OrchestratedVirtualMachineScaleSet#subnet_id}
   */
@@ -2045,77 +2045,77 @@ export interface OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurati
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#public_ip_address OrchestratedVirtualMachineScaleSet#public_ip_address}
   */
-  readonly publicIpAddress?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress[] | cdktf.IResolvable;
+  readonly publicIpAddress?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress[] | cdktn.IResolvable;
 }
 
-export function orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationToTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationToTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    application_gateway_backend_address_pool_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.applicationGatewayBackendAddressPoolIds),
-    application_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.applicationSecurityGroupIds),
-    load_balancer_backend_address_pool_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loadBalancerBackendAddressPoolIds),
-    name: cdktf.stringToTerraform(struct!.name),
-    primary: cdktf.booleanToTerraform(struct!.primary),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
-    version: cdktf.stringToTerraform(struct!.version),
-    public_ip_address: cdktf.listMapper(orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressToTerraform, true)(struct!.publicIpAddress),
+    application_gateway_backend_address_pool_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.applicationGatewayBackendAddressPoolIds),
+    application_security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.applicationSecurityGroupIds),
+    load_balancer_backend_address_pool_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.loadBalancerBackendAddressPoolIds),
+    name: cdktn.stringToTerraform(struct!.name),
+    primary: cdktn.booleanToTerraform(struct!.primary),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
+    version: cdktn.stringToTerraform(struct!.version),
+    public_ip_address: cdktn.listMapper(orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressToTerraform, true)(struct!.publicIpAddress),
   }
 }
 
 
-export function orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     application_gateway_backend_address_pool_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.applicationGatewayBackendAddressPoolIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.applicationGatewayBackendAddressPoolIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     application_security_group_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.applicationSecurityGroupIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.applicationSecurityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     load_balancer_backend_address_pool_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.loadBalancerBackendAddressPoolIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.loadBalancerBackendAddressPoolIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary: {
-      value: cdktf.booleanToHclTerraform(struct!.primary),
+      value: cdktn.booleanToHclTerraform(struct!.primary),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     public_ip_address: {
-      value: cdktf.listMapperHcl(orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressToHclTerraform, true)(struct!.publicIpAddress),
+      value: cdktn.listMapperHcl(orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressToHclTerraform, true)(struct!.publicIpAddress),
       isBlock: true,
       type: "list",
       storageClassType: "OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressList",
@@ -2126,9 +2126,9 @@ export function orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguratio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2136,11 +2136,11 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2181,7 +2181,7 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2194,7 +2194,7 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationOu
       this._version = undefined;
       this._publicIpAddress.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2215,7 +2215,7 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationOu
   // application_gateway_backend_address_pool_ids - computed: false, optional: true, required: false
   private _applicationGatewayBackendAddressPoolIds?: string[]; 
   public get applicationGatewayBackendAddressPoolIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('application_gateway_backend_address_pool_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('application_gateway_backend_address_pool_ids'));
   }
   public set applicationGatewayBackendAddressPoolIds(value: string[]) {
     this._applicationGatewayBackendAddressPoolIds = value;
@@ -2231,7 +2231,7 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationOu
   // application_security_group_ids - computed: false, optional: true, required: false
   private _applicationSecurityGroupIds?: string[]; 
   public get applicationSecurityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('application_security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('application_security_group_ids'));
   }
   public set applicationSecurityGroupIds(value: string[]) {
     this._applicationSecurityGroupIds = value;
@@ -2247,7 +2247,7 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationOu
   // load_balancer_backend_address_pool_ids - computed: false, optional: true, required: false
   private _loadBalancerBackendAddressPoolIds?: string[]; 
   public get loadBalancerBackendAddressPoolIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('load_balancer_backend_address_pool_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('load_balancer_backend_address_pool_ids'));
   }
   public set loadBalancerBackendAddressPoolIds(value: string[]) {
     this._loadBalancerBackendAddressPoolIds = value;
@@ -2274,11 +2274,11 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationOu
   }
 
   // primary - computed: false, optional: true, required: false
-  private _primary?: boolean | cdktf.IResolvable; 
+  private _primary?: boolean | cdktn.IResolvable; 
   public get primary() {
     return this.getBooleanAttribute('primary');
   }
-  public set primary(value: boolean | cdktf.IResolvable) {
+  public set primary(value: boolean | cdktn.IResolvable) {
     this._primary = value;
   }
   public resetPrimary() {
@@ -2326,7 +2326,7 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationOu
   public get publicIpAddress() {
     return this._publicIpAddress;
   }
-  public putPublicIpAddress(value: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress[] | cdktf.IResolvable) {
+  public putPublicIpAddress(value: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress[] | cdktn.IResolvable) {
     this._publicIpAddress.internalValue = value;
   }
   public resetPublicIpAddress() {
@@ -2338,15 +2338,15 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationOu
   }
 }
 
-export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationList extends cdktf.ComplexList {
-  public internalValue? : OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguration[] | cdktf.IResolvable
+export class OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationList extends cdktn.ComplexList {
+  public internalValue? : OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2373,11 +2373,11 @@ export interface OrchestratedVirtualMachineScaleSetNetworkInterface {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#enable_accelerated_networking OrchestratedVirtualMachineScaleSet#enable_accelerated_networking}
   */
-  readonly enableAcceleratedNetworking?: boolean | cdktf.IResolvable;
+  readonly enableAcceleratedNetworking?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#enable_ip_forwarding OrchestratedVirtualMachineScaleSet#enable_ip_forwarding}
   */
-  readonly enableIpForwarding?: boolean | cdktf.IResolvable;
+  readonly enableIpForwarding?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#name OrchestratedVirtualMachineScaleSet#name}
   */
@@ -2389,90 +2389,90 @@ export interface OrchestratedVirtualMachineScaleSetNetworkInterface {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#primary OrchestratedVirtualMachineScaleSet#primary}
   */
-  readonly primary?: boolean | cdktf.IResolvable;
+  readonly primary?: boolean | cdktn.IResolvable;
   /**
   * ip_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#ip_configuration OrchestratedVirtualMachineScaleSet#ip_configuration}
   */
-  readonly ipConfiguration: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguration[] | cdktf.IResolvable;
+  readonly ipConfiguration: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguration[] | cdktn.IResolvable;
 }
 
-export function orchestratedVirtualMachineScaleSetNetworkInterfaceToTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterface | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetNetworkInterfaceToTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterface | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auxiliary_mode: cdktf.stringToTerraform(struct!.auxiliaryMode),
-    auxiliary_sku: cdktf.stringToTerraform(struct!.auxiliarySku),
-    dns_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dnsServers),
-    enable_accelerated_networking: cdktf.booleanToTerraform(struct!.enableAcceleratedNetworking),
-    enable_ip_forwarding: cdktf.booleanToTerraform(struct!.enableIpForwarding),
-    name: cdktf.stringToTerraform(struct!.name),
-    network_security_group_id: cdktf.stringToTerraform(struct!.networkSecurityGroupId),
-    primary: cdktf.booleanToTerraform(struct!.primary),
-    ip_configuration: cdktf.listMapper(orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationToTerraform, true)(struct!.ipConfiguration),
+    auxiliary_mode: cdktn.stringToTerraform(struct!.auxiliaryMode),
+    auxiliary_sku: cdktn.stringToTerraform(struct!.auxiliarySku),
+    dns_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dnsServers),
+    enable_accelerated_networking: cdktn.booleanToTerraform(struct!.enableAcceleratedNetworking),
+    enable_ip_forwarding: cdktn.booleanToTerraform(struct!.enableIpForwarding),
+    name: cdktn.stringToTerraform(struct!.name),
+    network_security_group_id: cdktn.stringToTerraform(struct!.networkSecurityGroupId),
+    primary: cdktn.booleanToTerraform(struct!.primary),
+    ip_configuration: cdktn.listMapper(orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationToTerraform, true)(struct!.ipConfiguration),
   }
 }
 
 
-export function orchestratedVirtualMachineScaleSetNetworkInterfaceToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterface | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetNetworkInterfaceToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetNetworkInterface | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auxiliary_mode: {
-      value: cdktf.stringToHclTerraform(struct!.auxiliaryMode),
+      value: cdktn.stringToHclTerraform(struct!.auxiliaryMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     auxiliary_sku: {
-      value: cdktf.stringToHclTerraform(struct!.auxiliarySku),
+      value: cdktn.stringToHclTerraform(struct!.auxiliarySku),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dns_servers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsServers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dnsServers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     enable_accelerated_networking: {
-      value: cdktf.booleanToHclTerraform(struct!.enableAcceleratedNetworking),
+      value: cdktn.booleanToHclTerraform(struct!.enableAcceleratedNetworking),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_ip_forwarding: {
-      value: cdktf.booleanToHclTerraform(struct!.enableIpForwarding),
+      value: cdktn.booleanToHclTerraform(struct!.enableIpForwarding),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_security_group_id: {
-      value: cdktf.stringToHclTerraform(struct!.networkSecurityGroupId),
+      value: cdktn.stringToHclTerraform(struct!.networkSecurityGroupId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary: {
-      value: cdktf.booleanToHclTerraform(struct!.primary),
+      value: cdktn.booleanToHclTerraform(struct!.primary),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ip_configuration: {
-      value: cdktf.listMapperHcl(orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationToHclTerraform, true)(struct!.ipConfiguration),
+      value: cdktn.listMapperHcl(orchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationToHclTerraform, true)(struct!.ipConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfigurationList",
@@ -2483,9 +2483,9 @@ export function orchestratedVirtualMachineScaleSetNetworkInterfaceToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetNetworkInterfaceOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetNetworkInterfaceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2493,11 +2493,11 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrchestratedVirtualMachineScaleSetNetworkInterface | cdktf.IResolvable | undefined {
+  public get internalValue(): OrchestratedVirtualMachineScaleSetNetworkInterface | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2542,7 +2542,7 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrchestratedVirtualMachineScaleSetNetworkInterface | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrchestratedVirtualMachineScaleSetNetworkInterface | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2556,7 +2556,7 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceOutputReference e
       this._primary = undefined;
       this._ipConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2624,11 +2624,11 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceOutputReference e
   }
 
   // enable_accelerated_networking - computed: false, optional: true, required: false
-  private _enableAcceleratedNetworking?: boolean | cdktf.IResolvable; 
+  private _enableAcceleratedNetworking?: boolean | cdktn.IResolvable; 
   public get enableAcceleratedNetworking() {
     return this.getBooleanAttribute('enable_accelerated_networking');
   }
-  public set enableAcceleratedNetworking(value: boolean | cdktf.IResolvable) {
+  public set enableAcceleratedNetworking(value: boolean | cdktn.IResolvable) {
     this._enableAcceleratedNetworking = value;
   }
   public resetEnableAcceleratedNetworking() {
@@ -2640,11 +2640,11 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceOutputReference e
   }
 
   // enable_ip_forwarding - computed: false, optional: true, required: false
-  private _enableIpForwarding?: boolean | cdktf.IResolvable; 
+  private _enableIpForwarding?: boolean | cdktn.IResolvable; 
   public get enableIpForwarding() {
     return this.getBooleanAttribute('enable_ip_forwarding');
   }
-  public set enableIpForwarding(value: boolean | cdktf.IResolvable) {
+  public set enableIpForwarding(value: boolean | cdktn.IResolvable) {
     this._enableIpForwarding = value;
   }
   public resetEnableIpForwarding() {
@@ -2685,11 +2685,11 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceOutputReference e
   }
 
   // primary - computed: false, optional: true, required: false
-  private _primary?: boolean | cdktf.IResolvable; 
+  private _primary?: boolean | cdktn.IResolvable; 
   public get primary() {
     return this.getBooleanAttribute('primary');
   }
-  public set primary(value: boolean | cdktf.IResolvable) {
+  public set primary(value: boolean | cdktn.IResolvable) {
     this._primary = value;
   }
   public resetPrimary() {
@@ -2705,7 +2705,7 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceOutputReference e
   public get ipConfiguration() {
     return this._ipConfiguration;
   }
-  public putIpConfiguration(value: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguration[] | cdktf.IResolvable) {
+  public putIpConfiguration(value: OrchestratedVirtualMachineScaleSetNetworkInterfaceIpConfiguration[] | cdktn.IResolvable) {
     this._ipConfiguration.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2714,15 +2714,15 @@ export class OrchestratedVirtualMachineScaleSetNetworkInterfaceOutputReference e
   }
 }
 
-export class OrchestratedVirtualMachineScaleSetNetworkInterfaceList extends cdktf.ComplexList {
-  public internalValue? : OrchestratedVirtualMachineScaleSetNetworkInterface[] | cdktf.IResolvable
+export class OrchestratedVirtualMachineScaleSetNetworkInterfaceList extends cdktn.ComplexList {
+  public internalValue? : OrchestratedVirtualMachineScaleSetNetworkInterface[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2745,31 +2745,31 @@ export interface OrchestratedVirtualMachineScaleSetOsDiskDiffDiskSettings {
 }
 
 export function orchestratedVirtualMachineScaleSetOsDiskDiffDiskSettingsToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsDiskDiffDiskSettingsOutputReference | OrchestratedVirtualMachineScaleSetOsDiskDiffDiskSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    option: cdktf.stringToTerraform(struct!.option),
-    placement: cdktf.stringToTerraform(struct!.placement),
+    option: cdktn.stringToTerraform(struct!.option),
+    placement: cdktn.stringToTerraform(struct!.placement),
   }
 }
 
 
 export function orchestratedVirtualMachineScaleSetOsDiskDiffDiskSettingsToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsDiskDiffDiskSettingsOutputReference | OrchestratedVirtualMachineScaleSetOsDiskDiffDiskSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     option: {
-      value: cdktf.stringToHclTerraform(struct!.option),
+      value: cdktn.stringToHclTerraform(struct!.option),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     placement: {
-      value: cdktf.stringToHclTerraform(struct!.placement),
+      value: cdktn.stringToHclTerraform(struct!.placement),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2780,14 +2780,14 @@ export function orchestratedVirtualMachineScaleSetOsDiskDiffDiskSettingsToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetOsDiskDiffDiskSettingsOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetOsDiskDiffDiskSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2867,7 +2867,7 @@ export interface OrchestratedVirtualMachineScaleSetOsDisk {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#write_accelerator_enabled OrchestratedVirtualMachineScaleSet#write_accelerator_enabled}
   */
-  readonly writeAcceleratorEnabled?: boolean | cdktf.IResolvable;
+  readonly writeAcceleratorEnabled?: boolean | cdktn.IResolvable;
   /**
   * diff_disk_settings block
   *
@@ -2877,53 +2877,53 @@ export interface OrchestratedVirtualMachineScaleSetOsDisk {
 }
 
 export function orchestratedVirtualMachineScaleSetOsDiskToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsDiskOutputReference | OrchestratedVirtualMachineScaleSetOsDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    caching: cdktf.stringToTerraform(struct!.caching),
-    disk_encryption_set_id: cdktf.stringToTerraform(struct!.diskEncryptionSetId),
-    disk_size_gb: cdktf.numberToTerraform(struct!.diskSizeGb),
-    storage_account_type: cdktf.stringToTerraform(struct!.storageAccountType),
-    write_accelerator_enabled: cdktf.booleanToTerraform(struct!.writeAcceleratorEnabled),
+    caching: cdktn.stringToTerraform(struct!.caching),
+    disk_encryption_set_id: cdktn.stringToTerraform(struct!.diskEncryptionSetId),
+    disk_size_gb: cdktn.numberToTerraform(struct!.diskSizeGb),
+    storage_account_type: cdktn.stringToTerraform(struct!.storageAccountType),
+    write_accelerator_enabled: cdktn.booleanToTerraform(struct!.writeAcceleratorEnabled),
     diff_disk_settings: orchestratedVirtualMachineScaleSetOsDiskDiffDiskSettingsToTerraform(struct!.diffDiskSettings),
   }
 }
 
 
 export function orchestratedVirtualMachineScaleSetOsDiskToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsDiskOutputReference | OrchestratedVirtualMachineScaleSetOsDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     caching: {
-      value: cdktf.stringToHclTerraform(struct!.caching),
+      value: cdktn.stringToHclTerraform(struct!.caching),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk_encryption_set_id: {
-      value: cdktf.stringToHclTerraform(struct!.diskEncryptionSetId),
+      value: cdktn.stringToHclTerraform(struct!.diskEncryptionSetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk_size_gb: {
-      value: cdktf.numberToHclTerraform(struct!.diskSizeGb),
+      value: cdktn.numberToHclTerraform(struct!.diskSizeGb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     storage_account_type: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountType),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     write_accelerator_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.writeAcceleratorEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.writeAcceleratorEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2940,14 +2940,14 @@ export function orchestratedVirtualMachineScaleSetOsDiskToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetOsDiskOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetOsDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3061,11 +3061,11 @@ export class OrchestratedVirtualMachineScaleSetOsDiskOutputReference extends cdk
   }
 
   // write_accelerator_enabled - computed: false, optional: true, required: false
-  private _writeAcceleratorEnabled?: boolean | cdktf.IResolvable; 
+  private _writeAcceleratorEnabled?: boolean | cdktn.IResolvable; 
   public get writeAcceleratorEnabled() {
     return this.getBooleanAttribute('write_accelerator_enabled');
   }
-  public set writeAcceleratorEnabled(value: boolean | cdktf.IResolvable) {
+  public set writeAcceleratorEnabled(value: boolean | cdktn.IResolvable) {
     this._writeAcceleratorEnabled = value;
   }
   public resetWriteAcceleratorEnabled() {
@@ -3103,32 +3103,32 @@ export interface OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAd
   readonly username: string;
 }
 
-export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKeyToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKeyToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    public_key: cdktf.stringToTerraform(struct!.publicKey),
-    username: cdktf.stringToTerraform(struct!.username),
+    public_key: cdktn.stringToTerraform(struct!.publicKey),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKeyToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKeyToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     public_key: {
-      value: cdktf.stringToHclTerraform(struct!.publicKey),
+      value: cdktn.stringToHclTerraform(struct!.publicKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3139,9 +3139,9 @@ export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdm
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKeyOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3149,11 +3149,11 @@ export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminS
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKey | cdktf.IResolvable | undefined {
+  public get internalValue(): OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKey | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3170,14 +3170,14 @@ export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminS
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKey | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKey | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._publicKey = undefined;
       this._username = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3216,15 +3216,15 @@ export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminS
   }
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKeyList extends cdktf.ComplexList {
-  public internalValue? : OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKey[] | cdktf.IResolvable
+export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKeyList extends cdktn.ComplexList {
+  public internalValue? : OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKey[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3242,25 +3242,25 @@ export interface OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSe
   readonly url: string;
 }
 
-export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    url: cdktf.stringToTerraform(struct!.url),
+    url: cdktn.stringToTerraform(struct!.url),
   }
 }
 
 
-export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3271,9 +3271,9 @@ export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3281,11 +3281,11 @@ export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3298,13 +3298,13 @@ export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._url = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3329,15 +3329,15 @@ export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret
   }
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateList extends cdktf.ComplexList {
-  public internalValue? : OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificate[] | cdktf.IResolvable
+export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateList extends cdktn.ComplexList {
+  public internalValue? : OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3358,35 +3358,35 @@ export interface OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSe
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#certificate OrchestratedVirtualMachineScaleSet#certificate}
   */
-  readonly certificate: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificate[] | cdktf.IResolvable;
+  readonly certificate: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificate[] | cdktn.IResolvable;
 }
 
-export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_vault_id: cdktf.stringToTerraform(struct!.keyVaultId),
-    certificate: cdktf.listMapper(orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateToTerraform, true)(struct!.certificate),
+    key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
+    certificate: cdktn.listMapper(orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateToTerraform, true)(struct!.certificate),
   }
 }
 
 
-export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate: {
-      value: cdktf.listMapperHcl(orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateToHclTerraform, true)(struct!.certificate),
+      value: cdktn.listMapperHcl(orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateToHclTerraform, true)(struct!.certificate),
       isBlock: true,
       type: "set",
       storageClassType: "OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificateList",
@@ -3397,9 +3397,9 @@ export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3407,11 +3407,11 @@ export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret | cdktf.IResolvable | undefined {
+  public get internalValue(): OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3428,14 +3428,14 @@ export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._keyVaultId = undefined;
       this._certificate.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3465,7 +3465,7 @@ export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret
   public get certificate() {
     return this._certificate;
   }
-  public putCertificate(value: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificate[] | cdktf.IResolvable) {
+  public putCertificate(value: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretCertificate[] | cdktn.IResolvable) {
     this._certificate.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3474,15 +3474,15 @@ export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret
   }
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretList extends cdktf.ComplexList {
-  public internalValue? : OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret[] | cdktf.IResolvable
+export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretList extends cdktn.ComplexList {
+  public internalValue? : OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3509,7 +3509,7 @@ export interface OrchestratedVirtualMachineScaleSetOsProfileLinuxConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#disable_password_authentication OrchestratedVirtualMachineScaleSet#disable_password_authentication}
   */
-  readonly disablePasswordAuthentication?: boolean | cdktf.IResolvable;
+  readonly disablePasswordAuthentication?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#patch_assessment_mode OrchestratedVirtualMachineScaleSet#patch_assessment_mode}
   */
@@ -3521,96 +3521,96 @@ export interface OrchestratedVirtualMachineScaleSetOsProfileLinuxConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#provision_vm_agent OrchestratedVirtualMachineScaleSet#provision_vm_agent}
   */
-  readonly provisionVmAgent?: boolean | cdktf.IResolvable;
+  readonly provisionVmAgent?: boolean | cdktn.IResolvable;
   /**
   * admin_ssh_key block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#admin_ssh_key OrchestratedVirtualMachineScaleSet#admin_ssh_key}
   */
-  readonly adminSshKey?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKey[] | cdktf.IResolvable;
+  readonly adminSshKey?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKey[] | cdktn.IResolvable;
   /**
   * secret block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#secret OrchestratedVirtualMachineScaleSet#secret}
   */
-  readonly secret?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret[] | cdktf.IResolvable;
+  readonly secret?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret[] | cdktn.IResolvable;
 }
 
 export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationOutputReference | OrchestratedVirtualMachineScaleSetOsProfileLinuxConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    admin_password: cdktf.stringToTerraform(struct!.adminPassword),
-    admin_username: cdktf.stringToTerraform(struct!.adminUsername),
-    computer_name_prefix: cdktf.stringToTerraform(struct!.computerNamePrefix),
-    disable_password_authentication: cdktf.booleanToTerraform(struct!.disablePasswordAuthentication),
-    patch_assessment_mode: cdktf.stringToTerraform(struct!.patchAssessmentMode),
-    patch_mode: cdktf.stringToTerraform(struct!.patchMode),
-    provision_vm_agent: cdktf.booleanToTerraform(struct!.provisionVmAgent),
-    admin_ssh_key: cdktf.listMapper(orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKeyToTerraform, true)(struct!.adminSshKey),
-    secret: cdktf.listMapper(orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretToTerraform, true)(struct!.secret),
+    admin_password: cdktn.stringToTerraform(struct!.adminPassword),
+    admin_username: cdktn.stringToTerraform(struct!.adminUsername),
+    computer_name_prefix: cdktn.stringToTerraform(struct!.computerNamePrefix),
+    disable_password_authentication: cdktn.booleanToTerraform(struct!.disablePasswordAuthentication),
+    patch_assessment_mode: cdktn.stringToTerraform(struct!.patchAssessmentMode),
+    patch_mode: cdktn.stringToTerraform(struct!.patchMode),
+    provision_vm_agent: cdktn.booleanToTerraform(struct!.provisionVmAgent),
+    admin_ssh_key: cdktn.listMapper(orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKeyToTerraform, true)(struct!.adminSshKey),
+    secret: cdktn.listMapper(orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretToTerraform, true)(struct!.secret),
   }
 }
 
 
 export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationOutputReference | OrchestratedVirtualMachineScaleSetOsProfileLinuxConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     admin_password: {
-      value: cdktf.stringToHclTerraform(struct!.adminPassword),
+      value: cdktn.stringToHclTerraform(struct!.adminPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     admin_username: {
-      value: cdktf.stringToHclTerraform(struct!.adminUsername),
+      value: cdktn.stringToHclTerraform(struct!.adminUsername),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     computer_name_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.computerNamePrefix),
+      value: cdktn.stringToHclTerraform(struct!.computerNamePrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disable_password_authentication: {
-      value: cdktf.booleanToHclTerraform(struct!.disablePasswordAuthentication),
+      value: cdktn.booleanToHclTerraform(struct!.disablePasswordAuthentication),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     patch_assessment_mode: {
-      value: cdktf.stringToHclTerraform(struct!.patchAssessmentMode),
+      value: cdktn.stringToHclTerraform(struct!.patchAssessmentMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     patch_mode: {
-      value: cdktf.stringToHclTerraform(struct!.patchMode),
+      value: cdktn.stringToHclTerraform(struct!.patchMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     provision_vm_agent: {
-      value: cdktf.booleanToHclTerraform(struct!.provisionVmAgent),
+      value: cdktn.booleanToHclTerraform(struct!.provisionVmAgent),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     admin_ssh_key: {
-      value: cdktf.listMapperHcl(orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKeyToHclTerraform, true)(struct!.adminSshKey),
+      value: cdktn.listMapperHcl(orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKeyToHclTerraform, true)(struct!.adminSshKey),
       isBlock: true,
       type: "set",
       storageClassType: "OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKeyList",
     },
     secret: {
-      value: cdktf.listMapperHcl(orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretToHclTerraform, true)(struct!.secret),
+      value: cdktn.listMapperHcl(orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretToHclTerraform, true)(struct!.secret),
       isBlock: true,
       type: "list",
       storageClassType: "OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecretList",
@@ -3621,14 +3621,14 @@ export function orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3747,11 +3747,11 @@ export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationOutput
   }
 
   // disable_password_authentication - computed: false, optional: true, required: false
-  private _disablePasswordAuthentication?: boolean | cdktf.IResolvable; 
+  private _disablePasswordAuthentication?: boolean | cdktn.IResolvable; 
   public get disablePasswordAuthentication() {
     return this.getBooleanAttribute('disable_password_authentication');
   }
-  public set disablePasswordAuthentication(value: boolean | cdktf.IResolvable) {
+  public set disablePasswordAuthentication(value: boolean | cdktn.IResolvable) {
     this._disablePasswordAuthentication = value;
   }
   public resetDisablePasswordAuthentication() {
@@ -3795,11 +3795,11 @@ export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationOutput
   }
 
   // provision_vm_agent - computed: false, optional: true, required: false
-  private _provisionVmAgent?: boolean | cdktf.IResolvable; 
+  private _provisionVmAgent?: boolean | cdktn.IResolvable; 
   public get provisionVmAgent() {
     return this.getBooleanAttribute('provision_vm_agent');
   }
-  public set provisionVmAgent(value: boolean | cdktf.IResolvable) {
+  public set provisionVmAgent(value: boolean | cdktn.IResolvable) {
     this._provisionVmAgent = value;
   }
   public resetProvisionVmAgent() {
@@ -3815,7 +3815,7 @@ export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationOutput
   public get adminSshKey() {
     return this._adminSshKey;
   }
-  public putAdminSshKey(value: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKey[] | cdktf.IResolvable) {
+  public putAdminSshKey(value: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationAdminSshKey[] | cdktn.IResolvable) {
     this._adminSshKey.internalValue = value;
   }
   public resetAdminSshKey() {
@@ -3831,7 +3831,7 @@ export class OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationOutput
   public get secret() {
     return this._secret;
   }
-  public putSecret(value: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret[] | cdktf.IResolvable) {
+  public putSecret(value: OrchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationSecret[] | cdktn.IResolvable) {
     this._secret.internalValue = value;
   }
   public resetSecret() {
@@ -3853,32 +3853,32 @@ export interface OrchestratedVirtualMachineScaleSetOsProfileWindowsConfiguration
   readonly setting: string;
 }
 
-export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    setting: cdktf.stringToTerraform(struct!.setting),
+    content: cdktn.stringToTerraform(struct!.content),
+    setting: cdktn.stringToTerraform(struct!.setting),
   }
 }
 
 
-export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     setting: {
-      value: cdktf.stringToHclTerraform(struct!.setting),
+      value: cdktn.stringToHclTerraform(struct!.setting),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3889,9 +3889,9 @@ export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3899,11 +3899,11 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAddi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent | cdktf.IResolvable | undefined {
+  public get internalValue(): OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3920,14 +3920,14 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAddi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._content = undefined;
       this._setting = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3966,15 +3966,15 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAddi
   }
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentList extends cdktf.ComplexList {
-  public internalValue? : OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent[] | cdktf.IResolvable
+export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentList extends cdktn.ComplexList {
+  public internalValue? : OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3996,32 +3996,32 @@ export interface OrchestratedVirtualMachineScaleSetOsProfileWindowsConfiguration
   readonly url: string;
 }
 
-export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    store: cdktf.stringToTerraform(struct!.store),
-    url: cdktf.stringToTerraform(struct!.url),
+    store: cdktn.stringToTerraform(struct!.store),
+    url: cdktn.stringToTerraform(struct!.url),
   }
 }
 
 
-export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     store: {
-      value: cdktf.stringToHclTerraform(struct!.store),
+      value: cdktn.stringToHclTerraform(struct!.store),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4032,9 +4032,9 @@ export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4042,11 +4042,11 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4063,14 +4063,14 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecr
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._store = undefined;
       this._url = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4109,15 +4109,15 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecr
   }
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateList extends cdktf.ComplexList {
-  public internalValue? : OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificate[] | cdktf.IResolvable
+export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateList extends cdktn.ComplexList {
+  public internalValue? : OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4138,35 +4138,35 @@ export interface OrchestratedVirtualMachineScaleSetOsProfileWindowsConfiguration
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#certificate OrchestratedVirtualMachineScaleSet#certificate}
   */
-  readonly certificate: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificate[] | cdktf.IResolvable;
+  readonly certificate: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificate[] | cdktn.IResolvable;
 }
 
-export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_vault_id: cdktf.stringToTerraform(struct!.keyVaultId),
-    certificate: cdktf.listMapper(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateToTerraform, true)(struct!.certificate),
+    key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
+    certificate: cdktn.listMapper(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateToTerraform, true)(struct!.certificate),
   }
 }
 
 
-export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate: {
-      value: cdktf.listMapperHcl(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateToHclTerraform, true)(struct!.certificate),
+      value: cdktn.listMapperHcl(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateToHclTerraform, true)(struct!.certificate),
       isBlock: true,
       type: "set",
       storageClassType: "OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificateList",
@@ -4177,9 +4177,9 @@ export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4187,11 +4187,11 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecret | cdktf.IResolvable | undefined {
+  public get internalValue(): OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecret | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4208,14 +4208,14 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecr
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecret | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecret | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._keyVaultId = undefined;
       this._certificate.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4245,7 +4245,7 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecr
   public get certificate() {
     return this._certificate;
   }
-  public putCertificate(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificate[] | cdktf.IResolvable) {
+  public putCertificate(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretCertificate[] | cdktn.IResolvable) {
     this._certificate.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4254,15 +4254,15 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecr
   }
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretList extends cdktf.ComplexList {
-  public internalValue? : OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecret[] | cdktf.IResolvable
+export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretList extends cdktn.ComplexList {
+  public internalValue? : OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecret[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4284,32 +4284,32 @@ export interface OrchestratedVirtualMachineScaleSetOsProfileWindowsConfiguration
   readonly protocol: string;
 }
 
-export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListenerToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListener | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListenerToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListener | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_url: cdktf.stringToTerraform(struct!.certificateUrl),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
+    certificate_url: cdktn.stringToTerraform(struct!.certificateUrl),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
   }
 }
 
 
-export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListenerToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListener | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListenerToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListener | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate_url: {
-      value: cdktf.stringToHclTerraform(struct!.certificateUrl),
+      value: cdktn.stringToHclTerraform(struct!.certificateUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4320,9 +4320,9 @@ export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationW
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListenerOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListenerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4330,11 +4330,11 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListener | cdktf.IResolvable | undefined {
+  public get internalValue(): OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListener | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4351,14 +4351,14 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinr
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListener | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListener | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._certificateUrl = undefined;
       this._protocol = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4400,15 +4400,15 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinr
   }
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListenerList extends cdktf.ComplexList {
-  public internalValue? : OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListener[] | cdktf.IResolvable
+export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListenerList extends cdktn.ComplexList {
+  public internalValue? : OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListener[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4435,11 +4435,11 @@ export interface OrchestratedVirtualMachineScaleSetOsProfileWindowsConfiguration
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#enable_automatic_updates OrchestratedVirtualMachineScaleSet#enable_automatic_updates}
   */
-  readonly enableAutomaticUpdates?: boolean | cdktf.IResolvable;
+  readonly enableAutomaticUpdates?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#hotpatching_enabled OrchestratedVirtualMachineScaleSet#hotpatching_enabled}
   */
-  readonly hotpatchingEnabled?: boolean | cdktf.IResolvable;
+  readonly hotpatchingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#patch_assessment_mode OrchestratedVirtualMachineScaleSet#patch_assessment_mode}
   */
@@ -4451,7 +4451,7 @@ export interface OrchestratedVirtualMachineScaleSetOsProfileWindowsConfiguration
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#provision_vm_agent OrchestratedVirtualMachineScaleSet#provision_vm_agent}
   */
-  readonly provisionVmAgent?: boolean | cdktf.IResolvable;
+  readonly provisionVmAgent?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#timezone OrchestratedVirtualMachineScaleSet#timezone}
   */
@@ -4461,117 +4461,117 @@ export interface OrchestratedVirtualMachineScaleSetOsProfileWindowsConfiguration
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#additional_unattend_content OrchestratedVirtualMachineScaleSet#additional_unattend_content}
   */
-  readonly additionalUnattendContent?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent[] | cdktf.IResolvable;
+  readonly additionalUnattendContent?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent[] | cdktn.IResolvable;
   /**
   * secret block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#secret OrchestratedVirtualMachineScaleSet#secret}
   */
-  readonly secret?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecret[] | cdktf.IResolvable;
+  readonly secret?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecret[] | cdktn.IResolvable;
   /**
   * winrm_listener block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#winrm_listener OrchestratedVirtualMachineScaleSet#winrm_listener}
   */
-  readonly winrmListener?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListener[] | cdktf.IResolvable;
+  readonly winrmListener?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListener[] | cdktn.IResolvable;
 }
 
 export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputReference | OrchestratedVirtualMachineScaleSetOsProfileWindowsConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    admin_password: cdktf.stringToTerraform(struct!.adminPassword),
-    admin_username: cdktf.stringToTerraform(struct!.adminUsername),
-    computer_name_prefix: cdktf.stringToTerraform(struct!.computerNamePrefix),
-    enable_automatic_updates: cdktf.booleanToTerraform(struct!.enableAutomaticUpdates),
-    hotpatching_enabled: cdktf.booleanToTerraform(struct!.hotpatchingEnabled),
-    patch_assessment_mode: cdktf.stringToTerraform(struct!.patchAssessmentMode),
-    patch_mode: cdktf.stringToTerraform(struct!.patchMode),
-    provision_vm_agent: cdktf.booleanToTerraform(struct!.provisionVmAgent),
-    timezone: cdktf.stringToTerraform(struct!.timezone),
-    additional_unattend_content: cdktf.listMapper(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentToTerraform, true)(struct!.additionalUnattendContent),
-    secret: cdktf.listMapper(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretToTerraform, true)(struct!.secret),
-    winrm_listener: cdktf.listMapper(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListenerToTerraform, true)(struct!.winrmListener),
+    admin_password: cdktn.stringToTerraform(struct!.adminPassword),
+    admin_username: cdktn.stringToTerraform(struct!.adminUsername),
+    computer_name_prefix: cdktn.stringToTerraform(struct!.computerNamePrefix),
+    enable_automatic_updates: cdktn.booleanToTerraform(struct!.enableAutomaticUpdates),
+    hotpatching_enabled: cdktn.booleanToTerraform(struct!.hotpatchingEnabled),
+    patch_assessment_mode: cdktn.stringToTerraform(struct!.patchAssessmentMode),
+    patch_mode: cdktn.stringToTerraform(struct!.patchMode),
+    provision_vm_agent: cdktn.booleanToTerraform(struct!.provisionVmAgent),
+    timezone: cdktn.stringToTerraform(struct!.timezone),
+    additional_unattend_content: cdktn.listMapper(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentToTerraform, true)(struct!.additionalUnattendContent),
+    secret: cdktn.listMapper(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretToTerraform, true)(struct!.secret),
+    winrm_listener: cdktn.listMapper(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListenerToTerraform, true)(struct!.winrmListener),
   }
 }
 
 
 export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputReference | OrchestratedVirtualMachineScaleSetOsProfileWindowsConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     admin_password: {
-      value: cdktf.stringToHclTerraform(struct!.adminPassword),
+      value: cdktn.stringToHclTerraform(struct!.adminPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     admin_username: {
-      value: cdktf.stringToHclTerraform(struct!.adminUsername),
+      value: cdktn.stringToHclTerraform(struct!.adminUsername),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     computer_name_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.computerNamePrefix),
+      value: cdktn.stringToHclTerraform(struct!.computerNamePrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_automatic_updates: {
-      value: cdktf.booleanToHclTerraform(struct!.enableAutomaticUpdates),
+      value: cdktn.booleanToHclTerraform(struct!.enableAutomaticUpdates),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     hotpatching_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.hotpatchingEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.hotpatchingEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     patch_assessment_mode: {
-      value: cdktf.stringToHclTerraform(struct!.patchAssessmentMode),
+      value: cdktn.stringToHclTerraform(struct!.patchAssessmentMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     patch_mode: {
-      value: cdktf.stringToHclTerraform(struct!.patchMode),
+      value: cdktn.stringToHclTerraform(struct!.patchMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     provision_vm_agent: {
-      value: cdktf.booleanToHclTerraform(struct!.provisionVmAgent),
+      value: cdktn.booleanToHclTerraform(struct!.provisionVmAgent),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     timezone: {
-      value: cdktf.stringToHclTerraform(struct!.timezone),
+      value: cdktn.stringToHclTerraform(struct!.timezone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     additional_unattend_content: {
-      value: cdktf.listMapperHcl(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentToHclTerraform, true)(struct!.additionalUnattendContent),
+      value: cdktn.listMapperHcl(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentToHclTerraform, true)(struct!.additionalUnattendContent),
       isBlock: true,
       type: "list",
       storageClassType: "OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContentList",
     },
     secret: {
-      value: cdktf.listMapperHcl(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretToHclTerraform, true)(struct!.secret),
+      value: cdktn.listMapperHcl(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretToHclTerraform, true)(struct!.secret),
       isBlock: true,
       type: "list",
       storageClassType: "OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecretList",
     },
     winrm_listener: {
-      value: cdktf.listMapperHcl(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListenerToHclTerraform, true)(struct!.winrmListener),
+      value: cdktn.listMapperHcl(orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListenerToHclTerraform, true)(struct!.winrmListener),
       isBlock: true,
       type: "set",
       storageClassType: "OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListenerList",
@@ -4582,14 +4582,14 @@ export function orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4723,11 +4723,11 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutp
   }
 
   // enable_automatic_updates - computed: false, optional: true, required: false
-  private _enableAutomaticUpdates?: boolean | cdktf.IResolvable; 
+  private _enableAutomaticUpdates?: boolean | cdktn.IResolvable; 
   public get enableAutomaticUpdates() {
     return this.getBooleanAttribute('enable_automatic_updates');
   }
-  public set enableAutomaticUpdates(value: boolean | cdktf.IResolvable) {
+  public set enableAutomaticUpdates(value: boolean | cdktn.IResolvable) {
     this._enableAutomaticUpdates = value;
   }
   public resetEnableAutomaticUpdates() {
@@ -4739,11 +4739,11 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutp
   }
 
   // hotpatching_enabled - computed: false, optional: true, required: false
-  private _hotpatchingEnabled?: boolean | cdktf.IResolvable; 
+  private _hotpatchingEnabled?: boolean | cdktn.IResolvable; 
   public get hotpatchingEnabled() {
     return this.getBooleanAttribute('hotpatching_enabled');
   }
-  public set hotpatchingEnabled(value: boolean | cdktf.IResolvable) {
+  public set hotpatchingEnabled(value: boolean | cdktn.IResolvable) {
     this._hotpatchingEnabled = value;
   }
   public resetHotpatchingEnabled() {
@@ -4787,11 +4787,11 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutp
   }
 
   // provision_vm_agent - computed: false, optional: true, required: false
-  private _provisionVmAgent?: boolean | cdktf.IResolvable; 
+  private _provisionVmAgent?: boolean | cdktn.IResolvable; 
   public get provisionVmAgent() {
     return this.getBooleanAttribute('provision_vm_agent');
   }
-  public set provisionVmAgent(value: boolean | cdktf.IResolvable) {
+  public set provisionVmAgent(value: boolean | cdktn.IResolvable) {
     this._provisionVmAgent = value;
   }
   public resetProvisionVmAgent() {
@@ -4823,7 +4823,7 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutp
   public get additionalUnattendContent() {
     return this._additionalUnattendContent;
   }
-  public putAdditionalUnattendContent(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent[] | cdktf.IResolvable) {
+  public putAdditionalUnattendContent(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationAdditionalUnattendContent[] | cdktn.IResolvable) {
     this._additionalUnattendContent.internalValue = value;
   }
   public resetAdditionalUnattendContent() {
@@ -4839,7 +4839,7 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutp
   public get secret() {
     return this._secret;
   }
-  public putSecret(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecret[] | cdktf.IResolvable) {
+  public putSecret(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationSecret[] | cdktn.IResolvable) {
     this._secret.internalValue = value;
   }
   public resetSecret() {
@@ -4855,7 +4855,7 @@ export class OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationOutp
   public get winrmListener() {
     return this._winrmListener;
   }
-  public putWinrmListener(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListener[] | cdktf.IResolvable) {
+  public putWinrmListener(value: OrchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationWinrmListener[] | cdktn.IResolvable) {
     this._winrmListener.internalValue = value;
   }
   public resetWinrmListener() {
@@ -4886,12 +4886,12 @@ export interface OrchestratedVirtualMachineScaleSetOsProfile {
 }
 
 export function orchestratedVirtualMachineScaleSetOsProfileToTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileOutputReference | OrchestratedVirtualMachineScaleSetOsProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_data: cdktf.stringToTerraform(struct!.customData),
+    custom_data: cdktn.stringToTerraform(struct!.customData),
     linux_configuration: orchestratedVirtualMachineScaleSetOsProfileLinuxConfigurationToTerraform(struct!.linuxConfiguration),
     windows_configuration: orchestratedVirtualMachineScaleSetOsProfileWindowsConfigurationToTerraform(struct!.windowsConfiguration),
   }
@@ -4899,13 +4899,13 @@ export function orchestratedVirtualMachineScaleSetOsProfileToTerraform(struct?: 
 
 
 export function orchestratedVirtualMachineScaleSetOsProfileToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetOsProfileOutputReference | OrchestratedVirtualMachineScaleSetOsProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_data: {
-      value: cdktf.stringToHclTerraform(struct!.customData),
+      value: cdktn.stringToHclTerraform(struct!.customData),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4928,14 +4928,14 @@ export function orchestratedVirtualMachineScaleSetOsProfileToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetOsProfileOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetOsProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5036,38 +5036,38 @@ export interface OrchestratedVirtualMachineScaleSetPlan {
 }
 
 export function orchestratedVirtualMachineScaleSetPlanToTerraform(struct?: OrchestratedVirtualMachineScaleSetPlanOutputReference | OrchestratedVirtualMachineScaleSetPlan): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    product: cdktf.stringToTerraform(struct!.product),
-    publisher: cdktf.stringToTerraform(struct!.publisher),
+    name: cdktn.stringToTerraform(struct!.name),
+    product: cdktn.stringToTerraform(struct!.product),
+    publisher: cdktn.stringToTerraform(struct!.publisher),
   }
 }
 
 
 export function orchestratedVirtualMachineScaleSetPlanToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetPlanOutputReference | OrchestratedVirtualMachineScaleSetPlan): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     product: {
-      value: cdktf.stringToHclTerraform(struct!.product),
+      value: cdktn.stringToHclTerraform(struct!.product),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publisher: {
-      value: cdktf.stringToHclTerraform(struct!.publisher),
+      value: cdktn.stringToHclTerraform(struct!.publisher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5078,14 +5078,14 @@ export function orchestratedVirtualMachineScaleSetPlanToHclTerraform(struct?: Or
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetPlanOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetPlanOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5173,31 +5173,31 @@ export interface OrchestratedVirtualMachineScaleSetPriorityMix {
 }
 
 export function orchestratedVirtualMachineScaleSetPriorityMixToTerraform(struct?: OrchestratedVirtualMachineScaleSetPriorityMixOutputReference | OrchestratedVirtualMachineScaleSetPriorityMix): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    base_regular_count: cdktf.numberToTerraform(struct!.baseRegularCount),
-    regular_percentage_above_base: cdktf.numberToTerraform(struct!.regularPercentageAboveBase),
+    base_regular_count: cdktn.numberToTerraform(struct!.baseRegularCount),
+    regular_percentage_above_base: cdktn.numberToTerraform(struct!.regularPercentageAboveBase),
   }
 }
 
 
 export function orchestratedVirtualMachineScaleSetPriorityMixToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetPriorityMixOutputReference | OrchestratedVirtualMachineScaleSetPriorityMix): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     base_regular_count: {
-      value: cdktf.numberToHclTerraform(struct!.baseRegularCount),
+      value: cdktn.numberToHclTerraform(struct!.baseRegularCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     regular_percentage_above_base: {
-      value: cdktf.numberToHclTerraform(struct!.regularPercentageAboveBase),
+      value: cdktn.numberToHclTerraform(struct!.regularPercentageAboveBase),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -5208,14 +5208,14 @@ export function orchestratedVirtualMachineScaleSetPriorityMixToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetPriorityMixOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetPriorityMixOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5282,7 +5282,7 @@ export interface OrchestratedVirtualMachineScaleSetRollingUpgradePolicy {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#cross_zone_upgrades_enabled OrchestratedVirtualMachineScaleSet#cross_zone_upgrades_enabled}
   */
-  readonly crossZoneUpgradesEnabled?: boolean | cdktf.IResolvable;
+  readonly crossZoneUpgradesEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#max_batch_instance_percent OrchestratedVirtualMachineScaleSet#max_batch_instance_percent}
   */
@@ -5298,7 +5298,7 @@ export interface OrchestratedVirtualMachineScaleSetRollingUpgradePolicy {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#maximum_surge_instances_enabled OrchestratedVirtualMachineScaleSet#maximum_surge_instances_enabled}
   */
-  readonly maximumSurgeInstancesEnabled?: boolean | cdktf.IResolvable;
+  readonly maximumSurgeInstancesEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#pause_time_between_batches OrchestratedVirtualMachineScaleSet#pause_time_between_batches}
   */
@@ -5306,70 +5306,70 @@ export interface OrchestratedVirtualMachineScaleSetRollingUpgradePolicy {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#prioritize_unhealthy_instances_enabled OrchestratedVirtualMachineScaleSet#prioritize_unhealthy_instances_enabled}
   */
-  readonly prioritizeUnhealthyInstancesEnabled?: boolean | cdktf.IResolvable;
+  readonly prioritizeUnhealthyInstancesEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function orchestratedVirtualMachineScaleSetRollingUpgradePolicyToTerraform(struct?: OrchestratedVirtualMachineScaleSetRollingUpgradePolicyOutputReference | OrchestratedVirtualMachineScaleSetRollingUpgradePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cross_zone_upgrades_enabled: cdktf.booleanToTerraform(struct!.crossZoneUpgradesEnabled),
-    max_batch_instance_percent: cdktf.numberToTerraform(struct!.maxBatchInstancePercent),
-    max_unhealthy_instance_percent: cdktf.numberToTerraform(struct!.maxUnhealthyInstancePercent),
-    max_unhealthy_upgraded_instance_percent: cdktf.numberToTerraform(struct!.maxUnhealthyUpgradedInstancePercent),
-    maximum_surge_instances_enabled: cdktf.booleanToTerraform(struct!.maximumSurgeInstancesEnabled),
-    pause_time_between_batches: cdktf.stringToTerraform(struct!.pauseTimeBetweenBatches),
-    prioritize_unhealthy_instances_enabled: cdktf.booleanToTerraform(struct!.prioritizeUnhealthyInstancesEnabled),
+    cross_zone_upgrades_enabled: cdktn.booleanToTerraform(struct!.crossZoneUpgradesEnabled),
+    max_batch_instance_percent: cdktn.numberToTerraform(struct!.maxBatchInstancePercent),
+    max_unhealthy_instance_percent: cdktn.numberToTerraform(struct!.maxUnhealthyInstancePercent),
+    max_unhealthy_upgraded_instance_percent: cdktn.numberToTerraform(struct!.maxUnhealthyUpgradedInstancePercent),
+    maximum_surge_instances_enabled: cdktn.booleanToTerraform(struct!.maximumSurgeInstancesEnabled),
+    pause_time_between_batches: cdktn.stringToTerraform(struct!.pauseTimeBetweenBatches),
+    prioritize_unhealthy_instances_enabled: cdktn.booleanToTerraform(struct!.prioritizeUnhealthyInstancesEnabled),
   }
 }
 
 
 export function orchestratedVirtualMachineScaleSetRollingUpgradePolicyToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetRollingUpgradePolicyOutputReference | OrchestratedVirtualMachineScaleSetRollingUpgradePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cross_zone_upgrades_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.crossZoneUpgradesEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.crossZoneUpgradesEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_batch_instance_percent: {
-      value: cdktf.numberToHclTerraform(struct!.maxBatchInstancePercent),
+      value: cdktn.numberToHclTerraform(struct!.maxBatchInstancePercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_unhealthy_instance_percent: {
-      value: cdktf.numberToHclTerraform(struct!.maxUnhealthyInstancePercent),
+      value: cdktn.numberToHclTerraform(struct!.maxUnhealthyInstancePercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_unhealthy_upgraded_instance_percent: {
-      value: cdktf.numberToHclTerraform(struct!.maxUnhealthyUpgradedInstancePercent),
+      value: cdktn.numberToHclTerraform(struct!.maxUnhealthyUpgradedInstancePercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maximum_surge_instances_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.maximumSurgeInstancesEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.maximumSurgeInstancesEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     pause_time_between_batches: {
-      value: cdktf.stringToHclTerraform(struct!.pauseTimeBetweenBatches),
+      value: cdktn.stringToHclTerraform(struct!.pauseTimeBetweenBatches),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prioritize_unhealthy_instances_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.prioritizeUnhealthyInstancesEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.prioritizeUnhealthyInstancesEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -5380,14 +5380,14 @@ export function orchestratedVirtualMachineScaleSetRollingUpgradePolicyToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetRollingUpgradePolicyOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetRollingUpgradePolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5449,11 +5449,11 @@ export class OrchestratedVirtualMachineScaleSetRollingUpgradePolicyOutputReferen
   }
 
   // cross_zone_upgrades_enabled - computed: false, optional: true, required: false
-  private _crossZoneUpgradesEnabled?: boolean | cdktf.IResolvable; 
+  private _crossZoneUpgradesEnabled?: boolean | cdktn.IResolvable; 
   public get crossZoneUpgradesEnabled() {
     return this.getBooleanAttribute('cross_zone_upgrades_enabled');
   }
-  public set crossZoneUpgradesEnabled(value: boolean | cdktf.IResolvable) {
+  public set crossZoneUpgradesEnabled(value: boolean | cdktn.IResolvable) {
     this._crossZoneUpgradesEnabled = value;
   }
   public resetCrossZoneUpgradesEnabled() {
@@ -5504,11 +5504,11 @@ export class OrchestratedVirtualMachineScaleSetRollingUpgradePolicyOutputReferen
   }
 
   // maximum_surge_instances_enabled - computed: false, optional: true, required: false
-  private _maximumSurgeInstancesEnabled?: boolean | cdktf.IResolvable; 
+  private _maximumSurgeInstancesEnabled?: boolean | cdktn.IResolvable; 
   public get maximumSurgeInstancesEnabled() {
     return this.getBooleanAttribute('maximum_surge_instances_enabled');
   }
-  public set maximumSurgeInstancesEnabled(value: boolean | cdktf.IResolvable) {
+  public set maximumSurgeInstancesEnabled(value: boolean | cdktn.IResolvable) {
     this._maximumSurgeInstancesEnabled = value;
   }
   public resetMaximumSurgeInstancesEnabled() {
@@ -5533,11 +5533,11 @@ export class OrchestratedVirtualMachineScaleSetRollingUpgradePolicyOutputReferen
   }
 
   // prioritize_unhealthy_instances_enabled - computed: false, optional: true, required: false
-  private _prioritizeUnhealthyInstancesEnabled?: boolean | cdktf.IResolvable; 
+  private _prioritizeUnhealthyInstancesEnabled?: boolean | cdktn.IResolvable; 
   public get prioritizeUnhealthyInstancesEnabled() {
     return this.getBooleanAttribute('prioritize_unhealthy_instances_enabled');
   }
-  public set prioritizeUnhealthyInstancesEnabled(value: boolean | cdktf.IResolvable) {
+  public set prioritizeUnhealthyInstancesEnabled(value: boolean | cdktn.IResolvable) {
     this._prioritizeUnhealthyInstancesEnabled = value;
   }
   public resetPrioritizeUnhealthyInstancesEnabled() {
@@ -5560,31 +5560,31 @@ export interface OrchestratedVirtualMachineScaleSetSkuProfile {
 }
 
 export function orchestratedVirtualMachineScaleSetSkuProfileToTerraform(struct?: OrchestratedVirtualMachineScaleSetSkuProfileOutputReference | OrchestratedVirtualMachineScaleSetSkuProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allocation_strategy: cdktf.stringToTerraform(struct!.allocationStrategy),
-    vm_sizes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.vmSizes),
+    allocation_strategy: cdktn.stringToTerraform(struct!.allocationStrategy),
+    vm_sizes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.vmSizes),
   }
 }
 
 
 export function orchestratedVirtualMachineScaleSetSkuProfileToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetSkuProfileOutputReference | OrchestratedVirtualMachineScaleSetSkuProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allocation_strategy: {
-      value: cdktf.stringToHclTerraform(struct!.allocationStrategy),
+      value: cdktn.stringToHclTerraform(struct!.allocationStrategy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vm_sizes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.vmSizes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.vmSizes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -5595,14 +5595,14 @@ export function orchestratedVirtualMachineScaleSetSkuProfileToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetSkuProfileOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetSkuProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5649,7 +5649,7 @@ export class OrchestratedVirtualMachineScaleSetSkuProfileOutputReference extends
   // vm_sizes - computed: false, optional: false, required: true
   private _vmSizes?: string[]; 
   public get vmSizes() {
-    return cdktf.Fn.tolist(this.getListAttribute('vm_sizes'));
+    return cdktn.Fn.tolist(this.getListAttribute('vm_sizes'));
   }
   public set vmSizes(value: string[]) {
     this._vmSizes = value;
@@ -5679,45 +5679,45 @@ export interface OrchestratedVirtualMachineScaleSetSourceImageReference {
 }
 
 export function orchestratedVirtualMachineScaleSetSourceImageReferenceToTerraform(struct?: OrchestratedVirtualMachineScaleSetSourceImageReferenceOutputReference | OrchestratedVirtualMachineScaleSetSourceImageReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    offer: cdktf.stringToTerraform(struct!.offer),
-    publisher: cdktf.stringToTerraform(struct!.publisher),
-    sku: cdktf.stringToTerraform(struct!.sku),
-    version: cdktf.stringToTerraform(struct!.version),
+    offer: cdktn.stringToTerraform(struct!.offer),
+    publisher: cdktn.stringToTerraform(struct!.publisher),
+    sku: cdktn.stringToTerraform(struct!.sku),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function orchestratedVirtualMachineScaleSetSourceImageReferenceToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetSourceImageReferenceOutputReference | OrchestratedVirtualMachineScaleSetSourceImageReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     offer: {
-      value: cdktf.stringToHclTerraform(struct!.offer),
+      value: cdktn.stringToHclTerraform(struct!.offer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publisher: {
-      value: cdktf.stringToHclTerraform(struct!.publisher),
+      value: cdktn.stringToHclTerraform(struct!.publisher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sku: {
-      value: cdktf.stringToHclTerraform(struct!.sku),
+      value: cdktn.stringToHclTerraform(struct!.sku),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5728,14 +5728,14 @@ export function orchestratedVirtualMachineScaleSetSourceImageReferenceToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetSourceImageReferenceOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetSourceImageReferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5834,7 +5834,7 @@ export interface OrchestratedVirtualMachineScaleSetTerminationNotification {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#enabled OrchestratedVirtualMachineScaleSet#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#timeout OrchestratedVirtualMachineScaleSet#timeout}
   */
@@ -5842,31 +5842,31 @@ export interface OrchestratedVirtualMachineScaleSetTerminationNotification {
 }
 
 export function orchestratedVirtualMachineScaleSetTerminationNotificationToTerraform(struct?: OrchestratedVirtualMachineScaleSetTerminationNotificationOutputReference | OrchestratedVirtualMachineScaleSetTerminationNotification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    timeout: cdktf.stringToTerraform(struct!.timeout),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    timeout: cdktn.stringToTerraform(struct!.timeout),
   }
 }
 
 
 export function orchestratedVirtualMachineScaleSetTerminationNotificationToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetTerminationNotificationOutputReference | OrchestratedVirtualMachineScaleSetTerminationNotification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     timeout: {
-      value: cdktf.stringToHclTerraform(struct!.timeout),
+      value: cdktn.stringToHclTerraform(struct!.timeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5877,14 +5877,14 @@ export function orchestratedVirtualMachineScaleSetTerminationNotificationToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetTerminationNotificationOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetTerminationNotificationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5916,11 +5916,11 @@ export class OrchestratedVirtualMachineScaleSetTerminationNotificationOutputRefe
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -5963,46 +5963,46 @@ export interface OrchestratedVirtualMachineScaleSetTimeouts {
   readonly update?: string;
 }
 
-export function orchestratedVirtualMachineScaleSetTimeoutsToTerraform(struct?: OrchestratedVirtualMachineScaleSetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetTimeoutsToTerraform(struct?: OrchestratedVirtualMachineScaleSetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function orchestratedVirtualMachineScaleSetTimeoutsToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orchestratedVirtualMachineScaleSetTimeoutsToHclTerraform(struct?: OrchestratedVirtualMachineScaleSetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6013,19 +6013,19 @@ export function orchestratedVirtualMachineScaleSetTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrchestratedVirtualMachineScaleSetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OrchestratedVirtualMachineScaleSetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OrchestratedVirtualMachineScaleSetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OrchestratedVirtualMachineScaleSetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6050,7 +6050,7 @@ export class OrchestratedVirtualMachineScaleSetTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrchestratedVirtualMachineScaleSetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrchestratedVirtualMachineScaleSetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6059,7 +6059,7 @@ export class OrchestratedVirtualMachineScaleSetTimeoutsOutputReference extends c
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6141,7 +6141,7 @@ export class OrchestratedVirtualMachineScaleSetTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set azurerm_orchestrated_virtual_machine_scale_set}
 */
-export class OrchestratedVirtualMachineScaleSet extends cdktf.TerraformResource {
+export class OrchestratedVirtualMachineScaleSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -6152,14 +6152,14 @@ export class OrchestratedVirtualMachineScaleSet extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OrchestratedVirtualMachineScaleSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OrchestratedVirtualMachineScaleSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrchestratedVirtualMachineScaleSet to import
   * @param importFromId The id of the existing OrchestratedVirtualMachineScaleSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orchestrated_virtual_machine_scale_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrchestratedVirtualMachineScaleSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_orchestrated_virtual_machine_scale_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_orchestrated_virtual_machine_scale_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -6252,11 +6252,11 @@ export class OrchestratedVirtualMachineScaleSet extends cdktf.TerraformResource 
   }
 
   // encryption_at_host_enabled - computed: false, optional: true, required: false
-  private _encryptionAtHostEnabled?: boolean | cdktf.IResolvable; 
+  private _encryptionAtHostEnabled?: boolean | cdktn.IResolvable; 
   public get encryptionAtHostEnabled() {
     return this.getBooleanAttribute('encryption_at_host_enabled');
   }
-  public set encryptionAtHostEnabled(value: boolean | cdktf.IResolvable) {
+  public set encryptionAtHostEnabled(value: boolean | cdktn.IResolvable) {
     this._encryptionAtHostEnabled = value;
   }
   public resetEncryptionAtHostEnabled() {
@@ -6284,11 +6284,11 @@ export class OrchestratedVirtualMachineScaleSet extends cdktf.TerraformResource 
   }
 
   // extension_operations_enabled - computed: false, optional: true, required: false
-  private _extensionOperationsEnabled?: boolean | cdktf.IResolvable; 
+  private _extensionOperationsEnabled?: boolean | cdktn.IResolvable; 
   public get extensionOperationsEnabled() {
     return this.getBooleanAttribute('extension_operations_enabled');
   }
-  public set extensionOperationsEnabled(value: boolean | cdktf.IResolvable) {
+  public set extensionOperationsEnabled(value: boolean | cdktn.IResolvable) {
     this._extensionOperationsEnabled = value;
   }
   public resetExtensionOperationsEnabled() {
@@ -6480,11 +6480,11 @@ export class OrchestratedVirtualMachineScaleSet extends cdktf.TerraformResource 
   }
 
   // single_placement_group - computed: true, optional: true, required: false
-  private _singlePlacementGroup?: boolean | cdktf.IResolvable; 
+  private _singlePlacementGroup?: boolean | cdktn.IResolvable; 
   public get singlePlacementGroup() {
     return this.getBooleanAttribute('single_placement_group');
   }
-  public set singlePlacementGroup(value: boolean | cdktf.IResolvable) {
+  public set singlePlacementGroup(value: boolean | cdktn.IResolvable) {
     this._singlePlacementGroup = value;
   }
   public resetSinglePlacementGroup() {
@@ -6581,11 +6581,11 @@ export class OrchestratedVirtualMachineScaleSet extends cdktf.TerraformResource 
   }
 
   // zone_balance - computed: false, optional: true, required: false
-  private _zoneBalance?: boolean | cdktf.IResolvable; 
+  private _zoneBalance?: boolean | cdktn.IResolvable; 
   public get zoneBalance() {
     return this.getBooleanAttribute('zone_balance');
   }
-  public set zoneBalance(value: boolean | cdktf.IResolvable) {
+  public set zoneBalance(value: boolean | cdktn.IResolvable) {
     this._zoneBalance = value;
   }
   public resetZoneBalance() {
@@ -6599,7 +6599,7 @@ export class OrchestratedVirtualMachineScaleSet extends cdktf.TerraformResource 
   // zones - computed: false, optional: true, required: false
   private _zones?: string[]; 
   public get zones() {
-    return cdktf.Fn.tolist(this.getListAttribute('zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('zones'));
   }
   public set zones(value: string[]) {
     this._zones = value;
@@ -6665,7 +6665,7 @@ export class OrchestratedVirtualMachineScaleSet extends cdktf.TerraformResource 
   public get dataDisk() {
     return this._dataDisk;
   }
-  public putDataDisk(value: OrchestratedVirtualMachineScaleSetDataDisk[] | cdktf.IResolvable) {
+  public putDataDisk(value: OrchestratedVirtualMachineScaleSetDataDisk[] | cdktn.IResolvable) {
     this._dataDisk.internalValue = value;
   }
   public resetDataDisk() {
@@ -6681,7 +6681,7 @@ export class OrchestratedVirtualMachineScaleSet extends cdktf.TerraformResource 
   public get extension() {
     return this._extension;
   }
-  public putExtension(value: OrchestratedVirtualMachineScaleSetExtension[] | cdktf.IResolvable) {
+  public putExtension(value: OrchestratedVirtualMachineScaleSetExtension[] | cdktn.IResolvable) {
     this._extension.internalValue = value;
   }
   public resetExtension() {
@@ -6713,7 +6713,7 @@ export class OrchestratedVirtualMachineScaleSet extends cdktf.TerraformResource 
   public get networkInterface() {
     return this._networkInterface;
   }
-  public putNetworkInterface(value: OrchestratedVirtualMachineScaleSetNetworkInterface[] | cdktf.IResolvable) {
+  public putNetworkInterface(value: OrchestratedVirtualMachineScaleSetNetworkInterface[] | cdktn.IResolvable) {
     this._networkInterface.internalValue = value;
   }
   public resetNetworkInterface() {
@@ -6874,37 +6874,37 @@ export class OrchestratedVirtualMachineScaleSet extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capacity_reservation_group_id: cdktf.stringToTerraform(this._capacityReservationGroupId),
-      encryption_at_host_enabled: cdktf.booleanToTerraform(this._encryptionAtHostEnabled),
-      eviction_policy: cdktf.stringToTerraform(this._evictionPolicy),
-      extension_operations_enabled: cdktf.booleanToTerraform(this._extensionOperationsEnabled),
-      extensions_time_budget: cdktf.stringToTerraform(this._extensionsTimeBudget),
-      id: cdktf.stringToTerraform(this._id),
-      instances: cdktf.numberToTerraform(this._instances),
-      license_type: cdktf.stringToTerraform(this._licenseType),
-      location: cdktf.stringToTerraform(this._location),
-      max_bid_price: cdktf.numberToTerraform(this._maxBidPrice),
-      name: cdktf.stringToTerraform(this._name),
-      network_api_version: cdktf.stringToTerraform(this._networkApiVersion),
-      platform_fault_domain_count: cdktf.numberToTerraform(this._platformFaultDomainCount),
-      priority: cdktf.stringToTerraform(this._priority),
-      proximity_placement_group_id: cdktf.stringToTerraform(this._proximityPlacementGroupId),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      single_placement_group: cdktf.booleanToTerraform(this._singlePlacementGroup),
-      sku_name: cdktf.stringToTerraform(this._skuName),
-      source_image_id: cdktf.stringToTerraform(this._sourceImageId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      upgrade_mode: cdktf.stringToTerraform(this._upgradeMode),
-      user_data_base64: cdktf.stringToTerraform(this._userDataBase64),
-      zone_balance: cdktf.booleanToTerraform(this._zoneBalance),
-      zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._zones),
+      capacity_reservation_group_id: cdktn.stringToTerraform(this._capacityReservationGroupId),
+      encryption_at_host_enabled: cdktn.booleanToTerraform(this._encryptionAtHostEnabled),
+      eviction_policy: cdktn.stringToTerraform(this._evictionPolicy),
+      extension_operations_enabled: cdktn.booleanToTerraform(this._extensionOperationsEnabled),
+      extensions_time_budget: cdktn.stringToTerraform(this._extensionsTimeBudget),
+      id: cdktn.stringToTerraform(this._id),
+      instances: cdktn.numberToTerraform(this._instances),
+      license_type: cdktn.stringToTerraform(this._licenseType),
+      location: cdktn.stringToTerraform(this._location),
+      max_bid_price: cdktn.numberToTerraform(this._maxBidPrice),
+      name: cdktn.stringToTerraform(this._name),
+      network_api_version: cdktn.stringToTerraform(this._networkApiVersion),
+      platform_fault_domain_count: cdktn.numberToTerraform(this._platformFaultDomainCount),
+      priority: cdktn.stringToTerraform(this._priority),
+      proximity_placement_group_id: cdktn.stringToTerraform(this._proximityPlacementGroupId),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      single_placement_group: cdktn.booleanToTerraform(this._singlePlacementGroup),
+      sku_name: cdktn.stringToTerraform(this._skuName),
+      source_image_id: cdktn.stringToTerraform(this._sourceImageId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      upgrade_mode: cdktn.stringToTerraform(this._upgradeMode),
+      user_data_base64: cdktn.stringToTerraform(this._userDataBase64),
+      zone_balance: cdktn.booleanToTerraform(this._zoneBalance),
+      zones: cdktn.listMapper(cdktn.stringToTerraform, false)(this._zones),
       additional_capabilities: orchestratedVirtualMachineScaleSetAdditionalCapabilitiesToTerraform(this._additionalCapabilities.internalValue),
       automatic_instance_repair: orchestratedVirtualMachineScaleSetAutomaticInstanceRepairToTerraform(this._automaticInstanceRepair.internalValue),
       boot_diagnostics: orchestratedVirtualMachineScaleSetBootDiagnosticsToTerraform(this._bootDiagnostics.internalValue),
-      data_disk: cdktf.listMapper(orchestratedVirtualMachineScaleSetDataDiskToTerraform, true)(this._dataDisk.internalValue),
-      extension: cdktf.listMapper(orchestratedVirtualMachineScaleSetExtensionToTerraform, true)(this._extension.internalValue),
+      data_disk: cdktn.listMapper(orchestratedVirtualMachineScaleSetDataDiskToTerraform, true)(this._dataDisk.internalValue),
+      extension: cdktn.listMapper(orchestratedVirtualMachineScaleSetExtensionToTerraform, true)(this._extension.internalValue),
       identity: orchestratedVirtualMachineScaleSetIdentityToTerraform(this._identity.internalValue),
-      network_interface: cdktf.listMapper(orchestratedVirtualMachineScaleSetNetworkInterfaceToTerraform, true)(this._networkInterface.internalValue),
+      network_interface: cdktn.listMapper(orchestratedVirtualMachineScaleSetNetworkInterfaceToTerraform, true)(this._networkInterface.internalValue),
       os_disk: orchestratedVirtualMachineScaleSetOsDiskToTerraform(this._osDisk.internalValue),
       os_profile: orchestratedVirtualMachineScaleSetOsProfileToTerraform(this._osProfile.internalValue),
       plan: orchestratedVirtualMachineScaleSetPlanToTerraform(this._plan.internalValue),
@@ -6920,145 +6920,145 @@ export class OrchestratedVirtualMachineScaleSet extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       capacity_reservation_group_id: {
-        value: cdktf.stringToHclTerraform(this._capacityReservationGroupId),
+        value: cdktn.stringToHclTerraform(this._capacityReservationGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encryption_at_host_enabled: {
-        value: cdktf.booleanToHclTerraform(this._encryptionAtHostEnabled),
+        value: cdktn.booleanToHclTerraform(this._encryptionAtHostEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       eviction_policy: {
-        value: cdktf.stringToHclTerraform(this._evictionPolicy),
+        value: cdktn.stringToHclTerraform(this._evictionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       extension_operations_enabled: {
-        value: cdktf.booleanToHclTerraform(this._extensionOperationsEnabled),
+        value: cdktn.booleanToHclTerraform(this._extensionOperationsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       extensions_time_budget: {
-        value: cdktf.stringToHclTerraform(this._extensionsTimeBudget),
+        value: cdktn.stringToHclTerraform(this._extensionsTimeBudget),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instances: {
-        value: cdktf.numberToHclTerraform(this._instances),
+        value: cdktn.numberToHclTerraform(this._instances),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       license_type: {
-        value: cdktf.stringToHclTerraform(this._licenseType),
+        value: cdktn.stringToHclTerraform(this._licenseType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_bid_price: {
-        value: cdktf.numberToHclTerraform(this._maxBidPrice),
+        value: cdktn.numberToHclTerraform(this._maxBidPrice),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_api_version: {
-        value: cdktf.stringToHclTerraform(this._networkApiVersion),
+        value: cdktn.stringToHclTerraform(this._networkApiVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       platform_fault_domain_count: {
-        value: cdktf.numberToHclTerraform(this._platformFaultDomainCount),
+        value: cdktn.numberToHclTerraform(this._platformFaultDomainCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       priority: {
-        value: cdktf.stringToHclTerraform(this._priority),
+        value: cdktn.stringToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       proximity_placement_group_id: {
-        value: cdktf.stringToHclTerraform(this._proximityPlacementGroupId),
+        value: cdktn.stringToHclTerraform(this._proximityPlacementGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       single_placement_group: {
-        value: cdktf.booleanToHclTerraform(this._singlePlacementGroup),
+        value: cdktn.booleanToHclTerraform(this._singlePlacementGroup),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       sku_name: {
-        value: cdktf.stringToHclTerraform(this._skuName),
+        value: cdktn.stringToHclTerraform(this._skuName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_image_id: {
-        value: cdktf.stringToHclTerraform(this._sourceImageId),
+        value: cdktn.stringToHclTerraform(this._sourceImageId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       upgrade_mode: {
-        value: cdktf.stringToHclTerraform(this._upgradeMode),
+        value: cdktn.stringToHclTerraform(this._upgradeMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_data_base64: {
-        value: cdktf.stringToHclTerraform(this._userDataBase64),
+        value: cdktn.stringToHclTerraform(this._userDataBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_balance: {
-        value: cdktf.booleanToHclTerraform(this._zoneBalance),
+        value: cdktn.booleanToHclTerraform(this._zoneBalance),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       zones: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._zones),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._zones),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
@@ -7082,13 +7082,13 @@ export class OrchestratedVirtualMachineScaleSet extends cdktf.TerraformResource 
         storageClassType: "OrchestratedVirtualMachineScaleSetBootDiagnosticsList",
       },
       data_disk: {
-        value: cdktf.listMapperHcl(orchestratedVirtualMachineScaleSetDataDiskToHclTerraform, true)(this._dataDisk.internalValue),
+        value: cdktn.listMapperHcl(orchestratedVirtualMachineScaleSetDataDiskToHclTerraform, true)(this._dataDisk.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OrchestratedVirtualMachineScaleSetDataDiskList",
       },
       extension: {
-        value: cdktf.listMapperHcl(orchestratedVirtualMachineScaleSetExtensionToHclTerraform, true)(this._extension.internalValue),
+        value: cdktn.listMapperHcl(orchestratedVirtualMachineScaleSetExtensionToHclTerraform, true)(this._extension.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "OrchestratedVirtualMachineScaleSetExtensionList",
@@ -7100,7 +7100,7 @@ export class OrchestratedVirtualMachineScaleSet extends cdktf.TerraformResource 
         storageClassType: "OrchestratedVirtualMachineScaleSetIdentityList",
       },
       network_interface: {
-        value: cdktf.listMapperHcl(orchestratedVirtualMachineScaleSetNetworkInterfaceToHclTerraform, true)(this._networkInterface.internalValue),
+        value: cdktn.listMapperHcl(orchestratedVirtualMachineScaleSetNetworkInterfaceToHclTerraform, true)(this._networkInterface.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OrchestratedVirtualMachineScaleSetNetworkInterfaceList",

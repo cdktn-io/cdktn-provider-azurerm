@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MssqlManagedInstanceFailoverGroupConfig extends cdktf.TerraformMetaArguments {
+export interface MssqlManagedInstanceFailoverGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_failover_group#id MssqlManagedInstanceFailoverGroup#id}
   *
@@ -38,7 +38,7 @@ export interface MssqlManagedInstanceFailoverGroupConfig extends cdktf.Terraform
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_failover_group#readonly_endpoint_failover_policy_enabled MssqlManagedInstanceFailoverGroup#readonly_endpoint_failover_policy_enabled}
   */
-  readonly readonlyEndpointFailoverPolicyEnabled?: boolean | cdktf.IResolvable;
+  readonly readonlyEndpointFailoverPolicyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_failover_group#secondary_type MssqlManagedInstanceFailoverGroup#secondary_type}
   */
@@ -60,8 +60,8 @@ export interface MssqlManagedInstanceFailoverGroupPartnerRegion {
 }
 
 export function mssqlManagedInstanceFailoverGroupPartnerRegionToTerraform(struct?: MssqlManagedInstanceFailoverGroupPartnerRegion): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -70,8 +70,8 @@ export function mssqlManagedInstanceFailoverGroupPartnerRegionToTerraform(struct
 
 
 export function mssqlManagedInstanceFailoverGroupPartnerRegionToHclTerraform(struct?: MssqlManagedInstanceFailoverGroupPartnerRegion): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -79,7 +79,7 @@ export function mssqlManagedInstanceFailoverGroupPartnerRegionToHclTerraform(str
   return attrs;
 }
 
-export class MssqlManagedInstanceFailoverGroupPartnerRegionOutputReference extends cdktf.ComplexObject {
+export class MssqlManagedInstanceFailoverGroupPartnerRegionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -88,7 +88,7 @@ export class MssqlManagedInstanceFailoverGroupPartnerRegionOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -118,14 +118,14 @@ export class MssqlManagedInstanceFailoverGroupPartnerRegionOutputReference exten
   }
 }
 
-export class MssqlManagedInstanceFailoverGroupPartnerRegionList extends cdktf.ComplexList {
+export class MssqlManagedInstanceFailoverGroupPartnerRegionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -148,31 +148,31 @@ export interface MssqlManagedInstanceFailoverGroupReadWriteEndpointFailoverPolic
 }
 
 export function mssqlManagedInstanceFailoverGroupReadWriteEndpointFailoverPolicyToTerraform(struct?: MssqlManagedInstanceFailoverGroupReadWriteEndpointFailoverPolicyOutputReference | MssqlManagedInstanceFailoverGroupReadWriteEndpointFailoverPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    grace_minutes: cdktf.numberToTerraform(struct!.graceMinutes),
-    mode: cdktf.stringToTerraform(struct!.mode),
+    grace_minutes: cdktn.numberToTerraform(struct!.graceMinutes),
+    mode: cdktn.stringToTerraform(struct!.mode),
   }
 }
 
 
 export function mssqlManagedInstanceFailoverGroupReadWriteEndpointFailoverPolicyToHclTerraform(struct?: MssqlManagedInstanceFailoverGroupReadWriteEndpointFailoverPolicyOutputReference | MssqlManagedInstanceFailoverGroupReadWriteEndpointFailoverPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     grace_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.graceMinutes),
+      value: cdktn.numberToHclTerraform(struct!.graceMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -183,14 +183,14 @@ export function mssqlManagedInstanceFailoverGroupReadWriteEndpointFailoverPolicy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlManagedInstanceFailoverGroupReadWriteEndpointFailoverPolicyOutputReference extends cdktf.ComplexObject {
+export class MssqlManagedInstanceFailoverGroupReadWriteEndpointFailoverPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -269,46 +269,46 @@ export interface MssqlManagedInstanceFailoverGroupTimeouts {
   readonly update?: string;
 }
 
-export function mssqlManagedInstanceFailoverGroupTimeoutsToTerraform(struct?: MssqlManagedInstanceFailoverGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlManagedInstanceFailoverGroupTimeoutsToTerraform(struct?: MssqlManagedInstanceFailoverGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mssqlManagedInstanceFailoverGroupTimeoutsToHclTerraform(struct?: MssqlManagedInstanceFailoverGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlManagedInstanceFailoverGroupTimeoutsToHclTerraform(struct?: MssqlManagedInstanceFailoverGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -319,19 +319,19 @@ export function mssqlManagedInstanceFailoverGroupTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlManagedInstanceFailoverGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MssqlManagedInstanceFailoverGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MssqlManagedInstanceFailoverGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlManagedInstanceFailoverGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -356,7 +356,7 @@ export class MssqlManagedInstanceFailoverGroupTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlManagedInstanceFailoverGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlManagedInstanceFailoverGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -365,7 +365,7 @@ export class MssqlManagedInstanceFailoverGroupTimeoutsOutputReference extends cd
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -447,7 +447,7 @@ export class MssqlManagedInstanceFailoverGroupTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_failover_group azurerm_mssql_managed_instance_failover_group}
 */
-export class MssqlManagedInstanceFailoverGroup extends cdktf.TerraformResource {
+export class MssqlManagedInstanceFailoverGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -458,14 +458,14 @@ export class MssqlManagedInstanceFailoverGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MssqlManagedInstanceFailoverGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MssqlManagedInstanceFailoverGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MssqlManagedInstanceFailoverGroup to import
   * @param importFromId The id of the existing MssqlManagedInstanceFailoverGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_failover_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MssqlManagedInstanceFailoverGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_managed_instance_failover_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_managed_instance_failover_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -585,11 +585,11 @@ export class MssqlManagedInstanceFailoverGroup extends cdktf.TerraformResource {
   }
 
   // readonly_endpoint_failover_policy_enabled - computed: false, optional: true, required: false
-  private _readonlyEndpointFailoverPolicyEnabled?: boolean | cdktf.IResolvable; 
+  private _readonlyEndpointFailoverPolicyEnabled?: boolean | cdktn.IResolvable; 
   public get readonlyEndpointFailoverPolicyEnabled() {
     return this.getBooleanAttribute('readonly_endpoint_failover_policy_enabled');
   }
-  public set readonlyEndpointFailoverPolicyEnabled(value: boolean | cdktf.IResolvable) {
+  public set readonlyEndpointFailoverPolicyEnabled(value: boolean | cdktn.IResolvable) {
     this._readonlyEndpointFailoverPolicyEnabled = value;
   }
   public resetReadonlyEndpointFailoverPolicyEnabled() {
@@ -656,13 +656,13 @@ export class MssqlManagedInstanceFailoverGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      managed_instance_id: cdktf.stringToTerraform(this._managedInstanceId),
-      name: cdktf.stringToTerraform(this._name),
-      partner_managed_instance_id: cdktf.stringToTerraform(this._partnerManagedInstanceId),
-      readonly_endpoint_failover_policy_enabled: cdktf.booleanToTerraform(this._readonlyEndpointFailoverPolicyEnabled),
-      secondary_type: cdktf.stringToTerraform(this._secondaryType),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      managed_instance_id: cdktn.stringToTerraform(this._managedInstanceId),
+      name: cdktn.stringToTerraform(this._name),
+      partner_managed_instance_id: cdktn.stringToTerraform(this._partnerManagedInstanceId),
+      readonly_endpoint_failover_policy_enabled: cdktn.booleanToTerraform(this._readonlyEndpointFailoverPolicyEnabled),
+      secondary_type: cdktn.stringToTerraform(this._secondaryType),
       read_write_endpoint_failover_policy: mssqlManagedInstanceFailoverGroupReadWriteEndpointFailoverPolicyToTerraform(this._readWriteEndpointFailoverPolicy.internalValue),
       timeouts: mssqlManagedInstanceFailoverGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -671,43 +671,43 @@ export class MssqlManagedInstanceFailoverGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_instance_id: {
-        value: cdktf.stringToHclTerraform(this._managedInstanceId),
+        value: cdktn.stringToHclTerraform(this._managedInstanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       partner_managed_instance_id: {
-        value: cdktf.stringToHclTerraform(this._partnerManagedInstanceId),
+        value: cdktn.stringToHclTerraform(this._partnerManagedInstanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       readonly_endpoint_failover_policy_enabled: {
-        value: cdktf.booleanToHclTerraform(this._readonlyEndpointFailoverPolicyEnabled),
+        value: cdktn.booleanToHclTerraform(this._readonlyEndpointFailoverPolicyEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       secondary_type: {
-        value: cdktf.stringToHclTerraform(this._secondaryType),
+        value: cdktn.stringToHclTerraform(this._secondaryType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

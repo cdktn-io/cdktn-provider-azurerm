@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DynatraceTagRulesConfig extends cdktf.TerraformMetaArguments {
+export interface DynatraceTagRulesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_tag_rules#id DynatraceTagRules#id}
   *
@@ -61,39 +61,39 @@ export interface DynatraceTagRulesLogRuleFilteringTag {
   readonly value: string;
 }
 
-export function dynatraceTagRulesLogRuleFilteringTagToTerraform(struct?: DynatraceTagRulesLogRuleFilteringTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynatraceTagRulesLogRuleFilteringTagToTerraform(struct?: DynatraceTagRulesLogRuleFilteringTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    action: cdktn.stringToTerraform(struct!.action),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dynatraceTagRulesLogRuleFilteringTagToHclTerraform(struct?: DynatraceTagRulesLogRuleFilteringTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynatraceTagRulesLogRuleFilteringTagToHclTerraform(struct?: DynatraceTagRulesLogRuleFilteringTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,9 +104,9 @@ export function dynatraceTagRulesLogRuleFilteringTagToHclTerraform(struct?: Dyna
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynatraceTagRulesLogRuleFilteringTagOutputReference extends cdktf.ComplexObject {
+export class DynatraceTagRulesLogRuleFilteringTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -114,11 +114,11 @@ export class DynatraceTagRulesLogRuleFilteringTagOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DynatraceTagRulesLogRuleFilteringTag | cdktf.IResolvable | undefined {
+  public get internalValue(): DynatraceTagRulesLogRuleFilteringTag | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -139,7 +139,7 @@ export class DynatraceTagRulesLogRuleFilteringTagOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DynatraceTagRulesLogRuleFilteringTag | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DynatraceTagRulesLogRuleFilteringTag | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -147,7 +147,7 @@ export class DynatraceTagRulesLogRuleFilteringTagOutputReference extends cdktf.C
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -200,15 +200,15 @@ export class DynatraceTagRulesLogRuleFilteringTagOutputReference extends cdktf.C
   }
 }
 
-export class DynatraceTagRulesLogRuleFilteringTagList extends cdktf.ComplexList {
-  public internalValue? : DynatraceTagRulesLogRuleFilteringTag[] | cdktf.IResolvable
+export class DynatraceTagRulesLogRuleFilteringTagList extends cdktn.ComplexList {
+  public internalValue? : DynatraceTagRulesLogRuleFilteringTag[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -223,63 +223,63 @@ export interface DynatraceTagRulesLogRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_tag_rules#send_activity_logs_enabled DynatraceTagRules#send_activity_logs_enabled}
   */
-  readonly sendActivityLogsEnabled?: boolean | cdktf.IResolvable;
+  readonly sendActivityLogsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_tag_rules#send_azure_active_directory_logs_enabled DynatraceTagRules#send_azure_active_directory_logs_enabled}
   */
-  readonly sendAzureActiveDirectoryLogsEnabled?: boolean | cdktf.IResolvable;
+  readonly sendAzureActiveDirectoryLogsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_tag_rules#send_subscription_logs_enabled DynatraceTagRules#send_subscription_logs_enabled}
   */
-  readonly sendSubscriptionLogsEnabled?: boolean | cdktf.IResolvable;
+  readonly sendSubscriptionLogsEnabled?: boolean | cdktn.IResolvable;
   /**
   * filtering_tag block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_tag_rules#filtering_tag DynatraceTagRules#filtering_tag}
   */
-  readonly filteringTag?: DynatraceTagRulesLogRuleFilteringTag[] | cdktf.IResolvable;
+  readonly filteringTag?: DynatraceTagRulesLogRuleFilteringTag[] | cdktn.IResolvable;
 }
 
 export function dynatraceTagRulesLogRuleToTerraform(struct?: DynatraceTagRulesLogRuleOutputReference | DynatraceTagRulesLogRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    send_activity_logs_enabled: cdktf.booleanToTerraform(struct!.sendActivityLogsEnabled),
-    send_azure_active_directory_logs_enabled: cdktf.booleanToTerraform(struct!.sendAzureActiveDirectoryLogsEnabled),
-    send_subscription_logs_enabled: cdktf.booleanToTerraform(struct!.sendSubscriptionLogsEnabled),
-    filtering_tag: cdktf.listMapper(dynatraceTagRulesLogRuleFilteringTagToTerraform, true)(struct!.filteringTag),
+    send_activity_logs_enabled: cdktn.booleanToTerraform(struct!.sendActivityLogsEnabled),
+    send_azure_active_directory_logs_enabled: cdktn.booleanToTerraform(struct!.sendAzureActiveDirectoryLogsEnabled),
+    send_subscription_logs_enabled: cdktn.booleanToTerraform(struct!.sendSubscriptionLogsEnabled),
+    filtering_tag: cdktn.listMapper(dynatraceTagRulesLogRuleFilteringTagToTerraform, true)(struct!.filteringTag),
   }
 }
 
 
 export function dynatraceTagRulesLogRuleToHclTerraform(struct?: DynatraceTagRulesLogRuleOutputReference | DynatraceTagRulesLogRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     send_activity_logs_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.sendActivityLogsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.sendActivityLogsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     send_azure_active_directory_logs_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.sendAzureActiveDirectoryLogsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.sendAzureActiveDirectoryLogsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     send_subscription_logs_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.sendSubscriptionLogsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.sendSubscriptionLogsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     filtering_tag: {
-      value: cdktf.listMapperHcl(dynatraceTagRulesLogRuleFilteringTagToHclTerraform, true)(struct!.filteringTag),
+      value: cdktn.listMapperHcl(dynatraceTagRulesLogRuleFilteringTagToHclTerraform, true)(struct!.filteringTag),
       isBlock: true,
       type: "list",
       storageClassType: "DynatraceTagRulesLogRuleFilteringTagList",
@@ -290,14 +290,14 @@ export function dynatraceTagRulesLogRuleToHclTerraform(struct?: DynatraceTagRule
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynatraceTagRulesLogRuleOutputReference extends cdktf.ComplexObject {
+export class DynatraceTagRulesLogRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -341,11 +341,11 @@ export class DynatraceTagRulesLogRuleOutputReference extends cdktf.ComplexObject
   }
 
   // send_activity_logs_enabled - computed: false, optional: true, required: false
-  private _sendActivityLogsEnabled?: boolean | cdktf.IResolvable; 
+  private _sendActivityLogsEnabled?: boolean | cdktn.IResolvable; 
   public get sendActivityLogsEnabled() {
     return this.getBooleanAttribute('send_activity_logs_enabled');
   }
-  public set sendActivityLogsEnabled(value: boolean | cdktf.IResolvable) {
+  public set sendActivityLogsEnabled(value: boolean | cdktn.IResolvable) {
     this._sendActivityLogsEnabled = value;
   }
   public resetSendActivityLogsEnabled() {
@@ -357,11 +357,11 @@ export class DynatraceTagRulesLogRuleOutputReference extends cdktf.ComplexObject
   }
 
   // send_azure_active_directory_logs_enabled - computed: false, optional: true, required: false
-  private _sendAzureActiveDirectoryLogsEnabled?: boolean | cdktf.IResolvable; 
+  private _sendAzureActiveDirectoryLogsEnabled?: boolean | cdktn.IResolvable; 
   public get sendAzureActiveDirectoryLogsEnabled() {
     return this.getBooleanAttribute('send_azure_active_directory_logs_enabled');
   }
-  public set sendAzureActiveDirectoryLogsEnabled(value: boolean | cdktf.IResolvable) {
+  public set sendAzureActiveDirectoryLogsEnabled(value: boolean | cdktn.IResolvable) {
     this._sendAzureActiveDirectoryLogsEnabled = value;
   }
   public resetSendAzureActiveDirectoryLogsEnabled() {
@@ -373,11 +373,11 @@ export class DynatraceTagRulesLogRuleOutputReference extends cdktf.ComplexObject
   }
 
   // send_subscription_logs_enabled - computed: false, optional: true, required: false
-  private _sendSubscriptionLogsEnabled?: boolean | cdktf.IResolvable; 
+  private _sendSubscriptionLogsEnabled?: boolean | cdktn.IResolvable; 
   public get sendSubscriptionLogsEnabled() {
     return this.getBooleanAttribute('send_subscription_logs_enabled');
   }
-  public set sendSubscriptionLogsEnabled(value: boolean | cdktf.IResolvable) {
+  public set sendSubscriptionLogsEnabled(value: boolean | cdktn.IResolvable) {
     this._sendSubscriptionLogsEnabled = value;
   }
   public resetSendSubscriptionLogsEnabled() {
@@ -393,7 +393,7 @@ export class DynatraceTagRulesLogRuleOutputReference extends cdktf.ComplexObject
   public get filteringTag() {
     return this._filteringTag;
   }
-  public putFilteringTag(value: DynatraceTagRulesLogRuleFilteringTag[] | cdktf.IResolvable) {
+  public putFilteringTag(value: DynatraceTagRulesLogRuleFilteringTag[] | cdktn.IResolvable) {
     this._filteringTag.internalValue = value;
   }
   public resetFilteringTag() {
@@ -419,39 +419,39 @@ export interface DynatraceTagRulesMetricRuleFilteringTag {
   readonly value: string;
 }
 
-export function dynatraceTagRulesMetricRuleFilteringTagToTerraform(struct?: DynatraceTagRulesMetricRuleFilteringTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynatraceTagRulesMetricRuleFilteringTagToTerraform(struct?: DynatraceTagRulesMetricRuleFilteringTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    action: cdktn.stringToTerraform(struct!.action),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dynatraceTagRulesMetricRuleFilteringTagToHclTerraform(struct?: DynatraceTagRulesMetricRuleFilteringTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynatraceTagRulesMetricRuleFilteringTagToHclTerraform(struct?: DynatraceTagRulesMetricRuleFilteringTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -462,9 +462,9 @@ export function dynatraceTagRulesMetricRuleFilteringTagToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynatraceTagRulesMetricRuleFilteringTagOutputReference extends cdktf.ComplexObject {
+export class DynatraceTagRulesMetricRuleFilteringTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -472,11 +472,11 @@ export class DynatraceTagRulesMetricRuleFilteringTagOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DynatraceTagRulesMetricRuleFilteringTag | cdktf.IResolvable | undefined {
+  public get internalValue(): DynatraceTagRulesMetricRuleFilteringTag | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -497,7 +497,7 @@ export class DynatraceTagRulesMetricRuleFilteringTagOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DynatraceTagRulesMetricRuleFilteringTag | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DynatraceTagRulesMetricRuleFilteringTag | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -505,7 +505,7 @@ export class DynatraceTagRulesMetricRuleFilteringTagOutputReference extends cdkt
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -558,15 +558,15 @@ export class DynatraceTagRulesMetricRuleFilteringTagOutputReference extends cdkt
   }
 }
 
-export class DynatraceTagRulesMetricRuleFilteringTagList extends cdktf.ComplexList {
-  public internalValue? : DynatraceTagRulesMetricRuleFilteringTag[] | cdktf.IResolvable
+export class DynatraceTagRulesMetricRuleFilteringTagList extends cdktn.ComplexList {
+  public internalValue? : DynatraceTagRulesMetricRuleFilteringTag[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -581,41 +581,41 @@ export interface DynatraceTagRulesMetricRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_tag_rules#sending_metrics_enabled DynatraceTagRules#sending_metrics_enabled}
   */
-  readonly sendingMetricsEnabled?: boolean | cdktf.IResolvable;
+  readonly sendingMetricsEnabled?: boolean | cdktn.IResolvable;
   /**
   * filtering_tag block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_tag_rules#filtering_tag DynatraceTagRules#filtering_tag}
   */
-  readonly filteringTag?: DynatraceTagRulesMetricRuleFilteringTag[] | cdktf.IResolvable;
+  readonly filteringTag?: DynatraceTagRulesMetricRuleFilteringTag[] | cdktn.IResolvable;
 }
 
 export function dynatraceTagRulesMetricRuleToTerraform(struct?: DynatraceTagRulesMetricRuleOutputReference | DynatraceTagRulesMetricRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    sending_metrics_enabled: cdktf.booleanToTerraform(struct!.sendingMetricsEnabled),
-    filtering_tag: cdktf.listMapper(dynatraceTagRulesMetricRuleFilteringTagToTerraform, true)(struct!.filteringTag),
+    sending_metrics_enabled: cdktn.booleanToTerraform(struct!.sendingMetricsEnabled),
+    filtering_tag: cdktn.listMapper(dynatraceTagRulesMetricRuleFilteringTagToTerraform, true)(struct!.filteringTag),
   }
 }
 
 
 export function dynatraceTagRulesMetricRuleToHclTerraform(struct?: DynatraceTagRulesMetricRuleOutputReference | DynatraceTagRulesMetricRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     sending_metrics_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.sendingMetricsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.sendingMetricsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     filtering_tag: {
-      value: cdktf.listMapperHcl(dynatraceTagRulesMetricRuleFilteringTagToHclTerraform, true)(struct!.filteringTag),
+      value: cdktn.listMapperHcl(dynatraceTagRulesMetricRuleFilteringTagToHclTerraform, true)(struct!.filteringTag),
       isBlock: true,
       type: "list",
       storageClassType: "DynatraceTagRulesMetricRuleFilteringTagList",
@@ -626,14 +626,14 @@ export function dynatraceTagRulesMetricRuleToHclTerraform(struct?: DynatraceTagR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynatraceTagRulesMetricRuleOutputReference extends cdktf.ComplexObject {
+export class DynatraceTagRulesMetricRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -665,11 +665,11 @@ export class DynatraceTagRulesMetricRuleOutputReference extends cdktf.ComplexObj
   }
 
   // sending_metrics_enabled - computed: false, optional: true, required: false
-  private _sendingMetricsEnabled?: boolean | cdktf.IResolvable; 
+  private _sendingMetricsEnabled?: boolean | cdktn.IResolvable; 
   public get sendingMetricsEnabled() {
     return this.getBooleanAttribute('sending_metrics_enabled');
   }
-  public set sendingMetricsEnabled(value: boolean | cdktf.IResolvable) {
+  public set sendingMetricsEnabled(value: boolean | cdktn.IResolvable) {
     this._sendingMetricsEnabled = value;
   }
   public resetSendingMetricsEnabled() {
@@ -685,7 +685,7 @@ export class DynatraceTagRulesMetricRuleOutputReference extends cdktf.ComplexObj
   public get filteringTag() {
     return this._filteringTag;
   }
-  public putFilteringTag(value: DynatraceTagRulesMetricRuleFilteringTag[] | cdktf.IResolvable) {
+  public putFilteringTag(value: DynatraceTagRulesMetricRuleFilteringTag[] | cdktn.IResolvable) {
     this._filteringTag.internalValue = value;
   }
   public resetFilteringTag() {
@@ -715,46 +715,46 @@ export interface DynatraceTagRulesTimeouts {
   readonly update?: string;
 }
 
-export function dynatraceTagRulesTimeoutsToTerraform(struct?: DynatraceTagRulesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynatraceTagRulesTimeoutsToTerraform(struct?: DynatraceTagRulesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dynatraceTagRulesTimeoutsToHclTerraform(struct?: DynatraceTagRulesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynatraceTagRulesTimeoutsToHclTerraform(struct?: DynatraceTagRulesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -765,19 +765,19 @@ export function dynatraceTagRulesTimeoutsToHclTerraform(struct?: DynatraceTagRul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynatraceTagRulesTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DynatraceTagRulesTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DynatraceTagRulesTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DynatraceTagRulesTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -802,7 +802,7 @@ export class DynatraceTagRulesTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DynatraceTagRulesTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DynatraceTagRulesTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -811,7 +811,7 @@ export class DynatraceTagRulesTimeoutsOutputReference extends cdktf.ComplexObjec
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -893,7 +893,7 @@ export class DynatraceTagRulesTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_tag_rules azurerm_dynatrace_tag_rules}
 */
-export class DynatraceTagRules extends cdktf.TerraformResource {
+export class DynatraceTagRules extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -904,14 +904,14 @@ export class DynatraceTagRules extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DynatraceTagRules resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DynatraceTagRules resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DynatraceTagRules to import
   * @param importFromId The id of the existing DynatraceTagRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_tag_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DynatraceTagRules to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dynatrace_tag_rules", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dynatrace_tag_rules", importId: importFromId, provider });
       }
 
   // ===========
@@ -1049,9 +1049,9 @@ export class DynatraceTagRules extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      monitor_id: cdktf.stringToTerraform(this._monitorId),
-      name: cdktf.stringToTerraform(this._name),
+      id: cdktn.stringToTerraform(this._id),
+      monitor_id: cdktn.stringToTerraform(this._monitorId),
+      name: cdktn.stringToTerraform(this._name),
       log_rule: dynatraceTagRulesLogRuleToTerraform(this._logRule.internalValue),
       metric_rule: dynatraceTagRulesMetricRuleToTerraform(this._metricRule.internalValue),
       timeouts: dynatraceTagRulesTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1061,19 +1061,19 @@ export class DynatraceTagRules extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       monitor_id: {
-        value: cdktf.stringToHclTerraform(this._monitorId),
+        value: cdktn.stringToHclTerraform(this._monitorId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ExpressRoutePortConfig extends cdktf.TerraformMetaArguments {
+export interface ExpressRoutePortConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_port#bandwidth_in_gbps ExpressRoutePort#bandwidth_in_gbps}
   */
@@ -88,31 +88,31 @@ export interface ExpressRoutePortIdentity {
 }
 
 export function expressRoutePortIdentityToTerraform(struct?: ExpressRoutePortIdentityOutputReference | ExpressRoutePortIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function expressRoutePortIdentityToHclTerraform(struct?: ExpressRoutePortIdentityOutputReference | ExpressRoutePortIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,14 +123,14 @@ export function expressRoutePortIdentityToHclTerraform(struct?: ExpressRoutePort
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ExpressRoutePortIdentityOutputReference extends cdktf.ComplexObject {
+export class ExpressRoutePortIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -164,7 +164,7 @@ export class ExpressRoutePortIdentityOutputReference extends cdktf.ComplexObject
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -204,7 +204,7 @@ export interface ExpressRoutePortLink1 {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_port#admin_enabled ExpressRoutePort#admin_enabled}
   */
-  readonly adminEnabled?: boolean | cdktf.IResolvable;
+  readonly adminEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_port#macsec_cak_keyvault_secret_id ExpressRoutePort#macsec_cak_keyvault_secret_id}
   */
@@ -220,56 +220,56 @@ export interface ExpressRoutePortLink1 {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_port#macsec_sci_enabled ExpressRoutePort#macsec_sci_enabled}
   */
-  readonly macsecSciEnabled?: boolean | cdktf.IResolvable;
+  readonly macsecSciEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function expressRoutePortLink1ToTerraform(struct?: ExpressRoutePortLink1OutputReference | ExpressRoutePortLink1): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    admin_enabled: cdktf.booleanToTerraform(struct!.adminEnabled),
-    macsec_cak_keyvault_secret_id: cdktf.stringToTerraform(struct!.macsecCakKeyvaultSecretId),
-    macsec_cipher: cdktf.stringToTerraform(struct!.macsecCipher),
-    macsec_ckn_keyvault_secret_id: cdktf.stringToTerraform(struct!.macsecCknKeyvaultSecretId),
-    macsec_sci_enabled: cdktf.booleanToTerraform(struct!.macsecSciEnabled),
+    admin_enabled: cdktn.booleanToTerraform(struct!.adminEnabled),
+    macsec_cak_keyvault_secret_id: cdktn.stringToTerraform(struct!.macsecCakKeyvaultSecretId),
+    macsec_cipher: cdktn.stringToTerraform(struct!.macsecCipher),
+    macsec_ckn_keyvault_secret_id: cdktn.stringToTerraform(struct!.macsecCknKeyvaultSecretId),
+    macsec_sci_enabled: cdktn.booleanToTerraform(struct!.macsecSciEnabled),
   }
 }
 
 
 export function expressRoutePortLink1ToHclTerraform(struct?: ExpressRoutePortLink1OutputReference | ExpressRoutePortLink1): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     admin_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.adminEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.adminEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     macsec_cak_keyvault_secret_id: {
-      value: cdktf.stringToHclTerraform(struct!.macsecCakKeyvaultSecretId),
+      value: cdktn.stringToHclTerraform(struct!.macsecCakKeyvaultSecretId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     macsec_cipher: {
-      value: cdktf.stringToHclTerraform(struct!.macsecCipher),
+      value: cdktn.stringToHclTerraform(struct!.macsecCipher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     macsec_ckn_keyvault_secret_id: {
-      value: cdktf.stringToHclTerraform(struct!.macsecCknKeyvaultSecretId),
+      value: cdktn.stringToHclTerraform(struct!.macsecCknKeyvaultSecretId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     macsec_sci_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.macsecSciEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.macsecSciEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -280,14 +280,14 @@ export function expressRoutePortLink1ToHclTerraform(struct?: ExpressRoutePortLin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ExpressRoutePortLink1OutputReference extends cdktf.ComplexObject {
+export class ExpressRoutePortLink1OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -337,11 +337,11 @@ export class ExpressRoutePortLink1OutputReference extends cdktf.ComplexObject {
   }
 
   // admin_enabled - computed: false, optional: true, required: false
-  private _adminEnabled?: boolean | cdktf.IResolvable; 
+  private _adminEnabled?: boolean | cdktn.IResolvable; 
   public get adminEnabled() {
     return this.getBooleanAttribute('admin_enabled');
   }
-  public set adminEnabled(value: boolean | cdktf.IResolvable) {
+  public set adminEnabled(value: boolean | cdktn.IResolvable) {
     this._adminEnabled = value;
   }
   public resetAdminEnabled() {
@@ -416,11 +416,11 @@ export class ExpressRoutePortLink1OutputReference extends cdktf.ComplexObject {
   }
 
   // macsec_sci_enabled - computed: false, optional: true, required: false
-  private _macsecSciEnabled?: boolean | cdktf.IResolvable; 
+  private _macsecSciEnabled?: boolean | cdktn.IResolvable; 
   public get macsecSciEnabled() {
     return this.getBooleanAttribute('macsec_sci_enabled');
   }
-  public set macsecSciEnabled(value: boolean | cdktf.IResolvable) {
+  public set macsecSciEnabled(value: boolean | cdktn.IResolvable) {
     this._macsecSciEnabled = value;
   }
   public resetMacsecSciEnabled() {
@@ -450,7 +450,7 @@ export interface ExpressRoutePortLink2 {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_port#admin_enabled ExpressRoutePort#admin_enabled}
   */
-  readonly adminEnabled?: boolean | cdktf.IResolvable;
+  readonly adminEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_port#macsec_cak_keyvault_secret_id ExpressRoutePort#macsec_cak_keyvault_secret_id}
   */
@@ -466,56 +466,56 @@ export interface ExpressRoutePortLink2 {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_port#macsec_sci_enabled ExpressRoutePort#macsec_sci_enabled}
   */
-  readonly macsecSciEnabled?: boolean | cdktf.IResolvable;
+  readonly macsecSciEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function expressRoutePortLink2ToTerraform(struct?: ExpressRoutePortLink2OutputReference | ExpressRoutePortLink2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    admin_enabled: cdktf.booleanToTerraform(struct!.adminEnabled),
-    macsec_cak_keyvault_secret_id: cdktf.stringToTerraform(struct!.macsecCakKeyvaultSecretId),
-    macsec_cipher: cdktf.stringToTerraform(struct!.macsecCipher),
-    macsec_ckn_keyvault_secret_id: cdktf.stringToTerraform(struct!.macsecCknKeyvaultSecretId),
-    macsec_sci_enabled: cdktf.booleanToTerraform(struct!.macsecSciEnabled),
+    admin_enabled: cdktn.booleanToTerraform(struct!.adminEnabled),
+    macsec_cak_keyvault_secret_id: cdktn.stringToTerraform(struct!.macsecCakKeyvaultSecretId),
+    macsec_cipher: cdktn.stringToTerraform(struct!.macsecCipher),
+    macsec_ckn_keyvault_secret_id: cdktn.stringToTerraform(struct!.macsecCknKeyvaultSecretId),
+    macsec_sci_enabled: cdktn.booleanToTerraform(struct!.macsecSciEnabled),
   }
 }
 
 
 export function expressRoutePortLink2ToHclTerraform(struct?: ExpressRoutePortLink2OutputReference | ExpressRoutePortLink2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     admin_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.adminEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.adminEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     macsec_cak_keyvault_secret_id: {
-      value: cdktf.stringToHclTerraform(struct!.macsecCakKeyvaultSecretId),
+      value: cdktn.stringToHclTerraform(struct!.macsecCakKeyvaultSecretId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     macsec_cipher: {
-      value: cdktf.stringToHclTerraform(struct!.macsecCipher),
+      value: cdktn.stringToHclTerraform(struct!.macsecCipher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     macsec_ckn_keyvault_secret_id: {
-      value: cdktf.stringToHclTerraform(struct!.macsecCknKeyvaultSecretId),
+      value: cdktn.stringToHclTerraform(struct!.macsecCknKeyvaultSecretId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     macsec_sci_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.macsecSciEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.macsecSciEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -526,14 +526,14 @@ export function expressRoutePortLink2ToHclTerraform(struct?: ExpressRoutePortLin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ExpressRoutePortLink2OutputReference extends cdktf.ComplexObject {
+export class ExpressRoutePortLink2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -583,11 +583,11 @@ export class ExpressRoutePortLink2OutputReference extends cdktf.ComplexObject {
   }
 
   // admin_enabled - computed: false, optional: true, required: false
-  private _adminEnabled?: boolean | cdktf.IResolvable; 
+  private _adminEnabled?: boolean | cdktn.IResolvable; 
   public get adminEnabled() {
     return this.getBooleanAttribute('admin_enabled');
   }
-  public set adminEnabled(value: boolean | cdktf.IResolvable) {
+  public set adminEnabled(value: boolean | cdktn.IResolvable) {
     this._adminEnabled = value;
   }
   public resetAdminEnabled() {
@@ -662,11 +662,11 @@ export class ExpressRoutePortLink2OutputReference extends cdktf.ComplexObject {
   }
 
   // macsec_sci_enabled - computed: false, optional: true, required: false
-  private _macsecSciEnabled?: boolean | cdktf.IResolvable; 
+  private _macsecSciEnabled?: boolean | cdktn.IResolvable; 
   public get macsecSciEnabled() {
     return this.getBooleanAttribute('macsec_sci_enabled');
   }
-  public set macsecSciEnabled(value: boolean | cdktf.IResolvable) {
+  public set macsecSciEnabled(value: boolean | cdktn.IResolvable) {
     this._macsecSciEnabled = value;
   }
   public resetMacsecSciEnabled() {
@@ -711,46 +711,46 @@ export interface ExpressRoutePortTimeouts {
   readonly update?: string;
 }
 
-export function expressRoutePortTimeoutsToTerraform(struct?: ExpressRoutePortTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function expressRoutePortTimeoutsToTerraform(struct?: ExpressRoutePortTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function expressRoutePortTimeoutsToHclTerraform(struct?: ExpressRoutePortTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function expressRoutePortTimeoutsToHclTerraform(struct?: ExpressRoutePortTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -761,19 +761,19 @@ export function expressRoutePortTimeoutsToHclTerraform(struct?: ExpressRoutePort
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ExpressRoutePortTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ExpressRoutePortTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ExpressRoutePortTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ExpressRoutePortTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -798,7 +798,7 @@ export class ExpressRoutePortTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ExpressRoutePortTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ExpressRoutePortTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -807,7 +807,7 @@ export class ExpressRoutePortTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -889,7 +889,7 @@ export class ExpressRoutePortTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_port azurerm_express_route_port}
 */
-export class ExpressRoutePort extends cdktf.TerraformResource {
+export class ExpressRoutePort extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -900,14 +900,14 @@ export class ExpressRoutePort extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ExpressRoutePort resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ExpressRoutePort resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExpressRoutePort to import
   * @param importFromId The id of the existing ExpressRoutePort that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_port#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExpressRoutePort to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_express_route_port", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_express_route_port", importId: importFromId, provider });
       }
 
   // ===========
@@ -1167,15 +1167,15 @@ export class ExpressRoutePort extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bandwidth_in_gbps: cdktf.numberToTerraform(this._bandwidthInGbps),
-      billing_type: cdktf.stringToTerraform(this._billingType),
-      encapsulation: cdktf.stringToTerraform(this._encapsulation),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      peering_location: cdktf.stringToTerraform(this._peeringLocation),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      bandwidth_in_gbps: cdktn.numberToTerraform(this._bandwidthInGbps),
+      billing_type: cdktn.stringToTerraform(this._billingType),
+      encapsulation: cdktn.stringToTerraform(this._encapsulation),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      peering_location: cdktn.stringToTerraform(this._peeringLocation),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       identity: expressRoutePortIdentityToTerraform(this._identity.internalValue),
       link1: expressRoutePortLink1ToTerraform(this._link1.internalValue),
       link2: expressRoutePortLink2ToTerraform(this._link2.internalValue),
@@ -1186,55 +1186,55 @@ export class ExpressRoutePort extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bandwidth_in_gbps: {
-        value: cdktf.numberToHclTerraform(this._bandwidthInGbps),
+        value: cdktn.numberToHclTerraform(this._bandwidthInGbps),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       billing_type: {
-        value: cdktf.stringToHclTerraform(this._billingType),
+        value: cdktn.stringToHclTerraform(this._billingType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encapsulation: {
-        value: cdktf.stringToHclTerraform(this._encapsulation),
+        value: cdktn.stringToHclTerraform(this._encapsulation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peering_location: {
-        value: cdktf.stringToHclTerraform(this._peeringLocation),
+        value: cdktn.stringToHclTerraform(this._peeringLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

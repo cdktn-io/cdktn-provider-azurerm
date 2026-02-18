@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedisCacheAccessPolicyAssignmentConfig extends cdktf.TerraformMetaArguments {
+export interface RedisCacheAccessPolicyAssignmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache_access_policy_assignment#access_policy_name RedisCacheAccessPolicyAssignment#access_policy_name}
   */
@@ -61,39 +61,39 @@ export interface RedisCacheAccessPolicyAssignmentTimeouts {
   readonly read?: string;
 }
 
-export function redisCacheAccessPolicyAssignmentTimeoutsToTerraform(struct?: RedisCacheAccessPolicyAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisCacheAccessPolicyAssignmentTimeoutsToTerraform(struct?: RedisCacheAccessPolicyAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function redisCacheAccessPolicyAssignmentTimeoutsToHclTerraform(struct?: RedisCacheAccessPolicyAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisCacheAccessPolicyAssignmentTimeoutsToHclTerraform(struct?: RedisCacheAccessPolicyAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,19 +104,19 @@ export function redisCacheAccessPolicyAssignmentTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisCacheAccessPolicyAssignmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RedisCacheAccessPolicyAssignmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RedisCacheAccessPolicyAssignmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RedisCacheAccessPolicyAssignmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -137,7 +137,7 @@ export class RedisCacheAccessPolicyAssignmentTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedisCacheAccessPolicyAssignmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedisCacheAccessPolicyAssignmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -145,7 +145,7 @@ export class RedisCacheAccessPolicyAssignmentTimeoutsOutputReference extends cdk
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -210,7 +210,7 @@ export class RedisCacheAccessPolicyAssignmentTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache_access_policy_assignment azurerm_redis_cache_access_policy_assignment}
 */
-export class RedisCacheAccessPolicyAssignment extends cdktf.TerraformResource {
+export class RedisCacheAccessPolicyAssignment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -221,14 +221,14 @@ export class RedisCacheAccessPolicyAssignment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedisCacheAccessPolicyAssignment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedisCacheAccessPolicyAssignment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedisCacheAccessPolicyAssignment to import
   * @param importFromId The id of the existing RedisCacheAccessPolicyAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache_access_policy_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedisCacheAccessPolicyAssignment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_redis_cache_access_policy_assignment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_redis_cache_access_policy_assignment", importId: importFromId, provider });
       }
 
   // ===========
@@ -374,12 +374,12 @@ export class RedisCacheAccessPolicyAssignment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_policy_name: cdktf.stringToTerraform(this._accessPolicyName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      object_id: cdktf.stringToTerraform(this._objectId),
-      object_id_alias: cdktf.stringToTerraform(this._objectIdAlias),
-      redis_cache_id: cdktf.stringToTerraform(this._redisCacheId),
+      access_policy_name: cdktn.stringToTerraform(this._accessPolicyName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      object_id: cdktn.stringToTerraform(this._objectId),
+      object_id_alias: cdktn.stringToTerraform(this._objectIdAlias),
+      redis_cache_id: cdktn.stringToTerraform(this._redisCacheId),
       timeouts: redisCacheAccessPolicyAssignmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -387,37 +387,37 @@ export class RedisCacheAccessPolicyAssignment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_policy_name: {
-        value: cdktf.stringToHclTerraform(this._accessPolicyName),
+        value: cdktn.stringToHclTerraform(this._accessPolicyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_id: {
-        value: cdktf.stringToHclTerraform(this._objectId),
+        value: cdktn.stringToHclTerraform(this._objectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_id_alias: {
-        value: cdktf.stringToHclTerraform(this._objectIdAlias),
+        value: cdktn.stringToHclTerraform(this._objectIdAlias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redis_cache_id: {
-        value: cdktf.stringToHclTerraform(this._redisCacheId),
+        value: cdktn.stringToHclTerraform(this._redisCacheId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

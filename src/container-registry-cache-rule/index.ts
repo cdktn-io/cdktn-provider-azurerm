@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ContainerRegistryCacheRuleConfig extends cdktf.TerraformMetaArguments {
+export interface ContainerRegistryCacheRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_registry_cache_rule#container_registry_id ContainerRegistryCacheRule#container_registry_id}
   */
@@ -73,46 +73,46 @@ export interface ContainerRegistryCacheRuleTimeouts {
   readonly update?: string;
 }
 
-export function containerRegistryCacheRuleTimeoutsToTerraform(struct?: ContainerRegistryCacheRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerRegistryCacheRuleTimeoutsToTerraform(struct?: ContainerRegistryCacheRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function containerRegistryCacheRuleTimeoutsToHclTerraform(struct?: ContainerRegistryCacheRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerRegistryCacheRuleTimeoutsToHclTerraform(struct?: ContainerRegistryCacheRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,19 +123,19 @@ export function containerRegistryCacheRuleTimeoutsToHclTerraform(struct?: Contai
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContainerRegistryCacheRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ContainerRegistryCacheRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ContainerRegistryCacheRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ContainerRegistryCacheRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -160,7 +160,7 @@ export class ContainerRegistryCacheRuleTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ContainerRegistryCacheRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ContainerRegistryCacheRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class ContainerRegistryCacheRuleTimeoutsOutputReference extends cdktf.Com
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -251,7 +251,7 @@ export class ContainerRegistryCacheRuleTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_registry_cache_rule azurerm_container_registry_cache_rule}
 */
-export class ContainerRegistryCacheRule extends cdktf.TerraformResource {
+export class ContainerRegistryCacheRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -262,14 +262,14 @@ export class ContainerRegistryCacheRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ContainerRegistryCacheRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ContainerRegistryCacheRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContainerRegistryCacheRule to import
   * @param importFromId The id of the existing ContainerRegistryCacheRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_registry_cache_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContainerRegistryCacheRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_container_registry_cache_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_container_registry_cache_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -418,12 +418,12 @@ export class ContainerRegistryCacheRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      container_registry_id: cdktf.stringToTerraform(this._containerRegistryId),
-      credential_set_id: cdktf.stringToTerraform(this._credentialSetId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      source_repo: cdktf.stringToTerraform(this._sourceRepo),
-      target_repo: cdktf.stringToTerraform(this._targetRepo),
+      container_registry_id: cdktn.stringToTerraform(this._containerRegistryId),
+      credential_set_id: cdktn.stringToTerraform(this._credentialSetId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      source_repo: cdktn.stringToTerraform(this._sourceRepo),
+      target_repo: cdktn.stringToTerraform(this._targetRepo),
       timeouts: containerRegistryCacheRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -431,37 +431,37 @@ export class ContainerRegistryCacheRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       container_registry_id: {
-        value: cdktf.stringToHclTerraform(this._containerRegistryId),
+        value: cdktn.stringToHclTerraform(this._containerRegistryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       credential_set_id: {
-        value: cdktf.stringToHclTerraform(this._credentialSetId),
+        value: cdktn.stringToHclTerraform(this._credentialSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_repo: {
-        value: cdktf.stringToHclTerraform(this._sourceRepo),
+        value: cdktn.stringToHclTerraform(this._sourceRepo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_repo: {
-        value: cdktf.stringToHclTerraform(this._targetRepo),
+        value: cdktn.stringToHclTerraform(this._targetRepo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

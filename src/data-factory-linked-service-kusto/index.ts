@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataFactoryLinkedServiceKustoConfig extends cdktf.TerraformMetaArguments {
+export interface DataFactoryLinkedServiceKustoConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_kusto#additional_properties DataFactoryLinkedServiceKusto#additional_properties}
   */
@@ -70,7 +70,7 @@ export interface DataFactoryLinkedServiceKustoConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_kusto#use_managed_identity DataFactoryLinkedServiceKusto#use_managed_identity}
   */
-  readonly useManagedIdentity?: boolean | cdktf.IResolvable;
+  readonly useManagedIdentity?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -97,46 +97,46 @@ export interface DataFactoryLinkedServiceKustoTimeouts {
   readonly update?: string;
 }
 
-export function dataFactoryLinkedServiceKustoTimeoutsToTerraform(struct?: DataFactoryLinkedServiceKustoTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryLinkedServiceKustoTimeoutsToTerraform(struct?: DataFactoryLinkedServiceKustoTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataFactoryLinkedServiceKustoTimeoutsToHclTerraform(struct?: DataFactoryLinkedServiceKustoTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryLinkedServiceKustoTimeoutsToHclTerraform(struct?: DataFactoryLinkedServiceKustoTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -147,19 +147,19 @@ export function dataFactoryLinkedServiceKustoTimeoutsToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryLinkedServiceKustoTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataFactoryLinkedServiceKustoTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataFactoryLinkedServiceKustoTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryLinkedServiceKustoTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -184,7 +184,7 @@ export class DataFactoryLinkedServiceKustoTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryLinkedServiceKustoTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryLinkedServiceKustoTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -193,7 +193,7 @@ export class DataFactoryLinkedServiceKustoTimeoutsOutputReference extends cdktf.
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -275,7 +275,7 @@ export class DataFactoryLinkedServiceKustoTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_kusto azurerm_data_factory_linked_service_kusto}
 */
-export class DataFactoryLinkedServiceKusto extends cdktf.TerraformResource {
+export class DataFactoryLinkedServiceKusto extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -286,14 +286,14 @@ export class DataFactoryLinkedServiceKusto extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataFactoryLinkedServiceKusto resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataFactoryLinkedServiceKusto resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryLinkedServiceKusto to import
   * @param importFromId The id of the existing DataFactoryLinkedServiceKusto that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_kusto#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryLinkedServiceKusto to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_linked_service_kusto", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_linked_service_kusto", importId: importFromId, provider });
       }
 
   // ===========
@@ -541,11 +541,11 @@ export class DataFactoryLinkedServiceKusto extends cdktf.TerraformResource {
   }
 
   // use_managed_identity - computed: false, optional: true, required: false
-  private _useManagedIdentity?: boolean | cdktf.IResolvable; 
+  private _useManagedIdentity?: boolean | cdktn.IResolvable; 
   public get useManagedIdentity() {
     return this.getBooleanAttribute('use_managed_identity');
   }
-  public set useManagedIdentity(value: boolean | cdktf.IResolvable) {
+  public set useManagedIdentity(value: boolean | cdktn.IResolvable) {
     this._useManagedIdentity = value;
   }
   public resetUseManagedIdentity() {
@@ -578,20 +578,20 @@ export class DataFactoryLinkedServiceKusto extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._additionalProperties),
-      annotations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._annotations),
-      data_factory_id: cdktf.stringToTerraform(this._dataFactoryId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      integration_runtime_name: cdktf.stringToTerraform(this._integrationRuntimeName),
-      kusto_database_name: cdktf.stringToTerraform(this._kustoDatabaseName),
-      kusto_endpoint: cdktf.stringToTerraform(this._kustoEndpoint),
-      name: cdktf.stringToTerraform(this._name),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      service_principal_id: cdktf.stringToTerraform(this._servicePrincipalId),
-      service_principal_key: cdktf.stringToTerraform(this._servicePrincipalKey),
-      tenant: cdktf.stringToTerraform(this._tenant),
-      use_managed_identity: cdktf.booleanToTerraform(this._useManagedIdentity),
+      additional_properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._additionalProperties),
+      annotations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._annotations),
+      data_factory_id: cdktn.stringToTerraform(this._dataFactoryId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      integration_runtime_name: cdktn.stringToTerraform(this._integrationRuntimeName),
+      kusto_database_name: cdktn.stringToTerraform(this._kustoDatabaseName),
+      kusto_endpoint: cdktn.stringToTerraform(this._kustoEndpoint),
+      name: cdktn.stringToTerraform(this._name),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
+      service_principal_id: cdktn.stringToTerraform(this._servicePrincipalId),
+      service_principal_key: cdktn.stringToTerraform(this._servicePrincipalKey),
+      tenant: cdktn.stringToTerraform(this._tenant),
+      use_managed_identity: cdktn.booleanToTerraform(this._useManagedIdentity),
       timeouts: dataFactoryLinkedServiceKustoTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -599,85 +599,85 @@ export class DataFactoryLinkedServiceKusto extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._additionalProperties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._additionalProperties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       annotations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._annotations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._annotations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       data_factory_id: {
-        value: cdktf.stringToHclTerraform(this._dataFactoryId),
+        value: cdktn.stringToHclTerraform(this._dataFactoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_runtime_name: {
-        value: cdktf.stringToHclTerraform(this._integrationRuntimeName),
+        value: cdktn.stringToHclTerraform(this._integrationRuntimeName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kusto_database_name: {
-        value: cdktf.stringToHclTerraform(this._kustoDatabaseName),
+        value: cdktn.stringToHclTerraform(this._kustoDatabaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kusto_endpoint: {
-        value: cdktf.stringToHclTerraform(this._kustoEndpoint),
+        value: cdktn.stringToHclTerraform(this._kustoEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       service_principal_id: {
-        value: cdktf.stringToHclTerraform(this._servicePrincipalId),
+        value: cdktn.stringToHclTerraform(this._servicePrincipalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_principal_key: {
-        value: cdktf.stringToHclTerraform(this._servicePrincipalKey),
+        value: cdktn.stringToHclTerraform(this._servicePrincipalKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tenant: {
-        value: cdktf.stringToHclTerraform(this._tenant),
+        value: cdktn.stringToHclTerraform(this._tenant),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_managed_identity: {
-        value: cdktf.booleanToHclTerraform(this._useManagedIdentity),
+        value: cdktn.booleanToHclTerraform(this._useManagedIdentity),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

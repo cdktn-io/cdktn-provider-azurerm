@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MaintenanceAssignmentDynamicScopeConfig extends cdktf.TerraformMetaArguments {
+export interface MaintenanceAssignmentDynamicScopeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/maintenance_assignment_dynamic_scope#id MaintenanceAssignmentDynamicScope#id}
   *
@@ -51,32 +51,32 @@ export interface MaintenanceAssignmentDynamicScopeFilterTags {
   readonly values: string[];
 }
 
-export function maintenanceAssignmentDynamicScopeFilterTagsToTerraform(struct?: MaintenanceAssignmentDynamicScopeFilterTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function maintenanceAssignmentDynamicScopeFilterTagsToTerraform(struct?: MaintenanceAssignmentDynamicScopeFilterTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tag: cdktf.stringToTerraform(struct!.tag),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    tag: cdktn.stringToTerraform(struct!.tag),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function maintenanceAssignmentDynamicScopeFilterTagsToHclTerraform(struct?: MaintenanceAssignmentDynamicScopeFilterTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function maintenanceAssignmentDynamicScopeFilterTagsToHclTerraform(struct?: MaintenanceAssignmentDynamicScopeFilterTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     tag: {
-      value: cdktf.stringToHclTerraform(struct!.tag),
+      value: cdktn.stringToHclTerraform(struct!.tag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -87,9 +87,9 @@ export function maintenanceAssignmentDynamicScopeFilterTagsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MaintenanceAssignmentDynamicScopeFilterTagsOutputReference extends cdktf.ComplexObject {
+export class MaintenanceAssignmentDynamicScopeFilterTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -97,11 +97,11 @@ export class MaintenanceAssignmentDynamicScopeFilterTagsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MaintenanceAssignmentDynamicScopeFilterTags | cdktf.IResolvable | undefined {
+  public get internalValue(): MaintenanceAssignmentDynamicScopeFilterTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -118,14 +118,14 @@ export class MaintenanceAssignmentDynamicScopeFilterTagsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MaintenanceAssignmentDynamicScopeFilterTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MaintenanceAssignmentDynamicScopeFilterTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._tag = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -164,15 +164,15 @@ export class MaintenanceAssignmentDynamicScopeFilterTagsOutputReference extends 
   }
 }
 
-export class MaintenanceAssignmentDynamicScopeFilterTagsList extends cdktf.ComplexList {
-  public internalValue? : MaintenanceAssignmentDynamicScopeFilterTags[] | cdktf.IResolvable
+export class MaintenanceAssignmentDynamicScopeFilterTagsList extends cdktn.ComplexList {
+  public internalValue? : MaintenanceAssignmentDynamicScopeFilterTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -209,63 +209,63 @@ export interface MaintenanceAssignmentDynamicScopeFilter {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/maintenance_assignment_dynamic_scope#tags MaintenanceAssignmentDynamicScope#tags}
   */
-  readonly tags?: MaintenanceAssignmentDynamicScopeFilterTags[] | cdktf.IResolvable;
+  readonly tags?: MaintenanceAssignmentDynamicScopeFilterTags[] | cdktn.IResolvable;
 }
 
 export function maintenanceAssignmentDynamicScopeFilterToTerraform(struct?: MaintenanceAssignmentDynamicScopeFilterOutputReference | MaintenanceAssignmentDynamicScopeFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    locations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.locations),
-    os_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.osTypes),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
-    resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
-    tag_filter: cdktf.stringToTerraform(struct!.tagFilter),
-    tags: cdktf.listMapper(maintenanceAssignmentDynamicScopeFilterTagsToTerraform, true)(struct!.tags),
+    locations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.locations),
+    os_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.osTypes),
+    resource_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceGroups),
+    resource_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceTypes),
+    tag_filter: cdktn.stringToTerraform(struct!.tagFilter),
+    tags: cdktn.listMapper(maintenanceAssignmentDynamicScopeFilterTagsToTerraform, true)(struct!.tags),
   }
 }
 
 
 export function maintenanceAssignmentDynamicScopeFilterToHclTerraform(struct?: MaintenanceAssignmentDynamicScopeFilterOutputReference | MaintenanceAssignmentDynamicScopeFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     locations: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.locations),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.locations),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     os_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.osTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.osTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     resource_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceGroups),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     resource_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     tag_filter: {
-      value: cdktf.stringToHclTerraform(struct!.tagFilter),
+      value: cdktn.stringToHclTerraform(struct!.tagFilter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags: {
-      value: cdktf.listMapperHcl(maintenanceAssignmentDynamicScopeFilterTagsToHclTerraform, true)(struct!.tags),
+      value: cdktn.listMapperHcl(maintenanceAssignmentDynamicScopeFilterTagsToHclTerraform, true)(struct!.tags),
       isBlock: true,
       type: "list",
       storageClassType: "MaintenanceAssignmentDynamicScopeFilterTagsList",
@@ -276,14 +276,14 @@ export function maintenanceAssignmentDynamicScopeFilterToHclTerraform(struct?: M
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MaintenanceAssignmentDynamicScopeFilterOutputReference extends cdktf.ComplexObject {
+export class MaintenanceAssignmentDynamicScopeFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -423,7 +423,7 @@ export class MaintenanceAssignmentDynamicScopeFilterOutputReference extends cdkt
   public get tags() {
     return this._tags;
   }
-  public putTags(value: MaintenanceAssignmentDynamicScopeFilterTags[] | cdktf.IResolvable) {
+  public putTags(value: MaintenanceAssignmentDynamicScopeFilterTags[] | cdktn.IResolvable) {
     this._tags.internalValue = value;
   }
   public resetTags() {
@@ -453,46 +453,46 @@ export interface MaintenanceAssignmentDynamicScopeTimeouts {
   readonly update?: string;
 }
 
-export function maintenanceAssignmentDynamicScopeTimeoutsToTerraform(struct?: MaintenanceAssignmentDynamicScopeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function maintenanceAssignmentDynamicScopeTimeoutsToTerraform(struct?: MaintenanceAssignmentDynamicScopeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function maintenanceAssignmentDynamicScopeTimeoutsToHclTerraform(struct?: MaintenanceAssignmentDynamicScopeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function maintenanceAssignmentDynamicScopeTimeoutsToHclTerraform(struct?: MaintenanceAssignmentDynamicScopeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -503,19 +503,19 @@ export function maintenanceAssignmentDynamicScopeTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MaintenanceAssignmentDynamicScopeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MaintenanceAssignmentDynamicScopeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MaintenanceAssignmentDynamicScopeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MaintenanceAssignmentDynamicScopeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -540,7 +540,7 @@ export class MaintenanceAssignmentDynamicScopeTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MaintenanceAssignmentDynamicScopeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MaintenanceAssignmentDynamicScopeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -549,7 +549,7 @@ export class MaintenanceAssignmentDynamicScopeTimeoutsOutputReference extends cd
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -631,7 +631,7 @@ export class MaintenanceAssignmentDynamicScopeTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/maintenance_assignment_dynamic_scope azurerm_maintenance_assignment_dynamic_scope}
 */
-export class MaintenanceAssignmentDynamicScope extends cdktf.TerraformResource {
+export class MaintenanceAssignmentDynamicScope extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -642,14 +642,14 @@ export class MaintenanceAssignmentDynamicScope extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MaintenanceAssignmentDynamicScope resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MaintenanceAssignmentDynamicScope resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MaintenanceAssignmentDynamicScope to import
   * @param importFromId The id of the existing MaintenanceAssignmentDynamicScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/maintenance_assignment_dynamic_scope#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MaintenanceAssignmentDynamicScope to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_maintenance_assignment_dynamic_scope", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_maintenance_assignment_dynamic_scope", importId: importFromId, provider });
       }
 
   // ===========
@@ -767,9 +767,9 @@ export class MaintenanceAssignmentDynamicScope extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      maintenance_configuration_id: cdktf.stringToTerraform(this._maintenanceConfigurationId),
-      name: cdktf.stringToTerraform(this._name),
+      id: cdktn.stringToTerraform(this._id),
+      maintenance_configuration_id: cdktn.stringToTerraform(this._maintenanceConfigurationId),
+      name: cdktn.stringToTerraform(this._name),
       filter: maintenanceAssignmentDynamicScopeFilterToTerraform(this._filter.internalValue),
       timeouts: maintenanceAssignmentDynamicScopeTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -778,19 +778,19 @@ export class MaintenanceAssignmentDynamicScope extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       maintenance_configuration_id: {
-        value: cdktf.stringToHclTerraform(this._maintenanceConfigurationId),
+        value: cdktn.stringToHclTerraform(this._maintenanceConfigurationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

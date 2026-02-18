@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MssqlManagedInstanceStartStopScheduleConfig extends cdktf.TerraformMetaArguments {
+export interface MssqlManagedInstanceStartStopScheduleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_start_stop_schedule#description MssqlManagedInstanceStartStopSchedule#description}
   */
@@ -36,7 +36,7 @@ export interface MssqlManagedInstanceStartStopScheduleConfig extends cdktf.Terra
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_start_stop_schedule#schedule MssqlManagedInstanceStartStopSchedule#schedule}
   */
-  readonly schedule: MssqlManagedInstanceStartStopScheduleSchedule[] | cdktf.IResolvable;
+  readonly schedule: MssqlManagedInstanceStartStopScheduleSchedule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -63,46 +63,46 @@ export interface MssqlManagedInstanceStartStopScheduleSchedule {
   readonly stopTime: string;
 }
 
-export function mssqlManagedInstanceStartStopScheduleScheduleToTerraform(struct?: MssqlManagedInstanceStartStopScheduleSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlManagedInstanceStartStopScheduleScheduleToTerraform(struct?: MssqlManagedInstanceStartStopScheduleSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    start_day: cdktf.stringToTerraform(struct!.startDay),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
-    stop_day: cdktf.stringToTerraform(struct!.stopDay),
-    stop_time: cdktf.stringToTerraform(struct!.stopTime),
+    start_day: cdktn.stringToTerraform(struct!.startDay),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
+    stop_day: cdktn.stringToTerraform(struct!.stopDay),
+    stop_time: cdktn.stringToTerraform(struct!.stopTime),
   }
 }
 
 
-export function mssqlManagedInstanceStartStopScheduleScheduleToHclTerraform(struct?: MssqlManagedInstanceStartStopScheduleSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlManagedInstanceStartStopScheduleScheduleToHclTerraform(struct?: MssqlManagedInstanceStartStopScheduleSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     start_day: {
-      value: cdktf.stringToHclTerraform(struct!.startDay),
+      value: cdktn.stringToHclTerraform(struct!.startDay),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stop_day: {
-      value: cdktf.stringToHclTerraform(struct!.stopDay),
+      value: cdktn.stringToHclTerraform(struct!.stopDay),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stop_time: {
-      value: cdktf.stringToHclTerraform(struct!.stopTime),
+      value: cdktn.stringToHclTerraform(struct!.stopTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,9 +113,9 @@ export function mssqlManagedInstanceStartStopScheduleScheduleToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlManagedInstanceStartStopScheduleScheduleOutputReference extends cdktf.ComplexObject {
+export class MssqlManagedInstanceStartStopScheduleScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -123,11 +123,11 @@ export class MssqlManagedInstanceStartStopScheduleScheduleOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MssqlManagedInstanceStartStopScheduleSchedule | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlManagedInstanceStartStopScheduleSchedule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,7 +152,7 @@ export class MssqlManagedInstanceStartStopScheduleScheduleOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlManagedInstanceStartStopScheduleSchedule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlManagedInstanceStartStopScheduleSchedule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class MssqlManagedInstanceStartStopScheduleScheduleOutputReference extend
       this._stopDay = undefined;
       this._stopTime = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -228,15 +228,15 @@ export class MssqlManagedInstanceStartStopScheduleScheduleOutputReference extend
   }
 }
 
-export class MssqlManagedInstanceStartStopScheduleScheduleList extends cdktf.ComplexList {
-  public internalValue? : MssqlManagedInstanceStartStopScheduleSchedule[] | cdktf.IResolvable
+export class MssqlManagedInstanceStartStopScheduleScheduleList extends cdktn.ComplexList {
+  public internalValue? : MssqlManagedInstanceStartStopScheduleSchedule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -266,46 +266,46 @@ export interface MssqlManagedInstanceStartStopScheduleTimeouts {
   readonly update?: string;
 }
 
-export function mssqlManagedInstanceStartStopScheduleTimeoutsToTerraform(struct?: MssqlManagedInstanceStartStopScheduleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlManagedInstanceStartStopScheduleTimeoutsToTerraform(struct?: MssqlManagedInstanceStartStopScheduleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mssqlManagedInstanceStartStopScheduleTimeoutsToHclTerraform(struct?: MssqlManagedInstanceStartStopScheduleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlManagedInstanceStartStopScheduleTimeoutsToHclTerraform(struct?: MssqlManagedInstanceStartStopScheduleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -316,19 +316,19 @@ export function mssqlManagedInstanceStartStopScheduleTimeoutsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlManagedInstanceStartStopScheduleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MssqlManagedInstanceStartStopScheduleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MssqlManagedInstanceStartStopScheduleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlManagedInstanceStartStopScheduleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -353,7 +353,7 @@ export class MssqlManagedInstanceStartStopScheduleTimeoutsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlManagedInstanceStartStopScheduleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlManagedInstanceStartStopScheduleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -362,7 +362,7 @@ export class MssqlManagedInstanceStartStopScheduleTimeoutsOutputReference extend
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -444,7 +444,7 @@ export class MssqlManagedInstanceStartStopScheduleTimeoutsOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_start_stop_schedule azurerm_mssql_managed_instance_start_stop_schedule}
 */
-export class MssqlManagedInstanceStartStopSchedule extends cdktf.TerraformResource {
+export class MssqlManagedInstanceStartStopSchedule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -455,14 +455,14 @@ export class MssqlManagedInstanceStartStopSchedule extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MssqlManagedInstanceStartStopSchedule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MssqlManagedInstanceStartStopSchedule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MssqlManagedInstanceStartStopSchedule to import
   * @param importFromId The id of the existing MssqlManagedInstanceStartStopSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_start_stop_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MssqlManagedInstanceStartStopSchedule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_managed_instance_start_stop_schedule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_managed_instance_start_stop_schedule", importId: importFromId, provider });
       }
 
   // ===========
@@ -580,7 +580,7 @@ export class MssqlManagedInstanceStartStopSchedule extends cdktf.TerraformResour
   public get schedule() {
     return this._schedule;
   }
-  public putSchedule(value: MssqlManagedInstanceStartStopScheduleSchedule[] | cdktf.IResolvable) {
+  public putSchedule(value: MssqlManagedInstanceStartStopScheduleSchedule[] | cdktn.IResolvable) {
     this._schedule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -610,11 +610,11 @@ export class MssqlManagedInstanceStartStopSchedule extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      managed_instance_id: cdktf.stringToTerraform(this._managedInstanceId),
-      timezone_id: cdktf.stringToTerraform(this._timezoneId),
-      schedule: cdktf.listMapper(mssqlManagedInstanceStartStopScheduleScheduleToTerraform, true)(this._schedule.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      managed_instance_id: cdktn.stringToTerraform(this._managedInstanceId),
+      timezone_id: cdktn.stringToTerraform(this._timezoneId),
+      schedule: cdktn.listMapper(mssqlManagedInstanceStartStopScheduleScheduleToTerraform, true)(this._schedule.internalValue),
       timeouts: mssqlManagedInstanceStartStopScheduleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -622,31 +622,31 @@ export class MssqlManagedInstanceStartStopSchedule extends cdktf.TerraformResour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_instance_id: {
-        value: cdktf.stringToHclTerraform(this._managedInstanceId),
+        value: cdktn.stringToHclTerraform(this._managedInstanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timezone_id: {
-        value: cdktf.stringToHclTerraform(this._timezoneId),
+        value: cdktn.stringToHclTerraform(this._timezoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schedule: {
-        value: cdktf.listMapperHcl(mssqlManagedInstanceStartStopScheduleScheduleToHclTerraform, true)(this._schedule.internalValue),
+        value: cdktn.listMapperHcl(mssqlManagedInstanceStartStopScheduleScheduleToHclTerraform, true)(this._schedule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "MssqlManagedInstanceStartStopScheduleScheduleList",

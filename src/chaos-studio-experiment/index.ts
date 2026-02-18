@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ChaosStudioExperimentConfig extends cdktf.TerraformMetaArguments {
+export interface ChaosStudioExperimentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/chaos_studio_experiment#id ChaosStudioExperiment#id}
   *
@@ -42,13 +42,13 @@ export interface ChaosStudioExperimentConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/chaos_studio_experiment#selectors ChaosStudioExperiment#selectors}
   */
-  readonly selectors: ChaosStudioExperimentSelectors[] | cdktf.IResolvable;
+  readonly selectors: ChaosStudioExperimentSelectors[] | cdktn.IResolvable;
   /**
   * steps block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/chaos_studio_experiment#steps ChaosStudioExperiment#steps}
   */
-  readonly steps: ChaosStudioExperimentSteps[] | cdktf.IResolvable;
+  readonly steps: ChaosStudioExperimentSteps[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -68,31 +68,31 @@ export interface ChaosStudioExperimentIdentity {
 }
 
 export function chaosStudioExperimentIdentityToTerraform(struct?: ChaosStudioExperimentIdentityOutputReference | ChaosStudioExperimentIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function chaosStudioExperimentIdentityToHclTerraform(struct?: ChaosStudioExperimentIdentityOutputReference | ChaosStudioExperimentIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,14 +103,14 @@ export function chaosStudioExperimentIdentityToHclTerraform(struct?: ChaosStudio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChaosStudioExperimentIdentityOutputReference extends cdktf.ComplexObject {
+export class ChaosStudioExperimentIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -144,7 +144,7 @@ export class ChaosStudioExperimentIdentityOutputReference extends cdktf.ComplexO
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -191,32 +191,32 @@ export interface ChaosStudioExperimentSelectors {
   readonly name: string;
 }
 
-export function chaosStudioExperimentSelectorsToTerraform(struct?: ChaosStudioExperimentSelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chaosStudioExperimentSelectorsToTerraform(struct?: ChaosStudioExperimentSelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    chaos_studio_target_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.chaosStudioTargetIds),
-    name: cdktf.stringToTerraform(struct!.name),
+    chaos_studio_target_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.chaosStudioTargetIds),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function chaosStudioExperimentSelectorsToHclTerraform(struct?: ChaosStudioExperimentSelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chaosStudioExperimentSelectorsToHclTerraform(struct?: ChaosStudioExperimentSelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     chaos_studio_target_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.chaosStudioTargetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.chaosStudioTargetIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -227,9 +227,9 @@ export function chaosStudioExperimentSelectorsToHclTerraform(struct?: ChaosStudi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChaosStudioExperimentSelectorsOutputReference extends cdktf.ComplexObject {
+export class ChaosStudioExperimentSelectorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -237,11 +237,11 @@ export class ChaosStudioExperimentSelectorsOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ChaosStudioExperimentSelectors | cdktf.IResolvable | undefined {
+  public get internalValue(): ChaosStudioExperimentSelectors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -258,14 +258,14 @@ export class ChaosStudioExperimentSelectorsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChaosStudioExperimentSelectors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChaosStudioExperimentSelectors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._chaosStudioTargetIds = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -304,15 +304,15 @@ export class ChaosStudioExperimentSelectorsOutputReference extends cdktf.Complex
   }
 }
 
-export class ChaosStudioExperimentSelectorsList extends cdktf.ComplexList {
-  public internalValue? : ChaosStudioExperimentSelectors[] | cdktf.IResolvable
+export class ChaosStudioExperimentSelectorsList extends cdktn.ComplexList {
+  public internalValue? : ChaosStudioExperimentSelectors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -346,53 +346,53 @@ export interface ChaosStudioExperimentStepsBranchActions {
   readonly urn?: string;
 }
 
-export function chaosStudioExperimentStepsBranchActionsToTerraform(struct?: ChaosStudioExperimentStepsBranchActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chaosStudioExperimentStepsBranchActionsToTerraform(struct?: ChaosStudioExperimentStepsBranchActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action_type: cdktf.stringToTerraform(struct!.actionType),
-    duration: cdktf.stringToTerraform(struct!.duration),
-    parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
-    selector_name: cdktf.stringToTerraform(struct!.selectorName),
-    urn: cdktf.stringToTerraform(struct!.urn),
+    action_type: cdktn.stringToTerraform(struct!.actionType),
+    duration: cdktn.stringToTerraform(struct!.duration),
+    parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
+    selector_name: cdktn.stringToTerraform(struct!.selectorName),
+    urn: cdktn.stringToTerraform(struct!.urn),
   }
 }
 
 
-export function chaosStudioExperimentStepsBranchActionsToHclTerraform(struct?: ChaosStudioExperimentStepsBranchActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chaosStudioExperimentStepsBranchActionsToHclTerraform(struct?: ChaosStudioExperimentStepsBranchActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action_type: {
-      value: cdktf.stringToHclTerraform(struct!.actionType),
+      value: cdktn.stringToHclTerraform(struct!.actionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     duration: {
-      value: cdktf.stringToHclTerraform(struct!.duration),
+      value: cdktn.stringToHclTerraform(struct!.duration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     selector_name: {
-      value: cdktf.stringToHclTerraform(struct!.selectorName),
+      value: cdktn.stringToHclTerraform(struct!.selectorName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     urn: {
-      value: cdktf.stringToHclTerraform(struct!.urn),
+      value: cdktn.stringToHclTerraform(struct!.urn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -403,9 +403,9 @@ export function chaosStudioExperimentStepsBranchActionsToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChaosStudioExperimentStepsBranchActionsOutputReference extends cdktf.ComplexObject {
+export class ChaosStudioExperimentStepsBranchActionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -413,11 +413,11 @@ export class ChaosStudioExperimentStepsBranchActionsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ChaosStudioExperimentStepsBranchActions | cdktf.IResolvable | undefined {
+  public get internalValue(): ChaosStudioExperimentStepsBranchActions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -446,7 +446,7 @@ export class ChaosStudioExperimentStepsBranchActionsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChaosStudioExperimentStepsBranchActions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChaosStudioExperimentStepsBranchActions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -456,7 +456,7 @@ export class ChaosStudioExperimentStepsBranchActionsOutputReference extends cdkt
       this._selectorName = undefined;
       this._urn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -549,15 +549,15 @@ export class ChaosStudioExperimentStepsBranchActionsOutputReference extends cdkt
   }
 }
 
-export class ChaosStudioExperimentStepsBranchActionsList extends cdktf.ComplexList {
-  public internalValue? : ChaosStudioExperimentStepsBranchActions[] | cdktf.IResolvable
+export class ChaosStudioExperimentStepsBranchActionsList extends cdktn.ComplexList {
+  public internalValue? : ChaosStudioExperimentStepsBranchActions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -578,35 +578,35 @@ export interface ChaosStudioExperimentStepsBranch {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/chaos_studio_experiment#actions ChaosStudioExperiment#actions}
   */
-  readonly actions: ChaosStudioExperimentStepsBranchActions[] | cdktf.IResolvable;
+  readonly actions: ChaosStudioExperimentStepsBranchActions[] | cdktn.IResolvable;
 }
 
-export function chaosStudioExperimentStepsBranchToTerraform(struct?: ChaosStudioExperimentStepsBranch | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chaosStudioExperimentStepsBranchToTerraform(struct?: ChaosStudioExperimentStepsBranch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    actions: cdktf.listMapper(chaosStudioExperimentStepsBranchActionsToTerraform, true)(struct!.actions),
+    name: cdktn.stringToTerraform(struct!.name),
+    actions: cdktn.listMapper(chaosStudioExperimentStepsBranchActionsToTerraform, true)(struct!.actions),
   }
 }
 
 
-export function chaosStudioExperimentStepsBranchToHclTerraform(struct?: ChaosStudioExperimentStepsBranch | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chaosStudioExperimentStepsBranchToHclTerraform(struct?: ChaosStudioExperimentStepsBranch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     actions: {
-      value: cdktf.listMapperHcl(chaosStudioExperimentStepsBranchActionsToHclTerraform, true)(struct!.actions),
+      value: cdktn.listMapperHcl(chaosStudioExperimentStepsBranchActionsToHclTerraform, true)(struct!.actions),
       isBlock: true,
       type: "list",
       storageClassType: "ChaosStudioExperimentStepsBranchActionsList",
@@ -617,9 +617,9 @@ export function chaosStudioExperimentStepsBranchToHclTerraform(struct?: ChaosStu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChaosStudioExperimentStepsBranchOutputReference extends cdktf.ComplexObject {
+export class ChaosStudioExperimentStepsBranchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -627,11 +627,11 @@ export class ChaosStudioExperimentStepsBranchOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ChaosStudioExperimentStepsBranch | cdktf.IResolvable | undefined {
+  public get internalValue(): ChaosStudioExperimentStepsBranch | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -648,14 +648,14 @@ export class ChaosStudioExperimentStepsBranchOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChaosStudioExperimentStepsBranch | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChaosStudioExperimentStepsBranch | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._actions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -685,7 +685,7 @@ export class ChaosStudioExperimentStepsBranchOutputReference extends cdktf.Compl
   public get actions() {
     return this._actions;
   }
-  public putActions(value: ChaosStudioExperimentStepsBranchActions[] | cdktf.IResolvable) {
+  public putActions(value: ChaosStudioExperimentStepsBranchActions[] | cdktn.IResolvable) {
     this._actions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -694,15 +694,15 @@ export class ChaosStudioExperimentStepsBranchOutputReference extends cdktf.Compl
   }
 }
 
-export class ChaosStudioExperimentStepsBranchList extends cdktf.ComplexList {
-  public internalValue? : ChaosStudioExperimentStepsBranch[] | cdktf.IResolvable
+export class ChaosStudioExperimentStepsBranchList extends cdktn.ComplexList {
+  public internalValue? : ChaosStudioExperimentStepsBranch[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -723,35 +723,35 @@ export interface ChaosStudioExperimentSteps {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/chaos_studio_experiment#branch ChaosStudioExperiment#branch}
   */
-  readonly branch: ChaosStudioExperimentStepsBranch[] | cdktf.IResolvable;
+  readonly branch: ChaosStudioExperimentStepsBranch[] | cdktn.IResolvable;
 }
 
-export function chaosStudioExperimentStepsToTerraform(struct?: ChaosStudioExperimentSteps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chaosStudioExperimentStepsToTerraform(struct?: ChaosStudioExperimentSteps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    branch: cdktf.listMapper(chaosStudioExperimentStepsBranchToTerraform, true)(struct!.branch),
+    name: cdktn.stringToTerraform(struct!.name),
+    branch: cdktn.listMapper(chaosStudioExperimentStepsBranchToTerraform, true)(struct!.branch),
   }
 }
 
 
-export function chaosStudioExperimentStepsToHclTerraform(struct?: ChaosStudioExperimentSteps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chaosStudioExperimentStepsToHclTerraform(struct?: ChaosStudioExperimentSteps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     branch: {
-      value: cdktf.listMapperHcl(chaosStudioExperimentStepsBranchToHclTerraform, true)(struct!.branch),
+      value: cdktn.listMapperHcl(chaosStudioExperimentStepsBranchToHclTerraform, true)(struct!.branch),
       isBlock: true,
       type: "list",
       storageClassType: "ChaosStudioExperimentStepsBranchList",
@@ -762,9 +762,9 @@ export function chaosStudioExperimentStepsToHclTerraform(struct?: ChaosStudioExp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChaosStudioExperimentStepsOutputReference extends cdktf.ComplexObject {
+export class ChaosStudioExperimentStepsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -772,11 +772,11 @@ export class ChaosStudioExperimentStepsOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ChaosStudioExperimentSteps | cdktf.IResolvable | undefined {
+  public get internalValue(): ChaosStudioExperimentSteps | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -793,14 +793,14 @@ export class ChaosStudioExperimentStepsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChaosStudioExperimentSteps | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChaosStudioExperimentSteps | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._branch.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -830,7 +830,7 @@ export class ChaosStudioExperimentStepsOutputReference extends cdktf.ComplexObje
   public get branch() {
     return this._branch;
   }
-  public putBranch(value: ChaosStudioExperimentStepsBranch[] | cdktf.IResolvable) {
+  public putBranch(value: ChaosStudioExperimentStepsBranch[] | cdktn.IResolvable) {
     this._branch.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -839,15 +839,15 @@ export class ChaosStudioExperimentStepsOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class ChaosStudioExperimentStepsList extends cdktf.ComplexList {
-  public internalValue? : ChaosStudioExperimentSteps[] | cdktf.IResolvable
+export class ChaosStudioExperimentStepsList extends cdktn.ComplexList {
+  public internalValue? : ChaosStudioExperimentSteps[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -877,46 +877,46 @@ export interface ChaosStudioExperimentTimeouts {
   readonly update?: string;
 }
 
-export function chaosStudioExperimentTimeoutsToTerraform(struct?: ChaosStudioExperimentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chaosStudioExperimentTimeoutsToTerraform(struct?: ChaosStudioExperimentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function chaosStudioExperimentTimeoutsToHclTerraform(struct?: ChaosStudioExperimentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chaosStudioExperimentTimeoutsToHclTerraform(struct?: ChaosStudioExperimentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -927,19 +927,19 @@ export function chaosStudioExperimentTimeoutsToHclTerraform(struct?: ChaosStudio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChaosStudioExperimentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ChaosStudioExperimentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ChaosStudioExperimentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ChaosStudioExperimentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -964,7 +964,7 @@ export class ChaosStudioExperimentTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChaosStudioExperimentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChaosStudioExperimentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -973,7 +973,7 @@ export class ChaosStudioExperimentTimeoutsOutputReference extends cdktf.ComplexO
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1055,7 +1055,7 @@ export class ChaosStudioExperimentTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/chaos_studio_experiment azurerm_chaos_studio_experiment}
 */
-export class ChaosStudioExperiment extends cdktf.TerraformResource {
+export class ChaosStudioExperiment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1066,14 +1066,14 @@ export class ChaosStudioExperiment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ChaosStudioExperiment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ChaosStudioExperiment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChaosStudioExperiment to import
   * @param importFromId The id of the existing ChaosStudioExperiment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/chaos_studio_experiment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChaosStudioExperiment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_chaos_studio_experiment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_chaos_studio_experiment", importId: importFromId, provider });
       }
 
   // ===========
@@ -1193,7 +1193,7 @@ export class ChaosStudioExperiment extends cdktf.TerraformResource {
   public get selectors() {
     return this._selectors;
   }
-  public putSelectors(value: ChaosStudioExperimentSelectors[] | cdktf.IResolvable) {
+  public putSelectors(value: ChaosStudioExperimentSelectors[] | cdktn.IResolvable) {
     this._selectors.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1206,7 +1206,7 @@ export class ChaosStudioExperiment extends cdktf.TerraformResource {
   public get steps() {
     return this._steps;
   }
-  public putSteps(value: ChaosStudioExperimentSteps[] | cdktf.IResolvable) {
+  public putSteps(value: ChaosStudioExperimentSteps[] | cdktn.IResolvable) {
     this._steps.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1236,13 +1236,13 @@ export class ChaosStudioExperiment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       identity: chaosStudioExperimentIdentityToTerraform(this._identity.internalValue),
-      selectors: cdktf.listMapper(chaosStudioExperimentSelectorsToTerraform, true)(this._selectors.internalValue),
-      steps: cdktf.listMapper(chaosStudioExperimentStepsToTerraform, true)(this._steps.internalValue),
+      selectors: cdktn.listMapper(chaosStudioExperimentSelectorsToTerraform, true)(this._selectors.internalValue),
+      steps: cdktn.listMapper(chaosStudioExperimentStepsToTerraform, true)(this._steps.internalValue),
       timeouts: chaosStudioExperimentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1250,25 +1250,25 @@ export class ChaosStudioExperiment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1280,13 +1280,13 @@ export class ChaosStudioExperiment extends cdktf.TerraformResource {
         storageClassType: "ChaosStudioExperimentIdentityList",
       },
       selectors: {
-        value: cdktf.listMapperHcl(chaosStudioExperimentSelectorsToHclTerraform, true)(this._selectors.internalValue),
+        value: cdktn.listMapperHcl(chaosStudioExperimentSelectorsToHclTerraform, true)(this._selectors.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ChaosStudioExperimentSelectorsList",
       },
       steps: {
-        value: cdktf.listMapperHcl(chaosStudioExperimentStepsToHclTerraform, true)(this._steps.internalValue),
+        value: cdktn.listMapperHcl(chaosStudioExperimentStepsToHclTerraform, true)(this._steps.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ChaosStudioExperimentStepsList",

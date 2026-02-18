@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VirtualMachineImplicitDataDiskFromSourceConfig extends cdktf.TerraformMetaArguments {
+export interface VirtualMachineImplicitDataDiskFromSourceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_implicit_data_disk_from_source#caching VirtualMachineImplicitDataDiskFromSource#caching}
   */
@@ -50,7 +50,7 @@ export interface VirtualMachineImplicitDataDiskFromSourceConfig extends cdktf.Te
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_implicit_data_disk_from_source#write_accelerator_enabled VirtualMachineImplicitDataDiskFromSource#write_accelerator_enabled}
   */
-  readonly writeAcceleratorEnabled?: boolean | cdktf.IResolvable;
+  readonly writeAcceleratorEnabled?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -77,46 +77,46 @@ export interface VirtualMachineImplicitDataDiskFromSourceTimeouts {
   readonly update?: string;
 }
 
-export function virtualMachineImplicitDataDiskFromSourceTimeoutsToTerraform(struct?: VirtualMachineImplicitDataDiskFromSourceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineImplicitDataDiskFromSourceTimeoutsToTerraform(struct?: VirtualMachineImplicitDataDiskFromSourceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function virtualMachineImplicitDataDiskFromSourceTimeoutsToHclTerraform(struct?: VirtualMachineImplicitDataDiskFromSourceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineImplicitDataDiskFromSourceTimeoutsToHclTerraform(struct?: VirtualMachineImplicitDataDiskFromSourceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,19 +127,19 @@ export function virtualMachineImplicitDataDiskFromSourceTimeoutsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualMachineImplicitDataDiskFromSourceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineImplicitDataDiskFromSourceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VirtualMachineImplicitDataDiskFromSourceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualMachineImplicitDataDiskFromSourceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -164,7 +164,7 @@ export class VirtualMachineImplicitDataDiskFromSourceTimeoutsOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualMachineImplicitDataDiskFromSourceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualMachineImplicitDataDiskFromSourceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class VirtualMachineImplicitDataDiskFromSourceTimeoutsOutputReference ext
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -255,7 +255,7 @@ export class VirtualMachineImplicitDataDiskFromSourceTimeoutsOutputReference ext
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_implicit_data_disk_from_source azurerm_virtual_machine_implicit_data_disk_from_source}
 */
-export class VirtualMachineImplicitDataDiskFromSource extends cdktf.TerraformResource {
+export class VirtualMachineImplicitDataDiskFromSource extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -266,14 +266,14 @@ export class VirtualMachineImplicitDataDiskFromSource extends cdktf.TerraformRes
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VirtualMachineImplicitDataDiskFromSource resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VirtualMachineImplicitDataDiskFromSource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualMachineImplicitDataDiskFromSource to import
   * @param importFromId The id of the existing VirtualMachineImplicitDataDiskFromSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_implicit_data_disk_from_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualMachineImplicitDataDiskFromSource to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_machine_implicit_data_disk_from_source", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_machine_implicit_data_disk_from_source", importId: importFromId, provider });
       }
 
   // ===========
@@ -430,11 +430,11 @@ export class VirtualMachineImplicitDataDiskFromSource extends cdktf.TerraformRes
   }
 
   // write_accelerator_enabled - computed: false, optional: true, required: false
-  private _writeAcceleratorEnabled?: boolean | cdktf.IResolvable; 
+  private _writeAcceleratorEnabled?: boolean | cdktn.IResolvable; 
   public get writeAcceleratorEnabled() {
     return this.getBooleanAttribute('write_accelerator_enabled');
   }
-  public set writeAcceleratorEnabled(value: boolean | cdktf.IResolvable) {
+  public set writeAcceleratorEnabled(value: boolean | cdktn.IResolvable) {
     this._writeAcceleratorEnabled = value;
   }
   public resetWriteAcceleratorEnabled() {
@@ -467,15 +467,15 @@ export class VirtualMachineImplicitDataDiskFromSource extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      caching: cdktf.stringToTerraform(this._caching),
-      create_option: cdktf.stringToTerraform(this._createOption),
-      disk_size_gb: cdktf.numberToTerraform(this._diskSizeGb),
-      id: cdktf.stringToTerraform(this._id),
-      lun: cdktf.numberToTerraform(this._lun),
-      name: cdktf.stringToTerraform(this._name),
-      source_resource_id: cdktf.stringToTerraform(this._sourceResourceId),
-      virtual_machine_id: cdktf.stringToTerraform(this._virtualMachineId),
-      write_accelerator_enabled: cdktf.booleanToTerraform(this._writeAcceleratorEnabled),
+      caching: cdktn.stringToTerraform(this._caching),
+      create_option: cdktn.stringToTerraform(this._createOption),
+      disk_size_gb: cdktn.numberToTerraform(this._diskSizeGb),
+      id: cdktn.stringToTerraform(this._id),
+      lun: cdktn.numberToTerraform(this._lun),
+      name: cdktn.stringToTerraform(this._name),
+      source_resource_id: cdktn.stringToTerraform(this._sourceResourceId),
+      virtual_machine_id: cdktn.stringToTerraform(this._virtualMachineId),
+      write_accelerator_enabled: cdktn.booleanToTerraform(this._writeAcceleratorEnabled),
       timeouts: virtualMachineImplicitDataDiskFromSourceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -483,55 +483,55 @@ export class VirtualMachineImplicitDataDiskFromSource extends cdktf.TerraformRes
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       caching: {
-        value: cdktf.stringToHclTerraform(this._caching),
+        value: cdktn.stringToHclTerraform(this._caching),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       create_option: {
-        value: cdktf.stringToHclTerraform(this._createOption),
+        value: cdktn.stringToHclTerraform(this._createOption),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disk_size_gb: {
-        value: cdktf.numberToHclTerraform(this._diskSizeGb),
+        value: cdktn.numberToHclTerraform(this._diskSizeGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lun: {
-        value: cdktf.numberToHclTerraform(this._lun),
+        value: cdktn.numberToHclTerraform(this._lun),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_resource_id: {
-        value: cdktf.stringToHclTerraform(this._sourceResourceId),
+        value: cdktn.stringToHclTerraform(this._sourceResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_machine_id: {
-        value: cdktf.stringToHclTerraform(this._virtualMachineId),
+        value: cdktn.stringToHclTerraform(this._virtualMachineId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       write_accelerator_enabled: {
-        value: cdktf.booleanToHclTerraform(this._writeAcceleratorEnabled),
+        value: cdktn.booleanToHclTerraform(this._writeAcceleratorEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

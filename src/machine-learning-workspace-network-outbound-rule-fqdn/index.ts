@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MachineLearningWorkspaceNetworkOutboundRuleFqdnConfig extends cdktf.TerraformMetaArguments {
+export interface MachineLearningWorkspaceNetworkOutboundRuleFqdnConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace_network_outbound_rule_fqdn#destination_fqdn MachineLearningWorkspaceNetworkOutboundRuleFqdn#destination_fqdn}
   */
@@ -57,46 +57,46 @@ export interface MachineLearningWorkspaceNetworkOutboundRuleFqdnTimeouts {
   readonly update?: string;
 }
 
-export function machineLearningWorkspaceNetworkOutboundRuleFqdnTimeoutsToTerraform(struct?: MachineLearningWorkspaceNetworkOutboundRuleFqdnTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function machineLearningWorkspaceNetworkOutboundRuleFqdnTimeoutsToTerraform(struct?: MachineLearningWorkspaceNetworkOutboundRuleFqdnTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function machineLearningWorkspaceNetworkOutboundRuleFqdnTimeoutsToHclTerraform(struct?: MachineLearningWorkspaceNetworkOutboundRuleFqdnTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function machineLearningWorkspaceNetworkOutboundRuleFqdnTimeoutsToHclTerraform(struct?: MachineLearningWorkspaceNetworkOutboundRuleFqdnTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -107,19 +107,19 @@ export function machineLearningWorkspaceNetworkOutboundRuleFqdnTimeoutsToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MachineLearningWorkspaceNetworkOutboundRuleFqdnTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MachineLearningWorkspaceNetworkOutboundRuleFqdnTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MachineLearningWorkspaceNetworkOutboundRuleFqdnTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MachineLearningWorkspaceNetworkOutboundRuleFqdnTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -144,7 +144,7 @@ export class MachineLearningWorkspaceNetworkOutboundRuleFqdnTimeoutsOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MachineLearningWorkspaceNetworkOutboundRuleFqdnTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MachineLearningWorkspaceNetworkOutboundRuleFqdnTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -153,7 +153,7 @@ export class MachineLearningWorkspaceNetworkOutboundRuleFqdnTimeoutsOutputRefere
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -235,7 +235,7 @@ export class MachineLearningWorkspaceNetworkOutboundRuleFqdnTimeoutsOutputRefere
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace_network_outbound_rule_fqdn azurerm_machine_learning_workspace_network_outbound_rule_fqdn}
 */
-export class MachineLearningWorkspaceNetworkOutboundRuleFqdn extends cdktf.TerraformResource {
+export class MachineLearningWorkspaceNetworkOutboundRuleFqdn extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -246,14 +246,14 @@ export class MachineLearningWorkspaceNetworkOutboundRuleFqdn extends cdktf.Terra
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MachineLearningWorkspaceNetworkOutboundRuleFqdn resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MachineLearningWorkspaceNetworkOutboundRuleFqdn resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MachineLearningWorkspaceNetworkOutboundRuleFqdn to import
   * @param importFromId The id of the existing MachineLearningWorkspaceNetworkOutboundRuleFqdn that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_workspace_network_outbound_rule_fqdn#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MachineLearningWorkspaceNetworkOutboundRuleFqdn to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_machine_learning_workspace_network_outbound_rule_fqdn", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_machine_learning_workspace_network_outbound_rule_fqdn", importId: importFromId, provider });
       }
 
   // ===========
@@ -371,10 +371,10 @@ export class MachineLearningWorkspaceNetworkOutboundRuleFqdn extends cdktf.Terra
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination_fqdn: cdktf.stringToTerraform(this._destinationFqdn),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
+      destination_fqdn: cdktn.stringToTerraform(this._destinationFqdn),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
       timeouts: machineLearningWorkspaceNetworkOutboundRuleFqdnTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -382,25 +382,25 @@ export class MachineLearningWorkspaceNetworkOutboundRuleFqdn extends cdktf.Terra
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       destination_fqdn: {
-        value: cdktf.stringToHclTerraform(this._destinationFqdn),
+        value: cdktn.stringToHclTerraform(this._destinationFqdn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

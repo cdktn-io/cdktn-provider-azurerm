@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CdnFrontdoorSecretConfig extends cdktf.TerraformMetaArguments {
+export interface CdnFrontdoorSecretConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_secret#cdn_frontdoor_profile_id CdnFrontdoorSecret#cdn_frontdoor_profile_id}
   */
@@ -47,25 +47,25 @@ export interface CdnFrontdoorSecretSecretCustomerCertificate {
   readonly keyVaultCertificateId: string;
 }
 
-export function cdnFrontdoorSecretSecretCustomerCertificateToTerraform(struct?: CdnFrontdoorSecretSecretCustomerCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cdnFrontdoorSecretSecretCustomerCertificateToTerraform(struct?: CdnFrontdoorSecretSecretCustomerCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_vault_certificate_id: cdktf.stringToTerraform(struct!.keyVaultCertificateId),
+    key_vault_certificate_id: cdktn.stringToTerraform(struct!.keyVaultCertificateId),
   }
 }
 
 
-export function cdnFrontdoorSecretSecretCustomerCertificateToHclTerraform(struct?: CdnFrontdoorSecretSecretCustomerCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cdnFrontdoorSecretSecretCustomerCertificateToHclTerraform(struct?: CdnFrontdoorSecretSecretCustomerCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_vault_certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultCertificateId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultCertificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -76,9 +76,9 @@ export function cdnFrontdoorSecretSecretCustomerCertificateToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorSecretSecretCustomerCertificateOutputReference extends cdktf.ComplexObject {
+export class CdnFrontdoorSecretSecretCustomerCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -86,11 +86,11 @@ export class CdnFrontdoorSecretSecretCustomerCertificateOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CdnFrontdoorSecretSecretCustomerCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorSecretSecretCustomerCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -103,13 +103,13 @@ export class CdnFrontdoorSecretSecretCustomerCertificateOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorSecretSecretCustomerCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorSecretSecretCustomerCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._keyVaultCertificateId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -139,15 +139,15 @@ export class CdnFrontdoorSecretSecretCustomerCertificateOutputReference extends 
   }
 }
 
-export class CdnFrontdoorSecretSecretCustomerCertificateList extends cdktf.ComplexList {
-  public internalValue? : CdnFrontdoorSecretSecretCustomerCertificate[] | cdktf.IResolvable
+export class CdnFrontdoorSecretSecretCustomerCertificateList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorSecretSecretCustomerCertificate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -164,28 +164,28 @@ export interface CdnFrontdoorSecretSecret {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_secret#customer_certificate CdnFrontdoorSecret#customer_certificate}
   */
-  readonly customerCertificate: CdnFrontdoorSecretSecretCustomerCertificate[] | cdktf.IResolvable;
+  readonly customerCertificate: CdnFrontdoorSecretSecretCustomerCertificate[] | cdktn.IResolvable;
 }
 
 export function cdnFrontdoorSecretSecretToTerraform(struct?: CdnFrontdoorSecretSecretOutputReference | CdnFrontdoorSecretSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    customer_certificate: cdktf.listMapper(cdnFrontdoorSecretSecretCustomerCertificateToTerraform, true)(struct!.customerCertificate),
+    customer_certificate: cdktn.listMapper(cdnFrontdoorSecretSecretCustomerCertificateToTerraform, true)(struct!.customerCertificate),
   }
 }
 
 
 export function cdnFrontdoorSecretSecretToHclTerraform(struct?: CdnFrontdoorSecretSecretOutputReference | CdnFrontdoorSecretSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     customer_certificate: {
-      value: cdktf.listMapperHcl(cdnFrontdoorSecretSecretCustomerCertificateToHclTerraform, true)(struct!.customerCertificate),
+      value: cdktn.listMapperHcl(cdnFrontdoorSecretSecretCustomerCertificateToHclTerraform, true)(struct!.customerCertificate),
       isBlock: true,
       type: "list",
       storageClassType: "CdnFrontdoorSecretSecretCustomerCertificateList",
@@ -196,14 +196,14 @@ export function cdnFrontdoorSecretSecretToHclTerraform(struct?: CdnFrontdoorSecr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorSecretSecretOutputReference extends cdktf.ComplexObject {
+export class CdnFrontdoorSecretSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -233,7 +233,7 @@ export class CdnFrontdoorSecretSecretOutputReference extends cdktf.ComplexObject
   public get customerCertificate() {
     return this._customerCertificate;
   }
-  public putCustomerCertificate(value: CdnFrontdoorSecretSecretCustomerCertificate[] | cdktf.IResolvable) {
+  public putCustomerCertificate(value: CdnFrontdoorSecretSecretCustomerCertificate[] | cdktn.IResolvable) {
     this._customerCertificate.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -256,39 +256,39 @@ export interface CdnFrontdoorSecretTimeouts {
   readonly read?: string;
 }
 
-export function cdnFrontdoorSecretTimeoutsToTerraform(struct?: CdnFrontdoorSecretTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cdnFrontdoorSecretTimeoutsToTerraform(struct?: CdnFrontdoorSecretTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function cdnFrontdoorSecretTimeoutsToHclTerraform(struct?: CdnFrontdoorSecretTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cdnFrontdoorSecretTimeoutsToHclTerraform(struct?: CdnFrontdoorSecretTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -299,19 +299,19 @@ export function cdnFrontdoorSecretTimeoutsToHclTerraform(struct?: CdnFrontdoorSe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorSecretTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CdnFrontdoorSecretTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CdnFrontdoorSecretTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorSecretTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -332,7 +332,7 @@ export class CdnFrontdoorSecretTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorSecretTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorSecretTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -340,7 +340,7 @@ export class CdnFrontdoorSecretTimeoutsOutputReference extends cdktf.ComplexObje
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -405,7 +405,7 @@ export class CdnFrontdoorSecretTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_secret azurerm_cdn_frontdoor_secret}
 */
-export class CdnFrontdoorSecret extends cdktf.TerraformResource {
+export class CdnFrontdoorSecret extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -416,14 +416,14 @@ export class CdnFrontdoorSecret extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CdnFrontdoorSecret resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CdnFrontdoorSecret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CdnFrontdoorSecret to import
   * @param importFromId The id of the existing CdnFrontdoorSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CdnFrontdoorSecret to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cdn_frontdoor_secret", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cdn_frontdoor_secret", importId: importFromId, provider });
       }
 
   // ===========
@@ -546,9 +546,9 @@ export class CdnFrontdoorSecret extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cdn_frontdoor_profile_id: cdktf.stringToTerraform(this._cdnFrontdoorProfileId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      cdn_frontdoor_profile_id: cdktn.stringToTerraform(this._cdnFrontdoorProfileId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
       secret: cdnFrontdoorSecretSecretToTerraform(this._secret.internalValue),
       timeouts: cdnFrontdoorSecretTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -557,19 +557,19 @@ export class CdnFrontdoorSecret extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cdn_frontdoor_profile_id: {
-        value: cdktf.stringToHclTerraform(this._cdnFrontdoorProfileId),
+        value: cdktn.stringToHclTerraform(this._cdnFrontdoorProfileId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StreamAnalyticsFunctionJavascriptUdaConfig extends cdktf.TerraformMetaArguments {
+export interface StreamAnalyticsFunctionJavascriptUdaConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stream_analytics_function_javascript_uda#id StreamAnalyticsFunctionJavascriptUda#id}
   *
@@ -36,7 +36,7 @@ export interface StreamAnalyticsFunctionJavascriptUdaConfig extends cdktf.Terraf
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stream_analytics_function_javascript_uda#input StreamAnalyticsFunctionJavascriptUda#input}
   */
-  readonly input: StreamAnalyticsFunctionJavascriptUdaInput[] | cdktf.IResolvable;
+  readonly input: StreamAnalyticsFunctionJavascriptUdaInput[] | cdktn.IResolvable;
   /**
   * output block
   *
@@ -54,39 +54,39 @@ export interface StreamAnalyticsFunctionJavascriptUdaInput {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stream_analytics_function_javascript_uda#configuration_parameter StreamAnalyticsFunctionJavascriptUda#configuration_parameter}
   */
-  readonly configurationParameter?: boolean | cdktf.IResolvable;
+  readonly configurationParameter?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stream_analytics_function_javascript_uda#type StreamAnalyticsFunctionJavascriptUda#type}
   */
   readonly type: string;
 }
 
-export function streamAnalyticsFunctionJavascriptUdaInputToTerraform(struct?: StreamAnalyticsFunctionJavascriptUdaInput | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamAnalyticsFunctionJavascriptUdaInputToTerraform(struct?: StreamAnalyticsFunctionJavascriptUdaInput | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    configuration_parameter: cdktf.booleanToTerraform(struct!.configurationParameter),
-    type: cdktf.stringToTerraform(struct!.type),
+    configuration_parameter: cdktn.booleanToTerraform(struct!.configurationParameter),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function streamAnalyticsFunctionJavascriptUdaInputToHclTerraform(struct?: StreamAnalyticsFunctionJavascriptUdaInput | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamAnalyticsFunctionJavascriptUdaInputToHclTerraform(struct?: StreamAnalyticsFunctionJavascriptUdaInput | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     configuration_parameter: {
-      value: cdktf.booleanToHclTerraform(struct!.configurationParameter),
+      value: cdktn.booleanToHclTerraform(struct!.configurationParameter),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -97,9 +97,9 @@ export function streamAnalyticsFunctionJavascriptUdaInputToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StreamAnalyticsFunctionJavascriptUdaInputOutputReference extends cdktf.ComplexObject {
+export class StreamAnalyticsFunctionJavascriptUdaInputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -107,11 +107,11 @@ export class StreamAnalyticsFunctionJavascriptUdaInputOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): StreamAnalyticsFunctionJavascriptUdaInput | cdktf.IResolvable | undefined {
+  public get internalValue(): StreamAnalyticsFunctionJavascriptUdaInput | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -128,14 +128,14 @@ export class StreamAnalyticsFunctionJavascriptUdaInputOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StreamAnalyticsFunctionJavascriptUdaInput | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StreamAnalyticsFunctionJavascriptUdaInput | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._configurationParameter = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -148,11 +148,11 @@ export class StreamAnalyticsFunctionJavascriptUdaInputOutputReference extends cd
   }
 
   // configuration_parameter - computed: false, optional: true, required: false
-  private _configurationParameter?: boolean | cdktf.IResolvable; 
+  private _configurationParameter?: boolean | cdktn.IResolvable; 
   public get configurationParameter() {
     return this.getBooleanAttribute('configuration_parameter');
   }
-  public set configurationParameter(value: boolean | cdktf.IResolvable) {
+  public set configurationParameter(value: boolean | cdktn.IResolvable) {
     this._configurationParameter = value;
   }
   public resetConfigurationParameter() {
@@ -177,15 +177,15 @@ export class StreamAnalyticsFunctionJavascriptUdaInputOutputReference extends cd
   }
 }
 
-export class StreamAnalyticsFunctionJavascriptUdaInputList extends cdktf.ComplexList {
-  public internalValue? : StreamAnalyticsFunctionJavascriptUdaInput[] | cdktf.IResolvable
+export class StreamAnalyticsFunctionJavascriptUdaInputList extends cdktn.ComplexList {
+  public internalValue? : StreamAnalyticsFunctionJavascriptUdaInput[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -204,24 +204,24 @@ export interface StreamAnalyticsFunctionJavascriptUdaOutput {
 }
 
 export function streamAnalyticsFunctionJavascriptUdaOutputToTerraform(struct?: StreamAnalyticsFunctionJavascriptUdaOutputOutputReference | StreamAnalyticsFunctionJavascriptUdaOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function streamAnalyticsFunctionJavascriptUdaOutputToHclTerraform(struct?: StreamAnalyticsFunctionJavascriptUdaOutputOutputReference | StreamAnalyticsFunctionJavascriptUdaOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -232,14 +232,14 @@ export function streamAnalyticsFunctionJavascriptUdaOutputToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StreamAnalyticsFunctionJavascriptUdaOutputOutputReference extends cdktf.ComplexObject {
+export class StreamAnalyticsFunctionJavascriptUdaOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -296,46 +296,46 @@ export interface StreamAnalyticsFunctionJavascriptUdaTimeouts {
   readonly update?: string;
 }
 
-export function streamAnalyticsFunctionJavascriptUdaTimeoutsToTerraform(struct?: StreamAnalyticsFunctionJavascriptUdaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamAnalyticsFunctionJavascriptUdaTimeoutsToTerraform(struct?: StreamAnalyticsFunctionJavascriptUdaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function streamAnalyticsFunctionJavascriptUdaTimeoutsToHclTerraform(struct?: StreamAnalyticsFunctionJavascriptUdaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamAnalyticsFunctionJavascriptUdaTimeoutsToHclTerraform(struct?: StreamAnalyticsFunctionJavascriptUdaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -346,19 +346,19 @@ export function streamAnalyticsFunctionJavascriptUdaTimeoutsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StreamAnalyticsFunctionJavascriptUdaTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StreamAnalyticsFunctionJavascriptUdaTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StreamAnalyticsFunctionJavascriptUdaTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StreamAnalyticsFunctionJavascriptUdaTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -383,7 +383,7 @@ export class StreamAnalyticsFunctionJavascriptUdaTimeoutsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StreamAnalyticsFunctionJavascriptUdaTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StreamAnalyticsFunctionJavascriptUdaTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -392,7 +392,7 @@ export class StreamAnalyticsFunctionJavascriptUdaTimeoutsOutputReference extends
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -474,7 +474,7 @@ export class StreamAnalyticsFunctionJavascriptUdaTimeoutsOutputReference extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stream_analytics_function_javascript_uda azurerm_stream_analytics_function_javascript_uda}
 */
-export class StreamAnalyticsFunctionJavascriptUda extends cdktf.TerraformResource {
+export class StreamAnalyticsFunctionJavascriptUda extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -485,14 +485,14 @@ export class StreamAnalyticsFunctionJavascriptUda extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StreamAnalyticsFunctionJavascriptUda resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StreamAnalyticsFunctionJavascriptUda resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StreamAnalyticsFunctionJavascriptUda to import
   * @param importFromId The id of the existing StreamAnalyticsFunctionJavascriptUda that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stream_analytics_function_javascript_uda#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StreamAnalyticsFunctionJavascriptUda to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_stream_analytics_function_javascript_uda", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_stream_analytics_function_javascript_uda", importId: importFromId, provider });
       }
 
   // ===========
@@ -595,7 +595,7 @@ export class StreamAnalyticsFunctionJavascriptUda extends cdktf.TerraformResourc
   public get input() {
     return this._input;
   }
-  public putInput(value: StreamAnalyticsFunctionJavascriptUdaInput[] | cdktf.IResolvable) {
+  public putInput(value: StreamAnalyticsFunctionJavascriptUdaInput[] | cdktn.IResolvable) {
     this._input.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -638,11 +638,11 @@ export class StreamAnalyticsFunctionJavascriptUda extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      script: cdktf.stringToTerraform(this._script),
-      stream_analytics_job_id: cdktf.stringToTerraform(this._streamAnalyticsJobId),
-      input: cdktf.listMapper(streamAnalyticsFunctionJavascriptUdaInputToTerraform, true)(this._input.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      script: cdktn.stringToTerraform(this._script),
+      stream_analytics_job_id: cdktn.stringToTerraform(this._streamAnalyticsJobId),
+      input: cdktn.listMapper(streamAnalyticsFunctionJavascriptUdaInputToTerraform, true)(this._input.internalValue),
       output: streamAnalyticsFunctionJavascriptUdaOutputToTerraform(this._output.internalValue),
       timeouts: streamAnalyticsFunctionJavascriptUdaTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -651,31 +651,31 @@ export class StreamAnalyticsFunctionJavascriptUda extends cdktf.TerraformResourc
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       script: {
-        value: cdktf.stringToHclTerraform(this._script),
+        value: cdktn.stringToHclTerraform(this._script),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stream_analytics_job_id: {
-        value: cdktf.stringToHclTerraform(this._streamAnalyticsJobId),
+        value: cdktn.stringToHclTerraform(this._streamAnalyticsJobId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       input: {
-        value: cdktf.listMapperHcl(streamAnalyticsFunctionJavascriptUdaInputToHclTerraform, true)(this._input.internalValue),
+        value: cdktn.listMapperHcl(streamAnalyticsFunctionJavascriptUdaInputToHclTerraform, true)(this._input.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "StreamAnalyticsFunctionJavascriptUdaInputList",

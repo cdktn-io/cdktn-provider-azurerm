@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LbBackendAddressPoolConfig extends cdktf.TerraformMetaArguments {
+export interface LbBackendAddressPoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_backend_address_pool#id LbBackendAddressPool#id}
   *
@@ -46,7 +46,7 @@ export interface LbBackendAddressPoolConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_backend_address_pool#tunnel_interface LbBackendAddressPool#tunnel_interface}
   */
-  readonly tunnelInterface?: LbBackendAddressPoolTunnelInterface[] | cdktf.IResolvable;
+  readonly tunnelInterface?: LbBackendAddressPoolTunnelInterface[] | cdktn.IResolvable;
 }
 export interface LbBackendAddressPoolTimeouts {
   /**
@@ -67,46 +67,46 @@ export interface LbBackendAddressPoolTimeouts {
   readonly update?: string;
 }
 
-export function lbBackendAddressPoolTimeoutsToTerraform(struct?: LbBackendAddressPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lbBackendAddressPoolTimeoutsToTerraform(struct?: LbBackendAddressPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function lbBackendAddressPoolTimeoutsToHclTerraform(struct?: LbBackendAddressPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lbBackendAddressPoolTimeoutsToHclTerraform(struct?: LbBackendAddressPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,19 +117,19 @@ export function lbBackendAddressPoolTimeoutsToHclTerraform(struct?: LbBackendAdd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LbBackendAddressPoolTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LbBackendAddressPoolTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LbBackendAddressPoolTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LbBackendAddressPoolTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -154,7 +154,7 @@ export class LbBackendAddressPoolTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LbBackendAddressPoolTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LbBackendAddressPoolTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -163,7 +163,7 @@ export class LbBackendAddressPoolTimeoutsOutputReference extends cdktf.ComplexOb
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -260,46 +260,46 @@ export interface LbBackendAddressPoolTunnelInterface {
   readonly type: string;
 }
 
-export function lbBackendAddressPoolTunnelInterfaceToTerraform(struct?: LbBackendAddressPoolTunnelInterface | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lbBackendAddressPoolTunnelInterfaceToTerraform(struct?: LbBackendAddressPoolTunnelInterface | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identifier: cdktf.numberToTerraform(struct!.identifier),
-    port: cdktf.numberToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    type: cdktf.stringToTerraform(struct!.type),
+    identifier: cdktn.numberToTerraform(struct!.identifier),
+    port: cdktn.numberToTerraform(struct!.port),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function lbBackendAddressPoolTunnelInterfaceToHclTerraform(struct?: LbBackendAddressPoolTunnelInterface | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lbBackendAddressPoolTunnelInterfaceToHclTerraform(struct?: LbBackendAddressPoolTunnelInterface | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identifier: {
-      value: cdktf.numberToHclTerraform(struct!.identifier),
+      value: cdktn.numberToHclTerraform(struct!.identifier),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -310,9 +310,9 @@ export function lbBackendAddressPoolTunnelInterfaceToHclTerraform(struct?: LbBac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LbBackendAddressPoolTunnelInterfaceOutputReference extends cdktf.ComplexObject {
+export class LbBackendAddressPoolTunnelInterfaceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -320,11 +320,11 @@ export class LbBackendAddressPoolTunnelInterfaceOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LbBackendAddressPoolTunnelInterface | cdktf.IResolvable | undefined {
+  public get internalValue(): LbBackendAddressPoolTunnelInterface | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -349,7 +349,7 @@ export class LbBackendAddressPoolTunnelInterfaceOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LbBackendAddressPoolTunnelInterface | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LbBackendAddressPoolTunnelInterface | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -358,7 +358,7 @@ export class LbBackendAddressPoolTunnelInterfaceOutputReference extends cdktf.Co
       this._protocol = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -425,15 +425,15 @@ export class LbBackendAddressPoolTunnelInterfaceOutputReference extends cdktf.Co
   }
 }
 
-export class LbBackendAddressPoolTunnelInterfaceList extends cdktf.ComplexList {
-  public internalValue? : LbBackendAddressPoolTunnelInterface[] | cdktf.IResolvable
+export class LbBackendAddressPoolTunnelInterfaceList extends cdktn.ComplexList {
+  public internalValue? : LbBackendAddressPoolTunnelInterface[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -448,7 +448,7 @@ export class LbBackendAddressPoolTunnelInterfaceList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_backend_address_pool azurerm_lb_backend_address_pool}
 */
-export class LbBackendAddressPool extends cdktf.TerraformResource {
+export class LbBackendAddressPool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -459,14 +459,14 @@ export class LbBackendAddressPool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LbBackendAddressPool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LbBackendAddressPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LbBackendAddressPool to import
   * @param importFromId The id of the existing LbBackendAddressPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_backend_address_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LbBackendAddressPool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_lb_backend_address_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_lb_backend_address_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -624,7 +624,7 @@ export class LbBackendAddressPool extends cdktf.TerraformResource {
   public get tunnelInterface() {
     return this._tunnelInterface;
   }
-  public putTunnelInterface(value: LbBackendAddressPoolTunnelInterface[] | cdktf.IResolvable) {
+  public putTunnelInterface(value: LbBackendAddressPoolTunnelInterface[] | cdktn.IResolvable) {
     this._tunnelInterface.internalValue = value;
   }
   public resetTunnelInterface() {
@@ -641,44 +641,44 @@ export class LbBackendAddressPool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      loadbalancer_id: cdktf.stringToTerraform(this._loadbalancerId),
-      name: cdktf.stringToTerraform(this._name),
-      synchronous_mode: cdktf.stringToTerraform(this._synchronousMode),
-      virtual_network_id: cdktf.stringToTerraform(this._virtualNetworkId),
+      id: cdktn.stringToTerraform(this._id),
+      loadbalancer_id: cdktn.stringToTerraform(this._loadbalancerId),
+      name: cdktn.stringToTerraform(this._name),
+      synchronous_mode: cdktn.stringToTerraform(this._synchronousMode),
+      virtual_network_id: cdktn.stringToTerraform(this._virtualNetworkId),
       timeouts: lbBackendAddressPoolTimeoutsToTerraform(this._timeouts.internalValue),
-      tunnel_interface: cdktf.listMapper(lbBackendAddressPoolTunnelInterfaceToTerraform, true)(this._tunnelInterface.internalValue),
+      tunnel_interface: cdktn.listMapper(lbBackendAddressPoolTunnelInterfaceToTerraform, true)(this._tunnelInterface.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       loadbalancer_id: {
-        value: cdktf.stringToHclTerraform(this._loadbalancerId),
+        value: cdktn.stringToHclTerraform(this._loadbalancerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       synchronous_mode: {
-        value: cdktf.stringToHclTerraform(this._synchronousMode),
+        value: cdktn.stringToHclTerraform(this._synchronousMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_network_id: {
-        value: cdktf.stringToHclTerraform(this._virtualNetworkId),
+        value: cdktn.stringToHclTerraform(this._virtualNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -690,7 +690,7 @@ export class LbBackendAddressPool extends cdktf.TerraformResource {
         storageClassType: "LbBackendAddressPoolTimeouts",
       },
       tunnel_interface: {
-        value: cdktf.listMapperHcl(lbBackendAddressPoolTunnelInterfaceToHclTerraform, true)(this._tunnelInterface.internalValue),
+        value: cdktn.listMapperHcl(lbBackendAddressPoolTunnelInterfaceToHclTerraform, true)(this._tunnelInterface.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LbBackendAddressPoolTunnelInterfaceList",

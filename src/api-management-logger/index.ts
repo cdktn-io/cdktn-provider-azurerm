@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiManagementLoggerConfig extends cdktf.TerraformMetaArguments {
+export interface ApiManagementLoggerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_logger#api_management_name ApiManagementLogger#api_management_name}
   */
@@ -19,7 +19,7 @@ export interface ApiManagementLoggerConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_logger#buffered ApiManagementLogger#buffered}
   */
-  readonly buffered?: boolean | cdktf.IResolvable;
+  readonly buffered?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_logger#description ApiManagementLogger#description}
   */
@@ -74,31 +74,31 @@ export interface ApiManagementLoggerApplicationInsights {
 }
 
 export function apiManagementLoggerApplicationInsightsToTerraform(struct?: ApiManagementLoggerApplicationInsightsOutputReference | ApiManagementLoggerApplicationInsights): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connection_string: cdktf.stringToTerraform(struct!.connectionString),
-    instrumentation_key: cdktf.stringToTerraform(struct!.instrumentationKey),
+    connection_string: cdktn.stringToTerraform(struct!.connectionString),
+    instrumentation_key: cdktn.stringToTerraform(struct!.instrumentationKey),
   }
 }
 
 
 export function apiManagementLoggerApplicationInsightsToHclTerraform(struct?: ApiManagementLoggerApplicationInsightsOutputReference | ApiManagementLoggerApplicationInsights): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connection_string: {
-      value: cdktf.stringToHclTerraform(struct!.connectionString),
+      value: cdktn.stringToHclTerraform(struct!.connectionString),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     instrumentation_key: {
-      value: cdktf.stringToHclTerraform(struct!.instrumentationKey),
+      value: cdktn.stringToHclTerraform(struct!.instrumentationKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,14 +109,14 @@ export function apiManagementLoggerApplicationInsightsToHclTerraform(struct?: Ap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementLoggerApplicationInsightsOutputReference extends cdktf.ComplexObject {
+export class ApiManagementLoggerApplicationInsightsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -199,45 +199,45 @@ export interface ApiManagementLoggerEventhub {
 }
 
 export function apiManagementLoggerEventhubToTerraform(struct?: ApiManagementLoggerEventhubOutputReference | ApiManagementLoggerEventhub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connection_string: cdktf.stringToTerraform(struct!.connectionString),
-    endpoint_uri: cdktf.stringToTerraform(struct!.endpointUri),
-    name: cdktf.stringToTerraform(struct!.name),
-    user_assigned_identity_client_id: cdktf.stringToTerraform(struct!.userAssignedIdentityClientId),
+    connection_string: cdktn.stringToTerraform(struct!.connectionString),
+    endpoint_uri: cdktn.stringToTerraform(struct!.endpointUri),
+    name: cdktn.stringToTerraform(struct!.name),
+    user_assigned_identity_client_id: cdktn.stringToTerraform(struct!.userAssignedIdentityClientId),
   }
 }
 
 
 export function apiManagementLoggerEventhubToHclTerraform(struct?: ApiManagementLoggerEventhubOutputReference | ApiManagementLoggerEventhub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connection_string: {
-      value: cdktf.stringToHclTerraform(struct!.connectionString),
+      value: cdktn.stringToHclTerraform(struct!.connectionString),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint_uri: {
-      value: cdktf.stringToHclTerraform(struct!.endpointUri),
+      value: cdktn.stringToHclTerraform(struct!.endpointUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_assigned_identity_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.userAssignedIdentityClientId),
+      value: cdktn.stringToHclTerraform(struct!.userAssignedIdentityClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -248,14 +248,14 @@ export function apiManagementLoggerEventhubToHclTerraform(struct?: ApiManagement
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementLoggerEventhubOutputReference extends cdktf.ComplexObject {
+export class ApiManagementLoggerEventhubOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -378,46 +378,46 @@ export interface ApiManagementLoggerTimeouts {
   readonly update?: string;
 }
 
-export function apiManagementLoggerTimeoutsToTerraform(struct?: ApiManagementLoggerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementLoggerTimeoutsToTerraform(struct?: ApiManagementLoggerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apiManagementLoggerTimeoutsToHclTerraform(struct?: ApiManagementLoggerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementLoggerTimeoutsToHclTerraform(struct?: ApiManagementLoggerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -428,19 +428,19 @@ export function apiManagementLoggerTimeoutsToHclTerraform(struct?: ApiManagement
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementLoggerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApiManagementLoggerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApiManagementLoggerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementLoggerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -465,7 +465,7 @@ export class ApiManagementLoggerTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementLoggerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementLoggerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -474,7 +474,7 @@ export class ApiManagementLoggerTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -556,7 +556,7 @@ export class ApiManagementLoggerTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_logger azurerm_api_management_logger}
 */
-export class ApiManagementLogger extends cdktf.TerraformResource {
+export class ApiManagementLogger extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -567,14 +567,14 @@ export class ApiManagementLogger extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiManagementLogger resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiManagementLogger resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementLogger to import
   * @param importFromId The id of the existing ApiManagementLogger that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_logger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementLogger to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_logger", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_logger", importId: importFromId, provider });
       }
 
   // ===========
@@ -634,11 +634,11 @@ export class ApiManagementLogger extends cdktf.TerraformResource {
   }
 
   // buffered - computed: false, optional: true, required: false
-  private _buffered?: boolean | cdktf.IResolvable; 
+  private _buffered?: boolean | cdktn.IResolvable; 
   public get buffered() {
     return this.getBooleanAttribute('buffered');
   }
-  public set buffered(value: boolean | cdktf.IResolvable) {
+  public set buffered(value: boolean | cdktn.IResolvable) {
     this._buffered = value;
   }
   public resetBuffered() {
@@ -777,13 +777,13 @@ export class ApiManagementLogger extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_management_name: cdktf.stringToTerraform(this._apiManagementName),
-      buffered: cdktf.booleanToTerraform(this._buffered),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      resource_id: cdktf.stringToTerraform(this._resourceId),
+      api_management_name: cdktn.stringToTerraform(this._apiManagementName),
+      buffered: cdktn.booleanToTerraform(this._buffered),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      resource_id: cdktn.stringToTerraform(this._resourceId),
       application_insights: apiManagementLoggerApplicationInsightsToTerraform(this._applicationInsights.internalValue),
       eventhub: apiManagementLoggerEventhubToTerraform(this._eventhub.internalValue),
       timeouts: apiManagementLoggerTimeoutsToTerraform(this._timeouts.internalValue),
@@ -793,43 +793,43 @@ export class ApiManagementLogger extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_management_name: {
-        value: cdktf.stringToHclTerraform(this._apiManagementName),
+        value: cdktn.stringToHclTerraform(this._apiManagementName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       buffered: {
-        value: cdktf.booleanToHclTerraform(this._buffered),
+        value: cdktn.booleanToHclTerraform(this._buffered),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_id: {
-        value: cdktf.stringToHclTerraform(this._resourceId),
+        value: cdktn.stringToHclTerraform(this._resourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

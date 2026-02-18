@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogAnalyticsDatasourceWindowsEventConfig extends cdktf.TerraformMetaArguments {
+export interface LogAnalyticsDatasourceWindowsEventConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_datasource_windows_event#event_log_name LogAnalyticsDatasourceWindowsEvent#event_log_name}
   */
@@ -65,46 +65,46 @@ export interface LogAnalyticsDatasourceWindowsEventTimeouts {
   readonly update?: string;
 }
 
-export function logAnalyticsDatasourceWindowsEventTimeoutsToTerraform(struct?: LogAnalyticsDatasourceWindowsEventTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsDatasourceWindowsEventTimeoutsToTerraform(struct?: LogAnalyticsDatasourceWindowsEventTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function logAnalyticsDatasourceWindowsEventTimeoutsToHclTerraform(struct?: LogAnalyticsDatasourceWindowsEventTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsDatasourceWindowsEventTimeoutsToHclTerraform(struct?: LogAnalyticsDatasourceWindowsEventTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,19 +115,19 @@ export function logAnalyticsDatasourceWindowsEventTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogAnalyticsDatasourceWindowsEventTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LogAnalyticsDatasourceWindowsEventTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LogAnalyticsDatasourceWindowsEventTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LogAnalyticsDatasourceWindowsEventTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,7 +152,7 @@ export class LogAnalyticsDatasourceWindowsEventTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogAnalyticsDatasourceWindowsEventTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogAnalyticsDatasourceWindowsEventTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class LogAnalyticsDatasourceWindowsEventTimeoutsOutputReference extends c
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -243,7 +243,7 @@ export class LogAnalyticsDatasourceWindowsEventTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_datasource_windows_event azurerm_log_analytics_datasource_windows_event}
 */
-export class LogAnalyticsDatasourceWindowsEvent extends cdktf.TerraformResource {
+export class LogAnalyticsDatasourceWindowsEvent extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -254,14 +254,14 @@ export class LogAnalyticsDatasourceWindowsEvent extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogAnalyticsDatasourceWindowsEvent resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogAnalyticsDatasourceWindowsEvent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogAnalyticsDatasourceWindowsEvent to import
   * @param importFromId The id of the existing LogAnalyticsDatasourceWindowsEvent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_datasource_windows_event#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogAnalyticsDatasourceWindowsEvent to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_datasource_windows_event", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_datasource_windows_event", importId: importFromId, provider });
       }
 
   // ===========
@@ -320,7 +320,7 @@ export class LogAnalyticsDatasourceWindowsEvent extends cdktf.TerraformResource 
   // event_types - computed: false, optional: false, required: true
   private _eventTypes?: string[]; 
   public get eventTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('event_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('event_types'));
   }
   public set eventTypes(value: string[]) {
     this._eventTypes = value;
@@ -407,12 +407,12 @@ export class LogAnalyticsDatasourceWindowsEvent extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      event_log_name: cdktf.stringToTerraform(this._eventLogName),
-      event_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._eventTypes),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      workspace_name: cdktf.stringToTerraform(this._workspaceName),
+      event_log_name: cdktn.stringToTerraform(this._eventLogName),
+      event_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._eventTypes),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      workspace_name: cdktn.stringToTerraform(this._workspaceName),
       timeouts: logAnalyticsDatasourceWindowsEventTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -420,37 +420,37 @@ export class LogAnalyticsDatasourceWindowsEvent extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       event_log_name: {
-        value: cdktf.stringToHclTerraform(this._eventLogName),
+        value: cdktn.stringToHclTerraform(this._eventLogName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._eventTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._eventTypes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_name: {
-        value: cdktf.stringToHclTerraform(this._workspaceName),
+        value: cdktn.stringToHclTerraform(this._workspaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

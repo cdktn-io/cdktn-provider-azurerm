@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VirtualDesktopScalingPlanHostPoolAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface VirtualDesktopScalingPlanHostPoolAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_scaling_plan_host_pool_association#enabled VirtualDesktopScalingPlanHostPoolAssociation#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_scaling_plan_host_pool_association#host_pool_id VirtualDesktopScalingPlanHostPoolAssociation#host_pool_id}
   */
@@ -57,46 +57,46 @@ export interface VirtualDesktopScalingPlanHostPoolAssociationTimeouts {
   readonly update?: string;
 }
 
-export function virtualDesktopScalingPlanHostPoolAssociationTimeoutsToTerraform(struct?: VirtualDesktopScalingPlanHostPoolAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualDesktopScalingPlanHostPoolAssociationTimeoutsToTerraform(struct?: VirtualDesktopScalingPlanHostPoolAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function virtualDesktopScalingPlanHostPoolAssociationTimeoutsToHclTerraform(struct?: VirtualDesktopScalingPlanHostPoolAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualDesktopScalingPlanHostPoolAssociationTimeoutsToHclTerraform(struct?: VirtualDesktopScalingPlanHostPoolAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -107,19 +107,19 @@ export function virtualDesktopScalingPlanHostPoolAssociationTimeoutsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualDesktopScalingPlanHostPoolAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VirtualDesktopScalingPlanHostPoolAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VirtualDesktopScalingPlanHostPoolAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualDesktopScalingPlanHostPoolAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -144,7 +144,7 @@ export class VirtualDesktopScalingPlanHostPoolAssociationTimeoutsOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualDesktopScalingPlanHostPoolAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualDesktopScalingPlanHostPoolAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -153,7 +153,7 @@ export class VirtualDesktopScalingPlanHostPoolAssociationTimeoutsOutputReference
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -235,7 +235,7 @@ export class VirtualDesktopScalingPlanHostPoolAssociationTimeoutsOutputReference
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_scaling_plan_host_pool_association azurerm_virtual_desktop_scaling_plan_host_pool_association}
 */
-export class VirtualDesktopScalingPlanHostPoolAssociation extends cdktf.TerraformResource {
+export class VirtualDesktopScalingPlanHostPoolAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -246,14 +246,14 @@ export class VirtualDesktopScalingPlanHostPoolAssociation extends cdktf.Terrafor
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VirtualDesktopScalingPlanHostPoolAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VirtualDesktopScalingPlanHostPoolAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualDesktopScalingPlanHostPoolAssociation to import
   * @param importFromId The id of the existing VirtualDesktopScalingPlanHostPoolAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_scaling_plan_host_pool_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualDesktopScalingPlanHostPoolAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_desktop_scaling_plan_host_pool_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_desktop_scaling_plan_host_pool_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -295,11 +295,11 @@ export class VirtualDesktopScalingPlanHostPoolAssociation extends cdktf.Terrafor
   // ==========
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -371,10 +371,10 @@ export class VirtualDesktopScalingPlanHostPoolAssociation extends cdktf.Terrafor
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      host_pool_id: cdktf.stringToTerraform(this._hostPoolId),
-      id: cdktf.stringToTerraform(this._id),
-      scaling_plan_id: cdktf.stringToTerraform(this._scalingPlanId),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      host_pool_id: cdktn.stringToTerraform(this._hostPoolId),
+      id: cdktn.stringToTerraform(this._id),
+      scaling_plan_id: cdktn.stringToTerraform(this._scalingPlanId),
       timeouts: virtualDesktopScalingPlanHostPoolAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -382,25 +382,25 @@ export class VirtualDesktopScalingPlanHostPoolAssociation extends cdktf.Terrafor
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       host_pool_id: {
-        value: cdktf.stringToHclTerraform(this._hostPoolId),
+        value: cdktn.stringToHclTerraform(this._hostPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scaling_plan_id: {
-        value: cdktf.stringToHclTerraform(this._scalingPlanId),
+        value: cdktn.stringToHclTerraform(this._scalingPlanId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

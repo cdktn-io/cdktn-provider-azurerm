@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataFactoryLinkedServiceAzureBlobStorageConfig extends cdktf.TerraformMetaArguments {
+export interface DataFactoryLinkedServiceAzureBlobStorageConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_azure_blob_storage#additional_properties DataFactoryLinkedServiceAzureBlobStorage#additional_properties}
   */
@@ -82,7 +82,7 @@ export interface DataFactoryLinkedServiceAzureBlobStorageConfig extends cdktf.Te
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_azure_blob_storage#use_managed_identity DataFactoryLinkedServiceAzureBlobStorage#use_managed_identity}
   */
-  readonly useManagedIdentity?: boolean | cdktf.IResolvable;
+  readonly useManagedIdentity?: boolean | cdktn.IResolvable;
   /**
   * key_vault_sas_token block
   *
@@ -114,31 +114,31 @@ export interface DataFactoryLinkedServiceAzureBlobStorageKeyVaultSasToken {
 }
 
 export function dataFactoryLinkedServiceAzureBlobStorageKeyVaultSasTokenToTerraform(struct?: DataFactoryLinkedServiceAzureBlobStorageKeyVaultSasTokenOutputReference | DataFactoryLinkedServiceAzureBlobStorageKeyVaultSasToken): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    linked_service_name: cdktf.stringToTerraform(struct!.linkedServiceName),
-    secret_name: cdktf.stringToTerraform(struct!.secretName),
+    linked_service_name: cdktn.stringToTerraform(struct!.linkedServiceName),
+    secret_name: cdktn.stringToTerraform(struct!.secretName),
   }
 }
 
 
 export function dataFactoryLinkedServiceAzureBlobStorageKeyVaultSasTokenToHclTerraform(struct?: DataFactoryLinkedServiceAzureBlobStorageKeyVaultSasTokenOutputReference | DataFactoryLinkedServiceAzureBlobStorageKeyVaultSasToken): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     linked_service_name: {
-      value: cdktf.stringToHclTerraform(struct!.linkedServiceName),
+      value: cdktn.stringToHclTerraform(struct!.linkedServiceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretName),
+      value: cdktn.stringToHclTerraform(struct!.secretName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -149,14 +149,14 @@ export function dataFactoryLinkedServiceAzureBlobStorageKeyVaultSasTokenToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryLinkedServiceAzureBlobStorageKeyVaultSasTokenOutputReference extends cdktf.ComplexObject {
+export class DataFactoryLinkedServiceAzureBlobStorageKeyVaultSasTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -225,31 +225,31 @@ export interface DataFactoryLinkedServiceAzureBlobStorageServicePrincipalLinkedK
 }
 
 export function dataFactoryLinkedServiceAzureBlobStorageServicePrincipalLinkedKeyVaultKeyToTerraform(struct?: DataFactoryLinkedServiceAzureBlobStorageServicePrincipalLinkedKeyVaultKeyOutputReference | DataFactoryLinkedServiceAzureBlobStorageServicePrincipalLinkedKeyVaultKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    linked_service_name: cdktf.stringToTerraform(struct!.linkedServiceName),
-    secret_name: cdktf.stringToTerraform(struct!.secretName),
+    linked_service_name: cdktn.stringToTerraform(struct!.linkedServiceName),
+    secret_name: cdktn.stringToTerraform(struct!.secretName),
   }
 }
 
 
 export function dataFactoryLinkedServiceAzureBlobStorageServicePrincipalLinkedKeyVaultKeyToHclTerraform(struct?: DataFactoryLinkedServiceAzureBlobStorageServicePrincipalLinkedKeyVaultKeyOutputReference | DataFactoryLinkedServiceAzureBlobStorageServicePrincipalLinkedKeyVaultKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     linked_service_name: {
-      value: cdktf.stringToHclTerraform(struct!.linkedServiceName),
+      value: cdktn.stringToHclTerraform(struct!.linkedServiceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretName),
+      value: cdktn.stringToHclTerraform(struct!.secretName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -260,14 +260,14 @@ export function dataFactoryLinkedServiceAzureBlobStorageServicePrincipalLinkedKe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryLinkedServiceAzureBlobStorageServicePrincipalLinkedKeyVaultKeyOutputReference extends cdktf.ComplexObject {
+export class DataFactoryLinkedServiceAzureBlobStorageServicePrincipalLinkedKeyVaultKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -343,46 +343,46 @@ export interface DataFactoryLinkedServiceAzureBlobStorageTimeouts {
   readonly update?: string;
 }
 
-export function dataFactoryLinkedServiceAzureBlobStorageTimeoutsToTerraform(struct?: DataFactoryLinkedServiceAzureBlobStorageTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryLinkedServiceAzureBlobStorageTimeoutsToTerraform(struct?: DataFactoryLinkedServiceAzureBlobStorageTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataFactoryLinkedServiceAzureBlobStorageTimeoutsToHclTerraform(struct?: DataFactoryLinkedServiceAzureBlobStorageTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryLinkedServiceAzureBlobStorageTimeoutsToHclTerraform(struct?: DataFactoryLinkedServiceAzureBlobStorageTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -393,19 +393,19 @@ export function dataFactoryLinkedServiceAzureBlobStorageTimeoutsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryLinkedServiceAzureBlobStorageTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataFactoryLinkedServiceAzureBlobStorageTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataFactoryLinkedServiceAzureBlobStorageTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryLinkedServiceAzureBlobStorageTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -430,7 +430,7 @@ export class DataFactoryLinkedServiceAzureBlobStorageTimeoutsOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryLinkedServiceAzureBlobStorageTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryLinkedServiceAzureBlobStorageTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -439,7 +439,7 @@ export class DataFactoryLinkedServiceAzureBlobStorageTimeoutsOutputReference ext
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -521,7 +521,7 @@ export class DataFactoryLinkedServiceAzureBlobStorageTimeoutsOutputReference ext
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_azure_blob_storage azurerm_data_factory_linked_service_azure_blob_storage}
 */
-export class DataFactoryLinkedServiceAzureBlobStorage extends cdktf.TerraformResource {
+export class DataFactoryLinkedServiceAzureBlobStorage extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -532,14 +532,14 @@ export class DataFactoryLinkedServiceAzureBlobStorage extends cdktf.TerraformRes
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataFactoryLinkedServiceAzureBlobStorage resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataFactoryLinkedServiceAzureBlobStorage resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryLinkedServiceAzureBlobStorage to import
   * @param importFromId The id of the existing DataFactoryLinkedServiceAzureBlobStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_azure_blob_storage#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryLinkedServiceAzureBlobStorage to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_linked_service_azure_blob_storage", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_linked_service_azure_blob_storage", importId: importFromId, provider });
       }
 
   // ===========
@@ -846,11 +846,11 @@ export class DataFactoryLinkedServiceAzureBlobStorage extends cdktf.TerraformRes
   }
 
   // use_managed_identity - computed: false, optional: true, required: false
-  private _useManagedIdentity?: boolean | cdktf.IResolvable; 
+  private _useManagedIdentity?: boolean | cdktn.IResolvable; 
   public get useManagedIdentity() {
     return this.getBooleanAttribute('use_managed_identity');
   }
-  public set useManagedIdentity(value: boolean | cdktf.IResolvable) {
+  public set useManagedIdentity(value: boolean | cdktn.IResolvable) {
     this._useManagedIdentity = value;
   }
   public resetUseManagedIdentity() {
@@ -915,23 +915,23 @@ export class DataFactoryLinkedServiceAzureBlobStorage extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._additionalProperties),
-      annotations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._annotations),
-      connection_string: cdktf.stringToTerraform(this._connectionString),
-      connection_string_insecure: cdktf.stringToTerraform(this._connectionStringInsecure),
-      data_factory_id: cdktf.stringToTerraform(this._dataFactoryId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      integration_runtime_name: cdktf.stringToTerraform(this._integrationRuntimeName),
-      name: cdktf.stringToTerraform(this._name),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      sas_uri: cdktf.stringToTerraform(this._sasUri),
-      service_endpoint: cdktf.stringToTerraform(this._serviceEndpoint),
-      service_principal_id: cdktf.stringToTerraform(this._servicePrincipalId),
-      service_principal_key: cdktf.stringToTerraform(this._servicePrincipalKey),
-      storage_kind: cdktf.stringToTerraform(this._storageKind),
-      tenant_id: cdktf.stringToTerraform(this._tenantId),
-      use_managed_identity: cdktf.booleanToTerraform(this._useManagedIdentity),
+      additional_properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._additionalProperties),
+      annotations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._annotations),
+      connection_string: cdktn.stringToTerraform(this._connectionString),
+      connection_string_insecure: cdktn.stringToTerraform(this._connectionStringInsecure),
+      data_factory_id: cdktn.stringToTerraform(this._dataFactoryId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      integration_runtime_name: cdktn.stringToTerraform(this._integrationRuntimeName),
+      name: cdktn.stringToTerraform(this._name),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
+      sas_uri: cdktn.stringToTerraform(this._sasUri),
+      service_endpoint: cdktn.stringToTerraform(this._serviceEndpoint),
+      service_principal_id: cdktn.stringToTerraform(this._servicePrincipalId),
+      service_principal_key: cdktn.stringToTerraform(this._servicePrincipalKey),
+      storage_kind: cdktn.stringToTerraform(this._storageKind),
+      tenant_id: cdktn.stringToTerraform(this._tenantId),
+      use_managed_identity: cdktn.booleanToTerraform(this._useManagedIdentity),
       key_vault_sas_token: dataFactoryLinkedServiceAzureBlobStorageKeyVaultSasTokenToTerraform(this._keyVaultSasToken.internalValue),
       service_principal_linked_key_vault_key: dataFactoryLinkedServiceAzureBlobStorageServicePrincipalLinkedKeyVaultKeyToTerraform(this._servicePrincipalLinkedKeyVaultKey.internalValue),
       timeouts: dataFactoryLinkedServiceAzureBlobStorageTimeoutsToTerraform(this._timeouts.internalValue),
@@ -941,103 +941,103 @@ export class DataFactoryLinkedServiceAzureBlobStorage extends cdktf.TerraformRes
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._additionalProperties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._additionalProperties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       annotations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._annotations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._annotations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       connection_string: {
-        value: cdktf.stringToHclTerraform(this._connectionString),
+        value: cdktn.stringToHclTerraform(this._connectionString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connection_string_insecure: {
-        value: cdktf.stringToHclTerraform(this._connectionStringInsecure),
+        value: cdktn.stringToHclTerraform(this._connectionStringInsecure),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_factory_id: {
-        value: cdktf.stringToHclTerraform(this._dataFactoryId),
+        value: cdktn.stringToHclTerraform(this._dataFactoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_runtime_name: {
-        value: cdktf.stringToHclTerraform(this._integrationRuntimeName),
+        value: cdktn.stringToHclTerraform(this._integrationRuntimeName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       sas_uri: {
-        value: cdktf.stringToHclTerraform(this._sasUri),
+        value: cdktn.stringToHclTerraform(this._sasUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_endpoint: {
-        value: cdktf.stringToHclTerraform(this._serviceEndpoint),
+        value: cdktn.stringToHclTerraform(this._serviceEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_principal_id: {
-        value: cdktf.stringToHclTerraform(this._servicePrincipalId),
+        value: cdktn.stringToHclTerraform(this._servicePrincipalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_principal_key: {
-        value: cdktf.stringToHclTerraform(this._servicePrincipalKey),
+        value: cdktn.stringToHclTerraform(this._servicePrincipalKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_kind: {
-        value: cdktf.stringToHclTerraform(this._storageKind),
+        value: cdktn.stringToHclTerraform(this._storageKind),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tenant_id: {
-        value: cdktf.stringToHclTerraform(this._tenantId),
+        value: cdktn.stringToHclTerraform(this._tenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_managed_identity: {
-        value: cdktf.booleanToHclTerraform(this._useManagedIdentity),
+        value: cdktn.booleanToHclTerraform(this._useManagedIdentity),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

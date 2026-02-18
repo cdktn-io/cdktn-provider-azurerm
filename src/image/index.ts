@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ImageConfig extends cdktf.TerraformMetaArguments {
+export interface ImageConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/image#hyper_v_generation Image#hyper_v_generation}
   */
@@ -46,13 +46,13 @@ export interface ImageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/image#zone_resilient Image#zone_resilient}
   */
-  readonly zoneResilient?: boolean | cdktf.IResolvable;
+  readonly zoneResilient?: boolean | cdktn.IResolvable;
   /**
   * data_disk block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/image#data_disk Image#data_disk}
   */
-  readonly dataDisk?: ImageDataDisk[] | cdktf.IResolvable;
+  readonly dataDisk?: ImageDataDisk[] | cdktn.IResolvable;
   /**
   * os_disk block
   *
@@ -99,67 +99,67 @@ export interface ImageDataDisk {
   readonly storageType: string;
 }
 
-export function imageDataDiskToTerraform(struct?: ImageDataDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imageDataDiskToTerraform(struct?: ImageDataDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    blob_uri: cdktf.stringToTerraform(struct!.blobUri),
-    caching: cdktf.stringToTerraform(struct!.caching),
-    disk_encryption_set_id: cdktf.stringToTerraform(struct!.diskEncryptionSetId),
-    lun: cdktf.numberToTerraform(struct!.lun),
-    managed_disk_id: cdktf.stringToTerraform(struct!.managedDiskId),
-    size_gb: cdktf.numberToTerraform(struct!.sizeGb),
-    storage_type: cdktf.stringToTerraform(struct!.storageType),
+    blob_uri: cdktn.stringToTerraform(struct!.blobUri),
+    caching: cdktn.stringToTerraform(struct!.caching),
+    disk_encryption_set_id: cdktn.stringToTerraform(struct!.diskEncryptionSetId),
+    lun: cdktn.numberToTerraform(struct!.lun),
+    managed_disk_id: cdktn.stringToTerraform(struct!.managedDiskId),
+    size_gb: cdktn.numberToTerraform(struct!.sizeGb),
+    storage_type: cdktn.stringToTerraform(struct!.storageType),
   }
 }
 
 
-export function imageDataDiskToHclTerraform(struct?: ImageDataDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imageDataDiskToHclTerraform(struct?: ImageDataDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     blob_uri: {
-      value: cdktf.stringToHclTerraform(struct!.blobUri),
+      value: cdktn.stringToHclTerraform(struct!.blobUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     caching: {
-      value: cdktf.stringToHclTerraform(struct!.caching),
+      value: cdktn.stringToHclTerraform(struct!.caching),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk_encryption_set_id: {
-      value: cdktf.stringToHclTerraform(struct!.diskEncryptionSetId),
+      value: cdktn.stringToHclTerraform(struct!.diskEncryptionSetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lun: {
-      value: cdktf.numberToHclTerraform(struct!.lun),
+      value: cdktn.numberToHclTerraform(struct!.lun),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     managed_disk_id: {
-      value: cdktf.stringToHclTerraform(struct!.managedDiskId),
+      value: cdktn.stringToHclTerraform(struct!.managedDiskId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     size_gb: {
-      value: cdktf.numberToHclTerraform(struct!.sizeGb),
+      value: cdktn.numberToHclTerraform(struct!.sizeGb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     storage_type: {
-      value: cdktf.stringToHclTerraform(struct!.storageType),
+      value: cdktn.stringToHclTerraform(struct!.storageType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -170,9 +170,9 @@ export function imageDataDiskToHclTerraform(struct?: ImageDataDisk | cdktf.IReso
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImageDataDiskOutputReference extends cdktf.ComplexObject {
+export class ImageDataDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -180,11 +180,11 @@ export class ImageDataDiskOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ImageDataDisk | cdktf.IResolvable | undefined {
+  public get internalValue(): ImageDataDisk | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -221,7 +221,7 @@ export class ImageDataDiskOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImageDataDisk | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImageDataDisk | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -233,7 +233,7 @@ export class ImageDataDiskOutputReference extends cdktf.ComplexObject {
       this._sizeGb = undefined;
       this._storageType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -360,15 +360,15 @@ export class ImageDataDiskOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ImageDataDiskList extends cdktf.ComplexList {
-  public internalValue? : ImageDataDisk[] | cdktf.IResolvable
+export class ImageDataDiskList extends cdktn.ComplexList {
+  public internalValue? : ImageDataDisk[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -417,73 +417,73 @@ export interface ImageOsDisk {
 }
 
 export function imageOsDiskToTerraform(struct?: ImageOsDiskOutputReference | ImageOsDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    blob_uri: cdktf.stringToTerraform(struct!.blobUri),
-    caching: cdktf.stringToTerraform(struct!.caching),
-    disk_encryption_set_id: cdktf.stringToTerraform(struct!.diskEncryptionSetId),
-    managed_disk_id: cdktf.stringToTerraform(struct!.managedDiskId),
-    os_state: cdktf.stringToTerraform(struct!.osState),
-    os_type: cdktf.stringToTerraform(struct!.osType),
-    size_gb: cdktf.numberToTerraform(struct!.sizeGb),
-    storage_type: cdktf.stringToTerraform(struct!.storageType),
+    blob_uri: cdktn.stringToTerraform(struct!.blobUri),
+    caching: cdktn.stringToTerraform(struct!.caching),
+    disk_encryption_set_id: cdktn.stringToTerraform(struct!.diskEncryptionSetId),
+    managed_disk_id: cdktn.stringToTerraform(struct!.managedDiskId),
+    os_state: cdktn.stringToTerraform(struct!.osState),
+    os_type: cdktn.stringToTerraform(struct!.osType),
+    size_gb: cdktn.numberToTerraform(struct!.sizeGb),
+    storage_type: cdktn.stringToTerraform(struct!.storageType),
   }
 }
 
 
 export function imageOsDiskToHclTerraform(struct?: ImageOsDiskOutputReference | ImageOsDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     blob_uri: {
-      value: cdktf.stringToHclTerraform(struct!.blobUri),
+      value: cdktn.stringToHclTerraform(struct!.blobUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     caching: {
-      value: cdktf.stringToHclTerraform(struct!.caching),
+      value: cdktn.stringToHclTerraform(struct!.caching),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk_encryption_set_id: {
-      value: cdktf.stringToHclTerraform(struct!.diskEncryptionSetId),
+      value: cdktn.stringToHclTerraform(struct!.diskEncryptionSetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     managed_disk_id: {
-      value: cdktf.stringToHclTerraform(struct!.managedDiskId),
+      value: cdktn.stringToHclTerraform(struct!.managedDiskId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     os_state: {
-      value: cdktf.stringToHclTerraform(struct!.osState),
+      value: cdktn.stringToHclTerraform(struct!.osState),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     os_type: {
-      value: cdktf.stringToHclTerraform(struct!.osType),
+      value: cdktn.stringToHclTerraform(struct!.osType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     size_gb: {
-      value: cdktf.numberToHclTerraform(struct!.sizeGb),
+      value: cdktn.numberToHclTerraform(struct!.sizeGb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     storage_type: {
-      value: cdktf.stringToHclTerraform(struct!.storageType),
+      value: cdktn.stringToHclTerraform(struct!.storageType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -494,14 +494,14 @@ export function imageOsDiskToHclTerraform(struct?: ImageOsDiskOutputReference | 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImageOsDiskOutputReference extends cdktf.ComplexObject {
+export class ImageOsDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -712,46 +712,46 @@ export interface ImageTimeouts {
   readonly update?: string;
 }
 
-export function imageTimeoutsToTerraform(struct?: ImageTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imageTimeoutsToTerraform(struct?: ImageTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function imageTimeoutsToHclTerraform(struct?: ImageTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imageTimeoutsToHclTerraform(struct?: ImageTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -762,19 +762,19 @@ export function imageTimeoutsToHclTerraform(struct?: ImageTimeouts | cdktf.IReso
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImageTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ImageTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ImageTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ImageTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -799,7 +799,7 @@ export class ImageTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImageTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImageTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -808,7 +808,7 @@ export class ImageTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -890,7 +890,7 @@ export class ImageTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/image azurerm_image}
 */
-export class Image extends cdktf.TerraformResource {
+export class Image extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -901,14 +901,14 @@ export class Image extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Image resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Image resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Image to import
   * @param importFromId The id of the existing Image that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/image#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Image to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_image", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_image", importId: importFromId, provider });
       }
 
   // ===========
@@ -1059,11 +1059,11 @@ export class Image extends cdktf.TerraformResource {
   }
 
   // zone_resilient - computed: false, optional: true, required: false
-  private _zoneResilient?: boolean | cdktf.IResolvable; 
+  private _zoneResilient?: boolean | cdktn.IResolvable; 
   public get zoneResilient() {
     return this.getBooleanAttribute('zone_resilient');
   }
-  public set zoneResilient(value: boolean | cdktf.IResolvable) {
+  public set zoneResilient(value: boolean | cdktn.IResolvable) {
     this._zoneResilient = value;
   }
   public resetZoneResilient() {
@@ -1079,7 +1079,7 @@ export class Image extends cdktf.TerraformResource {
   public get dataDisk() {
     return this._dataDisk;
   }
-  public putDataDisk(value: ImageDataDisk[] | cdktf.IResolvable) {
+  public putDataDisk(value: ImageDataDisk[] | cdktn.IResolvable) {
     this._dataDisk.internalValue = value;
   }
   public resetDataDisk() {
@@ -1128,15 +1128,15 @@ export class Image extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hyper_v_generation: cdktf.stringToTerraform(this._hyperVGeneration),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      source_virtual_machine_id: cdktf.stringToTerraform(this._sourceVirtualMachineId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      zone_resilient: cdktf.booleanToTerraform(this._zoneResilient),
-      data_disk: cdktf.listMapper(imageDataDiskToTerraform, true)(this._dataDisk.internalValue),
+      hyper_v_generation: cdktn.stringToTerraform(this._hyperVGeneration),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      source_virtual_machine_id: cdktn.stringToTerraform(this._sourceVirtualMachineId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      zone_resilient: cdktn.booleanToTerraform(this._zoneResilient),
+      data_disk: cdktn.listMapper(imageDataDiskToTerraform, true)(this._dataDisk.internalValue),
       os_disk: imageOsDiskToTerraform(this._osDisk.internalValue),
       timeouts: imageTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1145,55 +1145,55 @@ export class Image extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       hyper_v_generation: {
-        value: cdktf.stringToHclTerraform(this._hyperVGeneration),
+        value: cdktn.stringToHclTerraform(this._hyperVGeneration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_virtual_machine_id: {
-        value: cdktf.stringToHclTerraform(this._sourceVirtualMachineId),
+        value: cdktn.stringToHclTerraform(this._sourceVirtualMachineId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       zone_resilient: {
-        value: cdktf.booleanToHclTerraform(this._zoneResilient),
+        value: cdktn.booleanToHclTerraform(this._zoneResilient),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       data_disk: {
-        value: cdktf.listMapperHcl(imageDataDiskToHclTerraform, true)(this._dataDisk.internalValue),
+        value: cdktn.listMapperHcl(imageDataDiskToHclTerraform, true)(this._dataDisk.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ImageDataDiskList",

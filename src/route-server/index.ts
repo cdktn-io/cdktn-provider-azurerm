@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RouteServerConfig extends cdktf.TerraformMetaArguments {
+export interface RouteServerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/route_server#branch_to_branch_traffic_enabled RouteServer#branch_to_branch_traffic_enabled}
   */
-  readonly branchToBranchTrafficEnabled?: boolean | cdktf.IResolvable;
+  readonly branchToBranchTrafficEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/route_server#hub_routing_preference RouteServer#hub_routing_preference}
   */
@@ -81,46 +81,46 @@ export interface RouteServerTimeouts {
   readonly update?: string;
 }
 
-export function routeServerTimeoutsToTerraform(struct?: RouteServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeServerTimeoutsToTerraform(struct?: RouteServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function routeServerTimeoutsToHclTerraform(struct?: RouteServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeServerTimeoutsToHclTerraform(struct?: RouteServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,19 +131,19 @@ export function routeServerTimeoutsToHclTerraform(struct?: RouteServerTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RouteServerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RouteServerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RouteServerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RouteServerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,7 +168,7 @@ export class RouteServerTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RouteServerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RouteServerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class RouteServerTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,7 +259,7 @@ export class RouteServerTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/route_server azurerm_route_server}
 */
-export class RouteServer extends cdktf.TerraformResource {
+export class RouteServer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -270,14 +270,14 @@ export class RouteServer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RouteServer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RouteServer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RouteServer to import
   * @param importFromId The id of the existing RouteServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/route_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RouteServer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_route_server", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_route_server", importId: importFromId, provider });
       }
 
   // ===========
@@ -325,11 +325,11 @@ export class RouteServer extends cdktf.TerraformResource {
   // ==========
 
   // branch_to_branch_traffic_enabled - computed: false, optional: true, required: false
-  private _branchToBranchTrafficEnabled?: boolean | cdktf.IResolvable; 
+  private _branchToBranchTrafficEnabled?: boolean | cdktn.IResolvable; 
   public get branchToBranchTrafficEnabled() {
     return this.getBooleanAttribute('branch_to_branch_traffic_enabled');
   }
-  public set branchToBranchTrafficEnabled(value: boolean | cdktf.IResolvable) {
+  public set branchToBranchTrafficEnabled(value: boolean | cdktn.IResolvable) {
     this._branchToBranchTrafficEnabled = value;
   }
   public resetBranchToBranchTrafficEnabled() {
@@ -478,7 +478,7 @@ export class RouteServer extends cdktf.TerraformResource {
 
   // virtual_router_ips - computed: true, optional: false, required: false
   public get virtualRouterIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('virtual_router_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('virtual_router_ips'));
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -503,16 +503,16 @@ export class RouteServer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      branch_to_branch_traffic_enabled: cdktf.booleanToTerraform(this._branchToBranchTrafficEnabled),
-      hub_routing_preference: cdktf.stringToTerraform(this._hubRoutingPreference),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      public_ip_address_id: cdktf.stringToTerraform(this._publicIpAddressId),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku: cdktf.stringToTerraform(this._sku),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      branch_to_branch_traffic_enabled: cdktn.booleanToTerraform(this._branchToBranchTrafficEnabled),
+      hub_routing_preference: cdktn.stringToTerraform(this._hubRoutingPreference),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      public_ip_address_id: cdktn.stringToTerraform(this._publicIpAddressId),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku: cdktn.stringToTerraform(this._sku),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: routeServerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -520,61 +520,61 @@ export class RouteServer extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       branch_to_branch_traffic_enabled: {
-        value: cdktf.booleanToHclTerraform(this._branchToBranchTrafficEnabled),
+        value: cdktn.booleanToHclTerraform(this._branchToBranchTrafficEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       hub_routing_preference: {
-        value: cdktf.stringToHclTerraform(this._hubRoutingPreference),
+        value: cdktn.stringToHclTerraform(this._hubRoutingPreference),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_ip_address_id: {
-        value: cdktf.stringToHclTerraform(this._publicIpAddressId),
+        value: cdktn.stringToHclTerraform(this._publicIpAddressId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku: {
-        value: cdktf.stringToHclTerraform(this._sku),
+        value: cdktn.stringToHclTerraform(this._sku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

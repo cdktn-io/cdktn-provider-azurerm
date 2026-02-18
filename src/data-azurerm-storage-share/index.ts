@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermStorageShareConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermStorageShareConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_share#id DataAzurermStorageShare#id}
   *
@@ -40,7 +40,7 @@ export interface DataAzurermStorageShareConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_share#acl DataAzurermStorageShare#acl}
   */
-  readonly acl?: DataAzurermStorageShareAcl[] | cdktf.IResolvable;
+  readonly acl?: DataAzurermStorageShareAcl[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -52,8 +52,8 @@ export interface DataAzurermStorageShareAclAccessPolicy {
 }
 
 export function dataAzurermStorageShareAclAccessPolicyToTerraform(struct?: DataAzurermStorageShareAclAccessPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -62,8 +62,8 @@ export function dataAzurermStorageShareAclAccessPolicyToTerraform(struct?: DataA
 
 
 export function dataAzurermStorageShareAclAccessPolicyToHclTerraform(struct?: DataAzurermStorageShareAclAccessPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -71,7 +71,7 @@ export function dataAzurermStorageShareAclAccessPolicyToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAzurermStorageShareAclAccessPolicyOutputReference extends cdktf.ComplexObject {
+export class DataAzurermStorageShareAclAccessPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -80,7 +80,7 @@ export class DataAzurermStorageShareAclAccessPolicyOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -115,14 +115,14 @@ export class DataAzurermStorageShareAclAccessPolicyOutputReference extends cdktf
   }
 }
 
-export class DataAzurermStorageShareAclAccessPolicyList extends cdktf.ComplexList {
+export class DataAzurermStorageShareAclAccessPolicyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -136,9 +136,9 @@ export class DataAzurermStorageShareAclAccessPolicyList extends cdktf.ComplexLis
 export interface DataAzurermStorageShareAcl {
 }
 
-export function dataAzurermStorageShareAclToTerraform(struct?: DataAzurermStorageShareAcl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermStorageShareAclToTerraform(struct?: DataAzurermStorageShareAcl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -146,9 +146,9 @@ export function dataAzurermStorageShareAclToTerraform(struct?: DataAzurermStorag
 }
 
 
-export function dataAzurermStorageShareAclToHclTerraform(struct?: DataAzurermStorageShareAcl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermStorageShareAclToHclTerraform(struct?: DataAzurermStorageShareAcl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -156,9 +156,9 @@ export function dataAzurermStorageShareAclToHclTerraform(struct?: DataAzurermSto
   return attrs;
 }
 
-export class DataAzurermStorageShareAclOutputReference extends cdktf.ComplexObject {
+export class DataAzurermStorageShareAclOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -166,11 +166,11 @@ export class DataAzurermStorageShareAclOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAzurermStorageShareAcl | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermStorageShareAcl | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -179,12 +179,12 @@ export class DataAzurermStorageShareAclOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermStorageShareAcl | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermStorageShareAcl | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -206,15 +206,15 @@ export class DataAzurermStorageShareAclOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class DataAzurermStorageShareAclList extends cdktf.ComplexList {
-  public internalValue? : DataAzurermStorageShareAcl[] | cdktf.IResolvable
+export class DataAzurermStorageShareAclList extends cdktn.ComplexList {
+  public internalValue? : DataAzurermStorageShareAcl[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -232,25 +232,25 @@ export interface DataAzurermStorageShareTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermStorageShareTimeoutsToTerraform(struct?: DataAzurermStorageShareTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermStorageShareTimeoutsToTerraform(struct?: DataAzurermStorageShareTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermStorageShareTimeoutsToHclTerraform(struct?: DataAzurermStorageShareTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermStorageShareTimeoutsToHclTerraform(struct?: DataAzurermStorageShareTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -261,19 +261,19 @@ export function dataAzurermStorageShareTimeoutsToHclTerraform(struct?: DataAzure
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermStorageShareTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermStorageShareTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermStorageShareTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermStorageShareTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -286,13 +286,13 @@ export class DataAzurermStorageShareTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermStorageShareTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermStorageShareTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -323,7 +323,7 @@ export class DataAzurermStorageShareTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_share azurerm_storage_share}
 */
-export class DataAzurermStorageShare extends cdktf.TerraformDataSource {
+export class DataAzurermStorageShare extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -334,14 +334,14 @@ export class DataAzurermStorageShare extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermStorageShare resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermStorageShare resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermStorageShare to import
   * @param importFromId The id of the existing DataAzurermStorageShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_share#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermStorageShare to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_share", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_share", importId: importFromId, provider });
       }
 
   // ===========
@@ -476,7 +476,7 @@ export class DataAzurermStorageShare extends cdktf.TerraformDataSource {
   public get acl() {
     return this._acl;
   }
-  public putAcl(value: DataAzurermStorageShareAcl[] | cdktf.IResolvable) {
+  public putAcl(value: DataAzurermStorageShareAcl[] | cdktn.IResolvable) {
     this._acl.internalValue = value;
   }
   public resetAcl() {
@@ -509,12 +509,12 @@ export class DataAzurermStorageShare extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
-      name: cdktf.stringToTerraform(this._name),
-      storage_account_id: cdktf.stringToTerraform(this._storageAccountId),
-      storage_account_name: cdktf.stringToTerraform(this._storageAccountName),
-      acl: cdktf.listMapper(dataAzurermStorageShareAclToTerraform, true)(this._acl.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._metadata),
+      name: cdktn.stringToTerraform(this._name),
+      storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
+      storage_account_name: cdktn.stringToTerraform(this._storageAccountName),
+      acl: cdktn.listMapper(dataAzurermStorageShareAclToTerraform, true)(this._acl.internalValue),
       timeouts: dataAzurermStorageShareTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -522,37 +522,37 @@ export class DataAzurermStorageShare extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._metadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._metadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountId),
+        value: cdktn.stringToHclTerraform(this._storageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_name: {
-        value: cdktf.stringToHclTerraform(this._storageAccountName),
+        value: cdktn.stringToHclTerraform(this._storageAccountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       acl: {
-        value: cdktf.listMapperHcl(dataAzurermStorageShareAclToHclTerraform, true)(this._acl.internalValue),
+        value: cdktn.listMapperHcl(dataAzurermStorageShareAclToHclTerraform, true)(this._acl.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAzurermStorageShareAclList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CosmosdbCassandraTableConfig extends cdktf.TerraformMetaArguments {
+export interface CosmosdbCassandraTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_cassandra_table#analytical_storage_ttl CosmosdbCassandraTable#analytical_storage_ttl}
   */
@@ -66,24 +66,24 @@ export interface CosmosdbCassandraTableAutoscaleSettings {
 }
 
 export function cosmosdbCassandraTableAutoscaleSettingsToTerraform(struct?: CosmosdbCassandraTableAutoscaleSettingsOutputReference | CosmosdbCassandraTableAutoscaleSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_throughput: cdktf.numberToTerraform(struct!.maxThroughput),
+    max_throughput: cdktn.numberToTerraform(struct!.maxThroughput),
   }
 }
 
 
 export function cosmosdbCassandraTableAutoscaleSettingsToHclTerraform(struct?: CosmosdbCassandraTableAutoscaleSettingsOutputReference | CosmosdbCassandraTableAutoscaleSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_throughput: {
-      value: cdktf.numberToHclTerraform(struct!.maxThroughput),
+      value: cdktn.numberToHclTerraform(struct!.maxThroughput),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -94,14 +94,14 @@ export function cosmosdbCassandraTableAutoscaleSettingsToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbCassandraTableAutoscaleSettingsOutputReference extends cdktf.ComplexObject {
+export class CosmosdbCassandraTableAutoscaleSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -153,32 +153,32 @@ export interface CosmosdbCassandraTableSchemaClusterKey {
   readonly orderBy: string;
 }
 
-export function cosmosdbCassandraTableSchemaClusterKeyToTerraform(struct?: CosmosdbCassandraTableSchemaClusterKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbCassandraTableSchemaClusterKeyToTerraform(struct?: CosmosdbCassandraTableSchemaClusterKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    order_by: cdktf.stringToTerraform(struct!.orderBy),
+    name: cdktn.stringToTerraform(struct!.name),
+    order_by: cdktn.stringToTerraform(struct!.orderBy),
   }
 }
 
 
-export function cosmosdbCassandraTableSchemaClusterKeyToHclTerraform(struct?: CosmosdbCassandraTableSchemaClusterKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbCassandraTableSchemaClusterKeyToHclTerraform(struct?: CosmosdbCassandraTableSchemaClusterKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order_by: {
-      value: cdktf.stringToHclTerraform(struct!.orderBy),
+      value: cdktn.stringToHclTerraform(struct!.orderBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -189,9 +189,9 @@ export function cosmosdbCassandraTableSchemaClusterKeyToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbCassandraTableSchemaClusterKeyOutputReference extends cdktf.ComplexObject {
+export class CosmosdbCassandraTableSchemaClusterKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -199,11 +199,11 @@ export class CosmosdbCassandraTableSchemaClusterKeyOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CosmosdbCassandraTableSchemaClusterKey | cdktf.IResolvable | undefined {
+  public get internalValue(): CosmosdbCassandraTableSchemaClusterKey | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -220,14 +220,14 @@ export class CosmosdbCassandraTableSchemaClusterKeyOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CosmosdbCassandraTableSchemaClusterKey | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CosmosdbCassandraTableSchemaClusterKey | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._orderBy = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -266,15 +266,15 @@ export class CosmosdbCassandraTableSchemaClusterKeyOutputReference extends cdktf
   }
 }
 
-export class CosmosdbCassandraTableSchemaClusterKeyList extends cdktf.ComplexList {
-  public internalValue? : CosmosdbCassandraTableSchemaClusterKey[] | cdktf.IResolvable
+export class CosmosdbCassandraTableSchemaClusterKeyList extends cdktn.ComplexList {
+  public internalValue? : CosmosdbCassandraTableSchemaClusterKey[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -296,32 +296,32 @@ export interface CosmosdbCassandraTableSchemaColumn {
   readonly type: string;
 }
 
-export function cosmosdbCassandraTableSchemaColumnToTerraform(struct?: CosmosdbCassandraTableSchemaColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbCassandraTableSchemaColumnToTerraform(struct?: CosmosdbCassandraTableSchemaColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function cosmosdbCassandraTableSchemaColumnToHclTerraform(struct?: CosmosdbCassandraTableSchemaColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbCassandraTableSchemaColumnToHclTerraform(struct?: CosmosdbCassandraTableSchemaColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -332,9 +332,9 @@ export function cosmosdbCassandraTableSchemaColumnToHclTerraform(struct?: Cosmos
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbCassandraTableSchemaColumnOutputReference extends cdktf.ComplexObject {
+export class CosmosdbCassandraTableSchemaColumnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -342,11 +342,11 @@ export class CosmosdbCassandraTableSchemaColumnOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CosmosdbCassandraTableSchemaColumn | cdktf.IResolvable | undefined {
+  public get internalValue(): CosmosdbCassandraTableSchemaColumn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -363,14 +363,14 @@ export class CosmosdbCassandraTableSchemaColumnOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CosmosdbCassandraTableSchemaColumn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CosmosdbCassandraTableSchemaColumn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -409,15 +409,15 @@ export class CosmosdbCassandraTableSchemaColumnOutputReference extends cdktf.Com
   }
 }
 
-export class CosmosdbCassandraTableSchemaColumnList extends cdktf.ComplexList {
-  public internalValue? : CosmosdbCassandraTableSchemaColumn[] | cdktf.IResolvable
+export class CosmosdbCassandraTableSchemaColumnList extends cdktn.ComplexList {
+  public internalValue? : CosmosdbCassandraTableSchemaColumn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -435,25 +435,25 @@ export interface CosmosdbCassandraTableSchemaPartitionKey {
   readonly name: string;
 }
 
-export function cosmosdbCassandraTableSchemaPartitionKeyToTerraform(struct?: CosmosdbCassandraTableSchemaPartitionKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbCassandraTableSchemaPartitionKeyToTerraform(struct?: CosmosdbCassandraTableSchemaPartitionKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function cosmosdbCassandraTableSchemaPartitionKeyToHclTerraform(struct?: CosmosdbCassandraTableSchemaPartitionKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbCassandraTableSchemaPartitionKeyToHclTerraform(struct?: CosmosdbCassandraTableSchemaPartitionKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -464,9 +464,9 @@ export function cosmosdbCassandraTableSchemaPartitionKeyToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbCassandraTableSchemaPartitionKeyOutputReference extends cdktf.ComplexObject {
+export class CosmosdbCassandraTableSchemaPartitionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -474,11 +474,11 @@ export class CosmosdbCassandraTableSchemaPartitionKeyOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CosmosdbCassandraTableSchemaPartitionKey | cdktf.IResolvable | undefined {
+  public get internalValue(): CosmosdbCassandraTableSchemaPartitionKey | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -491,13 +491,13 @@ export class CosmosdbCassandraTableSchemaPartitionKeyOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CosmosdbCassandraTableSchemaPartitionKey | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CosmosdbCassandraTableSchemaPartitionKey | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -522,15 +522,15 @@ export class CosmosdbCassandraTableSchemaPartitionKeyOutputReference extends cdk
   }
 }
 
-export class CosmosdbCassandraTableSchemaPartitionKeyList extends cdktf.ComplexList {
-  public internalValue? : CosmosdbCassandraTableSchemaPartitionKey[] | cdktf.IResolvable
+export class CosmosdbCassandraTableSchemaPartitionKeyList extends cdktn.ComplexList {
+  public internalValue? : CosmosdbCassandraTableSchemaPartitionKey[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -547,54 +547,54 @@ export interface CosmosdbCassandraTableSchema {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_cassandra_table#cluster_key CosmosdbCassandraTable#cluster_key}
   */
-  readonly clusterKey?: CosmosdbCassandraTableSchemaClusterKey[] | cdktf.IResolvable;
+  readonly clusterKey?: CosmosdbCassandraTableSchemaClusterKey[] | cdktn.IResolvable;
   /**
   * column block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_cassandra_table#column CosmosdbCassandraTable#column}
   */
-  readonly column: CosmosdbCassandraTableSchemaColumn[] | cdktf.IResolvable;
+  readonly column: CosmosdbCassandraTableSchemaColumn[] | cdktn.IResolvable;
   /**
   * partition_key block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_cassandra_table#partition_key CosmosdbCassandraTable#partition_key}
   */
-  readonly partitionKey: CosmosdbCassandraTableSchemaPartitionKey[] | cdktf.IResolvable;
+  readonly partitionKey: CosmosdbCassandraTableSchemaPartitionKey[] | cdktn.IResolvable;
 }
 
 export function cosmosdbCassandraTableSchemaToTerraform(struct?: CosmosdbCassandraTableSchemaOutputReference | CosmosdbCassandraTableSchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_key: cdktf.listMapper(cosmosdbCassandraTableSchemaClusterKeyToTerraform, true)(struct!.clusterKey),
-    column: cdktf.listMapper(cosmosdbCassandraTableSchemaColumnToTerraform, true)(struct!.column),
-    partition_key: cdktf.listMapper(cosmosdbCassandraTableSchemaPartitionKeyToTerraform, true)(struct!.partitionKey),
+    cluster_key: cdktn.listMapper(cosmosdbCassandraTableSchemaClusterKeyToTerraform, true)(struct!.clusterKey),
+    column: cdktn.listMapper(cosmosdbCassandraTableSchemaColumnToTerraform, true)(struct!.column),
+    partition_key: cdktn.listMapper(cosmosdbCassandraTableSchemaPartitionKeyToTerraform, true)(struct!.partitionKey),
   }
 }
 
 
 export function cosmosdbCassandraTableSchemaToHclTerraform(struct?: CosmosdbCassandraTableSchemaOutputReference | CosmosdbCassandraTableSchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_key: {
-      value: cdktf.listMapperHcl(cosmosdbCassandraTableSchemaClusterKeyToHclTerraform, true)(struct!.clusterKey),
+      value: cdktn.listMapperHcl(cosmosdbCassandraTableSchemaClusterKeyToHclTerraform, true)(struct!.clusterKey),
       isBlock: true,
       type: "list",
       storageClassType: "CosmosdbCassandraTableSchemaClusterKeyList",
     },
     column: {
-      value: cdktf.listMapperHcl(cosmosdbCassandraTableSchemaColumnToHclTerraform, true)(struct!.column),
+      value: cdktn.listMapperHcl(cosmosdbCassandraTableSchemaColumnToHclTerraform, true)(struct!.column),
       isBlock: true,
       type: "list",
       storageClassType: "CosmosdbCassandraTableSchemaColumnList",
     },
     partition_key: {
-      value: cdktf.listMapperHcl(cosmosdbCassandraTableSchemaPartitionKeyToHclTerraform, true)(struct!.partitionKey),
+      value: cdktn.listMapperHcl(cosmosdbCassandraTableSchemaPartitionKeyToHclTerraform, true)(struct!.partitionKey),
       isBlock: true,
       type: "list",
       storageClassType: "CosmosdbCassandraTableSchemaPartitionKeyList",
@@ -605,14 +605,14 @@ export function cosmosdbCassandraTableSchemaToHclTerraform(struct?: CosmosdbCass
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbCassandraTableSchemaOutputReference extends cdktf.ComplexObject {
+export class CosmosdbCassandraTableSchemaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -654,7 +654,7 @@ export class CosmosdbCassandraTableSchemaOutputReference extends cdktf.ComplexOb
   public get clusterKey() {
     return this._clusterKey;
   }
-  public putClusterKey(value: CosmosdbCassandraTableSchemaClusterKey[] | cdktf.IResolvable) {
+  public putClusterKey(value: CosmosdbCassandraTableSchemaClusterKey[] | cdktn.IResolvable) {
     this._clusterKey.internalValue = value;
   }
   public resetClusterKey() {
@@ -670,7 +670,7 @@ export class CosmosdbCassandraTableSchemaOutputReference extends cdktf.ComplexOb
   public get column() {
     return this._column;
   }
-  public putColumn(value: CosmosdbCassandraTableSchemaColumn[] | cdktf.IResolvable) {
+  public putColumn(value: CosmosdbCassandraTableSchemaColumn[] | cdktn.IResolvable) {
     this._column.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -683,7 +683,7 @@ export class CosmosdbCassandraTableSchemaOutputReference extends cdktf.ComplexOb
   public get partitionKey() {
     return this._partitionKey;
   }
-  public putPartitionKey(value: CosmosdbCassandraTableSchemaPartitionKey[] | cdktf.IResolvable) {
+  public putPartitionKey(value: CosmosdbCassandraTableSchemaPartitionKey[] | cdktn.IResolvable) {
     this._partitionKey.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -710,46 +710,46 @@ export interface CosmosdbCassandraTableTimeouts {
   readonly update?: string;
 }
 
-export function cosmosdbCassandraTableTimeoutsToTerraform(struct?: CosmosdbCassandraTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbCassandraTableTimeoutsToTerraform(struct?: CosmosdbCassandraTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cosmosdbCassandraTableTimeoutsToHclTerraform(struct?: CosmosdbCassandraTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbCassandraTableTimeoutsToHclTerraform(struct?: CosmosdbCassandraTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -760,19 +760,19 @@ export function cosmosdbCassandraTableTimeoutsToHclTerraform(struct?: CosmosdbCa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbCassandraTableTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CosmosdbCassandraTableTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CosmosdbCassandraTableTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CosmosdbCassandraTableTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -797,7 +797,7 @@ export class CosmosdbCassandraTableTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CosmosdbCassandraTableTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CosmosdbCassandraTableTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -806,7 +806,7 @@ export class CosmosdbCassandraTableTimeoutsOutputReference extends cdktf.Complex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -888,7 +888,7 @@ export class CosmosdbCassandraTableTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_cassandra_table azurerm_cosmosdb_cassandra_table}
 */
-export class CosmosdbCassandraTable extends cdktf.TerraformResource {
+export class CosmosdbCassandraTable extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -899,14 +899,14 @@ export class CosmosdbCassandraTable extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CosmosdbCassandraTable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CosmosdbCassandraTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CosmosdbCassandraTable to import
   * @param importFromId The id of the existing CosmosdbCassandraTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_cassandra_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CosmosdbCassandraTable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_cassandra_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_cassandra_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -1092,12 +1092,12 @@ export class CosmosdbCassandraTable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      analytical_storage_ttl: cdktf.numberToTerraform(this._analyticalStorageTtl),
-      cassandra_keyspace_id: cdktf.stringToTerraform(this._cassandraKeyspaceId),
-      default_ttl: cdktf.numberToTerraform(this._defaultTtl),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      throughput: cdktf.numberToTerraform(this._throughput),
+      analytical_storage_ttl: cdktn.numberToTerraform(this._analyticalStorageTtl),
+      cassandra_keyspace_id: cdktn.stringToTerraform(this._cassandraKeyspaceId),
+      default_ttl: cdktn.numberToTerraform(this._defaultTtl),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      throughput: cdktn.numberToTerraform(this._throughput),
       autoscale_settings: cosmosdbCassandraTableAutoscaleSettingsToTerraform(this._autoscaleSettings.internalValue),
       schema: cosmosdbCassandraTableSchemaToTerraform(this._schema.internalValue),
       timeouts: cosmosdbCassandraTableTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1107,37 +1107,37 @@ export class CosmosdbCassandraTable extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       analytical_storage_ttl: {
-        value: cdktf.numberToHclTerraform(this._analyticalStorageTtl),
+        value: cdktn.numberToHclTerraform(this._analyticalStorageTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       cassandra_keyspace_id: {
-        value: cdktf.stringToHclTerraform(this._cassandraKeyspaceId),
+        value: cdktn.stringToHclTerraform(this._cassandraKeyspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_ttl: {
-        value: cdktf.numberToHclTerraform(this._defaultTtl),
+        value: cdktn.numberToHclTerraform(this._defaultTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       throughput: {
-        value: cdktf.numberToHclTerraform(this._throughput),
+        value: cdktn.numberToHclTerraform(this._throughput),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedisCacheConfig extends cdktf.TerraformMetaArguments {
+export interface RedisCacheConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache#access_keys_authentication_enabled RedisCache#access_keys_authentication_enabled}
   */
-  readonly accessKeysAuthenticationEnabled?: boolean | cdktf.IResolvable;
+  readonly accessKeysAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache#capacity RedisCache#capacity}
   */
@@ -46,7 +46,7 @@ export interface RedisCacheConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache#non_ssl_port_enabled RedisCache#non_ssl_port_enabled}
   */
-  readonly nonSslPortEnabled?: boolean | cdktf.IResolvable;
+  readonly nonSslPortEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache#private_static_ip_address RedisCache#private_static_ip_address}
   */
@@ -54,7 +54,7 @@ export interface RedisCacheConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache#public_network_access_enabled RedisCache#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache#redis_version RedisCache#redis_version}
   */
@@ -106,7 +106,7 @@ export interface RedisCacheConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache#patch_schedule RedisCache#patch_schedule}
   */
-  readonly patchSchedule?: RedisCachePatchSchedule[] | cdktf.IResolvable;
+  readonly patchSchedule?: RedisCachePatchSchedule[] | cdktn.IResolvable;
   /**
   * redis_configuration block
   *
@@ -132,31 +132,31 @@ export interface RedisCacheIdentity {
 }
 
 export function redisCacheIdentityToTerraform(struct?: RedisCacheIdentityOutputReference | RedisCacheIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function redisCacheIdentityToHclTerraform(struct?: RedisCacheIdentityOutputReference | RedisCacheIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -167,14 +167,14 @@ export function redisCacheIdentityToHclTerraform(struct?: RedisCacheIdentityOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisCacheIdentityOutputReference extends cdktf.ComplexObject {
+export class RedisCacheIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -208,7 +208,7 @@ export class RedisCacheIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -259,39 +259,39 @@ export interface RedisCachePatchSchedule {
   readonly startHourUtc?: number;
 }
 
-export function redisCachePatchScheduleToTerraform(struct?: RedisCachePatchSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisCachePatchScheduleToTerraform(struct?: RedisCachePatchSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_week: cdktf.stringToTerraform(struct!.dayOfWeek),
-    maintenance_window: cdktf.stringToTerraform(struct!.maintenanceWindow),
-    start_hour_utc: cdktf.numberToTerraform(struct!.startHourUtc),
+    day_of_week: cdktn.stringToTerraform(struct!.dayOfWeek),
+    maintenance_window: cdktn.stringToTerraform(struct!.maintenanceWindow),
+    start_hour_utc: cdktn.numberToTerraform(struct!.startHourUtc),
   }
 }
 
 
-export function redisCachePatchScheduleToHclTerraform(struct?: RedisCachePatchSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisCachePatchScheduleToHclTerraform(struct?: RedisCachePatchSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_week: {
-      value: cdktf.stringToHclTerraform(struct!.dayOfWeek),
+      value: cdktn.stringToHclTerraform(struct!.dayOfWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     maintenance_window: {
-      value: cdktf.stringToHclTerraform(struct!.maintenanceWindow),
+      value: cdktn.stringToHclTerraform(struct!.maintenanceWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_hour_utc: {
-      value: cdktf.numberToHclTerraform(struct!.startHourUtc),
+      value: cdktn.numberToHclTerraform(struct!.startHourUtc),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -302,9 +302,9 @@ export function redisCachePatchScheduleToHclTerraform(struct?: RedisCachePatchSc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisCachePatchScheduleOutputReference extends cdktf.ComplexObject {
+export class RedisCachePatchScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -312,11 +312,11 @@ export class RedisCachePatchScheduleOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedisCachePatchSchedule | cdktf.IResolvable | undefined {
+  public get internalValue(): RedisCachePatchSchedule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -337,7 +337,7 @@ export class RedisCachePatchScheduleOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedisCachePatchSchedule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedisCachePatchSchedule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -345,7 +345,7 @@ export class RedisCachePatchScheduleOutputReference extends cdktf.ComplexObject 
       this._maintenanceWindow = undefined;
       this._startHourUtc = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -404,15 +404,15 @@ export class RedisCachePatchScheduleOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class RedisCachePatchScheduleList extends cdktf.ComplexList {
-  public internalValue? : RedisCachePatchSchedule[] | cdktf.IResolvable
+export class RedisCachePatchScheduleList extends cdktn.ComplexList {
+  public internalValue? : RedisCachePatchSchedule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -427,11 +427,11 @@ export interface RedisCacheRedisConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache#active_directory_authentication_enabled RedisCache#active_directory_authentication_enabled}
   */
-  readonly activeDirectoryAuthenticationEnabled?: boolean | cdktf.IResolvable;
+  readonly activeDirectoryAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache#aof_backup_enabled RedisCache#aof_backup_enabled}
   */
-  readonly aofBackupEnabled?: boolean | cdktf.IResolvable;
+  readonly aofBackupEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache#aof_storage_connection_string_0 RedisCache#aof_storage_connection_string_0}
   */
@@ -443,7 +443,7 @@ export interface RedisCacheRedisConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache#authentication_enabled RedisCache#authentication_enabled}
   */
-  readonly authenticationEnabled?: boolean | cdktf.IResolvable;
+  readonly authenticationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache#data_persistence_authentication_method RedisCache#data_persistence_authentication_method}
   */
@@ -471,7 +471,7 @@ export interface RedisCacheRedisConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache#rdb_backup_enabled RedisCache#rdb_backup_enabled}
   */
-  readonly rdbBackupEnabled?: boolean | cdktf.IResolvable;
+  readonly rdbBackupEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache#rdb_backup_frequency RedisCache#rdb_backup_frequency}
   */
@@ -491,129 +491,129 @@ export interface RedisCacheRedisConfiguration {
 }
 
 export function redisCacheRedisConfigurationToTerraform(struct?: RedisCacheRedisConfigurationOutputReference | RedisCacheRedisConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    active_directory_authentication_enabled: cdktf.booleanToTerraform(struct!.activeDirectoryAuthenticationEnabled),
-    aof_backup_enabled: cdktf.booleanToTerraform(struct!.aofBackupEnabled),
-    aof_storage_connection_string_0: cdktf.stringToTerraform(struct!.aofStorageConnectionString0),
-    aof_storage_connection_string_1: cdktf.stringToTerraform(struct!.aofStorageConnectionString1),
-    authentication_enabled: cdktf.booleanToTerraform(struct!.authenticationEnabled),
-    data_persistence_authentication_method: cdktf.stringToTerraform(struct!.dataPersistenceAuthenticationMethod),
-    maxfragmentationmemory_reserved: cdktf.numberToTerraform(struct!.maxfragmentationmemoryReserved),
-    maxmemory_delta: cdktf.numberToTerraform(struct!.maxmemoryDelta),
-    maxmemory_policy: cdktf.stringToTerraform(struct!.maxmemoryPolicy),
-    maxmemory_reserved: cdktf.numberToTerraform(struct!.maxmemoryReserved),
-    notify_keyspace_events: cdktf.stringToTerraform(struct!.notifyKeyspaceEvents),
-    rdb_backup_enabled: cdktf.booleanToTerraform(struct!.rdbBackupEnabled),
-    rdb_backup_frequency: cdktf.numberToTerraform(struct!.rdbBackupFrequency),
-    rdb_backup_max_snapshot_count: cdktf.numberToTerraform(struct!.rdbBackupMaxSnapshotCount),
-    rdb_storage_connection_string: cdktf.stringToTerraform(struct!.rdbStorageConnectionString),
-    storage_account_subscription_id: cdktf.stringToTerraform(struct!.storageAccountSubscriptionId),
+    active_directory_authentication_enabled: cdktn.booleanToTerraform(struct!.activeDirectoryAuthenticationEnabled),
+    aof_backup_enabled: cdktn.booleanToTerraform(struct!.aofBackupEnabled),
+    aof_storage_connection_string_0: cdktn.stringToTerraform(struct!.aofStorageConnectionString0),
+    aof_storage_connection_string_1: cdktn.stringToTerraform(struct!.aofStorageConnectionString1),
+    authentication_enabled: cdktn.booleanToTerraform(struct!.authenticationEnabled),
+    data_persistence_authentication_method: cdktn.stringToTerraform(struct!.dataPersistenceAuthenticationMethod),
+    maxfragmentationmemory_reserved: cdktn.numberToTerraform(struct!.maxfragmentationmemoryReserved),
+    maxmemory_delta: cdktn.numberToTerraform(struct!.maxmemoryDelta),
+    maxmemory_policy: cdktn.stringToTerraform(struct!.maxmemoryPolicy),
+    maxmemory_reserved: cdktn.numberToTerraform(struct!.maxmemoryReserved),
+    notify_keyspace_events: cdktn.stringToTerraform(struct!.notifyKeyspaceEvents),
+    rdb_backup_enabled: cdktn.booleanToTerraform(struct!.rdbBackupEnabled),
+    rdb_backup_frequency: cdktn.numberToTerraform(struct!.rdbBackupFrequency),
+    rdb_backup_max_snapshot_count: cdktn.numberToTerraform(struct!.rdbBackupMaxSnapshotCount),
+    rdb_storage_connection_string: cdktn.stringToTerraform(struct!.rdbStorageConnectionString),
+    storage_account_subscription_id: cdktn.stringToTerraform(struct!.storageAccountSubscriptionId),
   }
 }
 
 
 export function redisCacheRedisConfigurationToHclTerraform(struct?: RedisCacheRedisConfigurationOutputReference | RedisCacheRedisConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     active_directory_authentication_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.activeDirectoryAuthenticationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.activeDirectoryAuthenticationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     aof_backup_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.aofBackupEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.aofBackupEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     aof_storage_connection_string_0: {
-      value: cdktf.stringToHclTerraform(struct!.aofStorageConnectionString0),
+      value: cdktn.stringToHclTerraform(struct!.aofStorageConnectionString0),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aof_storage_connection_string_1: {
-      value: cdktf.stringToHclTerraform(struct!.aofStorageConnectionString1),
+      value: cdktn.stringToHclTerraform(struct!.aofStorageConnectionString1),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     authentication_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.authenticationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.authenticationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     data_persistence_authentication_method: {
-      value: cdktf.stringToHclTerraform(struct!.dataPersistenceAuthenticationMethod),
+      value: cdktn.stringToHclTerraform(struct!.dataPersistenceAuthenticationMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     maxfragmentationmemory_reserved: {
-      value: cdktf.numberToHclTerraform(struct!.maxfragmentationmemoryReserved),
+      value: cdktn.numberToHclTerraform(struct!.maxfragmentationmemoryReserved),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maxmemory_delta: {
-      value: cdktf.numberToHclTerraform(struct!.maxmemoryDelta),
+      value: cdktn.numberToHclTerraform(struct!.maxmemoryDelta),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maxmemory_policy: {
-      value: cdktf.stringToHclTerraform(struct!.maxmemoryPolicy),
+      value: cdktn.stringToHclTerraform(struct!.maxmemoryPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     maxmemory_reserved: {
-      value: cdktf.numberToHclTerraform(struct!.maxmemoryReserved),
+      value: cdktn.numberToHclTerraform(struct!.maxmemoryReserved),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     notify_keyspace_events: {
-      value: cdktf.stringToHclTerraform(struct!.notifyKeyspaceEvents),
+      value: cdktn.stringToHclTerraform(struct!.notifyKeyspaceEvents),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rdb_backup_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.rdbBackupEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.rdbBackupEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     rdb_backup_frequency: {
-      value: cdktf.numberToHclTerraform(struct!.rdbBackupFrequency),
+      value: cdktn.numberToHclTerraform(struct!.rdbBackupFrequency),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rdb_backup_max_snapshot_count: {
-      value: cdktf.numberToHclTerraform(struct!.rdbBackupMaxSnapshotCount),
+      value: cdktn.numberToHclTerraform(struct!.rdbBackupMaxSnapshotCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rdb_storage_connection_string: {
-      value: cdktf.stringToHclTerraform(struct!.rdbStorageConnectionString),
+      value: cdktn.stringToHclTerraform(struct!.rdbStorageConnectionString),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_subscription_id: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountSubscriptionId),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountSubscriptionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -624,14 +624,14 @@ export function redisCacheRedisConfigurationToHclTerraform(struct?: RedisCacheRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisCacheRedisConfigurationOutputReference extends cdktf.ComplexObject {
+export class RedisCacheRedisConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -747,11 +747,11 @@ export class RedisCacheRedisConfigurationOutputReference extends cdktf.ComplexOb
   }
 
   // active_directory_authentication_enabled - computed: false, optional: true, required: false
-  private _activeDirectoryAuthenticationEnabled?: boolean | cdktf.IResolvable; 
+  private _activeDirectoryAuthenticationEnabled?: boolean | cdktn.IResolvable; 
   public get activeDirectoryAuthenticationEnabled() {
     return this.getBooleanAttribute('active_directory_authentication_enabled');
   }
-  public set activeDirectoryAuthenticationEnabled(value: boolean | cdktf.IResolvable) {
+  public set activeDirectoryAuthenticationEnabled(value: boolean | cdktn.IResolvable) {
     this._activeDirectoryAuthenticationEnabled = value;
   }
   public resetActiveDirectoryAuthenticationEnabled() {
@@ -763,11 +763,11 @@ export class RedisCacheRedisConfigurationOutputReference extends cdktf.ComplexOb
   }
 
   // aof_backup_enabled - computed: false, optional: true, required: false
-  private _aofBackupEnabled?: boolean | cdktf.IResolvable; 
+  private _aofBackupEnabled?: boolean | cdktn.IResolvable; 
   public get aofBackupEnabled() {
     return this.getBooleanAttribute('aof_backup_enabled');
   }
-  public set aofBackupEnabled(value: boolean | cdktf.IResolvable) {
+  public set aofBackupEnabled(value: boolean | cdktn.IResolvable) {
     this._aofBackupEnabled = value;
   }
   public resetAofBackupEnabled() {
@@ -811,11 +811,11 @@ export class RedisCacheRedisConfigurationOutputReference extends cdktf.ComplexOb
   }
 
   // authentication_enabled - computed: false, optional: true, required: false
-  private _authenticationEnabled?: boolean | cdktf.IResolvable; 
+  private _authenticationEnabled?: boolean | cdktn.IResolvable; 
   public get authenticationEnabled() {
     return this.getBooleanAttribute('authentication_enabled');
   }
-  public set authenticationEnabled(value: boolean | cdktf.IResolvable) {
+  public set authenticationEnabled(value: boolean | cdktn.IResolvable) {
     this._authenticationEnabled = value;
   }
   public resetAuthenticationEnabled() {
@@ -928,11 +928,11 @@ export class RedisCacheRedisConfigurationOutputReference extends cdktf.ComplexOb
   }
 
   // rdb_backup_enabled - computed: false, optional: true, required: false
-  private _rdbBackupEnabled?: boolean | cdktf.IResolvable; 
+  private _rdbBackupEnabled?: boolean | cdktn.IResolvable; 
   public get rdbBackupEnabled() {
     return this.getBooleanAttribute('rdb_backup_enabled');
   }
-  public set rdbBackupEnabled(value: boolean | cdktf.IResolvable) {
+  public set rdbBackupEnabled(value: boolean | cdktn.IResolvable) {
     this._rdbBackupEnabled = value;
   }
   public resetRdbBackupEnabled() {
@@ -1026,46 +1026,46 @@ export interface RedisCacheTimeouts {
   readonly update?: string;
 }
 
-export function redisCacheTimeoutsToTerraform(struct?: RedisCacheTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisCacheTimeoutsToTerraform(struct?: RedisCacheTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function redisCacheTimeoutsToHclTerraform(struct?: RedisCacheTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisCacheTimeoutsToHclTerraform(struct?: RedisCacheTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1076,19 +1076,19 @@ export function redisCacheTimeoutsToHclTerraform(struct?: RedisCacheTimeouts | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisCacheTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RedisCacheTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RedisCacheTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RedisCacheTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1113,7 +1113,7 @@ export class RedisCacheTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedisCacheTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedisCacheTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1122,7 +1122,7 @@ export class RedisCacheTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1204,7 +1204,7 @@ export class RedisCacheTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache azurerm_redis_cache}
 */
-export class RedisCache extends cdktf.TerraformResource {
+export class RedisCache extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1215,14 +1215,14 @@ export class RedisCache extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedisCache resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedisCache resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedisCache to import
   * @param importFromId The id of the existing RedisCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redis_cache#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedisCache to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_redis_cache", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_redis_cache", importId: importFromId, provider });
       }
 
   // ===========
@@ -1283,11 +1283,11 @@ export class RedisCache extends cdktf.TerraformResource {
   // ==========
 
   // access_keys_authentication_enabled - computed: false, optional: true, required: false
-  private _accessKeysAuthenticationEnabled?: boolean | cdktf.IResolvable; 
+  private _accessKeysAuthenticationEnabled?: boolean | cdktn.IResolvable; 
   public get accessKeysAuthenticationEnabled() {
     return this.getBooleanAttribute('access_keys_authentication_enabled');
   }
-  public set accessKeysAuthenticationEnabled(value: boolean | cdktf.IResolvable) {
+  public set accessKeysAuthenticationEnabled(value: boolean | cdktn.IResolvable) {
     this._accessKeysAuthenticationEnabled = value;
   }
   public resetAccessKeysAuthenticationEnabled() {
@@ -1388,11 +1388,11 @@ export class RedisCache extends cdktf.TerraformResource {
   }
 
   // non_ssl_port_enabled - computed: false, optional: true, required: false
-  private _nonSslPortEnabled?: boolean | cdktf.IResolvable; 
+  private _nonSslPortEnabled?: boolean | cdktn.IResolvable; 
   public get nonSslPortEnabled() {
     return this.getBooleanAttribute('non_ssl_port_enabled');
   }
-  public set nonSslPortEnabled(value: boolean | cdktf.IResolvable) {
+  public set nonSslPortEnabled(value: boolean | cdktn.IResolvable) {
     this._nonSslPortEnabled = value;
   }
   public resetNonSslPortEnabled() {
@@ -1435,11 +1435,11 @@ export class RedisCache extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -1606,7 +1606,7 @@ export class RedisCache extends cdktf.TerraformResource {
   // zones - computed: false, optional: true, required: false
   private _zones?: string[]; 
   public get zones() {
-    return cdktf.Fn.tolist(this.getListAttribute('zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('zones'));
   }
   public set zones(value: string[]) {
     this._zones = value;
@@ -1640,7 +1640,7 @@ export class RedisCache extends cdktf.TerraformResource {
   public get patchSchedule() {
     return this._patchSchedule;
   }
-  public putPatchSchedule(value: RedisCachePatchSchedule[] | cdktf.IResolvable) {
+  public putPatchSchedule(value: RedisCachePatchSchedule[] | cdktn.IResolvable) {
     this._patchSchedule.internalValue = value;
   }
   public resetPatchSchedule() {
@@ -1689,28 +1689,28 @@ export class RedisCache extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_keys_authentication_enabled: cdktf.booleanToTerraform(this._accessKeysAuthenticationEnabled),
-      capacity: cdktf.numberToTerraform(this._capacity),
-      family: cdktf.stringToTerraform(this._family),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      minimum_tls_version: cdktf.stringToTerraform(this._minimumTlsVersion),
-      name: cdktf.stringToTerraform(this._name),
-      non_ssl_port_enabled: cdktf.booleanToTerraform(this._nonSslPortEnabled),
-      private_static_ip_address: cdktf.stringToTerraform(this._privateStaticIpAddress),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      redis_version: cdktf.stringToTerraform(this._redisVersion),
-      replicas_per_master: cdktf.numberToTerraform(this._replicasPerMaster),
-      replicas_per_primary: cdktf.numberToTerraform(this._replicasPerPrimary),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      shard_count: cdktf.numberToTerraform(this._shardCount),
-      sku_name: cdktf.stringToTerraform(this._skuName),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tenant_settings: cdktf.hashMapper(cdktf.stringToTerraform)(this._tenantSettings),
-      zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._zones),
+      access_keys_authentication_enabled: cdktn.booleanToTerraform(this._accessKeysAuthenticationEnabled),
+      capacity: cdktn.numberToTerraform(this._capacity),
+      family: cdktn.stringToTerraform(this._family),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      minimum_tls_version: cdktn.stringToTerraform(this._minimumTlsVersion),
+      name: cdktn.stringToTerraform(this._name),
+      non_ssl_port_enabled: cdktn.booleanToTerraform(this._nonSslPortEnabled),
+      private_static_ip_address: cdktn.stringToTerraform(this._privateStaticIpAddress),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      redis_version: cdktn.stringToTerraform(this._redisVersion),
+      replicas_per_master: cdktn.numberToTerraform(this._replicasPerMaster),
+      replicas_per_primary: cdktn.numberToTerraform(this._replicasPerPrimary),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      shard_count: cdktn.numberToTerraform(this._shardCount),
+      sku_name: cdktn.stringToTerraform(this._skuName),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tenant_settings: cdktn.hashMapper(cdktn.stringToTerraform)(this._tenantSettings),
+      zones: cdktn.listMapper(cdktn.stringToTerraform, false)(this._zones),
       identity: redisCacheIdentityToTerraform(this._identity.internalValue),
-      patch_schedule: cdktf.listMapper(redisCachePatchScheduleToTerraform, true)(this._patchSchedule.internalValue),
+      patch_schedule: cdktn.listMapper(redisCachePatchScheduleToTerraform, true)(this._patchSchedule.internalValue),
       redis_configuration: redisCacheRedisConfigurationToTerraform(this._redisConfiguration.internalValue),
       timeouts: redisCacheTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1719,121 +1719,121 @@ export class RedisCache extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_keys_authentication_enabled: {
-        value: cdktf.booleanToHclTerraform(this._accessKeysAuthenticationEnabled),
+        value: cdktn.booleanToHclTerraform(this._accessKeysAuthenticationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       capacity: {
-        value: cdktf.numberToHclTerraform(this._capacity),
+        value: cdktn.numberToHclTerraform(this._capacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       family: {
-        value: cdktf.stringToHclTerraform(this._family),
+        value: cdktn.stringToHclTerraform(this._family),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       minimum_tls_version: {
-        value: cdktf.stringToHclTerraform(this._minimumTlsVersion),
+        value: cdktn.stringToHclTerraform(this._minimumTlsVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       non_ssl_port_enabled: {
-        value: cdktf.booleanToHclTerraform(this._nonSslPortEnabled),
+        value: cdktn.booleanToHclTerraform(this._nonSslPortEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       private_static_ip_address: {
-        value: cdktf.stringToHclTerraform(this._privateStaticIpAddress),
+        value: cdktn.stringToHclTerraform(this._privateStaticIpAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       redis_version: {
-        value: cdktf.stringToHclTerraform(this._redisVersion),
+        value: cdktn.stringToHclTerraform(this._redisVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replicas_per_master: {
-        value: cdktf.numberToHclTerraform(this._replicasPerMaster),
+        value: cdktn.numberToHclTerraform(this._replicasPerMaster),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       replicas_per_primary: {
-        value: cdktf.numberToHclTerraform(this._replicasPerPrimary),
+        value: cdktn.numberToHclTerraform(this._replicasPerPrimary),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       shard_count: {
-        value: cdktf.numberToHclTerraform(this._shardCount),
+        value: cdktn.numberToHclTerraform(this._shardCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       sku_name: {
-        value: cdktf.stringToHclTerraform(this._skuName),
+        value: cdktn.stringToHclTerraform(this._skuName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tenant_settings: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tenantSettings),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tenantSettings),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       zones: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._zones),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._zones),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
@@ -1845,7 +1845,7 @@ export class RedisCache extends cdktf.TerraformResource {
         storageClassType: "RedisCacheIdentityList",
       },
       patch_schedule: {
-        value: cdktf.listMapperHcl(redisCachePatchScheduleToHclTerraform, true)(this._patchSchedule.internalValue),
+        value: cdktn.listMapperHcl(redisCachePatchScheduleToHclTerraform, true)(this._patchSchedule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RedisCachePatchScheduleList",

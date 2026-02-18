@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermServicebusQueueAuthorizationRuleConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermServicebusQueueAuthorizationRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/servicebus_queue_authorization_rule#id DataAzurermServicebusQueueAuthorizationRule#id}
   *
@@ -53,25 +53,25 @@ export interface DataAzurermServicebusQueueAuthorizationRuleTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermServicebusQueueAuthorizationRuleTimeoutsToTerraform(struct?: DataAzurermServicebusQueueAuthorizationRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermServicebusQueueAuthorizationRuleTimeoutsToTerraform(struct?: DataAzurermServicebusQueueAuthorizationRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermServicebusQueueAuthorizationRuleTimeoutsToHclTerraform(struct?: DataAzurermServicebusQueueAuthorizationRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermServicebusQueueAuthorizationRuleTimeoutsToHclTerraform(struct?: DataAzurermServicebusQueueAuthorizationRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -82,19 +82,19 @@ export function dataAzurermServicebusQueueAuthorizationRuleTimeoutsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermServicebusQueueAuthorizationRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermServicebusQueueAuthorizationRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermServicebusQueueAuthorizationRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermServicebusQueueAuthorizationRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -107,13 +107,13 @@ export class DataAzurermServicebusQueueAuthorizationRuleTimeoutsOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermServicebusQueueAuthorizationRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermServicebusQueueAuthorizationRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -144,7 +144,7 @@ export class DataAzurermServicebusQueueAuthorizationRuleTimeoutsOutputReference 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/servicebus_queue_authorization_rule azurerm_servicebus_queue_authorization_rule}
 */
-export class DataAzurermServicebusQueueAuthorizationRule extends cdktf.TerraformDataSource {
+export class DataAzurermServicebusQueueAuthorizationRule extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -155,14 +155,14 @@ export class DataAzurermServicebusQueueAuthorizationRule extends cdktf.Terraform
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermServicebusQueueAuthorizationRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermServicebusQueueAuthorizationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermServicebusQueueAuthorizationRule to import
   * @param importFromId The id of the existing DataAzurermServicebusQueueAuthorizationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/servicebus_queue_authorization_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermServicebusQueueAuthorizationRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_servicebus_queue_authorization_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_servicebus_queue_authorization_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -365,12 +365,12 @@ export class DataAzurermServicebusQueueAuthorizationRule extends cdktf.Terraform
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      namespace_name: cdktf.stringToTerraform(this._namespaceName),
-      queue_id: cdktf.stringToTerraform(this._queueId),
-      queue_name: cdktf.stringToTerraform(this._queueName),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      namespace_name: cdktn.stringToTerraform(this._namespaceName),
+      queue_id: cdktn.stringToTerraform(this._queueId),
+      queue_name: cdktn.stringToTerraform(this._queueName),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurermServicebusQueueAuthorizationRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -378,37 +378,37 @@ export class DataAzurermServicebusQueueAuthorizationRule extends cdktf.Terraform
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace_name: {
-        value: cdktf.stringToHclTerraform(this._namespaceName),
+        value: cdktn.stringToHclTerraform(this._namespaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       queue_id: {
-        value: cdktf.stringToHclTerraform(this._queueId),
+        value: cdktn.stringToHclTerraform(this._queueId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       queue_name: {
-        value: cdktf.stringToHclTerraform(this._queueName),
+        value: cdktn.stringToHclTerraform(this._queueName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

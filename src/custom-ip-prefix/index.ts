@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CustomIpPrefixConfig extends cdktf.TerraformMetaArguments {
+export interface CustomIpPrefixConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/custom_ip_prefix#cidr CustomIpPrefix#cidr}
   */
@@ -19,7 +19,7 @@ export interface CustomIpPrefixConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/custom_ip_prefix#commissioning_enabled CustomIpPrefix#commissioning_enabled}
   */
-  readonly commissioningEnabled?: boolean | cdktf.IResolvable;
+  readonly commissioningEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/custom_ip_prefix#id CustomIpPrefix#id}
   *
@@ -30,7 +30,7 @@ export interface CustomIpPrefixConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/custom_ip_prefix#internet_advertising_disabled CustomIpPrefix#internet_advertising_disabled}
   */
-  readonly internetAdvertisingDisabled?: boolean | cdktf.IResolvable;
+  readonly internetAdvertisingDisabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/custom_ip_prefix#location CustomIpPrefix#location}
   */
@@ -89,46 +89,46 @@ export interface CustomIpPrefixTimeouts {
   readonly update?: string;
 }
 
-export function customIpPrefixTimeoutsToTerraform(struct?: CustomIpPrefixTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customIpPrefixTimeoutsToTerraform(struct?: CustomIpPrefixTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function customIpPrefixTimeoutsToHclTerraform(struct?: CustomIpPrefixTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customIpPrefixTimeoutsToHclTerraform(struct?: CustomIpPrefixTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -139,19 +139,19 @@ export function customIpPrefixTimeoutsToHclTerraform(struct?: CustomIpPrefixTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomIpPrefixTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CustomIpPrefixTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CustomIpPrefixTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CustomIpPrefixTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -176,7 +176,7 @@ export class CustomIpPrefixTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomIpPrefixTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CustomIpPrefixTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -185,7 +185,7 @@ export class CustomIpPrefixTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -267,7 +267,7 @@ export class CustomIpPrefixTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/custom_ip_prefix azurerm_custom_ip_prefix}
 */
-export class CustomIpPrefix extends cdktf.TerraformResource {
+export class CustomIpPrefix extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -278,14 +278,14 @@ export class CustomIpPrefix extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CustomIpPrefix resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CustomIpPrefix resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomIpPrefix to import
   * @param importFromId The id of the existing CustomIpPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/custom_ip_prefix#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomIpPrefix to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_custom_ip_prefix", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_custom_ip_prefix", importId: importFromId, provider });
       }
 
   // ===========
@@ -348,11 +348,11 @@ export class CustomIpPrefix extends cdktf.TerraformResource {
   }
 
   // commissioning_enabled - computed: false, optional: true, required: false
-  private _commissioningEnabled?: boolean | cdktf.IResolvable; 
+  private _commissioningEnabled?: boolean | cdktn.IResolvable; 
   public get commissioningEnabled() {
     return this.getBooleanAttribute('commissioning_enabled');
   }
-  public set commissioningEnabled(value: boolean | cdktf.IResolvable) {
+  public set commissioningEnabled(value: boolean | cdktn.IResolvable) {
     this._commissioningEnabled = value;
   }
   public resetCommissioningEnabled() {
@@ -380,11 +380,11 @@ export class CustomIpPrefix extends cdktf.TerraformResource {
   }
 
   // internet_advertising_disabled - computed: false, optional: true, required: false
-  private _internetAdvertisingDisabled?: boolean | cdktf.IResolvable; 
+  private _internetAdvertisingDisabled?: boolean | cdktn.IResolvable; 
   public get internetAdvertisingDisabled() {
     return this.getBooleanAttribute('internet_advertising_disabled');
   }
-  public set internetAdvertisingDisabled(value: boolean | cdktf.IResolvable) {
+  public set internetAdvertisingDisabled(value: boolean | cdktn.IResolvable) {
     this._internetAdvertisingDisabled = value;
   }
   public resetInternetAdvertisingDisabled() {
@@ -501,7 +501,7 @@ export class CustomIpPrefix extends cdktf.TerraformResource {
   // zones - computed: false, optional: true, required: false
   private _zones?: string[]; 
   public get zones() {
-    return cdktf.Fn.tolist(this.getListAttribute('zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('zones'));
   }
   public set zones(value: string[]) {
     this._zones = value;
@@ -536,18 +536,18 @@ export class CustomIpPrefix extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cidr: cdktf.stringToTerraform(this._cidr),
-      commissioning_enabled: cdktf.booleanToTerraform(this._commissioningEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      internet_advertising_disabled: cdktf.booleanToTerraform(this._internetAdvertisingDisabled),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      parent_custom_ip_prefix_id: cdktf.stringToTerraform(this._parentCustomIpPrefixId),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      roa_validity_end_date: cdktf.stringToTerraform(this._roaValidityEndDate),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      wan_validation_signed_message: cdktf.stringToTerraform(this._wanValidationSignedMessage),
-      zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._zones),
+      cidr: cdktn.stringToTerraform(this._cidr),
+      commissioning_enabled: cdktn.booleanToTerraform(this._commissioningEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      internet_advertising_disabled: cdktn.booleanToTerraform(this._internetAdvertisingDisabled),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      parent_custom_ip_prefix_id: cdktn.stringToTerraform(this._parentCustomIpPrefixId),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      roa_validity_end_date: cdktn.stringToTerraform(this._roaValidityEndDate),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      wan_validation_signed_message: cdktn.stringToTerraform(this._wanValidationSignedMessage),
+      zones: cdktn.listMapper(cdktn.stringToTerraform, false)(this._zones),
       timeouts: customIpPrefixTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -555,73 +555,73 @@ export class CustomIpPrefix extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cidr: {
-        value: cdktf.stringToHclTerraform(this._cidr),
+        value: cdktn.stringToHclTerraform(this._cidr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       commissioning_enabled: {
-        value: cdktf.booleanToHclTerraform(this._commissioningEnabled),
+        value: cdktn.booleanToHclTerraform(this._commissioningEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       internet_advertising_disabled: {
-        value: cdktf.booleanToHclTerraform(this._internetAdvertisingDisabled),
+        value: cdktn.booleanToHclTerraform(this._internetAdvertisingDisabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent_custom_ip_prefix_id: {
-        value: cdktf.stringToHclTerraform(this._parentCustomIpPrefixId),
+        value: cdktn.stringToHclTerraform(this._parentCustomIpPrefixId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       roa_validity_end_date: {
-        value: cdktf.stringToHclTerraform(this._roaValidityEndDate),
+        value: cdktn.stringToHclTerraform(this._roaValidityEndDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       wan_validation_signed_message: {
-        value: cdktf.stringToHclTerraform(this._wanValidationSignedMessage),
+        value: cdktn.stringToHclTerraform(this._wanValidationSignedMessage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zones: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._zones),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._zones),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

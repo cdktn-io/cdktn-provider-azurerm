@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CosmosdbPostgresqlClusterConfig extends cdktf.TerraformMetaArguments {
+export interface CosmosdbPostgresqlClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_postgresql_cluster#administrator_login_password CosmosdbPostgresqlCluster#administrator_login_password}
   */
@@ -23,7 +23,7 @@ export interface CosmosdbPostgresqlClusterConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_postgresql_cluster#coordinator_public_ip_access_enabled CosmosdbPostgresqlCluster#coordinator_public_ip_access_enabled}
   */
-  readonly coordinatorPublicIpAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly coordinatorPublicIpAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_postgresql_cluster#coordinator_server_edition CosmosdbPostgresqlCluster#coordinator_server_edition}
   */
@@ -39,7 +39,7 @@ export interface CosmosdbPostgresqlClusterConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_postgresql_cluster#ha_enabled CosmosdbPostgresqlCluster#ha_enabled}
   */
-  readonly haEnabled?: boolean | cdktf.IResolvable;
+  readonly haEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_postgresql_cluster#id CosmosdbPostgresqlCluster#id}
   *
@@ -62,7 +62,7 @@ export interface CosmosdbPostgresqlClusterConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_postgresql_cluster#node_public_ip_access_enabled CosmosdbPostgresqlCluster#node_public_ip_access_enabled}
   */
-  readonly nodePublicIpAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly nodePublicIpAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_postgresql_cluster#node_server_edition CosmosdbPostgresqlCluster#node_server_edition}
   */
@@ -90,7 +90,7 @@ export interface CosmosdbPostgresqlClusterConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_postgresql_cluster#shards_on_coordinator_enabled CosmosdbPostgresqlCluster#shards_on_coordinator_enabled}
   */
-  readonly shardsOnCoordinatorEnabled?: boolean | cdktf.IResolvable;
+  readonly shardsOnCoordinatorEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_postgresql_cluster#source_location CosmosdbPostgresqlCluster#source_location}
   */
@@ -124,8 +124,8 @@ export interface CosmosdbPostgresqlClusterServers {
 }
 
 export function cosmosdbPostgresqlClusterServersToTerraform(struct?: CosmosdbPostgresqlClusterServers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -134,8 +134,8 @@ export function cosmosdbPostgresqlClusterServersToTerraform(struct?: CosmosdbPos
 
 
 export function cosmosdbPostgresqlClusterServersToHclTerraform(struct?: CosmosdbPostgresqlClusterServers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -143,7 +143,7 @@ export function cosmosdbPostgresqlClusterServersToHclTerraform(struct?: Cosmosdb
   return attrs;
 }
 
-export class CosmosdbPostgresqlClusterServersOutputReference extends cdktf.ComplexObject {
+export class CosmosdbPostgresqlClusterServersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -152,7 +152,7 @@ export class CosmosdbPostgresqlClusterServersOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -182,14 +182,14 @@ export class CosmosdbPostgresqlClusterServersOutputReference extends cdktf.Compl
   }
 }
 
-export class CosmosdbPostgresqlClusterServersList extends cdktf.ComplexList {
+export class CosmosdbPostgresqlClusterServersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -216,38 +216,38 @@ export interface CosmosdbPostgresqlClusterMaintenanceWindow {
 }
 
 export function cosmosdbPostgresqlClusterMaintenanceWindowToTerraform(struct?: CosmosdbPostgresqlClusterMaintenanceWindowOutputReference | CosmosdbPostgresqlClusterMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_week: cdktf.numberToTerraform(struct!.dayOfWeek),
-    start_hour: cdktf.numberToTerraform(struct!.startHour),
-    start_minute: cdktf.numberToTerraform(struct!.startMinute),
+    day_of_week: cdktn.numberToTerraform(struct!.dayOfWeek),
+    start_hour: cdktn.numberToTerraform(struct!.startHour),
+    start_minute: cdktn.numberToTerraform(struct!.startMinute),
   }
 }
 
 
 export function cosmosdbPostgresqlClusterMaintenanceWindowToHclTerraform(struct?: CosmosdbPostgresqlClusterMaintenanceWindowOutputReference | CosmosdbPostgresqlClusterMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_week: {
-      value: cdktf.numberToHclTerraform(struct!.dayOfWeek),
+      value: cdktn.numberToHclTerraform(struct!.dayOfWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start_hour: {
-      value: cdktf.numberToHclTerraform(struct!.startHour),
+      value: cdktn.numberToHclTerraform(struct!.startHour),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start_minute: {
-      value: cdktf.numberToHclTerraform(struct!.startMinute),
+      value: cdktn.numberToHclTerraform(struct!.startMinute),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -258,14 +258,14 @@ export function cosmosdbPostgresqlClusterMaintenanceWindowToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbPostgresqlClusterMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+export class CosmosdbPostgresqlClusterMaintenanceWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -369,46 +369,46 @@ export interface CosmosdbPostgresqlClusterTimeouts {
   readonly update?: string;
 }
 
-export function cosmosdbPostgresqlClusterTimeoutsToTerraform(struct?: CosmosdbPostgresqlClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbPostgresqlClusterTimeoutsToTerraform(struct?: CosmosdbPostgresqlClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cosmosdbPostgresqlClusterTimeoutsToHclTerraform(struct?: CosmosdbPostgresqlClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbPostgresqlClusterTimeoutsToHclTerraform(struct?: CosmosdbPostgresqlClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -419,19 +419,19 @@ export function cosmosdbPostgresqlClusterTimeoutsToHclTerraform(struct?: Cosmosd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbPostgresqlClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CosmosdbPostgresqlClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CosmosdbPostgresqlClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CosmosdbPostgresqlClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -456,7 +456,7 @@ export class CosmosdbPostgresqlClusterTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CosmosdbPostgresqlClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CosmosdbPostgresqlClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -465,7 +465,7 @@ export class CosmosdbPostgresqlClusterTimeoutsOutputReference extends cdktf.Comp
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -547,7 +547,7 @@ export class CosmosdbPostgresqlClusterTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_postgresql_cluster azurerm_cosmosdb_postgresql_cluster}
 */
-export class CosmosdbPostgresqlCluster extends cdktf.TerraformResource {
+export class CosmosdbPostgresqlCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -558,14 +558,14 @@ export class CosmosdbPostgresqlCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CosmosdbPostgresqlCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CosmosdbPostgresqlCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CosmosdbPostgresqlCluster to import
   * @param importFromId The id of the existing CosmosdbPostgresqlCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_postgresql_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CosmosdbPostgresqlCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_postgresql_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_postgresql_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -659,11 +659,11 @@ export class CosmosdbPostgresqlCluster extends cdktf.TerraformResource {
   }
 
   // coordinator_public_ip_access_enabled - computed: false, optional: true, required: false
-  private _coordinatorPublicIpAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _coordinatorPublicIpAccessEnabled?: boolean | cdktn.IResolvable; 
   public get coordinatorPublicIpAccessEnabled() {
     return this.getBooleanAttribute('coordinator_public_ip_access_enabled');
   }
-  public set coordinatorPublicIpAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set coordinatorPublicIpAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._coordinatorPublicIpAccessEnabled = value;
   }
   public resetCoordinatorPublicIpAccessEnabled() {
@@ -728,11 +728,11 @@ export class CosmosdbPostgresqlCluster extends cdktf.TerraformResource {
   }
 
   // ha_enabled - computed: false, optional: true, required: false
-  private _haEnabled?: boolean | cdktf.IResolvable; 
+  private _haEnabled?: boolean | cdktn.IResolvable; 
   public get haEnabled() {
     return this.getBooleanAttribute('ha_enabled');
   }
-  public set haEnabled(value: boolean | cdktf.IResolvable) {
+  public set haEnabled(value: boolean | cdktn.IResolvable) {
     this._haEnabled = value;
   }
   public resetHaEnabled() {
@@ -799,11 +799,11 @@ export class CosmosdbPostgresqlCluster extends cdktf.TerraformResource {
   }
 
   // node_public_ip_access_enabled - computed: false, optional: true, required: false
-  private _nodePublicIpAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _nodePublicIpAccessEnabled?: boolean | cdktn.IResolvable; 
   public get nodePublicIpAccessEnabled() {
     return this.getBooleanAttribute('node_public_ip_access_enabled');
   }
-  public set nodePublicIpAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set nodePublicIpAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._nodePublicIpAccessEnabled = value;
   }
   public resetNodePublicIpAccessEnabled() {
@@ -914,11 +914,11 @@ export class CosmosdbPostgresqlCluster extends cdktf.TerraformResource {
   }
 
   // shards_on_coordinator_enabled - computed: true, optional: true, required: false
-  private _shardsOnCoordinatorEnabled?: boolean | cdktf.IResolvable; 
+  private _shardsOnCoordinatorEnabled?: boolean | cdktn.IResolvable; 
   public get shardsOnCoordinatorEnabled() {
     return this.getBooleanAttribute('shards_on_coordinator_enabled');
   }
-  public set shardsOnCoordinatorEnabled(value: boolean | cdktf.IResolvable) {
+  public set shardsOnCoordinatorEnabled(value: boolean | cdktn.IResolvable) {
     this._shardsOnCoordinatorEnabled = value;
   }
   public resetShardsOnCoordinatorEnabled() {
@@ -1031,29 +1031,29 @@ export class CosmosdbPostgresqlCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      administrator_login_password: cdktf.stringToTerraform(this._administratorLoginPassword),
-      citus_version: cdktf.stringToTerraform(this._citusVersion),
-      coordinator_public_ip_access_enabled: cdktf.booleanToTerraform(this._coordinatorPublicIpAccessEnabled),
-      coordinator_server_edition: cdktf.stringToTerraform(this._coordinatorServerEdition),
-      coordinator_storage_quota_in_mb: cdktf.numberToTerraform(this._coordinatorStorageQuotaInMb),
-      coordinator_vcore_count: cdktf.numberToTerraform(this._coordinatorVcoreCount),
-      ha_enabled: cdktf.booleanToTerraform(this._haEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      node_count: cdktf.numberToTerraform(this._nodeCount),
-      node_public_ip_access_enabled: cdktf.booleanToTerraform(this._nodePublicIpAccessEnabled),
-      node_server_edition: cdktf.stringToTerraform(this._nodeServerEdition),
-      node_storage_quota_in_mb: cdktf.numberToTerraform(this._nodeStorageQuotaInMb),
-      node_vcores: cdktf.numberToTerraform(this._nodeVcores),
-      point_in_time_in_utc: cdktf.stringToTerraform(this._pointInTimeInUtc),
-      preferred_primary_zone: cdktf.stringToTerraform(this._preferredPrimaryZone),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      shards_on_coordinator_enabled: cdktf.booleanToTerraform(this._shardsOnCoordinatorEnabled),
-      source_location: cdktf.stringToTerraform(this._sourceLocation),
-      source_resource_id: cdktf.stringToTerraform(this._sourceResourceId),
-      sql_version: cdktf.stringToTerraform(this._sqlVersion),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      administrator_login_password: cdktn.stringToTerraform(this._administratorLoginPassword),
+      citus_version: cdktn.stringToTerraform(this._citusVersion),
+      coordinator_public_ip_access_enabled: cdktn.booleanToTerraform(this._coordinatorPublicIpAccessEnabled),
+      coordinator_server_edition: cdktn.stringToTerraform(this._coordinatorServerEdition),
+      coordinator_storage_quota_in_mb: cdktn.numberToTerraform(this._coordinatorStorageQuotaInMb),
+      coordinator_vcore_count: cdktn.numberToTerraform(this._coordinatorVcoreCount),
+      ha_enabled: cdktn.booleanToTerraform(this._haEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      node_count: cdktn.numberToTerraform(this._nodeCount),
+      node_public_ip_access_enabled: cdktn.booleanToTerraform(this._nodePublicIpAccessEnabled),
+      node_server_edition: cdktn.stringToTerraform(this._nodeServerEdition),
+      node_storage_quota_in_mb: cdktn.numberToTerraform(this._nodeStorageQuotaInMb),
+      node_vcores: cdktn.numberToTerraform(this._nodeVcores),
+      point_in_time_in_utc: cdktn.stringToTerraform(this._pointInTimeInUtc),
+      preferred_primary_zone: cdktn.stringToTerraform(this._preferredPrimaryZone),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      shards_on_coordinator_enabled: cdktn.booleanToTerraform(this._shardsOnCoordinatorEnabled),
+      source_location: cdktn.stringToTerraform(this._sourceLocation),
+      source_resource_id: cdktn.stringToTerraform(this._sourceResourceId),
+      sql_version: cdktn.stringToTerraform(this._sqlVersion),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       maintenance_window: cosmosdbPostgresqlClusterMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
       timeouts: cosmosdbPostgresqlClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1062,139 +1062,139 @@ export class CosmosdbPostgresqlCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       administrator_login_password: {
-        value: cdktf.stringToHclTerraform(this._administratorLoginPassword),
+        value: cdktn.stringToHclTerraform(this._administratorLoginPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       citus_version: {
-        value: cdktf.stringToHclTerraform(this._citusVersion),
+        value: cdktn.stringToHclTerraform(this._citusVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       coordinator_public_ip_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._coordinatorPublicIpAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._coordinatorPublicIpAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       coordinator_server_edition: {
-        value: cdktf.stringToHclTerraform(this._coordinatorServerEdition),
+        value: cdktn.stringToHclTerraform(this._coordinatorServerEdition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       coordinator_storage_quota_in_mb: {
-        value: cdktf.numberToHclTerraform(this._coordinatorStorageQuotaInMb),
+        value: cdktn.numberToHclTerraform(this._coordinatorStorageQuotaInMb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       coordinator_vcore_count: {
-        value: cdktf.numberToHclTerraform(this._coordinatorVcoreCount),
+        value: cdktn.numberToHclTerraform(this._coordinatorVcoreCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       ha_enabled: {
-        value: cdktf.booleanToHclTerraform(this._haEnabled),
+        value: cdktn.booleanToHclTerraform(this._haEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       node_count: {
-        value: cdktf.numberToHclTerraform(this._nodeCount),
+        value: cdktn.numberToHclTerraform(this._nodeCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       node_public_ip_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._nodePublicIpAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._nodePublicIpAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       node_server_edition: {
-        value: cdktf.stringToHclTerraform(this._nodeServerEdition),
+        value: cdktn.stringToHclTerraform(this._nodeServerEdition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       node_storage_quota_in_mb: {
-        value: cdktf.numberToHclTerraform(this._nodeStorageQuotaInMb),
+        value: cdktn.numberToHclTerraform(this._nodeStorageQuotaInMb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       node_vcores: {
-        value: cdktf.numberToHclTerraform(this._nodeVcores),
+        value: cdktn.numberToHclTerraform(this._nodeVcores),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       point_in_time_in_utc: {
-        value: cdktf.stringToHclTerraform(this._pointInTimeInUtc),
+        value: cdktn.stringToHclTerraform(this._pointInTimeInUtc),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_primary_zone: {
-        value: cdktf.stringToHclTerraform(this._preferredPrimaryZone),
+        value: cdktn.stringToHclTerraform(this._preferredPrimaryZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       shards_on_coordinator_enabled: {
-        value: cdktf.booleanToHclTerraform(this._shardsOnCoordinatorEnabled),
+        value: cdktn.booleanToHclTerraform(this._shardsOnCoordinatorEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       source_location: {
-        value: cdktf.stringToHclTerraform(this._sourceLocation),
+        value: cdktn.stringToHclTerraform(this._sourceLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_resource_id: {
-        value: cdktf.stringToHclTerraform(this._sourceResourceId),
+        value: cdktn.stringToHclTerraform(this._sourceResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql_version: {
-        value: cdktf.stringToHclTerraform(this._sqlVersion),
+        value: cdktn.stringToHclTerraform(this._sqlVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

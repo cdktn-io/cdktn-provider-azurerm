@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DevCenterCatalogConfig extends cdktf.TerraformMetaArguments {
+export interface DevCenterCatalogConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dev_center_catalog#dev_center_id DevCenterCatalog#dev_center_id}
   */
@@ -70,45 +70,45 @@ export interface DevCenterCatalogCatalogAdogit {
 }
 
 export function devCenterCatalogCatalogAdogitToTerraform(struct?: DevCenterCatalogCatalogAdogitOutputReference | DevCenterCatalogCatalogAdogit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    branch: cdktf.stringToTerraform(struct!.branch),
-    key_vault_key_url: cdktf.stringToTerraform(struct!.keyVaultKeyUrl),
-    path: cdktf.stringToTerraform(struct!.path),
-    uri: cdktf.stringToTerraform(struct!.uri),
+    branch: cdktn.stringToTerraform(struct!.branch),
+    key_vault_key_url: cdktn.stringToTerraform(struct!.keyVaultKeyUrl),
+    path: cdktn.stringToTerraform(struct!.path),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function devCenterCatalogCatalogAdogitToHclTerraform(struct?: DevCenterCatalogCatalogAdogitOutputReference | DevCenterCatalogCatalogAdogit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     branch: {
-      value: cdktf.stringToHclTerraform(struct!.branch),
+      value: cdktn.stringToHclTerraform(struct!.branch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_key_url: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultKeyUrl),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultKeyUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,14 +119,14 @@ export function devCenterCatalogCatalogAdogitToHclTerraform(struct?: DevCenterCa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevCenterCatalogCatalogAdogitOutputReference extends cdktf.ComplexObject {
+export class DevCenterCatalogCatalogAdogitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -241,45 +241,45 @@ export interface DevCenterCatalogCatalogGithub {
 }
 
 export function devCenterCatalogCatalogGithubToTerraform(struct?: DevCenterCatalogCatalogGithubOutputReference | DevCenterCatalogCatalogGithub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    branch: cdktf.stringToTerraform(struct!.branch),
-    key_vault_key_url: cdktf.stringToTerraform(struct!.keyVaultKeyUrl),
-    path: cdktf.stringToTerraform(struct!.path),
-    uri: cdktf.stringToTerraform(struct!.uri),
+    branch: cdktn.stringToTerraform(struct!.branch),
+    key_vault_key_url: cdktn.stringToTerraform(struct!.keyVaultKeyUrl),
+    path: cdktn.stringToTerraform(struct!.path),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function devCenterCatalogCatalogGithubToHclTerraform(struct?: DevCenterCatalogCatalogGithubOutputReference | DevCenterCatalogCatalogGithub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     branch: {
-      value: cdktf.stringToHclTerraform(struct!.branch),
+      value: cdktn.stringToHclTerraform(struct!.branch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_key_url: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultKeyUrl),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultKeyUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -290,14 +290,14 @@ export function devCenterCatalogCatalogGithubToHclTerraform(struct?: DevCenterCa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevCenterCatalogCatalogGithubOutputReference extends cdktf.ComplexObject {
+export class DevCenterCatalogCatalogGithubOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -411,46 +411,46 @@ export interface DevCenterCatalogTimeouts {
   readonly update?: string;
 }
 
-export function devCenterCatalogTimeoutsToTerraform(struct?: DevCenterCatalogTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devCenterCatalogTimeoutsToTerraform(struct?: DevCenterCatalogTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function devCenterCatalogTimeoutsToHclTerraform(struct?: DevCenterCatalogTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devCenterCatalogTimeoutsToHclTerraform(struct?: DevCenterCatalogTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -461,19 +461,19 @@ export function devCenterCatalogTimeoutsToHclTerraform(struct?: DevCenterCatalog
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevCenterCatalogTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DevCenterCatalogTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DevCenterCatalogTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DevCenterCatalogTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -498,7 +498,7 @@ export class DevCenterCatalogTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DevCenterCatalogTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DevCenterCatalogTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -507,7 +507,7 @@ export class DevCenterCatalogTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -589,7 +589,7 @@ export class DevCenterCatalogTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dev_center_catalog azurerm_dev_center_catalog}
 */
-export class DevCenterCatalog extends cdktf.TerraformResource {
+export class DevCenterCatalog extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -600,14 +600,14 @@ export class DevCenterCatalog extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DevCenterCatalog resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DevCenterCatalog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevCenterCatalog to import
   * @param importFromId The id of the existing DevCenterCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dev_center_catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevCenterCatalog to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dev_center_catalog", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dev_center_catalog", importId: importFromId, provider });
       }
 
   // ===========
@@ -759,10 +759,10 @@ export class DevCenterCatalog extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dev_center_id: cdktf.stringToTerraform(this._devCenterId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      dev_center_id: cdktn.stringToTerraform(this._devCenterId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       catalog_adogit: devCenterCatalogCatalogAdogitToTerraform(this._catalogAdogit.internalValue),
       catalog_github: devCenterCatalogCatalogGithubToTerraform(this._catalogGithub.internalValue),
       timeouts: devCenterCatalogTimeoutsToTerraform(this._timeouts.internalValue),
@@ -772,25 +772,25 @@ export class DevCenterCatalog extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       dev_center_id: {
-        value: cdktf.stringToHclTerraform(this._devCenterId),
+        value: cdktn.stringToHclTerraform(this._devCenterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

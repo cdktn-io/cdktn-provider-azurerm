@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpnGatewayConfig extends cdktf.TerraformMetaArguments {
+export interface VpnGatewayConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/vpn_gateway#bgp_route_translation_for_nat_enabled VpnGateway#bgp_route_translation_for_nat_enabled}
   */
-  readonly bgpRouteTranslationForNatEnabled?: boolean | cdktf.IResolvable;
+  readonly bgpRouteTranslationForNatEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/vpn_gateway#id VpnGateway#id}
   *
@@ -68,8 +68,8 @@ export interface VpnGatewayIpConfiguration {
 }
 
 export function vpnGatewayIpConfigurationToTerraform(struct?: VpnGatewayIpConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -78,8 +78,8 @@ export function vpnGatewayIpConfigurationToTerraform(struct?: VpnGatewayIpConfig
 
 
 export function vpnGatewayIpConfigurationToHclTerraform(struct?: VpnGatewayIpConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -87,7 +87,7 @@ export function vpnGatewayIpConfigurationToHclTerraform(struct?: VpnGatewayIpCon
   return attrs;
 }
 
-export class VpnGatewayIpConfigurationOutputReference extends cdktf.ComplexObject {
+export class VpnGatewayIpConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -96,7 +96,7 @@ export class VpnGatewayIpConfigurationOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -131,14 +131,14 @@ export class VpnGatewayIpConfigurationOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class VpnGatewayIpConfigurationList extends cdktf.ComplexList {
+export class VpnGatewayIpConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -157,24 +157,24 @@ export interface VpnGatewayBgpSettingsInstance0BgpPeeringAddress {
 }
 
 export function vpnGatewayBgpSettingsInstance0BgpPeeringAddressToTerraform(struct?: VpnGatewayBgpSettingsInstance0BgpPeeringAddressOutputReference | VpnGatewayBgpSettingsInstance0BgpPeeringAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.customIps),
+    custom_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.customIps),
   }
 }
 
 
 export function vpnGatewayBgpSettingsInstance0BgpPeeringAddressToHclTerraform(struct?: VpnGatewayBgpSettingsInstance0BgpPeeringAddressOutputReference | VpnGatewayBgpSettingsInstance0BgpPeeringAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_ips: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.customIps),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.customIps),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -185,14 +185,14 @@ export function vpnGatewayBgpSettingsInstance0BgpPeeringAddressToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpnGatewayBgpSettingsInstance0BgpPeeringAddressOutputReference extends cdktf.ComplexObject {
+export class VpnGatewayBgpSettingsInstance0BgpPeeringAddressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -220,7 +220,7 @@ export class VpnGatewayBgpSettingsInstance0BgpPeeringAddressOutputReference exte
   // custom_ips - computed: false, optional: false, required: true
   private _customIps?: string[]; 
   public get customIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('custom_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('custom_ips'));
   }
   public set customIps(value: string[]) {
     this._customIps = value;
@@ -232,7 +232,7 @@ export class VpnGatewayBgpSettingsInstance0BgpPeeringAddressOutputReference exte
 
   // default_ips - computed: true, optional: false, required: false
   public get defaultIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('default_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('default_ips'));
   }
 
   // ip_configuration_id - computed: true, optional: false, required: false
@@ -242,7 +242,7 @@ export class VpnGatewayBgpSettingsInstance0BgpPeeringAddressOutputReference exte
 
   // tunnel_ips - computed: true, optional: false, required: false
   public get tunnelIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('tunnel_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('tunnel_ips'));
   }
 }
 export interface VpnGatewayBgpSettingsInstance1BgpPeeringAddress {
@@ -253,24 +253,24 @@ export interface VpnGatewayBgpSettingsInstance1BgpPeeringAddress {
 }
 
 export function vpnGatewayBgpSettingsInstance1BgpPeeringAddressToTerraform(struct?: VpnGatewayBgpSettingsInstance1BgpPeeringAddressOutputReference | VpnGatewayBgpSettingsInstance1BgpPeeringAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.customIps),
+    custom_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.customIps),
   }
 }
 
 
 export function vpnGatewayBgpSettingsInstance1BgpPeeringAddressToHclTerraform(struct?: VpnGatewayBgpSettingsInstance1BgpPeeringAddressOutputReference | VpnGatewayBgpSettingsInstance1BgpPeeringAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_ips: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.customIps),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.customIps),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -281,14 +281,14 @@ export function vpnGatewayBgpSettingsInstance1BgpPeeringAddressToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpnGatewayBgpSettingsInstance1BgpPeeringAddressOutputReference extends cdktf.ComplexObject {
+export class VpnGatewayBgpSettingsInstance1BgpPeeringAddressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -316,7 +316,7 @@ export class VpnGatewayBgpSettingsInstance1BgpPeeringAddressOutputReference exte
   // custom_ips - computed: false, optional: false, required: true
   private _customIps?: string[]; 
   public get customIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('custom_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('custom_ips'));
   }
   public set customIps(value: string[]) {
     this._customIps = value;
@@ -328,7 +328,7 @@ export class VpnGatewayBgpSettingsInstance1BgpPeeringAddressOutputReference exte
 
   // default_ips - computed: true, optional: false, required: false
   public get defaultIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('default_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('default_ips'));
   }
 
   // ip_configuration_id - computed: true, optional: false, required: false
@@ -338,7 +338,7 @@ export class VpnGatewayBgpSettingsInstance1BgpPeeringAddressOutputReference exte
 
   // tunnel_ips - computed: true, optional: false, required: false
   public get tunnelIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('tunnel_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('tunnel_ips'));
   }
 }
 export interface VpnGatewayBgpSettings {
@@ -365,13 +365,13 @@ export interface VpnGatewayBgpSettings {
 }
 
 export function vpnGatewayBgpSettingsToTerraform(struct?: VpnGatewayBgpSettingsOutputReference | VpnGatewayBgpSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    asn: cdktf.numberToTerraform(struct!.asn),
-    peer_weight: cdktf.numberToTerraform(struct!.peerWeight),
+    asn: cdktn.numberToTerraform(struct!.asn),
+    peer_weight: cdktn.numberToTerraform(struct!.peerWeight),
     instance_0_bgp_peering_address: vpnGatewayBgpSettingsInstance0BgpPeeringAddressToTerraform(struct!.instance0BgpPeeringAddress),
     instance_1_bgp_peering_address: vpnGatewayBgpSettingsInstance1BgpPeeringAddressToTerraform(struct!.instance1BgpPeeringAddress),
   }
@@ -379,19 +379,19 @@ export function vpnGatewayBgpSettingsToTerraform(struct?: VpnGatewayBgpSettingsO
 
 
 export function vpnGatewayBgpSettingsToHclTerraform(struct?: VpnGatewayBgpSettingsOutputReference | VpnGatewayBgpSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     asn: {
-      value: cdktf.numberToHclTerraform(struct!.asn),
+      value: cdktn.numberToHclTerraform(struct!.asn),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     peer_weight: {
-      value: cdktf.numberToHclTerraform(struct!.peerWeight),
+      value: cdktn.numberToHclTerraform(struct!.peerWeight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -414,14 +414,14 @@ export function vpnGatewayBgpSettingsToHclTerraform(struct?: VpnGatewayBgpSettin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpnGatewayBgpSettingsOutputReference extends cdktf.ComplexObject {
+export class VpnGatewayBgpSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -546,46 +546,46 @@ export interface VpnGatewayTimeouts {
   readonly update?: string;
 }
 
-export function vpnGatewayTimeoutsToTerraform(struct?: VpnGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpnGatewayTimeoutsToTerraform(struct?: VpnGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function vpnGatewayTimeoutsToHclTerraform(struct?: VpnGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpnGatewayTimeoutsToHclTerraform(struct?: VpnGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -596,19 +596,19 @@ export function vpnGatewayTimeoutsToHclTerraform(struct?: VpnGatewayTimeouts | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpnGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VpnGatewayTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VpnGatewayTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VpnGatewayTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -633,7 +633,7 @@ export class VpnGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpnGatewayTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpnGatewayTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -642,7 +642,7 @@ export class VpnGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -724,7 +724,7 @@ export class VpnGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/vpn_gateway azurerm_vpn_gateway}
 */
-export class VpnGateway extends cdktf.TerraformResource {
+export class VpnGateway extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -735,14 +735,14 @@ export class VpnGateway extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpnGateway resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpnGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpnGateway to import
   * @param importFromId The id of the existing VpnGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/vpn_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpnGateway to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_vpn_gateway", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_vpn_gateway", importId: importFromId, provider });
       }
 
   // ===========
@@ -790,11 +790,11 @@ export class VpnGateway extends cdktf.TerraformResource {
   // ==========
 
   // bgp_route_translation_for_nat_enabled - computed: false, optional: true, required: false
-  private _bgpRouteTranslationForNatEnabled?: boolean | cdktf.IResolvable; 
+  private _bgpRouteTranslationForNatEnabled?: boolean | cdktn.IResolvable; 
   public get bgpRouteTranslationForNatEnabled() {
     return this.getBooleanAttribute('bgp_route_translation_for_nat_enabled');
   }
-  public set bgpRouteTranslationForNatEnabled(value: boolean | cdktf.IResolvable) {
+  public set bgpRouteTranslationForNatEnabled(value: boolean | cdktn.IResolvable) {
     this._bgpRouteTranslationForNatEnabled = value;
   }
   public resetBgpRouteTranslationForNatEnabled() {
@@ -965,15 +965,15 @@ export class VpnGateway extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bgp_route_translation_for_nat_enabled: cdktf.booleanToTerraform(this._bgpRouteTranslationForNatEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      routing_preference: cdktf.stringToTerraform(this._routingPreference),
-      scale_unit: cdktf.numberToTerraform(this._scaleUnit),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      virtual_hub_id: cdktf.stringToTerraform(this._virtualHubId),
+      bgp_route_translation_for_nat_enabled: cdktn.booleanToTerraform(this._bgpRouteTranslationForNatEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      routing_preference: cdktn.stringToTerraform(this._routingPreference),
+      scale_unit: cdktn.numberToTerraform(this._scaleUnit),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      virtual_hub_id: cdktn.stringToTerraform(this._virtualHubId),
       bgp_settings: vpnGatewayBgpSettingsToTerraform(this._bgpSettings.internalValue),
       timeouts: vpnGatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -982,55 +982,55 @@ export class VpnGateway extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bgp_route_translation_for_nat_enabled: {
-        value: cdktf.booleanToHclTerraform(this._bgpRouteTranslationForNatEnabled),
+        value: cdktn.booleanToHclTerraform(this._bgpRouteTranslationForNatEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing_preference: {
-        value: cdktf.stringToHclTerraform(this._routingPreference),
+        value: cdktn.stringToHclTerraform(this._routingPreference),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scale_unit: {
-        value: cdktf.numberToHclTerraform(this._scaleUnit),
+        value: cdktn.numberToHclTerraform(this._scaleUnit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       virtual_hub_id: {
-        value: cdktf.stringToHclTerraform(this._virtualHubId),
+        value: cdktn.stringToHclTerraform(this._virtualHubId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpringCloudCustomizedAcceleratorConfig extends cdktf.TerraformMetaArguments {
+export interface SpringCloudCustomizedAcceleratorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_customized_accelerator#accelerator_tags SpringCloudCustomizedAccelerator#accelerator_tags}
   */
@@ -72,31 +72,31 @@ export interface SpringCloudCustomizedAcceleratorGitRepositoryBasicAuth {
 }
 
 export function springCloudCustomizedAcceleratorGitRepositoryBasicAuthToTerraform(struct?: SpringCloudCustomizedAcceleratorGitRepositoryBasicAuthOutputReference | SpringCloudCustomizedAcceleratorGitRepositoryBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function springCloudCustomizedAcceleratorGitRepositoryBasicAuthToHclTerraform(struct?: SpringCloudCustomizedAcceleratorGitRepositoryBasicAuthOutputReference | SpringCloudCustomizedAcceleratorGitRepositoryBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -107,14 +107,14 @@ export function springCloudCustomizedAcceleratorGitRepositoryBasicAuthToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudCustomizedAcceleratorGitRepositoryBasicAuthOutputReference extends cdktf.ComplexObject {
+export class SpringCloudCustomizedAcceleratorGitRepositoryBasicAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -187,38 +187,38 @@ export interface SpringCloudCustomizedAcceleratorGitRepositorySshAuth {
 }
 
 export function springCloudCustomizedAcceleratorGitRepositorySshAuthToTerraform(struct?: SpringCloudCustomizedAcceleratorGitRepositorySshAuthOutputReference | SpringCloudCustomizedAcceleratorGitRepositorySshAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_key: cdktf.stringToTerraform(struct!.hostKey),
-    host_key_algorithm: cdktf.stringToTerraform(struct!.hostKeyAlgorithm),
-    private_key: cdktf.stringToTerraform(struct!.privateKey),
+    host_key: cdktn.stringToTerraform(struct!.hostKey),
+    host_key_algorithm: cdktn.stringToTerraform(struct!.hostKeyAlgorithm),
+    private_key: cdktn.stringToTerraform(struct!.privateKey),
   }
 }
 
 
 export function springCloudCustomizedAcceleratorGitRepositorySshAuthToHclTerraform(struct?: SpringCloudCustomizedAcceleratorGitRepositorySshAuthOutputReference | SpringCloudCustomizedAcceleratorGitRepositorySshAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_key: {
-      value: cdktf.stringToHclTerraform(struct!.hostKey),
+      value: cdktn.stringToHclTerraform(struct!.hostKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_key_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.hostKeyAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.hostKeyAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_key: {
-      value: cdktf.stringToHclTerraform(struct!.privateKey),
+      value: cdktn.stringToHclTerraform(struct!.privateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -229,14 +229,14 @@ export function springCloudCustomizedAcceleratorGitRepositorySshAuthToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudCustomizedAcceleratorGitRepositorySshAuthOutputReference extends cdktf.ComplexObject {
+export class SpringCloudCustomizedAcceleratorGitRepositorySshAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -362,18 +362,18 @@ export interface SpringCloudCustomizedAcceleratorGitRepository {
 }
 
 export function springCloudCustomizedAcceleratorGitRepositoryToTerraform(struct?: SpringCloudCustomizedAcceleratorGitRepositoryOutputReference | SpringCloudCustomizedAcceleratorGitRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    branch: cdktf.stringToTerraform(struct!.branch),
-    ca_certificate_id: cdktf.stringToTerraform(struct!.caCertificateId),
-    commit: cdktf.stringToTerraform(struct!.commit),
-    git_tag: cdktf.stringToTerraform(struct!.gitTag),
-    interval_in_seconds: cdktf.numberToTerraform(struct!.intervalInSeconds),
-    path: cdktf.stringToTerraform(struct!.path),
-    url: cdktf.stringToTerraform(struct!.url),
+    branch: cdktn.stringToTerraform(struct!.branch),
+    ca_certificate_id: cdktn.stringToTerraform(struct!.caCertificateId),
+    commit: cdktn.stringToTerraform(struct!.commit),
+    git_tag: cdktn.stringToTerraform(struct!.gitTag),
+    interval_in_seconds: cdktn.numberToTerraform(struct!.intervalInSeconds),
+    path: cdktn.stringToTerraform(struct!.path),
+    url: cdktn.stringToTerraform(struct!.url),
     basic_auth: springCloudCustomizedAcceleratorGitRepositoryBasicAuthToTerraform(struct!.basicAuth),
     ssh_auth: springCloudCustomizedAcceleratorGitRepositorySshAuthToTerraform(struct!.sshAuth),
   }
@@ -381,49 +381,49 @@ export function springCloudCustomizedAcceleratorGitRepositoryToTerraform(struct?
 
 
 export function springCloudCustomizedAcceleratorGitRepositoryToHclTerraform(struct?: SpringCloudCustomizedAcceleratorGitRepositoryOutputReference | SpringCloudCustomizedAcceleratorGitRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     branch: {
-      value: cdktf.stringToHclTerraform(struct!.branch),
+      value: cdktn.stringToHclTerraform(struct!.branch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ca_certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.caCertificateId),
+      value: cdktn.stringToHclTerraform(struct!.caCertificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     commit: {
-      value: cdktf.stringToHclTerraform(struct!.commit),
+      value: cdktn.stringToHclTerraform(struct!.commit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     git_tag: {
-      value: cdktf.stringToHclTerraform(struct!.gitTag),
+      value: cdktn.stringToHclTerraform(struct!.gitTag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.intervalInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.intervalInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -446,14 +446,14 @@ export function springCloudCustomizedAcceleratorGitRepositoryToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudCustomizedAcceleratorGitRepositoryOutputReference extends cdktf.ComplexObject {
+export class SpringCloudCustomizedAcceleratorGitRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -686,46 +686,46 @@ export interface SpringCloudCustomizedAcceleratorTimeouts {
   readonly update?: string;
 }
 
-export function springCloudCustomizedAcceleratorTimeoutsToTerraform(struct?: SpringCloudCustomizedAcceleratorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudCustomizedAcceleratorTimeoutsToTerraform(struct?: SpringCloudCustomizedAcceleratorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function springCloudCustomizedAcceleratorTimeoutsToHclTerraform(struct?: SpringCloudCustomizedAcceleratorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudCustomizedAcceleratorTimeoutsToHclTerraform(struct?: SpringCloudCustomizedAcceleratorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -736,19 +736,19 @@ export function springCloudCustomizedAcceleratorTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudCustomizedAcceleratorTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SpringCloudCustomizedAcceleratorTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpringCloudCustomizedAcceleratorTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SpringCloudCustomizedAcceleratorTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -773,7 +773,7 @@ export class SpringCloudCustomizedAcceleratorTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpringCloudCustomizedAcceleratorTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpringCloudCustomizedAcceleratorTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -782,7 +782,7 @@ export class SpringCloudCustomizedAcceleratorTimeoutsOutputReference extends cdk
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -864,7 +864,7 @@ export class SpringCloudCustomizedAcceleratorTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_customized_accelerator azurerm_spring_cloud_customized_accelerator}
 */
-export class SpringCloudCustomizedAccelerator extends cdktf.TerraformResource {
+export class SpringCloudCustomizedAccelerator extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -875,14 +875,14 @@ export class SpringCloudCustomizedAccelerator extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpringCloudCustomizedAccelerator resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpringCloudCustomizedAccelerator resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpringCloudCustomizedAccelerator to import
   * @param importFromId The id of the existing SpringCloudCustomizedAccelerator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_customized_accelerator#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpringCloudCustomizedAccelerator to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_customized_accelerator", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_customized_accelerator", importId: importFromId, provider });
       }
 
   // ===========
@@ -1085,14 +1085,14 @@ export class SpringCloudCustomizedAccelerator extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      accelerator_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._acceleratorTags),
-      accelerator_type: cdktf.stringToTerraform(this._acceleratorType),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      icon_url: cdktf.stringToTerraform(this._iconUrl),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      spring_cloud_accelerator_id: cdktf.stringToTerraform(this._springCloudAcceleratorId),
+      accelerator_tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._acceleratorTags),
+      accelerator_type: cdktn.stringToTerraform(this._acceleratorType),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      icon_url: cdktn.stringToTerraform(this._iconUrl),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      spring_cloud_accelerator_id: cdktn.stringToTerraform(this._springCloudAcceleratorId),
       git_repository: springCloudCustomizedAcceleratorGitRepositoryToTerraform(this._gitRepository.internalValue),
       timeouts: springCloudCustomizedAcceleratorTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1101,49 +1101,49 @@ export class SpringCloudCustomizedAccelerator extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       accelerator_tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._acceleratorTags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._acceleratorTags),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       accelerator_type: {
-        value: cdktf.stringToHclTerraform(this._acceleratorType),
+        value: cdktn.stringToHclTerraform(this._acceleratorType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       icon_url: {
-        value: cdktf.stringToHclTerraform(this._iconUrl),
+        value: cdktn.stringToHclTerraform(this._iconUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       spring_cloud_accelerator_id: {
-        value: cdktf.stringToHclTerraform(this._springCloudAcceleratorId),
+        value: cdktn.stringToHclTerraform(this._springCloudAcceleratorId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

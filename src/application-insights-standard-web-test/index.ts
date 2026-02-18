@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApplicationInsightsStandardWebTestConfig extends cdktf.TerraformMetaArguments {
+export interface ApplicationInsightsStandardWebTestConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_standard_web_test#application_insights_id ApplicationInsightsStandardWebTest#application_insights_id}
   */
@@ -23,7 +23,7 @@ export interface ApplicationInsightsStandardWebTestConfig extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_standard_web_test#enabled ApplicationInsightsStandardWebTest#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_standard_web_test#frequency ApplicationInsightsStandardWebTest#frequency}
   */
@@ -54,7 +54,7 @@ export interface ApplicationInsightsStandardWebTestConfig extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_standard_web_test#retry_enabled ApplicationInsightsStandardWebTest#retry_enabled}
   */
-  readonly retryEnabled?: boolean | cdktf.IResolvable;
+  readonly retryEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_standard_web_test#tags ApplicationInsightsStandardWebTest#tags}
   */
@@ -93,32 +93,32 @@ export interface ApplicationInsightsStandardWebTestRequestHeader {
   readonly value: string;
 }
 
-export function applicationInsightsStandardWebTestRequestHeaderToTerraform(struct?: ApplicationInsightsStandardWebTestRequestHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationInsightsStandardWebTestRequestHeaderToTerraform(struct?: ApplicationInsightsStandardWebTestRequestHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function applicationInsightsStandardWebTestRequestHeaderToHclTerraform(struct?: ApplicationInsightsStandardWebTestRequestHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationInsightsStandardWebTestRequestHeaderToHclTerraform(struct?: ApplicationInsightsStandardWebTestRequestHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -129,9 +129,9 @@ export function applicationInsightsStandardWebTestRequestHeaderToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationInsightsStandardWebTestRequestHeaderOutputReference extends cdktf.ComplexObject {
+export class ApplicationInsightsStandardWebTestRequestHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -139,11 +139,11 @@ export class ApplicationInsightsStandardWebTestRequestHeaderOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationInsightsStandardWebTestRequestHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationInsightsStandardWebTestRequestHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -160,14 +160,14 @@ export class ApplicationInsightsStandardWebTestRequestHeaderOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationInsightsStandardWebTestRequestHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationInsightsStandardWebTestRequestHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -206,15 +206,15 @@ export class ApplicationInsightsStandardWebTestRequestHeaderOutputReference exte
   }
 }
 
-export class ApplicationInsightsStandardWebTestRequestHeaderList extends cdktf.ComplexList {
-  public internalValue? : ApplicationInsightsStandardWebTestRequestHeader[] | cdktf.IResolvable
+export class ApplicationInsightsStandardWebTestRequestHeaderList extends cdktn.ComplexList {
+  public internalValue? : ApplicationInsightsStandardWebTestRequestHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -233,7 +233,7 @@ export interface ApplicationInsightsStandardWebTestRequest {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_standard_web_test#follow_redirects_enabled ApplicationInsightsStandardWebTest#follow_redirects_enabled}
   */
-  readonly followRedirectsEnabled?: boolean | cdktf.IResolvable;
+  readonly followRedirectsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_standard_web_test#http_verb ApplicationInsightsStandardWebTest#http_verb}
   */
@@ -241,7 +241,7 @@ export interface ApplicationInsightsStandardWebTestRequest {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_standard_web_test#parse_dependent_requests_enabled ApplicationInsightsStandardWebTest#parse_dependent_requests_enabled}
   */
-  readonly parseDependentRequestsEnabled?: boolean | cdktf.IResolvable;
+  readonly parseDependentRequestsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_standard_web_test#url ApplicationInsightsStandardWebTest#url}
   */
@@ -251,63 +251,63 @@ export interface ApplicationInsightsStandardWebTestRequest {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_standard_web_test#header ApplicationInsightsStandardWebTest#header}
   */
-  readonly header?: ApplicationInsightsStandardWebTestRequestHeader[] | cdktf.IResolvable;
+  readonly header?: ApplicationInsightsStandardWebTestRequestHeader[] | cdktn.IResolvable;
 }
 
 export function applicationInsightsStandardWebTestRequestToTerraform(struct?: ApplicationInsightsStandardWebTestRequestOutputReference | ApplicationInsightsStandardWebTestRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    body: cdktf.stringToTerraform(struct!.body),
-    follow_redirects_enabled: cdktf.booleanToTerraform(struct!.followRedirectsEnabled),
-    http_verb: cdktf.stringToTerraform(struct!.httpVerb),
-    parse_dependent_requests_enabled: cdktf.booleanToTerraform(struct!.parseDependentRequestsEnabled),
-    url: cdktf.stringToTerraform(struct!.url),
-    header: cdktf.listMapper(applicationInsightsStandardWebTestRequestHeaderToTerraform, true)(struct!.header),
+    body: cdktn.stringToTerraform(struct!.body),
+    follow_redirects_enabled: cdktn.booleanToTerraform(struct!.followRedirectsEnabled),
+    http_verb: cdktn.stringToTerraform(struct!.httpVerb),
+    parse_dependent_requests_enabled: cdktn.booleanToTerraform(struct!.parseDependentRequestsEnabled),
+    url: cdktn.stringToTerraform(struct!.url),
+    header: cdktn.listMapper(applicationInsightsStandardWebTestRequestHeaderToTerraform, true)(struct!.header),
   }
 }
 
 
 export function applicationInsightsStandardWebTestRequestToHclTerraform(struct?: ApplicationInsightsStandardWebTestRequestOutputReference | ApplicationInsightsStandardWebTestRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     body: {
-      value: cdktf.stringToHclTerraform(struct!.body),
+      value: cdktn.stringToHclTerraform(struct!.body),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     follow_redirects_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.followRedirectsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.followRedirectsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     http_verb: {
-      value: cdktf.stringToHclTerraform(struct!.httpVerb),
+      value: cdktn.stringToHclTerraform(struct!.httpVerb),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parse_dependent_requests_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.parseDependentRequestsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.parseDependentRequestsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header: {
-      value: cdktf.listMapperHcl(applicationInsightsStandardWebTestRequestHeaderToHclTerraform, true)(struct!.header),
+      value: cdktn.listMapperHcl(applicationInsightsStandardWebTestRequestHeaderToHclTerraform, true)(struct!.header),
       isBlock: true,
       type: "list",
       storageClassType: "ApplicationInsightsStandardWebTestRequestHeaderList",
@@ -318,14 +318,14 @@ export function applicationInsightsStandardWebTestRequestToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationInsightsStandardWebTestRequestOutputReference extends cdktf.ComplexObject {
+export class ApplicationInsightsStandardWebTestRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -397,11 +397,11 @@ export class ApplicationInsightsStandardWebTestRequestOutputReference extends cd
   }
 
   // follow_redirects_enabled - computed: false, optional: true, required: false
-  private _followRedirectsEnabled?: boolean | cdktf.IResolvable; 
+  private _followRedirectsEnabled?: boolean | cdktn.IResolvable; 
   public get followRedirectsEnabled() {
     return this.getBooleanAttribute('follow_redirects_enabled');
   }
-  public set followRedirectsEnabled(value: boolean | cdktf.IResolvable) {
+  public set followRedirectsEnabled(value: boolean | cdktn.IResolvable) {
     this._followRedirectsEnabled = value;
   }
   public resetFollowRedirectsEnabled() {
@@ -429,11 +429,11 @@ export class ApplicationInsightsStandardWebTestRequestOutputReference extends cd
   }
 
   // parse_dependent_requests_enabled - computed: false, optional: true, required: false
-  private _parseDependentRequestsEnabled?: boolean | cdktf.IResolvable; 
+  private _parseDependentRequestsEnabled?: boolean | cdktn.IResolvable; 
   public get parseDependentRequestsEnabled() {
     return this.getBooleanAttribute('parse_dependent_requests_enabled');
   }
-  public set parseDependentRequestsEnabled(value: boolean | cdktf.IResolvable) {
+  public set parseDependentRequestsEnabled(value: boolean | cdktn.IResolvable) {
     this._parseDependentRequestsEnabled = value;
   }
   public resetParseDependentRequestsEnabled() {
@@ -462,7 +462,7 @@ export class ApplicationInsightsStandardWebTestRequestOutputReference extends cd
   public get header() {
     return this._header;
   }
-  public putHeader(value: ApplicationInsightsStandardWebTestRequestHeader[] | cdktf.IResolvable) {
+  public putHeader(value: ApplicationInsightsStandardWebTestRequestHeader[] | cdktn.IResolvable) {
     this._header.internalValue = value;
   }
   public resetHeader() {
@@ -492,46 +492,46 @@ export interface ApplicationInsightsStandardWebTestTimeouts {
   readonly update?: string;
 }
 
-export function applicationInsightsStandardWebTestTimeoutsToTerraform(struct?: ApplicationInsightsStandardWebTestTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationInsightsStandardWebTestTimeoutsToTerraform(struct?: ApplicationInsightsStandardWebTestTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function applicationInsightsStandardWebTestTimeoutsToHclTerraform(struct?: ApplicationInsightsStandardWebTestTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationInsightsStandardWebTestTimeoutsToHclTerraform(struct?: ApplicationInsightsStandardWebTestTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -542,19 +542,19 @@ export function applicationInsightsStandardWebTestTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationInsightsStandardWebTestTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApplicationInsightsStandardWebTestTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApplicationInsightsStandardWebTestTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationInsightsStandardWebTestTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -579,7 +579,7 @@ export class ApplicationInsightsStandardWebTestTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationInsightsStandardWebTestTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationInsightsStandardWebTestTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -588,7 +588,7 @@ export class ApplicationInsightsStandardWebTestTimeoutsOutputReference extends c
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -674,46 +674,46 @@ export interface ApplicationInsightsStandardWebTestValidationRulesContent {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_standard_web_test#ignore_case ApplicationInsightsStandardWebTest#ignore_case}
   */
-  readonly ignoreCase?: boolean | cdktf.IResolvable;
+  readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_standard_web_test#pass_if_text_found ApplicationInsightsStandardWebTest#pass_if_text_found}
   */
-  readonly passIfTextFound?: boolean | cdktf.IResolvable;
+  readonly passIfTextFound?: boolean | cdktn.IResolvable;
 }
 
 export function applicationInsightsStandardWebTestValidationRulesContentToTerraform(struct?: ApplicationInsightsStandardWebTestValidationRulesContentOutputReference | ApplicationInsightsStandardWebTestValidationRulesContent): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content_match: cdktf.stringToTerraform(struct!.contentMatch),
-    ignore_case: cdktf.booleanToTerraform(struct!.ignoreCase),
-    pass_if_text_found: cdktf.booleanToTerraform(struct!.passIfTextFound),
+    content_match: cdktn.stringToTerraform(struct!.contentMatch),
+    ignore_case: cdktn.booleanToTerraform(struct!.ignoreCase),
+    pass_if_text_found: cdktn.booleanToTerraform(struct!.passIfTextFound),
   }
 }
 
 
 export function applicationInsightsStandardWebTestValidationRulesContentToHclTerraform(struct?: ApplicationInsightsStandardWebTestValidationRulesContentOutputReference | ApplicationInsightsStandardWebTestValidationRulesContent): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content_match: {
-      value: cdktf.stringToHclTerraform(struct!.contentMatch),
+      value: cdktn.stringToHclTerraform(struct!.contentMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ignore_case: {
-      value: cdktf.booleanToHclTerraform(struct!.ignoreCase),
+      value: cdktn.booleanToHclTerraform(struct!.ignoreCase),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     pass_if_text_found: {
-      value: cdktf.booleanToHclTerraform(struct!.passIfTextFound),
+      value: cdktn.booleanToHclTerraform(struct!.passIfTextFound),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -724,14 +724,14 @@ export function applicationInsightsStandardWebTestValidationRulesContentToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationInsightsStandardWebTestValidationRulesContentOutputReference extends cdktf.ComplexObject {
+export class ApplicationInsightsStandardWebTestValidationRulesContentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -782,11 +782,11 @@ export class ApplicationInsightsStandardWebTestValidationRulesContentOutputRefer
   }
 
   // ignore_case - computed: false, optional: true, required: false
-  private _ignoreCase?: boolean | cdktf.IResolvable; 
+  private _ignoreCase?: boolean | cdktn.IResolvable; 
   public get ignoreCase() {
     return this.getBooleanAttribute('ignore_case');
   }
-  public set ignoreCase(value: boolean | cdktf.IResolvable) {
+  public set ignoreCase(value: boolean | cdktn.IResolvable) {
     this._ignoreCase = value;
   }
   public resetIgnoreCase() {
@@ -798,11 +798,11 @@ export class ApplicationInsightsStandardWebTestValidationRulesContentOutputRefer
   }
 
   // pass_if_text_found - computed: false, optional: true, required: false
-  private _passIfTextFound?: boolean | cdktf.IResolvable; 
+  private _passIfTextFound?: boolean | cdktn.IResolvable; 
   public get passIfTextFound() {
     return this.getBooleanAttribute('pass_if_text_found');
   }
-  public set passIfTextFound(value: boolean | cdktf.IResolvable) {
+  public set passIfTextFound(value: boolean | cdktn.IResolvable) {
     this._passIfTextFound = value;
   }
   public resetPassIfTextFound() {
@@ -825,7 +825,7 @@ export interface ApplicationInsightsStandardWebTestValidationRules {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_standard_web_test#ssl_check_enabled ApplicationInsightsStandardWebTest#ssl_check_enabled}
   */
-  readonly sslCheckEnabled?: boolean | cdktf.IResolvable;
+  readonly sslCheckEnabled?: boolean | cdktn.IResolvable;
   /**
   * content block
   *
@@ -835,39 +835,39 @@ export interface ApplicationInsightsStandardWebTestValidationRules {
 }
 
 export function applicationInsightsStandardWebTestValidationRulesToTerraform(struct?: ApplicationInsightsStandardWebTestValidationRulesOutputReference | ApplicationInsightsStandardWebTestValidationRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expected_status_code: cdktf.numberToTerraform(struct!.expectedStatusCode),
-    ssl_cert_remaining_lifetime: cdktf.numberToTerraform(struct!.sslCertRemainingLifetime),
-    ssl_check_enabled: cdktf.booleanToTerraform(struct!.sslCheckEnabled),
+    expected_status_code: cdktn.numberToTerraform(struct!.expectedStatusCode),
+    ssl_cert_remaining_lifetime: cdktn.numberToTerraform(struct!.sslCertRemainingLifetime),
+    ssl_check_enabled: cdktn.booleanToTerraform(struct!.sslCheckEnabled),
     content: applicationInsightsStandardWebTestValidationRulesContentToTerraform(struct!.content),
   }
 }
 
 
 export function applicationInsightsStandardWebTestValidationRulesToHclTerraform(struct?: ApplicationInsightsStandardWebTestValidationRulesOutputReference | ApplicationInsightsStandardWebTestValidationRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expected_status_code: {
-      value: cdktf.numberToHclTerraform(struct!.expectedStatusCode),
+      value: cdktn.numberToHclTerraform(struct!.expectedStatusCode),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ssl_cert_remaining_lifetime: {
-      value: cdktf.numberToHclTerraform(struct!.sslCertRemainingLifetime),
+      value: cdktn.numberToHclTerraform(struct!.sslCertRemainingLifetime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ssl_check_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.sslCheckEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.sslCheckEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -884,14 +884,14 @@ export function applicationInsightsStandardWebTestValidationRulesToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationInsightsStandardWebTestValidationRulesOutputReference extends cdktf.ComplexObject {
+export class ApplicationInsightsStandardWebTestValidationRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -967,11 +967,11 @@ export class ApplicationInsightsStandardWebTestValidationRulesOutputReference ex
   }
 
   // ssl_check_enabled - computed: false, optional: true, required: false
-  private _sslCheckEnabled?: boolean | cdktf.IResolvable; 
+  private _sslCheckEnabled?: boolean | cdktn.IResolvable; 
   public get sslCheckEnabled() {
     return this.getBooleanAttribute('ssl_check_enabled');
   }
-  public set sslCheckEnabled(value: boolean | cdktf.IResolvable) {
+  public set sslCheckEnabled(value: boolean | cdktn.IResolvable) {
     this._sslCheckEnabled = value;
   }
   public resetSslCheckEnabled() {
@@ -1002,7 +1002,7 @@ export class ApplicationInsightsStandardWebTestValidationRulesOutputReference ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_standard_web_test azurerm_application_insights_standard_web_test}
 */
-export class ApplicationInsightsStandardWebTest extends cdktf.TerraformResource {
+export class ApplicationInsightsStandardWebTest extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1013,14 +1013,14 @@ export class ApplicationInsightsStandardWebTest extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApplicationInsightsStandardWebTest resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApplicationInsightsStandardWebTest resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationInsightsStandardWebTest to import
   * @param importFromId The id of the existing ApplicationInsightsStandardWebTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_standard_web_test#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationInsightsStandardWebTest to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_application_insights_standard_web_test", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_application_insights_standard_web_test", importId: importFromId, provider });
       }
 
   // ===========
@@ -1101,11 +1101,11 @@ export class ApplicationInsightsStandardWebTest extends cdktf.TerraformResource 
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1201,11 +1201,11 @@ export class ApplicationInsightsStandardWebTest extends cdktf.TerraformResource 
   }
 
   // retry_enabled - computed: false, optional: true, required: false
-  private _retryEnabled?: boolean | cdktf.IResolvable; 
+  private _retryEnabled?: boolean | cdktn.IResolvable; 
   public get retryEnabled() {
     return this.getBooleanAttribute('retry_enabled');
   }
-  public set retryEnabled(value: boolean | cdktf.IResolvable) {
+  public set retryEnabled(value: boolean | cdktn.IResolvable) {
     this._retryEnabled = value;
   }
   public resetRetryEnabled() {
@@ -1304,18 +1304,18 @@ export class ApplicationInsightsStandardWebTest extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_insights_id: cdktf.stringToTerraform(this._applicationInsightsId),
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      frequency: cdktf.numberToTerraform(this._frequency),
-      geo_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._geoLocations),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      retry_enabled: cdktf.booleanToTerraform(this._retryEnabled),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      timeout: cdktf.numberToTerraform(this._timeout),
+      application_insights_id: cdktn.stringToTerraform(this._applicationInsightsId),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      frequency: cdktn.numberToTerraform(this._frequency),
+      geo_locations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._geoLocations),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      retry_enabled: cdktn.booleanToTerraform(this._retryEnabled),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      timeout: cdktn.numberToTerraform(this._timeout),
       request: applicationInsightsStandardWebTestRequestToTerraform(this._request.internalValue),
       timeouts: applicationInsightsStandardWebTestTimeoutsToTerraform(this._timeouts.internalValue),
       validation_rules: applicationInsightsStandardWebTestValidationRulesToTerraform(this._validationRules.internalValue),
@@ -1325,73 +1325,73 @@ export class ApplicationInsightsStandardWebTest extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_insights_id: {
-        value: cdktf.stringToHclTerraform(this._applicationInsightsId),
+        value: cdktn.stringToHclTerraform(this._applicationInsightsId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       frequency: {
-        value: cdktf.numberToHclTerraform(this._frequency),
+        value: cdktn.numberToHclTerraform(this._frequency),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       geo_locations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._geoLocations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._geoLocations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retry_enabled: {
-        value: cdktf.booleanToHclTerraform(this._retryEnabled),
+        value: cdktn.booleanToHclTerraform(this._retryEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       timeout: {
-        value: cdktf.numberToHclTerraform(this._timeout),
+        value: cdktn.numberToHclTerraform(this._timeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

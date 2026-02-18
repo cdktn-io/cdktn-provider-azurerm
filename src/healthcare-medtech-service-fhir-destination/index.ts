@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface HealthcareMedtechServiceFhirDestinationConfig extends cdktf.TerraformMetaArguments {
+export interface HealthcareMedtechServiceFhirDestinationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/healthcare_medtech_service_fhir_destination#destination_fhir_mapping_json HealthcareMedtechServiceFhirDestination#destination_fhir_mapping_json}
   */
@@ -69,46 +69,46 @@ export interface HealthcareMedtechServiceFhirDestinationTimeouts {
   readonly update?: string;
 }
 
-export function healthcareMedtechServiceFhirDestinationTimeoutsToTerraform(struct?: HealthcareMedtechServiceFhirDestinationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function healthcareMedtechServiceFhirDestinationTimeoutsToTerraform(struct?: HealthcareMedtechServiceFhirDestinationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function healthcareMedtechServiceFhirDestinationTimeoutsToHclTerraform(struct?: HealthcareMedtechServiceFhirDestinationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function healthcareMedtechServiceFhirDestinationTimeoutsToHclTerraform(struct?: HealthcareMedtechServiceFhirDestinationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,19 +119,19 @@ export function healthcareMedtechServiceFhirDestinationTimeoutsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HealthcareMedtechServiceFhirDestinationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class HealthcareMedtechServiceFhirDestinationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): HealthcareMedtechServiceFhirDestinationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): HealthcareMedtechServiceFhirDestinationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class HealthcareMedtechServiceFhirDestinationTimeoutsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: HealthcareMedtechServiceFhirDestinationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: HealthcareMedtechServiceFhirDestinationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class HealthcareMedtechServiceFhirDestinationTimeoutsOutputReference exte
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,7 +247,7 @@ export class HealthcareMedtechServiceFhirDestinationTimeoutsOutputReference exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/healthcare_medtech_service_fhir_destination azurerm_healthcare_medtech_service_fhir_destination}
 */
-export class HealthcareMedtechServiceFhirDestination extends cdktf.TerraformResource {
+export class HealthcareMedtechServiceFhirDestination extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -258,14 +258,14 @@ export class HealthcareMedtechServiceFhirDestination extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a HealthcareMedtechServiceFhirDestination resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a HealthcareMedtechServiceFhirDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HealthcareMedtechServiceFhirDestination to import
   * @param importFromId The id of the existing HealthcareMedtechServiceFhirDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/healthcare_medtech_service_fhir_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HealthcareMedtechServiceFhirDestination to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_healthcare_medtech_service_fhir_destination", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_healthcare_medtech_service_fhir_destination", importId: importFromId, provider });
       }
 
   // ===========
@@ -425,13 +425,13 @@ export class HealthcareMedtechServiceFhirDestination extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination_fhir_mapping_json: cdktf.stringToTerraform(this._destinationFhirMappingJson),
-      destination_fhir_service_id: cdktf.stringToTerraform(this._destinationFhirServiceId),
-      destination_identity_resolution_type: cdktf.stringToTerraform(this._destinationIdentityResolutionType),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      medtech_service_id: cdktf.stringToTerraform(this._medtechServiceId),
-      name: cdktf.stringToTerraform(this._name),
+      destination_fhir_mapping_json: cdktn.stringToTerraform(this._destinationFhirMappingJson),
+      destination_fhir_service_id: cdktn.stringToTerraform(this._destinationFhirServiceId),
+      destination_identity_resolution_type: cdktn.stringToTerraform(this._destinationIdentityResolutionType),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      medtech_service_id: cdktn.stringToTerraform(this._medtechServiceId),
+      name: cdktn.stringToTerraform(this._name),
       timeouts: healthcareMedtechServiceFhirDestinationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -439,43 +439,43 @@ export class HealthcareMedtechServiceFhirDestination extends cdktf.TerraformReso
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       destination_fhir_mapping_json: {
-        value: cdktf.stringToHclTerraform(this._destinationFhirMappingJson),
+        value: cdktn.stringToHclTerraform(this._destinationFhirMappingJson),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_fhir_service_id: {
-        value: cdktf.stringToHclTerraform(this._destinationFhirServiceId),
+        value: cdktn.stringToHclTerraform(this._destinationFhirServiceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_identity_resolution_type: {
-        value: cdktf.stringToHclTerraform(this._destinationIdentityResolutionType),
+        value: cdktn.stringToHclTerraform(this._destinationIdentityResolutionType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       medtech_service_id: {
-        value: cdktf.stringToHclTerraform(this._medtechServiceId),
+        value: cdktn.stringToHclTerraform(this._medtechServiceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageAccountLocalUserConfig extends cdktf.TerraformMetaArguments {
+export interface StorageAccountLocalUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_local_user#home_directory StorageAccountLocalUser#home_directory}
   */
@@ -30,11 +30,11 @@ export interface StorageAccountLocalUserConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_local_user#ssh_key_enabled StorageAccountLocalUser#ssh_key_enabled}
   */
-  readonly sshKeyEnabled?: boolean | cdktf.IResolvable;
+  readonly sshKeyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_local_user#ssh_password_enabled StorageAccountLocalUser#ssh_password_enabled}
   */
-  readonly sshPasswordEnabled?: boolean | cdktf.IResolvable;
+  readonly sshPasswordEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_local_user#storage_account_id StorageAccountLocalUser#storage_account_id}
   */
@@ -44,13 +44,13 @@ export interface StorageAccountLocalUserConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_local_user#permission_scope StorageAccountLocalUser#permission_scope}
   */
-  readonly permissionScope?: StorageAccountLocalUserPermissionScope[] | cdktf.IResolvable;
+  readonly permissionScope?: StorageAccountLocalUserPermissionScope[] | cdktn.IResolvable;
   /**
   * ssh_authorized_key block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_local_user#ssh_authorized_key StorageAccountLocalUser#ssh_authorized_key}
   */
-  readonly sshAuthorizedKey?: StorageAccountLocalUserSshAuthorizedKey[] | cdktf.IResolvable;
+  readonly sshAuthorizedKey?: StorageAccountLocalUserSshAuthorizedKey[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -62,72 +62,72 @@ export interface StorageAccountLocalUserPermissionScopePermissions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_local_user#create StorageAccountLocalUser#create}
   */
-  readonly create?: boolean | cdktf.IResolvable;
+  readonly create?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_local_user#delete StorageAccountLocalUser#delete}
   */
-  readonly delete?: boolean | cdktf.IResolvable;
+  readonly delete?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_local_user#list StorageAccountLocalUser#list}
   */
-  readonly list?: boolean | cdktf.IResolvable;
+  readonly list?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_local_user#read StorageAccountLocalUser#read}
   */
-  readonly read?: boolean | cdktf.IResolvable;
+  readonly read?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_local_user#write StorageAccountLocalUser#write}
   */
-  readonly write?: boolean | cdktf.IResolvable;
+  readonly write?: boolean | cdktn.IResolvable;
 }
 
 export function storageAccountLocalUserPermissionScopePermissionsToTerraform(struct?: StorageAccountLocalUserPermissionScopePermissionsOutputReference | StorageAccountLocalUserPermissionScopePermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.booleanToTerraform(struct!.create),
-    delete: cdktf.booleanToTerraform(struct!.delete),
-    list: cdktf.booleanToTerraform(struct!.list),
-    read: cdktf.booleanToTerraform(struct!.read),
-    write: cdktf.booleanToTerraform(struct!.write),
+    create: cdktn.booleanToTerraform(struct!.create),
+    delete: cdktn.booleanToTerraform(struct!.delete),
+    list: cdktn.booleanToTerraform(struct!.list),
+    read: cdktn.booleanToTerraform(struct!.read),
+    write: cdktn.booleanToTerraform(struct!.write),
   }
 }
 
 
 export function storageAccountLocalUserPermissionScopePermissionsToHclTerraform(struct?: StorageAccountLocalUserPermissionScopePermissionsOutputReference | StorageAccountLocalUserPermissionScopePermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.booleanToHclTerraform(struct!.create),
+      value: cdktn.booleanToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     delete: {
-      value: cdktf.booleanToHclTerraform(struct!.delete),
+      value: cdktn.booleanToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     list: {
-      value: cdktf.booleanToHclTerraform(struct!.list),
+      value: cdktn.booleanToHclTerraform(struct!.list),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     read: {
-      value: cdktf.booleanToHclTerraform(struct!.read),
+      value: cdktn.booleanToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     write: {
-      value: cdktf.booleanToHclTerraform(struct!.write),
+      value: cdktn.booleanToHclTerraform(struct!.write),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -138,14 +138,14 @@ export function storageAccountLocalUserPermissionScopePermissionsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageAccountLocalUserPermissionScopePermissionsOutputReference extends cdktf.ComplexObject {
+export class StorageAccountLocalUserPermissionScopePermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -195,11 +195,11 @@ export class StorageAccountLocalUserPermissionScopePermissionsOutputReference ex
   }
 
   // create - computed: false, optional: true, required: false
-  private _create?: boolean | cdktf.IResolvable; 
+  private _create?: boolean | cdktn.IResolvable; 
   public get create() {
     return this.getBooleanAttribute('create');
   }
-  public set create(value: boolean | cdktf.IResolvable) {
+  public set create(value: boolean | cdktn.IResolvable) {
     this._create = value;
   }
   public resetCreate() {
@@ -211,11 +211,11 @@ export class StorageAccountLocalUserPermissionScopePermissionsOutputReference ex
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: boolean | cdktf.IResolvable; 
+  private _delete?: boolean | cdktn.IResolvable; 
   public get delete() {
     return this.getBooleanAttribute('delete');
   }
-  public set delete(value: boolean | cdktf.IResolvable) {
+  public set delete(value: boolean | cdktn.IResolvable) {
     this._delete = value;
   }
   public resetDelete() {
@@ -227,11 +227,11 @@ export class StorageAccountLocalUserPermissionScopePermissionsOutputReference ex
   }
 
   // list - computed: false, optional: true, required: false
-  private _list?: boolean | cdktf.IResolvable; 
+  private _list?: boolean | cdktn.IResolvable; 
   public get list() {
     return this.getBooleanAttribute('list');
   }
-  public set list(value: boolean | cdktf.IResolvable) {
+  public set list(value: boolean | cdktn.IResolvable) {
     this._list = value;
   }
   public resetList() {
@@ -243,11 +243,11 @@ export class StorageAccountLocalUserPermissionScopePermissionsOutputReference ex
   }
 
   // read - computed: false, optional: true, required: false
-  private _read?: boolean | cdktf.IResolvable; 
+  private _read?: boolean | cdktn.IResolvable; 
   public get read() {
     return this.getBooleanAttribute('read');
   }
-  public set read(value: boolean | cdktf.IResolvable) {
+  public set read(value: boolean | cdktn.IResolvable) {
     this._read = value;
   }
   public resetRead() {
@@ -259,11 +259,11 @@ export class StorageAccountLocalUserPermissionScopePermissionsOutputReference ex
   }
 
   // write - computed: false, optional: true, required: false
-  private _write?: boolean | cdktf.IResolvable; 
+  private _write?: boolean | cdktn.IResolvable; 
   public get write() {
     return this.getBooleanAttribute('write');
   }
-  public set write(value: boolean | cdktf.IResolvable) {
+  public set write(value: boolean | cdktn.IResolvable) {
     this._write = value;
   }
   public resetWrite() {
@@ -291,33 +291,33 @@ export interface StorageAccountLocalUserPermissionScope {
   readonly permissions: StorageAccountLocalUserPermissionScopePermissions;
 }
 
-export function storageAccountLocalUserPermissionScopeToTerraform(struct?: StorageAccountLocalUserPermissionScope | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageAccountLocalUserPermissionScopeToTerraform(struct?: StorageAccountLocalUserPermissionScope | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_name: cdktf.stringToTerraform(struct!.resourceName),
-    service: cdktf.stringToTerraform(struct!.service),
+    resource_name: cdktn.stringToTerraform(struct!.resourceName),
+    service: cdktn.stringToTerraform(struct!.service),
     permissions: storageAccountLocalUserPermissionScopePermissionsToTerraform(struct!.permissions),
   }
 }
 
 
-export function storageAccountLocalUserPermissionScopeToHclTerraform(struct?: StorageAccountLocalUserPermissionScope | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageAccountLocalUserPermissionScopeToHclTerraform(struct?: StorageAccountLocalUserPermissionScope | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource_name: {
-      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      value: cdktn.stringToHclTerraform(struct!.resourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -334,9 +334,9 @@ export function storageAccountLocalUserPermissionScopeToHclTerraform(struct?: St
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageAccountLocalUserPermissionScopeOutputReference extends cdktf.ComplexObject {
+export class StorageAccountLocalUserPermissionScopeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -344,11 +344,11 @@ export class StorageAccountLocalUserPermissionScopeOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): StorageAccountLocalUserPermissionScope | cdktf.IResolvable | undefined {
+  public get internalValue(): StorageAccountLocalUserPermissionScope | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -369,7 +369,7 @@ export class StorageAccountLocalUserPermissionScopeOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageAccountLocalUserPermissionScope | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StorageAccountLocalUserPermissionScope | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -377,7 +377,7 @@ export class StorageAccountLocalUserPermissionScopeOutputReference extends cdktf
       this._service = undefined;
       this._permissions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -430,15 +430,15 @@ export class StorageAccountLocalUserPermissionScopeOutputReference extends cdktf
   }
 }
 
-export class StorageAccountLocalUserPermissionScopeList extends cdktf.ComplexList {
-  public internalValue? : StorageAccountLocalUserPermissionScope[] | cdktf.IResolvable
+export class StorageAccountLocalUserPermissionScopeList extends cdktn.ComplexList {
+  public internalValue? : StorageAccountLocalUserPermissionScope[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -460,32 +460,32 @@ export interface StorageAccountLocalUserSshAuthorizedKey {
   readonly key: string;
 }
 
-export function storageAccountLocalUserSshAuthorizedKeyToTerraform(struct?: StorageAccountLocalUserSshAuthorizedKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageAccountLocalUserSshAuthorizedKeyToTerraform(struct?: StorageAccountLocalUserSshAuthorizedKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    key: cdktf.stringToTerraform(struct!.key),
+    description: cdktn.stringToTerraform(struct!.description),
+    key: cdktn.stringToTerraform(struct!.key),
   }
 }
 
 
-export function storageAccountLocalUserSshAuthorizedKeyToHclTerraform(struct?: StorageAccountLocalUserSshAuthorizedKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageAccountLocalUserSshAuthorizedKeyToHclTerraform(struct?: StorageAccountLocalUserSshAuthorizedKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -496,9 +496,9 @@ export function storageAccountLocalUserSshAuthorizedKeyToHclTerraform(struct?: S
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageAccountLocalUserSshAuthorizedKeyOutputReference extends cdktf.ComplexObject {
+export class StorageAccountLocalUserSshAuthorizedKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -506,11 +506,11 @@ export class StorageAccountLocalUserSshAuthorizedKeyOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): StorageAccountLocalUserSshAuthorizedKey | cdktf.IResolvable | undefined {
+  public get internalValue(): StorageAccountLocalUserSshAuthorizedKey | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -527,14 +527,14 @@ export class StorageAccountLocalUserSshAuthorizedKeyOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageAccountLocalUserSshAuthorizedKey | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StorageAccountLocalUserSshAuthorizedKey | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._description = undefined;
       this._key = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -576,15 +576,15 @@ export class StorageAccountLocalUserSshAuthorizedKeyOutputReference extends cdkt
   }
 }
 
-export class StorageAccountLocalUserSshAuthorizedKeyList extends cdktf.ComplexList {
-  public internalValue? : StorageAccountLocalUserSshAuthorizedKey[] | cdktf.IResolvable
+export class StorageAccountLocalUserSshAuthorizedKeyList extends cdktn.ComplexList {
+  public internalValue? : StorageAccountLocalUserSshAuthorizedKey[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -614,46 +614,46 @@ export interface StorageAccountLocalUserTimeouts {
   readonly update?: string;
 }
 
-export function storageAccountLocalUserTimeoutsToTerraform(struct?: StorageAccountLocalUserTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageAccountLocalUserTimeoutsToTerraform(struct?: StorageAccountLocalUserTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function storageAccountLocalUserTimeoutsToHclTerraform(struct?: StorageAccountLocalUserTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageAccountLocalUserTimeoutsToHclTerraform(struct?: StorageAccountLocalUserTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -664,19 +664,19 @@ export function storageAccountLocalUserTimeoutsToHclTerraform(struct?: StorageAc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageAccountLocalUserTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StorageAccountLocalUserTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StorageAccountLocalUserTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StorageAccountLocalUserTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -701,7 +701,7 @@ export class StorageAccountLocalUserTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageAccountLocalUserTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StorageAccountLocalUserTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -710,7 +710,7 @@ export class StorageAccountLocalUserTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -792,7 +792,7 @@ export class StorageAccountLocalUserTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_local_user azurerm_storage_account_local_user}
 */
-export class StorageAccountLocalUser extends cdktf.TerraformResource {
+export class StorageAccountLocalUser extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -803,14 +803,14 @@ export class StorageAccountLocalUser extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StorageAccountLocalUser resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StorageAccountLocalUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageAccountLocalUser to import
   * @param importFromId The id of the existing StorageAccountLocalUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_local_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageAccountLocalUser to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_account_local_user", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_account_local_user", importId: importFromId, provider });
       }
 
   // ===========
@@ -911,11 +911,11 @@ export class StorageAccountLocalUser extends cdktf.TerraformResource {
   }
 
   // ssh_key_enabled - computed: false, optional: true, required: false
-  private _sshKeyEnabled?: boolean | cdktf.IResolvable; 
+  private _sshKeyEnabled?: boolean | cdktn.IResolvable; 
   public get sshKeyEnabled() {
     return this.getBooleanAttribute('ssh_key_enabled');
   }
-  public set sshKeyEnabled(value: boolean | cdktf.IResolvable) {
+  public set sshKeyEnabled(value: boolean | cdktn.IResolvable) {
     this._sshKeyEnabled = value;
   }
   public resetSshKeyEnabled() {
@@ -927,11 +927,11 @@ export class StorageAccountLocalUser extends cdktf.TerraformResource {
   }
 
   // ssh_password_enabled - computed: false, optional: true, required: false
-  private _sshPasswordEnabled?: boolean | cdktf.IResolvable; 
+  private _sshPasswordEnabled?: boolean | cdktn.IResolvable; 
   public get sshPasswordEnabled() {
     return this.getBooleanAttribute('ssh_password_enabled');
   }
-  public set sshPasswordEnabled(value: boolean | cdktf.IResolvable) {
+  public set sshPasswordEnabled(value: boolean | cdktn.IResolvable) {
     this._sshPasswordEnabled = value;
   }
   public resetSshPasswordEnabled() {
@@ -960,7 +960,7 @@ export class StorageAccountLocalUser extends cdktf.TerraformResource {
   public get permissionScope() {
     return this._permissionScope;
   }
-  public putPermissionScope(value: StorageAccountLocalUserPermissionScope[] | cdktf.IResolvable) {
+  public putPermissionScope(value: StorageAccountLocalUserPermissionScope[] | cdktn.IResolvable) {
     this._permissionScope.internalValue = value;
   }
   public resetPermissionScope() {
@@ -976,7 +976,7 @@ export class StorageAccountLocalUser extends cdktf.TerraformResource {
   public get sshAuthorizedKey() {
     return this._sshAuthorizedKey;
   }
-  public putSshAuthorizedKey(value: StorageAccountLocalUserSshAuthorizedKey[] | cdktf.IResolvable) {
+  public putSshAuthorizedKey(value: StorageAccountLocalUserSshAuthorizedKey[] | cdktn.IResolvable) {
     this._sshAuthorizedKey.internalValue = value;
   }
   public resetSshAuthorizedKey() {
@@ -1009,14 +1009,14 @@ export class StorageAccountLocalUser extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      home_directory: cdktf.stringToTerraform(this._homeDirectory),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      ssh_key_enabled: cdktf.booleanToTerraform(this._sshKeyEnabled),
-      ssh_password_enabled: cdktf.booleanToTerraform(this._sshPasswordEnabled),
-      storage_account_id: cdktf.stringToTerraform(this._storageAccountId),
-      permission_scope: cdktf.listMapper(storageAccountLocalUserPermissionScopeToTerraform, true)(this._permissionScope.internalValue),
-      ssh_authorized_key: cdktf.listMapper(storageAccountLocalUserSshAuthorizedKeyToTerraform, true)(this._sshAuthorizedKey.internalValue),
+      home_directory: cdktn.stringToTerraform(this._homeDirectory),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      ssh_key_enabled: cdktn.booleanToTerraform(this._sshKeyEnabled),
+      ssh_password_enabled: cdktn.booleanToTerraform(this._sshPasswordEnabled),
+      storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
+      permission_scope: cdktn.listMapper(storageAccountLocalUserPermissionScopeToTerraform, true)(this._permissionScope.internalValue),
+      ssh_authorized_key: cdktn.listMapper(storageAccountLocalUserSshAuthorizedKeyToTerraform, true)(this._sshAuthorizedKey.internalValue),
       timeouts: storageAccountLocalUserTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1024,49 +1024,49 @@ export class StorageAccountLocalUser extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       home_directory: {
-        value: cdktf.stringToHclTerraform(this._homeDirectory),
+        value: cdktn.stringToHclTerraform(this._homeDirectory),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ssh_key_enabled: {
-        value: cdktf.booleanToHclTerraform(this._sshKeyEnabled),
+        value: cdktn.booleanToHclTerraform(this._sshKeyEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ssh_password_enabled: {
-        value: cdktf.booleanToHclTerraform(this._sshPasswordEnabled),
+        value: cdktn.booleanToHclTerraform(this._sshPasswordEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountId),
+        value: cdktn.stringToHclTerraform(this._storageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permission_scope: {
-        value: cdktf.listMapperHcl(storageAccountLocalUserPermissionScopeToHclTerraform, true)(this._permissionScope.internalValue),
+        value: cdktn.listMapperHcl(storageAccountLocalUserPermissionScopeToHclTerraform, true)(this._permissionScope.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "StorageAccountLocalUserPermissionScopeList",
       },
       ssh_authorized_key: {
-        value: cdktf.listMapperHcl(storageAccountLocalUserSshAuthorizedKeyToHclTerraform, true)(this._sshAuthorizedKey.internalValue),
+        value: cdktn.listMapperHcl(storageAccountLocalUserSshAuthorizedKeyToHclTerraform, true)(this._sshAuthorizedKey.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "StorageAccountLocalUserSshAuthorizedKeyList",

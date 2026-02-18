@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermOracleAutonomousDatabaseBackupConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermOracleAutonomousDatabaseBackupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/oracle_autonomous_database_backup#autonomous_database_id DataAzurermOracleAutonomousDatabaseBackup#autonomous_database_id}
   */
@@ -34,25 +34,25 @@ export interface DataAzurermOracleAutonomousDatabaseBackupTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermOracleAutonomousDatabaseBackupTimeoutsToTerraform(struct?: DataAzurermOracleAutonomousDatabaseBackupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermOracleAutonomousDatabaseBackupTimeoutsToTerraform(struct?: DataAzurermOracleAutonomousDatabaseBackupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermOracleAutonomousDatabaseBackupTimeoutsToHclTerraform(struct?: DataAzurermOracleAutonomousDatabaseBackupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermOracleAutonomousDatabaseBackupTimeoutsToHclTerraform(struct?: DataAzurermOracleAutonomousDatabaseBackupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -63,19 +63,19 @@ export function dataAzurermOracleAutonomousDatabaseBackupTimeoutsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermOracleAutonomousDatabaseBackupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermOracleAutonomousDatabaseBackupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermOracleAutonomousDatabaseBackupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermOracleAutonomousDatabaseBackupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -88,13 +88,13 @@ export class DataAzurermOracleAutonomousDatabaseBackupTimeoutsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermOracleAutonomousDatabaseBackupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermOracleAutonomousDatabaseBackupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -125,7 +125,7 @@ export class DataAzurermOracleAutonomousDatabaseBackupTimeoutsOutputReference ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/oracle_autonomous_database_backup azurerm_oracle_autonomous_database_backup}
 */
-export class DataAzurermOracleAutonomousDatabaseBackup extends cdktf.TerraformDataSource {
+export class DataAzurermOracleAutonomousDatabaseBackup extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -136,14 +136,14 @@ export class DataAzurermOracleAutonomousDatabaseBackup extends cdktf.TerraformDa
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermOracleAutonomousDatabaseBackup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermOracleAutonomousDatabaseBackup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermOracleAutonomousDatabaseBackup to import
   * @param importFromId The id of the existing DataAzurermOracleAutonomousDatabaseBackup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/oracle_autonomous_database_backup#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermOracleAutonomousDatabaseBackup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_oracle_autonomous_database_backup", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_oracle_autonomous_database_backup", importId: importFromId, provider });
       }
 
   // ===========
@@ -315,8 +315,8 @@ export class DataAzurermOracleAutonomousDatabaseBackup extends cdktf.TerraformDa
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      autonomous_database_id: cdktf.stringToTerraform(this._autonomousDatabaseId),
-      name: cdktf.stringToTerraform(this._name),
+      autonomous_database_id: cdktn.stringToTerraform(this._autonomousDatabaseId),
+      name: cdktn.stringToTerraform(this._name),
       timeouts: dataAzurermOracleAutonomousDatabaseBackupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -324,13 +324,13 @@ export class DataAzurermOracleAutonomousDatabaseBackup extends cdktf.TerraformDa
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       autonomous_database_id: {
-        value: cdktf.stringToHclTerraform(this._autonomousDatabaseId),
+        value: cdktn.stringToHclTerraform(this._autonomousDatabaseId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

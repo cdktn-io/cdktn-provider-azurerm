@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NotificationHubConfig extends cdktf.TerraformMetaArguments {
+export interface NotificationHubConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/notification_hub#id NotificationHub#id}
   *
@@ -88,52 +88,52 @@ export interface NotificationHubApnsCredential {
 }
 
 export function notificationHubApnsCredentialToTerraform(struct?: NotificationHubApnsCredentialOutputReference | NotificationHubApnsCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    application_mode: cdktf.stringToTerraform(struct!.applicationMode),
-    bundle_id: cdktf.stringToTerraform(struct!.bundleId),
-    key_id: cdktf.stringToTerraform(struct!.keyId),
-    team_id: cdktf.stringToTerraform(struct!.teamId),
-    token: cdktf.stringToTerraform(struct!.token),
+    application_mode: cdktn.stringToTerraform(struct!.applicationMode),
+    bundle_id: cdktn.stringToTerraform(struct!.bundleId),
+    key_id: cdktn.stringToTerraform(struct!.keyId),
+    team_id: cdktn.stringToTerraform(struct!.teamId),
+    token: cdktn.stringToTerraform(struct!.token),
   }
 }
 
 
 export function notificationHubApnsCredentialToHclTerraform(struct?: NotificationHubApnsCredentialOutputReference | NotificationHubApnsCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     application_mode: {
-      value: cdktf.stringToHclTerraform(struct!.applicationMode),
+      value: cdktn.stringToHclTerraform(struct!.applicationMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bundle_id: {
-      value: cdktf.stringToHclTerraform(struct!.bundleId),
+      value: cdktn.stringToHclTerraform(struct!.bundleId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyId),
+      value: cdktn.stringToHclTerraform(struct!.keyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     team_id: {
-      value: cdktf.stringToHclTerraform(struct!.teamId),
+      value: cdktn.stringToHclTerraform(struct!.teamId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token: {
-      value: cdktf.stringToHclTerraform(struct!.token),
+      value: cdktn.stringToHclTerraform(struct!.token),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -144,14 +144,14 @@ export function notificationHubApnsCredentialToHclTerraform(struct?: Notificatio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotificationHubApnsCredentialOutputReference extends cdktf.ComplexObject {
+export class NotificationHubApnsCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -281,38 +281,38 @@ export interface NotificationHubBrowserCredential {
 }
 
 export function notificationHubBrowserCredentialToTerraform(struct?: NotificationHubBrowserCredentialOutputReference | NotificationHubBrowserCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    subject: cdktf.stringToTerraform(struct!.subject),
-    vapid_private_key: cdktf.stringToTerraform(struct!.vapidPrivateKey),
-    vapid_public_key: cdktf.stringToTerraform(struct!.vapidPublicKey),
+    subject: cdktn.stringToTerraform(struct!.subject),
+    vapid_private_key: cdktn.stringToTerraform(struct!.vapidPrivateKey),
+    vapid_public_key: cdktn.stringToTerraform(struct!.vapidPublicKey),
   }
 }
 
 
 export function notificationHubBrowserCredentialToHclTerraform(struct?: NotificationHubBrowserCredentialOutputReference | NotificationHubBrowserCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     subject: {
-      value: cdktf.stringToHclTerraform(struct!.subject),
+      value: cdktn.stringToHclTerraform(struct!.subject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vapid_private_key: {
-      value: cdktf.stringToHclTerraform(struct!.vapidPrivateKey),
+      value: cdktn.stringToHclTerraform(struct!.vapidPrivateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vapid_public_key: {
-      value: cdktf.stringToHclTerraform(struct!.vapidPublicKey),
+      value: cdktn.stringToHclTerraform(struct!.vapidPublicKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -323,14 +323,14 @@ export function notificationHubBrowserCredentialToHclTerraform(struct?: Notifica
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotificationHubBrowserCredentialOutputReference extends cdktf.ComplexObject {
+export class NotificationHubBrowserCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -414,24 +414,24 @@ export interface NotificationHubGcmCredential {
 }
 
 export function notificationHubGcmCredentialToTerraform(struct?: NotificationHubGcmCredentialOutputReference | NotificationHubGcmCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_key: cdktf.stringToTerraform(struct!.apiKey),
+    api_key: cdktn.stringToTerraform(struct!.apiKey),
   }
 }
 
 
 export function notificationHubGcmCredentialToHclTerraform(struct?: NotificationHubGcmCredentialOutputReference | NotificationHubGcmCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_key: {
-      value: cdktf.stringToHclTerraform(struct!.apiKey),
+      value: cdktn.stringToHclTerraform(struct!.apiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -442,14 +442,14 @@ export function notificationHubGcmCredentialToHclTerraform(struct?: Notification
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotificationHubGcmCredentialOutputReference extends cdktf.ComplexObject {
+export class NotificationHubGcmCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -506,46 +506,46 @@ export interface NotificationHubTimeouts {
   readonly update?: string;
 }
 
-export function notificationHubTimeoutsToTerraform(struct?: NotificationHubTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationHubTimeoutsToTerraform(struct?: NotificationHubTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function notificationHubTimeoutsToHclTerraform(struct?: NotificationHubTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationHubTimeoutsToHclTerraform(struct?: NotificationHubTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -556,19 +556,19 @@ export function notificationHubTimeoutsToHclTerraform(struct?: NotificationHubTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotificationHubTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NotificationHubTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NotificationHubTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NotificationHubTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -593,7 +593,7 @@ export class NotificationHubTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NotificationHubTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NotificationHubTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -602,7 +602,7 @@ export class NotificationHubTimeoutsOutputReference extends cdktf.ComplexObject 
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -684,7 +684,7 @@ export class NotificationHubTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/notification_hub azurerm_notification_hub}
 */
-export class NotificationHub extends cdktf.TerraformResource {
+export class NotificationHub extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -695,14 +695,14 @@ export class NotificationHub extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NotificationHub resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NotificationHub resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationHub to import
   * @param importFromId The id of the existing NotificationHub that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/notification_hub#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationHub to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_notification_hub", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_notification_hub", importId: importFromId, provider });
       }
 
   // ===========
@@ -902,12 +902,12 @@ export class NotificationHub extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      namespace_name: cdktf.stringToTerraform(this._namespaceName),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      namespace_name: cdktn.stringToTerraform(this._namespaceName),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       apns_credential: notificationHubApnsCredentialToTerraform(this._apnsCredential.internalValue),
       browser_credential: notificationHubBrowserCredentialToTerraform(this._browserCredential.internalValue),
       gcm_credential: notificationHubGcmCredentialToTerraform(this._gcmCredential.internalValue),
@@ -918,37 +918,37 @@ export class NotificationHub extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace_name: {
-        value: cdktf.stringToHclTerraform(this._namespaceName),
+        value: cdktn.stringToHclTerraform(this._namespaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

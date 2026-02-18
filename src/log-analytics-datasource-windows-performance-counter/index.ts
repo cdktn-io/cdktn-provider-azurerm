@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogAnalyticsDatasourceWindowsPerformanceCounterConfig extends cdktf.TerraformMetaArguments {
+export interface LogAnalyticsDatasourceWindowsPerformanceCounterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_datasource_windows_performance_counter#counter_name LogAnalyticsDatasourceWindowsPerformanceCounter#counter_name}
   */
@@ -73,46 +73,46 @@ export interface LogAnalyticsDatasourceWindowsPerformanceCounterTimeouts {
   readonly update?: string;
 }
 
-export function logAnalyticsDatasourceWindowsPerformanceCounterTimeoutsToTerraform(struct?: LogAnalyticsDatasourceWindowsPerformanceCounterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsDatasourceWindowsPerformanceCounterTimeoutsToTerraform(struct?: LogAnalyticsDatasourceWindowsPerformanceCounterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function logAnalyticsDatasourceWindowsPerformanceCounterTimeoutsToHclTerraform(struct?: LogAnalyticsDatasourceWindowsPerformanceCounterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsDatasourceWindowsPerformanceCounterTimeoutsToHclTerraform(struct?: LogAnalyticsDatasourceWindowsPerformanceCounterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,19 +123,19 @@ export function logAnalyticsDatasourceWindowsPerformanceCounterTimeoutsToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogAnalyticsDatasourceWindowsPerformanceCounterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LogAnalyticsDatasourceWindowsPerformanceCounterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LogAnalyticsDatasourceWindowsPerformanceCounterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LogAnalyticsDatasourceWindowsPerformanceCounterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -160,7 +160,7 @@ export class LogAnalyticsDatasourceWindowsPerformanceCounterTimeoutsOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogAnalyticsDatasourceWindowsPerformanceCounterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogAnalyticsDatasourceWindowsPerformanceCounterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class LogAnalyticsDatasourceWindowsPerformanceCounterTimeoutsOutputRefere
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -251,7 +251,7 @@ export class LogAnalyticsDatasourceWindowsPerformanceCounterTimeoutsOutputRefere
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_datasource_windows_performance_counter azurerm_log_analytics_datasource_windows_performance_counter}
 */
-export class LogAnalyticsDatasourceWindowsPerformanceCounter extends cdktf.TerraformResource {
+export class LogAnalyticsDatasourceWindowsPerformanceCounter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -262,14 +262,14 @@ export class LogAnalyticsDatasourceWindowsPerformanceCounter extends cdktf.Terra
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogAnalyticsDatasourceWindowsPerformanceCounter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogAnalyticsDatasourceWindowsPerformanceCounter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogAnalyticsDatasourceWindowsPerformanceCounter to import
   * @param importFromId The id of the existing LogAnalyticsDatasourceWindowsPerformanceCounter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_datasource_windows_performance_counter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogAnalyticsDatasourceWindowsPerformanceCounter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_datasource_windows_performance_counter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_datasource_windows_performance_counter", importId: importFromId, provider });
       }
 
   // ===========
@@ -443,14 +443,14 @@ export class LogAnalyticsDatasourceWindowsPerformanceCounter extends cdktf.Terra
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      counter_name: cdktf.stringToTerraform(this._counterName),
-      id: cdktf.stringToTerraform(this._id),
-      instance_name: cdktf.stringToTerraform(this._instanceName),
-      interval_seconds: cdktf.numberToTerraform(this._intervalSeconds),
-      name: cdktf.stringToTerraform(this._name),
-      object_name: cdktf.stringToTerraform(this._objectName),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      workspace_name: cdktf.stringToTerraform(this._workspaceName),
+      counter_name: cdktn.stringToTerraform(this._counterName),
+      id: cdktn.stringToTerraform(this._id),
+      instance_name: cdktn.stringToTerraform(this._instanceName),
+      interval_seconds: cdktn.numberToTerraform(this._intervalSeconds),
+      name: cdktn.stringToTerraform(this._name),
+      object_name: cdktn.stringToTerraform(this._objectName),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      workspace_name: cdktn.stringToTerraform(this._workspaceName),
       timeouts: logAnalyticsDatasourceWindowsPerformanceCounterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -458,49 +458,49 @@ export class LogAnalyticsDatasourceWindowsPerformanceCounter extends cdktf.Terra
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       counter_name: {
-        value: cdktf.stringToHclTerraform(this._counterName),
+        value: cdktn.stringToHclTerraform(this._counterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_name: {
-        value: cdktf.stringToHclTerraform(this._instanceName),
+        value: cdktn.stringToHclTerraform(this._instanceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       interval_seconds: {
-        value: cdktf.numberToHclTerraform(this._intervalSeconds),
+        value: cdktn.numberToHclTerraform(this._intervalSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_name: {
-        value: cdktf.stringToHclTerraform(this._objectName),
+        value: cdktn.stringToHclTerraform(this._objectName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_name: {
-        value: cdktf.stringToHclTerraform(this._workspaceName),
+        value: cdktn.stringToHclTerraform(this._workspaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

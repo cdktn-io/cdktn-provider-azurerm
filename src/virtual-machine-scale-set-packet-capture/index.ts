@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VirtualMachineScaleSetPacketCaptureConfig extends cdktf.TerraformMetaArguments {
+export interface VirtualMachineScaleSetPacketCaptureConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_scale_set_packet_capture#id VirtualMachineScaleSetPacketCapture#id}
   *
@@ -48,7 +48,7 @@ export interface VirtualMachineScaleSetPacketCaptureConfig extends cdktf.Terrafo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_scale_set_packet_capture#filter VirtualMachineScaleSetPacketCapture#filter}
   */
-  readonly filter?: VirtualMachineScaleSetPacketCaptureFilter[] | cdktf.IResolvable;
+  readonly filter?: VirtualMachineScaleSetPacketCaptureFilter[] | cdktn.IResolvable;
   /**
   * machine_scope block
   *
@@ -91,53 +91,53 @@ export interface VirtualMachineScaleSetPacketCaptureFilter {
   readonly remotePort?: string;
 }
 
-export function virtualMachineScaleSetPacketCaptureFilterToTerraform(struct?: VirtualMachineScaleSetPacketCaptureFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineScaleSetPacketCaptureFilterToTerraform(struct?: VirtualMachineScaleSetPacketCaptureFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    local_ip_address: cdktf.stringToTerraform(struct!.localIpAddress),
-    local_port: cdktf.stringToTerraform(struct!.localPort),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    remote_ip_address: cdktf.stringToTerraform(struct!.remoteIpAddress),
-    remote_port: cdktf.stringToTerraform(struct!.remotePort),
+    local_ip_address: cdktn.stringToTerraform(struct!.localIpAddress),
+    local_port: cdktn.stringToTerraform(struct!.localPort),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    remote_ip_address: cdktn.stringToTerraform(struct!.remoteIpAddress),
+    remote_port: cdktn.stringToTerraform(struct!.remotePort),
   }
 }
 
 
-export function virtualMachineScaleSetPacketCaptureFilterToHclTerraform(struct?: VirtualMachineScaleSetPacketCaptureFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineScaleSetPacketCaptureFilterToHclTerraform(struct?: VirtualMachineScaleSetPacketCaptureFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     local_ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.localIpAddress),
+      value: cdktn.stringToHclTerraform(struct!.localIpAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     local_port: {
-      value: cdktf.stringToHclTerraform(struct!.localPort),
+      value: cdktn.stringToHclTerraform(struct!.localPort),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     remote_ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.remoteIpAddress),
+      value: cdktn.stringToHclTerraform(struct!.remoteIpAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     remote_port: {
-      value: cdktf.stringToHclTerraform(struct!.remotePort),
+      value: cdktn.stringToHclTerraform(struct!.remotePort),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -148,9 +148,9 @@ export function virtualMachineScaleSetPacketCaptureFilterToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualMachineScaleSetPacketCaptureFilterOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineScaleSetPacketCaptureFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -158,11 +158,11 @@ export class VirtualMachineScaleSetPacketCaptureFilterOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VirtualMachineScaleSetPacketCaptureFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualMachineScaleSetPacketCaptureFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -191,7 +191,7 @@ export class VirtualMachineScaleSetPacketCaptureFilterOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualMachineScaleSetPacketCaptureFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualMachineScaleSetPacketCaptureFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -201,7 +201,7 @@ export class VirtualMachineScaleSetPacketCaptureFilterOutputReference extends cd
       this._remoteIpAddress = undefined;
       this._remotePort = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -294,15 +294,15 @@ export class VirtualMachineScaleSetPacketCaptureFilterOutputReference extends cd
   }
 }
 
-export class VirtualMachineScaleSetPacketCaptureFilterList extends cdktf.ComplexList {
-  public internalValue? : VirtualMachineScaleSetPacketCaptureFilter[] | cdktf.IResolvable
+export class VirtualMachineScaleSetPacketCaptureFilterList extends cdktn.ComplexList {
+  public internalValue? : VirtualMachineScaleSetPacketCaptureFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -325,31 +325,31 @@ export interface VirtualMachineScaleSetPacketCaptureMachineScope {
 }
 
 export function virtualMachineScaleSetPacketCaptureMachineScopeToTerraform(struct?: VirtualMachineScaleSetPacketCaptureMachineScopeOutputReference | VirtualMachineScaleSetPacketCaptureMachineScope): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude_instance_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeInstanceIds),
-    include_instance_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includeInstanceIds),
+    exclude_instance_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeInstanceIds),
+    include_instance_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeInstanceIds),
   }
 }
 
 
 export function virtualMachineScaleSetPacketCaptureMachineScopeToHclTerraform(struct?: VirtualMachineScaleSetPacketCaptureMachineScopeOutputReference | VirtualMachineScaleSetPacketCaptureMachineScope): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exclude_instance_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludeInstanceIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeInstanceIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     include_instance_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includeInstanceIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includeInstanceIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -360,14 +360,14 @@ export function virtualMachineScaleSetPacketCaptureMachineScopeToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualMachineScaleSetPacketCaptureMachineScopeOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineScaleSetPacketCaptureMachineScopeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -442,31 +442,31 @@ export interface VirtualMachineScaleSetPacketCaptureStorageLocation {
 }
 
 export function virtualMachineScaleSetPacketCaptureStorageLocationToTerraform(struct?: VirtualMachineScaleSetPacketCaptureStorageLocationOutputReference | VirtualMachineScaleSetPacketCaptureStorageLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file_path: cdktf.stringToTerraform(struct!.filePath),
-    storage_account_id: cdktf.stringToTerraform(struct!.storageAccountId),
+    file_path: cdktn.stringToTerraform(struct!.filePath),
+    storage_account_id: cdktn.stringToTerraform(struct!.storageAccountId),
   }
 }
 
 
 export function virtualMachineScaleSetPacketCaptureStorageLocationToHclTerraform(struct?: VirtualMachineScaleSetPacketCaptureStorageLocationOutputReference | VirtualMachineScaleSetPacketCaptureStorageLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file_path: {
-      value: cdktf.stringToHclTerraform(struct!.filePath),
+      value: cdktn.stringToHclTerraform(struct!.filePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountId),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -477,14 +477,14 @@ export function virtualMachineScaleSetPacketCaptureStorageLocationToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualMachineScaleSetPacketCaptureStorageLocationOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineScaleSetPacketCaptureStorageLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -567,39 +567,39 @@ export interface VirtualMachineScaleSetPacketCaptureTimeouts {
   readonly read?: string;
 }
 
-export function virtualMachineScaleSetPacketCaptureTimeoutsToTerraform(struct?: VirtualMachineScaleSetPacketCaptureTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineScaleSetPacketCaptureTimeoutsToTerraform(struct?: VirtualMachineScaleSetPacketCaptureTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function virtualMachineScaleSetPacketCaptureTimeoutsToHclTerraform(struct?: VirtualMachineScaleSetPacketCaptureTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineScaleSetPacketCaptureTimeoutsToHclTerraform(struct?: VirtualMachineScaleSetPacketCaptureTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -610,19 +610,19 @@ export function virtualMachineScaleSetPacketCaptureTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualMachineScaleSetPacketCaptureTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineScaleSetPacketCaptureTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VirtualMachineScaleSetPacketCaptureTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualMachineScaleSetPacketCaptureTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -643,7 +643,7 @@ export class VirtualMachineScaleSetPacketCaptureTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualMachineScaleSetPacketCaptureTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualMachineScaleSetPacketCaptureTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -651,7 +651,7 @@ export class VirtualMachineScaleSetPacketCaptureTimeoutsOutputReference extends 
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -716,7 +716,7 @@ export class VirtualMachineScaleSetPacketCaptureTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_scale_set_packet_capture azurerm_virtual_machine_scale_set_packet_capture}
 */
-export class VirtualMachineScaleSetPacketCapture extends cdktf.TerraformResource {
+export class VirtualMachineScaleSetPacketCapture extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -727,14 +727,14 @@ export class VirtualMachineScaleSetPacketCapture extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VirtualMachineScaleSetPacketCapture resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VirtualMachineScaleSetPacketCapture resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualMachineScaleSetPacketCapture to import
   * @param importFromId The id of the existing VirtualMachineScaleSetPacketCapture that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_scale_set_packet_capture#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualMachineScaleSetPacketCapture to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_machine_scale_set_packet_capture", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_machine_scale_set_packet_capture", importId: importFromId, provider });
       }
 
   // ===========
@@ -889,7 +889,7 @@ export class VirtualMachineScaleSetPacketCapture extends cdktf.TerraformResource
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: VirtualMachineScaleSetPacketCaptureFilter[] | cdktf.IResolvable) {
+  public putFilter(value: VirtualMachineScaleSetPacketCaptureFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -951,14 +951,14 @@ export class VirtualMachineScaleSetPacketCapture extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      maximum_bytes_per_packet: cdktf.numberToTerraform(this._maximumBytesPerPacket),
-      maximum_bytes_per_session: cdktf.numberToTerraform(this._maximumBytesPerSession),
-      maximum_capture_duration_in_seconds: cdktf.numberToTerraform(this._maximumCaptureDurationInSeconds),
-      name: cdktf.stringToTerraform(this._name),
-      network_watcher_id: cdktf.stringToTerraform(this._networkWatcherId),
-      virtual_machine_scale_set_id: cdktf.stringToTerraform(this._virtualMachineScaleSetId),
-      filter: cdktf.listMapper(virtualMachineScaleSetPacketCaptureFilterToTerraform, true)(this._filter.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      maximum_bytes_per_packet: cdktn.numberToTerraform(this._maximumBytesPerPacket),
+      maximum_bytes_per_session: cdktn.numberToTerraform(this._maximumBytesPerSession),
+      maximum_capture_duration_in_seconds: cdktn.numberToTerraform(this._maximumCaptureDurationInSeconds),
+      name: cdktn.stringToTerraform(this._name),
+      network_watcher_id: cdktn.stringToTerraform(this._networkWatcherId),
+      virtual_machine_scale_set_id: cdktn.stringToTerraform(this._virtualMachineScaleSetId),
+      filter: cdktn.listMapper(virtualMachineScaleSetPacketCaptureFilterToTerraform, true)(this._filter.internalValue),
       machine_scope: virtualMachineScaleSetPacketCaptureMachineScopeToTerraform(this._machineScope.internalValue),
       storage_location: virtualMachineScaleSetPacketCaptureStorageLocationToTerraform(this._storageLocation.internalValue),
       timeouts: virtualMachineScaleSetPacketCaptureTimeoutsToTerraform(this._timeouts.internalValue),
@@ -968,49 +968,49 @@ export class VirtualMachineScaleSetPacketCapture extends cdktf.TerraformResource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       maximum_bytes_per_packet: {
-        value: cdktf.numberToHclTerraform(this._maximumBytesPerPacket),
+        value: cdktn.numberToHclTerraform(this._maximumBytesPerPacket),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       maximum_bytes_per_session: {
-        value: cdktf.numberToHclTerraform(this._maximumBytesPerSession),
+        value: cdktn.numberToHclTerraform(this._maximumBytesPerSession),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       maximum_capture_duration_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._maximumCaptureDurationInSeconds),
+        value: cdktn.numberToHclTerraform(this._maximumCaptureDurationInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_watcher_id: {
-        value: cdktf.stringToHclTerraform(this._networkWatcherId),
+        value: cdktn.stringToHclTerraform(this._networkWatcherId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_machine_scale_set_id: {
-        value: cdktf.stringToHclTerraform(this._virtualMachineScaleSetId),
+        value: cdktn.stringToHclTerraform(this._virtualMachineScaleSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter: {
-        value: cdktf.listMapperHcl(virtualMachineScaleSetPacketCaptureFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(virtualMachineScaleSetPacketCaptureFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VirtualMachineScaleSetPacketCaptureFilterList",

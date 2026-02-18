@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ContainerAppEnvironmentCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface ContainerAppEnvironmentCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_environment_certificate#certificate_blob_base64 ContainerAppEnvironmentCertificate#certificate_blob_base64}
   */
@@ -64,31 +64,31 @@ export interface ContainerAppEnvironmentCertificateCertificateKeyVault {
 }
 
 export function containerAppEnvironmentCertificateCertificateKeyVaultToTerraform(struct?: ContainerAppEnvironmentCertificateCertificateKeyVaultOutputReference | ContainerAppEnvironmentCertificateCertificateKeyVault): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity: cdktf.stringToTerraform(struct!.identity),
-    key_vault_secret_id: cdktf.stringToTerraform(struct!.keyVaultSecretId),
+    identity: cdktn.stringToTerraform(struct!.identity),
+    key_vault_secret_id: cdktn.stringToTerraform(struct!.keyVaultSecretId),
   }
 }
 
 
 export function containerAppEnvironmentCertificateCertificateKeyVaultToHclTerraform(struct?: ContainerAppEnvironmentCertificateCertificateKeyVaultOutputReference | ContainerAppEnvironmentCertificateCertificateKeyVault): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity: {
-      value: cdktf.stringToHclTerraform(struct!.identity),
+      value: cdktn.stringToHclTerraform(struct!.identity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_secret_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultSecretId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultSecretId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -99,14 +99,14 @@ export function containerAppEnvironmentCertificateCertificateKeyVaultToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContainerAppEnvironmentCertificateCertificateKeyVaultOutputReference extends cdktf.ComplexObject {
+export class ContainerAppEnvironmentCertificateCertificateKeyVaultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -185,46 +185,46 @@ export interface ContainerAppEnvironmentCertificateTimeouts {
   readonly update?: string;
 }
 
-export function containerAppEnvironmentCertificateTimeoutsToTerraform(struct?: ContainerAppEnvironmentCertificateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAppEnvironmentCertificateTimeoutsToTerraform(struct?: ContainerAppEnvironmentCertificateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function containerAppEnvironmentCertificateTimeoutsToHclTerraform(struct?: ContainerAppEnvironmentCertificateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAppEnvironmentCertificateTimeoutsToHclTerraform(struct?: ContainerAppEnvironmentCertificateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -235,19 +235,19 @@ export function containerAppEnvironmentCertificateTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContainerAppEnvironmentCertificateTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ContainerAppEnvironmentCertificateTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ContainerAppEnvironmentCertificateTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ContainerAppEnvironmentCertificateTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -272,7 +272,7 @@ export class ContainerAppEnvironmentCertificateTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ContainerAppEnvironmentCertificateTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ContainerAppEnvironmentCertificateTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -281,7 +281,7 @@ export class ContainerAppEnvironmentCertificateTimeoutsOutputReference extends c
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -363,7 +363,7 @@ export class ContainerAppEnvironmentCertificateTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_environment_certificate azurerm_container_app_environment_certificate}
 */
-export class ContainerAppEnvironmentCertificate extends cdktf.TerraformResource {
+export class ContainerAppEnvironmentCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -374,14 +374,14 @@ export class ContainerAppEnvironmentCertificate extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ContainerAppEnvironmentCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ContainerAppEnvironmentCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContainerAppEnvironmentCertificate to import
   * @param importFromId The id of the existing ContainerAppEnvironmentCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_environment_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContainerAppEnvironmentCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_container_app_environment_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_container_app_environment_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -578,12 +578,12 @@ export class ContainerAppEnvironmentCertificate extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_blob_base64: cdktf.stringToTerraform(this._certificateBlobBase64),
-      certificate_password: cdktf.stringToTerraform(this._certificatePassword),
-      container_app_environment_id: cdktf.stringToTerraform(this._containerAppEnvironmentId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      certificate_blob_base64: cdktn.stringToTerraform(this._certificateBlobBase64),
+      certificate_password: cdktn.stringToTerraform(this._certificatePassword),
+      container_app_environment_id: cdktn.stringToTerraform(this._containerAppEnvironmentId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       certificate_key_vault: containerAppEnvironmentCertificateCertificateKeyVaultToTerraform(this._certificateKeyVault.internalValue),
       timeouts: containerAppEnvironmentCertificateTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -592,37 +592,37 @@ export class ContainerAppEnvironmentCertificate extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       certificate_blob_base64: {
-        value: cdktf.stringToHclTerraform(this._certificateBlobBase64),
+        value: cdktn.stringToHclTerraform(this._certificateBlobBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_password: {
-        value: cdktf.stringToHclTerraform(this._certificatePassword),
+        value: cdktn.stringToHclTerraform(this._certificatePassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       container_app_environment_id: {
-        value: cdktf.stringToHclTerraform(this._containerAppEnvironmentId),
+        value: cdktn.stringToHclTerraform(this._containerAppEnvironmentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

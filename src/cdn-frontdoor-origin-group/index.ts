@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CdnFrontdoorOriginGroupConfig extends cdktf.TerraformMetaArguments {
+export interface CdnFrontdoorOriginGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_origin_group#cdn_frontdoor_profile_id CdnFrontdoorOriginGroup#cdn_frontdoor_profile_id}
   */
@@ -34,7 +34,7 @@ export interface CdnFrontdoorOriginGroupConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_origin_group#session_affinity_enabled CdnFrontdoorOriginGroup#session_affinity_enabled}
   */
-  readonly sessionAffinityEnabled?: boolean | cdktf.IResolvable;
+  readonly sessionAffinityEnabled?: boolean | cdktn.IResolvable;
   /**
   * health_probe block
   *
@@ -74,45 +74,45 @@ export interface CdnFrontdoorOriginGroupHealthProbe {
 }
 
 export function cdnFrontdoorOriginGroupHealthProbeToTerraform(struct?: CdnFrontdoorOriginGroupHealthProbeOutputReference | CdnFrontdoorOriginGroupHealthProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    interval_in_seconds: cdktf.numberToTerraform(struct!.intervalInSeconds),
-    path: cdktf.stringToTerraform(struct!.path),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
-    request_type: cdktf.stringToTerraform(struct!.requestType),
+    interval_in_seconds: cdktn.numberToTerraform(struct!.intervalInSeconds),
+    path: cdktn.stringToTerraform(struct!.path),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+    request_type: cdktn.stringToTerraform(struct!.requestType),
   }
 }
 
 
 export function cdnFrontdoorOriginGroupHealthProbeToHclTerraform(struct?: CdnFrontdoorOriginGroupHealthProbeOutputReference | CdnFrontdoorOriginGroupHealthProbe): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     interval_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.intervalInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.intervalInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     request_type: {
-      value: cdktf.stringToHclTerraform(struct!.requestType),
+      value: cdktn.stringToHclTerraform(struct!.requestType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,14 +123,14 @@ export function cdnFrontdoorOriginGroupHealthProbeToHclTerraform(struct?: CdnFro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorOriginGroupHealthProbeOutputReference extends cdktf.ComplexObject {
+export class CdnFrontdoorOriginGroupHealthProbeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -247,38 +247,38 @@ export interface CdnFrontdoorOriginGroupLoadBalancing {
 }
 
 export function cdnFrontdoorOriginGroupLoadBalancingToTerraform(struct?: CdnFrontdoorOriginGroupLoadBalancingOutputReference | CdnFrontdoorOriginGroupLoadBalancing): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_latency_in_milliseconds: cdktf.numberToTerraform(struct!.additionalLatencyInMilliseconds),
-    sample_size: cdktf.numberToTerraform(struct!.sampleSize),
-    successful_samples_required: cdktf.numberToTerraform(struct!.successfulSamplesRequired),
+    additional_latency_in_milliseconds: cdktn.numberToTerraform(struct!.additionalLatencyInMilliseconds),
+    sample_size: cdktn.numberToTerraform(struct!.sampleSize),
+    successful_samples_required: cdktn.numberToTerraform(struct!.successfulSamplesRequired),
   }
 }
 
 
 export function cdnFrontdoorOriginGroupLoadBalancingToHclTerraform(struct?: CdnFrontdoorOriginGroupLoadBalancingOutputReference | CdnFrontdoorOriginGroupLoadBalancing): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_latency_in_milliseconds: {
-      value: cdktf.numberToHclTerraform(struct!.additionalLatencyInMilliseconds),
+      value: cdktn.numberToHclTerraform(struct!.additionalLatencyInMilliseconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     sample_size: {
-      value: cdktf.numberToHclTerraform(struct!.sampleSize),
+      value: cdktn.numberToHclTerraform(struct!.sampleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     successful_samples_required: {
-      value: cdktf.numberToHclTerraform(struct!.successfulSamplesRequired),
+      value: cdktn.numberToHclTerraform(struct!.successfulSamplesRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -289,14 +289,14 @@ export function cdnFrontdoorOriginGroupLoadBalancingToHclTerraform(struct?: CdnF
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorOriginGroupLoadBalancingOutputReference extends cdktf.ComplexObject {
+export class CdnFrontdoorOriginGroupLoadBalancingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -400,46 +400,46 @@ export interface CdnFrontdoorOriginGroupTimeouts {
   readonly update?: string;
 }
 
-export function cdnFrontdoorOriginGroupTimeoutsToTerraform(struct?: CdnFrontdoorOriginGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cdnFrontdoorOriginGroupTimeoutsToTerraform(struct?: CdnFrontdoorOriginGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cdnFrontdoorOriginGroupTimeoutsToHclTerraform(struct?: CdnFrontdoorOriginGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cdnFrontdoorOriginGroupTimeoutsToHclTerraform(struct?: CdnFrontdoorOriginGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -450,19 +450,19 @@ export function cdnFrontdoorOriginGroupTimeoutsToHclTerraform(struct?: CdnFrontd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorOriginGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CdnFrontdoorOriginGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CdnFrontdoorOriginGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorOriginGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -487,7 +487,7 @@ export class CdnFrontdoorOriginGroupTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorOriginGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorOriginGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -496,7 +496,7 @@ export class CdnFrontdoorOriginGroupTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -578,7 +578,7 @@ export class CdnFrontdoorOriginGroupTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_origin_group azurerm_cdn_frontdoor_origin_group}
 */
-export class CdnFrontdoorOriginGroup extends cdktf.TerraformResource {
+export class CdnFrontdoorOriginGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -589,14 +589,14 @@ export class CdnFrontdoorOriginGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CdnFrontdoorOriginGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CdnFrontdoorOriginGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CdnFrontdoorOriginGroup to import
   * @param importFromId The id of the existing CdnFrontdoorOriginGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_origin_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CdnFrontdoorOriginGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cdn_frontdoor_origin_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cdn_frontdoor_origin_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -699,11 +699,11 @@ export class CdnFrontdoorOriginGroup extends cdktf.TerraformResource {
   }
 
   // session_affinity_enabled - computed: false, optional: true, required: false
-  private _sessionAffinityEnabled?: boolean | cdktf.IResolvable; 
+  private _sessionAffinityEnabled?: boolean | cdktn.IResolvable; 
   public get sessionAffinityEnabled() {
     return this.getBooleanAttribute('session_affinity_enabled');
   }
-  public set sessionAffinityEnabled(value: boolean | cdktf.IResolvable) {
+  public set sessionAffinityEnabled(value: boolean | cdktn.IResolvable) {
     this._sessionAffinityEnabled = value;
   }
   public resetSessionAffinityEnabled() {
@@ -765,11 +765,11 @@ export class CdnFrontdoorOriginGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cdn_frontdoor_profile_id: cdktf.stringToTerraform(this._cdnFrontdoorProfileId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      restore_traffic_time_to_healed_or_new_endpoint_in_minutes: cdktf.numberToTerraform(this._restoreTrafficTimeToHealedOrNewEndpointInMinutes),
-      session_affinity_enabled: cdktf.booleanToTerraform(this._sessionAffinityEnabled),
+      cdn_frontdoor_profile_id: cdktn.stringToTerraform(this._cdnFrontdoorProfileId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      restore_traffic_time_to_healed_or_new_endpoint_in_minutes: cdktn.numberToTerraform(this._restoreTrafficTimeToHealedOrNewEndpointInMinutes),
+      session_affinity_enabled: cdktn.booleanToTerraform(this._sessionAffinityEnabled),
       health_probe: cdnFrontdoorOriginGroupHealthProbeToTerraform(this._healthProbe.internalValue),
       load_balancing: cdnFrontdoorOriginGroupLoadBalancingToTerraform(this._loadBalancing.internalValue),
       timeouts: cdnFrontdoorOriginGroupTimeoutsToTerraform(this._timeouts.internalValue),
@@ -779,31 +779,31 @@ export class CdnFrontdoorOriginGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cdn_frontdoor_profile_id: {
-        value: cdktf.stringToHclTerraform(this._cdnFrontdoorProfileId),
+        value: cdktn.stringToHclTerraform(this._cdnFrontdoorProfileId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       restore_traffic_time_to_healed_or_new_endpoint_in_minutes: {
-        value: cdktf.numberToHclTerraform(this._restoreTrafficTimeToHealedOrNewEndpointInMinutes),
+        value: cdktn.numberToHclTerraform(this._restoreTrafficTimeToHealedOrNewEndpointInMinutes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       session_affinity_enabled: {
-        value: cdktf.booleanToHclTerraform(this._sessionAffinityEnabled),
+        value: cdktn.booleanToHclTerraform(this._sessionAffinityEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

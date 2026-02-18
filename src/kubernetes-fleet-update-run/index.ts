@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KubernetesFleetUpdateRunConfig extends cdktf.TerraformMetaArguments {
+export interface KubernetesFleetUpdateRunConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_fleet_update_run#fleet_update_strategy_id KubernetesFleetUpdateRun#fleet_update_strategy_id}
   */
@@ -42,7 +42,7 @@ export interface KubernetesFleetUpdateRunConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_fleet_update_run#stage KubernetesFleetUpdateRun#stage}
   */
-  readonly stage?: KubernetesFleetUpdateRunStage[] | cdktf.IResolvable;
+  readonly stage?: KubernetesFleetUpdateRunStage[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -58,24 +58,24 @@ export interface KubernetesFleetUpdateRunManagedClusterUpdateNodeImageSelection 
 }
 
 export function kubernetesFleetUpdateRunManagedClusterUpdateNodeImageSelectionToTerraform(struct?: KubernetesFleetUpdateRunManagedClusterUpdateNodeImageSelectionOutputReference | KubernetesFleetUpdateRunManagedClusterUpdateNodeImageSelection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function kubernetesFleetUpdateRunManagedClusterUpdateNodeImageSelectionToHclTerraform(struct?: KubernetesFleetUpdateRunManagedClusterUpdateNodeImageSelectionOutputReference | KubernetesFleetUpdateRunManagedClusterUpdateNodeImageSelection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -86,14 +86,14 @@ export function kubernetesFleetUpdateRunManagedClusterUpdateNodeImageSelectionTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KubernetesFleetUpdateRunManagedClusterUpdateNodeImageSelectionOutputReference extends cdktf.ComplexObject {
+export class KubernetesFleetUpdateRunManagedClusterUpdateNodeImageSelectionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -143,31 +143,31 @@ export interface KubernetesFleetUpdateRunManagedClusterUpdateUpgrade {
 }
 
 export function kubernetesFleetUpdateRunManagedClusterUpdateUpgradeToTerraform(struct?: KubernetesFleetUpdateRunManagedClusterUpdateUpgradeOutputReference | KubernetesFleetUpdateRunManagedClusterUpdateUpgrade): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kubernetes_version: cdktf.stringToTerraform(struct!.kubernetesVersion),
-    type: cdktf.stringToTerraform(struct!.type),
+    kubernetes_version: cdktn.stringToTerraform(struct!.kubernetesVersion),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function kubernetesFleetUpdateRunManagedClusterUpdateUpgradeToHclTerraform(struct?: KubernetesFleetUpdateRunManagedClusterUpdateUpgradeOutputReference | KubernetesFleetUpdateRunManagedClusterUpdateUpgrade): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kubernetes_version: {
-      value: cdktf.stringToHclTerraform(struct!.kubernetesVersion),
+      value: cdktn.stringToHclTerraform(struct!.kubernetesVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -178,14 +178,14 @@ export function kubernetesFleetUpdateRunManagedClusterUpdateUpgradeToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KubernetesFleetUpdateRunManagedClusterUpdateUpgradeOutputReference extends cdktf.ComplexObject {
+export class KubernetesFleetUpdateRunManagedClusterUpdateUpgradeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -261,8 +261,8 @@ export interface KubernetesFleetUpdateRunManagedClusterUpdate {
 }
 
 export function kubernetesFleetUpdateRunManagedClusterUpdateToTerraform(struct?: KubernetesFleetUpdateRunManagedClusterUpdateOutputReference | KubernetesFleetUpdateRunManagedClusterUpdate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -273,8 +273,8 @@ export function kubernetesFleetUpdateRunManagedClusterUpdateToTerraform(struct?:
 
 
 export function kubernetesFleetUpdateRunManagedClusterUpdateToHclTerraform(struct?: KubernetesFleetUpdateRunManagedClusterUpdateOutputReference | KubernetesFleetUpdateRunManagedClusterUpdate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -296,14 +296,14 @@ export function kubernetesFleetUpdateRunManagedClusterUpdateToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KubernetesFleetUpdateRunManagedClusterUpdateOutputReference extends cdktf.ComplexObject {
+export class KubernetesFleetUpdateRunManagedClusterUpdateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -370,25 +370,25 @@ export interface KubernetesFleetUpdateRunStageGroup {
   readonly name: string;
 }
 
-export function kubernetesFleetUpdateRunStageGroupToTerraform(struct?: KubernetesFleetUpdateRunStageGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kubernetesFleetUpdateRunStageGroupToTerraform(struct?: KubernetesFleetUpdateRunStageGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function kubernetesFleetUpdateRunStageGroupToHclTerraform(struct?: KubernetesFleetUpdateRunStageGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kubernetesFleetUpdateRunStageGroupToHclTerraform(struct?: KubernetesFleetUpdateRunStageGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -399,9 +399,9 @@ export function kubernetesFleetUpdateRunStageGroupToHclTerraform(struct?: Kubern
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KubernetesFleetUpdateRunStageGroupOutputReference extends cdktf.ComplexObject {
+export class KubernetesFleetUpdateRunStageGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -409,11 +409,11 @@ export class KubernetesFleetUpdateRunStageGroupOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KubernetesFleetUpdateRunStageGroup | cdktf.IResolvable | undefined {
+  public get internalValue(): KubernetesFleetUpdateRunStageGroup | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -426,13 +426,13 @@ export class KubernetesFleetUpdateRunStageGroupOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KubernetesFleetUpdateRunStageGroup | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KubernetesFleetUpdateRunStageGroup | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -457,15 +457,15 @@ export class KubernetesFleetUpdateRunStageGroupOutputReference extends cdktf.Com
   }
 }
 
-export class KubernetesFleetUpdateRunStageGroupList extends cdktf.ComplexList {
-  public internalValue? : KubernetesFleetUpdateRunStageGroup[] | cdktf.IResolvable
+export class KubernetesFleetUpdateRunStageGroupList extends cdktn.ComplexList {
+  public internalValue? : KubernetesFleetUpdateRunStageGroup[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -490,42 +490,42 @@ export interface KubernetesFleetUpdateRunStage {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_fleet_update_run#group KubernetesFleetUpdateRun#group}
   */
-  readonly group: KubernetesFleetUpdateRunStageGroup[] | cdktf.IResolvable;
+  readonly group: KubernetesFleetUpdateRunStageGroup[] | cdktn.IResolvable;
 }
 
-export function kubernetesFleetUpdateRunStageToTerraform(struct?: KubernetesFleetUpdateRunStage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kubernetesFleetUpdateRunStageToTerraform(struct?: KubernetesFleetUpdateRunStage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    after_stage_wait_in_seconds: cdktf.numberToTerraform(struct!.afterStageWaitInSeconds),
-    name: cdktf.stringToTerraform(struct!.name),
-    group: cdktf.listMapper(kubernetesFleetUpdateRunStageGroupToTerraform, true)(struct!.group),
+    after_stage_wait_in_seconds: cdktn.numberToTerraform(struct!.afterStageWaitInSeconds),
+    name: cdktn.stringToTerraform(struct!.name),
+    group: cdktn.listMapper(kubernetesFleetUpdateRunStageGroupToTerraform, true)(struct!.group),
   }
 }
 
 
-export function kubernetesFleetUpdateRunStageToHclTerraform(struct?: KubernetesFleetUpdateRunStage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kubernetesFleetUpdateRunStageToHclTerraform(struct?: KubernetesFleetUpdateRunStage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     after_stage_wait_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.afterStageWaitInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.afterStageWaitInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group: {
-      value: cdktf.listMapperHcl(kubernetesFleetUpdateRunStageGroupToHclTerraform, true)(struct!.group),
+      value: cdktn.listMapperHcl(kubernetesFleetUpdateRunStageGroupToHclTerraform, true)(struct!.group),
       isBlock: true,
       type: "list",
       storageClassType: "KubernetesFleetUpdateRunStageGroupList",
@@ -536,9 +536,9 @@ export function kubernetesFleetUpdateRunStageToHclTerraform(struct?: KubernetesF
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KubernetesFleetUpdateRunStageOutputReference extends cdktf.ComplexObject {
+export class KubernetesFleetUpdateRunStageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -546,11 +546,11 @@ export class KubernetesFleetUpdateRunStageOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KubernetesFleetUpdateRunStage | cdktf.IResolvable | undefined {
+  public get internalValue(): KubernetesFleetUpdateRunStage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -571,7 +571,7 @@ export class KubernetesFleetUpdateRunStageOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KubernetesFleetUpdateRunStage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KubernetesFleetUpdateRunStage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -579,7 +579,7 @@ export class KubernetesFleetUpdateRunStageOutputReference extends cdktf.ComplexO
       this._name = undefined;
       this._group.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -626,7 +626,7 @@ export class KubernetesFleetUpdateRunStageOutputReference extends cdktf.ComplexO
   public get group() {
     return this._group;
   }
-  public putGroup(value: KubernetesFleetUpdateRunStageGroup[] | cdktf.IResolvable) {
+  public putGroup(value: KubernetesFleetUpdateRunStageGroup[] | cdktn.IResolvable) {
     this._group.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -635,15 +635,15 @@ export class KubernetesFleetUpdateRunStageOutputReference extends cdktf.ComplexO
   }
 }
 
-export class KubernetesFleetUpdateRunStageList extends cdktf.ComplexList {
-  public internalValue? : KubernetesFleetUpdateRunStage[] | cdktf.IResolvable
+export class KubernetesFleetUpdateRunStageList extends cdktn.ComplexList {
+  public internalValue? : KubernetesFleetUpdateRunStage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -673,46 +673,46 @@ export interface KubernetesFleetUpdateRunTimeouts {
   readonly update?: string;
 }
 
-export function kubernetesFleetUpdateRunTimeoutsToTerraform(struct?: KubernetesFleetUpdateRunTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kubernetesFleetUpdateRunTimeoutsToTerraform(struct?: KubernetesFleetUpdateRunTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function kubernetesFleetUpdateRunTimeoutsToHclTerraform(struct?: KubernetesFleetUpdateRunTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kubernetesFleetUpdateRunTimeoutsToHclTerraform(struct?: KubernetesFleetUpdateRunTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -723,19 +723,19 @@ export function kubernetesFleetUpdateRunTimeoutsToHclTerraform(struct?: Kubernet
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KubernetesFleetUpdateRunTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KubernetesFleetUpdateRunTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KubernetesFleetUpdateRunTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KubernetesFleetUpdateRunTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -760,7 +760,7 @@ export class KubernetesFleetUpdateRunTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KubernetesFleetUpdateRunTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KubernetesFleetUpdateRunTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -769,7 +769,7 @@ export class KubernetesFleetUpdateRunTimeoutsOutputReference extends cdktf.Compl
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -851,7 +851,7 @@ export class KubernetesFleetUpdateRunTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_fleet_update_run azurerm_kubernetes_fleet_update_run}
 */
-export class KubernetesFleetUpdateRun extends cdktf.TerraformResource {
+export class KubernetesFleetUpdateRun extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -862,14 +862,14 @@ export class KubernetesFleetUpdateRun extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KubernetesFleetUpdateRun resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KubernetesFleetUpdateRun resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KubernetesFleetUpdateRun to import
   * @param importFromId The id of the existing KubernetesFleetUpdateRun that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_fleet_update_run#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KubernetesFleetUpdateRun to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kubernetes_fleet_update_run", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kubernetes_fleet_update_run", importId: importFromId, provider });
       }
 
   // ===========
@@ -988,7 +988,7 @@ export class KubernetesFleetUpdateRun extends cdktf.TerraformResource {
   public get stage() {
     return this._stage;
   }
-  public putStage(value: KubernetesFleetUpdateRunStage[] | cdktf.IResolvable) {
+  public putStage(value: KubernetesFleetUpdateRunStage[] | cdktn.IResolvable) {
     this._stage.internalValue = value;
   }
   public resetStage() {
@@ -1021,12 +1021,12 @@ export class KubernetesFleetUpdateRun extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      fleet_update_strategy_id: cdktf.stringToTerraform(this._fleetUpdateStrategyId),
-      id: cdktf.stringToTerraform(this._id),
-      kubernetes_fleet_manager_id: cdktf.stringToTerraform(this._kubernetesFleetManagerId),
-      name: cdktf.stringToTerraform(this._name),
+      fleet_update_strategy_id: cdktn.stringToTerraform(this._fleetUpdateStrategyId),
+      id: cdktn.stringToTerraform(this._id),
+      kubernetes_fleet_manager_id: cdktn.stringToTerraform(this._kubernetesFleetManagerId),
+      name: cdktn.stringToTerraform(this._name),
       managed_cluster_update: kubernetesFleetUpdateRunManagedClusterUpdateToTerraform(this._managedClusterUpdate.internalValue),
-      stage: cdktf.listMapper(kubernetesFleetUpdateRunStageToTerraform, true)(this._stage.internalValue),
+      stage: cdktn.listMapper(kubernetesFleetUpdateRunStageToTerraform, true)(this._stage.internalValue),
       timeouts: kubernetesFleetUpdateRunTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1034,25 +1034,25 @@ export class KubernetesFleetUpdateRun extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       fleet_update_strategy_id: {
-        value: cdktf.stringToHclTerraform(this._fleetUpdateStrategyId),
+        value: cdktn.stringToHclTerraform(this._fleetUpdateStrategyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kubernetes_fleet_manager_id: {
-        value: cdktf.stringToHclTerraform(this._kubernetesFleetManagerId),
+        value: cdktn.stringToHclTerraform(this._kubernetesFleetManagerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1064,7 +1064,7 @@ export class KubernetesFleetUpdateRun extends cdktf.TerraformResource {
         storageClassType: "KubernetesFleetUpdateRunManagedClusterUpdateList",
       },
       stage: {
-        value: cdktf.listMapperHcl(kubernetesFleetUpdateRunStageToHclTerraform, true)(this._stage.internalValue),
+        value: cdktn.listMapperHcl(kubernetesFleetUpdateRunStageToHclTerraform, true)(this._stage.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "KubernetesFleetUpdateRunStageList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KustoEventgridDataConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface KustoEventgridDataConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_eventgrid_data_connection#blob_storage_event_type KustoEventgridDataConnection#blob_storage_event_type}
   */
@@ -82,7 +82,7 @@ export interface KustoEventgridDataConnectionConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_eventgrid_data_connection#skip_first_record KustoEventgridDataConnection#skip_first_record}
   */
-  readonly skipFirstRecord?: boolean | cdktf.IResolvable;
+  readonly skipFirstRecord?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_eventgrid_data_connection#storage_account_id KustoEventgridDataConnection#storage_account_id}
   */
@@ -117,46 +117,46 @@ export interface KustoEventgridDataConnectionTimeouts {
   readonly update?: string;
 }
 
-export function kustoEventgridDataConnectionTimeoutsToTerraform(struct?: KustoEventgridDataConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kustoEventgridDataConnectionTimeoutsToTerraform(struct?: KustoEventgridDataConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function kustoEventgridDataConnectionTimeoutsToHclTerraform(struct?: KustoEventgridDataConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kustoEventgridDataConnectionTimeoutsToHclTerraform(struct?: KustoEventgridDataConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -167,19 +167,19 @@ export function kustoEventgridDataConnectionTimeoutsToHclTerraform(struct?: Kust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KustoEventgridDataConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KustoEventgridDataConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KustoEventgridDataConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KustoEventgridDataConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -204,7 +204,7 @@ export class KustoEventgridDataConnectionTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KustoEventgridDataConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KustoEventgridDataConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -213,7 +213,7 @@ export class KustoEventgridDataConnectionTimeoutsOutputReference extends cdktf.C
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -295,7 +295,7 @@ export class KustoEventgridDataConnectionTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_eventgrid_data_connection azurerm_kusto_eventgrid_data_connection}
 */
-export class KustoEventgridDataConnection extends cdktf.TerraformResource {
+export class KustoEventgridDataConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -306,14 +306,14 @@ export class KustoEventgridDataConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KustoEventgridDataConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KustoEventgridDataConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KustoEventgridDataConnection to import
   * @param importFromId The id of the existing KustoEventgridDataConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_eventgrid_data_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KustoEventgridDataConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kusto_eventgrid_data_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kusto_eventgrid_data_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -605,11 +605,11 @@ export class KustoEventgridDataConnection extends cdktf.TerraformResource {
   }
 
   // skip_first_record - computed: false, optional: true, required: false
-  private _skipFirstRecord?: boolean | cdktf.IResolvable; 
+  private _skipFirstRecord?: boolean | cdktn.IResolvable; 
   public get skipFirstRecord() {
     return this.getBooleanAttribute('skip_first_record');
   }
-  public set skipFirstRecord(value: boolean | cdktf.IResolvable) {
+  public set skipFirstRecord(value: boolean | cdktn.IResolvable) {
     this._skipFirstRecord = value;
   }
   public resetSkipFirstRecord() {
@@ -671,25 +671,25 @@ export class KustoEventgridDataConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      blob_storage_event_type: cdktf.stringToTerraform(this._blobStorageEventType),
-      cluster_name: cdktf.stringToTerraform(this._clusterName),
-      data_format: cdktf.stringToTerraform(this._dataFormat),
-      database_name: cdktf.stringToTerraform(this._databaseName),
-      database_routing_type: cdktf.stringToTerraform(this._databaseRoutingType),
-      eventgrid_event_subscription_id: cdktf.stringToTerraform(this._eventgridEventSubscriptionId),
-      eventgrid_resource_id: cdktf.stringToTerraform(this._eventgridResourceId),
-      eventhub_consumer_group_name: cdktf.stringToTerraform(this._eventhubConsumerGroupName),
-      eventhub_id: cdktf.stringToTerraform(this._eventhubId),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      managed_identity_id: cdktf.stringToTerraform(this._managedIdentityId),
-      managed_identity_resource_id: cdktf.stringToTerraform(this._managedIdentityResourceId),
-      mapping_rule_name: cdktf.stringToTerraform(this._mappingRuleName),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      skip_first_record: cdktf.booleanToTerraform(this._skipFirstRecord),
-      storage_account_id: cdktf.stringToTerraform(this._storageAccountId),
-      table_name: cdktf.stringToTerraform(this._tableName),
+      blob_storage_event_type: cdktn.stringToTerraform(this._blobStorageEventType),
+      cluster_name: cdktn.stringToTerraform(this._clusterName),
+      data_format: cdktn.stringToTerraform(this._dataFormat),
+      database_name: cdktn.stringToTerraform(this._databaseName),
+      database_routing_type: cdktn.stringToTerraform(this._databaseRoutingType),
+      eventgrid_event_subscription_id: cdktn.stringToTerraform(this._eventgridEventSubscriptionId),
+      eventgrid_resource_id: cdktn.stringToTerraform(this._eventgridResourceId),
+      eventhub_consumer_group_name: cdktn.stringToTerraform(this._eventhubConsumerGroupName),
+      eventhub_id: cdktn.stringToTerraform(this._eventhubId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      managed_identity_id: cdktn.stringToTerraform(this._managedIdentityId),
+      managed_identity_resource_id: cdktn.stringToTerraform(this._managedIdentityResourceId),
+      mapping_rule_name: cdktn.stringToTerraform(this._mappingRuleName),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      skip_first_record: cdktn.booleanToTerraform(this._skipFirstRecord),
+      storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
+      table_name: cdktn.stringToTerraform(this._tableName),
       timeouts: kustoEventgridDataConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -697,115 +697,115 @@ export class KustoEventgridDataConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       blob_storage_event_type: {
-        value: cdktf.stringToHclTerraform(this._blobStorageEventType),
+        value: cdktn.stringToHclTerraform(this._blobStorageEventType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_name: {
-        value: cdktf.stringToHclTerraform(this._clusterName),
+        value: cdktn.stringToHclTerraform(this._clusterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_format: {
-        value: cdktf.stringToHclTerraform(this._dataFormat),
+        value: cdktn.stringToHclTerraform(this._dataFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_name: {
-        value: cdktf.stringToHclTerraform(this._databaseName),
+        value: cdktn.stringToHclTerraform(this._databaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_routing_type: {
-        value: cdktf.stringToHclTerraform(this._databaseRoutingType),
+        value: cdktn.stringToHclTerraform(this._databaseRoutingType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventgrid_event_subscription_id: {
-        value: cdktf.stringToHclTerraform(this._eventgridEventSubscriptionId),
+        value: cdktn.stringToHclTerraform(this._eventgridEventSubscriptionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventgrid_resource_id: {
-        value: cdktf.stringToHclTerraform(this._eventgridResourceId),
+        value: cdktn.stringToHclTerraform(this._eventgridResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventhub_consumer_group_name: {
-        value: cdktf.stringToHclTerraform(this._eventhubConsumerGroupName),
+        value: cdktn.stringToHclTerraform(this._eventhubConsumerGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventhub_id: {
-        value: cdktf.stringToHclTerraform(this._eventhubId),
+        value: cdktn.stringToHclTerraform(this._eventhubId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_identity_id: {
-        value: cdktf.stringToHclTerraform(this._managedIdentityId),
+        value: cdktn.stringToHclTerraform(this._managedIdentityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_identity_resource_id: {
-        value: cdktf.stringToHclTerraform(this._managedIdentityResourceId),
+        value: cdktn.stringToHclTerraform(this._managedIdentityResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mapping_rule_name: {
-        value: cdktf.stringToHclTerraform(this._mappingRuleName),
+        value: cdktn.stringToHclTerraform(this._mappingRuleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_first_record: {
-        value: cdktf.booleanToHclTerraform(this._skipFirstRecord),
+        value: cdktn.booleanToHclTerraform(this._skipFirstRecord),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountId),
+        value: cdktn.stringToHclTerraform(this._storageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_name: {
-        value: cdktf.stringToHclTerraform(this._tableName),
+        value: cdktn.stringToHclTerraform(this._tableName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PostgresqlFlexibleServerConfig extends cdktf.TerraformMetaArguments {
+export interface PostgresqlFlexibleServerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_flexible_server#administrator_login PostgresqlFlexibleServer#administrator_login}
   */
@@ -31,7 +31,7 @@ export interface PostgresqlFlexibleServerConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_flexible_server#auto_grow_enabled PostgresqlFlexibleServer#auto_grow_enabled}
   */
-  readonly autoGrowEnabled?: boolean | cdktf.IResolvable;
+  readonly autoGrowEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_flexible_server#backup_retention_days PostgresqlFlexibleServer#backup_retention_days}
   */
@@ -47,7 +47,7 @@ export interface PostgresqlFlexibleServerConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_flexible_server#geo_redundant_backup_enabled PostgresqlFlexibleServer#geo_redundant_backup_enabled}
   */
-  readonly geoRedundantBackupEnabled?: boolean | cdktf.IResolvable;
+  readonly geoRedundantBackupEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_flexible_server#id PostgresqlFlexibleServer#id}
   *
@@ -74,7 +74,7 @@ export interface PostgresqlFlexibleServerConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_flexible_server#public_network_access_enabled PostgresqlFlexibleServer#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_flexible_server#replication_role PostgresqlFlexibleServer#replication_role}
   */
@@ -158,11 +158,11 @@ export interface PostgresqlFlexibleServerAuthentication {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_flexible_server#active_directory_auth_enabled PostgresqlFlexibleServer#active_directory_auth_enabled}
   */
-  readonly activeDirectoryAuthEnabled?: boolean | cdktf.IResolvable;
+  readonly activeDirectoryAuthEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_flexible_server#password_auth_enabled PostgresqlFlexibleServer#password_auth_enabled}
   */
-  readonly passwordAuthEnabled?: boolean | cdktf.IResolvable;
+  readonly passwordAuthEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_flexible_server#tenant_id PostgresqlFlexibleServer#tenant_id}
   */
@@ -170,38 +170,38 @@ export interface PostgresqlFlexibleServerAuthentication {
 }
 
 export function postgresqlFlexibleServerAuthenticationToTerraform(struct?: PostgresqlFlexibleServerAuthenticationOutputReference | PostgresqlFlexibleServerAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    active_directory_auth_enabled: cdktf.booleanToTerraform(struct!.activeDirectoryAuthEnabled),
-    password_auth_enabled: cdktf.booleanToTerraform(struct!.passwordAuthEnabled),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    active_directory_auth_enabled: cdktn.booleanToTerraform(struct!.activeDirectoryAuthEnabled),
+    password_auth_enabled: cdktn.booleanToTerraform(struct!.passwordAuthEnabled),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
   }
 }
 
 
 export function postgresqlFlexibleServerAuthenticationToHclTerraform(struct?: PostgresqlFlexibleServerAuthenticationOutputReference | PostgresqlFlexibleServerAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     active_directory_auth_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.activeDirectoryAuthEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.activeDirectoryAuthEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     password_auth_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.passwordAuthEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.passwordAuthEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -212,14 +212,14 @@ export function postgresqlFlexibleServerAuthenticationToHclTerraform(struct?: Po
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PostgresqlFlexibleServerAuthenticationOutputReference extends cdktf.ComplexObject {
+export class PostgresqlFlexibleServerAuthenticationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -257,11 +257,11 @@ export class PostgresqlFlexibleServerAuthenticationOutputReference extends cdktf
   }
 
   // active_directory_auth_enabled - computed: false, optional: true, required: false
-  private _activeDirectoryAuthEnabled?: boolean | cdktf.IResolvable; 
+  private _activeDirectoryAuthEnabled?: boolean | cdktn.IResolvable; 
   public get activeDirectoryAuthEnabled() {
     return this.getBooleanAttribute('active_directory_auth_enabled');
   }
-  public set activeDirectoryAuthEnabled(value: boolean | cdktf.IResolvable) {
+  public set activeDirectoryAuthEnabled(value: boolean | cdktn.IResolvable) {
     this._activeDirectoryAuthEnabled = value;
   }
   public resetActiveDirectoryAuthEnabled() {
@@ -273,11 +273,11 @@ export class PostgresqlFlexibleServerAuthenticationOutputReference extends cdktf
   }
 
   // password_auth_enabled - computed: false, optional: true, required: false
-  private _passwordAuthEnabled?: boolean | cdktf.IResolvable; 
+  private _passwordAuthEnabled?: boolean | cdktn.IResolvable; 
   public get passwordAuthEnabled() {
     return this.getBooleanAttribute('password_auth_enabled');
   }
-  public set passwordAuthEnabled(value: boolean | cdktf.IResolvable) {
+  public set passwordAuthEnabled(value: boolean | cdktn.IResolvable) {
     this._passwordAuthEnabled = value;
   }
   public resetPasswordAuthEnabled() {
@@ -316,31 +316,31 @@ export interface PostgresqlFlexibleServerCluster {
 }
 
 export function postgresqlFlexibleServerClusterToTerraform(struct?: PostgresqlFlexibleServerClusterOutputReference | PostgresqlFlexibleServerCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_database_name: cdktf.stringToTerraform(struct!.defaultDatabaseName),
-    size: cdktf.numberToTerraform(struct!.size),
+    default_database_name: cdktn.stringToTerraform(struct!.defaultDatabaseName),
+    size: cdktn.numberToTerraform(struct!.size),
   }
 }
 
 
 export function postgresqlFlexibleServerClusterToHclTerraform(struct?: PostgresqlFlexibleServerClusterOutputReference | PostgresqlFlexibleServerCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_database_name: {
-      value: cdktf.stringToHclTerraform(struct!.defaultDatabaseName),
+      value: cdktn.stringToHclTerraform(struct!.defaultDatabaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     size: {
-      value: cdktf.numberToHclTerraform(struct!.size),
+      value: cdktn.numberToHclTerraform(struct!.size),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -351,14 +351,14 @@ export function postgresqlFlexibleServerClusterToHclTerraform(struct?: Postgresq
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PostgresqlFlexibleServerClusterOutputReference extends cdktf.ComplexObject {
+export class PostgresqlFlexibleServerClusterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -438,45 +438,45 @@ export interface PostgresqlFlexibleServerCustomerManagedKey {
 }
 
 export function postgresqlFlexibleServerCustomerManagedKeyToTerraform(struct?: PostgresqlFlexibleServerCustomerManagedKeyOutputReference | PostgresqlFlexibleServerCustomerManagedKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    geo_backup_key_vault_key_id: cdktf.stringToTerraform(struct!.geoBackupKeyVaultKeyId),
-    geo_backup_user_assigned_identity_id: cdktf.stringToTerraform(struct!.geoBackupUserAssignedIdentityId),
-    key_vault_key_id: cdktf.stringToTerraform(struct!.keyVaultKeyId),
-    primary_user_assigned_identity_id: cdktf.stringToTerraform(struct!.primaryUserAssignedIdentityId),
+    geo_backup_key_vault_key_id: cdktn.stringToTerraform(struct!.geoBackupKeyVaultKeyId),
+    geo_backup_user_assigned_identity_id: cdktn.stringToTerraform(struct!.geoBackupUserAssignedIdentityId),
+    key_vault_key_id: cdktn.stringToTerraform(struct!.keyVaultKeyId),
+    primary_user_assigned_identity_id: cdktn.stringToTerraform(struct!.primaryUserAssignedIdentityId),
   }
 }
 
 
 export function postgresqlFlexibleServerCustomerManagedKeyToHclTerraform(struct?: PostgresqlFlexibleServerCustomerManagedKeyOutputReference | PostgresqlFlexibleServerCustomerManagedKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     geo_backup_key_vault_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.geoBackupKeyVaultKeyId),
+      value: cdktn.stringToHclTerraform(struct!.geoBackupKeyVaultKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     geo_backup_user_assigned_identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.geoBackupUserAssignedIdentityId),
+      value: cdktn.stringToHclTerraform(struct!.geoBackupUserAssignedIdentityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultKeyId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_user_assigned_identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.primaryUserAssignedIdentityId),
+      value: cdktn.stringToHclTerraform(struct!.primaryUserAssignedIdentityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -487,14 +487,14 @@ export function postgresqlFlexibleServerCustomerManagedKeyToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PostgresqlFlexibleServerCustomerManagedKeyOutputReference extends cdktf.ComplexObject {
+export class PostgresqlFlexibleServerCustomerManagedKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -610,31 +610,31 @@ export interface PostgresqlFlexibleServerHighAvailability {
 }
 
 export function postgresqlFlexibleServerHighAvailabilityToTerraform(struct?: PostgresqlFlexibleServerHighAvailabilityOutputReference | PostgresqlFlexibleServerHighAvailability): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
-    standby_availability_zone: cdktf.stringToTerraform(struct!.standbyAvailabilityZone),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    standby_availability_zone: cdktn.stringToTerraform(struct!.standbyAvailabilityZone),
   }
 }
 
 
 export function postgresqlFlexibleServerHighAvailabilityToHclTerraform(struct?: PostgresqlFlexibleServerHighAvailabilityOutputReference | PostgresqlFlexibleServerHighAvailability): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     standby_availability_zone: {
-      value: cdktf.stringToHclTerraform(struct!.standbyAvailabilityZone),
+      value: cdktn.stringToHclTerraform(struct!.standbyAvailabilityZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -645,14 +645,14 @@ export function postgresqlFlexibleServerHighAvailabilityToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PostgresqlFlexibleServerHighAvailabilityOutputReference extends cdktf.ComplexObject {
+export class PostgresqlFlexibleServerHighAvailabilityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -724,31 +724,31 @@ export interface PostgresqlFlexibleServerIdentity {
 }
 
 export function postgresqlFlexibleServerIdentityToTerraform(struct?: PostgresqlFlexibleServerIdentityOutputReference | PostgresqlFlexibleServerIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function postgresqlFlexibleServerIdentityToHclTerraform(struct?: PostgresqlFlexibleServerIdentityOutputReference | PostgresqlFlexibleServerIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -759,14 +759,14 @@ export function postgresqlFlexibleServerIdentityToHclTerraform(struct?: Postgres
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PostgresqlFlexibleServerIdentityOutputReference extends cdktf.ComplexObject {
+export class PostgresqlFlexibleServerIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -800,7 +800,7 @@ export class PostgresqlFlexibleServerIdentityOutputReference extends cdktf.Compl
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -852,38 +852,38 @@ export interface PostgresqlFlexibleServerMaintenanceWindow {
 }
 
 export function postgresqlFlexibleServerMaintenanceWindowToTerraform(struct?: PostgresqlFlexibleServerMaintenanceWindowOutputReference | PostgresqlFlexibleServerMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_week: cdktf.numberToTerraform(struct!.dayOfWeek),
-    start_hour: cdktf.numberToTerraform(struct!.startHour),
-    start_minute: cdktf.numberToTerraform(struct!.startMinute),
+    day_of_week: cdktn.numberToTerraform(struct!.dayOfWeek),
+    start_hour: cdktn.numberToTerraform(struct!.startHour),
+    start_minute: cdktn.numberToTerraform(struct!.startMinute),
   }
 }
 
 
 export function postgresqlFlexibleServerMaintenanceWindowToHclTerraform(struct?: PostgresqlFlexibleServerMaintenanceWindowOutputReference | PostgresqlFlexibleServerMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_week: {
-      value: cdktf.numberToHclTerraform(struct!.dayOfWeek),
+      value: cdktn.numberToHclTerraform(struct!.dayOfWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start_hour: {
-      value: cdktf.numberToHclTerraform(struct!.startHour),
+      value: cdktn.numberToHclTerraform(struct!.startHour),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start_minute: {
-      value: cdktf.numberToHclTerraform(struct!.startMinute),
+      value: cdktn.numberToHclTerraform(struct!.startMinute),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -894,14 +894,14 @@ export function postgresqlFlexibleServerMaintenanceWindowToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PostgresqlFlexibleServerMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+export class PostgresqlFlexibleServerMaintenanceWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1005,46 +1005,46 @@ export interface PostgresqlFlexibleServerTimeouts {
   readonly update?: string;
 }
 
-export function postgresqlFlexibleServerTimeoutsToTerraform(struct?: PostgresqlFlexibleServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function postgresqlFlexibleServerTimeoutsToTerraform(struct?: PostgresqlFlexibleServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function postgresqlFlexibleServerTimeoutsToHclTerraform(struct?: PostgresqlFlexibleServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function postgresqlFlexibleServerTimeoutsToHclTerraform(struct?: PostgresqlFlexibleServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1055,19 +1055,19 @@ export function postgresqlFlexibleServerTimeoutsToHclTerraform(struct?: Postgres
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PostgresqlFlexibleServerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PostgresqlFlexibleServerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PostgresqlFlexibleServerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PostgresqlFlexibleServerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1092,7 +1092,7 @@ export class PostgresqlFlexibleServerTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PostgresqlFlexibleServerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PostgresqlFlexibleServerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1101,7 +1101,7 @@ export class PostgresqlFlexibleServerTimeoutsOutputReference extends cdktf.Compl
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1183,7 +1183,7 @@ export class PostgresqlFlexibleServerTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_flexible_server azurerm_postgresql_flexible_server}
 */
-export class PostgresqlFlexibleServer extends cdktf.TerraformResource {
+export class PostgresqlFlexibleServer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1194,14 +1194,14 @@ export class PostgresqlFlexibleServer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PostgresqlFlexibleServer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PostgresqlFlexibleServer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PostgresqlFlexibleServer to import
   * @param importFromId The id of the existing PostgresqlFlexibleServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_flexible_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PostgresqlFlexibleServer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_postgresql_flexible_server", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_postgresql_flexible_server", importId: importFromId, provider });
       }
 
   // ===========
@@ -1333,11 +1333,11 @@ export class PostgresqlFlexibleServer extends cdktf.TerraformResource {
   }
 
   // auto_grow_enabled - computed: false, optional: true, required: false
-  private _autoGrowEnabled?: boolean | cdktf.IResolvable; 
+  private _autoGrowEnabled?: boolean | cdktn.IResolvable; 
   public get autoGrowEnabled() {
     return this.getBooleanAttribute('auto_grow_enabled');
   }
-  public set autoGrowEnabled(value: boolean | cdktf.IResolvable) {
+  public set autoGrowEnabled(value: boolean | cdktn.IResolvable) {
     this._autoGrowEnabled = value;
   }
   public resetAutoGrowEnabled() {
@@ -1402,11 +1402,11 @@ export class PostgresqlFlexibleServer extends cdktf.TerraformResource {
   }
 
   // geo_redundant_backup_enabled - computed: false, optional: true, required: false
-  private _geoRedundantBackupEnabled?: boolean | cdktf.IResolvable; 
+  private _geoRedundantBackupEnabled?: boolean | cdktn.IResolvable; 
   public get geoRedundantBackupEnabled() {
     return this.getBooleanAttribute('geo_redundant_backup_enabled');
   }
-  public set geoRedundantBackupEnabled(value: boolean | cdktf.IResolvable) {
+  public set geoRedundantBackupEnabled(value: boolean | cdktn.IResolvable) {
     this._geoRedundantBackupEnabled = value;
   }
   public resetGeoRedundantBackupEnabled() {
@@ -1492,11 +1492,11 @@ export class PostgresqlFlexibleServer extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -1766,30 +1766,30 @@ export class PostgresqlFlexibleServer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      administrator_login: cdktf.stringToTerraform(this._administratorLogin),
-      administrator_password: cdktf.stringToTerraform(this._administratorPassword),
-      administrator_password_wo: cdktf.stringToTerraform(this._administratorPasswordWo),
-      administrator_password_wo_version: cdktf.numberToTerraform(this._administratorPasswordWoVersion),
-      auto_grow_enabled: cdktf.booleanToTerraform(this._autoGrowEnabled),
-      backup_retention_days: cdktf.numberToTerraform(this._backupRetentionDays),
-      create_mode: cdktf.stringToTerraform(this._createMode),
-      delegated_subnet_id: cdktf.stringToTerraform(this._delegatedSubnetId),
-      geo_redundant_backup_enabled: cdktf.booleanToTerraform(this._geoRedundantBackupEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      point_in_time_restore_time_in_utc: cdktf.stringToTerraform(this._pointInTimeRestoreTimeInUtc),
-      private_dns_zone_id: cdktf.stringToTerraform(this._privateDnsZoneId),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      replication_role: cdktf.stringToTerraform(this._replicationRole),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku_name: cdktf.stringToTerraform(this._skuName),
-      source_server_id: cdktf.stringToTerraform(this._sourceServerId),
-      storage_mb: cdktf.numberToTerraform(this._storageMb),
-      storage_tier: cdktf.stringToTerraform(this._storageTier),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      version: cdktf.stringToTerraform(this._version),
-      zone: cdktf.stringToTerraform(this._zone),
+      administrator_login: cdktn.stringToTerraform(this._administratorLogin),
+      administrator_password: cdktn.stringToTerraform(this._administratorPassword),
+      administrator_password_wo: cdktn.stringToTerraform(this._administratorPasswordWo),
+      administrator_password_wo_version: cdktn.numberToTerraform(this._administratorPasswordWoVersion),
+      auto_grow_enabled: cdktn.booleanToTerraform(this._autoGrowEnabled),
+      backup_retention_days: cdktn.numberToTerraform(this._backupRetentionDays),
+      create_mode: cdktn.stringToTerraform(this._createMode),
+      delegated_subnet_id: cdktn.stringToTerraform(this._delegatedSubnetId),
+      geo_redundant_backup_enabled: cdktn.booleanToTerraform(this._geoRedundantBackupEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      point_in_time_restore_time_in_utc: cdktn.stringToTerraform(this._pointInTimeRestoreTimeInUtc),
+      private_dns_zone_id: cdktn.stringToTerraform(this._privateDnsZoneId),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      replication_role: cdktn.stringToTerraform(this._replicationRole),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku_name: cdktn.stringToTerraform(this._skuName),
+      source_server_id: cdktn.stringToTerraform(this._sourceServerId),
+      storage_mb: cdktn.numberToTerraform(this._storageMb),
+      storage_tier: cdktn.stringToTerraform(this._storageTier),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      version: cdktn.stringToTerraform(this._version),
+      zone: cdktn.stringToTerraform(this._zone),
       authentication: postgresqlFlexibleServerAuthenticationToTerraform(this._authentication.internalValue),
       cluster: postgresqlFlexibleServerClusterToTerraform(this._cluster.internalValue),
       customer_managed_key: postgresqlFlexibleServerCustomerManagedKeyToTerraform(this._customerManagedKey.internalValue),
@@ -1803,145 +1803,145 @@ export class PostgresqlFlexibleServer extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       administrator_login: {
-        value: cdktf.stringToHclTerraform(this._administratorLogin),
+        value: cdktn.stringToHclTerraform(this._administratorLogin),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       administrator_password: {
-        value: cdktf.stringToHclTerraform(this._administratorPassword),
+        value: cdktn.stringToHclTerraform(this._administratorPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       administrator_password_wo: {
-        value: cdktf.stringToHclTerraform(this._administratorPasswordWo),
+        value: cdktn.stringToHclTerraform(this._administratorPasswordWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       administrator_password_wo_version: {
-        value: cdktf.numberToHclTerraform(this._administratorPasswordWoVersion),
+        value: cdktn.numberToHclTerraform(this._administratorPasswordWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       auto_grow_enabled: {
-        value: cdktf.booleanToHclTerraform(this._autoGrowEnabled),
+        value: cdktn.booleanToHclTerraform(this._autoGrowEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       backup_retention_days: {
-        value: cdktf.numberToHclTerraform(this._backupRetentionDays),
+        value: cdktn.numberToHclTerraform(this._backupRetentionDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       create_mode: {
-        value: cdktf.stringToHclTerraform(this._createMode),
+        value: cdktn.stringToHclTerraform(this._createMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delegated_subnet_id: {
-        value: cdktf.stringToHclTerraform(this._delegatedSubnetId),
+        value: cdktn.stringToHclTerraform(this._delegatedSubnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       geo_redundant_backup_enabled: {
-        value: cdktf.booleanToHclTerraform(this._geoRedundantBackupEnabled),
+        value: cdktn.booleanToHclTerraform(this._geoRedundantBackupEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       point_in_time_restore_time_in_utc: {
-        value: cdktf.stringToHclTerraform(this._pointInTimeRestoreTimeInUtc),
+        value: cdktn.stringToHclTerraform(this._pointInTimeRestoreTimeInUtc),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_dns_zone_id: {
-        value: cdktf.stringToHclTerraform(this._privateDnsZoneId),
+        value: cdktn.stringToHclTerraform(this._privateDnsZoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       replication_role: {
-        value: cdktf.stringToHclTerraform(this._replicationRole),
+        value: cdktn.stringToHclTerraform(this._replicationRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku_name: {
-        value: cdktf.stringToHclTerraform(this._skuName),
+        value: cdktn.stringToHclTerraform(this._skuName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_server_id: {
-        value: cdktf.stringToHclTerraform(this._sourceServerId),
+        value: cdktn.stringToHclTerraform(this._sourceServerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_mb: {
-        value: cdktf.numberToHclTerraform(this._storageMb),
+        value: cdktn.numberToHclTerraform(this._storageMb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       storage_tier: {
-        value: cdktf.stringToHclTerraform(this._storageTier),
+        value: cdktn.stringToHclTerraform(this._storageTier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

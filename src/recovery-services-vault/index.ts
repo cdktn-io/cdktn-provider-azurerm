@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RecoveryServicesVaultConfig extends cdktf.TerraformMetaArguments {
+export interface RecoveryServicesVaultConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault#classic_vmware_replication_enabled RecoveryServicesVault#classic_vmware_replication_enabled}
   */
-  readonly classicVmwareReplicationEnabled?: boolean | cdktf.IResolvable;
+  readonly classicVmwareReplicationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault#cross_region_restore_enabled RecoveryServicesVault#cross_region_restore_enabled}
   */
-  readonly crossRegionRestoreEnabled?: boolean | cdktf.IResolvable;
+  readonly crossRegionRestoreEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault#id RecoveryServicesVault#id}
   *
@@ -42,7 +42,7 @@ export interface RecoveryServicesVaultConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault#public_network_access_enabled RecoveryServicesVault#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault#resource_group_name RecoveryServicesVault#resource_group_name}
   */
@@ -54,7 +54,7 @@ export interface RecoveryServicesVaultConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault#soft_delete_enabled RecoveryServicesVault#soft_delete_enabled}
   */
-  readonly softDeleteEnabled?: boolean | cdktf.IResolvable;
+  readonly softDeleteEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault#storage_mode_type RecoveryServicesVault#storage_mode_type}
   */
@@ -92,7 +92,7 @@ export interface RecoveryServicesVaultEncryption {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault#infrastructure_encryption_enabled RecoveryServicesVault#infrastructure_encryption_enabled}
   */
-  readonly infrastructureEncryptionEnabled: boolean | cdktf.IResolvable;
+  readonly infrastructureEncryptionEnabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault#key_id RecoveryServicesVault#key_id}
   */
@@ -100,7 +100,7 @@ export interface RecoveryServicesVaultEncryption {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault#use_system_assigned_identity RecoveryServicesVault#use_system_assigned_identity}
   */
-  readonly useSystemAssignedIdentity?: boolean | cdktf.IResolvable;
+  readonly useSystemAssignedIdentity?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault#user_assigned_identity_id RecoveryServicesVault#user_assigned_identity_id}
   */
@@ -108,45 +108,45 @@ export interface RecoveryServicesVaultEncryption {
 }
 
 export function recoveryServicesVaultEncryptionToTerraform(struct?: RecoveryServicesVaultEncryptionOutputReference | RecoveryServicesVaultEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    infrastructure_encryption_enabled: cdktf.booleanToTerraform(struct!.infrastructureEncryptionEnabled),
-    key_id: cdktf.stringToTerraform(struct!.keyId),
-    use_system_assigned_identity: cdktf.booleanToTerraform(struct!.useSystemAssignedIdentity),
-    user_assigned_identity_id: cdktf.stringToTerraform(struct!.userAssignedIdentityId),
+    infrastructure_encryption_enabled: cdktn.booleanToTerraform(struct!.infrastructureEncryptionEnabled),
+    key_id: cdktn.stringToTerraform(struct!.keyId),
+    use_system_assigned_identity: cdktn.booleanToTerraform(struct!.useSystemAssignedIdentity),
+    user_assigned_identity_id: cdktn.stringToTerraform(struct!.userAssignedIdentityId),
   }
 }
 
 
 export function recoveryServicesVaultEncryptionToHclTerraform(struct?: RecoveryServicesVaultEncryptionOutputReference | RecoveryServicesVaultEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     infrastructure_encryption_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.infrastructureEncryptionEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.infrastructureEncryptionEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     key_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyId),
+      value: cdktn.stringToHclTerraform(struct!.keyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_system_assigned_identity: {
-      value: cdktf.booleanToHclTerraform(struct!.useSystemAssignedIdentity),
+      value: cdktn.booleanToHclTerraform(struct!.useSystemAssignedIdentity),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     user_assigned_identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.userAssignedIdentityId),
+      value: cdktn.stringToHclTerraform(struct!.userAssignedIdentityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -157,14 +157,14 @@ export function recoveryServicesVaultEncryptionToHclTerraform(struct?: RecoveryS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RecoveryServicesVaultEncryptionOutputReference extends cdktf.ComplexObject {
+export class RecoveryServicesVaultEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -208,11 +208,11 @@ export class RecoveryServicesVaultEncryptionOutputReference extends cdktf.Comple
   }
 
   // infrastructure_encryption_enabled - computed: false, optional: false, required: true
-  private _infrastructureEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _infrastructureEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get infrastructureEncryptionEnabled() {
     return this.getBooleanAttribute('infrastructure_encryption_enabled');
   }
-  public set infrastructureEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set infrastructureEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._infrastructureEncryptionEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -234,11 +234,11 @@ export class RecoveryServicesVaultEncryptionOutputReference extends cdktf.Comple
   }
 
   // use_system_assigned_identity - computed: false, optional: true, required: false
-  private _useSystemAssignedIdentity?: boolean | cdktf.IResolvable; 
+  private _useSystemAssignedIdentity?: boolean | cdktn.IResolvable; 
   public get useSystemAssignedIdentity() {
     return this.getBooleanAttribute('use_system_assigned_identity');
   }
-  public set useSystemAssignedIdentity(value: boolean | cdktf.IResolvable) {
+  public set useSystemAssignedIdentity(value: boolean | cdktn.IResolvable) {
     this._useSystemAssignedIdentity = value;
   }
   public resetUseSystemAssignedIdentity() {
@@ -277,31 +277,31 @@ export interface RecoveryServicesVaultIdentity {
 }
 
 export function recoveryServicesVaultIdentityToTerraform(struct?: RecoveryServicesVaultIdentityOutputReference | RecoveryServicesVaultIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function recoveryServicesVaultIdentityToHclTerraform(struct?: RecoveryServicesVaultIdentityOutputReference | RecoveryServicesVaultIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -312,14 +312,14 @@ export function recoveryServicesVaultIdentityToHclTerraform(struct?: RecoverySer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RecoveryServicesVaultIdentityOutputReference extends cdktf.ComplexObject {
+export class RecoveryServicesVaultIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -353,7 +353,7 @@ export class RecoveryServicesVaultIdentityOutputReference extends cdktf.ComplexO
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -393,39 +393,39 @@ export interface RecoveryServicesVaultMonitoring {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault#alerts_for_all_job_failures_enabled RecoveryServicesVault#alerts_for_all_job_failures_enabled}
   */
-  readonly alertsForAllJobFailuresEnabled?: boolean | cdktf.IResolvable;
+  readonly alertsForAllJobFailuresEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault#alerts_for_critical_operation_failures_enabled RecoveryServicesVault#alerts_for_critical_operation_failures_enabled}
   */
-  readonly alertsForCriticalOperationFailuresEnabled?: boolean | cdktf.IResolvable;
+  readonly alertsForCriticalOperationFailuresEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function recoveryServicesVaultMonitoringToTerraform(struct?: RecoveryServicesVaultMonitoringOutputReference | RecoveryServicesVaultMonitoring): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alerts_for_all_job_failures_enabled: cdktf.booleanToTerraform(struct!.alertsForAllJobFailuresEnabled),
-    alerts_for_critical_operation_failures_enabled: cdktf.booleanToTerraform(struct!.alertsForCriticalOperationFailuresEnabled),
+    alerts_for_all_job_failures_enabled: cdktn.booleanToTerraform(struct!.alertsForAllJobFailuresEnabled),
+    alerts_for_critical_operation_failures_enabled: cdktn.booleanToTerraform(struct!.alertsForCriticalOperationFailuresEnabled),
   }
 }
 
 
 export function recoveryServicesVaultMonitoringToHclTerraform(struct?: RecoveryServicesVaultMonitoringOutputReference | RecoveryServicesVaultMonitoring): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alerts_for_all_job_failures_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.alertsForAllJobFailuresEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.alertsForAllJobFailuresEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     alerts_for_critical_operation_failures_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.alertsForCriticalOperationFailuresEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.alertsForCriticalOperationFailuresEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -436,14 +436,14 @@ export function recoveryServicesVaultMonitoringToHclTerraform(struct?: RecoveryS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RecoveryServicesVaultMonitoringOutputReference extends cdktf.ComplexObject {
+export class RecoveryServicesVaultMonitoringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -475,11 +475,11 @@ export class RecoveryServicesVaultMonitoringOutputReference extends cdktf.Comple
   }
 
   // alerts_for_all_job_failures_enabled - computed: false, optional: true, required: false
-  private _alertsForAllJobFailuresEnabled?: boolean | cdktf.IResolvable; 
+  private _alertsForAllJobFailuresEnabled?: boolean | cdktn.IResolvable; 
   public get alertsForAllJobFailuresEnabled() {
     return this.getBooleanAttribute('alerts_for_all_job_failures_enabled');
   }
-  public set alertsForAllJobFailuresEnabled(value: boolean | cdktf.IResolvable) {
+  public set alertsForAllJobFailuresEnabled(value: boolean | cdktn.IResolvable) {
     this._alertsForAllJobFailuresEnabled = value;
   }
   public resetAlertsForAllJobFailuresEnabled() {
@@ -491,11 +491,11 @@ export class RecoveryServicesVaultMonitoringOutputReference extends cdktf.Comple
   }
 
   // alerts_for_critical_operation_failures_enabled - computed: false, optional: true, required: false
-  private _alertsForCriticalOperationFailuresEnabled?: boolean | cdktf.IResolvable; 
+  private _alertsForCriticalOperationFailuresEnabled?: boolean | cdktn.IResolvable; 
   public get alertsForCriticalOperationFailuresEnabled() {
     return this.getBooleanAttribute('alerts_for_critical_operation_failures_enabled');
   }
-  public set alertsForCriticalOperationFailuresEnabled(value: boolean | cdktf.IResolvable) {
+  public set alertsForCriticalOperationFailuresEnabled(value: boolean | cdktn.IResolvable) {
     this._alertsForCriticalOperationFailuresEnabled = value;
   }
   public resetAlertsForCriticalOperationFailuresEnabled() {
@@ -525,46 +525,46 @@ export interface RecoveryServicesVaultTimeouts {
   readonly update?: string;
 }
 
-export function recoveryServicesVaultTimeoutsToTerraform(struct?: RecoveryServicesVaultTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function recoveryServicesVaultTimeoutsToTerraform(struct?: RecoveryServicesVaultTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function recoveryServicesVaultTimeoutsToHclTerraform(struct?: RecoveryServicesVaultTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function recoveryServicesVaultTimeoutsToHclTerraform(struct?: RecoveryServicesVaultTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -575,19 +575,19 @@ export function recoveryServicesVaultTimeoutsToHclTerraform(struct?: RecoverySer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RecoveryServicesVaultTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RecoveryServicesVaultTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RecoveryServicesVaultTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RecoveryServicesVaultTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -612,7 +612,7 @@ export class RecoveryServicesVaultTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RecoveryServicesVaultTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RecoveryServicesVaultTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -621,7 +621,7 @@ export class RecoveryServicesVaultTimeoutsOutputReference extends cdktf.ComplexO
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -703,7 +703,7 @@ export class RecoveryServicesVaultTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault azurerm_recovery_services_vault}
 */
-export class RecoveryServicesVault extends cdktf.TerraformResource {
+export class RecoveryServicesVault extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -714,14 +714,14 @@ export class RecoveryServicesVault extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RecoveryServicesVault resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RecoveryServicesVault resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RecoveryServicesVault to import
   * @param importFromId The id of the existing RecoveryServicesVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RecoveryServicesVault to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_recovery_services_vault", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_recovery_services_vault", importId: importFromId, provider });
       }
 
   // ===========
@@ -774,11 +774,11 @@ export class RecoveryServicesVault extends cdktf.TerraformResource {
   // ==========
 
   // classic_vmware_replication_enabled - computed: false, optional: true, required: false
-  private _classicVmwareReplicationEnabled?: boolean | cdktf.IResolvable; 
+  private _classicVmwareReplicationEnabled?: boolean | cdktn.IResolvable; 
   public get classicVmwareReplicationEnabled() {
     return this.getBooleanAttribute('classic_vmware_replication_enabled');
   }
-  public set classicVmwareReplicationEnabled(value: boolean | cdktf.IResolvable) {
+  public set classicVmwareReplicationEnabled(value: boolean | cdktn.IResolvable) {
     this._classicVmwareReplicationEnabled = value;
   }
   public resetClassicVmwareReplicationEnabled() {
@@ -790,11 +790,11 @@ export class RecoveryServicesVault extends cdktf.TerraformResource {
   }
 
   // cross_region_restore_enabled - computed: false, optional: true, required: false
-  private _crossRegionRestoreEnabled?: boolean | cdktf.IResolvable; 
+  private _crossRegionRestoreEnabled?: boolean | cdktn.IResolvable; 
   public get crossRegionRestoreEnabled() {
     return this.getBooleanAttribute('cross_region_restore_enabled');
   }
-  public set crossRegionRestoreEnabled(value: boolean | cdktf.IResolvable) {
+  public set crossRegionRestoreEnabled(value: boolean | cdktn.IResolvable) {
     this._crossRegionRestoreEnabled = value;
   }
   public resetCrossRegionRestoreEnabled() {
@@ -864,11 +864,11 @@ export class RecoveryServicesVault extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -906,11 +906,11 @@ export class RecoveryServicesVault extends cdktf.TerraformResource {
   }
 
   // soft_delete_enabled - computed: false, optional: true, required: false
-  private _softDeleteEnabled?: boolean | cdktf.IResolvable; 
+  private _softDeleteEnabled?: boolean | cdktn.IResolvable; 
   public get softDeleteEnabled() {
     return this.getBooleanAttribute('soft_delete_enabled');
   }
-  public set softDeleteEnabled(value: boolean | cdktf.IResolvable) {
+  public set softDeleteEnabled(value: boolean | cdktn.IResolvable) {
     this._softDeleteEnabled = value;
   }
   public resetSoftDeleteEnabled() {
@@ -1023,18 +1023,18 @@ export class RecoveryServicesVault extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      classic_vmware_replication_enabled: cdktf.booleanToTerraform(this._classicVmwareReplicationEnabled),
-      cross_region_restore_enabled: cdktf.booleanToTerraform(this._crossRegionRestoreEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      immutability: cdktf.stringToTerraform(this._immutability),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku: cdktf.stringToTerraform(this._sku),
-      soft_delete_enabled: cdktf.booleanToTerraform(this._softDeleteEnabled),
-      storage_mode_type: cdktf.stringToTerraform(this._storageModeType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      classic_vmware_replication_enabled: cdktn.booleanToTerraform(this._classicVmwareReplicationEnabled),
+      cross_region_restore_enabled: cdktn.booleanToTerraform(this._crossRegionRestoreEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      immutability: cdktn.stringToTerraform(this._immutability),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku: cdktn.stringToTerraform(this._sku),
+      soft_delete_enabled: cdktn.booleanToTerraform(this._softDeleteEnabled),
+      storage_mode_type: cdktn.stringToTerraform(this._storageModeType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       encryption: recoveryServicesVaultEncryptionToTerraform(this._encryption.internalValue),
       identity: recoveryServicesVaultIdentityToTerraform(this._identity.internalValue),
       monitoring: recoveryServicesVaultMonitoringToTerraform(this._monitoring.internalValue),
@@ -1045,73 +1045,73 @@ export class RecoveryServicesVault extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       classic_vmware_replication_enabled: {
-        value: cdktf.booleanToHclTerraform(this._classicVmwareReplicationEnabled),
+        value: cdktn.booleanToHclTerraform(this._classicVmwareReplicationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cross_region_restore_enabled: {
-        value: cdktf.booleanToHclTerraform(this._crossRegionRestoreEnabled),
+        value: cdktn.booleanToHclTerraform(this._crossRegionRestoreEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       immutability: {
-        value: cdktf.stringToHclTerraform(this._immutability),
+        value: cdktn.stringToHclTerraform(this._immutability),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku: {
-        value: cdktf.stringToHclTerraform(this._sku),
+        value: cdktn.stringToHclTerraform(this._sku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       soft_delete_enabled: {
-        value: cdktf.booleanToHclTerraform(this._softDeleteEnabled),
+        value: cdktn.booleanToHclTerraform(this._softDeleteEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       storage_mode_type: {
-        value: cdktf.stringToHclTerraform(this._storageModeType),
+        value: cdktn.stringToHclTerraform(this._storageModeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

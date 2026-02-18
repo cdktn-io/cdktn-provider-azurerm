@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataProtectionBackupPolicyPostgresqlFlexibleServerConfig extends cdktf.TerraformMetaArguments {
+export interface DataProtectionBackupPolicyPostgresqlFlexibleServerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_policy_postgresql_flexible_server#backup_repeating_time_intervals DataProtectionBackupPolicyPostgresqlFlexibleServer#backup_repeating_time_intervals}
   */
@@ -46,7 +46,7 @@ export interface DataProtectionBackupPolicyPostgresqlFlexibleServerConfig extend
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_policy_postgresql_flexible_server#retention_rule DataProtectionBackupPolicyPostgresqlFlexibleServer#retention_rule}
   */
-  readonly retentionRule?: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule[] | cdktf.IResolvable;
+  readonly retentionRule?: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -65,32 +65,32 @@ export interface DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetent
   readonly duration: string;
 }
 
-export function dataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycleToTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycleToTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_store_type: cdktf.stringToTerraform(struct!.dataStoreType),
-    duration: cdktf.stringToTerraform(struct!.duration),
+    data_store_type: cdktn.stringToTerraform(struct!.dataStoreType),
+    duration: cdktn.stringToTerraform(struct!.duration),
   }
 }
 
 
-export function dataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycleToHclTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycleToHclTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_store_type: {
-      value: cdktf.stringToHclTerraform(struct!.dataStoreType),
+      value: cdktn.stringToHclTerraform(struct!.dataStoreType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     duration: {
-      value: cdktf.stringToHclTerraform(struct!.duration),
+      value: cdktn.stringToHclTerraform(struct!.duration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -101,9 +101,9 @@ export function dataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetenti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycleOutputReference extends cdktf.ComplexObject {
+export class DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -111,11 +111,11 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktf.IResolvable | undefined {
+  public get internalValue(): DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -132,14 +132,14 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataStoreType = undefined;
       this._duration = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -178,15 +178,15 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionR
   }
 }
 
-export class DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycleList extends cdktf.ComplexList {
-  public internalValue? : DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycle[] | cdktf.IResolvable
+export class DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycleList extends cdktn.ComplexList {
+  public internalValue? : DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycle[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -203,28 +203,28 @@ export interface DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetent
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_policy_postgresql_flexible_server#life_cycle DataProtectionBackupPolicyPostgresqlFlexibleServer#life_cycle}
   */
-  readonly lifeCycle: DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycle[] | cdktf.IResolvable;
+  readonly lifeCycle: DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycle[] | cdktn.IResolvable;
 }
 
 export function dataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleToTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleOutputReference | DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    life_cycle: cdktf.listMapper(dataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycleToTerraform, true)(struct!.lifeCycle),
+    life_cycle: cdktn.listMapper(dataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycleToTerraform, true)(struct!.lifeCycle),
   }
 }
 
 
 export function dataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleToHclTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleOutputReference | DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     life_cycle: {
-      value: cdktf.listMapperHcl(dataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycleToHclTerraform, true)(struct!.lifeCycle),
+      value: cdktn.listMapperHcl(dataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycleToHclTerraform, true)(struct!.lifeCycle),
       isBlock: true,
       type: "list",
       storageClassType: "DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycleList",
@@ -235,14 +235,14 @@ export function dataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetenti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleOutputReference extends cdktf.ComplexObject {
+export class DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -272,7 +272,7 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionR
   public get lifeCycle() {
     return this._lifeCycle;
   }
-  public putLifeCycle(value: DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycle[] | cdktf.IResolvable) {
+  public putLifeCycle(value: DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleLifeCycle[] | cdktn.IResolvable) {
     this._lifeCycle.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -304,52 +304,52 @@ export interface DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule
 }
 
 export function dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleCriteriaToTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleCriteriaOutputReference | DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleCriteria): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    absolute_criteria: cdktf.stringToTerraform(struct!.absoluteCriteria),
-    days_of_week: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.daysOfWeek),
-    months_of_year: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.monthsOfYear),
-    scheduled_backup_times: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scheduledBackupTimes),
-    weeks_of_month: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.weeksOfMonth),
+    absolute_criteria: cdktn.stringToTerraform(struct!.absoluteCriteria),
+    days_of_week: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.daysOfWeek),
+    months_of_year: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.monthsOfYear),
+    scheduled_backup_times: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.scheduledBackupTimes),
+    weeks_of_month: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.weeksOfMonth),
   }
 }
 
 
 export function dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleCriteriaToHclTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleCriteriaOutputReference | DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleCriteria): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     absolute_criteria: {
-      value: cdktf.stringToHclTerraform(struct!.absoluteCriteria),
+      value: cdktn.stringToHclTerraform(struct!.absoluteCriteria),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     days_of_week: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.daysOfWeek),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.daysOfWeek),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     months_of_year: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.monthsOfYear),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.monthsOfYear),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     scheduled_backup_times: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scheduledBackupTimes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.scheduledBackupTimes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     weeks_of_month: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.weeksOfMonth),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.weeksOfMonth),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -360,14 +360,14 @@ export function dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleCriteriaOutputReference extends cdktf.ComplexObject {
+export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleCriteriaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -435,7 +435,7 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleCrit
   // days_of_week - computed: false, optional: true, required: false
   private _daysOfWeek?: string[]; 
   public get daysOfWeek() {
-    return cdktf.Fn.tolist(this.getListAttribute('days_of_week'));
+    return cdktn.Fn.tolist(this.getListAttribute('days_of_week'));
   }
   public set daysOfWeek(value: string[]) {
     this._daysOfWeek = value;
@@ -451,7 +451,7 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleCrit
   // months_of_year - computed: false, optional: true, required: false
   private _monthsOfYear?: string[]; 
   public get monthsOfYear() {
-    return cdktf.Fn.tolist(this.getListAttribute('months_of_year'));
+    return cdktn.Fn.tolist(this.getListAttribute('months_of_year'));
   }
   public set monthsOfYear(value: string[]) {
     this._monthsOfYear = value;
@@ -467,7 +467,7 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleCrit
   // scheduled_backup_times - computed: false, optional: true, required: false
   private _scheduledBackupTimes?: string[]; 
   public get scheduledBackupTimes() {
-    return cdktf.Fn.tolist(this.getListAttribute('scheduled_backup_times'));
+    return cdktn.Fn.tolist(this.getListAttribute('scheduled_backup_times'));
   }
   public set scheduledBackupTimes(value: string[]) {
     this._scheduledBackupTimes = value;
@@ -483,7 +483,7 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleCrit
   // weeks_of_month - computed: false, optional: true, required: false
   private _weeksOfMonth?: string[]; 
   public get weeksOfMonth() {
-    return cdktf.Fn.tolist(this.getListAttribute('weeks_of_month'));
+    return cdktn.Fn.tolist(this.getListAttribute('weeks_of_month'));
   }
   public set weeksOfMonth(value: string[]) {
     this._weeksOfMonth = value;
@@ -507,32 +507,32 @@ export interface DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule
   readonly duration: string;
 }
 
-export function dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycleToTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycleToTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_store_type: cdktf.stringToTerraform(struct!.dataStoreType),
-    duration: cdktf.stringToTerraform(struct!.duration),
+    data_store_type: cdktn.stringToTerraform(struct!.dataStoreType),
+    duration: cdktn.stringToTerraform(struct!.duration),
   }
 }
 
 
-export function dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycleToHclTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycleToHclTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_store_type: {
-      value: cdktf.stringToHclTerraform(struct!.dataStoreType),
+      value: cdktn.stringToHclTerraform(struct!.dataStoreType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     duration: {
-      value: cdktf.stringToHclTerraform(struct!.duration),
+      value: cdktn.stringToHclTerraform(struct!.duration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -543,9 +543,9 @@ export function dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleL
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycleOutputReference extends cdktf.ComplexObject {
+export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -553,11 +553,11 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLife
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycle | cdktf.IResolvable | undefined {
+  public get internalValue(): DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycle | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -574,14 +574,14 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLife
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycle | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycle | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataStoreType = undefined;
       this._duration = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -620,15 +620,15 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLife
   }
 }
 
-export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycleList extends cdktf.ComplexList {
-  public internalValue? : DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycle[] | cdktf.IResolvable
+export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycleList extends cdktn.ComplexList {
+  public internalValue? : DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycle[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -659,37 +659,37 @@ export interface DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_policy_postgresql_flexible_server#life_cycle DataProtectionBackupPolicyPostgresqlFlexibleServer#life_cycle}
   */
-  readonly lifeCycle: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycle[] | cdktf.IResolvable;
+  readonly lifeCycle: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycle[] | cdktn.IResolvable;
 }
 
-export function dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleToTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleToTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    priority: cdktf.numberToTerraform(struct!.priority),
+    name: cdktn.stringToTerraform(struct!.name),
+    priority: cdktn.numberToTerraform(struct!.priority),
     criteria: dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleCriteriaToTerraform(struct!.criteria),
-    life_cycle: cdktf.listMapper(dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycleToTerraform, true)(struct!.lifeCycle),
+    life_cycle: cdktn.listMapper(dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycleToTerraform, true)(struct!.lifeCycle),
   }
 }
 
 
-export function dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleToHclTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleToHclTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -701,7 +701,7 @@ export function dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleT
       storageClassType: "DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleCriteriaList",
     },
     life_cycle: {
-      value: cdktf.listMapperHcl(dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycleToHclTerraform, true)(struct!.lifeCycle),
+      value: cdktn.listMapperHcl(dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycleToHclTerraform, true)(struct!.lifeCycle),
       isBlock: true,
       type: "list",
       storageClassType: "DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycleList",
@@ -712,9 +712,9 @@ export function dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleOutputReference extends cdktf.ComplexObject {
+export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -722,11 +722,11 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule | cdktf.IResolvable | undefined {
+  public get internalValue(): DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -751,7 +751,7 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -760,7 +760,7 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleOutp
       this._criteria.internalValue = undefined;
       this._lifeCycle.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -818,7 +818,7 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleOutp
   public get lifeCycle() {
     return this._lifeCycle;
   }
-  public putLifeCycle(value: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycle[] | cdktf.IResolvable) {
+  public putLifeCycle(value: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleLifeCycle[] | cdktn.IResolvable) {
     this._lifeCycle.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -827,15 +827,15 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleOutp
   }
 }
 
-export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleList extends cdktf.ComplexList {
-  public internalValue? : DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule[] | cdktf.IResolvable
+export class DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleList extends cdktn.ComplexList {
+  public internalValue? : DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -861,39 +861,39 @@ export interface DataProtectionBackupPolicyPostgresqlFlexibleServerTimeouts {
   readonly read?: string;
 }
 
-export function dataProtectionBackupPolicyPostgresqlFlexibleServerTimeoutsToTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyPostgresqlFlexibleServerTimeoutsToTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataProtectionBackupPolicyPostgresqlFlexibleServerTimeoutsToHclTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyPostgresqlFlexibleServerTimeoutsToHclTerraform(struct?: DataProtectionBackupPolicyPostgresqlFlexibleServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -904,19 +904,19 @@ export function dataProtectionBackupPolicyPostgresqlFlexibleServerTimeoutsToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataProtectionBackupPolicyPostgresqlFlexibleServerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataProtectionBackupPolicyPostgresqlFlexibleServerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataProtectionBackupPolicyPostgresqlFlexibleServerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataProtectionBackupPolicyPostgresqlFlexibleServerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -937,7 +937,7 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerTimeoutsOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProtectionBackupPolicyPostgresqlFlexibleServerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataProtectionBackupPolicyPostgresqlFlexibleServerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -945,7 +945,7 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerTimeoutsOutputRef
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1010,7 +1010,7 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServerTimeoutsOutputRef
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_policy_postgresql_flexible_server azurerm_data_protection_backup_policy_postgresql_flexible_server}
 */
-export class DataProtectionBackupPolicyPostgresqlFlexibleServer extends cdktf.TerraformResource {
+export class DataProtectionBackupPolicyPostgresqlFlexibleServer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1021,14 +1021,14 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServer extends cdktf.Te
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataProtectionBackupPolicyPostgresqlFlexibleServer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataProtectionBackupPolicyPostgresqlFlexibleServer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataProtectionBackupPolicyPostgresqlFlexibleServer to import
   * @param importFromId The id of the existing DataProtectionBackupPolicyPostgresqlFlexibleServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_policy_postgresql_flexible_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataProtectionBackupPolicyPostgresqlFlexibleServer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_protection_backup_policy_postgresql_flexible_server", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_protection_backup_policy_postgresql_flexible_server", importId: importFromId, provider });
       }
 
   // ===========
@@ -1161,7 +1161,7 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServer extends cdktf.Te
   public get retentionRule() {
     return this._retentionRule;
   }
-  public putRetentionRule(value: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule[] | cdktf.IResolvable) {
+  public putRetentionRule(value: DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRule[] | cdktn.IResolvable) {
     this._retentionRule.internalValue = value;
   }
   public resetRetentionRule() {
@@ -1194,13 +1194,13 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServer extends cdktf.Te
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backup_repeating_time_intervals: cdktf.listMapper(cdktf.stringToTerraform, false)(this._backupRepeatingTimeIntervals),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      time_zone: cdktf.stringToTerraform(this._timeZone),
-      vault_id: cdktf.stringToTerraform(this._vaultId),
+      backup_repeating_time_intervals: cdktn.listMapper(cdktn.stringToTerraform, false)(this._backupRepeatingTimeIntervals),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      time_zone: cdktn.stringToTerraform(this._timeZone),
+      vault_id: cdktn.stringToTerraform(this._vaultId),
       default_retention_rule: dataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleToTerraform(this._defaultRetentionRule.internalValue),
-      retention_rule: cdktf.listMapper(dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleToTerraform, true)(this._retentionRule.internalValue),
+      retention_rule: cdktn.listMapper(dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleToTerraform, true)(this._retentionRule.internalValue),
       timeouts: dataProtectionBackupPolicyPostgresqlFlexibleServerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1208,31 +1208,31 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServer extends cdktf.Te
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backup_repeating_time_intervals: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._backupRepeatingTimeIntervals),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._backupRepeatingTimeIntervals),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       time_zone: {
-        value: cdktf.stringToHclTerraform(this._timeZone),
+        value: cdktn.stringToHclTerraform(this._timeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vault_id: {
-        value: cdktf.stringToHclTerraform(this._vaultId),
+        value: cdktn.stringToHclTerraform(this._vaultId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1244,7 +1244,7 @@ export class DataProtectionBackupPolicyPostgresqlFlexibleServer extends cdktf.Te
         storageClassType: "DataProtectionBackupPolicyPostgresqlFlexibleServerDefaultRetentionRuleList",
       },
       retention_rule: {
-        value: cdktf.listMapperHcl(dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleToHclTerraform, true)(this._retentionRule.internalValue),
+        value: cdktn.listMapperHcl(dataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleToHclTerraform, true)(this._retentionRule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataProtectionBackupPolicyPostgresqlFlexibleServerRetentionRuleList",

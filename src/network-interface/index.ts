@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkInterfaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_interface#accelerated_networking_enabled NetworkInterface#accelerated_networking_enabled}
   */
-  readonly acceleratedNetworkingEnabled?: boolean | cdktf.IResolvable;
+  readonly acceleratedNetworkingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_interface#auxiliary_mode NetworkInterface#auxiliary_mode}
   */
@@ -46,7 +46,7 @@ export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_interface#ip_forwarding_enabled NetworkInterface#ip_forwarding_enabled}
   */
-  readonly ipForwardingEnabled?: boolean | cdktf.IResolvable;
+  readonly ipForwardingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_interface#location NetworkInterface#location}
   */
@@ -68,7 +68,7 @@ export interface NetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_interface#ip_configuration NetworkInterface#ip_configuration}
   */
-  readonly ipConfiguration: NetworkInterfaceIpConfiguration[] | cdktf.IResolvable;
+  readonly ipConfiguration: NetworkInterfaceIpConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -88,7 +88,7 @@ export interface NetworkInterfaceIpConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_interface#primary NetworkInterface#primary}
   */
-  readonly primary?: boolean | cdktf.IResolvable;
+  readonly primary?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_interface#private_ip_address NetworkInterface#private_ip_address}
   */
@@ -111,74 +111,74 @@ export interface NetworkInterfaceIpConfiguration {
   readonly subnetId?: string;
 }
 
-export function networkInterfaceIpConfigurationToTerraform(struct?: NetworkInterfaceIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkInterfaceIpConfigurationToTerraform(struct?: NetworkInterfaceIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    gateway_load_balancer_frontend_ip_configuration_id: cdktf.stringToTerraform(struct!.gatewayLoadBalancerFrontendIpConfigurationId),
-    name: cdktf.stringToTerraform(struct!.name),
-    primary: cdktf.booleanToTerraform(struct!.primary),
-    private_ip_address: cdktf.stringToTerraform(struct!.privateIpAddress),
-    private_ip_address_allocation: cdktf.stringToTerraform(struct!.privateIpAddressAllocation),
-    private_ip_address_version: cdktf.stringToTerraform(struct!.privateIpAddressVersion),
-    public_ip_address_id: cdktf.stringToTerraform(struct!.publicIpAddressId),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    gateway_load_balancer_frontend_ip_configuration_id: cdktn.stringToTerraform(struct!.gatewayLoadBalancerFrontendIpConfigurationId),
+    name: cdktn.stringToTerraform(struct!.name),
+    primary: cdktn.booleanToTerraform(struct!.primary),
+    private_ip_address: cdktn.stringToTerraform(struct!.privateIpAddress),
+    private_ip_address_allocation: cdktn.stringToTerraform(struct!.privateIpAddressAllocation),
+    private_ip_address_version: cdktn.stringToTerraform(struct!.privateIpAddressVersion),
+    public_ip_address_id: cdktn.stringToTerraform(struct!.publicIpAddressId),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
-export function networkInterfaceIpConfigurationToHclTerraform(struct?: NetworkInterfaceIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkInterfaceIpConfigurationToHclTerraform(struct?: NetworkInterfaceIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     gateway_load_balancer_frontend_ip_configuration_id: {
-      value: cdktf.stringToHclTerraform(struct!.gatewayLoadBalancerFrontendIpConfigurationId),
+      value: cdktn.stringToHclTerraform(struct!.gatewayLoadBalancerFrontendIpConfigurationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary: {
-      value: cdktf.booleanToHclTerraform(struct!.primary),
+      value: cdktn.booleanToHclTerraform(struct!.primary),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     private_ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.privateIpAddress),
+      value: cdktn.stringToHclTerraform(struct!.privateIpAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_ip_address_allocation: {
-      value: cdktf.stringToHclTerraform(struct!.privateIpAddressAllocation),
+      value: cdktn.stringToHclTerraform(struct!.privateIpAddressAllocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_ip_address_version: {
-      value: cdktf.stringToHclTerraform(struct!.privateIpAddressVersion),
+      value: cdktn.stringToHclTerraform(struct!.privateIpAddressVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     public_ip_address_id: {
-      value: cdktf.stringToHclTerraform(struct!.publicIpAddressId),
+      value: cdktn.stringToHclTerraform(struct!.publicIpAddressId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -189,9 +189,9 @@ export function networkInterfaceIpConfigurationToHclTerraform(struct?: NetworkIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkInterfaceIpConfigurationOutputReference extends cdktf.ComplexObject {
+export class NetworkInterfaceIpConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -199,11 +199,11 @@ export class NetworkInterfaceIpConfigurationOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkInterfaceIpConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkInterfaceIpConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -244,7 +244,7 @@ export class NetworkInterfaceIpConfigurationOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkInterfaceIpConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkInterfaceIpConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -257,7 +257,7 @@ export class NetworkInterfaceIpConfigurationOutputReference extends cdktf.Comple
       this._publicIpAddressId = undefined;
       this._subnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -305,11 +305,11 @@ export class NetworkInterfaceIpConfigurationOutputReference extends cdktf.Comple
   }
 
   // primary - computed: true, optional: true, required: false
-  private _primary?: boolean | cdktf.IResolvable; 
+  private _primary?: boolean | cdktn.IResolvable; 
   public get primary() {
     return this.getBooleanAttribute('primary');
   }
-  public set primary(value: boolean | cdktf.IResolvable) {
+  public set primary(value: boolean | cdktn.IResolvable) {
     this._primary = value;
   }
   public resetPrimary() {
@@ -398,15 +398,15 @@ export class NetworkInterfaceIpConfigurationOutputReference extends cdktf.Comple
   }
 }
 
-export class NetworkInterfaceIpConfigurationList extends cdktf.ComplexList {
-  public internalValue? : NetworkInterfaceIpConfiguration[] | cdktf.IResolvable
+export class NetworkInterfaceIpConfigurationList extends cdktn.ComplexList {
+  public internalValue? : NetworkInterfaceIpConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -436,46 +436,46 @@ export interface NetworkInterfaceTimeouts {
   readonly update?: string;
 }
 
-export function networkInterfaceTimeoutsToTerraform(struct?: NetworkInterfaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkInterfaceTimeoutsToTerraform(struct?: NetworkInterfaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkInterfaceTimeoutsToHclTerraform(struct?: NetworkInterfaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkInterfaceTimeoutsToHclTerraform(struct?: NetworkInterfaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -486,19 +486,19 @@ export function networkInterfaceTimeoutsToHclTerraform(struct?: NetworkInterface
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkInterfaceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkInterfaceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkInterfaceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkInterfaceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -523,7 +523,7 @@ export class NetworkInterfaceTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkInterfaceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkInterfaceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -532,7 +532,7 @@ export class NetworkInterfaceTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -614,7 +614,7 @@ export class NetworkInterfaceTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_interface azurerm_network_interface}
 */
-export class NetworkInterface extends cdktf.TerraformResource {
+export class NetworkInterface extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -625,14 +625,14 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkInterface resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkInterface resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkInterface to import
   * @param importFromId The id of the existing NetworkInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_interface#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkInterface to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_interface", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_interface", importId: importFromId, provider });
       }
 
   // ===========
@@ -683,11 +683,11 @@ export class NetworkInterface extends cdktf.TerraformResource {
   // ==========
 
   // accelerated_networking_enabled - computed: false, optional: true, required: false
-  private _acceleratedNetworkingEnabled?: boolean | cdktf.IResolvable; 
+  private _acceleratedNetworkingEnabled?: boolean | cdktn.IResolvable; 
   public get acceleratedNetworkingEnabled() {
     return this.getBooleanAttribute('accelerated_networking_enabled');
   }
-  public set acceleratedNetworkingEnabled(value: boolean | cdktf.IResolvable) {
+  public set acceleratedNetworkingEnabled(value: boolean | cdktn.IResolvable) {
     this._acceleratedNetworkingEnabled = value;
   }
   public resetAcceleratedNetworkingEnabled() {
@@ -805,11 +805,11 @@ export class NetworkInterface extends cdktf.TerraformResource {
   }
 
   // ip_forwarding_enabled - computed: false, optional: true, required: false
-  private _ipForwardingEnabled?: boolean | cdktf.IResolvable; 
+  private _ipForwardingEnabled?: boolean | cdktn.IResolvable; 
   public get ipForwardingEnabled() {
     return this.getBooleanAttribute('ip_forwarding_enabled');
   }
-  public set ipForwardingEnabled(value: boolean | cdktf.IResolvable) {
+  public set ipForwardingEnabled(value: boolean | cdktn.IResolvable) {
     this._ipForwardingEnabled = value;
   }
   public resetIpForwardingEnabled() {
@@ -900,7 +900,7 @@ export class NetworkInterface extends cdktf.TerraformResource {
   public get ipConfiguration() {
     return this._ipConfiguration;
   }
-  public putIpConfiguration(value: NetworkInterfaceIpConfiguration[] | cdktf.IResolvable) {
+  public putIpConfiguration(value: NetworkInterfaceIpConfiguration[] | cdktn.IResolvable) {
     this._ipConfiguration.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -930,19 +930,19 @@ export class NetworkInterface extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      accelerated_networking_enabled: cdktf.booleanToTerraform(this._acceleratedNetworkingEnabled),
-      auxiliary_mode: cdktf.stringToTerraform(this._auxiliaryMode),
-      auxiliary_sku: cdktf.stringToTerraform(this._auxiliarySku),
-      dns_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dnsServers),
-      edge_zone: cdktf.stringToTerraform(this._edgeZone),
-      id: cdktf.stringToTerraform(this._id),
-      internal_dns_name_label: cdktf.stringToTerraform(this._internalDnsNameLabel),
-      ip_forwarding_enabled: cdktf.booleanToTerraform(this._ipForwardingEnabled),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      ip_configuration: cdktf.listMapper(networkInterfaceIpConfigurationToTerraform, true)(this._ipConfiguration.internalValue),
+      accelerated_networking_enabled: cdktn.booleanToTerraform(this._acceleratedNetworkingEnabled),
+      auxiliary_mode: cdktn.stringToTerraform(this._auxiliaryMode),
+      auxiliary_sku: cdktn.stringToTerraform(this._auxiliarySku),
+      dns_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._dnsServers),
+      edge_zone: cdktn.stringToTerraform(this._edgeZone),
+      id: cdktn.stringToTerraform(this._id),
+      internal_dns_name_label: cdktn.stringToTerraform(this._internalDnsNameLabel),
+      ip_forwarding_enabled: cdktn.booleanToTerraform(this._ipForwardingEnabled),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      ip_configuration: cdktn.listMapper(networkInterfaceIpConfigurationToTerraform, true)(this._ipConfiguration.internalValue),
       timeouts: networkInterfaceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -950,79 +950,79 @@ export class NetworkInterface extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       accelerated_networking_enabled: {
-        value: cdktf.booleanToHclTerraform(this._acceleratedNetworkingEnabled),
+        value: cdktn.booleanToHclTerraform(this._acceleratedNetworkingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auxiliary_mode: {
-        value: cdktf.stringToHclTerraform(this._auxiliaryMode),
+        value: cdktn.stringToHclTerraform(this._auxiliaryMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auxiliary_sku: {
-        value: cdktf.stringToHclTerraform(this._auxiliarySku),
+        value: cdktn.stringToHclTerraform(this._auxiliarySku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dns_servers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dnsServers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._dnsServers),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       edge_zone: {
-        value: cdktf.stringToHclTerraform(this._edgeZone),
+        value: cdktn.stringToHclTerraform(this._edgeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       internal_dns_name_label: {
-        value: cdktf.stringToHclTerraform(this._internalDnsNameLabel),
+        value: cdktn.stringToHclTerraform(this._internalDnsNameLabel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_forwarding_enabled: {
-        value: cdktf.booleanToHclTerraform(this._ipForwardingEnabled),
+        value: cdktn.booleanToHclTerraform(this._ipForwardingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       ip_configuration: {
-        value: cdktf.listMapperHcl(networkInterfaceIpConfigurationToHclTerraform, true)(this._ipConfiguration.internalValue),
+        value: cdktn.listMapperHcl(networkInterfaceIpConfigurationToHclTerraform, true)(this._ipConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NetworkInterfaceIpConfigurationList",

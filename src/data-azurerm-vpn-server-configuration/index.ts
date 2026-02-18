@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermVpnServerConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermVpnServerConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/vpn_server_configuration#id DataAzurermVpnServerConfiguration#id}
   *
@@ -38,8 +38,8 @@ export interface DataAzurermVpnServerConfigurationAzureActiveDirectoryAuthentica
 }
 
 export function dataAzurermVpnServerConfigurationAzureActiveDirectoryAuthenticationToTerraform(struct?: DataAzurermVpnServerConfigurationAzureActiveDirectoryAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermVpnServerConfigurationAzureActiveDirectoryAuthenticat
 
 
 export function dataAzurermVpnServerConfigurationAzureActiveDirectoryAuthenticationToHclTerraform(struct?: DataAzurermVpnServerConfigurationAzureActiveDirectoryAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermVpnServerConfigurationAzureActiveDirectoryAuthenticat
   return attrs;
 }
 
-export class DataAzurermVpnServerConfigurationAzureActiveDirectoryAuthenticationOutputReference extends cdktf.ComplexObject {
+export class DataAzurermVpnServerConfigurationAzureActiveDirectoryAuthenticationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermVpnServerConfigurationAzureActiveDirectoryAuthentication
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -101,14 +101,14 @@ export class DataAzurermVpnServerConfigurationAzureActiveDirectoryAuthentication
   }
 }
 
-export class DataAzurermVpnServerConfigurationAzureActiveDirectoryAuthenticationList extends cdktf.ComplexList {
+export class DataAzurermVpnServerConfigurationAzureActiveDirectoryAuthenticationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -123,8 +123,8 @@ export interface DataAzurermVpnServerConfigurationClientRevokedCertificate {
 }
 
 export function dataAzurermVpnServerConfigurationClientRevokedCertificateToTerraform(struct?: DataAzurermVpnServerConfigurationClientRevokedCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -133,8 +133,8 @@ export function dataAzurermVpnServerConfigurationClientRevokedCertificateToTerra
 
 
 export function dataAzurermVpnServerConfigurationClientRevokedCertificateToHclTerraform(struct?: DataAzurermVpnServerConfigurationClientRevokedCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -142,7 +142,7 @@ export function dataAzurermVpnServerConfigurationClientRevokedCertificateToHclTe
   return attrs;
 }
 
-export class DataAzurermVpnServerConfigurationClientRevokedCertificateOutputReference extends cdktf.ComplexObject {
+export class DataAzurermVpnServerConfigurationClientRevokedCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -151,7 +151,7 @@ export class DataAzurermVpnServerConfigurationClientRevokedCertificateOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -181,14 +181,14 @@ export class DataAzurermVpnServerConfigurationClientRevokedCertificateOutputRefe
   }
 }
 
-export class DataAzurermVpnServerConfigurationClientRevokedCertificateList extends cdktf.ComplexList {
+export class DataAzurermVpnServerConfigurationClientRevokedCertificateList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -203,8 +203,8 @@ export interface DataAzurermVpnServerConfigurationClientRootCertificate {
 }
 
 export function dataAzurermVpnServerConfigurationClientRootCertificateToTerraform(struct?: DataAzurermVpnServerConfigurationClientRootCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -213,8 +213,8 @@ export function dataAzurermVpnServerConfigurationClientRootCertificateToTerrafor
 
 
 export function dataAzurermVpnServerConfigurationClientRootCertificateToHclTerraform(struct?: DataAzurermVpnServerConfigurationClientRootCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -222,7 +222,7 @@ export function dataAzurermVpnServerConfigurationClientRootCertificateToHclTerra
   return attrs;
 }
 
-export class DataAzurermVpnServerConfigurationClientRootCertificateOutputReference extends cdktf.ComplexObject {
+export class DataAzurermVpnServerConfigurationClientRootCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -231,7 +231,7 @@ export class DataAzurermVpnServerConfigurationClientRootCertificateOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -261,14 +261,14 @@ export class DataAzurermVpnServerConfigurationClientRootCertificateOutputReferen
   }
 }
 
-export class DataAzurermVpnServerConfigurationClientRootCertificateList extends cdktf.ComplexList {
+export class DataAzurermVpnServerConfigurationClientRootCertificateList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -283,8 +283,8 @@ export interface DataAzurermVpnServerConfigurationIpsecPolicy {
 }
 
 export function dataAzurermVpnServerConfigurationIpsecPolicyToTerraform(struct?: DataAzurermVpnServerConfigurationIpsecPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -293,8 +293,8 @@ export function dataAzurermVpnServerConfigurationIpsecPolicyToTerraform(struct?:
 
 
 export function dataAzurermVpnServerConfigurationIpsecPolicyToHclTerraform(struct?: DataAzurermVpnServerConfigurationIpsecPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -302,7 +302,7 @@ export function dataAzurermVpnServerConfigurationIpsecPolicyToHclTerraform(struc
   return attrs;
 }
 
-export class DataAzurermVpnServerConfigurationIpsecPolicyOutputReference extends cdktf.ComplexObject {
+export class DataAzurermVpnServerConfigurationIpsecPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -311,7 +311,7 @@ export class DataAzurermVpnServerConfigurationIpsecPolicyOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -371,14 +371,14 @@ export class DataAzurermVpnServerConfigurationIpsecPolicyOutputReference extends
   }
 }
 
-export class DataAzurermVpnServerConfigurationIpsecPolicyList extends cdktf.ComplexList {
+export class DataAzurermVpnServerConfigurationIpsecPolicyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -393,8 +393,8 @@ export interface DataAzurermVpnServerConfigurationRadiusClientRootCertificate {
 }
 
 export function dataAzurermVpnServerConfigurationRadiusClientRootCertificateToTerraform(struct?: DataAzurermVpnServerConfigurationRadiusClientRootCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -403,8 +403,8 @@ export function dataAzurermVpnServerConfigurationRadiusClientRootCertificateToTe
 
 
 export function dataAzurermVpnServerConfigurationRadiusClientRootCertificateToHclTerraform(struct?: DataAzurermVpnServerConfigurationRadiusClientRootCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -412,7 +412,7 @@ export function dataAzurermVpnServerConfigurationRadiusClientRootCertificateToHc
   return attrs;
 }
 
-export class DataAzurermVpnServerConfigurationRadiusClientRootCertificateOutputReference extends cdktf.ComplexObject {
+export class DataAzurermVpnServerConfigurationRadiusClientRootCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -421,7 +421,7 @@ export class DataAzurermVpnServerConfigurationRadiusClientRootCertificateOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -451,14 +451,14 @@ export class DataAzurermVpnServerConfigurationRadiusClientRootCertificateOutputR
   }
 }
 
-export class DataAzurermVpnServerConfigurationRadiusClientRootCertificateList extends cdktf.ComplexList {
+export class DataAzurermVpnServerConfigurationRadiusClientRootCertificateList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -473,8 +473,8 @@ export interface DataAzurermVpnServerConfigurationRadiusServer {
 }
 
 export function dataAzurermVpnServerConfigurationRadiusServerToTerraform(struct?: DataAzurermVpnServerConfigurationRadiusServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -483,8 +483,8 @@ export function dataAzurermVpnServerConfigurationRadiusServerToTerraform(struct?
 
 
 export function dataAzurermVpnServerConfigurationRadiusServerToHclTerraform(struct?: DataAzurermVpnServerConfigurationRadiusServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -492,7 +492,7 @@ export function dataAzurermVpnServerConfigurationRadiusServerToHclTerraform(stru
   return attrs;
 }
 
-export class DataAzurermVpnServerConfigurationRadiusServerOutputReference extends cdktf.ComplexObject {
+export class DataAzurermVpnServerConfigurationRadiusServerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -501,7 +501,7 @@ export class DataAzurermVpnServerConfigurationRadiusServerOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -536,14 +536,14 @@ export class DataAzurermVpnServerConfigurationRadiusServerOutputReference extend
   }
 }
 
-export class DataAzurermVpnServerConfigurationRadiusServerList extends cdktf.ComplexList {
+export class DataAzurermVpnServerConfigurationRadiusServerList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -558,8 +558,8 @@ export interface DataAzurermVpnServerConfigurationRadiusServerRootCertificate {
 }
 
 export function dataAzurermVpnServerConfigurationRadiusServerRootCertificateToTerraform(struct?: DataAzurermVpnServerConfigurationRadiusServerRootCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -568,8 +568,8 @@ export function dataAzurermVpnServerConfigurationRadiusServerRootCertificateToTe
 
 
 export function dataAzurermVpnServerConfigurationRadiusServerRootCertificateToHclTerraform(struct?: DataAzurermVpnServerConfigurationRadiusServerRootCertificate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -577,7 +577,7 @@ export function dataAzurermVpnServerConfigurationRadiusServerRootCertificateToHc
   return attrs;
 }
 
-export class DataAzurermVpnServerConfigurationRadiusServerRootCertificateOutputReference extends cdktf.ComplexObject {
+export class DataAzurermVpnServerConfigurationRadiusServerRootCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -586,7 +586,7 @@ export class DataAzurermVpnServerConfigurationRadiusServerRootCertificateOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -616,14 +616,14 @@ export class DataAzurermVpnServerConfigurationRadiusServerRootCertificateOutputR
   }
 }
 
-export class DataAzurermVpnServerConfigurationRadiusServerRootCertificateList extends cdktf.ComplexList {
+export class DataAzurermVpnServerConfigurationRadiusServerRootCertificateList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -638,8 +638,8 @@ export interface DataAzurermVpnServerConfigurationRadius {
 }
 
 export function dataAzurermVpnServerConfigurationRadiusToTerraform(struct?: DataAzurermVpnServerConfigurationRadius): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -648,8 +648,8 @@ export function dataAzurermVpnServerConfigurationRadiusToTerraform(struct?: Data
 
 
 export function dataAzurermVpnServerConfigurationRadiusToHclTerraform(struct?: DataAzurermVpnServerConfigurationRadius): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -657,7 +657,7 @@ export function dataAzurermVpnServerConfigurationRadiusToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataAzurermVpnServerConfigurationRadiusOutputReference extends cdktf.ComplexObject {
+export class DataAzurermVpnServerConfigurationRadiusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -666,7 +666,7 @@ export class DataAzurermVpnServerConfigurationRadiusOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -704,14 +704,14 @@ export class DataAzurermVpnServerConfigurationRadiusOutputReference extends cdkt
   }
 }
 
-export class DataAzurermVpnServerConfigurationRadiusList extends cdktf.ComplexList {
+export class DataAzurermVpnServerConfigurationRadiusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -729,25 +729,25 @@ export interface DataAzurermVpnServerConfigurationTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermVpnServerConfigurationTimeoutsToTerraform(struct?: DataAzurermVpnServerConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermVpnServerConfigurationTimeoutsToTerraform(struct?: DataAzurermVpnServerConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermVpnServerConfigurationTimeoutsToHclTerraform(struct?: DataAzurermVpnServerConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermVpnServerConfigurationTimeoutsToHclTerraform(struct?: DataAzurermVpnServerConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -758,19 +758,19 @@ export function dataAzurermVpnServerConfigurationTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermVpnServerConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermVpnServerConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermVpnServerConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermVpnServerConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -783,13 +783,13 @@ export class DataAzurermVpnServerConfigurationTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermVpnServerConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermVpnServerConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -820,7 +820,7 @@ export class DataAzurermVpnServerConfigurationTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/vpn_server_configuration azurerm_vpn_server_configuration}
 */
-export class DataAzurermVpnServerConfiguration extends cdktf.TerraformDataSource {
+export class DataAzurermVpnServerConfiguration extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -831,14 +831,14 @@ export class DataAzurermVpnServerConfiguration extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermVpnServerConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermVpnServerConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermVpnServerConfiguration to import
   * @param importFromId The id of the existing DataAzurermVpnServerConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/vpn_server_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermVpnServerConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_vpn_server_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_vpn_server_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -956,7 +956,7 @@ export class DataAzurermVpnServerConfiguration extends cdktf.TerraformDataSource
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -968,7 +968,7 @@ export class DataAzurermVpnServerConfiguration extends cdktf.TerraformDataSource
 
   // vpn_protocols - computed: true, optional: false, required: false
   public get vpnProtocols() {
-    return cdktf.Fn.tolist(this.getListAttribute('vpn_protocols'));
+    return cdktn.Fn.tolist(this.getListAttribute('vpn_protocols'));
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -993,9 +993,9 @@ export class DataAzurermVpnServerConfiguration extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurermVpnServerConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1003,19 +1003,19 @@ export class DataAzurermVpnServerConfiguration extends cdktf.TerraformDataSource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

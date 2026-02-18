@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PimActiveRoleAssignmentConfig extends cdktf.TerraformMetaArguments {
+export interface PimActiveRoleAssignmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/pim_active_role_assignment#id PimActiveRoleAssignment#id}
   *
@@ -84,38 +84,38 @@ export interface PimActiveRoleAssignmentScheduleExpiration {
 }
 
 export function pimActiveRoleAssignmentScheduleExpirationToTerraform(struct?: PimActiveRoleAssignmentScheduleExpirationOutputReference | PimActiveRoleAssignmentScheduleExpiration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    duration_days: cdktf.numberToTerraform(struct!.durationDays),
-    duration_hours: cdktf.numberToTerraform(struct!.durationHours),
-    end_date_time: cdktf.stringToTerraform(struct!.endDateTime),
+    duration_days: cdktn.numberToTerraform(struct!.durationDays),
+    duration_hours: cdktn.numberToTerraform(struct!.durationHours),
+    end_date_time: cdktn.stringToTerraform(struct!.endDateTime),
   }
 }
 
 
 export function pimActiveRoleAssignmentScheduleExpirationToHclTerraform(struct?: PimActiveRoleAssignmentScheduleExpirationOutputReference | PimActiveRoleAssignmentScheduleExpiration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     duration_days: {
-      value: cdktf.numberToHclTerraform(struct!.durationDays),
+      value: cdktn.numberToHclTerraform(struct!.durationDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     duration_hours: {
-      value: cdktf.numberToHclTerraform(struct!.durationHours),
+      value: cdktn.numberToHclTerraform(struct!.durationHours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     end_date_time: {
-      value: cdktf.stringToHclTerraform(struct!.endDateTime),
+      value: cdktn.stringToHclTerraform(struct!.endDateTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -126,14 +126,14 @@ export function pimActiveRoleAssignmentScheduleExpirationToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PimActiveRoleAssignmentScheduleExpirationOutputReference extends cdktf.ComplexObject {
+export class PimActiveRoleAssignmentScheduleExpirationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -234,25 +234,25 @@ export interface PimActiveRoleAssignmentSchedule {
 }
 
 export function pimActiveRoleAssignmentScheduleToTerraform(struct?: PimActiveRoleAssignmentScheduleOutputReference | PimActiveRoleAssignmentSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    start_date_time: cdktf.stringToTerraform(struct!.startDateTime),
+    start_date_time: cdktn.stringToTerraform(struct!.startDateTime),
     expiration: pimActiveRoleAssignmentScheduleExpirationToTerraform(struct!.expiration),
   }
 }
 
 
 export function pimActiveRoleAssignmentScheduleToHclTerraform(struct?: PimActiveRoleAssignmentScheduleOutputReference | PimActiveRoleAssignmentSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     start_date_time: {
-      value: cdktf.stringToHclTerraform(struct!.startDateTime),
+      value: cdktn.stringToHclTerraform(struct!.startDateTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -269,14 +269,14 @@ export function pimActiveRoleAssignmentScheduleToHclTerraform(struct?: PimActive
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PimActiveRoleAssignmentScheduleOutputReference extends cdktf.ComplexObject {
+export class PimActiveRoleAssignmentScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -355,31 +355,31 @@ export interface PimActiveRoleAssignmentTicket {
 }
 
 export function pimActiveRoleAssignmentTicketToTerraform(struct?: PimActiveRoleAssignmentTicketOutputReference | PimActiveRoleAssignmentTicket): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    number: cdktf.stringToTerraform(struct!.number),
-    system: cdktf.stringToTerraform(struct!.systemAttribute),
+    number: cdktn.stringToTerraform(struct!.number),
+    system: cdktn.stringToTerraform(struct!.systemAttribute),
   }
 }
 
 
 export function pimActiveRoleAssignmentTicketToHclTerraform(struct?: PimActiveRoleAssignmentTicketOutputReference | PimActiveRoleAssignmentTicket): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     number: {
-      value: cdktf.stringToHclTerraform(struct!.number),
+      value: cdktn.stringToHclTerraform(struct!.number),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     system: {
-      value: cdktf.stringToHclTerraform(struct!.systemAttribute),
+      value: cdktn.stringToHclTerraform(struct!.systemAttribute),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -390,14 +390,14 @@ export function pimActiveRoleAssignmentTicketToHclTerraform(struct?: PimActiveRo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PimActiveRoleAssignmentTicketOutputReference extends cdktf.ComplexObject {
+export class PimActiveRoleAssignmentTicketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -475,39 +475,39 @@ export interface PimActiveRoleAssignmentTimeouts {
   readonly read?: string;
 }
 
-export function pimActiveRoleAssignmentTimeoutsToTerraform(struct?: PimActiveRoleAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pimActiveRoleAssignmentTimeoutsToTerraform(struct?: PimActiveRoleAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function pimActiveRoleAssignmentTimeoutsToHclTerraform(struct?: PimActiveRoleAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pimActiveRoleAssignmentTimeoutsToHclTerraform(struct?: PimActiveRoleAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -518,19 +518,19 @@ export function pimActiveRoleAssignmentTimeoutsToHclTerraform(struct?: PimActive
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PimActiveRoleAssignmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PimActiveRoleAssignmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PimActiveRoleAssignmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PimActiveRoleAssignmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -551,7 +551,7 @@ export class PimActiveRoleAssignmentTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PimActiveRoleAssignmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PimActiveRoleAssignmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -559,7 +559,7 @@ export class PimActiveRoleAssignmentTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -624,7 +624,7 @@ export class PimActiveRoleAssignmentTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/pim_active_role_assignment azurerm_pim_active_role_assignment}
 */
-export class PimActiveRoleAssignment extends cdktf.TerraformResource {
+export class PimActiveRoleAssignment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -635,14 +635,14 @@ export class PimActiveRoleAssignment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PimActiveRoleAssignment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PimActiveRoleAssignment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PimActiveRoleAssignment to import
   * @param importFromId The id of the existing PimActiveRoleAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/pim_active_role_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PimActiveRoleAssignment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_pim_active_role_assignment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_pim_active_role_assignment", importId: importFromId, provider });
       }
 
   // ===========
@@ -816,11 +816,11 @@ export class PimActiveRoleAssignment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      justification: cdktf.stringToTerraform(this._justification),
-      principal_id: cdktf.stringToTerraform(this._principalId),
-      role_definition_id: cdktf.stringToTerraform(this._roleDefinitionId),
-      scope: cdktf.stringToTerraform(this._scope),
+      id: cdktn.stringToTerraform(this._id),
+      justification: cdktn.stringToTerraform(this._justification),
+      principal_id: cdktn.stringToTerraform(this._principalId),
+      role_definition_id: cdktn.stringToTerraform(this._roleDefinitionId),
+      scope: cdktn.stringToTerraform(this._scope),
       schedule: pimActiveRoleAssignmentScheduleToTerraform(this._schedule.internalValue),
       ticket: pimActiveRoleAssignmentTicketToTerraform(this._ticket.internalValue),
       timeouts: pimActiveRoleAssignmentTimeoutsToTerraform(this._timeouts.internalValue),
@@ -830,31 +830,31 @@ export class PimActiveRoleAssignment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       justification: {
-        value: cdktf.stringToHclTerraform(this._justification),
+        value: cdktn.stringToHclTerraform(this._justification),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal_id: {
-        value: cdktf.stringToHclTerraform(this._principalId),
+        value: cdktn.stringToHclTerraform(this._principalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_definition_id: {
-        value: cdktf.stringToHclTerraform(this._roleDefinitionId),
+        value: cdktn.stringToHclTerraform(this._roleDefinitionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope: {
-        value: cdktf.stringToHclTerraform(this._scope),
+        value: cdktn.stringToHclTerraform(this._scope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermDataFactoryTriggerScheduleConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermDataFactoryTriggerScheduleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/data_factory_trigger_schedule#data_factory_id DataAzurermDataFactoryTriggerSchedule#data_factory_id}
   */
@@ -38,8 +38,8 @@ export interface DataAzurermDataFactoryTriggerScheduleScheduleMonthly {
 }
 
 export function dataAzurermDataFactoryTriggerScheduleScheduleMonthlyToTerraform(struct?: DataAzurermDataFactoryTriggerScheduleScheduleMonthly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermDataFactoryTriggerScheduleScheduleMonthlyToTerraform(
 
 
 export function dataAzurermDataFactoryTriggerScheduleScheduleMonthlyToHclTerraform(struct?: DataAzurermDataFactoryTriggerScheduleScheduleMonthly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermDataFactoryTriggerScheduleScheduleMonthlyToHclTerrafo
   return attrs;
 }
 
-export class DataAzurermDataFactoryTriggerScheduleScheduleMonthlyOutputReference extends cdktf.ComplexObject {
+export class DataAzurermDataFactoryTriggerScheduleScheduleMonthlyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermDataFactoryTriggerScheduleScheduleMonthlyOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -96,14 +96,14 @@ export class DataAzurermDataFactoryTriggerScheduleScheduleMonthlyOutputReference
   }
 }
 
-export class DataAzurermDataFactoryTriggerScheduleScheduleMonthlyList extends cdktf.ComplexList {
+export class DataAzurermDataFactoryTriggerScheduleScheduleMonthlyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -118,8 +118,8 @@ export interface DataAzurermDataFactoryTriggerScheduleSchedule {
 }
 
 export function dataAzurermDataFactoryTriggerScheduleScheduleToTerraform(struct?: DataAzurermDataFactoryTriggerScheduleSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -128,8 +128,8 @@ export function dataAzurermDataFactoryTriggerScheduleScheduleToTerraform(struct?
 
 
 export function dataAzurermDataFactoryTriggerScheduleScheduleToHclTerraform(struct?: DataAzurermDataFactoryTriggerScheduleSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -137,7 +137,7 @@ export function dataAzurermDataFactoryTriggerScheduleScheduleToHclTerraform(stru
   return attrs;
 }
 
-export class DataAzurermDataFactoryTriggerScheduleScheduleOutputReference extends cdktf.ComplexObject {
+export class DataAzurermDataFactoryTriggerScheduleScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -146,7 +146,7 @@ export class DataAzurermDataFactoryTriggerScheduleScheduleOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -192,14 +192,14 @@ export class DataAzurermDataFactoryTriggerScheduleScheduleOutputReference extend
   }
 }
 
-export class DataAzurermDataFactoryTriggerScheduleScheduleList extends cdktf.ComplexList {
+export class DataAzurermDataFactoryTriggerScheduleScheduleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -217,25 +217,25 @@ export interface DataAzurermDataFactoryTriggerScheduleTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermDataFactoryTriggerScheduleTimeoutsToTerraform(struct?: DataAzurermDataFactoryTriggerScheduleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermDataFactoryTriggerScheduleTimeoutsToTerraform(struct?: DataAzurermDataFactoryTriggerScheduleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermDataFactoryTriggerScheduleTimeoutsToHclTerraform(struct?: DataAzurermDataFactoryTriggerScheduleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermDataFactoryTriggerScheduleTimeoutsToHclTerraform(struct?: DataAzurermDataFactoryTriggerScheduleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -246,19 +246,19 @@ export function dataAzurermDataFactoryTriggerScheduleTimeoutsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermDataFactoryTriggerScheduleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermDataFactoryTriggerScheduleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermDataFactoryTriggerScheduleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermDataFactoryTriggerScheduleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -271,13 +271,13 @@ export class DataAzurermDataFactoryTriggerScheduleTimeoutsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermDataFactoryTriggerScheduleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermDataFactoryTriggerScheduleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -308,7 +308,7 @@ export class DataAzurermDataFactoryTriggerScheduleTimeoutsOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule}
 */
-export class DataAzurermDataFactoryTriggerSchedule extends cdktf.TerraformDataSource {
+export class DataAzurermDataFactoryTriggerSchedule extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -319,14 +319,14 @@ export class DataAzurermDataFactoryTriggerSchedule extends cdktf.TerraformDataSo
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermDataFactoryTriggerSchedule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermDataFactoryTriggerSchedule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermDataFactoryTriggerSchedule to import
   * @param importFromId The id of the existing DataAzurermDataFactoryTriggerSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/data_factory_trigger_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermDataFactoryTriggerSchedule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_trigger_schedule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_trigger_schedule", importId: importFromId, provider });
       }
 
   // ===========
@@ -481,9 +481,9 @@ export class DataAzurermDataFactoryTriggerSchedule extends cdktf.TerraformDataSo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_factory_id: cdktf.stringToTerraform(this._dataFactoryId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      data_factory_id: cdktn.stringToTerraform(this._dataFactoryId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
       timeouts: dataAzurermDataFactoryTriggerScheduleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -491,19 +491,19 @@ export class DataAzurermDataFactoryTriggerSchedule extends cdktf.TerraformDataSo
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_factory_id: {
-        value: cdktf.stringToHclTerraform(this._dataFactoryId),
+        value: cdktn.stringToHclTerraform(this._dataFactoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

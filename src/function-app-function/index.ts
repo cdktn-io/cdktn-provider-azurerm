@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FunctionAppFunctionConfig extends cdktf.TerraformMetaArguments {
+export interface FunctionAppFunctionConfig extends cdktn.TerraformMetaArguments {
   /**
   * The config for this Function in JSON format.
   *
@@ -23,7 +23,7 @@ export interface FunctionAppFunctionConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/function_app_function#enabled FunctionAppFunction#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The ID of the Function App in which this function should reside.
   *
@@ -60,7 +60,7 @@ export interface FunctionAppFunctionConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/function_app_function#file FunctionAppFunction#file}
   */
-  readonly file?: FunctionAppFunctionFile[] | cdktf.IResolvable;
+  readonly file?: FunctionAppFunctionFile[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -83,32 +83,32 @@ export interface FunctionAppFunctionFile {
   readonly name: string;
 }
 
-export function functionAppFunctionFileToTerraform(struct?: FunctionAppFunctionFile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionAppFunctionFileToTerraform(struct?: FunctionAppFunctionFile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    name: cdktf.stringToTerraform(struct!.name),
+    content: cdktn.stringToTerraform(struct!.content),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function functionAppFunctionFileToHclTerraform(struct?: FunctionAppFunctionFile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionAppFunctionFileToHclTerraform(struct?: FunctionAppFunctionFile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,9 +119,9 @@ export function functionAppFunctionFileToHclTerraform(struct?: FunctionAppFuncti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FunctionAppFunctionFileOutputReference extends cdktf.ComplexObject {
+export class FunctionAppFunctionFileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -129,11 +129,11 @@ export class FunctionAppFunctionFileOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FunctionAppFunctionFile | cdktf.IResolvable | undefined {
+  public get internalValue(): FunctionAppFunctionFile | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -150,14 +150,14 @@ export class FunctionAppFunctionFileOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FunctionAppFunctionFile | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FunctionAppFunctionFile | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._content = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -196,15 +196,15 @@ export class FunctionAppFunctionFileOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class FunctionAppFunctionFileList extends cdktf.ComplexList {
-  public internalValue? : FunctionAppFunctionFile[] | cdktf.IResolvable
+export class FunctionAppFunctionFileList extends cdktn.ComplexList {
+  public internalValue? : FunctionAppFunctionFile[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -234,46 +234,46 @@ export interface FunctionAppFunctionTimeouts {
   readonly update?: string;
 }
 
-export function functionAppFunctionTimeoutsToTerraform(struct?: FunctionAppFunctionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionAppFunctionTimeoutsToTerraform(struct?: FunctionAppFunctionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function functionAppFunctionTimeoutsToHclTerraform(struct?: FunctionAppFunctionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionAppFunctionTimeoutsToHclTerraform(struct?: FunctionAppFunctionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -284,19 +284,19 @@ export function functionAppFunctionTimeoutsToHclTerraform(struct?: FunctionAppFu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FunctionAppFunctionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class FunctionAppFunctionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): FunctionAppFunctionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): FunctionAppFunctionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -321,7 +321,7 @@ export class FunctionAppFunctionTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FunctionAppFunctionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FunctionAppFunctionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -330,7 +330,7 @@ export class FunctionAppFunctionTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -412,7 +412,7 @@ export class FunctionAppFunctionTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/function_app_function azurerm_function_app_function}
 */
-export class FunctionAppFunction extends cdktf.TerraformResource {
+export class FunctionAppFunction extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -423,14 +423,14 @@ export class FunctionAppFunction extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a FunctionAppFunction resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a FunctionAppFunction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FunctionAppFunction to import
   * @param importFromId The id of the existing FunctionAppFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/function_app_function#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FunctionAppFunction to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_function_app_function", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_function_app_function", importId: importFromId, provider });
       }
 
   // ===========
@@ -494,11 +494,11 @@ export class FunctionAppFunction extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -618,7 +618,7 @@ export class FunctionAppFunction extends cdktf.TerraformResource {
   public get file() {
     return this._file;
   }
-  public putFile(value: FunctionAppFunctionFile[] | cdktf.IResolvable) {
+  public putFile(value: FunctionAppFunctionFile[] | cdktn.IResolvable) {
     this._file.internalValue = value;
   }
   public resetFile() {
@@ -651,14 +651,14 @@ export class FunctionAppFunction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      config_json: cdktf.stringToTerraform(this._configJson),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      function_app_id: cdktf.stringToTerraform(this._functionAppId),
-      id: cdktf.stringToTerraform(this._id),
-      language: cdktf.stringToTerraform(this._language),
-      name: cdktf.stringToTerraform(this._name),
-      test_data: cdktf.stringToTerraform(this._testData),
-      file: cdktf.listMapper(functionAppFunctionFileToTerraform, true)(this._file.internalValue),
+      config_json: cdktn.stringToTerraform(this._configJson),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      function_app_id: cdktn.stringToTerraform(this._functionAppId),
+      id: cdktn.stringToTerraform(this._id),
+      language: cdktn.stringToTerraform(this._language),
+      name: cdktn.stringToTerraform(this._name),
+      test_data: cdktn.stringToTerraform(this._testData),
+      file: cdktn.listMapper(functionAppFunctionFileToTerraform, true)(this._file.internalValue),
       timeouts: functionAppFunctionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -666,49 +666,49 @@ export class FunctionAppFunction extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       config_json: {
-        value: cdktf.stringToHclTerraform(this._configJson),
+        value: cdktn.stringToHclTerraform(this._configJson),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       function_app_id: {
-        value: cdktf.stringToHclTerraform(this._functionAppId),
+        value: cdktn.stringToHclTerraform(this._functionAppId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       language: {
-        value: cdktf.stringToHclTerraform(this._language),
+        value: cdktn.stringToHclTerraform(this._language),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       test_data: {
-        value: cdktf.stringToHclTerraform(this._testData),
+        value: cdktn.stringToHclTerraform(this._testData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file: {
-        value: cdktf.listMapperHcl(functionAppFunctionFileToHclTerraform, true)(this._file.internalValue),
+        value: cdktn.listMapperHcl(functionAppFunctionFileToHclTerraform, true)(this._file.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "FunctionAppFunctionFileList",

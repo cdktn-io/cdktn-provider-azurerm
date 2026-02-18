@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KeyVaultCertificateIssuerConfig extends cdktf.TerraformMetaArguments {
+export interface KeyVaultCertificateIssuerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_certificate_issuer#account_id KeyVaultCertificateIssuer#account_id}
   */
@@ -48,7 +48,7 @@ export interface KeyVaultCertificateIssuerConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_certificate_issuer#admin KeyVaultCertificateIssuer#admin}
   */
-  readonly admin?: KeyVaultCertificateIssuerAdmin[] | cdktf.IResolvable;
+  readonly admin?: KeyVaultCertificateIssuerAdmin[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -75,46 +75,46 @@ export interface KeyVaultCertificateIssuerAdmin {
   readonly phone?: string;
 }
 
-export function keyVaultCertificateIssuerAdminToTerraform(struct?: KeyVaultCertificateIssuerAdmin | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultCertificateIssuerAdminToTerraform(struct?: KeyVaultCertificateIssuerAdmin | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email_address: cdktf.stringToTerraform(struct!.emailAddress),
-    first_name: cdktf.stringToTerraform(struct!.firstName),
-    last_name: cdktf.stringToTerraform(struct!.lastName),
-    phone: cdktf.stringToTerraform(struct!.phone),
+    email_address: cdktn.stringToTerraform(struct!.emailAddress),
+    first_name: cdktn.stringToTerraform(struct!.firstName),
+    last_name: cdktn.stringToTerraform(struct!.lastName),
+    phone: cdktn.stringToTerraform(struct!.phone),
   }
 }
 
 
-export function keyVaultCertificateIssuerAdminToHclTerraform(struct?: KeyVaultCertificateIssuerAdmin | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultCertificateIssuerAdminToHclTerraform(struct?: KeyVaultCertificateIssuerAdmin | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email_address: {
-      value: cdktf.stringToHclTerraform(struct!.emailAddress),
+      value: cdktn.stringToHclTerraform(struct!.emailAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     first_name: {
-      value: cdktf.stringToHclTerraform(struct!.firstName),
+      value: cdktn.stringToHclTerraform(struct!.firstName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     last_name: {
-      value: cdktf.stringToHclTerraform(struct!.lastName),
+      value: cdktn.stringToHclTerraform(struct!.lastName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     phone: {
-      value: cdktf.stringToHclTerraform(struct!.phone),
+      value: cdktn.stringToHclTerraform(struct!.phone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,9 +125,9 @@ export function keyVaultCertificateIssuerAdminToHclTerraform(struct?: KeyVaultCe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyVaultCertificateIssuerAdminOutputReference extends cdktf.ComplexObject {
+export class KeyVaultCertificateIssuerAdminOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -135,11 +135,11 @@ export class KeyVaultCertificateIssuerAdminOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KeyVaultCertificateIssuerAdmin | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyVaultCertificateIssuerAdmin | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -164,7 +164,7 @@ export class KeyVaultCertificateIssuerAdminOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyVaultCertificateIssuerAdmin | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyVaultCertificateIssuerAdmin | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class KeyVaultCertificateIssuerAdminOutputReference extends cdktf.Complex
       this._lastName = undefined;
       this._phone = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -249,15 +249,15 @@ export class KeyVaultCertificateIssuerAdminOutputReference extends cdktf.Complex
   }
 }
 
-export class KeyVaultCertificateIssuerAdminList extends cdktf.ComplexList {
-  public internalValue? : KeyVaultCertificateIssuerAdmin[] | cdktf.IResolvable
+export class KeyVaultCertificateIssuerAdminList extends cdktn.ComplexList {
+  public internalValue? : KeyVaultCertificateIssuerAdmin[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -287,46 +287,46 @@ export interface KeyVaultCertificateIssuerTimeouts {
   readonly update?: string;
 }
 
-export function keyVaultCertificateIssuerTimeoutsToTerraform(struct?: KeyVaultCertificateIssuerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultCertificateIssuerTimeoutsToTerraform(struct?: KeyVaultCertificateIssuerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function keyVaultCertificateIssuerTimeoutsToHclTerraform(struct?: KeyVaultCertificateIssuerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultCertificateIssuerTimeoutsToHclTerraform(struct?: KeyVaultCertificateIssuerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -337,19 +337,19 @@ export function keyVaultCertificateIssuerTimeoutsToHclTerraform(struct?: KeyVaul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyVaultCertificateIssuerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KeyVaultCertificateIssuerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KeyVaultCertificateIssuerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyVaultCertificateIssuerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -374,7 +374,7 @@ export class KeyVaultCertificateIssuerTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyVaultCertificateIssuerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyVaultCertificateIssuerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -383,7 +383,7 @@ export class KeyVaultCertificateIssuerTimeoutsOutputReference extends cdktf.Comp
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -465,7 +465,7 @@ export class KeyVaultCertificateIssuerTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_certificate_issuer azurerm_key_vault_certificate_issuer}
 */
-export class KeyVaultCertificateIssuer extends cdktf.TerraformResource {
+export class KeyVaultCertificateIssuer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -476,14 +476,14 @@ export class KeyVaultCertificateIssuer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KeyVaultCertificateIssuer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KeyVaultCertificateIssuer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeyVaultCertificateIssuer to import
   * @param importFromId The id of the existing KeyVaultCertificateIssuer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_certificate_issuer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeyVaultCertificateIssuer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_certificate_issuer", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_certificate_issuer", importId: importFromId, provider });
       }
 
   // ===========
@@ -636,7 +636,7 @@ export class KeyVaultCertificateIssuer extends cdktf.TerraformResource {
   public get admin() {
     return this._admin;
   }
-  public putAdmin(value: KeyVaultCertificateIssuerAdmin[] | cdktf.IResolvable) {
+  public putAdmin(value: KeyVaultCertificateIssuerAdmin[] | cdktn.IResolvable) {
     this._admin.internalValue = value;
   }
   public resetAdmin() {
@@ -669,14 +669,14 @@ export class KeyVaultCertificateIssuer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      key_vault_id: cdktf.stringToTerraform(this._keyVaultId),
-      name: cdktf.stringToTerraform(this._name),
-      org_id: cdktf.stringToTerraform(this._orgId),
-      password: cdktf.stringToTerraform(this._password),
-      provider_name: cdktf.stringToTerraform(this._providerName),
-      admin: cdktf.listMapper(keyVaultCertificateIssuerAdminToTerraform, true)(this._admin.internalValue),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      key_vault_id: cdktn.stringToTerraform(this._keyVaultId),
+      name: cdktn.stringToTerraform(this._name),
+      org_id: cdktn.stringToTerraform(this._orgId),
+      password: cdktn.stringToTerraform(this._password),
+      provider_name: cdktn.stringToTerraform(this._providerName),
+      admin: cdktn.listMapper(keyVaultCertificateIssuerAdminToTerraform, true)(this._admin.internalValue),
       timeouts: keyVaultCertificateIssuerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -684,49 +684,49 @@ export class KeyVaultCertificateIssuer extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_vault_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultId),
+        value: cdktn.stringToHclTerraform(this._keyVaultId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       org_id: {
-        value: cdktf.stringToHclTerraform(this._orgId),
+        value: cdktn.stringToHclTerraform(this._orgId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provider_name: {
-        value: cdktf.stringToHclTerraform(this._providerName),
+        value: cdktn.stringToHclTerraform(this._providerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       admin: {
-        value: cdktf.listMapperHcl(keyVaultCertificateIssuerAdminToHclTerraform, true)(this._admin.internalValue),
+        value: cdktn.listMapperHcl(keyVaultCertificateIssuerAdminToHclTerraform, true)(this._admin.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "KeyVaultCertificateIssuerAdminList",

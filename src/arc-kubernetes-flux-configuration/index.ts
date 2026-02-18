@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ArcKubernetesFluxConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface ArcKubernetesFluxConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_kubernetes_flux_configuration#cluster_id ArcKubernetesFluxConfiguration#cluster_id}
   */
@@ -19,7 +19,7 @@ export interface ArcKubernetesFluxConfigurationConfig extends cdktf.TerraformMet
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_kubernetes_flux_configuration#continuous_reconciliation_enabled ArcKubernetesFluxConfiguration#continuous_reconciliation_enabled}
   */
-  readonly continuousReconciliationEnabled?: boolean | cdktf.IResolvable;
+  readonly continuousReconciliationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_kubernetes_flux_configuration#id ArcKubernetesFluxConfiguration#id}
   *
@@ -62,7 +62,7 @@ export interface ArcKubernetesFluxConfigurationConfig extends cdktf.TerraformMet
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_kubernetes_flux_configuration#kustomizations ArcKubernetesFluxConfiguration#kustomizations}
   */
-  readonly kustomizations: ArcKubernetesFluxConfigurationKustomizations[] | cdktf.IResolvable;
+  readonly kustomizations: ArcKubernetesFluxConfigurationKustomizations[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -82,7 +82,7 @@ export interface ArcKubernetesFluxConfigurationBlobStorageServicePrincipal {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_kubernetes_flux_configuration#client_certificate_send_chain ArcKubernetesFluxConfiguration#client_certificate_send_chain}
   */
-  readonly clientCertificateSendChain?: boolean | cdktf.IResolvable;
+  readonly clientCertificateSendChain?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_kubernetes_flux_configuration#client_id ArcKubernetesFluxConfiguration#client_id}
   */
@@ -98,59 +98,59 @@ export interface ArcKubernetesFluxConfigurationBlobStorageServicePrincipal {
 }
 
 export function arcKubernetesFluxConfigurationBlobStorageServicePrincipalToTerraform(struct?: ArcKubernetesFluxConfigurationBlobStorageServicePrincipalOutputReference | ArcKubernetesFluxConfigurationBlobStorageServicePrincipal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_certificate_base64: cdktf.stringToTerraform(struct!.clientCertificateBase64),
-    client_certificate_password: cdktf.stringToTerraform(struct!.clientCertificatePassword),
-    client_certificate_send_chain: cdktf.booleanToTerraform(struct!.clientCertificateSendChain),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    client_certificate_base64: cdktn.stringToTerraform(struct!.clientCertificateBase64),
+    client_certificate_password: cdktn.stringToTerraform(struct!.clientCertificatePassword),
+    client_certificate_send_chain: cdktn.booleanToTerraform(struct!.clientCertificateSendChain),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
   }
 }
 
 
 export function arcKubernetesFluxConfigurationBlobStorageServicePrincipalToHclTerraform(struct?: ArcKubernetesFluxConfigurationBlobStorageServicePrincipalOutputReference | ArcKubernetesFluxConfigurationBlobStorageServicePrincipal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_certificate_base64: {
-      value: cdktf.stringToHclTerraform(struct!.clientCertificateBase64),
+      value: cdktn.stringToHclTerraform(struct!.clientCertificateBase64),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_certificate_password: {
-      value: cdktf.stringToHclTerraform(struct!.clientCertificatePassword),
+      value: cdktn.stringToHclTerraform(struct!.clientCertificatePassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_certificate_send_chain: {
-      value: cdktf.booleanToHclTerraform(struct!.clientCertificateSendChain),
+      value: cdktn.booleanToHclTerraform(struct!.clientCertificateSendChain),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -161,14 +161,14 @@ export function arcKubernetesFluxConfigurationBlobStorageServicePrincipalToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcKubernetesFluxConfigurationBlobStorageServicePrincipalOutputReference extends cdktf.ComplexObject {
+export class ArcKubernetesFluxConfigurationBlobStorageServicePrincipalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -256,11 +256,11 @@ export class ArcKubernetesFluxConfigurationBlobStorageServicePrincipalOutputRefe
   }
 
   // client_certificate_send_chain - computed: false, optional: true, required: false
-  private _clientCertificateSendChain?: boolean | cdktf.IResolvable; 
+  private _clientCertificateSendChain?: boolean | cdktn.IResolvable; 
   public get clientCertificateSendChain() {
     return this.getBooleanAttribute('client_certificate_send_chain');
   }
-  public set clientCertificateSendChain(value: boolean | cdktf.IResolvable) {
+  public set clientCertificateSendChain(value: boolean | cdktn.IResolvable) {
     this._clientCertificateSendChain = value;
   }
   public resetClientCertificateSendChain() {
@@ -347,60 +347,60 @@ export interface ArcKubernetesFluxConfigurationBlobStorage {
 }
 
 export function arcKubernetesFluxConfigurationBlobStorageToTerraform(struct?: ArcKubernetesFluxConfigurationBlobStorageOutputReference | ArcKubernetesFluxConfigurationBlobStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_key: cdktf.stringToTerraform(struct!.accountKey),
-    container_id: cdktf.stringToTerraform(struct!.containerId),
-    local_auth_reference: cdktf.stringToTerraform(struct!.localAuthReference),
-    sas_token: cdktf.stringToTerraform(struct!.sasToken),
-    sync_interval_in_seconds: cdktf.numberToTerraform(struct!.syncIntervalInSeconds),
-    timeout_in_seconds: cdktf.numberToTerraform(struct!.timeoutInSeconds),
+    account_key: cdktn.stringToTerraform(struct!.accountKey),
+    container_id: cdktn.stringToTerraform(struct!.containerId),
+    local_auth_reference: cdktn.stringToTerraform(struct!.localAuthReference),
+    sas_token: cdktn.stringToTerraform(struct!.sasToken),
+    sync_interval_in_seconds: cdktn.numberToTerraform(struct!.syncIntervalInSeconds),
+    timeout_in_seconds: cdktn.numberToTerraform(struct!.timeoutInSeconds),
     service_principal: arcKubernetesFluxConfigurationBlobStorageServicePrincipalToTerraform(struct!.servicePrincipal),
   }
 }
 
 
 export function arcKubernetesFluxConfigurationBlobStorageToHclTerraform(struct?: ArcKubernetesFluxConfigurationBlobStorageOutputReference | ArcKubernetesFluxConfigurationBlobStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_key: {
-      value: cdktf.stringToHclTerraform(struct!.accountKey),
+      value: cdktn.stringToHclTerraform(struct!.accountKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     container_id: {
-      value: cdktf.stringToHclTerraform(struct!.containerId),
+      value: cdktn.stringToHclTerraform(struct!.containerId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     local_auth_reference: {
-      value: cdktf.stringToHclTerraform(struct!.localAuthReference),
+      value: cdktn.stringToHclTerraform(struct!.localAuthReference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sas_token: {
-      value: cdktf.stringToHclTerraform(struct!.sasToken),
+      value: cdktn.stringToHclTerraform(struct!.sasToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sync_interval_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.syncIntervalInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.syncIntervalInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -417,14 +417,14 @@ export function arcKubernetesFluxConfigurationBlobStorageToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcKubernetesFluxConfigurationBlobStorageOutputReference extends cdktf.ComplexObject {
+export class ArcKubernetesFluxConfigurationBlobStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -622,7 +622,7 @@ export interface ArcKubernetesFluxConfigurationBucket {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_kubernetes_flux_configuration#tls_enabled ArcKubernetesFluxConfiguration#tls_enabled}
   */
-  readonly tlsEnabled?: boolean | cdktf.IResolvable;
+  readonly tlsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_kubernetes_flux_configuration#url ArcKubernetesFluxConfiguration#url}
   */
@@ -630,73 +630,73 @@ export interface ArcKubernetesFluxConfigurationBucket {
 }
 
 export function arcKubernetesFluxConfigurationBucketToTerraform(struct?: ArcKubernetesFluxConfigurationBucketOutputReference | ArcKubernetesFluxConfigurationBucket): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_key: cdktf.stringToTerraform(struct!.accessKey),
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    local_auth_reference: cdktf.stringToTerraform(struct!.localAuthReference),
-    secret_key_base64: cdktf.stringToTerraform(struct!.secretKeyBase64),
-    sync_interval_in_seconds: cdktf.numberToTerraform(struct!.syncIntervalInSeconds),
-    timeout_in_seconds: cdktf.numberToTerraform(struct!.timeoutInSeconds),
-    tls_enabled: cdktf.booleanToTerraform(struct!.tlsEnabled),
-    url: cdktf.stringToTerraform(struct!.url),
+    access_key: cdktn.stringToTerraform(struct!.accessKey),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    local_auth_reference: cdktn.stringToTerraform(struct!.localAuthReference),
+    secret_key_base64: cdktn.stringToTerraform(struct!.secretKeyBase64),
+    sync_interval_in_seconds: cdktn.numberToTerraform(struct!.syncIntervalInSeconds),
+    timeout_in_seconds: cdktn.numberToTerraform(struct!.timeoutInSeconds),
+    tls_enabled: cdktn.booleanToTerraform(struct!.tlsEnabled),
+    url: cdktn.stringToTerraform(struct!.url),
   }
 }
 
 
 export function arcKubernetesFluxConfigurationBucketToHclTerraform(struct?: ArcKubernetesFluxConfigurationBucketOutputReference | ArcKubernetesFluxConfigurationBucket): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_key: {
-      value: cdktf.stringToHclTerraform(struct!.accessKey),
+      value: cdktn.stringToHclTerraform(struct!.accessKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     local_auth_reference: {
-      value: cdktf.stringToHclTerraform(struct!.localAuthReference),
+      value: cdktn.stringToHclTerraform(struct!.localAuthReference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_key_base64: {
-      value: cdktf.stringToHclTerraform(struct!.secretKeyBase64),
+      value: cdktn.stringToHclTerraform(struct!.secretKeyBase64),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sync_interval_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.syncIntervalInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.syncIntervalInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tls_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.tlsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.tlsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -707,14 +707,14 @@ export function arcKubernetesFluxConfigurationBucketToHclTerraform(struct?: ArcK
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcKubernetesFluxConfigurationBucketOutputReference extends cdktf.ComplexObject {
+export class ArcKubernetesFluxConfigurationBucketOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -875,11 +875,11 @@ export class ArcKubernetesFluxConfigurationBucketOutputReference extends cdktf.C
   }
 
   // tls_enabled - computed: false, optional: true, required: false
-  private _tlsEnabled?: boolean | cdktf.IResolvable; 
+  private _tlsEnabled?: boolean | cdktn.IResolvable; 
   public get tlsEnabled() {
     return this.getBooleanAttribute('tls_enabled');
   }
-  public set tlsEnabled(value: boolean | cdktf.IResolvable) {
+  public set tlsEnabled(value: boolean | cdktn.IResolvable) {
     this._tlsEnabled = value;
   }
   public resetTlsEnabled() {
@@ -951,94 +951,94 @@ export interface ArcKubernetesFluxConfigurationGitRepository {
 }
 
 export function arcKubernetesFluxConfigurationGitRepositoryToTerraform(struct?: ArcKubernetesFluxConfigurationGitRepositoryOutputReference | ArcKubernetesFluxConfigurationGitRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    https_ca_cert_base64: cdktf.stringToTerraform(struct!.httpsCaCertBase64),
-    https_key_base64: cdktf.stringToTerraform(struct!.httpsKeyBase64),
-    https_user: cdktf.stringToTerraform(struct!.httpsUser),
-    local_auth_reference: cdktf.stringToTerraform(struct!.localAuthReference),
-    reference_type: cdktf.stringToTerraform(struct!.referenceType),
-    reference_value: cdktf.stringToTerraform(struct!.referenceValue),
-    ssh_known_hosts_base64: cdktf.stringToTerraform(struct!.sshKnownHostsBase64),
-    ssh_private_key_base64: cdktf.stringToTerraform(struct!.sshPrivateKeyBase64),
-    sync_interval_in_seconds: cdktf.numberToTerraform(struct!.syncIntervalInSeconds),
-    timeout_in_seconds: cdktf.numberToTerraform(struct!.timeoutInSeconds),
-    url: cdktf.stringToTerraform(struct!.url),
+    https_ca_cert_base64: cdktn.stringToTerraform(struct!.httpsCaCertBase64),
+    https_key_base64: cdktn.stringToTerraform(struct!.httpsKeyBase64),
+    https_user: cdktn.stringToTerraform(struct!.httpsUser),
+    local_auth_reference: cdktn.stringToTerraform(struct!.localAuthReference),
+    reference_type: cdktn.stringToTerraform(struct!.referenceType),
+    reference_value: cdktn.stringToTerraform(struct!.referenceValue),
+    ssh_known_hosts_base64: cdktn.stringToTerraform(struct!.sshKnownHostsBase64),
+    ssh_private_key_base64: cdktn.stringToTerraform(struct!.sshPrivateKeyBase64),
+    sync_interval_in_seconds: cdktn.numberToTerraform(struct!.syncIntervalInSeconds),
+    timeout_in_seconds: cdktn.numberToTerraform(struct!.timeoutInSeconds),
+    url: cdktn.stringToTerraform(struct!.url),
   }
 }
 
 
 export function arcKubernetesFluxConfigurationGitRepositoryToHclTerraform(struct?: ArcKubernetesFluxConfigurationGitRepositoryOutputReference | ArcKubernetesFluxConfigurationGitRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     https_ca_cert_base64: {
-      value: cdktf.stringToHclTerraform(struct!.httpsCaCertBase64),
+      value: cdktn.stringToHclTerraform(struct!.httpsCaCertBase64),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     https_key_base64: {
-      value: cdktf.stringToHclTerraform(struct!.httpsKeyBase64),
+      value: cdktn.stringToHclTerraform(struct!.httpsKeyBase64),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     https_user: {
-      value: cdktf.stringToHclTerraform(struct!.httpsUser),
+      value: cdktn.stringToHclTerraform(struct!.httpsUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     local_auth_reference: {
-      value: cdktf.stringToHclTerraform(struct!.localAuthReference),
+      value: cdktn.stringToHclTerraform(struct!.localAuthReference),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     reference_type: {
-      value: cdktf.stringToHclTerraform(struct!.referenceType),
+      value: cdktn.stringToHclTerraform(struct!.referenceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     reference_value: {
-      value: cdktf.stringToHclTerraform(struct!.referenceValue),
+      value: cdktn.stringToHclTerraform(struct!.referenceValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssh_known_hosts_base64: {
-      value: cdktf.stringToHclTerraform(struct!.sshKnownHostsBase64),
+      value: cdktn.stringToHclTerraform(struct!.sshKnownHostsBase64),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssh_private_key_base64: {
-      value: cdktf.stringToHclTerraform(struct!.sshPrivateKeyBase64),
+      value: cdktn.stringToHclTerraform(struct!.sshPrivateKeyBase64),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sync_interval_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.syncIntervalInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.syncIntervalInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1049,14 +1049,14 @@ export function arcKubernetesFluxConfigurationGitRepositoryToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcKubernetesFluxConfigurationGitRepositoryOutputReference extends cdktf.ComplexObject {
+export class ArcKubernetesFluxConfigurationGitRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1316,7 +1316,7 @@ export interface ArcKubernetesFluxConfigurationKustomizations {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_kubernetes_flux_configuration#garbage_collection_enabled ArcKubernetesFluxConfiguration#garbage_collection_enabled}
   */
-  readonly garbageCollectionEnabled?: boolean | cdktf.IResolvable;
+  readonly garbageCollectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_kubernetes_flux_configuration#name ArcKubernetesFluxConfiguration#name}
   */
@@ -1328,7 +1328,7 @@ export interface ArcKubernetesFluxConfigurationKustomizations {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_kubernetes_flux_configuration#recreating_enabled ArcKubernetesFluxConfiguration#recreating_enabled}
   */
-  readonly recreatingEnabled?: boolean | cdktf.IResolvable;
+  readonly recreatingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_kubernetes_flux_configuration#retry_interval_in_seconds ArcKubernetesFluxConfiguration#retry_interval_in_seconds}
   */
@@ -1343,74 +1343,74 @@ export interface ArcKubernetesFluxConfigurationKustomizations {
   readonly timeoutInSeconds?: number;
 }
 
-export function arcKubernetesFluxConfigurationKustomizationsToTerraform(struct?: ArcKubernetesFluxConfigurationKustomizations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcKubernetesFluxConfigurationKustomizationsToTerraform(struct?: ArcKubernetesFluxConfigurationKustomizations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    depends_on: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dependsOn),
-    garbage_collection_enabled: cdktf.booleanToTerraform(struct!.garbageCollectionEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    path: cdktf.stringToTerraform(struct!.path),
-    recreating_enabled: cdktf.booleanToTerraform(struct!.recreatingEnabled),
-    retry_interval_in_seconds: cdktf.numberToTerraform(struct!.retryIntervalInSeconds),
-    sync_interval_in_seconds: cdktf.numberToTerraform(struct!.syncIntervalInSeconds),
-    timeout_in_seconds: cdktf.numberToTerraform(struct!.timeoutInSeconds),
+    depends_on: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dependsOn),
+    garbage_collection_enabled: cdktn.booleanToTerraform(struct!.garbageCollectionEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    path: cdktn.stringToTerraform(struct!.path),
+    recreating_enabled: cdktn.booleanToTerraform(struct!.recreatingEnabled),
+    retry_interval_in_seconds: cdktn.numberToTerraform(struct!.retryIntervalInSeconds),
+    sync_interval_in_seconds: cdktn.numberToTerraform(struct!.syncIntervalInSeconds),
+    timeout_in_seconds: cdktn.numberToTerraform(struct!.timeoutInSeconds),
   }
 }
 
 
-export function arcKubernetesFluxConfigurationKustomizationsToHclTerraform(struct?: ArcKubernetesFluxConfigurationKustomizations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcKubernetesFluxConfigurationKustomizationsToHclTerraform(struct?: ArcKubernetesFluxConfigurationKustomizations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     depends_on: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dependsOn),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dependsOn),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     garbage_collection_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.garbageCollectionEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.garbageCollectionEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recreating_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.recreatingEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.recreatingEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     retry_interval_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.retryIntervalInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.retryIntervalInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     sync_interval_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.syncIntervalInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.syncIntervalInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     timeout_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1421,9 +1421,9 @@ export function arcKubernetesFluxConfigurationKustomizationsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcKubernetesFluxConfigurationKustomizationsOutputReference extends cdktf.ComplexObject {
+export class ArcKubernetesFluxConfigurationKustomizationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1431,11 +1431,11 @@ export class ArcKubernetesFluxConfigurationKustomizationsOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArcKubernetesFluxConfigurationKustomizations | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcKubernetesFluxConfigurationKustomizations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1476,7 +1476,7 @@ export class ArcKubernetesFluxConfigurationKustomizationsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcKubernetesFluxConfigurationKustomizations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcKubernetesFluxConfigurationKustomizations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1489,7 +1489,7 @@ export class ArcKubernetesFluxConfigurationKustomizationsOutputReference extends
       this._syncIntervalInSeconds = undefined;
       this._timeoutInSeconds = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1524,11 +1524,11 @@ export class ArcKubernetesFluxConfigurationKustomizationsOutputReference extends
   }
 
   // garbage_collection_enabled - computed: false, optional: true, required: false
-  private _garbageCollectionEnabled?: boolean | cdktf.IResolvable; 
+  private _garbageCollectionEnabled?: boolean | cdktn.IResolvable; 
   public get garbageCollectionEnabled() {
     return this.getBooleanAttribute('garbage_collection_enabled');
   }
-  public set garbageCollectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set garbageCollectionEnabled(value: boolean | cdktn.IResolvable) {
     this._garbageCollectionEnabled = value;
   }
   public resetGarbageCollectionEnabled() {
@@ -1569,11 +1569,11 @@ export class ArcKubernetesFluxConfigurationKustomizationsOutputReference extends
   }
 
   // recreating_enabled - computed: false, optional: true, required: false
-  private _recreatingEnabled?: boolean | cdktf.IResolvable; 
+  private _recreatingEnabled?: boolean | cdktn.IResolvable; 
   public get recreatingEnabled() {
     return this.getBooleanAttribute('recreating_enabled');
   }
-  public set recreatingEnabled(value: boolean | cdktf.IResolvable) {
+  public set recreatingEnabled(value: boolean | cdktn.IResolvable) {
     this._recreatingEnabled = value;
   }
   public resetRecreatingEnabled() {
@@ -1633,15 +1633,15 @@ export class ArcKubernetesFluxConfigurationKustomizationsOutputReference extends
   }
 }
 
-export class ArcKubernetesFluxConfigurationKustomizationsList extends cdktf.ComplexList {
-  public internalValue? : ArcKubernetesFluxConfigurationKustomizations[] | cdktf.IResolvable
+export class ArcKubernetesFluxConfigurationKustomizationsList extends cdktn.ComplexList {
+  public internalValue? : ArcKubernetesFluxConfigurationKustomizations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1671,46 +1671,46 @@ export interface ArcKubernetesFluxConfigurationTimeouts {
   readonly update?: string;
 }
 
-export function arcKubernetesFluxConfigurationTimeoutsToTerraform(struct?: ArcKubernetesFluxConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcKubernetesFluxConfigurationTimeoutsToTerraform(struct?: ArcKubernetesFluxConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function arcKubernetesFluxConfigurationTimeoutsToHclTerraform(struct?: ArcKubernetesFluxConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcKubernetesFluxConfigurationTimeoutsToHclTerraform(struct?: ArcKubernetesFluxConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1721,19 +1721,19 @@ export function arcKubernetesFluxConfigurationTimeoutsToHclTerraform(struct?: Ar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcKubernetesFluxConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ArcKubernetesFluxConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ArcKubernetesFluxConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcKubernetesFluxConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1758,7 +1758,7 @@ export class ArcKubernetesFluxConfigurationTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcKubernetesFluxConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcKubernetesFluxConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1767,7 +1767,7 @@ export class ArcKubernetesFluxConfigurationTimeoutsOutputReference extends cdktf
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1849,7 +1849,7 @@ export class ArcKubernetesFluxConfigurationTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_kubernetes_flux_configuration azurerm_arc_kubernetes_flux_configuration}
 */
-export class ArcKubernetesFluxConfiguration extends cdktf.TerraformResource {
+export class ArcKubernetesFluxConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1860,14 +1860,14 @@ export class ArcKubernetesFluxConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ArcKubernetesFluxConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ArcKubernetesFluxConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ArcKubernetesFluxConfiguration to import
   * @param importFromId The id of the existing ArcKubernetesFluxConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_kubernetes_flux_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ArcKubernetesFluxConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_arc_kubernetes_flux_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_arc_kubernetes_flux_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -1928,11 +1928,11 @@ export class ArcKubernetesFluxConfiguration extends cdktf.TerraformResource {
   }
 
   // continuous_reconciliation_enabled - computed: false, optional: true, required: false
-  private _continuousReconciliationEnabled?: boolean | cdktf.IResolvable; 
+  private _continuousReconciliationEnabled?: boolean | cdktn.IResolvable; 
   public get continuousReconciliationEnabled() {
     return this.getBooleanAttribute('continuous_reconciliation_enabled');
   }
-  public set continuousReconciliationEnabled(value: boolean | cdktf.IResolvable) {
+  public set continuousReconciliationEnabled(value: boolean | cdktn.IResolvable) {
     this._continuousReconciliationEnabled = value;
   }
   public resetContinuousReconciliationEnabled() {
@@ -2054,7 +2054,7 @@ export class ArcKubernetesFluxConfiguration extends cdktf.TerraformResource {
   public get kustomizations() {
     return this._kustomizations;
   }
-  public putKustomizations(value: ArcKubernetesFluxConfigurationKustomizations[] | cdktf.IResolvable) {
+  public putKustomizations(value: ArcKubernetesFluxConfigurationKustomizations[] | cdktn.IResolvable) {
     this._kustomizations.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2084,16 +2084,16 @@ export class ArcKubernetesFluxConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      continuous_reconciliation_enabled: cdktf.booleanToTerraform(this._continuousReconciliationEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      scope: cdktf.stringToTerraform(this._scope),
+      cluster_id: cdktn.stringToTerraform(this._clusterId),
+      continuous_reconciliation_enabled: cdktn.booleanToTerraform(this._continuousReconciliationEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      scope: cdktn.stringToTerraform(this._scope),
       blob_storage: arcKubernetesFluxConfigurationBlobStorageToTerraform(this._blobStorage.internalValue),
       bucket: arcKubernetesFluxConfigurationBucketToTerraform(this._bucket.internalValue),
       git_repository: arcKubernetesFluxConfigurationGitRepositoryToTerraform(this._gitRepository.internalValue),
-      kustomizations: cdktf.listMapper(arcKubernetesFluxConfigurationKustomizationsToTerraform, true)(this._kustomizations.internalValue),
+      kustomizations: cdktn.listMapper(arcKubernetesFluxConfigurationKustomizationsToTerraform, true)(this._kustomizations.internalValue),
       timeouts: arcKubernetesFluxConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -2101,37 +2101,37 @@ export class ArcKubernetesFluxConfiguration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_id: {
-        value: cdktf.stringToHclTerraform(this._clusterId),
+        value: cdktn.stringToHclTerraform(this._clusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       continuous_reconciliation_enabled: {
-        value: cdktf.booleanToHclTerraform(this._continuousReconciliationEnabled),
+        value: cdktn.booleanToHclTerraform(this._continuousReconciliationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope: {
-        value: cdktf.stringToHclTerraform(this._scope),
+        value: cdktn.stringToHclTerraform(this._scope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -2155,7 +2155,7 @@ export class ArcKubernetesFluxConfiguration extends cdktf.TerraformResource {
         storageClassType: "ArcKubernetesFluxConfigurationGitRepositoryList",
       },
       kustomizations: {
-        value: cdktf.listMapperHcl(arcKubernetesFluxConfigurationKustomizationsToHclTerraform, true)(this._kustomizations.internalValue),
+        value: cdktn.listMapperHcl(arcKubernetesFluxConfigurationKustomizationsToHclTerraform, true)(this._kustomizations.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ArcKubernetesFluxConfigurationKustomizationsList",

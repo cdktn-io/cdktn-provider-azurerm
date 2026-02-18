@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServicebusSubscriptionConfig extends cdktf.TerraformMetaArguments {
+export interface ServicebusSubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_subscription#auto_delete_on_idle ServicebusSubscription#auto_delete_on_idle}
   */
@@ -19,19 +19,19 @@ export interface ServicebusSubscriptionConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_subscription#batched_operations_enabled ServicebusSubscription#batched_operations_enabled}
   */
-  readonly batchedOperationsEnabled?: boolean | cdktf.IResolvable;
+  readonly batchedOperationsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_subscription#client_scoped_subscription_enabled ServicebusSubscription#client_scoped_subscription_enabled}
   */
-  readonly clientScopedSubscriptionEnabled?: boolean | cdktf.IResolvable;
+  readonly clientScopedSubscriptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_subscription#dead_lettering_on_filter_evaluation_error ServicebusSubscription#dead_lettering_on_filter_evaluation_error}
   */
-  readonly deadLetteringOnFilterEvaluationError?: boolean | cdktf.IResolvable;
+  readonly deadLetteringOnFilterEvaluationError?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_subscription#dead_lettering_on_message_expiration ServicebusSubscription#dead_lettering_on_message_expiration}
   */
-  readonly deadLetteringOnMessageExpiration?: boolean | cdktf.IResolvable;
+  readonly deadLetteringOnMessageExpiration?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_subscription#default_message_ttl ServicebusSubscription#default_message_ttl}
   */
@@ -66,7 +66,7 @@ export interface ServicebusSubscriptionConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_subscription#requires_session ServicebusSubscription#requires_session}
   */
-  readonly requiresSession?: boolean | cdktf.IResolvable;
+  readonly requiresSession?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_subscription#status ServicebusSubscription#status}
   */
@@ -96,35 +96,35 @@ export interface ServicebusSubscriptionClientScopedSubscription {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_subscription#is_client_scoped_subscription_shareable ServicebusSubscription#is_client_scoped_subscription_shareable}
   */
-  readonly isClientScopedSubscriptionShareable?: boolean | cdktf.IResolvable;
+  readonly isClientScopedSubscriptionShareable?: boolean | cdktn.IResolvable;
 }
 
 export function servicebusSubscriptionClientScopedSubscriptionToTerraform(struct?: ServicebusSubscriptionClientScopedSubscriptionOutputReference | ServicebusSubscriptionClientScopedSubscription): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    is_client_scoped_subscription_shareable: cdktf.booleanToTerraform(struct!.isClientScopedSubscriptionShareable),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    is_client_scoped_subscription_shareable: cdktn.booleanToTerraform(struct!.isClientScopedSubscriptionShareable),
   }
 }
 
 
 export function servicebusSubscriptionClientScopedSubscriptionToHclTerraform(struct?: ServicebusSubscriptionClientScopedSubscriptionOutputReference | ServicebusSubscriptionClientScopedSubscription): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_client_scoped_subscription_shareable: {
-      value: cdktf.booleanToHclTerraform(struct!.isClientScopedSubscriptionShareable),
+      value: cdktn.booleanToHclTerraform(struct!.isClientScopedSubscriptionShareable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -135,14 +135,14 @@ export function servicebusSubscriptionClientScopedSubscriptionToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicebusSubscriptionClientScopedSubscriptionOutputReference extends cdktf.ComplexObject {
+export class ServicebusSubscriptionClientScopedSubscriptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -195,11 +195,11 @@ export class ServicebusSubscriptionClientScopedSubscriptionOutputReference exten
   }
 
   // is_client_scoped_subscription_shareable - computed: false, optional: true, required: false
-  private _isClientScopedSubscriptionShareable?: boolean | cdktf.IResolvable; 
+  private _isClientScopedSubscriptionShareable?: boolean | cdktn.IResolvable; 
   public get isClientScopedSubscriptionShareable() {
     return this.getBooleanAttribute('is_client_scoped_subscription_shareable');
   }
-  public set isClientScopedSubscriptionShareable(value: boolean | cdktf.IResolvable) {
+  public set isClientScopedSubscriptionShareable(value: boolean | cdktn.IResolvable) {
     this._isClientScopedSubscriptionShareable = value;
   }
   public resetIsClientScopedSubscriptionShareable() {
@@ -229,46 +229,46 @@ export interface ServicebusSubscriptionTimeouts {
   readonly update?: string;
 }
 
-export function servicebusSubscriptionTimeoutsToTerraform(struct?: ServicebusSubscriptionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicebusSubscriptionTimeoutsToTerraform(struct?: ServicebusSubscriptionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function servicebusSubscriptionTimeoutsToHclTerraform(struct?: ServicebusSubscriptionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicebusSubscriptionTimeoutsToHclTerraform(struct?: ServicebusSubscriptionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -279,19 +279,19 @@ export function servicebusSubscriptionTimeoutsToHclTerraform(struct?: Servicebus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicebusSubscriptionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ServicebusSubscriptionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ServicebusSubscriptionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ServicebusSubscriptionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -316,7 +316,7 @@ export class ServicebusSubscriptionTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicebusSubscriptionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServicebusSubscriptionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -325,7 +325,7 @@ export class ServicebusSubscriptionTimeoutsOutputReference extends cdktf.Complex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -407,7 +407,7 @@ export class ServicebusSubscriptionTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_subscription azurerm_servicebus_subscription}
 */
-export class ServicebusSubscription extends cdktf.TerraformResource {
+export class ServicebusSubscription extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -418,14 +418,14 @@ export class ServicebusSubscription extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServicebusSubscription resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServicebusSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicebusSubscription to import
   * @param importFromId The id of the existing ServicebusSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicebusSubscription to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_servicebus_subscription", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_servicebus_subscription", importId: importFromId, provider });
       }
 
   // ===========
@@ -495,11 +495,11 @@ export class ServicebusSubscription extends cdktf.TerraformResource {
   }
 
   // batched_operations_enabled - computed: false, optional: true, required: false
-  private _batchedOperationsEnabled?: boolean | cdktf.IResolvable; 
+  private _batchedOperationsEnabled?: boolean | cdktn.IResolvable; 
   public get batchedOperationsEnabled() {
     return this.getBooleanAttribute('batched_operations_enabled');
   }
-  public set batchedOperationsEnabled(value: boolean | cdktf.IResolvable) {
+  public set batchedOperationsEnabled(value: boolean | cdktn.IResolvable) {
     this._batchedOperationsEnabled = value;
   }
   public resetBatchedOperationsEnabled() {
@@ -511,11 +511,11 @@ export class ServicebusSubscription extends cdktf.TerraformResource {
   }
 
   // client_scoped_subscription_enabled - computed: false, optional: true, required: false
-  private _clientScopedSubscriptionEnabled?: boolean | cdktf.IResolvable; 
+  private _clientScopedSubscriptionEnabled?: boolean | cdktn.IResolvable; 
   public get clientScopedSubscriptionEnabled() {
     return this.getBooleanAttribute('client_scoped_subscription_enabled');
   }
-  public set clientScopedSubscriptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set clientScopedSubscriptionEnabled(value: boolean | cdktn.IResolvable) {
     this._clientScopedSubscriptionEnabled = value;
   }
   public resetClientScopedSubscriptionEnabled() {
@@ -527,11 +527,11 @@ export class ServicebusSubscription extends cdktf.TerraformResource {
   }
 
   // dead_lettering_on_filter_evaluation_error - computed: false, optional: true, required: false
-  private _deadLetteringOnFilterEvaluationError?: boolean | cdktf.IResolvable; 
+  private _deadLetteringOnFilterEvaluationError?: boolean | cdktn.IResolvable; 
   public get deadLetteringOnFilterEvaluationError() {
     return this.getBooleanAttribute('dead_lettering_on_filter_evaluation_error');
   }
-  public set deadLetteringOnFilterEvaluationError(value: boolean | cdktf.IResolvable) {
+  public set deadLetteringOnFilterEvaluationError(value: boolean | cdktn.IResolvable) {
     this._deadLetteringOnFilterEvaluationError = value;
   }
   public resetDeadLetteringOnFilterEvaluationError() {
@@ -543,11 +543,11 @@ export class ServicebusSubscription extends cdktf.TerraformResource {
   }
 
   // dead_lettering_on_message_expiration - computed: false, optional: true, required: false
-  private _deadLetteringOnMessageExpiration?: boolean | cdktf.IResolvable; 
+  private _deadLetteringOnMessageExpiration?: boolean | cdktn.IResolvable; 
   public get deadLetteringOnMessageExpiration() {
     return this.getBooleanAttribute('dead_lettering_on_message_expiration');
   }
-  public set deadLetteringOnMessageExpiration(value: boolean | cdktf.IResolvable) {
+  public set deadLetteringOnMessageExpiration(value: boolean | cdktn.IResolvable) {
     this._deadLetteringOnMessageExpiration = value;
   }
   public resetDeadLetteringOnMessageExpiration() {
@@ -665,11 +665,11 @@ export class ServicebusSubscription extends cdktf.TerraformResource {
   }
 
   // requires_session - computed: false, optional: true, required: false
-  private _requiresSession?: boolean | cdktf.IResolvable; 
+  private _requiresSession?: boolean | cdktn.IResolvable; 
   public get requiresSession() {
     return this.getBooleanAttribute('requires_session');
   }
-  public set requiresSession(value: boolean | cdktf.IResolvable) {
+  public set requiresSession(value: boolean | cdktn.IResolvable) {
     this._requiresSession = value;
   }
   public resetRequiresSession() {
@@ -747,21 +747,21 @@ export class ServicebusSubscription extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_delete_on_idle: cdktf.stringToTerraform(this._autoDeleteOnIdle),
-      batched_operations_enabled: cdktf.booleanToTerraform(this._batchedOperationsEnabled),
-      client_scoped_subscription_enabled: cdktf.booleanToTerraform(this._clientScopedSubscriptionEnabled),
-      dead_lettering_on_filter_evaluation_error: cdktf.booleanToTerraform(this._deadLetteringOnFilterEvaluationError),
-      dead_lettering_on_message_expiration: cdktf.booleanToTerraform(this._deadLetteringOnMessageExpiration),
-      default_message_ttl: cdktf.stringToTerraform(this._defaultMessageTtl),
-      forward_dead_lettered_messages_to: cdktf.stringToTerraform(this._forwardDeadLetteredMessagesTo),
-      forward_to: cdktf.stringToTerraform(this._forwardTo),
-      id: cdktf.stringToTerraform(this._id),
-      lock_duration: cdktf.stringToTerraform(this._lockDuration),
-      max_delivery_count: cdktf.numberToTerraform(this._maxDeliveryCount),
-      name: cdktf.stringToTerraform(this._name),
-      requires_session: cdktf.booleanToTerraform(this._requiresSession),
-      status: cdktf.stringToTerraform(this._status),
-      topic_id: cdktf.stringToTerraform(this._topicId),
+      auto_delete_on_idle: cdktn.stringToTerraform(this._autoDeleteOnIdle),
+      batched_operations_enabled: cdktn.booleanToTerraform(this._batchedOperationsEnabled),
+      client_scoped_subscription_enabled: cdktn.booleanToTerraform(this._clientScopedSubscriptionEnabled),
+      dead_lettering_on_filter_evaluation_error: cdktn.booleanToTerraform(this._deadLetteringOnFilterEvaluationError),
+      dead_lettering_on_message_expiration: cdktn.booleanToTerraform(this._deadLetteringOnMessageExpiration),
+      default_message_ttl: cdktn.stringToTerraform(this._defaultMessageTtl),
+      forward_dead_lettered_messages_to: cdktn.stringToTerraform(this._forwardDeadLetteredMessagesTo),
+      forward_to: cdktn.stringToTerraform(this._forwardTo),
+      id: cdktn.stringToTerraform(this._id),
+      lock_duration: cdktn.stringToTerraform(this._lockDuration),
+      max_delivery_count: cdktn.numberToTerraform(this._maxDeliveryCount),
+      name: cdktn.stringToTerraform(this._name),
+      requires_session: cdktn.booleanToTerraform(this._requiresSession),
+      status: cdktn.stringToTerraform(this._status),
+      topic_id: cdktn.stringToTerraform(this._topicId),
       client_scoped_subscription: servicebusSubscriptionClientScopedSubscriptionToTerraform(this._clientScopedSubscription.internalValue),
       timeouts: servicebusSubscriptionTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -770,91 +770,91 @@ export class ServicebusSubscription extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_delete_on_idle: {
-        value: cdktf.stringToHclTerraform(this._autoDeleteOnIdle),
+        value: cdktn.stringToHclTerraform(this._autoDeleteOnIdle),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       batched_operations_enabled: {
-        value: cdktf.booleanToHclTerraform(this._batchedOperationsEnabled),
+        value: cdktn.booleanToHclTerraform(this._batchedOperationsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       client_scoped_subscription_enabled: {
-        value: cdktf.booleanToHclTerraform(this._clientScopedSubscriptionEnabled),
+        value: cdktn.booleanToHclTerraform(this._clientScopedSubscriptionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       dead_lettering_on_filter_evaluation_error: {
-        value: cdktf.booleanToHclTerraform(this._deadLetteringOnFilterEvaluationError),
+        value: cdktn.booleanToHclTerraform(this._deadLetteringOnFilterEvaluationError),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       dead_lettering_on_message_expiration: {
-        value: cdktf.booleanToHclTerraform(this._deadLetteringOnMessageExpiration),
+        value: cdktn.booleanToHclTerraform(this._deadLetteringOnMessageExpiration),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       default_message_ttl: {
-        value: cdktf.stringToHclTerraform(this._defaultMessageTtl),
+        value: cdktn.stringToHclTerraform(this._defaultMessageTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       forward_dead_lettered_messages_to: {
-        value: cdktf.stringToHclTerraform(this._forwardDeadLetteredMessagesTo),
+        value: cdktn.stringToHclTerraform(this._forwardDeadLetteredMessagesTo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       forward_to: {
-        value: cdktf.stringToHclTerraform(this._forwardTo),
+        value: cdktn.stringToHclTerraform(this._forwardTo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lock_duration: {
-        value: cdktf.stringToHclTerraform(this._lockDuration),
+        value: cdktn.stringToHclTerraform(this._lockDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_delivery_count: {
-        value: cdktf.numberToHclTerraform(this._maxDeliveryCount),
+        value: cdktn.numberToHclTerraform(this._maxDeliveryCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       requires_session: {
-        value: cdktf.booleanToHclTerraform(this._requiresSession),
+        value: cdktn.booleanToHclTerraform(this._requiresSession),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       topic_id: {
-        value: cdktf.stringToHclTerraform(this._topicId),
+        value: cdktn.stringToHclTerraform(this._topicId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkSecurityRuleConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkSecurityRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_security_rule#access NetworkSecurityRule#access}
   */
@@ -117,46 +117,46 @@ export interface NetworkSecurityRuleTimeouts {
   readonly update?: string;
 }
 
-export function networkSecurityRuleTimeoutsToTerraform(struct?: NetworkSecurityRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecurityRuleTimeoutsToTerraform(struct?: NetworkSecurityRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkSecurityRuleTimeoutsToHclTerraform(struct?: NetworkSecurityRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecurityRuleTimeoutsToHclTerraform(struct?: NetworkSecurityRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -167,19 +167,19 @@ export function networkSecurityRuleTimeoutsToHclTerraform(struct?: NetworkSecuri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkSecurityRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkSecurityRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkSecurityRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkSecurityRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -204,7 +204,7 @@ export class NetworkSecurityRuleTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkSecurityRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkSecurityRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -213,7 +213,7 @@ export class NetworkSecurityRuleTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -295,7 +295,7 @@ export class NetworkSecurityRuleTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_security_rule azurerm_network_security_rule}
 */
-export class NetworkSecurityRule extends cdktf.TerraformResource {
+export class NetworkSecurityRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -306,14 +306,14 @@ export class NetworkSecurityRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkSecurityRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkSecurityRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityRule to import
   * @param importFromId The id of the existing NetworkSecurityRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_security_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_security_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_security_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -417,7 +417,7 @@ export class NetworkSecurityRule extends cdktf.TerraformResource {
   // destination_address_prefixes - computed: false, optional: true, required: false
   private _destinationAddressPrefixes?: string[]; 
   public get destinationAddressPrefixes() {
-    return cdktf.Fn.tolist(this.getListAttribute('destination_address_prefixes'));
+    return cdktn.Fn.tolist(this.getListAttribute('destination_address_prefixes'));
   }
   public set destinationAddressPrefixes(value: string[]) {
     this._destinationAddressPrefixes = value;
@@ -433,7 +433,7 @@ export class NetworkSecurityRule extends cdktf.TerraformResource {
   // destination_application_security_group_ids - computed: false, optional: true, required: false
   private _destinationApplicationSecurityGroupIds?: string[]; 
   public get destinationApplicationSecurityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('destination_application_security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('destination_application_security_group_ids'));
   }
   public set destinationApplicationSecurityGroupIds(value: string[]) {
     this._destinationApplicationSecurityGroupIds = value;
@@ -465,7 +465,7 @@ export class NetworkSecurityRule extends cdktf.TerraformResource {
   // destination_port_ranges - computed: false, optional: true, required: false
   private _destinationPortRanges?: string[]; 
   public get destinationPortRanges() {
-    return cdktf.Fn.tolist(this.getListAttribute('destination_port_ranges'));
+    return cdktn.Fn.tolist(this.getListAttribute('destination_port_ranges'));
   }
   public set destinationPortRanges(value: string[]) {
     this._destinationPortRanges = value;
@@ -591,7 +591,7 @@ export class NetworkSecurityRule extends cdktf.TerraformResource {
   // source_address_prefixes - computed: false, optional: true, required: false
   private _sourceAddressPrefixes?: string[]; 
   public get sourceAddressPrefixes() {
-    return cdktf.Fn.tolist(this.getListAttribute('source_address_prefixes'));
+    return cdktn.Fn.tolist(this.getListAttribute('source_address_prefixes'));
   }
   public set sourceAddressPrefixes(value: string[]) {
     this._sourceAddressPrefixes = value;
@@ -607,7 +607,7 @@ export class NetworkSecurityRule extends cdktf.TerraformResource {
   // source_application_security_group_ids - computed: false, optional: true, required: false
   private _sourceApplicationSecurityGroupIds?: string[]; 
   public get sourceApplicationSecurityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('source_application_security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('source_application_security_group_ids'));
   }
   public set sourceApplicationSecurityGroupIds(value: string[]) {
     this._sourceApplicationSecurityGroupIds = value;
@@ -639,7 +639,7 @@ export class NetworkSecurityRule extends cdktf.TerraformResource {
   // source_port_ranges - computed: false, optional: true, required: false
   private _sourcePortRanges?: string[]; 
   public get sourcePortRanges() {
-    return cdktf.Fn.tolist(this.getListAttribute('source_port_ranges'));
+    return cdktn.Fn.tolist(this.getListAttribute('source_port_ranges'));
   }
   public set sourcePortRanges(value: string[]) {
     this._sourcePortRanges = value;
@@ -674,25 +674,25 @@ export class NetworkSecurityRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access: cdktf.stringToTerraform(this._access),
-      description: cdktf.stringToTerraform(this._description),
-      destination_address_prefix: cdktf.stringToTerraform(this._destinationAddressPrefix),
-      destination_address_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._destinationAddressPrefixes),
-      destination_application_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._destinationApplicationSecurityGroupIds),
-      destination_port_range: cdktf.stringToTerraform(this._destinationPortRange),
-      destination_port_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._destinationPortRanges),
-      direction: cdktf.stringToTerraform(this._direction),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      network_security_group_name: cdktf.stringToTerraform(this._networkSecurityGroupName),
-      priority: cdktf.numberToTerraform(this._priority),
-      protocol: cdktf.stringToTerraform(this._protocol),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      source_address_prefix: cdktf.stringToTerraform(this._sourceAddressPrefix),
-      source_address_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sourceAddressPrefixes),
-      source_application_security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sourceApplicationSecurityGroupIds),
-      source_port_range: cdktf.stringToTerraform(this._sourcePortRange),
-      source_port_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sourcePortRanges),
+      access: cdktn.stringToTerraform(this._access),
+      description: cdktn.stringToTerraform(this._description),
+      destination_address_prefix: cdktn.stringToTerraform(this._destinationAddressPrefix),
+      destination_address_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._destinationAddressPrefixes),
+      destination_application_security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._destinationApplicationSecurityGroupIds),
+      destination_port_range: cdktn.stringToTerraform(this._destinationPortRange),
+      destination_port_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(this._destinationPortRanges),
+      direction: cdktn.stringToTerraform(this._direction),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      network_security_group_name: cdktn.stringToTerraform(this._networkSecurityGroupName),
+      priority: cdktn.numberToTerraform(this._priority),
+      protocol: cdktn.stringToTerraform(this._protocol),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      source_address_prefix: cdktn.stringToTerraform(this._sourceAddressPrefix),
+      source_address_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._sourceAddressPrefixes),
+      source_application_security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._sourceApplicationSecurityGroupIds),
+      source_port_range: cdktn.stringToTerraform(this._sourcePortRange),
+      source_port_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(this._sourcePortRanges),
       timeouts: networkSecurityRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -700,115 +700,115 @@ export class NetworkSecurityRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access: {
-        value: cdktf.stringToHclTerraform(this._access),
+        value: cdktn.stringToHclTerraform(this._access),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_address_prefix: {
-        value: cdktf.stringToHclTerraform(this._destinationAddressPrefix),
+        value: cdktn.stringToHclTerraform(this._destinationAddressPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_address_prefixes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._destinationAddressPrefixes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._destinationAddressPrefixes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       destination_application_security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._destinationApplicationSecurityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._destinationApplicationSecurityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       destination_port_range: {
-        value: cdktf.stringToHclTerraform(this._destinationPortRange),
+        value: cdktn.stringToHclTerraform(this._destinationPortRange),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_port_ranges: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._destinationPortRanges),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._destinationPortRanges),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       direction: {
-        value: cdktf.stringToHclTerraform(this._direction),
+        value: cdktn.stringToHclTerraform(this._direction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_security_group_name: {
-        value: cdktf.stringToHclTerraform(this._networkSecurityGroupName),
+        value: cdktn.stringToHclTerraform(this._networkSecurityGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       protocol: {
-        value: cdktf.stringToHclTerraform(this._protocol),
+        value: cdktn.stringToHclTerraform(this._protocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_address_prefix: {
-        value: cdktf.stringToHclTerraform(this._sourceAddressPrefix),
+        value: cdktn.stringToHclTerraform(this._sourceAddressPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_address_prefixes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sourceAddressPrefixes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._sourceAddressPrefixes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       source_application_security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sourceApplicationSecurityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._sourceApplicationSecurityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       source_port_range: {
-        value: cdktf.stringToHclTerraform(this._sourcePortRange),
+        value: cdktn.stringToHclTerraform(this._sourcePortRange),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_port_ranges: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sourcePortRanges),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._sourcePortRanges),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

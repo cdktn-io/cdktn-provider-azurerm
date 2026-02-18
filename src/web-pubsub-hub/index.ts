@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WebPubsubHubConfig extends cdktf.TerraformMetaArguments {
+export interface WebPubsubHubConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_hub#anonymous_connections_enabled WebPubsubHub#anonymous_connections_enabled}
   */
-  readonly anonymousConnectionsEnabled?: boolean | cdktf.IResolvable;
+  readonly anonymousConnectionsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_hub#id WebPubsubHub#id}
   *
@@ -36,13 +36,13 @@ export interface WebPubsubHubConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_hub#event_handler WebPubsubHub#event_handler}
   */
-  readonly eventHandler?: WebPubsubHubEventHandler[] | cdktf.IResolvable;
+  readonly eventHandler?: WebPubsubHubEventHandler[] | cdktn.IResolvable;
   /**
   * event_listener block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_hub#event_listener WebPubsubHub#event_listener}
   */
-  readonly eventListener?: WebPubsubHubEventListener[] | cdktf.IResolvable;
+  readonly eventListener?: WebPubsubHubEventListener[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -58,24 +58,24 @@ export interface WebPubsubHubEventHandlerAuth {
 }
 
 export function webPubsubHubEventHandlerAuthToTerraform(struct?: WebPubsubHubEventHandlerAuthOutputReference | WebPubsubHubEventHandlerAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    managed_identity_id: cdktf.stringToTerraform(struct!.managedIdentityId),
+    managed_identity_id: cdktn.stringToTerraform(struct!.managedIdentityId),
   }
 }
 
 
 export function webPubsubHubEventHandlerAuthToHclTerraform(struct?: WebPubsubHubEventHandlerAuthOutputReference | WebPubsubHubEventHandlerAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     managed_identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.managedIdentityId),
+      value: cdktn.stringToHclTerraform(struct!.managedIdentityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -86,14 +86,14 @@ export function webPubsubHubEventHandlerAuthToHclTerraform(struct?: WebPubsubHub
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebPubsubHubEventHandlerAuthOutputReference extends cdktf.ComplexObject {
+export class WebPubsubHubEventHandlerAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -152,40 +152,40 @@ export interface WebPubsubHubEventHandler {
   readonly auth?: WebPubsubHubEventHandlerAuth;
 }
 
-export function webPubsubHubEventHandlerToTerraform(struct?: WebPubsubHubEventHandler | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webPubsubHubEventHandlerToTerraform(struct?: WebPubsubHubEventHandler | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    system_events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.systemEvents),
-    url_template: cdktf.stringToTerraform(struct!.urlTemplate),
-    user_event_pattern: cdktf.stringToTerraform(struct!.userEventPattern),
+    system_events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.systemEvents),
+    url_template: cdktn.stringToTerraform(struct!.urlTemplate),
+    user_event_pattern: cdktn.stringToTerraform(struct!.userEventPattern),
     auth: webPubsubHubEventHandlerAuthToTerraform(struct!.auth),
   }
 }
 
 
-export function webPubsubHubEventHandlerToHclTerraform(struct?: WebPubsubHubEventHandler | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webPubsubHubEventHandlerToHclTerraform(struct?: WebPubsubHubEventHandler | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     system_events: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.systemEvents),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.systemEvents),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     url_template: {
-      value: cdktf.stringToHclTerraform(struct!.urlTemplate),
+      value: cdktn.stringToHclTerraform(struct!.urlTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_event_pattern: {
-      value: cdktf.stringToHclTerraform(struct!.userEventPattern),
+      value: cdktn.stringToHclTerraform(struct!.userEventPattern),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -202,9 +202,9 @@ export function webPubsubHubEventHandlerToHclTerraform(struct?: WebPubsubHubEven
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebPubsubHubEventHandlerOutputReference extends cdktf.ComplexObject {
+export class WebPubsubHubEventHandlerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -212,11 +212,11 @@ export class WebPubsubHubEventHandlerOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WebPubsubHubEventHandler | cdktf.IResolvable | undefined {
+  public get internalValue(): WebPubsubHubEventHandler | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -241,7 +241,7 @@ export class WebPubsubHubEventHandlerOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WebPubsubHubEventHandler | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WebPubsubHubEventHandler | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -250,7 +250,7 @@ export class WebPubsubHubEventHandlerOutputReference extends cdktf.ComplexObject
       this._userEventPattern = undefined;
       this._auth.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -267,7 +267,7 @@ export class WebPubsubHubEventHandlerOutputReference extends cdktf.ComplexObject
   // system_events - computed: false, optional: true, required: false
   private _systemEvents?: string[]; 
   public get systemEvents() {
-    return cdktf.Fn.tolist(this.getListAttribute('system_events'));
+    return cdktn.Fn.tolist(this.getListAttribute('system_events'));
   }
   public set systemEvents(value: string[]) {
     this._systemEvents = value;
@@ -326,15 +326,15 @@ export class WebPubsubHubEventHandlerOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class WebPubsubHubEventHandlerList extends cdktf.ComplexList {
-  public internalValue? : WebPubsubHubEventHandler[] | cdktf.IResolvable
+export class WebPubsubHubEventHandlerList extends cdktn.ComplexList {
+  public internalValue? : WebPubsubHubEventHandler[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -364,46 +364,46 @@ export interface WebPubsubHubEventListener {
   readonly userEventNameFilter?: string[];
 }
 
-export function webPubsubHubEventListenerToTerraform(struct?: WebPubsubHubEventListener | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webPubsubHubEventListenerToTerraform(struct?: WebPubsubHubEventListener | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    eventhub_name: cdktf.stringToTerraform(struct!.eventhubName),
-    eventhub_namespace_name: cdktf.stringToTerraform(struct!.eventhubNamespaceName),
-    system_event_name_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.systemEventNameFilter),
-    user_event_name_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.userEventNameFilter),
+    eventhub_name: cdktn.stringToTerraform(struct!.eventhubName),
+    eventhub_namespace_name: cdktn.stringToTerraform(struct!.eventhubNamespaceName),
+    system_event_name_filter: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.systemEventNameFilter),
+    user_event_name_filter: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.userEventNameFilter),
   }
 }
 
 
-export function webPubsubHubEventListenerToHclTerraform(struct?: WebPubsubHubEventListener | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webPubsubHubEventListenerToHclTerraform(struct?: WebPubsubHubEventListener | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     eventhub_name: {
-      value: cdktf.stringToHclTerraform(struct!.eventhubName),
+      value: cdktn.stringToHclTerraform(struct!.eventhubName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     eventhub_namespace_name: {
-      value: cdktf.stringToHclTerraform(struct!.eventhubNamespaceName),
+      value: cdktn.stringToHclTerraform(struct!.eventhubNamespaceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     system_event_name_filter: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.systemEventNameFilter),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.systemEventNameFilter),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     user_event_name_filter: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.userEventNameFilter),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.userEventNameFilter),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -414,9 +414,9 @@ export function webPubsubHubEventListenerToHclTerraform(struct?: WebPubsubHubEve
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebPubsubHubEventListenerOutputReference extends cdktf.ComplexObject {
+export class WebPubsubHubEventListenerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -424,11 +424,11 @@ export class WebPubsubHubEventListenerOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WebPubsubHubEventListener | cdktf.IResolvable | undefined {
+  public get internalValue(): WebPubsubHubEventListener | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -453,7 +453,7 @@ export class WebPubsubHubEventListenerOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WebPubsubHubEventListener | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WebPubsubHubEventListener | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -462,7 +462,7 @@ export class WebPubsubHubEventListenerOutputReference extends cdktf.ComplexObjec
       this._systemEventNameFilter = undefined;
       this._userEventNameFilter = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -535,15 +535,15 @@ export class WebPubsubHubEventListenerOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class WebPubsubHubEventListenerList extends cdktf.ComplexList {
-  public internalValue? : WebPubsubHubEventListener[] | cdktf.IResolvable
+export class WebPubsubHubEventListenerList extends cdktn.ComplexList {
+  public internalValue? : WebPubsubHubEventListener[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -573,46 +573,46 @@ export interface WebPubsubHubTimeouts {
   readonly update?: string;
 }
 
-export function webPubsubHubTimeoutsToTerraform(struct?: WebPubsubHubTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webPubsubHubTimeoutsToTerraform(struct?: WebPubsubHubTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function webPubsubHubTimeoutsToHclTerraform(struct?: WebPubsubHubTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webPubsubHubTimeoutsToHclTerraform(struct?: WebPubsubHubTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -623,19 +623,19 @@ export function webPubsubHubTimeoutsToHclTerraform(struct?: WebPubsubHubTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebPubsubHubTimeoutsOutputReference extends cdktf.ComplexObject {
+export class WebPubsubHubTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WebPubsubHubTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): WebPubsubHubTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -660,7 +660,7 @@ export class WebPubsubHubTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WebPubsubHubTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WebPubsubHubTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -669,7 +669,7 @@ export class WebPubsubHubTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -751,7 +751,7 @@ export class WebPubsubHubTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_hub azurerm_web_pubsub_hub}
 */
-export class WebPubsubHub extends cdktf.TerraformResource {
+export class WebPubsubHub extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -762,14 +762,14 @@ export class WebPubsubHub extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WebPubsubHub resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WebPubsubHub resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WebPubsubHub to import
   * @param importFromId The id of the existing WebPubsubHub that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_hub#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WebPubsubHub to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_web_pubsub_hub", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_web_pubsub_hub", importId: importFromId, provider });
       }
 
   // ===========
@@ -813,11 +813,11 @@ export class WebPubsubHub extends cdktf.TerraformResource {
   // ==========
 
   // anonymous_connections_enabled - computed: false, optional: true, required: false
-  private _anonymousConnectionsEnabled?: boolean | cdktf.IResolvable; 
+  private _anonymousConnectionsEnabled?: boolean | cdktn.IResolvable; 
   public get anonymousConnectionsEnabled() {
     return this.getBooleanAttribute('anonymous_connections_enabled');
   }
-  public set anonymousConnectionsEnabled(value: boolean | cdktf.IResolvable) {
+  public set anonymousConnectionsEnabled(value: boolean | cdktn.IResolvable) {
     this._anonymousConnectionsEnabled = value;
   }
   public resetAnonymousConnectionsEnabled() {
@@ -875,7 +875,7 @@ export class WebPubsubHub extends cdktf.TerraformResource {
   public get eventHandler() {
     return this._eventHandler;
   }
-  public putEventHandler(value: WebPubsubHubEventHandler[] | cdktf.IResolvable) {
+  public putEventHandler(value: WebPubsubHubEventHandler[] | cdktn.IResolvable) {
     this._eventHandler.internalValue = value;
   }
   public resetEventHandler() {
@@ -891,7 +891,7 @@ export class WebPubsubHub extends cdktf.TerraformResource {
   public get eventListener() {
     return this._eventListener;
   }
-  public putEventListener(value: WebPubsubHubEventListener[] | cdktf.IResolvable) {
+  public putEventListener(value: WebPubsubHubEventListener[] | cdktn.IResolvable) {
     this._eventListener.internalValue = value;
   }
   public resetEventListener() {
@@ -924,12 +924,12 @@ export class WebPubsubHub extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      anonymous_connections_enabled: cdktf.booleanToTerraform(this._anonymousConnectionsEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      web_pubsub_id: cdktf.stringToTerraform(this._webPubsubId),
-      event_handler: cdktf.listMapper(webPubsubHubEventHandlerToTerraform, true)(this._eventHandler.internalValue),
-      event_listener: cdktf.listMapper(webPubsubHubEventListenerToTerraform, true)(this._eventListener.internalValue),
+      anonymous_connections_enabled: cdktn.booleanToTerraform(this._anonymousConnectionsEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      web_pubsub_id: cdktn.stringToTerraform(this._webPubsubId),
+      event_handler: cdktn.listMapper(webPubsubHubEventHandlerToTerraform, true)(this._eventHandler.internalValue),
+      event_listener: cdktn.listMapper(webPubsubHubEventListenerToTerraform, true)(this._eventListener.internalValue),
       timeouts: webPubsubHubTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -937,37 +937,37 @@ export class WebPubsubHub extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       anonymous_connections_enabled: {
-        value: cdktf.booleanToHclTerraform(this._anonymousConnectionsEnabled),
+        value: cdktn.booleanToHclTerraform(this._anonymousConnectionsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       web_pubsub_id: {
-        value: cdktf.stringToHclTerraform(this._webPubsubId),
+        value: cdktn.stringToHclTerraform(this._webPubsubId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_handler: {
-        value: cdktf.listMapperHcl(webPubsubHubEventHandlerToHclTerraform, true)(this._eventHandler.internalValue),
+        value: cdktn.listMapperHcl(webPubsubHubEventHandlerToHclTerraform, true)(this._eventHandler.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "WebPubsubHubEventHandlerList",
       },
       event_listener: {
-        value: cdktf.listMapperHcl(webPubsubHubEventListenerToHclTerraform, true)(this._eventListener.internalValue),
+        value: cdktn.listMapperHcl(webPubsubHubEventListenerToHclTerraform, true)(this._eventListener.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "WebPubsubHubEventListenerList",

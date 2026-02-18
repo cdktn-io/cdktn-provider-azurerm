@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PaloAltoLocalRulestackOutboundTrustCertificateAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface PaloAltoLocalRulestackOutboundTrustCertificateAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack_outbound_trust_certificate_association#certificate_id PaloAltoLocalRulestackOutboundTrustCertificateAssociation#certificate_id}
   */
@@ -45,39 +45,39 @@ export interface PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeou
   readonly read?: string;
 }
 
-export function paloAltoLocalRulestackOutboundTrustCertificateAssociationTimeoutsToTerraform(struct?: PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paloAltoLocalRulestackOutboundTrustCertificateAssociationTimeoutsToTerraform(struct?: PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function paloAltoLocalRulestackOutboundTrustCertificateAssociationTimeoutsToHclTerraform(struct?: PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paloAltoLocalRulestackOutboundTrustCertificateAssociationTimeoutsToHclTerraform(struct?: PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -88,19 +88,19 @@ export function paloAltoLocalRulestackOutboundTrustCertificateAssociationTimeout
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -121,7 +121,7 @@ export class PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeoutsOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -129,7 +129,7 @@ export class PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeoutsOu
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -194,7 +194,7 @@ export class PaloAltoLocalRulestackOutboundTrustCertificateAssociationTimeoutsOu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack_outbound_trust_certificate_association azurerm_palo_alto_local_rulestack_outbound_trust_certificate_association}
 */
-export class PaloAltoLocalRulestackOutboundTrustCertificateAssociation extends cdktf.TerraformResource {
+export class PaloAltoLocalRulestackOutboundTrustCertificateAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -205,14 +205,14 @@ export class PaloAltoLocalRulestackOutboundTrustCertificateAssociation extends c
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PaloAltoLocalRulestackOutboundTrustCertificateAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PaloAltoLocalRulestackOutboundTrustCertificateAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PaloAltoLocalRulestackOutboundTrustCertificateAssociation to import
   * @param importFromId The id of the existing PaloAltoLocalRulestackOutboundTrustCertificateAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack_outbound_trust_certificate_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PaloAltoLocalRulestackOutboundTrustCertificateAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_palo_alto_local_rulestack_outbound_trust_certificate_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_palo_alto_local_rulestack_outbound_trust_certificate_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -302,8 +302,8 @@ export class PaloAltoLocalRulestackOutboundTrustCertificateAssociation extends c
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_id: cdktf.stringToTerraform(this._certificateId),
-      id: cdktf.stringToTerraform(this._id),
+      certificate_id: cdktn.stringToTerraform(this._certificateId),
+      id: cdktn.stringToTerraform(this._id),
       timeouts: paloAltoLocalRulestackOutboundTrustCertificateAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -311,13 +311,13 @@ export class PaloAltoLocalRulestackOutboundTrustCertificateAssociation extends c
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       certificate_id: {
-        value: cdktf.stringToHclTerraform(this._certificateId),
+        value: cdktn.stringToHclTerraform(this._certificateId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

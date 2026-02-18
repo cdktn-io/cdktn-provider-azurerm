@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ConsumptionBudgetResourceGroupConfig extends cdktf.TerraformMetaArguments {
+export interface ConsumptionBudgetResourceGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/consumption_budget_resource_group#amount ConsumptionBudgetResourceGroup#amount}
   */
@@ -50,7 +50,7 @@ export interface ConsumptionBudgetResourceGroupConfig extends cdktf.TerraformMet
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/consumption_budget_resource_group#notification ConsumptionBudgetResourceGroup#notification}
   */
-  readonly notification: ConsumptionBudgetResourceGroupNotification[] | cdktf.IResolvable;
+  readonly notification: ConsumptionBudgetResourceGroupNotification[] | cdktn.IResolvable;
   /**
   * time_period block
   *
@@ -79,39 +79,39 @@ export interface ConsumptionBudgetResourceGroupFilterDimension {
   readonly values: string[];
 }
 
-export function consumptionBudgetResourceGroupFilterDimensionToTerraform(struct?: ConsumptionBudgetResourceGroupFilterDimension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function consumptionBudgetResourceGroupFilterDimensionToTerraform(struct?: ConsumptionBudgetResourceGroupFilterDimension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function consumptionBudgetResourceGroupFilterDimensionToHclTerraform(struct?: ConsumptionBudgetResourceGroupFilterDimension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function consumptionBudgetResourceGroupFilterDimensionToHclTerraform(struct?: ConsumptionBudgetResourceGroupFilterDimension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -122,9 +122,9 @@ export function consumptionBudgetResourceGroupFilterDimensionToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConsumptionBudgetResourceGroupFilterDimensionOutputReference extends cdktf.ComplexObject {
+export class ConsumptionBudgetResourceGroupFilterDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -132,11 +132,11 @@ export class ConsumptionBudgetResourceGroupFilterDimensionOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConsumptionBudgetResourceGroupFilterDimension | cdktf.IResolvable | undefined {
+  public get internalValue(): ConsumptionBudgetResourceGroupFilterDimension | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -157,7 +157,7 @@ export class ConsumptionBudgetResourceGroupFilterDimensionOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConsumptionBudgetResourceGroupFilterDimension | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConsumptionBudgetResourceGroupFilterDimension | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class ConsumptionBudgetResourceGroupFilterDimensionOutputReference extend
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -221,15 +221,15 @@ export class ConsumptionBudgetResourceGroupFilterDimensionOutputReference extend
   }
 }
 
-export class ConsumptionBudgetResourceGroupFilterDimensionList extends cdktf.ComplexList {
-  public internalValue? : ConsumptionBudgetResourceGroupFilterDimension[] | cdktf.IResolvable
+export class ConsumptionBudgetResourceGroupFilterDimensionList extends cdktn.ComplexList {
+  public internalValue? : ConsumptionBudgetResourceGroupFilterDimension[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -255,39 +255,39 @@ export interface ConsumptionBudgetResourceGroupFilterTag {
   readonly values: string[];
 }
 
-export function consumptionBudgetResourceGroupFilterTagToTerraform(struct?: ConsumptionBudgetResourceGroupFilterTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function consumptionBudgetResourceGroupFilterTagToTerraform(struct?: ConsumptionBudgetResourceGroupFilterTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function consumptionBudgetResourceGroupFilterTagToHclTerraform(struct?: ConsumptionBudgetResourceGroupFilterTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function consumptionBudgetResourceGroupFilterTagToHclTerraform(struct?: ConsumptionBudgetResourceGroupFilterTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -298,9 +298,9 @@ export function consumptionBudgetResourceGroupFilterTagToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConsumptionBudgetResourceGroupFilterTagOutputReference extends cdktf.ComplexObject {
+export class ConsumptionBudgetResourceGroupFilterTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -308,11 +308,11 @@ export class ConsumptionBudgetResourceGroupFilterTagOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConsumptionBudgetResourceGroupFilterTag | cdktf.IResolvable | undefined {
+  public get internalValue(): ConsumptionBudgetResourceGroupFilterTag | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -333,7 +333,7 @@ export class ConsumptionBudgetResourceGroupFilterTagOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConsumptionBudgetResourceGroupFilterTag | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConsumptionBudgetResourceGroupFilterTag | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -341,7 +341,7 @@ export class ConsumptionBudgetResourceGroupFilterTagOutputReference extends cdkt
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -397,15 +397,15 @@ export class ConsumptionBudgetResourceGroupFilterTagOutputReference extends cdkt
   }
 }
 
-export class ConsumptionBudgetResourceGroupFilterTagList extends cdktf.ComplexList {
-  public internalValue? : ConsumptionBudgetResourceGroupFilterTag[] | cdktf.IResolvable
+export class ConsumptionBudgetResourceGroupFilterTagList extends cdktn.ComplexList {
+  public internalValue? : ConsumptionBudgetResourceGroupFilterTag[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -422,41 +422,41 @@ export interface ConsumptionBudgetResourceGroupFilter {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/consumption_budget_resource_group#dimension ConsumptionBudgetResourceGroup#dimension}
   */
-  readonly dimension?: ConsumptionBudgetResourceGroupFilterDimension[] | cdktf.IResolvable;
+  readonly dimension?: ConsumptionBudgetResourceGroupFilterDimension[] | cdktn.IResolvable;
   /**
   * tag block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/consumption_budget_resource_group#tag ConsumptionBudgetResourceGroup#tag}
   */
-  readonly tag?: ConsumptionBudgetResourceGroupFilterTag[] | cdktf.IResolvable;
+  readonly tag?: ConsumptionBudgetResourceGroupFilterTag[] | cdktn.IResolvable;
 }
 
 export function consumptionBudgetResourceGroupFilterToTerraform(struct?: ConsumptionBudgetResourceGroupFilterOutputReference | ConsumptionBudgetResourceGroupFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dimension: cdktf.listMapper(consumptionBudgetResourceGroupFilterDimensionToTerraform, true)(struct!.dimension),
-    tag: cdktf.listMapper(consumptionBudgetResourceGroupFilterTagToTerraform, true)(struct!.tag),
+    dimension: cdktn.listMapper(consumptionBudgetResourceGroupFilterDimensionToTerraform, true)(struct!.dimension),
+    tag: cdktn.listMapper(consumptionBudgetResourceGroupFilterTagToTerraform, true)(struct!.tag),
   }
 }
 
 
 export function consumptionBudgetResourceGroupFilterToHclTerraform(struct?: ConsumptionBudgetResourceGroupFilterOutputReference | ConsumptionBudgetResourceGroupFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dimension: {
-      value: cdktf.listMapperHcl(consumptionBudgetResourceGroupFilterDimensionToHclTerraform, true)(struct!.dimension),
+      value: cdktn.listMapperHcl(consumptionBudgetResourceGroupFilterDimensionToHclTerraform, true)(struct!.dimension),
       isBlock: true,
       type: "set",
       storageClassType: "ConsumptionBudgetResourceGroupFilterDimensionList",
     },
     tag: {
-      value: cdktf.listMapperHcl(consumptionBudgetResourceGroupFilterTagToHclTerraform, true)(struct!.tag),
+      value: cdktn.listMapperHcl(consumptionBudgetResourceGroupFilterTagToHclTerraform, true)(struct!.tag),
       isBlock: true,
       type: "set",
       storageClassType: "ConsumptionBudgetResourceGroupFilterTagList",
@@ -467,14 +467,14 @@ export function consumptionBudgetResourceGroupFilterToHclTerraform(struct?: Cons
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConsumptionBudgetResourceGroupFilterOutputReference extends cdktf.ComplexObject {
+export class ConsumptionBudgetResourceGroupFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -510,7 +510,7 @@ export class ConsumptionBudgetResourceGroupFilterOutputReference extends cdktf.C
   public get dimension() {
     return this._dimension;
   }
-  public putDimension(value: ConsumptionBudgetResourceGroupFilterDimension[] | cdktf.IResolvable) {
+  public putDimension(value: ConsumptionBudgetResourceGroupFilterDimension[] | cdktn.IResolvable) {
     this._dimension.internalValue = value;
   }
   public resetDimension() {
@@ -526,7 +526,7 @@ export class ConsumptionBudgetResourceGroupFilterOutputReference extends cdktf.C
   public get tag() {
     return this._tag;
   }
-  public putTag(value: ConsumptionBudgetResourceGroupFilterTag[] | cdktf.IResolvable) {
+  public putTag(value: ConsumptionBudgetResourceGroupFilterTag[] | cdktn.IResolvable) {
     this._tag.internalValue = value;
   }
   public resetTag() {
@@ -553,7 +553,7 @@ export interface ConsumptionBudgetResourceGroupNotification {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/consumption_budget_resource_group#enabled ConsumptionBudgetResourceGroup#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/consumption_budget_resource_group#operator ConsumptionBudgetResourceGroup#operator}
   */
@@ -568,67 +568,67 @@ export interface ConsumptionBudgetResourceGroupNotification {
   readonly thresholdType?: string;
 }
 
-export function consumptionBudgetResourceGroupNotificationToTerraform(struct?: ConsumptionBudgetResourceGroupNotification | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function consumptionBudgetResourceGroupNotificationToTerraform(struct?: ConsumptionBudgetResourceGroupNotification | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    contact_emails: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.contactEmails),
-    contact_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.contactGroups),
-    contact_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.contactRoles),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    threshold: cdktf.numberToTerraform(struct!.threshold),
-    threshold_type: cdktf.stringToTerraform(struct!.thresholdType),
+    contact_emails: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.contactEmails),
+    contact_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.contactGroups),
+    contact_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.contactRoles),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    threshold: cdktn.numberToTerraform(struct!.threshold),
+    threshold_type: cdktn.stringToTerraform(struct!.thresholdType),
   }
 }
 
 
-export function consumptionBudgetResourceGroupNotificationToHclTerraform(struct?: ConsumptionBudgetResourceGroupNotification | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function consumptionBudgetResourceGroupNotificationToHclTerraform(struct?: ConsumptionBudgetResourceGroupNotification | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     contact_emails: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.contactEmails),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.contactEmails),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     contact_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.contactGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.contactGroups),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     contact_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.contactRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.contactRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     threshold: {
-      value: cdktf.numberToHclTerraform(struct!.threshold),
+      value: cdktn.numberToHclTerraform(struct!.threshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     threshold_type: {
-      value: cdktf.stringToHclTerraform(struct!.thresholdType),
+      value: cdktn.stringToHclTerraform(struct!.thresholdType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -639,9 +639,9 @@ export function consumptionBudgetResourceGroupNotificationToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConsumptionBudgetResourceGroupNotificationOutputReference extends cdktf.ComplexObject {
+export class ConsumptionBudgetResourceGroupNotificationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -649,11 +649,11 @@ export class ConsumptionBudgetResourceGroupNotificationOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConsumptionBudgetResourceGroupNotification | cdktf.IResolvable | undefined {
+  public get internalValue(): ConsumptionBudgetResourceGroupNotification | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -690,7 +690,7 @@ export class ConsumptionBudgetResourceGroupNotificationOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConsumptionBudgetResourceGroupNotification | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConsumptionBudgetResourceGroupNotification | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -702,7 +702,7 @@ export class ConsumptionBudgetResourceGroupNotificationOutputReference extends c
       this._threshold = undefined;
       this._thresholdType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -768,11 +768,11 @@ export class ConsumptionBudgetResourceGroupNotificationOutputReference extends c
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -826,15 +826,15 @@ export class ConsumptionBudgetResourceGroupNotificationOutputReference extends c
   }
 }
 
-export class ConsumptionBudgetResourceGroupNotificationList extends cdktf.ComplexList {
-  public internalValue? : ConsumptionBudgetResourceGroupNotification[] | cdktf.IResolvable
+export class ConsumptionBudgetResourceGroupNotificationList extends cdktn.ComplexList {
+  public internalValue? : ConsumptionBudgetResourceGroupNotification[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -857,31 +857,31 @@ export interface ConsumptionBudgetResourceGroupTimePeriod {
 }
 
 export function consumptionBudgetResourceGroupTimePeriodToTerraform(struct?: ConsumptionBudgetResourceGroupTimePeriodOutputReference | ConsumptionBudgetResourceGroupTimePeriod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_date: cdktf.stringToTerraform(struct!.endDate),
-    start_date: cdktf.stringToTerraform(struct!.startDate),
+    end_date: cdktn.stringToTerraform(struct!.endDate),
+    start_date: cdktn.stringToTerraform(struct!.startDate),
   }
 }
 
 
 export function consumptionBudgetResourceGroupTimePeriodToHclTerraform(struct?: ConsumptionBudgetResourceGroupTimePeriodOutputReference | ConsumptionBudgetResourceGroupTimePeriod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_date: {
-      value: cdktf.stringToHclTerraform(struct!.endDate),
+      value: cdktn.stringToHclTerraform(struct!.endDate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_date: {
-      value: cdktf.stringToHclTerraform(struct!.startDate),
+      value: cdktn.stringToHclTerraform(struct!.startDate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -892,14 +892,14 @@ export function consumptionBudgetResourceGroupTimePeriodToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConsumptionBudgetResourceGroupTimePeriodOutputReference extends cdktf.ComplexObject {
+export class ConsumptionBudgetResourceGroupTimePeriodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -978,46 +978,46 @@ export interface ConsumptionBudgetResourceGroupTimeouts {
   readonly update?: string;
 }
 
-export function consumptionBudgetResourceGroupTimeoutsToTerraform(struct?: ConsumptionBudgetResourceGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function consumptionBudgetResourceGroupTimeoutsToTerraform(struct?: ConsumptionBudgetResourceGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function consumptionBudgetResourceGroupTimeoutsToHclTerraform(struct?: ConsumptionBudgetResourceGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function consumptionBudgetResourceGroupTimeoutsToHclTerraform(struct?: ConsumptionBudgetResourceGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1028,19 +1028,19 @@ export function consumptionBudgetResourceGroupTimeoutsToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConsumptionBudgetResourceGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ConsumptionBudgetResourceGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ConsumptionBudgetResourceGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ConsumptionBudgetResourceGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1065,7 +1065,7 @@ export class ConsumptionBudgetResourceGroupTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConsumptionBudgetResourceGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConsumptionBudgetResourceGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1074,7 +1074,7 @@ export class ConsumptionBudgetResourceGroupTimeoutsOutputReference extends cdktf
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1156,7 +1156,7 @@ export class ConsumptionBudgetResourceGroupTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/consumption_budget_resource_group azurerm_consumption_budget_resource_group}
 */
-export class ConsumptionBudgetResourceGroup extends cdktf.TerraformResource {
+export class ConsumptionBudgetResourceGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1167,14 +1167,14 @@ export class ConsumptionBudgetResourceGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ConsumptionBudgetResourceGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ConsumptionBudgetResourceGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConsumptionBudgetResourceGroup to import
   * @param importFromId The id of the existing ConsumptionBudgetResourceGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/consumption_budget_resource_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConsumptionBudgetResourceGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_consumption_budget_resource_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_consumption_budget_resource_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -1328,7 +1328,7 @@ export class ConsumptionBudgetResourceGroup extends cdktf.TerraformResource {
   public get notification() {
     return this._notification;
   }
-  public putNotification(value: ConsumptionBudgetResourceGroupNotification[] | cdktf.IResolvable) {
+  public putNotification(value: ConsumptionBudgetResourceGroupNotification[] | cdktn.IResolvable) {
     this._notification.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1371,14 +1371,14 @@ export class ConsumptionBudgetResourceGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      amount: cdktf.numberToTerraform(this._amount),
-      etag: cdktf.stringToTerraform(this._etag),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_id: cdktf.stringToTerraform(this._resourceGroupId),
-      time_grain: cdktf.stringToTerraform(this._timeGrain),
+      amount: cdktn.numberToTerraform(this._amount),
+      etag: cdktn.stringToTerraform(this._etag),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_id: cdktn.stringToTerraform(this._resourceGroupId),
+      time_grain: cdktn.stringToTerraform(this._timeGrain),
       filter: consumptionBudgetResourceGroupFilterToTerraform(this._filter.internalValue),
-      notification: cdktf.listMapper(consumptionBudgetResourceGroupNotificationToTerraform, true)(this._notification.internalValue),
+      notification: cdktn.listMapper(consumptionBudgetResourceGroupNotificationToTerraform, true)(this._notification.internalValue),
       time_period: consumptionBudgetResourceGroupTimePeriodToTerraform(this._timePeriod.internalValue),
       timeouts: consumptionBudgetResourceGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1387,37 +1387,37 @@ export class ConsumptionBudgetResourceGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       amount: {
-        value: cdktf.numberToHclTerraform(this._amount),
+        value: cdktn.numberToHclTerraform(this._amount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       etag: {
-        value: cdktf.stringToHclTerraform(this._etag),
+        value: cdktn.stringToHclTerraform(this._etag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_id: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupId),
+        value: cdktn.stringToHclTerraform(this._resourceGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       time_grain: {
-        value: cdktf.stringToHclTerraform(this._timeGrain),
+        value: cdktn.stringToHclTerraform(this._timeGrain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1429,7 +1429,7 @@ export class ConsumptionBudgetResourceGroup extends cdktf.TerraformResource {
         storageClassType: "ConsumptionBudgetResourceGroupFilterList",
       },
       notification: {
-        value: cdktf.listMapperHcl(consumptionBudgetResourceGroupNotificationToHclTerraform, true)(this._notification.internalValue),
+        value: cdktn.listMapperHcl(consumptionBudgetResourceGroupNotificationToHclTerraform, true)(this._notification.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ConsumptionBudgetResourceGroupNotificationList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermSharedImageVersionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermSharedImageVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/shared_image_version#gallery_name DataAzurermSharedImageVersion#gallery_name}
   */
@@ -38,7 +38,7 @@ export interface DataAzurermSharedImageVersionConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/shared_image_version#sort_versions_by_semver DataAzurermSharedImageVersion#sort_versions_by_semver}
   */
-  readonly sortVersionsBySemver?: boolean | cdktf.IResolvable;
+  readonly sortVersionsBySemver?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/shared_image_version#tags DataAzurermSharedImageVersion#tags}
   */
@@ -54,8 +54,8 @@ export interface DataAzurermSharedImageVersionTargetRegion {
 }
 
 export function dataAzurermSharedImageVersionTargetRegionToTerraform(struct?: DataAzurermSharedImageVersionTargetRegion): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -64,8 +64,8 @@ export function dataAzurermSharedImageVersionTargetRegionToTerraform(struct?: Da
 
 
 export function dataAzurermSharedImageVersionTargetRegionToHclTerraform(struct?: DataAzurermSharedImageVersionTargetRegion): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -73,7 +73,7 @@ export function dataAzurermSharedImageVersionTargetRegionToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataAzurermSharedImageVersionTargetRegionOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSharedImageVersionTargetRegionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -82,7 +82,7 @@ export class DataAzurermSharedImageVersionTargetRegionOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -117,14 +117,14 @@ export class DataAzurermSharedImageVersionTargetRegionOutputReference extends cd
   }
 }
 
-export class DataAzurermSharedImageVersionTargetRegionList extends cdktf.ComplexList {
+export class DataAzurermSharedImageVersionTargetRegionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -142,25 +142,25 @@ export interface DataAzurermSharedImageVersionTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermSharedImageVersionTimeoutsToTerraform(struct?: DataAzurermSharedImageVersionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermSharedImageVersionTimeoutsToTerraform(struct?: DataAzurermSharedImageVersionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermSharedImageVersionTimeoutsToHclTerraform(struct?: DataAzurermSharedImageVersionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermSharedImageVersionTimeoutsToHclTerraform(struct?: DataAzurermSharedImageVersionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -171,19 +171,19 @@ export function dataAzurermSharedImageVersionTimeoutsToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermSharedImageVersionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSharedImageVersionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermSharedImageVersionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermSharedImageVersionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -196,13 +196,13 @@ export class DataAzurermSharedImageVersionTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermSharedImageVersionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermSharedImageVersionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -233,7 +233,7 @@ export class DataAzurermSharedImageVersionTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/shared_image_version azurerm_shared_image_version}
 */
-export class DataAzurermSharedImageVersion extends cdktf.TerraformDataSource {
+export class DataAzurermSharedImageVersion extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -244,14 +244,14 @@ export class DataAzurermSharedImageVersion extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermSharedImageVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermSharedImageVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermSharedImageVersion to import
   * @param importFromId The id of the existing DataAzurermSharedImageVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/shared_image_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermSharedImageVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_shared_image_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_shared_image_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -389,11 +389,11 @@ export class DataAzurermSharedImageVersion extends cdktf.TerraformDataSource {
   }
 
   // sort_versions_by_semver - computed: false, optional: true, required: false
-  private _sortVersionsBySemver?: boolean | cdktf.IResolvable; 
+  private _sortVersionsBySemver?: boolean | cdktn.IResolvable; 
   public get sortVersionsBySemver() {
     return this.getBooleanAttribute('sort_versions_by_semver');
   }
-  public set sortVersionsBySemver(value: boolean | cdktf.IResolvable) {
+  public set sortVersionsBySemver(value: boolean | cdktn.IResolvable) {
     this._sortVersionsBySemver = value;
   }
   public resetSortVersionsBySemver() {
@@ -448,13 +448,13 @@ export class DataAzurermSharedImageVersion extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      gallery_name: cdktf.stringToTerraform(this._galleryName),
-      id: cdktf.stringToTerraform(this._id),
-      image_name: cdktf.stringToTerraform(this._imageName),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sort_versions_by_semver: cdktf.booleanToTerraform(this._sortVersionsBySemver),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      gallery_name: cdktn.stringToTerraform(this._galleryName),
+      id: cdktn.stringToTerraform(this._id),
+      image_name: cdktn.stringToTerraform(this._imageName),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sort_versions_by_semver: cdktn.booleanToTerraform(this._sortVersionsBySemver),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: dataAzurermSharedImageVersionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -462,43 +462,43 @@ export class DataAzurermSharedImageVersion extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       gallery_name: {
-        value: cdktf.stringToHclTerraform(this._galleryName),
+        value: cdktn.stringToHclTerraform(this._galleryName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_name: {
-        value: cdktf.stringToHclTerraform(this._imageName),
+        value: cdktn.stringToHclTerraform(this._imageName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sort_versions_by_semver: {
-        value: cdktf.booleanToHclTerraform(this._sortVersionsBySemver),
+        value: cdktn.booleanToHclTerraform(this._sortVersionsBySemver),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

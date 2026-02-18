@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataProtectionBackupInstanceKubernetesClusterConfig extends cdktf.TerraformMetaArguments {
+export interface DataProtectionBackupInstanceKubernetesClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_instance_kubernetes_cluster#backup_policy_id DataProtectionBackupInstanceKubernetesCluster#backup_policy_id}
   */
@@ -60,7 +60,7 @@ export interface DataProtectionBackupInstanceKubernetesClusterBackupDatasourcePa
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_instance_kubernetes_cluster#cluster_scoped_resources_enabled DataProtectionBackupInstanceKubernetesCluster#cluster_scoped_resources_enabled}
   */
-  readonly clusterScopedResourcesEnabled?: boolean | cdktf.IResolvable;
+  readonly clusterScopedResourcesEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_instance_kubernetes_cluster#excluded_namespaces DataProtectionBackupInstanceKubernetesCluster#excluded_namespaces}
   */
@@ -84,70 +84,70 @@ export interface DataProtectionBackupInstanceKubernetesClusterBackupDatasourcePa
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_instance_kubernetes_cluster#volume_snapshot_enabled DataProtectionBackupInstanceKubernetesCluster#volume_snapshot_enabled}
   */
-  readonly volumeSnapshotEnabled?: boolean | cdktf.IResolvable;
+  readonly volumeSnapshotEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function dataProtectionBackupInstanceKubernetesClusterBackupDatasourceParametersToTerraform(struct?: DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParametersOutputReference | DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_scoped_resources_enabled: cdktf.booleanToTerraform(struct!.clusterScopedResourcesEnabled),
-    excluded_namespaces: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedNamespaces),
-    excluded_resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedResourceTypes),
-    included_namespaces: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedNamespaces),
-    included_resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedResourceTypes),
-    label_selectors: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.labelSelectors),
-    volume_snapshot_enabled: cdktf.booleanToTerraform(struct!.volumeSnapshotEnabled),
+    cluster_scoped_resources_enabled: cdktn.booleanToTerraform(struct!.clusterScopedResourcesEnabled),
+    excluded_namespaces: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedNamespaces),
+    excluded_resource_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedResourceTypes),
+    included_namespaces: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedNamespaces),
+    included_resource_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedResourceTypes),
+    label_selectors: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.labelSelectors),
+    volume_snapshot_enabled: cdktn.booleanToTerraform(struct!.volumeSnapshotEnabled),
   }
 }
 
 
 export function dataProtectionBackupInstanceKubernetesClusterBackupDatasourceParametersToHclTerraform(struct?: DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParametersOutputReference | DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_scoped_resources_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.clusterScopedResourcesEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.clusterScopedResourcesEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     excluded_namespaces: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedNamespaces),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedNamespaces),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     excluded_resource_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedResourceTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedResourceTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     included_namespaces: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedNamespaces),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includedNamespaces),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     included_resource_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedResourceTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includedResourceTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     label_selectors: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.labelSelectors),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.labelSelectors),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     volume_snapshot_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.volumeSnapshotEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.volumeSnapshotEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -158,14 +158,14 @@ export function dataProtectionBackupInstanceKubernetesClusterBackupDatasourcePar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParametersOutputReference extends cdktf.ComplexObject {
+export class DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -227,11 +227,11 @@ export class DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParame
   }
 
   // cluster_scoped_resources_enabled - computed: false, optional: true, required: false
-  private _clusterScopedResourcesEnabled?: boolean | cdktf.IResolvable; 
+  private _clusterScopedResourcesEnabled?: boolean | cdktn.IResolvable; 
   public get clusterScopedResourcesEnabled() {
     return this.getBooleanAttribute('cluster_scoped_resources_enabled');
   }
-  public set clusterScopedResourcesEnabled(value: boolean | cdktf.IResolvable) {
+  public set clusterScopedResourcesEnabled(value: boolean | cdktn.IResolvable) {
     this._clusterScopedResourcesEnabled = value;
   }
   public resetClusterScopedResourcesEnabled() {
@@ -323,11 +323,11 @@ export class DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParame
   }
 
   // volume_snapshot_enabled - computed: false, optional: true, required: false
-  private _volumeSnapshotEnabled?: boolean | cdktf.IResolvable; 
+  private _volumeSnapshotEnabled?: boolean | cdktn.IResolvable; 
   public get volumeSnapshotEnabled() {
     return this.getBooleanAttribute('volume_snapshot_enabled');
   }
-  public set volumeSnapshotEnabled(value: boolean | cdktf.IResolvable) {
+  public set volumeSnapshotEnabled(value: boolean | cdktn.IResolvable) {
     this._volumeSnapshotEnabled = value;
   }
   public resetVolumeSnapshotEnabled() {
@@ -353,39 +353,39 @@ export interface DataProtectionBackupInstanceKubernetesClusterTimeouts {
   readonly read?: string;
 }
 
-export function dataProtectionBackupInstanceKubernetesClusterTimeoutsToTerraform(struct?: DataProtectionBackupInstanceKubernetesClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupInstanceKubernetesClusterTimeoutsToTerraform(struct?: DataProtectionBackupInstanceKubernetesClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataProtectionBackupInstanceKubernetesClusterTimeoutsToHclTerraform(struct?: DataProtectionBackupInstanceKubernetesClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupInstanceKubernetesClusterTimeoutsToHclTerraform(struct?: DataProtectionBackupInstanceKubernetesClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -396,19 +396,19 @@ export function dataProtectionBackupInstanceKubernetesClusterTimeoutsToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataProtectionBackupInstanceKubernetesClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataProtectionBackupInstanceKubernetesClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataProtectionBackupInstanceKubernetesClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataProtectionBackupInstanceKubernetesClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -429,7 +429,7 @@ export class DataProtectionBackupInstanceKubernetesClusterTimeoutsOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProtectionBackupInstanceKubernetesClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataProtectionBackupInstanceKubernetesClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -437,7 +437,7 @@ export class DataProtectionBackupInstanceKubernetesClusterTimeoutsOutputReferenc
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -502,7 +502,7 @@ export class DataProtectionBackupInstanceKubernetesClusterTimeoutsOutputReferenc
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_instance_kubernetes_cluster azurerm_data_protection_backup_instance_kubernetes_cluster}
 */
-export class DataProtectionBackupInstanceKubernetesCluster extends cdktf.TerraformResource {
+export class DataProtectionBackupInstanceKubernetesCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -513,14 +513,14 @@ export class DataProtectionBackupInstanceKubernetesCluster extends cdktf.Terrafo
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataProtectionBackupInstanceKubernetesCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataProtectionBackupInstanceKubernetesCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataProtectionBackupInstanceKubernetesCluster to import
   * @param importFromId The id of the existing DataProtectionBackupInstanceKubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_instance_kubernetes_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataProtectionBackupInstanceKubernetesCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_protection_backup_instance_kubernetes_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_protection_backup_instance_kubernetes_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -702,13 +702,13 @@ export class DataProtectionBackupInstanceKubernetesCluster extends cdktf.Terrafo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backup_policy_id: cdktf.stringToTerraform(this._backupPolicyId),
-      id: cdktf.stringToTerraform(this._id),
-      kubernetes_cluster_id: cdktf.stringToTerraform(this._kubernetesClusterId),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      snapshot_resource_group_name: cdktf.stringToTerraform(this._snapshotResourceGroupName),
-      vault_id: cdktf.stringToTerraform(this._vaultId),
+      backup_policy_id: cdktn.stringToTerraform(this._backupPolicyId),
+      id: cdktn.stringToTerraform(this._id),
+      kubernetes_cluster_id: cdktn.stringToTerraform(this._kubernetesClusterId),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      snapshot_resource_group_name: cdktn.stringToTerraform(this._snapshotResourceGroupName),
+      vault_id: cdktn.stringToTerraform(this._vaultId),
       backup_datasource_parameters: dataProtectionBackupInstanceKubernetesClusterBackupDatasourceParametersToTerraform(this._backupDatasourceParameters.internalValue),
       timeouts: dataProtectionBackupInstanceKubernetesClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -717,43 +717,43 @@ export class DataProtectionBackupInstanceKubernetesCluster extends cdktf.Terrafo
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backup_policy_id: {
-        value: cdktf.stringToHclTerraform(this._backupPolicyId),
+        value: cdktn.stringToHclTerraform(this._backupPolicyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kubernetes_cluster_id: {
-        value: cdktf.stringToHclTerraform(this._kubernetesClusterId),
+        value: cdktn.stringToHclTerraform(this._kubernetesClusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       snapshot_resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._snapshotResourceGroupName),
+        value: cdktn.stringToHclTerraform(this._snapshotResourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vault_id: {
-        value: cdktf.stringToHclTerraform(this._vaultId),
+        value: cdktn.stringToHclTerraform(this._vaultId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

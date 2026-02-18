@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ExpressRouteConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface ExpressRouteConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_connection#authorization_key ExpressRouteConnection#authorization_key}
   */
@@ -19,7 +19,7 @@ export interface ExpressRouteConnectionConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_connection#enable_internet_security ExpressRouteConnection#enable_internet_security}
   */
-  readonly enableInternetSecurity?: boolean | cdktf.IResolvable;
+  readonly enableInternetSecurity?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_connection#express_route_circuit_peering_id ExpressRouteConnection#express_route_circuit_peering_id}
   */
@@ -27,7 +27,7 @@ export interface ExpressRouteConnectionConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_connection#express_route_gateway_bypass_enabled ExpressRouteConnection#express_route_gateway_bypass_enabled}
   */
-  readonly expressRouteGatewayBypassEnabled?: boolean | cdktf.IResolvable;
+  readonly expressRouteGatewayBypassEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_connection#express_route_gateway_id ExpressRouteConnection#express_route_gateway_id}
   */
@@ -46,7 +46,7 @@ export interface ExpressRouteConnectionConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_connection#private_link_fast_path_enabled ExpressRouteConnection#private_link_fast_path_enabled}
   */
-  readonly privateLinkFastPathEnabled?: boolean | cdktf.IResolvable;
+  readonly privateLinkFastPathEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_connection#routing_weight ExpressRouteConnection#routing_weight}
   */
@@ -76,31 +76,31 @@ export interface ExpressRouteConnectionRoutingPropagatedRouteTable {
 }
 
 export function expressRouteConnectionRoutingPropagatedRouteTableToTerraform(struct?: ExpressRouteConnectionRoutingPropagatedRouteTableOutputReference | ExpressRouteConnectionRoutingPropagatedRouteTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    labels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.labels),
-    route_table_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.routeTableIds),
+    labels: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.labels),
+    route_table_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.routeTableIds),
   }
 }
 
 
 export function expressRouteConnectionRoutingPropagatedRouteTableToHclTerraform(struct?: ExpressRouteConnectionRoutingPropagatedRouteTableOutputReference | ExpressRouteConnectionRoutingPropagatedRouteTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     labels: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.labels),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.labels),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     route_table_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.routeTableIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.routeTableIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -111,14 +111,14 @@ export function expressRouteConnectionRoutingPropagatedRouteTableToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ExpressRouteConnectionRoutingPropagatedRouteTableOutputReference extends cdktf.ComplexObject {
+export class ExpressRouteConnectionRoutingPropagatedRouteTableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -152,7 +152,7 @@ export class ExpressRouteConnectionRoutingPropagatedRouteTableOutputReference ex
   // labels - computed: true, optional: true, required: false
   private _labels?: string[]; 
   public get labels() {
-    return cdktf.Fn.tolist(this.getListAttribute('labels'));
+    return cdktn.Fn.tolist(this.getListAttribute('labels'));
   }
   public set labels(value: string[]) {
     this._labels = value;
@@ -203,39 +203,39 @@ export interface ExpressRouteConnectionRouting {
 }
 
 export function expressRouteConnectionRoutingToTerraform(struct?: ExpressRouteConnectionRoutingOutputReference | ExpressRouteConnectionRouting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    associated_route_table_id: cdktf.stringToTerraform(struct!.associatedRouteTableId),
-    inbound_route_map_id: cdktf.stringToTerraform(struct!.inboundRouteMapId),
-    outbound_route_map_id: cdktf.stringToTerraform(struct!.outboundRouteMapId),
+    associated_route_table_id: cdktn.stringToTerraform(struct!.associatedRouteTableId),
+    inbound_route_map_id: cdktn.stringToTerraform(struct!.inboundRouteMapId),
+    outbound_route_map_id: cdktn.stringToTerraform(struct!.outboundRouteMapId),
     propagated_route_table: expressRouteConnectionRoutingPropagatedRouteTableToTerraform(struct!.propagatedRouteTable),
   }
 }
 
 
 export function expressRouteConnectionRoutingToHclTerraform(struct?: ExpressRouteConnectionRoutingOutputReference | ExpressRouteConnectionRouting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     associated_route_table_id: {
-      value: cdktf.stringToHclTerraform(struct!.associatedRouteTableId),
+      value: cdktn.stringToHclTerraform(struct!.associatedRouteTableId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     inbound_route_map_id: {
-      value: cdktf.stringToHclTerraform(struct!.inboundRouteMapId),
+      value: cdktn.stringToHclTerraform(struct!.inboundRouteMapId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     outbound_route_map_id: {
-      value: cdktf.stringToHclTerraform(struct!.outboundRouteMapId),
+      value: cdktn.stringToHclTerraform(struct!.outboundRouteMapId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -252,14 +252,14 @@ export function expressRouteConnectionRoutingToHclTerraform(struct?: ExpressRout
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ExpressRouteConnectionRoutingOutputReference extends cdktf.ComplexObject {
+export class ExpressRouteConnectionRoutingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -385,46 +385,46 @@ export interface ExpressRouteConnectionTimeouts {
   readonly update?: string;
 }
 
-export function expressRouteConnectionTimeoutsToTerraform(struct?: ExpressRouteConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function expressRouteConnectionTimeoutsToTerraform(struct?: ExpressRouteConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function expressRouteConnectionTimeoutsToHclTerraform(struct?: ExpressRouteConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function expressRouteConnectionTimeoutsToHclTerraform(struct?: ExpressRouteConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -435,19 +435,19 @@ export function expressRouteConnectionTimeoutsToHclTerraform(struct?: ExpressRou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ExpressRouteConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ExpressRouteConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ExpressRouteConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ExpressRouteConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -472,7 +472,7 @@ export class ExpressRouteConnectionTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ExpressRouteConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ExpressRouteConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -481,7 +481,7 @@ export class ExpressRouteConnectionTimeoutsOutputReference extends cdktf.Complex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -563,7 +563,7 @@ export class ExpressRouteConnectionTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_connection azurerm_express_route_connection}
 */
-export class ExpressRouteConnection extends cdktf.TerraformResource {
+export class ExpressRouteConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -574,14 +574,14 @@ export class ExpressRouteConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ExpressRouteConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ExpressRouteConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExpressRouteConnection to import
   * @param importFromId The id of the existing ExpressRouteConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExpressRouteConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_express_route_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_express_route_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -645,11 +645,11 @@ export class ExpressRouteConnection extends cdktf.TerraformResource {
   }
 
   // enable_internet_security - computed: false, optional: true, required: false
-  private _enableInternetSecurity?: boolean | cdktf.IResolvable; 
+  private _enableInternetSecurity?: boolean | cdktn.IResolvable; 
   public get enableInternetSecurity() {
     return this.getBooleanAttribute('enable_internet_security');
   }
-  public set enableInternetSecurity(value: boolean | cdktf.IResolvable) {
+  public set enableInternetSecurity(value: boolean | cdktn.IResolvable) {
     this._enableInternetSecurity = value;
   }
   public resetEnableInternetSecurity() {
@@ -674,11 +674,11 @@ export class ExpressRouteConnection extends cdktf.TerraformResource {
   }
 
   // express_route_gateway_bypass_enabled - computed: false, optional: true, required: false
-  private _expressRouteGatewayBypassEnabled?: boolean | cdktf.IResolvable; 
+  private _expressRouteGatewayBypassEnabled?: boolean | cdktn.IResolvable; 
   public get expressRouteGatewayBypassEnabled() {
     return this.getBooleanAttribute('express_route_gateway_bypass_enabled');
   }
-  public set expressRouteGatewayBypassEnabled(value: boolean | cdktf.IResolvable) {
+  public set expressRouteGatewayBypassEnabled(value: boolean | cdktn.IResolvable) {
     this._expressRouteGatewayBypassEnabled = value;
   }
   public resetExpressRouteGatewayBypassEnabled() {
@@ -732,11 +732,11 @@ export class ExpressRouteConnection extends cdktf.TerraformResource {
   }
 
   // private_link_fast_path_enabled - computed: false, optional: true, required: false
-  private _privateLinkFastPathEnabled?: boolean | cdktf.IResolvable; 
+  private _privateLinkFastPathEnabled?: boolean | cdktn.IResolvable; 
   public get privateLinkFastPathEnabled() {
     return this.getBooleanAttribute('private_link_fast_path_enabled');
   }
-  public set privateLinkFastPathEnabled(value: boolean | cdktf.IResolvable) {
+  public set privateLinkFastPathEnabled(value: boolean | cdktn.IResolvable) {
     this._privateLinkFastPathEnabled = value;
   }
   public resetPrivateLinkFastPathEnabled() {
@@ -801,15 +801,15 @@ export class ExpressRouteConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authorization_key: cdktf.stringToTerraform(this._authorizationKey),
-      enable_internet_security: cdktf.booleanToTerraform(this._enableInternetSecurity),
-      express_route_circuit_peering_id: cdktf.stringToTerraform(this._expressRouteCircuitPeeringId),
-      express_route_gateway_bypass_enabled: cdktf.booleanToTerraform(this._expressRouteGatewayBypassEnabled),
-      express_route_gateway_id: cdktf.stringToTerraform(this._expressRouteGatewayId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      private_link_fast_path_enabled: cdktf.booleanToTerraform(this._privateLinkFastPathEnabled),
-      routing_weight: cdktf.numberToTerraform(this._routingWeight),
+      authorization_key: cdktn.stringToTerraform(this._authorizationKey),
+      enable_internet_security: cdktn.booleanToTerraform(this._enableInternetSecurity),
+      express_route_circuit_peering_id: cdktn.stringToTerraform(this._expressRouteCircuitPeeringId),
+      express_route_gateway_bypass_enabled: cdktn.booleanToTerraform(this._expressRouteGatewayBypassEnabled),
+      express_route_gateway_id: cdktn.stringToTerraform(this._expressRouteGatewayId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      private_link_fast_path_enabled: cdktn.booleanToTerraform(this._privateLinkFastPathEnabled),
+      routing_weight: cdktn.numberToTerraform(this._routingWeight),
       routing: expressRouteConnectionRoutingToTerraform(this._routing.internalValue),
       timeouts: expressRouteConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -818,55 +818,55 @@ export class ExpressRouteConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authorization_key: {
-        value: cdktf.stringToHclTerraform(this._authorizationKey),
+        value: cdktn.stringToHclTerraform(this._authorizationKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_internet_security: {
-        value: cdktf.booleanToHclTerraform(this._enableInternetSecurity),
+        value: cdktn.booleanToHclTerraform(this._enableInternetSecurity),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       express_route_circuit_peering_id: {
-        value: cdktf.stringToHclTerraform(this._expressRouteCircuitPeeringId),
+        value: cdktn.stringToHclTerraform(this._expressRouteCircuitPeeringId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       express_route_gateway_bypass_enabled: {
-        value: cdktf.booleanToHclTerraform(this._expressRouteGatewayBypassEnabled),
+        value: cdktn.booleanToHclTerraform(this._expressRouteGatewayBypassEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       express_route_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._expressRouteGatewayId),
+        value: cdktn.stringToHclTerraform(this._expressRouteGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_link_fast_path_enabled: {
-        value: cdktf.booleanToHclTerraform(this._privateLinkFastPathEnabled),
+        value: cdktn.booleanToHclTerraform(this._privateLinkFastPathEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       routing_weight: {
-        value: cdktf.numberToHclTerraform(this._routingWeight),
+        value: cdktn.numberToHclTerraform(this._routingWeight),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

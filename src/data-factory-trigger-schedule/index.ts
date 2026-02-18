@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataFactoryTriggerScheduleConfig extends cdktf.TerraformMetaArguments {
+export interface DataFactoryTriggerScheduleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_trigger_schedule#activated DataFactoryTriggerSchedule#activated}
   */
-  readonly activated?: boolean | cdktf.IResolvable;
+  readonly activated?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_trigger_schedule#annotations DataFactoryTriggerSchedule#annotations}
   */
@@ -72,7 +72,7 @@ export interface DataFactoryTriggerScheduleConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_trigger_schedule#pipeline DataFactoryTriggerSchedule#pipeline}
   */
-  readonly pipeline?: DataFactoryTriggerSchedulePipeline[] | cdktf.IResolvable;
+  readonly pipeline?: DataFactoryTriggerSchedulePipeline[] | cdktn.IResolvable;
   /**
   * schedule block
   *
@@ -97,32 +97,32 @@ export interface DataFactoryTriggerSchedulePipeline {
   readonly parameters?: { [key: string]: string };
 }
 
-export function dataFactoryTriggerSchedulePipelineToTerraform(struct?: DataFactoryTriggerSchedulePipeline | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryTriggerSchedulePipelineToTerraform(struct?: DataFactoryTriggerSchedulePipeline | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
+    name: cdktn.stringToTerraform(struct!.name),
+    parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
   }
 }
 
 
-export function dataFactoryTriggerSchedulePipelineToHclTerraform(struct?: DataFactoryTriggerSchedulePipeline | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryTriggerSchedulePipelineToHclTerraform(struct?: DataFactoryTriggerSchedulePipeline | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -133,9 +133,9 @@ export function dataFactoryTriggerSchedulePipelineToHclTerraform(struct?: DataFa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryTriggerSchedulePipelineOutputReference extends cdktf.ComplexObject {
+export class DataFactoryTriggerSchedulePipelineOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -143,11 +143,11 @@ export class DataFactoryTriggerSchedulePipelineOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataFactoryTriggerSchedulePipeline | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryTriggerSchedulePipeline | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -164,14 +164,14 @@ export class DataFactoryTriggerSchedulePipelineOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryTriggerSchedulePipeline | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryTriggerSchedulePipeline | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._parameters = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -213,15 +213,15 @@ export class DataFactoryTriggerSchedulePipelineOutputReference extends cdktf.Com
   }
 }
 
-export class DataFactoryTriggerSchedulePipelineList extends cdktf.ComplexList {
-  public internalValue? : DataFactoryTriggerSchedulePipeline[] | cdktf.IResolvable
+export class DataFactoryTriggerSchedulePipelineList extends cdktn.ComplexList {
+  public internalValue? : DataFactoryTriggerSchedulePipeline[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -243,32 +243,32 @@ export interface DataFactoryTriggerScheduleScheduleMonthly {
   readonly weekday: string;
 }
 
-export function dataFactoryTriggerScheduleScheduleMonthlyToTerraform(struct?: DataFactoryTriggerScheduleScheduleMonthly | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryTriggerScheduleScheduleMonthlyToTerraform(struct?: DataFactoryTriggerScheduleScheduleMonthly | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    week: cdktf.numberToTerraform(struct!.week),
-    weekday: cdktf.stringToTerraform(struct!.weekday),
+    week: cdktn.numberToTerraform(struct!.week),
+    weekday: cdktn.stringToTerraform(struct!.weekday),
   }
 }
 
 
-export function dataFactoryTriggerScheduleScheduleMonthlyToHclTerraform(struct?: DataFactoryTriggerScheduleScheduleMonthly | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryTriggerScheduleScheduleMonthlyToHclTerraform(struct?: DataFactoryTriggerScheduleScheduleMonthly | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     week: {
-      value: cdktf.numberToHclTerraform(struct!.week),
+      value: cdktn.numberToHclTerraform(struct!.week),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     weekday: {
-      value: cdktf.stringToHclTerraform(struct!.weekday),
+      value: cdktn.stringToHclTerraform(struct!.weekday),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -279,9 +279,9 @@ export function dataFactoryTriggerScheduleScheduleMonthlyToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryTriggerScheduleScheduleMonthlyOutputReference extends cdktf.ComplexObject {
+export class DataFactoryTriggerScheduleScheduleMonthlyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -289,11 +289,11 @@ export class DataFactoryTriggerScheduleScheduleMonthlyOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataFactoryTriggerScheduleScheduleMonthly | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryTriggerScheduleScheduleMonthly | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -310,14 +310,14 @@ export class DataFactoryTriggerScheduleScheduleMonthlyOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryTriggerScheduleScheduleMonthly | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryTriggerScheduleScheduleMonthly | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._week = undefined;
       this._weekday = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -359,15 +359,15 @@ export class DataFactoryTriggerScheduleScheduleMonthlyOutputReference extends cd
   }
 }
 
-export class DataFactoryTriggerScheduleScheduleMonthlyList extends cdktf.ComplexList {
-  public internalValue? : DataFactoryTriggerScheduleScheduleMonthly[] | cdktf.IResolvable
+export class DataFactoryTriggerScheduleScheduleMonthlyList extends cdktn.ComplexList {
+  public internalValue? : DataFactoryTriggerScheduleScheduleMonthly[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -400,56 +400,56 @@ export interface DataFactoryTriggerScheduleSchedule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_trigger_schedule#monthly DataFactoryTriggerSchedule#monthly}
   */
-  readonly monthly?: DataFactoryTriggerScheduleScheduleMonthly[] | cdktf.IResolvable;
+  readonly monthly?: DataFactoryTriggerScheduleScheduleMonthly[] | cdktn.IResolvable;
 }
 
 export function dataFactoryTriggerScheduleScheduleToTerraform(struct?: DataFactoryTriggerScheduleScheduleOutputReference | DataFactoryTriggerScheduleSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days_of_month: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.daysOfMonth),
-    days_of_week: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.daysOfWeek),
-    hours: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.hours),
-    minutes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.minutes),
-    monthly: cdktf.listMapper(dataFactoryTriggerScheduleScheduleMonthlyToTerraform, true)(struct!.monthly),
+    days_of_month: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.daysOfMonth),
+    days_of_week: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.daysOfWeek),
+    hours: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.hours),
+    minutes: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.minutes),
+    monthly: cdktn.listMapper(dataFactoryTriggerScheduleScheduleMonthlyToTerraform, true)(struct!.monthly),
   }
 }
 
 
 export function dataFactoryTriggerScheduleScheduleToHclTerraform(struct?: DataFactoryTriggerScheduleScheduleOutputReference | DataFactoryTriggerScheduleSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days_of_month: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.daysOfMonth),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.daysOfMonth),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
     },
     days_of_week: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.daysOfWeek),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.daysOfWeek),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     hours: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.hours),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.hours),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
     },
     minutes: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.minutes),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.minutes),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
     },
     monthly: {
-      value: cdktf.listMapperHcl(dataFactoryTriggerScheduleScheduleMonthlyToHclTerraform, true)(struct!.monthly),
+      value: cdktn.listMapperHcl(dataFactoryTriggerScheduleScheduleMonthlyToHclTerraform, true)(struct!.monthly),
       isBlock: true,
       type: "list",
       storageClassType: "DataFactoryTriggerScheduleScheduleMonthlyList",
@@ -460,14 +460,14 @@ export function dataFactoryTriggerScheduleScheduleToHclTerraform(struct?: DataFa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryTriggerScheduleScheduleOutputReference extends cdktf.ComplexObject {
+export class DataFactoryTriggerScheduleScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -585,7 +585,7 @@ export class DataFactoryTriggerScheduleScheduleOutputReference extends cdktf.Com
   public get monthly() {
     return this._monthly;
   }
-  public putMonthly(value: DataFactoryTriggerScheduleScheduleMonthly[] | cdktf.IResolvable) {
+  public putMonthly(value: DataFactoryTriggerScheduleScheduleMonthly[] | cdktn.IResolvable) {
     this._monthly.internalValue = value;
   }
   public resetMonthly() {
@@ -615,46 +615,46 @@ export interface DataFactoryTriggerScheduleTimeouts {
   readonly update?: string;
 }
 
-export function dataFactoryTriggerScheduleTimeoutsToTerraform(struct?: DataFactoryTriggerScheduleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryTriggerScheduleTimeoutsToTerraform(struct?: DataFactoryTriggerScheduleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataFactoryTriggerScheduleTimeoutsToHclTerraform(struct?: DataFactoryTriggerScheduleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryTriggerScheduleTimeoutsToHclTerraform(struct?: DataFactoryTriggerScheduleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -665,19 +665,19 @@ export function dataFactoryTriggerScheduleTimeoutsToHclTerraform(struct?: DataFa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryTriggerScheduleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataFactoryTriggerScheduleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataFactoryTriggerScheduleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryTriggerScheduleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -702,7 +702,7 @@ export class DataFactoryTriggerScheduleTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryTriggerScheduleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryTriggerScheduleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -711,7 +711,7 @@ export class DataFactoryTriggerScheduleTimeoutsOutputReference extends cdktf.Com
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -793,7 +793,7 @@ export class DataFactoryTriggerScheduleTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_trigger_schedule azurerm_data_factory_trigger_schedule}
 */
-export class DataFactoryTriggerSchedule extends cdktf.TerraformResource {
+export class DataFactoryTriggerSchedule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -804,14 +804,14 @@ export class DataFactoryTriggerSchedule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataFactoryTriggerSchedule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataFactoryTriggerSchedule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryTriggerSchedule to import
   * @param importFromId The id of the existing DataFactoryTriggerSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_trigger_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryTriggerSchedule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_trigger_schedule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_trigger_schedule", importId: importFromId, provider });
       }
 
   // ===========
@@ -864,11 +864,11 @@ export class DataFactoryTriggerSchedule extends cdktf.TerraformResource {
   // ==========
 
   // activated - computed: false, optional: true, required: false
-  private _activated?: boolean | cdktf.IResolvable; 
+  private _activated?: boolean | cdktn.IResolvable; 
   public get activated() {
     return this.getBooleanAttribute('activated');
   }
-  public set activated(value: boolean | cdktf.IResolvable) {
+  public set activated(value: boolean | cdktn.IResolvable) {
     this._activated = value;
   }
   public resetActivated() {
@@ -1070,7 +1070,7 @@ export class DataFactoryTriggerSchedule extends cdktf.TerraformResource {
   public get pipeline() {
     return this._pipeline;
   }
-  public putPipeline(value: DataFactoryTriggerSchedulePipeline[] | cdktf.IResolvable) {
+  public putPipeline(value: DataFactoryTriggerSchedulePipeline[] | cdktn.IResolvable) {
     this._pipeline.internalValue = value;
   }
   public resetPipeline() {
@@ -1119,20 +1119,20 @@ export class DataFactoryTriggerSchedule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      activated: cdktf.booleanToTerraform(this._activated),
-      annotations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._annotations),
-      data_factory_id: cdktf.stringToTerraform(this._dataFactoryId),
-      description: cdktf.stringToTerraform(this._description),
-      end_time: cdktf.stringToTerraform(this._endTime),
-      frequency: cdktf.stringToTerraform(this._frequency),
-      id: cdktf.stringToTerraform(this._id),
-      interval: cdktf.numberToTerraform(this._interval),
-      name: cdktf.stringToTerraform(this._name),
-      pipeline_name: cdktf.stringToTerraform(this._pipelineName),
-      pipeline_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._pipelineParameters),
-      start_time: cdktf.stringToTerraform(this._startTime),
-      time_zone: cdktf.stringToTerraform(this._timeZone),
-      pipeline: cdktf.listMapper(dataFactoryTriggerSchedulePipelineToTerraform, true)(this._pipeline.internalValue),
+      activated: cdktn.booleanToTerraform(this._activated),
+      annotations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._annotations),
+      data_factory_id: cdktn.stringToTerraform(this._dataFactoryId),
+      description: cdktn.stringToTerraform(this._description),
+      end_time: cdktn.stringToTerraform(this._endTime),
+      frequency: cdktn.stringToTerraform(this._frequency),
+      id: cdktn.stringToTerraform(this._id),
+      interval: cdktn.numberToTerraform(this._interval),
+      name: cdktn.stringToTerraform(this._name),
+      pipeline_name: cdktn.stringToTerraform(this._pipelineName),
+      pipeline_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._pipelineParameters),
+      start_time: cdktn.stringToTerraform(this._startTime),
+      time_zone: cdktn.stringToTerraform(this._timeZone),
+      pipeline: cdktn.listMapper(dataFactoryTriggerSchedulePipelineToTerraform, true)(this._pipeline.internalValue),
       schedule: dataFactoryTriggerScheduleScheduleToTerraform(this._schedule.internalValue),
       timeouts: dataFactoryTriggerScheduleTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1141,85 +1141,85 @@ export class DataFactoryTriggerSchedule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       activated: {
-        value: cdktf.booleanToHclTerraform(this._activated),
+        value: cdktn.booleanToHclTerraform(this._activated),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       annotations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._annotations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._annotations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       data_factory_id: {
-        value: cdktf.stringToHclTerraform(this._dataFactoryId),
+        value: cdktn.stringToHclTerraform(this._dataFactoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       end_time: {
-        value: cdktf.stringToHclTerraform(this._endTime),
+        value: cdktn.stringToHclTerraform(this._endTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       frequency: {
-        value: cdktf.stringToHclTerraform(this._frequency),
+        value: cdktn.stringToHclTerraform(this._frequency),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       interval: {
-        value: cdktf.numberToHclTerraform(this._interval),
+        value: cdktn.numberToHclTerraform(this._interval),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pipeline_name: {
-        value: cdktf.stringToHclTerraform(this._pipelineName),
+        value: cdktn.stringToHclTerraform(this._pipelineName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pipeline_parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._pipelineParameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._pipelineParameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       start_time: {
-        value: cdktf.stringToHclTerraform(this._startTime),
+        value: cdktn.stringToHclTerraform(this._startTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       time_zone: {
-        value: cdktf.stringToHclTerraform(this._timeZone),
+        value: cdktn.stringToHclTerraform(this._timeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pipeline: {
-        value: cdktf.listMapperHcl(dataFactoryTriggerSchedulePipelineToHclTerraform, true)(this._pipeline.internalValue),
+        value: cdktn.listMapperHcl(dataFactoryTriggerSchedulePipelineToHclTerraform, true)(this._pipeline.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataFactoryTriggerSchedulePipelineList",

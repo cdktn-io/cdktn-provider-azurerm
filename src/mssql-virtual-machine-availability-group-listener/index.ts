@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MssqlVirtualMachineAvailabilityGroupListenerConfig extends cdktf.TerraformMetaArguments {
+export interface MssqlVirtualMachineAvailabilityGroupListenerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_virtual_machine_availability_group_listener#availability_group_name MssqlVirtualMachineAvailabilityGroupListener#availability_group_name}
   */
@@ -46,13 +46,13 @@ export interface MssqlVirtualMachineAvailabilityGroupListenerConfig extends cdkt
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_virtual_machine_availability_group_listener#multi_subnet_ip_configuration MssqlVirtualMachineAvailabilityGroupListener#multi_subnet_ip_configuration}
   */
-  readonly multiSubnetIpConfiguration?: MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfiguration[] | cdktf.IResolvable;
+  readonly multiSubnetIpConfiguration?: MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfiguration[] | cdktn.IResolvable;
   /**
   * replica block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_virtual_machine_availability_group_listener#replica MssqlVirtualMachineAvailabilityGroupListener#replica}
   */
-  readonly replica: MssqlVirtualMachineAvailabilityGroupListenerReplica[] | cdktf.IResolvable;
+  readonly replica: MssqlVirtualMachineAvailabilityGroupListenerReplica[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -84,52 +84,52 @@ export interface MssqlVirtualMachineAvailabilityGroupListenerLoadBalancerConfigu
 }
 
 export function mssqlVirtualMachineAvailabilityGroupListenerLoadBalancerConfigurationToTerraform(struct?: MssqlVirtualMachineAvailabilityGroupListenerLoadBalancerConfigurationOutputReference | MssqlVirtualMachineAvailabilityGroupListenerLoadBalancerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    load_balancer_id: cdktf.stringToTerraform(struct!.loadBalancerId),
-    private_ip_address: cdktf.stringToTerraform(struct!.privateIpAddress),
-    probe_port: cdktf.numberToTerraform(struct!.probePort),
-    sql_virtual_machine_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sqlVirtualMachineIds),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    load_balancer_id: cdktn.stringToTerraform(struct!.loadBalancerId),
+    private_ip_address: cdktn.stringToTerraform(struct!.privateIpAddress),
+    probe_port: cdktn.numberToTerraform(struct!.probePort),
+    sql_virtual_machine_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sqlVirtualMachineIds),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
 export function mssqlVirtualMachineAvailabilityGroupListenerLoadBalancerConfigurationToHclTerraform(struct?: MssqlVirtualMachineAvailabilityGroupListenerLoadBalancerConfigurationOutputReference | MssqlVirtualMachineAvailabilityGroupListenerLoadBalancerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     load_balancer_id: {
-      value: cdktf.stringToHclTerraform(struct!.loadBalancerId),
+      value: cdktn.stringToHclTerraform(struct!.loadBalancerId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.privateIpAddress),
+      value: cdktn.stringToHclTerraform(struct!.privateIpAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     probe_port: {
-      value: cdktf.numberToHclTerraform(struct!.probePort),
+      value: cdktn.numberToHclTerraform(struct!.probePort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     sql_virtual_machine_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sqlVirtualMachineIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sqlVirtualMachineIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -140,14 +140,14 @@ export function mssqlVirtualMachineAvailabilityGroupListenerLoadBalancerConfigur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlVirtualMachineAvailabilityGroupListenerLoadBalancerConfigurationOutputReference extends cdktf.ComplexObject {
+export class MssqlVirtualMachineAvailabilityGroupListenerLoadBalancerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -238,7 +238,7 @@ export class MssqlVirtualMachineAvailabilityGroupListenerLoadBalancerConfigurati
   // sql_virtual_machine_ids - computed: false, optional: false, required: true
   private _sqlVirtualMachineIds?: string[]; 
   public get sqlVirtualMachineIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('sql_virtual_machine_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('sql_virtual_machine_ids'));
   }
   public set sqlVirtualMachineIds(value: string[]) {
     this._sqlVirtualMachineIds = value;
@@ -276,39 +276,39 @@ export interface MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfig
   readonly subnetId: string;
 }
 
-export function mssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationToTerraform(struct?: MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationToTerraform(struct?: MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    private_ip_address: cdktf.stringToTerraform(struct!.privateIpAddress),
-    sql_virtual_machine_id: cdktf.stringToTerraform(struct!.sqlVirtualMachineId),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    private_ip_address: cdktn.stringToTerraform(struct!.privateIpAddress),
+    sql_virtual_machine_id: cdktn.stringToTerraform(struct!.sqlVirtualMachineId),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
-export function mssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationToHclTerraform(struct?: MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationToHclTerraform(struct?: MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     private_ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.privateIpAddress),
+      value: cdktn.stringToHclTerraform(struct!.privateIpAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sql_virtual_machine_id: {
-      value: cdktf.stringToHclTerraform(struct!.sqlVirtualMachineId),
+      value: cdktn.stringToHclTerraform(struct!.sqlVirtualMachineId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -319,9 +319,9 @@ export function mssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationOutputReference extends cdktf.ComplexObject {
+export class MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -329,11 +329,11 @@ export class MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurat
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -354,7 +354,7 @@ export class MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurat
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -362,7 +362,7 @@ export class MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurat
       this._sqlVirtualMachineId = undefined;
       this._subnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -415,15 +415,15 @@ export class MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurat
   }
 }
 
-export class MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationList extends cdktf.ComplexList {
-  public internalValue? : MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfiguration[] | cdktf.IResolvable
+export class MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationList extends cdktn.ComplexList {
+  public internalValue? : MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -457,53 +457,53 @@ export interface MssqlVirtualMachineAvailabilityGroupListenerReplica {
   readonly sqlVirtualMachineId: string;
 }
 
-export function mssqlVirtualMachineAvailabilityGroupListenerReplicaToTerraform(struct?: MssqlVirtualMachineAvailabilityGroupListenerReplica | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlVirtualMachineAvailabilityGroupListenerReplicaToTerraform(struct?: MssqlVirtualMachineAvailabilityGroupListenerReplica | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    commit: cdktf.stringToTerraform(struct!.commit),
-    failover_mode: cdktf.stringToTerraform(struct!.failoverMode),
-    readable_secondary: cdktf.stringToTerraform(struct!.readableSecondary),
-    role: cdktf.stringToTerraform(struct!.role),
-    sql_virtual_machine_id: cdktf.stringToTerraform(struct!.sqlVirtualMachineId),
+    commit: cdktn.stringToTerraform(struct!.commit),
+    failover_mode: cdktn.stringToTerraform(struct!.failoverMode),
+    readable_secondary: cdktn.stringToTerraform(struct!.readableSecondary),
+    role: cdktn.stringToTerraform(struct!.role),
+    sql_virtual_machine_id: cdktn.stringToTerraform(struct!.sqlVirtualMachineId),
   }
 }
 
 
-export function mssqlVirtualMachineAvailabilityGroupListenerReplicaToHclTerraform(struct?: MssqlVirtualMachineAvailabilityGroupListenerReplica | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlVirtualMachineAvailabilityGroupListenerReplicaToHclTerraform(struct?: MssqlVirtualMachineAvailabilityGroupListenerReplica | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     commit: {
-      value: cdktf.stringToHclTerraform(struct!.commit),
+      value: cdktn.stringToHclTerraform(struct!.commit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     failover_mode: {
-      value: cdktf.stringToHclTerraform(struct!.failoverMode),
+      value: cdktn.stringToHclTerraform(struct!.failoverMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     readable_secondary: {
-      value: cdktf.stringToHclTerraform(struct!.readableSecondary),
+      value: cdktn.stringToHclTerraform(struct!.readableSecondary),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sql_virtual_machine_id: {
-      value: cdktf.stringToHclTerraform(struct!.sqlVirtualMachineId),
+      value: cdktn.stringToHclTerraform(struct!.sqlVirtualMachineId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -514,9 +514,9 @@ export function mssqlVirtualMachineAvailabilityGroupListenerReplicaToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlVirtualMachineAvailabilityGroupListenerReplicaOutputReference extends cdktf.ComplexObject {
+export class MssqlVirtualMachineAvailabilityGroupListenerReplicaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -524,11 +524,11 @@ export class MssqlVirtualMachineAvailabilityGroupListenerReplicaOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MssqlVirtualMachineAvailabilityGroupListenerReplica | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlVirtualMachineAvailabilityGroupListenerReplica | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -557,7 +557,7 @@ export class MssqlVirtualMachineAvailabilityGroupListenerReplicaOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlVirtualMachineAvailabilityGroupListenerReplica | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlVirtualMachineAvailabilityGroupListenerReplica | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -567,7 +567,7 @@ export class MssqlVirtualMachineAvailabilityGroupListenerReplicaOutputReference 
       this._role = undefined;
       this._sqlVirtualMachineId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -648,15 +648,15 @@ export class MssqlVirtualMachineAvailabilityGroupListenerReplicaOutputReference 
   }
 }
 
-export class MssqlVirtualMachineAvailabilityGroupListenerReplicaList extends cdktf.ComplexList {
-  public internalValue? : MssqlVirtualMachineAvailabilityGroupListenerReplica[] | cdktf.IResolvable
+export class MssqlVirtualMachineAvailabilityGroupListenerReplicaList extends cdktn.ComplexList {
+  public internalValue? : MssqlVirtualMachineAvailabilityGroupListenerReplica[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -682,39 +682,39 @@ export interface MssqlVirtualMachineAvailabilityGroupListenerTimeouts {
   readonly read?: string;
 }
 
-export function mssqlVirtualMachineAvailabilityGroupListenerTimeoutsToTerraform(struct?: MssqlVirtualMachineAvailabilityGroupListenerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlVirtualMachineAvailabilityGroupListenerTimeoutsToTerraform(struct?: MssqlVirtualMachineAvailabilityGroupListenerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function mssqlVirtualMachineAvailabilityGroupListenerTimeoutsToHclTerraform(struct?: MssqlVirtualMachineAvailabilityGroupListenerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlVirtualMachineAvailabilityGroupListenerTimeoutsToHclTerraform(struct?: MssqlVirtualMachineAvailabilityGroupListenerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -725,19 +725,19 @@ export function mssqlVirtualMachineAvailabilityGroupListenerTimeoutsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlVirtualMachineAvailabilityGroupListenerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MssqlVirtualMachineAvailabilityGroupListenerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MssqlVirtualMachineAvailabilityGroupListenerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlVirtualMachineAvailabilityGroupListenerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -758,7 +758,7 @@ export class MssqlVirtualMachineAvailabilityGroupListenerTimeoutsOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlVirtualMachineAvailabilityGroupListenerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlVirtualMachineAvailabilityGroupListenerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -766,7 +766,7 @@ export class MssqlVirtualMachineAvailabilityGroupListenerTimeoutsOutputReference
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -831,7 +831,7 @@ export class MssqlVirtualMachineAvailabilityGroupListenerTimeoutsOutputReference
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_virtual_machine_availability_group_listener azurerm_mssql_virtual_machine_availability_group_listener}
 */
-export class MssqlVirtualMachineAvailabilityGroupListener extends cdktf.TerraformResource {
+export class MssqlVirtualMachineAvailabilityGroupListener extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -842,14 +842,14 @@ export class MssqlVirtualMachineAvailabilityGroupListener extends cdktf.Terrafor
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MssqlVirtualMachineAvailabilityGroupListener resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MssqlVirtualMachineAvailabilityGroupListener resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MssqlVirtualMachineAvailabilityGroupListener to import
   * @param importFromId The id of the existing MssqlVirtualMachineAvailabilityGroupListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_virtual_machine_availability_group_listener#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MssqlVirtualMachineAvailabilityGroupListener to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_virtual_machine_availability_group_listener", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_virtual_machine_availability_group_listener", importId: importFromId, provider });
       }
 
   // ===========
@@ -989,7 +989,7 @@ export class MssqlVirtualMachineAvailabilityGroupListener extends cdktf.Terrafor
   public get multiSubnetIpConfiguration() {
     return this._multiSubnetIpConfiguration;
   }
-  public putMultiSubnetIpConfiguration(value: MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfiguration[] | cdktf.IResolvable) {
+  public putMultiSubnetIpConfiguration(value: MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfiguration[] | cdktn.IResolvable) {
     this._multiSubnetIpConfiguration.internalValue = value;
   }
   public resetMultiSubnetIpConfiguration() {
@@ -1005,7 +1005,7 @@ export class MssqlVirtualMachineAvailabilityGroupListener extends cdktf.Terrafor
   public get replica() {
     return this._replica;
   }
-  public putReplica(value: MssqlVirtualMachineAvailabilityGroupListenerReplica[] | cdktf.IResolvable) {
+  public putReplica(value: MssqlVirtualMachineAvailabilityGroupListenerReplica[] | cdktn.IResolvable) {
     this._replica.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1035,14 +1035,14 @@ export class MssqlVirtualMachineAvailabilityGroupListener extends cdktf.Terrafor
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_group_name: cdktf.stringToTerraform(this._availabilityGroupName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      port: cdktf.numberToTerraform(this._port),
-      sql_virtual_machine_group_id: cdktf.stringToTerraform(this._sqlVirtualMachineGroupId),
+      availability_group_name: cdktn.stringToTerraform(this._availabilityGroupName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      port: cdktn.numberToTerraform(this._port),
+      sql_virtual_machine_group_id: cdktn.stringToTerraform(this._sqlVirtualMachineGroupId),
       load_balancer_configuration: mssqlVirtualMachineAvailabilityGroupListenerLoadBalancerConfigurationToTerraform(this._loadBalancerConfiguration.internalValue),
-      multi_subnet_ip_configuration: cdktf.listMapper(mssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationToTerraform, true)(this._multiSubnetIpConfiguration.internalValue),
-      replica: cdktf.listMapper(mssqlVirtualMachineAvailabilityGroupListenerReplicaToTerraform, true)(this._replica.internalValue),
+      multi_subnet_ip_configuration: cdktn.listMapper(mssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationToTerraform, true)(this._multiSubnetIpConfiguration.internalValue),
+      replica: cdktn.listMapper(mssqlVirtualMachineAvailabilityGroupListenerReplicaToTerraform, true)(this._replica.internalValue),
       timeouts: mssqlVirtualMachineAvailabilityGroupListenerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1050,31 +1050,31 @@ export class MssqlVirtualMachineAvailabilityGroupListener extends cdktf.Terrafor
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       availability_group_name: {
-        value: cdktf.stringToHclTerraform(this._availabilityGroupName),
+        value: cdktn.stringToHclTerraform(this._availabilityGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       sql_virtual_machine_group_id: {
-        value: cdktf.stringToHclTerraform(this._sqlVirtualMachineGroupId),
+        value: cdktn.stringToHclTerraform(this._sqlVirtualMachineGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1086,13 +1086,13 @@ export class MssqlVirtualMachineAvailabilityGroupListener extends cdktf.Terrafor
         storageClassType: "MssqlVirtualMachineAvailabilityGroupListenerLoadBalancerConfigurationList",
       },
       multi_subnet_ip_configuration: {
-        value: cdktf.listMapperHcl(mssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationToHclTerraform, true)(this._multiSubnetIpConfiguration.internalValue),
+        value: cdktn.listMapperHcl(mssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationToHclTerraform, true)(this._multiSubnetIpConfiguration.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "MssqlVirtualMachineAvailabilityGroupListenerMultiSubnetIpConfigurationList",
       },
       replica: {
-        value: cdktf.listMapperHcl(mssqlVirtualMachineAvailabilityGroupListenerReplicaToHclTerraform, true)(this._replica.internalValue),
+        value: cdktn.listMapperHcl(mssqlVirtualMachineAvailabilityGroupListenerReplicaToHclTerraform, true)(this._replica.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "MssqlVirtualMachineAvailabilityGroupListenerReplicaList",

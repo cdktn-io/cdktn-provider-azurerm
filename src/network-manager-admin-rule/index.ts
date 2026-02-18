@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkManagerAdminRuleConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkManagerAdminRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_admin_rule#action NetworkManagerAdminRule#action}
   */
@@ -60,13 +60,13 @@ export interface NetworkManagerAdminRuleConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_admin_rule#destination NetworkManagerAdminRule#destination}
   */
-  readonly destination?: NetworkManagerAdminRuleDestination[] | cdktf.IResolvable;
+  readonly destination?: NetworkManagerAdminRuleDestination[] | cdktn.IResolvable;
   /**
   * source block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_admin_rule#source NetworkManagerAdminRule#source}
   */
-  readonly source?: NetworkManagerAdminRuleSource[] | cdktf.IResolvable;
+  readonly source?: NetworkManagerAdminRuleSource[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -85,32 +85,32 @@ export interface NetworkManagerAdminRuleDestination {
   readonly addressPrefixType: string;
 }
 
-export function networkManagerAdminRuleDestinationToTerraform(struct?: NetworkManagerAdminRuleDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerAdminRuleDestinationToTerraform(struct?: NetworkManagerAdminRuleDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_prefix: cdktf.stringToTerraform(struct!.addressPrefix),
-    address_prefix_type: cdktf.stringToTerraform(struct!.addressPrefixType),
+    address_prefix: cdktn.stringToTerraform(struct!.addressPrefix),
+    address_prefix_type: cdktn.stringToTerraform(struct!.addressPrefixType),
   }
 }
 
 
-export function networkManagerAdminRuleDestinationToHclTerraform(struct?: NetworkManagerAdminRuleDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerAdminRuleDestinationToHclTerraform(struct?: NetworkManagerAdminRuleDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.addressPrefix),
+      value: cdktn.stringToHclTerraform(struct!.addressPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_prefix_type: {
-      value: cdktf.stringToHclTerraform(struct!.addressPrefixType),
+      value: cdktn.stringToHclTerraform(struct!.addressPrefixType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -121,9 +121,9 @@ export function networkManagerAdminRuleDestinationToHclTerraform(struct?: Networ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkManagerAdminRuleDestinationOutputReference extends cdktf.ComplexObject {
+export class NetworkManagerAdminRuleDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -131,11 +131,11 @@ export class NetworkManagerAdminRuleDestinationOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkManagerAdminRuleDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkManagerAdminRuleDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,14 +152,14 @@ export class NetworkManagerAdminRuleDestinationOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkManagerAdminRuleDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkManagerAdminRuleDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._addressPrefix = undefined;
       this._addressPrefixType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -198,15 +198,15 @@ export class NetworkManagerAdminRuleDestinationOutputReference extends cdktf.Com
   }
 }
 
-export class NetworkManagerAdminRuleDestinationList extends cdktf.ComplexList {
-  public internalValue? : NetworkManagerAdminRuleDestination[] | cdktf.IResolvable
+export class NetworkManagerAdminRuleDestinationList extends cdktn.ComplexList {
+  public internalValue? : NetworkManagerAdminRuleDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -228,32 +228,32 @@ export interface NetworkManagerAdminRuleSource {
   readonly addressPrefixType: string;
 }
 
-export function networkManagerAdminRuleSourceToTerraform(struct?: NetworkManagerAdminRuleSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerAdminRuleSourceToTerraform(struct?: NetworkManagerAdminRuleSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_prefix: cdktf.stringToTerraform(struct!.addressPrefix),
-    address_prefix_type: cdktf.stringToTerraform(struct!.addressPrefixType),
+    address_prefix: cdktn.stringToTerraform(struct!.addressPrefix),
+    address_prefix_type: cdktn.stringToTerraform(struct!.addressPrefixType),
   }
 }
 
 
-export function networkManagerAdminRuleSourceToHclTerraform(struct?: NetworkManagerAdminRuleSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerAdminRuleSourceToHclTerraform(struct?: NetworkManagerAdminRuleSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.addressPrefix),
+      value: cdktn.stringToHclTerraform(struct!.addressPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     address_prefix_type: {
-      value: cdktf.stringToHclTerraform(struct!.addressPrefixType),
+      value: cdktn.stringToHclTerraform(struct!.addressPrefixType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -264,9 +264,9 @@ export function networkManagerAdminRuleSourceToHclTerraform(struct?: NetworkMana
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkManagerAdminRuleSourceOutputReference extends cdktf.ComplexObject {
+export class NetworkManagerAdminRuleSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -274,11 +274,11 @@ export class NetworkManagerAdminRuleSourceOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkManagerAdminRuleSource | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkManagerAdminRuleSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -295,14 +295,14 @@ export class NetworkManagerAdminRuleSourceOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkManagerAdminRuleSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkManagerAdminRuleSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._addressPrefix = undefined;
       this._addressPrefixType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -341,15 +341,15 @@ export class NetworkManagerAdminRuleSourceOutputReference extends cdktf.ComplexO
   }
 }
 
-export class NetworkManagerAdminRuleSourceList extends cdktf.ComplexList {
-  public internalValue? : NetworkManagerAdminRuleSource[] | cdktf.IResolvable
+export class NetworkManagerAdminRuleSourceList extends cdktn.ComplexList {
+  public internalValue? : NetworkManagerAdminRuleSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -379,46 +379,46 @@ export interface NetworkManagerAdminRuleTimeouts {
   readonly update?: string;
 }
 
-export function networkManagerAdminRuleTimeoutsToTerraform(struct?: NetworkManagerAdminRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerAdminRuleTimeoutsToTerraform(struct?: NetworkManagerAdminRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkManagerAdminRuleTimeoutsToHclTerraform(struct?: NetworkManagerAdminRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerAdminRuleTimeoutsToHclTerraform(struct?: NetworkManagerAdminRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -429,19 +429,19 @@ export function networkManagerAdminRuleTimeoutsToHclTerraform(struct?: NetworkMa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkManagerAdminRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkManagerAdminRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkManagerAdminRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkManagerAdminRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -466,7 +466,7 @@ export class NetworkManagerAdminRuleTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkManagerAdminRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkManagerAdminRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -475,7 +475,7 @@ export class NetworkManagerAdminRuleTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -557,7 +557,7 @@ export class NetworkManagerAdminRuleTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_admin_rule azurerm_network_manager_admin_rule}
 */
-export class NetworkManagerAdminRule extends cdktf.TerraformResource {
+export class NetworkManagerAdminRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -568,14 +568,14 @@ export class NetworkManagerAdminRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkManagerAdminRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkManagerAdminRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkManagerAdminRule to import
   * @param importFromId The id of the existing NetworkManagerAdminRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_admin_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkManagerAdminRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_manager_admin_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_manager_admin_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -771,7 +771,7 @@ export class NetworkManagerAdminRule extends cdktf.TerraformResource {
   public get destination() {
     return this._destination;
   }
-  public putDestination(value: NetworkManagerAdminRuleDestination[] | cdktf.IResolvable) {
+  public putDestination(value: NetworkManagerAdminRuleDestination[] | cdktn.IResolvable) {
     this._destination.internalValue = value;
   }
   public resetDestination() {
@@ -787,7 +787,7 @@ export class NetworkManagerAdminRule extends cdktf.TerraformResource {
   public get source() {
     return this._source;
   }
-  public putSource(value: NetworkManagerAdminRuleSource[] | cdktf.IResolvable) {
+  public putSource(value: NetworkManagerAdminRuleSource[] | cdktn.IResolvable) {
     this._source.internalValue = value;
   }
   public resetSource() {
@@ -820,18 +820,18 @@ export class NetworkManagerAdminRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: cdktf.stringToTerraform(this._action),
-      admin_rule_collection_id: cdktf.stringToTerraform(this._adminRuleCollectionId),
-      description: cdktf.stringToTerraform(this._description),
-      destination_port_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._destinationPortRanges),
-      direction: cdktf.stringToTerraform(this._direction),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      priority: cdktf.numberToTerraform(this._priority),
-      protocol: cdktf.stringToTerraform(this._protocol),
-      source_port_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sourcePortRanges),
-      destination: cdktf.listMapper(networkManagerAdminRuleDestinationToTerraform, true)(this._destination.internalValue),
-      source: cdktf.listMapper(networkManagerAdminRuleSourceToTerraform, true)(this._source.internalValue),
+      action: cdktn.stringToTerraform(this._action),
+      admin_rule_collection_id: cdktn.stringToTerraform(this._adminRuleCollectionId),
+      description: cdktn.stringToTerraform(this._description),
+      destination_port_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(this._destinationPortRanges),
+      direction: cdktn.stringToTerraform(this._direction),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      priority: cdktn.numberToTerraform(this._priority),
+      protocol: cdktn.stringToTerraform(this._protocol),
+      source_port_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(this._sourcePortRanges),
+      destination: cdktn.listMapper(networkManagerAdminRuleDestinationToTerraform, true)(this._destination.internalValue),
+      source: cdktn.listMapper(networkManagerAdminRuleSourceToTerraform, true)(this._source.internalValue),
       timeouts: networkManagerAdminRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -839,73 +839,73 @@ export class NetworkManagerAdminRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action: {
-        value: cdktf.stringToHclTerraform(this._action),
+        value: cdktn.stringToHclTerraform(this._action),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       admin_rule_collection_id: {
-        value: cdktf.stringToHclTerraform(this._adminRuleCollectionId),
+        value: cdktn.stringToHclTerraform(this._adminRuleCollectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_port_ranges: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._destinationPortRanges),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._destinationPortRanges),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       direction: {
-        value: cdktf.stringToHclTerraform(this._direction),
+        value: cdktn.stringToHclTerraform(this._direction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       protocol: {
-        value: cdktf.stringToHclTerraform(this._protocol),
+        value: cdktn.stringToHclTerraform(this._protocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_port_ranges: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sourcePortRanges),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._sourcePortRanges),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       destination: {
-        value: cdktf.listMapperHcl(networkManagerAdminRuleDestinationToHclTerraform, true)(this._destination.internalValue),
+        value: cdktn.listMapperHcl(networkManagerAdminRuleDestinationToHclTerraform, true)(this._destination.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NetworkManagerAdminRuleDestinationList",
       },
       source: {
-        value: cdktf.listMapperHcl(networkManagerAdminRuleSourceToHclTerraform, true)(this._source.internalValue),
+        value: cdktn.listMapperHcl(networkManagerAdminRuleSourceToHclTerraform, true)(this._source.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NetworkManagerAdminRuleSourceList",

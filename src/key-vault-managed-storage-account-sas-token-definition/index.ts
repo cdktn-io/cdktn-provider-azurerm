@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KeyVaultManagedStorageAccountSasTokenDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface KeyVaultManagedStorageAccountSasTokenDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_managed_storage_account_sas_token_definition#id KeyVaultManagedStorageAccountSasTokenDefinition#id}
   *
@@ -69,46 +69,46 @@ export interface KeyVaultManagedStorageAccountSasTokenDefinitionTimeouts {
   readonly update?: string;
 }
 
-export function keyVaultManagedStorageAccountSasTokenDefinitionTimeoutsToTerraform(struct?: KeyVaultManagedStorageAccountSasTokenDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultManagedStorageAccountSasTokenDefinitionTimeoutsToTerraform(struct?: KeyVaultManagedStorageAccountSasTokenDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function keyVaultManagedStorageAccountSasTokenDefinitionTimeoutsToHclTerraform(struct?: KeyVaultManagedStorageAccountSasTokenDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultManagedStorageAccountSasTokenDefinitionTimeoutsToHclTerraform(struct?: KeyVaultManagedStorageAccountSasTokenDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,19 +119,19 @@ export function keyVaultManagedStorageAccountSasTokenDefinitionTimeoutsToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyVaultManagedStorageAccountSasTokenDefinitionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KeyVaultManagedStorageAccountSasTokenDefinitionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KeyVaultManagedStorageAccountSasTokenDefinitionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyVaultManagedStorageAccountSasTokenDefinitionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class KeyVaultManagedStorageAccountSasTokenDefinitionTimeoutsOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyVaultManagedStorageAccountSasTokenDefinitionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyVaultManagedStorageAccountSasTokenDefinitionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class KeyVaultManagedStorageAccountSasTokenDefinitionTimeoutsOutputRefere
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,7 +247,7 @@ export class KeyVaultManagedStorageAccountSasTokenDefinitionTimeoutsOutputRefere
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_managed_storage_account_sas_token_definition azurerm_key_vault_managed_storage_account_sas_token_definition}
 */
-export class KeyVaultManagedStorageAccountSasTokenDefinition extends cdktf.TerraformResource {
+export class KeyVaultManagedStorageAccountSasTokenDefinition extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -258,14 +258,14 @@ export class KeyVaultManagedStorageAccountSasTokenDefinition extends cdktf.Terra
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KeyVaultManagedStorageAccountSasTokenDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KeyVaultManagedStorageAccountSasTokenDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeyVaultManagedStorageAccountSasTokenDefinition to import
   * @param importFromId The id of the existing KeyVaultManagedStorageAccountSasTokenDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_managed_storage_account_sas_token_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeyVaultManagedStorageAccountSasTokenDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_managed_storage_account_sas_token_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_managed_storage_account_sas_token_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -433,13 +433,13 @@ export class KeyVaultManagedStorageAccountSasTokenDefinition extends cdktf.Terra
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      managed_storage_account_id: cdktf.stringToTerraform(this._managedStorageAccountId),
-      name: cdktf.stringToTerraform(this._name),
-      sas_template_uri: cdktf.stringToTerraform(this._sasTemplateUri),
-      sas_type: cdktf.stringToTerraform(this._sasType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      validity_period: cdktf.stringToTerraform(this._validityPeriod),
+      id: cdktn.stringToTerraform(this._id),
+      managed_storage_account_id: cdktn.stringToTerraform(this._managedStorageAccountId),
+      name: cdktn.stringToTerraform(this._name),
+      sas_template_uri: cdktn.stringToTerraform(this._sasTemplateUri),
+      sas_type: cdktn.stringToTerraform(this._sasType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      validity_period: cdktn.stringToTerraform(this._validityPeriod),
       timeouts: keyVaultManagedStorageAccountSasTokenDefinitionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -447,43 +447,43 @@ export class KeyVaultManagedStorageAccountSasTokenDefinition extends cdktf.Terra
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._managedStorageAccountId),
+        value: cdktn.stringToHclTerraform(this._managedStorageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sas_template_uri: {
-        value: cdktf.stringToHclTerraform(this._sasTemplateUri),
+        value: cdktn.stringToHclTerraform(this._sasTemplateUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sas_type: {
-        value: cdktf.stringToHclTerraform(this._sasType),
+        value: cdktn.stringToHclTerraform(this._sasType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       validity_period: {
-        value: cdktf.stringToHclTerraform(this._validityPeriod),
+        value: cdktn.stringToHclTerraform(this._validityPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

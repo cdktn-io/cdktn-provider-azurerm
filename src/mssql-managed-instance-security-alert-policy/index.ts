@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MssqlManagedInstanceSecurityAlertPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface MssqlManagedInstanceSecurityAlertPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_security_alert_policy#disabled_alerts MssqlManagedInstanceSecurityAlertPolicy#disabled_alerts}
   */
@@ -19,7 +19,7 @@ export interface MssqlManagedInstanceSecurityAlertPolicyConfig extends cdktf.Ter
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_security_alert_policy#email_account_admins_enabled MssqlManagedInstanceSecurityAlertPolicy#email_account_admins_enabled}
   */
-  readonly emailAccountAdminsEnabled?: boolean | cdktf.IResolvable;
+  readonly emailAccountAdminsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_security_alert_policy#email_addresses MssqlManagedInstanceSecurityAlertPolicy#email_addresses}
   */
@@ -27,7 +27,7 @@ export interface MssqlManagedInstanceSecurityAlertPolicyConfig extends cdktf.Ter
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_security_alert_policy#enabled MssqlManagedInstanceSecurityAlertPolicy#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_security_alert_policy#id MssqlManagedInstanceSecurityAlertPolicy#id}
   *
@@ -81,46 +81,46 @@ export interface MssqlManagedInstanceSecurityAlertPolicyTimeouts {
   readonly update?: string;
 }
 
-export function mssqlManagedInstanceSecurityAlertPolicyTimeoutsToTerraform(struct?: MssqlManagedInstanceSecurityAlertPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlManagedInstanceSecurityAlertPolicyTimeoutsToTerraform(struct?: MssqlManagedInstanceSecurityAlertPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mssqlManagedInstanceSecurityAlertPolicyTimeoutsToHclTerraform(struct?: MssqlManagedInstanceSecurityAlertPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlManagedInstanceSecurityAlertPolicyTimeoutsToHclTerraform(struct?: MssqlManagedInstanceSecurityAlertPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,19 +131,19 @@ export function mssqlManagedInstanceSecurityAlertPolicyTimeoutsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlManagedInstanceSecurityAlertPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MssqlManagedInstanceSecurityAlertPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MssqlManagedInstanceSecurityAlertPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlManagedInstanceSecurityAlertPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,7 +168,7 @@ export class MssqlManagedInstanceSecurityAlertPolicyTimeoutsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlManagedInstanceSecurityAlertPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlManagedInstanceSecurityAlertPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class MssqlManagedInstanceSecurityAlertPolicyTimeoutsOutputReference exte
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,7 +259,7 @@ export class MssqlManagedInstanceSecurityAlertPolicyTimeoutsOutputReference exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_security_alert_policy azurerm_mssql_managed_instance_security_alert_policy}
 */
-export class MssqlManagedInstanceSecurityAlertPolicy extends cdktf.TerraformResource {
+export class MssqlManagedInstanceSecurityAlertPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -270,14 +270,14 @@ export class MssqlManagedInstanceSecurityAlertPolicy extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MssqlManagedInstanceSecurityAlertPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MssqlManagedInstanceSecurityAlertPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MssqlManagedInstanceSecurityAlertPolicy to import
   * @param importFromId The id of the existing MssqlManagedInstanceSecurityAlertPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_security_alert_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MssqlManagedInstanceSecurityAlertPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_managed_instance_security_alert_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_managed_instance_security_alert_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -327,7 +327,7 @@ export class MssqlManagedInstanceSecurityAlertPolicy extends cdktf.TerraformReso
   // disabled_alerts - computed: false, optional: true, required: false
   private _disabledAlerts?: string[]; 
   public get disabledAlerts() {
-    return cdktf.Fn.tolist(this.getListAttribute('disabled_alerts'));
+    return cdktn.Fn.tolist(this.getListAttribute('disabled_alerts'));
   }
   public set disabledAlerts(value: string[]) {
     this._disabledAlerts = value;
@@ -341,11 +341,11 @@ export class MssqlManagedInstanceSecurityAlertPolicy extends cdktf.TerraformReso
   }
 
   // email_account_admins_enabled - computed: false, optional: true, required: false
-  private _emailAccountAdminsEnabled?: boolean | cdktf.IResolvable; 
+  private _emailAccountAdminsEnabled?: boolean | cdktn.IResolvable; 
   public get emailAccountAdminsEnabled() {
     return this.getBooleanAttribute('email_account_admins_enabled');
   }
-  public set emailAccountAdminsEnabled(value: boolean | cdktf.IResolvable) {
+  public set emailAccountAdminsEnabled(value: boolean | cdktn.IResolvable) {
     this._emailAccountAdminsEnabled = value;
   }
   public resetEmailAccountAdminsEnabled() {
@@ -359,7 +359,7 @@ export class MssqlManagedInstanceSecurityAlertPolicy extends cdktf.TerraformReso
   // email_addresses - computed: false, optional: true, required: false
   private _emailAddresses?: string[]; 
   public get emailAddresses() {
-    return cdktf.Fn.tolist(this.getListAttribute('email_addresses'));
+    return cdktn.Fn.tolist(this.getListAttribute('email_addresses'));
   }
   public set emailAddresses(value: string[]) {
     this._emailAddresses = value;
@@ -373,11 +373,11 @@ export class MssqlManagedInstanceSecurityAlertPolicy extends cdktf.TerraformReso
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -500,16 +500,16 @@ export class MssqlManagedInstanceSecurityAlertPolicy extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disabled_alerts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._disabledAlerts),
-      email_account_admins_enabled: cdktf.booleanToTerraform(this._emailAccountAdminsEnabled),
-      email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._emailAddresses),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      managed_instance_name: cdktf.stringToTerraform(this._managedInstanceName),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      retention_days: cdktf.numberToTerraform(this._retentionDays),
-      storage_account_access_key: cdktf.stringToTerraform(this._storageAccountAccessKey),
-      storage_endpoint: cdktf.stringToTerraform(this._storageEndpoint),
+      disabled_alerts: cdktn.listMapper(cdktn.stringToTerraform, false)(this._disabledAlerts),
+      email_account_admins_enabled: cdktn.booleanToTerraform(this._emailAccountAdminsEnabled),
+      email_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._emailAddresses),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      managed_instance_name: cdktn.stringToTerraform(this._managedInstanceName),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      retention_days: cdktn.numberToTerraform(this._retentionDays),
+      storage_account_access_key: cdktn.stringToTerraform(this._storageAccountAccessKey),
+      storage_endpoint: cdktn.stringToTerraform(this._storageEndpoint),
       timeouts: mssqlManagedInstanceSecurityAlertPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -517,61 +517,61 @@ export class MssqlManagedInstanceSecurityAlertPolicy extends cdktf.TerraformReso
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       disabled_alerts: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._disabledAlerts),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._disabledAlerts),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       email_account_admins_enabled: {
-        value: cdktf.booleanToHclTerraform(this._emailAccountAdminsEnabled),
+        value: cdktn.booleanToHclTerraform(this._emailAccountAdminsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       email_addresses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._emailAddresses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._emailAddresses),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_instance_name: {
-        value: cdktf.stringToHclTerraform(this._managedInstanceName),
+        value: cdktn.stringToHclTerraform(this._managedInstanceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_days: {
-        value: cdktf.numberToHclTerraform(this._retentionDays),
+        value: cdktn.numberToHclTerraform(this._retentionDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       storage_account_access_key: {
-        value: cdktf.stringToHclTerraform(this._storageAccountAccessKey),
+        value: cdktn.stringToHclTerraform(this._storageAccountAccessKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_endpoint: {
-        value: cdktf.stringToHclTerraform(this._storageEndpoint),
+        value: cdktn.stringToHclTerraform(this._storageEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

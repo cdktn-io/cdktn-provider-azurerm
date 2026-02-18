@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_managed_hardware_security_module_key_rotation_policy#expire_after KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy#expire_after}
   */
@@ -61,46 +61,46 @@ export interface KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeouts 
   readonly update?: string;
 }
 
-export function keyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeoutsToTerraform(struct?: KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeoutsToTerraform(struct?: KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function keyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeoutsToHclTerraform(struct?: KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeoutsToHclTerraform(struct?: KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,19 +111,19 @@ export function keyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeoutsTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,7 +148,7 @@ export class KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeoutsOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -157,7 +157,7 @@ export class KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeoutsOutpu
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -239,7 +239,7 @@ export class KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeoutsOutpu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_managed_hardware_security_module_key_rotation_policy azurerm_key_vault_managed_hardware_security_module_key_rotation_policy}
 */
-export class KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy extends cdktf.TerraformResource {
+export class KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -250,14 +250,14 @@ export class KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy extends cdkt
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy to import
   * @param importFromId The id of the existing KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_managed_hardware_security_module_key_rotation_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_managed_hardware_security_module_key_rotation_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_managed_hardware_security_module_key_rotation_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -395,11 +395,11 @@ export class KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy extends cdkt
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      expire_after: cdktf.stringToTerraform(this._expireAfter),
-      id: cdktf.stringToTerraform(this._id),
-      managed_hsm_key_id: cdktf.stringToTerraform(this._managedHsmKeyId),
-      time_after_creation: cdktf.stringToTerraform(this._timeAfterCreation),
-      time_before_expiry: cdktf.stringToTerraform(this._timeBeforeExpiry),
+      expire_after: cdktn.stringToTerraform(this._expireAfter),
+      id: cdktn.stringToTerraform(this._id),
+      managed_hsm_key_id: cdktn.stringToTerraform(this._managedHsmKeyId),
+      time_after_creation: cdktn.stringToTerraform(this._timeAfterCreation),
+      time_before_expiry: cdktn.stringToTerraform(this._timeBeforeExpiry),
       timeouts: keyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -407,31 +407,31 @@ export class KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy extends cdkt
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       expire_after: {
-        value: cdktf.stringToHclTerraform(this._expireAfter),
+        value: cdktn.stringToHclTerraform(this._expireAfter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_hsm_key_id: {
-        value: cdktf.stringToHclTerraform(this._managedHsmKeyId),
+        value: cdktn.stringToHclTerraform(this._managedHsmKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       time_after_creation: {
-        value: cdktf.stringToHclTerraform(this._timeAfterCreation),
+        value: cdktn.stringToHclTerraform(this._timeAfterCreation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       time_before_expiry: {
-        value: cdktf.stringToHclTerraform(this._timeBeforeExpiry),
+        value: cdktn.stringToHclTerraform(this._timeBeforeExpiry),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

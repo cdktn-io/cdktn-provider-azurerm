@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface HpcCacheConfig extends cdktf.TerraformMetaArguments {
+export interface HpcCacheConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache#automatically_rotate_key_to_latest_enabled HpcCache#automatically_rotate_key_to_latest_enabled}
   */
-  readonly automaticallyRotateKeyToLatestEnabled?: boolean | cdktf.IResolvable;
+  readonly automaticallyRotateKeyToLatestEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache#cache_size_in_gb HpcCache#cache_size_in_gb}
   */
@@ -126,7 +126,7 @@ export interface HpcCacheDefaultAccessPolicyAccessRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache#root_squash_enabled HpcCache#root_squash_enabled}
   */
-  readonly rootSquashEnabled?: boolean | cdktf.IResolvable;
+  readonly rootSquashEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache#scope HpcCache#scope}
   */
@@ -134,81 +134,81 @@ export interface HpcCacheDefaultAccessPolicyAccessRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache#submount_access_enabled HpcCache#submount_access_enabled}
   */
-  readonly submountAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly submountAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache#suid_enabled HpcCache#suid_enabled}
   */
-  readonly suidEnabled?: boolean | cdktf.IResolvable;
+  readonly suidEnabled?: boolean | cdktn.IResolvable;
 }
 
-export function hpcCacheDefaultAccessPolicyAccessRuleToTerraform(struct?: HpcCacheDefaultAccessPolicyAccessRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hpcCacheDefaultAccessPolicyAccessRuleToTerraform(struct?: HpcCacheDefaultAccessPolicyAccessRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access: cdktf.stringToTerraform(struct!.access),
-    anonymous_gid: cdktf.numberToTerraform(struct!.anonymousGid),
-    anonymous_uid: cdktf.numberToTerraform(struct!.anonymousUid),
-    filter: cdktf.stringToTerraform(struct!.filter),
-    root_squash_enabled: cdktf.booleanToTerraform(struct!.rootSquashEnabled),
-    scope: cdktf.stringToTerraform(struct!.scope),
-    submount_access_enabled: cdktf.booleanToTerraform(struct!.submountAccessEnabled),
-    suid_enabled: cdktf.booleanToTerraform(struct!.suidEnabled),
+    access: cdktn.stringToTerraform(struct!.access),
+    anonymous_gid: cdktn.numberToTerraform(struct!.anonymousGid),
+    anonymous_uid: cdktn.numberToTerraform(struct!.anonymousUid),
+    filter: cdktn.stringToTerraform(struct!.filter),
+    root_squash_enabled: cdktn.booleanToTerraform(struct!.rootSquashEnabled),
+    scope: cdktn.stringToTerraform(struct!.scope),
+    submount_access_enabled: cdktn.booleanToTerraform(struct!.submountAccessEnabled),
+    suid_enabled: cdktn.booleanToTerraform(struct!.suidEnabled),
   }
 }
 
 
-export function hpcCacheDefaultAccessPolicyAccessRuleToHclTerraform(struct?: HpcCacheDefaultAccessPolicyAccessRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hpcCacheDefaultAccessPolicyAccessRuleToHclTerraform(struct?: HpcCacheDefaultAccessPolicyAccessRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access: {
-      value: cdktf.stringToHclTerraform(struct!.access),
+      value: cdktn.stringToHclTerraform(struct!.access),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     anonymous_gid: {
-      value: cdktf.numberToHclTerraform(struct!.anonymousGid),
+      value: cdktn.numberToHclTerraform(struct!.anonymousGid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     anonymous_uid: {
-      value: cdktf.numberToHclTerraform(struct!.anonymousUid),
+      value: cdktn.numberToHclTerraform(struct!.anonymousUid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     filter: {
-      value: cdktf.stringToHclTerraform(struct!.filter),
+      value: cdktn.stringToHclTerraform(struct!.filter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_squash_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.rootSquashEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.rootSquashEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     submount_access_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.submountAccessEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.submountAccessEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     suid_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.suidEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.suidEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -219,9 +219,9 @@ export function hpcCacheDefaultAccessPolicyAccessRuleToHclTerraform(struct?: Hpc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HpcCacheDefaultAccessPolicyAccessRuleOutputReference extends cdktf.ComplexObject {
+export class HpcCacheDefaultAccessPolicyAccessRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -229,11 +229,11 @@ export class HpcCacheDefaultAccessPolicyAccessRuleOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): HpcCacheDefaultAccessPolicyAccessRule | cdktf.IResolvable | undefined {
+  public get internalValue(): HpcCacheDefaultAccessPolicyAccessRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -274,7 +274,7 @@ export class HpcCacheDefaultAccessPolicyAccessRuleOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: HpcCacheDefaultAccessPolicyAccessRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: HpcCacheDefaultAccessPolicyAccessRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -287,7 +287,7 @@ export class HpcCacheDefaultAccessPolicyAccessRuleOutputReference extends cdktf.
       this._submountAccessEnabled = undefined;
       this._suidEnabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -367,11 +367,11 @@ export class HpcCacheDefaultAccessPolicyAccessRuleOutputReference extends cdktf.
   }
 
   // root_squash_enabled - computed: false, optional: true, required: false
-  private _rootSquashEnabled?: boolean | cdktf.IResolvable; 
+  private _rootSquashEnabled?: boolean | cdktn.IResolvable; 
   public get rootSquashEnabled() {
     return this.getBooleanAttribute('root_squash_enabled');
   }
-  public set rootSquashEnabled(value: boolean | cdktf.IResolvable) {
+  public set rootSquashEnabled(value: boolean | cdktn.IResolvable) {
     this._rootSquashEnabled = value;
   }
   public resetRootSquashEnabled() {
@@ -396,11 +396,11 @@ export class HpcCacheDefaultAccessPolicyAccessRuleOutputReference extends cdktf.
   }
 
   // submount_access_enabled - computed: false, optional: true, required: false
-  private _submountAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _submountAccessEnabled?: boolean | cdktn.IResolvable; 
   public get submountAccessEnabled() {
     return this.getBooleanAttribute('submount_access_enabled');
   }
-  public set submountAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set submountAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._submountAccessEnabled = value;
   }
   public resetSubmountAccessEnabled() {
@@ -412,11 +412,11 @@ export class HpcCacheDefaultAccessPolicyAccessRuleOutputReference extends cdktf.
   }
 
   // suid_enabled - computed: false, optional: true, required: false
-  private _suidEnabled?: boolean | cdktf.IResolvable; 
+  private _suidEnabled?: boolean | cdktn.IResolvable; 
   public get suidEnabled() {
     return this.getBooleanAttribute('suid_enabled');
   }
-  public set suidEnabled(value: boolean | cdktf.IResolvable) {
+  public set suidEnabled(value: boolean | cdktn.IResolvable) {
     this._suidEnabled = value;
   }
   public resetSuidEnabled() {
@@ -428,15 +428,15 @@ export class HpcCacheDefaultAccessPolicyAccessRuleOutputReference extends cdktf.
   }
 }
 
-export class HpcCacheDefaultAccessPolicyAccessRuleList extends cdktf.ComplexList {
-  public internalValue? : HpcCacheDefaultAccessPolicyAccessRule[] | cdktf.IResolvable
+export class HpcCacheDefaultAccessPolicyAccessRuleList extends cdktn.ComplexList {
+  public internalValue? : HpcCacheDefaultAccessPolicyAccessRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -453,28 +453,28 @@ export interface HpcCacheDefaultAccessPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache#access_rule HpcCache#access_rule}
   */
-  readonly accessRule: HpcCacheDefaultAccessPolicyAccessRule[] | cdktf.IResolvable;
+  readonly accessRule: HpcCacheDefaultAccessPolicyAccessRule[] | cdktn.IResolvable;
 }
 
 export function hpcCacheDefaultAccessPolicyToTerraform(struct?: HpcCacheDefaultAccessPolicyOutputReference | HpcCacheDefaultAccessPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_rule: cdktf.listMapper(hpcCacheDefaultAccessPolicyAccessRuleToTerraform, true)(struct!.accessRule),
+    access_rule: cdktn.listMapper(hpcCacheDefaultAccessPolicyAccessRuleToTerraform, true)(struct!.accessRule),
   }
 }
 
 
 export function hpcCacheDefaultAccessPolicyToHclTerraform(struct?: HpcCacheDefaultAccessPolicyOutputReference | HpcCacheDefaultAccessPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_rule: {
-      value: cdktf.listMapperHcl(hpcCacheDefaultAccessPolicyAccessRuleToHclTerraform, true)(struct!.accessRule),
+      value: cdktn.listMapperHcl(hpcCacheDefaultAccessPolicyAccessRuleToHclTerraform, true)(struct!.accessRule),
       isBlock: true,
       type: "set",
       storageClassType: "HpcCacheDefaultAccessPolicyAccessRuleList",
@@ -485,14 +485,14 @@ export function hpcCacheDefaultAccessPolicyToHclTerraform(struct?: HpcCacheDefau
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HpcCacheDefaultAccessPolicyOutputReference extends cdktf.ComplexObject {
+export class HpcCacheDefaultAccessPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -522,7 +522,7 @@ export class HpcCacheDefaultAccessPolicyOutputReference extends cdktf.ComplexObj
   public get accessRule() {
     return this._accessRule;
   }
-  public putAccessRule(value: HpcCacheDefaultAccessPolicyAccessRule[] | cdktf.IResolvable) {
+  public putAccessRule(value: HpcCacheDefaultAccessPolicyAccessRule[] | cdktn.IResolvable) {
     this._accessRule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -562,66 +562,66 @@ export interface HpcCacheDirectoryActiveDirectory {
 }
 
 export function hpcCacheDirectoryActiveDirectoryToTerraform(struct?: HpcCacheDirectoryActiveDirectoryOutputReference | HpcCacheDirectoryActiveDirectory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cache_netbios_name: cdktf.stringToTerraform(struct!.cacheNetbiosName),
-    dns_primary_ip: cdktf.stringToTerraform(struct!.dnsPrimaryIp),
-    dns_secondary_ip: cdktf.stringToTerraform(struct!.dnsSecondaryIp),
-    domain_name: cdktf.stringToTerraform(struct!.domainName),
-    domain_netbios_name: cdktf.stringToTerraform(struct!.domainNetbiosName),
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    cache_netbios_name: cdktn.stringToTerraform(struct!.cacheNetbiosName),
+    dns_primary_ip: cdktn.stringToTerraform(struct!.dnsPrimaryIp),
+    dns_secondary_ip: cdktn.stringToTerraform(struct!.dnsSecondaryIp),
+    domain_name: cdktn.stringToTerraform(struct!.domainName),
+    domain_netbios_name: cdktn.stringToTerraform(struct!.domainNetbiosName),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function hpcCacheDirectoryActiveDirectoryToHclTerraform(struct?: HpcCacheDirectoryActiveDirectoryOutputReference | HpcCacheDirectoryActiveDirectory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cache_netbios_name: {
-      value: cdktf.stringToHclTerraform(struct!.cacheNetbiosName),
+      value: cdktn.stringToHclTerraform(struct!.cacheNetbiosName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dns_primary_ip: {
-      value: cdktf.stringToHclTerraform(struct!.dnsPrimaryIp),
+      value: cdktn.stringToHclTerraform(struct!.dnsPrimaryIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dns_secondary_ip: {
-      value: cdktf.stringToHclTerraform(struct!.dnsSecondaryIp),
+      value: cdktn.stringToHclTerraform(struct!.dnsSecondaryIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     domain_name: {
-      value: cdktf.stringToHclTerraform(struct!.domainName),
+      value: cdktn.stringToHclTerraform(struct!.domainName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     domain_netbios_name: {
-      value: cdktf.stringToHclTerraform(struct!.domainNetbiosName),
+      value: cdktn.stringToHclTerraform(struct!.domainNetbiosName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -632,14 +632,14 @@ export function hpcCacheDirectoryActiveDirectoryToHclTerraform(struct?: HpcCache
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HpcCacheDirectoryActiveDirectoryOutputReference extends cdktf.ComplexObject {
+export class HpcCacheDirectoryActiveDirectoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -806,31 +806,31 @@ export interface HpcCacheDirectoryFlatFile {
 }
 
 export function hpcCacheDirectoryFlatFileToTerraform(struct?: HpcCacheDirectoryFlatFileOutputReference | HpcCacheDirectoryFlatFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_file_uri: cdktf.stringToTerraform(struct!.groupFileUri),
-    password_file_uri: cdktf.stringToTerraform(struct!.passwordFileUri),
+    group_file_uri: cdktn.stringToTerraform(struct!.groupFileUri),
+    password_file_uri: cdktn.stringToTerraform(struct!.passwordFileUri),
   }
 }
 
 
 export function hpcCacheDirectoryFlatFileToHclTerraform(struct?: HpcCacheDirectoryFlatFileOutputReference | HpcCacheDirectoryFlatFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group_file_uri: {
-      value: cdktf.stringToHclTerraform(struct!.groupFileUri),
+      value: cdktn.stringToHclTerraform(struct!.groupFileUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_file_uri: {
-      value: cdktf.stringToHclTerraform(struct!.passwordFileUri),
+      value: cdktn.stringToHclTerraform(struct!.passwordFileUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -841,14 +841,14 @@ export function hpcCacheDirectoryFlatFileToHclTerraform(struct?: HpcCacheDirecto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HpcCacheDirectoryFlatFileOutputReference extends cdktf.ComplexObject {
+export class HpcCacheDirectoryFlatFileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -917,31 +917,31 @@ export interface HpcCacheDirectoryLdapBind {
 }
 
 export function hpcCacheDirectoryLdapBindToTerraform(struct?: HpcCacheDirectoryLdapBindOutputReference | HpcCacheDirectoryLdapBind): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dn: cdktf.stringToTerraform(struct!.dn),
-    password: cdktf.stringToTerraform(struct!.password),
+    dn: cdktn.stringToTerraform(struct!.dn),
+    password: cdktn.stringToTerraform(struct!.password),
   }
 }
 
 
 export function hpcCacheDirectoryLdapBindToHclTerraform(struct?: HpcCacheDirectoryLdapBindOutputReference | HpcCacheDirectoryLdapBind): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dn: {
-      value: cdktf.stringToHclTerraform(struct!.dn),
+      value: cdktn.stringToHclTerraform(struct!.dn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -952,14 +952,14 @@ export function hpcCacheDirectoryLdapBindToHclTerraform(struct?: HpcCacheDirecto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HpcCacheDirectoryLdapBindOutputReference extends cdktf.ComplexObject {
+export class HpcCacheDirectoryLdapBindOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1028,11 +1028,11 @@ export interface HpcCacheDirectoryLdap {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache#download_certificate_automatically HpcCache#download_certificate_automatically}
   */
-  readonly downloadCertificateAutomatically?: boolean | cdktf.IResolvable;
+  readonly downloadCertificateAutomatically?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache#encrypted HpcCache#encrypted}
   */
-  readonly encrypted?: boolean | cdktf.IResolvable;
+  readonly encrypted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache#server HpcCache#server}
   */
@@ -1046,53 +1046,53 @@ export interface HpcCacheDirectoryLdap {
 }
 
 export function hpcCacheDirectoryLdapToTerraform(struct?: HpcCacheDirectoryLdapOutputReference | HpcCacheDirectoryLdap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    base_dn: cdktf.stringToTerraform(struct!.baseDn),
-    certificate_validation_uri: cdktf.stringToTerraform(struct!.certificateValidationUri),
-    download_certificate_automatically: cdktf.booleanToTerraform(struct!.downloadCertificateAutomatically),
-    encrypted: cdktf.booleanToTerraform(struct!.encrypted),
-    server: cdktf.stringToTerraform(struct!.server),
+    base_dn: cdktn.stringToTerraform(struct!.baseDn),
+    certificate_validation_uri: cdktn.stringToTerraform(struct!.certificateValidationUri),
+    download_certificate_automatically: cdktn.booleanToTerraform(struct!.downloadCertificateAutomatically),
+    encrypted: cdktn.booleanToTerraform(struct!.encrypted),
+    server: cdktn.stringToTerraform(struct!.server),
     bind: hpcCacheDirectoryLdapBindToTerraform(struct!.bind),
   }
 }
 
 
 export function hpcCacheDirectoryLdapToHclTerraform(struct?: HpcCacheDirectoryLdapOutputReference | HpcCacheDirectoryLdap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     base_dn: {
-      value: cdktf.stringToHclTerraform(struct!.baseDn),
+      value: cdktn.stringToHclTerraform(struct!.baseDn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate_validation_uri: {
-      value: cdktf.stringToHclTerraform(struct!.certificateValidationUri),
+      value: cdktn.stringToHclTerraform(struct!.certificateValidationUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     download_certificate_automatically: {
-      value: cdktf.booleanToHclTerraform(struct!.downloadCertificateAutomatically),
+      value: cdktn.booleanToHclTerraform(struct!.downloadCertificateAutomatically),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encrypted: {
-      value: cdktf.booleanToHclTerraform(struct!.encrypted),
+      value: cdktn.booleanToHclTerraform(struct!.encrypted),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     server: {
-      value: cdktf.stringToHclTerraform(struct!.server),
+      value: cdktn.stringToHclTerraform(struct!.server),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1109,14 +1109,14 @@ export function hpcCacheDirectoryLdapToHclTerraform(struct?: HpcCacheDirectoryLd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HpcCacheDirectoryLdapOutputReference extends cdktf.ComplexObject {
+export class HpcCacheDirectoryLdapOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1201,11 +1201,11 @@ export class HpcCacheDirectoryLdapOutputReference extends cdktf.ComplexObject {
   }
 
   // download_certificate_automatically - computed: false, optional: true, required: false
-  private _downloadCertificateAutomatically?: boolean | cdktf.IResolvable; 
+  private _downloadCertificateAutomatically?: boolean | cdktn.IResolvable; 
   public get downloadCertificateAutomatically() {
     return this.getBooleanAttribute('download_certificate_automatically');
   }
-  public set downloadCertificateAutomatically(value: boolean | cdktf.IResolvable) {
+  public set downloadCertificateAutomatically(value: boolean | cdktn.IResolvable) {
     this._downloadCertificateAutomatically = value;
   }
   public resetDownloadCertificateAutomatically() {
@@ -1217,11 +1217,11 @@ export class HpcCacheDirectoryLdapOutputReference extends cdktf.ComplexObject {
   }
 
   // encrypted - computed: false, optional: true, required: false
-  private _encrypted?: boolean | cdktf.IResolvable; 
+  private _encrypted?: boolean | cdktn.IResolvable; 
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
-  public set encrypted(value: boolean | cdktf.IResolvable) {
+  public set encrypted(value: boolean | cdktn.IResolvable) {
     this._encrypted = value;
   }
   public resetEncrypted() {
@@ -1273,31 +1273,31 @@ export interface HpcCacheDns {
 }
 
 export function hpcCacheDnsToTerraform(struct?: HpcCacheDnsOutputReference | HpcCacheDns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    search_domain: cdktf.stringToTerraform(struct!.searchDomain),
-    servers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.servers),
+    search_domain: cdktn.stringToTerraform(struct!.searchDomain),
+    servers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.servers),
   }
 }
 
 
 export function hpcCacheDnsToHclTerraform(struct?: HpcCacheDnsOutputReference | HpcCacheDns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     search_domain: {
-      value: cdktf.stringToHclTerraform(struct!.searchDomain),
+      value: cdktn.stringToHclTerraform(struct!.searchDomain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     servers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.servers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.servers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1308,14 +1308,14 @@ export function hpcCacheDnsToHclTerraform(struct?: HpcCacheDnsOutputReference | 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HpcCacheDnsOutputReference extends cdktf.ComplexObject {
+export class HpcCacheDnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1387,31 +1387,31 @@ export interface HpcCacheIdentity {
 }
 
 export function hpcCacheIdentityToTerraform(struct?: HpcCacheIdentityOutputReference | HpcCacheIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function hpcCacheIdentityToHclTerraform(struct?: HpcCacheIdentityOutputReference | HpcCacheIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1422,14 +1422,14 @@ export function hpcCacheIdentityToHclTerraform(struct?: HpcCacheIdentityOutputRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HpcCacheIdentityOutputReference extends cdktf.ComplexObject {
+export class HpcCacheIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1463,7 +1463,7 @@ export class HpcCacheIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -1518,46 +1518,46 @@ export interface HpcCacheTimeouts {
   readonly update?: string;
 }
 
-export function hpcCacheTimeoutsToTerraform(struct?: HpcCacheTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hpcCacheTimeoutsToTerraform(struct?: HpcCacheTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function hpcCacheTimeoutsToHclTerraform(struct?: HpcCacheTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hpcCacheTimeoutsToHclTerraform(struct?: HpcCacheTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1568,19 +1568,19 @@ export function hpcCacheTimeoutsToHclTerraform(struct?: HpcCacheTimeouts | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HpcCacheTimeoutsOutputReference extends cdktf.ComplexObject {
+export class HpcCacheTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): HpcCacheTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): HpcCacheTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1605,7 +1605,7 @@ export class HpcCacheTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: HpcCacheTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: HpcCacheTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1614,7 +1614,7 @@ export class HpcCacheTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1696,7 +1696,7 @@ export class HpcCacheTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache azurerm_hpc_cache}
 */
-export class HpcCache extends cdktf.TerraformResource {
+export class HpcCache extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1707,14 +1707,14 @@ export class HpcCache extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a HpcCache resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a HpcCache resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HpcCache to import
   * @param importFromId The id of the existing HpcCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HpcCache to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_hpc_cache", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_hpc_cache", importId: importFromId, provider });
       }
 
   // ===========
@@ -1770,11 +1770,11 @@ export class HpcCache extends cdktf.TerraformResource {
   // ==========
 
   // automatically_rotate_key_to_latest_enabled - computed: false, optional: true, required: false
-  private _automaticallyRotateKeyToLatestEnabled?: boolean | cdktf.IResolvable; 
+  private _automaticallyRotateKeyToLatestEnabled?: boolean | cdktn.IResolvable; 
   public get automaticallyRotateKeyToLatestEnabled() {
     return this.getBooleanAttribute('automatically_rotate_key_to_latest_enabled');
   }
-  public set automaticallyRotateKeyToLatestEnabled(value: boolean | cdktf.IResolvable) {
+  public set automaticallyRotateKeyToLatestEnabled(value: boolean | cdktn.IResolvable) {
     this._automaticallyRotateKeyToLatestEnabled = value;
   }
   public resetAutomaticallyRotateKeyToLatestEnabled() {
@@ -2066,18 +2066,18 @@ export class HpcCache extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      automatically_rotate_key_to_latest_enabled: cdktf.booleanToTerraform(this._automaticallyRotateKeyToLatestEnabled),
-      cache_size_in_gb: cdktf.numberToTerraform(this._cacheSizeInGb),
-      id: cdktf.stringToTerraform(this._id),
-      key_vault_key_id: cdktf.stringToTerraform(this._keyVaultKeyId),
-      location: cdktf.stringToTerraform(this._location),
-      mtu: cdktf.numberToTerraform(this._mtu),
-      name: cdktf.stringToTerraform(this._name),
-      ntp_server: cdktf.stringToTerraform(this._ntpServer),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku_name: cdktf.stringToTerraform(this._skuName),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      automatically_rotate_key_to_latest_enabled: cdktn.booleanToTerraform(this._automaticallyRotateKeyToLatestEnabled),
+      cache_size_in_gb: cdktn.numberToTerraform(this._cacheSizeInGb),
+      id: cdktn.stringToTerraform(this._id),
+      key_vault_key_id: cdktn.stringToTerraform(this._keyVaultKeyId),
+      location: cdktn.stringToTerraform(this._location),
+      mtu: cdktn.numberToTerraform(this._mtu),
+      name: cdktn.stringToTerraform(this._name),
+      ntp_server: cdktn.stringToTerraform(this._ntpServer),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku_name: cdktn.stringToTerraform(this._skuName),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       default_access_policy: hpcCacheDefaultAccessPolicyToTerraform(this._defaultAccessPolicy.internalValue),
       directory_active_directory: hpcCacheDirectoryActiveDirectoryToTerraform(this._directoryActiveDirectory.internalValue),
       directory_flat_file: hpcCacheDirectoryFlatFileToTerraform(this._directoryFlatFile.internalValue),
@@ -2091,73 +2091,73 @@ export class HpcCache extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       automatically_rotate_key_to_latest_enabled: {
-        value: cdktf.booleanToHclTerraform(this._automaticallyRotateKeyToLatestEnabled),
+        value: cdktn.booleanToHclTerraform(this._automaticallyRotateKeyToLatestEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cache_size_in_gb: {
-        value: cdktf.numberToHclTerraform(this._cacheSizeInGb),
+        value: cdktn.numberToHclTerraform(this._cacheSizeInGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_vault_key_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultKeyId),
+        value: cdktn.stringToHclTerraform(this._keyVaultKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mtu: {
-        value: cdktf.numberToHclTerraform(this._mtu),
+        value: cdktn.numberToHclTerraform(this._mtu),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ntp_server: {
-        value: cdktf.stringToHclTerraform(this._ntpServer),
+        value: cdktn.stringToHclTerraform(this._ntpServer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku_name: {
-        value: cdktf.stringToHclTerraform(this._skuName),
+        value: cdktn.stringToHclTerraform(this._skuName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

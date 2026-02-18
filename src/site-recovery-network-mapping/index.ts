@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SiteRecoveryNetworkMappingConfig extends cdktf.TerraformMetaArguments {
+export interface SiteRecoveryNetworkMappingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_network_mapping#id SiteRecoveryNetworkMapping#id}
   *
@@ -69,39 +69,39 @@ export interface SiteRecoveryNetworkMappingTimeouts {
   readonly read?: string;
 }
 
-export function siteRecoveryNetworkMappingTimeoutsToTerraform(struct?: SiteRecoveryNetworkMappingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryNetworkMappingTimeoutsToTerraform(struct?: SiteRecoveryNetworkMappingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function siteRecoveryNetworkMappingTimeoutsToHclTerraform(struct?: SiteRecoveryNetworkMappingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryNetworkMappingTimeoutsToHclTerraform(struct?: SiteRecoveryNetworkMappingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -112,19 +112,19 @@ export function siteRecoveryNetworkMappingTimeoutsToHclTerraform(struct?: SiteRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryNetworkMappingTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryNetworkMappingTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SiteRecoveryNetworkMappingTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryNetworkMappingTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -145,7 +145,7 @@ export class SiteRecoveryNetworkMappingTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryNetworkMappingTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryNetworkMappingTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -153,7 +153,7 @@ export class SiteRecoveryNetworkMappingTimeoutsOutputReference extends cdktf.Com
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -218,7 +218,7 @@ export class SiteRecoveryNetworkMappingTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_network_mapping azurerm_site_recovery_network_mapping}
 */
-export class SiteRecoveryNetworkMapping extends cdktf.TerraformResource {
+export class SiteRecoveryNetworkMapping extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -229,14 +229,14 @@ export class SiteRecoveryNetworkMapping extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SiteRecoveryNetworkMapping resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SiteRecoveryNetworkMapping resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SiteRecoveryNetworkMapping to import
   * @param importFromId The id of the existing SiteRecoveryNetworkMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_network_mapping#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SiteRecoveryNetworkMapping to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_site_recovery_network_mapping", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_site_recovery_network_mapping", importId: importFromId, provider });
       }
 
   // ===========
@@ -410,14 +410,14 @@ export class SiteRecoveryNetworkMapping extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      recovery_vault_name: cdktf.stringToTerraform(this._recoveryVaultName),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      source_network_id: cdktf.stringToTerraform(this._sourceNetworkId),
-      source_recovery_fabric_name: cdktf.stringToTerraform(this._sourceRecoveryFabricName),
-      target_network_id: cdktf.stringToTerraform(this._targetNetworkId),
-      target_recovery_fabric_name: cdktf.stringToTerraform(this._targetRecoveryFabricName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      recovery_vault_name: cdktn.stringToTerraform(this._recoveryVaultName),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      source_network_id: cdktn.stringToTerraform(this._sourceNetworkId),
+      source_recovery_fabric_name: cdktn.stringToTerraform(this._sourceRecoveryFabricName),
+      target_network_id: cdktn.stringToTerraform(this._targetNetworkId),
+      target_recovery_fabric_name: cdktn.stringToTerraform(this._targetRecoveryFabricName),
       timeouts: siteRecoveryNetworkMappingTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -425,49 +425,49 @@ export class SiteRecoveryNetworkMapping extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_vault_name: {
-        value: cdktf.stringToHclTerraform(this._recoveryVaultName),
+        value: cdktn.stringToHclTerraform(this._recoveryVaultName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_network_id: {
-        value: cdktf.stringToHclTerraform(this._sourceNetworkId),
+        value: cdktn.stringToHclTerraform(this._sourceNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_recovery_fabric_name: {
-        value: cdktf.stringToHclTerraform(this._sourceRecoveryFabricName),
+        value: cdktn.stringToHclTerraform(this._sourceRecoveryFabricName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_network_id: {
-        value: cdktf.stringToHclTerraform(this._targetNetworkId),
+        value: cdktn.stringToHclTerraform(this._targetNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_recovery_fabric_name: {
-        value: cdktf.stringToHclTerraform(this._targetRecoveryFabricName),
+        value: cdktn.stringToHclTerraform(this._targetRecoveryFabricName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

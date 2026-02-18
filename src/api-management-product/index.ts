@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiManagementProductConfig extends cdktf.TerraformMetaArguments {
+export interface ApiManagementProductConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_product#api_management_name ApiManagementProduct#api_management_name}
   */
@@ -19,7 +19,7 @@ export interface ApiManagementProductConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_product#approval_required ApiManagementProduct#approval_required}
   */
-  readonly approvalRequired?: boolean | cdktf.IResolvable;
+  readonly approvalRequired?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_product#description ApiManagementProduct#description}
   */
@@ -42,7 +42,7 @@ export interface ApiManagementProductConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_product#published ApiManagementProduct#published}
   */
-  readonly published: boolean | cdktf.IResolvable;
+  readonly published: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_product#resource_group_name ApiManagementProduct#resource_group_name}
   */
@@ -50,7 +50,7 @@ export interface ApiManagementProductConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_product#subscription_required ApiManagementProduct#subscription_required}
   */
-  readonly subscriptionRequired?: boolean | cdktf.IResolvable;
+  readonly subscriptionRequired?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_product#subscriptions_limit ApiManagementProduct#subscriptions_limit}
   */
@@ -85,46 +85,46 @@ export interface ApiManagementProductTimeouts {
   readonly update?: string;
 }
 
-export function apiManagementProductTimeoutsToTerraform(struct?: ApiManagementProductTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementProductTimeoutsToTerraform(struct?: ApiManagementProductTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apiManagementProductTimeoutsToHclTerraform(struct?: ApiManagementProductTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementProductTimeoutsToHclTerraform(struct?: ApiManagementProductTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,19 +135,19 @@ export function apiManagementProductTimeoutsToHclTerraform(struct?: ApiManagemen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementProductTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApiManagementProductTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApiManagementProductTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementProductTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,7 +172,7 @@ export class ApiManagementProductTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementProductTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementProductTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -181,7 +181,7 @@ export class ApiManagementProductTimeoutsOutputReference extends cdktf.ComplexOb
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -263,7 +263,7 @@ export class ApiManagementProductTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_product azurerm_api_management_product}
 */
-export class ApiManagementProduct extends cdktf.TerraformResource {
+export class ApiManagementProduct extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -274,14 +274,14 @@ export class ApiManagementProduct extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiManagementProduct resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiManagementProduct resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementProduct to import
   * @param importFromId The id of the existing ApiManagementProduct that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_product#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementProduct to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_product", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_product", importId: importFromId, provider });
       }
 
   // ===========
@@ -343,11 +343,11 @@ export class ApiManagementProduct extends cdktf.TerraformResource {
   }
 
   // approval_required - computed: false, optional: true, required: false
-  private _approvalRequired?: boolean | cdktf.IResolvable; 
+  private _approvalRequired?: boolean | cdktn.IResolvable; 
   public get approvalRequired() {
     return this.getBooleanAttribute('approval_required');
   }
-  public set approvalRequired(value: boolean | cdktf.IResolvable) {
+  public set approvalRequired(value: boolean | cdktn.IResolvable) {
     this._approvalRequired = value;
   }
   public resetApprovalRequired() {
@@ -417,11 +417,11 @@ export class ApiManagementProduct extends cdktf.TerraformResource {
   }
 
   // published - computed: false, optional: false, required: true
-  private _published?: boolean | cdktf.IResolvable; 
+  private _published?: boolean | cdktn.IResolvable; 
   public get published() {
     return this.getBooleanAttribute('published');
   }
-  public set published(value: boolean | cdktf.IResolvable) {
+  public set published(value: boolean | cdktn.IResolvable) {
     this._published = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -443,11 +443,11 @@ export class ApiManagementProduct extends cdktf.TerraformResource {
   }
 
   // subscription_required - computed: false, optional: true, required: false
-  private _subscriptionRequired?: boolean | cdktf.IResolvable; 
+  private _subscriptionRequired?: boolean | cdktn.IResolvable; 
   public get subscriptionRequired() {
     return this.getBooleanAttribute('subscription_required');
   }
-  public set subscriptionRequired(value: boolean | cdktf.IResolvable) {
+  public set subscriptionRequired(value: boolean | cdktn.IResolvable) {
     this._subscriptionRequired = value;
   }
   public resetSubscriptionRequired() {
@@ -512,17 +512,17 @@ export class ApiManagementProduct extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_management_name: cdktf.stringToTerraform(this._apiManagementName),
-      approval_required: cdktf.booleanToTerraform(this._approvalRequired),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      product_id: cdktf.stringToTerraform(this._productId),
-      published: cdktf.booleanToTerraform(this._published),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      subscription_required: cdktf.booleanToTerraform(this._subscriptionRequired),
-      subscriptions_limit: cdktf.numberToTerraform(this._subscriptionsLimit),
-      terms: cdktf.stringToTerraform(this._terms),
+      api_management_name: cdktn.stringToTerraform(this._apiManagementName),
+      approval_required: cdktn.booleanToTerraform(this._approvalRequired),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      product_id: cdktn.stringToTerraform(this._productId),
+      published: cdktn.booleanToTerraform(this._published),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      subscription_required: cdktn.booleanToTerraform(this._subscriptionRequired),
+      subscriptions_limit: cdktn.numberToTerraform(this._subscriptionsLimit),
+      terms: cdktn.stringToTerraform(this._terms),
       timeouts: apiManagementProductTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -530,67 +530,67 @@ export class ApiManagementProduct extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_management_name: {
-        value: cdktf.stringToHclTerraform(this._apiManagementName),
+        value: cdktn.stringToHclTerraform(this._apiManagementName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       approval_required: {
-        value: cdktf.booleanToHclTerraform(this._approvalRequired),
+        value: cdktn.booleanToHclTerraform(this._approvalRequired),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       product_id: {
-        value: cdktf.stringToHclTerraform(this._productId),
+        value: cdktn.stringToHclTerraform(this._productId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       published: {
-        value: cdktf.booleanToHclTerraform(this._published),
+        value: cdktn.booleanToHclTerraform(this._published),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subscription_required: {
-        value: cdktf.booleanToHclTerraform(this._subscriptionRequired),
+        value: cdktn.booleanToHclTerraform(this._subscriptionRequired),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       subscriptions_limit: {
-        value: cdktf.numberToHclTerraform(this._subscriptionsLimit),
+        value: cdktn.numberToHclTerraform(this._subscriptionsLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       terms: {
-        value: cdktf.stringToHclTerraform(this._terms),
+        value: cdktn.stringToHclTerraform(this._terms),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

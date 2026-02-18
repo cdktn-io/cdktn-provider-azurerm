@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageAccountQueuePropertiesAConfig extends cdktf.TerraformMetaArguments {
+export interface StorageAccountQueuePropertiesAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_queue_properties#id StorageAccountQueuePropertiesA#id}
   *
@@ -28,7 +28,7 @@ export interface StorageAccountQueuePropertiesAConfig extends cdktf.TerraformMet
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_queue_properties#cors_rule StorageAccountQueuePropertiesA#cors_rule}
   */
-  readonly corsRule?: StorageAccountQueuePropertiesCorsRuleA[] | cdktf.IResolvable;
+  readonly corsRule?: StorageAccountQueuePropertiesCorsRuleA[] | cdktn.IResolvable;
   /**
   * hour_metrics block
   *
@@ -77,53 +77,53 @@ export interface StorageAccountQueuePropertiesCorsRuleA {
   readonly maxAgeInSeconds: number;
 }
 
-export function storageAccountQueuePropertiesCorsRuleAToTerraform(struct?: StorageAccountQueuePropertiesCorsRuleA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageAccountQueuePropertiesCorsRuleAToTerraform(struct?: StorageAccountQueuePropertiesCorsRuleA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedHeaders),
-    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedMethods),
-    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedOrigins),
-    exposed_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposedHeaders),
-    max_age_in_seconds: cdktf.numberToTerraform(struct!.maxAgeInSeconds),
+    allowed_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedHeaders),
+    allowed_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedMethods),
+    allowed_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedOrigins),
+    exposed_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exposedHeaders),
+    max_age_in_seconds: cdktn.numberToTerraform(struct!.maxAgeInSeconds),
   }
 }
 
 
-export function storageAccountQueuePropertiesCorsRuleAToHclTerraform(struct?: StorageAccountQueuePropertiesCorsRuleA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageAccountQueuePropertiesCorsRuleAToHclTerraform(struct?: StorageAccountQueuePropertiesCorsRuleA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allowed_methods: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedMethods),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedMethods),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allowed_origins: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedOrigins),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedOrigins),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     exposed_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exposedHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exposedHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     max_age_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.maxAgeInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.maxAgeInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -134,9 +134,9 @@ export function storageAccountQueuePropertiesCorsRuleAToHclTerraform(struct?: St
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageAccountQueuePropertiesCorsRuleAOutputReference extends cdktf.ComplexObject {
+export class StorageAccountQueuePropertiesCorsRuleAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -144,11 +144,11 @@ export class StorageAccountQueuePropertiesCorsRuleAOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): StorageAccountQueuePropertiesCorsRuleA | cdktf.IResolvable | undefined {
+  public get internalValue(): StorageAccountQueuePropertiesCorsRuleA | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -177,7 +177,7 @@ export class StorageAccountQueuePropertiesCorsRuleAOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageAccountQueuePropertiesCorsRuleA | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StorageAccountQueuePropertiesCorsRuleA | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -187,7 +187,7 @@ export class StorageAccountQueuePropertiesCorsRuleAOutputReference extends cdktf
       this._exposedHeaders = undefined;
       this._maxAgeInSeconds = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -268,15 +268,15 @@ export class StorageAccountQueuePropertiesCorsRuleAOutputReference extends cdktf
   }
 }
 
-export class StorageAccountQueuePropertiesCorsRuleAList extends cdktf.ComplexList {
-  public internalValue? : StorageAccountQueuePropertiesCorsRuleA[] | cdktf.IResolvable
+export class StorageAccountQueuePropertiesCorsRuleAList extends cdktn.ComplexList {
+  public internalValue? : StorageAccountQueuePropertiesCorsRuleA[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -291,7 +291,7 @@ export interface StorageAccountQueuePropertiesHourMetricsA {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_queue_properties#include_apis StorageAccountQueuePropertiesA#include_apis}
   */
-  readonly includeApis?: boolean | cdktf.IResolvable;
+  readonly includeApis?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_queue_properties#retention_policy_days StorageAccountQueuePropertiesA#retention_policy_days}
   */
@@ -303,38 +303,38 @@ export interface StorageAccountQueuePropertiesHourMetricsA {
 }
 
 export function storageAccountQueuePropertiesHourMetricsAToTerraform(struct?: StorageAccountQueuePropertiesHourMetricsAOutputReference | StorageAccountQueuePropertiesHourMetricsA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_apis: cdktf.booleanToTerraform(struct!.includeApis),
-    retention_policy_days: cdktf.numberToTerraform(struct!.retentionPolicyDays),
-    version: cdktf.stringToTerraform(struct!.version),
+    include_apis: cdktn.booleanToTerraform(struct!.includeApis),
+    retention_policy_days: cdktn.numberToTerraform(struct!.retentionPolicyDays),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function storageAccountQueuePropertiesHourMetricsAToHclTerraform(struct?: StorageAccountQueuePropertiesHourMetricsAOutputReference | StorageAccountQueuePropertiesHourMetricsA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_apis: {
-      value: cdktf.booleanToHclTerraform(struct!.includeApis),
+      value: cdktn.booleanToHclTerraform(struct!.includeApis),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     retention_policy_days: {
-      value: cdktf.numberToHclTerraform(struct!.retentionPolicyDays),
+      value: cdktn.numberToHclTerraform(struct!.retentionPolicyDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -345,14 +345,14 @@ export function storageAccountQueuePropertiesHourMetricsAToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageAccountQueuePropertiesHourMetricsAOutputReference extends cdktf.ComplexObject {
+export class StorageAccountQueuePropertiesHourMetricsAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -390,11 +390,11 @@ export class StorageAccountQueuePropertiesHourMetricsAOutputReference extends cd
   }
 
   // include_apis - computed: false, optional: true, required: false
-  private _includeApis?: boolean | cdktf.IResolvable; 
+  private _includeApis?: boolean | cdktn.IResolvable; 
   public get includeApis() {
     return this.getBooleanAttribute('include_apis');
   }
-  public set includeApis(value: boolean | cdktf.IResolvable) {
+  public set includeApis(value: boolean | cdktn.IResolvable) {
     this._includeApis = value;
   }
   public resetIncludeApis() {
@@ -438,11 +438,11 @@ export interface StorageAccountQueuePropertiesLoggingA {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_queue_properties#delete StorageAccountQueuePropertiesA#delete}
   */
-  readonly delete: boolean | cdktf.IResolvable;
+  readonly delete: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_queue_properties#read StorageAccountQueuePropertiesA#read}
   */
-  readonly read: boolean | cdktf.IResolvable;
+  readonly read: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_queue_properties#retention_policy_days StorageAccountQueuePropertiesA#retention_policy_days}
   */
@@ -454,56 +454,56 @@ export interface StorageAccountQueuePropertiesLoggingA {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_queue_properties#write StorageAccountQueuePropertiesA#write}
   */
-  readonly write: boolean | cdktf.IResolvable;
+  readonly write: boolean | cdktn.IResolvable;
 }
 
 export function storageAccountQueuePropertiesLoggingAToTerraform(struct?: StorageAccountQueuePropertiesLoggingAOutputReference | StorageAccountQueuePropertiesLoggingA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete: cdktf.booleanToTerraform(struct!.delete),
-    read: cdktf.booleanToTerraform(struct!.read),
-    retention_policy_days: cdktf.numberToTerraform(struct!.retentionPolicyDays),
-    version: cdktf.stringToTerraform(struct!.version),
-    write: cdktf.booleanToTerraform(struct!.write),
+    delete: cdktn.booleanToTerraform(struct!.delete),
+    read: cdktn.booleanToTerraform(struct!.read),
+    retention_policy_days: cdktn.numberToTerraform(struct!.retentionPolicyDays),
+    version: cdktn.stringToTerraform(struct!.version),
+    write: cdktn.booleanToTerraform(struct!.write),
   }
 }
 
 
 export function storageAccountQueuePropertiesLoggingAToHclTerraform(struct?: StorageAccountQueuePropertiesLoggingAOutputReference | StorageAccountQueuePropertiesLoggingA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete: {
-      value: cdktf.booleanToHclTerraform(struct!.delete),
+      value: cdktn.booleanToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     read: {
-      value: cdktf.booleanToHclTerraform(struct!.read),
+      value: cdktn.booleanToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     retention_policy_days: {
-      value: cdktf.numberToHclTerraform(struct!.retentionPolicyDays),
+      value: cdktn.numberToHclTerraform(struct!.retentionPolicyDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     write: {
-      value: cdktf.booleanToHclTerraform(struct!.write),
+      value: cdktn.booleanToHclTerraform(struct!.write),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -514,14 +514,14 @@ export function storageAccountQueuePropertiesLoggingAToHclTerraform(struct?: Sto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageAccountQueuePropertiesLoggingAOutputReference extends cdktf.ComplexObject {
+export class StorageAccountQueuePropertiesLoggingAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -571,11 +571,11 @@ export class StorageAccountQueuePropertiesLoggingAOutputReference extends cdktf.
   }
 
   // delete - computed: false, optional: false, required: true
-  private _delete?: boolean | cdktf.IResolvable; 
+  private _delete?: boolean | cdktn.IResolvable; 
   public get delete() {
     return this.getBooleanAttribute('delete');
   }
-  public set delete(value: boolean | cdktf.IResolvable) {
+  public set delete(value: boolean | cdktn.IResolvable) {
     this._delete = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -584,11 +584,11 @@ export class StorageAccountQueuePropertiesLoggingAOutputReference extends cdktf.
   }
 
   // read - computed: false, optional: false, required: true
-  private _read?: boolean | cdktf.IResolvable; 
+  private _read?: boolean | cdktn.IResolvable; 
   public get read() {
     return this.getBooleanAttribute('read');
   }
-  public set read(value: boolean | cdktf.IResolvable) {
+  public set read(value: boolean | cdktn.IResolvable) {
     this._read = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -626,11 +626,11 @@ export class StorageAccountQueuePropertiesLoggingAOutputReference extends cdktf.
   }
 
   // write - computed: false, optional: false, required: true
-  private _write?: boolean | cdktf.IResolvable; 
+  private _write?: boolean | cdktn.IResolvable; 
   public get write() {
     return this.getBooleanAttribute('write');
   }
-  public set write(value: boolean | cdktf.IResolvable) {
+  public set write(value: boolean | cdktn.IResolvable) {
     this._write = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -642,7 +642,7 @@ export interface StorageAccountQueuePropertiesMinuteMetricsA {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_queue_properties#include_apis StorageAccountQueuePropertiesA#include_apis}
   */
-  readonly includeApis?: boolean | cdktf.IResolvable;
+  readonly includeApis?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_queue_properties#retention_policy_days StorageAccountQueuePropertiesA#retention_policy_days}
   */
@@ -654,38 +654,38 @@ export interface StorageAccountQueuePropertiesMinuteMetricsA {
 }
 
 export function storageAccountQueuePropertiesMinuteMetricsAToTerraform(struct?: StorageAccountQueuePropertiesMinuteMetricsAOutputReference | StorageAccountQueuePropertiesMinuteMetricsA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_apis: cdktf.booleanToTerraform(struct!.includeApis),
-    retention_policy_days: cdktf.numberToTerraform(struct!.retentionPolicyDays),
-    version: cdktf.stringToTerraform(struct!.version),
+    include_apis: cdktn.booleanToTerraform(struct!.includeApis),
+    retention_policy_days: cdktn.numberToTerraform(struct!.retentionPolicyDays),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function storageAccountQueuePropertiesMinuteMetricsAToHclTerraform(struct?: StorageAccountQueuePropertiesMinuteMetricsAOutputReference | StorageAccountQueuePropertiesMinuteMetricsA): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_apis: {
-      value: cdktf.booleanToHclTerraform(struct!.includeApis),
+      value: cdktn.booleanToHclTerraform(struct!.includeApis),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     retention_policy_days: {
-      value: cdktf.numberToHclTerraform(struct!.retentionPolicyDays),
+      value: cdktn.numberToHclTerraform(struct!.retentionPolicyDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -696,14 +696,14 @@ export function storageAccountQueuePropertiesMinuteMetricsAToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageAccountQueuePropertiesMinuteMetricsAOutputReference extends cdktf.ComplexObject {
+export class StorageAccountQueuePropertiesMinuteMetricsAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -741,11 +741,11 @@ export class StorageAccountQueuePropertiesMinuteMetricsAOutputReference extends 
   }
 
   // include_apis - computed: false, optional: true, required: false
-  private _includeApis?: boolean | cdktf.IResolvable; 
+  private _includeApis?: boolean | cdktn.IResolvable; 
   public get includeApis() {
     return this.getBooleanAttribute('include_apis');
   }
-  public set includeApis(value: boolean | cdktf.IResolvable) {
+  public set includeApis(value: boolean | cdktn.IResolvable) {
     this._includeApis = value;
   }
   public resetIncludeApis() {
@@ -804,46 +804,46 @@ export interface StorageAccountQueuePropertiesTimeouts {
   readonly update?: string;
 }
 
-export function storageAccountQueuePropertiesTimeoutsToTerraform(struct?: StorageAccountQueuePropertiesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageAccountQueuePropertiesTimeoutsToTerraform(struct?: StorageAccountQueuePropertiesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function storageAccountQueuePropertiesTimeoutsToHclTerraform(struct?: StorageAccountQueuePropertiesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageAccountQueuePropertiesTimeoutsToHclTerraform(struct?: StorageAccountQueuePropertiesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -854,19 +854,19 @@ export function storageAccountQueuePropertiesTimeoutsToHclTerraform(struct?: Sto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageAccountQueuePropertiesTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StorageAccountQueuePropertiesTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StorageAccountQueuePropertiesTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StorageAccountQueuePropertiesTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -891,7 +891,7 @@ export class StorageAccountQueuePropertiesTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageAccountQueuePropertiesTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StorageAccountQueuePropertiesTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -900,7 +900,7 @@ export class StorageAccountQueuePropertiesTimeoutsOutputReference extends cdktf.
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -982,7 +982,7 @@ export class StorageAccountQueuePropertiesTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_queue_properties azurerm_storage_account_queue_properties}
 */
-export class StorageAccountQueuePropertiesA extends cdktf.TerraformResource {
+export class StorageAccountQueuePropertiesA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -993,14 +993,14 @@ export class StorageAccountQueuePropertiesA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StorageAccountQueuePropertiesA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StorageAccountQueuePropertiesA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageAccountQueuePropertiesA to import
   * @param importFromId The id of the existing StorageAccountQueuePropertiesA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_queue_properties#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageAccountQueuePropertiesA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_account_queue_properties", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_account_queue_properties", importId: importFromId, provider });
       }
 
   // ===========
@@ -1077,7 +1077,7 @@ export class StorageAccountQueuePropertiesA extends cdktf.TerraformResource {
   public get corsRule() {
     return this._corsRule;
   }
-  public putCorsRule(value: StorageAccountQueuePropertiesCorsRuleA[] | cdktf.IResolvable) {
+  public putCorsRule(value: StorageAccountQueuePropertiesCorsRuleA[] | cdktn.IResolvable) {
     this._corsRule.internalValue = value;
   }
   public resetCorsRule() {
@@ -1158,9 +1158,9 @@ export class StorageAccountQueuePropertiesA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      storage_account_id: cdktf.stringToTerraform(this._storageAccountId),
-      cors_rule: cdktf.listMapper(storageAccountQueuePropertiesCorsRuleAToTerraform, true)(this._corsRule.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
+      cors_rule: cdktn.listMapper(storageAccountQueuePropertiesCorsRuleAToTerraform, true)(this._corsRule.internalValue),
       hour_metrics: storageAccountQueuePropertiesHourMetricsAToTerraform(this._hourMetrics.internalValue),
       logging: storageAccountQueuePropertiesLoggingAToTerraform(this._logging.internalValue),
       minute_metrics: storageAccountQueuePropertiesMinuteMetricsAToTerraform(this._minuteMetrics.internalValue),
@@ -1171,19 +1171,19 @@ export class StorageAccountQueuePropertiesA extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountId),
+        value: cdktn.stringToHclTerraform(this._storageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cors_rule: {
-        value: cdktf.listMapperHcl(storageAccountQueuePropertiesCorsRuleAToHclTerraform, true)(this._corsRule.internalValue),
+        value: cdktn.listMapperHcl(storageAccountQueuePropertiesCorsRuleAToHclTerraform, true)(this._corsRule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "StorageAccountQueuePropertiesCorsRuleAList",

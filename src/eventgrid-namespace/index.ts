@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EventgridNamespaceConfig extends cdktf.TerraformMetaArguments {
+export interface EventgridNamespaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_namespace#capacity EventgridNamespace#capacity}
   */
@@ -58,7 +58,7 @@ export interface EventgridNamespaceConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_namespace#inbound_ip_rule EventgridNamespace#inbound_ip_rule}
   */
-  readonly inboundIpRule?: EventgridNamespaceInboundIpRule[] | cdktf.IResolvable;
+  readonly inboundIpRule?: EventgridNamespaceInboundIpRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -70,7 +70,7 @@ export interface EventgridNamespaceConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_namespace#topic_spaces_configuration EventgridNamespace#topic_spaces_configuration}
   */
-  readonly topicSpacesConfiguration?: EventgridNamespaceTopicSpacesConfiguration[] | cdktf.IResolvable;
+  readonly topicSpacesConfiguration?: EventgridNamespaceTopicSpacesConfiguration[] | cdktn.IResolvable;
 }
 export interface EventgridNamespaceIdentity {
   /**
@@ -84,31 +84,31 @@ export interface EventgridNamespaceIdentity {
 }
 
 export function eventgridNamespaceIdentityToTerraform(struct?: EventgridNamespaceIdentityOutputReference | EventgridNamespaceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function eventgridNamespaceIdentityToHclTerraform(struct?: EventgridNamespaceIdentityOutputReference | EventgridNamespaceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,14 +119,14 @@ export function eventgridNamespaceIdentityToHclTerraform(struct?: EventgridNames
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridNamespaceIdentityOutputReference extends cdktf.ComplexObject {
+export class EventgridNamespaceIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -160,7 +160,7 @@ export class EventgridNamespaceIdentityOutputReference extends cdktf.ComplexObje
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -207,32 +207,32 @@ export interface EventgridNamespaceInboundIpRule {
   readonly ipMask: string;
 }
 
-export function eventgridNamespaceInboundIpRuleToTerraform(struct?: EventgridNamespaceInboundIpRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridNamespaceInboundIpRuleToTerraform(struct?: EventgridNamespaceInboundIpRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    ip_mask: cdktf.stringToTerraform(struct!.ipMask),
+    action: cdktn.stringToTerraform(struct!.action),
+    ip_mask: cdktn.stringToTerraform(struct!.ipMask),
   }
 }
 
 
-export function eventgridNamespaceInboundIpRuleToHclTerraform(struct?: EventgridNamespaceInboundIpRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridNamespaceInboundIpRuleToHclTerraform(struct?: EventgridNamespaceInboundIpRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_mask: {
-      value: cdktf.stringToHclTerraform(struct!.ipMask),
+      value: cdktn.stringToHclTerraform(struct!.ipMask),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -243,9 +243,9 @@ export function eventgridNamespaceInboundIpRuleToHclTerraform(struct?: Eventgrid
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridNamespaceInboundIpRuleOutputReference extends cdktf.ComplexObject {
+export class EventgridNamespaceInboundIpRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -253,11 +253,11 @@ export class EventgridNamespaceInboundIpRuleOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridNamespaceInboundIpRule | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridNamespaceInboundIpRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -274,14 +274,14 @@ export class EventgridNamespaceInboundIpRuleOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridNamespaceInboundIpRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridNamespaceInboundIpRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._action = undefined;
       this._ipMask = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -323,15 +323,15 @@ export class EventgridNamespaceInboundIpRuleOutputReference extends cdktf.Comple
   }
 }
 
-export class EventgridNamespaceInboundIpRuleList extends cdktf.ComplexList {
-  public internalValue? : EventgridNamespaceInboundIpRule[] | cdktf.IResolvable
+export class EventgridNamespaceInboundIpRuleList extends cdktn.ComplexList {
+  public internalValue? : EventgridNamespaceInboundIpRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -361,46 +361,46 @@ export interface EventgridNamespaceTimeouts {
   readonly update?: string;
 }
 
-export function eventgridNamespaceTimeoutsToTerraform(struct?: EventgridNamespaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridNamespaceTimeoutsToTerraform(struct?: EventgridNamespaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function eventgridNamespaceTimeoutsToHclTerraform(struct?: EventgridNamespaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridNamespaceTimeoutsToHclTerraform(struct?: EventgridNamespaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -411,19 +411,19 @@ export function eventgridNamespaceTimeoutsToHclTerraform(struct?: EventgridNames
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridNamespaceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EventgridNamespaceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EventgridNamespaceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridNamespaceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -448,7 +448,7 @@ export class EventgridNamespaceTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridNamespaceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridNamespaceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -457,7 +457,7 @@ export class EventgridNamespaceTimeoutsOutputReference extends cdktf.ComplexObje
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -546,32 +546,32 @@ export interface EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichm
   readonly value: string;
 }
 
-export function eventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentToTerraform(struct?: EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentToTerraform(struct?: EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function eventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentToHclTerraform(struct?: EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentToHclTerraform(struct?: EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -582,9 +582,9 @@ export function eventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichme
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference extends cdktf.ComplexObject {
+export class EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -592,11 +592,11 @@ export class EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -613,14 +613,14 @@ export class EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -659,15 +659,15 @@ export class EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentO
   }
 }
 
-export class EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList extends cdktf.ComplexList {
-  public internalValue? : EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment[] | cdktf.IResolvable
+export class EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList extends cdktn.ComplexList {
+  public internalValue? : EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -689,32 +689,32 @@ export interface EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichme
   readonly value: string;
 }
 
-export function eventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentToTerraform(struct?: EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentToTerraform(struct?: EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function eventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentToHclTerraform(struct?: EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentToHclTerraform(struct?: EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -725,9 +725,9 @@ export function eventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference extends cdktf.ComplexObject {
+export class EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -735,11 +735,11 @@ export class EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -756,14 +756,14 @@ export class EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -802,15 +802,15 @@ export class EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOu
   }
 }
 
-export class EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList extends cdktf.ComplexList {
-  public internalValue? : EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment[] | cdktf.IResolvable
+export class EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList extends cdktn.ComplexList {
+  public internalValue? : EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -843,69 +843,69 @@ export interface EventgridNamespaceTopicSpacesConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_namespace#dynamic_routing_enrichment EventgridNamespace#dynamic_routing_enrichment}
   */
-  readonly dynamicRoutingEnrichment?: EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment[] | cdktf.IResolvable;
+  readonly dynamicRoutingEnrichment?: EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment[] | cdktn.IResolvable;
   /**
   * static_routing_enrichment block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_namespace#static_routing_enrichment EventgridNamespace#static_routing_enrichment}
   */
-  readonly staticRoutingEnrichment?: EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment[] | cdktf.IResolvable;
+  readonly staticRoutingEnrichment?: EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment[] | cdktn.IResolvable;
 }
 
-export function eventgridNamespaceTopicSpacesConfigurationToTerraform(struct?: EventgridNamespaceTopicSpacesConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridNamespaceTopicSpacesConfigurationToTerraform(struct?: EventgridNamespaceTopicSpacesConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alternative_authentication_name_source: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.alternativeAuthenticationNameSource),
-    maximum_client_sessions_per_authentication_name: cdktf.numberToTerraform(struct!.maximumClientSessionsPerAuthenticationName),
-    maximum_session_expiry_in_hours: cdktf.numberToTerraform(struct!.maximumSessionExpiryInHours),
-    route_topic_id: cdktf.stringToTerraform(struct!.routeTopicId),
-    dynamic_routing_enrichment: cdktf.listMapper(eventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentToTerraform, true)(struct!.dynamicRoutingEnrichment),
-    static_routing_enrichment: cdktf.listMapper(eventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentToTerraform, true)(struct!.staticRoutingEnrichment),
+    alternative_authentication_name_source: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alternativeAuthenticationNameSource),
+    maximum_client_sessions_per_authentication_name: cdktn.numberToTerraform(struct!.maximumClientSessionsPerAuthenticationName),
+    maximum_session_expiry_in_hours: cdktn.numberToTerraform(struct!.maximumSessionExpiryInHours),
+    route_topic_id: cdktn.stringToTerraform(struct!.routeTopicId),
+    dynamic_routing_enrichment: cdktn.listMapper(eventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentToTerraform, true)(struct!.dynamicRoutingEnrichment),
+    static_routing_enrichment: cdktn.listMapper(eventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentToTerraform, true)(struct!.staticRoutingEnrichment),
   }
 }
 
 
-export function eventgridNamespaceTopicSpacesConfigurationToHclTerraform(struct?: EventgridNamespaceTopicSpacesConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridNamespaceTopicSpacesConfigurationToHclTerraform(struct?: EventgridNamespaceTopicSpacesConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alternative_authentication_name_source: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.alternativeAuthenticationNameSource),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.alternativeAuthenticationNameSource),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     maximum_client_sessions_per_authentication_name: {
-      value: cdktf.numberToHclTerraform(struct!.maximumClientSessionsPerAuthenticationName),
+      value: cdktn.numberToHclTerraform(struct!.maximumClientSessionsPerAuthenticationName),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     maximum_session_expiry_in_hours: {
-      value: cdktf.numberToHclTerraform(struct!.maximumSessionExpiryInHours),
+      value: cdktn.numberToHclTerraform(struct!.maximumSessionExpiryInHours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     route_topic_id: {
-      value: cdktf.stringToHclTerraform(struct!.routeTopicId),
+      value: cdktn.stringToHclTerraform(struct!.routeTopicId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dynamic_routing_enrichment: {
-      value: cdktf.listMapperHcl(eventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentToHclTerraform, true)(struct!.dynamicRoutingEnrichment),
+      value: cdktn.listMapperHcl(eventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentToHclTerraform, true)(struct!.dynamicRoutingEnrichment),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList",
     },
     static_routing_enrichment: {
-      value: cdktf.listMapperHcl(eventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentToHclTerraform, true)(struct!.staticRoutingEnrichment),
+      value: cdktn.listMapperHcl(eventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentToHclTerraform, true)(struct!.staticRoutingEnrichment),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList",
@@ -916,9 +916,9 @@ export function eventgridNamespaceTopicSpacesConfigurationToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridNamespaceTopicSpacesConfigurationOutputReference extends cdktf.ComplexObject {
+export class EventgridNamespaceTopicSpacesConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -926,11 +926,11 @@ export class EventgridNamespaceTopicSpacesConfigurationOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridNamespaceTopicSpacesConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridNamespaceTopicSpacesConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -963,7 +963,7 @@ export class EventgridNamespaceTopicSpacesConfigurationOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridNamespaceTopicSpacesConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridNamespaceTopicSpacesConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -974,7 +974,7 @@ export class EventgridNamespaceTopicSpacesConfigurationOutputReference extends c
       this._dynamicRoutingEnrichment.internalValue = undefined;
       this._staticRoutingEnrichment.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1059,7 +1059,7 @@ export class EventgridNamespaceTopicSpacesConfigurationOutputReference extends c
   public get dynamicRoutingEnrichment() {
     return this._dynamicRoutingEnrichment;
   }
-  public putDynamicRoutingEnrichment(value: EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment[] | cdktf.IResolvable) {
+  public putDynamicRoutingEnrichment(value: EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment[] | cdktn.IResolvable) {
     this._dynamicRoutingEnrichment.internalValue = value;
   }
   public resetDynamicRoutingEnrichment() {
@@ -1075,7 +1075,7 @@ export class EventgridNamespaceTopicSpacesConfigurationOutputReference extends c
   public get staticRoutingEnrichment() {
     return this._staticRoutingEnrichment;
   }
-  public putStaticRoutingEnrichment(value: EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment[] | cdktf.IResolvable) {
+  public putStaticRoutingEnrichment(value: EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment[] | cdktn.IResolvable) {
     this._staticRoutingEnrichment.internalValue = value;
   }
   public resetStaticRoutingEnrichment() {
@@ -1087,15 +1087,15 @@ export class EventgridNamespaceTopicSpacesConfigurationOutputReference extends c
   }
 }
 
-export class EventgridNamespaceTopicSpacesConfigurationList extends cdktf.ComplexList {
-  public internalValue? : EventgridNamespaceTopicSpacesConfiguration[] | cdktf.IResolvable
+export class EventgridNamespaceTopicSpacesConfigurationList extends cdktn.ComplexList {
+  public internalValue? : EventgridNamespaceTopicSpacesConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1110,7 +1110,7 @@ export class EventgridNamespaceTopicSpacesConfigurationList extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_namespace azurerm_eventgrid_namespace}
 */
-export class EventgridNamespace extends cdktf.TerraformResource {
+export class EventgridNamespace extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1121,14 +1121,14 @@ export class EventgridNamespace extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EventgridNamespace resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EventgridNamespace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventgridNamespace to import
   * @param importFromId The id of the existing EventgridNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventgridNamespace to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_eventgrid_namespace", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_eventgrid_namespace", importId: importFromId, provider });
       }
 
   // ===========
@@ -1316,7 +1316,7 @@ export class EventgridNamespace extends cdktf.TerraformResource {
   public get inboundIpRule() {
     return this._inboundIpRule;
   }
-  public putInboundIpRule(value: EventgridNamespaceInboundIpRule[] | cdktf.IResolvable) {
+  public putInboundIpRule(value: EventgridNamespaceInboundIpRule[] | cdktn.IResolvable) {
     this._inboundIpRule.internalValue = value;
   }
   public resetInboundIpRule() {
@@ -1348,7 +1348,7 @@ export class EventgridNamespace extends cdktf.TerraformResource {
   public get topicSpacesConfiguration() {
     return this._topicSpacesConfiguration;
   }
-  public putTopicSpacesConfiguration(value: EventgridNamespaceTopicSpacesConfiguration[] | cdktf.IResolvable) {
+  public putTopicSpacesConfiguration(value: EventgridNamespaceTopicSpacesConfiguration[] | cdktn.IResolvable) {
     this._topicSpacesConfiguration.internalValue = value;
   }
   public resetTopicSpacesConfiguration() {
@@ -1365,67 +1365,67 @@ export class EventgridNamespace extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capacity: cdktf.numberToTerraform(this._capacity),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_access: cdktf.stringToTerraform(this._publicNetworkAccess),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku: cdktf.stringToTerraform(this._sku),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      capacity: cdktn.numberToTerraform(this._capacity),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_access: cdktn.stringToTerraform(this._publicNetworkAccess),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku: cdktn.stringToTerraform(this._sku),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       identity: eventgridNamespaceIdentityToTerraform(this._identity.internalValue),
-      inbound_ip_rule: cdktf.listMapper(eventgridNamespaceInboundIpRuleToTerraform, true)(this._inboundIpRule.internalValue),
+      inbound_ip_rule: cdktn.listMapper(eventgridNamespaceInboundIpRuleToTerraform, true)(this._inboundIpRule.internalValue),
       timeouts: eventgridNamespaceTimeoutsToTerraform(this._timeouts.internalValue),
-      topic_spaces_configuration: cdktf.listMapper(eventgridNamespaceTopicSpacesConfigurationToTerraform, true)(this._topicSpacesConfiguration.internalValue),
+      topic_spaces_configuration: cdktn.listMapper(eventgridNamespaceTopicSpacesConfigurationToTerraform, true)(this._topicSpacesConfiguration.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       capacity: {
-        value: cdktf.numberToHclTerraform(this._capacity),
+        value: cdktn.numberToHclTerraform(this._capacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access: {
-        value: cdktf.stringToHclTerraform(this._publicNetworkAccess),
+        value: cdktn.stringToHclTerraform(this._publicNetworkAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku: {
-        value: cdktf.stringToHclTerraform(this._sku),
+        value: cdktn.stringToHclTerraform(this._sku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -1437,7 +1437,7 @@ export class EventgridNamespace extends cdktf.TerraformResource {
         storageClassType: "EventgridNamespaceIdentityList",
       },
       inbound_ip_rule: {
-        value: cdktf.listMapperHcl(eventgridNamespaceInboundIpRuleToHclTerraform, true)(this._inboundIpRule.internalValue),
+        value: cdktn.listMapperHcl(eventgridNamespaceInboundIpRuleToHclTerraform, true)(this._inboundIpRule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EventgridNamespaceInboundIpRuleList",
@@ -1449,7 +1449,7 @@ export class EventgridNamespace extends cdktf.TerraformResource {
         storageClassType: "EventgridNamespaceTimeouts",
       },
       topic_spaces_configuration: {
-        value: cdktf.listMapperHcl(eventgridNamespaceTopicSpacesConfigurationToHclTerraform, true)(this._topicSpacesConfiguration.internalValue),
+        value: cdktn.listMapperHcl(eventgridNamespaceTopicSpacesConfigurationToHclTerraform, true)(this._topicSpacesConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EventgridNamespaceTopicSpacesConfigurationList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermAppConfigurationKeyConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermAppConfigurationKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/app_configuration_key#configuration_store_id DataAzurermAppConfigurationKey#configuration_store_id}
   */
@@ -45,25 +45,25 @@ export interface DataAzurermAppConfigurationKeyTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermAppConfigurationKeyTimeoutsToTerraform(struct?: DataAzurermAppConfigurationKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermAppConfigurationKeyTimeoutsToTerraform(struct?: DataAzurermAppConfigurationKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermAppConfigurationKeyTimeoutsToHclTerraform(struct?: DataAzurermAppConfigurationKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermAppConfigurationKeyTimeoutsToHclTerraform(struct?: DataAzurermAppConfigurationKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -74,19 +74,19 @@ export function dataAzurermAppConfigurationKeyTimeoutsToHclTerraform(struct?: Da
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermAppConfigurationKeyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermAppConfigurationKeyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermAppConfigurationKeyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermAppConfigurationKeyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -99,13 +99,13 @@ export class DataAzurermAppConfigurationKeyTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermAppConfigurationKeyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermAppConfigurationKeyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -136,7 +136,7 @@ export class DataAzurermAppConfigurationKeyTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/app_configuration_key azurerm_app_configuration_key}
 */
-export class DataAzurermAppConfigurationKey extends cdktf.TerraformDataSource {
+export class DataAzurermAppConfigurationKey extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -147,14 +147,14 @@ export class DataAzurermAppConfigurationKey extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermAppConfigurationKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermAppConfigurationKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermAppConfigurationKey to import
   * @param importFromId The id of the existing DataAzurermAppConfigurationKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/app_configuration_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermAppConfigurationKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_app_configuration_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_app_configuration_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -269,7 +269,7 @@ export class DataAzurermAppConfigurationKey extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -311,10 +311,10 @@ export class DataAzurermAppConfigurationKey extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      configuration_store_id: cdktf.stringToTerraform(this._configurationStoreId),
-      id: cdktf.stringToTerraform(this._id),
-      key: cdktf.stringToTerraform(this._key),
-      label: cdktf.stringToTerraform(this._label),
+      configuration_store_id: cdktn.stringToTerraform(this._configurationStoreId),
+      id: cdktn.stringToTerraform(this._id),
+      key: cdktn.stringToTerraform(this._key),
+      label: cdktn.stringToTerraform(this._label),
       timeouts: dataAzurermAppConfigurationKeyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -322,25 +322,25 @@ export class DataAzurermAppConfigurationKey extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       configuration_store_id: {
-        value: cdktf.stringToHclTerraform(this._configurationStoreId),
+        value: cdktn.stringToHclTerraform(this._configurationStoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key: {
-        value: cdktf.stringToHclTerraform(this._key),
+        value: cdktn.stringToHclTerraform(this._key),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       label: {
-        value: cdktf.stringToHclTerraform(this._label),
+        value: cdktn.stringToHclTerraform(this._label),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

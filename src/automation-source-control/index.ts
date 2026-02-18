@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AutomationSourceControlConfig extends cdktf.TerraformMetaArguments {
+export interface AutomationSourceControlConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_source_control#automatic_sync AutomationSourceControl#automatic_sync}
   */
-  readonly automaticSync?: boolean | cdktf.IResolvable;
+  readonly automaticSync?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_source_control#automation_account_id AutomationSourceControl#automation_account_id}
   */
@@ -46,7 +46,7 @@ export interface AutomationSourceControlConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_source_control#publish_runbook_enabled AutomationSourceControl#publish_runbook_enabled}
   */
-  readonly publishRunbookEnabled?: boolean | cdktf.IResolvable;
+  readonly publishRunbookEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_source_control#repository_url AutomationSourceControl#repository_url}
   */
@@ -84,38 +84,38 @@ export interface AutomationSourceControlSecurity {
 }
 
 export function automationSourceControlSecurityToTerraform(struct?: AutomationSourceControlSecurityOutputReference | AutomationSourceControlSecurity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    refresh_token: cdktf.stringToTerraform(struct!.refreshToken),
-    token: cdktf.stringToTerraform(struct!.token),
-    token_type: cdktf.stringToTerraform(struct!.tokenType),
+    refresh_token: cdktn.stringToTerraform(struct!.refreshToken),
+    token: cdktn.stringToTerraform(struct!.token),
+    token_type: cdktn.stringToTerraform(struct!.tokenType),
   }
 }
 
 
 export function automationSourceControlSecurityToHclTerraform(struct?: AutomationSourceControlSecurityOutputReference | AutomationSourceControlSecurity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     refresh_token: {
-      value: cdktf.stringToHclTerraform(struct!.refreshToken),
+      value: cdktn.stringToHclTerraform(struct!.refreshToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token: {
-      value: cdktf.stringToHclTerraform(struct!.token),
+      value: cdktn.stringToHclTerraform(struct!.token),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_type: {
-      value: cdktf.stringToHclTerraform(struct!.tokenType),
+      value: cdktn.stringToHclTerraform(struct!.tokenType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -126,14 +126,14 @@ export function automationSourceControlSecurityToHclTerraform(struct?: Automatio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationSourceControlSecurityOutputReference extends cdktf.ComplexObject {
+export class AutomationSourceControlSecurityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -231,46 +231,46 @@ export interface AutomationSourceControlTimeouts {
   readonly update?: string;
 }
 
-export function automationSourceControlTimeoutsToTerraform(struct?: AutomationSourceControlTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationSourceControlTimeoutsToTerraform(struct?: AutomationSourceControlTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function automationSourceControlTimeoutsToHclTerraform(struct?: AutomationSourceControlTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationSourceControlTimeoutsToHclTerraform(struct?: AutomationSourceControlTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -281,19 +281,19 @@ export function automationSourceControlTimeoutsToHclTerraform(struct?: Automatio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationSourceControlTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AutomationSourceControlTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AutomationSourceControlTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AutomationSourceControlTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -318,7 +318,7 @@ export class AutomationSourceControlTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AutomationSourceControlTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AutomationSourceControlTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -327,7 +327,7 @@ export class AutomationSourceControlTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -409,7 +409,7 @@ export class AutomationSourceControlTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_source_control azurerm_automation_source_control}
 */
-export class AutomationSourceControl extends cdktf.TerraformResource {
+export class AutomationSourceControl extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -420,14 +420,14 @@ export class AutomationSourceControl extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AutomationSourceControl resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AutomationSourceControl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutomationSourceControl to import
   * @param importFromId The id of the existing AutomationSourceControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_source_control#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutomationSourceControl to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_automation_source_control", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_automation_source_control", importId: importFromId, provider });
       }
 
   // ===========
@@ -476,11 +476,11 @@ export class AutomationSourceControl extends cdktf.TerraformResource {
   // ==========
 
   // automatic_sync - computed: false, optional: true, required: false
-  private _automaticSync?: boolean | cdktf.IResolvable; 
+  private _automaticSync?: boolean | cdktn.IResolvable; 
   public get automaticSync() {
     return this.getBooleanAttribute('automatic_sync');
   }
-  public set automaticSync(value: boolean | cdktf.IResolvable) {
+  public set automaticSync(value: boolean | cdktn.IResolvable) {
     this._automaticSync = value;
   }
   public resetAutomaticSync() {
@@ -579,11 +579,11 @@ export class AutomationSourceControl extends cdktf.TerraformResource {
   }
 
   // publish_runbook_enabled - computed: false, optional: true, required: false
-  private _publishRunbookEnabled?: boolean | cdktf.IResolvable; 
+  private _publishRunbookEnabled?: boolean | cdktn.IResolvable; 
   public get publishRunbookEnabled() {
     return this.getBooleanAttribute('publish_runbook_enabled');
   }
-  public set publishRunbookEnabled(value: boolean | cdktf.IResolvable) {
+  public set publishRunbookEnabled(value: boolean | cdktn.IResolvable) {
     this._publishRunbookEnabled = value;
   }
   public resetPublishRunbookEnabled() {
@@ -655,16 +655,16 @@ export class AutomationSourceControl extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      automatic_sync: cdktf.booleanToTerraform(this._automaticSync),
-      automation_account_id: cdktf.stringToTerraform(this._automationAccountId),
-      branch: cdktf.stringToTerraform(this._branch),
-      description: cdktf.stringToTerraform(this._description),
-      folder_path: cdktf.stringToTerraform(this._folderPath),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      publish_runbook_enabled: cdktf.booleanToTerraform(this._publishRunbookEnabled),
-      repository_url: cdktf.stringToTerraform(this._repositoryUrl),
-      source_control_type: cdktf.stringToTerraform(this._sourceControlType),
+      automatic_sync: cdktn.booleanToTerraform(this._automaticSync),
+      automation_account_id: cdktn.stringToTerraform(this._automationAccountId),
+      branch: cdktn.stringToTerraform(this._branch),
+      description: cdktn.stringToTerraform(this._description),
+      folder_path: cdktn.stringToTerraform(this._folderPath),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      publish_runbook_enabled: cdktn.booleanToTerraform(this._publishRunbookEnabled),
+      repository_url: cdktn.stringToTerraform(this._repositoryUrl),
+      source_control_type: cdktn.stringToTerraform(this._sourceControlType),
       security: automationSourceControlSecurityToTerraform(this._security.internalValue),
       timeouts: automationSourceControlTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -673,61 +673,61 @@ export class AutomationSourceControl extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       automatic_sync: {
-        value: cdktf.booleanToHclTerraform(this._automaticSync),
+        value: cdktn.booleanToHclTerraform(this._automaticSync),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       automation_account_id: {
-        value: cdktf.stringToHclTerraform(this._automationAccountId),
+        value: cdktn.stringToHclTerraform(this._automationAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       branch: {
-        value: cdktf.stringToHclTerraform(this._branch),
+        value: cdktn.stringToHclTerraform(this._branch),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       folder_path: {
-        value: cdktf.stringToHclTerraform(this._folderPath),
+        value: cdktn.stringToHclTerraform(this._folderPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publish_runbook_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publishRunbookEnabled),
+        value: cdktn.booleanToHclTerraform(this._publishRunbookEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       repository_url: {
-        value: cdktf.stringToHclTerraform(this._repositoryUrl),
+        value: cdktn.stringToHclTerraform(this._repositoryUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_control_type: {
-        value: cdktf.stringToHclTerraform(this._sourceControlType),
+        value: cdktn.stringToHclTerraform(this._sourceControlType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

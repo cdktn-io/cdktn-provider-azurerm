@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LinuxWebAppSlotConfig extends cdktf.TerraformMetaArguments {
+export interface LinuxWebAppSlotConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#app_service_id LinuxWebAppSlot#app_service_id}
   */
@@ -23,11 +23,11 @@ export interface LinuxWebAppSlotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#client_affinity_enabled LinuxWebAppSlot#client_affinity_enabled}
   */
-  readonly clientAffinityEnabled?: boolean | cdktf.IResolvable;
+  readonly clientAffinityEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#client_certificate_enabled LinuxWebAppSlot#client_certificate_enabled}
   */
-  readonly clientCertificateEnabled?: boolean | cdktf.IResolvable;
+  readonly clientCertificateEnabled?: boolean | cdktn.IResolvable;
   /**
   * Paths to exclude when using client certificates, separated by ;
   *
@@ -41,15 +41,15 @@ export interface LinuxWebAppSlotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#enabled LinuxWebAppSlot#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#ftp_publish_basic_authentication_enabled LinuxWebAppSlot#ftp_publish_basic_authentication_enabled}
   */
-  readonly ftpPublishBasicAuthenticationEnabled?: boolean | cdktf.IResolvable;
+  readonly ftpPublishBasicAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#https_only LinuxWebAppSlot#https_only}
   */
-  readonly httpsOnly?: boolean | cdktf.IResolvable;
+  readonly httpsOnly?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#id LinuxWebAppSlot#id}
   *
@@ -68,7 +68,7 @@ export interface LinuxWebAppSlotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#public_network_access_enabled LinuxWebAppSlot#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#service_plan_id LinuxWebAppSlot#service_plan_id}
   */
@@ -80,7 +80,7 @@ export interface LinuxWebAppSlotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#virtual_network_backup_restore_enabled LinuxWebAppSlot#virtual_network_backup_restore_enabled}
   */
-  readonly virtualNetworkBackupRestoreEnabled?: boolean | cdktf.IResolvable;
+  readonly virtualNetworkBackupRestoreEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#virtual_network_subnet_id LinuxWebAppSlot#virtual_network_subnet_id}
   */
@@ -88,11 +88,11 @@ export interface LinuxWebAppSlotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#vnet_image_pull_enabled LinuxWebAppSlot#vnet_image_pull_enabled}
   */
-  readonly vnetImagePullEnabled?: boolean | cdktf.IResolvable;
+  readonly vnetImagePullEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#webdeploy_publish_basic_authentication_enabled LinuxWebAppSlot#webdeploy_publish_basic_authentication_enabled}
   */
-  readonly webdeployPublishBasicAuthenticationEnabled?: boolean | cdktf.IResolvable;
+  readonly webdeployPublishBasicAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
   * The local path and filename of the Zip packaged application to deploy to this Windows Web App. **Note:** Using this value requires `WEBSITE_RUN_FROM_PACKAGE=1` on the App in `app_settings`.
   *
@@ -122,7 +122,7 @@ export interface LinuxWebAppSlotConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#connection_string LinuxWebAppSlot#connection_string}
   */
-  readonly connectionString?: LinuxWebAppSlotConnectionString[] | cdktf.IResolvable;
+  readonly connectionString?: LinuxWebAppSlotConnectionString[] | cdktn.IResolvable;
   /**
   * identity block
   *
@@ -146,7 +146,7 @@ export interface LinuxWebAppSlotConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#storage_account LinuxWebAppSlot#storage_account}
   */
-  readonly storageAccount?: LinuxWebAppSlotStorageAccount[] | cdktf.IResolvable;
+  readonly storageAccount?: LinuxWebAppSlotStorageAccount[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -158,8 +158,8 @@ export interface LinuxWebAppSlotSiteCredential {
 }
 
 export function linuxWebAppSlotSiteCredentialToTerraform(struct?: LinuxWebAppSlotSiteCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -168,8 +168,8 @@ export function linuxWebAppSlotSiteCredentialToTerraform(struct?: LinuxWebAppSlo
 
 
 export function linuxWebAppSlotSiteCredentialToHclTerraform(struct?: LinuxWebAppSlotSiteCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -177,7 +177,7 @@ export function linuxWebAppSlotSiteCredentialToHclTerraform(struct?: LinuxWebApp
   return attrs;
 }
 
-export class LinuxWebAppSlotSiteCredentialOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotSiteCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -186,7 +186,7 @@ export class LinuxWebAppSlotSiteCredentialOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -216,14 +216,14 @@ export class LinuxWebAppSlotSiteCredentialOutputReference extends cdktf.ComplexO
   }
 }
 
-export class LinuxWebAppSlotSiteCredentialList extends cdktf.ComplexList {
+export class LinuxWebAppSlotSiteCredentialList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -262,45 +262,45 @@ export interface LinuxWebAppSlotAuthSettingsActiveDirectory {
 }
 
 export function linuxWebAppSlotAuthSettingsActiveDirectoryToTerraform(struct?: LinuxWebAppSlotAuthSettingsActiveDirectoryOutputReference | LinuxWebAppSlotAuthSettingsActiveDirectory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_audiences: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedAudiences),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    client_secret_setting_name: cdktf.stringToTerraform(struct!.clientSecretSettingName),
+    allowed_audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedAudiences),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    client_secret_setting_name: cdktn.stringToTerraform(struct!.clientSecretSettingName),
   }
 }
 
 
 export function linuxWebAppSlotAuthSettingsActiveDirectoryToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsActiveDirectoryOutputReference | LinuxWebAppSlotAuthSettingsActiveDirectory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_audiences: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedAudiences),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedAudiences),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_setting_name: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretSettingName),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretSettingName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -311,14 +311,14 @@ export function linuxWebAppSlotAuthSettingsActiveDirectoryToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsActiveDirectoryOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsActiveDirectoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -450,45 +450,45 @@ export interface LinuxWebAppSlotAuthSettingsFacebook {
 }
 
 export function linuxWebAppSlotAuthSettingsFacebookToTerraform(struct?: LinuxWebAppSlotAuthSettingsFacebookOutputReference | LinuxWebAppSlotAuthSettingsFacebook): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    app_id: cdktf.stringToTerraform(struct!.appId),
-    app_secret: cdktf.stringToTerraform(struct!.appSecret),
-    app_secret_setting_name: cdktf.stringToTerraform(struct!.appSecretSettingName),
-    oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.oauthScopes),
+    app_id: cdktn.stringToTerraform(struct!.appId),
+    app_secret: cdktn.stringToTerraform(struct!.appSecret),
+    app_secret_setting_name: cdktn.stringToTerraform(struct!.appSecretSettingName),
+    oauth_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.oauthScopes),
   }
 }
 
 
 export function linuxWebAppSlotAuthSettingsFacebookToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsFacebookOutputReference | LinuxWebAppSlotAuthSettingsFacebook): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     app_id: {
-      value: cdktf.stringToHclTerraform(struct!.appId),
+      value: cdktn.stringToHclTerraform(struct!.appId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     app_secret: {
-      value: cdktf.stringToHclTerraform(struct!.appSecret),
+      value: cdktn.stringToHclTerraform(struct!.appSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     app_secret_setting_name: {
-      value: cdktf.stringToHclTerraform(struct!.appSecretSettingName),
+      value: cdktn.stringToHclTerraform(struct!.appSecretSettingName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     oauth_scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.oauthScopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.oauthScopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -499,14 +499,14 @@ export function linuxWebAppSlotAuthSettingsFacebookToHclTerraform(struct?: Linux
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsFacebookOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsFacebookOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -638,45 +638,45 @@ export interface LinuxWebAppSlotAuthSettingsGithub {
 }
 
 export function linuxWebAppSlotAuthSettingsGithubToTerraform(struct?: LinuxWebAppSlotAuthSettingsGithubOutputReference | LinuxWebAppSlotAuthSettingsGithub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    client_secret_setting_name: cdktf.stringToTerraform(struct!.clientSecretSettingName),
-    oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.oauthScopes),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    client_secret_setting_name: cdktn.stringToTerraform(struct!.clientSecretSettingName),
+    oauth_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.oauthScopes),
   }
 }
 
 
 export function linuxWebAppSlotAuthSettingsGithubToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsGithubOutputReference | LinuxWebAppSlotAuthSettingsGithub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_setting_name: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretSettingName),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretSettingName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     oauth_scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.oauthScopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.oauthScopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -687,14 +687,14 @@ export function linuxWebAppSlotAuthSettingsGithubToHclTerraform(struct?: LinuxWe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsGithubOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsGithubOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -826,45 +826,45 @@ export interface LinuxWebAppSlotAuthSettingsGoogle {
 }
 
 export function linuxWebAppSlotAuthSettingsGoogleToTerraform(struct?: LinuxWebAppSlotAuthSettingsGoogleOutputReference | LinuxWebAppSlotAuthSettingsGoogle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    client_secret_setting_name: cdktf.stringToTerraform(struct!.clientSecretSettingName),
-    oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.oauthScopes),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    client_secret_setting_name: cdktn.stringToTerraform(struct!.clientSecretSettingName),
+    oauth_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.oauthScopes),
   }
 }
 
 
 export function linuxWebAppSlotAuthSettingsGoogleToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsGoogleOutputReference | LinuxWebAppSlotAuthSettingsGoogle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_setting_name: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretSettingName),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretSettingName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     oauth_scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.oauthScopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.oauthScopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -875,14 +875,14 @@ export function linuxWebAppSlotAuthSettingsGoogleToHclTerraform(struct?: LinuxWe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsGoogleOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsGoogleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1014,45 +1014,45 @@ export interface LinuxWebAppSlotAuthSettingsMicrosoft {
 }
 
 export function linuxWebAppSlotAuthSettingsMicrosoftToTerraform(struct?: LinuxWebAppSlotAuthSettingsMicrosoftOutputReference | LinuxWebAppSlotAuthSettingsMicrosoft): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    client_secret_setting_name: cdktf.stringToTerraform(struct!.clientSecretSettingName),
-    oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.oauthScopes),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    client_secret_setting_name: cdktn.stringToTerraform(struct!.clientSecretSettingName),
+    oauth_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.oauthScopes),
   }
 }
 
 
 export function linuxWebAppSlotAuthSettingsMicrosoftToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsMicrosoftOutputReference | LinuxWebAppSlotAuthSettingsMicrosoft): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_setting_name: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretSettingName),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretSettingName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     oauth_scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.oauthScopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.oauthScopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1063,14 +1063,14 @@ export function linuxWebAppSlotAuthSettingsMicrosoftToHclTerraform(struct?: Linu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsMicrosoftOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsMicrosoftOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1196,38 +1196,38 @@ export interface LinuxWebAppSlotAuthSettingsTwitter {
 }
 
 export function linuxWebAppSlotAuthSettingsTwitterToTerraform(struct?: LinuxWebAppSlotAuthSettingsTwitterOutputReference | LinuxWebAppSlotAuthSettingsTwitter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    consumer_key: cdktf.stringToTerraform(struct!.consumerKey),
-    consumer_secret: cdktf.stringToTerraform(struct!.consumerSecret),
-    consumer_secret_setting_name: cdktf.stringToTerraform(struct!.consumerSecretSettingName),
+    consumer_key: cdktn.stringToTerraform(struct!.consumerKey),
+    consumer_secret: cdktn.stringToTerraform(struct!.consumerSecret),
+    consumer_secret_setting_name: cdktn.stringToTerraform(struct!.consumerSecretSettingName),
   }
 }
 
 
 export function linuxWebAppSlotAuthSettingsTwitterToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsTwitterOutputReference | LinuxWebAppSlotAuthSettingsTwitter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     consumer_key: {
-      value: cdktf.stringToHclTerraform(struct!.consumerKey),
+      value: cdktn.stringToHclTerraform(struct!.consumerKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     consumer_secret: {
-      value: cdktf.stringToHclTerraform(struct!.consumerSecret),
+      value: cdktn.stringToHclTerraform(struct!.consumerSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     consumer_secret_setting_name: {
-      value: cdktf.stringToHclTerraform(struct!.consumerSecretSettingName),
+      value: cdktn.stringToHclTerraform(struct!.consumerSecretSettingName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1238,14 +1238,14 @@ export function linuxWebAppSlotAuthSettingsTwitterToHclTerraform(struct?: LinuxW
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsTwitterOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsTwitterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1351,7 +1351,7 @@ export interface LinuxWebAppSlotAuthSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#enabled LinuxWebAppSlot#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The OpenID Connect Issuer URI that represents the entity which issues access tokens.
   *
@@ -1375,7 +1375,7 @@ export interface LinuxWebAppSlotAuthSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#token_store_enabled LinuxWebAppSlot#token_store_enabled}
   */
-  readonly tokenStoreEnabled?: boolean | cdktf.IResolvable;
+  readonly tokenStoreEnabled?: boolean | cdktn.IResolvable;
   /**
   * The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`.
   *
@@ -1421,20 +1421,20 @@ export interface LinuxWebAppSlotAuthSettings {
 }
 
 export function linuxWebAppSlotAuthSettingsToTerraform(struct?: LinuxWebAppSlotAuthSettingsOutputReference | LinuxWebAppSlotAuthSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_login_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.additionalLoginParameters),
-    allowed_external_redirect_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedExternalRedirectUrls),
-    default_provider: cdktf.stringToTerraform(struct!.defaultProvider),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
-    runtime_version: cdktf.stringToTerraform(struct!.runtimeVersion),
-    token_refresh_extension_hours: cdktf.numberToTerraform(struct!.tokenRefreshExtensionHours),
-    token_store_enabled: cdktf.booleanToTerraform(struct!.tokenStoreEnabled),
-    unauthenticated_client_action: cdktf.stringToTerraform(struct!.unauthenticatedClientAction),
+    additional_login_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.additionalLoginParameters),
+    allowed_external_redirect_urls: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedExternalRedirectUrls),
+    default_provider: cdktn.stringToTerraform(struct!.defaultProvider),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
+    runtime_version: cdktn.stringToTerraform(struct!.runtimeVersion),
+    token_refresh_extension_hours: cdktn.numberToTerraform(struct!.tokenRefreshExtensionHours),
+    token_store_enabled: cdktn.booleanToTerraform(struct!.tokenStoreEnabled),
+    unauthenticated_client_action: cdktn.stringToTerraform(struct!.unauthenticatedClientAction),
     active_directory: linuxWebAppSlotAuthSettingsActiveDirectoryToTerraform(struct!.activeDirectory),
     facebook: linuxWebAppSlotAuthSettingsFacebookToTerraform(struct!.facebook),
     github: linuxWebAppSlotAuthSettingsGithubToTerraform(struct!.github),
@@ -1446,61 +1446,61 @@ export function linuxWebAppSlotAuthSettingsToTerraform(struct?: LinuxWebAppSlotA
 
 
 export function linuxWebAppSlotAuthSettingsToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsOutputReference | LinuxWebAppSlotAuthSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_login_parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.additionalLoginParameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.additionalLoginParameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     allowed_external_redirect_urls: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedExternalRedirectUrls),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedExternalRedirectUrls),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     default_provider: {
-      value: cdktf.stringToHclTerraform(struct!.defaultProvider),
+      value: cdktn.stringToHclTerraform(struct!.defaultProvider),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runtime_version: {
-      value: cdktf.stringToHclTerraform(struct!.runtimeVersion),
+      value: cdktn.stringToHclTerraform(struct!.runtimeVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_refresh_extension_hours: {
-      value: cdktf.numberToHclTerraform(struct!.tokenRefreshExtensionHours),
+      value: cdktn.numberToHclTerraform(struct!.tokenRefreshExtensionHours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     token_store_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.tokenStoreEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.tokenStoreEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     unauthenticated_client_action: {
-      value: cdktf.stringToHclTerraform(struct!.unauthenticatedClientAction),
+      value: cdktn.stringToHclTerraform(struct!.unauthenticatedClientAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1547,14 +1547,14 @@ export function linuxWebAppSlotAuthSettingsToHclTerraform(struct?: LinuxWebAppSl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1712,11 +1712,11 @@ export class LinuxWebAppSlotAuthSettingsOutputReference extends cdktf.ComplexObj
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1773,11 +1773,11 @@ export class LinuxWebAppSlotAuthSettingsOutputReference extends cdktf.ComplexObj
   }
 
   // token_store_enabled - computed: false, optional: true, required: false
-  private _tokenStoreEnabled?: boolean | cdktf.IResolvable; 
+  private _tokenStoreEnabled?: boolean | cdktn.IResolvable; 
   public get tokenStoreEnabled() {
     return this.getBooleanAttribute('token_store_enabled');
   }
-  public set tokenStoreEnabled(value: boolean | cdktf.IResolvable) {
+  public set tokenStoreEnabled(value: boolean | cdktn.IResolvable) {
     this._tokenStoreEnabled = value;
   }
   public resetTokenStoreEnabled() {
@@ -1972,105 +1972,105 @@ export interface LinuxWebAppSlotAuthSettingsV2ActiveDirectoryV2 {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#www_authentication_disabled LinuxWebAppSlot#www_authentication_disabled}
   */
-  readonly wwwAuthenticationDisabled?: boolean | cdktf.IResolvable;
+  readonly wwwAuthenticationDisabled?: boolean | cdktn.IResolvable;
 }
 
 export function linuxWebAppSlotAuthSettingsV2ActiveDirectoryV2ToTerraform(struct?: LinuxWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference | LinuxWebAppSlotAuthSettingsV2ActiveDirectoryV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_applications: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedApplications),
-    allowed_audiences: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedAudiences),
-    allowed_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedGroups),
-    allowed_identities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedIdentities),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret_certificate_thumbprint: cdktf.stringToTerraform(struct!.clientSecretCertificateThumbprint),
-    client_secret_setting_name: cdktf.stringToTerraform(struct!.clientSecretSettingName),
-    jwt_allowed_client_applications: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jwtAllowedClientApplications),
-    jwt_allowed_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jwtAllowedGroups),
-    login_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.loginParameters),
-    tenant_auth_endpoint: cdktf.stringToTerraform(struct!.tenantAuthEndpoint),
-    www_authentication_disabled: cdktf.booleanToTerraform(struct!.wwwAuthenticationDisabled),
+    allowed_applications: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedApplications),
+    allowed_audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedAudiences),
+    allowed_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedGroups),
+    allowed_identities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedIdentities),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret_certificate_thumbprint: cdktn.stringToTerraform(struct!.clientSecretCertificateThumbprint),
+    client_secret_setting_name: cdktn.stringToTerraform(struct!.clientSecretSettingName),
+    jwt_allowed_client_applications: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jwtAllowedClientApplications),
+    jwt_allowed_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jwtAllowedGroups),
+    login_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.loginParameters),
+    tenant_auth_endpoint: cdktn.stringToTerraform(struct!.tenantAuthEndpoint),
+    www_authentication_disabled: cdktn.booleanToTerraform(struct!.wwwAuthenticationDisabled),
   }
 }
 
 
 export function linuxWebAppSlotAuthSettingsV2ActiveDirectoryV2ToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference | LinuxWebAppSlotAuthSettingsV2ActiveDirectoryV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_applications: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedApplications),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedApplications),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allowed_audiences: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedAudiences),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedAudiences),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allowed_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedGroups),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allowed_identities: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedIdentities),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedIdentities),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_certificate_thumbprint: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretCertificateThumbprint),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretCertificateThumbprint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_setting_name: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretSettingName),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretSettingName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jwt_allowed_client_applications: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jwtAllowedClientApplications),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jwtAllowedClientApplications),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     jwt_allowed_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jwtAllowedGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jwtAllowedGroups),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     login_parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.loginParameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.loginParameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     tenant_auth_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.tenantAuthEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.tenantAuthEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     www_authentication_disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.wwwAuthenticationDisabled),
+      value: cdktn.booleanToHclTerraform(struct!.wwwAuthenticationDisabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2081,14 +2081,14 @@ export function linuxWebAppSlotAuthSettingsV2ActiveDirectoryV2ToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2350,11 +2350,11 @@ export class LinuxWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference exten
   }
 
   // www_authentication_disabled - computed: false, optional: true, required: false
-  private _wwwAuthenticationDisabled?: boolean | cdktf.IResolvable; 
+  private _wwwAuthenticationDisabled?: boolean | cdktn.IResolvable; 
   public get wwwAuthenticationDisabled() {
     return this.getBooleanAttribute('www_authentication_disabled');
   }
-  public set wwwAuthenticationDisabled(value: boolean | cdktf.IResolvable) {
+  public set wwwAuthenticationDisabled(value: boolean | cdktn.IResolvable) {
     this._wwwAuthenticationDisabled = value;
   }
   public resetWwwAuthenticationDisabled() {
@@ -2381,31 +2381,31 @@ export interface LinuxWebAppSlotAuthSettingsV2AppleV2 {
 }
 
 export function linuxWebAppSlotAuthSettingsV2AppleV2ToTerraform(struct?: LinuxWebAppSlotAuthSettingsV2AppleV2OutputReference | LinuxWebAppSlotAuthSettingsV2AppleV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret_setting_name: cdktf.stringToTerraform(struct!.clientSecretSettingName),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret_setting_name: cdktn.stringToTerraform(struct!.clientSecretSettingName),
   }
 }
 
 
 export function linuxWebAppSlotAuthSettingsV2AppleV2ToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsV2AppleV2OutputReference | LinuxWebAppSlotAuthSettingsV2AppleV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_setting_name: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretSettingName),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretSettingName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2416,14 +2416,14 @@ export function linuxWebAppSlotAuthSettingsV2AppleV2ToHclTerraform(struct?: Linu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsV2AppleV2OutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsV2AppleV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2495,24 +2495,24 @@ export interface LinuxWebAppSlotAuthSettingsV2AzureStaticWebAppV2 {
 }
 
 export function linuxWebAppSlotAuthSettingsV2AzureStaticWebAppV2ToTerraform(struct?: LinuxWebAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference | LinuxWebAppSlotAuthSettingsV2AzureStaticWebAppV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
   }
 }
 
 
 export function linuxWebAppSlotAuthSettingsV2AzureStaticWebAppV2ToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference | LinuxWebAppSlotAuthSettingsV2AzureStaticWebAppV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2523,14 +2523,14 @@ export function linuxWebAppSlotAuthSettingsV2AzureStaticWebAppV2ToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2601,53 +2601,53 @@ export interface LinuxWebAppSlotAuthSettingsV2CustomOidcV2 {
   readonly scopes?: string[];
 }
 
-export function linuxWebAppSlotAuthSettingsV2CustomOidcV2ToTerraform(struct?: LinuxWebAppSlotAuthSettingsV2CustomOidcV2 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotAuthSettingsV2CustomOidcV2ToTerraform(struct?: LinuxWebAppSlotAuthSettingsV2CustomOidcV2 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    name: cdktf.stringToTerraform(struct!.name),
-    name_claim_type: cdktf.stringToTerraform(struct!.nameClaimType),
-    openid_configuration_endpoint: cdktf.stringToTerraform(struct!.openidConfigurationEndpoint),
-    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    name: cdktn.stringToTerraform(struct!.name),
+    name_claim_type: cdktn.stringToTerraform(struct!.nameClaimType),
+    openid_configuration_endpoint: cdktn.stringToTerraform(struct!.openidConfigurationEndpoint),
+    scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.scopes),
   }
 }
 
 
-export function linuxWebAppSlotAuthSettingsV2CustomOidcV2ToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsV2CustomOidcV2 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotAuthSettingsV2CustomOidcV2ToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsV2CustomOidcV2 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name_claim_type: {
-      value: cdktf.stringToHclTerraform(struct!.nameClaimType),
+      value: cdktn.stringToHclTerraform(struct!.nameClaimType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     openid_configuration_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.openidConfigurationEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.openidConfigurationEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.scopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2658,9 +2658,9 @@ export function linuxWebAppSlotAuthSettingsV2CustomOidcV2ToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsV2CustomOidcV2OutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsV2CustomOidcV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2668,11 +2668,11 @@ export class LinuxWebAppSlotAuthSettingsV2CustomOidcV2OutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LinuxWebAppSlotAuthSettingsV2CustomOidcV2 | cdktf.IResolvable | undefined {
+  public get internalValue(): LinuxWebAppSlotAuthSettingsV2CustomOidcV2 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2701,7 +2701,7 @@ export class LinuxWebAppSlotAuthSettingsV2CustomOidcV2OutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LinuxWebAppSlotAuthSettingsV2CustomOidcV2 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LinuxWebAppSlotAuthSettingsV2CustomOidcV2 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2711,7 +2711,7 @@ export class LinuxWebAppSlotAuthSettingsV2CustomOidcV2OutputReference extends cd
       this._openidConfigurationEndpoint = undefined;
       this._scopes = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2828,15 +2828,15 @@ export class LinuxWebAppSlotAuthSettingsV2CustomOidcV2OutputReference extends cd
   }
 }
 
-export class LinuxWebAppSlotAuthSettingsV2CustomOidcV2List extends cdktf.ComplexList {
-  public internalValue? : LinuxWebAppSlotAuthSettingsV2CustomOidcV2[] | cdktf.IResolvable
+export class LinuxWebAppSlotAuthSettingsV2CustomOidcV2List extends cdktn.ComplexList {
+  public internalValue? : LinuxWebAppSlotAuthSettingsV2CustomOidcV2[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2875,45 +2875,45 @@ export interface LinuxWebAppSlotAuthSettingsV2FacebookV2 {
 }
 
 export function linuxWebAppSlotAuthSettingsV2FacebookV2ToTerraform(struct?: LinuxWebAppSlotAuthSettingsV2FacebookV2OutputReference | LinuxWebAppSlotAuthSettingsV2FacebookV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    app_id: cdktf.stringToTerraform(struct!.appId),
-    app_secret_setting_name: cdktf.stringToTerraform(struct!.appSecretSettingName),
-    graph_api_version: cdktf.stringToTerraform(struct!.graphApiVersion),
-    login_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginScopes),
+    app_id: cdktn.stringToTerraform(struct!.appId),
+    app_secret_setting_name: cdktn.stringToTerraform(struct!.appSecretSettingName),
+    graph_api_version: cdktn.stringToTerraform(struct!.graphApiVersion),
+    login_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.loginScopes),
   }
 }
 
 
 export function linuxWebAppSlotAuthSettingsV2FacebookV2ToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsV2FacebookV2OutputReference | LinuxWebAppSlotAuthSettingsV2FacebookV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     app_id: {
-      value: cdktf.stringToHclTerraform(struct!.appId),
+      value: cdktn.stringToHclTerraform(struct!.appId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     app_secret_setting_name: {
-      value: cdktf.stringToHclTerraform(struct!.appSecretSettingName),
+      value: cdktn.stringToHclTerraform(struct!.appSecretSettingName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     graph_api_version: {
-      value: cdktf.stringToHclTerraform(struct!.graphApiVersion),
+      value: cdktn.stringToHclTerraform(struct!.graphApiVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     login_scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.loginScopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.loginScopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2924,14 +2924,14 @@ export function linuxWebAppSlotAuthSettingsV2FacebookV2ToHclTerraform(struct?: L
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsV2FacebookV2OutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsV2FacebookV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3054,38 +3054,38 @@ export interface LinuxWebAppSlotAuthSettingsV2GithubV2 {
 }
 
 export function linuxWebAppSlotAuthSettingsV2GithubV2ToTerraform(struct?: LinuxWebAppSlotAuthSettingsV2GithubV2OutputReference | LinuxWebAppSlotAuthSettingsV2GithubV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret_setting_name: cdktf.stringToTerraform(struct!.clientSecretSettingName),
-    login_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginScopes),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret_setting_name: cdktn.stringToTerraform(struct!.clientSecretSettingName),
+    login_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.loginScopes),
   }
 }
 
 
 export function linuxWebAppSlotAuthSettingsV2GithubV2ToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsV2GithubV2OutputReference | LinuxWebAppSlotAuthSettingsV2GithubV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_setting_name: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretSettingName),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretSettingName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     login_scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.loginScopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.loginScopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -3096,14 +3096,14 @@ export function linuxWebAppSlotAuthSettingsV2GithubV2ToHclTerraform(struct?: Lin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsV2GithubV2OutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsV2GithubV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3210,45 +3210,45 @@ export interface LinuxWebAppSlotAuthSettingsV2GoogleV2 {
 }
 
 export function linuxWebAppSlotAuthSettingsV2GoogleV2ToTerraform(struct?: LinuxWebAppSlotAuthSettingsV2GoogleV2OutputReference | LinuxWebAppSlotAuthSettingsV2GoogleV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_audiences: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedAudiences),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret_setting_name: cdktf.stringToTerraform(struct!.clientSecretSettingName),
-    login_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginScopes),
+    allowed_audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedAudiences),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret_setting_name: cdktn.stringToTerraform(struct!.clientSecretSettingName),
+    login_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.loginScopes),
   }
 }
 
 
 export function linuxWebAppSlotAuthSettingsV2GoogleV2ToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsV2GoogleV2OutputReference | LinuxWebAppSlotAuthSettingsV2GoogleV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_audiences: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedAudiences),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedAudiences),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_setting_name: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretSettingName),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretSettingName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     login_scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.loginScopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.loginScopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -3259,14 +3259,14 @@ export function linuxWebAppSlotAuthSettingsV2GoogleV2ToHclTerraform(struct?: Lin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsV2GoogleV2OutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsV2GoogleV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3403,7 +3403,7 @@ export interface LinuxWebAppSlotAuthSettingsV2Login {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#preserve_url_fragments_for_logins LinuxWebAppSlot#preserve_url_fragments_for_logins}
   */
-  readonly preserveUrlFragmentsForLogins?: boolean | cdktf.IResolvable;
+  readonly preserveUrlFragmentsForLogins?: boolean | cdktn.IResolvable;
   /**
   * The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to `72` hours.
   *
@@ -3415,7 +3415,7 @@ export interface LinuxWebAppSlotAuthSettingsV2Login {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#token_store_enabled LinuxWebAppSlot#token_store_enabled}
   */
-  readonly tokenStoreEnabled?: boolean | cdktf.IResolvable;
+  readonly tokenStoreEnabled?: boolean | cdktn.IResolvable;
   /**
   * The directory path in the App Filesystem in which the tokens will be stored.
   *
@@ -3433,98 +3433,98 @@ export interface LinuxWebAppSlotAuthSettingsV2Login {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#validate_nonce LinuxWebAppSlot#validate_nonce}
   */
-  readonly validateNonce?: boolean | cdktf.IResolvable;
+  readonly validateNonce?: boolean | cdktn.IResolvable;
 }
 
 export function linuxWebAppSlotAuthSettingsV2LoginToTerraform(struct?: LinuxWebAppSlotAuthSettingsV2LoginOutputReference | LinuxWebAppSlotAuthSettingsV2Login): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_external_redirect_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedExternalRedirectUrls),
-    cookie_expiration_convention: cdktf.stringToTerraform(struct!.cookieExpirationConvention),
-    cookie_expiration_time: cdktf.stringToTerraform(struct!.cookieExpirationTime),
-    logout_endpoint: cdktf.stringToTerraform(struct!.logoutEndpoint),
-    nonce_expiration_time: cdktf.stringToTerraform(struct!.nonceExpirationTime),
-    preserve_url_fragments_for_logins: cdktf.booleanToTerraform(struct!.preserveUrlFragmentsForLogins),
-    token_refresh_extension_time: cdktf.numberToTerraform(struct!.tokenRefreshExtensionTime),
-    token_store_enabled: cdktf.booleanToTerraform(struct!.tokenStoreEnabled),
-    token_store_path: cdktf.stringToTerraform(struct!.tokenStorePath),
-    token_store_sas_setting_name: cdktf.stringToTerraform(struct!.tokenStoreSasSettingName),
-    validate_nonce: cdktf.booleanToTerraform(struct!.validateNonce),
+    allowed_external_redirect_urls: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedExternalRedirectUrls),
+    cookie_expiration_convention: cdktn.stringToTerraform(struct!.cookieExpirationConvention),
+    cookie_expiration_time: cdktn.stringToTerraform(struct!.cookieExpirationTime),
+    logout_endpoint: cdktn.stringToTerraform(struct!.logoutEndpoint),
+    nonce_expiration_time: cdktn.stringToTerraform(struct!.nonceExpirationTime),
+    preserve_url_fragments_for_logins: cdktn.booleanToTerraform(struct!.preserveUrlFragmentsForLogins),
+    token_refresh_extension_time: cdktn.numberToTerraform(struct!.tokenRefreshExtensionTime),
+    token_store_enabled: cdktn.booleanToTerraform(struct!.tokenStoreEnabled),
+    token_store_path: cdktn.stringToTerraform(struct!.tokenStorePath),
+    token_store_sas_setting_name: cdktn.stringToTerraform(struct!.tokenStoreSasSettingName),
+    validate_nonce: cdktn.booleanToTerraform(struct!.validateNonce),
   }
 }
 
 
 export function linuxWebAppSlotAuthSettingsV2LoginToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsV2LoginOutputReference | LinuxWebAppSlotAuthSettingsV2Login): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_external_redirect_urls: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedExternalRedirectUrls),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedExternalRedirectUrls),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     cookie_expiration_convention: {
-      value: cdktf.stringToHclTerraform(struct!.cookieExpirationConvention),
+      value: cdktn.stringToHclTerraform(struct!.cookieExpirationConvention),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cookie_expiration_time: {
-      value: cdktf.stringToHclTerraform(struct!.cookieExpirationTime),
+      value: cdktn.stringToHclTerraform(struct!.cookieExpirationTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     logout_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.logoutEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.logoutEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     nonce_expiration_time: {
-      value: cdktf.stringToHclTerraform(struct!.nonceExpirationTime),
+      value: cdktn.stringToHclTerraform(struct!.nonceExpirationTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     preserve_url_fragments_for_logins: {
-      value: cdktf.booleanToHclTerraform(struct!.preserveUrlFragmentsForLogins),
+      value: cdktn.booleanToHclTerraform(struct!.preserveUrlFragmentsForLogins),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     token_refresh_extension_time: {
-      value: cdktf.numberToHclTerraform(struct!.tokenRefreshExtensionTime),
+      value: cdktn.numberToHclTerraform(struct!.tokenRefreshExtensionTime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     token_store_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.tokenStoreEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.tokenStoreEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     token_store_path: {
-      value: cdktf.stringToHclTerraform(struct!.tokenStorePath),
+      value: cdktn.stringToHclTerraform(struct!.tokenStorePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_store_sas_setting_name: {
-      value: cdktf.stringToHclTerraform(struct!.tokenStoreSasSettingName),
+      value: cdktn.stringToHclTerraform(struct!.tokenStoreSasSettingName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     validate_nonce: {
-      value: cdktf.booleanToHclTerraform(struct!.validateNonce),
+      value: cdktn.booleanToHclTerraform(struct!.validateNonce),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3535,14 +3535,14 @@ export function linuxWebAppSlotAuthSettingsV2LoginToHclTerraform(struct?: LinuxW
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsV2LoginOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsV2LoginOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3708,11 +3708,11 @@ export class LinuxWebAppSlotAuthSettingsV2LoginOutputReference extends cdktf.Com
   }
 
   // preserve_url_fragments_for_logins - computed: false, optional: true, required: false
-  private _preserveUrlFragmentsForLogins?: boolean | cdktf.IResolvable; 
+  private _preserveUrlFragmentsForLogins?: boolean | cdktn.IResolvable; 
   public get preserveUrlFragmentsForLogins() {
     return this.getBooleanAttribute('preserve_url_fragments_for_logins');
   }
-  public set preserveUrlFragmentsForLogins(value: boolean | cdktf.IResolvable) {
+  public set preserveUrlFragmentsForLogins(value: boolean | cdktn.IResolvable) {
     this._preserveUrlFragmentsForLogins = value;
   }
   public resetPreserveUrlFragmentsForLogins() {
@@ -3740,11 +3740,11 @@ export class LinuxWebAppSlotAuthSettingsV2LoginOutputReference extends cdktf.Com
   }
 
   // token_store_enabled - computed: false, optional: true, required: false
-  private _tokenStoreEnabled?: boolean | cdktf.IResolvable; 
+  private _tokenStoreEnabled?: boolean | cdktn.IResolvable; 
   public get tokenStoreEnabled() {
     return this.getBooleanAttribute('token_store_enabled');
   }
-  public set tokenStoreEnabled(value: boolean | cdktf.IResolvable) {
+  public set tokenStoreEnabled(value: boolean | cdktn.IResolvable) {
     this._tokenStoreEnabled = value;
   }
   public resetTokenStoreEnabled() {
@@ -3788,11 +3788,11 @@ export class LinuxWebAppSlotAuthSettingsV2LoginOutputReference extends cdktf.Com
   }
 
   // validate_nonce - computed: false, optional: true, required: false
-  private _validateNonce?: boolean | cdktf.IResolvable; 
+  private _validateNonce?: boolean | cdktn.IResolvable; 
   public get validateNonce() {
     return this.getBooleanAttribute('validate_nonce');
   }
-  public set validateNonce(value: boolean | cdktf.IResolvable) {
+  public set validateNonce(value: boolean | cdktn.IResolvable) {
     this._validateNonce = value;
   }
   public resetValidateNonce() {
@@ -3831,45 +3831,45 @@ export interface LinuxWebAppSlotAuthSettingsV2MicrosoftV2 {
 }
 
 export function linuxWebAppSlotAuthSettingsV2MicrosoftV2ToTerraform(struct?: LinuxWebAppSlotAuthSettingsV2MicrosoftV2OutputReference | LinuxWebAppSlotAuthSettingsV2MicrosoftV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_audiences: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedAudiences),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret_setting_name: cdktf.stringToTerraform(struct!.clientSecretSettingName),
-    login_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.loginScopes),
+    allowed_audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedAudiences),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret_setting_name: cdktn.stringToTerraform(struct!.clientSecretSettingName),
+    login_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.loginScopes),
   }
 }
 
 
 export function linuxWebAppSlotAuthSettingsV2MicrosoftV2ToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsV2MicrosoftV2OutputReference | LinuxWebAppSlotAuthSettingsV2MicrosoftV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_audiences: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedAudiences),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedAudiences),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_setting_name: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretSettingName),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretSettingName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     login_scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.loginScopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.loginScopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -3880,14 +3880,14 @@ export function linuxWebAppSlotAuthSettingsV2MicrosoftV2ToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsV2MicrosoftV2OutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsV2MicrosoftV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4004,31 +4004,31 @@ export interface LinuxWebAppSlotAuthSettingsV2TwitterV2 {
 }
 
 export function linuxWebAppSlotAuthSettingsV2TwitterV2ToTerraform(struct?: LinuxWebAppSlotAuthSettingsV2TwitterV2OutputReference | LinuxWebAppSlotAuthSettingsV2TwitterV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    consumer_key: cdktf.stringToTerraform(struct!.consumerKey),
-    consumer_secret_setting_name: cdktf.stringToTerraform(struct!.consumerSecretSettingName),
+    consumer_key: cdktn.stringToTerraform(struct!.consumerKey),
+    consumer_secret_setting_name: cdktn.stringToTerraform(struct!.consumerSecretSettingName),
   }
 }
 
 
 export function linuxWebAppSlotAuthSettingsV2TwitterV2ToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsV2TwitterV2OutputReference | LinuxWebAppSlotAuthSettingsV2TwitterV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     consumer_key: {
-      value: cdktf.stringToHclTerraform(struct!.consumerKey),
+      value: cdktn.stringToHclTerraform(struct!.consumerKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     consumer_secret_setting_name: {
-      value: cdktf.stringToHclTerraform(struct!.consumerSecretSettingName),
+      value: cdktn.stringToHclTerraform(struct!.consumerSecretSettingName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4039,14 +4039,14 @@ export function linuxWebAppSlotAuthSettingsV2TwitterV2ToHclTerraform(struct?: Li
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsV2TwitterV2OutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsV2TwitterV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4109,7 +4109,7 @@ export interface LinuxWebAppSlotAuthSettingsV2 {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#auth_enabled LinuxWebAppSlot#auth_enabled}
   */
-  readonly authEnabled?: boolean | cdktf.IResolvable;
+  readonly authEnabled?: boolean | cdktn.IResolvable;
   /**
   * The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory.
   *
@@ -4157,13 +4157,13 @@ export interface LinuxWebAppSlotAuthSettingsV2 {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#require_authentication LinuxWebAppSlot#require_authentication}
   */
-  readonly requireAuthentication?: boolean | cdktf.IResolvable;
+  readonly requireAuthentication?: boolean | cdktn.IResolvable;
   /**
   * Should HTTPS be required on connections? Defaults to true.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#require_https LinuxWebAppSlot#require_https}
   */
-  readonly requireHttps?: boolean | cdktf.IResolvable;
+  readonly requireHttps?: boolean | cdktn.IResolvable;
   /**
   * The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`
   *
@@ -4199,7 +4199,7 @@ export interface LinuxWebAppSlotAuthSettingsV2 {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#custom_oidc_v2 LinuxWebAppSlot#custom_oidc_v2}
   */
-  readonly customOidcV2?: LinuxWebAppSlotAuthSettingsV2CustomOidcV2[] | cdktf.IResolvable;
+  readonly customOidcV2?: LinuxWebAppSlotAuthSettingsV2CustomOidcV2[] | cdktn.IResolvable;
   /**
   * facebook_v2 block
   *
@@ -4239,27 +4239,27 @@ export interface LinuxWebAppSlotAuthSettingsV2 {
 }
 
 export function linuxWebAppSlotAuthSettingsV2ToTerraform(struct?: LinuxWebAppSlotAuthSettingsV2OutputReference | LinuxWebAppSlotAuthSettingsV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_enabled: cdktf.booleanToTerraform(struct!.authEnabled),
-    config_file_path: cdktf.stringToTerraform(struct!.configFilePath),
-    default_provider: cdktf.stringToTerraform(struct!.defaultProvider),
-    excluded_paths: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedPaths),
-    forward_proxy_convention: cdktf.stringToTerraform(struct!.forwardProxyConvention),
-    forward_proxy_custom_host_header_name: cdktf.stringToTerraform(struct!.forwardProxyCustomHostHeaderName),
-    forward_proxy_custom_scheme_header_name: cdktf.stringToTerraform(struct!.forwardProxyCustomSchemeHeaderName),
-    http_route_api_prefix: cdktf.stringToTerraform(struct!.httpRouteApiPrefix),
-    require_authentication: cdktf.booleanToTerraform(struct!.requireAuthentication),
-    require_https: cdktf.booleanToTerraform(struct!.requireHttps),
-    runtime_version: cdktf.stringToTerraform(struct!.runtimeVersion),
-    unauthenticated_action: cdktf.stringToTerraform(struct!.unauthenticatedAction),
+    auth_enabled: cdktn.booleanToTerraform(struct!.authEnabled),
+    config_file_path: cdktn.stringToTerraform(struct!.configFilePath),
+    default_provider: cdktn.stringToTerraform(struct!.defaultProvider),
+    excluded_paths: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedPaths),
+    forward_proxy_convention: cdktn.stringToTerraform(struct!.forwardProxyConvention),
+    forward_proxy_custom_host_header_name: cdktn.stringToTerraform(struct!.forwardProxyCustomHostHeaderName),
+    forward_proxy_custom_scheme_header_name: cdktn.stringToTerraform(struct!.forwardProxyCustomSchemeHeaderName),
+    http_route_api_prefix: cdktn.stringToTerraform(struct!.httpRouteApiPrefix),
+    require_authentication: cdktn.booleanToTerraform(struct!.requireAuthentication),
+    require_https: cdktn.booleanToTerraform(struct!.requireHttps),
+    runtime_version: cdktn.stringToTerraform(struct!.runtimeVersion),
+    unauthenticated_action: cdktn.stringToTerraform(struct!.unauthenticatedAction),
     active_directory_v2: linuxWebAppSlotAuthSettingsV2ActiveDirectoryV2ToTerraform(struct!.activeDirectoryV2),
     apple_v2: linuxWebAppSlotAuthSettingsV2AppleV2ToTerraform(struct!.appleV2),
     azure_static_web_app_v2: linuxWebAppSlotAuthSettingsV2AzureStaticWebAppV2ToTerraform(struct!.azureStaticWebAppV2),
-    custom_oidc_v2: cdktf.listMapper(linuxWebAppSlotAuthSettingsV2CustomOidcV2ToTerraform, true)(struct!.customOidcV2),
+    custom_oidc_v2: cdktn.listMapper(linuxWebAppSlotAuthSettingsV2CustomOidcV2ToTerraform, true)(struct!.customOidcV2),
     facebook_v2: linuxWebAppSlotAuthSettingsV2FacebookV2ToTerraform(struct!.facebookV2),
     github_v2: linuxWebAppSlotAuthSettingsV2GithubV2ToTerraform(struct!.githubV2),
     google_v2: linuxWebAppSlotAuthSettingsV2GoogleV2ToTerraform(struct!.googleV2),
@@ -4271,79 +4271,79 @@ export function linuxWebAppSlotAuthSettingsV2ToTerraform(struct?: LinuxWebAppSlo
 
 
 export function linuxWebAppSlotAuthSettingsV2ToHclTerraform(struct?: LinuxWebAppSlotAuthSettingsV2OutputReference | LinuxWebAppSlotAuthSettingsV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.authEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.authEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     config_file_path: {
-      value: cdktf.stringToHclTerraform(struct!.configFilePath),
+      value: cdktn.stringToHclTerraform(struct!.configFilePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default_provider: {
-      value: cdktf.stringToHclTerraform(struct!.defaultProvider),
+      value: cdktn.stringToHclTerraform(struct!.defaultProvider),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     excluded_paths: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedPaths),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedPaths),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     forward_proxy_convention: {
-      value: cdktf.stringToHclTerraform(struct!.forwardProxyConvention),
+      value: cdktn.stringToHclTerraform(struct!.forwardProxyConvention),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     forward_proxy_custom_host_header_name: {
-      value: cdktf.stringToHclTerraform(struct!.forwardProxyCustomHostHeaderName),
+      value: cdktn.stringToHclTerraform(struct!.forwardProxyCustomHostHeaderName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     forward_proxy_custom_scheme_header_name: {
-      value: cdktf.stringToHclTerraform(struct!.forwardProxyCustomSchemeHeaderName),
+      value: cdktn.stringToHclTerraform(struct!.forwardProxyCustomSchemeHeaderName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_route_api_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.httpRouteApiPrefix),
+      value: cdktn.stringToHclTerraform(struct!.httpRouteApiPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     require_authentication: {
-      value: cdktf.booleanToHclTerraform(struct!.requireAuthentication),
+      value: cdktn.booleanToHclTerraform(struct!.requireAuthentication),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     require_https: {
-      value: cdktf.booleanToHclTerraform(struct!.requireHttps),
+      value: cdktn.booleanToHclTerraform(struct!.requireHttps),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     runtime_version: {
-      value: cdktf.stringToHclTerraform(struct!.runtimeVersion),
+      value: cdktn.stringToHclTerraform(struct!.runtimeVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unauthenticated_action: {
-      value: cdktf.stringToHclTerraform(struct!.unauthenticatedAction),
+      value: cdktn.stringToHclTerraform(struct!.unauthenticatedAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4367,7 +4367,7 @@ export function linuxWebAppSlotAuthSettingsV2ToHclTerraform(struct?: LinuxWebApp
       storageClassType: "LinuxWebAppSlotAuthSettingsV2AzureStaticWebAppV2List",
     },
     custom_oidc_v2: {
-      value: cdktf.listMapperHcl(linuxWebAppSlotAuthSettingsV2CustomOidcV2ToHclTerraform, true)(struct!.customOidcV2),
+      value: cdktn.listMapperHcl(linuxWebAppSlotAuthSettingsV2CustomOidcV2ToHclTerraform, true)(struct!.customOidcV2),
       isBlock: true,
       type: "list",
       storageClassType: "LinuxWebAppSlotAuthSettingsV2CustomOidcV2List",
@@ -4414,14 +4414,14 @@ export function linuxWebAppSlotAuthSettingsV2ToHclTerraform(struct?: LinuxWebApp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotAuthSettingsV2OutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotAuthSettingsV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4573,11 +4573,11 @@ export class LinuxWebAppSlotAuthSettingsV2OutputReference extends cdktf.ComplexO
   }
 
   // auth_enabled - computed: false, optional: true, required: false
-  private _authEnabled?: boolean | cdktf.IResolvable; 
+  private _authEnabled?: boolean | cdktn.IResolvable; 
   public get authEnabled() {
     return this.getBooleanAttribute('auth_enabled');
   }
-  public set authEnabled(value: boolean | cdktf.IResolvable) {
+  public set authEnabled(value: boolean | cdktn.IResolvable) {
     this._authEnabled = value;
   }
   public resetAuthEnabled() {
@@ -4701,11 +4701,11 @@ export class LinuxWebAppSlotAuthSettingsV2OutputReference extends cdktf.ComplexO
   }
 
   // require_authentication - computed: false, optional: true, required: false
-  private _requireAuthentication?: boolean | cdktf.IResolvable; 
+  private _requireAuthentication?: boolean | cdktn.IResolvable; 
   public get requireAuthentication() {
     return this.getBooleanAttribute('require_authentication');
   }
-  public set requireAuthentication(value: boolean | cdktf.IResolvable) {
+  public set requireAuthentication(value: boolean | cdktn.IResolvable) {
     this._requireAuthentication = value;
   }
   public resetRequireAuthentication() {
@@ -4717,11 +4717,11 @@ export class LinuxWebAppSlotAuthSettingsV2OutputReference extends cdktf.ComplexO
   }
 
   // require_https - computed: false, optional: true, required: false
-  private _requireHttps?: boolean | cdktf.IResolvable; 
+  private _requireHttps?: boolean | cdktn.IResolvable; 
   public get requireHttps() {
     return this.getBooleanAttribute('require_https');
   }
-  public set requireHttps(value: boolean | cdktf.IResolvable) {
+  public set requireHttps(value: boolean | cdktn.IResolvable) {
     this._requireHttps = value;
   }
   public resetRequireHttps() {
@@ -4817,7 +4817,7 @@ export class LinuxWebAppSlotAuthSettingsV2OutputReference extends cdktf.ComplexO
   public get customOidcV2() {
     return this._customOidcV2;
   }
-  public putCustomOidcV2(value: LinuxWebAppSlotAuthSettingsV2CustomOidcV2[] | cdktf.IResolvable) {
+  public putCustomOidcV2(value: LinuxWebAppSlotAuthSettingsV2CustomOidcV2[] | cdktn.IResolvable) {
     this._customOidcV2.internalValue = value;
   }
   public resetCustomOidcV2() {
@@ -4939,7 +4939,7 @@ export interface LinuxWebAppSlotBackupSchedule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#keep_at_least_one_backup LinuxWebAppSlot#keep_at_least_one_backup}
   */
-  readonly keepAtLeastOneBackup?: boolean | cdktf.IResolvable;
+  readonly keepAtLeastOneBackup?: boolean | cdktn.IResolvable;
   /**
   * After how many days backups should be deleted.
   *
@@ -4955,52 +4955,52 @@ export interface LinuxWebAppSlotBackupSchedule {
 }
 
 export function linuxWebAppSlotBackupScheduleToTerraform(struct?: LinuxWebAppSlotBackupScheduleOutputReference | LinuxWebAppSlotBackupSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    frequency_interval: cdktf.numberToTerraform(struct!.frequencyInterval),
-    frequency_unit: cdktf.stringToTerraform(struct!.frequencyUnit),
-    keep_at_least_one_backup: cdktf.booleanToTerraform(struct!.keepAtLeastOneBackup),
-    retention_period_days: cdktf.numberToTerraform(struct!.retentionPeriodDays),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
+    frequency_interval: cdktn.numberToTerraform(struct!.frequencyInterval),
+    frequency_unit: cdktn.stringToTerraform(struct!.frequencyUnit),
+    keep_at_least_one_backup: cdktn.booleanToTerraform(struct!.keepAtLeastOneBackup),
+    retention_period_days: cdktn.numberToTerraform(struct!.retentionPeriodDays),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
   }
 }
 
 
 export function linuxWebAppSlotBackupScheduleToHclTerraform(struct?: LinuxWebAppSlotBackupScheduleOutputReference | LinuxWebAppSlotBackupSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     frequency_interval: {
-      value: cdktf.numberToHclTerraform(struct!.frequencyInterval),
+      value: cdktn.numberToHclTerraform(struct!.frequencyInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     frequency_unit: {
-      value: cdktf.stringToHclTerraform(struct!.frequencyUnit),
+      value: cdktn.stringToHclTerraform(struct!.frequencyUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     keep_at_least_one_backup: {
-      value: cdktf.booleanToHclTerraform(struct!.keepAtLeastOneBackup),
+      value: cdktn.booleanToHclTerraform(struct!.keepAtLeastOneBackup),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     retention_period_days: {
-      value: cdktf.numberToHclTerraform(struct!.retentionPeriodDays),
+      value: cdktn.numberToHclTerraform(struct!.retentionPeriodDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5011,14 +5011,14 @@ export function linuxWebAppSlotBackupScheduleToHclTerraform(struct?: LinuxWebApp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotBackupScheduleOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotBackupScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5094,11 +5094,11 @@ export class LinuxWebAppSlotBackupScheduleOutputReference extends cdktf.ComplexO
   }
 
   // keep_at_least_one_backup - computed: false, optional: true, required: false
-  private _keepAtLeastOneBackup?: boolean | cdktf.IResolvable; 
+  private _keepAtLeastOneBackup?: boolean | cdktn.IResolvable; 
   public get keepAtLeastOneBackup() {
     return this.getBooleanAttribute('keep_at_least_one_backup');
   }
-  public set keepAtLeastOneBackup(value: boolean | cdktf.IResolvable) {
+  public set keepAtLeastOneBackup(value: boolean | cdktn.IResolvable) {
     this._keepAtLeastOneBackup = value;
   }
   public resetKeepAtLeastOneBackup() {
@@ -5152,7 +5152,7 @@ export interface LinuxWebAppSlotBackup {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#enabled LinuxWebAppSlot#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The name which should be used for this Backup.
   *
@@ -5174,39 +5174,39 @@ export interface LinuxWebAppSlotBackup {
 }
 
 export function linuxWebAppSlotBackupToTerraform(struct?: LinuxWebAppSlotBackupOutputReference | LinuxWebAppSlotBackup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    storage_account_url: cdktf.stringToTerraform(struct!.storageAccountUrl),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    storage_account_url: cdktn.stringToTerraform(struct!.storageAccountUrl),
     schedule: linuxWebAppSlotBackupScheduleToTerraform(struct!.schedule),
   }
 }
 
 
 export function linuxWebAppSlotBackupToHclTerraform(struct?: LinuxWebAppSlotBackupOutputReference | LinuxWebAppSlotBackup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_url: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountUrl),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5223,14 +5223,14 @@ export function linuxWebAppSlotBackupToHclTerraform(struct?: LinuxWebAppSlotBack
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotBackupOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotBackupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5274,11 +5274,11 @@ export class LinuxWebAppSlotBackupOutputReference extends cdktf.ComplexObject {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -5349,39 +5349,39 @@ export interface LinuxWebAppSlotConnectionString {
   readonly value: string;
 }
 
-export function linuxWebAppSlotConnectionStringToTerraform(struct?: LinuxWebAppSlotConnectionString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotConnectionStringToTerraform(struct?: LinuxWebAppSlotConnectionString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function linuxWebAppSlotConnectionStringToHclTerraform(struct?: LinuxWebAppSlotConnectionString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotConnectionStringToHclTerraform(struct?: LinuxWebAppSlotConnectionString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5392,9 +5392,9 @@ export function linuxWebAppSlotConnectionStringToHclTerraform(struct?: LinuxWebA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotConnectionStringOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotConnectionStringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5402,11 +5402,11 @@ export class LinuxWebAppSlotConnectionStringOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LinuxWebAppSlotConnectionString | cdktf.IResolvable | undefined {
+  public get internalValue(): LinuxWebAppSlotConnectionString | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5427,7 +5427,7 @@ export class LinuxWebAppSlotConnectionStringOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LinuxWebAppSlotConnectionString | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LinuxWebAppSlotConnectionString | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5435,7 +5435,7 @@ export class LinuxWebAppSlotConnectionStringOutputReference extends cdktf.Comple
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5488,15 +5488,15 @@ export class LinuxWebAppSlotConnectionStringOutputReference extends cdktf.Comple
   }
 }
 
-export class LinuxWebAppSlotConnectionStringList extends cdktf.ComplexList {
-  public internalValue? : LinuxWebAppSlotConnectionString[] | cdktf.IResolvable
+export class LinuxWebAppSlotConnectionStringList extends cdktn.ComplexList {
+  public internalValue? : LinuxWebAppSlotConnectionString[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5519,31 +5519,31 @@ export interface LinuxWebAppSlotIdentity {
 }
 
 export function linuxWebAppSlotIdentityToTerraform(struct?: LinuxWebAppSlotIdentityOutputReference | LinuxWebAppSlotIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function linuxWebAppSlotIdentityToHclTerraform(struct?: LinuxWebAppSlotIdentityOutputReference | LinuxWebAppSlotIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5554,14 +5554,14 @@ export function linuxWebAppSlotIdentityToHclTerraform(struct?: LinuxWebAppSlotId
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotIdentityOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5595,7 +5595,7 @@ export class LinuxWebAppSlotIdentityOutputReference extends cdktf.ComplexObject 
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -5647,38 +5647,38 @@ export interface LinuxWebAppSlotLogsApplicationLogsAzureBlobStorage {
 }
 
 export function linuxWebAppSlotLogsApplicationLogsAzureBlobStorageToTerraform(struct?: LinuxWebAppSlotLogsApplicationLogsAzureBlobStorageOutputReference | LinuxWebAppSlotLogsApplicationLogsAzureBlobStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    level: cdktf.stringToTerraform(struct!.level),
-    retention_in_days: cdktf.numberToTerraform(struct!.retentionInDays),
-    sas_url: cdktf.stringToTerraform(struct!.sasUrl),
+    level: cdktn.stringToTerraform(struct!.level),
+    retention_in_days: cdktn.numberToTerraform(struct!.retentionInDays),
+    sas_url: cdktn.stringToTerraform(struct!.sasUrl),
   }
 }
 
 
 export function linuxWebAppSlotLogsApplicationLogsAzureBlobStorageToHclTerraform(struct?: LinuxWebAppSlotLogsApplicationLogsAzureBlobStorageOutputReference | LinuxWebAppSlotLogsApplicationLogsAzureBlobStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     level: {
-      value: cdktf.stringToHclTerraform(struct!.level),
+      value: cdktn.stringToHclTerraform(struct!.level),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retention_in_days: {
-      value: cdktf.numberToHclTerraform(struct!.retentionInDays),
+      value: cdktn.numberToHclTerraform(struct!.retentionInDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     sas_url: {
-      value: cdktf.stringToHclTerraform(struct!.sasUrl),
+      value: cdktn.stringToHclTerraform(struct!.sasUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5689,14 +5689,14 @@ export function linuxWebAppSlotLogsApplicationLogsAzureBlobStorageToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotLogsApplicationLogsAzureBlobStorageOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotLogsApplicationLogsAzureBlobStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5786,25 +5786,25 @@ export interface LinuxWebAppSlotLogsApplicationLogs {
 }
 
 export function linuxWebAppSlotLogsApplicationLogsToTerraform(struct?: LinuxWebAppSlotLogsApplicationLogsOutputReference | LinuxWebAppSlotLogsApplicationLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file_system_level: cdktf.stringToTerraform(struct!.fileSystemLevel),
+    file_system_level: cdktn.stringToTerraform(struct!.fileSystemLevel),
     azure_blob_storage: linuxWebAppSlotLogsApplicationLogsAzureBlobStorageToTerraform(struct!.azureBlobStorage),
   }
 }
 
 
 export function linuxWebAppSlotLogsApplicationLogsToHclTerraform(struct?: LinuxWebAppSlotLogsApplicationLogsOutputReference | LinuxWebAppSlotLogsApplicationLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file_system_level: {
-      value: cdktf.stringToHclTerraform(struct!.fileSystemLevel),
+      value: cdktn.stringToHclTerraform(struct!.fileSystemLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5821,14 +5821,14 @@ export function linuxWebAppSlotLogsApplicationLogsToHclTerraform(struct?: LinuxW
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotLogsApplicationLogsOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotLogsApplicationLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5900,31 +5900,31 @@ export interface LinuxWebAppSlotLogsHttpLogsAzureBlobStorage {
 }
 
 export function linuxWebAppSlotLogsHttpLogsAzureBlobStorageToTerraform(struct?: LinuxWebAppSlotLogsHttpLogsAzureBlobStorageOutputReference | LinuxWebAppSlotLogsHttpLogsAzureBlobStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    retention_in_days: cdktf.numberToTerraform(struct!.retentionInDays),
-    sas_url: cdktf.stringToTerraform(struct!.sasUrl),
+    retention_in_days: cdktn.numberToTerraform(struct!.retentionInDays),
+    sas_url: cdktn.stringToTerraform(struct!.sasUrl),
   }
 }
 
 
 export function linuxWebAppSlotLogsHttpLogsAzureBlobStorageToHclTerraform(struct?: LinuxWebAppSlotLogsHttpLogsAzureBlobStorageOutputReference | LinuxWebAppSlotLogsHttpLogsAzureBlobStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     retention_in_days: {
-      value: cdktf.numberToHclTerraform(struct!.retentionInDays),
+      value: cdktn.numberToHclTerraform(struct!.retentionInDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     sas_url: {
-      value: cdktf.stringToHclTerraform(struct!.sasUrl),
+      value: cdktn.stringToHclTerraform(struct!.sasUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5935,14 +5935,14 @@ export function linuxWebAppSlotLogsHttpLogsAzureBlobStorageToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotLogsHttpLogsAzureBlobStorageOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotLogsHttpLogsAzureBlobStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6014,31 +6014,31 @@ export interface LinuxWebAppSlotLogsHttpLogsFileSystem {
 }
 
 export function linuxWebAppSlotLogsHttpLogsFileSystemToTerraform(struct?: LinuxWebAppSlotLogsHttpLogsFileSystemOutputReference | LinuxWebAppSlotLogsHttpLogsFileSystem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    retention_in_days: cdktf.numberToTerraform(struct!.retentionInDays),
-    retention_in_mb: cdktf.numberToTerraform(struct!.retentionInMb),
+    retention_in_days: cdktn.numberToTerraform(struct!.retentionInDays),
+    retention_in_mb: cdktn.numberToTerraform(struct!.retentionInMb),
   }
 }
 
 
 export function linuxWebAppSlotLogsHttpLogsFileSystemToHclTerraform(struct?: LinuxWebAppSlotLogsHttpLogsFileSystemOutputReference | LinuxWebAppSlotLogsHttpLogsFileSystem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     retention_in_days: {
-      value: cdktf.numberToHclTerraform(struct!.retentionInDays),
+      value: cdktn.numberToHclTerraform(struct!.retentionInDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     retention_in_mb: {
-      value: cdktf.numberToHclTerraform(struct!.retentionInMb),
+      value: cdktn.numberToHclTerraform(struct!.retentionInMb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -6049,14 +6049,14 @@ export function linuxWebAppSlotLogsHttpLogsFileSystemToHclTerraform(struct?: Lin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotLogsHttpLogsFileSystemOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotLogsHttpLogsFileSystemOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6129,8 +6129,8 @@ export interface LinuxWebAppSlotLogsHttpLogs {
 }
 
 export function linuxWebAppSlotLogsHttpLogsToTerraform(struct?: LinuxWebAppSlotLogsHttpLogsOutputReference | LinuxWebAppSlotLogsHttpLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6141,8 +6141,8 @@ export function linuxWebAppSlotLogsHttpLogsToTerraform(struct?: LinuxWebAppSlotL
 
 
 export function linuxWebAppSlotLogsHttpLogsToHclTerraform(struct?: LinuxWebAppSlotLogsHttpLogsOutputReference | LinuxWebAppSlotLogsHttpLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6164,14 +6164,14 @@ export function linuxWebAppSlotLogsHttpLogsToHclTerraform(struct?: LinuxWebAppSl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotLogsHttpLogsOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotLogsHttpLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6238,11 +6238,11 @@ export interface LinuxWebAppSlotLogs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#detailed_error_messages LinuxWebAppSlot#detailed_error_messages}
   */
-  readonly detailedErrorMessages?: boolean | cdktf.IResolvable;
+  readonly detailedErrorMessages?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#failed_request_tracing LinuxWebAppSlot#failed_request_tracing}
   */
-  readonly failedRequestTracing?: boolean | cdktf.IResolvable;
+  readonly failedRequestTracing?: boolean | cdktn.IResolvable;
   /**
   * application_logs block
   *
@@ -6258,13 +6258,13 @@ export interface LinuxWebAppSlotLogs {
 }
 
 export function linuxWebAppSlotLogsToTerraform(struct?: LinuxWebAppSlotLogsOutputReference | LinuxWebAppSlotLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    detailed_error_messages: cdktf.booleanToTerraform(struct!.detailedErrorMessages),
-    failed_request_tracing: cdktf.booleanToTerraform(struct!.failedRequestTracing),
+    detailed_error_messages: cdktn.booleanToTerraform(struct!.detailedErrorMessages),
+    failed_request_tracing: cdktn.booleanToTerraform(struct!.failedRequestTracing),
     application_logs: linuxWebAppSlotLogsApplicationLogsToTerraform(struct!.applicationLogs),
     http_logs: linuxWebAppSlotLogsHttpLogsToTerraform(struct!.httpLogs),
   }
@@ -6272,19 +6272,19 @@ export function linuxWebAppSlotLogsToTerraform(struct?: LinuxWebAppSlotLogsOutpu
 
 
 export function linuxWebAppSlotLogsToHclTerraform(struct?: LinuxWebAppSlotLogsOutputReference | LinuxWebAppSlotLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     detailed_error_messages: {
-      value: cdktf.booleanToHclTerraform(struct!.detailedErrorMessages),
+      value: cdktn.booleanToHclTerraform(struct!.detailedErrorMessages),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     failed_request_tracing: {
-      value: cdktf.booleanToHclTerraform(struct!.failedRequestTracing),
+      value: cdktn.booleanToHclTerraform(struct!.failedRequestTracing),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -6307,14 +6307,14 @@ export function linuxWebAppSlotLogsToHclTerraform(struct?: LinuxWebAppSlotLogsOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotLogsOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6358,11 +6358,11 @@ export class LinuxWebAppSlotLogsOutputReference extends cdktf.ComplexObject {
   }
 
   // detailed_error_messages - computed: false, optional: true, required: false
-  private _detailedErrorMessages?: boolean | cdktf.IResolvable; 
+  private _detailedErrorMessages?: boolean | cdktn.IResolvable; 
   public get detailedErrorMessages() {
     return this.getBooleanAttribute('detailed_error_messages');
   }
-  public set detailedErrorMessages(value: boolean | cdktf.IResolvable) {
+  public set detailedErrorMessages(value: boolean | cdktn.IResolvable) {
     this._detailedErrorMessages = value;
   }
   public resetDetailedErrorMessages() {
@@ -6374,11 +6374,11 @@ export class LinuxWebAppSlotLogsOutputReference extends cdktf.ComplexObject {
   }
 
   // failed_request_tracing - computed: false, optional: true, required: false
-  private _failedRequestTracing?: boolean | cdktf.IResolvable; 
+  private _failedRequestTracing?: boolean | cdktn.IResolvable; 
   public get failedRequestTracing() {
     return this.getBooleanAttribute('failed_request_tracing');
   }
-  public set failedRequestTracing(value: boolean | cdktf.IResolvable) {
+  public set failedRequestTracing(value: boolean | cdktn.IResolvable) {
     this._failedRequestTracing = value;
   }
   public resetFailedRequestTracing() {
@@ -6477,108 +6477,108 @@ export interface LinuxWebAppSlotSiteConfigApplicationStack {
 }
 
 export function linuxWebAppSlotSiteConfigApplicationStackToTerraform(struct?: LinuxWebAppSlotSiteConfigApplicationStackOutputReference | LinuxWebAppSlotSiteConfigApplicationStack): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    docker_image_name: cdktf.stringToTerraform(struct!.dockerImageName),
-    docker_registry_password: cdktf.stringToTerraform(struct!.dockerRegistryPassword),
-    docker_registry_url: cdktf.stringToTerraform(struct!.dockerRegistryUrl),
-    docker_registry_username: cdktf.stringToTerraform(struct!.dockerRegistryUsername),
-    dotnet_version: cdktf.stringToTerraform(struct!.dotnetVersion),
-    go_version: cdktf.stringToTerraform(struct!.goVersion),
-    java_server: cdktf.stringToTerraform(struct!.javaServer),
-    java_server_version: cdktf.stringToTerraform(struct!.javaServerVersion),
-    java_version: cdktf.stringToTerraform(struct!.javaVersion),
-    node_version: cdktf.stringToTerraform(struct!.nodeVersion),
-    php_version: cdktf.stringToTerraform(struct!.phpVersion),
-    python_version: cdktf.stringToTerraform(struct!.pythonVersion),
-    ruby_version: cdktf.stringToTerraform(struct!.rubyVersion),
+    docker_image_name: cdktn.stringToTerraform(struct!.dockerImageName),
+    docker_registry_password: cdktn.stringToTerraform(struct!.dockerRegistryPassword),
+    docker_registry_url: cdktn.stringToTerraform(struct!.dockerRegistryUrl),
+    docker_registry_username: cdktn.stringToTerraform(struct!.dockerRegistryUsername),
+    dotnet_version: cdktn.stringToTerraform(struct!.dotnetVersion),
+    go_version: cdktn.stringToTerraform(struct!.goVersion),
+    java_server: cdktn.stringToTerraform(struct!.javaServer),
+    java_server_version: cdktn.stringToTerraform(struct!.javaServerVersion),
+    java_version: cdktn.stringToTerraform(struct!.javaVersion),
+    node_version: cdktn.stringToTerraform(struct!.nodeVersion),
+    php_version: cdktn.stringToTerraform(struct!.phpVersion),
+    python_version: cdktn.stringToTerraform(struct!.pythonVersion),
+    ruby_version: cdktn.stringToTerraform(struct!.rubyVersion),
   }
 }
 
 
 export function linuxWebAppSlotSiteConfigApplicationStackToHclTerraform(struct?: LinuxWebAppSlotSiteConfigApplicationStackOutputReference | LinuxWebAppSlotSiteConfigApplicationStack): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     docker_image_name: {
-      value: cdktf.stringToHclTerraform(struct!.dockerImageName),
+      value: cdktn.stringToHclTerraform(struct!.dockerImageName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     docker_registry_password: {
-      value: cdktf.stringToHclTerraform(struct!.dockerRegistryPassword),
+      value: cdktn.stringToHclTerraform(struct!.dockerRegistryPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     docker_registry_url: {
-      value: cdktf.stringToHclTerraform(struct!.dockerRegistryUrl),
+      value: cdktn.stringToHclTerraform(struct!.dockerRegistryUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     docker_registry_username: {
-      value: cdktf.stringToHclTerraform(struct!.dockerRegistryUsername),
+      value: cdktn.stringToHclTerraform(struct!.dockerRegistryUsername),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dotnet_version: {
-      value: cdktf.stringToHclTerraform(struct!.dotnetVersion),
+      value: cdktn.stringToHclTerraform(struct!.dotnetVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     go_version: {
-      value: cdktf.stringToHclTerraform(struct!.goVersion),
+      value: cdktn.stringToHclTerraform(struct!.goVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     java_server: {
-      value: cdktf.stringToHclTerraform(struct!.javaServer),
+      value: cdktn.stringToHclTerraform(struct!.javaServer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     java_server_version: {
-      value: cdktf.stringToHclTerraform(struct!.javaServerVersion),
+      value: cdktn.stringToHclTerraform(struct!.javaServerVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     java_version: {
-      value: cdktf.stringToHclTerraform(struct!.javaVersion),
+      value: cdktn.stringToHclTerraform(struct!.javaVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     node_version: {
-      value: cdktf.stringToHclTerraform(struct!.nodeVersion),
+      value: cdktn.stringToHclTerraform(struct!.nodeVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     php_version: {
-      value: cdktf.stringToHclTerraform(struct!.phpVersion),
+      value: cdktn.stringToHclTerraform(struct!.phpVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     python_version: {
-      value: cdktf.stringToHclTerraform(struct!.pythonVersion),
+      value: cdktn.stringToHclTerraform(struct!.pythonVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ruby_version: {
-      value: cdktf.stringToHclTerraform(struct!.rubyVersion),
+      value: cdktn.stringToHclTerraform(struct!.rubyVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6589,14 +6589,14 @@ export function linuxWebAppSlotSiteConfigApplicationStackToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotSiteConfigApplicationStackOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotSiteConfigApplicationStackOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6913,31 +6913,31 @@ export interface LinuxWebAppSlotSiteConfigAutoHealSettingAction {
 }
 
 export function linuxWebAppSlotSiteConfigAutoHealSettingActionToTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingActionOutputReference | LinuxWebAppSlotSiteConfigAutoHealSettingAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action_type: cdktf.stringToTerraform(struct!.actionType),
-    minimum_process_execution_time: cdktf.stringToTerraform(struct!.minimumProcessExecutionTime),
+    action_type: cdktn.stringToTerraform(struct!.actionType),
+    minimum_process_execution_time: cdktn.stringToTerraform(struct!.minimumProcessExecutionTime),
   }
 }
 
 
 export function linuxWebAppSlotSiteConfigAutoHealSettingActionToHclTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingActionOutputReference | LinuxWebAppSlotSiteConfigAutoHealSettingAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action_type: {
-      value: cdktf.stringToHclTerraform(struct!.actionType),
+      value: cdktn.stringToHclTerraform(struct!.actionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     minimum_process_execution_time: {
-      value: cdktf.stringToHclTerraform(struct!.minimumProcessExecutionTime),
+      value: cdktn.stringToHclTerraform(struct!.minimumProcessExecutionTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6948,14 +6948,14 @@ export function linuxWebAppSlotSiteConfigAutoHealSettingActionToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotSiteConfigAutoHealSettingActionOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotSiteConfigAutoHealSettingActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7027,31 +7027,31 @@ export interface LinuxWebAppSlotSiteConfigAutoHealSettingTriggerRequests {
 }
 
 export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerRequestsToTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerRequestsOutputReference | LinuxWebAppSlotSiteConfigAutoHealSettingTriggerRequests): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    interval: cdktf.stringToTerraform(struct!.interval),
+    count: cdktn.numberToTerraform(struct!.count),
+    interval: cdktn.stringToTerraform(struct!.interval),
   }
 }
 
 
 export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerRequestsToHclTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerRequestsOutputReference | LinuxWebAppSlotSiteConfigAutoHealSettingTriggerRequests): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval: {
-      value: cdktf.stringToHclTerraform(struct!.interval),
+      value: cdktn.stringToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7062,14 +7062,14 @@ export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerRequestsToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerRequestsOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerRequestsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7142,38 +7142,38 @@ export interface LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequest {
 }
 
 export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestToTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestOutputReference | LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    interval: cdktf.stringToTerraform(struct!.interval),
-    time_taken: cdktf.stringToTerraform(struct!.timeTaken),
+    count: cdktn.numberToTerraform(struct!.count),
+    interval: cdktn.stringToTerraform(struct!.interval),
+    time_taken: cdktn.stringToTerraform(struct!.timeTaken),
   }
 }
 
 
 export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestToHclTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestOutputReference | LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval: {
-      value: cdktf.stringToHclTerraform(struct!.interval),
+      value: cdktn.stringToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_taken: {
-      value: cdktf.stringToHclTerraform(struct!.timeTaken),
+      value: cdktn.stringToHclTerraform(struct!.timeTaken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7184,14 +7184,14 @@ export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7286,46 +7286,46 @@ export interface LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithP
   readonly timeTaken: string;
 }
 
-export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathToTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathToTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    interval: cdktf.stringToTerraform(struct!.interval),
-    path: cdktf.stringToTerraform(struct!.path),
-    time_taken: cdktf.stringToTerraform(struct!.timeTaken),
+    count: cdktn.numberToTerraform(struct!.count),
+    interval: cdktn.stringToTerraform(struct!.interval),
+    path: cdktn.stringToTerraform(struct!.path),
+    time_taken: cdktn.stringToTerraform(struct!.timeTaken),
   }
 }
 
 
-export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathToHclTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathToHclTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval: {
-      value: cdktf.stringToHclTerraform(struct!.interval),
+      value: cdktn.stringToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_taken: {
-      value: cdktf.stringToHclTerraform(struct!.timeTaken),
+      value: cdktn.stringToHclTerraform(struct!.timeTaken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7336,9 +7336,9 @@ export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7346,11 +7346,11 @@ export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath | cdktf.IResolvable | undefined {
+  public get internalValue(): LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7375,7 +7375,7 @@ export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7384,7 +7384,7 @@ export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathO
       this._path = undefined;
       this._timeTaken = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7454,15 +7454,15 @@ export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathO
   }
 }
 
-export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList extends cdktf.ComplexList {
-  public internalValue? : LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath[] | cdktf.IResolvable
+export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList extends cdktn.ComplexList {
+  public internalValue? : LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7500,60 +7500,60 @@ export interface LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode {
   readonly win32StatusCode?: number;
 }
 
-export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeToTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeToTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    interval: cdktf.stringToTerraform(struct!.interval),
-    path: cdktf.stringToTerraform(struct!.path),
-    status_code_range: cdktf.stringToTerraform(struct!.statusCodeRange),
-    sub_status: cdktf.numberToTerraform(struct!.subStatus),
-    win32_status_code: cdktf.numberToTerraform(struct!.win32StatusCode),
+    count: cdktn.numberToTerraform(struct!.count),
+    interval: cdktn.stringToTerraform(struct!.interval),
+    path: cdktn.stringToTerraform(struct!.path),
+    status_code_range: cdktn.stringToTerraform(struct!.statusCodeRange),
+    sub_status: cdktn.numberToTerraform(struct!.subStatus),
+    win32_status_code: cdktn.numberToTerraform(struct!.win32StatusCode),
   }
 }
 
 
-export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeToHclTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeToHclTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval: {
-      value: cdktf.stringToHclTerraform(struct!.interval),
+      value: cdktn.stringToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status_code_range: {
-      value: cdktf.stringToHclTerraform(struct!.statusCodeRange),
+      value: cdktn.stringToHclTerraform(struct!.statusCodeRange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sub_status: {
-      value: cdktf.numberToHclTerraform(struct!.subStatus),
+      value: cdktn.numberToHclTerraform(struct!.subStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     win32_status_code: {
-      value: cdktf.numberToHclTerraform(struct!.win32StatusCode),
+      value: cdktn.numberToHclTerraform(struct!.win32StatusCode),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -7564,9 +7564,9 @@ export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7574,11 +7574,11 @@ export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode | cdktf.IResolvable | undefined {
+  public get internalValue(): LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7611,7 +7611,7 @@ export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7622,7 +7622,7 @@ export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputRefe
       this._subStatus = undefined;
       this._win32StatusCode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7726,15 +7726,15 @@ export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputRefe
   }
 }
 
-export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList extends cdktf.ComplexList {
-  public internalValue? : LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode[] | cdktf.IResolvable
+export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList extends cdktn.ComplexList {
+  public internalValue? : LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7763,32 +7763,32 @@ export interface LinuxWebAppSlotSiteConfigAutoHealSettingTrigger {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#slow_request_with_path LinuxWebAppSlot#slow_request_with_path}
   */
-  readonly slowRequestWithPath?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath[] | cdktf.IResolvable;
+  readonly slowRequestWithPath?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath[] | cdktn.IResolvable;
   /**
   * status_code block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#status_code LinuxWebAppSlot#status_code}
   */
-  readonly statusCode?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode[] | cdktf.IResolvable;
+  readonly statusCode?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode[] | cdktn.IResolvable;
 }
 
 export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerToTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference | LinuxWebAppSlotSiteConfigAutoHealSettingTrigger): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     requests: linuxWebAppSlotSiteConfigAutoHealSettingTriggerRequestsToTerraform(struct!.requests),
     slow_request: linuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestToTerraform(struct!.slowRequest),
-    slow_request_with_path: cdktf.listMapper(linuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathToTerraform, true)(struct!.slowRequestWithPath),
-    status_code: cdktf.listMapper(linuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeToTerraform, true)(struct!.statusCode),
+    slow_request_with_path: cdktn.listMapper(linuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathToTerraform, true)(struct!.slowRequestWithPath),
+    status_code: cdktn.listMapper(linuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeToTerraform, true)(struct!.statusCode),
   }
 }
 
 
 export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerToHclTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference | LinuxWebAppSlotSiteConfigAutoHealSettingTrigger): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -7805,13 +7805,13 @@ export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerToHclTerraform(st
       storageClassType: "LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestList",
     },
     slow_request_with_path: {
-      value: cdktf.listMapperHcl(linuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathToHclTerraform, true)(struct!.slowRequestWithPath),
+      value: cdktn.listMapperHcl(linuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathToHclTerraform, true)(struct!.slowRequestWithPath),
       isBlock: true,
       type: "list",
       storageClassType: "LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList",
     },
     status_code: {
-      value: cdktf.listMapperHcl(linuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeToHclTerraform, true)(struct!.statusCode),
+      value: cdktn.listMapperHcl(linuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeToHclTerraform, true)(struct!.statusCode),
       isBlock: true,
       type: "set",
       storageClassType: "LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList",
@@ -7822,14 +7822,14 @@ export function linuxWebAppSlotSiteConfigAutoHealSettingTriggerToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7909,7 +7909,7 @@ export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference exte
   public get slowRequestWithPath() {
     return this._slowRequestWithPath;
   }
-  public putSlowRequestWithPath(value: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath[] | cdktf.IResolvable) {
+  public putSlowRequestWithPath(value: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath[] | cdktn.IResolvable) {
     this._slowRequestWithPath.internalValue = value;
   }
   public resetSlowRequestWithPath() {
@@ -7925,7 +7925,7 @@ export class LinuxWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference exte
   public get statusCode() {
     return this._statusCode;
   }
-  public putStatusCode(value: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode[] | cdktf.IResolvable) {
+  public putStatusCode(value: LinuxWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode[] | cdktn.IResolvable) {
     this._statusCode.internalValue = value;
   }
   public resetStatusCode() {
@@ -7952,8 +7952,8 @@ export interface LinuxWebAppSlotSiteConfigAutoHealSetting {
 }
 
 export function linuxWebAppSlotSiteConfigAutoHealSettingToTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingOutputReference | LinuxWebAppSlotSiteConfigAutoHealSetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -7964,8 +7964,8 @@ export function linuxWebAppSlotSiteConfigAutoHealSettingToTerraform(struct?: Lin
 
 
 export function linuxWebAppSlotSiteConfigAutoHealSettingToHclTerraform(struct?: LinuxWebAppSlotSiteConfigAutoHealSettingOutputReference | LinuxWebAppSlotSiteConfigAutoHealSetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -7987,14 +7987,14 @@ export function linuxWebAppSlotSiteConfigAutoHealSettingToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotSiteConfigAutoHealSettingOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotSiteConfigAutoHealSettingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8069,35 +8069,35 @@ export interface LinuxWebAppSlotSiteConfigCors {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#support_credentials LinuxWebAppSlot#support_credentials}
   */
-  readonly supportCredentials?: boolean | cdktf.IResolvable;
+  readonly supportCredentials?: boolean | cdktn.IResolvable;
 }
 
 export function linuxWebAppSlotSiteConfigCorsToTerraform(struct?: LinuxWebAppSlotSiteConfigCorsOutputReference | LinuxWebAppSlotSiteConfigCors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedOrigins),
-    support_credentials: cdktf.booleanToTerraform(struct!.supportCredentials),
+    allowed_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedOrigins),
+    support_credentials: cdktn.booleanToTerraform(struct!.supportCredentials),
   }
 }
 
 
 export function linuxWebAppSlotSiteConfigCorsToHclTerraform(struct?: LinuxWebAppSlotSiteConfigCorsOutputReference | LinuxWebAppSlotSiteConfigCors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_origins: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedOrigins),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedOrigins),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     support_credentials: {
-      value: cdktf.booleanToHclTerraform(struct!.supportCredentials),
+      value: cdktn.booleanToHclTerraform(struct!.supportCredentials),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -8108,14 +8108,14 @@ export function linuxWebAppSlotSiteConfigCorsToHclTerraform(struct?: LinuxWebApp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotSiteConfigCorsOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotSiteConfigCorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8149,7 +8149,7 @@ export class LinuxWebAppSlotSiteConfigCorsOutputReference extends cdktf.ComplexO
   // allowed_origins - computed: false, optional: true, required: false
   private _allowedOrigins?: string[]; 
   public get allowedOrigins() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_origins'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_origins'));
   }
   public set allowedOrigins(value: string[]) {
     this._allowedOrigins = value;
@@ -8163,11 +8163,11 @@ export class LinuxWebAppSlotSiteConfigCorsOutputReference extends cdktf.ComplexO
   }
 
   // support_credentials - computed: false, optional: true, required: false
-  private _supportCredentials?: boolean | cdktf.IResolvable; 
+  private _supportCredentials?: boolean | cdktn.IResolvable; 
   public get supportCredentials() {
     return this.getBooleanAttribute('support_credentials');
   }
-  public set supportCredentials(value: boolean | cdktf.IResolvable) {
+  public set supportCredentials(value: boolean | cdktn.IResolvable) {
     this._supportCredentials = value;
   }
   public resetSupportCredentials() {
@@ -8197,46 +8197,46 @@ export interface LinuxWebAppSlotSiteConfigIpRestrictionHeaders {
   readonly xForwardedHost?: string[];
 }
 
-export function linuxWebAppSlotSiteConfigIpRestrictionHeadersToTerraform(struct?: LinuxWebAppSlotSiteConfigIpRestrictionHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotSiteConfigIpRestrictionHeadersToTerraform(struct?: LinuxWebAppSlotSiteConfigIpRestrictionHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    x_azure_fdid: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.xAzureFdid),
-    x_fd_health_probe: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.xFdHealthProbe),
-    x_forwarded_for: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.xForwardedFor),
-    x_forwarded_host: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.xForwardedHost),
+    x_azure_fdid: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.xAzureFdid),
+    x_fd_health_probe: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.xFdHealthProbe),
+    x_forwarded_for: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.xForwardedFor),
+    x_forwarded_host: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.xForwardedHost),
   }
 }
 
 
-export function linuxWebAppSlotSiteConfigIpRestrictionHeadersToHclTerraform(struct?: LinuxWebAppSlotSiteConfigIpRestrictionHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotSiteConfigIpRestrictionHeadersToHclTerraform(struct?: LinuxWebAppSlotSiteConfigIpRestrictionHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     x_azure_fdid: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.xAzureFdid),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.xAzureFdid),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     x_fd_health_probe: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.xFdHealthProbe),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.xFdHealthProbe),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     x_forwarded_for: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.xForwardedFor),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.xForwardedFor),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     x_forwarded_host: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.xForwardedHost),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.xForwardedHost),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -8247,9 +8247,9 @@ export function linuxWebAppSlotSiteConfigIpRestrictionHeadersToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotSiteConfigIpRestrictionHeadersOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotSiteConfigIpRestrictionHeadersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8257,11 +8257,11 @@ export class LinuxWebAppSlotSiteConfigIpRestrictionHeadersOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LinuxWebAppSlotSiteConfigIpRestrictionHeaders | cdktf.IResolvable | undefined {
+  public get internalValue(): LinuxWebAppSlotSiteConfigIpRestrictionHeaders | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8286,7 +8286,7 @@ export class LinuxWebAppSlotSiteConfigIpRestrictionHeadersOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LinuxWebAppSlotSiteConfigIpRestrictionHeaders | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LinuxWebAppSlotSiteConfigIpRestrictionHeaders | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8295,7 +8295,7 @@ export class LinuxWebAppSlotSiteConfigIpRestrictionHeadersOutputReference extend
       this._xForwardedFor = undefined;
       this._xForwardedHost = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8374,15 +8374,15 @@ export class LinuxWebAppSlotSiteConfigIpRestrictionHeadersOutputReference extend
   }
 }
 
-export class LinuxWebAppSlotSiteConfigIpRestrictionHeadersList extends cdktf.ComplexList {
-  public internalValue? : LinuxWebAppSlotSiteConfigIpRestrictionHeaders[] | cdktf.IResolvable
+export class LinuxWebAppSlotSiteConfigIpRestrictionHeadersList extends cdktn.ComplexList {
+  public internalValue? : LinuxWebAppSlotSiteConfigIpRestrictionHeaders[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8409,7 +8409,7 @@ export interface LinuxWebAppSlotSiteConfigIpRestriction {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#headers LinuxWebAppSlot#headers}
   */
-  readonly headers?: LinuxWebAppSlotSiteConfigIpRestrictionHeaders[] | cdktf.IResolvable;
+  readonly headers?: LinuxWebAppSlotSiteConfigIpRestrictionHeaders[] | cdktn.IResolvable;
   /**
   * The CIDR notation of the IP or IP Range to match. For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
   *
@@ -8442,74 +8442,74 @@ export interface LinuxWebAppSlotSiteConfigIpRestriction {
   readonly virtualNetworkSubnetId?: string;
 }
 
-export function linuxWebAppSlotSiteConfigIpRestrictionToTerraform(struct?: LinuxWebAppSlotSiteConfigIpRestriction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotSiteConfigIpRestrictionToTerraform(struct?: LinuxWebAppSlotSiteConfigIpRestriction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    description: cdktf.stringToTerraform(struct!.description),
-    headers: cdktf.listMapper(linuxWebAppSlotSiteConfigIpRestrictionHeadersToTerraform, false)(struct!.headers),
-    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
-    name: cdktf.stringToTerraform(struct!.name),
-    priority: cdktf.numberToTerraform(struct!.priority),
-    service_tag: cdktf.stringToTerraform(struct!.serviceTag),
-    virtual_network_subnet_id: cdktf.stringToTerraform(struct!.virtualNetworkSubnetId),
+    action: cdktn.stringToTerraform(struct!.action),
+    description: cdktn.stringToTerraform(struct!.description),
+    headers: cdktn.listMapper(linuxWebAppSlotSiteConfigIpRestrictionHeadersToTerraform, false)(struct!.headers),
+    ip_address: cdktn.stringToTerraform(struct!.ipAddress),
+    name: cdktn.stringToTerraform(struct!.name),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    service_tag: cdktn.stringToTerraform(struct!.serviceTag),
+    virtual_network_subnet_id: cdktn.stringToTerraform(struct!.virtualNetworkSubnetId),
   }
 }
 
 
-export function linuxWebAppSlotSiteConfigIpRestrictionToHclTerraform(struct?: LinuxWebAppSlotSiteConfigIpRestriction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotSiteConfigIpRestrictionToHclTerraform(struct?: LinuxWebAppSlotSiteConfigIpRestriction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     headers: {
-      value: cdktf.listMapperHcl(linuxWebAppSlotSiteConfigIpRestrictionHeadersToHclTerraform, false)(struct!.headers),
+      value: cdktn.listMapperHcl(linuxWebAppSlotSiteConfigIpRestrictionHeadersToHclTerraform, false)(struct!.headers),
       isBlock: true,
       type: "list",
       storageClassType: "LinuxWebAppSlotSiteConfigIpRestrictionHeadersList",
     },
     ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      value: cdktn.stringToHclTerraform(struct!.ipAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service_tag: {
-      value: cdktf.stringToHclTerraform(struct!.serviceTag),
+      value: cdktn.stringToHclTerraform(struct!.serviceTag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     virtual_network_subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.virtualNetworkSubnetId),
+      value: cdktn.stringToHclTerraform(struct!.virtualNetworkSubnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8520,9 +8520,9 @@ export function linuxWebAppSlotSiteConfigIpRestrictionToHclTerraform(struct?: Li
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotSiteConfigIpRestrictionOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotSiteConfigIpRestrictionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8530,11 +8530,11 @@ export class LinuxWebAppSlotSiteConfigIpRestrictionOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LinuxWebAppSlotSiteConfigIpRestriction | cdktf.IResolvable | undefined {
+  public get internalValue(): LinuxWebAppSlotSiteConfigIpRestriction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8575,7 +8575,7 @@ export class LinuxWebAppSlotSiteConfigIpRestrictionOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LinuxWebAppSlotSiteConfigIpRestriction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LinuxWebAppSlotSiteConfigIpRestriction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8588,7 +8588,7 @@ export class LinuxWebAppSlotSiteConfigIpRestrictionOutputReference extends cdktf
       this._serviceTag = undefined;
       this._virtualNetworkSubnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8643,7 +8643,7 @@ export class LinuxWebAppSlotSiteConfigIpRestrictionOutputReference extends cdktf
   public get headers() {
     return this._headers;
   }
-  public putHeaders(value: LinuxWebAppSlotSiteConfigIpRestrictionHeaders[] | cdktf.IResolvable) {
+  public putHeaders(value: LinuxWebAppSlotSiteConfigIpRestrictionHeaders[] | cdktn.IResolvable) {
     this._headers.internalValue = value;
   }
   public resetHeaders() {
@@ -8735,15 +8735,15 @@ export class LinuxWebAppSlotSiteConfigIpRestrictionOutputReference extends cdktf
   }
 }
 
-export class LinuxWebAppSlotSiteConfigIpRestrictionList extends cdktf.ComplexList {
-  public internalValue? : LinuxWebAppSlotSiteConfigIpRestriction[] | cdktf.IResolvable
+export class LinuxWebAppSlotSiteConfigIpRestrictionList extends cdktn.ComplexList {
+  public internalValue? : LinuxWebAppSlotSiteConfigIpRestriction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8773,46 +8773,46 @@ export interface LinuxWebAppSlotSiteConfigScmIpRestrictionHeaders {
   readonly xForwardedHost?: string[];
 }
 
-export function linuxWebAppSlotSiteConfigScmIpRestrictionHeadersToTerraform(struct?: LinuxWebAppSlotSiteConfigScmIpRestrictionHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotSiteConfigScmIpRestrictionHeadersToTerraform(struct?: LinuxWebAppSlotSiteConfigScmIpRestrictionHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    x_azure_fdid: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.xAzureFdid),
-    x_fd_health_probe: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.xFdHealthProbe),
-    x_forwarded_for: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.xForwardedFor),
-    x_forwarded_host: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.xForwardedHost),
+    x_azure_fdid: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.xAzureFdid),
+    x_fd_health_probe: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.xFdHealthProbe),
+    x_forwarded_for: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.xForwardedFor),
+    x_forwarded_host: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.xForwardedHost),
   }
 }
 
 
-export function linuxWebAppSlotSiteConfigScmIpRestrictionHeadersToHclTerraform(struct?: LinuxWebAppSlotSiteConfigScmIpRestrictionHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotSiteConfigScmIpRestrictionHeadersToHclTerraform(struct?: LinuxWebAppSlotSiteConfigScmIpRestrictionHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     x_azure_fdid: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.xAzureFdid),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.xAzureFdid),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     x_fd_health_probe: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.xFdHealthProbe),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.xFdHealthProbe),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     x_forwarded_for: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.xForwardedFor),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.xForwardedFor),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     x_forwarded_host: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.xForwardedHost),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.xForwardedHost),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -8823,9 +8823,9 @@ export function linuxWebAppSlotSiteConfigScmIpRestrictionHeadersToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8833,11 +8833,11 @@ export class LinuxWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LinuxWebAppSlotSiteConfigScmIpRestrictionHeaders | cdktf.IResolvable | undefined {
+  public get internalValue(): LinuxWebAppSlotSiteConfigScmIpRestrictionHeaders | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8862,7 +8862,7 @@ export class LinuxWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LinuxWebAppSlotSiteConfigScmIpRestrictionHeaders | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LinuxWebAppSlotSiteConfigScmIpRestrictionHeaders | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8871,7 +8871,7 @@ export class LinuxWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference ext
       this._xForwardedFor = undefined;
       this._xForwardedHost = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8950,15 +8950,15 @@ export class LinuxWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference ext
   }
 }
 
-export class LinuxWebAppSlotSiteConfigScmIpRestrictionHeadersList extends cdktf.ComplexList {
-  public internalValue? : LinuxWebAppSlotSiteConfigScmIpRestrictionHeaders[] | cdktf.IResolvable
+export class LinuxWebAppSlotSiteConfigScmIpRestrictionHeadersList extends cdktn.ComplexList {
+  public internalValue? : LinuxWebAppSlotSiteConfigScmIpRestrictionHeaders[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8985,7 +8985,7 @@ export interface LinuxWebAppSlotSiteConfigScmIpRestriction {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#headers LinuxWebAppSlot#headers}
   */
-  readonly headers?: LinuxWebAppSlotSiteConfigScmIpRestrictionHeaders[] | cdktf.IResolvable;
+  readonly headers?: LinuxWebAppSlotSiteConfigScmIpRestrictionHeaders[] | cdktn.IResolvable;
   /**
   * The CIDR notation of the IP or IP Range to match. For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
   *
@@ -9018,74 +9018,74 @@ export interface LinuxWebAppSlotSiteConfigScmIpRestriction {
   readonly virtualNetworkSubnetId?: string;
 }
 
-export function linuxWebAppSlotSiteConfigScmIpRestrictionToTerraform(struct?: LinuxWebAppSlotSiteConfigScmIpRestriction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotSiteConfigScmIpRestrictionToTerraform(struct?: LinuxWebAppSlotSiteConfigScmIpRestriction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    description: cdktf.stringToTerraform(struct!.description),
-    headers: cdktf.listMapper(linuxWebAppSlotSiteConfigScmIpRestrictionHeadersToTerraform, false)(struct!.headers),
-    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
-    name: cdktf.stringToTerraform(struct!.name),
-    priority: cdktf.numberToTerraform(struct!.priority),
-    service_tag: cdktf.stringToTerraform(struct!.serviceTag),
-    virtual_network_subnet_id: cdktf.stringToTerraform(struct!.virtualNetworkSubnetId),
+    action: cdktn.stringToTerraform(struct!.action),
+    description: cdktn.stringToTerraform(struct!.description),
+    headers: cdktn.listMapper(linuxWebAppSlotSiteConfigScmIpRestrictionHeadersToTerraform, false)(struct!.headers),
+    ip_address: cdktn.stringToTerraform(struct!.ipAddress),
+    name: cdktn.stringToTerraform(struct!.name),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    service_tag: cdktn.stringToTerraform(struct!.serviceTag),
+    virtual_network_subnet_id: cdktn.stringToTerraform(struct!.virtualNetworkSubnetId),
   }
 }
 
 
-export function linuxWebAppSlotSiteConfigScmIpRestrictionToHclTerraform(struct?: LinuxWebAppSlotSiteConfigScmIpRestriction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotSiteConfigScmIpRestrictionToHclTerraform(struct?: LinuxWebAppSlotSiteConfigScmIpRestriction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     headers: {
-      value: cdktf.listMapperHcl(linuxWebAppSlotSiteConfigScmIpRestrictionHeadersToHclTerraform, false)(struct!.headers),
+      value: cdktn.listMapperHcl(linuxWebAppSlotSiteConfigScmIpRestrictionHeadersToHclTerraform, false)(struct!.headers),
       isBlock: true,
       type: "list",
       storageClassType: "LinuxWebAppSlotSiteConfigScmIpRestrictionHeadersList",
     },
     ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      value: cdktn.stringToHclTerraform(struct!.ipAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service_tag: {
-      value: cdktf.stringToHclTerraform(struct!.serviceTag),
+      value: cdktn.stringToHclTerraform(struct!.serviceTag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     virtual_network_subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.virtualNetworkSubnetId),
+      value: cdktn.stringToHclTerraform(struct!.virtualNetworkSubnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9096,9 +9096,9 @@ export function linuxWebAppSlotSiteConfigScmIpRestrictionToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotSiteConfigScmIpRestrictionOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotSiteConfigScmIpRestrictionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9106,11 +9106,11 @@ export class LinuxWebAppSlotSiteConfigScmIpRestrictionOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LinuxWebAppSlotSiteConfigScmIpRestriction | cdktf.IResolvable | undefined {
+  public get internalValue(): LinuxWebAppSlotSiteConfigScmIpRestriction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9151,7 +9151,7 @@ export class LinuxWebAppSlotSiteConfigScmIpRestrictionOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LinuxWebAppSlotSiteConfigScmIpRestriction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LinuxWebAppSlotSiteConfigScmIpRestriction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9164,7 +9164,7 @@ export class LinuxWebAppSlotSiteConfigScmIpRestrictionOutputReference extends cd
       this._serviceTag = undefined;
       this._virtualNetworkSubnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9219,7 +9219,7 @@ export class LinuxWebAppSlotSiteConfigScmIpRestrictionOutputReference extends cd
   public get headers() {
     return this._headers;
   }
-  public putHeaders(value: LinuxWebAppSlotSiteConfigScmIpRestrictionHeaders[] | cdktf.IResolvable) {
+  public putHeaders(value: LinuxWebAppSlotSiteConfigScmIpRestrictionHeaders[] | cdktn.IResolvable) {
     this._headers.internalValue = value;
   }
   public resetHeaders() {
@@ -9311,15 +9311,15 @@ export class LinuxWebAppSlotSiteConfigScmIpRestrictionOutputReference extends cd
   }
 }
 
-export class LinuxWebAppSlotSiteConfigScmIpRestrictionList extends cdktf.ComplexList {
-  public internalValue? : LinuxWebAppSlotSiteConfigScmIpRestriction[] | cdktf.IResolvable
+export class LinuxWebAppSlotSiteConfigScmIpRestrictionList extends cdktn.ComplexList {
+  public internalValue? : LinuxWebAppSlotSiteConfigScmIpRestriction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9334,7 +9334,7 @@ export interface LinuxWebAppSlotSiteConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#always_on LinuxWebAppSlot#always_on}
   */
-  readonly alwaysOn?: boolean | cdktf.IResolvable;
+  readonly alwaysOn?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#api_definition_url LinuxWebAppSlot#api_definition_url}
   */
@@ -9358,7 +9358,7 @@ export interface LinuxWebAppSlotSiteConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#container_registry_use_managed_identity LinuxWebAppSlot#container_registry_use_managed_identity}
   */
-  readonly containerRegistryUseManagedIdentity?: boolean | cdktf.IResolvable;
+  readonly containerRegistryUseManagedIdentity?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#default_documents LinuxWebAppSlot#default_documents}
   */
@@ -9380,7 +9380,7 @@ export interface LinuxWebAppSlotSiteConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#http2_enabled LinuxWebAppSlot#http2_enabled}
   */
-  readonly http2Enabled?: boolean | cdktf.IResolvable;
+  readonly http2Enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#ip_restriction_default_action LinuxWebAppSlot#ip_restriction_default_action}
   */
@@ -9392,7 +9392,7 @@ export interface LinuxWebAppSlotSiteConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#local_mysql_enabled LinuxWebAppSlot#local_mysql_enabled}
   */
-  readonly localMysqlEnabled?: boolean | cdktf.IResolvable;
+  readonly localMysqlEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#managed_pipeline_mode LinuxWebAppSlot#managed_pipeline_mode}
   */
@@ -9404,7 +9404,7 @@ export interface LinuxWebAppSlotSiteConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#remote_debugging_enabled LinuxWebAppSlot#remote_debugging_enabled}
   */
-  readonly remoteDebuggingEnabled?: boolean | cdktf.IResolvable;
+  readonly remoteDebuggingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#remote_debugging_version LinuxWebAppSlot#remote_debugging_version}
   */
@@ -9420,21 +9420,21 @@ export interface LinuxWebAppSlotSiteConfig {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#scm_use_main_ip_restriction LinuxWebAppSlot#scm_use_main_ip_restriction}
   */
-  readonly scmUseMainIpRestriction?: boolean | cdktf.IResolvable;
+  readonly scmUseMainIpRestriction?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#use_32_bit_worker LinuxWebAppSlot#use_32_bit_worker}
   */
-  readonly use32BitWorker?: boolean | cdktf.IResolvable;
+  readonly use32BitWorker?: boolean | cdktn.IResolvable;
   /**
   * Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#vnet_route_all_enabled LinuxWebAppSlot#vnet_route_all_enabled}
   */
-  readonly vnetRouteAllEnabled?: boolean | cdktf.IResolvable;
+  readonly vnetRouteAllEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#websockets_enabled LinuxWebAppSlot#websockets_enabled}
   */
-  readonly websocketsEnabled?: boolean | cdktf.IResolvable;
+  readonly websocketsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#worker_count LinuxWebAppSlot#worker_count}
   */
@@ -9462,214 +9462,214 @@ export interface LinuxWebAppSlotSiteConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#ip_restriction LinuxWebAppSlot#ip_restriction}
   */
-  readonly ipRestriction?: LinuxWebAppSlotSiteConfigIpRestriction[] | cdktf.IResolvable;
+  readonly ipRestriction?: LinuxWebAppSlotSiteConfigIpRestriction[] | cdktn.IResolvable;
   /**
   * scm_ip_restriction block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#scm_ip_restriction LinuxWebAppSlot#scm_ip_restriction}
   */
-  readonly scmIpRestriction?: LinuxWebAppSlotSiteConfigScmIpRestriction[] | cdktf.IResolvable;
+  readonly scmIpRestriction?: LinuxWebAppSlotSiteConfigScmIpRestriction[] | cdktn.IResolvable;
 }
 
 export function linuxWebAppSlotSiteConfigToTerraform(struct?: LinuxWebAppSlotSiteConfigOutputReference | LinuxWebAppSlotSiteConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    always_on: cdktf.booleanToTerraform(struct!.alwaysOn),
-    api_definition_url: cdktf.stringToTerraform(struct!.apiDefinitionUrl),
-    api_management_api_id: cdktf.stringToTerraform(struct!.apiManagementApiId),
-    app_command_line: cdktf.stringToTerraform(struct!.appCommandLine),
-    auto_swap_slot_name: cdktf.stringToTerraform(struct!.autoSwapSlotName),
-    container_registry_managed_identity_client_id: cdktf.stringToTerraform(struct!.containerRegistryManagedIdentityClientId),
-    container_registry_use_managed_identity: cdktf.booleanToTerraform(struct!.containerRegistryUseManagedIdentity),
-    default_documents: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.defaultDocuments),
-    ftps_state: cdktf.stringToTerraform(struct!.ftpsState),
-    health_check_eviction_time_in_min: cdktf.numberToTerraform(struct!.healthCheckEvictionTimeInMin),
-    health_check_path: cdktf.stringToTerraform(struct!.healthCheckPath),
-    http2_enabled: cdktf.booleanToTerraform(struct!.http2Enabled),
-    ip_restriction_default_action: cdktf.stringToTerraform(struct!.ipRestrictionDefaultAction),
-    load_balancing_mode: cdktf.stringToTerraform(struct!.loadBalancingMode),
-    local_mysql_enabled: cdktf.booleanToTerraform(struct!.localMysqlEnabled),
-    managed_pipeline_mode: cdktf.stringToTerraform(struct!.managedPipelineMode),
-    minimum_tls_version: cdktf.stringToTerraform(struct!.minimumTlsVersion),
-    remote_debugging_enabled: cdktf.booleanToTerraform(struct!.remoteDebuggingEnabled),
-    remote_debugging_version: cdktf.stringToTerraform(struct!.remoteDebuggingVersion),
-    scm_ip_restriction_default_action: cdktf.stringToTerraform(struct!.scmIpRestrictionDefaultAction),
-    scm_minimum_tls_version: cdktf.stringToTerraform(struct!.scmMinimumTlsVersion),
-    scm_use_main_ip_restriction: cdktf.booleanToTerraform(struct!.scmUseMainIpRestriction),
-    use_32_bit_worker: cdktf.booleanToTerraform(struct!.use32BitWorker),
-    vnet_route_all_enabled: cdktf.booleanToTerraform(struct!.vnetRouteAllEnabled),
-    websockets_enabled: cdktf.booleanToTerraform(struct!.websocketsEnabled),
-    worker_count: cdktf.numberToTerraform(struct!.workerCount),
+    always_on: cdktn.booleanToTerraform(struct!.alwaysOn),
+    api_definition_url: cdktn.stringToTerraform(struct!.apiDefinitionUrl),
+    api_management_api_id: cdktn.stringToTerraform(struct!.apiManagementApiId),
+    app_command_line: cdktn.stringToTerraform(struct!.appCommandLine),
+    auto_swap_slot_name: cdktn.stringToTerraform(struct!.autoSwapSlotName),
+    container_registry_managed_identity_client_id: cdktn.stringToTerraform(struct!.containerRegistryManagedIdentityClientId),
+    container_registry_use_managed_identity: cdktn.booleanToTerraform(struct!.containerRegistryUseManagedIdentity),
+    default_documents: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.defaultDocuments),
+    ftps_state: cdktn.stringToTerraform(struct!.ftpsState),
+    health_check_eviction_time_in_min: cdktn.numberToTerraform(struct!.healthCheckEvictionTimeInMin),
+    health_check_path: cdktn.stringToTerraform(struct!.healthCheckPath),
+    http2_enabled: cdktn.booleanToTerraform(struct!.http2Enabled),
+    ip_restriction_default_action: cdktn.stringToTerraform(struct!.ipRestrictionDefaultAction),
+    load_balancing_mode: cdktn.stringToTerraform(struct!.loadBalancingMode),
+    local_mysql_enabled: cdktn.booleanToTerraform(struct!.localMysqlEnabled),
+    managed_pipeline_mode: cdktn.stringToTerraform(struct!.managedPipelineMode),
+    minimum_tls_version: cdktn.stringToTerraform(struct!.minimumTlsVersion),
+    remote_debugging_enabled: cdktn.booleanToTerraform(struct!.remoteDebuggingEnabled),
+    remote_debugging_version: cdktn.stringToTerraform(struct!.remoteDebuggingVersion),
+    scm_ip_restriction_default_action: cdktn.stringToTerraform(struct!.scmIpRestrictionDefaultAction),
+    scm_minimum_tls_version: cdktn.stringToTerraform(struct!.scmMinimumTlsVersion),
+    scm_use_main_ip_restriction: cdktn.booleanToTerraform(struct!.scmUseMainIpRestriction),
+    use_32_bit_worker: cdktn.booleanToTerraform(struct!.use32BitWorker),
+    vnet_route_all_enabled: cdktn.booleanToTerraform(struct!.vnetRouteAllEnabled),
+    websockets_enabled: cdktn.booleanToTerraform(struct!.websocketsEnabled),
+    worker_count: cdktn.numberToTerraform(struct!.workerCount),
     application_stack: linuxWebAppSlotSiteConfigApplicationStackToTerraform(struct!.applicationStack),
     auto_heal_setting: linuxWebAppSlotSiteConfigAutoHealSettingToTerraform(struct!.autoHealSetting),
     cors: linuxWebAppSlotSiteConfigCorsToTerraform(struct!.cors),
-    ip_restriction: cdktf.listMapper(linuxWebAppSlotSiteConfigIpRestrictionToTerraform, true)(struct!.ipRestriction),
-    scm_ip_restriction: cdktf.listMapper(linuxWebAppSlotSiteConfigScmIpRestrictionToTerraform, true)(struct!.scmIpRestriction),
+    ip_restriction: cdktn.listMapper(linuxWebAppSlotSiteConfigIpRestrictionToTerraform, true)(struct!.ipRestriction),
+    scm_ip_restriction: cdktn.listMapper(linuxWebAppSlotSiteConfigScmIpRestrictionToTerraform, true)(struct!.scmIpRestriction),
   }
 }
 
 
 export function linuxWebAppSlotSiteConfigToHclTerraform(struct?: LinuxWebAppSlotSiteConfigOutputReference | LinuxWebAppSlotSiteConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     always_on: {
-      value: cdktf.booleanToHclTerraform(struct!.alwaysOn),
+      value: cdktn.booleanToHclTerraform(struct!.alwaysOn),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     api_definition_url: {
-      value: cdktf.stringToHclTerraform(struct!.apiDefinitionUrl),
+      value: cdktn.stringToHclTerraform(struct!.apiDefinitionUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     api_management_api_id: {
-      value: cdktf.stringToHclTerraform(struct!.apiManagementApiId),
+      value: cdktn.stringToHclTerraform(struct!.apiManagementApiId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     app_command_line: {
-      value: cdktf.stringToHclTerraform(struct!.appCommandLine),
+      value: cdktn.stringToHclTerraform(struct!.appCommandLine),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     auto_swap_slot_name: {
-      value: cdktf.stringToHclTerraform(struct!.autoSwapSlotName),
+      value: cdktn.stringToHclTerraform(struct!.autoSwapSlotName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     container_registry_managed_identity_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.containerRegistryManagedIdentityClientId),
+      value: cdktn.stringToHclTerraform(struct!.containerRegistryManagedIdentityClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     container_registry_use_managed_identity: {
-      value: cdktf.booleanToHclTerraform(struct!.containerRegistryUseManagedIdentity),
+      value: cdktn.booleanToHclTerraform(struct!.containerRegistryUseManagedIdentity),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     default_documents: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.defaultDocuments),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.defaultDocuments),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     ftps_state: {
-      value: cdktf.stringToHclTerraform(struct!.ftpsState),
+      value: cdktn.stringToHclTerraform(struct!.ftpsState),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     health_check_eviction_time_in_min: {
-      value: cdktf.numberToHclTerraform(struct!.healthCheckEvictionTimeInMin),
+      value: cdktn.numberToHclTerraform(struct!.healthCheckEvictionTimeInMin),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     health_check_path: {
-      value: cdktf.stringToHclTerraform(struct!.healthCheckPath),
+      value: cdktn.stringToHclTerraform(struct!.healthCheckPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http2_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.http2Enabled),
+      value: cdktn.booleanToHclTerraform(struct!.http2Enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ip_restriction_default_action: {
-      value: cdktf.stringToHclTerraform(struct!.ipRestrictionDefaultAction),
+      value: cdktn.stringToHclTerraform(struct!.ipRestrictionDefaultAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     load_balancing_mode: {
-      value: cdktf.stringToHclTerraform(struct!.loadBalancingMode),
+      value: cdktn.stringToHclTerraform(struct!.loadBalancingMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     local_mysql_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.localMysqlEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.localMysqlEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     managed_pipeline_mode: {
-      value: cdktf.stringToHclTerraform(struct!.managedPipelineMode),
+      value: cdktn.stringToHclTerraform(struct!.managedPipelineMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     minimum_tls_version: {
-      value: cdktf.stringToHclTerraform(struct!.minimumTlsVersion),
+      value: cdktn.stringToHclTerraform(struct!.minimumTlsVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     remote_debugging_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.remoteDebuggingEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.remoteDebuggingEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     remote_debugging_version: {
-      value: cdktf.stringToHclTerraform(struct!.remoteDebuggingVersion),
+      value: cdktn.stringToHclTerraform(struct!.remoteDebuggingVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scm_ip_restriction_default_action: {
-      value: cdktf.stringToHclTerraform(struct!.scmIpRestrictionDefaultAction),
+      value: cdktn.stringToHclTerraform(struct!.scmIpRestrictionDefaultAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scm_minimum_tls_version: {
-      value: cdktf.stringToHclTerraform(struct!.scmMinimumTlsVersion),
+      value: cdktn.stringToHclTerraform(struct!.scmMinimumTlsVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scm_use_main_ip_restriction: {
-      value: cdktf.booleanToHclTerraform(struct!.scmUseMainIpRestriction),
+      value: cdktn.booleanToHclTerraform(struct!.scmUseMainIpRestriction),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     use_32_bit_worker: {
-      value: cdktf.booleanToHclTerraform(struct!.use32BitWorker),
+      value: cdktn.booleanToHclTerraform(struct!.use32BitWorker),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     vnet_route_all_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.vnetRouteAllEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.vnetRouteAllEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     websockets_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.websocketsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.websocketsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     worker_count: {
-      value: cdktf.numberToHclTerraform(struct!.workerCount),
+      value: cdktn.numberToHclTerraform(struct!.workerCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -9693,13 +9693,13 @@ export function linuxWebAppSlotSiteConfigToHclTerraform(struct?: LinuxWebAppSlot
       storageClassType: "LinuxWebAppSlotSiteConfigCorsList",
     },
     ip_restriction: {
-      value: cdktf.listMapperHcl(linuxWebAppSlotSiteConfigIpRestrictionToHclTerraform, true)(struct!.ipRestriction),
+      value: cdktn.listMapperHcl(linuxWebAppSlotSiteConfigIpRestrictionToHclTerraform, true)(struct!.ipRestriction),
       isBlock: true,
       type: "list",
       storageClassType: "LinuxWebAppSlotSiteConfigIpRestrictionList",
     },
     scm_ip_restriction: {
-      value: cdktf.listMapperHcl(linuxWebAppSlotSiteConfigScmIpRestrictionToHclTerraform, true)(struct!.scmIpRestriction),
+      value: cdktn.listMapperHcl(linuxWebAppSlotSiteConfigScmIpRestrictionToHclTerraform, true)(struct!.scmIpRestriction),
       isBlock: true,
       type: "list",
       storageClassType: "LinuxWebAppSlotSiteConfigScmIpRestrictionList",
@@ -9710,14 +9710,14 @@ export function linuxWebAppSlotSiteConfigToHclTerraform(struct?: LinuxWebAppSlot
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotSiteConfigOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotSiteConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9923,11 +9923,11 @@ export class LinuxWebAppSlotSiteConfigOutputReference extends cdktf.ComplexObjec
   }
 
   // always_on - computed: false, optional: true, required: false
-  private _alwaysOn?: boolean | cdktf.IResolvable; 
+  private _alwaysOn?: boolean | cdktn.IResolvable; 
   public get alwaysOn() {
     return this.getBooleanAttribute('always_on');
   }
-  public set alwaysOn(value: boolean | cdktf.IResolvable) {
+  public set alwaysOn(value: boolean | cdktn.IResolvable) {
     this._alwaysOn = value;
   }
   public resetAlwaysOn() {
@@ -10019,11 +10019,11 @@ export class LinuxWebAppSlotSiteConfigOutputReference extends cdktf.ComplexObjec
   }
 
   // container_registry_use_managed_identity - computed: false, optional: true, required: false
-  private _containerRegistryUseManagedIdentity?: boolean | cdktf.IResolvable; 
+  private _containerRegistryUseManagedIdentity?: boolean | cdktn.IResolvable; 
   public get containerRegistryUseManagedIdentity() {
     return this.getBooleanAttribute('container_registry_use_managed_identity');
   }
-  public set containerRegistryUseManagedIdentity(value: boolean | cdktf.IResolvable) {
+  public set containerRegistryUseManagedIdentity(value: boolean | cdktn.IResolvable) {
     this._containerRegistryUseManagedIdentity = value;
   }
   public resetContainerRegistryUseManagedIdentity() {
@@ -10104,11 +10104,11 @@ export class LinuxWebAppSlotSiteConfigOutputReference extends cdktf.ComplexObjec
   }
 
   // http2_enabled - computed: false, optional: true, required: false
-  private _http2Enabled?: boolean | cdktf.IResolvable; 
+  private _http2Enabled?: boolean | cdktn.IResolvable; 
   public get http2Enabled() {
     return this.getBooleanAttribute('http2_enabled');
   }
-  public set http2Enabled(value: boolean | cdktf.IResolvable) {
+  public set http2Enabled(value: boolean | cdktn.IResolvable) {
     this._http2Enabled = value;
   }
   public resetHttp2Enabled() {
@@ -10157,11 +10157,11 @@ export class LinuxWebAppSlotSiteConfigOutputReference extends cdktf.ComplexObjec
   }
 
   // local_mysql_enabled - computed: false, optional: true, required: false
-  private _localMysqlEnabled?: boolean | cdktf.IResolvable; 
+  private _localMysqlEnabled?: boolean | cdktn.IResolvable; 
   public get localMysqlEnabled() {
     return this.getBooleanAttribute('local_mysql_enabled');
   }
-  public set localMysqlEnabled(value: boolean | cdktf.IResolvable) {
+  public set localMysqlEnabled(value: boolean | cdktn.IResolvable) {
     this._localMysqlEnabled = value;
   }
   public resetLocalMysqlEnabled() {
@@ -10205,11 +10205,11 @@ export class LinuxWebAppSlotSiteConfigOutputReference extends cdktf.ComplexObjec
   }
 
   // remote_debugging_enabled - computed: false, optional: true, required: false
-  private _remoteDebuggingEnabled?: boolean | cdktf.IResolvable; 
+  private _remoteDebuggingEnabled?: boolean | cdktn.IResolvable; 
   public get remoteDebuggingEnabled() {
     return this.getBooleanAttribute('remote_debugging_enabled');
   }
-  public set remoteDebuggingEnabled(value: boolean | cdktf.IResolvable) {
+  public set remoteDebuggingEnabled(value: boolean | cdktn.IResolvable) {
     this._remoteDebuggingEnabled = value;
   }
   public resetRemoteDebuggingEnabled() {
@@ -10274,11 +10274,11 @@ export class LinuxWebAppSlotSiteConfigOutputReference extends cdktf.ComplexObjec
   }
 
   // scm_use_main_ip_restriction - computed: false, optional: true, required: false
-  private _scmUseMainIpRestriction?: boolean | cdktf.IResolvable; 
+  private _scmUseMainIpRestriction?: boolean | cdktn.IResolvable; 
   public get scmUseMainIpRestriction() {
     return this.getBooleanAttribute('scm_use_main_ip_restriction');
   }
-  public set scmUseMainIpRestriction(value: boolean | cdktf.IResolvable) {
+  public set scmUseMainIpRestriction(value: boolean | cdktn.IResolvable) {
     this._scmUseMainIpRestriction = value;
   }
   public resetScmUseMainIpRestriction() {
@@ -10290,11 +10290,11 @@ export class LinuxWebAppSlotSiteConfigOutputReference extends cdktf.ComplexObjec
   }
 
   // use_32_bit_worker - computed: false, optional: true, required: false
-  private _use32BitWorker?: boolean | cdktf.IResolvable; 
+  private _use32BitWorker?: boolean | cdktn.IResolvable; 
   public get use32BitWorker() {
     return this.getBooleanAttribute('use_32_bit_worker');
   }
-  public set use32BitWorker(value: boolean | cdktf.IResolvable) {
+  public set use32BitWorker(value: boolean | cdktn.IResolvable) {
     this._use32BitWorker = value;
   }
   public resetUse32BitWorker() {
@@ -10306,11 +10306,11 @@ export class LinuxWebAppSlotSiteConfigOutputReference extends cdktf.ComplexObjec
   }
 
   // vnet_route_all_enabled - computed: false, optional: true, required: false
-  private _vnetRouteAllEnabled?: boolean | cdktf.IResolvable; 
+  private _vnetRouteAllEnabled?: boolean | cdktn.IResolvable; 
   public get vnetRouteAllEnabled() {
     return this.getBooleanAttribute('vnet_route_all_enabled');
   }
-  public set vnetRouteAllEnabled(value: boolean | cdktf.IResolvable) {
+  public set vnetRouteAllEnabled(value: boolean | cdktn.IResolvable) {
     this._vnetRouteAllEnabled = value;
   }
   public resetVnetRouteAllEnabled() {
@@ -10322,11 +10322,11 @@ export class LinuxWebAppSlotSiteConfigOutputReference extends cdktf.ComplexObjec
   }
 
   // websockets_enabled - computed: false, optional: true, required: false
-  private _websocketsEnabled?: boolean | cdktf.IResolvable; 
+  private _websocketsEnabled?: boolean | cdktn.IResolvable; 
   public get websocketsEnabled() {
     return this.getBooleanAttribute('websockets_enabled');
   }
-  public set websocketsEnabled(value: boolean | cdktf.IResolvable) {
+  public set websocketsEnabled(value: boolean | cdktn.IResolvable) {
     this._websocketsEnabled = value;
   }
   public resetWebsocketsEnabled() {
@@ -10406,7 +10406,7 @@ export class LinuxWebAppSlotSiteConfigOutputReference extends cdktf.ComplexObjec
   public get ipRestriction() {
     return this._ipRestriction;
   }
-  public putIpRestriction(value: LinuxWebAppSlotSiteConfigIpRestriction[] | cdktf.IResolvable) {
+  public putIpRestriction(value: LinuxWebAppSlotSiteConfigIpRestriction[] | cdktn.IResolvable) {
     this._ipRestriction.internalValue = value;
   }
   public resetIpRestriction() {
@@ -10422,7 +10422,7 @@ export class LinuxWebAppSlotSiteConfigOutputReference extends cdktf.ComplexObjec
   public get scmIpRestriction() {
     return this._scmIpRestriction;
   }
-  public putScmIpRestriction(value: LinuxWebAppSlotSiteConfigScmIpRestriction[] | cdktf.IResolvable) {
+  public putScmIpRestriction(value: LinuxWebAppSlotSiteConfigScmIpRestriction[] | cdktn.IResolvable) {
     this._scmIpRestriction.internalValue = value;
   }
   public resetScmIpRestriction() {
@@ -10460,60 +10460,60 @@ export interface LinuxWebAppSlotStorageAccount {
   readonly type: string;
 }
 
-export function linuxWebAppSlotStorageAccountToTerraform(struct?: LinuxWebAppSlotStorageAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotStorageAccountToTerraform(struct?: LinuxWebAppSlotStorageAccount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_key: cdktf.stringToTerraform(struct!.accessKey),
-    account_name: cdktf.stringToTerraform(struct!.accountName),
-    mount_path: cdktf.stringToTerraform(struct!.mountPath),
-    name: cdktf.stringToTerraform(struct!.name),
-    share_name: cdktf.stringToTerraform(struct!.shareName),
-    type: cdktf.stringToTerraform(struct!.type),
+    access_key: cdktn.stringToTerraform(struct!.accessKey),
+    account_name: cdktn.stringToTerraform(struct!.accountName),
+    mount_path: cdktn.stringToTerraform(struct!.mountPath),
+    name: cdktn.stringToTerraform(struct!.name),
+    share_name: cdktn.stringToTerraform(struct!.shareName),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function linuxWebAppSlotStorageAccountToHclTerraform(struct?: LinuxWebAppSlotStorageAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotStorageAccountToHclTerraform(struct?: LinuxWebAppSlotStorageAccount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_key: {
-      value: cdktf.stringToHclTerraform(struct!.accessKey),
+      value: cdktn.stringToHclTerraform(struct!.accessKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     account_name: {
-      value: cdktf.stringToHclTerraform(struct!.accountName),
+      value: cdktn.stringToHclTerraform(struct!.accountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount_path: {
-      value: cdktf.stringToHclTerraform(struct!.mountPath),
+      value: cdktn.stringToHclTerraform(struct!.mountPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     share_name: {
-      value: cdktf.stringToHclTerraform(struct!.shareName),
+      value: cdktn.stringToHclTerraform(struct!.shareName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10524,9 +10524,9 @@ export function linuxWebAppSlotStorageAccountToHclTerraform(struct?: LinuxWebApp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotStorageAccountOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotStorageAccountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10534,11 +10534,11 @@ export class LinuxWebAppSlotStorageAccountOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LinuxWebAppSlotStorageAccount | cdktf.IResolvable | undefined {
+  public get internalValue(): LinuxWebAppSlotStorageAccount | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10571,7 +10571,7 @@ export class LinuxWebAppSlotStorageAccountOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LinuxWebAppSlotStorageAccount | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LinuxWebAppSlotStorageAccount | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10582,7 +10582,7 @@ export class LinuxWebAppSlotStorageAccountOutputReference extends cdktf.ComplexO
       this._shareName = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10680,15 +10680,15 @@ export class LinuxWebAppSlotStorageAccountOutputReference extends cdktf.ComplexO
   }
 }
 
-export class LinuxWebAppSlotStorageAccountList extends cdktf.ComplexList {
-  public internalValue? : LinuxWebAppSlotStorageAccount[] | cdktf.IResolvable
+export class LinuxWebAppSlotStorageAccountList extends cdktn.ComplexList {
+  public internalValue? : LinuxWebAppSlotStorageAccount[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10718,46 +10718,46 @@ export interface LinuxWebAppSlotTimeouts {
   readonly update?: string;
 }
 
-export function linuxWebAppSlotTimeoutsToTerraform(struct?: LinuxWebAppSlotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotTimeoutsToTerraform(struct?: LinuxWebAppSlotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function linuxWebAppSlotTimeoutsToHclTerraform(struct?: LinuxWebAppSlotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxWebAppSlotTimeoutsToHclTerraform(struct?: LinuxWebAppSlotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10768,19 +10768,19 @@ export function linuxWebAppSlotTimeoutsToHclTerraform(struct?: LinuxWebAppSlotTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxWebAppSlotTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LinuxWebAppSlotTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LinuxWebAppSlotTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LinuxWebAppSlotTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10805,7 +10805,7 @@ export class LinuxWebAppSlotTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LinuxWebAppSlotTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LinuxWebAppSlotTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10814,7 +10814,7 @@ export class LinuxWebAppSlotTimeoutsOutputReference extends cdktf.ComplexObject 
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10896,7 +10896,7 @@ export class LinuxWebAppSlotTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot azurerm_linux_web_app_slot}
 */
-export class LinuxWebAppSlot extends cdktf.TerraformResource {
+export class LinuxWebAppSlot extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -10907,14 +10907,14 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LinuxWebAppSlot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LinuxWebAppSlot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LinuxWebAppSlot to import
   * @param importFromId The id of the existing LinuxWebAppSlot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_web_app_slot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LinuxWebAppSlot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_linux_web_app_slot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_linux_web_app_slot", importId: importFromId, provider });
       }
 
   // ===========
@@ -10980,7 +10980,7 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
   // ==========
 
   // app_metadata - computed: true, optional: false, required: false
-  private _appMetadata = new cdktf.StringMap(this, "app_metadata");
+  private _appMetadata = new cdktn.StringMap(this, "app_metadata");
   public get appMetadata() {
     return this._appMetadata;
   }
@@ -11015,11 +11015,11 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
   }
 
   // client_affinity_enabled - computed: false, optional: true, required: false
-  private _clientAffinityEnabled?: boolean | cdktf.IResolvable; 
+  private _clientAffinityEnabled?: boolean | cdktn.IResolvable; 
   public get clientAffinityEnabled() {
     return this.getBooleanAttribute('client_affinity_enabled');
   }
-  public set clientAffinityEnabled(value: boolean | cdktf.IResolvable) {
+  public set clientAffinityEnabled(value: boolean | cdktn.IResolvable) {
     this._clientAffinityEnabled = value;
   }
   public resetClientAffinityEnabled() {
@@ -11031,11 +11031,11 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
   }
 
   // client_certificate_enabled - computed: false, optional: true, required: false
-  private _clientCertificateEnabled?: boolean | cdktf.IResolvable; 
+  private _clientCertificateEnabled?: boolean | cdktn.IResolvable; 
   public get clientCertificateEnabled() {
     return this.getBooleanAttribute('client_certificate_enabled');
   }
-  public set clientCertificateEnabled(value: boolean | cdktf.IResolvable) {
+  public set clientCertificateEnabled(value: boolean | cdktn.IResolvable) {
     this._clientCertificateEnabled = value;
   }
   public resetClientCertificateEnabled() {
@@ -11089,11 +11089,11 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -11105,11 +11105,11 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
   }
 
   // ftp_publish_basic_authentication_enabled - computed: false, optional: true, required: false
-  private _ftpPublishBasicAuthenticationEnabled?: boolean | cdktf.IResolvable; 
+  private _ftpPublishBasicAuthenticationEnabled?: boolean | cdktn.IResolvable; 
   public get ftpPublishBasicAuthenticationEnabled() {
     return this.getBooleanAttribute('ftp_publish_basic_authentication_enabled');
   }
-  public set ftpPublishBasicAuthenticationEnabled(value: boolean | cdktf.IResolvable) {
+  public set ftpPublishBasicAuthenticationEnabled(value: boolean | cdktn.IResolvable) {
     this._ftpPublishBasicAuthenticationEnabled = value;
   }
   public resetFtpPublishBasicAuthenticationEnabled() {
@@ -11126,11 +11126,11 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
   }
 
   // https_only - computed: false, optional: true, required: false
-  private _httpsOnly?: boolean | cdktf.IResolvable; 
+  private _httpsOnly?: boolean | cdktn.IResolvable; 
   public get httpsOnly() {
     return this.getBooleanAttribute('https_only');
   }
-  public set httpsOnly(value: boolean | cdktf.IResolvable) {
+  public set httpsOnly(value: boolean | cdktn.IResolvable) {
     this._httpsOnly = value;
   }
   public resetHttpsOnly() {
@@ -11212,11 +11212,11 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -11266,11 +11266,11 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
   }
 
   // virtual_network_backup_restore_enabled - computed: false, optional: true, required: false
-  private _virtualNetworkBackupRestoreEnabled?: boolean | cdktf.IResolvable; 
+  private _virtualNetworkBackupRestoreEnabled?: boolean | cdktn.IResolvable; 
   public get virtualNetworkBackupRestoreEnabled() {
     return this.getBooleanAttribute('virtual_network_backup_restore_enabled');
   }
-  public set virtualNetworkBackupRestoreEnabled(value: boolean | cdktf.IResolvable) {
+  public set virtualNetworkBackupRestoreEnabled(value: boolean | cdktn.IResolvable) {
     this._virtualNetworkBackupRestoreEnabled = value;
   }
   public resetVirtualNetworkBackupRestoreEnabled() {
@@ -11298,11 +11298,11 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
   }
 
   // vnet_image_pull_enabled - computed: false, optional: true, required: false
-  private _vnetImagePullEnabled?: boolean | cdktf.IResolvable; 
+  private _vnetImagePullEnabled?: boolean | cdktn.IResolvable; 
   public get vnetImagePullEnabled() {
     return this.getBooleanAttribute('vnet_image_pull_enabled');
   }
-  public set vnetImagePullEnabled(value: boolean | cdktf.IResolvable) {
+  public set vnetImagePullEnabled(value: boolean | cdktn.IResolvable) {
     this._vnetImagePullEnabled = value;
   }
   public resetVnetImagePullEnabled() {
@@ -11314,11 +11314,11 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
   }
 
   // webdeploy_publish_basic_authentication_enabled - computed: false, optional: true, required: false
-  private _webdeployPublishBasicAuthenticationEnabled?: boolean | cdktf.IResolvable; 
+  private _webdeployPublishBasicAuthenticationEnabled?: boolean | cdktn.IResolvable; 
   public get webdeployPublishBasicAuthenticationEnabled() {
     return this.getBooleanAttribute('webdeploy_publish_basic_authentication_enabled');
   }
-  public set webdeployPublishBasicAuthenticationEnabled(value: boolean | cdktf.IResolvable) {
+  public set webdeployPublishBasicAuthenticationEnabled(value: boolean | cdktn.IResolvable) {
     this._webdeployPublishBasicAuthenticationEnabled = value;
   }
   public resetWebdeployPublishBasicAuthenticationEnabled() {
@@ -11398,7 +11398,7 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
   public get connectionString() {
     return this._connectionString;
   }
-  public putConnectionString(value: LinuxWebAppSlotConnectionString[] | cdktf.IResolvable) {
+  public putConnectionString(value: LinuxWebAppSlotConnectionString[] | cdktn.IResolvable) {
     this._connectionString.internalValue = value;
   }
   public resetConnectionString() {
@@ -11459,7 +11459,7 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
   public get storageAccount() {
     return this._storageAccount;
   }
-  public putStorageAccount(value: LinuxWebAppSlotStorageAccount[] | cdktf.IResolvable) {
+  public putStorageAccount(value: LinuxWebAppSlotStorageAccount[] | cdktn.IResolvable) {
     this._storageAccount.internalValue = value;
   }
   public resetStorageAccount() {
@@ -11492,34 +11492,34 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_service_id: cdktf.stringToTerraform(this._appServiceId),
-      app_settings: cdktf.hashMapper(cdktf.stringToTerraform)(this._appSettings),
-      client_affinity_enabled: cdktf.booleanToTerraform(this._clientAffinityEnabled),
-      client_certificate_enabled: cdktf.booleanToTerraform(this._clientCertificateEnabled),
-      client_certificate_exclusion_paths: cdktf.stringToTerraform(this._clientCertificateExclusionPaths),
-      client_certificate_mode: cdktf.stringToTerraform(this._clientCertificateMode),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      ftp_publish_basic_authentication_enabled: cdktf.booleanToTerraform(this._ftpPublishBasicAuthenticationEnabled),
-      https_only: cdktf.booleanToTerraform(this._httpsOnly),
-      id: cdktf.stringToTerraform(this._id),
-      key_vault_reference_identity_id: cdktf.stringToTerraform(this._keyVaultReferenceIdentityId),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      service_plan_id: cdktf.stringToTerraform(this._servicePlanId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      virtual_network_backup_restore_enabled: cdktf.booleanToTerraform(this._virtualNetworkBackupRestoreEnabled),
-      virtual_network_subnet_id: cdktf.stringToTerraform(this._virtualNetworkSubnetId),
-      vnet_image_pull_enabled: cdktf.booleanToTerraform(this._vnetImagePullEnabled),
-      webdeploy_publish_basic_authentication_enabled: cdktf.booleanToTerraform(this._webdeployPublishBasicAuthenticationEnabled),
-      zip_deploy_file: cdktf.stringToTerraform(this._zipDeployFile),
+      app_service_id: cdktn.stringToTerraform(this._appServiceId),
+      app_settings: cdktn.hashMapper(cdktn.stringToTerraform)(this._appSettings),
+      client_affinity_enabled: cdktn.booleanToTerraform(this._clientAffinityEnabled),
+      client_certificate_enabled: cdktn.booleanToTerraform(this._clientCertificateEnabled),
+      client_certificate_exclusion_paths: cdktn.stringToTerraform(this._clientCertificateExclusionPaths),
+      client_certificate_mode: cdktn.stringToTerraform(this._clientCertificateMode),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      ftp_publish_basic_authentication_enabled: cdktn.booleanToTerraform(this._ftpPublishBasicAuthenticationEnabled),
+      https_only: cdktn.booleanToTerraform(this._httpsOnly),
+      id: cdktn.stringToTerraform(this._id),
+      key_vault_reference_identity_id: cdktn.stringToTerraform(this._keyVaultReferenceIdentityId),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      service_plan_id: cdktn.stringToTerraform(this._servicePlanId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      virtual_network_backup_restore_enabled: cdktn.booleanToTerraform(this._virtualNetworkBackupRestoreEnabled),
+      virtual_network_subnet_id: cdktn.stringToTerraform(this._virtualNetworkSubnetId),
+      vnet_image_pull_enabled: cdktn.booleanToTerraform(this._vnetImagePullEnabled),
+      webdeploy_publish_basic_authentication_enabled: cdktn.booleanToTerraform(this._webdeployPublishBasicAuthenticationEnabled),
+      zip_deploy_file: cdktn.stringToTerraform(this._zipDeployFile),
       auth_settings: linuxWebAppSlotAuthSettingsToTerraform(this._authSettings.internalValue),
       auth_settings_v2: linuxWebAppSlotAuthSettingsV2ToTerraform(this._authSettingsV2.internalValue),
       backup: linuxWebAppSlotBackupToTerraform(this._backup.internalValue),
-      connection_string: cdktf.listMapper(linuxWebAppSlotConnectionStringToTerraform, true)(this._connectionString.internalValue),
+      connection_string: cdktn.listMapper(linuxWebAppSlotConnectionStringToTerraform, true)(this._connectionString.internalValue),
       identity: linuxWebAppSlotIdentityToTerraform(this._identity.internalValue),
       logs: linuxWebAppSlotLogsToTerraform(this._logs.internalValue),
       site_config: linuxWebAppSlotSiteConfigToTerraform(this._siteConfig.internalValue),
-      storage_account: cdktf.listMapper(linuxWebAppSlotStorageAccountToTerraform, true)(this._storageAccount.internalValue),
+      storage_account: cdktn.listMapper(linuxWebAppSlotStorageAccountToTerraform, true)(this._storageAccount.internalValue),
       timeouts: linuxWebAppSlotTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -11527,121 +11527,121 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_service_id: {
-        value: cdktf.stringToHclTerraform(this._appServiceId),
+        value: cdktn.stringToHclTerraform(this._appServiceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       app_settings: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._appSettings),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._appSettings),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       client_affinity_enabled: {
-        value: cdktf.booleanToHclTerraform(this._clientAffinityEnabled),
+        value: cdktn.booleanToHclTerraform(this._clientAffinityEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       client_certificate_enabled: {
-        value: cdktf.booleanToHclTerraform(this._clientCertificateEnabled),
+        value: cdktn.booleanToHclTerraform(this._clientCertificateEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       client_certificate_exclusion_paths: {
-        value: cdktf.stringToHclTerraform(this._clientCertificateExclusionPaths),
+        value: cdktn.stringToHclTerraform(this._clientCertificateExclusionPaths),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_certificate_mode: {
-        value: cdktf.stringToHclTerraform(this._clientCertificateMode),
+        value: cdktn.stringToHclTerraform(this._clientCertificateMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ftp_publish_basic_authentication_enabled: {
-        value: cdktf.booleanToHclTerraform(this._ftpPublishBasicAuthenticationEnabled),
+        value: cdktn.booleanToHclTerraform(this._ftpPublishBasicAuthenticationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       https_only: {
-        value: cdktf.booleanToHclTerraform(this._httpsOnly),
+        value: cdktn.booleanToHclTerraform(this._httpsOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_vault_reference_identity_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultReferenceIdentityId),
+        value: cdktn.stringToHclTerraform(this._keyVaultReferenceIdentityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       service_plan_id: {
-        value: cdktf.stringToHclTerraform(this._servicePlanId),
+        value: cdktn.stringToHclTerraform(this._servicePlanId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       virtual_network_backup_restore_enabled: {
-        value: cdktf.booleanToHclTerraform(this._virtualNetworkBackupRestoreEnabled),
+        value: cdktn.booleanToHclTerraform(this._virtualNetworkBackupRestoreEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       virtual_network_subnet_id: {
-        value: cdktf.stringToHclTerraform(this._virtualNetworkSubnetId),
+        value: cdktn.stringToHclTerraform(this._virtualNetworkSubnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vnet_image_pull_enabled: {
-        value: cdktf.booleanToHclTerraform(this._vnetImagePullEnabled),
+        value: cdktn.booleanToHclTerraform(this._vnetImagePullEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       webdeploy_publish_basic_authentication_enabled: {
-        value: cdktf.booleanToHclTerraform(this._webdeployPublishBasicAuthenticationEnabled),
+        value: cdktn.booleanToHclTerraform(this._webdeployPublishBasicAuthenticationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       zip_deploy_file: {
-        value: cdktf.stringToHclTerraform(this._zipDeployFile),
+        value: cdktn.stringToHclTerraform(this._zipDeployFile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -11665,7 +11665,7 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
         storageClassType: "LinuxWebAppSlotBackupList",
       },
       connection_string: {
-        value: cdktf.listMapperHcl(linuxWebAppSlotConnectionStringToHclTerraform, true)(this._connectionString.internalValue),
+        value: cdktn.listMapperHcl(linuxWebAppSlotConnectionStringToHclTerraform, true)(this._connectionString.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LinuxWebAppSlotConnectionStringList",
@@ -11689,7 +11689,7 @@ export class LinuxWebAppSlot extends cdktf.TerraformResource {
         storageClassType: "LinuxWebAppSlotSiteConfigList",
       },
       storage_account: {
-        value: cdktf.listMapperHcl(linuxWebAppSlotStorageAccountToHclTerraform, true)(this._storageAccount.internalValue),
+        value: cdktn.listMapperHcl(linuxWebAppSlotStorageAccountToHclTerraform, true)(this._storageAccount.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LinuxWebAppSlotStorageAccountList",

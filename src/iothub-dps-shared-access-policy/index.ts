@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IothubDpsSharedAccessPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface IothubDpsSharedAccessPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps_shared_access_policy#enrollment_read IothubDpsSharedAccessPolicy#enrollment_read}
   */
-  readonly enrollmentRead?: boolean | cdktf.IResolvable;
+  readonly enrollmentRead?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps_shared_access_policy#enrollment_write IothubDpsSharedAccessPolicy#enrollment_write}
   */
-  readonly enrollmentWrite?: boolean | cdktf.IResolvable;
+  readonly enrollmentWrite?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps_shared_access_policy#id IothubDpsSharedAccessPolicy#id}
   *
@@ -38,11 +38,11 @@ export interface IothubDpsSharedAccessPolicyConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps_shared_access_policy#registration_read IothubDpsSharedAccessPolicy#registration_read}
   */
-  readonly registrationRead?: boolean | cdktf.IResolvable;
+  readonly registrationRead?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps_shared_access_policy#registration_write IothubDpsSharedAccessPolicy#registration_write}
   */
-  readonly registrationWrite?: boolean | cdktf.IResolvable;
+  readonly registrationWrite?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps_shared_access_policy#resource_group_name IothubDpsSharedAccessPolicy#resource_group_name}
   */
@@ -50,7 +50,7 @@ export interface IothubDpsSharedAccessPolicyConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps_shared_access_policy#service_config IothubDpsSharedAccessPolicy#service_config}
   */
-  readonly serviceConfig?: boolean | cdktf.IResolvable;
+  readonly serviceConfig?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -77,46 +77,46 @@ export interface IothubDpsSharedAccessPolicyTimeouts {
   readonly update?: string;
 }
 
-export function iothubDpsSharedAccessPolicyTimeoutsToTerraform(struct?: IothubDpsSharedAccessPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iothubDpsSharedAccessPolicyTimeoutsToTerraform(struct?: IothubDpsSharedAccessPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function iothubDpsSharedAccessPolicyTimeoutsToHclTerraform(struct?: IothubDpsSharedAccessPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iothubDpsSharedAccessPolicyTimeoutsToHclTerraform(struct?: IothubDpsSharedAccessPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,19 +127,19 @@ export function iothubDpsSharedAccessPolicyTimeoutsToHclTerraform(struct?: Iothu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IothubDpsSharedAccessPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IothubDpsSharedAccessPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IothubDpsSharedAccessPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IothubDpsSharedAccessPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -164,7 +164,7 @@ export class IothubDpsSharedAccessPolicyTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IothubDpsSharedAccessPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IothubDpsSharedAccessPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class IothubDpsSharedAccessPolicyTimeoutsOutputReference extends cdktf.Co
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -255,7 +255,7 @@ export class IothubDpsSharedAccessPolicyTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps_shared_access_policy azurerm_iothub_dps_shared_access_policy}
 */
-export class IothubDpsSharedAccessPolicy extends cdktf.TerraformResource {
+export class IothubDpsSharedAccessPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -266,14 +266,14 @@ export class IothubDpsSharedAccessPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IothubDpsSharedAccessPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IothubDpsSharedAccessPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IothubDpsSharedAccessPolicy to import
   * @param importFromId The id of the existing IothubDpsSharedAccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps_shared_access_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IothubDpsSharedAccessPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_iothub_dps_shared_access_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_iothub_dps_shared_access_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -320,11 +320,11 @@ export class IothubDpsSharedAccessPolicy extends cdktf.TerraformResource {
   // ==========
 
   // enrollment_read - computed: false, optional: true, required: false
-  private _enrollmentRead?: boolean | cdktf.IResolvable; 
+  private _enrollmentRead?: boolean | cdktn.IResolvable; 
   public get enrollmentRead() {
     return this.getBooleanAttribute('enrollment_read');
   }
-  public set enrollmentRead(value: boolean | cdktf.IResolvable) {
+  public set enrollmentRead(value: boolean | cdktn.IResolvable) {
     this._enrollmentRead = value;
   }
   public resetEnrollmentRead() {
@@ -336,11 +336,11 @@ export class IothubDpsSharedAccessPolicy extends cdktf.TerraformResource {
   }
 
   // enrollment_write - computed: false, optional: true, required: false
-  private _enrollmentWrite?: boolean | cdktf.IResolvable; 
+  private _enrollmentWrite?: boolean | cdktn.IResolvable; 
   public get enrollmentWrite() {
     return this.getBooleanAttribute('enrollment_write');
   }
-  public set enrollmentWrite(value: boolean | cdktf.IResolvable) {
+  public set enrollmentWrite(value: boolean | cdktn.IResolvable) {
     this._enrollmentWrite = value;
   }
   public resetEnrollmentWrite() {
@@ -404,11 +404,11 @@ export class IothubDpsSharedAccessPolicy extends cdktf.TerraformResource {
   }
 
   // registration_read - computed: false, optional: true, required: false
-  private _registrationRead?: boolean | cdktf.IResolvable; 
+  private _registrationRead?: boolean | cdktn.IResolvable; 
   public get registrationRead() {
     return this.getBooleanAttribute('registration_read');
   }
-  public set registrationRead(value: boolean | cdktf.IResolvable) {
+  public set registrationRead(value: boolean | cdktn.IResolvable) {
     this._registrationRead = value;
   }
   public resetRegistrationRead() {
@@ -420,11 +420,11 @@ export class IothubDpsSharedAccessPolicy extends cdktf.TerraformResource {
   }
 
   // registration_write - computed: false, optional: true, required: false
-  private _registrationWrite?: boolean | cdktf.IResolvable; 
+  private _registrationWrite?: boolean | cdktn.IResolvable; 
   public get registrationWrite() {
     return this.getBooleanAttribute('registration_write');
   }
-  public set registrationWrite(value: boolean | cdktf.IResolvable) {
+  public set registrationWrite(value: boolean | cdktn.IResolvable) {
     this._registrationWrite = value;
   }
   public resetRegistrationWrite() {
@@ -459,11 +459,11 @@ export class IothubDpsSharedAccessPolicy extends cdktf.TerraformResource {
   }
 
   // service_config - computed: false, optional: true, required: false
-  private _serviceConfig?: boolean | cdktf.IResolvable; 
+  private _serviceConfig?: boolean | cdktn.IResolvable; 
   public get serviceConfig() {
     return this.getBooleanAttribute('service_config');
   }
-  public set serviceConfig(value: boolean | cdktf.IResolvable) {
+  public set serviceConfig(value: boolean | cdktn.IResolvable) {
     this._serviceConfig = value;
   }
   public resetServiceConfig() {
@@ -496,15 +496,15 @@ export class IothubDpsSharedAccessPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enrollment_read: cdktf.booleanToTerraform(this._enrollmentRead),
-      enrollment_write: cdktf.booleanToTerraform(this._enrollmentWrite),
-      id: cdktf.stringToTerraform(this._id),
-      iothub_dps_name: cdktf.stringToTerraform(this._iothubDpsName),
-      name: cdktf.stringToTerraform(this._name),
-      registration_read: cdktf.booleanToTerraform(this._registrationRead),
-      registration_write: cdktf.booleanToTerraform(this._registrationWrite),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      service_config: cdktf.booleanToTerraform(this._serviceConfig),
+      enrollment_read: cdktn.booleanToTerraform(this._enrollmentRead),
+      enrollment_write: cdktn.booleanToTerraform(this._enrollmentWrite),
+      id: cdktn.stringToTerraform(this._id),
+      iothub_dps_name: cdktn.stringToTerraform(this._iothubDpsName),
+      name: cdktn.stringToTerraform(this._name),
+      registration_read: cdktn.booleanToTerraform(this._registrationRead),
+      registration_write: cdktn.booleanToTerraform(this._registrationWrite),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      service_config: cdktn.booleanToTerraform(this._serviceConfig),
       timeouts: iothubDpsSharedAccessPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -512,55 +512,55 @@ export class IothubDpsSharedAccessPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enrollment_read: {
-        value: cdktf.booleanToHclTerraform(this._enrollmentRead),
+        value: cdktn.booleanToHclTerraform(this._enrollmentRead),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enrollment_write: {
-        value: cdktf.booleanToHclTerraform(this._enrollmentWrite),
+        value: cdktn.booleanToHclTerraform(this._enrollmentWrite),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iothub_dps_name: {
-        value: cdktf.stringToHclTerraform(this._iothubDpsName),
+        value: cdktn.stringToHclTerraform(this._iothubDpsName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       registration_read: {
-        value: cdktf.booleanToHclTerraform(this._registrationRead),
+        value: cdktn.booleanToHclTerraform(this._registrationRead),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       registration_write: {
-        value: cdktf.booleanToHclTerraform(this._registrationWrite),
+        value: cdktn.booleanToHclTerraform(this._registrationWrite),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_config: {
-        value: cdktf.booleanToHclTerraform(this._serviceConfig),
+        value: cdktn.booleanToHclTerraform(this._serviceConfig),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

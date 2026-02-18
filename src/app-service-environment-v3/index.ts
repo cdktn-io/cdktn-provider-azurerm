@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppServiceEnvironmentV3Config extends cdktf.TerraformMetaArguments {
+export interface AppServiceEnvironmentV3Config extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_environment_v3#allow_new_private_endpoint_connections AppServiceEnvironmentV3#allow_new_private_endpoint_connections}
   */
-  readonly allowNewPrivateEndpointConnections?: boolean | cdktf.IResolvable;
+  readonly allowNewPrivateEndpointConnections?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_environment_v3#dedicated_host_count AppServiceEnvironmentV3#dedicated_host_count}
   */
@@ -38,7 +38,7 @@ export interface AppServiceEnvironmentV3Config extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_environment_v3#remote_debugging_enabled AppServiceEnvironmentV3#remote_debugging_enabled}
   */
-  readonly remoteDebuggingEnabled?: boolean | cdktf.IResolvable;
+  readonly remoteDebuggingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_environment_v3#resource_group_name AppServiceEnvironmentV3#resource_group_name}
   */
@@ -54,13 +54,13 @@ export interface AppServiceEnvironmentV3Config extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_environment_v3#zone_redundant AppServiceEnvironmentV3#zone_redundant}
   */
-  readonly zoneRedundant?: boolean | cdktf.IResolvable;
+  readonly zoneRedundant?: boolean | cdktn.IResolvable;
   /**
   * cluster_setting block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_environment_v3#cluster_setting AppServiceEnvironmentV3#cluster_setting}
   */
-  readonly clusterSetting?: AppServiceEnvironmentV3ClusterSetting[] | cdktf.IResolvable;
+  readonly clusterSetting?: AppServiceEnvironmentV3ClusterSetting[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -72,8 +72,8 @@ export interface AppServiceEnvironmentV3InboundNetworkDependencies {
 }
 
 export function appServiceEnvironmentV3InboundNetworkDependenciesToTerraform(struct?: AppServiceEnvironmentV3InboundNetworkDependencies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -82,8 +82,8 @@ export function appServiceEnvironmentV3InboundNetworkDependenciesToTerraform(str
 
 
 export function appServiceEnvironmentV3InboundNetworkDependenciesToHclTerraform(struct?: AppServiceEnvironmentV3InboundNetworkDependencies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -91,7 +91,7 @@ export function appServiceEnvironmentV3InboundNetworkDependenciesToHclTerraform(
   return attrs;
 }
 
-export class AppServiceEnvironmentV3InboundNetworkDependenciesOutputReference extends cdktf.ComplexObject {
+export class AppServiceEnvironmentV3InboundNetworkDependenciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -100,7 +100,7 @@ export class AppServiceEnvironmentV3InboundNetworkDependenciesOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -135,14 +135,14 @@ export class AppServiceEnvironmentV3InboundNetworkDependenciesOutputReference ex
   }
 }
 
-export class AppServiceEnvironmentV3InboundNetworkDependenciesList extends cdktf.ComplexList {
+export class AppServiceEnvironmentV3InboundNetworkDependenciesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -164,32 +164,32 @@ export interface AppServiceEnvironmentV3ClusterSetting {
   readonly value: string;
 }
 
-export function appServiceEnvironmentV3ClusterSettingToTerraform(struct?: AppServiceEnvironmentV3ClusterSetting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appServiceEnvironmentV3ClusterSettingToTerraform(struct?: AppServiceEnvironmentV3ClusterSetting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function appServiceEnvironmentV3ClusterSettingToHclTerraform(struct?: AppServiceEnvironmentV3ClusterSetting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appServiceEnvironmentV3ClusterSettingToHclTerraform(struct?: AppServiceEnvironmentV3ClusterSetting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -200,9 +200,9 @@ export function appServiceEnvironmentV3ClusterSettingToHclTerraform(struct?: App
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppServiceEnvironmentV3ClusterSettingOutputReference extends cdktf.ComplexObject {
+export class AppServiceEnvironmentV3ClusterSettingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -210,11 +210,11 @@ export class AppServiceEnvironmentV3ClusterSettingOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppServiceEnvironmentV3ClusterSetting | cdktf.IResolvable | undefined {
+  public get internalValue(): AppServiceEnvironmentV3ClusterSetting | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -231,14 +231,14 @@ export class AppServiceEnvironmentV3ClusterSettingOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppServiceEnvironmentV3ClusterSetting | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppServiceEnvironmentV3ClusterSetting | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -277,15 +277,15 @@ export class AppServiceEnvironmentV3ClusterSettingOutputReference extends cdktf.
   }
 }
 
-export class AppServiceEnvironmentV3ClusterSettingList extends cdktf.ComplexList {
-  public internalValue? : AppServiceEnvironmentV3ClusterSetting[] | cdktf.IResolvable
+export class AppServiceEnvironmentV3ClusterSettingList extends cdktn.ComplexList {
+  public internalValue? : AppServiceEnvironmentV3ClusterSetting[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -315,46 +315,46 @@ export interface AppServiceEnvironmentV3Timeouts {
   readonly update?: string;
 }
 
-export function appServiceEnvironmentV3TimeoutsToTerraform(struct?: AppServiceEnvironmentV3Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appServiceEnvironmentV3TimeoutsToTerraform(struct?: AppServiceEnvironmentV3Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function appServiceEnvironmentV3TimeoutsToHclTerraform(struct?: AppServiceEnvironmentV3Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appServiceEnvironmentV3TimeoutsToHclTerraform(struct?: AppServiceEnvironmentV3Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -365,19 +365,19 @@ export function appServiceEnvironmentV3TimeoutsToHclTerraform(struct?: AppServic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppServiceEnvironmentV3TimeoutsOutputReference extends cdktf.ComplexObject {
+export class AppServiceEnvironmentV3TimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppServiceEnvironmentV3Timeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AppServiceEnvironmentV3Timeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -402,7 +402,7 @@ export class AppServiceEnvironmentV3TimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppServiceEnvironmentV3Timeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppServiceEnvironmentV3Timeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -411,7 +411,7 @@ export class AppServiceEnvironmentV3TimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -493,7 +493,7 @@ export class AppServiceEnvironmentV3TimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_environment_v3 azurerm_app_service_environment_v3}
 */
-export class AppServiceEnvironmentV3 extends cdktf.TerraformResource {
+export class AppServiceEnvironmentV3 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -504,14 +504,14 @@ export class AppServiceEnvironmentV3 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppServiceEnvironmentV3 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppServiceEnvironmentV3 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppServiceEnvironmentV3 to import
   * @param importFromId The id of the existing AppServiceEnvironmentV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_environment_v3#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppServiceEnvironmentV3 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_app_service_environment_v3", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_app_service_environment_v3", importId: importFromId, provider });
       }
 
   // ===========
@@ -560,11 +560,11 @@ export class AppServiceEnvironmentV3 extends cdktf.TerraformResource {
   // ==========
 
   // allow_new_private_endpoint_connections - computed: false, optional: true, required: false
-  private _allowNewPrivateEndpointConnections?: boolean | cdktf.IResolvable; 
+  private _allowNewPrivateEndpointConnections?: boolean | cdktn.IResolvable; 
   public get allowNewPrivateEndpointConnections() {
     return this.getBooleanAttribute('allow_new_private_endpoint_connections');
   }
-  public set allowNewPrivateEndpointConnections(value: boolean | cdktf.IResolvable) {
+  public set allowNewPrivateEndpointConnections(value: boolean | cdktn.IResolvable) {
     this._allowNewPrivateEndpointConnections = value;
   }
   public resetAllowNewPrivateEndpointConnections() {
@@ -678,11 +678,11 @@ export class AppServiceEnvironmentV3 extends cdktf.TerraformResource {
   }
 
   // remote_debugging_enabled - computed: false, optional: true, required: false
-  private _remoteDebuggingEnabled?: boolean | cdktf.IResolvable; 
+  private _remoteDebuggingEnabled?: boolean | cdktn.IResolvable; 
   public get remoteDebuggingEnabled() {
     return this.getBooleanAttribute('remote_debugging_enabled');
   }
-  public set remoteDebuggingEnabled(value: boolean | cdktf.IResolvable) {
+  public set remoteDebuggingEnabled(value: boolean | cdktn.IResolvable) {
     this._remoteDebuggingEnabled = value;
   }
   public resetRemoteDebuggingEnabled() {
@@ -741,11 +741,11 @@ export class AppServiceEnvironmentV3 extends cdktf.TerraformResource {
   }
 
   // zone_redundant - computed: false, optional: true, required: false
-  private _zoneRedundant?: boolean | cdktf.IResolvable; 
+  private _zoneRedundant?: boolean | cdktn.IResolvable; 
   public get zoneRedundant() {
     return this.getBooleanAttribute('zone_redundant');
   }
-  public set zoneRedundant(value: boolean | cdktf.IResolvable) {
+  public set zoneRedundant(value: boolean | cdktn.IResolvable) {
     this._zoneRedundant = value;
   }
   public resetZoneRedundant() {
@@ -761,7 +761,7 @@ export class AppServiceEnvironmentV3 extends cdktf.TerraformResource {
   public get clusterSetting() {
     return this._clusterSetting;
   }
-  public putClusterSetting(value: AppServiceEnvironmentV3ClusterSetting[] | cdktf.IResolvable) {
+  public putClusterSetting(value: AppServiceEnvironmentV3ClusterSetting[] | cdktn.IResolvable) {
     this._clusterSetting.internalValue = value;
   }
   public resetClusterSetting() {
@@ -794,17 +794,17 @@ export class AppServiceEnvironmentV3 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_new_private_endpoint_connections: cdktf.booleanToTerraform(this._allowNewPrivateEndpointConnections),
-      dedicated_host_count: cdktf.numberToTerraform(this._dedicatedHostCount),
-      id: cdktf.stringToTerraform(this._id),
-      internal_load_balancing_mode: cdktf.stringToTerraform(this._internalLoadBalancingMode),
-      name: cdktf.stringToTerraform(this._name),
-      remote_debugging_enabled: cdktf.booleanToTerraform(this._remoteDebuggingEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      zone_redundant: cdktf.booleanToTerraform(this._zoneRedundant),
-      cluster_setting: cdktf.listMapper(appServiceEnvironmentV3ClusterSettingToTerraform, true)(this._clusterSetting.internalValue),
+      allow_new_private_endpoint_connections: cdktn.booleanToTerraform(this._allowNewPrivateEndpointConnections),
+      dedicated_host_count: cdktn.numberToTerraform(this._dedicatedHostCount),
+      id: cdktn.stringToTerraform(this._id),
+      internal_load_balancing_mode: cdktn.stringToTerraform(this._internalLoadBalancingMode),
+      name: cdktn.stringToTerraform(this._name),
+      remote_debugging_enabled: cdktn.booleanToTerraform(this._remoteDebuggingEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      zone_redundant: cdktn.booleanToTerraform(this._zoneRedundant),
+      cluster_setting: cdktn.listMapper(appServiceEnvironmentV3ClusterSettingToTerraform, true)(this._clusterSetting.internalValue),
       timeouts: appServiceEnvironmentV3TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -812,67 +812,67 @@ export class AppServiceEnvironmentV3 extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_new_private_endpoint_connections: {
-        value: cdktf.booleanToHclTerraform(this._allowNewPrivateEndpointConnections),
+        value: cdktn.booleanToHclTerraform(this._allowNewPrivateEndpointConnections),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       dedicated_host_count: {
-        value: cdktf.numberToHclTerraform(this._dedicatedHostCount),
+        value: cdktn.numberToHclTerraform(this._dedicatedHostCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       internal_load_balancing_mode: {
-        value: cdktf.stringToHclTerraform(this._internalLoadBalancingMode),
+        value: cdktn.stringToHclTerraform(this._internalLoadBalancingMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       remote_debugging_enabled: {
-        value: cdktf.booleanToHclTerraform(this._remoteDebuggingEnabled),
+        value: cdktn.booleanToHclTerraform(this._remoteDebuggingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       zone_redundant: {
-        value: cdktf.booleanToHclTerraform(this._zoneRedundant),
+        value: cdktn.booleanToHclTerraform(this._zoneRedundant),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cluster_setting: {
-        value: cdktf.listMapperHcl(appServiceEnvironmentV3ClusterSettingToHclTerraform, true)(this._clusterSetting.internalValue),
+        value: cdktn.listMapperHcl(appServiceEnvironmentV3ClusterSettingToHclTerraform, true)(this._clusterSetting.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppServiceEnvironmentV3ClusterSettingList",

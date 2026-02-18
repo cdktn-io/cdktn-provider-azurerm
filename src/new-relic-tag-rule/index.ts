@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NewRelicTagRuleConfig extends cdktf.TerraformMetaArguments {
+export interface NewRelicTagRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/new_relic_tag_rule#activity_log_enabled NewRelicTagRule#activity_log_enabled}
   */
-  readonly activityLogEnabled?: boolean | cdktf.IResolvable;
+  readonly activityLogEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/new_relic_tag_rule#azure_active_directory_log_enabled NewRelicTagRule#azure_active_directory_log_enabled}
   */
-  readonly azureActiveDirectoryLogEnabled?: boolean | cdktf.IResolvable;
+  readonly azureActiveDirectoryLogEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/new_relic_tag_rule#id NewRelicTagRule#id}
   *
@@ -30,7 +30,7 @@ export interface NewRelicTagRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/new_relic_tag_rule#metric_enabled NewRelicTagRule#metric_enabled}
   */
-  readonly metricEnabled?: boolean | cdktf.IResolvable;
+  readonly metricEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/new_relic_tag_rule#monitor_id NewRelicTagRule#monitor_id}
   */
@@ -38,19 +38,19 @@ export interface NewRelicTagRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/new_relic_tag_rule#subscription_log_enabled NewRelicTagRule#subscription_log_enabled}
   */
-  readonly subscriptionLogEnabled?: boolean | cdktf.IResolvable;
+  readonly subscriptionLogEnabled?: boolean | cdktn.IResolvable;
   /**
   * log_tag_filter block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/new_relic_tag_rule#log_tag_filter NewRelicTagRule#log_tag_filter}
   */
-  readonly logTagFilter?: NewRelicTagRuleLogTagFilter[] | cdktf.IResolvable;
+  readonly logTagFilter?: NewRelicTagRuleLogTagFilter[] | cdktn.IResolvable;
   /**
   * metric_tag_filter block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/new_relic_tag_rule#metric_tag_filter NewRelicTagRule#metric_tag_filter}
   */
-  readonly metricTagFilter?: NewRelicTagRuleMetricTagFilter[] | cdktf.IResolvable;
+  readonly metricTagFilter?: NewRelicTagRuleMetricTagFilter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -73,39 +73,39 @@ export interface NewRelicTagRuleLogTagFilter {
   readonly value: string;
 }
 
-export function newRelicTagRuleLogTagFilterToTerraform(struct?: NewRelicTagRuleLogTagFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function newRelicTagRuleLogTagFilterToTerraform(struct?: NewRelicTagRuleLogTagFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    action: cdktn.stringToTerraform(struct!.action),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function newRelicTagRuleLogTagFilterToHclTerraform(struct?: NewRelicTagRuleLogTagFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function newRelicTagRuleLogTagFilterToHclTerraform(struct?: NewRelicTagRuleLogTagFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -116,9 +116,9 @@ export function newRelicTagRuleLogTagFilterToHclTerraform(struct?: NewRelicTagRu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NewRelicTagRuleLogTagFilterOutputReference extends cdktf.ComplexObject {
+export class NewRelicTagRuleLogTagFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -126,11 +126,11 @@ export class NewRelicTagRuleLogTagFilterOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NewRelicTagRuleLogTagFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): NewRelicTagRuleLogTagFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -151,7 +151,7 @@ export class NewRelicTagRuleLogTagFilterOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NewRelicTagRuleLogTagFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NewRelicTagRuleLogTagFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -159,7 +159,7 @@ export class NewRelicTagRuleLogTagFilterOutputReference extends cdktf.ComplexObj
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -212,15 +212,15 @@ export class NewRelicTagRuleLogTagFilterOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class NewRelicTagRuleLogTagFilterList extends cdktf.ComplexList {
-  public internalValue? : NewRelicTagRuleLogTagFilter[] | cdktf.IResolvable
+export class NewRelicTagRuleLogTagFilterList extends cdktn.ComplexList {
+  public internalValue? : NewRelicTagRuleLogTagFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -246,39 +246,39 @@ export interface NewRelicTagRuleMetricTagFilter {
   readonly value: string;
 }
 
-export function newRelicTagRuleMetricTagFilterToTerraform(struct?: NewRelicTagRuleMetricTagFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function newRelicTagRuleMetricTagFilterToTerraform(struct?: NewRelicTagRuleMetricTagFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    action: cdktn.stringToTerraform(struct!.action),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function newRelicTagRuleMetricTagFilterToHclTerraform(struct?: NewRelicTagRuleMetricTagFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function newRelicTagRuleMetricTagFilterToHclTerraform(struct?: NewRelicTagRuleMetricTagFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -289,9 +289,9 @@ export function newRelicTagRuleMetricTagFilterToHclTerraform(struct?: NewRelicTa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NewRelicTagRuleMetricTagFilterOutputReference extends cdktf.ComplexObject {
+export class NewRelicTagRuleMetricTagFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -299,11 +299,11 @@ export class NewRelicTagRuleMetricTagFilterOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NewRelicTagRuleMetricTagFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): NewRelicTagRuleMetricTagFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -324,7 +324,7 @@ export class NewRelicTagRuleMetricTagFilterOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NewRelicTagRuleMetricTagFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NewRelicTagRuleMetricTagFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -332,7 +332,7 @@ export class NewRelicTagRuleMetricTagFilterOutputReference extends cdktf.Complex
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -385,15 +385,15 @@ export class NewRelicTagRuleMetricTagFilterOutputReference extends cdktf.Complex
   }
 }
 
-export class NewRelicTagRuleMetricTagFilterList extends cdktf.ComplexList {
-  public internalValue? : NewRelicTagRuleMetricTagFilter[] | cdktf.IResolvable
+export class NewRelicTagRuleMetricTagFilterList extends cdktn.ComplexList {
+  public internalValue? : NewRelicTagRuleMetricTagFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -423,46 +423,46 @@ export interface NewRelicTagRuleTimeouts {
   readonly update?: string;
 }
 
-export function newRelicTagRuleTimeoutsToTerraform(struct?: NewRelicTagRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function newRelicTagRuleTimeoutsToTerraform(struct?: NewRelicTagRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function newRelicTagRuleTimeoutsToHclTerraform(struct?: NewRelicTagRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function newRelicTagRuleTimeoutsToHclTerraform(struct?: NewRelicTagRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -473,19 +473,19 @@ export function newRelicTagRuleTimeoutsToHclTerraform(struct?: NewRelicTagRuleTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NewRelicTagRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NewRelicTagRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NewRelicTagRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NewRelicTagRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -510,7 +510,7 @@ export class NewRelicTagRuleTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NewRelicTagRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NewRelicTagRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -519,7 +519,7 @@ export class NewRelicTagRuleTimeoutsOutputReference extends cdktf.ComplexObject 
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -601,7 +601,7 @@ export class NewRelicTagRuleTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/new_relic_tag_rule azurerm_new_relic_tag_rule}
 */
-export class NewRelicTagRule extends cdktf.TerraformResource {
+export class NewRelicTagRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -612,14 +612,14 @@ export class NewRelicTagRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NewRelicTagRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NewRelicTagRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NewRelicTagRule to import
   * @param importFromId The id of the existing NewRelicTagRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/new_relic_tag_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NewRelicTagRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_new_relic_tag_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_new_relic_tag_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -665,11 +665,11 @@ export class NewRelicTagRule extends cdktf.TerraformResource {
   // ==========
 
   // activity_log_enabled - computed: false, optional: true, required: false
-  private _activityLogEnabled?: boolean | cdktf.IResolvable; 
+  private _activityLogEnabled?: boolean | cdktn.IResolvable; 
   public get activityLogEnabled() {
     return this.getBooleanAttribute('activity_log_enabled');
   }
-  public set activityLogEnabled(value: boolean | cdktf.IResolvable) {
+  public set activityLogEnabled(value: boolean | cdktn.IResolvable) {
     this._activityLogEnabled = value;
   }
   public resetActivityLogEnabled() {
@@ -681,11 +681,11 @@ export class NewRelicTagRule extends cdktf.TerraformResource {
   }
 
   // azure_active_directory_log_enabled - computed: false, optional: true, required: false
-  private _azureActiveDirectoryLogEnabled?: boolean | cdktf.IResolvable; 
+  private _azureActiveDirectoryLogEnabled?: boolean | cdktn.IResolvable; 
   public get azureActiveDirectoryLogEnabled() {
     return this.getBooleanAttribute('azure_active_directory_log_enabled');
   }
-  public set azureActiveDirectoryLogEnabled(value: boolean | cdktf.IResolvable) {
+  public set azureActiveDirectoryLogEnabled(value: boolean | cdktn.IResolvable) {
     this._azureActiveDirectoryLogEnabled = value;
   }
   public resetAzureActiveDirectoryLogEnabled() {
@@ -713,11 +713,11 @@ export class NewRelicTagRule extends cdktf.TerraformResource {
   }
 
   // metric_enabled - computed: false, optional: true, required: false
-  private _metricEnabled?: boolean | cdktf.IResolvable; 
+  private _metricEnabled?: boolean | cdktn.IResolvable; 
   public get metricEnabled() {
     return this.getBooleanAttribute('metric_enabled');
   }
-  public set metricEnabled(value: boolean | cdktf.IResolvable) {
+  public set metricEnabled(value: boolean | cdktn.IResolvable) {
     this._metricEnabled = value;
   }
   public resetMetricEnabled() {
@@ -742,11 +742,11 @@ export class NewRelicTagRule extends cdktf.TerraformResource {
   }
 
   // subscription_log_enabled - computed: false, optional: true, required: false
-  private _subscriptionLogEnabled?: boolean | cdktf.IResolvable; 
+  private _subscriptionLogEnabled?: boolean | cdktn.IResolvable; 
   public get subscriptionLogEnabled() {
     return this.getBooleanAttribute('subscription_log_enabled');
   }
-  public set subscriptionLogEnabled(value: boolean | cdktf.IResolvable) {
+  public set subscriptionLogEnabled(value: boolean | cdktn.IResolvable) {
     this._subscriptionLogEnabled = value;
   }
   public resetSubscriptionLogEnabled() {
@@ -762,7 +762,7 @@ export class NewRelicTagRule extends cdktf.TerraformResource {
   public get logTagFilter() {
     return this._logTagFilter;
   }
-  public putLogTagFilter(value: NewRelicTagRuleLogTagFilter[] | cdktf.IResolvable) {
+  public putLogTagFilter(value: NewRelicTagRuleLogTagFilter[] | cdktn.IResolvable) {
     this._logTagFilter.internalValue = value;
   }
   public resetLogTagFilter() {
@@ -778,7 +778,7 @@ export class NewRelicTagRule extends cdktf.TerraformResource {
   public get metricTagFilter() {
     return this._metricTagFilter;
   }
-  public putMetricTagFilter(value: NewRelicTagRuleMetricTagFilter[] | cdktf.IResolvable) {
+  public putMetricTagFilter(value: NewRelicTagRuleMetricTagFilter[] | cdktn.IResolvable) {
     this._metricTagFilter.internalValue = value;
   }
   public resetMetricTagFilter() {
@@ -811,14 +811,14 @@ export class NewRelicTagRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      activity_log_enabled: cdktf.booleanToTerraform(this._activityLogEnabled),
-      azure_active_directory_log_enabled: cdktf.booleanToTerraform(this._azureActiveDirectoryLogEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      metric_enabled: cdktf.booleanToTerraform(this._metricEnabled),
-      monitor_id: cdktf.stringToTerraform(this._monitorId),
-      subscription_log_enabled: cdktf.booleanToTerraform(this._subscriptionLogEnabled),
-      log_tag_filter: cdktf.listMapper(newRelicTagRuleLogTagFilterToTerraform, true)(this._logTagFilter.internalValue),
-      metric_tag_filter: cdktf.listMapper(newRelicTagRuleMetricTagFilterToTerraform, true)(this._metricTagFilter.internalValue),
+      activity_log_enabled: cdktn.booleanToTerraform(this._activityLogEnabled),
+      azure_active_directory_log_enabled: cdktn.booleanToTerraform(this._azureActiveDirectoryLogEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      metric_enabled: cdktn.booleanToTerraform(this._metricEnabled),
+      monitor_id: cdktn.stringToTerraform(this._monitorId),
+      subscription_log_enabled: cdktn.booleanToTerraform(this._subscriptionLogEnabled),
+      log_tag_filter: cdktn.listMapper(newRelicTagRuleLogTagFilterToTerraform, true)(this._logTagFilter.internalValue),
+      metric_tag_filter: cdktn.listMapper(newRelicTagRuleMetricTagFilterToTerraform, true)(this._metricTagFilter.internalValue),
       timeouts: newRelicTagRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -826,49 +826,49 @@ export class NewRelicTagRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       activity_log_enabled: {
-        value: cdktf.booleanToHclTerraform(this._activityLogEnabled),
+        value: cdktn.booleanToHclTerraform(this._activityLogEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       azure_active_directory_log_enabled: {
-        value: cdktf.booleanToHclTerraform(this._azureActiveDirectoryLogEnabled),
+        value: cdktn.booleanToHclTerraform(this._azureActiveDirectoryLogEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metric_enabled: {
-        value: cdktf.booleanToHclTerraform(this._metricEnabled),
+        value: cdktn.booleanToHclTerraform(this._metricEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       monitor_id: {
-        value: cdktf.stringToHclTerraform(this._monitorId),
+        value: cdktn.stringToHclTerraform(this._monitorId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subscription_log_enabled: {
-        value: cdktf.booleanToHclTerraform(this._subscriptionLogEnabled),
+        value: cdktn.booleanToHclTerraform(this._subscriptionLogEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       log_tag_filter: {
-        value: cdktf.listMapperHcl(newRelicTagRuleLogTagFilterToHclTerraform, true)(this._logTagFilter.internalValue),
+        value: cdktn.listMapperHcl(newRelicTagRuleLogTagFilterToHclTerraform, true)(this._logTagFilter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NewRelicTagRuleLogTagFilterList",
       },
       metric_tag_filter: {
-        value: cdktf.listMapperHcl(newRelicTagRuleMetricTagFilterToHclTerraform, true)(this._metricTagFilter.internalValue),
+        value: cdktn.listMapperHcl(newRelicTagRuleMetricTagFilterToHclTerraform, true)(this._metricTagFilter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NewRelicTagRuleMetricTagFilterList",

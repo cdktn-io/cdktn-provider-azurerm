@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EventgridSystemTopicEventSubscriptionConfig extends cdktf.TerraformMetaArguments {
+export interface EventgridSystemTopicEventSubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#advanced_filtering_on_arrays_enabled EventgridSystemTopicEventSubscription#advanced_filtering_on_arrays_enabled}
   */
-  readonly advancedFilteringOnArraysEnabled?: boolean | cdktf.IResolvable;
+  readonly advancedFilteringOnArraysEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#event_delivery_schema EventgridSystemTopicEventSubscription#event_delivery_schema}
   */
@@ -96,7 +96,7 @@ export interface EventgridSystemTopicEventSubscriptionConfig extends cdktf.Terra
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#delivery_property EventgridSystemTopicEventSubscription#delivery_property}
   */
-  readonly deliveryProperty?: EventgridSystemTopicEventSubscriptionDeliveryProperty[] | cdktf.IResolvable;
+  readonly deliveryProperty?: EventgridSystemTopicEventSubscriptionDeliveryProperty[] | cdktn.IResolvable;
   /**
   * retry_policy block
   *
@@ -142,35 +142,35 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEquals {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#value EventgridSystemTopicEventSubscription#value}
   */
-  readonly value: boolean | cdktf.IResolvable;
+  readonly value: boolean | cdktn.IResolvable;
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEquals | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEquals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.booleanToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.booleanToTerraform(struct!.value),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEquals | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEquals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.booleanToHclTerraform(struct!.value),
+      value: cdktn.booleanToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -181,9 +181,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -191,11 +191,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEquals | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEquals | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -212,14 +212,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEquals | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEquals | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -245,11 +245,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsOutput
   }
 
   // value - computed: false, optional: false, required: true
-  private _value?: boolean | cdktf.IResolvable; 
+  private _value?: boolean | cdktn.IResolvable; 
   public get value() {
     return this.getBooleanAttribute('value');
   }
-  public set value(value: boolean | cdktf.IResolvable) {
+  public set value(value: boolean | cdktn.IResolvable) {
     this._value = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -258,15 +258,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsOutput
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEquals[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEquals[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -284,25 +284,25 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull {
   readonly key: string;
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
+    key: cdktn.stringToTerraform(struct!.key),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -313,9 +313,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -323,11 +323,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -340,13 +340,13 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -371,15 +371,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullOutputR
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -397,25 +397,25 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUnde
   readonly key: string;
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefinedToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefined | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefinedToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefined | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
+    key: cdktn.stringToTerraform(struct!.key),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefinedToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefined | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefinedToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefined | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -426,9 +426,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndef
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefinedOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefinedOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -436,11 +436,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefine
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefined | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefined | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -453,13 +453,13 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefine
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefined | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefined | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -484,15 +484,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefine
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefinedList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefined[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefinedList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefined[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -514,32 +514,32 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreate
   readonly value: number;
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThan | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThan | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.numberToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThan | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThan | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -550,9 +550,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreater
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -560,11 +560,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterTha
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThan | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThan | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -581,14 +581,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterTha
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThan | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThan | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -627,15 +627,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterTha
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThan[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThan[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -657,32 +657,32 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreate
   readonly value: number;
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.numberToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -693,9 +693,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreater
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -703,11 +703,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterTha
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -724,14 +724,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterTha
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -770,15 +770,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterTha
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -800,32 +800,32 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterNumberIn {
   readonly values: number[];
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberIn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberIn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.values),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberIn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberIn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
@@ -836,9 +836,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -846,11 +846,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberIn | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberIn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -867,14 +867,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberIn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberIn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -913,15 +913,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInOutputRe
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberIn[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberIn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -940,35 +940,35 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRang
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#values EventgridSystemTopicEventSubscription#values}
   */
-  readonly values: number[][] | cdktf.IResolvable;
+  readonly values: number[][] | cdktn.IResolvable;
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.listMapper(cdktf.numberToTerraform, false), false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.listMapper(cdktn.numberToTerraform, false), false)(struct!.values),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.listMapperHcl(cdktf.numberToHclTerraform, false), false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.listMapperHcl(cdktn.numberToHclTerraform, false), false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "numberListList",
@@ -979,9 +979,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRange
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -989,11 +989,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRange | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1010,14 +1010,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1043,11 +1043,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeOut
   }
 
   // values - computed: false, optional: false, required: true
-  private _values?: number[][] | cdktf.IResolvable; 
+  private _values?: number[][] | cdktn.IResolvable; 
   public get values() {
     return this.interpolationForAttribute('values');
   }
-  public set values(value: number[][] | cdktf.IResolvable) {
+  public set values(value: number[][] | cdktn.IResolvable) {
     this._values = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1056,15 +1056,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeOut
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRange[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1086,32 +1086,32 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessTh
   readonly value: number;
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThan | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThan | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.numberToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThan | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThan | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1122,9 +1122,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessTha
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1132,11 +1132,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThan | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThan | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1153,14 +1153,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThan | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThan | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1199,15 +1199,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOu
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThan[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThan[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1229,32 +1229,32 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessTh
   readonly value: number;
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEqualsToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEquals | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEqualsToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEquals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.numberToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEqualsToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEquals | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEqualsToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEquals | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1265,9 +1265,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessTha
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEqualsOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEqualsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1275,11 +1275,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEquals | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEquals | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1296,14 +1296,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOr
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEquals | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEquals | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1342,15 +1342,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOr
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEqualsList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEquals[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEqualsList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEquals[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1372,32 +1372,32 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotIn 
   readonly values: number[];
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotIn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotIn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.values),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotIn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotIn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
@@ -1408,9 +1408,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1418,11 +1418,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotIn | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotIn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1439,14 +1439,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotIn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotIn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1485,15 +1485,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInOutpu
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotIn[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotIn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1512,35 +1512,35 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInR
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#values EventgridSystemTopicEventSubscription#values}
   */
-  readonly values: number[][] | cdktf.IResolvable;
+  readonly values: number[][] | cdktn.IResolvable;
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRangeToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRangeToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.listMapper(cdktf.numberToTerraform, false), false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.listMapper(cdktn.numberToTerraform, false), false)(struct!.values),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRangeToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRangeToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.listMapperHcl(cdktf.numberToHclTerraform, false), false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.listMapperHcl(cdktn.numberToHclTerraform, false), false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "numberListList",
@@ -1551,9 +1551,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRangeOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRangeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1561,11 +1561,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1582,14 +1582,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1615,11 +1615,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange
   }
 
   // values - computed: false, optional: false, required: true
-  private _values?: number[][] | cdktf.IResolvable; 
+  private _values?: number[][] | cdktn.IResolvable; 
   public get values() {
     return this.interpolationForAttribute('values');
   }
-  public set values(value: number[][] | cdktf.IResolvable) {
+  public set values(value: number[][] | cdktn.IResolvable) {
     this._values = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1628,15 +1628,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRangeList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRangeList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1658,32 +1658,32 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterStringBegins
   readonly values: string[];
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWithToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWithToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWithToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWithToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1694,9 +1694,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsW
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWithOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWithOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1704,11 +1704,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1725,14 +1725,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1771,15 +1771,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWithList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWithList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1801,32 +1801,32 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterStringContai
   readonly values: string[];
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringContains | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringContains | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringContains | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringContains | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1837,9 +1837,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringContain
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1847,11 +1847,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringContains | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringContains | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1868,14 +1868,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringContains | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringContains | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1914,15 +1914,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsOu
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringContains[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringContains[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1944,32 +1944,32 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWi
   readonly values: string[];
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWith | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWith | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWith | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWith | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1980,9 +1980,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1990,11 +1990,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWith | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWith | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2011,14 +2011,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWith | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWith | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2057,15 +2057,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithOu
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWith[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWith[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2087,32 +2087,32 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterStringIn {
   readonly values: string[];
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringInToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringIn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringInToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringIn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringInToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringIn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringInToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringIn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2123,9 +2123,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringInToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringInOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringInOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2133,11 +2133,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringInOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringIn | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringIn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2154,14 +2154,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringInOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringIn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringIn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2200,15 +2200,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringInOutputRe
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringInList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringIn[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringInList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringIn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2230,32 +2230,32 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeg
   readonly values: string[];
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWithToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWith | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWithToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWith | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWithToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWith | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWithToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWith | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2266,9 +2266,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBegi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWithOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWithOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2276,11 +2276,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsW
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWith | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWith | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2297,14 +2297,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsW
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWith | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWith | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2343,15 +2343,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsW
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWithList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWith[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWithList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWith[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2373,32 +2373,32 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotCon
   readonly values: string[];
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContainsToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContains | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContainsToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContains | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContainsToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContains | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContainsToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContains | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2409,9 +2409,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotCont
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContainsOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContainsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2419,11 +2419,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContain
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContains | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContains | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2440,14 +2440,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContain
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContains | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContains | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2486,15 +2486,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContain
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContainsList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContains[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContainsList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContains[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2516,32 +2516,32 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEnd
   readonly values: string[];
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWithToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWith | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWithToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWith | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWithToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWith | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWithToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWith | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2552,9 +2552,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEnds
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWithOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWithOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2562,11 +2562,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWit
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWith | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWith | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2583,14 +2583,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWit
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWith | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWith | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2629,15 +2629,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWit
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWithList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWith[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWithList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWith[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2659,32 +2659,32 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotIn 
   readonly values: string[];
 }
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotIn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotIn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    key: cdktn.stringToTerraform(struct!.key),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotIn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotIn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2695,9 +2695,9 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2705,11 +2705,11 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotIn | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotIn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2726,14 +2726,14 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotIn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotIn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2772,15 +2772,15 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInOutpu
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotIn[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotIn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2797,262 +2797,262 @@ export interface EventgridSystemTopicEventSubscriptionAdvancedFilter {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#bool_equals EventgridSystemTopicEventSubscription#bool_equals}
   */
-  readonly boolEquals?: EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEquals[] | cdktf.IResolvable;
+  readonly boolEquals?: EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEquals[] | cdktn.IResolvable;
   /**
   * is_not_null block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#is_not_null EventgridSystemTopicEventSubscription#is_not_null}
   */
-  readonly isNotNull?: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull[] | cdktf.IResolvable;
+  readonly isNotNull?: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull[] | cdktn.IResolvable;
   /**
   * is_null_or_undefined block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#is_null_or_undefined EventgridSystemTopicEventSubscription#is_null_or_undefined}
   */
-  readonly isNullOrUndefined?: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefined[] | cdktf.IResolvable;
+  readonly isNullOrUndefined?: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefined[] | cdktn.IResolvable;
   /**
   * number_greater_than block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#number_greater_than EventgridSystemTopicEventSubscription#number_greater_than}
   */
-  readonly numberGreaterThan?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThan[] | cdktf.IResolvable;
+  readonly numberGreaterThan?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThan[] | cdktn.IResolvable;
   /**
   * number_greater_than_or_equals block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#number_greater_than_or_equals EventgridSystemTopicEventSubscription#number_greater_than_or_equals}
   */
-  readonly numberGreaterThanOrEquals?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals[] | cdktf.IResolvable;
+  readonly numberGreaterThanOrEquals?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals[] | cdktn.IResolvable;
   /**
   * number_in block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#number_in EventgridSystemTopicEventSubscription#number_in}
   */
-  readonly numberIn?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberIn[] | cdktf.IResolvable;
+  readonly numberIn?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberIn[] | cdktn.IResolvable;
   /**
   * number_in_range block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#number_in_range EventgridSystemTopicEventSubscription#number_in_range}
   */
-  readonly numberInRange?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRange[] | cdktf.IResolvable;
+  readonly numberInRange?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRange[] | cdktn.IResolvable;
   /**
   * number_less_than block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#number_less_than EventgridSystemTopicEventSubscription#number_less_than}
   */
-  readonly numberLessThan?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThan[] | cdktf.IResolvable;
+  readonly numberLessThan?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThan[] | cdktn.IResolvable;
   /**
   * number_less_than_or_equals block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#number_less_than_or_equals EventgridSystemTopicEventSubscription#number_less_than_or_equals}
   */
-  readonly numberLessThanOrEquals?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEquals[] | cdktf.IResolvable;
+  readonly numberLessThanOrEquals?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEquals[] | cdktn.IResolvable;
   /**
   * number_not_in block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#number_not_in EventgridSystemTopicEventSubscription#number_not_in}
   */
-  readonly numberNotIn?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotIn[] | cdktf.IResolvable;
+  readonly numberNotIn?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotIn[] | cdktn.IResolvable;
   /**
   * number_not_in_range block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#number_not_in_range EventgridSystemTopicEventSubscription#number_not_in_range}
   */
-  readonly numberNotInRange?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange[] | cdktf.IResolvable;
+  readonly numberNotInRange?: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange[] | cdktn.IResolvable;
   /**
   * string_begins_with block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#string_begins_with EventgridSystemTopicEventSubscription#string_begins_with}
   */
-  readonly stringBeginsWith?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith[] | cdktf.IResolvable;
+  readonly stringBeginsWith?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith[] | cdktn.IResolvable;
   /**
   * string_contains block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#string_contains EventgridSystemTopicEventSubscription#string_contains}
   */
-  readonly stringContains?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringContains[] | cdktf.IResolvable;
+  readonly stringContains?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringContains[] | cdktn.IResolvable;
   /**
   * string_ends_with block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#string_ends_with EventgridSystemTopicEventSubscription#string_ends_with}
   */
-  readonly stringEndsWith?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWith[] | cdktf.IResolvable;
+  readonly stringEndsWith?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWith[] | cdktn.IResolvable;
   /**
   * string_in block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#string_in EventgridSystemTopicEventSubscription#string_in}
   */
-  readonly stringIn?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringIn[] | cdktf.IResolvable;
+  readonly stringIn?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringIn[] | cdktn.IResolvable;
   /**
   * string_not_begins_with block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#string_not_begins_with EventgridSystemTopicEventSubscription#string_not_begins_with}
   */
-  readonly stringNotBeginsWith?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWith[] | cdktf.IResolvable;
+  readonly stringNotBeginsWith?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWith[] | cdktn.IResolvable;
   /**
   * string_not_contains block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#string_not_contains EventgridSystemTopicEventSubscription#string_not_contains}
   */
-  readonly stringNotContains?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContains[] | cdktf.IResolvable;
+  readonly stringNotContains?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContains[] | cdktn.IResolvable;
   /**
   * string_not_ends_with block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#string_not_ends_with EventgridSystemTopicEventSubscription#string_not_ends_with}
   */
-  readonly stringNotEndsWith?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWith[] | cdktf.IResolvable;
+  readonly stringNotEndsWith?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWith[] | cdktn.IResolvable;
   /**
   * string_not_in block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#string_not_in EventgridSystemTopicEventSubscription#string_not_in}
   */
-  readonly stringNotIn?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotIn[] | cdktf.IResolvable;
+  readonly stringNotIn?: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotIn[] | cdktn.IResolvable;
 }
 
 export function eventgridSystemTopicEventSubscriptionAdvancedFilterToTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference | EventgridSystemTopicEventSubscriptionAdvancedFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bool_equals: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsToTerraform, true)(struct!.boolEquals),
-    is_not_null: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullToTerraform, true)(struct!.isNotNull),
-    is_null_or_undefined: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefinedToTerraform, true)(struct!.isNullOrUndefined),
-    number_greater_than: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanToTerraform, true)(struct!.numberGreaterThan),
-    number_greater_than_or_equals: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsToTerraform, true)(struct!.numberGreaterThanOrEquals),
-    number_in: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInToTerraform, true)(struct!.numberIn),
-    number_in_range: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeToTerraform, true)(struct!.numberInRange),
-    number_less_than: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanToTerraform, true)(struct!.numberLessThan),
-    number_less_than_or_equals: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEqualsToTerraform, true)(struct!.numberLessThanOrEquals),
-    number_not_in: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInToTerraform, true)(struct!.numberNotIn),
-    number_not_in_range: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRangeToTerraform, true)(struct!.numberNotInRange),
-    string_begins_with: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWithToTerraform, true)(struct!.stringBeginsWith),
-    string_contains: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsToTerraform, true)(struct!.stringContains),
-    string_ends_with: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithToTerraform, true)(struct!.stringEndsWith),
-    string_in: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringInToTerraform, true)(struct!.stringIn),
-    string_not_begins_with: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWithToTerraform, true)(struct!.stringNotBeginsWith),
-    string_not_contains: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContainsToTerraform, true)(struct!.stringNotContains),
-    string_not_ends_with: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWithToTerraform, true)(struct!.stringNotEndsWith),
-    string_not_in: cdktf.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInToTerraform, true)(struct!.stringNotIn),
+    bool_equals: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsToTerraform, true)(struct!.boolEquals),
+    is_not_null: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullToTerraform, true)(struct!.isNotNull),
+    is_null_or_undefined: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefinedToTerraform, true)(struct!.isNullOrUndefined),
+    number_greater_than: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanToTerraform, true)(struct!.numberGreaterThan),
+    number_greater_than_or_equals: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsToTerraform, true)(struct!.numberGreaterThanOrEquals),
+    number_in: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInToTerraform, true)(struct!.numberIn),
+    number_in_range: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeToTerraform, true)(struct!.numberInRange),
+    number_less_than: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanToTerraform, true)(struct!.numberLessThan),
+    number_less_than_or_equals: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEqualsToTerraform, true)(struct!.numberLessThanOrEquals),
+    number_not_in: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInToTerraform, true)(struct!.numberNotIn),
+    number_not_in_range: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRangeToTerraform, true)(struct!.numberNotInRange),
+    string_begins_with: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWithToTerraform, true)(struct!.stringBeginsWith),
+    string_contains: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsToTerraform, true)(struct!.stringContains),
+    string_ends_with: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithToTerraform, true)(struct!.stringEndsWith),
+    string_in: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringInToTerraform, true)(struct!.stringIn),
+    string_not_begins_with: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWithToTerraform, true)(struct!.stringNotBeginsWith),
+    string_not_contains: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContainsToTerraform, true)(struct!.stringNotContains),
+    string_not_ends_with: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWithToTerraform, true)(struct!.stringNotEndsWith),
+    string_not_in: cdktn.listMapper(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInToTerraform, true)(struct!.stringNotIn),
   }
 }
 
 
 export function eventgridSystemTopicEventSubscriptionAdvancedFilterToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference | EventgridSystemTopicEventSubscriptionAdvancedFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bool_equals: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsToHclTerraform, true)(struct!.boolEquals),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsToHclTerraform, true)(struct!.boolEquals),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEqualsList",
     },
     is_not_null: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullToHclTerraform, true)(struct!.isNotNull),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullToHclTerraform, true)(struct!.isNotNull),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNullList",
     },
     is_null_or_undefined: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefinedToHclTerraform, true)(struct!.isNullOrUndefined),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefinedToHclTerraform, true)(struct!.isNullOrUndefined),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefinedList",
     },
     number_greater_than: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanToHclTerraform, true)(struct!.numberGreaterThan),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanToHclTerraform, true)(struct!.numberGreaterThan),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanList",
     },
     number_greater_than_or_equals: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsToHclTerraform, true)(struct!.numberGreaterThanOrEquals),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsToHclTerraform, true)(struct!.numberGreaterThanOrEquals),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsList",
     },
     number_in: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInToHclTerraform, true)(struct!.numberIn),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInToHclTerraform, true)(struct!.numberIn),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInList",
     },
     number_in_range: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeToHclTerraform, true)(struct!.numberInRange),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeToHclTerraform, true)(struct!.numberInRange),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRangeList",
     },
     number_less_than: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanToHclTerraform, true)(struct!.numberLessThan),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanToHclTerraform, true)(struct!.numberLessThan),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanList",
     },
     number_less_than_or_equals: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEqualsToHclTerraform, true)(struct!.numberLessThanOrEquals),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEqualsToHclTerraform, true)(struct!.numberLessThanOrEquals),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEqualsList",
     },
     number_not_in: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInToHclTerraform, true)(struct!.numberNotIn),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInToHclTerraform, true)(struct!.numberNotIn),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInList",
     },
     number_not_in_range: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRangeToHclTerraform, true)(struct!.numberNotInRange),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRangeToHclTerraform, true)(struct!.numberNotInRange),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRangeList",
     },
     string_begins_with: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWithToHclTerraform, true)(struct!.stringBeginsWith),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWithToHclTerraform, true)(struct!.stringBeginsWith),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWithList",
     },
     string_contains: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsToHclTerraform, true)(struct!.stringContains),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsToHclTerraform, true)(struct!.stringContains),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterStringContainsList",
     },
     string_ends_with: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithToHclTerraform, true)(struct!.stringEndsWith),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithToHclTerraform, true)(struct!.stringEndsWith),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWithList",
     },
     string_in: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringInToHclTerraform, true)(struct!.stringIn),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringInToHclTerraform, true)(struct!.stringIn),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterStringInList",
     },
     string_not_begins_with: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWithToHclTerraform, true)(struct!.stringNotBeginsWith),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWithToHclTerraform, true)(struct!.stringNotBeginsWith),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWithList",
     },
     string_not_contains: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContainsToHclTerraform, true)(struct!.stringNotContains),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContainsToHclTerraform, true)(struct!.stringNotContains),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContainsList",
     },
     string_not_ends_with: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWithToHclTerraform, true)(struct!.stringNotEndsWith),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWithToHclTerraform, true)(struct!.stringNotEndsWith),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWithList",
     },
     string_not_in: {
-      value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInToHclTerraform, true)(struct!.stringNotIn),
+      value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInToHclTerraform, true)(struct!.stringNotIn),
       isBlock: true,
       type: "list",
       storageClassType: "EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotInList",
@@ -3063,14 +3063,14 @@ export function eventgridSystemTopicEventSubscriptionAdvancedFilterToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3208,7 +3208,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get boolEquals() {
     return this._boolEquals;
   }
-  public putBoolEquals(value: EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEquals[] | cdktf.IResolvable) {
+  public putBoolEquals(value: EventgridSystemTopicEventSubscriptionAdvancedFilterBoolEquals[] | cdktn.IResolvable) {
     this._boolEquals.internalValue = value;
   }
   public resetBoolEquals() {
@@ -3224,7 +3224,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get isNotNull() {
     return this._isNotNull;
   }
-  public putIsNotNull(value: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull[] | cdktf.IResolvable) {
+  public putIsNotNull(value: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNotNull[] | cdktn.IResolvable) {
     this._isNotNull.internalValue = value;
   }
   public resetIsNotNull() {
@@ -3240,7 +3240,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get isNullOrUndefined() {
     return this._isNullOrUndefined;
   }
-  public putIsNullOrUndefined(value: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefined[] | cdktf.IResolvable) {
+  public putIsNullOrUndefined(value: EventgridSystemTopicEventSubscriptionAdvancedFilterIsNullOrUndefined[] | cdktn.IResolvable) {
     this._isNullOrUndefined.internalValue = value;
   }
   public resetIsNullOrUndefined() {
@@ -3256,7 +3256,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get numberGreaterThan() {
     return this._numberGreaterThan;
   }
-  public putNumberGreaterThan(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThan[] | cdktf.IResolvable) {
+  public putNumberGreaterThan(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThan[] | cdktn.IResolvable) {
     this._numberGreaterThan.internalValue = value;
   }
   public resetNumberGreaterThan() {
@@ -3272,7 +3272,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get numberGreaterThanOrEquals() {
     return this._numberGreaterThanOrEquals;
   }
-  public putNumberGreaterThanOrEquals(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals[] | cdktf.IResolvable) {
+  public putNumberGreaterThanOrEquals(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals[] | cdktn.IResolvable) {
     this._numberGreaterThanOrEquals.internalValue = value;
   }
   public resetNumberGreaterThanOrEquals() {
@@ -3288,7 +3288,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get numberIn() {
     return this._numberIn;
   }
-  public putNumberIn(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberIn[] | cdktf.IResolvable) {
+  public putNumberIn(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberIn[] | cdktn.IResolvable) {
     this._numberIn.internalValue = value;
   }
   public resetNumberIn() {
@@ -3304,7 +3304,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get numberInRange() {
     return this._numberInRange;
   }
-  public putNumberInRange(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRange[] | cdktf.IResolvable) {
+  public putNumberInRange(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberInRange[] | cdktn.IResolvable) {
     this._numberInRange.internalValue = value;
   }
   public resetNumberInRange() {
@@ -3320,7 +3320,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get numberLessThan() {
     return this._numberLessThan;
   }
-  public putNumberLessThan(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThan[] | cdktf.IResolvable) {
+  public putNumberLessThan(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThan[] | cdktn.IResolvable) {
     this._numberLessThan.internalValue = value;
   }
   public resetNumberLessThan() {
@@ -3336,7 +3336,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get numberLessThanOrEquals() {
     return this._numberLessThanOrEquals;
   }
-  public putNumberLessThanOrEquals(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEquals[] | cdktf.IResolvable) {
+  public putNumberLessThanOrEquals(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberLessThanOrEquals[] | cdktn.IResolvable) {
     this._numberLessThanOrEquals.internalValue = value;
   }
   public resetNumberLessThanOrEquals() {
@@ -3352,7 +3352,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get numberNotIn() {
     return this._numberNotIn;
   }
-  public putNumberNotIn(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotIn[] | cdktf.IResolvable) {
+  public putNumberNotIn(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotIn[] | cdktn.IResolvable) {
     this._numberNotIn.internalValue = value;
   }
   public resetNumberNotIn() {
@@ -3368,7 +3368,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get numberNotInRange() {
     return this._numberNotInRange;
   }
-  public putNumberNotInRange(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange[] | cdktf.IResolvable) {
+  public putNumberNotInRange(value: EventgridSystemTopicEventSubscriptionAdvancedFilterNumberNotInRange[] | cdktn.IResolvable) {
     this._numberNotInRange.internalValue = value;
   }
   public resetNumberNotInRange() {
@@ -3384,7 +3384,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get stringBeginsWith() {
     return this._stringBeginsWith;
   }
-  public putStringBeginsWith(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith[] | cdktf.IResolvable) {
+  public putStringBeginsWith(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringBeginsWith[] | cdktn.IResolvable) {
     this._stringBeginsWith.internalValue = value;
   }
   public resetStringBeginsWith() {
@@ -3400,7 +3400,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get stringContains() {
     return this._stringContains;
   }
-  public putStringContains(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringContains[] | cdktf.IResolvable) {
+  public putStringContains(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringContains[] | cdktn.IResolvable) {
     this._stringContains.internalValue = value;
   }
   public resetStringContains() {
@@ -3416,7 +3416,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get stringEndsWith() {
     return this._stringEndsWith;
   }
-  public putStringEndsWith(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWith[] | cdktf.IResolvable) {
+  public putStringEndsWith(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringEndsWith[] | cdktn.IResolvable) {
     this._stringEndsWith.internalValue = value;
   }
   public resetStringEndsWith() {
@@ -3432,7 +3432,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get stringIn() {
     return this._stringIn;
   }
-  public putStringIn(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringIn[] | cdktf.IResolvable) {
+  public putStringIn(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringIn[] | cdktn.IResolvable) {
     this._stringIn.internalValue = value;
   }
   public resetStringIn() {
@@ -3448,7 +3448,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get stringNotBeginsWith() {
     return this._stringNotBeginsWith;
   }
-  public putStringNotBeginsWith(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWith[] | cdktf.IResolvable) {
+  public putStringNotBeginsWith(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotBeginsWith[] | cdktn.IResolvable) {
     this._stringNotBeginsWith.internalValue = value;
   }
   public resetStringNotBeginsWith() {
@@ -3464,7 +3464,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get stringNotContains() {
     return this._stringNotContains;
   }
-  public putStringNotContains(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContains[] | cdktf.IResolvable) {
+  public putStringNotContains(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotContains[] | cdktn.IResolvable) {
     this._stringNotContains.internalValue = value;
   }
   public resetStringNotContains() {
@@ -3480,7 +3480,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get stringNotEndsWith() {
     return this._stringNotEndsWith;
   }
-  public putStringNotEndsWith(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWith[] | cdktf.IResolvable) {
+  public putStringNotEndsWith(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotEndsWith[] | cdktn.IResolvable) {
     this._stringNotEndsWith.internalValue = value;
   }
   public resetStringNotEndsWith() {
@@ -3496,7 +3496,7 @@ export class EventgridSystemTopicEventSubscriptionAdvancedFilterOutputReference 
   public get stringNotIn() {
     return this._stringNotIn;
   }
-  public putStringNotIn(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotIn[] | cdktf.IResolvable) {
+  public putStringNotIn(value: EventgridSystemTopicEventSubscriptionAdvancedFilterStringNotIn[] | cdktn.IResolvable) {
     this._stringNotIn.internalValue = value;
   }
   public resetStringNotIn() {
@@ -3523,38 +3523,38 @@ export interface EventgridSystemTopicEventSubscriptionAzureFunctionEndpoint {
 }
 
 export function eventgridSystemTopicEventSubscriptionAzureFunctionEndpointToTerraform(struct?: EventgridSystemTopicEventSubscriptionAzureFunctionEndpointOutputReference | EventgridSystemTopicEventSubscriptionAzureFunctionEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    function_id: cdktf.stringToTerraform(struct!.functionId),
-    max_events_per_batch: cdktf.numberToTerraform(struct!.maxEventsPerBatch),
-    preferred_batch_size_in_kilobytes: cdktf.numberToTerraform(struct!.preferredBatchSizeInKilobytes),
+    function_id: cdktn.stringToTerraform(struct!.functionId),
+    max_events_per_batch: cdktn.numberToTerraform(struct!.maxEventsPerBatch),
+    preferred_batch_size_in_kilobytes: cdktn.numberToTerraform(struct!.preferredBatchSizeInKilobytes),
   }
 }
 
 
 export function eventgridSystemTopicEventSubscriptionAzureFunctionEndpointToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionAzureFunctionEndpointOutputReference | EventgridSystemTopicEventSubscriptionAzureFunctionEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     function_id: {
-      value: cdktf.stringToHclTerraform(struct!.functionId),
+      value: cdktn.stringToHclTerraform(struct!.functionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_events_per_batch: {
-      value: cdktf.numberToHclTerraform(struct!.maxEventsPerBatch),
+      value: cdktn.numberToHclTerraform(struct!.maxEventsPerBatch),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     preferred_batch_size_in_kilobytes: {
-      value: cdktf.numberToHclTerraform(struct!.preferredBatchSizeInKilobytes),
+      value: cdktn.numberToHclTerraform(struct!.preferredBatchSizeInKilobytes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3565,14 +3565,14 @@ export function eventgridSystemTopicEventSubscriptionAzureFunctionEndpointToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionAzureFunctionEndpointOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionAzureFunctionEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3666,31 +3666,31 @@ export interface EventgridSystemTopicEventSubscriptionDeadLetterIdentity {
 }
 
 export function eventgridSystemTopicEventSubscriptionDeadLetterIdentityToTerraform(struct?: EventgridSystemTopicEventSubscriptionDeadLetterIdentityOutputReference | EventgridSystemTopicEventSubscriptionDeadLetterIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    user_assigned_identity: cdktf.stringToTerraform(struct!.userAssignedIdentity),
+    type: cdktn.stringToTerraform(struct!.type),
+    user_assigned_identity: cdktn.stringToTerraform(struct!.userAssignedIdentity),
   }
 }
 
 
 export function eventgridSystemTopicEventSubscriptionDeadLetterIdentityToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionDeadLetterIdentityOutputReference | EventgridSystemTopicEventSubscriptionDeadLetterIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_assigned_identity: {
-      value: cdktf.stringToHclTerraform(struct!.userAssignedIdentity),
+      value: cdktn.stringToHclTerraform(struct!.userAssignedIdentity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3701,14 +3701,14 @@ export function eventgridSystemTopicEventSubscriptionDeadLetterIdentityToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionDeadLetterIdentityOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionDeadLetterIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3780,31 +3780,31 @@ export interface EventgridSystemTopicEventSubscriptionDeliveryIdentity {
 }
 
 export function eventgridSystemTopicEventSubscriptionDeliveryIdentityToTerraform(struct?: EventgridSystemTopicEventSubscriptionDeliveryIdentityOutputReference | EventgridSystemTopicEventSubscriptionDeliveryIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    user_assigned_identity: cdktf.stringToTerraform(struct!.userAssignedIdentity),
+    type: cdktn.stringToTerraform(struct!.type),
+    user_assigned_identity: cdktn.stringToTerraform(struct!.userAssignedIdentity),
   }
 }
 
 
 export function eventgridSystemTopicEventSubscriptionDeliveryIdentityToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionDeliveryIdentityOutputReference | EventgridSystemTopicEventSubscriptionDeliveryIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_assigned_identity: {
-      value: cdktf.stringToHclTerraform(struct!.userAssignedIdentity),
+      value: cdktn.stringToHclTerraform(struct!.userAssignedIdentity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3815,14 +3815,14 @@ export function eventgridSystemTopicEventSubscriptionDeliveryIdentityToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionDeliveryIdentityOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionDeliveryIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3890,7 +3890,7 @@ export interface EventgridSystemTopicEventSubscriptionDeliveryProperty {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#secret EventgridSystemTopicEventSubscription#secret}
   */
-  readonly secret?: boolean | cdktf.IResolvable;
+  readonly secret?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#source_field EventgridSystemTopicEventSubscription#source_field}
   */
@@ -3905,53 +3905,53 @@ export interface EventgridSystemTopicEventSubscriptionDeliveryProperty {
   readonly value?: string;
 }
 
-export function eventgridSystemTopicEventSubscriptionDeliveryPropertyToTerraform(struct?: EventgridSystemTopicEventSubscriptionDeliveryProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionDeliveryPropertyToTerraform(struct?: EventgridSystemTopicEventSubscriptionDeliveryProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    secret: cdktf.booleanToTerraform(struct!.secret),
-    source_field: cdktf.stringToTerraform(struct!.sourceField),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    secret: cdktn.booleanToTerraform(struct!.secret),
+    source_field: cdktn.stringToTerraform(struct!.sourceField),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionDeliveryPropertyToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionDeliveryProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionDeliveryPropertyToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionDeliveryProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret: {
-      value: cdktf.booleanToHclTerraform(struct!.secret),
+      value: cdktn.booleanToHclTerraform(struct!.secret),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     source_field: {
-      value: cdktf.stringToHclTerraform(struct!.sourceField),
+      value: cdktn.stringToHclTerraform(struct!.sourceField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3962,9 +3962,9 @@ export function eventgridSystemTopicEventSubscriptionDeliveryPropertyToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionDeliveryPropertyOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionDeliveryPropertyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3972,11 +3972,11 @@ export class EventgridSystemTopicEventSubscriptionDeliveryPropertyOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionDeliveryProperty | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionDeliveryProperty | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4005,7 +4005,7 @@ export class EventgridSystemTopicEventSubscriptionDeliveryPropertyOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionDeliveryProperty | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionDeliveryProperty | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4015,7 +4015,7 @@ export class EventgridSystemTopicEventSubscriptionDeliveryPropertyOutputReferenc
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4044,11 +4044,11 @@ export class EventgridSystemTopicEventSubscriptionDeliveryPropertyOutputReferenc
   }
 
   // secret - computed: false, optional: true, required: false
-  private _secret?: boolean | cdktf.IResolvable; 
+  private _secret?: boolean | cdktn.IResolvable; 
   public get secret() {
     return this.getBooleanAttribute('secret');
   }
-  public set secret(value: boolean | cdktf.IResolvable) {
+  public set secret(value: boolean | cdktn.IResolvable) {
     this._secret = value;
   }
   public resetSecret() {
@@ -4105,15 +4105,15 @@ export class EventgridSystemTopicEventSubscriptionDeliveryPropertyOutputReferenc
   }
 }
 
-export class EventgridSystemTopicEventSubscriptionDeliveryPropertyList extends cdktf.ComplexList {
-  public internalValue? : EventgridSystemTopicEventSubscriptionDeliveryProperty[] | cdktf.IResolvable
+export class EventgridSystemTopicEventSubscriptionDeliveryPropertyList extends cdktn.ComplexList {
+  public internalValue? : EventgridSystemTopicEventSubscriptionDeliveryProperty[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4136,31 +4136,31 @@ export interface EventgridSystemTopicEventSubscriptionRetryPolicy {
 }
 
 export function eventgridSystemTopicEventSubscriptionRetryPolicyToTerraform(struct?: EventgridSystemTopicEventSubscriptionRetryPolicyOutputReference | EventgridSystemTopicEventSubscriptionRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event_time_to_live: cdktf.numberToTerraform(struct!.eventTimeToLive),
-    max_delivery_attempts: cdktf.numberToTerraform(struct!.maxDeliveryAttempts),
+    event_time_to_live: cdktn.numberToTerraform(struct!.eventTimeToLive),
+    max_delivery_attempts: cdktn.numberToTerraform(struct!.maxDeliveryAttempts),
   }
 }
 
 
 export function eventgridSystemTopicEventSubscriptionRetryPolicyToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionRetryPolicyOutputReference | EventgridSystemTopicEventSubscriptionRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event_time_to_live: {
-      value: cdktf.numberToHclTerraform(struct!.eventTimeToLive),
+      value: cdktn.numberToHclTerraform(struct!.eventTimeToLive),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_delivery_attempts: {
-      value: cdktf.numberToHclTerraform(struct!.maxDeliveryAttempts),
+      value: cdktn.numberToHclTerraform(struct!.maxDeliveryAttempts),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -4171,14 +4171,14 @@ export function eventgridSystemTopicEventSubscriptionRetryPolicyToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionRetryPolicyOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionRetryPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4247,31 +4247,31 @@ export interface EventgridSystemTopicEventSubscriptionStorageBlobDeadLetterDesti
 }
 
 export function eventgridSystemTopicEventSubscriptionStorageBlobDeadLetterDestinationToTerraform(struct?: EventgridSystemTopicEventSubscriptionStorageBlobDeadLetterDestinationOutputReference | EventgridSystemTopicEventSubscriptionStorageBlobDeadLetterDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    storage_account_id: cdktf.stringToTerraform(struct!.storageAccountId),
-    storage_blob_container_name: cdktf.stringToTerraform(struct!.storageBlobContainerName),
+    storage_account_id: cdktn.stringToTerraform(struct!.storageAccountId),
+    storage_blob_container_name: cdktn.stringToTerraform(struct!.storageBlobContainerName),
   }
 }
 
 
 export function eventgridSystemTopicEventSubscriptionStorageBlobDeadLetterDestinationToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionStorageBlobDeadLetterDestinationOutputReference | EventgridSystemTopicEventSubscriptionStorageBlobDeadLetterDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     storage_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountId),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_blob_container_name: {
-      value: cdktf.stringToHclTerraform(struct!.storageBlobContainerName),
+      value: cdktn.stringToHclTerraform(struct!.storageBlobContainerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4282,14 +4282,14 @@ export function eventgridSystemTopicEventSubscriptionStorageBlobDeadLetterDestin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionStorageBlobDeadLetterDestinationOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionStorageBlobDeadLetterDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4362,38 +4362,38 @@ export interface EventgridSystemTopicEventSubscriptionStorageQueueEndpoint {
 }
 
 export function eventgridSystemTopicEventSubscriptionStorageQueueEndpointToTerraform(struct?: EventgridSystemTopicEventSubscriptionStorageQueueEndpointOutputReference | EventgridSystemTopicEventSubscriptionStorageQueueEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    queue_message_time_to_live_in_seconds: cdktf.numberToTerraform(struct!.queueMessageTimeToLiveInSeconds),
-    queue_name: cdktf.stringToTerraform(struct!.queueName),
-    storage_account_id: cdktf.stringToTerraform(struct!.storageAccountId),
+    queue_message_time_to_live_in_seconds: cdktn.numberToTerraform(struct!.queueMessageTimeToLiveInSeconds),
+    queue_name: cdktn.stringToTerraform(struct!.queueName),
+    storage_account_id: cdktn.stringToTerraform(struct!.storageAccountId),
   }
 }
 
 
 export function eventgridSystemTopicEventSubscriptionStorageQueueEndpointToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionStorageQueueEndpointOutputReference | EventgridSystemTopicEventSubscriptionStorageQueueEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     queue_message_time_to_live_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.queueMessageTimeToLiveInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.queueMessageTimeToLiveInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     queue_name: {
-      value: cdktf.stringToHclTerraform(struct!.queueName),
+      value: cdktn.stringToHclTerraform(struct!.queueName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountId),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4404,14 +4404,14 @@ export function eventgridSystemTopicEventSubscriptionStorageQueueEndpointToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionStorageQueueEndpointOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionStorageQueueEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4494,7 +4494,7 @@ export interface EventgridSystemTopicEventSubscriptionSubjectFilter {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#case_sensitive EventgridSystemTopicEventSubscription#case_sensitive}
   */
-  readonly caseSensitive?: boolean | cdktf.IResolvable;
+  readonly caseSensitive?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#subject_begins_with EventgridSystemTopicEventSubscription#subject_begins_with}
   */
@@ -4506,38 +4506,38 @@ export interface EventgridSystemTopicEventSubscriptionSubjectFilter {
 }
 
 export function eventgridSystemTopicEventSubscriptionSubjectFilterToTerraform(struct?: EventgridSystemTopicEventSubscriptionSubjectFilterOutputReference | EventgridSystemTopicEventSubscriptionSubjectFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    case_sensitive: cdktf.booleanToTerraform(struct!.caseSensitive),
-    subject_begins_with: cdktf.stringToTerraform(struct!.subjectBeginsWith),
-    subject_ends_with: cdktf.stringToTerraform(struct!.subjectEndsWith),
+    case_sensitive: cdktn.booleanToTerraform(struct!.caseSensitive),
+    subject_begins_with: cdktn.stringToTerraform(struct!.subjectBeginsWith),
+    subject_ends_with: cdktn.stringToTerraform(struct!.subjectEndsWith),
   }
 }
 
 
 export function eventgridSystemTopicEventSubscriptionSubjectFilterToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionSubjectFilterOutputReference | EventgridSystemTopicEventSubscriptionSubjectFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     case_sensitive: {
-      value: cdktf.booleanToHclTerraform(struct!.caseSensitive),
+      value: cdktn.booleanToHclTerraform(struct!.caseSensitive),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     subject_begins_with: {
-      value: cdktf.stringToHclTerraform(struct!.subjectBeginsWith),
+      value: cdktn.stringToHclTerraform(struct!.subjectBeginsWith),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject_ends_with: {
-      value: cdktf.stringToHclTerraform(struct!.subjectEndsWith),
+      value: cdktn.stringToHclTerraform(struct!.subjectEndsWith),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4548,14 +4548,14 @@ export function eventgridSystemTopicEventSubscriptionSubjectFilterToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionSubjectFilterOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionSubjectFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4593,11 +4593,11 @@ export class EventgridSystemTopicEventSubscriptionSubjectFilterOutputReference e
   }
 
   // case_sensitive - computed: false, optional: true, required: false
-  private _caseSensitive?: boolean | cdktf.IResolvable; 
+  private _caseSensitive?: boolean | cdktn.IResolvable; 
   public get caseSensitive() {
     return this.getBooleanAttribute('case_sensitive');
   }
-  public set caseSensitive(value: boolean | cdktf.IResolvable) {
+  public set caseSensitive(value: boolean | cdktn.IResolvable) {
     this._caseSensitive = value;
   }
   public resetCaseSensitive() {
@@ -4659,46 +4659,46 @@ export interface EventgridSystemTopicEventSubscriptionTimeouts {
   readonly update?: string;
 }
 
-export function eventgridSystemTopicEventSubscriptionTimeoutsToTerraform(struct?: EventgridSystemTopicEventSubscriptionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionTimeoutsToTerraform(struct?: EventgridSystemTopicEventSubscriptionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function eventgridSystemTopicEventSubscriptionTimeoutsToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventgridSystemTopicEventSubscriptionTimeoutsToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4709,19 +4709,19 @@ export function eventgridSystemTopicEventSubscriptionTimeoutsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EventgridSystemTopicEventSubscriptionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EventgridSystemTopicEventSubscriptionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4746,7 +4746,7 @@ export class EventgridSystemTopicEventSubscriptionTimeoutsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventgridSystemTopicEventSubscriptionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventgridSystemTopicEventSubscriptionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4755,7 +4755,7 @@ export class EventgridSystemTopicEventSubscriptionTimeoutsOutputReference extend
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4857,52 +4857,52 @@ export interface EventgridSystemTopicEventSubscriptionWebhookEndpoint {
 }
 
 export function eventgridSystemTopicEventSubscriptionWebhookEndpointToTerraform(struct?: EventgridSystemTopicEventSubscriptionWebhookEndpointOutputReference | EventgridSystemTopicEventSubscriptionWebhookEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    active_directory_app_id_or_uri: cdktf.stringToTerraform(struct!.activeDirectoryAppIdOrUri),
-    active_directory_tenant_id: cdktf.stringToTerraform(struct!.activeDirectoryTenantId),
-    max_events_per_batch: cdktf.numberToTerraform(struct!.maxEventsPerBatch),
-    preferred_batch_size_in_kilobytes: cdktf.numberToTerraform(struct!.preferredBatchSizeInKilobytes),
-    url: cdktf.stringToTerraform(struct!.url),
+    active_directory_app_id_or_uri: cdktn.stringToTerraform(struct!.activeDirectoryAppIdOrUri),
+    active_directory_tenant_id: cdktn.stringToTerraform(struct!.activeDirectoryTenantId),
+    max_events_per_batch: cdktn.numberToTerraform(struct!.maxEventsPerBatch),
+    preferred_batch_size_in_kilobytes: cdktn.numberToTerraform(struct!.preferredBatchSizeInKilobytes),
+    url: cdktn.stringToTerraform(struct!.url),
   }
 }
 
 
 export function eventgridSystemTopicEventSubscriptionWebhookEndpointToHclTerraform(struct?: EventgridSystemTopicEventSubscriptionWebhookEndpointOutputReference | EventgridSystemTopicEventSubscriptionWebhookEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     active_directory_app_id_or_uri: {
-      value: cdktf.stringToHclTerraform(struct!.activeDirectoryAppIdOrUri),
+      value: cdktn.stringToHclTerraform(struct!.activeDirectoryAppIdOrUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     active_directory_tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.activeDirectoryTenantId),
+      value: cdktn.stringToHclTerraform(struct!.activeDirectoryTenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_events_per_batch: {
-      value: cdktf.numberToHclTerraform(struct!.maxEventsPerBatch),
+      value: cdktn.numberToHclTerraform(struct!.maxEventsPerBatch),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     preferred_batch_size_in_kilobytes: {
-      value: cdktf.numberToHclTerraform(struct!.preferredBatchSizeInKilobytes),
+      value: cdktn.numberToHclTerraform(struct!.preferredBatchSizeInKilobytes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4913,14 +4913,14 @@ export function eventgridSystemTopicEventSubscriptionWebhookEndpointToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventgridSystemTopicEventSubscriptionWebhookEndpointOutputReference extends cdktf.ComplexObject {
+export class EventgridSystemTopicEventSubscriptionWebhookEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5055,7 +5055,7 @@ export class EventgridSystemTopicEventSubscriptionWebhookEndpointOutputReference
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription azurerm_eventgrid_system_topic_event_subscription}
 */
-export class EventgridSystemTopicEventSubscription extends cdktf.TerraformResource {
+export class EventgridSystemTopicEventSubscription extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -5066,14 +5066,14 @@ export class EventgridSystemTopicEventSubscription extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EventgridSystemTopicEventSubscription resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EventgridSystemTopicEventSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventgridSystemTopicEventSubscription to import
   * @param importFromId The id of the existing EventgridSystemTopicEventSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventgrid_system_topic_event_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventgridSystemTopicEventSubscription to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_eventgrid_system_topic_event_subscription", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_eventgrid_system_topic_event_subscription", importId: importFromId, provider });
       }
 
   // ===========
@@ -5134,11 +5134,11 @@ export class EventgridSystemTopicEventSubscription extends cdktf.TerraformResour
   // ==========
 
   // advanced_filtering_on_arrays_enabled - computed: false, optional: true, required: false
-  private _advancedFilteringOnArraysEnabled?: boolean | cdktf.IResolvable; 
+  private _advancedFilteringOnArraysEnabled?: boolean | cdktn.IResolvable; 
   public get advancedFilteringOnArraysEnabled() {
     return this.getBooleanAttribute('advanced_filtering_on_arrays_enabled');
   }
-  public set advancedFilteringOnArraysEnabled(value: boolean | cdktf.IResolvable) {
+  public set advancedFilteringOnArraysEnabled(value: boolean | cdktn.IResolvable) {
     this._advancedFilteringOnArraysEnabled = value;
   }
   public resetAdvancedFilteringOnArraysEnabled() {
@@ -5401,7 +5401,7 @@ export class EventgridSystemTopicEventSubscription extends cdktf.TerraformResour
   public get deliveryProperty() {
     return this._deliveryProperty;
   }
-  public putDeliveryProperty(value: EventgridSystemTopicEventSubscriptionDeliveryProperty[] | cdktf.IResolvable) {
+  public putDeliveryProperty(value: EventgridSystemTopicEventSubscriptionDeliveryProperty[] | cdktn.IResolvable) {
     this._deliveryProperty.internalValue = value;
   }
   public resetDeliveryProperty() {
@@ -5514,24 +5514,24 @@ export class EventgridSystemTopicEventSubscription extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      advanced_filtering_on_arrays_enabled: cdktf.booleanToTerraform(this._advancedFilteringOnArraysEnabled),
-      event_delivery_schema: cdktf.stringToTerraform(this._eventDeliverySchema),
-      eventhub_endpoint_id: cdktf.stringToTerraform(this._eventhubEndpointId),
-      expiration_time_utc: cdktf.stringToTerraform(this._expirationTimeUtc),
-      hybrid_connection_endpoint_id: cdktf.stringToTerraform(this._hybridConnectionEndpointId),
-      id: cdktf.stringToTerraform(this._id),
-      included_event_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._includedEventTypes),
-      labels: cdktf.listMapper(cdktf.stringToTerraform, false)(this._labels),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      service_bus_queue_endpoint_id: cdktf.stringToTerraform(this._serviceBusQueueEndpointId),
-      service_bus_topic_endpoint_id: cdktf.stringToTerraform(this._serviceBusTopicEndpointId),
-      system_topic: cdktf.stringToTerraform(this._systemTopic),
+      advanced_filtering_on_arrays_enabled: cdktn.booleanToTerraform(this._advancedFilteringOnArraysEnabled),
+      event_delivery_schema: cdktn.stringToTerraform(this._eventDeliverySchema),
+      eventhub_endpoint_id: cdktn.stringToTerraform(this._eventhubEndpointId),
+      expiration_time_utc: cdktn.stringToTerraform(this._expirationTimeUtc),
+      hybrid_connection_endpoint_id: cdktn.stringToTerraform(this._hybridConnectionEndpointId),
+      id: cdktn.stringToTerraform(this._id),
+      included_event_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._includedEventTypes),
+      labels: cdktn.listMapper(cdktn.stringToTerraform, false)(this._labels),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      service_bus_queue_endpoint_id: cdktn.stringToTerraform(this._serviceBusQueueEndpointId),
+      service_bus_topic_endpoint_id: cdktn.stringToTerraform(this._serviceBusTopicEndpointId),
+      system_topic: cdktn.stringToTerraform(this._systemTopic),
       advanced_filter: eventgridSystemTopicEventSubscriptionAdvancedFilterToTerraform(this._advancedFilter.internalValue),
       azure_function_endpoint: eventgridSystemTopicEventSubscriptionAzureFunctionEndpointToTerraform(this._azureFunctionEndpoint.internalValue),
       dead_letter_identity: eventgridSystemTopicEventSubscriptionDeadLetterIdentityToTerraform(this._deadLetterIdentity.internalValue),
       delivery_identity: eventgridSystemTopicEventSubscriptionDeliveryIdentityToTerraform(this._deliveryIdentity.internalValue),
-      delivery_property: cdktf.listMapper(eventgridSystemTopicEventSubscriptionDeliveryPropertyToTerraform, true)(this._deliveryProperty.internalValue),
+      delivery_property: cdktn.listMapper(eventgridSystemTopicEventSubscriptionDeliveryPropertyToTerraform, true)(this._deliveryProperty.internalValue),
       retry_policy: eventgridSystemTopicEventSubscriptionRetryPolicyToTerraform(this._retryPolicy.internalValue),
       storage_blob_dead_letter_destination: eventgridSystemTopicEventSubscriptionStorageBlobDeadLetterDestinationToTerraform(this._storageBlobDeadLetterDestination.internalValue),
       storage_queue_endpoint: eventgridSystemTopicEventSubscriptionStorageQueueEndpointToTerraform(this._storageQueueEndpoint.internalValue),
@@ -5544,79 +5544,79 @@ export class EventgridSystemTopicEventSubscription extends cdktf.TerraformResour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       advanced_filtering_on_arrays_enabled: {
-        value: cdktf.booleanToHclTerraform(this._advancedFilteringOnArraysEnabled),
+        value: cdktn.booleanToHclTerraform(this._advancedFilteringOnArraysEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       event_delivery_schema: {
-        value: cdktf.stringToHclTerraform(this._eventDeliverySchema),
+        value: cdktn.stringToHclTerraform(this._eventDeliverySchema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventhub_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._eventhubEndpointId),
+        value: cdktn.stringToHclTerraform(this._eventhubEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expiration_time_utc: {
-        value: cdktf.stringToHclTerraform(this._expirationTimeUtc),
+        value: cdktn.stringToHclTerraform(this._expirationTimeUtc),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hybrid_connection_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._hybridConnectionEndpointId),
+        value: cdktn.stringToHclTerraform(this._hybridConnectionEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       included_event_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._includedEventTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._includedEventTypes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       labels: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._labels),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._labels),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_bus_queue_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._serviceBusQueueEndpointId),
+        value: cdktn.stringToHclTerraform(this._serviceBusQueueEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_bus_topic_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._serviceBusTopicEndpointId),
+        value: cdktn.stringToHclTerraform(this._serviceBusTopicEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       system_topic: {
-        value: cdktf.stringToHclTerraform(this._systemTopic),
+        value: cdktn.stringToHclTerraform(this._systemTopic),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -5646,7 +5646,7 @@ export class EventgridSystemTopicEventSubscription extends cdktf.TerraformResour
         storageClassType: "EventgridSystemTopicEventSubscriptionDeliveryIdentityList",
       },
       delivery_property: {
-        value: cdktf.listMapperHcl(eventgridSystemTopicEventSubscriptionDeliveryPropertyToHclTerraform, true)(this._deliveryProperty.internalValue),
+        value: cdktn.listMapperHcl(eventgridSystemTopicEventSubscriptionDeliveryPropertyToHclTerraform, true)(this._deliveryProperty.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EventgridSystemTopicEventSubscriptionDeliveryPropertyList",

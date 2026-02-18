@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RoleAssignmentConfig extends cdktf.TerraformMetaArguments {
+export interface RoleAssignmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/role_assignment#condition RoleAssignment#condition}
   */
@@ -62,7 +62,7 @@ export interface RoleAssignmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/role_assignment#skip_service_principal_aad_check RoleAssignment#skip_service_principal_aad_check}
   */
-  readonly skipServicePrincipalAadCheck?: boolean | cdktf.IResolvable;
+  readonly skipServicePrincipalAadCheck?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -85,39 +85,39 @@ export interface RoleAssignmentTimeouts {
   readonly read?: string;
 }
 
-export function roleAssignmentTimeoutsToTerraform(struct?: RoleAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function roleAssignmentTimeoutsToTerraform(struct?: RoleAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function roleAssignmentTimeoutsToHclTerraform(struct?: RoleAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function roleAssignmentTimeoutsToHclTerraform(struct?: RoleAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -128,19 +128,19 @@ export function roleAssignmentTimeoutsToHclTerraform(struct?: RoleAssignmentTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RoleAssignmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RoleAssignmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RoleAssignmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RoleAssignmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -161,7 +161,7 @@ export class RoleAssignmentTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RoleAssignmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RoleAssignmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class RoleAssignmentTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -234,7 +234,7 @@ export class RoleAssignmentTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/role_assignment azurerm_role_assignment}
 */
-export class RoleAssignment extends cdktf.TerraformResource {
+export class RoleAssignment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -245,14 +245,14 @@ export class RoleAssignment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RoleAssignment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RoleAssignment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RoleAssignment to import
   * @param importFromId The id of the existing RoleAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/role_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RoleAssignment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_role_assignment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_role_assignment", importId: importFromId, provider });
       }
 
   // ===========
@@ -472,11 +472,11 @@ export class RoleAssignment extends cdktf.TerraformResource {
   }
 
   // skip_service_principal_aad_check - computed: true, optional: true, required: false
-  private _skipServicePrincipalAadCheck?: boolean | cdktf.IResolvable; 
+  private _skipServicePrincipalAadCheck?: boolean | cdktn.IResolvable; 
   public get skipServicePrincipalAadCheck() {
     return this.getBooleanAttribute('skip_service_principal_aad_check');
   }
-  public set skipServicePrincipalAadCheck(value: boolean | cdktf.IResolvable) {
+  public set skipServicePrincipalAadCheck(value: boolean | cdktn.IResolvable) {
     this._skipServicePrincipalAadCheck = value;
   }
   public resetSkipServicePrincipalAadCheck() {
@@ -509,18 +509,18 @@ export class RoleAssignment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      condition: cdktf.stringToTerraform(this._condition),
-      condition_version: cdktf.stringToTerraform(this._conditionVersion),
-      delegated_managed_identity_resource_id: cdktf.stringToTerraform(this._delegatedManagedIdentityResourceId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      principal_id: cdktf.stringToTerraform(this._principalId),
-      principal_type: cdktf.stringToTerraform(this._principalType),
-      role_definition_id: cdktf.stringToTerraform(this._roleDefinitionId),
-      role_definition_name: cdktf.stringToTerraform(this._roleDefinitionName),
-      scope: cdktf.stringToTerraform(this._scope),
-      skip_service_principal_aad_check: cdktf.booleanToTerraform(this._skipServicePrincipalAadCheck),
+      condition: cdktn.stringToTerraform(this._condition),
+      condition_version: cdktn.stringToTerraform(this._conditionVersion),
+      delegated_managed_identity_resource_id: cdktn.stringToTerraform(this._delegatedManagedIdentityResourceId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      principal_id: cdktn.stringToTerraform(this._principalId),
+      principal_type: cdktn.stringToTerraform(this._principalType),
+      role_definition_id: cdktn.stringToTerraform(this._roleDefinitionId),
+      role_definition_name: cdktn.stringToTerraform(this._roleDefinitionName),
+      scope: cdktn.stringToTerraform(this._scope),
+      skip_service_principal_aad_check: cdktn.booleanToTerraform(this._skipServicePrincipalAadCheck),
       timeouts: roleAssignmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -528,73 +528,73 @@ export class RoleAssignment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       condition: {
-        value: cdktf.stringToHclTerraform(this._condition),
+        value: cdktn.stringToHclTerraform(this._condition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       condition_version: {
-        value: cdktf.stringToHclTerraform(this._conditionVersion),
+        value: cdktn.stringToHclTerraform(this._conditionVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delegated_managed_identity_resource_id: {
-        value: cdktf.stringToHclTerraform(this._delegatedManagedIdentityResourceId),
+        value: cdktn.stringToHclTerraform(this._delegatedManagedIdentityResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal_id: {
-        value: cdktf.stringToHclTerraform(this._principalId),
+        value: cdktn.stringToHclTerraform(this._principalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal_type: {
-        value: cdktf.stringToHclTerraform(this._principalType),
+        value: cdktn.stringToHclTerraform(this._principalType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_definition_id: {
-        value: cdktf.stringToHclTerraform(this._roleDefinitionId),
+        value: cdktn.stringToHclTerraform(this._roleDefinitionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_definition_name: {
-        value: cdktf.stringToHclTerraform(this._roleDefinitionName),
+        value: cdktn.stringToHclTerraform(this._roleDefinitionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope: {
-        value: cdktf.stringToHclTerraform(this._scope),
+        value: cdktn.stringToHclTerraform(this._scope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_service_principal_aad_check: {
-        value: cdktf.booleanToHclTerraform(this._skipServicePrincipalAadCheck),
+        value: cdktn.booleanToHclTerraform(this._skipServicePrincipalAadCheck),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

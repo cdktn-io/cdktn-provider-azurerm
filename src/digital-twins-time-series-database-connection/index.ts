@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DigitalTwinsTimeSeriesDatabaseConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface DigitalTwinsTimeSeriesDatabaseConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/digital_twins_time_series_database_connection#digital_twins_id DigitalTwinsTimeSeriesDatabaseConnection#digital_twins_id}
   */
@@ -81,39 +81,39 @@ export interface DigitalTwinsTimeSeriesDatabaseConnectionTimeouts {
   readonly read?: string;
 }
 
-export function digitalTwinsTimeSeriesDatabaseConnectionTimeoutsToTerraform(struct?: DigitalTwinsTimeSeriesDatabaseConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function digitalTwinsTimeSeriesDatabaseConnectionTimeoutsToTerraform(struct?: DigitalTwinsTimeSeriesDatabaseConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function digitalTwinsTimeSeriesDatabaseConnectionTimeoutsToHclTerraform(struct?: DigitalTwinsTimeSeriesDatabaseConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function digitalTwinsTimeSeriesDatabaseConnectionTimeoutsToHclTerraform(struct?: DigitalTwinsTimeSeriesDatabaseConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -124,19 +124,19 @@ export function digitalTwinsTimeSeriesDatabaseConnectionTimeoutsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DigitalTwinsTimeSeriesDatabaseConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DigitalTwinsTimeSeriesDatabaseConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -157,7 +157,7 @@ export class DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DigitalTwinsTimeSeriesDatabaseConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DigitalTwinsTimeSeriesDatabaseConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference ext
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -230,7 +230,7 @@ export class DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference ext
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/digital_twins_time_series_database_connection azurerm_digital_twins_time_series_database_connection}
 */
-export class DigitalTwinsTimeSeriesDatabaseConnection extends cdktf.TerraformResource {
+export class DigitalTwinsTimeSeriesDatabaseConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -241,14 +241,14 @@ export class DigitalTwinsTimeSeriesDatabaseConnection extends cdktf.TerraformRes
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DigitalTwinsTimeSeriesDatabaseConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DigitalTwinsTimeSeriesDatabaseConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DigitalTwinsTimeSeriesDatabaseConnection to import
   * @param importFromId The id of the existing DigitalTwinsTimeSeriesDatabaseConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/digital_twins_time_series_database_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DigitalTwinsTimeSeriesDatabaseConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_digital_twins_time_series_database_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_digital_twins_time_series_database_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -470,17 +470,17 @@ export class DigitalTwinsTimeSeriesDatabaseConnection extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      digital_twins_id: cdktf.stringToTerraform(this._digitalTwinsId),
-      eventhub_consumer_group_name: cdktf.stringToTerraform(this._eventhubConsumerGroupName),
-      eventhub_name: cdktf.stringToTerraform(this._eventhubName),
-      eventhub_namespace_endpoint_uri: cdktf.stringToTerraform(this._eventhubNamespaceEndpointUri),
-      eventhub_namespace_id: cdktf.stringToTerraform(this._eventhubNamespaceId),
-      id: cdktf.stringToTerraform(this._id),
-      kusto_cluster_id: cdktf.stringToTerraform(this._kustoClusterId),
-      kusto_cluster_uri: cdktf.stringToTerraform(this._kustoClusterUri),
-      kusto_database_name: cdktf.stringToTerraform(this._kustoDatabaseName),
-      kusto_table_name: cdktf.stringToTerraform(this._kustoTableName),
-      name: cdktf.stringToTerraform(this._name),
+      digital_twins_id: cdktn.stringToTerraform(this._digitalTwinsId),
+      eventhub_consumer_group_name: cdktn.stringToTerraform(this._eventhubConsumerGroupName),
+      eventhub_name: cdktn.stringToTerraform(this._eventhubName),
+      eventhub_namespace_endpoint_uri: cdktn.stringToTerraform(this._eventhubNamespaceEndpointUri),
+      eventhub_namespace_id: cdktn.stringToTerraform(this._eventhubNamespaceId),
+      id: cdktn.stringToTerraform(this._id),
+      kusto_cluster_id: cdktn.stringToTerraform(this._kustoClusterId),
+      kusto_cluster_uri: cdktn.stringToTerraform(this._kustoClusterUri),
+      kusto_database_name: cdktn.stringToTerraform(this._kustoDatabaseName),
+      kusto_table_name: cdktn.stringToTerraform(this._kustoTableName),
+      name: cdktn.stringToTerraform(this._name),
       timeouts: digitalTwinsTimeSeriesDatabaseConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -488,67 +488,67 @@ export class DigitalTwinsTimeSeriesDatabaseConnection extends cdktf.TerraformRes
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       digital_twins_id: {
-        value: cdktf.stringToHclTerraform(this._digitalTwinsId),
+        value: cdktn.stringToHclTerraform(this._digitalTwinsId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventhub_consumer_group_name: {
-        value: cdktf.stringToHclTerraform(this._eventhubConsumerGroupName),
+        value: cdktn.stringToHclTerraform(this._eventhubConsumerGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventhub_name: {
-        value: cdktf.stringToHclTerraform(this._eventhubName),
+        value: cdktn.stringToHclTerraform(this._eventhubName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventhub_namespace_endpoint_uri: {
-        value: cdktf.stringToHclTerraform(this._eventhubNamespaceEndpointUri),
+        value: cdktn.stringToHclTerraform(this._eventhubNamespaceEndpointUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventhub_namespace_id: {
-        value: cdktf.stringToHclTerraform(this._eventhubNamespaceId),
+        value: cdktn.stringToHclTerraform(this._eventhubNamespaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kusto_cluster_id: {
-        value: cdktf.stringToHclTerraform(this._kustoClusterId),
+        value: cdktn.stringToHclTerraform(this._kustoClusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kusto_cluster_uri: {
-        value: cdktf.stringToHclTerraform(this._kustoClusterUri),
+        value: cdktn.stringToHclTerraform(this._kustoClusterUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kusto_database_name: {
-        value: cdktf.stringToHclTerraform(this._kustoDatabaseName),
+        value: cdktn.stringToHclTerraform(this._kustoDatabaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kusto_table_name: {
-        value: cdktf.stringToHclTerraform(this._kustoTableName),
+        value: cdktn.stringToHclTerraform(this._kustoTableName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

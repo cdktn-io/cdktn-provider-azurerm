@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermStorageAccountBlobContainerSasConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermStorageAccountBlobContainerSasConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_account_blob_container_sas#cache_control DataAzurermStorageAccountBlobContainerSas#cache_control}
   */
@@ -47,7 +47,7 @@ export interface DataAzurermStorageAccountBlobContainerSasConfig extends cdktf.T
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_account_blob_container_sas#https_only DataAzurermStorageAccountBlobContainerSas#https_only}
   */
-  readonly httpsOnly?: boolean | cdktf.IResolvable;
+  readonly httpsOnly?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_account_blob_container_sas#id DataAzurermStorageAccountBlobContainerSas#id}
   *
@@ -80,83 +80,83 @@ export interface DataAzurermStorageAccountBlobContainerSasPermissions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_account_blob_container_sas#add DataAzurermStorageAccountBlobContainerSas#add}
   */
-  readonly add: boolean | cdktf.IResolvable;
+  readonly add: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_account_blob_container_sas#create DataAzurermStorageAccountBlobContainerSas#create}
   */
-  readonly create: boolean | cdktf.IResolvable;
+  readonly create: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_account_blob_container_sas#delete DataAzurermStorageAccountBlobContainerSas#delete}
   */
-  readonly delete: boolean | cdktf.IResolvable;
+  readonly delete: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_account_blob_container_sas#list DataAzurermStorageAccountBlobContainerSas#list}
   */
-  readonly list: boolean | cdktf.IResolvable;
+  readonly list: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_account_blob_container_sas#read DataAzurermStorageAccountBlobContainerSas#read}
   */
-  readonly read: boolean | cdktf.IResolvable;
+  readonly read: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_account_blob_container_sas#write DataAzurermStorageAccountBlobContainerSas#write}
   */
-  readonly write: boolean | cdktf.IResolvable;
+  readonly write: boolean | cdktn.IResolvable;
 }
 
 export function dataAzurermStorageAccountBlobContainerSasPermissionsToTerraform(struct?: DataAzurermStorageAccountBlobContainerSasPermissionsOutputReference | DataAzurermStorageAccountBlobContainerSasPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    add: cdktf.booleanToTerraform(struct!.add),
-    create: cdktf.booleanToTerraform(struct!.create),
-    delete: cdktf.booleanToTerraform(struct!.delete),
-    list: cdktf.booleanToTerraform(struct!.list),
-    read: cdktf.booleanToTerraform(struct!.read),
-    write: cdktf.booleanToTerraform(struct!.write),
+    add: cdktn.booleanToTerraform(struct!.add),
+    create: cdktn.booleanToTerraform(struct!.create),
+    delete: cdktn.booleanToTerraform(struct!.delete),
+    list: cdktn.booleanToTerraform(struct!.list),
+    read: cdktn.booleanToTerraform(struct!.read),
+    write: cdktn.booleanToTerraform(struct!.write),
   }
 }
 
 
 export function dataAzurermStorageAccountBlobContainerSasPermissionsToHclTerraform(struct?: DataAzurermStorageAccountBlobContainerSasPermissionsOutputReference | DataAzurermStorageAccountBlobContainerSasPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     add: {
-      value: cdktf.booleanToHclTerraform(struct!.add),
+      value: cdktn.booleanToHclTerraform(struct!.add),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     create: {
-      value: cdktf.booleanToHclTerraform(struct!.create),
+      value: cdktn.booleanToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     delete: {
-      value: cdktf.booleanToHclTerraform(struct!.delete),
+      value: cdktn.booleanToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     list: {
-      value: cdktf.booleanToHclTerraform(struct!.list),
+      value: cdktn.booleanToHclTerraform(struct!.list),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     read: {
-      value: cdktf.booleanToHclTerraform(struct!.read),
+      value: cdktn.booleanToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     write: {
-      value: cdktf.booleanToHclTerraform(struct!.write),
+      value: cdktn.booleanToHclTerraform(struct!.write),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -167,14 +167,14 @@ export function dataAzurermStorageAccountBlobContainerSasPermissionsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermStorageAccountBlobContainerSasPermissionsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermStorageAccountBlobContainerSasPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -230,11 +230,11 @@ export class DataAzurermStorageAccountBlobContainerSasPermissionsOutputReference
   }
 
   // add - computed: false, optional: false, required: true
-  private _add?: boolean | cdktf.IResolvable; 
+  private _add?: boolean | cdktn.IResolvable; 
   public get add() {
     return this.getBooleanAttribute('add');
   }
-  public set add(value: boolean | cdktf.IResolvable) {
+  public set add(value: boolean | cdktn.IResolvable) {
     this._add = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -243,11 +243,11 @@ export class DataAzurermStorageAccountBlobContainerSasPermissionsOutputReference
   }
 
   // create - computed: false, optional: false, required: true
-  private _create?: boolean | cdktf.IResolvable; 
+  private _create?: boolean | cdktn.IResolvable; 
   public get create() {
     return this.getBooleanAttribute('create');
   }
-  public set create(value: boolean | cdktf.IResolvable) {
+  public set create(value: boolean | cdktn.IResolvable) {
     this._create = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -256,11 +256,11 @@ export class DataAzurermStorageAccountBlobContainerSasPermissionsOutputReference
   }
 
   // delete - computed: false, optional: false, required: true
-  private _delete?: boolean | cdktf.IResolvable; 
+  private _delete?: boolean | cdktn.IResolvable; 
   public get delete() {
     return this.getBooleanAttribute('delete');
   }
-  public set delete(value: boolean | cdktf.IResolvable) {
+  public set delete(value: boolean | cdktn.IResolvable) {
     this._delete = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -269,11 +269,11 @@ export class DataAzurermStorageAccountBlobContainerSasPermissionsOutputReference
   }
 
   // list - computed: false, optional: false, required: true
-  private _list?: boolean | cdktf.IResolvable; 
+  private _list?: boolean | cdktn.IResolvable; 
   public get list() {
     return this.getBooleanAttribute('list');
   }
-  public set list(value: boolean | cdktf.IResolvable) {
+  public set list(value: boolean | cdktn.IResolvable) {
     this._list = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -282,11 +282,11 @@ export class DataAzurermStorageAccountBlobContainerSasPermissionsOutputReference
   }
 
   // read - computed: false, optional: false, required: true
-  private _read?: boolean | cdktf.IResolvable; 
+  private _read?: boolean | cdktn.IResolvable; 
   public get read() {
     return this.getBooleanAttribute('read');
   }
-  public set read(value: boolean | cdktf.IResolvable) {
+  public set read(value: boolean | cdktn.IResolvable) {
     this._read = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -295,11 +295,11 @@ export class DataAzurermStorageAccountBlobContainerSasPermissionsOutputReference
   }
 
   // write - computed: false, optional: false, required: true
-  private _write?: boolean | cdktf.IResolvable; 
+  private _write?: boolean | cdktn.IResolvable; 
   public get write() {
     return this.getBooleanAttribute('write');
   }
-  public set write(value: boolean | cdktf.IResolvable) {
+  public set write(value: boolean | cdktn.IResolvable) {
     this._write = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -314,25 +314,25 @@ export interface DataAzurermStorageAccountBlobContainerSasTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermStorageAccountBlobContainerSasTimeoutsToTerraform(struct?: DataAzurermStorageAccountBlobContainerSasTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermStorageAccountBlobContainerSasTimeoutsToTerraform(struct?: DataAzurermStorageAccountBlobContainerSasTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermStorageAccountBlobContainerSasTimeoutsToHclTerraform(struct?: DataAzurermStorageAccountBlobContainerSasTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermStorageAccountBlobContainerSasTimeoutsToHclTerraform(struct?: DataAzurermStorageAccountBlobContainerSasTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -343,19 +343,19 @@ export function dataAzurermStorageAccountBlobContainerSasTimeoutsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermStorageAccountBlobContainerSasTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermStorageAccountBlobContainerSasTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermStorageAccountBlobContainerSasTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermStorageAccountBlobContainerSasTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -368,13 +368,13 @@ export class DataAzurermStorageAccountBlobContainerSasTimeoutsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermStorageAccountBlobContainerSasTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermStorageAccountBlobContainerSasTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -405,7 +405,7 @@ export class DataAzurermStorageAccountBlobContainerSasTimeoutsOutputReference ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_account_blob_container_sas azurerm_storage_account_blob_container_sas}
 */
-export class DataAzurermStorageAccountBlobContainerSas extends cdktf.TerraformDataSource {
+export class DataAzurermStorageAccountBlobContainerSas extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -416,14 +416,14 @@ export class DataAzurermStorageAccountBlobContainerSas extends cdktf.TerraformDa
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermStorageAccountBlobContainerSas resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermStorageAccountBlobContainerSas resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermStorageAccountBlobContainerSas to import
   * @param importFromId The id of the existing DataAzurermStorageAccountBlobContainerSas that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_account_blob_container_sas#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermStorageAccountBlobContainerSas to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_account_blob_container_sas", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_account_blob_container_sas", importId: importFromId, provider });
       }
 
   // ===========
@@ -593,11 +593,11 @@ export class DataAzurermStorageAccountBlobContainerSas extends cdktf.TerraformDa
   }
 
   // https_only - computed: false, optional: true, required: false
-  private _httpsOnly?: boolean | cdktf.IResolvable; 
+  private _httpsOnly?: boolean | cdktn.IResolvable; 
   public get httpsOnly() {
     return this.getBooleanAttribute('https_only');
   }
-  public set httpsOnly(value: boolean | cdktf.IResolvable) {
+  public set httpsOnly(value: boolean | cdktn.IResolvable) {
     this._httpsOnly = value;
   }
   public resetHttpsOnly() {
@@ -693,18 +693,18 @@ export class DataAzurermStorageAccountBlobContainerSas extends cdktf.TerraformDa
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cache_control: cdktf.stringToTerraform(this._cacheControl),
-      connection_string: cdktf.stringToTerraform(this._connectionString),
-      container_name: cdktf.stringToTerraform(this._containerName),
-      content_disposition: cdktf.stringToTerraform(this._contentDisposition),
-      content_encoding: cdktf.stringToTerraform(this._contentEncoding),
-      content_language: cdktf.stringToTerraform(this._contentLanguage),
-      content_type: cdktf.stringToTerraform(this._contentType),
-      expiry: cdktf.stringToTerraform(this._expiry),
-      https_only: cdktf.booleanToTerraform(this._httpsOnly),
-      id: cdktf.stringToTerraform(this._id),
-      ip_address: cdktf.stringToTerraform(this._ipAddress),
-      start: cdktf.stringToTerraform(this._start),
+      cache_control: cdktn.stringToTerraform(this._cacheControl),
+      connection_string: cdktn.stringToTerraform(this._connectionString),
+      container_name: cdktn.stringToTerraform(this._containerName),
+      content_disposition: cdktn.stringToTerraform(this._contentDisposition),
+      content_encoding: cdktn.stringToTerraform(this._contentEncoding),
+      content_language: cdktn.stringToTerraform(this._contentLanguage),
+      content_type: cdktn.stringToTerraform(this._contentType),
+      expiry: cdktn.stringToTerraform(this._expiry),
+      https_only: cdktn.booleanToTerraform(this._httpsOnly),
+      id: cdktn.stringToTerraform(this._id),
+      ip_address: cdktn.stringToTerraform(this._ipAddress),
+      start: cdktn.stringToTerraform(this._start),
       permissions: dataAzurermStorageAccountBlobContainerSasPermissionsToTerraform(this._permissions.internalValue),
       timeouts: dataAzurermStorageAccountBlobContainerSasTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -713,73 +713,73 @@ export class DataAzurermStorageAccountBlobContainerSas extends cdktf.TerraformDa
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cache_control: {
-        value: cdktf.stringToHclTerraform(this._cacheControl),
+        value: cdktn.stringToHclTerraform(this._cacheControl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connection_string: {
-        value: cdktf.stringToHclTerraform(this._connectionString),
+        value: cdktn.stringToHclTerraform(this._connectionString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       container_name: {
-        value: cdktf.stringToHclTerraform(this._containerName),
+        value: cdktn.stringToHclTerraform(this._containerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_disposition: {
-        value: cdktf.stringToHclTerraform(this._contentDisposition),
+        value: cdktn.stringToHclTerraform(this._contentDisposition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_encoding: {
-        value: cdktf.stringToHclTerraform(this._contentEncoding),
+        value: cdktn.stringToHclTerraform(this._contentEncoding),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_language: {
-        value: cdktf.stringToHclTerraform(this._contentLanguage),
+        value: cdktn.stringToHclTerraform(this._contentLanguage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_type: {
-        value: cdktf.stringToHclTerraform(this._contentType),
+        value: cdktn.stringToHclTerraform(this._contentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expiry: {
-        value: cdktf.stringToHclTerraform(this._expiry),
+        value: cdktn.stringToHclTerraform(this._expiry),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       https_only: {
-        value: cdktf.booleanToHclTerraform(this._httpsOnly),
+        value: cdktn.booleanToHclTerraform(this._httpsOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_address: {
-        value: cdktf.stringToHclTerraform(this._ipAddress),
+        value: cdktn.stringToHclTerraform(this._ipAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start: {
-        value: cdktf.stringToHclTerraform(this._start),
+        value: cdktn.stringToHclTerraform(this._start),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

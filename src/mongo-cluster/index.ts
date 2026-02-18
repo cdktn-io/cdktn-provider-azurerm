@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MongoClusterConfig extends cdktf.TerraformMetaArguments {
+export interface MongoClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mongo_cluster#administrator_password MongoCluster#administrator_password}
   */
@@ -35,7 +35,7 @@ export interface MongoClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mongo_cluster#data_api_mode_enabled MongoCluster#data_api_mode_enabled}
   */
-  readonly dataApiModeEnabled?: boolean | cdktf.IResolvable;
+  readonly dataApiModeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mongo_cluster#high_availability_mode MongoCluster#high_availability_mode}
   */
@@ -124,8 +124,8 @@ export interface MongoClusterConnectionStrings {
 }
 
 export function mongoClusterConnectionStringsToTerraform(struct?: MongoClusterConnectionStrings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -134,8 +134,8 @@ export function mongoClusterConnectionStringsToTerraform(struct?: MongoClusterCo
 
 
 export function mongoClusterConnectionStringsToHclTerraform(struct?: MongoClusterConnectionStrings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -143,7 +143,7 @@ export function mongoClusterConnectionStringsToHclTerraform(struct?: MongoCluste
   return attrs;
 }
 
-export class MongoClusterConnectionStringsOutputReference extends cdktf.ComplexObject {
+export class MongoClusterConnectionStringsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -152,7 +152,7 @@ export class MongoClusterConnectionStringsOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -187,14 +187,14 @@ export class MongoClusterConnectionStringsOutputReference extends cdktf.ComplexO
   }
 }
 
-export class MongoClusterConnectionStringsList extends cdktf.ComplexList {
+export class MongoClusterConnectionStringsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -217,31 +217,31 @@ export interface MongoClusterCustomerManagedKey {
 }
 
 export function mongoClusterCustomerManagedKeyToTerraform(struct?: MongoClusterCustomerManagedKeyOutputReference | MongoClusterCustomerManagedKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_vault_key_id: cdktf.stringToTerraform(struct!.keyVaultKeyId),
-    user_assigned_identity_id: cdktf.stringToTerraform(struct!.userAssignedIdentityId),
+    key_vault_key_id: cdktn.stringToTerraform(struct!.keyVaultKeyId),
+    user_assigned_identity_id: cdktn.stringToTerraform(struct!.userAssignedIdentityId),
   }
 }
 
 
 export function mongoClusterCustomerManagedKeyToHclTerraform(struct?: MongoClusterCustomerManagedKeyOutputReference | MongoClusterCustomerManagedKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_vault_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultKeyId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_assigned_identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.userAssignedIdentityId),
+      value: cdktn.stringToHclTerraform(struct!.userAssignedIdentityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -252,14 +252,14 @@ export function mongoClusterCustomerManagedKeyToHclTerraform(struct?: MongoClust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MongoClusterCustomerManagedKeyOutputReference extends cdktf.ComplexObject {
+export class MongoClusterCustomerManagedKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -328,31 +328,31 @@ export interface MongoClusterIdentity {
 }
 
 export function mongoClusterIdentityToTerraform(struct?: MongoClusterIdentityOutputReference | MongoClusterIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function mongoClusterIdentityToHclTerraform(struct?: MongoClusterIdentityOutputReference | MongoClusterIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -363,14 +363,14 @@ export function mongoClusterIdentityToHclTerraform(struct?: MongoClusterIdentity
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MongoClusterIdentityOutputReference extends cdktf.ComplexObject {
+export class MongoClusterIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -404,7 +404,7 @@ export class MongoClusterIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: false, required: true
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -439,31 +439,31 @@ export interface MongoClusterRestore {
 }
 
 export function mongoClusterRestoreToTerraform(struct?: MongoClusterRestoreOutputReference | MongoClusterRestore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    point_in_time_utc: cdktf.stringToTerraform(struct!.pointInTimeUtc),
-    source_id: cdktf.stringToTerraform(struct!.sourceId),
+    point_in_time_utc: cdktn.stringToTerraform(struct!.pointInTimeUtc),
+    source_id: cdktn.stringToTerraform(struct!.sourceId),
   }
 }
 
 
 export function mongoClusterRestoreToHclTerraform(struct?: MongoClusterRestoreOutputReference | MongoClusterRestore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     point_in_time_utc: {
-      value: cdktf.stringToHclTerraform(struct!.pointInTimeUtc),
+      value: cdktn.stringToHclTerraform(struct!.pointInTimeUtc),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_id: {
-      value: cdktf.stringToHclTerraform(struct!.sourceId),
+      value: cdktn.stringToHclTerraform(struct!.sourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -474,14 +474,14 @@ export function mongoClusterRestoreToHclTerraform(struct?: MongoClusterRestoreOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MongoClusterRestoreOutputReference extends cdktf.ComplexObject {
+export class MongoClusterRestoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -557,46 +557,46 @@ export interface MongoClusterTimeouts {
   readonly update?: string;
 }
 
-export function mongoClusterTimeoutsToTerraform(struct?: MongoClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mongoClusterTimeoutsToTerraform(struct?: MongoClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mongoClusterTimeoutsToHclTerraform(struct?: MongoClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mongoClusterTimeoutsToHclTerraform(struct?: MongoClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -607,19 +607,19 @@ export function mongoClusterTimeoutsToHclTerraform(struct?: MongoClusterTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MongoClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MongoClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MongoClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MongoClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -644,7 +644,7 @@ export class MongoClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MongoClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MongoClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -653,7 +653,7 @@ export class MongoClusterTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -735,7 +735,7 @@ export class MongoClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mongo_cluster azurerm_mongo_cluster}
 */
-export class MongoCluster extends cdktf.TerraformResource {
+export class MongoCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -746,14 +746,14 @@ export class MongoCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MongoCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MongoCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MongoCluster to import
   * @param importFromId The id of the existing MongoCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mongo_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MongoCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mongo_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mongo_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -848,7 +848,7 @@ export class MongoCluster extends cdktf.TerraformResource {
   // authentication_methods - computed: true, optional: true, required: false
   private _authenticationMethods?: string[]; 
   public get authenticationMethods() {
-    return cdktf.Fn.tolist(this.getListAttribute('authentication_methods'));
+    return cdktn.Fn.tolist(this.getListAttribute('authentication_methods'));
   }
   public set authenticationMethods(value: string[]) {
     this._authenticationMethods = value;
@@ -900,11 +900,11 @@ export class MongoCluster extends cdktf.TerraformResource {
   }
 
   // data_api_mode_enabled - computed: false, optional: true, required: false
-  private _dataApiModeEnabled?: boolean | cdktf.IResolvable; 
+  private _dataApiModeEnabled?: boolean | cdktn.IResolvable; 
   public get dataApiModeEnabled() {
     return this.getBooleanAttribute('data_api_mode_enabled');
   }
-  public set dataApiModeEnabled(value: boolean | cdktf.IResolvable) {
+  public set dataApiModeEnabled(value: boolean | cdktn.IResolvable) {
     this._dataApiModeEnabled = value;
   }
   public resetDataApiModeEnabled() {
@@ -1200,26 +1200,26 @@ export class MongoCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      administrator_password: cdktf.stringToTerraform(this._administratorPassword),
-      administrator_username: cdktf.stringToTerraform(this._administratorUsername),
-      authentication_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(this._authenticationMethods),
-      compute_tier: cdktf.stringToTerraform(this._computeTier),
-      create_mode: cdktf.stringToTerraform(this._createMode),
-      data_api_mode_enabled: cdktf.booleanToTerraform(this._dataApiModeEnabled),
-      high_availability_mode: cdktf.stringToTerraform(this._highAvailabilityMode),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      preview_features: cdktf.listMapper(cdktf.stringToTerraform, false)(this._previewFeatures),
-      public_network_access: cdktf.stringToTerraform(this._publicNetworkAccess),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      shard_count: cdktf.numberToTerraform(this._shardCount),
-      source_location: cdktf.stringToTerraform(this._sourceLocation),
-      source_server_id: cdktf.stringToTerraform(this._sourceServerId),
-      storage_size_in_gb: cdktf.numberToTerraform(this._storageSizeInGb),
-      storage_type: cdktf.stringToTerraform(this._storageType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      version: cdktf.stringToTerraform(this._version),
+      administrator_password: cdktn.stringToTerraform(this._administratorPassword),
+      administrator_username: cdktn.stringToTerraform(this._administratorUsername),
+      authentication_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(this._authenticationMethods),
+      compute_tier: cdktn.stringToTerraform(this._computeTier),
+      create_mode: cdktn.stringToTerraform(this._createMode),
+      data_api_mode_enabled: cdktn.booleanToTerraform(this._dataApiModeEnabled),
+      high_availability_mode: cdktn.stringToTerraform(this._highAvailabilityMode),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      preview_features: cdktn.listMapper(cdktn.stringToTerraform, false)(this._previewFeatures),
+      public_network_access: cdktn.stringToTerraform(this._publicNetworkAccess),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      shard_count: cdktn.numberToTerraform(this._shardCount),
+      source_location: cdktn.stringToTerraform(this._sourceLocation),
+      source_server_id: cdktn.stringToTerraform(this._sourceServerId),
+      storage_size_in_gb: cdktn.numberToTerraform(this._storageSizeInGb),
+      storage_type: cdktn.stringToTerraform(this._storageType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      version: cdktn.stringToTerraform(this._version),
       customer_managed_key: mongoClusterCustomerManagedKeyToTerraform(this._customerManagedKey.internalValue),
       identity: mongoClusterIdentityToTerraform(this._identity.internalValue),
       restore: mongoClusterRestoreToTerraform(this._restore.internalValue),
@@ -1230,121 +1230,121 @@ export class MongoCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       administrator_password: {
-        value: cdktf.stringToHclTerraform(this._administratorPassword),
+        value: cdktn.stringToHclTerraform(this._administratorPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       administrator_username: {
-        value: cdktf.stringToHclTerraform(this._administratorUsername),
+        value: cdktn.stringToHclTerraform(this._administratorUsername),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authentication_methods: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._authenticationMethods),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._authenticationMethods),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       compute_tier: {
-        value: cdktf.stringToHclTerraform(this._computeTier),
+        value: cdktn.stringToHclTerraform(this._computeTier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       create_mode: {
-        value: cdktf.stringToHclTerraform(this._createMode),
+        value: cdktn.stringToHclTerraform(this._createMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_api_mode_enabled: {
-        value: cdktf.booleanToHclTerraform(this._dataApiModeEnabled),
+        value: cdktn.booleanToHclTerraform(this._dataApiModeEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       high_availability_mode: {
-        value: cdktf.stringToHclTerraform(this._highAvailabilityMode),
+        value: cdktn.stringToHclTerraform(this._highAvailabilityMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preview_features: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._previewFeatures),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._previewFeatures),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       public_network_access: {
-        value: cdktf.stringToHclTerraform(this._publicNetworkAccess),
+        value: cdktn.stringToHclTerraform(this._publicNetworkAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       shard_count: {
-        value: cdktf.numberToHclTerraform(this._shardCount),
+        value: cdktn.numberToHclTerraform(this._shardCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       source_location: {
-        value: cdktf.stringToHclTerraform(this._sourceLocation),
+        value: cdktn.stringToHclTerraform(this._sourceLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_server_id: {
-        value: cdktf.stringToHclTerraform(this._sourceServerId),
+        value: cdktn.stringToHclTerraform(this._sourceServerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_size_in_gb: {
-        value: cdktf.numberToHclTerraform(this._storageSizeInGb),
+        value: cdktn.numberToHclTerraform(this._storageSizeInGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       storage_type: {
-        value: cdktf.stringToHclTerraform(this._storageType),
+        value: cdktn.stringToHclTerraform(this._storageType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

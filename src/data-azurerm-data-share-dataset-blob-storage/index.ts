@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermDataShareDatasetBlobStorageConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermDataShareDatasetBlobStorageConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/data_share_dataset_blob_storage#data_share_id DataAzurermDataShareDatasetBlobStorage#data_share_id}
   */
@@ -38,8 +38,8 @@ export interface DataAzurermDataShareDatasetBlobStorageStorageAccount {
 }
 
 export function dataAzurermDataShareDatasetBlobStorageStorageAccountToTerraform(struct?: DataAzurermDataShareDatasetBlobStorageStorageAccount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermDataShareDatasetBlobStorageStorageAccountToTerraform(
 
 
 export function dataAzurermDataShareDatasetBlobStorageStorageAccountToHclTerraform(struct?: DataAzurermDataShareDatasetBlobStorageStorageAccount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermDataShareDatasetBlobStorageStorageAccountToHclTerrafo
   return attrs;
 }
 
-export class DataAzurermDataShareDatasetBlobStorageStorageAccountOutputReference extends cdktf.ComplexObject {
+export class DataAzurermDataShareDatasetBlobStorageStorageAccountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermDataShareDatasetBlobStorageStorageAccountOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -101,14 +101,14 @@ export class DataAzurermDataShareDatasetBlobStorageStorageAccountOutputReference
   }
 }
 
-export class DataAzurermDataShareDatasetBlobStorageStorageAccountList extends cdktf.ComplexList {
+export class DataAzurermDataShareDatasetBlobStorageStorageAccountList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -126,25 +126,25 @@ export interface DataAzurermDataShareDatasetBlobStorageTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermDataShareDatasetBlobStorageTimeoutsToTerraform(struct?: DataAzurermDataShareDatasetBlobStorageTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermDataShareDatasetBlobStorageTimeoutsToTerraform(struct?: DataAzurermDataShareDatasetBlobStorageTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermDataShareDatasetBlobStorageTimeoutsToHclTerraform(struct?: DataAzurermDataShareDatasetBlobStorageTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermDataShareDatasetBlobStorageTimeoutsToHclTerraform(struct?: DataAzurermDataShareDatasetBlobStorageTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -155,19 +155,19 @@ export function dataAzurermDataShareDatasetBlobStorageTimeoutsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermDataShareDatasetBlobStorageTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermDataShareDatasetBlobStorageTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermDataShareDatasetBlobStorageTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermDataShareDatasetBlobStorageTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -180,13 +180,13 @@ export class DataAzurermDataShareDatasetBlobStorageTimeoutsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermDataShareDatasetBlobStorageTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermDataShareDatasetBlobStorageTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -217,7 +217,7 @@ export class DataAzurermDataShareDatasetBlobStorageTimeoutsOutputReference exten
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/data_share_dataset_blob_storage azurerm_data_share_dataset_blob_storage}
 */
-export class DataAzurermDataShareDatasetBlobStorage extends cdktf.TerraformDataSource {
+export class DataAzurermDataShareDatasetBlobStorage extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -228,14 +228,14 @@ export class DataAzurermDataShareDatasetBlobStorage extends cdktf.TerraformDataS
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermDataShareDatasetBlobStorage resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermDataShareDatasetBlobStorage resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermDataShareDatasetBlobStorage to import
   * @param importFromId The id of the existing DataAzurermDataShareDatasetBlobStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/data_share_dataset_blob_storage#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermDataShareDatasetBlobStorage to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_share_dataset_blob_storage", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_share_dataset_blob_storage", importId: importFromId, provider });
       }
 
   // ===========
@@ -365,9 +365,9 @@ export class DataAzurermDataShareDatasetBlobStorage extends cdktf.TerraformDataS
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_share_id: cdktf.stringToTerraform(this._dataShareId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      data_share_id: cdktn.stringToTerraform(this._dataShareId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
       timeouts: dataAzurermDataShareDatasetBlobStorageTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -375,19 +375,19 @@ export class DataAzurermDataShareDatasetBlobStorage extends cdktf.TerraformDataS
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_share_id: {
-        value: cdktf.stringToHclTerraform(this._dataShareId),
+        value: cdktn.stringToHclTerraform(this._dataShareId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

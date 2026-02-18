@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VirtualNetworkGatewayNatRuleConfig extends cdktf.TerraformMetaArguments {
+export interface VirtualNetworkGatewayNatRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_gateway_nat_rule#id VirtualNetworkGatewayNatRule#id}
   *
@@ -48,13 +48,13 @@ export interface VirtualNetworkGatewayNatRuleConfig extends cdktf.TerraformMetaA
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_gateway_nat_rule#external_mapping VirtualNetworkGatewayNatRule#external_mapping}
   */
-  readonly externalMapping: VirtualNetworkGatewayNatRuleExternalMapping[] | cdktf.IResolvable;
+  readonly externalMapping: VirtualNetworkGatewayNatRuleExternalMapping[] | cdktn.IResolvable;
   /**
   * internal_mapping block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_gateway_nat_rule#internal_mapping VirtualNetworkGatewayNatRule#internal_mapping}
   */
-  readonly internalMapping: VirtualNetworkGatewayNatRuleInternalMapping[] | cdktf.IResolvable;
+  readonly internalMapping: VirtualNetworkGatewayNatRuleInternalMapping[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -73,32 +73,32 @@ export interface VirtualNetworkGatewayNatRuleExternalMapping {
   readonly portRange?: string;
 }
 
-export function virtualNetworkGatewayNatRuleExternalMappingToTerraform(struct?: VirtualNetworkGatewayNatRuleExternalMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualNetworkGatewayNatRuleExternalMappingToTerraform(struct?: VirtualNetworkGatewayNatRuleExternalMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_space: cdktf.stringToTerraform(struct!.addressSpace),
-    port_range: cdktf.stringToTerraform(struct!.portRange),
+    address_space: cdktn.stringToTerraform(struct!.addressSpace),
+    port_range: cdktn.stringToTerraform(struct!.portRange),
   }
 }
 
 
-export function virtualNetworkGatewayNatRuleExternalMappingToHclTerraform(struct?: VirtualNetworkGatewayNatRuleExternalMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualNetworkGatewayNatRuleExternalMappingToHclTerraform(struct?: VirtualNetworkGatewayNatRuleExternalMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_space: {
-      value: cdktf.stringToHclTerraform(struct!.addressSpace),
+      value: cdktn.stringToHclTerraform(struct!.addressSpace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port_range: {
-      value: cdktf.stringToHclTerraform(struct!.portRange),
+      value: cdktn.stringToHclTerraform(struct!.portRange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,9 +109,9 @@ export function virtualNetworkGatewayNatRuleExternalMappingToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualNetworkGatewayNatRuleExternalMappingOutputReference extends cdktf.ComplexObject {
+export class VirtualNetworkGatewayNatRuleExternalMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -119,11 +119,11 @@ export class VirtualNetworkGatewayNatRuleExternalMappingOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VirtualNetworkGatewayNatRuleExternalMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualNetworkGatewayNatRuleExternalMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -140,14 +140,14 @@ export class VirtualNetworkGatewayNatRuleExternalMappingOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualNetworkGatewayNatRuleExternalMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualNetworkGatewayNatRuleExternalMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._addressSpace = undefined;
       this._portRange = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -189,15 +189,15 @@ export class VirtualNetworkGatewayNatRuleExternalMappingOutputReference extends 
   }
 }
 
-export class VirtualNetworkGatewayNatRuleExternalMappingList extends cdktf.ComplexList {
-  public internalValue? : VirtualNetworkGatewayNatRuleExternalMapping[] | cdktf.IResolvable
+export class VirtualNetworkGatewayNatRuleExternalMappingList extends cdktn.ComplexList {
+  public internalValue? : VirtualNetworkGatewayNatRuleExternalMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -219,32 +219,32 @@ export interface VirtualNetworkGatewayNatRuleInternalMapping {
   readonly portRange?: string;
 }
 
-export function virtualNetworkGatewayNatRuleInternalMappingToTerraform(struct?: VirtualNetworkGatewayNatRuleInternalMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualNetworkGatewayNatRuleInternalMappingToTerraform(struct?: VirtualNetworkGatewayNatRuleInternalMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address_space: cdktf.stringToTerraform(struct!.addressSpace),
-    port_range: cdktf.stringToTerraform(struct!.portRange),
+    address_space: cdktn.stringToTerraform(struct!.addressSpace),
+    port_range: cdktn.stringToTerraform(struct!.portRange),
   }
 }
 
 
-export function virtualNetworkGatewayNatRuleInternalMappingToHclTerraform(struct?: VirtualNetworkGatewayNatRuleInternalMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualNetworkGatewayNatRuleInternalMappingToHclTerraform(struct?: VirtualNetworkGatewayNatRuleInternalMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address_space: {
-      value: cdktf.stringToHclTerraform(struct!.addressSpace),
+      value: cdktn.stringToHclTerraform(struct!.addressSpace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port_range: {
-      value: cdktf.stringToHclTerraform(struct!.portRange),
+      value: cdktn.stringToHclTerraform(struct!.portRange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -255,9 +255,9 @@ export function virtualNetworkGatewayNatRuleInternalMappingToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualNetworkGatewayNatRuleInternalMappingOutputReference extends cdktf.ComplexObject {
+export class VirtualNetworkGatewayNatRuleInternalMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -265,11 +265,11 @@ export class VirtualNetworkGatewayNatRuleInternalMappingOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VirtualNetworkGatewayNatRuleInternalMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualNetworkGatewayNatRuleInternalMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -286,14 +286,14 @@ export class VirtualNetworkGatewayNatRuleInternalMappingOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualNetworkGatewayNatRuleInternalMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualNetworkGatewayNatRuleInternalMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._addressSpace = undefined;
       this._portRange = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -335,15 +335,15 @@ export class VirtualNetworkGatewayNatRuleInternalMappingOutputReference extends 
   }
 }
 
-export class VirtualNetworkGatewayNatRuleInternalMappingList extends cdktf.ComplexList {
-  public internalValue? : VirtualNetworkGatewayNatRuleInternalMapping[] | cdktf.IResolvable
+export class VirtualNetworkGatewayNatRuleInternalMappingList extends cdktn.ComplexList {
+  public internalValue? : VirtualNetworkGatewayNatRuleInternalMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -373,46 +373,46 @@ export interface VirtualNetworkGatewayNatRuleTimeouts {
   readonly update?: string;
 }
 
-export function virtualNetworkGatewayNatRuleTimeoutsToTerraform(struct?: VirtualNetworkGatewayNatRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualNetworkGatewayNatRuleTimeoutsToTerraform(struct?: VirtualNetworkGatewayNatRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function virtualNetworkGatewayNatRuleTimeoutsToHclTerraform(struct?: VirtualNetworkGatewayNatRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualNetworkGatewayNatRuleTimeoutsToHclTerraform(struct?: VirtualNetworkGatewayNatRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -423,19 +423,19 @@ export function virtualNetworkGatewayNatRuleTimeoutsToHclTerraform(struct?: Virt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualNetworkGatewayNatRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VirtualNetworkGatewayNatRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VirtualNetworkGatewayNatRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualNetworkGatewayNatRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -460,7 +460,7 @@ export class VirtualNetworkGatewayNatRuleTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualNetworkGatewayNatRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualNetworkGatewayNatRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -469,7 +469,7 @@ export class VirtualNetworkGatewayNatRuleTimeoutsOutputReference extends cdktf.C
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -551,7 +551,7 @@ export class VirtualNetworkGatewayNatRuleTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_gateway_nat_rule azurerm_virtual_network_gateway_nat_rule}
 */
-export class VirtualNetworkGatewayNatRule extends cdktf.TerraformResource {
+export class VirtualNetworkGatewayNatRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -562,14 +562,14 @@ export class VirtualNetworkGatewayNatRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VirtualNetworkGatewayNatRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VirtualNetworkGatewayNatRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualNetworkGatewayNatRule to import
   * @param importFromId The id of the existing VirtualNetworkGatewayNatRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_gateway_nat_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualNetworkGatewayNatRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_network_gateway_nat_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_network_gateway_nat_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -723,7 +723,7 @@ export class VirtualNetworkGatewayNatRule extends cdktf.TerraformResource {
   public get externalMapping() {
     return this._externalMapping;
   }
-  public putExternalMapping(value: VirtualNetworkGatewayNatRuleExternalMapping[] | cdktf.IResolvable) {
+  public putExternalMapping(value: VirtualNetworkGatewayNatRuleExternalMapping[] | cdktn.IResolvable) {
     this._externalMapping.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -736,7 +736,7 @@ export class VirtualNetworkGatewayNatRule extends cdktf.TerraformResource {
   public get internalMapping() {
     return this._internalMapping;
   }
-  public putInternalMapping(value: VirtualNetworkGatewayNatRuleInternalMapping[] | cdktf.IResolvable) {
+  public putInternalMapping(value: VirtualNetworkGatewayNatRuleInternalMapping[] | cdktn.IResolvable) {
     this._internalMapping.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -766,15 +766,15 @@ export class VirtualNetworkGatewayNatRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      ip_configuration_id: cdktf.stringToTerraform(this._ipConfigurationId),
-      mode: cdktf.stringToTerraform(this._mode),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      type: cdktf.stringToTerraform(this._type),
-      virtual_network_gateway_id: cdktf.stringToTerraform(this._virtualNetworkGatewayId),
-      external_mapping: cdktf.listMapper(virtualNetworkGatewayNatRuleExternalMappingToTerraform, true)(this._externalMapping.internalValue),
-      internal_mapping: cdktf.listMapper(virtualNetworkGatewayNatRuleInternalMappingToTerraform, true)(this._internalMapping.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      ip_configuration_id: cdktn.stringToTerraform(this._ipConfigurationId),
+      mode: cdktn.stringToTerraform(this._mode),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      type: cdktn.stringToTerraform(this._type),
+      virtual_network_gateway_id: cdktn.stringToTerraform(this._virtualNetworkGatewayId),
+      external_mapping: cdktn.listMapper(virtualNetworkGatewayNatRuleExternalMappingToTerraform, true)(this._externalMapping.internalValue),
+      internal_mapping: cdktn.listMapper(virtualNetworkGatewayNatRuleInternalMappingToTerraform, true)(this._internalMapping.internalValue),
       timeouts: virtualNetworkGatewayNatRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -782,55 +782,55 @@ export class VirtualNetworkGatewayNatRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_configuration_id: {
-        value: cdktf.stringToHclTerraform(this._ipConfigurationId),
+        value: cdktn.stringToHclTerraform(this._ipConfigurationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mode: {
-        value: cdktf.stringToHclTerraform(this._mode),
+        value: cdktn.stringToHclTerraform(this._mode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_network_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._virtualNetworkGatewayId),
+        value: cdktn.stringToHclTerraform(this._virtualNetworkGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_mapping: {
-        value: cdktf.listMapperHcl(virtualNetworkGatewayNatRuleExternalMappingToHclTerraform, true)(this._externalMapping.internalValue),
+        value: cdktn.listMapperHcl(virtualNetworkGatewayNatRuleExternalMappingToHclTerraform, true)(this._externalMapping.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VirtualNetworkGatewayNatRuleExternalMappingList",
       },
       internal_mapping: {
-        value: cdktf.listMapperHcl(virtualNetworkGatewayNatRuleInternalMappingToHclTerraform, true)(this._internalMapping.internalValue),
+        value: cdktn.listMapperHcl(virtualNetworkGatewayNatRuleInternalMappingToHclTerraform, true)(this._internalMapping.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VirtualNetworkGatewayNatRuleInternalMappingList",

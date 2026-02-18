@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NewRelicMonitorConfig extends cdktf.TerraformMetaArguments {
+export interface NewRelicMonitorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/new_relic_monitor#account_creation_source NewRelicMonitor#account_creation_source}
   */
@@ -88,24 +88,24 @@ export interface NewRelicMonitorIdentity {
 }
 
 export function newRelicMonitorIdentityToTerraform(struct?: NewRelicMonitorIdentityOutputReference | NewRelicMonitorIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function newRelicMonitorIdentityToHclTerraform(struct?: NewRelicMonitorIdentityOutputReference | NewRelicMonitorIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -116,14 +116,14 @@ export function newRelicMonitorIdentityToHclTerraform(struct?: NewRelicMonitorId
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NewRelicMonitorIdentityOutputReference extends cdktf.ComplexObject {
+export class NewRelicMonitorIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -191,45 +191,45 @@ export interface NewRelicMonitorPlan {
 }
 
 export function newRelicMonitorPlanToTerraform(struct?: NewRelicMonitorPlanOutputReference | NewRelicMonitorPlan): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    billing_cycle: cdktf.stringToTerraform(struct!.billingCycle),
-    effective_date: cdktf.stringToTerraform(struct!.effectiveDate),
-    plan_id: cdktf.stringToTerraform(struct!.planId),
-    usage_type: cdktf.stringToTerraform(struct!.usageType),
+    billing_cycle: cdktn.stringToTerraform(struct!.billingCycle),
+    effective_date: cdktn.stringToTerraform(struct!.effectiveDate),
+    plan_id: cdktn.stringToTerraform(struct!.planId),
+    usage_type: cdktn.stringToTerraform(struct!.usageType),
   }
 }
 
 
 export function newRelicMonitorPlanToHclTerraform(struct?: NewRelicMonitorPlanOutputReference | NewRelicMonitorPlan): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     billing_cycle: {
-      value: cdktf.stringToHclTerraform(struct!.billingCycle),
+      value: cdktn.stringToHclTerraform(struct!.billingCycle),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     effective_date: {
-      value: cdktf.stringToHclTerraform(struct!.effectiveDate),
+      value: cdktn.stringToHclTerraform(struct!.effectiveDate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     plan_id: {
-      value: cdktf.stringToHclTerraform(struct!.planId),
+      value: cdktn.stringToHclTerraform(struct!.planId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     usage_type: {
-      value: cdktf.stringToHclTerraform(struct!.usageType),
+      value: cdktn.stringToHclTerraform(struct!.usageType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -240,14 +240,14 @@ export function newRelicMonitorPlanToHclTerraform(struct?: NewRelicMonitorPlanOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NewRelicMonitorPlanOutputReference extends cdktf.ComplexObject {
+export class NewRelicMonitorPlanOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -366,39 +366,39 @@ export interface NewRelicMonitorTimeouts {
   readonly read?: string;
 }
 
-export function newRelicMonitorTimeoutsToTerraform(struct?: NewRelicMonitorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function newRelicMonitorTimeoutsToTerraform(struct?: NewRelicMonitorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function newRelicMonitorTimeoutsToHclTerraform(struct?: NewRelicMonitorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function newRelicMonitorTimeoutsToHclTerraform(struct?: NewRelicMonitorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -409,19 +409,19 @@ export function newRelicMonitorTimeoutsToHclTerraform(struct?: NewRelicMonitorTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NewRelicMonitorTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NewRelicMonitorTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NewRelicMonitorTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NewRelicMonitorTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -442,7 +442,7 @@ export class NewRelicMonitorTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NewRelicMonitorTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NewRelicMonitorTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -450,7 +450,7 @@ export class NewRelicMonitorTimeoutsOutputReference extends cdktf.ComplexObject 
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -531,45 +531,45 @@ export interface NewRelicMonitorUser {
 }
 
 export function newRelicMonitorUserToTerraform(struct?: NewRelicMonitorUserOutputReference | NewRelicMonitorUser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
-    first_name: cdktf.stringToTerraform(struct!.firstName),
-    last_name: cdktf.stringToTerraform(struct!.lastName),
-    phone_number: cdktf.stringToTerraform(struct!.phoneNumber),
+    email: cdktn.stringToTerraform(struct!.email),
+    first_name: cdktn.stringToTerraform(struct!.firstName),
+    last_name: cdktn.stringToTerraform(struct!.lastName),
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
   }
 }
 
 
 export function newRelicMonitorUserToHclTerraform(struct?: NewRelicMonitorUserOutputReference | NewRelicMonitorUser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     first_name: {
-      value: cdktf.stringToHclTerraform(struct!.firstName),
+      value: cdktn.stringToHclTerraform(struct!.firstName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     last_name: {
-      value: cdktf.stringToHclTerraform(struct!.lastName),
+      value: cdktn.stringToHclTerraform(struct!.lastName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     phone_number: {
-      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -580,14 +580,14 @@ export function newRelicMonitorUserToHclTerraform(struct?: NewRelicMonitorUserOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NewRelicMonitorUserOutputReference extends cdktf.ComplexObject {
+export class NewRelicMonitorUserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -686,7 +686,7 @@ export class NewRelicMonitorUserOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/new_relic_monitor azurerm_new_relic_monitor}
 */
-export class NewRelicMonitor extends cdktf.TerraformResource {
+export class NewRelicMonitor extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -697,14 +697,14 @@ export class NewRelicMonitor extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NewRelicMonitor resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NewRelicMonitor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NewRelicMonitor to import
   * @param importFromId The id of the existing NewRelicMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/new_relic_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NewRelicMonitor to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_new_relic_monitor", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_new_relic_monitor", importId: importFromId, provider });
       }
 
   // ===========
@@ -969,16 +969,16 @@ export class NewRelicMonitor extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_creation_source: cdktf.stringToTerraform(this._accountCreationSource),
-      account_id: cdktf.stringToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      ingestion_key: cdktf.stringToTerraform(this._ingestionKey),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      org_creation_source: cdktf.stringToTerraform(this._orgCreationSource),
-      organization_id: cdktf.stringToTerraform(this._organizationId),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      user_id: cdktf.stringToTerraform(this._userId),
+      account_creation_source: cdktn.stringToTerraform(this._accountCreationSource),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      ingestion_key: cdktn.stringToTerraform(this._ingestionKey),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      org_creation_source: cdktn.stringToTerraform(this._orgCreationSource),
+      organization_id: cdktn.stringToTerraform(this._organizationId),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      user_id: cdktn.stringToTerraform(this._userId),
       identity: newRelicMonitorIdentityToTerraform(this._identity.internalValue),
       plan: newRelicMonitorPlanToTerraform(this._plan.internalValue),
       timeouts: newRelicMonitorTimeoutsToTerraform(this._timeouts.internalValue),
@@ -989,61 +989,61 @@ export class NewRelicMonitor extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_creation_source: {
-        value: cdktf.stringToHclTerraform(this._accountCreationSource),
+        value: cdktn.stringToHclTerraform(this._accountCreationSource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ingestion_key: {
-        value: cdktf.stringToHclTerraform(this._ingestionKey),
+        value: cdktn.stringToHclTerraform(this._ingestionKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       org_creation_source: {
-        value: cdktf.stringToHclTerraform(this._orgCreationSource),
+        value: cdktn.stringToHclTerraform(this._orgCreationSource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization_id: {
-        value: cdktf.stringToHclTerraform(this._organizationId),
+        value: cdktn.stringToHclTerraform(this._organizationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_id: {
-        value: cdktf.stringToHclTerraform(this._userId),
+        value: cdktn.stringToHclTerraform(this._userId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

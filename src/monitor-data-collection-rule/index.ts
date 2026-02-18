@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MonitorDataCollectionRuleConfig extends cdktf.TerraformMetaArguments {
+export interface MonitorDataCollectionRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#data_collection_endpoint_id MonitorDataCollectionRule#data_collection_endpoint_id}
   */
@@ -52,7 +52,7 @@ export interface MonitorDataCollectionRuleConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#data_flow MonitorDataCollectionRule#data_flow}
   */
-  readonly dataFlow: MonitorDataCollectionRuleDataFlow[] | cdktf.IResolvable;
+  readonly dataFlow: MonitorDataCollectionRuleDataFlow[] | cdktn.IResolvable;
   /**
   * data_sources block
   *
@@ -76,7 +76,7 @@ export interface MonitorDataCollectionRuleConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#stream_declaration MonitorDataCollectionRule#stream_declaration}
   */
-  readonly streamDeclaration?: MonitorDataCollectionRuleStreamDeclaration[] | cdktf.IResolvable;
+  readonly streamDeclaration?: MonitorDataCollectionRuleStreamDeclaration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -107,53 +107,53 @@ export interface MonitorDataCollectionRuleDataFlow {
   readonly transformKql?: string;
 }
 
-export function monitorDataCollectionRuleDataFlowToTerraform(struct?: MonitorDataCollectionRuleDataFlow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataFlowToTerraform(struct?: MonitorDataCollectionRuleDataFlow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    built_in_transform: cdktf.stringToTerraform(struct!.builtInTransform),
-    destinations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destinations),
-    output_stream: cdktf.stringToTerraform(struct!.outputStream),
-    streams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.streams),
-    transform_kql: cdktf.stringToTerraform(struct!.transformKql),
+    built_in_transform: cdktn.stringToTerraform(struct!.builtInTransform),
+    destinations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinations),
+    output_stream: cdktn.stringToTerraform(struct!.outputStream),
+    streams: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.streams),
+    transform_kql: cdktn.stringToTerraform(struct!.transformKql),
   }
 }
 
 
-export function monitorDataCollectionRuleDataFlowToHclTerraform(struct?: MonitorDataCollectionRuleDataFlow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataFlowToHclTerraform(struct?: MonitorDataCollectionRuleDataFlow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     built_in_transform: {
-      value: cdktf.stringToHclTerraform(struct!.builtInTransform),
+      value: cdktn.stringToHclTerraform(struct!.builtInTransform),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destinations: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinations),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destinations),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     output_stream: {
-      value: cdktf.stringToHclTerraform(struct!.outputStream),
+      value: cdktn.stringToHclTerraform(struct!.outputStream),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     streams: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.streams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.streams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     transform_kql: {
-      value: cdktf.stringToHclTerraform(struct!.transformKql),
+      value: cdktn.stringToHclTerraform(struct!.transformKql),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -164,9 +164,9 @@ export function monitorDataCollectionRuleDataFlowToHclTerraform(struct?: Monitor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataFlowOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataFlowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -174,11 +174,11 @@ export class MonitorDataCollectionRuleDataFlowOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDataFlow | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDataFlow | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -207,7 +207,7 @@ export class MonitorDataCollectionRuleDataFlowOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDataFlow | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDataFlow | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -217,7 +217,7 @@ export class MonitorDataCollectionRuleDataFlowOutputReference extends cdktf.Comp
       this._streams = undefined;
       this._transformKql = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -307,15 +307,15 @@ export class MonitorDataCollectionRuleDataFlowOutputReference extends cdktf.Comp
   }
 }
 
-export class MonitorDataCollectionRuleDataFlowList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDataFlow[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDataFlowList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDataFlow[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -341,39 +341,39 @@ export interface MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSourc
   readonly stream: string;
 }
 
-export function monitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceToTerraform(struct?: MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceToTerraform(struct?: MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    consumer_group: cdktf.stringToTerraform(struct!.consumerGroup),
-    name: cdktf.stringToTerraform(struct!.name),
-    stream: cdktf.stringToTerraform(struct!.stream),
+    consumer_group: cdktn.stringToTerraform(struct!.consumerGroup),
+    name: cdktn.stringToTerraform(struct!.name),
+    stream: cdktn.stringToTerraform(struct!.stream),
   }
 }
 
 
-export function monitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     consumer_group: {
-      value: cdktf.stringToHclTerraform(struct!.consumerGroup),
+      value: cdktn.stringToHclTerraform(struct!.consumerGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stream: {
-      value: cdktf.stringToHclTerraform(struct!.stream),
+      value: cdktn.stringToHclTerraform(struct!.stream),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -384,9 +384,9 @@ export function monitorDataCollectionRuleDataSourcesDataImportEventHubDataSource
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -394,11 +394,11 @@ export class MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -419,7 +419,7 @@ export class MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -427,7 +427,7 @@ export class MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceOut
       this._name = undefined;
       this._stream = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -483,15 +483,15 @@ export class MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceOut
   }
 }
 
-export class MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -508,28 +508,28 @@ export interface MonitorDataCollectionRuleDataSourcesDataImport {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#event_hub_data_source MonitorDataCollectionRule#event_hub_data_source}
   */
-  readonly eventHubDataSource: MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource[] | cdktf.IResolvable;
+  readonly eventHubDataSource: MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource[] | cdktn.IResolvable;
 }
 
 export function monitorDataCollectionRuleDataSourcesDataImportToTerraform(struct?: MonitorDataCollectionRuleDataSourcesDataImportOutputReference | MonitorDataCollectionRuleDataSourcesDataImport): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event_hub_data_source: cdktf.listMapper(monitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceToTerraform, true)(struct!.eventHubDataSource),
+    event_hub_data_source: cdktn.listMapper(monitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceToTerraform, true)(struct!.eventHubDataSource),
   }
 }
 
 
 export function monitorDataCollectionRuleDataSourcesDataImportToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesDataImportOutputReference | MonitorDataCollectionRuleDataSourcesDataImport): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event_hub_data_source: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceToHclTerraform, true)(struct!.eventHubDataSource),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceToHclTerraform, true)(struct!.eventHubDataSource),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceList",
@@ -540,14 +540,14 @@ export function monitorDataCollectionRuleDataSourcesDataImportToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataSourcesDataImportOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataSourcesDataImportOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -577,7 +577,7 @@ export class MonitorDataCollectionRuleDataSourcesDataImportOutputReference exten
   public get eventHubDataSource() {
     return this._eventHubDataSource;
   }
-  public putEventHubDataSource(value: MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource[] | cdktf.IResolvable) {
+  public putEventHubDataSource(value: MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource[] | cdktn.IResolvable) {
     this._eventHubDataSource.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -608,53 +608,53 @@ export interface MonitorDataCollectionRuleDataSourcesExtension {
   readonly streams: string[];
 }
 
-export function monitorDataCollectionRuleDataSourcesExtensionToTerraform(struct?: MonitorDataCollectionRuleDataSourcesExtension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesExtensionToTerraform(struct?: MonitorDataCollectionRuleDataSourcesExtension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    extension_json: cdktf.stringToTerraform(struct!.extensionJson),
-    extension_name: cdktf.stringToTerraform(struct!.extensionName),
-    input_data_sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.inputDataSources),
-    name: cdktf.stringToTerraform(struct!.name),
-    streams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.streams),
+    extension_json: cdktn.stringToTerraform(struct!.extensionJson),
+    extension_name: cdktn.stringToTerraform(struct!.extensionName),
+    input_data_sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.inputDataSources),
+    name: cdktn.stringToTerraform(struct!.name),
+    streams: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.streams),
   }
 }
 
 
-export function monitorDataCollectionRuleDataSourcesExtensionToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesExtension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesExtensionToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesExtension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     extension_json: {
-      value: cdktf.stringToHclTerraform(struct!.extensionJson),
+      value: cdktn.stringToHclTerraform(struct!.extensionJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     extension_name: {
-      value: cdktf.stringToHclTerraform(struct!.extensionName),
+      value: cdktn.stringToHclTerraform(struct!.extensionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     input_data_sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.inputDataSources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.inputDataSources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     streams: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.streams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.streams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -665,9 +665,9 @@ export function monitorDataCollectionRuleDataSourcesExtensionToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataSourcesExtensionOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataSourcesExtensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -675,11 +675,11 @@ export class MonitorDataCollectionRuleDataSourcesExtensionOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDataSourcesExtension | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDataSourcesExtension | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -708,7 +708,7 @@ export class MonitorDataCollectionRuleDataSourcesExtensionOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDataSourcesExtension | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDataSourcesExtension | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -718,7 +718,7 @@ export class MonitorDataCollectionRuleDataSourcesExtensionOutputReference extend
       this._name = undefined;
       this._streams = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -805,15 +805,15 @@ export class MonitorDataCollectionRuleDataSourcesExtensionOutputReference extend
   }
 }
 
-export class MonitorDataCollectionRuleDataSourcesExtensionList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDataSourcesExtension[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDataSourcesExtensionList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDataSourcesExtension[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -839,39 +839,39 @@ export interface MonitorDataCollectionRuleDataSourcesIisLog {
   readonly streams: string[];
 }
 
-export function monitorDataCollectionRuleDataSourcesIisLogToTerraform(struct?: MonitorDataCollectionRuleDataSourcesIisLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesIisLogToTerraform(struct?: MonitorDataCollectionRuleDataSourcesIisLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    log_directories: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.logDirectories),
-    name: cdktf.stringToTerraform(struct!.name),
-    streams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.streams),
+    log_directories: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.logDirectories),
+    name: cdktn.stringToTerraform(struct!.name),
+    streams: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.streams),
   }
 }
 
 
-export function monitorDataCollectionRuleDataSourcesIisLogToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesIisLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesIisLogToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesIisLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     log_directories: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.logDirectories),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.logDirectories),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     streams: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.streams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.streams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -882,9 +882,9 @@ export function monitorDataCollectionRuleDataSourcesIisLogToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataSourcesIisLogOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataSourcesIisLogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -892,11 +892,11 @@ export class MonitorDataCollectionRuleDataSourcesIisLogOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDataSourcesIisLog | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDataSourcesIisLog | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -917,7 +917,7 @@ export class MonitorDataCollectionRuleDataSourcesIisLogOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDataSourcesIisLog | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDataSourcesIisLog | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -925,7 +925,7 @@ export class MonitorDataCollectionRuleDataSourcesIisLogOutputReference extends c
       this._name = undefined;
       this._streams = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -981,15 +981,15 @@ export class MonitorDataCollectionRuleDataSourcesIisLogOutputReference extends c
   }
 }
 
-export class MonitorDataCollectionRuleDataSourcesIisLogList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDataSourcesIisLog[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDataSourcesIisLogList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDataSourcesIisLog[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1008,24 +1008,24 @@ export interface MonitorDataCollectionRuleDataSourcesLogFileSettingsText {
 }
 
 export function monitorDataCollectionRuleDataSourcesLogFileSettingsTextToTerraform(struct?: MonitorDataCollectionRuleDataSourcesLogFileSettingsTextOutputReference | MonitorDataCollectionRuleDataSourcesLogFileSettingsText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    record_start_timestamp_format: cdktf.stringToTerraform(struct!.recordStartTimestampFormat),
+    record_start_timestamp_format: cdktn.stringToTerraform(struct!.recordStartTimestampFormat),
   }
 }
 
 
 export function monitorDataCollectionRuleDataSourcesLogFileSettingsTextToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesLogFileSettingsTextOutputReference | MonitorDataCollectionRuleDataSourcesLogFileSettingsText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     record_start_timestamp_format: {
-      value: cdktf.stringToHclTerraform(struct!.recordStartTimestampFormat),
+      value: cdktn.stringToHclTerraform(struct!.recordStartTimestampFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1036,14 +1036,14 @@ export function monitorDataCollectionRuleDataSourcesLogFileSettingsTextToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataSourcesLogFileSettingsTextOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataSourcesLogFileSettingsTextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1091,8 +1091,8 @@ export interface MonitorDataCollectionRuleDataSourcesLogFileSettings {
 }
 
 export function monitorDataCollectionRuleDataSourcesLogFileSettingsToTerraform(struct?: MonitorDataCollectionRuleDataSourcesLogFileSettingsOutputReference | MonitorDataCollectionRuleDataSourcesLogFileSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1102,8 +1102,8 @@ export function monitorDataCollectionRuleDataSourcesLogFileSettingsToTerraform(s
 
 
 export function monitorDataCollectionRuleDataSourcesLogFileSettingsToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesLogFileSettingsOutputReference | MonitorDataCollectionRuleDataSourcesLogFileSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1119,14 +1119,14 @@ export function monitorDataCollectionRuleDataSourcesLogFileSettingsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataSourcesLogFileSettingsOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataSourcesLogFileSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1189,47 +1189,47 @@ export interface MonitorDataCollectionRuleDataSourcesLogFile {
   readonly settings?: MonitorDataCollectionRuleDataSourcesLogFileSettings;
 }
 
-export function monitorDataCollectionRuleDataSourcesLogFileToTerraform(struct?: MonitorDataCollectionRuleDataSourcesLogFile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesLogFileToTerraform(struct?: MonitorDataCollectionRuleDataSourcesLogFile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filePatterns),
-    format: cdktf.stringToTerraform(struct!.format),
-    name: cdktf.stringToTerraform(struct!.name),
-    streams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.streams),
+    file_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filePatterns),
+    format: cdktn.stringToTerraform(struct!.format),
+    name: cdktn.stringToTerraform(struct!.name),
+    streams: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.streams),
     settings: monitorDataCollectionRuleDataSourcesLogFileSettingsToTerraform(struct!.settings),
   }
 }
 
 
-export function monitorDataCollectionRuleDataSourcesLogFileToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesLogFile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesLogFileToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesLogFile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file_patterns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filePatterns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.filePatterns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     format: {
-      value: cdktf.stringToHclTerraform(struct!.format),
+      value: cdktn.stringToHclTerraform(struct!.format),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     streams: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.streams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.streams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1246,9 +1246,9 @@ export function monitorDataCollectionRuleDataSourcesLogFileToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataSourcesLogFileOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataSourcesLogFileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1256,11 +1256,11 @@ export class MonitorDataCollectionRuleDataSourcesLogFileOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDataSourcesLogFile | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDataSourcesLogFile | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1289,7 +1289,7 @@ export class MonitorDataCollectionRuleDataSourcesLogFileOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDataSourcesLogFile | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDataSourcesLogFile | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1299,7 +1299,7 @@ export class MonitorDataCollectionRuleDataSourcesLogFileOutputReference extends 
       this._streams = undefined;
       this._settings.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1383,15 +1383,15 @@ export class MonitorDataCollectionRuleDataSourcesLogFileOutputReference extends 
   }
 }
 
-export class MonitorDataCollectionRuleDataSourcesLogFileList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDataSourcesLogFile[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDataSourcesLogFileList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDataSourcesLogFile[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1421,46 +1421,46 @@ export interface MonitorDataCollectionRuleDataSourcesPerformanceCounter {
   readonly streams: string[];
 }
 
-export function monitorDataCollectionRuleDataSourcesPerformanceCounterToTerraform(struct?: MonitorDataCollectionRuleDataSourcesPerformanceCounter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesPerformanceCounterToTerraform(struct?: MonitorDataCollectionRuleDataSourcesPerformanceCounter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    counter_specifiers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.counterSpecifiers),
-    name: cdktf.stringToTerraform(struct!.name),
-    sampling_frequency_in_seconds: cdktf.numberToTerraform(struct!.samplingFrequencyInSeconds),
-    streams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.streams),
+    counter_specifiers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.counterSpecifiers),
+    name: cdktn.stringToTerraform(struct!.name),
+    sampling_frequency_in_seconds: cdktn.numberToTerraform(struct!.samplingFrequencyInSeconds),
+    streams: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.streams),
   }
 }
 
 
-export function monitorDataCollectionRuleDataSourcesPerformanceCounterToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesPerformanceCounter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesPerformanceCounterToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesPerformanceCounter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     counter_specifiers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.counterSpecifiers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.counterSpecifiers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sampling_frequency_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.samplingFrequencyInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.samplingFrequencyInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     streams: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.streams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.streams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1471,9 +1471,9 @@ export function monitorDataCollectionRuleDataSourcesPerformanceCounterToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataSourcesPerformanceCounterOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataSourcesPerformanceCounterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1481,11 +1481,11 @@ export class MonitorDataCollectionRuleDataSourcesPerformanceCounterOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDataSourcesPerformanceCounter | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDataSourcesPerformanceCounter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1510,7 +1510,7 @@ export class MonitorDataCollectionRuleDataSourcesPerformanceCounterOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDataSourcesPerformanceCounter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDataSourcesPerformanceCounter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1519,7 +1519,7 @@ export class MonitorDataCollectionRuleDataSourcesPerformanceCounterOutputReferen
       this._samplingFrequencyInSeconds = undefined;
       this._streams = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1586,15 +1586,15 @@ export class MonitorDataCollectionRuleDataSourcesPerformanceCounterOutputReferen
   }
 }
 
-export class MonitorDataCollectionRuleDataSourcesPerformanceCounterList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDataSourcesPerformanceCounter[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDataSourcesPerformanceCounterList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDataSourcesPerformanceCounter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1616,32 +1616,32 @@ export interface MonitorDataCollectionRuleDataSourcesPlatformTelemetry {
   readonly streams: string[];
 }
 
-export function monitorDataCollectionRuleDataSourcesPlatformTelemetryToTerraform(struct?: MonitorDataCollectionRuleDataSourcesPlatformTelemetry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesPlatformTelemetryToTerraform(struct?: MonitorDataCollectionRuleDataSourcesPlatformTelemetry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    streams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.streams),
+    name: cdktn.stringToTerraform(struct!.name),
+    streams: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.streams),
   }
 }
 
 
-export function monitorDataCollectionRuleDataSourcesPlatformTelemetryToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesPlatformTelemetry | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesPlatformTelemetryToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesPlatformTelemetry | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     streams: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.streams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.streams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1652,9 +1652,9 @@ export function monitorDataCollectionRuleDataSourcesPlatformTelemetryToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataSourcesPlatformTelemetryOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataSourcesPlatformTelemetryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1662,11 +1662,11 @@ export class MonitorDataCollectionRuleDataSourcesPlatformTelemetryOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDataSourcesPlatformTelemetry | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDataSourcesPlatformTelemetry | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1683,14 +1683,14 @@ export class MonitorDataCollectionRuleDataSourcesPlatformTelemetryOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDataSourcesPlatformTelemetry | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDataSourcesPlatformTelemetry | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._streams = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1729,15 +1729,15 @@ export class MonitorDataCollectionRuleDataSourcesPlatformTelemetryOutputReferenc
   }
 }
 
-export class MonitorDataCollectionRuleDataSourcesPlatformTelemetryList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDataSourcesPlatformTelemetry[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDataSourcesPlatformTelemetryList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDataSourcesPlatformTelemetry[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1759,32 +1759,32 @@ export interface MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelInc
   readonly value: string;
 }
 
-export function monitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilterToTerraform(struct?: MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilterToTerraform(struct?: MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    label: cdktf.stringToTerraform(struct!.label),
-    value: cdktf.stringToTerraform(struct!.value),
+    label: cdktn.stringToTerraform(struct!.label),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function monitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilterToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilterToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1795,9 +1795,9 @@ export function monitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilterOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1805,11 +1805,11 @@ export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelInclude
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1826,14 +1826,14 @@ export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelInclude
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._label = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1872,15 +1872,15 @@ export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelInclude
   }
 }
 
-export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilterList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilterList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1905,42 +1905,42 @@ export interface MonitorDataCollectionRuleDataSourcesPrometheusForwarder {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#label_include_filter MonitorDataCollectionRule#label_include_filter}
   */
-  readonly labelIncludeFilter?: MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter[] | cdktf.IResolvable;
+  readonly labelIncludeFilter?: MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter[] | cdktn.IResolvable;
 }
 
-export function monitorDataCollectionRuleDataSourcesPrometheusForwarderToTerraform(struct?: MonitorDataCollectionRuleDataSourcesPrometheusForwarder | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesPrometheusForwarderToTerraform(struct?: MonitorDataCollectionRuleDataSourcesPrometheusForwarder | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    streams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.streams),
-    label_include_filter: cdktf.listMapper(monitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilterToTerraform, true)(struct!.labelIncludeFilter),
+    name: cdktn.stringToTerraform(struct!.name),
+    streams: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.streams),
+    label_include_filter: cdktn.listMapper(monitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilterToTerraform, true)(struct!.labelIncludeFilter),
   }
 }
 
 
-export function monitorDataCollectionRuleDataSourcesPrometheusForwarderToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesPrometheusForwarder | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesPrometheusForwarderToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesPrometheusForwarder | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     streams: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.streams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.streams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     label_include_filter: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilterToHclTerraform, true)(struct!.labelIncludeFilter),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilterToHclTerraform, true)(struct!.labelIncludeFilter),
       isBlock: true,
       type: "set",
       storageClassType: "MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilterList",
@@ -1951,9 +1951,9 @@ export function monitorDataCollectionRuleDataSourcesPrometheusForwarderToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1961,11 +1961,11 @@ export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDataSourcesPrometheusForwarder | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDataSourcesPrometheusForwarder | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1986,7 +1986,7 @@ export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDataSourcesPrometheusForwarder | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDataSourcesPrometheusForwarder | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1994,7 +1994,7 @@ export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderOutputRefere
       this._streams = undefined;
       this._labelIncludeFilter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2038,7 +2038,7 @@ export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderOutputRefere
   public get labelIncludeFilter() {
     return this._labelIncludeFilter;
   }
-  public putLabelIncludeFilter(value: MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter[] | cdktf.IResolvable) {
+  public putLabelIncludeFilter(value: MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter[] | cdktn.IResolvable) {
     this._labelIncludeFilter.internalValue = value;
   }
   public resetLabelIncludeFilter() {
@@ -2050,15 +2050,15 @@ export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderOutputRefere
   }
 }
 
-export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDataSourcesPrometheusForwarder[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDataSourcesPrometheusForwarder[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2088,46 +2088,46 @@ export interface MonitorDataCollectionRuleDataSourcesSyslog {
   readonly streams: string[];
 }
 
-export function monitorDataCollectionRuleDataSourcesSyslogToTerraform(struct?: MonitorDataCollectionRuleDataSourcesSyslog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesSyslogToTerraform(struct?: MonitorDataCollectionRuleDataSourcesSyslog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facility_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.facilityNames),
-    log_levels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.logLevels),
-    name: cdktf.stringToTerraform(struct!.name),
-    streams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.streams),
+    facility_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.facilityNames),
+    log_levels: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.logLevels),
+    name: cdktn.stringToTerraform(struct!.name),
+    streams: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.streams),
   }
 }
 
 
-export function monitorDataCollectionRuleDataSourcesSyslogToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesSyslog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesSyslogToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesSyslog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facility_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.facilityNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.facilityNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     log_levels: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.logLevels),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.logLevels),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     streams: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.streams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.streams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2138,9 +2138,9 @@ export function monitorDataCollectionRuleDataSourcesSyslogToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataSourcesSyslogOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataSourcesSyslogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2148,11 +2148,11 @@ export class MonitorDataCollectionRuleDataSourcesSyslogOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDataSourcesSyslog | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDataSourcesSyslog | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2177,7 +2177,7 @@ export class MonitorDataCollectionRuleDataSourcesSyslogOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDataSourcesSyslog | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDataSourcesSyslog | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2186,7 +2186,7 @@ export class MonitorDataCollectionRuleDataSourcesSyslogOutputReference extends c
       this._name = undefined;
       this._streams = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2253,15 +2253,15 @@ export class MonitorDataCollectionRuleDataSourcesSyslogOutputReference extends c
   }
 }
 
-export class MonitorDataCollectionRuleDataSourcesSyslogList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDataSourcesSyslog[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDataSourcesSyslogList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDataSourcesSyslog[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2287,39 +2287,39 @@ export interface MonitorDataCollectionRuleDataSourcesWindowsEventLog {
   readonly xPathQueries: string[];
 }
 
-export function monitorDataCollectionRuleDataSourcesWindowsEventLogToTerraform(struct?: MonitorDataCollectionRuleDataSourcesWindowsEventLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesWindowsEventLogToTerraform(struct?: MonitorDataCollectionRuleDataSourcesWindowsEventLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    streams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.streams),
-    x_path_queries: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.xPathQueries),
+    name: cdktn.stringToTerraform(struct!.name),
+    streams: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.streams),
+    x_path_queries: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.xPathQueries),
   }
 }
 
 
-export function monitorDataCollectionRuleDataSourcesWindowsEventLogToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesWindowsEventLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesWindowsEventLogToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesWindowsEventLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     streams: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.streams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.streams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     x_path_queries: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.xPathQueries),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.xPathQueries),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2330,9 +2330,9 @@ export function monitorDataCollectionRuleDataSourcesWindowsEventLogToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataSourcesWindowsEventLogOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataSourcesWindowsEventLogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2340,11 +2340,11 @@ export class MonitorDataCollectionRuleDataSourcesWindowsEventLogOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDataSourcesWindowsEventLog | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDataSourcesWindowsEventLog | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2365,7 +2365,7 @@ export class MonitorDataCollectionRuleDataSourcesWindowsEventLogOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDataSourcesWindowsEventLog | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDataSourcesWindowsEventLog | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2373,7 +2373,7 @@ export class MonitorDataCollectionRuleDataSourcesWindowsEventLogOutputReference 
       this._streams = undefined;
       this._xPathQueries = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2426,15 +2426,15 @@ export class MonitorDataCollectionRuleDataSourcesWindowsEventLogOutputReference 
   }
 }
 
-export class MonitorDataCollectionRuleDataSourcesWindowsEventLogList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDataSourcesWindowsEventLog[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDataSourcesWindowsEventLogList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDataSourcesWindowsEventLog[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2456,32 +2456,32 @@ export interface MonitorDataCollectionRuleDataSourcesWindowsFirewallLog {
   readonly streams: string[];
 }
 
-export function monitorDataCollectionRuleDataSourcesWindowsFirewallLogToTerraform(struct?: MonitorDataCollectionRuleDataSourcesWindowsFirewallLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesWindowsFirewallLogToTerraform(struct?: MonitorDataCollectionRuleDataSourcesWindowsFirewallLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    streams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.streams),
+    name: cdktn.stringToTerraform(struct!.name),
+    streams: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.streams),
   }
 }
 
 
-export function monitorDataCollectionRuleDataSourcesWindowsFirewallLogToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesWindowsFirewallLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDataSourcesWindowsFirewallLogToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesWindowsFirewallLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     streams: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.streams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.streams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2492,9 +2492,9 @@ export function monitorDataCollectionRuleDataSourcesWindowsFirewallLogToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataSourcesWindowsFirewallLogOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataSourcesWindowsFirewallLogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2502,11 +2502,11 @@ export class MonitorDataCollectionRuleDataSourcesWindowsFirewallLogOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDataSourcesWindowsFirewallLog | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDataSourcesWindowsFirewallLog | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2523,14 +2523,14 @@ export class MonitorDataCollectionRuleDataSourcesWindowsFirewallLogOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDataSourcesWindowsFirewallLog | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDataSourcesWindowsFirewallLog | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._streams = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2569,15 +2569,15 @@ export class MonitorDataCollectionRuleDataSourcesWindowsFirewallLogOutputReferen
   }
 }
 
-export class MonitorDataCollectionRuleDataSourcesWindowsFirewallLogList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDataSourcesWindowsFirewallLog[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDataSourcesWindowsFirewallLogList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDataSourcesWindowsFirewallLog[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2600,80 +2600,80 @@ export interface MonitorDataCollectionRuleDataSources {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#extension MonitorDataCollectionRule#extension}
   */
-  readonly extension?: MonitorDataCollectionRuleDataSourcesExtension[] | cdktf.IResolvable;
+  readonly extension?: MonitorDataCollectionRuleDataSourcesExtension[] | cdktn.IResolvable;
   /**
   * iis_log block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#iis_log MonitorDataCollectionRule#iis_log}
   */
-  readonly iisLog?: MonitorDataCollectionRuleDataSourcesIisLog[] | cdktf.IResolvable;
+  readonly iisLog?: MonitorDataCollectionRuleDataSourcesIisLog[] | cdktn.IResolvable;
   /**
   * log_file block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#log_file MonitorDataCollectionRule#log_file}
   */
-  readonly logFile?: MonitorDataCollectionRuleDataSourcesLogFile[] | cdktf.IResolvable;
+  readonly logFile?: MonitorDataCollectionRuleDataSourcesLogFile[] | cdktn.IResolvable;
   /**
   * performance_counter block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#performance_counter MonitorDataCollectionRule#performance_counter}
   */
-  readonly performanceCounter?: MonitorDataCollectionRuleDataSourcesPerformanceCounter[] | cdktf.IResolvable;
+  readonly performanceCounter?: MonitorDataCollectionRuleDataSourcesPerformanceCounter[] | cdktn.IResolvable;
   /**
   * platform_telemetry block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#platform_telemetry MonitorDataCollectionRule#platform_telemetry}
   */
-  readonly platformTelemetry?: MonitorDataCollectionRuleDataSourcesPlatformTelemetry[] | cdktf.IResolvable;
+  readonly platformTelemetry?: MonitorDataCollectionRuleDataSourcesPlatformTelemetry[] | cdktn.IResolvable;
   /**
   * prometheus_forwarder block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#prometheus_forwarder MonitorDataCollectionRule#prometheus_forwarder}
   */
-  readonly prometheusForwarder?: MonitorDataCollectionRuleDataSourcesPrometheusForwarder[] | cdktf.IResolvable;
+  readonly prometheusForwarder?: MonitorDataCollectionRuleDataSourcesPrometheusForwarder[] | cdktn.IResolvable;
   /**
   * syslog block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#syslog MonitorDataCollectionRule#syslog}
   */
-  readonly syslog?: MonitorDataCollectionRuleDataSourcesSyslog[] | cdktf.IResolvable;
+  readonly syslog?: MonitorDataCollectionRuleDataSourcesSyslog[] | cdktn.IResolvable;
   /**
   * windows_event_log block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#windows_event_log MonitorDataCollectionRule#windows_event_log}
   */
-  readonly windowsEventLog?: MonitorDataCollectionRuleDataSourcesWindowsEventLog[] | cdktf.IResolvable;
+  readonly windowsEventLog?: MonitorDataCollectionRuleDataSourcesWindowsEventLog[] | cdktn.IResolvable;
   /**
   * windows_firewall_log block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#windows_firewall_log MonitorDataCollectionRule#windows_firewall_log}
   */
-  readonly windowsFirewallLog?: MonitorDataCollectionRuleDataSourcesWindowsFirewallLog[] | cdktf.IResolvable;
+  readonly windowsFirewallLog?: MonitorDataCollectionRuleDataSourcesWindowsFirewallLog[] | cdktn.IResolvable;
 }
 
 export function monitorDataCollectionRuleDataSourcesToTerraform(struct?: MonitorDataCollectionRuleDataSourcesOutputReference | MonitorDataCollectionRuleDataSources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     data_import: monitorDataCollectionRuleDataSourcesDataImportToTerraform(struct!.dataImport),
-    extension: cdktf.listMapper(monitorDataCollectionRuleDataSourcesExtensionToTerraform, true)(struct!.extension),
-    iis_log: cdktf.listMapper(monitorDataCollectionRuleDataSourcesIisLogToTerraform, true)(struct!.iisLog),
-    log_file: cdktf.listMapper(monitorDataCollectionRuleDataSourcesLogFileToTerraform, true)(struct!.logFile),
-    performance_counter: cdktf.listMapper(monitorDataCollectionRuleDataSourcesPerformanceCounterToTerraform, true)(struct!.performanceCounter),
-    platform_telemetry: cdktf.listMapper(monitorDataCollectionRuleDataSourcesPlatformTelemetryToTerraform, true)(struct!.platformTelemetry),
-    prometheus_forwarder: cdktf.listMapper(monitorDataCollectionRuleDataSourcesPrometheusForwarderToTerraform, true)(struct!.prometheusForwarder),
-    syslog: cdktf.listMapper(monitorDataCollectionRuleDataSourcesSyslogToTerraform, true)(struct!.syslog),
-    windows_event_log: cdktf.listMapper(monitorDataCollectionRuleDataSourcesWindowsEventLogToTerraform, true)(struct!.windowsEventLog),
-    windows_firewall_log: cdktf.listMapper(monitorDataCollectionRuleDataSourcesWindowsFirewallLogToTerraform, true)(struct!.windowsFirewallLog),
+    extension: cdktn.listMapper(monitorDataCollectionRuleDataSourcesExtensionToTerraform, true)(struct!.extension),
+    iis_log: cdktn.listMapper(monitorDataCollectionRuleDataSourcesIisLogToTerraform, true)(struct!.iisLog),
+    log_file: cdktn.listMapper(monitorDataCollectionRuleDataSourcesLogFileToTerraform, true)(struct!.logFile),
+    performance_counter: cdktn.listMapper(monitorDataCollectionRuleDataSourcesPerformanceCounterToTerraform, true)(struct!.performanceCounter),
+    platform_telemetry: cdktn.listMapper(monitorDataCollectionRuleDataSourcesPlatformTelemetryToTerraform, true)(struct!.platformTelemetry),
+    prometheus_forwarder: cdktn.listMapper(monitorDataCollectionRuleDataSourcesPrometheusForwarderToTerraform, true)(struct!.prometheusForwarder),
+    syslog: cdktn.listMapper(monitorDataCollectionRuleDataSourcesSyslogToTerraform, true)(struct!.syslog),
+    windows_event_log: cdktn.listMapper(monitorDataCollectionRuleDataSourcesWindowsEventLogToTerraform, true)(struct!.windowsEventLog),
+    windows_firewall_log: cdktn.listMapper(monitorDataCollectionRuleDataSourcesWindowsFirewallLogToTerraform, true)(struct!.windowsFirewallLog),
   }
 }
 
 
 export function monitorDataCollectionRuleDataSourcesToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesOutputReference | MonitorDataCollectionRuleDataSources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2684,55 +2684,55 @@ export function monitorDataCollectionRuleDataSourcesToHclTerraform(struct?: Moni
       storageClassType: "MonitorDataCollectionRuleDataSourcesDataImportList",
     },
     extension: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDataSourcesExtensionToHclTerraform, true)(struct!.extension),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDataSourcesExtensionToHclTerraform, true)(struct!.extension),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleDataSourcesExtensionList",
     },
     iis_log: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDataSourcesIisLogToHclTerraform, true)(struct!.iisLog),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDataSourcesIisLogToHclTerraform, true)(struct!.iisLog),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleDataSourcesIisLogList",
     },
     log_file: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDataSourcesLogFileToHclTerraform, true)(struct!.logFile),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDataSourcesLogFileToHclTerraform, true)(struct!.logFile),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleDataSourcesLogFileList",
     },
     performance_counter: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDataSourcesPerformanceCounterToHclTerraform, true)(struct!.performanceCounter),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDataSourcesPerformanceCounterToHclTerraform, true)(struct!.performanceCounter),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleDataSourcesPerformanceCounterList",
     },
     platform_telemetry: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDataSourcesPlatformTelemetryToHclTerraform, true)(struct!.platformTelemetry),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDataSourcesPlatformTelemetryToHclTerraform, true)(struct!.platformTelemetry),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleDataSourcesPlatformTelemetryList",
     },
     prometheus_forwarder: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDataSourcesPrometheusForwarderToHclTerraform, true)(struct!.prometheusForwarder),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDataSourcesPrometheusForwarderToHclTerraform, true)(struct!.prometheusForwarder),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleDataSourcesPrometheusForwarderList",
     },
     syslog: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDataSourcesSyslogToHclTerraform, true)(struct!.syslog),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDataSourcesSyslogToHclTerraform, true)(struct!.syslog),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleDataSourcesSyslogList",
     },
     windows_event_log: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDataSourcesWindowsEventLogToHclTerraform, true)(struct!.windowsEventLog),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDataSourcesWindowsEventLogToHclTerraform, true)(struct!.windowsEventLog),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleDataSourcesWindowsEventLogList",
     },
     windows_firewall_log: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDataSourcesWindowsFirewallLogToHclTerraform, true)(struct!.windowsFirewallLog),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDataSourcesWindowsFirewallLogToHclTerraform, true)(struct!.windowsFirewallLog),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleDataSourcesWindowsFirewallLogList",
@@ -2743,14 +2743,14 @@ export function monitorDataCollectionRuleDataSourcesToHclTerraform(struct?: Moni
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDataSourcesOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDataSourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2850,7 +2850,7 @@ export class MonitorDataCollectionRuleDataSourcesOutputReference extends cdktf.C
   public get extension() {
     return this._extension;
   }
-  public putExtension(value: MonitorDataCollectionRuleDataSourcesExtension[] | cdktf.IResolvable) {
+  public putExtension(value: MonitorDataCollectionRuleDataSourcesExtension[] | cdktn.IResolvable) {
     this._extension.internalValue = value;
   }
   public resetExtension() {
@@ -2866,7 +2866,7 @@ export class MonitorDataCollectionRuleDataSourcesOutputReference extends cdktf.C
   public get iisLog() {
     return this._iisLog;
   }
-  public putIisLog(value: MonitorDataCollectionRuleDataSourcesIisLog[] | cdktf.IResolvable) {
+  public putIisLog(value: MonitorDataCollectionRuleDataSourcesIisLog[] | cdktn.IResolvable) {
     this._iisLog.internalValue = value;
   }
   public resetIisLog() {
@@ -2882,7 +2882,7 @@ export class MonitorDataCollectionRuleDataSourcesOutputReference extends cdktf.C
   public get logFile() {
     return this._logFile;
   }
-  public putLogFile(value: MonitorDataCollectionRuleDataSourcesLogFile[] | cdktf.IResolvable) {
+  public putLogFile(value: MonitorDataCollectionRuleDataSourcesLogFile[] | cdktn.IResolvable) {
     this._logFile.internalValue = value;
   }
   public resetLogFile() {
@@ -2898,7 +2898,7 @@ export class MonitorDataCollectionRuleDataSourcesOutputReference extends cdktf.C
   public get performanceCounter() {
     return this._performanceCounter;
   }
-  public putPerformanceCounter(value: MonitorDataCollectionRuleDataSourcesPerformanceCounter[] | cdktf.IResolvable) {
+  public putPerformanceCounter(value: MonitorDataCollectionRuleDataSourcesPerformanceCounter[] | cdktn.IResolvable) {
     this._performanceCounter.internalValue = value;
   }
   public resetPerformanceCounter() {
@@ -2914,7 +2914,7 @@ export class MonitorDataCollectionRuleDataSourcesOutputReference extends cdktf.C
   public get platformTelemetry() {
     return this._platformTelemetry;
   }
-  public putPlatformTelemetry(value: MonitorDataCollectionRuleDataSourcesPlatformTelemetry[] | cdktf.IResolvable) {
+  public putPlatformTelemetry(value: MonitorDataCollectionRuleDataSourcesPlatformTelemetry[] | cdktn.IResolvable) {
     this._platformTelemetry.internalValue = value;
   }
   public resetPlatformTelemetry() {
@@ -2930,7 +2930,7 @@ export class MonitorDataCollectionRuleDataSourcesOutputReference extends cdktf.C
   public get prometheusForwarder() {
     return this._prometheusForwarder;
   }
-  public putPrometheusForwarder(value: MonitorDataCollectionRuleDataSourcesPrometheusForwarder[] | cdktf.IResolvable) {
+  public putPrometheusForwarder(value: MonitorDataCollectionRuleDataSourcesPrometheusForwarder[] | cdktn.IResolvable) {
     this._prometheusForwarder.internalValue = value;
   }
   public resetPrometheusForwarder() {
@@ -2946,7 +2946,7 @@ export class MonitorDataCollectionRuleDataSourcesOutputReference extends cdktf.C
   public get syslog() {
     return this._syslog;
   }
-  public putSyslog(value: MonitorDataCollectionRuleDataSourcesSyslog[] | cdktf.IResolvable) {
+  public putSyslog(value: MonitorDataCollectionRuleDataSourcesSyslog[] | cdktn.IResolvable) {
     this._syslog.internalValue = value;
   }
   public resetSyslog() {
@@ -2962,7 +2962,7 @@ export class MonitorDataCollectionRuleDataSourcesOutputReference extends cdktf.C
   public get windowsEventLog() {
     return this._windowsEventLog;
   }
-  public putWindowsEventLog(value: MonitorDataCollectionRuleDataSourcesWindowsEventLog[] | cdktf.IResolvable) {
+  public putWindowsEventLog(value: MonitorDataCollectionRuleDataSourcesWindowsEventLog[] | cdktn.IResolvable) {
     this._windowsEventLog.internalValue = value;
   }
   public resetWindowsEventLog() {
@@ -2978,7 +2978,7 @@ export class MonitorDataCollectionRuleDataSourcesOutputReference extends cdktf.C
   public get windowsFirewallLog() {
     return this._windowsFirewallLog;
   }
-  public putWindowsFirewallLog(value: MonitorDataCollectionRuleDataSourcesWindowsFirewallLog[] | cdktf.IResolvable) {
+  public putWindowsFirewallLog(value: MonitorDataCollectionRuleDataSourcesWindowsFirewallLog[] | cdktn.IResolvable) {
     this._windowsFirewallLog.internalValue = value;
   }
   public resetWindowsFirewallLog() {
@@ -2997,24 +2997,24 @@ export interface MonitorDataCollectionRuleDestinationsAzureMonitorMetrics {
 }
 
 export function monitorDataCollectionRuleDestinationsAzureMonitorMetricsToTerraform(struct?: MonitorDataCollectionRuleDestinationsAzureMonitorMetricsOutputReference | MonitorDataCollectionRuleDestinationsAzureMonitorMetrics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function monitorDataCollectionRuleDestinationsAzureMonitorMetricsToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsAzureMonitorMetricsOutputReference | MonitorDataCollectionRuleDestinationsAzureMonitorMetrics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3025,14 +3025,14 @@ export function monitorDataCollectionRuleDestinationsAzureMonitorMetricsToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDestinationsAzureMonitorMetricsOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDestinationsAzureMonitorMetricsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3082,31 +3082,31 @@ export interface MonitorDataCollectionRuleDestinationsEventHub {
 }
 
 export function monitorDataCollectionRuleDestinationsEventHubToTerraform(struct?: MonitorDataCollectionRuleDestinationsEventHubOutputReference | MonitorDataCollectionRuleDestinationsEventHub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event_hub_id: cdktf.stringToTerraform(struct!.eventHubId),
-    name: cdktf.stringToTerraform(struct!.name),
+    event_hub_id: cdktn.stringToTerraform(struct!.eventHubId),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function monitorDataCollectionRuleDestinationsEventHubToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsEventHubOutputReference | MonitorDataCollectionRuleDestinationsEventHub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event_hub_id: {
-      value: cdktf.stringToHclTerraform(struct!.eventHubId),
+      value: cdktn.stringToHclTerraform(struct!.eventHubId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3117,14 +3117,14 @@ export function monitorDataCollectionRuleDestinationsEventHubToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDestinationsEventHubOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDestinationsEventHubOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3193,31 +3193,31 @@ export interface MonitorDataCollectionRuleDestinationsEventHubDirect {
 }
 
 export function monitorDataCollectionRuleDestinationsEventHubDirectToTerraform(struct?: MonitorDataCollectionRuleDestinationsEventHubDirectOutputReference | MonitorDataCollectionRuleDestinationsEventHubDirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event_hub_id: cdktf.stringToTerraform(struct!.eventHubId),
-    name: cdktf.stringToTerraform(struct!.name),
+    event_hub_id: cdktn.stringToTerraform(struct!.eventHubId),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function monitorDataCollectionRuleDestinationsEventHubDirectToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsEventHubDirectOutputReference | MonitorDataCollectionRuleDestinationsEventHubDirect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event_hub_id: {
-      value: cdktf.stringToHclTerraform(struct!.eventHubId),
+      value: cdktn.stringToHclTerraform(struct!.eventHubId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3228,14 +3228,14 @@ export function monitorDataCollectionRuleDestinationsEventHubDirectToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDestinationsEventHubDirectOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDestinationsEventHubDirectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3303,32 +3303,32 @@ export interface MonitorDataCollectionRuleDestinationsLogAnalytics {
   readonly workspaceResourceId: string;
 }
 
-export function monitorDataCollectionRuleDestinationsLogAnalyticsToTerraform(struct?: MonitorDataCollectionRuleDestinationsLogAnalytics | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDestinationsLogAnalyticsToTerraform(struct?: MonitorDataCollectionRuleDestinationsLogAnalytics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    workspace_resource_id: cdktf.stringToTerraform(struct!.workspaceResourceId),
+    name: cdktn.stringToTerraform(struct!.name),
+    workspace_resource_id: cdktn.stringToTerraform(struct!.workspaceResourceId),
   }
 }
 
 
-export function monitorDataCollectionRuleDestinationsLogAnalyticsToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsLogAnalytics | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDestinationsLogAnalyticsToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsLogAnalytics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workspace_resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceResourceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceResourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3339,9 +3339,9 @@ export function monitorDataCollectionRuleDestinationsLogAnalyticsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDestinationsLogAnalyticsOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDestinationsLogAnalyticsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3349,11 +3349,11 @@ export class MonitorDataCollectionRuleDestinationsLogAnalyticsOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDestinationsLogAnalytics | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDestinationsLogAnalytics | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3370,14 +3370,14 @@ export class MonitorDataCollectionRuleDestinationsLogAnalyticsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDestinationsLogAnalytics | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDestinationsLogAnalytics | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._workspaceResourceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3416,15 +3416,15 @@ export class MonitorDataCollectionRuleDestinationsLogAnalyticsOutputReference ex
   }
 }
 
-export class MonitorDataCollectionRuleDestinationsLogAnalyticsList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDestinationsLogAnalytics[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDestinationsLogAnalyticsList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDestinationsLogAnalytics[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3446,32 +3446,32 @@ export interface MonitorDataCollectionRuleDestinationsMonitorAccount {
   readonly name: string;
 }
 
-export function monitorDataCollectionRuleDestinationsMonitorAccountToTerraform(struct?: MonitorDataCollectionRuleDestinationsMonitorAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDestinationsMonitorAccountToTerraform(struct?: MonitorDataCollectionRuleDestinationsMonitorAccount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    monitor_account_id: cdktf.stringToTerraform(struct!.monitorAccountId),
-    name: cdktf.stringToTerraform(struct!.name),
+    monitor_account_id: cdktn.stringToTerraform(struct!.monitorAccountId),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function monitorDataCollectionRuleDestinationsMonitorAccountToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsMonitorAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDestinationsMonitorAccountToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsMonitorAccount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     monitor_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.monitorAccountId),
+      value: cdktn.stringToHclTerraform(struct!.monitorAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3482,9 +3482,9 @@ export function monitorDataCollectionRuleDestinationsMonitorAccountToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDestinationsMonitorAccountOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDestinationsMonitorAccountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3492,11 +3492,11 @@ export class MonitorDataCollectionRuleDestinationsMonitorAccountOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDestinationsMonitorAccount | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDestinationsMonitorAccount | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3513,14 +3513,14 @@ export class MonitorDataCollectionRuleDestinationsMonitorAccountOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDestinationsMonitorAccount | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDestinationsMonitorAccount | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._monitorAccountId = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3559,15 +3559,15 @@ export class MonitorDataCollectionRuleDestinationsMonitorAccountOutputReference 
   }
 }
 
-export class MonitorDataCollectionRuleDestinationsMonitorAccountList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDestinationsMonitorAccount[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDestinationsMonitorAccountList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDestinationsMonitorAccount[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3593,39 +3593,39 @@ export interface MonitorDataCollectionRuleDestinationsStorageBlob {
   readonly storageAccountId: string;
 }
 
-export function monitorDataCollectionRuleDestinationsStorageBlobToTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageBlob | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDestinationsStorageBlobToTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageBlob | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_name: cdktf.stringToTerraform(struct!.containerName),
-    name: cdktf.stringToTerraform(struct!.name),
-    storage_account_id: cdktf.stringToTerraform(struct!.storageAccountId),
+    container_name: cdktn.stringToTerraform(struct!.containerName),
+    name: cdktn.stringToTerraform(struct!.name),
+    storage_account_id: cdktn.stringToTerraform(struct!.storageAccountId),
   }
 }
 
 
-export function monitorDataCollectionRuleDestinationsStorageBlobToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageBlob | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDestinationsStorageBlobToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageBlob | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_name: {
-      value: cdktf.stringToHclTerraform(struct!.containerName),
+      value: cdktn.stringToHclTerraform(struct!.containerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountId),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3636,9 +3636,9 @@ export function monitorDataCollectionRuleDestinationsStorageBlobToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDestinationsStorageBlobOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDestinationsStorageBlobOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3646,11 +3646,11 @@ export class MonitorDataCollectionRuleDestinationsStorageBlobOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDestinationsStorageBlob | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDestinationsStorageBlob | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3671,7 +3671,7 @@ export class MonitorDataCollectionRuleDestinationsStorageBlobOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDestinationsStorageBlob | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDestinationsStorageBlob | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3679,7 +3679,7 @@ export class MonitorDataCollectionRuleDestinationsStorageBlobOutputReference ext
       this._name = undefined;
       this._storageAccountId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3732,15 +3732,15 @@ export class MonitorDataCollectionRuleDestinationsStorageBlobOutputReference ext
   }
 }
 
-export class MonitorDataCollectionRuleDestinationsStorageBlobList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDestinationsStorageBlob[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDestinationsStorageBlobList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDestinationsStorageBlob[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3766,39 +3766,39 @@ export interface MonitorDataCollectionRuleDestinationsStorageBlobDirect {
   readonly storageAccountId: string;
 }
 
-export function monitorDataCollectionRuleDestinationsStorageBlobDirectToTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageBlobDirect | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDestinationsStorageBlobDirectToTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageBlobDirect | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_name: cdktf.stringToTerraform(struct!.containerName),
-    name: cdktf.stringToTerraform(struct!.name),
-    storage_account_id: cdktf.stringToTerraform(struct!.storageAccountId),
+    container_name: cdktn.stringToTerraform(struct!.containerName),
+    name: cdktn.stringToTerraform(struct!.name),
+    storage_account_id: cdktn.stringToTerraform(struct!.storageAccountId),
   }
 }
 
 
-export function monitorDataCollectionRuleDestinationsStorageBlobDirectToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageBlobDirect | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDestinationsStorageBlobDirectToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageBlobDirect | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_name: {
-      value: cdktf.stringToHclTerraform(struct!.containerName),
+      value: cdktn.stringToHclTerraform(struct!.containerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountId),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3809,9 +3809,9 @@ export function monitorDataCollectionRuleDestinationsStorageBlobDirectToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDestinationsStorageBlobDirectOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDestinationsStorageBlobDirectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3819,11 +3819,11 @@ export class MonitorDataCollectionRuleDestinationsStorageBlobDirectOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDestinationsStorageBlobDirect | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDestinationsStorageBlobDirect | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3844,7 +3844,7 @@ export class MonitorDataCollectionRuleDestinationsStorageBlobDirectOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDestinationsStorageBlobDirect | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDestinationsStorageBlobDirect | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3852,7 +3852,7 @@ export class MonitorDataCollectionRuleDestinationsStorageBlobDirectOutputReferen
       this._name = undefined;
       this._storageAccountId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3905,15 +3905,15 @@ export class MonitorDataCollectionRuleDestinationsStorageBlobDirectOutputReferen
   }
 }
 
-export class MonitorDataCollectionRuleDestinationsStorageBlobDirectList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDestinationsStorageBlobDirect[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDestinationsStorageBlobDirectList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDestinationsStorageBlobDirect[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3939,39 +3939,39 @@ export interface MonitorDataCollectionRuleDestinationsStorageTableDirect {
   readonly tableName: string;
 }
 
-export function monitorDataCollectionRuleDestinationsStorageTableDirectToTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageTableDirect | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDestinationsStorageTableDirectToTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageTableDirect | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    storage_account_id: cdktf.stringToTerraform(struct!.storageAccountId),
-    table_name: cdktf.stringToTerraform(struct!.tableName),
+    name: cdktn.stringToTerraform(struct!.name),
+    storage_account_id: cdktn.stringToTerraform(struct!.storageAccountId),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
   }
 }
 
 
-export function monitorDataCollectionRuleDestinationsStorageTableDirectToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageTableDirect | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleDestinationsStorageTableDirectToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageTableDirect | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountId),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3982,9 +3982,9 @@ export function monitorDataCollectionRuleDestinationsStorageTableDirectToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDestinationsStorageTableDirectOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDestinationsStorageTableDirectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3992,11 +3992,11 @@ export class MonitorDataCollectionRuleDestinationsStorageTableDirectOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleDestinationsStorageTableDirect | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleDestinationsStorageTableDirect | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4017,7 +4017,7 @@ export class MonitorDataCollectionRuleDestinationsStorageTableDirectOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleDestinationsStorageTableDirect | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleDestinationsStorageTableDirect | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4025,7 +4025,7 @@ export class MonitorDataCollectionRuleDestinationsStorageTableDirectOutputRefere
       this._storageAccountId = undefined;
       this._tableName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4078,15 +4078,15 @@ export class MonitorDataCollectionRuleDestinationsStorageTableDirectOutputRefere
   }
 }
 
-export class MonitorDataCollectionRuleDestinationsStorageTableDirectList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleDestinationsStorageTableDirect[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleDestinationsStorageTableDirectList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleDestinationsStorageTableDirect[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4121,54 +4121,54 @@ export interface MonitorDataCollectionRuleDestinations {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#log_analytics MonitorDataCollectionRule#log_analytics}
   */
-  readonly logAnalytics?: MonitorDataCollectionRuleDestinationsLogAnalytics[] | cdktf.IResolvable;
+  readonly logAnalytics?: MonitorDataCollectionRuleDestinationsLogAnalytics[] | cdktn.IResolvable;
   /**
   * monitor_account block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#monitor_account MonitorDataCollectionRule#monitor_account}
   */
-  readonly monitorAccount?: MonitorDataCollectionRuleDestinationsMonitorAccount[] | cdktf.IResolvable;
+  readonly monitorAccount?: MonitorDataCollectionRuleDestinationsMonitorAccount[] | cdktn.IResolvable;
   /**
   * storage_blob block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#storage_blob MonitorDataCollectionRule#storage_blob}
   */
-  readonly storageBlob?: MonitorDataCollectionRuleDestinationsStorageBlob[] | cdktf.IResolvable;
+  readonly storageBlob?: MonitorDataCollectionRuleDestinationsStorageBlob[] | cdktn.IResolvable;
   /**
   * storage_blob_direct block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#storage_blob_direct MonitorDataCollectionRule#storage_blob_direct}
   */
-  readonly storageBlobDirect?: MonitorDataCollectionRuleDestinationsStorageBlobDirect[] | cdktf.IResolvable;
+  readonly storageBlobDirect?: MonitorDataCollectionRuleDestinationsStorageBlobDirect[] | cdktn.IResolvable;
   /**
   * storage_table_direct block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#storage_table_direct MonitorDataCollectionRule#storage_table_direct}
   */
-  readonly storageTableDirect?: MonitorDataCollectionRuleDestinationsStorageTableDirect[] | cdktf.IResolvable;
+  readonly storageTableDirect?: MonitorDataCollectionRuleDestinationsStorageTableDirect[] | cdktn.IResolvable;
 }
 
 export function monitorDataCollectionRuleDestinationsToTerraform(struct?: MonitorDataCollectionRuleDestinationsOutputReference | MonitorDataCollectionRuleDestinations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     azure_monitor_metrics: monitorDataCollectionRuleDestinationsAzureMonitorMetricsToTerraform(struct!.azureMonitorMetrics),
     event_hub: monitorDataCollectionRuleDestinationsEventHubToTerraform(struct!.eventHub),
     event_hub_direct: monitorDataCollectionRuleDestinationsEventHubDirectToTerraform(struct!.eventHubDirect),
-    log_analytics: cdktf.listMapper(monitorDataCollectionRuleDestinationsLogAnalyticsToTerraform, true)(struct!.logAnalytics),
-    monitor_account: cdktf.listMapper(monitorDataCollectionRuleDestinationsMonitorAccountToTerraform, true)(struct!.monitorAccount),
-    storage_blob: cdktf.listMapper(monitorDataCollectionRuleDestinationsStorageBlobToTerraform, true)(struct!.storageBlob),
-    storage_blob_direct: cdktf.listMapper(monitorDataCollectionRuleDestinationsStorageBlobDirectToTerraform, true)(struct!.storageBlobDirect),
-    storage_table_direct: cdktf.listMapper(monitorDataCollectionRuleDestinationsStorageTableDirectToTerraform, true)(struct!.storageTableDirect),
+    log_analytics: cdktn.listMapper(monitorDataCollectionRuleDestinationsLogAnalyticsToTerraform, true)(struct!.logAnalytics),
+    monitor_account: cdktn.listMapper(monitorDataCollectionRuleDestinationsMonitorAccountToTerraform, true)(struct!.monitorAccount),
+    storage_blob: cdktn.listMapper(monitorDataCollectionRuleDestinationsStorageBlobToTerraform, true)(struct!.storageBlob),
+    storage_blob_direct: cdktn.listMapper(monitorDataCollectionRuleDestinationsStorageBlobDirectToTerraform, true)(struct!.storageBlobDirect),
+    storage_table_direct: cdktn.listMapper(monitorDataCollectionRuleDestinationsStorageTableDirectToTerraform, true)(struct!.storageTableDirect),
   }
 }
 
 
 export function monitorDataCollectionRuleDestinationsToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsOutputReference | MonitorDataCollectionRuleDestinations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4191,31 +4191,31 @@ export function monitorDataCollectionRuleDestinationsToHclTerraform(struct?: Mon
       storageClassType: "MonitorDataCollectionRuleDestinationsEventHubDirectList",
     },
     log_analytics: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDestinationsLogAnalyticsToHclTerraform, true)(struct!.logAnalytics),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDestinationsLogAnalyticsToHclTerraform, true)(struct!.logAnalytics),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleDestinationsLogAnalyticsList",
     },
     monitor_account: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDestinationsMonitorAccountToHclTerraform, true)(struct!.monitorAccount),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDestinationsMonitorAccountToHclTerraform, true)(struct!.monitorAccount),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleDestinationsMonitorAccountList",
     },
     storage_blob: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDestinationsStorageBlobToHclTerraform, true)(struct!.storageBlob),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDestinationsStorageBlobToHclTerraform, true)(struct!.storageBlob),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleDestinationsStorageBlobList",
     },
     storage_blob_direct: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDestinationsStorageBlobDirectToHclTerraform, true)(struct!.storageBlobDirect),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDestinationsStorageBlobDirectToHclTerraform, true)(struct!.storageBlobDirect),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleDestinationsStorageBlobDirectList",
     },
     storage_table_direct: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleDestinationsStorageTableDirectToHclTerraform, true)(struct!.storageTableDirect),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleDestinationsStorageTableDirectToHclTerraform, true)(struct!.storageTableDirect),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleDestinationsStorageTableDirectList",
@@ -4226,14 +4226,14 @@ export function monitorDataCollectionRuleDestinationsToHclTerraform(struct?: Mon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleDestinationsOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleDestinationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4353,7 +4353,7 @@ export class MonitorDataCollectionRuleDestinationsOutputReference extends cdktf.
   public get logAnalytics() {
     return this._logAnalytics;
   }
-  public putLogAnalytics(value: MonitorDataCollectionRuleDestinationsLogAnalytics[] | cdktf.IResolvable) {
+  public putLogAnalytics(value: MonitorDataCollectionRuleDestinationsLogAnalytics[] | cdktn.IResolvable) {
     this._logAnalytics.internalValue = value;
   }
   public resetLogAnalytics() {
@@ -4369,7 +4369,7 @@ export class MonitorDataCollectionRuleDestinationsOutputReference extends cdktf.
   public get monitorAccount() {
     return this._monitorAccount;
   }
-  public putMonitorAccount(value: MonitorDataCollectionRuleDestinationsMonitorAccount[] | cdktf.IResolvable) {
+  public putMonitorAccount(value: MonitorDataCollectionRuleDestinationsMonitorAccount[] | cdktn.IResolvable) {
     this._monitorAccount.internalValue = value;
   }
   public resetMonitorAccount() {
@@ -4385,7 +4385,7 @@ export class MonitorDataCollectionRuleDestinationsOutputReference extends cdktf.
   public get storageBlob() {
     return this._storageBlob;
   }
-  public putStorageBlob(value: MonitorDataCollectionRuleDestinationsStorageBlob[] | cdktf.IResolvable) {
+  public putStorageBlob(value: MonitorDataCollectionRuleDestinationsStorageBlob[] | cdktn.IResolvable) {
     this._storageBlob.internalValue = value;
   }
   public resetStorageBlob() {
@@ -4401,7 +4401,7 @@ export class MonitorDataCollectionRuleDestinationsOutputReference extends cdktf.
   public get storageBlobDirect() {
     return this._storageBlobDirect;
   }
-  public putStorageBlobDirect(value: MonitorDataCollectionRuleDestinationsStorageBlobDirect[] | cdktf.IResolvable) {
+  public putStorageBlobDirect(value: MonitorDataCollectionRuleDestinationsStorageBlobDirect[] | cdktn.IResolvable) {
     this._storageBlobDirect.internalValue = value;
   }
   public resetStorageBlobDirect() {
@@ -4417,7 +4417,7 @@ export class MonitorDataCollectionRuleDestinationsOutputReference extends cdktf.
   public get storageTableDirect() {
     return this._storageTableDirect;
   }
-  public putStorageTableDirect(value: MonitorDataCollectionRuleDestinationsStorageTableDirect[] | cdktf.IResolvable) {
+  public putStorageTableDirect(value: MonitorDataCollectionRuleDestinationsStorageTableDirect[] | cdktn.IResolvable) {
     this._storageTableDirect.internalValue = value;
   }
   public resetStorageTableDirect() {
@@ -4440,31 +4440,31 @@ export interface MonitorDataCollectionRuleIdentity {
 }
 
 export function monitorDataCollectionRuleIdentityToTerraform(struct?: MonitorDataCollectionRuleIdentityOutputReference | MonitorDataCollectionRuleIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function monitorDataCollectionRuleIdentityToHclTerraform(struct?: MonitorDataCollectionRuleIdentityOutputReference | MonitorDataCollectionRuleIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4475,14 +4475,14 @@ export function monitorDataCollectionRuleIdentityToHclTerraform(struct?: Monitor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleIdentityOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4516,7 +4516,7 @@ export class MonitorDataCollectionRuleIdentityOutputReference extends cdktf.Comp
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -4563,32 +4563,32 @@ export interface MonitorDataCollectionRuleStreamDeclarationColumn {
   readonly type: string;
 }
 
-export function monitorDataCollectionRuleStreamDeclarationColumnToTerraform(struct?: MonitorDataCollectionRuleStreamDeclarationColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleStreamDeclarationColumnToTerraform(struct?: MonitorDataCollectionRuleStreamDeclarationColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function monitorDataCollectionRuleStreamDeclarationColumnToHclTerraform(struct?: MonitorDataCollectionRuleStreamDeclarationColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleStreamDeclarationColumnToHclTerraform(struct?: MonitorDataCollectionRuleStreamDeclarationColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4599,9 +4599,9 @@ export function monitorDataCollectionRuleStreamDeclarationColumnToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleStreamDeclarationColumnOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleStreamDeclarationColumnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4609,11 +4609,11 @@ export class MonitorDataCollectionRuleStreamDeclarationColumnOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleStreamDeclarationColumn | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleStreamDeclarationColumn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4630,14 +4630,14 @@ export class MonitorDataCollectionRuleStreamDeclarationColumnOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleStreamDeclarationColumn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleStreamDeclarationColumn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4676,15 +4676,15 @@ export class MonitorDataCollectionRuleStreamDeclarationColumnOutputReference ext
   }
 }
 
-export class MonitorDataCollectionRuleStreamDeclarationColumnList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleStreamDeclarationColumn[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleStreamDeclarationColumnList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleStreamDeclarationColumn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4705,35 +4705,35 @@ export interface MonitorDataCollectionRuleStreamDeclaration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#column MonitorDataCollectionRule#column}
   */
-  readonly column: MonitorDataCollectionRuleStreamDeclarationColumn[] | cdktf.IResolvable;
+  readonly column: MonitorDataCollectionRuleStreamDeclarationColumn[] | cdktn.IResolvable;
 }
 
-export function monitorDataCollectionRuleStreamDeclarationToTerraform(struct?: MonitorDataCollectionRuleStreamDeclaration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleStreamDeclarationToTerraform(struct?: MonitorDataCollectionRuleStreamDeclaration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    stream_name: cdktf.stringToTerraform(struct!.streamName),
-    column: cdktf.listMapper(monitorDataCollectionRuleStreamDeclarationColumnToTerraform, true)(struct!.column),
+    stream_name: cdktn.stringToTerraform(struct!.streamName),
+    column: cdktn.listMapper(monitorDataCollectionRuleStreamDeclarationColumnToTerraform, true)(struct!.column),
   }
 }
 
 
-export function monitorDataCollectionRuleStreamDeclarationToHclTerraform(struct?: MonitorDataCollectionRuleStreamDeclaration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleStreamDeclarationToHclTerraform(struct?: MonitorDataCollectionRuleStreamDeclaration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.streamName),
+      value: cdktn.stringToHclTerraform(struct!.streamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     column: {
-      value: cdktf.listMapperHcl(monitorDataCollectionRuleStreamDeclarationColumnToHclTerraform, true)(struct!.column),
+      value: cdktn.listMapperHcl(monitorDataCollectionRuleStreamDeclarationColumnToHclTerraform, true)(struct!.column),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorDataCollectionRuleStreamDeclarationColumnList",
@@ -4744,9 +4744,9 @@ export function monitorDataCollectionRuleStreamDeclarationToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleStreamDeclarationOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleStreamDeclarationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4754,11 +4754,11 @@ export class MonitorDataCollectionRuleStreamDeclarationOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleStreamDeclaration | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleStreamDeclaration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4775,14 +4775,14 @@ export class MonitorDataCollectionRuleStreamDeclarationOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleStreamDeclaration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleStreamDeclaration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._streamName = undefined;
       this._column.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4812,7 +4812,7 @@ export class MonitorDataCollectionRuleStreamDeclarationOutputReference extends c
   public get column() {
     return this._column;
   }
-  public putColumn(value: MonitorDataCollectionRuleStreamDeclarationColumn[] | cdktf.IResolvable) {
+  public putColumn(value: MonitorDataCollectionRuleStreamDeclarationColumn[] | cdktn.IResolvable) {
     this._column.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4821,15 +4821,15 @@ export class MonitorDataCollectionRuleStreamDeclarationOutputReference extends c
   }
 }
 
-export class MonitorDataCollectionRuleStreamDeclarationList extends cdktf.ComplexList {
-  public internalValue? : MonitorDataCollectionRuleStreamDeclaration[] | cdktf.IResolvable
+export class MonitorDataCollectionRuleStreamDeclarationList extends cdktn.ComplexList {
+  public internalValue? : MonitorDataCollectionRuleStreamDeclaration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4859,46 +4859,46 @@ export interface MonitorDataCollectionRuleTimeouts {
   readonly update?: string;
 }
 
-export function monitorDataCollectionRuleTimeoutsToTerraform(struct?: MonitorDataCollectionRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleTimeoutsToTerraform(struct?: MonitorDataCollectionRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function monitorDataCollectionRuleTimeoutsToHclTerraform(struct?: MonitorDataCollectionRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorDataCollectionRuleTimeoutsToHclTerraform(struct?: MonitorDataCollectionRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4909,19 +4909,19 @@ export function monitorDataCollectionRuleTimeoutsToHclTerraform(struct?: Monitor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorDataCollectionRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MonitorDataCollectionRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MonitorDataCollectionRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorDataCollectionRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4946,7 +4946,7 @@ export class MonitorDataCollectionRuleTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorDataCollectionRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorDataCollectionRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4955,7 +4955,7 @@ export class MonitorDataCollectionRuleTimeoutsOutputReference extends cdktf.Comp
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5037,7 +5037,7 @@ export class MonitorDataCollectionRuleTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule}
 */
-export class MonitorDataCollectionRule extends cdktf.TerraformResource {
+export class MonitorDataCollectionRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -5048,14 +5048,14 @@ export class MonitorDataCollectionRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MonitorDataCollectionRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MonitorDataCollectionRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitorDataCollectionRule to import
   * @param importFromId The id of the existing MonitorDataCollectionRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_data_collection_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitorDataCollectionRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_data_collection_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_data_collection_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -5234,7 +5234,7 @@ export class MonitorDataCollectionRule extends cdktf.TerraformResource {
   public get dataFlow() {
     return this._dataFlow;
   }
-  public putDataFlow(value: MonitorDataCollectionRuleDataFlow[] | cdktf.IResolvable) {
+  public putDataFlow(value: MonitorDataCollectionRuleDataFlow[] | cdktn.IResolvable) {
     this._dataFlow.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -5292,7 +5292,7 @@ export class MonitorDataCollectionRule extends cdktf.TerraformResource {
   public get streamDeclaration() {
     return this._streamDeclaration;
   }
-  public putStreamDeclaration(value: MonitorDataCollectionRuleStreamDeclaration[] | cdktf.IResolvable) {
+  public putStreamDeclaration(value: MonitorDataCollectionRuleStreamDeclaration[] | cdktn.IResolvable) {
     this._streamDeclaration.internalValue = value;
   }
   public resetStreamDeclaration() {
@@ -5325,19 +5325,19 @@ export class MonitorDataCollectionRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_collection_endpoint_id: cdktf.stringToTerraform(this._dataCollectionEndpointId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      kind: cdktf.stringToTerraform(this._kind),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      data_flow: cdktf.listMapper(monitorDataCollectionRuleDataFlowToTerraform, true)(this._dataFlow.internalValue),
+      data_collection_endpoint_id: cdktn.stringToTerraform(this._dataCollectionEndpointId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      kind: cdktn.stringToTerraform(this._kind),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      data_flow: cdktn.listMapper(monitorDataCollectionRuleDataFlowToTerraform, true)(this._dataFlow.internalValue),
       data_sources: monitorDataCollectionRuleDataSourcesToTerraform(this._dataSources.internalValue),
       destinations: monitorDataCollectionRuleDestinationsToTerraform(this._destinations.internalValue),
       identity: monitorDataCollectionRuleIdentityToTerraform(this._identity.internalValue),
-      stream_declaration: cdktf.listMapper(monitorDataCollectionRuleStreamDeclarationToTerraform, true)(this._streamDeclaration.internalValue),
+      stream_declaration: cdktn.listMapper(monitorDataCollectionRuleStreamDeclarationToTerraform, true)(this._streamDeclaration.internalValue),
       timeouts: monitorDataCollectionRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -5345,55 +5345,55 @@ export class MonitorDataCollectionRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_collection_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._dataCollectionEndpointId),
+        value: cdktn.stringToHclTerraform(this._dataCollectionEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kind: {
-        value: cdktf.stringToHclTerraform(this._kind),
+        value: cdktn.stringToHclTerraform(this._kind),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       data_flow: {
-        value: cdktf.listMapperHcl(monitorDataCollectionRuleDataFlowToHclTerraform, true)(this._dataFlow.internalValue),
+        value: cdktn.listMapperHcl(monitorDataCollectionRuleDataFlowToHclTerraform, true)(this._dataFlow.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "MonitorDataCollectionRuleDataFlowList",
@@ -5417,7 +5417,7 @@ export class MonitorDataCollectionRule extends cdktf.TerraformResource {
         storageClassType: "MonitorDataCollectionRuleIdentityList",
       },
       stream_declaration: {
-        value: cdktf.listMapperHcl(monitorDataCollectionRuleStreamDeclarationToHclTerraform, true)(this._streamDeclaration.internalValue),
+        value: cdktn.listMapperHcl(monitorDataCollectionRuleStreamDeclarationToHclTerraform, true)(this._streamDeclaration.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "MonitorDataCollectionRuleStreamDeclarationList",

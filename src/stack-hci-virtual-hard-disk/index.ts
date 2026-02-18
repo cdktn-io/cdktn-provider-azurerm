@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StackHciVirtualHardDiskConfig extends cdktf.TerraformMetaArguments {
+export interface StackHciVirtualHardDiskConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_virtual_hard_disk#block_size_in_bytes StackHciVirtualHardDisk#block_size_in_bytes}
   */
@@ -31,7 +31,7 @@ export interface StackHciVirtualHardDiskConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_virtual_hard_disk#dynamic_enabled StackHciVirtualHardDisk#dynamic_enabled}
   */
-  readonly dynamicEnabled?: boolean | cdktf.IResolvable;
+  readonly dynamicEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_virtual_hard_disk#hyperv_generation StackHciVirtualHardDisk#hyperv_generation}
   */
@@ -97,46 +97,46 @@ export interface StackHciVirtualHardDiskTimeouts {
   readonly update?: string;
 }
 
-export function stackHciVirtualHardDiskTimeoutsToTerraform(struct?: StackHciVirtualHardDiskTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciVirtualHardDiskTimeoutsToTerraform(struct?: StackHciVirtualHardDiskTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function stackHciVirtualHardDiskTimeoutsToHclTerraform(struct?: StackHciVirtualHardDiskTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function stackHciVirtualHardDiskTimeoutsToHclTerraform(struct?: StackHciVirtualHardDiskTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -147,19 +147,19 @@ export function stackHciVirtualHardDiskTimeoutsToHclTerraform(struct?: StackHciV
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StackHciVirtualHardDiskTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StackHciVirtualHardDiskTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StackHciVirtualHardDiskTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StackHciVirtualHardDiskTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -184,7 +184,7 @@ export class StackHciVirtualHardDiskTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StackHciVirtualHardDiskTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StackHciVirtualHardDiskTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -193,7 +193,7 @@ export class StackHciVirtualHardDiskTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -275,7 +275,7 @@ export class StackHciVirtualHardDiskTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_virtual_hard_disk azurerm_stack_hci_virtual_hard_disk}
 */
-export class StackHciVirtualHardDisk extends cdktf.TerraformResource {
+export class StackHciVirtualHardDisk extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -286,14 +286,14 @@ export class StackHciVirtualHardDisk extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StackHciVirtualHardDisk resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StackHciVirtualHardDisk resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StackHciVirtualHardDisk to import
   * @param importFromId The id of the existing StackHciVirtualHardDisk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stack_hci_virtual_hard_disk#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StackHciVirtualHardDisk to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_stack_hci_virtual_hard_disk", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_stack_hci_virtual_hard_disk", importId: importFromId, provider });
       }
 
   // ===========
@@ -403,11 +403,11 @@ export class StackHciVirtualHardDisk extends cdktf.TerraformResource {
   }
 
   // dynamic_enabled - computed: false, optional: true, required: false
-  private _dynamicEnabled?: boolean | cdktf.IResolvable; 
+  private _dynamicEnabled?: boolean | cdktn.IResolvable; 
   public get dynamicEnabled() {
     return this.getBooleanAttribute('dynamic_enabled');
   }
-  public set dynamicEnabled(value: boolean | cdktf.IResolvable) {
+  public set dynamicEnabled(value: boolean | cdktn.IResolvable) {
     this._dynamicEnabled = value;
   }
   public resetDynamicEnabled() {
@@ -575,20 +575,20 @@ export class StackHciVirtualHardDisk extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      block_size_in_bytes: cdktf.numberToTerraform(this._blockSizeInBytes),
-      custom_location_id: cdktf.stringToTerraform(this._customLocationId),
-      disk_file_format: cdktf.stringToTerraform(this._diskFileFormat),
-      disk_size_in_gb: cdktf.numberToTerraform(this._diskSizeInGb),
-      dynamic_enabled: cdktf.booleanToTerraform(this._dynamicEnabled),
-      hyperv_generation: cdktf.stringToTerraform(this._hypervGeneration),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      logical_sector_in_bytes: cdktf.numberToTerraform(this._logicalSectorInBytes),
-      name: cdktf.stringToTerraform(this._name),
-      physical_sector_in_bytes: cdktf.numberToTerraform(this._physicalSectorInBytes),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      storage_path_id: cdktf.stringToTerraform(this._storagePathId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      block_size_in_bytes: cdktn.numberToTerraform(this._blockSizeInBytes),
+      custom_location_id: cdktn.stringToTerraform(this._customLocationId),
+      disk_file_format: cdktn.stringToTerraform(this._diskFileFormat),
+      disk_size_in_gb: cdktn.numberToTerraform(this._diskSizeInGb),
+      dynamic_enabled: cdktn.booleanToTerraform(this._dynamicEnabled),
+      hyperv_generation: cdktn.stringToTerraform(this._hypervGeneration),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      logical_sector_in_bytes: cdktn.numberToTerraform(this._logicalSectorInBytes),
+      name: cdktn.stringToTerraform(this._name),
+      physical_sector_in_bytes: cdktn.numberToTerraform(this._physicalSectorInBytes),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      storage_path_id: cdktn.stringToTerraform(this._storagePathId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: stackHciVirtualHardDiskTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -596,85 +596,85 @@ export class StackHciVirtualHardDisk extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       block_size_in_bytes: {
-        value: cdktf.numberToHclTerraform(this._blockSizeInBytes),
+        value: cdktn.numberToHclTerraform(this._blockSizeInBytes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       custom_location_id: {
-        value: cdktf.stringToHclTerraform(this._customLocationId),
+        value: cdktn.stringToHclTerraform(this._customLocationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disk_file_format: {
-        value: cdktf.stringToHclTerraform(this._diskFileFormat),
+        value: cdktn.stringToHclTerraform(this._diskFileFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disk_size_in_gb: {
-        value: cdktf.numberToHclTerraform(this._diskSizeInGb),
+        value: cdktn.numberToHclTerraform(this._diskSizeInGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       dynamic_enabled: {
-        value: cdktf.booleanToHclTerraform(this._dynamicEnabled),
+        value: cdktn.booleanToHclTerraform(this._dynamicEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       hyperv_generation: {
-        value: cdktf.stringToHclTerraform(this._hypervGeneration),
+        value: cdktn.stringToHclTerraform(this._hypervGeneration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       logical_sector_in_bytes: {
-        value: cdktf.numberToHclTerraform(this._logicalSectorInBytes),
+        value: cdktn.numberToHclTerraform(this._logicalSectorInBytes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       physical_sector_in_bytes: {
-        value: cdktf.numberToHclTerraform(this._physicalSectorInBytes),
+        value: cdktn.numberToHclTerraform(this._physicalSectorInBytes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_path_id: {
-        value: cdktf.stringToHclTerraform(this._storagePathId),
+        value: cdktn.stringToHclTerraform(this._storagePathId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermArcResourceBridgeApplianceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermArcResourceBridgeApplianceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/arc_resource_bridge_appliance#id DataAzurermArcResourceBridgeAppliance#id}
   *
@@ -38,8 +38,8 @@ export interface DataAzurermArcResourceBridgeApplianceIdentity {
 }
 
 export function dataAzurermArcResourceBridgeApplianceIdentityToTerraform(struct?: DataAzurermArcResourceBridgeApplianceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermArcResourceBridgeApplianceIdentityToTerraform(struct?
 
 
 export function dataAzurermArcResourceBridgeApplianceIdentityToHclTerraform(struct?: DataAzurermArcResourceBridgeApplianceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermArcResourceBridgeApplianceIdentityToHclTerraform(stru
   return attrs;
 }
 
-export class DataAzurermArcResourceBridgeApplianceIdentityOutputReference extends cdktf.ComplexObject {
+export class DataAzurermArcResourceBridgeApplianceIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermArcResourceBridgeApplianceIdentityOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -101,14 +101,14 @@ export class DataAzurermArcResourceBridgeApplianceIdentityOutputReference extend
   }
 }
 
-export class DataAzurermArcResourceBridgeApplianceIdentityList extends cdktf.ComplexList {
+export class DataAzurermArcResourceBridgeApplianceIdentityList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -126,25 +126,25 @@ export interface DataAzurermArcResourceBridgeApplianceTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermArcResourceBridgeApplianceTimeoutsToTerraform(struct?: DataAzurermArcResourceBridgeApplianceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermArcResourceBridgeApplianceTimeoutsToTerraform(struct?: DataAzurermArcResourceBridgeApplianceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermArcResourceBridgeApplianceTimeoutsToHclTerraform(struct?: DataAzurermArcResourceBridgeApplianceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermArcResourceBridgeApplianceTimeoutsToHclTerraform(struct?: DataAzurermArcResourceBridgeApplianceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -155,19 +155,19 @@ export function dataAzurermArcResourceBridgeApplianceTimeoutsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermArcResourceBridgeApplianceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermArcResourceBridgeApplianceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermArcResourceBridgeApplianceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermArcResourceBridgeApplianceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -180,13 +180,13 @@ export class DataAzurermArcResourceBridgeApplianceTimeoutsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermArcResourceBridgeApplianceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermArcResourceBridgeApplianceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -217,7 +217,7 @@ export class DataAzurermArcResourceBridgeApplianceTimeoutsOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/arc_resource_bridge_appliance azurerm_arc_resource_bridge_appliance}
 */
-export class DataAzurermArcResourceBridgeAppliance extends cdktf.TerraformDataSource {
+export class DataAzurermArcResourceBridgeAppliance extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -228,14 +228,14 @@ export class DataAzurermArcResourceBridgeAppliance extends cdktf.TerraformDataSo
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermArcResourceBridgeAppliance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermArcResourceBridgeAppliance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermArcResourceBridgeAppliance to import
   * @param importFromId The id of the existing DataAzurermArcResourceBridgeAppliance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/arc_resource_bridge_appliance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermArcResourceBridgeAppliance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_arc_resource_bridge_appliance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_arc_resource_bridge_appliance", importId: importFromId, provider });
       }
 
   // ===========
@@ -344,7 +344,7 @@ export class DataAzurermArcResourceBridgeAppliance extends cdktf.TerraformDataSo
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -371,9 +371,9 @@ export class DataAzurermArcResourceBridgeAppliance extends cdktf.TerraformDataSo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurermArcResourceBridgeApplianceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -381,19 +381,19 @@ export class DataAzurermArcResourceBridgeAppliance extends cdktf.TerraformDataSo
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

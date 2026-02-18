@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BotChannelLineConfig extends cdktf.TerraformMetaArguments {
+export interface BotChannelLineConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_line#bot_name BotChannelLine#bot_name}
   */
@@ -36,7 +36,7 @@ export interface BotChannelLineConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_line#line_channel BotChannelLine#line_channel}
   */
-  readonly lineChannel: BotChannelLineLineChannel[] | cdktf.IResolvable;
+  readonly lineChannel: BotChannelLineLineChannel[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -55,32 +55,32 @@ export interface BotChannelLineLineChannel {
   readonly secret: string;
 }
 
-export function botChannelLineLineChannelToTerraform(struct?: BotChannelLineLineChannel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelLineLineChannelToTerraform(struct?: BotChannelLineLineChannel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token: cdktf.stringToTerraform(struct!.accessToken),
-    secret: cdktf.stringToTerraform(struct!.secret),
+    access_token: cdktn.stringToTerraform(struct!.accessToken),
+    secret: cdktn.stringToTerraform(struct!.secret),
   }
 }
 
 
-export function botChannelLineLineChannelToHclTerraform(struct?: BotChannelLineLineChannel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelLineLineChannelToHclTerraform(struct?: BotChannelLineLineChannel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_token: {
-      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      value: cdktn.stringToHclTerraform(struct!.accessToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret: {
-      value: cdktf.stringToHclTerraform(struct!.secret),
+      value: cdktn.stringToHclTerraform(struct!.secret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,9 +91,9 @@ export function botChannelLineLineChannelToHclTerraform(struct?: BotChannelLineL
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BotChannelLineLineChannelOutputReference extends cdktf.ComplexObject {
+export class BotChannelLineLineChannelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -101,11 +101,11 @@ export class BotChannelLineLineChannelOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BotChannelLineLineChannel | cdktf.IResolvable | undefined {
+  public get internalValue(): BotChannelLineLineChannel | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -122,14 +122,14 @@ export class BotChannelLineLineChannelOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BotChannelLineLineChannel | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BotChannelLineLineChannel | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accessToken = undefined;
       this._secret = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -168,15 +168,15 @@ export class BotChannelLineLineChannelOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class BotChannelLineLineChannelList extends cdktf.ComplexList {
-  public internalValue? : BotChannelLineLineChannel[] | cdktf.IResolvable
+export class BotChannelLineLineChannelList extends cdktn.ComplexList {
+  public internalValue? : BotChannelLineLineChannel[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -206,46 +206,46 @@ export interface BotChannelLineTimeouts {
   readonly update?: string;
 }
 
-export function botChannelLineTimeoutsToTerraform(struct?: BotChannelLineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelLineTimeoutsToTerraform(struct?: BotChannelLineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function botChannelLineTimeoutsToHclTerraform(struct?: BotChannelLineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelLineTimeoutsToHclTerraform(struct?: BotChannelLineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -256,19 +256,19 @@ export function botChannelLineTimeoutsToHclTerraform(struct?: BotChannelLineTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BotChannelLineTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BotChannelLineTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BotChannelLineTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BotChannelLineTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -293,7 +293,7 @@ export class BotChannelLineTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BotChannelLineTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BotChannelLineTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -302,7 +302,7 @@ export class BotChannelLineTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -384,7 +384,7 @@ export class BotChannelLineTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_line azurerm_bot_channel_line}
 */
-export class BotChannelLine extends cdktf.TerraformResource {
+export class BotChannelLine extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -395,14 +395,14 @@ export class BotChannelLine extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BotChannelLine resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BotChannelLine resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BotChannelLine to import
   * @param importFromId The id of the existing BotChannelLine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_line#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BotChannelLine to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_bot_channel_line", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_bot_channel_line", importId: importFromId, provider });
       }
 
   // ===========
@@ -504,7 +504,7 @@ export class BotChannelLine extends cdktf.TerraformResource {
   public get lineChannel() {
     return this._lineChannel;
   }
-  public putLineChannel(value: BotChannelLineLineChannel[] | cdktf.IResolvable) {
+  public putLineChannel(value: BotChannelLineLineChannel[] | cdktn.IResolvable) {
     this._lineChannel.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -534,11 +534,11 @@ export class BotChannelLine extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bot_name: cdktf.stringToTerraform(this._botName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      line_channel: cdktf.listMapper(botChannelLineLineChannelToTerraform, true)(this._lineChannel.internalValue),
+      bot_name: cdktn.stringToTerraform(this._botName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      line_channel: cdktn.listMapper(botChannelLineLineChannelToTerraform, true)(this._lineChannel.internalValue),
       timeouts: botChannelLineTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -546,31 +546,31 @@ export class BotChannelLine extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bot_name: {
-        value: cdktf.stringToHclTerraform(this._botName),
+        value: cdktn.stringToHclTerraform(this._botName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       line_channel: {
-        value: cdktf.listMapperHcl(botChannelLineLineChannelToHclTerraform, true)(this._lineChannel.internalValue),
+        value: cdktn.listMapperHcl(botChannelLineLineChannelToHclTerraform, true)(this._lineChannel.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "BotChannelLineLineChannelList",

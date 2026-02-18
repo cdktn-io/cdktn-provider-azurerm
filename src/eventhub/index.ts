@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EventhubConfig extends cdktf.TerraformMetaArguments {
+export interface EventhubConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub#id Eventhub#id}
   *
@@ -86,45 +86,45 @@ export interface EventhubCaptureDescriptionDestination {
 }
 
 export function eventhubCaptureDescriptionDestinationToTerraform(struct?: EventhubCaptureDescriptionDestinationOutputReference | EventhubCaptureDescriptionDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    archive_name_format: cdktf.stringToTerraform(struct!.archiveNameFormat),
-    blob_container_name: cdktf.stringToTerraform(struct!.blobContainerName),
-    name: cdktf.stringToTerraform(struct!.name),
-    storage_account_id: cdktf.stringToTerraform(struct!.storageAccountId),
+    archive_name_format: cdktn.stringToTerraform(struct!.archiveNameFormat),
+    blob_container_name: cdktn.stringToTerraform(struct!.blobContainerName),
+    name: cdktn.stringToTerraform(struct!.name),
+    storage_account_id: cdktn.stringToTerraform(struct!.storageAccountId),
   }
 }
 
 
 export function eventhubCaptureDescriptionDestinationToHclTerraform(struct?: EventhubCaptureDescriptionDestinationOutputReference | EventhubCaptureDescriptionDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     archive_name_format: {
-      value: cdktf.stringToHclTerraform(struct!.archiveNameFormat),
+      value: cdktn.stringToHclTerraform(struct!.archiveNameFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     blob_container_name: {
-      value: cdktf.stringToHclTerraform(struct!.blobContainerName),
+      value: cdktn.stringToHclTerraform(struct!.blobContainerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountId),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,14 +135,14 @@ export function eventhubCaptureDescriptionDestinationToHclTerraform(struct?: Eve
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventhubCaptureDescriptionDestinationOutputReference extends cdktf.ComplexObject {
+export class EventhubCaptureDescriptionDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -241,7 +241,7 @@ export interface EventhubCaptureDescription {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub#enabled Eventhub#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub#encoding Eventhub#encoding}
   */
@@ -257,7 +257,7 @@ export interface EventhubCaptureDescription {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub#skip_empty_archives Eventhub#skip_empty_archives}
   */
-  readonly skipEmptyArchives?: boolean | cdktf.IResolvable;
+  readonly skipEmptyArchives?: boolean | cdktn.IResolvable;
   /**
   * destination block
   *
@@ -267,53 +267,53 @@ export interface EventhubCaptureDescription {
 }
 
 export function eventhubCaptureDescriptionToTerraform(struct?: EventhubCaptureDescriptionOutputReference | EventhubCaptureDescription): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    encoding: cdktf.stringToTerraform(struct!.encoding),
-    interval_in_seconds: cdktf.numberToTerraform(struct!.intervalInSeconds),
-    size_limit_in_bytes: cdktf.numberToTerraform(struct!.sizeLimitInBytes),
-    skip_empty_archives: cdktf.booleanToTerraform(struct!.skipEmptyArchives),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    encoding: cdktn.stringToTerraform(struct!.encoding),
+    interval_in_seconds: cdktn.numberToTerraform(struct!.intervalInSeconds),
+    size_limit_in_bytes: cdktn.numberToTerraform(struct!.sizeLimitInBytes),
+    skip_empty_archives: cdktn.booleanToTerraform(struct!.skipEmptyArchives),
     destination: eventhubCaptureDescriptionDestinationToTerraform(struct!.destination),
   }
 }
 
 
 export function eventhubCaptureDescriptionToHclTerraform(struct?: EventhubCaptureDescriptionOutputReference | EventhubCaptureDescription): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encoding: {
-      value: cdktf.stringToHclTerraform(struct!.encoding),
+      value: cdktn.stringToHclTerraform(struct!.encoding),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.intervalInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.intervalInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     size_limit_in_bytes: {
-      value: cdktf.numberToHclTerraform(struct!.sizeLimitInBytes),
+      value: cdktn.numberToHclTerraform(struct!.sizeLimitInBytes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     skip_empty_archives: {
-      value: cdktf.booleanToHclTerraform(struct!.skipEmptyArchives),
+      value: cdktn.booleanToHclTerraform(struct!.skipEmptyArchives),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -330,14 +330,14 @@ export function eventhubCaptureDescriptionToHclTerraform(struct?: EventhubCaptur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventhubCaptureDescriptionOutputReference extends cdktf.ComplexObject {
+export class EventhubCaptureDescriptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -393,11 +393,11 @@ export class EventhubCaptureDescriptionOutputReference extends cdktf.ComplexObje
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -451,11 +451,11 @@ export class EventhubCaptureDescriptionOutputReference extends cdktf.ComplexObje
   }
 
   // skip_empty_archives - computed: false, optional: true, required: false
-  private _skipEmptyArchives?: boolean | cdktf.IResolvable; 
+  private _skipEmptyArchives?: boolean | cdktn.IResolvable; 
   public get skipEmptyArchives() {
     return this.getBooleanAttribute('skip_empty_archives');
   }
-  public set skipEmptyArchives(value: boolean | cdktf.IResolvable) {
+  public set skipEmptyArchives(value: boolean | cdktn.IResolvable) {
     this._skipEmptyArchives = value;
   }
   public resetSkipEmptyArchives() {
@@ -495,38 +495,38 @@ export interface EventhubRetentionDescription {
 }
 
 export function eventhubRetentionDescriptionToTerraform(struct?: EventhubRetentionDescriptionOutputReference | EventhubRetentionDescription): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cleanup_policy: cdktf.stringToTerraform(struct!.cleanupPolicy),
-    retention_time_in_hours: cdktf.numberToTerraform(struct!.retentionTimeInHours),
-    tombstone_retention_time_in_hours: cdktf.numberToTerraform(struct!.tombstoneRetentionTimeInHours),
+    cleanup_policy: cdktn.stringToTerraform(struct!.cleanupPolicy),
+    retention_time_in_hours: cdktn.numberToTerraform(struct!.retentionTimeInHours),
+    tombstone_retention_time_in_hours: cdktn.numberToTerraform(struct!.tombstoneRetentionTimeInHours),
   }
 }
 
 
 export function eventhubRetentionDescriptionToHclTerraform(struct?: EventhubRetentionDescriptionOutputReference | EventhubRetentionDescription): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cleanup_policy: {
-      value: cdktf.stringToHclTerraform(struct!.cleanupPolicy),
+      value: cdktn.stringToHclTerraform(struct!.cleanupPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retention_time_in_hours: {
-      value: cdktf.numberToHclTerraform(struct!.retentionTimeInHours),
+      value: cdktn.numberToHclTerraform(struct!.retentionTimeInHours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tombstone_retention_time_in_hours: {
-      value: cdktf.numberToHclTerraform(struct!.tombstoneRetentionTimeInHours),
+      value: cdktn.numberToHclTerraform(struct!.tombstoneRetentionTimeInHours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -537,14 +537,14 @@ export function eventhubRetentionDescriptionToHclTerraform(struct?: EventhubRete
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventhubRetentionDescriptionOutputReference extends cdktf.ComplexObject {
+export class EventhubRetentionDescriptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -645,46 +645,46 @@ export interface EventhubTimeouts {
   readonly update?: string;
 }
 
-export function eventhubTimeoutsToTerraform(struct?: EventhubTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventhubTimeoutsToTerraform(struct?: EventhubTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function eventhubTimeoutsToHclTerraform(struct?: EventhubTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventhubTimeoutsToHclTerraform(struct?: EventhubTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -695,19 +695,19 @@ export function eventhubTimeoutsToHclTerraform(struct?: EventhubTimeouts | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventhubTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EventhubTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EventhubTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EventhubTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -732,7 +732,7 @@ export class EventhubTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventhubTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventhubTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -741,7 +741,7 @@ export class EventhubTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -823,7 +823,7 @@ export class EventhubTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub azurerm_eventhub}
 */
-export class Eventhub extends cdktf.TerraformResource {
+export class Eventhub extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -834,14 +834,14 @@ export class Eventhub extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Eventhub resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Eventhub resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Eventhub to import
   * @param importFromId The id of the existing Eventhub that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/eventhub#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Eventhub to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_eventhub", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_eventhub", importId: importFromId, provider });
       }
 
   // ===========
@@ -980,7 +980,7 @@ export class Eventhub extends cdktf.TerraformResource {
 
   // partition_ids - computed: true, optional: false, required: false
   public get partitionIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('partition_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('partition_ids'));
   }
 
   // resource_group_name - computed: true, optional: true, required: false
@@ -1069,14 +1069,14 @@ export class Eventhub extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      message_retention: cdktf.numberToTerraform(this._messageRetention),
-      name: cdktf.stringToTerraform(this._name),
-      namespace_id: cdktf.stringToTerraform(this._namespaceId),
-      namespace_name: cdktf.stringToTerraform(this._namespaceName),
-      partition_count: cdktf.numberToTerraform(this._partitionCount),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      status: cdktf.stringToTerraform(this._status),
+      id: cdktn.stringToTerraform(this._id),
+      message_retention: cdktn.numberToTerraform(this._messageRetention),
+      name: cdktn.stringToTerraform(this._name),
+      namespace_id: cdktn.stringToTerraform(this._namespaceId),
+      namespace_name: cdktn.stringToTerraform(this._namespaceName),
+      partition_count: cdktn.numberToTerraform(this._partitionCount),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      status: cdktn.stringToTerraform(this._status),
       capture_description: eventhubCaptureDescriptionToTerraform(this._captureDescription.internalValue),
       retention_description: eventhubRetentionDescriptionToTerraform(this._retentionDescription.internalValue),
       timeouts: eventhubTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1086,49 +1086,49 @@ export class Eventhub extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       message_retention: {
-        value: cdktf.numberToHclTerraform(this._messageRetention),
+        value: cdktn.numberToHclTerraform(this._messageRetention),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace_id: {
-        value: cdktf.stringToHclTerraform(this._namespaceId),
+        value: cdktn.stringToHclTerraform(this._namespaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace_name: {
-        value: cdktf.stringToHclTerraform(this._namespaceName),
+        value: cdktn.stringToHclTerraform(this._namespaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       partition_count: {
-        value: cdktf.numberToHclTerraform(this._partitionCount),
+        value: cdktn.numberToHclTerraform(this._partitionCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

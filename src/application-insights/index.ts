@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApplicationInsightsConfig extends cdktf.TerraformMetaArguments {
+export interface ApplicationInsightsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights#application_type ApplicationInsights#application_type}
   */
@@ -23,15 +23,15 @@ export interface ApplicationInsightsConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights#daily_data_cap_notifications_disabled ApplicationInsights#daily_data_cap_notifications_disabled}
   */
-  readonly dailyDataCapNotificationsDisabled?: boolean | cdktf.IResolvable;
+  readonly dailyDataCapNotificationsDisabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights#disable_ip_masking ApplicationInsights#disable_ip_masking}
   */
-  readonly disableIpMasking?: boolean | cdktf.IResolvable;
+  readonly disableIpMasking?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights#force_customer_storage_for_profiler ApplicationInsights#force_customer_storage_for_profiler}
   */
-  readonly forceCustomerStorageForProfiler?: boolean | cdktf.IResolvable;
+  readonly forceCustomerStorageForProfiler?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights#id ApplicationInsights#id}
   *
@@ -42,15 +42,15 @@ export interface ApplicationInsightsConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights#internet_ingestion_enabled ApplicationInsights#internet_ingestion_enabled}
   */
-  readonly internetIngestionEnabled?: boolean | cdktf.IResolvable;
+  readonly internetIngestionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights#internet_query_enabled ApplicationInsights#internet_query_enabled}
   */
-  readonly internetQueryEnabled?: boolean | cdktf.IResolvable;
+  readonly internetQueryEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights#local_authentication_disabled ApplicationInsights#local_authentication_disabled}
   */
-  readonly localAuthenticationDisabled?: boolean | cdktf.IResolvable;
+  readonly localAuthenticationDisabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights#location ApplicationInsights#location}
   */
@@ -105,46 +105,46 @@ export interface ApplicationInsightsTimeouts {
   readonly update?: string;
 }
 
-export function applicationInsightsTimeoutsToTerraform(struct?: ApplicationInsightsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationInsightsTimeoutsToTerraform(struct?: ApplicationInsightsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function applicationInsightsTimeoutsToHclTerraform(struct?: ApplicationInsightsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationInsightsTimeoutsToHclTerraform(struct?: ApplicationInsightsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -155,19 +155,19 @@ export function applicationInsightsTimeoutsToHclTerraform(struct?: ApplicationIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationInsightsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApplicationInsightsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApplicationInsightsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationInsightsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -192,7 +192,7 @@ export class ApplicationInsightsTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationInsightsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationInsightsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -201,7 +201,7 @@ export class ApplicationInsightsTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -283,7 +283,7 @@ export class ApplicationInsightsTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights azurerm_application_insights}
 */
-export class ApplicationInsights extends cdktf.TerraformResource {
+export class ApplicationInsights extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -294,14 +294,14 @@ export class ApplicationInsights extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApplicationInsights resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApplicationInsights resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationInsights to import
   * @param importFromId The id of the existing ApplicationInsights that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationInsights to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_application_insights", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_application_insights", importId: importFromId, provider });
       }
 
   // ===========
@@ -394,11 +394,11 @@ export class ApplicationInsights extends cdktf.TerraformResource {
   }
 
   // daily_data_cap_notifications_disabled - computed: false, optional: true, required: false
-  private _dailyDataCapNotificationsDisabled?: boolean | cdktf.IResolvable; 
+  private _dailyDataCapNotificationsDisabled?: boolean | cdktn.IResolvable; 
   public get dailyDataCapNotificationsDisabled() {
     return this.getBooleanAttribute('daily_data_cap_notifications_disabled');
   }
-  public set dailyDataCapNotificationsDisabled(value: boolean | cdktf.IResolvable) {
+  public set dailyDataCapNotificationsDisabled(value: boolean | cdktn.IResolvable) {
     this._dailyDataCapNotificationsDisabled = value;
   }
   public resetDailyDataCapNotificationsDisabled() {
@@ -410,11 +410,11 @@ export class ApplicationInsights extends cdktf.TerraformResource {
   }
 
   // disable_ip_masking - computed: false, optional: true, required: false
-  private _disableIpMasking?: boolean | cdktf.IResolvable; 
+  private _disableIpMasking?: boolean | cdktn.IResolvable; 
   public get disableIpMasking() {
     return this.getBooleanAttribute('disable_ip_masking');
   }
-  public set disableIpMasking(value: boolean | cdktf.IResolvable) {
+  public set disableIpMasking(value: boolean | cdktn.IResolvable) {
     this._disableIpMasking = value;
   }
   public resetDisableIpMasking() {
@@ -426,11 +426,11 @@ export class ApplicationInsights extends cdktf.TerraformResource {
   }
 
   // force_customer_storage_for_profiler - computed: false, optional: true, required: false
-  private _forceCustomerStorageForProfiler?: boolean | cdktf.IResolvable; 
+  private _forceCustomerStorageForProfiler?: boolean | cdktn.IResolvable; 
   public get forceCustomerStorageForProfiler() {
     return this.getBooleanAttribute('force_customer_storage_for_profiler');
   }
-  public set forceCustomerStorageForProfiler(value: boolean | cdktf.IResolvable) {
+  public set forceCustomerStorageForProfiler(value: boolean | cdktn.IResolvable) {
     this._forceCustomerStorageForProfiler = value;
   }
   public resetForceCustomerStorageForProfiler() {
@@ -463,11 +463,11 @@ export class ApplicationInsights extends cdktf.TerraformResource {
   }
 
   // internet_ingestion_enabled - computed: false, optional: true, required: false
-  private _internetIngestionEnabled?: boolean | cdktf.IResolvable; 
+  private _internetIngestionEnabled?: boolean | cdktn.IResolvable; 
   public get internetIngestionEnabled() {
     return this.getBooleanAttribute('internet_ingestion_enabled');
   }
-  public set internetIngestionEnabled(value: boolean | cdktf.IResolvable) {
+  public set internetIngestionEnabled(value: boolean | cdktn.IResolvable) {
     this._internetIngestionEnabled = value;
   }
   public resetInternetIngestionEnabled() {
@@ -479,11 +479,11 @@ export class ApplicationInsights extends cdktf.TerraformResource {
   }
 
   // internet_query_enabled - computed: false, optional: true, required: false
-  private _internetQueryEnabled?: boolean | cdktf.IResolvable; 
+  private _internetQueryEnabled?: boolean | cdktn.IResolvable; 
   public get internetQueryEnabled() {
     return this.getBooleanAttribute('internet_query_enabled');
   }
-  public set internetQueryEnabled(value: boolean | cdktf.IResolvable) {
+  public set internetQueryEnabled(value: boolean | cdktn.IResolvable) {
     this._internetQueryEnabled = value;
   }
   public resetInternetQueryEnabled() {
@@ -495,11 +495,11 @@ export class ApplicationInsights extends cdktf.TerraformResource {
   }
 
   // local_authentication_disabled - computed: false, optional: true, required: false
-  private _localAuthenticationDisabled?: boolean | cdktf.IResolvable; 
+  private _localAuthenticationDisabled?: boolean | cdktn.IResolvable; 
   public get localAuthenticationDisabled() {
     return this.getBooleanAttribute('local_authentication_disabled');
   }
-  public set localAuthenticationDisabled(value: boolean | cdktf.IResolvable) {
+  public set localAuthenticationDisabled(value: boolean | cdktn.IResolvable) {
     this._localAuthenticationDisabled = value;
   }
   public resetLocalAuthenticationDisabled() {
@@ -635,22 +635,22 @@ export class ApplicationInsights extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_type: cdktf.stringToTerraform(this._applicationType),
-      daily_data_cap_in_gb: cdktf.numberToTerraform(this._dailyDataCapInGb),
-      daily_data_cap_notifications_disabled: cdktf.booleanToTerraform(this._dailyDataCapNotificationsDisabled),
-      disable_ip_masking: cdktf.booleanToTerraform(this._disableIpMasking),
-      force_customer_storage_for_profiler: cdktf.booleanToTerraform(this._forceCustomerStorageForProfiler),
-      id: cdktf.stringToTerraform(this._id),
-      internet_ingestion_enabled: cdktf.booleanToTerraform(this._internetIngestionEnabled),
-      internet_query_enabled: cdktf.booleanToTerraform(this._internetQueryEnabled),
-      local_authentication_disabled: cdktf.booleanToTerraform(this._localAuthenticationDisabled),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      retention_in_days: cdktf.numberToTerraform(this._retentionInDays),
-      sampling_percentage: cdktf.numberToTerraform(this._samplingPercentage),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
+      application_type: cdktn.stringToTerraform(this._applicationType),
+      daily_data_cap_in_gb: cdktn.numberToTerraform(this._dailyDataCapInGb),
+      daily_data_cap_notifications_disabled: cdktn.booleanToTerraform(this._dailyDataCapNotificationsDisabled),
+      disable_ip_masking: cdktn.booleanToTerraform(this._disableIpMasking),
+      force_customer_storage_for_profiler: cdktn.booleanToTerraform(this._forceCustomerStorageForProfiler),
+      id: cdktn.stringToTerraform(this._id),
+      internet_ingestion_enabled: cdktn.booleanToTerraform(this._internetIngestionEnabled),
+      internet_query_enabled: cdktn.booleanToTerraform(this._internetQueryEnabled),
+      local_authentication_disabled: cdktn.booleanToTerraform(this._localAuthenticationDisabled),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      retention_in_days: cdktn.numberToTerraform(this._retentionInDays),
+      sampling_percentage: cdktn.numberToTerraform(this._samplingPercentage),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
       timeouts: applicationInsightsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -658,97 +658,97 @@ export class ApplicationInsights extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_type: {
-        value: cdktf.stringToHclTerraform(this._applicationType),
+        value: cdktn.stringToHclTerraform(this._applicationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       daily_data_cap_in_gb: {
-        value: cdktf.numberToHclTerraform(this._dailyDataCapInGb),
+        value: cdktn.numberToHclTerraform(this._dailyDataCapInGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       daily_data_cap_notifications_disabled: {
-        value: cdktf.booleanToHclTerraform(this._dailyDataCapNotificationsDisabled),
+        value: cdktn.booleanToHclTerraform(this._dailyDataCapNotificationsDisabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_ip_masking: {
-        value: cdktf.booleanToHclTerraform(this._disableIpMasking),
+        value: cdktn.booleanToHclTerraform(this._disableIpMasking),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_customer_storage_for_profiler: {
-        value: cdktf.booleanToHclTerraform(this._forceCustomerStorageForProfiler),
+        value: cdktn.booleanToHclTerraform(this._forceCustomerStorageForProfiler),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       internet_ingestion_enabled: {
-        value: cdktf.booleanToHclTerraform(this._internetIngestionEnabled),
+        value: cdktn.booleanToHclTerraform(this._internetIngestionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       internet_query_enabled: {
-        value: cdktf.booleanToHclTerraform(this._internetQueryEnabled),
+        value: cdktn.booleanToHclTerraform(this._internetQueryEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       local_authentication_disabled: {
-        value: cdktf.booleanToHclTerraform(this._localAuthenticationDisabled),
+        value: cdktn.booleanToHclTerraform(this._localAuthenticationDisabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_in_days: {
-        value: cdktf.numberToHclTerraform(this._retentionInDays),
+        value: cdktn.numberToHclTerraform(this._retentionInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       sampling_percentage: {
-        value: cdktf.numberToHclTerraform(this._samplingPercentage),
+        value: cdktn.numberToHclTerraform(this._samplingPercentage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

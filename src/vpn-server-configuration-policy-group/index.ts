@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VpnServerConfigurationPolicyGroupConfig extends cdktf.TerraformMetaArguments {
+export interface VpnServerConfigurationPolicyGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/vpn_server_configuration_policy_group#id VpnServerConfigurationPolicyGroup#id}
   *
@@ -22,7 +22,7 @@ export interface VpnServerConfigurationPolicyGroupConfig extends cdktf.Terraform
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/vpn_server_configuration_policy_group#is_default VpnServerConfigurationPolicyGroup#is_default}
   */
-  readonly isDefault?: boolean | cdktf.IResolvable;
+  readonly isDefault?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/vpn_server_configuration_policy_group#name VpnServerConfigurationPolicyGroup#name}
   */
@@ -40,7 +40,7 @@ export interface VpnServerConfigurationPolicyGroupConfig extends cdktf.Terraform
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/vpn_server_configuration_policy_group#policy VpnServerConfigurationPolicyGroup#policy}
   */
-  readonly policy: VpnServerConfigurationPolicyGroupPolicy[] | cdktf.IResolvable;
+  readonly policy: VpnServerConfigurationPolicyGroupPolicy[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -63,39 +63,39 @@ export interface VpnServerConfigurationPolicyGroupPolicy {
   readonly value: string;
 }
 
-export function vpnServerConfigurationPolicyGroupPolicyToTerraform(struct?: VpnServerConfigurationPolicyGroupPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpnServerConfigurationPolicyGroupPolicyToTerraform(struct?: VpnServerConfigurationPolicyGroupPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function vpnServerConfigurationPolicyGroupPolicyToHclTerraform(struct?: VpnServerConfigurationPolicyGroupPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpnServerConfigurationPolicyGroupPolicyToHclTerraform(struct?: VpnServerConfigurationPolicyGroupPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -106,9 +106,9 @@ export function vpnServerConfigurationPolicyGroupPolicyToHclTerraform(struct?: V
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpnServerConfigurationPolicyGroupPolicyOutputReference extends cdktf.ComplexObject {
+export class VpnServerConfigurationPolicyGroupPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -116,11 +116,11 @@ export class VpnServerConfigurationPolicyGroupPolicyOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VpnServerConfigurationPolicyGroupPolicy | cdktf.IResolvable | undefined {
+  public get internalValue(): VpnServerConfigurationPolicyGroupPolicy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -141,7 +141,7 @@ export class VpnServerConfigurationPolicyGroupPolicyOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpnServerConfigurationPolicyGroupPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpnServerConfigurationPolicyGroupPolicy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -149,7 +149,7 @@ export class VpnServerConfigurationPolicyGroupPolicyOutputReference extends cdkt
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -202,15 +202,15 @@ export class VpnServerConfigurationPolicyGroupPolicyOutputReference extends cdkt
   }
 }
 
-export class VpnServerConfigurationPolicyGroupPolicyList extends cdktf.ComplexList {
-  public internalValue? : VpnServerConfigurationPolicyGroupPolicy[] | cdktf.IResolvable
+export class VpnServerConfigurationPolicyGroupPolicyList extends cdktn.ComplexList {
+  public internalValue? : VpnServerConfigurationPolicyGroupPolicy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -240,46 +240,46 @@ export interface VpnServerConfigurationPolicyGroupTimeouts {
   readonly update?: string;
 }
 
-export function vpnServerConfigurationPolicyGroupTimeoutsToTerraform(struct?: VpnServerConfigurationPolicyGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpnServerConfigurationPolicyGroupTimeoutsToTerraform(struct?: VpnServerConfigurationPolicyGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function vpnServerConfigurationPolicyGroupTimeoutsToHclTerraform(struct?: VpnServerConfigurationPolicyGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vpnServerConfigurationPolicyGroupTimeoutsToHclTerraform(struct?: VpnServerConfigurationPolicyGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -290,19 +290,19 @@ export function vpnServerConfigurationPolicyGroupTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VpnServerConfigurationPolicyGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VpnServerConfigurationPolicyGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VpnServerConfigurationPolicyGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VpnServerConfigurationPolicyGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -327,7 +327,7 @@ export class VpnServerConfigurationPolicyGroupTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpnServerConfigurationPolicyGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VpnServerConfigurationPolicyGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -336,7 +336,7 @@ export class VpnServerConfigurationPolicyGroupTimeoutsOutputReference extends cd
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -418,7 +418,7 @@ export class VpnServerConfigurationPolicyGroupTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/vpn_server_configuration_policy_group azurerm_vpn_server_configuration_policy_group}
 */
-export class VpnServerConfigurationPolicyGroup extends cdktf.TerraformResource {
+export class VpnServerConfigurationPolicyGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -429,14 +429,14 @@ export class VpnServerConfigurationPolicyGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VpnServerConfigurationPolicyGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VpnServerConfigurationPolicyGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpnServerConfigurationPolicyGroup to import
   * @param importFromId The id of the existing VpnServerConfigurationPolicyGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/vpn_server_configuration_policy_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpnServerConfigurationPolicyGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_vpn_server_configuration_policy_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_vpn_server_configuration_policy_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -496,11 +496,11 @@ export class VpnServerConfigurationPolicyGroup extends cdktf.TerraformResource {
   }
 
   // is_default - computed: false, optional: true, required: false
-  private _isDefault?: boolean | cdktf.IResolvable; 
+  private _isDefault?: boolean | cdktn.IResolvable; 
   public get isDefault() {
     return this.getBooleanAttribute('is_default');
   }
-  public set isDefault(value: boolean | cdktf.IResolvable) {
+  public set isDefault(value: boolean | cdktn.IResolvable) {
     this._isDefault = value;
   }
   public resetIsDefault() {
@@ -558,7 +558,7 @@ export class VpnServerConfigurationPolicyGroup extends cdktf.TerraformResource {
   public get policy() {
     return this._policy;
   }
-  public putPolicy(value: VpnServerConfigurationPolicyGroupPolicy[] | cdktf.IResolvable) {
+  public putPolicy(value: VpnServerConfigurationPolicyGroupPolicy[] | cdktn.IResolvable) {
     this._policy.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -588,12 +588,12 @@ export class VpnServerConfigurationPolicyGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      is_default: cdktf.booleanToTerraform(this._isDefault),
-      name: cdktf.stringToTerraform(this._name),
-      priority: cdktf.numberToTerraform(this._priority),
-      vpn_server_configuration_id: cdktf.stringToTerraform(this._vpnServerConfigurationId),
-      policy: cdktf.listMapper(vpnServerConfigurationPolicyGroupPolicyToTerraform, true)(this._policy.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      is_default: cdktn.booleanToTerraform(this._isDefault),
+      name: cdktn.stringToTerraform(this._name),
+      priority: cdktn.numberToTerraform(this._priority),
+      vpn_server_configuration_id: cdktn.stringToTerraform(this._vpnServerConfigurationId),
+      policy: cdktn.listMapper(vpnServerConfigurationPolicyGroupPolicyToTerraform, true)(this._policy.internalValue),
       timeouts: vpnServerConfigurationPolicyGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -601,37 +601,37 @@ export class VpnServerConfigurationPolicyGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_default: {
-        value: cdktf.booleanToHclTerraform(this._isDefault),
+        value: cdktn.booleanToHclTerraform(this._isDefault),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       vpn_server_configuration_id: {
-        value: cdktf.stringToHclTerraform(this._vpnServerConfigurationId),
+        value: cdktn.stringToHclTerraform(this._vpnServerConfigurationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy: {
-        value: cdktf.listMapperHcl(vpnServerConfigurationPolicyGroupPolicyToHclTerraform, true)(this._policy.internalValue),
+        value: cdktn.listMapperHcl(vpnServerConfigurationPolicyGroupPolicyToHclTerraform, true)(this._policy.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "VpnServerConfigurationPolicyGroupPolicyList",

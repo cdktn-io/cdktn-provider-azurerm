@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkSecurityGroupConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkSecurityGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_security_group#id NetworkSecurityGroup#id}
   *
@@ -34,7 +34,7 @@ export interface NetworkSecurityGroupConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_security_group#security_rule NetworkSecurityGroup#security_rule}
   */
-  readonly securityRule?: NetworkSecurityGroupSecurityRule[] | cdktf.IResolvable;
+  readonly securityRule?: NetworkSecurityGroupSecurityRule[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_security_group#tags NetworkSecurityGroup#tags}
   */
@@ -113,130 +113,130 @@ export interface NetworkSecurityGroupSecurityRule {
   readonly sourcePortRanges?: string[];
 }
 
-export function networkSecurityGroupSecurityRuleToTerraform(struct?: NetworkSecurityGroupSecurityRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecurityGroupSecurityRuleToTerraform(struct?: NetworkSecurityGroupSecurityRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access: struct!.access === undefined ? null : cdktf.stringToTerraform(struct!.access),
-    description: struct!.description === undefined ? null : cdktf.stringToTerraform(struct!.description),
-    destination_address_prefix: struct!.destinationAddressPrefix === undefined ? null : cdktf.stringToTerraform(struct!.destinationAddressPrefix),
-    destination_address_prefixes: struct!.destinationAddressPrefixes === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destinationAddressPrefixes),
-    destination_application_security_group_ids: struct!.destinationApplicationSecurityGroupIds === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destinationApplicationSecurityGroupIds),
-    destination_port_range: struct!.destinationPortRange === undefined ? null : cdktf.stringToTerraform(struct!.destinationPortRange),
-    destination_port_ranges: struct!.destinationPortRanges === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destinationPortRanges),
-    direction: struct!.direction === undefined ? null : cdktf.stringToTerraform(struct!.direction),
-    name: struct!.name === undefined ? null : cdktf.stringToTerraform(struct!.name),
-    priority: struct!.priority === undefined ? null : cdktf.numberToTerraform(struct!.priority),
-    protocol: struct!.protocol === undefined ? null : cdktf.stringToTerraform(struct!.protocol),
-    source_address_prefix: struct!.sourceAddressPrefix === undefined ? null : cdktf.stringToTerraform(struct!.sourceAddressPrefix),
-    source_address_prefixes: struct!.sourceAddressPrefixes === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sourceAddressPrefixes),
-    source_application_security_group_ids: struct!.sourceApplicationSecurityGroupIds === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sourceApplicationSecurityGroupIds),
-    source_port_range: struct!.sourcePortRange === undefined ? null : cdktf.stringToTerraform(struct!.sourcePortRange),
-    source_port_ranges: struct!.sourcePortRanges === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sourcePortRanges),
+    access: struct!.access === undefined ? null : cdktn.stringToTerraform(struct!.access),
+    description: struct!.description === undefined ? null : cdktn.stringToTerraform(struct!.description),
+    destination_address_prefix: struct!.destinationAddressPrefix === undefined ? null : cdktn.stringToTerraform(struct!.destinationAddressPrefix),
+    destination_address_prefixes: struct!.destinationAddressPrefixes === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinationAddressPrefixes),
+    destination_application_security_group_ids: struct!.destinationApplicationSecurityGroupIds === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinationApplicationSecurityGroupIds),
+    destination_port_range: struct!.destinationPortRange === undefined ? null : cdktn.stringToTerraform(struct!.destinationPortRange),
+    destination_port_ranges: struct!.destinationPortRanges === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinationPortRanges),
+    direction: struct!.direction === undefined ? null : cdktn.stringToTerraform(struct!.direction),
+    name: struct!.name === undefined ? null : cdktn.stringToTerraform(struct!.name),
+    priority: struct!.priority === undefined ? null : cdktn.numberToTerraform(struct!.priority),
+    protocol: struct!.protocol === undefined ? null : cdktn.stringToTerraform(struct!.protocol),
+    source_address_prefix: struct!.sourceAddressPrefix === undefined ? null : cdktn.stringToTerraform(struct!.sourceAddressPrefix),
+    source_address_prefixes: struct!.sourceAddressPrefixes === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sourceAddressPrefixes),
+    source_application_security_group_ids: struct!.sourceApplicationSecurityGroupIds === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sourceApplicationSecurityGroupIds),
+    source_port_range: struct!.sourcePortRange === undefined ? null : cdktn.stringToTerraform(struct!.sourcePortRange),
+    source_port_ranges: struct!.sourcePortRanges === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sourcePortRanges),
   }
 }
 
 
-export function networkSecurityGroupSecurityRuleToHclTerraform(struct?: NetworkSecurityGroupSecurityRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecurityGroupSecurityRuleToHclTerraform(struct?: NetworkSecurityGroupSecurityRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access: {
-      value: struct!.access === undefined ? null : cdktf.stringToHclTerraform(struct!.access),
+      value: struct!.access === undefined ? null : cdktn.stringToHclTerraform(struct!.access),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: struct!.description === undefined ? null : cdktf.stringToHclTerraform(struct!.description),
+      value: struct!.description === undefined ? null : cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination_address_prefix: {
-      value: struct!.destinationAddressPrefix === undefined ? null : cdktf.stringToHclTerraform(struct!.destinationAddressPrefix),
+      value: struct!.destinationAddressPrefix === undefined ? null : cdktn.stringToHclTerraform(struct!.destinationAddressPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination_address_prefixes: {
-      value: struct!.destinationAddressPrefixes === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinationAddressPrefixes),
+      value: struct!.destinationAddressPrefixes === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destinationAddressPrefixes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     destination_application_security_group_ids: {
-      value: struct!.destinationApplicationSecurityGroupIds === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinationApplicationSecurityGroupIds),
+      value: struct!.destinationApplicationSecurityGroupIds === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destinationApplicationSecurityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     destination_port_range: {
-      value: struct!.destinationPortRange === undefined ? null : cdktf.stringToHclTerraform(struct!.destinationPortRange),
+      value: struct!.destinationPortRange === undefined ? null : cdktn.stringToHclTerraform(struct!.destinationPortRange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination_port_ranges: {
-      value: struct!.destinationPortRanges === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinationPortRanges),
+      value: struct!.destinationPortRanges === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destinationPortRanges),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     direction: {
-      value: struct!.direction === undefined ? null : cdktf.stringToHclTerraform(struct!.direction),
+      value: struct!.direction === undefined ? null : cdktn.stringToHclTerraform(struct!.direction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: struct!.name === undefined ? null : cdktf.stringToHclTerraform(struct!.name),
+      value: struct!.name === undefined ? null : cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: struct!.priority === undefined ? null : cdktf.numberToHclTerraform(struct!.priority),
+      value: struct!.priority === undefined ? null : cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     protocol: {
-      value: struct!.protocol === undefined ? null : cdktf.stringToHclTerraform(struct!.protocol),
+      value: struct!.protocol === undefined ? null : cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_address_prefix: {
-      value: struct!.sourceAddressPrefix === undefined ? null : cdktf.stringToHclTerraform(struct!.sourceAddressPrefix),
+      value: struct!.sourceAddressPrefix === undefined ? null : cdktn.stringToHclTerraform(struct!.sourceAddressPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_address_prefixes: {
-      value: struct!.sourceAddressPrefixes === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceAddressPrefixes),
+      value: struct!.sourceAddressPrefixes === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sourceAddressPrefixes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     source_application_security_group_ids: {
-      value: struct!.sourceApplicationSecurityGroupIds === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceApplicationSecurityGroupIds),
+      value: struct!.sourceApplicationSecurityGroupIds === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sourceApplicationSecurityGroupIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     source_port_range: {
-      value: struct!.sourcePortRange === undefined ? null : cdktf.stringToHclTerraform(struct!.sourcePortRange),
+      value: struct!.sourcePortRange === undefined ? null : cdktn.stringToHclTerraform(struct!.sourcePortRange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_port_ranges: {
-      value: struct!.sourcePortRanges === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourcePortRanges),
+      value: struct!.sourcePortRanges === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sourcePortRanges),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -247,9 +247,9 @@ export function networkSecurityGroupSecurityRuleToHclTerraform(struct?: NetworkS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkSecurityGroupSecurityRuleOutputReference extends cdktf.ComplexObject {
+export class NetworkSecurityGroupSecurityRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -257,11 +257,11 @@ export class NetworkSecurityGroupSecurityRuleOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkSecurityGroupSecurityRule | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkSecurityGroupSecurityRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -334,7 +334,7 @@ export class NetworkSecurityGroupSecurityRuleOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkSecurityGroupSecurityRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkSecurityGroupSecurityRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -355,7 +355,7 @@ export class NetworkSecurityGroupSecurityRuleOutputReference extends cdktf.Compl
       this._sourcePortRange = undefined;
       this._sourcePortRanges = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -432,7 +432,7 @@ export class NetworkSecurityGroupSecurityRuleOutputReference extends cdktf.Compl
   // destination_address_prefixes - computed: true, optional: true, required: false
   private _destinationAddressPrefixes?: string[]; 
   public get destinationAddressPrefixes() {
-    return cdktf.Fn.tolist(this.getListAttribute('destination_address_prefixes'));
+    return cdktn.Fn.tolist(this.getListAttribute('destination_address_prefixes'));
   }
   public set destinationAddressPrefixes(value: string[]) {
     this._destinationAddressPrefixes = value;
@@ -448,7 +448,7 @@ export class NetworkSecurityGroupSecurityRuleOutputReference extends cdktf.Compl
   // destination_application_security_group_ids - computed: true, optional: true, required: false
   private _destinationApplicationSecurityGroupIds?: string[]; 
   public get destinationApplicationSecurityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('destination_application_security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('destination_application_security_group_ids'));
   }
   public set destinationApplicationSecurityGroupIds(value: string[]) {
     this._destinationApplicationSecurityGroupIds = value;
@@ -480,7 +480,7 @@ export class NetworkSecurityGroupSecurityRuleOutputReference extends cdktf.Compl
   // destination_port_ranges - computed: true, optional: true, required: false
   private _destinationPortRanges?: string[]; 
   public get destinationPortRanges() {
-    return cdktf.Fn.tolist(this.getListAttribute('destination_port_ranges'));
+    return cdktn.Fn.tolist(this.getListAttribute('destination_port_ranges'));
   }
   public set destinationPortRanges(value: string[]) {
     this._destinationPortRanges = value;
@@ -576,7 +576,7 @@ export class NetworkSecurityGroupSecurityRuleOutputReference extends cdktf.Compl
   // source_address_prefixes - computed: true, optional: true, required: false
   private _sourceAddressPrefixes?: string[]; 
   public get sourceAddressPrefixes() {
-    return cdktf.Fn.tolist(this.getListAttribute('source_address_prefixes'));
+    return cdktn.Fn.tolist(this.getListAttribute('source_address_prefixes'));
   }
   public set sourceAddressPrefixes(value: string[]) {
     this._sourceAddressPrefixes = value;
@@ -592,7 +592,7 @@ export class NetworkSecurityGroupSecurityRuleOutputReference extends cdktf.Compl
   // source_application_security_group_ids - computed: true, optional: true, required: false
   private _sourceApplicationSecurityGroupIds?: string[]; 
   public get sourceApplicationSecurityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('source_application_security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('source_application_security_group_ids'));
   }
   public set sourceApplicationSecurityGroupIds(value: string[]) {
     this._sourceApplicationSecurityGroupIds = value;
@@ -624,7 +624,7 @@ export class NetworkSecurityGroupSecurityRuleOutputReference extends cdktf.Compl
   // source_port_ranges - computed: true, optional: true, required: false
   private _sourcePortRanges?: string[]; 
   public get sourcePortRanges() {
-    return cdktf.Fn.tolist(this.getListAttribute('source_port_ranges'));
+    return cdktn.Fn.tolist(this.getListAttribute('source_port_ranges'));
   }
   public set sourcePortRanges(value: string[]) {
     this._sourcePortRanges = value;
@@ -638,15 +638,15 @@ export class NetworkSecurityGroupSecurityRuleOutputReference extends cdktf.Compl
   }
 }
 
-export class NetworkSecurityGroupSecurityRuleList extends cdktf.ComplexList {
-  public internalValue? : NetworkSecurityGroupSecurityRule[] | cdktf.IResolvable
+export class NetworkSecurityGroupSecurityRuleList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecurityGroupSecurityRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -676,46 +676,46 @@ export interface NetworkSecurityGroupTimeouts {
   readonly update?: string;
 }
 
-export function networkSecurityGroupTimeoutsToTerraform(struct?: NetworkSecurityGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecurityGroupTimeoutsToTerraform(struct?: NetworkSecurityGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkSecurityGroupTimeoutsToHclTerraform(struct?: NetworkSecurityGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecurityGroupTimeoutsToHclTerraform(struct?: NetworkSecurityGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -726,19 +726,19 @@ export function networkSecurityGroupTimeoutsToHclTerraform(struct?: NetworkSecur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkSecurityGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkSecurityGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkSecurityGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkSecurityGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -763,7 +763,7 @@ export class NetworkSecurityGroupTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkSecurityGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkSecurityGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -772,7 +772,7 @@ export class NetworkSecurityGroupTimeoutsOutputReference extends cdktf.ComplexOb
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -854,7 +854,7 @@ export class NetworkSecurityGroupTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_security_group azurerm_network_security_group}
 */
-export class NetworkSecurityGroup extends cdktf.TerraformResource {
+export class NetworkSecurityGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -865,14 +865,14 @@ export class NetworkSecurityGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkSecurityGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkSecurityGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityGroup to import
   * @param importFromId The id of the existing NetworkSecurityGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_security_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_security_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_security_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -975,7 +975,7 @@ export class NetworkSecurityGroup extends cdktf.TerraformResource {
   public get securityRule() {
     return this._securityRule;
   }
-  public putSecurityRule(value: NetworkSecurityGroupSecurityRule[] | cdktf.IResolvable) {
+  public putSecurityRule(value: NetworkSecurityGroupSecurityRule[] | cdktn.IResolvable) {
     this._securityRule.internalValue = value;
   }
   public resetSecurityRule() {
@@ -1024,12 +1024,12 @@ export class NetworkSecurityGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      security_rule: cdktf.listMapper(networkSecurityGroupSecurityRuleToTerraform, false)(this._securityRule.internalValue),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      security_rule: cdktn.listMapper(networkSecurityGroupSecurityRuleToTerraform, false)(this._securityRule.internalValue),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: networkSecurityGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1037,37 +1037,37 @@ export class NetworkSecurityGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_rule: {
-        value: cdktf.listMapperHcl(networkSecurityGroupSecurityRuleToHclTerraform, false)(this._securityRule.internalValue),
+        value: cdktn.listMapperHcl(networkSecurityGroupSecurityRuleToHclTerraform, false)(this._securityRule.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "NetworkSecurityGroupSecurityRuleList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

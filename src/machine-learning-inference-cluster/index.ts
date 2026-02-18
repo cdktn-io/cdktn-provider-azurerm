@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MachineLearningInferenceClusterConfig extends cdktf.TerraformMetaArguments {
+export interface MachineLearningInferenceClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_inference_cluster#cluster_purpose MachineLearningInferenceCluster#cluster_purpose}
   */
@@ -78,31 +78,31 @@ export interface MachineLearningInferenceClusterIdentity {
 }
 
 export function machineLearningInferenceClusterIdentityToTerraform(struct?: MachineLearningInferenceClusterIdentityOutputReference | MachineLearningInferenceClusterIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function machineLearningInferenceClusterIdentityToHclTerraform(struct?: MachineLearningInferenceClusterIdentityOutputReference | MachineLearningInferenceClusterIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,14 +113,14 @@ export function machineLearningInferenceClusterIdentityToHclTerraform(struct?: M
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MachineLearningInferenceClusterIdentityOutputReference extends cdktf.ComplexObject {
+export class MachineLearningInferenceClusterIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -154,7 +154,7 @@ export class MachineLearningInferenceClusterIdentityOutputReference extends cdkt
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -210,56 +210,56 @@ export interface MachineLearningInferenceClusterSsl {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_inference_cluster#overwrite_existing_domain MachineLearningInferenceCluster#overwrite_existing_domain}
   */
-  readonly overwriteExistingDomain?: boolean | cdktf.IResolvable;
+  readonly overwriteExistingDomain?: boolean | cdktn.IResolvable;
 }
 
 export function machineLearningInferenceClusterSslToTerraform(struct?: MachineLearningInferenceClusterSslOutputReference | MachineLearningInferenceClusterSsl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cert: cdktf.stringToTerraform(struct!.cert),
-    cname: cdktf.stringToTerraform(struct!.cname),
-    key: cdktf.stringToTerraform(struct!.key),
-    leaf_domain_label: cdktf.stringToTerraform(struct!.leafDomainLabel),
-    overwrite_existing_domain: cdktf.booleanToTerraform(struct!.overwriteExistingDomain),
+    cert: cdktn.stringToTerraform(struct!.cert),
+    cname: cdktn.stringToTerraform(struct!.cname),
+    key: cdktn.stringToTerraform(struct!.key),
+    leaf_domain_label: cdktn.stringToTerraform(struct!.leafDomainLabel),
+    overwrite_existing_domain: cdktn.booleanToTerraform(struct!.overwriteExistingDomain),
   }
 }
 
 
 export function machineLearningInferenceClusterSslToHclTerraform(struct?: MachineLearningInferenceClusterSslOutputReference | MachineLearningInferenceClusterSsl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cert: {
-      value: cdktf.stringToHclTerraform(struct!.cert),
+      value: cdktn.stringToHclTerraform(struct!.cert),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cname: {
-      value: cdktf.stringToHclTerraform(struct!.cname),
+      value: cdktn.stringToHclTerraform(struct!.cname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     leaf_domain_label: {
-      value: cdktf.stringToHclTerraform(struct!.leafDomainLabel),
+      value: cdktn.stringToHclTerraform(struct!.leafDomainLabel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     overwrite_existing_domain: {
-      value: cdktf.booleanToHclTerraform(struct!.overwriteExistingDomain),
+      value: cdktn.booleanToHclTerraform(struct!.overwriteExistingDomain),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -270,14 +270,14 @@ export function machineLearningInferenceClusterSslToHclTerraform(struct?: Machin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MachineLearningInferenceClusterSslOutputReference extends cdktf.ComplexObject {
+export class MachineLearningInferenceClusterSslOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -391,11 +391,11 @@ export class MachineLearningInferenceClusterSslOutputReference extends cdktf.Com
   }
 
   // overwrite_existing_domain - computed: false, optional: true, required: false
-  private _overwriteExistingDomain?: boolean | cdktf.IResolvable; 
+  private _overwriteExistingDomain?: boolean | cdktn.IResolvable; 
   public get overwriteExistingDomain() {
     return this.getBooleanAttribute('overwrite_existing_domain');
   }
-  public set overwriteExistingDomain(value: boolean | cdktf.IResolvable) {
+  public set overwriteExistingDomain(value: boolean | cdktn.IResolvable) {
     this._overwriteExistingDomain = value;
   }
   public resetOverwriteExistingDomain() {
@@ -421,39 +421,39 @@ export interface MachineLearningInferenceClusterTimeouts {
   readonly read?: string;
 }
 
-export function machineLearningInferenceClusterTimeoutsToTerraform(struct?: MachineLearningInferenceClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function machineLearningInferenceClusterTimeoutsToTerraform(struct?: MachineLearningInferenceClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function machineLearningInferenceClusterTimeoutsToHclTerraform(struct?: MachineLearningInferenceClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function machineLearningInferenceClusterTimeoutsToHclTerraform(struct?: MachineLearningInferenceClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -464,19 +464,19 @@ export function machineLearningInferenceClusterTimeoutsToHclTerraform(struct?: M
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MachineLearningInferenceClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MachineLearningInferenceClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MachineLearningInferenceClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MachineLearningInferenceClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -497,7 +497,7 @@ export class MachineLearningInferenceClusterTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MachineLearningInferenceClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MachineLearningInferenceClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -505,7 +505,7 @@ export class MachineLearningInferenceClusterTimeoutsOutputReference extends cdkt
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -570,7 +570,7 @@ export class MachineLearningInferenceClusterTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_inference_cluster azurerm_machine_learning_inference_cluster}
 */
-export class MachineLearningInferenceCluster extends cdktf.TerraformResource {
+export class MachineLearningInferenceCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -581,14 +581,14 @@ export class MachineLearningInferenceCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MachineLearningInferenceCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MachineLearningInferenceCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MachineLearningInferenceCluster to import
   * @param importFromId The id of the existing MachineLearningInferenceCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/machine_learning_inference_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MachineLearningInferenceCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_machine_learning_inference_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_machine_learning_inference_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -805,14 +805,14 @@ export class MachineLearningInferenceCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_purpose: cdktf.stringToTerraform(this._clusterPurpose),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      kubernetes_cluster_id: cdktf.stringToTerraform(this._kubernetesClusterId),
-      location: cdktf.stringToTerraform(this._location),
-      machine_learning_workspace_id: cdktf.stringToTerraform(this._machineLearningWorkspaceId),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      cluster_purpose: cdktn.stringToTerraform(this._clusterPurpose),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      kubernetes_cluster_id: cdktn.stringToTerraform(this._kubernetesClusterId),
+      location: cdktn.stringToTerraform(this._location),
+      machine_learning_workspace_id: cdktn.stringToTerraform(this._machineLearningWorkspaceId),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       identity: machineLearningInferenceClusterIdentityToTerraform(this._identity.internalValue),
       ssl: machineLearningInferenceClusterSslToTerraform(this._ssl.internalValue),
       timeouts: machineLearningInferenceClusterTimeoutsToTerraform(this._timeouts.internalValue),
@@ -822,49 +822,49 @@ export class MachineLearningInferenceCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_purpose: {
-        value: cdktf.stringToHclTerraform(this._clusterPurpose),
+        value: cdktn.stringToHclTerraform(this._clusterPurpose),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kubernetes_cluster_id: {
-        value: cdktf.stringToHclTerraform(this._kubernetesClusterId),
+        value: cdktn.stringToHclTerraform(this._kubernetesClusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       machine_learning_workspace_id: {
-        value: cdktf.stringToHclTerraform(this._machineLearningWorkspaceId),
+        value: cdktn.stringToHclTerraform(this._machineLearningWorkspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

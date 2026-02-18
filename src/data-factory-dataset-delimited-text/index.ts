@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataFactoryDatasetDelimitedTextConfig extends cdktf.TerraformMetaArguments {
+export interface DataFactoryDatasetDelimitedTextConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#additional_properties DataFactoryDatasetDelimitedText#additional_properties}
   */
@@ -51,7 +51,7 @@ export interface DataFactoryDatasetDelimitedTextConfig extends cdktf.TerraformMe
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#first_row_as_header DataFactoryDatasetDelimitedText#first_row_as_header}
   */
-  readonly firstRowAsHeader?: boolean | cdktf.IResolvable;
+  readonly firstRowAsHeader?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#folder DataFactoryDatasetDelimitedText#folder}
   */
@@ -110,7 +110,7 @@ export interface DataFactoryDatasetDelimitedTextConfig extends cdktf.TerraformMe
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#schema_column DataFactoryDatasetDelimitedText#schema_column}
   */
-  readonly schemaColumn?: DataFactoryDatasetDelimitedTextSchemaColumn[] | cdktf.IResolvable;
+  readonly schemaColumn?: DataFactoryDatasetDelimitedTextSchemaColumn[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -122,15 +122,15 @@ export interface DataFactoryDatasetDelimitedTextAzureBlobFsLocation {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#dynamic_file_system_enabled DataFactoryDatasetDelimitedText#dynamic_file_system_enabled}
   */
-  readonly dynamicFileSystemEnabled?: boolean | cdktf.IResolvable;
+  readonly dynamicFileSystemEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#dynamic_filename_enabled DataFactoryDatasetDelimitedText#dynamic_filename_enabled}
   */
-  readonly dynamicFilenameEnabled?: boolean | cdktf.IResolvable;
+  readonly dynamicFilenameEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#dynamic_path_enabled DataFactoryDatasetDelimitedText#dynamic_path_enabled}
   */
-  readonly dynamicPathEnabled?: boolean | cdktf.IResolvable;
+  readonly dynamicPathEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#file_system DataFactoryDatasetDelimitedText#file_system}
   */
@@ -146,59 +146,59 @@ export interface DataFactoryDatasetDelimitedTextAzureBlobFsLocation {
 }
 
 export function dataFactoryDatasetDelimitedTextAzureBlobFsLocationToTerraform(struct?: DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference | DataFactoryDatasetDelimitedTextAzureBlobFsLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dynamic_file_system_enabled: cdktf.booleanToTerraform(struct!.dynamicFileSystemEnabled),
-    dynamic_filename_enabled: cdktf.booleanToTerraform(struct!.dynamicFilenameEnabled),
-    dynamic_path_enabled: cdktf.booleanToTerraform(struct!.dynamicPathEnabled),
-    file_system: cdktf.stringToTerraform(struct!.fileSystem),
-    filename: cdktf.stringToTerraform(struct!.filename),
-    path: cdktf.stringToTerraform(struct!.path),
+    dynamic_file_system_enabled: cdktn.booleanToTerraform(struct!.dynamicFileSystemEnabled),
+    dynamic_filename_enabled: cdktn.booleanToTerraform(struct!.dynamicFilenameEnabled),
+    dynamic_path_enabled: cdktn.booleanToTerraform(struct!.dynamicPathEnabled),
+    file_system: cdktn.stringToTerraform(struct!.fileSystem),
+    filename: cdktn.stringToTerraform(struct!.filename),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
 export function dataFactoryDatasetDelimitedTextAzureBlobFsLocationToHclTerraform(struct?: DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference | DataFactoryDatasetDelimitedTextAzureBlobFsLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dynamic_file_system_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.dynamicFileSystemEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.dynamicFileSystemEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     dynamic_filename_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.dynamicFilenameEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.dynamicFilenameEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     dynamic_path_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.dynamicPathEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.dynamicPathEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     file_system: {
-      value: cdktf.stringToHclTerraform(struct!.fileSystem),
+      value: cdktn.stringToHclTerraform(struct!.fileSystem),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filename: {
-      value: cdktf.stringToHclTerraform(struct!.filename),
+      value: cdktn.stringToHclTerraform(struct!.filename),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -209,14 +209,14 @@ export function dataFactoryDatasetDelimitedTextAzureBlobFsLocationToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference extends cdktf.ComplexObject {
+export class DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -272,11 +272,11 @@ export class DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference e
   }
 
   // dynamic_file_system_enabled - computed: false, optional: true, required: false
-  private _dynamicFileSystemEnabled?: boolean | cdktf.IResolvable; 
+  private _dynamicFileSystemEnabled?: boolean | cdktn.IResolvable; 
   public get dynamicFileSystemEnabled() {
     return this.getBooleanAttribute('dynamic_file_system_enabled');
   }
-  public set dynamicFileSystemEnabled(value: boolean | cdktf.IResolvable) {
+  public set dynamicFileSystemEnabled(value: boolean | cdktn.IResolvable) {
     this._dynamicFileSystemEnabled = value;
   }
   public resetDynamicFileSystemEnabled() {
@@ -288,11 +288,11 @@ export class DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference e
   }
 
   // dynamic_filename_enabled - computed: false, optional: true, required: false
-  private _dynamicFilenameEnabled?: boolean | cdktf.IResolvable; 
+  private _dynamicFilenameEnabled?: boolean | cdktn.IResolvable; 
   public get dynamicFilenameEnabled() {
     return this.getBooleanAttribute('dynamic_filename_enabled');
   }
-  public set dynamicFilenameEnabled(value: boolean | cdktf.IResolvable) {
+  public set dynamicFilenameEnabled(value: boolean | cdktn.IResolvable) {
     this._dynamicFilenameEnabled = value;
   }
   public resetDynamicFilenameEnabled() {
@@ -304,11 +304,11 @@ export class DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference e
   }
 
   // dynamic_path_enabled - computed: false, optional: true, required: false
-  private _dynamicPathEnabled?: boolean | cdktf.IResolvable; 
+  private _dynamicPathEnabled?: boolean | cdktn.IResolvable; 
   public get dynamicPathEnabled() {
     return this.getBooleanAttribute('dynamic_path_enabled');
   }
-  public set dynamicPathEnabled(value: boolean | cdktf.IResolvable) {
+  public set dynamicPathEnabled(value: boolean | cdktn.IResolvable) {
     this._dynamicPathEnabled = value;
   }
   public resetDynamicPathEnabled() {
@@ -375,15 +375,15 @@ export interface DataFactoryDatasetDelimitedTextAzureBlobStorageLocation {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#dynamic_container_enabled DataFactoryDatasetDelimitedText#dynamic_container_enabled}
   */
-  readonly dynamicContainerEnabled?: boolean | cdktf.IResolvable;
+  readonly dynamicContainerEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#dynamic_filename_enabled DataFactoryDatasetDelimitedText#dynamic_filename_enabled}
   */
-  readonly dynamicFilenameEnabled?: boolean | cdktf.IResolvable;
+  readonly dynamicFilenameEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#dynamic_path_enabled DataFactoryDatasetDelimitedText#dynamic_path_enabled}
   */
-  readonly dynamicPathEnabled?: boolean | cdktf.IResolvable;
+  readonly dynamicPathEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#filename DataFactoryDatasetDelimitedText#filename}
   */
@@ -395,59 +395,59 @@ export interface DataFactoryDatasetDelimitedTextAzureBlobStorageLocation {
 }
 
 export function dataFactoryDatasetDelimitedTextAzureBlobStorageLocationToTerraform(struct?: DataFactoryDatasetDelimitedTextAzureBlobStorageLocationOutputReference | DataFactoryDatasetDelimitedTextAzureBlobStorageLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container: cdktf.stringToTerraform(struct!.container),
-    dynamic_container_enabled: cdktf.booleanToTerraform(struct!.dynamicContainerEnabled),
-    dynamic_filename_enabled: cdktf.booleanToTerraform(struct!.dynamicFilenameEnabled),
-    dynamic_path_enabled: cdktf.booleanToTerraform(struct!.dynamicPathEnabled),
-    filename: cdktf.stringToTerraform(struct!.filename),
-    path: cdktf.stringToTerraform(struct!.path),
+    container: cdktn.stringToTerraform(struct!.container),
+    dynamic_container_enabled: cdktn.booleanToTerraform(struct!.dynamicContainerEnabled),
+    dynamic_filename_enabled: cdktn.booleanToTerraform(struct!.dynamicFilenameEnabled),
+    dynamic_path_enabled: cdktn.booleanToTerraform(struct!.dynamicPathEnabled),
+    filename: cdktn.stringToTerraform(struct!.filename),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
 export function dataFactoryDatasetDelimitedTextAzureBlobStorageLocationToHclTerraform(struct?: DataFactoryDatasetDelimitedTextAzureBlobStorageLocationOutputReference | DataFactoryDatasetDelimitedTextAzureBlobStorageLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container: {
-      value: cdktf.stringToHclTerraform(struct!.container),
+      value: cdktn.stringToHclTerraform(struct!.container),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dynamic_container_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.dynamicContainerEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.dynamicContainerEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     dynamic_filename_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.dynamicFilenameEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.dynamicFilenameEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     dynamic_path_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.dynamicPathEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.dynamicPathEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     filename: {
-      value: cdktf.stringToHclTerraform(struct!.filename),
+      value: cdktn.stringToHclTerraform(struct!.filename),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -458,14 +458,14 @@ export function dataFactoryDatasetDelimitedTextAzureBlobStorageLocationToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryDatasetDelimitedTextAzureBlobStorageLocationOutputReference extends cdktf.ComplexObject {
+export class DataFactoryDatasetDelimitedTextAzureBlobStorageLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -534,11 +534,11 @@ export class DataFactoryDatasetDelimitedTextAzureBlobStorageLocationOutputRefere
   }
 
   // dynamic_container_enabled - computed: false, optional: true, required: false
-  private _dynamicContainerEnabled?: boolean | cdktf.IResolvable; 
+  private _dynamicContainerEnabled?: boolean | cdktn.IResolvable; 
   public get dynamicContainerEnabled() {
     return this.getBooleanAttribute('dynamic_container_enabled');
   }
-  public set dynamicContainerEnabled(value: boolean | cdktf.IResolvable) {
+  public set dynamicContainerEnabled(value: boolean | cdktn.IResolvable) {
     this._dynamicContainerEnabled = value;
   }
   public resetDynamicContainerEnabled() {
@@ -550,11 +550,11 @@ export class DataFactoryDatasetDelimitedTextAzureBlobStorageLocationOutputRefere
   }
 
   // dynamic_filename_enabled - computed: false, optional: true, required: false
-  private _dynamicFilenameEnabled?: boolean | cdktf.IResolvable; 
+  private _dynamicFilenameEnabled?: boolean | cdktn.IResolvable; 
   public get dynamicFilenameEnabled() {
     return this.getBooleanAttribute('dynamic_filename_enabled');
   }
-  public set dynamicFilenameEnabled(value: boolean | cdktf.IResolvable) {
+  public set dynamicFilenameEnabled(value: boolean | cdktn.IResolvable) {
     this._dynamicFilenameEnabled = value;
   }
   public resetDynamicFilenameEnabled() {
@@ -566,11 +566,11 @@ export class DataFactoryDatasetDelimitedTextAzureBlobStorageLocationOutputRefere
   }
 
   // dynamic_path_enabled - computed: false, optional: true, required: false
-  private _dynamicPathEnabled?: boolean | cdktf.IResolvable; 
+  private _dynamicPathEnabled?: boolean | cdktn.IResolvable; 
   public get dynamicPathEnabled() {
     return this.getBooleanAttribute('dynamic_path_enabled');
   }
-  public set dynamicPathEnabled(value: boolean | cdktf.IResolvable) {
+  public set dynamicPathEnabled(value: boolean | cdktn.IResolvable) {
     this._dynamicPathEnabled = value;
   }
   public resetDynamicPathEnabled() {
@@ -617,11 +617,11 @@ export interface DataFactoryDatasetDelimitedTextHttpServerLocation {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#dynamic_filename_enabled DataFactoryDatasetDelimitedText#dynamic_filename_enabled}
   */
-  readonly dynamicFilenameEnabled?: boolean | cdktf.IResolvable;
+  readonly dynamicFilenameEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#dynamic_path_enabled DataFactoryDatasetDelimitedText#dynamic_path_enabled}
   */
-  readonly dynamicPathEnabled?: boolean | cdktf.IResolvable;
+  readonly dynamicPathEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#filename DataFactoryDatasetDelimitedText#filename}
   */
@@ -637,52 +637,52 @@ export interface DataFactoryDatasetDelimitedTextHttpServerLocation {
 }
 
 export function dataFactoryDatasetDelimitedTextHttpServerLocationToTerraform(struct?: DataFactoryDatasetDelimitedTextHttpServerLocationOutputReference | DataFactoryDatasetDelimitedTextHttpServerLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dynamic_filename_enabled: cdktf.booleanToTerraform(struct!.dynamicFilenameEnabled),
-    dynamic_path_enabled: cdktf.booleanToTerraform(struct!.dynamicPathEnabled),
-    filename: cdktf.stringToTerraform(struct!.filename),
-    path: cdktf.stringToTerraform(struct!.path),
-    relative_url: cdktf.stringToTerraform(struct!.relativeUrl),
+    dynamic_filename_enabled: cdktn.booleanToTerraform(struct!.dynamicFilenameEnabled),
+    dynamic_path_enabled: cdktn.booleanToTerraform(struct!.dynamicPathEnabled),
+    filename: cdktn.stringToTerraform(struct!.filename),
+    path: cdktn.stringToTerraform(struct!.path),
+    relative_url: cdktn.stringToTerraform(struct!.relativeUrl),
   }
 }
 
 
 export function dataFactoryDatasetDelimitedTextHttpServerLocationToHclTerraform(struct?: DataFactoryDatasetDelimitedTextHttpServerLocationOutputReference | DataFactoryDatasetDelimitedTextHttpServerLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dynamic_filename_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.dynamicFilenameEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.dynamicFilenameEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     dynamic_path_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.dynamicPathEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.dynamicPathEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     filename: {
-      value: cdktf.stringToHclTerraform(struct!.filename),
+      value: cdktn.stringToHclTerraform(struct!.filename),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     relative_url: {
-      value: cdktf.stringToHclTerraform(struct!.relativeUrl),
+      value: cdktn.stringToHclTerraform(struct!.relativeUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -693,14 +693,14 @@ export function dataFactoryDatasetDelimitedTextHttpServerLocationToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryDatasetDelimitedTextHttpServerLocationOutputReference extends cdktf.ComplexObject {
+export class DataFactoryDatasetDelimitedTextHttpServerLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -750,11 +750,11 @@ export class DataFactoryDatasetDelimitedTextHttpServerLocationOutputReference ex
   }
 
   // dynamic_filename_enabled - computed: false, optional: true, required: false
-  private _dynamicFilenameEnabled?: boolean | cdktf.IResolvable; 
+  private _dynamicFilenameEnabled?: boolean | cdktn.IResolvable; 
   public get dynamicFilenameEnabled() {
     return this.getBooleanAttribute('dynamic_filename_enabled');
   }
-  public set dynamicFilenameEnabled(value: boolean | cdktf.IResolvable) {
+  public set dynamicFilenameEnabled(value: boolean | cdktn.IResolvable) {
     this._dynamicFilenameEnabled = value;
   }
   public resetDynamicFilenameEnabled() {
@@ -766,11 +766,11 @@ export class DataFactoryDatasetDelimitedTextHttpServerLocationOutputReference ex
   }
 
   // dynamic_path_enabled - computed: false, optional: true, required: false
-  private _dynamicPathEnabled?: boolean | cdktf.IResolvable; 
+  private _dynamicPathEnabled?: boolean | cdktn.IResolvable; 
   public get dynamicPathEnabled() {
     return this.getBooleanAttribute('dynamic_path_enabled');
   }
-  public set dynamicPathEnabled(value: boolean | cdktf.IResolvable) {
+  public set dynamicPathEnabled(value: boolean | cdktn.IResolvable) {
     this._dynamicPathEnabled = value;
   }
   public resetDynamicPathEnabled() {
@@ -835,39 +835,39 @@ export interface DataFactoryDatasetDelimitedTextSchemaColumn {
   readonly type?: string;
 }
 
-export function dataFactoryDatasetDelimitedTextSchemaColumnToTerraform(struct?: DataFactoryDatasetDelimitedTextSchemaColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryDatasetDelimitedTextSchemaColumnToTerraform(struct?: DataFactoryDatasetDelimitedTextSchemaColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function dataFactoryDatasetDelimitedTextSchemaColumnToHclTerraform(struct?: DataFactoryDatasetDelimitedTextSchemaColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryDatasetDelimitedTextSchemaColumnToHclTerraform(struct?: DataFactoryDatasetDelimitedTextSchemaColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -878,9 +878,9 @@ export function dataFactoryDatasetDelimitedTextSchemaColumnToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryDatasetDelimitedTextSchemaColumnOutputReference extends cdktf.ComplexObject {
+export class DataFactoryDatasetDelimitedTextSchemaColumnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -888,11 +888,11 @@ export class DataFactoryDatasetDelimitedTextSchemaColumnOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataFactoryDatasetDelimitedTextSchemaColumn | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryDatasetDelimitedTextSchemaColumn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -913,7 +913,7 @@ export class DataFactoryDatasetDelimitedTextSchemaColumnOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryDatasetDelimitedTextSchemaColumn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryDatasetDelimitedTextSchemaColumn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -921,7 +921,7 @@ export class DataFactoryDatasetDelimitedTextSchemaColumnOutputReference extends 
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -980,15 +980,15 @@ export class DataFactoryDatasetDelimitedTextSchemaColumnOutputReference extends 
   }
 }
 
-export class DataFactoryDatasetDelimitedTextSchemaColumnList extends cdktf.ComplexList {
-  public internalValue? : DataFactoryDatasetDelimitedTextSchemaColumn[] | cdktf.IResolvable
+export class DataFactoryDatasetDelimitedTextSchemaColumnList extends cdktn.ComplexList {
+  public internalValue? : DataFactoryDatasetDelimitedTextSchemaColumn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1018,46 +1018,46 @@ export interface DataFactoryDatasetDelimitedTextTimeouts {
   readonly update?: string;
 }
 
-export function dataFactoryDatasetDelimitedTextTimeoutsToTerraform(struct?: DataFactoryDatasetDelimitedTextTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryDatasetDelimitedTextTimeoutsToTerraform(struct?: DataFactoryDatasetDelimitedTextTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataFactoryDatasetDelimitedTextTimeoutsToHclTerraform(struct?: DataFactoryDatasetDelimitedTextTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryDatasetDelimitedTextTimeoutsToHclTerraform(struct?: DataFactoryDatasetDelimitedTextTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1068,19 +1068,19 @@ export function dataFactoryDatasetDelimitedTextTimeoutsToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryDatasetDelimitedTextTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataFactoryDatasetDelimitedTextTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataFactoryDatasetDelimitedTextTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryDatasetDelimitedTextTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1105,7 +1105,7 @@ export class DataFactoryDatasetDelimitedTextTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryDatasetDelimitedTextTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryDatasetDelimitedTextTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1114,7 +1114,7 @@ export class DataFactoryDatasetDelimitedTextTimeoutsOutputReference extends cdkt
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1196,7 +1196,7 @@ export class DataFactoryDatasetDelimitedTextTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text azurerm_data_factory_dataset_delimited_text}
 */
-export class DataFactoryDatasetDelimitedText extends cdktf.TerraformResource {
+export class DataFactoryDatasetDelimitedText extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1207,14 +1207,14 @@ export class DataFactoryDatasetDelimitedText extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataFactoryDatasetDelimitedText resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataFactoryDatasetDelimitedText resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryDatasetDelimitedText to import
   * @param importFromId The id of the existing DataFactoryDatasetDelimitedText that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_delimited_text#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryDatasetDelimitedText to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_dataset_delimited_text", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_dataset_delimited_text", importId: importFromId, provider });
       }
 
   // ===========
@@ -1415,11 +1415,11 @@ export class DataFactoryDatasetDelimitedText extends cdktf.TerraformResource {
   }
 
   // first_row_as_header - computed: false, optional: true, required: false
-  private _firstRowAsHeader?: boolean | cdktf.IResolvable; 
+  private _firstRowAsHeader?: boolean | cdktn.IResolvable; 
   public get firstRowAsHeader() {
     return this.getBooleanAttribute('first_row_as_header');
   }
-  public set firstRowAsHeader(value: boolean | cdktf.IResolvable) {
+  public set firstRowAsHeader(value: boolean | cdktn.IResolvable) {
     this._firstRowAsHeader = value;
   }
   public resetFirstRowAsHeader() {
@@ -1605,7 +1605,7 @@ export class DataFactoryDatasetDelimitedText extends cdktf.TerraformResource {
   public get schemaColumn() {
     return this._schemaColumn;
   }
-  public putSchemaColumn(value: DataFactoryDatasetDelimitedTextSchemaColumn[] | cdktf.IResolvable) {
+  public putSchemaColumn(value: DataFactoryDatasetDelimitedTextSchemaColumn[] | cdktn.IResolvable) {
     this._schemaColumn.internalValue = value;
   }
   public resetSchemaColumn() {
@@ -1638,28 +1638,28 @@ export class DataFactoryDatasetDelimitedText extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._additionalProperties),
-      annotations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._annotations),
-      column_delimiter: cdktf.stringToTerraform(this._columnDelimiter),
-      compression_codec: cdktf.stringToTerraform(this._compressionCodec),
-      compression_level: cdktf.stringToTerraform(this._compressionLevel),
-      data_factory_id: cdktf.stringToTerraform(this._dataFactoryId),
-      description: cdktf.stringToTerraform(this._description),
-      encoding: cdktf.stringToTerraform(this._encoding),
-      escape_character: cdktf.stringToTerraform(this._escapeCharacter),
-      first_row_as_header: cdktf.booleanToTerraform(this._firstRowAsHeader),
-      folder: cdktf.stringToTerraform(this._folder),
-      id: cdktf.stringToTerraform(this._id),
-      linked_service_name: cdktf.stringToTerraform(this._linkedServiceName),
-      name: cdktf.stringToTerraform(this._name),
-      null_value: cdktf.stringToTerraform(this._nullValue),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      quote_character: cdktf.stringToTerraform(this._quoteCharacter),
-      row_delimiter: cdktf.stringToTerraform(this._rowDelimiter),
+      additional_properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._additionalProperties),
+      annotations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._annotations),
+      column_delimiter: cdktn.stringToTerraform(this._columnDelimiter),
+      compression_codec: cdktn.stringToTerraform(this._compressionCodec),
+      compression_level: cdktn.stringToTerraform(this._compressionLevel),
+      data_factory_id: cdktn.stringToTerraform(this._dataFactoryId),
+      description: cdktn.stringToTerraform(this._description),
+      encoding: cdktn.stringToTerraform(this._encoding),
+      escape_character: cdktn.stringToTerraform(this._escapeCharacter),
+      first_row_as_header: cdktn.booleanToTerraform(this._firstRowAsHeader),
+      folder: cdktn.stringToTerraform(this._folder),
+      id: cdktn.stringToTerraform(this._id),
+      linked_service_name: cdktn.stringToTerraform(this._linkedServiceName),
+      name: cdktn.stringToTerraform(this._name),
+      null_value: cdktn.stringToTerraform(this._nullValue),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
+      quote_character: cdktn.stringToTerraform(this._quoteCharacter),
+      row_delimiter: cdktn.stringToTerraform(this._rowDelimiter),
       azure_blob_fs_location: dataFactoryDatasetDelimitedTextAzureBlobFsLocationToTerraform(this._azureBlobFsLocation.internalValue),
       azure_blob_storage_location: dataFactoryDatasetDelimitedTextAzureBlobStorageLocationToTerraform(this._azureBlobStorageLocation.internalValue),
       http_server_location: dataFactoryDatasetDelimitedTextHttpServerLocationToTerraform(this._httpServerLocation.internalValue),
-      schema_column: cdktf.listMapper(dataFactoryDatasetDelimitedTextSchemaColumnToTerraform, true)(this._schemaColumn.internalValue),
+      schema_column: cdktn.listMapper(dataFactoryDatasetDelimitedTextSchemaColumnToTerraform, true)(this._schemaColumn.internalValue),
       timeouts: dataFactoryDatasetDelimitedTextTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1667,109 +1667,109 @@ export class DataFactoryDatasetDelimitedText extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._additionalProperties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._additionalProperties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       annotations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._annotations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._annotations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       column_delimiter: {
-        value: cdktf.stringToHclTerraform(this._columnDelimiter),
+        value: cdktn.stringToHclTerraform(this._columnDelimiter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       compression_codec: {
-        value: cdktf.stringToHclTerraform(this._compressionCodec),
+        value: cdktn.stringToHclTerraform(this._compressionCodec),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       compression_level: {
-        value: cdktf.stringToHclTerraform(this._compressionLevel),
+        value: cdktn.stringToHclTerraform(this._compressionLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_factory_id: {
-        value: cdktf.stringToHclTerraform(this._dataFactoryId),
+        value: cdktn.stringToHclTerraform(this._dataFactoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encoding: {
-        value: cdktf.stringToHclTerraform(this._encoding),
+        value: cdktn.stringToHclTerraform(this._encoding),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       escape_character: {
-        value: cdktf.stringToHclTerraform(this._escapeCharacter),
+        value: cdktn.stringToHclTerraform(this._escapeCharacter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       first_row_as_header: {
-        value: cdktf.booleanToHclTerraform(this._firstRowAsHeader),
+        value: cdktn.booleanToHclTerraform(this._firstRowAsHeader),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       folder: {
-        value: cdktf.stringToHclTerraform(this._folder),
+        value: cdktn.stringToHclTerraform(this._folder),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       linked_service_name: {
-        value: cdktf.stringToHclTerraform(this._linkedServiceName),
+        value: cdktn.stringToHclTerraform(this._linkedServiceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       null_value: {
-        value: cdktf.stringToHclTerraform(this._nullValue),
+        value: cdktn.stringToHclTerraform(this._nullValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       quote_character: {
-        value: cdktf.stringToHclTerraform(this._quoteCharacter),
+        value: cdktn.stringToHclTerraform(this._quoteCharacter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       row_delimiter: {
-        value: cdktf.stringToHclTerraform(this._rowDelimiter),
+        value: cdktn.stringToHclTerraform(this._rowDelimiter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1793,7 +1793,7 @@ export class DataFactoryDatasetDelimitedText extends cdktf.TerraformResource {
         storageClassType: "DataFactoryDatasetDelimitedTextHttpServerLocationList",
       },
       schema_column: {
-        value: cdktf.listMapperHcl(dataFactoryDatasetDelimitedTextSchemaColumnToHclTerraform, true)(this._schemaColumn.internalValue),
+        value: cdktn.listMapperHcl(dataFactoryDatasetDelimitedTextSchemaColumnToHclTerraform, true)(this._schemaColumn.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataFactoryDatasetDelimitedTextSchemaColumnList",

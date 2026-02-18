@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OracleCloudVmClusterConfig extends cdktf.TerraformMetaArguments {
+export interface OracleCloudVmClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_cloud_vm_cluster#backup_subnet_cidr OracleCloudVmCluster#backup_subnet_cidr}
   */
@@ -74,7 +74,7 @@ export interface OracleCloudVmClusterConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_cloud_vm_cluster#local_backup_enabled OracleCloudVmCluster#local_backup_enabled}
   */
-  readonly localBackupEnabled?: boolean | cdktf.IResolvable;
+  readonly localBackupEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_cloud_vm_cluster#location OracleCloudVmCluster#location}
   */
@@ -102,7 +102,7 @@ export interface OracleCloudVmClusterConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_cloud_vm_cluster#sparse_diskgroup_enabled OracleCloudVmCluster#sparse_diskgroup_enabled}
   */
-  readonly sparseDiskgroupEnabled?: boolean | cdktf.IResolvable;
+  readonly sparseDiskgroupEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_cloud_vm_cluster#ssh_public_keys OracleCloudVmCluster#ssh_public_keys}
   */
@@ -142,7 +142,7 @@ export interface OracleCloudVmClusterConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_cloud_vm_cluster#file_system_configuration OracleCloudVmCluster#file_system_configuration}
   */
-  readonly fileSystemConfiguration?: OracleCloudVmClusterFileSystemConfiguration[] | cdktf.IResolvable;
+  readonly fileSystemConfiguration?: OracleCloudVmClusterFileSystemConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -154,50 +154,50 @@ export interface OracleCloudVmClusterDataCollectionOptions {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_cloud_vm_cluster#diagnostics_events_enabled OracleCloudVmCluster#diagnostics_events_enabled}
   */
-  readonly diagnosticsEventsEnabled?: boolean | cdktf.IResolvable;
+  readonly diagnosticsEventsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_cloud_vm_cluster#health_monitoring_enabled OracleCloudVmCluster#health_monitoring_enabled}
   */
-  readonly healthMonitoringEnabled?: boolean | cdktf.IResolvable;
+  readonly healthMonitoringEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_cloud_vm_cluster#incident_logs_enabled OracleCloudVmCluster#incident_logs_enabled}
   */
-  readonly incidentLogsEnabled?: boolean | cdktf.IResolvable;
+  readonly incidentLogsEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function oracleCloudVmClusterDataCollectionOptionsToTerraform(struct?: OracleCloudVmClusterDataCollectionOptionsOutputReference | OracleCloudVmClusterDataCollectionOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    diagnostics_events_enabled: cdktf.booleanToTerraform(struct!.diagnosticsEventsEnabled),
-    health_monitoring_enabled: cdktf.booleanToTerraform(struct!.healthMonitoringEnabled),
-    incident_logs_enabled: cdktf.booleanToTerraform(struct!.incidentLogsEnabled),
+    diagnostics_events_enabled: cdktn.booleanToTerraform(struct!.diagnosticsEventsEnabled),
+    health_monitoring_enabled: cdktn.booleanToTerraform(struct!.healthMonitoringEnabled),
+    incident_logs_enabled: cdktn.booleanToTerraform(struct!.incidentLogsEnabled),
   }
 }
 
 
 export function oracleCloudVmClusterDataCollectionOptionsToHclTerraform(struct?: OracleCloudVmClusterDataCollectionOptionsOutputReference | OracleCloudVmClusterDataCollectionOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     diagnostics_events_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.diagnosticsEventsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.diagnosticsEventsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     health_monitoring_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.healthMonitoringEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.healthMonitoringEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     incident_logs_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.incidentLogsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.incidentLogsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -208,14 +208,14 @@ export function oracleCloudVmClusterDataCollectionOptionsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OracleCloudVmClusterDataCollectionOptionsOutputReference extends cdktf.ComplexObject {
+export class OracleCloudVmClusterDataCollectionOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -253,11 +253,11 @@ export class OracleCloudVmClusterDataCollectionOptionsOutputReference extends cd
   }
 
   // diagnostics_events_enabled - computed: true, optional: true, required: false
-  private _diagnosticsEventsEnabled?: boolean | cdktf.IResolvable; 
+  private _diagnosticsEventsEnabled?: boolean | cdktn.IResolvable; 
   public get diagnosticsEventsEnabled() {
     return this.getBooleanAttribute('diagnostics_events_enabled');
   }
-  public set diagnosticsEventsEnabled(value: boolean | cdktf.IResolvable) {
+  public set diagnosticsEventsEnabled(value: boolean | cdktn.IResolvable) {
     this._diagnosticsEventsEnabled = value;
   }
   public resetDiagnosticsEventsEnabled() {
@@ -269,11 +269,11 @@ export class OracleCloudVmClusterDataCollectionOptionsOutputReference extends cd
   }
 
   // health_monitoring_enabled - computed: true, optional: true, required: false
-  private _healthMonitoringEnabled?: boolean | cdktf.IResolvable; 
+  private _healthMonitoringEnabled?: boolean | cdktn.IResolvable; 
   public get healthMonitoringEnabled() {
     return this.getBooleanAttribute('health_monitoring_enabled');
   }
-  public set healthMonitoringEnabled(value: boolean | cdktf.IResolvable) {
+  public set healthMonitoringEnabled(value: boolean | cdktn.IResolvable) {
     this._healthMonitoringEnabled = value;
   }
   public resetHealthMonitoringEnabled() {
@@ -285,11 +285,11 @@ export class OracleCloudVmClusterDataCollectionOptionsOutputReference extends cd
   }
 
   // incident_logs_enabled - computed: true, optional: true, required: false
-  private _incidentLogsEnabled?: boolean | cdktf.IResolvable; 
+  private _incidentLogsEnabled?: boolean | cdktn.IResolvable; 
   public get incidentLogsEnabled() {
     return this.getBooleanAttribute('incident_logs_enabled');
   }
-  public set incidentLogsEnabled(value: boolean | cdktf.IResolvable) {
+  public set incidentLogsEnabled(value: boolean | cdktn.IResolvable) {
     this._incidentLogsEnabled = value;
   }
   public resetIncidentLogsEnabled() {
@@ -311,32 +311,32 @@ export interface OracleCloudVmClusterFileSystemConfiguration {
   readonly sizeInGb?: number;
 }
 
-export function oracleCloudVmClusterFileSystemConfigurationToTerraform(struct?: OracleCloudVmClusterFileSystemConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oracleCloudVmClusterFileSystemConfigurationToTerraform(struct?: OracleCloudVmClusterFileSystemConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mount_point: cdktf.stringToTerraform(struct!.mountPoint),
-    size_in_gb: cdktf.numberToTerraform(struct!.sizeInGb),
+    mount_point: cdktn.stringToTerraform(struct!.mountPoint),
+    size_in_gb: cdktn.numberToTerraform(struct!.sizeInGb),
   }
 }
 
 
-export function oracleCloudVmClusterFileSystemConfigurationToHclTerraform(struct?: OracleCloudVmClusterFileSystemConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oracleCloudVmClusterFileSystemConfigurationToHclTerraform(struct?: OracleCloudVmClusterFileSystemConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mount_point: {
-      value: cdktf.stringToHclTerraform(struct!.mountPoint),
+      value: cdktn.stringToHclTerraform(struct!.mountPoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     size_in_gb: {
-      value: cdktf.numberToHclTerraform(struct!.sizeInGb),
+      value: cdktn.numberToHclTerraform(struct!.sizeInGb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -347,9 +347,9 @@ export function oracleCloudVmClusterFileSystemConfigurationToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OracleCloudVmClusterFileSystemConfigurationOutputReference extends cdktf.ComplexObject {
+export class OracleCloudVmClusterFileSystemConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -357,11 +357,11 @@ export class OracleCloudVmClusterFileSystemConfigurationOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OracleCloudVmClusterFileSystemConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): OracleCloudVmClusterFileSystemConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -378,14 +378,14 @@ export class OracleCloudVmClusterFileSystemConfigurationOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OracleCloudVmClusterFileSystemConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OracleCloudVmClusterFileSystemConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mountPoint = undefined;
       this._sizeInGb = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -430,15 +430,15 @@ export class OracleCloudVmClusterFileSystemConfigurationOutputReference extends 
   }
 }
 
-export class OracleCloudVmClusterFileSystemConfigurationList extends cdktf.ComplexList {
-  public internalValue? : OracleCloudVmClusterFileSystemConfiguration[] | cdktf.IResolvable
+export class OracleCloudVmClusterFileSystemConfigurationList extends cdktn.ComplexList {
+  public internalValue? : OracleCloudVmClusterFileSystemConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -468,46 +468,46 @@ export interface OracleCloudVmClusterTimeouts {
   readonly update?: string;
 }
 
-export function oracleCloudVmClusterTimeoutsToTerraform(struct?: OracleCloudVmClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oracleCloudVmClusterTimeoutsToTerraform(struct?: OracleCloudVmClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function oracleCloudVmClusterTimeoutsToHclTerraform(struct?: OracleCloudVmClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oracleCloudVmClusterTimeoutsToHclTerraform(struct?: OracleCloudVmClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -518,19 +518,19 @@ export function oracleCloudVmClusterTimeoutsToHclTerraform(struct?: OracleCloudV
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OracleCloudVmClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OracleCloudVmClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OracleCloudVmClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OracleCloudVmClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -555,7 +555,7 @@ export class OracleCloudVmClusterTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OracleCloudVmClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OracleCloudVmClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -564,7 +564,7 @@ export class OracleCloudVmClusterTimeoutsOutputReference extends cdktf.ComplexOb
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -646,7 +646,7 @@ export class OracleCloudVmClusterTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster}
 */
-export class OracleCloudVmCluster extends cdktf.TerraformResource {
+export class OracleCloudVmCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -657,14 +657,14 @@ export class OracleCloudVmCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OracleCloudVmCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OracleCloudVmCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OracleCloudVmCluster to import
   * @param importFromId The id of the existing OracleCloudVmCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_cloud_vm_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OracleCloudVmCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_oracle_cloud_vm_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_oracle_cloud_vm_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -941,11 +941,11 @@ export class OracleCloudVmCluster extends cdktf.TerraformResource {
   }
 
   // local_backup_enabled - computed: true, optional: true, required: false
-  private _localBackupEnabled?: boolean | cdktf.IResolvable; 
+  private _localBackupEnabled?: boolean | cdktn.IResolvable; 
   public get localBackupEnabled() {
     return this.getBooleanAttribute('local_backup_enabled');
   }
-  public set localBackupEnabled(value: boolean | cdktf.IResolvable) {
+  public set localBackupEnabled(value: boolean | cdktn.IResolvable) {
     this._localBackupEnabled = value;
   }
   public resetLocalBackupEnabled() {
@@ -1049,11 +1049,11 @@ export class OracleCloudVmCluster extends cdktf.TerraformResource {
   }
 
   // sparse_diskgroup_enabled - computed: true, optional: true, required: false
-  private _sparseDiskgroupEnabled?: boolean | cdktf.IResolvable; 
+  private _sparseDiskgroupEnabled?: boolean | cdktn.IResolvable; 
   public get sparseDiskgroupEnabled() {
     return this.getBooleanAttribute('sparse_diskgroup_enabled');
   }
-  public set sparseDiskgroupEnabled(value: boolean | cdktf.IResolvable) {
+  public set sparseDiskgroupEnabled(value: boolean | cdktn.IResolvable) {
     this._sparseDiskgroupEnabled = value;
   }
   public resetSparseDiskgroupEnabled() {
@@ -1188,7 +1188,7 @@ export class OracleCloudVmCluster extends cdktf.TerraformResource {
   public get fileSystemConfiguration() {
     return this._fileSystemConfiguration;
   }
-  public putFileSystemConfiguration(value: OracleCloudVmClusterFileSystemConfiguration[] | cdktf.IResolvable) {
+  public putFileSystemConfiguration(value: OracleCloudVmClusterFileSystemConfiguration[] | cdktn.IResolvable) {
     this._fileSystemConfiguration.internalValue = value;
   }
   public resetFileSystemConfiguration() {
@@ -1221,37 +1221,37 @@ export class OracleCloudVmCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backup_subnet_cidr: cdktf.stringToTerraform(this._backupSubnetCidr),
-      cloud_exadata_infrastructure_id: cdktf.stringToTerraform(this._cloudExadataInfrastructureId),
-      cluster_name: cdktf.stringToTerraform(this._clusterName),
-      cpu_core_count: cdktf.numberToTerraform(this._cpuCoreCount),
-      data_storage_percentage: cdktf.numberToTerraform(this._dataStoragePercentage),
-      data_storage_size_in_tbs: cdktf.numberToTerraform(this._dataStorageSizeInTbs),
-      db_node_storage_size_in_gbs: cdktf.numberToTerraform(this._dbNodeStorageSizeInGbs),
-      db_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dbServers),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      domain: cdktf.stringToTerraform(this._domain),
-      gi_version: cdktf.stringToTerraform(this._giVersion),
-      hostname: cdktf.stringToTerraform(this._hostname),
-      id: cdktf.stringToTerraform(this._id),
-      license_model: cdktf.stringToTerraform(this._licenseModel),
-      local_backup_enabled: cdktf.booleanToTerraform(this._localBackupEnabled),
-      location: cdktf.stringToTerraform(this._location),
-      memory_size_in_gbs: cdktf.numberToTerraform(this._memorySizeInGbs),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      scan_listener_port_tcp: cdktf.numberToTerraform(this._scanListenerPortTcp),
-      scan_listener_port_tcp_ssl: cdktf.numberToTerraform(this._scanListenerPortTcpSsl),
-      sparse_diskgroup_enabled: cdktf.booleanToTerraform(this._sparseDiskgroupEnabled),
-      ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sshPublicKeys),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      system_version: cdktf.stringToTerraform(this._systemVersion),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      time_zone: cdktf.stringToTerraform(this._timeZone),
-      virtual_network_id: cdktf.stringToTerraform(this._virtualNetworkId),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      backup_subnet_cidr: cdktn.stringToTerraform(this._backupSubnetCidr),
+      cloud_exadata_infrastructure_id: cdktn.stringToTerraform(this._cloudExadataInfrastructureId),
+      cluster_name: cdktn.stringToTerraform(this._clusterName),
+      cpu_core_count: cdktn.numberToTerraform(this._cpuCoreCount),
+      data_storage_percentage: cdktn.numberToTerraform(this._dataStoragePercentage),
+      data_storage_size_in_tbs: cdktn.numberToTerraform(this._dataStorageSizeInTbs),
+      db_node_storage_size_in_gbs: cdktn.numberToTerraform(this._dbNodeStorageSizeInGbs),
+      db_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._dbServers),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      domain: cdktn.stringToTerraform(this._domain),
+      gi_version: cdktn.stringToTerraform(this._giVersion),
+      hostname: cdktn.stringToTerraform(this._hostname),
+      id: cdktn.stringToTerraform(this._id),
+      license_model: cdktn.stringToTerraform(this._licenseModel),
+      local_backup_enabled: cdktn.booleanToTerraform(this._localBackupEnabled),
+      location: cdktn.stringToTerraform(this._location),
+      memory_size_in_gbs: cdktn.numberToTerraform(this._memorySizeInGbs),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      scan_listener_port_tcp: cdktn.numberToTerraform(this._scanListenerPortTcp),
+      scan_listener_port_tcp_ssl: cdktn.numberToTerraform(this._scanListenerPortTcpSsl),
+      sparse_diskgroup_enabled: cdktn.booleanToTerraform(this._sparseDiskgroupEnabled),
+      ssh_public_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._sshPublicKeys),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      system_version: cdktn.stringToTerraform(this._systemVersion),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      time_zone: cdktn.stringToTerraform(this._timeZone),
+      virtual_network_id: cdktn.stringToTerraform(this._virtualNetworkId),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
       data_collection_options: oracleCloudVmClusterDataCollectionOptionsToTerraform(this._dataCollectionOptions.internalValue),
-      file_system_configuration: cdktf.listMapper(oracleCloudVmClusterFileSystemConfigurationToTerraform, true)(this._fileSystemConfiguration.internalValue),
+      file_system_configuration: cdktn.listMapper(oracleCloudVmClusterFileSystemConfigurationToTerraform, true)(this._fileSystemConfiguration.internalValue),
       timeouts: oracleCloudVmClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1259,175 +1259,175 @@ export class OracleCloudVmCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backup_subnet_cidr: {
-        value: cdktf.stringToHclTerraform(this._backupSubnetCidr),
+        value: cdktn.stringToHclTerraform(this._backupSubnetCidr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_exadata_infrastructure_id: {
-        value: cdktf.stringToHclTerraform(this._cloudExadataInfrastructureId),
+        value: cdktn.stringToHclTerraform(this._cloudExadataInfrastructureId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_name: {
-        value: cdktf.stringToHclTerraform(this._clusterName),
+        value: cdktn.stringToHclTerraform(this._clusterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cpu_core_count: {
-        value: cdktf.numberToHclTerraform(this._cpuCoreCount),
+        value: cdktn.numberToHclTerraform(this._cpuCoreCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       data_storage_percentage: {
-        value: cdktf.numberToHclTerraform(this._dataStoragePercentage),
+        value: cdktn.numberToHclTerraform(this._dataStoragePercentage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       data_storage_size_in_tbs: {
-        value: cdktf.numberToHclTerraform(this._dataStorageSizeInTbs),
+        value: cdktn.numberToHclTerraform(this._dataStorageSizeInTbs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       db_node_storage_size_in_gbs: {
-        value: cdktf.numberToHclTerraform(this._dbNodeStorageSizeInGbs),
+        value: cdktn.numberToHclTerraform(this._dbNodeStorageSizeInGbs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       db_servers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dbServers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._dbServers),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain: {
-        value: cdktf.stringToHclTerraform(this._domain),
+        value: cdktn.stringToHclTerraform(this._domain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gi_version: {
-        value: cdktf.stringToHclTerraform(this._giVersion),
+        value: cdktn.stringToHclTerraform(this._giVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hostname: {
-        value: cdktf.stringToHclTerraform(this._hostname),
+        value: cdktn.stringToHclTerraform(this._hostname),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       license_model: {
-        value: cdktf.stringToHclTerraform(this._licenseModel),
+        value: cdktn.stringToHclTerraform(this._licenseModel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local_backup_enabled: {
-        value: cdktf.booleanToHclTerraform(this._localBackupEnabled),
+        value: cdktn.booleanToHclTerraform(this._localBackupEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       memory_size_in_gbs: {
-        value: cdktf.numberToHclTerraform(this._memorySizeInGbs),
+        value: cdktn.numberToHclTerraform(this._memorySizeInGbs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scan_listener_port_tcp: {
-        value: cdktf.numberToHclTerraform(this._scanListenerPortTcp),
+        value: cdktn.numberToHclTerraform(this._scanListenerPortTcp),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       scan_listener_port_tcp_ssl: {
-        value: cdktf.numberToHclTerraform(this._scanListenerPortTcpSsl),
+        value: cdktn.numberToHclTerraform(this._scanListenerPortTcpSsl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       sparse_diskgroup_enabled: {
-        value: cdktf.booleanToHclTerraform(this._sparseDiskgroupEnabled),
+        value: cdktn.booleanToHclTerraform(this._sparseDiskgroupEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ssh_public_keys: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sshPublicKeys),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._sshPublicKeys),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       system_version: {
-        value: cdktf.stringToHclTerraform(this._systemVersion),
+        value: cdktn.stringToHclTerraform(this._systemVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       time_zone: {
-        value: cdktf.stringToHclTerraform(this._timeZone),
+        value: cdktn.stringToHclTerraform(this._timeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_network_id: {
-        value: cdktf.stringToHclTerraform(this._virtualNetworkId),
+        value: cdktn.stringToHclTerraform(this._virtualNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1439,7 +1439,7 @@ export class OracleCloudVmCluster extends cdktf.TerraformResource {
         storageClassType: "OracleCloudVmClusterDataCollectionOptionsList",
       },
       file_system_configuration: {
-        value: cdktf.listMapperHcl(oracleCloudVmClusterFileSystemConfigurationToHclTerraform, true)(this._fileSystemConfiguration.internalValue),
+        value: cdktn.listMapperHcl(oracleCloudVmClusterFileSystemConfigurationToHclTerraform, true)(this._fileSystemConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OracleCloudVmClusterFileSystemConfigurationList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SentinelAutomationRuleConfig extends cdktf.TerraformMetaArguments {
+export interface SentinelAutomationRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_automation_rule#condition_json SentinelAutomationRule#condition_json}
   */
@@ -23,7 +23,7 @@ export interface SentinelAutomationRuleConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_automation_rule#enabled SentinelAutomationRule#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_automation_rule#expiration SentinelAutomationRule#expiration}
   */
@@ -60,19 +60,19 @@ export interface SentinelAutomationRuleConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_automation_rule#action_incident SentinelAutomationRule#action_incident}
   */
-  readonly actionIncident?: SentinelAutomationRuleActionIncident[] | cdktf.IResolvable;
+  readonly actionIncident?: SentinelAutomationRuleActionIncident[] | cdktn.IResolvable;
   /**
   * action_incident_task block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_automation_rule#action_incident_task SentinelAutomationRule#action_incident_task}
   */
-  readonly actionIncidentTask?: SentinelAutomationRuleActionIncidentTask[] | cdktf.IResolvable;
+  readonly actionIncidentTask?: SentinelAutomationRuleActionIncidentTask[] | cdktn.IResolvable;
   /**
   * action_playbook block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_automation_rule#action_playbook SentinelAutomationRule#action_playbook}
   */
-  readonly actionPlaybook?: SentinelAutomationRuleActionPlaybook[] | cdktf.IResolvable;
+  readonly actionPlaybook?: SentinelAutomationRuleActionPlaybook[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -111,67 +111,67 @@ export interface SentinelAutomationRuleActionIncident {
   readonly status?: string;
 }
 
-export function sentinelAutomationRuleActionIncidentToTerraform(struct?: SentinelAutomationRuleActionIncident | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAutomationRuleActionIncidentToTerraform(struct?: SentinelAutomationRuleActionIncident | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    classification: cdktf.stringToTerraform(struct!.classification),
-    classification_comment: cdktf.stringToTerraform(struct!.classificationComment),
-    labels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.labels),
-    order: cdktf.numberToTerraform(struct!.order),
-    owner_id: cdktf.stringToTerraform(struct!.ownerId),
-    severity: cdktf.stringToTerraform(struct!.severity),
-    status: cdktf.stringToTerraform(struct!.status),
+    classification: cdktn.stringToTerraform(struct!.classification),
+    classification_comment: cdktn.stringToTerraform(struct!.classificationComment),
+    labels: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.labels),
+    order: cdktn.numberToTerraform(struct!.order),
+    owner_id: cdktn.stringToTerraform(struct!.ownerId),
+    severity: cdktn.stringToTerraform(struct!.severity),
+    status: cdktn.stringToTerraform(struct!.status),
   }
 }
 
 
-export function sentinelAutomationRuleActionIncidentToHclTerraform(struct?: SentinelAutomationRuleActionIncident | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAutomationRuleActionIncidentToHclTerraform(struct?: SentinelAutomationRuleActionIncident | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     classification: {
-      value: cdktf.stringToHclTerraform(struct!.classification),
+      value: cdktn.stringToHclTerraform(struct!.classification),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     classification_comment: {
-      value: cdktf.stringToHclTerraform(struct!.classificationComment),
+      value: cdktn.stringToHclTerraform(struct!.classificationComment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.labels),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.labels),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     order: {
-      value: cdktf.numberToHclTerraform(struct!.order),
+      value: cdktn.numberToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     owner_id: {
-      value: cdktf.stringToHclTerraform(struct!.ownerId),
+      value: cdktn.stringToHclTerraform(struct!.ownerId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     severity: {
-      value: cdktf.stringToHclTerraform(struct!.severity),
+      value: cdktn.stringToHclTerraform(struct!.severity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -182,9 +182,9 @@ export function sentinelAutomationRuleActionIncidentToHclTerraform(struct?: Sent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAutomationRuleActionIncidentOutputReference extends cdktf.ComplexObject {
+export class SentinelAutomationRuleActionIncidentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -192,11 +192,11 @@ export class SentinelAutomationRuleActionIncidentOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SentinelAutomationRuleActionIncident | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAutomationRuleActionIncident | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -233,7 +233,7 @@ export class SentinelAutomationRuleActionIncidentOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAutomationRuleActionIncident | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAutomationRuleActionIncident | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -245,7 +245,7 @@ export class SentinelAutomationRuleActionIncidentOutputReference extends cdktf.C
       this._severity = undefined;
       this._status = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -372,15 +372,15 @@ export class SentinelAutomationRuleActionIncidentOutputReference extends cdktf.C
   }
 }
 
-export class SentinelAutomationRuleActionIncidentList extends cdktf.ComplexList {
-  public internalValue? : SentinelAutomationRuleActionIncident[] | cdktf.IResolvable
+export class SentinelAutomationRuleActionIncidentList extends cdktn.ComplexList {
+  public internalValue? : SentinelAutomationRuleActionIncident[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -406,39 +406,39 @@ export interface SentinelAutomationRuleActionIncidentTask {
   readonly title: string;
 }
 
-export function sentinelAutomationRuleActionIncidentTaskToTerraform(struct?: SentinelAutomationRuleActionIncidentTask | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAutomationRuleActionIncidentTaskToTerraform(struct?: SentinelAutomationRuleActionIncidentTask | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    order: cdktf.numberToTerraform(struct!.order),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    order: cdktn.numberToTerraform(struct!.order),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
-export function sentinelAutomationRuleActionIncidentTaskToHclTerraform(struct?: SentinelAutomationRuleActionIncidentTask | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAutomationRuleActionIncidentTaskToHclTerraform(struct?: SentinelAutomationRuleActionIncidentTask | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.numberToHclTerraform(struct!.order),
+      value: cdktn.numberToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -449,9 +449,9 @@ export function sentinelAutomationRuleActionIncidentTaskToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAutomationRuleActionIncidentTaskOutputReference extends cdktf.ComplexObject {
+export class SentinelAutomationRuleActionIncidentTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -459,11 +459,11 @@ export class SentinelAutomationRuleActionIncidentTaskOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SentinelAutomationRuleActionIncidentTask | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAutomationRuleActionIncidentTask | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -484,7 +484,7 @@ export class SentinelAutomationRuleActionIncidentTaskOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAutomationRuleActionIncidentTask | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAutomationRuleActionIncidentTask | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -492,7 +492,7 @@ export class SentinelAutomationRuleActionIncidentTaskOutputReference extends cdk
       this._order = undefined;
       this._title = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -548,15 +548,15 @@ export class SentinelAutomationRuleActionIncidentTaskOutputReference extends cdk
   }
 }
 
-export class SentinelAutomationRuleActionIncidentTaskList extends cdktf.ComplexList {
-  public internalValue? : SentinelAutomationRuleActionIncidentTask[] | cdktf.IResolvable
+export class SentinelAutomationRuleActionIncidentTaskList extends cdktn.ComplexList {
+  public internalValue? : SentinelAutomationRuleActionIncidentTask[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -582,39 +582,39 @@ export interface SentinelAutomationRuleActionPlaybook {
   readonly tenantId?: string;
 }
 
-export function sentinelAutomationRuleActionPlaybookToTerraform(struct?: SentinelAutomationRuleActionPlaybook | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAutomationRuleActionPlaybookToTerraform(struct?: SentinelAutomationRuleActionPlaybook | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    logic_app_id: cdktf.stringToTerraform(struct!.logicAppId),
-    order: cdktf.numberToTerraform(struct!.order),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    logic_app_id: cdktn.stringToTerraform(struct!.logicAppId),
+    order: cdktn.numberToTerraform(struct!.order),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
   }
 }
 
 
-export function sentinelAutomationRuleActionPlaybookToHclTerraform(struct?: SentinelAutomationRuleActionPlaybook | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAutomationRuleActionPlaybookToHclTerraform(struct?: SentinelAutomationRuleActionPlaybook | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     logic_app_id: {
-      value: cdktf.stringToHclTerraform(struct!.logicAppId),
+      value: cdktn.stringToHclTerraform(struct!.logicAppId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.numberToHclTerraform(struct!.order),
+      value: cdktn.numberToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -625,9 +625,9 @@ export function sentinelAutomationRuleActionPlaybookToHclTerraform(struct?: Sent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAutomationRuleActionPlaybookOutputReference extends cdktf.ComplexObject {
+export class SentinelAutomationRuleActionPlaybookOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -635,11 +635,11 @@ export class SentinelAutomationRuleActionPlaybookOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SentinelAutomationRuleActionPlaybook | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAutomationRuleActionPlaybook | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -660,7 +660,7 @@ export class SentinelAutomationRuleActionPlaybookOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAutomationRuleActionPlaybook | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAutomationRuleActionPlaybook | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -668,7 +668,7 @@ export class SentinelAutomationRuleActionPlaybookOutputReference extends cdktf.C
       this._order = undefined;
       this._tenantId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -724,15 +724,15 @@ export class SentinelAutomationRuleActionPlaybookOutputReference extends cdktf.C
   }
 }
 
-export class SentinelAutomationRuleActionPlaybookList extends cdktf.ComplexList {
-  public internalValue? : SentinelAutomationRuleActionPlaybook[] | cdktf.IResolvable
+export class SentinelAutomationRuleActionPlaybookList extends cdktn.ComplexList {
+  public internalValue? : SentinelAutomationRuleActionPlaybook[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -762,46 +762,46 @@ export interface SentinelAutomationRuleTimeouts {
   readonly update?: string;
 }
 
-export function sentinelAutomationRuleTimeoutsToTerraform(struct?: SentinelAutomationRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAutomationRuleTimeoutsToTerraform(struct?: SentinelAutomationRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function sentinelAutomationRuleTimeoutsToHclTerraform(struct?: SentinelAutomationRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAutomationRuleTimeoutsToHclTerraform(struct?: SentinelAutomationRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -812,19 +812,19 @@ export function sentinelAutomationRuleTimeoutsToHclTerraform(struct?: SentinelAu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAutomationRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SentinelAutomationRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SentinelAutomationRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAutomationRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -849,7 +849,7 @@ export class SentinelAutomationRuleTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAutomationRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAutomationRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -858,7 +858,7 @@ export class SentinelAutomationRuleTimeoutsOutputReference extends cdktf.Complex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -940,7 +940,7 @@ export class SentinelAutomationRuleTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_automation_rule azurerm_sentinel_automation_rule}
 */
-export class SentinelAutomationRule extends cdktf.TerraformResource {
+export class SentinelAutomationRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -951,14 +951,14 @@ export class SentinelAutomationRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SentinelAutomationRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SentinelAutomationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SentinelAutomationRule to import
   * @param importFromId The id of the existing SentinelAutomationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_automation_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SentinelAutomationRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_sentinel_automation_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_sentinel_automation_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -1038,11 +1038,11 @@ export class SentinelAutomationRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1161,7 +1161,7 @@ export class SentinelAutomationRule extends cdktf.TerraformResource {
   public get actionIncident() {
     return this._actionIncident;
   }
-  public putActionIncident(value: SentinelAutomationRuleActionIncident[] | cdktf.IResolvable) {
+  public putActionIncident(value: SentinelAutomationRuleActionIncident[] | cdktn.IResolvable) {
     this._actionIncident.internalValue = value;
   }
   public resetActionIncident() {
@@ -1177,7 +1177,7 @@ export class SentinelAutomationRule extends cdktf.TerraformResource {
   public get actionIncidentTask() {
     return this._actionIncidentTask;
   }
-  public putActionIncidentTask(value: SentinelAutomationRuleActionIncidentTask[] | cdktf.IResolvable) {
+  public putActionIncidentTask(value: SentinelAutomationRuleActionIncidentTask[] | cdktn.IResolvable) {
     this._actionIncidentTask.internalValue = value;
   }
   public resetActionIncidentTask() {
@@ -1193,7 +1193,7 @@ export class SentinelAutomationRule extends cdktf.TerraformResource {
   public get actionPlaybook() {
     return this._actionPlaybook;
   }
-  public putActionPlaybook(value: SentinelAutomationRuleActionPlaybook[] | cdktf.IResolvable) {
+  public putActionPlaybook(value: SentinelAutomationRuleActionPlaybook[] | cdktn.IResolvable) {
     this._actionPlaybook.internalValue = value;
   }
   public resetActionPlaybook() {
@@ -1226,19 +1226,19 @@ export class SentinelAutomationRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      condition_json: cdktf.stringToTerraform(this._conditionJson),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      expiration: cdktf.stringToTerraform(this._expiration),
-      id: cdktf.stringToTerraform(this._id),
-      log_analytics_workspace_id: cdktf.stringToTerraform(this._logAnalyticsWorkspaceId),
-      name: cdktf.stringToTerraform(this._name),
-      order: cdktf.numberToTerraform(this._order),
-      triggers_on: cdktf.stringToTerraform(this._triggersOn),
-      triggers_when: cdktf.stringToTerraform(this._triggersWhen),
-      action_incident: cdktf.listMapper(sentinelAutomationRuleActionIncidentToTerraform, true)(this._actionIncident.internalValue),
-      action_incident_task: cdktf.listMapper(sentinelAutomationRuleActionIncidentTaskToTerraform, true)(this._actionIncidentTask.internalValue),
-      action_playbook: cdktf.listMapper(sentinelAutomationRuleActionPlaybookToTerraform, true)(this._actionPlaybook.internalValue),
+      condition_json: cdktn.stringToTerraform(this._conditionJson),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      expiration: cdktn.stringToTerraform(this._expiration),
+      id: cdktn.stringToTerraform(this._id),
+      log_analytics_workspace_id: cdktn.stringToTerraform(this._logAnalyticsWorkspaceId),
+      name: cdktn.stringToTerraform(this._name),
+      order: cdktn.numberToTerraform(this._order),
+      triggers_on: cdktn.stringToTerraform(this._triggersOn),
+      triggers_when: cdktn.stringToTerraform(this._triggersWhen),
+      action_incident: cdktn.listMapper(sentinelAutomationRuleActionIncidentToTerraform, true)(this._actionIncident.internalValue),
+      action_incident_task: cdktn.listMapper(sentinelAutomationRuleActionIncidentTaskToTerraform, true)(this._actionIncidentTask.internalValue),
+      action_playbook: cdktn.listMapper(sentinelAutomationRuleActionPlaybookToTerraform, true)(this._actionPlaybook.internalValue),
       timeouts: sentinelAutomationRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1246,79 +1246,79 @@ export class SentinelAutomationRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       condition_json: {
-        value: cdktf.stringToHclTerraform(this._conditionJson),
+        value: cdktn.stringToHclTerraform(this._conditionJson),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       expiration: {
-        value: cdktf.stringToHclTerraform(this._expiration),
+        value: cdktn.stringToHclTerraform(this._expiration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_analytics_workspace_id: {
-        value: cdktf.stringToHclTerraform(this._logAnalyticsWorkspaceId),
+        value: cdktn.stringToHclTerraform(this._logAnalyticsWorkspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       order: {
-        value: cdktf.numberToHclTerraform(this._order),
+        value: cdktn.numberToHclTerraform(this._order),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       triggers_on: {
-        value: cdktf.stringToHclTerraform(this._triggersOn),
+        value: cdktn.stringToHclTerraform(this._triggersOn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       triggers_when: {
-        value: cdktf.stringToHclTerraform(this._triggersWhen),
+        value: cdktn.stringToHclTerraform(this._triggersWhen),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       action_incident: {
-        value: cdktf.listMapperHcl(sentinelAutomationRuleActionIncidentToHclTerraform, true)(this._actionIncident.internalValue),
+        value: cdktn.listMapperHcl(sentinelAutomationRuleActionIncidentToHclTerraform, true)(this._actionIncident.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SentinelAutomationRuleActionIncidentList",
       },
       action_incident_task: {
-        value: cdktf.listMapperHcl(sentinelAutomationRuleActionIncidentTaskToHclTerraform, true)(this._actionIncidentTask.internalValue),
+        value: cdktn.listMapperHcl(sentinelAutomationRuleActionIncidentTaskToHclTerraform, true)(this._actionIncidentTask.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SentinelAutomationRuleActionIncidentTaskList",
       },
       action_playbook: {
-        value: cdktf.listMapperHcl(sentinelAutomationRuleActionPlaybookToHclTerraform, true)(this._actionPlaybook.internalValue),
+        value: cdktn.listMapperHcl(sentinelAutomationRuleActionPlaybookToHclTerraform, true)(this._actionPlaybook.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SentinelAutomationRuleActionPlaybookList",

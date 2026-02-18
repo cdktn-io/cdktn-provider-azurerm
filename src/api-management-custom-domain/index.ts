@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiManagementCustomDomainConfig extends cdktf.TerraformMetaArguments {
+export interface ApiManagementCustomDomainConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#api_management_id ApiManagementCustomDomain#api_management_id}
   */
@@ -28,31 +28,31 @@ export interface ApiManagementCustomDomainConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#developer_portal ApiManagementCustomDomain#developer_portal}
   */
-  readonly developerPortal?: ApiManagementCustomDomainDeveloperPortal[] | cdktf.IResolvable;
+  readonly developerPortal?: ApiManagementCustomDomainDeveloperPortal[] | cdktn.IResolvable;
   /**
   * gateway block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#gateway ApiManagementCustomDomain#gateway}
   */
-  readonly gateway?: ApiManagementCustomDomainGateway[] | cdktf.IResolvable;
+  readonly gateway?: ApiManagementCustomDomainGateway[] | cdktn.IResolvable;
   /**
   * management block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#management ApiManagementCustomDomain#management}
   */
-  readonly management?: ApiManagementCustomDomainManagement[] | cdktf.IResolvable;
+  readonly management?: ApiManagementCustomDomainManagement[] | cdktn.IResolvable;
   /**
   * portal block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#portal ApiManagementCustomDomain#portal}
   */
-  readonly portal?: ApiManagementCustomDomainPortal[] | cdktf.IResolvable;
+  readonly portal?: ApiManagementCustomDomainPortal[] | cdktn.IResolvable;
   /**
   * scm block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#scm ApiManagementCustomDomain#scm}
   */
-  readonly scm?: ApiManagementCustomDomainScm[] | cdktf.IResolvable;
+  readonly scm?: ApiManagementCustomDomainScm[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -84,74 +84,74 @@ export interface ApiManagementCustomDomainDeveloperPortal {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#negotiate_client_certificate ApiManagementCustomDomain#negotiate_client_certificate}
   */
-  readonly negotiateClientCertificate?: boolean | cdktf.IResolvable;
+  readonly negotiateClientCertificate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#ssl_keyvault_identity_client_id ApiManagementCustomDomain#ssl_keyvault_identity_client_id}
   */
   readonly sslKeyvaultIdentityClientId?: string;
 }
 
-export function apiManagementCustomDomainDeveloperPortalToTerraform(struct?: ApiManagementCustomDomainDeveloperPortal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementCustomDomainDeveloperPortalToTerraform(struct?: ApiManagementCustomDomainDeveloperPortal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate: cdktf.stringToTerraform(struct!.certificate),
-    certificate_password: cdktf.stringToTerraform(struct!.certificatePassword),
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    key_vault_certificate_id: cdktf.stringToTerraform(struct!.keyVaultCertificateId),
-    key_vault_id: cdktf.stringToTerraform(struct!.keyVaultId),
-    negotiate_client_certificate: cdktf.booleanToTerraform(struct!.negotiateClientCertificate),
-    ssl_keyvault_identity_client_id: cdktf.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
+    certificate: cdktn.stringToTerraform(struct!.certificate),
+    certificate_password: cdktn.stringToTerraform(struct!.certificatePassword),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    key_vault_certificate_id: cdktn.stringToTerraform(struct!.keyVaultCertificateId),
+    key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
+    negotiate_client_certificate: cdktn.booleanToTerraform(struct!.negotiateClientCertificate),
+    ssl_keyvault_identity_client_id: cdktn.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
   }
 }
 
 
-export function apiManagementCustomDomainDeveloperPortalToHclTerraform(struct?: ApiManagementCustomDomainDeveloperPortal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementCustomDomainDeveloperPortalToHclTerraform(struct?: ApiManagementCustomDomainDeveloperPortal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate: {
-      value: cdktf.stringToHclTerraform(struct!.certificate),
+      value: cdktn.stringToHclTerraform(struct!.certificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate_password: {
-      value: cdktf.stringToHclTerraform(struct!.certificatePassword),
+      value: cdktn.stringToHclTerraform(struct!.certificatePassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultCertificateId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultCertificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     negotiate_client_certificate: {
-      value: cdktf.booleanToHclTerraform(struct!.negotiateClientCertificate),
+      value: cdktn.booleanToHclTerraform(struct!.negotiateClientCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ssl_keyvault_identity_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
+      value: cdktn.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -162,9 +162,9 @@ export function apiManagementCustomDomainDeveloperPortalToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementCustomDomainDeveloperPortalOutputReference extends cdktf.ComplexObject {
+export class ApiManagementCustomDomainDeveloperPortalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -172,11 +172,11 @@ export class ApiManagementCustomDomainDeveloperPortalOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiManagementCustomDomainDeveloperPortal | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementCustomDomainDeveloperPortal | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -213,7 +213,7 @@ export class ApiManagementCustomDomainDeveloperPortalOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementCustomDomainDeveloperPortal | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementCustomDomainDeveloperPortal | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -225,7 +225,7 @@ export class ApiManagementCustomDomainDeveloperPortalOutputReference extends cdk
       this._negotiateClientCertificate = undefined;
       this._sslKeyvaultIdentityClientId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -335,11 +335,11 @@ export class ApiManagementCustomDomainDeveloperPortalOutputReference extends cdk
   }
 
   // negotiate_client_certificate - computed: false, optional: true, required: false
-  private _negotiateClientCertificate?: boolean | cdktf.IResolvable; 
+  private _negotiateClientCertificate?: boolean | cdktn.IResolvable; 
   public get negotiateClientCertificate() {
     return this.getBooleanAttribute('negotiate_client_certificate');
   }
-  public set negotiateClientCertificate(value: boolean | cdktf.IResolvable) {
+  public set negotiateClientCertificate(value: boolean | cdktn.IResolvable) {
     this._negotiateClientCertificate = value;
   }
   public resetNegotiateClientCertificate() {
@@ -377,15 +377,15 @@ export class ApiManagementCustomDomainDeveloperPortalOutputReference extends cdk
   }
 }
 
-export class ApiManagementCustomDomainDeveloperPortalList extends cdktf.ComplexList {
-  public internalValue? : ApiManagementCustomDomainDeveloperPortal[] | cdktf.IResolvable
+export class ApiManagementCustomDomainDeveloperPortalList extends cdktn.ComplexList {
+  public internalValue? : ApiManagementCustomDomainDeveloperPortal[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -408,7 +408,7 @@ export interface ApiManagementCustomDomainGateway {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#default_ssl_binding ApiManagementCustomDomain#default_ssl_binding}
   */
-  readonly defaultSslBinding?: boolean | cdktf.IResolvable;
+  readonly defaultSslBinding?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#host_name ApiManagementCustomDomain#host_name}
   */
@@ -424,81 +424,81 @@ export interface ApiManagementCustomDomainGateway {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#negotiate_client_certificate ApiManagementCustomDomain#negotiate_client_certificate}
   */
-  readonly negotiateClientCertificate?: boolean | cdktf.IResolvable;
+  readonly negotiateClientCertificate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#ssl_keyvault_identity_client_id ApiManagementCustomDomain#ssl_keyvault_identity_client_id}
   */
   readonly sslKeyvaultIdentityClientId?: string;
 }
 
-export function apiManagementCustomDomainGatewayToTerraform(struct?: ApiManagementCustomDomainGateway | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementCustomDomainGatewayToTerraform(struct?: ApiManagementCustomDomainGateway | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate: cdktf.stringToTerraform(struct!.certificate),
-    certificate_password: cdktf.stringToTerraform(struct!.certificatePassword),
-    default_ssl_binding: cdktf.booleanToTerraform(struct!.defaultSslBinding),
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    key_vault_certificate_id: cdktf.stringToTerraform(struct!.keyVaultCertificateId),
-    key_vault_id: cdktf.stringToTerraform(struct!.keyVaultId),
-    negotiate_client_certificate: cdktf.booleanToTerraform(struct!.negotiateClientCertificate),
-    ssl_keyvault_identity_client_id: cdktf.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
+    certificate: cdktn.stringToTerraform(struct!.certificate),
+    certificate_password: cdktn.stringToTerraform(struct!.certificatePassword),
+    default_ssl_binding: cdktn.booleanToTerraform(struct!.defaultSslBinding),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    key_vault_certificate_id: cdktn.stringToTerraform(struct!.keyVaultCertificateId),
+    key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
+    negotiate_client_certificate: cdktn.booleanToTerraform(struct!.negotiateClientCertificate),
+    ssl_keyvault_identity_client_id: cdktn.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
   }
 }
 
 
-export function apiManagementCustomDomainGatewayToHclTerraform(struct?: ApiManagementCustomDomainGateway | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementCustomDomainGatewayToHclTerraform(struct?: ApiManagementCustomDomainGateway | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate: {
-      value: cdktf.stringToHclTerraform(struct!.certificate),
+      value: cdktn.stringToHclTerraform(struct!.certificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate_password: {
-      value: cdktf.stringToHclTerraform(struct!.certificatePassword),
+      value: cdktn.stringToHclTerraform(struct!.certificatePassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default_ssl_binding: {
-      value: cdktf.booleanToHclTerraform(struct!.defaultSslBinding),
+      value: cdktn.booleanToHclTerraform(struct!.defaultSslBinding),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultCertificateId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultCertificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     negotiate_client_certificate: {
-      value: cdktf.booleanToHclTerraform(struct!.negotiateClientCertificate),
+      value: cdktn.booleanToHclTerraform(struct!.negotiateClientCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ssl_keyvault_identity_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
+      value: cdktn.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -509,9 +509,9 @@ export function apiManagementCustomDomainGatewayToHclTerraform(struct?: ApiManag
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementCustomDomainGatewayOutputReference extends cdktf.ComplexObject {
+export class ApiManagementCustomDomainGatewayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -519,11 +519,11 @@ export class ApiManagementCustomDomainGatewayOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiManagementCustomDomainGateway | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementCustomDomainGateway | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -564,7 +564,7 @@ export class ApiManagementCustomDomainGatewayOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementCustomDomainGateway | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementCustomDomainGateway | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -577,7 +577,7 @@ export class ApiManagementCustomDomainGatewayOutputReference extends cdktf.Compl
       this._negotiateClientCertificate = undefined;
       this._sslKeyvaultIdentityClientId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -638,11 +638,11 @@ export class ApiManagementCustomDomainGatewayOutputReference extends cdktf.Compl
   }
 
   // default_ssl_binding - computed: true, optional: true, required: false
-  private _defaultSslBinding?: boolean | cdktf.IResolvable; 
+  private _defaultSslBinding?: boolean | cdktn.IResolvable; 
   public get defaultSslBinding() {
     return this.getBooleanAttribute('default_ssl_binding');
   }
-  public set defaultSslBinding(value: boolean | cdktf.IResolvable) {
+  public set defaultSslBinding(value: boolean | cdktn.IResolvable) {
     this._defaultSslBinding = value;
   }
   public resetDefaultSslBinding() {
@@ -704,11 +704,11 @@ export class ApiManagementCustomDomainGatewayOutputReference extends cdktf.Compl
   }
 
   // negotiate_client_certificate - computed: false, optional: true, required: false
-  private _negotiateClientCertificate?: boolean | cdktf.IResolvable; 
+  private _negotiateClientCertificate?: boolean | cdktn.IResolvable; 
   public get negotiateClientCertificate() {
     return this.getBooleanAttribute('negotiate_client_certificate');
   }
-  public set negotiateClientCertificate(value: boolean | cdktf.IResolvable) {
+  public set negotiateClientCertificate(value: boolean | cdktn.IResolvable) {
     this._negotiateClientCertificate = value;
   }
   public resetNegotiateClientCertificate() {
@@ -746,15 +746,15 @@ export class ApiManagementCustomDomainGatewayOutputReference extends cdktf.Compl
   }
 }
 
-export class ApiManagementCustomDomainGatewayList extends cdktf.ComplexList {
-  public internalValue? : ApiManagementCustomDomainGateway[] | cdktf.IResolvable
+export class ApiManagementCustomDomainGatewayList extends cdktn.ComplexList {
+  public internalValue? : ApiManagementCustomDomainGateway[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -789,74 +789,74 @@ export interface ApiManagementCustomDomainManagement {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#negotiate_client_certificate ApiManagementCustomDomain#negotiate_client_certificate}
   */
-  readonly negotiateClientCertificate?: boolean | cdktf.IResolvable;
+  readonly negotiateClientCertificate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#ssl_keyvault_identity_client_id ApiManagementCustomDomain#ssl_keyvault_identity_client_id}
   */
   readonly sslKeyvaultIdentityClientId?: string;
 }
 
-export function apiManagementCustomDomainManagementToTerraform(struct?: ApiManagementCustomDomainManagement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementCustomDomainManagementToTerraform(struct?: ApiManagementCustomDomainManagement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate: cdktf.stringToTerraform(struct!.certificate),
-    certificate_password: cdktf.stringToTerraform(struct!.certificatePassword),
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    key_vault_certificate_id: cdktf.stringToTerraform(struct!.keyVaultCertificateId),
-    key_vault_id: cdktf.stringToTerraform(struct!.keyVaultId),
-    negotiate_client_certificate: cdktf.booleanToTerraform(struct!.negotiateClientCertificate),
-    ssl_keyvault_identity_client_id: cdktf.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
+    certificate: cdktn.stringToTerraform(struct!.certificate),
+    certificate_password: cdktn.stringToTerraform(struct!.certificatePassword),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    key_vault_certificate_id: cdktn.stringToTerraform(struct!.keyVaultCertificateId),
+    key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
+    negotiate_client_certificate: cdktn.booleanToTerraform(struct!.negotiateClientCertificate),
+    ssl_keyvault_identity_client_id: cdktn.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
   }
 }
 
 
-export function apiManagementCustomDomainManagementToHclTerraform(struct?: ApiManagementCustomDomainManagement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementCustomDomainManagementToHclTerraform(struct?: ApiManagementCustomDomainManagement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate: {
-      value: cdktf.stringToHclTerraform(struct!.certificate),
+      value: cdktn.stringToHclTerraform(struct!.certificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate_password: {
-      value: cdktf.stringToHclTerraform(struct!.certificatePassword),
+      value: cdktn.stringToHclTerraform(struct!.certificatePassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultCertificateId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultCertificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     negotiate_client_certificate: {
-      value: cdktf.booleanToHclTerraform(struct!.negotiateClientCertificate),
+      value: cdktn.booleanToHclTerraform(struct!.negotiateClientCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ssl_keyvault_identity_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
+      value: cdktn.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -867,9 +867,9 @@ export function apiManagementCustomDomainManagementToHclTerraform(struct?: ApiMa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementCustomDomainManagementOutputReference extends cdktf.ComplexObject {
+export class ApiManagementCustomDomainManagementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -877,11 +877,11 @@ export class ApiManagementCustomDomainManagementOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiManagementCustomDomainManagement | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementCustomDomainManagement | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -918,7 +918,7 @@ export class ApiManagementCustomDomainManagementOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementCustomDomainManagement | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementCustomDomainManagement | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -930,7 +930,7 @@ export class ApiManagementCustomDomainManagementOutputReference extends cdktf.Co
       this._negotiateClientCertificate = undefined;
       this._sslKeyvaultIdentityClientId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1040,11 +1040,11 @@ export class ApiManagementCustomDomainManagementOutputReference extends cdktf.Co
   }
 
   // negotiate_client_certificate - computed: false, optional: true, required: false
-  private _negotiateClientCertificate?: boolean | cdktf.IResolvable; 
+  private _negotiateClientCertificate?: boolean | cdktn.IResolvable; 
   public get negotiateClientCertificate() {
     return this.getBooleanAttribute('negotiate_client_certificate');
   }
-  public set negotiateClientCertificate(value: boolean | cdktf.IResolvable) {
+  public set negotiateClientCertificate(value: boolean | cdktn.IResolvable) {
     this._negotiateClientCertificate = value;
   }
   public resetNegotiateClientCertificate() {
@@ -1082,15 +1082,15 @@ export class ApiManagementCustomDomainManagementOutputReference extends cdktf.Co
   }
 }
 
-export class ApiManagementCustomDomainManagementList extends cdktf.ComplexList {
-  public internalValue? : ApiManagementCustomDomainManagement[] | cdktf.IResolvable
+export class ApiManagementCustomDomainManagementList extends cdktn.ComplexList {
+  public internalValue? : ApiManagementCustomDomainManagement[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1125,74 +1125,74 @@ export interface ApiManagementCustomDomainPortal {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#negotiate_client_certificate ApiManagementCustomDomain#negotiate_client_certificate}
   */
-  readonly negotiateClientCertificate?: boolean | cdktf.IResolvable;
+  readonly negotiateClientCertificate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#ssl_keyvault_identity_client_id ApiManagementCustomDomain#ssl_keyvault_identity_client_id}
   */
   readonly sslKeyvaultIdentityClientId?: string;
 }
 
-export function apiManagementCustomDomainPortalToTerraform(struct?: ApiManagementCustomDomainPortal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementCustomDomainPortalToTerraform(struct?: ApiManagementCustomDomainPortal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate: cdktf.stringToTerraform(struct!.certificate),
-    certificate_password: cdktf.stringToTerraform(struct!.certificatePassword),
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    key_vault_certificate_id: cdktf.stringToTerraform(struct!.keyVaultCertificateId),
-    key_vault_id: cdktf.stringToTerraform(struct!.keyVaultId),
-    negotiate_client_certificate: cdktf.booleanToTerraform(struct!.negotiateClientCertificate),
-    ssl_keyvault_identity_client_id: cdktf.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
+    certificate: cdktn.stringToTerraform(struct!.certificate),
+    certificate_password: cdktn.stringToTerraform(struct!.certificatePassword),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    key_vault_certificate_id: cdktn.stringToTerraform(struct!.keyVaultCertificateId),
+    key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
+    negotiate_client_certificate: cdktn.booleanToTerraform(struct!.negotiateClientCertificate),
+    ssl_keyvault_identity_client_id: cdktn.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
   }
 }
 
 
-export function apiManagementCustomDomainPortalToHclTerraform(struct?: ApiManagementCustomDomainPortal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementCustomDomainPortalToHclTerraform(struct?: ApiManagementCustomDomainPortal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate: {
-      value: cdktf.stringToHclTerraform(struct!.certificate),
+      value: cdktn.stringToHclTerraform(struct!.certificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate_password: {
-      value: cdktf.stringToHclTerraform(struct!.certificatePassword),
+      value: cdktn.stringToHclTerraform(struct!.certificatePassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultCertificateId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultCertificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     negotiate_client_certificate: {
-      value: cdktf.booleanToHclTerraform(struct!.negotiateClientCertificate),
+      value: cdktn.booleanToHclTerraform(struct!.negotiateClientCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ssl_keyvault_identity_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
+      value: cdktn.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1203,9 +1203,9 @@ export function apiManagementCustomDomainPortalToHclTerraform(struct?: ApiManage
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementCustomDomainPortalOutputReference extends cdktf.ComplexObject {
+export class ApiManagementCustomDomainPortalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1213,11 +1213,11 @@ export class ApiManagementCustomDomainPortalOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiManagementCustomDomainPortal | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementCustomDomainPortal | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1254,7 +1254,7 @@ export class ApiManagementCustomDomainPortalOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementCustomDomainPortal | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementCustomDomainPortal | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1266,7 +1266,7 @@ export class ApiManagementCustomDomainPortalOutputReference extends cdktf.Comple
       this._negotiateClientCertificate = undefined;
       this._sslKeyvaultIdentityClientId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1376,11 +1376,11 @@ export class ApiManagementCustomDomainPortalOutputReference extends cdktf.Comple
   }
 
   // negotiate_client_certificate - computed: false, optional: true, required: false
-  private _negotiateClientCertificate?: boolean | cdktf.IResolvable; 
+  private _negotiateClientCertificate?: boolean | cdktn.IResolvable; 
   public get negotiateClientCertificate() {
     return this.getBooleanAttribute('negotiate_client_certificate');
   }
-  public set negotiateClientCertificate(value: boolean | cdktf.IResolvable) {
+  public set negotiateClientCertificate(value: boolean | cdktn.IResolvable) {
     this._negotiateClientCertificate = value;
   }
   public resetNegotiateClientCertificate() {
@@ -1418,15 +1418,15 @@ export class ApiManagementCustomDomainPortalOutputReference extends cdktf.Comple
   }
 }
 
-export class ApiManagementCustomDomainPortalList extends cdktf.ComplexList {
-  public internalValue? : ApiManagementCustomDomainPortal[] | cdktf.IResolvable
+export class ApiManagementCustomDomainPortalList extends cdktn.ComplexList {
+  public internalValue? : ApiManagementCustomDomainPortal[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1461,74 +1461,74 @@ export interface ApiManagementCustomDomainScm {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#negotiate_client_certificate ApiManagementCustomDomain#negotiate_client_certificate}
   */
-  readonly negotiateClientCertificate?: boolean | cdktf.IResolvable;
+  readonly negotiateClientCertificate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#ssl_keyvault_identity_client_id ApiManagementCustomDomain#ssl_keyvault_identity_client_id}
   */
   readonly sslKeyvaultIdentityClientId?: string;
 }
 
-export function apiManagementCustomDomainScmToTerraform(struct?: ApiManagementCustomDomainScm | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementCustomDomainScmToTerraform(struct?: ApiManagementCustomDomainScm | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate: cdktf.stringToTerraform(struct!.certificate),
-    certificate_password: cdktf.stringToTerraform(struct!.certificatePassword),
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    key_vault_certificate_id: cdktf.stringToTerraform(struct!.keyVaultCertificateId),
-    key_vault_id: cdktf.stringToTerraform(struct!.keyVaultId),
-    negotiate_client_certificate: cdktf.booleanToTerraform(struct!.negotiateClientCertificate),
-    ssl_keyvault_identity_client_id: cdktf.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
+    certificate: cdktn.stringToTerraform(struct!.certificate),
+    certificate_password: cdktn.stringToTerraform(struct!.certificatePassword),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    key_vault_certificate_id: cdktn.stringToTerraform(struct!.keyVaultCertificateId),
+    key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
+    negotiate_client_certificate: cdktn.booleanToTerraform(struct!.negotiateClientCertificate),
+    ssl_keyvault_identity_client_id: cdktn.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
   }
 }
 
 
-export function apiManagementCustomDomainScmToHclTerraform(struct?: ApiManagementCustomDomainScm | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementCustomDomainScmToHclTerraform(struct?: ApiManagementCustomDomainScm | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate: {
-      value: cdktf.stringToHclTerraform(struct!.certificate),
+      value: cdktn.stringToHclTerraform(struct!.certificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate_password: {
-      value: cdktf.stringToHclTerraform(struct!.certificatePassword),
+      value: cdktn.stringToHclTerraform(struct!.certificatePassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultCertificateId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultCertificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     negotiate_client_certificate: {
-      value: cdktf.booleanToHclTerraform(struct!.negotiateClientCertificate),
+      value: cdktn.booleanToHclTerraform(struct!.negotiateClientCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ssl_keyvault_identity_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
+      value: cdktn.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1539,9 +1539,9 @@ export function apiManagementCustomDomainScmToHclTerraform(struct?: ApiManagemen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementCustomDomainScmOutputReference extends cdktf.ComplexObject {
+export class ApiManagementCustomDomainScmOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1549,11 +1549,11 @@ export class ApiManagementCustomDomainScmOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiManagementCustomDomainScm | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementCustomDomainScm | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1590,7 +1590,7 @@ export class ApiManagementCustomDomainScmOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementCustomDomainScm | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementCustomDomainScm | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1602,7 +1602,7 @@ export class ApiManagementCustomDomainScmOutputReference extends cdktf.ComplexOb
       this._negotiateClientCertificate = undefined;
       this._sslKeyvaultIdentityClientId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1712,11 +1712,11 @@ export class ApiManagementCustomDomainScmOutputReference extends cdktf.ComplexOb
   }
 
   // negotiate_client_certificate - computed: false, optional: true, required: false
-  private _negotiateClientCertificate?: boolean | cdktf.IResolvable; 
+  private _negotiateClientCertificate?: boolean | cdktn.IResolvable; 
   public get negotiateClientCertificate() {
     return this.getBooleanAttribute('negotiate_client_certificate');
   }
-  public set negotiateClientCertificate(value: boolean | cdktf.IResolvable) {
+  public set negotiateClientCertificate(value: boolean | cdktn.IResolvable) {
     this._negotiateClientCertificate = value;
   }
   public resetNegotiateClientCertificate() {
@@ -1754,15 +1754,15 @@ export class ApiManagementCustomDomainScmOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class ApiManagementCustomDomainScmList extends cdktf.ComplexList {
-  public internalValue? : ApiManagementCustomDomainScm[] | cdktf.IResolvable
+export class ApiManagementCustomDomainScmList extends cdktn.ComplexList {
+  public internalValue? : ApiManagementCustomDomainScm[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1792,46 +1792,46 @@ export interface ApiManagementCustomDomainTimeouts {
   readonly update?: string;
 }
 
-export function apiManagementCustomDomainTimeoutsToTerraform(struct?: ApiManagementCustomDomainTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementCustomDomainTimeoutsToTerraform(struct?: ApiManagementCustomDomainTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apiManagementCustomDomainTimeoutsToHclTerraform(struct?: ApiManagementCustomDomainTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementCustomDomainTimeoutsToHclTerraform(struct?: ApiManagementCustomDomainTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1842,19 +1842,19 @@ export function apiManagementCustomDomainTimeoutsToHclTerraform(struct?: ApiMana
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementCustomDomainTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApiManagementCustomDomainTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApiManagementCustomDomainTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementCustomDomainTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1879,7 +1879,7 @@ export class ApiManagementCustomDomainTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementCustomDomainTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementCustomDomainTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1888,7 +1888,7 @@ export class ApiManagementCustomDomainTimeoutsOutputReference extends cdktf.Comp
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1970,7 +1970,7 @@ export class ApiManagementCustomDomainTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain azurerm_api_management_custom_domain}
 */
-export class ApiManagementCustomDomain extends cdktf.TerraformResource {
+export class ApiManagementCustomDomain extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1981,14 +1981,14 @@ export class ApiManagementCustomDomain extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiManagementCustomDomain resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiManagementCustomDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementCustomDomain to import
   * @param importFromId The id of the existing ApiManagementCustomDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_custom_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementCustomDomain to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_custom_domain", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_custom_domain", importId: importFromId, provider });
       }
 
   // ===========
@@ -2066,7 +2066,7 @@ export class ApiManagementCustomDomain extends cdktf.TerraformResource {
   public get developerPortal() {
     return this._developerPortal;
   }
-  public putDeveloperPortal(value: ApiManagementCustomDomainDeveloperPortal[] | cdktf.IResolvable) {
+  public putDeveloperPortal(value: ApiManagementCustomDomainDeveloperPortal[] | cdktn.IResolvable) {
     this._developerPortal.internalValue = value;
   }
   public resetDeveloperPortal() {
@@ -2082,7 +2082,7 @@ export class ApiManagementCustomDomain extends cdktf.TerraformResource {
   public get gateway() {
     return this._gateway;
   }
-  public putGateway(value: ApiManagementCustomDomainGateway[] | cdktf.IResolvable) {
+  public putGateway(value: ApiManagementCustomDomainGateway[] | cdktn.IResolvable) {
     this._gateway.internalValue = value;
   }
   public resetGateway() {
@@ -2098,7 +2098,7 @@ export class ApiManagementCustomDomain extends cdktf.TerraformResource {
   public get management() {
     return this._management;
   }
-  public putManagement(value: ApiManagementCustomDomainManagement[] | cdktf.IResolvable) {
+  public putManagement(value: ApiManagementCustomDomainManagement[] | cdktn.IResolvable) {
     this._management.internalValue = value;
   }
   public resetManagement() {
@@ -2114,7 +2114,7 @@ export class ApiManagementCustomDomain extends cdktf.TerraformResource {
   public get portal() {
     return this._portal;
   }
-  public putPortal(value: ApiManagementCustomDomainPortal[] | cdktf.IResolvable) {
+  public putPortal(value: ApiManagementCustomDomainPortal[] | cdktn.IResolvable) {
     this._portal.internalValue = value;
   }
   public resetPortal() {
@@ -2130,7 +2130,7 @@ export class ApiManagementCustomDomain extends cdktf.TerraformResource {
   public get scm() {
     return this._scm;
   }
-  public putScm(value: ApiManagementCustomDomainScm[] | cdktf.IResolvable) {
+  public putScm(value: ApiManagementCustomDomainScm[] | cdktn.IResolvable) {
     this._scm.internalValue = value;
   }
   public resetScm() {
@@ -2163,13 +2163,13 @@ export class ApiManagementCustomDomain extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_management_id: cdktf.stringToTerraform(this._apiManagementId),
-      id: cdktf.stringToTerraform(this._id),
-      developer_portal: cdktf.listMapper(apiManagementCustomDomainDeveloperPortalToTerraform, true)(this._developerPortal.internalValue),
-      gateway: cdktf.listMapper(apiManagementCustomDomainGatewayToTerraform, true)(this._gateway.internalValue),
-      management: cdktf.listMapper(apiManagementCustomDomainManagementToTerraform, true)(this._management.internalValue),
-      portal: cdktf.listMapper(apiManagementCustomDomainPortalToTerraform, true)(this._portal.internalValue),
-      scm: cdktf.listMapper(apiManagementCustomDomainScmToTerraform, true)(this._scm.internalValue),
+      api_management_id: cdktn.stringToTerraform(this._apiManagementId),
+      id: cdktn.stringToTerraform(this._id),
+      developer_portal: cdktn.listMapper(apiManagementCustomDomainDeveloperPortalToTerraform, true)(this._developerPortal.internalValue),
+      gateway: cdktn.listMapper(apiManagementCustomDomainGatewayToTerraform, true)(this._gateway.internalValue),
+      management: cdktn.listMapper(apiManagementCustomDomainManagementToTerraform, true)(this._management.internalValue),
+      portal: cdktn.listMapper(apiManagementCustomDomainPortalToTerraform, true)(this._portal.internalValue),
+      scm: cdktn.listMapper(apiManagementCustomDomainScmToTerraform, true)(this._scm.internalValue),
       timeouts: apiManagementCustomDomainTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -2177,43 +2177,43 @@ export class ApiManagementCustomDomain extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_management_id: {
-        value: cdktf.stringToHclTerraform(this._apiManagementId),
+        value: cdktn.stringToHclTerraform(this._apiManagementId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       developer_portal: {
-        value: cdktf.listMapperHcl(apiManagementCustomDomainDeveloperPortalToHclTerraform, true)(this._developerPortal.internalValue),
+        value: cdktn.listMapperHcl(apiManagementCustomDomainDeveloperPortalToHclTerraform, true)(this._developerPortal.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApiManagementCustomDomainDeveloperPortalList",
       },
       gateway: {
-        value: cdktf.listMapperHcl(apiManagementCustomDomainGatewayToHclTerraform, true)(this._gateway.internalValue),
+        value: cdktn.listMapperHcl(apiManagementCustomDomainGatewayToHclTerraform, true)(this._gateway.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApiManagementCustomDomainGatewayList",
       },
       management: {
-        value: cdktf.listMapperHcl(apiManagementCustomDomainManagementToHclTerraform, true)(this._management.internalValue),
+        value: cdktn.listMapperHcl(apiManagementCustomDomainManagementToHclTerraform, true)(this._management.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApiManagementCustomDomainManagementList",
       },
       portal: {
-        value: cdktf.listMapperHcl(apiManagementCustomDomainPortalToHclTerraform, true)(this._portal.internalValue),
+        value: cdktn.listMapperHcl(apiManagementCustomDomainPortalToHclTerraform, true)(this._portal.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApiManagementCustomDomainPortalList",
       },
       scm: {
-        value: cdktf.listMapperHcl(apiManagementCustomDomainScmToHclTerraform, true)(this._scm.internalValue),
+        value: cdktn.listMapperHcl(apiManagementCustomDomainScmToHclTerraform, true)(this._scm.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApiManagementCustomDomainScmList",

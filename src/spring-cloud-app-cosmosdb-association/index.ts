@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpringCloudAppCosmosdbAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface SpringCloudAppCosmosdbAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_app_cosmosdb_association#api_type SpringCloudAppCosmosdbAssociation#api_type}
   */
@@ -85,46 +85,46 @@ export interface SpringCloudAppCosmosdbAssociationTimeouts {
   readonly update?: string;
 }
 
-export function springCloudAppCosmosdbAssociationTimeoutsToTerraform(struct?: SpringCloudAppCosmosdbAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudAppCosmosdbAssociationTimeoutsToTerraform(struct?: SpringCloudAppCosmosdbAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function springCloudAppCosmosdbAssociationTimeoutsToHclTerraform(struct?: SpringCloudAppCosmosdbAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudAppCosmosdbAssociationTimeoutsToHclTerraform(struct?: SpringCloudAppCosmosdbAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,19 +135,19 @@ export function springCloudAppCosmosdbAssociationTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudAppCosmosdbAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SpringCloudAppCosmosdbAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpringCloudAppCosmosdbAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SpringCloudAppCosmosdbAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,7 +172,7 @@ export class SpringCloudAppCosmosdbAssociationTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpringCloudAppCosmosdbAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpringCloudAppCosmosdbAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -181,7 +181,7 @@ export class SpringCloudAppCosmosdbAssociationTimeoutsOutputReference extends cd
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -263,7 +263,7 @@ export class SpringCloudAppCosmosdbAssociationTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_app_cosmosdb_association azurerm_spring_cloud_app_cosmosdb_association}
 */
-export class SpringCloudAppCosmosdbAssociation extends cdktf.TerraformResource {
+export class SpringCloudAppCosmosdbAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -274,14 +274,14 @@ export class SpringCloudAppCosmosdbAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpringCloudAppCosmosdbAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpringCloudAppCosmosdbAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpringCloudAppCosmosdbAssociation to import
   * @param importFromId The id of the existing SpringCloudAppCosmosdbAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_app_cosmosdb_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpringCloudAppCosmosdbAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_app_cosmosdb_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_app_cosmosdb_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -512,17 +512,17 @@ export class SpringCloudAppCosmosdbAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_type: cdktf.stringToTerraform(this._apiType),
-      cosmosdb_access_key: cdktf.stringToTerraform(this._cosmosdbAccessKey),
-      cosmosdb_account_id: cdktf.stringToTerraform(this._cosmosdbAccountId),
-      cosmosdb_cassandra_keyspace_name: cdktf.stringToTerraform(this._cosmosdbCassandraKeyspaceName),
-      cosmosdb_gremlin_database_name: cdktf.stringToTerraform(this._cosmosdbGremlinDatabaseName),
-      cosmosdb_gremlin_graph_name: cdktf.stringToTerraform(this._cosmosdbGremlinGraphName),
-      cosmosdb_mongo_database_name: cdktf.stringToTerraform(this._cosmosdbMongoDatabaseName),
-      cosmosdb_sql_database_name: cdktf.stringToTerraform(this._cosmosdbSqlDatabaseName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      spring_cloud_app_id: cdktf.stringToTerraform(this._springCloudAppId),
+      api_type: cdktn.stringToTerraform(this._apiType),
+      cosmosdb_access_key: cdktn.stringToTerraform(this._cosmosdbAccessKey),
+      cosmosdb_account_id: cdktn.stringToTerraform(this._cosmosdbAccountId),
+      cosmosdb_cassandra_keyspace_name: cdktn.stringToTerraform(this._cosmosdbCassandraKeyspaceName),
+      cosmosdb_gremlin_database_name: cdktn.stringToTerraform(this._cosmosdbGremlinDatabaseName),
+      cosmosdb_gremlin_graph_name: cdktn.stringToTerraform(this._cosmosdbGremlinGraphName),
+      cosmosdb_mongo_database_name: cdktn.stringToTerraform(this._cosmosdbMongoDatabaseName),
+      cosmosdb_sql_database_name: cdktn.stringToTerraform(this._cosmosdbSqlDatabaseName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      spring_cloud_app_id: cdktn.stringToTerraform(this._springCloudAppId),
       timeouts: springCloudAppCosmosdbAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -530,67 +530,67 @@ export class SpringCloudAppCosmosdbAssociation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_type: {
-        value: cdktf.stringToHclTerraform(this._apiType),
+        value: cdktn.stringToHclTerraform(this._apiType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cosmosdb_access_key: {
-        value: cdktf.stringToHclTerraform(this._cosmosdbAccessKey),
+        value: cdktn.stringToHclTerraform(this._cosmosdbAccessKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cosmosdb_account_id: {
-        value: cdktf.stringToHclTerraform(this._cosmosdbAccountId),
+        value: cdktn.stringToHclTerraform(this._cosmosdbAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cosmosdb_cassandra_keyspace_name: {
-        value: cdktf.stringToHclTerraform(this._cosmosdbCassandraKeyspaceName),
+        value: cdktn.stringToHclTerraform(this._cosmosdbCassandraKeyspaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cosmosdb_gremlin_database_name: {
-        value: cdktf.stringToHclTerraform(this._cosmosdbGremlinDatabaseName),
+        value: cdktn.stringToHclTerraform(this._cosmosdbGremlinDatabaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cosmosdb_gremlin_graph_name: {
-        value: cdktf.stringToHclTerraform(this._cosmosdbGremlinGraphName),
+        value: cdktn.stringToHclTerraform(this._cosmosdbGremlinGraphName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cosmosdb_mongo_database_name: {
-        value: cdktf.stringToHclTerraform(this._cosmosdbMongoDatabaseName),
+        value: cdktn.stringToHclTerraform(this._cosmosdbMongoDatabaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cosmosdb_sql_database_name: {
-        value: cdktf.stringToHclTerraform(this._cosmosdbSqlDatabaseName),
+        value: cdktn.stringToHclTerraform(this._cosmosdbSqlDatabaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       spring_cloud_app_id: {
-        value: cdktf.stringToHclTerraform(this._springCloudAppId),
+        value: cdktn.stringToHclTerraform(this._springCloudAppId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

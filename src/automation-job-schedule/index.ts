@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AutomationJobScheduleConfig extends cdktf.TerraformMetaArguments {
+export interface AutomationJobScheduleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_job_schedule#automation_account_name AutomationJobSchedule#automation_account_name}
   */
@@ -69,39 +69,39 @@ export interface AutomationJobScheduleTimeouts {
   readonly read?: string;
 }
 
-export function automationJobScheduleTimeoutsToTerraform(struct?: AutomationJobScheduleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationJobScheduleTimeoutsToTerraform(struct?: AutomationJobScheduleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function automationJobScheduleTimeoutsToHclTerraform(struct?: AutomationJobScheduleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationJobScheduleTimeoutsToHclTerraform(struct?: AutomationJobScheduleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -112,19 +112,19 @@ export function automationJobScheduleTimeoutsToHclTerraform(struct?: AutomationJ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationJobScheduleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AutomationJobScheduleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AutomationJobScheduleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AutomationJobScheduleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -145,7 +145,7 @@ export class AutomationJobScheduleTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AutomationJobScheduleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AutomationJobScheduleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -153,7 +153,7 @@ export class AutomationJobScheduleTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -218,7 +218,7 @@ export class AutomationJobScheduleTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_job_schedule azurerm_automation_job_schedule}
 */
-export class AutomationJobSchedule extends cdktf.TerraformResource {
+export class AutomationJobSchedule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -229,14 +229,14 @@ export class AutomationJobSchedule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AutomationJobSchedule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AutomationJobSchedule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutomationJobSchedule to import
   * @param importFromId The id of the existing AutomationJobSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_job_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutomationJobSchedule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_automation_job_schedule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_automation_job_schedule", importId: importFromId, provider });
       }
 
   // ===========
@@ -424,14 +424,14 @@ export class AutomationJobSchedule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      automation_account_name: cdktf.stringToTerraform(this._automationAccountName),
-      id: cdktf.stringToTerraform(this._id),
-      job_schedule_id: cdktf.stringToTerraform(this._jobScheduleId),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      run_on: cdktf.stringToTerraform(this._runOn),
-      runbook_name: cdktf.stringToTerraform(this._runbookName),
-      schedule_name: cdktf.stringToTerraform(this._scheduleName),
+      automation_account_name: cdktn.stringToTerraform(this._automationAccountName),
+      id: cdktn.stringToTerraform(this._id),
+      job_schedule_id: cdktn.stringToTerraform(this._jobScheduleId),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      run_on: cdktn.stringToTerraform(this._runOn),
+      runbook_name: cdktn.stringToTerraform(this._runbookName),
+      schedule_name: cdktn.stringToTerraform(this._scheduleName),
       timeouts: automationJobScheduleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -439,49 +439,49 @@ export class AutomationJobSchedule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       automation_account_name: {
-        value: cdktf.stringToHclTerraform(this._automationAccountName),
+        value: cdktn.stringToHclTerraform(this._automationAccountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       job_schedule_id: {
-        value: cdktf.stringToHclTerraform(this._jobScheduleId),
+        value: cdktn.stringToHclTerraform(this._jobScheduleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       run_on: {
-        value: cdktf.stringToHclTerraform(this._runOn),
+        value: cdktn.stringToHclTerraform(this._runOn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       runbook_name: {
-        value: cdktf.stringToHclTerraform(this._runbookName),
+        value: cdktn.stringToHclTerraform(this._runbookName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schedule_name: {
-        value: cdktf.stringToHclTerraform(this._scheduleName),
+        value: cdktn.stringToHclTerraform(this._scheduleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

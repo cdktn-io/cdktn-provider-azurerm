@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecurityCenterAssessmentPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface SecurityCenterAssessmentPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/security_center_assessment_policy#categories SecurityCenterAssessmentPolicy#categories}
   */
@@ -77,46 +77,46 @@ export interface SecurityCenterAssessmentPolicyTimeouts {
   readonly update?: string;
 }
 
-export function securityCenterAssessmentPolicyTimeoutsToTerraform(struct?: SecurityCenterAssessmentPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityCenterAssessmentPolicyTimeoutsToTerraform(struct?: SecurityCenterAssessmentPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function securityCenterAssessmentPolicyTimeoutsToHclTerraform(struct?: SecurityCenterAssessmentPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityCenterAssessmentPolicyTimeoutsToHclTerraform(struct?: SecurityCenterAssessmentPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,19 +127,19 @@ export function securityCenterAssessmentPolicyTimeoutsToHclTerraform(struct?: Se
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityCenterAssessmentPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SecurityCenterAssessmentPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SecurityCenterAssessmentPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityCenterAssessmentPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -164,7 +164,7 @@ export class SecurityCenterAssessmentPolicyTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityCenterAssessmentPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityCenterAssessmentPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class SecurityCenterAssessmentPolicyTimeoutsOutputReference extends cdktf
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -255,7 +255,7 @@ export class SecurityCenterAssessmentPolicyTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/security_center_assessment_policy azurerm_security_center_assessment_policy}
 */
-export class SecurityCenterAssessmentPolicy extends cdktf.TerraformResource {
+export class SecurityCenterAssessmentPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -266,14 +266,14 @@ export class SecurityCenterAssessmentPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecurityCenterAssessmentPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecurityCenterAssessmentPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityCenterAssessmentPolicy to import
   * @param importFromId The id of the existing SecurityCenterAssessmentPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/security_center_assessment_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityCenterAssessmentPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_security_center_assessment_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_security_center_assessment_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -322,7 +322,7 @@ export class SecurityCenterAssessmentPolicy extends cdktf.TerraformResource {
   // categories - computed: true, optional: true, required: false
   private _categories?: string[]; 
   public get categories() {
-    return cdktf.Fn.tolist(this.getListAttribute('categories'));
+    return cdktn.Fn.tolist(this.getListAttribute('categories'));
   }
   public set categories(value: string[]) {
     this._categories = value;
@@ -433,7 +433,7 @@ export class SecurityCenterAssessmentPolicy extends cdktf.TerraformResource {
   // threats - computed: false, optional: true, required: false
   private _threats?: string[]; 
   public get threats() {
-    return cdktf.Fn.tolist(this.getListAttribute('threats'));
+    return cdktn.Fn.tolist(this.getListAttribute('threats'));
   }
   public set threats(value: string[]) {
     this._threats = value;
@@ -484,15 +484,15 @@ export class SecurityCenterAssessmentPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      categories: cdktf.listMapper(cdktf.stringToTerraform, false)(this._categories),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      implementation_effort: cdktf.stringToTerraform(this._implementationEffort),
-      remediation_description: cdktf.stringToTerraform(this._remediationDescription),
-      severity: cdktf.stringToTerraform(this._severity),
-      threats: cdktf.listMapper(cdktf.stringToTerraform, false)(this._threats),
-      user_impact: cdktf.stringToTerraform(this._userImpact),
+      categories: cdktn.listMapper(cdktn.stringToTerraform, false)(this._categories),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      implementation_effort: cdktn.stringToTerraform(this._implementationEffort),
+      remediation_description: cdktn.stringToTerraform(this._remediationDescription),
+      severity: cdktn.stringToTerraform(this._severity),
+      threats: cdktn.listMapper(cdktn.stringToTerraform, false)(this._threats),
+      user_impact: cdktn.stringToTerraform(this._userImpact),
       timeouts: securityCenterAssessmentPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -500,55 +500,55 @@ export class SecurityCenterAssessmentPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       categories: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._categories),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._categories),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       implementation_effort: {
-        value: cdktf.stringToHclTerraform(this._implementationEffort),
+        value: cdktn.stringToHclTerraform(this._implementationEffort),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       remediation_description: {
-        value: cdktf.stringToHclTerraform(this._remediationDescription),
+        value: cdktn.stringToHclTerraform(this._remediationDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       severity: {
-        value: cdktf.stringToHclTerraform(this._severity),
+        value: cdktn.stringToHclTerraform(this._severity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       threats: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._threats),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._threats),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       user_impact: {
-        value: cdktf.stringToHclTerraform(this._userImpact),
+        value: cdktn.stringToHclTerraform(this._userImpact),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

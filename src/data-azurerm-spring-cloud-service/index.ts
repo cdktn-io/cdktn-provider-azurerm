@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermSpringCloudServiceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermSpringCloudServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/spring_cloud_service#id DataAzurermSpringCloudService#id}
   *
@@ -38,8 +38,8 @@ export interface DataAzurermSpringCloudServiceConfigServerGitSettingHttpBasicAut
 }
 
 export function dataAzurermSpringCloudServiceConfigServerGitSettingHttpBasicAuthToTerraform(struct?: DataAzurermSpringCloudServiceConfigServerGitSettingHttpBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermSpringCloudServiceConfigServerGitSettingHttpBasicAuth
 
 
 export function dataAzurermSpringCloudServiceConfigServerGitSettingHttpBasicAuthToHclTerraform(struct?: DataAzurermSpringCloudServiceConfigServerGitSettingHttpBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermSpringCloudServiceConfigServerGitSettingHttpBasicAuth
   return attrs;
 }
 
-export class DataAzurermSpringCloudServiceConfigServerGitSettingHttpBasicAuthOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSpringCloudServiceConfigServerGitSettingHttpBasicAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermSpringCloudServiceConfigServerGitSettingHttpBasicAuthOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -96,14 +96,14 @@ export class DataAzurermSpringCloudServiceConfigServerGitSettingHttpBasicAuthOut
   }
 }
 
-export class DataAzurermSpringCloudServiceConfigServerGitSettingHttpBasicAuthList extends cdktf.ComplexList {
+export class DataAzurermSpringCloudServiceConfigServerGitSettingHttpBasicAuthList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -118,8 +118,8 @@ export interface DataAzurermSpringCloudServiceConfigServerGitSettingRepositoryHt
 }
 
 export function dataAzurermSpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuthToTerraform(struct?: DataAzurermSpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -128,8 +128,8 @@ export function dataAzurermSpringCloudServiceConfigServerGitSettingRepositoryHtt
 
 
 export function dataAzurermSpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuthToHclTerraform(struct?: DataAzurermSpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -137,7 +137,7 @@ export function dataAzurermSpringCloudServiceConfigServerGitSettingRepositoryHtt
   return attrs;
 }
 
-export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuthOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -146,7 +146,7 @@ export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositoryHttpBa
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -176,14 +176,14 @@ export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositoryHttpBa
   }
 }
 
-export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuthList extends cdktf.ComplexList {
+export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuthList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -198,8 +198,8 @@ export interface DataAzurermSpringCloudServiceConfigServerGitSettingRepositorySs
 }
 
 export function dataAzurermSpringCloudServiceConfigServerGitSettingRepositorySshAuthToTerraform(struct?: DataAzurermSpringCloudServiceConfigServerGitSettingRepositorySshAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -208,8 +208,8 @@ export function dataAzurermSpringCloudServiceConfigServerGitSettingRepositorySsh
 
 
 export function dataAzurermSpringCloudServiceConfigServerGitSettingRepositorySshAuthToHclTerraform(struct?: DataAzurermSpringCloudServiceConfigServerGitSettingRepositorySshAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -217,7 +217,7 @@ export function dataAzurermSpringCloudServiceConfigServerGitSettingRepositorySsh
   return attrs;
 }
 
-export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositorySshAuthOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositorySshAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -226,7 +226,7 @@ export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositorySshAut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -266,14 +266,14 @@ export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositorySshAut
   }
 }
 
-export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositorySshAuthList extends cdktf.ComplexList {
+export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositorySshAuthList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -288,8 +288,8 @@ export interface DataAzurermSpringCloudServiceConfigServerGitSettingRepository {
 }
 
 export function dataAzurermSpringCloudServiceConfigServerGitSettingRepositoryToTerraform(struct?: DataAzurermSpringCloudServiceConfigServerGitSettingRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -298,8 +298,8 @@ export function dataAzurermSpringCloudServiceConfigServerGitSettingRepositoryToT
 
 
 export function dataAzurermSpringCloudServiceConfigServerGitSettingRepositoryToHclTerraform(struct?: DataAzurermSpringCloudServiceConfigServerGitSettingRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -307,7 +307,7 @@ export function dataAzurermSpringCloudServiceConfigServerGitSettingRepositoryToH
   return attrs;
 }
 
-export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositoryOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -316,7 +316,7 @@ export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositoryOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -373,14 +373,14 @@ export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositoryOutput
   }
 }
 
-export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositoryList extends cdktf.ComplexList {
+export class DataAzurermSpringCloudServiceConfigServerGitSettingRepositoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -395,8 +395,8 @@ export interface DataAzurermSpringCloudServiceConfigServerGitSettingSshAuth {
 }
 
 export function dataAzurermSpringCloudServiceConfigServerGitSettingSshAuthToTerraform(struct?: DataAzurermSpringCloudServiceConfigServerGitSettingSshAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -405,8 +405,8 @@ export function dataAzurermSpringCloudServiceConfigServerGitSettingSshAuthToTerr
 
 
 export function dataAzurermSpringCloudServiceConfigServerGitSettingSshAuthToHclTerraform(struct?: DataAzurermSpringCloudServiceConfigServerGitSettingSshAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -414,7 +414,7 @@ export function dataAzurermSpringCloudServiceConfigServerGitSettingSshAuthToHclT
   return attrs;
 }
 
-export class DataAzurermSpringCloudServiceConfigServerGitSettingSshAuthOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSpringCloudServiceConfigServerGitSettingSshAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -423,7 +423,7 @@ export class DataAzurermSpringCloudServiceConfigServerGitSettingSshAuthOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -463,14 +463,14 @@ export class DataAzurermSpringCloudServiceConfigServerGitSettingSshAuthOutputRef
   }
 }
 
-export class DataAzurermSpringCloudServiceConfigServerGitSettingSshAuthList extends cdktf.ComplexList {
+export class DataAzurermSpringCloudServiceConfigServerGitSettingSshAuthList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -485,8 +485,8 @@ export interface DataAzurermSpringCloudServiceConfigServerGitSetting {
 }
 
 export function dataAzurermSpringCloudServiceConfigServerGitSettingToTerraform(struct?: DataAzurermSpringCloudServiceConfigServerGitSetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -495,8 +495,8 @@ export function dataAzurermSpringCloudServiceConfigServerGitSettingToTerraform(s
 
 
 export function dataAzurermSpringCloudServiceConfigServerGitSettingToHclTerraform(struct?: DataAzurermSpringCloudServiceConfigServerGitSetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -504,7 +504,7 @@ export function dataAzurermSpringCloudServiceConfigServerGitSettingToHclTerrafor
   return attrs;
 }
 
-export class DataAzurermSpringCloudServiceConfigServerGitSettingOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSpringCloudServiceConfigServerGitSettingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -513,7 +513,7 @@ export class DataAzurermSpringCloudServiceConfigServerGitSettingOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -566,14 +566,14 @@ export class DataAzurermSpringCloudServiceConfigServerGitSettingOutputReference 
   }
 }
 
-export class DataAzurermSpringCloudServiceConfigServerGitSettingList extends cdktf.ComplexList {
+export class DataAzurermSpringCloudServiceConfigServerGitSettingList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -588,8 +588,8 @@ export interface DataAzurermSpringCloudServiceRequiredNetworkTrafficRules {
 }
 
 export function dataAzurermSpringCloudServiceRequiredNetworkTrafficRulesToTerraform(struct?: DataAzurermSpringCloudServiceRequiredNetworkTrafficRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -598,8 +598,8 @@ export function dataAzurermSpringCloudServiceRequiredNetworkTrafficRulesToTerraf
 
 
 export function dataAzurermSpringCloudServiceRequiredNetworkTrafficRulesToHclTerraform(struct?: DataAzurermSpringCloudServiceRequiredNetworkTrafficRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -607,7 +607,7 @@ export function dataAzurermSpringCloudServiceRequiredNetworkTrafficRulesToHclTer
   return attrs;
 }
 
-export class DataAzurermSpringCloudServiceRequiredNetworkTrafficRulesOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSpringCloudServiceRequiredNetworkTrafficRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -616,7 +616,7 @@ export class DataAzurermSpringCloudServiceRequiredNetworkTrafficRulesOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -661,14 +661,14 @@ export class DataAzurermSpringCloudServiceRequiredNetworkTrafficRulesOutputRefer
   }
 }
 
-export class DataAzurermSpringCloudServiceRequiredNetworkTrafficRulesList extends cdktf.ComplexList {
+export class DataAzurermSpringCloudServiceRequiredNetworkTrafficRulesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -686,25 +686,25 @@ export interface DataAzurermSpringCloudServiceTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermSpringCloudServiceTimeoutsToTerraform(struct?: DataAzurermSpringCloudServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermSpringCloudServiceTimeoutsToTerraform(struct?: DataAzurermSpringCloudServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermSpringCloudServiceTimeoutsToHclTerraform(struct?: DataAzurermSpringCloudServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermSpringCloudServiceTimeoutsToHclTerraform(struct?: DataAzurermSpringCloudServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -715,19 +715,19 @@ export function dataAzurermSpringCloudServiceTimeoutsToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermSpringCloudServiceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSpringCloudServiceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermSpringCloudServiceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermSpringCloudServiceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -740,13 +740,13 @@ export class DataAzurermSpringCloudServiceTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermSpringCloudServiceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermSpringCloudServiceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -777,7 +777,7 @@ export class DataAzurermSpringCloudServiceTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/spring_cloud_service azurerm_spring_cloud_service}
 */
-export class DataAzurermSpringCloudService extends cdktf.TerraformDataSource {
+export class DataAzurermSpringCloudService extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -788,14 +788,14 @@ export class DataAzurermSpringCloudService extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermSpringCloudService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermSpringCloudService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermSpringCloudService to import
   * @param importFromId The id of the existing DataAzurermSpringCloudService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/spring_cloud_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermSpringCloudService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -900,7 +900,7 @@ export class DataAzurermSpringCloudService extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -927,9 +927,9 @@ export class DataAzurermSpringCloudService extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurermSpringCloudServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -937,19 +937,19 @@ export class DataAzurermSpringCloudService extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

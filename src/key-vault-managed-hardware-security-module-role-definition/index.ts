@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface KeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_managed_hardware_security_module_role_definition#description KeyVaultManagedHardwareSecurityModuleRoleDefinition#description}
   */
@@ -40,7 +40,7 @@ export interface KeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig exten
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_managed_hardware_security_module_role_definition#permission KeyVaultManagedHardwareSecurityModuleRoleDefinition#permission}
   */
-  readonly permission?: KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission[] | cdktf.IResolvable;
+  readonly permission?: KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -67,46 +67,46 @@ export interface KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission {
   readonly notDataActions?: string[];
 }
 
-export function keyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionToTerraform(struct?: KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionToTerraform(struct?: KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
-    data_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dataActions),
-    not_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notActions),
-    not_data_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notDataActions),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
+    data_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dataActions),
+    not_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.notActions),
+    not_data_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.notDataActions),
   }
 }
 
 
-export function keyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionToHclTerraform(struct?: KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionToHclTerraform(struct?: KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dataActions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dataActions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     not_actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notActions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.notActions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     not_data_actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notDataActions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.notDataActions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -117,9 +117,9 @@ export function keyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionOutputReference extends cdktf.ComplexObject {
+export class KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -127,11 +127,11 @@ export class KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionOutput
       this._notActions = undefined;
       this._notDataActions = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -198,7 +198,7 @@ export class KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionOutput
   // data_actions - computed: false, optional: true, required: false
   private _dataActions?: string[]; 
   public get dataActions() {
-    return cdktf.Fn.tolist(this.getListAttribute('data_actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('data_actions'));
   }
   public set dataActions(value: string[]) {
     this._dataActions = value;
@@ -230,7 +230,7 @@ export class KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionOutput
   // not_data_actions - computed: false, optional: true, required: false
   private _notDataActions?: string[]; 
   public get notDataActions() {
-    return cdktf.Fn.tolist(this.getListAttribute('not_data_actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('not_data_actions'));
   }
   public set notDataActions(value: string[]) {
     this._notDataActions = value;
@@ -244,15 +244,15 @@ export class KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionOutput
   }
 }
 
-export class KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionList extends cdktf.ComplexList {
-  public internalValue? : KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission[] | cdktf.IResolvable
+export class KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionList extends cdktn.ComplexList {
+  public internalValue? : KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -282,46 +282,46 @@ export interface KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts {
   readonly update?: string;
 }
 
-export function keyVaultManagedHardwareSecurityModuleRoleDefinitionTimeoutsToTerraform(struct?: KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultManagedHardwareSecurityModuleRoleDefinitionTimeoutsToTerraform(struct?: KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function keyVaultManagedHardwareSecurityModuleRoleDefinitionTimeoutsToHclTerraform(struct?: KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultManagedHardwareSecurityModuleRoleDefinitionTimeoutsToHclTerraform(struct?: KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -332,19 +332,19 @@ export function keyVaultManagedHardwareSecurityModuleRoleDefinitionTimeoutsToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -369,7 +369,7 @@ export class KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeoutsOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -378,7 +378,7 @@ export class KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeoutsOutputRe
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -460,7 +460,7 @@ export class KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeoutsOutputRe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_managed_hardware_security_module_role_definition azurerm_key_vault_managed_hardware_security_module_role_definition}
 */
-export class KeyVaultManagedHardwareSecurityModuleRoleDefinition extends cdktf.TerraformResource {
+export class KeyVaultManagedHardwareSecurityModuleRoleDefinition extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -471,14 +471,14 @@ export class KeyVaultManagedHardwareSecurityModuleRoleDefinition extends cdktf.T
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KeyVaultManagedHardwareSecurityModuleRoleDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KeyVaultManagedHardwareSecurityModuleRoleDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeyVaultManagedHardwareSecurityModuleRoleDefinition to import
   * @param importFromId The id of the existing KeyVaultManagedHardwareSecurityModuleRoleDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_managed_hardware_security_module_role_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeyVaultManagedHardwareSecurityModuleRoleDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_managed_hardware_security_module_role_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_managed_hardware_security_module_role_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -610,7 +610,7 @@ export class KeyVaultManagedHardwareSecurityModuleRoleDefinition extends cdktf.T
   public get permission() {
     return this._permission;
   }
-  public putPermission(value: KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission[] | cdktf.IResolvable) {
+  public putPermission(value: KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission[] | cdktn.IResolvable) {
     this._permission.internalValue = value;
   }
   public resetPermission() {
@@ -643,12 +643,12 @@ export class KeyVaultManagedHardwareSecurityModuleRoleDefinition extends cdktf.T
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      managed_hsm_id: cdktf.stringToTerraform(this._managedHsmId),
-      name: cdktf.stringToTerraform(this._name),
-      role_name: cdktf.stringToTerraform(this._roleName),
-      permission: cdktf.listMapper(keyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionToTerraform, true)(this._permission.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      managed_hsm_id: cdktn.stringToTerraform(this._managedHsmId),
+      name: cdktn.stringToTerraform(this._name),
+      role_name: cdktn.stringToTerraform(this._roleName),
+      permission: cdktn.listMapper(keyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionToTerraform, true)(this._permission.internalValue),
       timeouts: keyVaultManagedHardwareSecurityModuleRoleDefinitionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -656,37 +656,37 @@ export class KeyVaultManagedHardwareSecurityModuleRoleDefinition extends cdktf.T
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_hsm_id: {
-        value: cdktf.stringToHclTerraform(this._managedHsmId),
+        value: cdktn.stringToHclTerraform(this._managedHsmId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_name: {
-        value: cdktf.stringToHclTerraform(this._roleName),
+        value: cdktn.stringToHclTerraform(this._roleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permission: {
-        value: cdktf.listMapperHcl(keyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionToHclTerraform, true)(this._permission.internalValue),
+        value: cdktn.listMapperHcl(keyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionToHclTerraform, true)(this._permission.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionList",

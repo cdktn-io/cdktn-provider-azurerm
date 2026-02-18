@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetappVolumeGroupOracleConfig extends cdktf.TerraformMetaArguments {
+export interface NetappVolumeGroupOracleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume_group_oracle#account_name NetappVolumeGroupOracle#account_name}
   */
@@ -54,7 +54,7 @@ export interface NetappVolumeGroupOracleConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume_group_oracle#volume NetappVolumeGroupOracle#volume}
   */
-  readonly volume: NetappVolumeGroupOracleVolume[] | cdktf.IResolvable;
+  readonly volume: NetappVolumeGroupOracleVolume[] | cdktn.IResolvable;
 }
 export interface NetappVolumeGroupOracleTimeouts {
   /**
@@ -75,46 +75,46 @@ export interface NetappVolumeGroupOracleTimeouts {
   readonly update?: string;
 }
 
-export function netappVolumeGroupOracleTimeoutsToTerraform(struct?: NetappVolumeGroupOracleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappVolumeGroupOracleTimeoutsToTerraform(struct?: NetappVolumeGroupOracleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function netappVolumeGroupOracleTimeoutsToHclTerraform(struct?: NetappVolumeGroupOracleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappVolumeGroupOracleTimeoutsToHclTerraform(struct?: NetappVolumeGroupOracleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,19 +125,19 @@ export function netappVolumeGroupOracleTimeoutsToHclTerraform(struct?: NetappVol
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappVolumeGroupOracleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeGroupOracleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetappVolumeGroupOracleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetappVolumeGroupOracleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -162,7 +162,7 @@ export class NetappVolumeGroupOracleTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetappVolumeGroupOracleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetappVolumeGroupOracleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -171,7 +171,7 @@ export class NetappVolumeGroupOracleTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -269,45 +269,45 @@ export interface NetappVolumeGroupOracleVolumeDataProtectionReplication {
 }
 
 export function netappVolumeGroupOracleVolumeDataProtectionReplicationToTerraform(struct?: NetappVolumeGroupOracleVolumeDataProtectionReplicationOutputReference | NetappVolumeGroupOracleVolumeDataProtectionReplication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint_type: cdktf.stringToTerraform(struct!.endpointType),
-    remote_volume_location: cdktf.stringToTerraform(struct!.remoteVolumeLocation),
-    remote_volume_resource_id: cdktf.stringToTerraform(struct!.remoteVolumeResourceId),
-    replication_frequency: cdktf.stringToTerraform(struct!.replicationFrequency),
+    endpoint_type: cdktn.stringToTerraform(struct!.endpointType),
+    remote_volume_location: cdktn.stringToTerraform(struct!.remoteVolumeLocation),
+    remote_volume_resource_id: cdktn.stringToTerraform(struct!.remoteVolumeResourceId),
+    replication_frequency: cdktn.stringToTerraform(struct!.replicationFrequency),
   }
 }
 
 
 export function netappVolumeGroupOracleVolumeDataProtectionReplicationToHclTerraform(struct?: NetappVolumeGroupOracleVolumeDataProtectionReplicationOutputReference | NetappVolumeGroupOracleVolumeDataProtectionReplication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint_type: {
-      value: cdktf.stringToHclTerraform(struct!.endpointType),
+      value: cdktn.stringToHclTerraform(struct!.endpointType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     remote_volume_location: {
-      value: cdktf.stringToHclTerraform(struct!.remoteVolumeLocation),
+      value: cdktn.stringToHclTerraform(struct!.remoteVolumeLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     remote_volume_resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.remoteVolumeResourceId),
+      value: cdktn.stringToHclTerraform(struct!.remoteVolumeResourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replication_frequency: {
-      value: cdktf.stringToHclTerraform(struct!.replicationFrequency),
+      value: cdktn.stringToHclTerraform(struct!.replicationFrequency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -318,14 +318,14 @@ export function netappVolumeGroupOracleVolumeDataProtectionReplicationToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappVolumeGroupOracleVolumeDataProtectionReplicationOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeGroupOracleVolumeDataProtectionReplicationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -431,24 +431,24 @@ export interface NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicy {
 }
 
 export function netappVolumeGroupOracleVolumeDataProtectionSnapshotPolicyToTerraform(struct?: NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicyOutputReference | NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    snapshot_policy_id: cdktf.stringToTerraform(struct!.snapshotPolicyId),
+    snapshot_policy_id: cdktn.stringToTerraform(struct!.snapshotPolicyId),
   }
 }
 
 
 export function netappVolumeGroupOracleVolumeDataProtectionSnapshotPolicyToHclTerraform(struct?: NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicyOutputReference | NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     snapshot_policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.snapshotPolicyId),
+      value: cdktn.stringToHclTerraform(struct!.snapshotPolicyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -459,14 +459,14 @@ export function netappVolumeGroupOracleVolumeDataProtectionSnapshotPolicyToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicyOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -512,15 +512,15 @@ export interface NetappVolumeGroupOracleVolumeExportPolicyRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume_group_oracle#nfsv3_enabled NetappVolumeGroupOracle#nfsv3_enabled}
   */
-  readonly nfsv3Enabled: boolean | cdktf.IResolvable;
+  readonly nfsv3Enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume_group_oracle#nfsv41_enabled NetappVolumeGroupOracle#nfsv41_enabled}
   */
-  readonly nfsv41Enabled: boolean | cdktf.IResolvable;
+  readonly nfsv41Enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume_group_oracle#root_access_enabled NetappVolumeGroupOracle#root_access_enabled}
   */
-  readonly rootAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly rootAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume_group_oracle#rule_index NetappVolumeGroupOracle#rule_index}
   */
@@ -528,74 +528,74 @@ export interface NetappVolumeGroupOracleVolumeExportPolicyRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume_group_oracle#unix_read_only NetappVolumeGroupOracle#unix_read_only}
   */
-  readonly unixReadOnly?: boolean | cdktf.IResolvable;
+  readonly unixReadOnly?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume_group_oracle#unix_read_write NetappVolumeGroupOracle#unix_read_write}
   */
-  readonly unixReadWrite?: boolean | cdktf.IResolvable;
+  readonly unixReadWrite?: boolean | cdktn.IResolvable;
 }
 
-export function netappVolumeGroupOracleVolumeExportPolicyRuleToTerraform(struct?: NetappVolumeGroupOracleVolumeExportPolicyRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappVolumeGroupOracleVolumeExportPolicyRuleToTerraform(struct?: NetappVolumeGroupOracleVolumeExportPolicyRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_clients: cdktf.stringToTerraform(struct!.allowedClients),
-    nfsv3_enabled: cdktf.booleanToTerraform(struct!.nfsv3Enabled),
-    nfsv41_enabled: cdktf.booleanToTerraform(struct!.nfsv41Enabled),
-    root_access_enabled: cdktf.booleanToTerraform(struct!.rootAccessEnabled),
-    rule_index: cdktf.numberToTerraform(struct!.ruleIndex),
-    unix_read_only: cdktf.booleanToTerraform(struct!.unixReadOnly),
-    unix_read_write: cdktf.booleanToTerraform(struct!.unixReadWrite),
+    allowed_clients: cdktn.stringToTerraform(struct!.allowedClients),
+    nfsv3_enabled: cdktn.booleanToTerraform(struct!.nfsv3Enabled),
+    nfsv41_enabled: cdktn.booleanToTerraform(struct!.nfsv41Enabled),
+    root_access_enabled: cdktn.booleanToTerraform(struct!.rootAccessEnabled),
+    rule_index: cdktn.numberToTerraform(struct!.ruleIndex),
+    unix_read_only: cdktn.booleanToTerraform(struct!.unixReadOnly),
+    unix_read_write: cdktn.booleanToTerraform(struct!.unixReadWrite),
   }
 }
 
 
-export function netappVolumeGroupOracleVolumeExportPolicyRuleToHclTerraform(struct?: NetappVolumeGroupOracleVolumeExportPolicyRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappVolumeGroupOracleVolumeExportPolicyRuleToHclTerraform(struct?: NetappVolumeGroupOracleVolumeExportPolicyRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_clients: {
-      value: cdktf.stringToHclTerraform(struct!.allowedClients),
+      value: cdktn.stringToHclTerraform(struct!.allowedClients),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     nfsv3_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.nfsv3Enabled),
+      value: cdktn.booleanToHclTerraform(struct!.nfsv3Enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     nfsv41_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.nfsv41Enabled),
+      value: cdktn.booleanToHclTerraform(struct!.nfsv41Enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     root_access_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.rootAccessEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.rootAccessEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     rule_index: {
-      value: cdktf.numberToHclTerraform(struct!.ruleIndex),
+      value: cdktn.numberToHclTerraform(struct!.ruleIndex),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     unix_read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.unixReadOnly),
+      value: cdktn.booleanToHclTerraform(struct!.unixReadOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     unix_read_write: {
-      value: cdktf.booleanToHclTerraform(struct!.unixReadWrite),
+      value: cdktn.booleanToHclTerraform(struct!.unixReadWrite),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -606,9 +606,9 @@ export function netappVolumeGroupOracleVolumeExportPolicyRuleToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappVolumeGroupOracleVolumeExportPolicyRuleOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeGroupOracleVolumeExportPolicyRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -616,11 +616,11 @@ export class NetappVolumeGroupOracleVolumeExportPolicyRuleOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetappVolumeGroupOracleVolumeExportPolicyRule | cdktf.IResolvable | undefined {
+  public get internalValue(): NetappVolumeGroupOracleVolumeExportPolicyRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -657,7 +657,7 @@ export class NetappVolumeGroupOracleVolumeExportPolicyRuleOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetappVolumeGroupOracleVolumeExportPolicyRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetappVolumeGroupOracleVolumeExportPolicyRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -669,7 +669,7 @@ export class NetappVolumeGroupOracleVolumeExportPolicyRuleOutputReference extend
       this._unixReadOnly = undefined;
       this._unixReadWrite = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -700,11 +700,11 @@ export class NetappVolumeGroupOracleVolumeExportPolicyRuleOutputReference extend
   }
 
   // nfsv3_enabled - computed: false, optional: false, required: true
-  private _nfsv3Enabled?: boolean | cdktf.IResolvable; 
+  private _nfsv3Enabled?: boolean | cdktn.IResolvable; 
   public get nfsv3Enabled() {
     return this.getBooleanAttribute('nfsv3_enabled');
   }
-  public set nfsv3Enabled(value: boolean | cdktf.IResolvable) {
+  public set nfsv3Enabled(value: boolean | cdktn.IResolvable) {
     this._nfsv3Enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -713,11 +713,11 @@ export class NetappVolumeGroupOracleVolumeExportPolicyRuleOutputReference extend
   }
 
   // nfsv41_enabled - computed: false, optional: false, required: true
-  private _nfsv41Enabled?: boolean | cdktf.IResolvable; 
+  private _nfsv41Enabled?: boolean | cdktn.IResolvable; 
   public get nfsv41Enabled() {
     return this.getBooleanAttribute('nfsv41_enabled');
   }
-  public set nfsv41Enabled(value: boolean | cdktf.IResolvable) {
+  public set nfsv41Enabled(value: boolean | cdktn.IResolvable) {
     this._nfsv41Enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -726,11 +726,11 @@ export class NetappVolumeGroupOracleVolumeExportPolicyRuleOutputReference extend
   }
 
   // root_access_enabled - computed: false, optional: true, required: false
-  private _rootAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _rootAccessEnabled?: boolean | cdktn.IResolvable; 
   public get rootAccessEnabled() {
     return this.getBooleanAttribute('root_access_enabled');
   }
-  public set rootAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set rootAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._rootAccessEnabled = value;
   }
   public resetRootAccessEnabled() {
@@ -755,11 +755,11 @@ export class NetappVolumeGroupOracleVolumeExportPolicyRuleOutputReference extend
   }
 
   // unix_read_only - computed: false, optional: true, required: false
-  private _unixReadOnly?: boolean | cdktf.IResolvable; 
+  private _unixReadOnly?: boolean | cdktn.IResolvable; 
   public get unixReadOnly() {
     return this.getBooleanAttribute('unix_read_only');
   }
-  public set unixReadOnly(value: boolean | cdktf.IResolvable) {
+  public set unixReadOnly(value: boolean | cdktn.IResolvable) {
     this._unixReadOnly = value;
   }
   public resetUnixReadOnly() {
@@ -771,11 +771,11 @@ export class NetappVolumeGroupOracleVolumeExportPolicyRuleOutputReference extend
   }
 
   // unix_read_write - computed: false, optional: true, required: false
-  private _unixReadWrite?: boolean | cdktf.IResolvable; 
+  private _unixReadWrite?: boolean | cdktn.IResolvable; 
   public get unixReadWrite() {
     return this.getBooleanAttribute('unix_read_write');
   }
-  public set unixReadWrite(value: boolean | cdktf.IResolvable) {
+  public set unixReadWrite(value: boolean | cdktn.IResolvable) {
     this._unixReadWrite = value;
   }
   public resetUnixReadWrite() {
@@ -787,15 +787,15 @@ export class NetappVolumeGroupOracleVolumeExportPolicyRuleOutputReference extend
   }
 }
 
-export class NetappVolumeGroupOracleVolumeExportPolicyRuleList extends cdktf.ComplexList {
-  public internalValue? : NetappVolumeGroupOracleVolumeExportPolicyRule[] | cdktf.IResolvable
+export class NetappVolumeGroupOracleVolumeExportPolicyRuleList extends cdktn.ComplexList {
+  public internalValue? : NetappVolumeGroupOracleVolumeExportPolicyRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -846,7 +846,7 @@ export interface NetappVolumeGroupOracleVolume {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume_group_oracle#snapshot_directory_visible NetappVolumeGroupOracle#snapshot_directory_visible}
   */
-  readonly snapshotDirectoryVisible: boolean | cdktf.IResolvable;
+  readonly snapshotDirectoryVisible: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume_group_oracle#storage_quota_in_gb NetappVolumeGroupOracle#storage_quota_in_gb}
   */
@@ -892,143 +892,143 @@ export interface NetappVolumeGroupOracleVolume {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume_group_oracle#export_policy_rule NetappVolumeGroupOracle#export_policy_rule}
   */
-  readonly exportPolicyRule: NetappVolumeGroupOracleVolumeExportPolicyRule[] | cdktf.IResolvable;
+  readonly exportPolicyRule: NetappVolumeGroupOracleVolumeExportPolicyRule[] | cdktn.IResolvable;
 }
 
-export function netappVolumeGroupOracleVolumeToTerraform(struct?: NetappVolumeGroupOracleVolume | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappVolumeGroupOracleVolumeToTerraform(struct?: NetappVolumeGroupOracleVolume | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity_pool_id: cdktf.stringToTerraform(struct!.capacityPoolId),
-    encryption_key_source: cdktf.stringToTerraform(struct!.encryptionKeySource),
-    key_vault_private_endpoint_id: cdktf.stringToTerraform(struct!.keyVaultPrivateEndpointId),
-    name: cdktf.stringToTerraform(struct!.name),
-    network_features: cdktf.stringToTerraform(struct!.networkFeatures),
-    protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.protocols),
-    proximity_placement_group_id: cdktf.stringToTerraform(struct!.proximityPlacementGroupId),
-    security_style: cdktf.stringToTerraform(struct!.securityStyle),
-    service_level: cdktf.stringToTerraform(struct!.serviceLevel),
-    snapshot_directory_visible: cdktf.booleanToTerraform(struct!.snapshotDirectoryVisible),
-    storage_quota_in_gb: cdktf.numberToTerraform(struct!.storageQuotaInGb),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
-    tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
-    throughput_in_mibps: cdktf.numberToTerraform(struct!.throughputInMibps),
-    volume_path: cdktf.stringToTerraform(struct!.volumePath),
-    volume_spec_name: cdktf.stringToTerraform(struct!.volumeSpecName),
-    zone: cdktf.stringToTerraform(struct!.zone),
+    capacity_pool_id: cdktn.stringToTerraform(struct!.capacityPoolId),
+    encryption_key_source: cdktn.stringToTerraform(struct!.encryptionKeySource),
+    key_vault_private_endpoint_id: cdktn.stringToTerraform(struct!.keyVaultPrivateEndpointId),
+    name: cdktn.stringToTerraform(struct!.name),
+    network_features: cdktn.stringToTerraform(struct!.networkFeatures),
+    protocols: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.protocols),
+    proximity_placement_group_id: cdktn.stringToTerraform(struct!.proximityPlacementGroupId),
+    security_style: cdktn.stringToTerraform(struct!.securityStyle),
+    service_level: cdktn.stringToTerraform(struct!.serviceLevel),
+    snapshot_directory_visible: cdktn.booleanToTerraform(struct!.snapshotDirectoryVisible),
+    storage_quota_in_gb: cdktn.numberToTerraform(struct!.storageQuotaInGb),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
+    tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tags),
+    throughput_in_mibps: cdktn.numberToTerraform(struct!.throughputInMibps),
+    volume_path: cdktn.stringToTerraform(struct!.volumePath),
+    volume_spec_name: cdktn.stringToTerraform(struct!.volumeSpecName),
+    zone: cdktn.stringToTerraform(struct!.zone),
     data_protection_replication: netappVolumeGroupOracleVolumeDataProtectionReplicationToTerraform(struct!.dataProtectionReplication),
     data_protection_snapshot_policy: netappVolumeGroupOracleVolumeDataProtectionSnapshotPolicyToTerraform(struct!.dataProtectionSnapshotPolicy),
-    export_policy_rule: cdktf.listMapper(netappVolumeGroupOracleVolumeExportPolicyRuleToTerraform, true)(struct!.exportPolicyRule),
+    export_policy_rule: cdktn.listMapper(netappVolumeGroupOracleVolumeExportPolicyRuleToTerraform, true)(struct!.exportPolicyRule),
   }
 }
 
 
-export function netappVolumeGroupOracleVolumeToHclTerraform(struct?: NetappVolumeGroupOracleVolume | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappVolumeGroupOracleVolumeToHclTerraform(struct?: NetappVolumeGroupOracleVolume | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity_pool_id: {
-      value: cdktf.stringToHclTerraform(struct!.capacityPoolId),
+      value: cdktn.stringToHclTerraform(struct!.capacityPoolId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encryption_key_source: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionKeySource),
+      value: cdktn.stringToHclTerraform(struct!.encryptionKeySource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_private_endpoint_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultPrivateEndpointId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultPrivateEndpointId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_features: {
-      value: cdktf.stringToHclTerraform(struct!.networkFeatures),
+      value: cdktn.stringToHclTerraform(struct!.networkFeatures),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocols: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.protocols),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.protocols),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     proximity_placement_group_id: {
-      value: cdktf.stringToHclTerraform(struct!.proximityPlacementGroupId),
+      value: cdktn.stringToHclTerraform(struct!.proximityPlacementGroupId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_style: {
-      value: cdktf.stringToHclTerraform(struct!.securityStyle),
+      value: cdktn.stringToHclTerraform(struct!.securityStyle),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_level: {
-      value: cdktf.stringToHclTerraform(struct!.serviceLevel),
+      value: cdktn.stringToHclTerraform(struct!.serviceLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     snapshot_directory_visible: {
-      value: cdktf.booleanToHclTerraform(struct!.snapshotDirectoryVisible),
+      value: cdktn.booleanToHclTerraform(struct!.snapshotDirectoryVisible),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     storage_quota_in_gb: {
-      value: cdktf.numberToHclTerraform(struct!.storageQuotaInGb),
+      value: cdktn.numberToHclTerraform(struct!.storageQuotaInGb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     throughput_in_mibps: {
-      value: cdktf.numberToHclTerraform(struct!.throughputInMibps),
+      value: cdktn.numberToHclTerraform(struct!.throughputInMibps),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     volume_path: {
-      value: cdktf.stringToHclTerraform(struct!.volumePath),
+      value: cdktn.stringToHclTerraform(struct!.volumePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_spec_name: {
-      value: cdktf.stringToHclTerraform(struct!.volumeSpecName),
+      value: cdktn.stringToHclTerraform(struct!.volumeSpecName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zone: {
-      value: cdktf.stringToHclTerraform(struct!.zone),
+      value: cdktn.stringToHclTerraform(struct!.zone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1046,7 +1046,7 @@ export function netappVolumeGroupOracleVolumeToHclTerraform(struct?: NetappVolum
       storageClassType: "NetappVolumeGroupOracleVolumeDataProtectionSnapshotPolicyList",
     },
     export_policy_rule: {
-      value: cdktf.listMapperHcl(netappVolumeGroupOracleVolumeExportPolicyRuleToHclTerraform, true)(struct!.exportPolicyRule),
+      value: cdktn.listMapperHcl(netappVolumeGroupOracleVolumeExportPolicyRuleToHclTerraform, true)(struct!.exportPolicyRule),
       isBlock: true,
       type: "list",
       storageClassType: "NetappVolumeGroupOracleVolumeExportPolicyRuleList",
@@ -1057,9 +1057,9 @@ export function netappVolumeGroupOracleVolumeToHclTerraform(struct?: NetappVolum
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappVolumeGroupOracleVolumeOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeGroupOracleVolumeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1067,11 +1067,11 @@ export class NetappVolumeGroupOracleVolumeOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetappVolumeGroupOracleVolume | cdktf.IResolvable | undefined {
+  public get internalValue(): NetappVolumeGroupOracleVolume | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1160,7 +1160,7 @@ export class NetappVolumeGroupOracleVolumeOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetappVolumeGroupOracleVolume | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetappVolumeGroupOracleVolume | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1185,7 +1185,7 @@ export class NetappVolumeGroupOracleVolumeOutputReference extends cdktf.ComplexO
       this._dataProtectionSnapshotPolicy.internalValue = undefined;
       this._exportPolicyRule.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1355,11 +1355,11 @@ export class NetappVolumeGroupOracleVolumeOutputReference extends cdktf.ComplexO
   }
 
   // snapshot_directory_visible - computed: false, optional: false, required: true
-  private _snapshotDirectoryVisible?: boolean | cdktf.IResolvable; 
+  private _snapshotDirectoryVisible?: boolean | cdktn.IResolvable; 
   public get snapshotDirectoryVisible() {
     return this.getBooleanAttribute('snapshot_directory_visible');
   }
-  public set snapshotDirectoryVisible(value: boolean | cdktf.IResolvable) {
+  public set snapshotDirectoryVisible(value: boolean | cdktn.IResolvable) {
     this._snapshotDirectoryVisible = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1501,7 +1501,7 @@ export class NetappVolumeGroupOracleVolumeOutputReference extends cdktf.ComplexO
   public get exportPolicyRule() {
     return this._exportPolicyRule;
   }
-  public putExportPolicyRule(value: NetappVolumeGroupOracleVolumeExportPolicyRule[] | cdktf.IResolvable) {
+  public putExportPolicyRule(value: NetappVolumeGroupOracleVolumeExportPolicyRule[] | cdktn.IResolvable) {
     this._exportPolicyRule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1510,15 +1510,15 @@ export class NetappVolumeGroupOracleVolumeOutputReference extends cdktf.ComplexO
   }
 }
 
-export class NetappVolumeGroupOracleVolumeList extends cdktf.ComplexList {
-  public internalValue? : NetappVolumeGroupOracleVolume[] | cdktf.IResolvable
+export class NetappVolumeGroupOracleVolumeList extends cdktn.ComplexList {
+  public internalValue? : NetappVolumeGroupOracleVolume[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1533,7 +1533,7 @@ export class NetappVolumeGroupOracleVolumeList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume_group_oracle azurerm_netapp_volume_group_oracle}
 */
-export class NetappVolumeGroupOracle extends cdktf.TerraformResource {
+export class NetappVolumeGroupOracle extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1544,14 +1544,14 @@ export class NetappVolumeGroupOracle extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetappVolumeGroupOracle resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetappVolumeGroupOracle resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetappVolumeGroupOracle to import
   * @param importFromId The id of the existing NetappVolumeGroupOracle that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume_group_oracle#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetappVolumeGroupOracle to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_netapp_volume_group_oracle", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_netapp_volume_group_oracle", importId: importFromId, provider });
       }
 
   // ===========
@@ -1711,7 +1711,7 @@ export class NetappVolumeGroupOracle extends cdktf.TerraformResource {
   public get volume() {
     return this._volume;
   }
-  public putVolume(value: NetappVolumeGroupOracleVolume[] | cdktf.IResolvable) {
+  public putVolume(value: NetappVolumeGroupOracleVolume[] | cdktn.IResolvable) {
     this._volume.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1725,58 +1725,58 @@ export class NetappVolumeGroupOracle extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_name: cdktf.stringToTerraform(this._accountName),
-      application_identifier: cdktf.stringToTerraform(this._applicationIdentifier),
-      group_description: cdktf.stringToTerraform(this._groupDescription),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      account_name: cdktn.stringToTerraform(this._accountName),
+      application_identifier: cdktn.stringToTerraform(this._applicationIdentifier),
+      group_description: cdktn.stringToTerraform(this._groupDescription),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: netappVolumeGroupOracleTimeoutsToTerraform(this._timeouts.internalValue),
-      volume: cdktf.listMapper(netappVolumeGroupOracleVolumeToTerraform, true)(this._volume.internalValue),
+      volume: cdktn.listMapper(netappVolumeGroupOracleVolumeToTerraform, true)(this._volume.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_name: {
-        value: cdktf.stringToHclTerraform(this._accountName),
+        value: cdktn.stringToHclTerraform(this._accountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       application_identifier: {
-        value: cdktf.stringToHclTerraform(this._applicationIdentifier),
+        value: cdktn.stringToHclTerraform(this._applicationIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       group_description: {
-        value: cdktf.stringToHclTerraform(this._groupDescription),
+        value: cdktn.stringToHclTerraform(this._groupDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1788,7 +1788,7 @@ export class NetappVolumeGroupOracle extends cdktf.TerraformResource {
         storageClassType: "NetappVolumeGroupOracleTimeouts",
       },
       volume: {
-        value: cdktf.listMapperHcl(netappVolumeGroupOracleVolumeToHclTerraform, true)(this._volume.internalValue),
+        value: cdktn.listMapperHcl(netappVolumeGroupOracleVolumeToHclTerraform, true)(this._volume.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NetappVolumeGroupOracleVolumeList",

@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VirtualMachineRestorePointConfig extends cdktf.TerraformMetaArguments {
+export interface VirtualMachineRestorePointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_restore_point#crash_consistency_mode_enabled VirtualMachineRestorePoint#crash_consistency_mode_enabled}
   */
-  readonly crashConsistencyModeEnabled?: boolean | cdktf.IResolvable;
+  readonly crashConsistencyModeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_restore_point#excluded_disks VirtualMachineRestorePoint#excluded_disks}
   */
@@ -57,39 +57,39 @@ export interface VirtualMachineRestorePointTimeouts {
   readonly read?: string;
 }
 
-export function virtualMachineRestorePointTimeoutsToTerraform(struct?: VirtualMachineRestorePointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineRestorePointTimeoutsToTerraform(struct?: VirtualMachineRestorePointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function virtualMachineRestorePointTimeoutsToHclTerraform(struct?: VirtualMachineRestorePointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineRestorePointTimeoutsToHclTerraform(struct?: VirtualMachineRestorePointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,19 +100,19 @@ export function virtualMachineRestorePointTimeoutsToHclTerraform(struct?: Virtua
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualMachineRestorePointTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineRestorePointTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VirtualMachineRestorePointTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualMachineRestorePointTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,7 +133,7 @@ export class VirtualMachineRestorePointTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualMachineRestorePointTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualMachineRestorePointTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -141,7 +141,7 @@ export class VirtualMachineRestorePointTimeoutsOutputReference extends cdktf.Com
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -206,7 +206,7 @@ export class VirtualMachineRestorePointTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_restore_point azurerm_virtual_machine_restore_point}
 */
-export class VirtualMachineRestorePoint extends cdktf.TerraformResource {
+export class VirtualMachineRestorePoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -217,14 +217,14 @@ export class VirtualMachineRestorePoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VirtualMachineRestorePoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VirtualMachineRestorePoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualMachineRestorePoint to import
   * @param importFromId The id of the existing VirtualMachineRestorePoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_restore_point#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualMachineRestorePoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_machine_restore_point", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_machine_restore_point", importId: importFromId, provider });
       }
 
   // ===========
@@ -267,11 +267,11 @@ export class VirtualMachineRestorePoint extends cdktf.TerraformResource {
   // ==========
 
   // crash_consistency_mode_enabled - computed: false, optional: true, required: false
-  private _crashConsistencyModeEnabled?: boolean | cdktf.IResolvable; 
+  private _crashConsistencyModeEnabled?: boolean | cdktn.IResolvable; 
   public get crashConsistencyModeEnabled() {
     return this.getBooleanAttribute('crash_consistency_mode_enabled');
   }
-  public set crashConsistencyModeEnabled(value: boolean | cdktf.IResolvable) {
+  public set crashConsistencyModeEnabled(value: boolean | cdktn.IResolvable) {
     this._crashConsistencyModeEnabled = value;
   }
   public resetCrashConsistencyModeEnabled() {
@@ -285,7 +285,7 @@ export class VirtualMachineRestorePoint extends cdktf.TerraformResource {
   // excluded_disks - computed: false, optional: true, required: false
   private _excludedDisks?: string[]; 
   public get excludedDisks() {
-    return cdktf.Fn.tolist(this.getListAttribute('excluded_disks'));
+    return cdktn.Fn.tolist(this.getListAttribute('excluded_disks'));
   }
   public set excludedDisks(value: string[]) {
     this._excludedDisks = value;
@@ -362,11 +362,11 @@ export class VirtualMachineRestorePoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      crash_consistency_mode_enabled: cdktf.booleanToTerraform(this._crashConsistencyModeEnabled),
-      excluded_disks: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludedDisks),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      virtual_machine_restore_point_collection_id: cdktf.stringToTerraform(this._virtualMachineRestorePointCollectionId),
+      crash_consistency_mode_enabled: cdktn.booleanToTerraform(this._crashConsistencyModeEnabled),
+      excluded_disks: cdktn.listMapper(cdktn.stringToTerraform, false)(this._excludedDisks),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      virtual_machine_restore_point_collection_id: cdktn.stringToTerraform(this._virtualMachineRestorePointCollectionId),
       timeouts: virtualMachineRestorePointTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -374,31 +374,31 @@ export class VirtualMachineRestorePoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       crash_consistency_mode_enabled: {
-        value: cdktf.booleanToHclTerraform(this._crashConsistencyModeEnabled),
+        value: cdktn.booleanToHclTerraform(this._crashConsistencyModeEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       excluded_disks: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludedDisks),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._excludedDisks),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_machine_restore_point_collection_id: {
-        value: cdktf.stringToHclTerraform(this._virtualMachineRestorePointCollectionId),
+        value: cdktn.stringToHclTerraform(this._virtualMachineRestorePointCollectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

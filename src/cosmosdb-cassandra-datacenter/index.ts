@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CosmosdbCassandraDatacenterConfig extends cdktf.TerraformMetaArguments {
+export interface CosmosdbCassandraDatacenterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_cassandra_datacenter#availability_zones_enabled CosmosdbCassandraDatacenter#availability_zones_enabled}
   */
-  readonly availabilityZonesEnabled?: boolean | cdktf.IResolvable;
+  readonly availabilityZonesEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_cassandra_datacenter#backup_storage_customer_key_uri CosmosdbCassandraDatacenter#backup_storage_customer_key_uri}
   */
@@ -93,46 +93,46 @@ export interface CosmosdbCassandraDatacenterTimeouts {
   readonly update?: string;
 }
 
-export function cosmosdbCassandraDatacenterTimeoutsToTerraform(struct?: CosmosdbCassandraDatacenterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbCassandraDatacenterTimeoutsToTerraform(struct?: CosmosdbCassandraDatacenterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cosmosdbCassandraDatacenterTimeoutsToHclTerraform(struct?: CosmosdbCassandraDatacenterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbCassandraDatacenterTimeoutsToHclTerraform(struct?: CosmosdbCassandraDatacenterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -143,19 +143,19 @@ export function cosmosdbCassandraDatacenterTimeoutsToHclTerraform(struct?: Cosmo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbCassandraDatacenterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CosmosdbCassandraDatacenterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CosmosdbCassandraDatacenterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CosmosdbCassandraDatacenterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -180,7 +180,7 @@ export class CosmosdbCassandraDatacenterTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CosmosdbCassandraDatacenterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CosmosdbCassandraDatacenterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -189,7 +189,7 @@ export class CosmosdbCassandraDatacenterTimeoutsOutputReference extends cdktf.Co
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -271,7 +271,7 @@ export class CosmosdbCassandraDatacenterTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_cassandra_datacenter azurerm_cosmosdb_cassandra_datacenter}
 */
-export class CosmosdbCassandraDatacenter extends cdktf.TerraformResource {
+export class CosmosdbCassandraDatacenter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -282,14 +282,14 @@ export class CosmosdbCassandraDatacenter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CosmosdbCassandraDatacenter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CosmosdbCassandraDatacenter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CosmosdbCassandraDatacenter to import
   * @param importFromId The id of the existing CosmosdbCassandraDatacenter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_cassandra_datacenter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CosmosdbCassandraDatacenter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_cassandra_datacenter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_cassandra_datacenter", importId: importFromId, provider });
       }
 
   // ===========
@@ -340,11 +340,11 @@ export class CosmosdbCassandraDatacenter extends cdktf.TerraformResource {
   // ==========
 
   // availability_zones_enabled - computed: false, optional: true, required: false
-  private _availabilityZonesEnabled?: boolean | cdktf.IResolvable; 
+  private _availabilityZonesEnabled?: boolean | cdktn.IResolvable; 
   public get availabilityZonesEnabled() {
     return this.getBooleanAttribute('availability_zones_enabled');
   }
-  public set availabilityZonesEnabled(value: boolean | cdktf.IResolvable) {
+  public set availabilityZonesEnabled(value: boolean | cdktn.IResolvable) {
     this._availabilityZonesEnabled = value;
   }
   public resetAvailabilityZonesEnabled() {
@@ -562,19 +562,19 @@ export class CosmosdbCassandraDatacenter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zones_enabled: cdktf.booleanToTerraform(this._availabilityZonesEnabled),
-      backup_storage_customer_key_uri: cdktf.stringToTerraform(this._backupStorageCustomerKeyUri),
-      base64_encoded_yaml_fragment: cdktf.stringToTerraform(this._base64EncodedYamlFragment),
-      cassandra_cluster_id: cdktf.stringToTerraform(this._cassandraClusterId),
-      delegated_management_subnet_id: cdktf.stringToTerraform(this._delegatedManagementSubnetId),
-      disk_count: cdktf.numberToTerraform(this._diskCount),
-      disk_sku: cdktf.stringToTerraform(this._diskSku),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      managed_disk_customer_key_uri: cdktf.stringToTerraform(this._managedDiskCustomerKeyUri),
-      name: cdktf.stringToTerraform(this._name),
-      node_count: cdktf.numberToTerraform(this._nodeCount),
-      sku_name: cdktf.stringToTerraform(this._skuName),
+      availability_zones_enabled: cdktn.booleanToTerraform(this._availabilityZonesEnabled),
+      backup_storage_customer_key_uri: cdktn.stringToTerraform(this._backupStorageCustomerKeyUri),
+      base64_encoded_yaml_fragment: cdktn.stringToTerraform(this._base64EncodedYamlFragment),
+      cassandra_cluster_id: cdktn.stringToTerraform(this._cassandraClusterId),
+      delegated_management_subnet_id: cdktn.stringToTerraform(this._delegatedManagementSubnetId),
+      disk_count: cdktn.numberToTerraform(this._diskCount),
+      disk_sku: cdktn.stringToTerraform(this._diskSku),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      managed_disk_customer_key_uri: cdktn.stringToTerraform(this._managedDiskCustomerKeyUri),
+      name: cdktn.stringToTerraform(this._name),
+      node_count: cdktn.numberToTerraform(this._nodeCount),
+      sku_name: cdktn.stringToTerraform(this._skuName),
       timeouts: cosmosdbCassandraDatacenterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -582,79 +582,79 @@ export class CosmosdbCassandraDatacenter extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       availability_zones_enabled: {
-        value: cdktf.booleanToHclTerraform(this._availabilityZonesEnabled),
+        value: cdktn.booleanToHclTerraform(this._availabilityZonesEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       backup_storage_customer_key_uri: {
-        value: cdktf.stringToHclTerraform(this._backupStorageCustomerKeyUri),
+        value: cdktn.stringToHclTerraform(this._backupStorageCustomerKeyUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       base64_encoded_yaml_fragment: {
-        value: cdktf.stringToHclTerraform(this._base64EncodedYamlFragment),
+        value: cdktn.stringToHclTerraform(this._base64EncodedYamlFragment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cassandra_cluster_id: {
-        value: cdktf.stringToHclTerraform(this._cassandraClusterId),
+        value: cdktn.stringToHclTerraform(this._cassandraClusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delegated_management_subnet_id: {
-        value: cdktf.stringToHclTerraform(this._delegatedManagementSubnetId),
+        value: cdktn.stringToHclTerraform(this._delegatedManagementSubnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disk_count: {
-        value: cdktf.numberToHclTerraform(this._diskCount),
+        value: cdktn.numberToHclTerraform(this._diskCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       disk_sku: {
-        value: cdktf.stringToHclTerraform(this._diskSku),
+        value: cdktn.stringToHclTerraform(this._diskSku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_disk_customer_key_uri: {
-        value: cdktf.stringToHclTerraform(this._managedDiskCustomerKeyUri),
+        value: cdktn.stringToHclTerraform(this._managedDiskCustomerKeyUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       node_count: {
-        value: cdktf.numberToHclTerraform(this._nodeCount),
+        value: cdktn.numberToHclTerraform(this._nodeCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       sku_name: {
-        value: cdktf.stringToHclTerraform(this._skuName),
+        value: cdktn.stringToHclTerraform(this._skuName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

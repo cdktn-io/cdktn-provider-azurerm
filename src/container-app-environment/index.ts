@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ContainerAppEnvironmentConfig extends cdktf.TerraformMetaArguments {
+export interface ContainerAppEnvironmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Application Insights connection string used by Dapr to export Service to Service communication telemetry.
   *
@@ -42,7 +42,7 @@ export interface ContainerAppEnvironmentConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_environment#internal_load_balancer_enabled ContainerAppEnvironment#internal_load_balancer_enabled}
   */
-  readonly internalLoadBalancerEnabled?: boolean | cdktf.IResolvable;
+  readonly internalLoadBalancerEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_environment#location ContainerAppEnvironment#location}
   */
@@ -62,7 +62,7 @@ export interface ContainerAppEnvironmentConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_environment#mutual_tls_enabled ContainerAppEnvironment#mutual_tls_enabled}
   */
-  readonly mutualTlsEnabled?: boolean | cdktf.IResolvable;
+  readonly mutualTlsEnabled?: boolean | cdktn.IResolvable;
   /**
   * The name of the Container Apps Managed Environment.
   *
@@ -86,7 +86,7 @@ export interface ContainerAppEnvironmentConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_environment#zone_redundancy_enabled ContainerAppEnvironment#zone_redundancy_enabled}
   */
-  readonly zoneRedundancyEnabled?: boolean | cdktf.IResolvable;
+  readonly zoneRedundancyEnabled?: boolean | cdktn.IResolvable;
   /**
   * identity block
   *
@@ -104,7 +104,7 @@ export interface ContainerAppEnvironmentConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_environment#workload_profile ContainerAppEnvironment#workload_profile}
   */
-  readonly workloadProfile?: ContainerAppEnvironmentWorkloadProfile[] | cdktf.IResolvable;
+  readonly workloadProfile?: ContainerAppEnvironmentWorkloadProfile[] | cdktn.IResolvable;
 }
 export interface ContainerAppEnvironmentIdentity {
   /**
@@ -118,31 +118,31 @@ export interface ContainerAppEnvironmentIdentity {
 }
 
 export function containerAppEnvironmentIdentityToTerraform(struct?: ContainerAppEnvironmentIdentityOutputReference | ContainerAppEnvironmentIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function containerAppEnvironmentIdentityToHclTerraform(struct?: ContainerAppEnvironmentIdentityOutputReference | ContainerAppEnvironmentIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -153,14 +153,14 @@ export function containerAppEnvironmentIdentityToHclTerraform(struct?: Container
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContainerAppEnvironmentIdentityOutputReference extends cdktf.ComplexObject {
+export class ContainerAppEnvironmentIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -194,7 +194,7 @@ export class ContainerAppEnvironmentIdentityOutputReference extends cdktf.Comple
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -249,46 +249,46 @@ export interface ContainerAppEnvironmentTimeouts {
   readonly update?: string;
 }
 
-export function containerAppEnvironmentTimeoutsToTerraform(struct?: ContainerAppEnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAppEnvironmentTimeoutsToTerraform(struct?: ContainerAppEnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function containerAppEnvironmentTimeoutsToHclTerraform(struct?: ContainerAppEnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAppEnvironmentTimeoutsToHclTerraform(struct?: ContainerAppEnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -299,19 +299,19 @@ export function containerAppEnvironmentTimeoutsToHclTerraform(struct?: Container
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContainerAppEnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ContainerAppEnvironmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ContainerAppEnvironmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ContainerAppEnvironmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -336,7 +336,7 @@ export class ContainerAppEnvironmentTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ContainerAppEnvironmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ContainerAppEnvironmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -345,7 +345,7 @@ export class ContainerAppEnvironmentTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -442,46 +442,46 @@ export interface ContainerAppEnvironmentWorkloadProfile {
   readonly workloadProfileType: string;
 }
 
-export function containerAppEnvironmentWorkloadProfileToTerraform(struct?: ContainerAppEnvironmentWorkloadProfile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAppEnvironmentWorkloadProfileToTerraform(struct?: ContainerAppEnvironmentWorkloadProfile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    maximum_count: cdktf.numberToTerraform(struct!.maximumCount),
-    minimum_count: cdktf.numberToTerraform(struct!.minimumCount),
-    name: cdktf.stringToTerraform(struct!.name),
-    workload_profile_type: cdktf.stringToTerraform(struct!.workloadProfileType),
+    maximum_count: cdktn.numberToTerraform(struct!.maximumCount),
+    minimum_count: cdktn.numberToTerraform(struct!.minimumCount),
+    name: cdktn.stringToTerraform(struct!.name),
+    workload_profile_type: cdktn.stringToTerraform(struct!.workloadProfileType),
   }
 }
 
 
-export function containerAppEnvironmentWorkloadProfileToHclTerraform(struct?: ContainerAppEnvironmentWorkloadProfile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAppEnvironmentWorkloadProfileToHclTerraform(struct?: ContainerAppEnvironmentWorkloadProfile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     maximum_count: {
-      value: cdktf.numberToHclTerraform(struct!.maximumCount),
+      value: cdktn.numberToHclTerraform(struct!.maximumCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minimum_count: {
-      value: cdktf.numberToHclTerraform(struct!.minimumCount),
+      value: cdktn.numberToHclTerraform(struct!.minimumCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workload_profile_type: {
-      value: cdktf.stringToHclTerraform(struct!.workloadProfileType),
+      value: cdktn.stringToHclTerraform(struct!.workloadProfileType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -492,9 +492,9 @@ export function containerAppEnvironmentWorkloadProfileToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContainerAppEnvironmentWorkloadProfileOutputReference extends cdktf.ComplexObject {
+export class ContainerAppEnvironmentWorkloadProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -502,11 +502,11 @@ export class ContainerAppEnvironmentWorkloadProfileOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ContainerAppEnvironmentWorkloadProfile | cdktf.IResolvable | undefined {
+  public get internalValue(): ContainerAppEnvironmentWorkloadProfile | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -531,7 +531,7 @@ export class ContainerAppEnvironmentWorkloadProfileOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ContainerAppEnvironmentWorkloadProfile | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ContainerAppEnvironmentWorkloadProfile | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -540,7 +540,7 @@ export class ContainerAppEnvironmentWorkloadProfileOutputReference extends cdktf
       this._name = undefined;
       this._workloadProfileType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -613,15 +613,15 @@ export class ContainerAppEnvironmentWorkloadProfileOutputReference extends cdktf
   }
 }
 
-export class ContainerAppEnvironmentWorkloadProfileList extends cdktf.ComplexList {
-  public internalValue? : ContainerAppEnvironmentWorkloadProfile[] | cdktf.IResolvable
+export class ContainerAppEnvironmentWorkloadProfileList extends cdktn.ComplexList {
+  public internalValue? : ContainerAppEnvironmentWorkloadProfile[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -636,7 +636,7 @@ export class ContainerAppEnvironmentWorkloadProfileList extends cdktf.ComplexLis
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_environment azurerm_container_app_environment}
 */
-export class ContainerAppEnvironment extends cdktf.TerraformResource {
+export class ContainerAppEnvironment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -647,14 +647,14 @@ export class ContainerAppEnvironment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ContainerAppEnvironment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ContainerAppEnvironment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContainerAppEnvironment to import
   * @param importFromId The id of the existing ContainerAppEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContainerAppEnvironment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_container_app_environment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_container_app_environment", importId: importFromId, provider });
       }
 
   // ===========
@@ -787,11 +787,11 @@ export class ContainerAppEnvironment extends cdktf.TerraformResource {
   }
 
   // internal_load_balancer_enabled - computed: false, optional: true, required: false
-  private _internalLoadBalancerEnabled?: boolean | cdktf.IResolvable; 
+  private _internalLoadBalancerEnabled?: boolean | cdktn.IResolvable; 
   public get internalLoadBalancerEnabled() {
     return this.getBooleanAttribute('internal_load_balancer_enabled');
   }
-  public set internalLoadBalancerEnabled(value: boolean | cdktf.IResolvable) {
+  public set internalLoadBalancerEnabled(value: boolean | cdktn.IResolvable) {
     this._internalLoadBalancerEnabled = value;
   }
   public resetInternalLoadBalancerEnabled() {
@@ -848,11 +848,11 @@ export class ContainerAppEnvironment extends cdktf.TerraformResource {
   }
 
   // mutual_tls_enabled - computed: false, optional: true, required: false
-  private _mutualTlsEnabled?: boolean | cdktf.IResolvable; 
+  private _mutualTlsEnabled?: boolean | cdktn.IResolvable; 
   public get mutualTlsEnabled() {
     return this.getBooleanAttribute('mutual_tls_enabled');
   }
-  public set mutualTlsEnabled(value: boolean | cdktf.IResolvable) {
+  public set mutualTlsEnabled(value: boolean | cdktn.IResolvable) {
     this._mutualTlsEnabled = value;
   }
   public resetMutualTlsEnabled() {
@@ -937,11 +937,11 @@ export class ContainerAppEnvironment extends cdktf.TerraformResource {
   }
 
   // zone_redundancy_enabled - computed: false, optional: true, required: false
-  private _zoneRedundancyEnabled?: boolean | cdktf.IResolvable; 
+  private _zoneRedundancyEnabled?: boolean | cdktn.IResolvable; 
   public get zoneRedundancyEnabled() {
     return this.getBooleanAttribute('zone_redundancy_enabled');
   }
-  public set zoneRedundancyEnabled(value: boolean | cdktf.IResolvable) {
+  public set zoneRedundancyEnabled(value: boolean | cdktn.IResolvable) {
     this._zoneRedundancyEnabled = value;
   }
   public resetZoneRedundancyEnabled() {
@@ -989,7 +989,7 @@ export class ContainerAppEnvironment extends cdktf.TerraformResource {
   public get workloadProfile() {
     return this._workloadProfile;
   }
-  public putWorkloadProfile(value: ContainerAppEnvironmentWorkloadProfile[] | cdktf.IResolvable) {
+  public putWorkloadProfile(value: ContainerAppEnvironmentWorkloadProfile[] | cdktn.IResolvable) {
     this._workloadProfile.internalValue = value;
   }
   public resetWorkloadProfile() {
@@ -1006,108 +1006,108 @@ export class ContainerAppEnvironment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dapr_application_insights_connection_string: cdktf.stringToTerraform(this._daprApplicationInsightsConnectionString),
-      id: cdktf.stringToTerraform(this._id),
-      infrastructure_resource_group_name: cdktf.stringToTerraform(this._infrastructureResourceGroupName),
-      infrastructure_subnet_id: cdktf.stringToTerraform(this._infrastructureSubnetId),
-      internal_load_balancer_enabled: cdktf.booleanToTerraform(this._internalLoadBalancerEnabled),
-      location: cdktf.stringToTerraform(this._location),
-      log_analytics_workspace_id: cdktf.stringToTerraform(this._logAnalyticsWorkspaceId),
-      logs_destination: cdktf.stringToTerraform(this._logsDestination),
-      mutual_tls_enabled: cdktf.booleanToTerraform(this._mutualTlsEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_access: cdktf.stringToTerraform(this._publicNetworkAccess),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      zone_redundancy_enabled: cdktf.booleanToTerraform(this._zoneRedundancyEnabled),
+      dapr_application_insights_connection_string: cdktn.stringToTerraform(this._daprApplicationInsightsConnectionString),
+      id: cdktn.stringToTerraform(this._id),
+      infrastructure_resource_group_name: cdktn.stringToTerraform(this._infrastructureResourceGroupName),
+      infrastructure_subnet_id: cdktn.stringToTerraform(this._infrastructureSubnetId),
+      internal_load_balancer_enabled: cdktn.booleanToTerraform(this._internalLoadBalancerEnabled),
+      location: cdktn.stringToTerraform(this._location),
+      log_analytics_workspace_id: cdktn.stringToTerraform(this._logAnalyticsWorkspaceId),
+      logs_destination: cdktn.stringToTerraform(this._logsDestination),
+      mutual_tls_enabled: cdktn.booleanToTerraform(this._mutualTlsEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_access: cdktn.stringToTerraform(this._publicNetworkAccess),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      zone_redundancy_enabled: cdktn.booleanToTerraform(this._zoneRedundancyEnabled),
       identity: containerAppEnvironmentIdentityToTerraform(this._identity.internalValue),
       timeouts: containerAppEnvironmentTimeoutsToTerraform(this._timeouts.internalValue),
-      workload_profile: cdktf.listMapper(containerAppEnvironmentWorkloadProfileToTerraform, true)(this._workloadProfile.internalValue),
+      workload_profile: cdktn.listMapper(containerAppEnvironmentWorkloadProfileToTerraform, true)(this._workloadProfile.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       dapr_application_insights_connection_string: {
-        value: cdktf.stringToHclTerraform(this._daprApplicationInsightsConnectionString),
+        value: cdktn.stringToHclTerraform(this._daprApplicationInsightsConnectionString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       infrastructure_resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._infrastructureResourceGroupName),
+        value: cdktn.stringToHclTerraform(this._infrastructureResourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       infrastructure_subnet_id: {
-        value: cdktf.stringToHclTerraform(this._infrastructureSubnetId),
+        value: cdktn.stringToHclTerraform(this._infrastructureSubnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       internal_load_balancer_enabled: {
-        value: cdktf.booleanToHclTerraform(this._internalLoadBalancerEnabled),
+        value: cdktn.booleanToHclTerraform(this._internalLoadBalancerEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_analytics_workspace_id: {
-        value: cdktf.stringToHclTerraform(this._logAnalyticsWorkspaceId),
+        value: cdktn.stringToHclTerraform(this._logAnalyticsWorkspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       logs_destination: {
-        value: cdktf.stringToHclTerraform(this._logsDestination),
+        value: cdktn.stringToHclTerraform(this._logsDestination),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mutual_tls_enabled: {
-        value: cdktf.booleanToHclTerraform(this._mutualTlsEnabled),
+        value: cdktn.booleanToHclTerraform(this._mutualTlsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access: {
-        value: cdktf.stringToHclTerraform(this._publicNetworkAccess),
+        value: cdktn.stringToHclTerraform(this._publicNetworkAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       zone_redundancy_enabled: {
-        value: cdktf.booleanToHclTerraform(this._zoneRedundancyEnabled),
+        value: cdktn.booleanToHclTerraform(this._zoneRedundancyEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -1125,7 +1125,7 @@ export class ContainerAppEnvironment extends cdktf.TerraformResource {
         storageClassType: "ContainerAppEnvironmentTimeouts",
       },
       workload_profile: {
-        value: cdktf.listMapperHcl(containerAppEnvironmentWorkloadProfileToHclTerraform, true)(this._workloadProfile.internalValue),
+        value: cdktn.listMapperHcl(containerAppEnvironmentWorkloadProfileToHclTerraform, true)(this._workloadProfile.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ContainerAppEnvironmentWorkloadProfileList",

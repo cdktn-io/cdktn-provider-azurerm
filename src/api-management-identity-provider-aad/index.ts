@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiManagementIdentityProviderAadConfig extends cdktf.TerraformMetaArguments {
+export interface ApiManagementIdentityProviderAadConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_identity_provider_aad#allowed_tenants ApiManagementIdentityProviderAad#allowed_tenants}
   */
@@ -73,46 +73,46 @@ export interface ApiManagementIdentityProviderAadTimeouts {
   readonly update?: string;
 }
 
-export function apiManagementIdentityProviderAadTimeoutsToTerraform(struct?: ApiManagementIdentityProviderAadTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementIdentityProviderAadTimeoutsToTerraform(struct?: ApiManagementIdentityProviderAadTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apiManagementIdentityProviderAadTimeoutsToHclTerraform(struct?: ApiManagementIdentityProviderAadTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementIdentityProviderAadTimeoutsToHclTerraform(struct?: ApiManagementIdentityProviderAadTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,19 +123,19 @@ export function apiManagementIdentityProviderAadTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementIdentityProviderAadTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApiManagementIdentityProviderAadTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApiManagementIdentityProviderAadTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementIdentityProviderAadTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -160,7 +160,7 @@ export class ApiManagementIdentityProviderAadTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementIdentityProviderAadTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementIdentityProviderAadTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class ApiManagementIdentityProviderAadTimeoutsOutputReference extends cdk
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -251,7 +251,7 @@ export class ApiManagementIdentityProviderAadTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_identity_provider_aad azurerm_api_management_identity_provider_aad}
 */
-export class ApiManagementIdentityProviderAad extends cdktf.TerraformResource {
+export class ApiManagementIdentityProviderAad extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -262,14 +262,14 @@ export class ApiManagementIdentityProviderAad extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiManagementIdentityProviderAad resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiManagementIdentityProviderAad resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementIdentityProviderAad to import
   * @param importFromId The id of the existing ApiManagementIdentityProviderAad that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_identity_provider_aad#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementIdentityProviderAad to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_identity_provider_aad", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_identity_provider_aad", importId: importFromId, provider });
       }
 
   // ===========
@@ -449,14 +449,14 @@ export class ApiManagementIdentityProviderAad extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_tenants: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedTenants),
-      api_management_name: cdktf.stringToTerraform(this._apiManagementName),
-      client_id: cdktf.stringToTerraform(this._clientId),
-      client_library: cdktf.stringToTerraform(this._clientLibrary),
-      client_secret: cdktf.stringToTerraform(this._clientSecret),
-      id: cdktf.stringToTerraform(this._id),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      signin_tenant: cdktf.stringToTerraform(this._signinTenant),
+      allowed_tenants: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedTenants),
+      api_management_name: cdktn.stringToTerraform(this._apiManagementName),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      client_library: cdktn.stringToTerraform(this._clientLibrary),
+      client_secret: cdktn.stringToTerraform(this._clientSecret),
+      id: cdktn.stringToTerraform(this._id),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      signin_tenant: cdktn.stringToTerraform(this._signinTenant),
       timeouts: apiManagementIdentityProviderAadTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -464,49 +464,49 @@ export class ApiManagementIdentityProviderAad extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_tenants: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedTenants),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedTenants),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       api_management_name: {
-        value: cdktf.stringToHclTerraform(this._apiManagementName),
+        value: cdktn.stringToHclTerraform(this._apiManagementName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_library: {
-        value: cdktf.stringToHclTerraform(this._clientLibrary),
+        value: cdktn.stringToHclTerraform(this._clientLibrary),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_secret: {
-        value: cdktf.stringToHclTerraform(this._clientSecret),
+        value: cdktn.stringToHclTerraform(this._clientSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       signin_tenant: {
-        value: cdktf.stringToHclTerraform(this._signinTenant),
+        value: cdktn.stringToHclTerraform(this._signinTenant),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

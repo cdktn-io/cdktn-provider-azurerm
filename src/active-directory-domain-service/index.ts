@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ActiveDirectoryDomainServiceConfig extends cdktf.TerraformMetaArguments {
+export interface ActiveDirectoryDomainServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#domain_configuration_type ActiveDirectoryDomainService#domain_configuration_type}
   */
@@ -23,7 +23,7 @@ export interface ActiveDirectoryDomainServiceConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#filtered_sync_enabled ActiveDirectoryDomainService#filtered_sync_enabled}
   */
-  readonly filteredSyncEnabled?: boolean | cdktf.IResolvable;
+  readonly filteredSyncEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#id ActiveDirectoryDomainService#id}
   *
@@ -90,24 +90,24 @@ export interface ActiveDirectoryDomainServiceInitialReplicaSet {
 }
 
 export function activeDirectoryDomainServiceInitialReplicaSetToTerraform(struct?: ActiveDirectoryDomainServiceInitialReplicaSetOutputReference | ActiveDirectoryDomainServiceInitialReplicaSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
 export function activeDirectoryDomainServiceInitialReplicaSetToHclTerraform(struct?: ActiveDirectoryDomainServiceInitialReplicaSetOutputReference | ActiveDirectoryDomainServiceInitialReplicaSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,14 +118,14 @@ export function activeDirectoryDomainServiceInitialReplicaSetToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ActiveDirectoryDomainServiceInitialReplicaSetOutputReference extends cdktf.ComplexObject {
+export class ActiveDirectoryDomainServiceInitialReplicaSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -196,46 +196,46 @@ export interface ActiveDirectoryDomainServiceNotifications {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#notify_dc_admins ActiveDirectoryDomainService#notify_dc_admins}
   */
-  readonly notifyDcAdmins?: boolean | cdktf.IResolvable;
+  readonly notifyDcAdmins?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#notify_global_admins ActiveDirectoryDomainService#notify_global_admins}
   */
-  readonly notifyGlobalAdmins?: boolean | cdktf.IResolvable;
+  readonly notifyGlobalAdmins?: boolean | cdktn.IResolvable;
 }
 
 export function activeDirectoryDomainServiceNotificationsToTerraform(struct?: ActiveDirectoryDomainServiceNotificationsOutputReference | ActiveDirectoryDomainServiceNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalRecipients),
-    notify_dc_admins: cdktf.booleanToTerraform(struct!.notifyDcAdmins),
-    notify_global_admins: cdktf.booleanToTerraform(struct!.notifyGlobalAdmins),
+    additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
+    notify_dc_admins: cdktn.booleanToTerraform(struct!.notifyDcAdmins),
+    notify_global_admins: cdktn.booleanToTerraform(struct!.notifyGlobalAdmins),
   }
 }
 
 
 export function activeDirectoryDomainServiceNotificationsToHclTerraform(struct?: ActiveDirectoryDomainServiceNotificationsOutputReference | ActiveDirectoryDomainServiceNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalRecipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalRecipients),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     notify_dc_admins: {
-      value: cdktf.booleanToHclTerraform(struct!.notifyDcAdmins),
+      value: cdktn.booleanToHclTerraform(struct!.notifyDcAdmins),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     notify_global_admins: {
-      value: cdktf.booleanToHclTerraform(struct!.notifyGlobalAdmins),
+      value: cdktn.booleanToHclTerraform(struct!.notifyGlobalAdmins),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -246,14 +246,14 @@ export function activeDirectoryDomainServiceNotificationsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ActiveDirectoryDomainServiceNotificationsOutputReference extends cdktf.ComplexObject {
+export class ActiveDirectoryDomainServiceNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -293,7 +293,7 @@ export class ActiveDirectoryDomainServiceNotificationsOutputReference extends cd
   // additional_recipients - computed: false, optional: true, required: false
   private _additionalRecipients?: string[]; 
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
   public set additionalRecipients(value: string[]) {
     this._additionalRecipients = value;
@@ -307,11 +307,11 @@ export class ActiveDirectoryDomainServiceNotificationsOutputReference extends cd
   }
 
   // notify_dc_admins - computed: false, optional: true, required: false
-  private _notifyDcAdmins?: boolean | cdktf.IResolvable; 
+  private _notifyDcAdmins?: boolean | cdktn.IResolvable; 
   public get notifyDcAdmins() {
     return this.getBooleanAttribute('notify_dc_admins');
   }
-  public set notifyDcAdmins(value: boolean | cdktf.IResolvable) {
+  public set notifyDcAdmins(value: boolean | cdktn.IResolvable) {
     this._notifyDcAdmins = value;
   }
   public resetNotifyDcAdmins() {
@@ -323,11 +323,11 @@ export class ActiveDirectoryDomainServiceNotificationsOutputReference extends cd
   }
 
   // notify_global_admins - computed: false, optional: true, required: false
-  private _notifyGlobalAdmins?: boolean | cdktf.IResolvable; 
+  private _notifyGlobalAdmins?: boolean | cdktn.IResolvable; 
   public get notifyGlobalAdmins() {
     return this.getBooleanAttribute('notify_global_admins');
   }
-  public set notifyGlobalAdmins(value: boolean | cdktf.IResolvable) {
+  public set notifyGlobalAdmins(value: boolean | cdktn.IResolvable) {
     this._notifyGlobalAdmins = value;
   }
   public resetNotifyGlobalAdmins() {
@@ -342,11 +342,11 @@ export interface ActiveDirectoryDomainServiceSecureLdap {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#enabled ActiveDirectoryDomainService#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#external_access_enabled ActiveDirectoryDomainService#external_access_enabled}
   */
-  readonly externalAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly externalAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#pfx_certificate ActiveDirectoryDomainService#pfx_certificate}
   */
@@ -358,45 +358,45 @@ export interface ActiveDirectoryDomainServiceSecureLdap {
 }
 
 export function activeDirectoryDomainServiceSecureLdapToTerraform(struct?: ActiveDirectoryDomainServiceSecureLdapOutputReference | ActiveDirectoryDomainServiceSecureLdap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    external_access_enabled: cdktf.booleanToTerraform(struct!.externalAccessEnabled),
-    pfx_certificate: cdktf.stringToTerraform(struct!.pfxCertificate),
-    pfx_certificate_password: cdktf.stringToTerraform(struct!.pfxCertificatePassword),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    external_access_enabled: cdktn.booleanToTerraform(struct!.externalAccessEnabled),
+    pfx_certificate: cdktn.stringToTerraform(struct!.pfxCertificate),
+    pfx_certificate_password: cdktn.stringToTerraform(struct!.pfxCertificatePassword),
   }
 }
 
 
 export function activeDirectoryDomainServiceSecureLdapToHclTerraform(struct?: ActiveDirectoryDomainServiceSecureLdapOutputReference | ActiveDirectoryDomainServiceSecureLdap): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     external_access_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.externalAccessEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.externalAccessEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     pfx_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.pfxCertificate),
+      value: cdktn.stringToHclTerraform(struct!.pfxCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pfx_certificate_password: {
-      value: cdktf.stringToHclTerraform(struct!.pfxCertificatePassword),
+      value: cdktn.stringToHclTerraform(struct!.pfxCertificatePassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -407,14 +407,14 @@ export function activeDirectoryDomainServiceSecureLdapToHclTerraform(struct?: Ac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ActiveDirectoryDomainServiceSecureLdapOutputReference extends cdktf.ComplexObject {
+export class ActiveDirectoryDomainServiceSecureLdapOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -468,11 +468,11 @@ export class ActiveDirectoryDomainServiceSecureLdapOutputReference extends cdktf
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -481,11 +481,11 @@ export class ActiveDirectoryDomainServiceSecureLdapOutputReference extends cdktf
   }
 
   // external_access_enabled - computed: false, optional: true, required: false
-  private _externalAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _externalAccessEnabled?: boolean | cdktn.IResolvable; 
   public get externalAccessEnabled() {
     return this.getBooleanAttribute('external_access_enabled');
   }
-  public set externalAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set externalAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._externalAccessEnabled = value;
   }
   public resetExternalAccessEnabled() {
@@ -531,94 +531,94 @@ export interface ActiveDirectoryDomainServiceSecurity {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#kerberos_armoring_enabled ActiveDirectoryDomainService#kerberos_armoring_enabled}
   */
-  readonly kerberosArmoringEnabled?: boolean | cdktf.IResolvable;
+  readonly kerberosArmoringEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#kerberos_rc4_encryption_enabled ActiveDirectoryDomainService#kerberos_rc4_encryption_enabled}
   */
-  readonly kerberosRc4EncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly kerberosRc4EncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#ntlm_v1_enabled ActiveDirectoryDomainService#ntlm_v1_enabled}
   */
-  readonly ntlmV1Enabled?: boolean | cdktf.IResolvable;
+  readonly ntlmV1Enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#sync_kerberos_passwords ActiveDirectoryDomainService#sync_kerberos_passwords}
   */
-  readonly syncKerberosPasswords?: boolean | cdktf.IResolvable;
+  readonly syncKerberosPasswords?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#sync_ntlm_passwords ActiveDirectoryDomainService#sync_ntlm_passwords}
   */
-  readonly syncNtlmPasswords?: boolean | cdktf.IResolvable;
+  readonly syncNtlmPasswords?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#sync_on_prem_passwords ActiveDirectoryDomainService#sync_on_prem_passwords}
   */
-  readonly syncOnPremPasswords?: boolean | cdktf.IResolvable;
+  readonly syncOnPremPasswords?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#tls_v1_enabled ActiveDirectoryDomainService#tls_v1_enabled}
   */
-  readonly tlsV1Enabled?: boolean | cdktf.IResolvable;
+  readonly tlsV1Enabled?: boolean | cdktn.IResolvable;
 }
 
 export function activeDirectoryDomainServiceSecurityToTerraform(struct?: ActiveDirectoryDomainServiceSecurityOutputReference | ActiveDirectoryDomainServiceSecurity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kerberos_armoring_enabled: cdktf.booleanToTerraform(struct!.kerberosArmoringEnabled),
-    kerberos_rc4_encryption_enabled: cdktf.booleanToTerraform(struct!.kerberosRc4EncryptionEnabled),
-    ntlm_v1_enabled: cdktf.booleanToTerraform(struct!.ntlmV1Enabled),
-    sync_kerberos_passwords: cdktf.booleanToTerraform(struct!.syncKerberosPasswords),
-    sync_ntlm_passwords: cdktf.booleanToTerraform(struct!.syncNtlmPasswords),
-    sync_on_prem_passwords: cdktf.booleanToTerraform(struct!.syncOnPremPasswords),
-    tls_v1_enabled: cdktf.booleanToTerraform(struct!.tlsV1Enabled),
+    kerberos_armoring_enabled: cdktn.booleanToTerraform(struct!.kerberosArmoringEnabled),
+    kerberos_rc4_encryption_enabled: cdktn.booleanToTerraform(struct!.kerberosRc4EncryptionEnabled),
+    ntlm_v1_enabled: cdktn.booleanToTerraform(struct!.ntlmV1Enabled),
+    sync_kerberos_passwords: cdktn.booleanToTerraform(struct!.syncKerberosPasswords),
+    sync_ntlm_passwords: cdktn.booleanToTerraform(struct!.syncNtlmPasswords),
+    sync_on_prem_passwords: cdktn.booleanToTerraform(struct!.syncOnPremPasswords),
+    tls_v1_enabled: cdktn.booleanToTerraform(struct!.tlsV1Enabled),
   }
 }
 
 
 export function activeDirectoryDomainServiceSecurityToHclTerraform(struct?: ActiveDirectoryDomainServiceSecurityOutputReference | ActiveDirectoryDomainServiceSecurity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kerberos_armoring_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.kerberosArmoringEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.kerberosArmoringEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     kerberos_rc4_encryption_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.kerberosRc4EncryptionEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.kerberosRc4EncryptionEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ntlm_v1_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.ntlmV1Enabled),
+      value: cdktn.booleanToHclTerraform(struct!.ntlmV1Enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sync_kerberos_passwords: {
-      value: cdktf.booleanToHclTerraform(struct!.syncKerberosPasswords),
+      value: cdktn.booleanToHclTerraform(struct!.syncKerberosPasswords),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sync_ntlm_passwords: {
-      value: cdktf.booleanToHclTerraform(struct!.syncNtlmPasswords),
+      value: cdktn.booleanToHclTerraform(struct!.syncNtlmPasswords),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sync_on_prem_passwords: {
-      value: cdktf.booleanToHclTerraform(struct!.syncOnPremPasswords),
+      value: cdktn.booleanToHclTerraform(struct!.syncOnPremPasswords),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tls_v1_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.tlsV1Enabled),
+      value: cdktn.booleanToHclTerraform(struct!.tlsV1Enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -629,14 +629,14 @@ export function activeDirectoryDomainServiceSecurityToHclTerraform(struct?: Acti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ActiveDirectoryDomainServiceSecurityOutputReference extends cdktf.ComplexObject {
+export class ActiveDirectoryDomainServiceSecurityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -698,11 +698,11 @@ export class ActiveDirectoryDomainServiceSecurityOutputReference extends cdktf.C
   }
 
   // kerberos_armoring_enabled - computed: false, optional: true, required: false
-  private _kerberosArmoringEnabled?: boolean | cdktf.IResolvable; 
+  private _kerberosArmoringEnabled?: boolean | cdktn.IResolvable; 
   public get kerberosArmoringEnabled() {
     return this.getBooleanAttribute('kerberos_armoring_enabled');
   }
-  public set kerberosArmoringEnabled(value: boolean | cdktf.IResolvable) {
+  public set kerberosArmoringEnabled(value: boolean | cdktn.IResolvable) {
     this._kerberosArmoringEnabled = value;
   }
   public resetKerberosArmoringEnabled() {
@@ -714,11 +714,11 @@ export class ActiveDirectoryDomainServiceSecurityOutputReference extends cdktf.C
   }
 
   // kerberos_rc4_encryption_enabled - computed: false, optional: true, required: false
-  private _kerberosRc4EncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _kerberosRc4EncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get kerberosRc4EncryptionEnabled() {
     return this.getBooleanAttribute('kerberos_rc4_encryption_enabled');
   }
-  public set kerberosRc4EncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set kerberosRc4EncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._kerberosRc4EncryptionEnabled = value;
   }
   public resetKerberosRc4EncryptionEnabled() {
@@ -730,11 +730,11 @@ export class ActiveDirectoryDomainServiceSecurityOutputReference extends cdktf.C
   }
 
   // ntlm_v1_enabled - computed: false, optional: true, required: false
-  private _ntlmV1Enabled?: boolean | cdktf.IResolvable; 
+  private _ntlmV1Enabled?: boolean | cdktn.IResolvable; 
   public get ntlmV1Enabled() {
     return this.getBooleanAttribute('ntlm_v1_enabled');
   }
-  public set ntlmV1Enabled(value: boolean | cdktf.IResolvable) {
+  public set ntlmV1Enabled(value: boolean | cdktn.IResolvable) {
     this._ntlmV1Enabled = value;
   }
   public resetNtlmV1Enabled() {
@@ -746,11 +746,11 @@ export class ActiveDirectoryDomainServiceSecurityOutputReference extends cdktf.C
   }
 
   // sync_kerberos_passwords - computed: false, optional: true, required: false
-  private _syncKerberosPasswords?: boolean | cdktf.IResolvable; 
+  private _syncKerberosPasswords?: boolean | cdktn.IResolvable; 
   public get syncKerberosPasswords() {
     return this.getBooleanAttribute('sync_kerberos_passwords');
   }
-  public set syncKerberosPasswords(value: boolean | cdktf.IResolvable) {
+  public set syncKerberosPasswords(value: boolean | cdktn.IResolvable) {
     this._syncKerberosPasswords = value;
   }
   public resetSyncKerberosPasswords() {
@@ -762,11 +762,11 @@ export class ActiveDirectoryDomainServiceSecurityOutputReference extends cdktf.C
   }
 
   // sync_ntlm_passwords - computed: false, optional: true, required: false
-  private _syncNtlmPasswords?: boolean | cdktf.IResolvable; 
+  private _syncNtlmPasswords?: boolean | cdktn.IResolvable; 
   public get syncNtlmPasswords() {
     return this.getBooleanAttribute('sync_ntlm_passwords');
   }
-  public set syncNtlmPasswords(value: boolean | cdktf.IResolvable) {
+  public set syncNtlmPasswords(value: boolean | cdktn.IResolvable) {
     this._syncNtlmPasswords = value;
   }
   public resetSyncNtlmPasswords() {
@@ -778,11 +778,11 @@ export class ActiveDirectoryDomainServiceSecurityOutputReference extends cdktf.C
   }
 
   // sync_on_prem_passwords - computed: false, optional: true, required: false
-  private _syncOnPremPasswords?: boolean | cdktf.IResolvable; 
+  private _syncOnPremPasswords?: boolean | cdktn.IResolvable; 
   public get syncOnPremPasswords() {
     return this.getBooleanAttribute('sync_on_prem_passwords');
   }
-  public set syncOnPremPasswords(value: boolean | cdktf.IResolvable) {
+  public set syncOnPremPasswords(value: boolean | cdktn.IResolvable) {
     this._syncOnPremPasswords = value;
   }
   public resetSyncOnPremPasswords() {
@@ -794,11 +794,11 @@ export class ActiveDirectoryDomainServiceSecurityOutputReference extends cdktf.C
   }
 
   // tls_v1_enabled - computed: false, optional: true, required: false
-  private _tlsV1Enabled?: boolean | cdktf.IResolvable; 
+  private _tlsV1Enabled?: boolean | cdktn.IResolvable; 
   public get tlsV1Enabled() {
     return this.getBooleanAttribute('tls_v1_enabled');
   }
-  public set tlsV1Enabled(value: boolean | cdktf.IResolvable) {
+  public set tlsV1Enabled(value: boolean | cdktn.IResolvable) {
     this._tlsV1Enabled = value;
   }
   public resetTlsV1Enabled() {
@@ -828,46 +828,46 @@ export interface ActiveDirectoryDomainServiceTimeouts {
   readonly update?: string;
 }
 
-export function activeDirectoryDomainServiceTimeoutsToTerraform(struct?: ActiveDirectoryDomainServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function activeDirectoryDomainServiceTimeoutsToTerraform(struct?: ActiveDirectoryDomainServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function activeDirectoryDomainServiceTimeoutsToHclTerraform(struct?: ActiveDirectoryDomainServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function activeDirectoryDomainServiceTimeoutsToHclTerraform(struct?: ActiveDirectoryDomainServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -878,19 +878,19 @@ export function activeDirectoryDomainServiceTimeoutsToHclTerraform(struct?: Acti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ActiveDirectoryDomainServiceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ActiveDirectoryDomainServiceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ActiveDirectoryDomainServiceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ActiveDirectoryDomainServiceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -915,7 +915,7 @@ export class ActiveDirectoryDomainServiceTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ActiveDirectoryDomainServiceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ActiveDirectoryDomainServiceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -924,7 +924,7 @@ export class ActiveDirectoryDomainServiceTimeoutsOutputReference extends cdktf.C
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1006,7 +1006,7 @@ export class ActiveDirectoryDomainServiceTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service azurerm_active_directory_domain_service}
 */
-export class ActiveDirectoryDomainService extends cdktf.TerraformResource {
+export class ActiveDirectoryDomainService extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1017,14 +1017,14 @@ export class ActiveDirectoryDomainService extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ActiveDirectoryDomainService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ActiveDirectoryDomainService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ActiveDirectoryDomainService to import
   * @param importFromId The id of the existing ActiveDirectoryDomainService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/active_directory_domain_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ActiveDirectoryDomainService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_active_directory_domain_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_active_directory_domain_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -1109,11 +1109,11 @@ export class ActiveDirectoryDomainService extends cdktf.TerraformResource {
   }
 
   // filtered_sync_enabled - computed: false, optional: true, required: false
-  private _filteredSyncEnabled?: boolean | cdktf.IResolvable; 
+  private _filteredSyncEnabled?: boolean | cdktn.IResolvable; 
   public get filteredSyncEnabled() {
     return this.getBooleanAttribute('filtered_sync_enabled');
   }
-  public set filteredSyncEnabled(value: boolean | cdktf.IResolvable) {
+  public set filteredSyncEnabled(value: boolean | cdktn.IResolvable) {
     this._filteredSyncEnabled = value;
   }
   public resetFilteredSyncEnabled() {
@@ -1311,15 +1311,15 @@ export class ActiveDirectoryDomainService extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain_configuration_type: cdktf.stringToTerraform(this._domainConfigurationType),
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      filtered_sync_enabled: cdktf.booleanToTerraform(this._filteredSyncEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku: cdktf.stringToTerraform(this._sku),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      domain_configuration_type: cdktn.stringToTerraform(this._domainConfigurationType),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      filtered_sync_enabled: cdktn.booleanToTerraform(this._filteredSyncEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku: cdktn.stringToTerraform(this._sku),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       initial_replica_set: activeDirectoryDomainServiceInitialReplicaSetToTerraform(this._initialReplicaSet.internalValue),
       notifications: activeDirectoryDomainServiceNotificationsToTerraform(this._notifications.internalValue),
       secure_ldap: activeDirectoryDomainServiceSecureLdapToTerraform(this._secureLdap.internalValue),
@@ -1331,55 +1331,55 @@ export class ActiveDirectoryDomainService extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain_configuration_type: {
-        value: cdktf.stringToHclTerraform(this._domainConfigurationType),
+        value: cdktn.stringToHclTerraform(this._domainConfigurationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filtered_sync_enabled: {
-        value: cdktf.booleanToHclTerraform(this._filteredSyncEnabled),
+        value: cdktn.booleanToHclTerraform(this._filteredSyncEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku: {
-        value: cdktf.stringToHclTerraform(this._sku),
+        value: cdktn.stringToHclTerraform(this._sku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

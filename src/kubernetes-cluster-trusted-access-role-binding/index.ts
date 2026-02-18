@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KubernetesClusterTrustedAccessRoleBindingConfig extends cdktf.TerraformMetaArguments {
+export interface KubernetesClusterTrustedAccessRoleBindingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster_trusted_access_role_binding#id KubernetesClusterTrustedAccessRoleBinding#id}
   *
@@ -61,46 +61,46 @@ export interface KubernetesClusterTrustedAccessRoleBindingTimeouts {
   readonly update?: string;
 }
 
-export function kubernetesClusterTrustedAccessRoleBindingTimeoutsToTerraform(struct?: KubernetesClusterTrustedAccessRoleBindingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kubernetesClusterTrustedAccessRoleBindingTimeoutsToTerraform(struct?: KubernetesClusterTrustedAccessRoleBindingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function kubernetesClusterTrustedAccessRoleBindingTimeoutsToHclTerraform(struct?: KubernetesClusterTrustedAccessRoleBindingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kubernetesClusterTrustedAccessRoleBindingTimeoutsToHclTerraform(struct?: KubernetesClusterTrustedAccessRoleBindingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,19 +111,19 @@ export function kubernetesClusterTrustedAccessRoleBindingTimeoutsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KubernetesClusterTrustedAccessRoleBindingTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KubernetesClusterTrustedAccessRoleBindingTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KubernetesClusterTrustedAccessRoleBindingTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KubernetesClusterTrustedAccessRoleBindingTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,7 +148,7 @@ export class KubernetesClusterTrustedAccessRoleBindingTimeoutsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KubernetesClusterTrustedAccessRoleBindingTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KubernetesClusterTrustedAccessRoleBindingTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -157,7 +157,7 @@ export class KubernetesClusterTrustedAccessRoleBindingTimeoutsOutputReference ex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -239,7 +239,7 @@ export class KubernetesClusterTrustedAccessRoleBindingTimeoutsOutputReference ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster_trusted_access_role_binding azurerm_kubernetes_cluster_trusted_access_role_binding}
 */
-export class KubernetesClusterTrustedAccessRoleBinding extends cdktf.TerraformResource {
+export class KubernetesClusterTrustedAccessRoleBinding extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -250,14 +250,14 @@ export class KubernetesClusterTrustedAccessRoleBinding extends cdktf.TerraformRe
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KubernetesClusterTrustedAccessRoleBinding resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KubernetesClusterTrustedAccessRoleBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KubernetesClusterTrustedAccessRoleBinding to import
   * @param importFromId The id of the existing KubernetesClusterTrustedAccessRoleBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster_trusted_access_role_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KubernetesClusterTrustedAccessRoleBinding to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kubernetes_cluster_trusted_access_role_binding", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kubernetes_cluster_trusted_access_role_binding", importId: importFromId, provider });
       }
 
   // ===========
@@ -389,11 +389,11 @@ export class KubernetesClusterTrustedAccessRoleBinding extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      kubernetes_cluster_id: cdktf.stringToTerraform(this._kubernetesClusterId),
-      name: cdktf.stringToTerraform(this._name),
-      roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
-      source_resource_id: cdktf.stringToTerraform(this._sourceResourceId),
+      id: cdktn.stringToTerraform(this._id),
+      kubernetes_cluster_id: cdktn.stringToTerraform(this._kubernetesClusterId),
+      name: cdktn.stringToTerraform(this._name),
+      roles: cdktn.listMapper(cdktn.stringToTerraform, false)(this._roles),
+      source_resource_id: cdktn.stringToTerraform(this._sourceResourceId),
       timeouts: kubernetesClusterTrustedAccessRoleBindingTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -401,31 +401,31 @@ export class KubernetesClusterTrustedAccessRoleBinding extends cdktf.TerraformRe
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kubernetes_cluster_id: {
-        value: cdktf.stringToHclTerraform(this._kubernetesClusterId),
+        value: cdktn.stringToHclTerraform(this._kubernetesClusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       roles: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roles),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._roles),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       source_resource_id: {
-        value: cdktf.stringToHclTerraform(this._sourceResourceId),
+        value: cdktn.stringToHclTerraform(this._sourceResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

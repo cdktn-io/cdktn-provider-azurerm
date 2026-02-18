@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LbNatRuleConfig extends cdktf.TerraformMetaArguments {
+export interface LbNatRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_nat_rule#backend_address_pool_id LbNatRule#backend_address_pool_id}
   */
@@ -23,15 +23,15 @@ export interface LbNatRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_nat_rule#enable_floating_ip LbNatRule#enable_floating_ip}
   */
-  readonly enableFloatingIp?: boolean | cdktf.IResolvable;
+  readonly enableFloatingIp?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_nat_rule#enable_tcp_reset LbNatRule#enable_tcp_reset}
   */
-  readonly enableTcpReset?: boolean | cdktf.IResolvable;
+  readonly enableTcpReset?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_nat_rule#floating_ip_enabled LbNatRule#floating_ip_enabled}
   */
-  readonly floatingIpEnabled?: boolean | cdktf.IResolvable;
+  readonly floatingIpEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_nat_rule#frontend_ip_configuration_name LbNatRule#frontend_ip_configuration_name}
   */
@@ -78,7 +78,7 @@ export interface LbNatRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_nat_rule#tcp_reset_enabled LbNatRule#tcp_reset_enabled}
   */
-  readonly tcpResetEnabled?: boolean | cdktf.IResolvable;
+  readonly tcpResetEnabled?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -105,46 +105,46 @@ export interface LbNatRuleTimeouts {
   readonly update?: string;
 }
 
-export function lbNatRuleTimeoutsToTerraform(struct?: LbNatRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lbNatRuleTimeoutsToTerraform(struct?: LbNatRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function lbNatRuleTimeoutsToHclTerraform(struct?: LbNatRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lbNatRuleTimeoutsToHclTerraform(struct?: LbNatRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -155,19 +155,19 @@ export function lbNatRuleTimeoutsToHclTerraform(struct?: LbNatRuleTimeouts | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LbNatRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LbNatRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LbNatRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LbNatRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -192,7 +192,7 @@ export class LbNatRuleTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LbNatRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LbNatRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -201,7 +201,7 @@ export class LbNatRuleTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -283,7 +283,7 @@ export class LbNatRuleTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_nat_rule azurerm_lb_nat_rule}
 */
-export class LbNatRule extends cdktf.TerraformResource {
+export class LbNatRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -294,14 +294,14 @@ export class LbNatRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LbNatRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LbNatRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LbNatRule to import
   * @param importFromId The id of the existing LbNatRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lb_nat_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LbNatRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_lb_nat_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_lb_nat_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -389,11 +389,11 @@ export class LbNatRule extends cdktf.TerraformResource {
   }
 
   // enable_floating_ip - computed: true, optional: true, required: false
-  private _enableFloatingIp?: boolean | cdktf.IResolvable; 
+  private _enableFloatingIp?: boolean | cdktn.IResolvable; 
   public get enableFloatingIp() {
     return this.getBooleanAttribute('enable_floating_ip');
   }
-  public set enableFloatingIp(value: boolean | cdktf.IResolvable) {
+  public set enableFloatingIp(value: boolean | cdktn.IResolvable) {
     this._enableFloatingIp = value;
   }
   public resetEnableFloatingIp() {
@@ -405,11 +405,11 @@ export class LbNatRule extends cdktf.TerraformResource {
   }
 
   // enable_tcp_reset - computed: true, optional: true, required: false
-  private _enableTcpReset?: boolean | cdktf.IResolvable; 
+  private _enableTcpReset?: boolean | cdktn.IResolvable; 
   public get enableTcpReset() {
     return this.getBooleanAttribute('enable_tcp_reset');
   }
-  public set enableTcpReset(value: boolean | cdktf.IResolvable) {
+  public set enableTcpReset(value: boolean | cdktn.IResolvable) {
     this._enableTcpReset = value;
   }
   public resetEnableTcpReset() {
@@ -421,11 +421,11 @@ export class LbNatRule extends cdktf.TerraformResource {
   }
 
   // floating_ip_enabled - computed: true, optional: true, required: false
-  private _floatingIpEnabled?: boolean | cdktf.IResolvable; 
+  private _floatingIpEnabled?: boolean | cdktn.IResolvable; 
   public get floatingIpEnabled() {
     return this.getBooleanAttribute('floating_ip_enabled');
   }
-  public set floatingIpEnabled(value: boolean | cdktf.IResolvable) {
+  public set floatingIpEnabled(value: boolean | cdktn.IResolvable) {
     this._floatingIpEnabled = value;
   }
   public resetFloatingIpEnabled() {
@@ -587,11 +587,11 @@ export class LbNatRule extends cdktf.TerraformResource {
   }
 
   // tcp_reset_enabled - computed: true, optional: true, required: false
-  private _tcpResetEnabled?: boolean | cdktf.IResolvable; 
+  private _tcpResetEnabled?: boolean | cdktn.IResolvable; 
   public get tcpResetEnabled() {
     return this.getBooleanAttribute('tcp_reset_enabled');
   }
-  public set tcpResetEnabled(value: boolean | cdktf.IResolvable) {
+  public set tcpResetEnabled(value: boolean | cdktn.IResolvable) {
     this._tcpResetEnabled = value;
   }
   public resetTcpResetEnabled() {
@@ -624,22 +624,22 @@ export class LbNatRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend_address_pool_id: cdktf.stringToTerraform(this._backendAddressPoolId),
-      backend_port: cdktf.numberToTerraform(this._backendPort),
-      enable_floating_ip: cdktf.booleanToTerraform(this._enableFloatingIp),
-      enable_tcp_reset: cdktf.booleanToTerraform(this._enableTcpReset),
-      floating_ip_enabled: cdktf.booleanToTerraform(this._floatingIpEnabled),
-      frontend_ip_configuration_name: cdktf.stringToTerraform(this._frontendIpConfigurationName),
-      frontend_port: cdktf.numberToTerraform(this._frontendPort),
-      frontend_port_end: cdktf.numberToTerraform(this._frontendPortEnd),
-      frontend_port_start: cdktf.numberToTerraform(this._frontendPortStart),
-      id: cdktf.stringToTerraform(this._id),
-      idle_timeout_in_minutes: cdktf.numberToTerraform(this._idleTimeoutInMinutes),
-      loadbalancer_id: cdktf.stringToTerraform(this._loadbalancerId),
-      name: cdktf.stringToTerraform(this._name),
-      protocol: cdktf.stringToTerraform(this._protocol),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tcp_reset_enabled: cdktf.booleanToTerraform(this._tcpResetEnabled),
+      backend_address_pool_id: cdktn.stringToTerraform(this._backendAddressPoolId),
+      backend_port: cdktn.numberToTerraform(this._backendPort),
+      enable_floating_ip: cdktn.booleanToTerraform(this._enableFloatingIp),
+      enable_tcp_reset: cdktn.booleanToTerraform(this._enableTcpReset),
+      floating_ip_enabled: cdktn.booleanToTerraform(this._floatingIpEnabled),
+      frontend_ip_configuration_name: cdktn.stringToTerraform(this._frontendIpConfigurationName),
+      frontend_port: cdktn.numberToTerraform(this._frontendPort),
+      frontend_port_end: cdktn.numberToTerraform(this._frontendPortEnd),
+      frontend_port_start: cdktn.numberToTerraform(this._frontendPortStart),
+      id: cdktn.stringToTerraform(this._id),
+      idle_timeout_in_minutes: cdktn.numberToTerraform(this._idleTimeoutInMinutes),
+      loadbalancer_id: cdktn.stringToTerraform(this._loadbalancerId),
+      name: cdktn.stringToTerraform(this._name),
+      protocol: cdktn.stringToTerraform(this._protocol),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tcp_reset_enabled: cdktn.booleanToTerraform(this._tcpResetEnabled),
       timeouts: lbNatRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -647,97 +647,97 @@ export class LbNatRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend_address_pool_id: {
-        value: cdktf.stringToHclTerraform(this._backendAddressPoolId),
+        value: cdktn.stringToHclTerraform(this._backendAddressPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       backend_port: {
-        value: cdktf.numberToHclTerraform(this._backendPort),
+        value: cdktn.numberToHclTerraform(this._backendPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       enable_floating_ip: {
-        value: cdktf.booleanToHclTerraform(this._enableFloatingIp),
+        value: cdktn.booleanToHclTerraform(this._enableFloatingIp),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_tcp_reset: {
-        value: cdktf.booleanToHclTerraform(this._enableTcpReset),
+        value: cdktn.booleanToHclTerraform(this._enableTcpReset),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       floating_ip_enabled: {
-        value: cdktf.booleanToHclTerraform(this._floatingIpEnabled),
+        value: cdktn.booleanToHclTerraform(this._floatingIpEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       frontend_ip_configuration_name: {
-        value: cdktf.stringToHclTerraform(this._frontendIpConfigurationName),
+        value: cdktn.stringToHclTerraform(this._frontendIpConfigurationName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       frontend_port: {
-        value: cdktf.numberToHclTerraform(this._frontendPort),
+        value: cdktn.numberToHclTerraform(this._frontendPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       frontend_port_end: {
-        value: cdktf.numberToHclTerraform(this._frontendPortEnd),
+        value: cdktn.numberToHclTerraform(this._frontendPortEnd),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       frontend_port_start: {
-        value: cdktf.numberToHclTerraform(this._frontendPortStart),
+        value: cdktn.numberToHclTerraform(this._frontendPortStart),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idle_timeout_in_minutes: {
-        value: cdktf.numberToHclTerraform(this._idleTimeoutInMinutes),
+        value: cdktn.numberToHclTerraform(this._idleTimeoutInMinutes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       loadbalancer_id: {
-        value: cdktf.stringToHclTerraform(this._loadbalancerId),
+        value: cdktn.stringToHclTerraform(this._loadbalancerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocol: {
-        value: cdktf.stringToHclTerraform(this._protocol),
+        value: cdktn.stringToHclTerraform(this._protocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tcp_reset_enabled: {
-        value: cdktf.booleanToHclTerraform(this._tcpResetEnabled),
+        value: cdktn.booleanToHclTerraform(this._tcpResetEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

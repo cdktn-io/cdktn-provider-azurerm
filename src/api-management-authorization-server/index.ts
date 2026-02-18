@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiManagementAuthorizationServerConfig extends cdktf.TerraformMetaArguments {
+export interface ApiManagementAuthorizationServerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_authorization_server#api_management_name ApiManagementAuthorizationServer#api_management_name}
   */
@@ -86,7 +86,7 @@ export interface ApiManagementAuthorizationServerConfig extends cdktf.TerraformM
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_authorization_server#support_state ApiManagementAuthorizationServer#support_state}
   */
-  readonly supportState?: boolean | cdktf.IResolvable;
+  readonly supportState?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_authorization_server#token_endpoint ApiManagementAuthorizationServer#token_endpoint}
   */
@@ -102,7 +102,7 @@ export interface ApiManagementAuthorizationServerConfig extends cdktf.TerraformM
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_authorization_server#token_body_parameter ApiManagementAuthorizationServer#token_body_parameter}
   */
-  readonly tokenBodyParameter?: ApiManagementAuthorizationServerTokenBodyParameter[] | cdktf.IResolvable;
+  readonly tokenBodyParameter?: ApiManagementAuthorizationServerTokenBodyParameter[] | cdktn.IResolvable;
 }
 export interface ApiManagementAuthorizationServerTimeouts {
   /**
@@ -123,46 +123,46 @@ export interface ApiManagementAuthorizationServerTimeouts {
   readonly update?: string;
 }
 
-export function apiManagementAuthorizationServerTimeoutsToTerraform(struct?: ApiManagementAuthorizationServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementAuthorizationServerTimeoutsToTerraform(struct?: ApiManagementAuthorizationServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apiManagementAuthorizationServerTimeoutsToHclTerraform(struct?: ApiManagementAuthorizationServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementAuthorizationServerTimeoutsToHclTerraform(struct?: ApiManagementAuthorizationServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -173,19 +173,19 @@ export function apiManagementAuthorizationServerTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementAuthorizationServerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApiManagementAuthorizationServerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApiManagementAuthorizationServerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementAuthorizationServerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -210,7 +210,7 @@ export class ApiManagementAuthorizationServerTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementAuthorizationServerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementAuthorizationServerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -219,7 +219,7 @@ export class ApiManagementAuthorizationServerTimeoutsOutputReference extends cdk
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -308,32 +308,32 @@ export interface ApiManagementAuthorizationServerTokenBodyParameter {
   readonly value: string;
 }
 
-export function apiManagementAuthorizationServerTokenBodyParameterToTerraform(struct?: ApiManagementAuthorizationServerTokenBodyParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementAuthorizationServerTokenBodyParameterToTerraform(struct?: ApiManagementAuthorizationServerTokenBodyParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function apiManagementAuthorizationServerTokenBodyParameterToHclTerraform(struct?: ApiManagementAuthorizationServerTokenBodyParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementAuthorizationServerTokenBodyParameterToHclTerraform(struct?: ApiManagementAuthorizationServerTokenBodyParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -344,9 +344,9 @@ export function apiManagementAuthorizationServerTokenBodyParameterToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementAuthorizationServerTokenBodyParameterOutputReference extends cdktf.ComplexObject {
+export class ApiManagementAuthorizationServerTokenBodyParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -354,11 +354,11 @@ export class ApiManagementAuthorizationServerTokenBodyParameterOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiManagementAuthorizationServerTokenBodyParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementAuthorizationServerTokenBodyParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -375,14 +375,14 @@ export class ApiManagementAuthorizationServerTokenBodyParameterOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementAuthorizationServerTokenBodyParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementAuthorizationServerTokenBodyParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -421,15 +421,15 @@ export class ApiManagementAuthorizationServerTokenBodyParameterOutputReference e
   }
 }
 
-export class ApiManagementAuthorizationServerTokenBodyParameterList extends cdktf.ComplexList {
-  public internalValue? : ApiManagementAuthorizationServerTokenBodyParameter[] | cdktf.IResolvable
+export class ApiManagementAuthorizationServerTokenBodyParameterList extends cdktn.ComplexList {
+  public internalValue? : ApiManagementAuthorizationServerTokenBodyParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -444,7 +444,7 @@ export class ApiManagementAuthorizationServerTokenBodyParameterList extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_authorization_server azurerm_api_management_authorization_server}
 */
-export class ApiManagementAuthorizationServer extends cdktf.TerraformResource {
+export class ApiManagementAuthorizationServer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -455,14 +455,14 @@ export class ApiManagementAuthorizationServer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiManagementAuthorizationServer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiManagementAuthorizationServer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementAuthorizationServer to import
   * @param importFromId The id of the existing ApiManagementAuthorizationServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_authorization_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementAuthorizationServer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_authorization_server", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_authorization_server", importId: importFromId, provider });
       }
 
   // ===========
@@ -548,7 +548,7 @@ export class ApiManagementAuthorizationServer extends cdktf.TerraformResource {
   // authorization_methods - computed: false, optional: false, required: true
   private _authorizationMethods?: string[]; 
   public get authorizationMethods() {
-    return cdktf.Fn.tolist(this.getListAttribute('authorization_methods'));
+    return cdktn.Fn.tolist(this.getListAttribute('authorization_methods'));
   }
   public set authorizationMethods(value: string[]) {
     this._authorizationMethods = value;
@@ -561,7 +561,7 @@ export class ApiManagementAuthorizationServer extends cdktf.TerraformResource {
   // bearer_token_sending_methods - computed: false, optional: true, required: false
   private _bearerTokenSendingMethods?: string[]; 
   public get bearerTokenSendingMethods() {
-    return cdktf.Fn.tolist(this.getListAttribute('bearer_token_sending_methods'));
+    return cdktn.Fn.tolist(this.getListAttribute('bearer_token_sending_methods'));
   }
   public set bearerTokenSendingMethods(value: string[]) {
     this._bearerTokenSendingMethods = value;
@@ -577,7 +577,7 @@ export class ApiManagementAuthorizationServer extends cdktf.TerraformResource {
   // client_authentication_method - computed: false, optional: true, required: false
   private _clientAuthenticationMethod?: string[]; 
   public get clientAuthenticationMethod() {
-    return cdktf.Fn.tolist(this.getListAttribute('client_authentication_method'));
+    return cdktn.Fn.tolist(this.getListAttribute('client_authentication_method'));
   }
   public set clientAuthenticationMethod(value: string[]) {
     this._clientAuthenticationMethod = value;
@@ -680,7 +680,7 @@ export class ApiManagementAuthorizationServer extends cdktf.TerraformResource {
   // grant_types - computed: false, optional: false, required: true
   private _grantTypes?: string[]; 
   public get grantTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('grant_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('grant_types'));
   }
   public set grantTypes(value: string[]) {
     this._grantTypes = value;
@@ -765,11 +765,11 @@ export class ApiManagementAuthorizationServer extends cdktf.TerraformResource {
   }
 
   // support_state - computed: false, optional: true, required: false
-  private _supportState?: boolean | cdktf.IResolvable; 
+  private _supportState?: boolean | cdktn.IResolvable; 
   public get supportState() {
     return this.getBooleanAttribute('support_state');
   }
-  public set supportState(value: boolean | cdktf.IResolvable) {
+  public set supportState(value: boolean | cdktn.IResolvable) {
     this._supportState = value;
   }
   public resetSupportState() {
@@ -817,7 +817,7 @@ export class ApiManagementAuthorizationServer extends cdktf.TerraformResource {
   public get tokenBodyParameter() {
     return this._tokenBodyParameter;
   }
-  public putTokenBodyParameter(value: ApiManagementAuthorizationServerTokenBodyParameter[] | cdktf.IResolvable) {
+  public putTokenBodyParameter(value: ApiManagementAuthorizationServerTokenBodyParameter[] | cdktn.IResolvable) {
     this._tokenBodyParameter.internalValue = value;
   }
   public resetTokenBodyParameter() {
@@ -834,142 +834,142 @@ export class ApiManagementAuthorizationServer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_management_name: cdktf.stringToTerraform(this._apiManagementName),
-      authorization_endpoint: cdktf.stringToTerraform(this._authorizationEndpoint),
-      authorization_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(this._authorizationMethods),
-      bearer_token_sending_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(this._bearerTokenSendingMethods),
-      client_authentication_method: cdktf.listMapper(cdktf.stringToTerraform, false)(this._clientAuthenticationMethod),
-      client_id: cdktf.stringToTerraform(this._clientId),
-      client_registration_endpoint: cdktf.stringToTerraform(this._clientRegistrationEndpoint),
-      client_secret: cdktf.stringToTerraform(this._clientSecret),
-      default_scope: cdktf.stringToTerraform(this._defaultScope),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      grant_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._grantTypes),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      resource_owner_password: cdktf.stringToTerraform(this._resourceOwnerPassword),
-      resource_owner_username: cdktf.stringToTerraform(this._resourceOwnerUsername),
-      support_state: cdktf.booleanToTerraform(this._supportState),
-      token_endpoint: cdktf.stringToTerraform(this._tokenEndpoint),
+      api_management_name: cdktn.stringToTerraform(this._apiManagementName),
+      authorization_endpoint: cdktn.stringToTerraform(this._authorizationEndpoint),
+      authorization_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(this._authorizationMethods),
+      bearer_token_sending_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(this._bearerTokenSendingMethods),
+      client_authentication_method: cdktn.listMapper(cdktn.stringToTerraform, false)(this._clientAuthenticationMethod),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      client_registration_endpoint: cdktn.stringToTerraform(this._clientRegistrationEndpoint),
+      client_secret: cdktn.stringToTerraform(this._clientSecret),
+      default_scope: cdktn.stringToTerraform(this._defaultScope),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      grant_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._grantTypes),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      resource_owner_password: cdktn.stringToTerraform(this._resourceOwnerPassword),
+      resource_owner_username: cdktn.stringToTerraform(this._resourceOwnerUsername),
+      support_state: cdktn.booleanToTerraform(this._supportState),
+      token_endpoint: cdktn.stringToTerraform(this._tokenEndpoint),
       timeouts: apiManagementAuthorizationServerTimeoutsToTerraform(this._timeouts.internalValue),
-      token_body_parameter: cdktf.listMapper(apiManagementAuthorizationServerTokenBodyParameterToTerraform, true)(this._tokenBodyParameter.internalValue),
+      token_body_parameter: cdktn.listMapper(apiManagementAuthorizationServerTokenBodyParameterToTerraform, true)(this._tokenBodyParameter.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_management_name: {
-        value: cdktf.stringToHclTerraform(this._apiManagementName),
+        value: cdktn.stringToHclTerraform(this._apiManagementName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authorization_endpoint: {
-        value: cdktf.stringToHclTerraform(this._authorizationEndpoint),
+        value: cdktn.stringToHclTerraform(this._authorizationEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authorization_methods: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._authorizationMethods),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._authorizationMethods),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       bearer_token_sending_methods: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._bearerTokenSendingMethods),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._bearerTokenSendingMethods),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       client_authentication_method: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._clientAuthenticationMethod),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._clientAuthenticationMethod),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_registration_endpoint: {
-        value: cdktf.stringToHclTerraform(this._clientRegistrationEndpoint),
+        value: cdktn.stringToHclTerraform(this._clientRegistrationEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_secret: {
-        value: cdktf.stringToHclTerraform(this._clientSecret),
+        value: cdktn.stringToHclTerraform(this._clientSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_scope: {
-        value: cdktf.stringToHclTerraform(this._defaultScope),
+        value: cdktn.stringToHclTerraform(this._defaultScope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       grant_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._grantTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._grantTypes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_owner_password: {
-        value: cdktf.stringToHclTerraform(this._resourceOwnerPassword),
+        value: cdktn.stringToHclTerraform(this._resourceOwnerPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_owner_username: {
-        value: cdktf.stringToHclTerraform(this._resourceOwnerUsername),
+        value: cdktn.stringToHclTerraform(this._resourceOwnerUsername),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       support_state: {
-        value: cdktf.booleanToHclTerraform(this._supportState),
+        value: cdktn.booleanToHclTerraform(this._supportState),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       token_endpoint: {
-        value: cdktf.stringToHclTerraform(this._tokenEndpoint),
+        value: cdktn.stringToHclTerraform(this._tokenEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -981,7 +981,7 @@ export class ApiManagementAuthorizationServer extends cdktf.TerraformResource {
         storageClassType: "ApiManagementAuthorizationServerTimeouts",
       },
       token_body_parameter: {
-        value: cdktf.listMapperHcl(apiManagementAuthorizationServerTokenBodyParameterToHclTerraform, true)(this._tokenBodyParameter.internalValue),
+        value: cdktn.listMapperHcl(apiManagementAuthorizationServerTokenBodyParameterToHclTerraform, true)(this._tokenBodyParameter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApiManagementAuthorizationServerTokenBodyParameterList",

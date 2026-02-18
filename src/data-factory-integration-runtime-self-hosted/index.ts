@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataFactoryIntegrationRuntimeSelfHostedConfig extends cdktf.TerraformMetaArguments {
+export interface DataFactoryIntegrationRuntimeSelfHostedConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_self_hosted#data_factory_id DataFactoryIntegrationRuntimeSelfHosted#data_factory_id}
   */
@@ -34,13 +34,13 @@ export interface DataFactoryIntegrationRuntimeSelfHostedConfig extends cdktf.Ter
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_self_hosted#self_contained_interactive_authoring_enabled DataFactoryIntegrationRuntimeSelfHosted#self_contained_interactive_authoring_enabled}
   */
-  readonly selfContainedInteractiveAuthoringEnabled?: boolean | cdktf.IResolvable;
+  readonly selfContainedInteractiveAuthoringEnabled?: boolean | cdktn.IResolvable;
   /**
   * rbac_authorization block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_self_hosted#rbac_authorization DataFactoryIntegrationRuntimeSelfHosted#rbac_authorization}
   */
-  readonly rbacAuthorization?: DataFactoryIntegrationRuntimeSelfHostedRbacAuthorization[] | cdktf.IResolvable;
+  readonly rbacAuthorization?: DataFactoryIntegrationRuntimeSelfHostedRbacAuthorization[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -55,25 +55,25 @@ export interface DataFactoryIntegrationRuntimeSelfHostedRbacAuthorization {
   readonly resourceId: string;
 }
 
-export function dataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationToTerraform(struct?: DataFactoryIntegrationRuntimeSelfHostedRbacAuthorization | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationToTerraform(struct?: DataFactoryIntegrationRuntimeSelfHostedRbacAuthorization | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_id: cdktf.stringToTerraform(struct!.resourceId),
+    resource_id: cdktn.stringToTerraform(struct!.resourceId),
   }
 }
 
 
-export function dataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationToHclTerraform(struct?: DataFactoryIntegrationRuntimeSelfHostedRbacAuthorization | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationToHclTerraform(struct?: DataFactoryIntegrationRuntimeSelfHostedRbacAuthorization | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.resourceId),
+      value: cdktn.stringToHclTerraform(struct!.resourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -84,9 +84,9 @@ export function dataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -94,11 +94,11 @@ export class DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataFactoryIntegrationRuntimeSelfHostedRbacAuthorization | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryIntegrationRuntimeSelfHostedRbacAuthorization | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -111,13 +111,13 @@ export class DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryIntegrationRuntimeSelfHostedRbacAuthorization | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryIntegrationRuntimeSelfHostedRbacAuthorization | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._resourceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -142,15 +142,15 @@ export class DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationOutputRefer
   }
 }
 
-export class DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationList extends cdktf.ComplexList {
-  public internalValue? : DataFactoryIntegrationRuntimeSelfHostedRbacAuthorization[] | cdktf.IResolvable
+export class DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationList extends cdktn.ComplexList {
+  public internalValue? : DataFactoryIntegrationRuntimeSelfHostedRbacAuthorization[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -180,46 +180,46 @@ export interface DataFactoryIntegrationRuntimeSelfHostedTimeouts {
   readonly update?: string;
 }
 
-export function dataFactoryIntegrationRuntimeSelfHostedTimeoutsToTerraform(struct?: DataFactoryIntegrationRuntimeSelfHostedTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryIntegrationRuntimeSelfHostedTimeoutsToTerraform(struct?: DataFactoryIntegrationRuntimeSelfHostedTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataFactoryIntegrationRuntimeSelfHostedTimeoutsToHclTerraform(struct?: DataFactoryIntegrationRuntimeSelfHostedTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryIntegrationRuntimeSelfHostedTimeoutsToHclTerraform(struct?: DataFactoryIntegrationRuntimeSelfHostedTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -230,19 +230,19 @@ export function dataFactoryIntegrationRuntimeSelfHostedTimeoutsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeSelfHostedTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeSelfHostedTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataFactoryIntegrationRuntimeSelfHostedTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryIntegrationRuntimeSelfHostedTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -267,7 +267,7 @@ export class DataFactoryIntegrationRuntimeSelfHostedTimeoutsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryIntegrationRuntimeSelfHostedTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryIntegrationRuntimeSelfHostedTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -276,7 +276,7 @@ export class DataFactoryIntegrationRuntimeSelfHostedTimeoutsOutputReference exte
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -358,7 +358,7 @@ export class DataFactoryIntegrationRuntimeSelfHostedTimeoutsOutputReference exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_self_hosted azurerm_data_factory_integration_runtime_self_hosted}
 */
-export class DataFactoryIntegrationRuntimeSelfHosted extends cdktf.TerraformResource {
+export class DataFactoryIntegrationRuntimeSelfHosted extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -369,14 +369,14 @@ export class DataFactoryIntegrationRuntimeSelfHosted extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataFactoryIntegrationRuntimeSelfHosted resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataFactoryIntegrationRuntimeSelfHosted resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryIntegrationRuntimeSelfHosted to import
   * @param importFromId The id of the existing DataFactoryIntegrationRuntimeSelfHosted that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_self_hosted#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryIntegrationRuntimeSelfHosted to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_integration_runtime_self_hosted", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_integration_runtime_self_hosted", importId: importFromId, provider });
       }
 
   // ===========
@@ -488,11 +488,11 @@ export class DataFactoryIntegrationRuntimeSelfHosted extends cdktf.TerraformReso
   }
 
   // self_contained_interactive_authoring_enabled - computed: false, optional: true, required: false
-  private _selfContainedInteractiveAuthoringEnabled?: boolean | cdktf.IResolvable; 
+  private _selfContainedInteractiveAuthoringEnabled?: boolean | cdktn.IResolvable; 
   public get selfContainedInteractiveAuthoringEnabled() {
     return this.getBooleanAttribute('self_contained_interactive_authoring_enabled');
   }
-  public set selfContainedInteractiveAuthoringEnabled(value: boolean | cdktf.IResolvable) {
+  public set selfContainedInteractiveAuthoringEnabled(value: boolean | cdktn.IResolvable) {
     this._selfContainedInteractiveAuthoringEnabled = value;
   }
   public resetSelfContainedInteractiveAuthoringEnabled() {
@@ -508,7 +508,7 @@ export class DataFactoryIntegrationRuntimeSelfHosted extends cdktf.TerraformReso
   public get rbacAuthorization() {
     return this._rbacAuthorization;
   }
-  public putRbacAuthorization(value: DataFactoryIntegrationRuntimeSelfHostedRbacAuthorization[] | cdktf.IResolvable) {
+  public putRbacAuthorization(value: DataFactoryIntegrationRuntimeSelfHostedRbacAuthorization[] | cdktn.IResolvable) {
     this._rbacAuthorization.internalValue = value;
   }
   public resetRbacAuthorization() {
@@ -541,12 +541,12 @@ export class DataFactoryIntegrationRuntimeSelfHosted extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_factory_id: cdktf.stringToTerraform(this._dataFactoryId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      self_contained_interactive_authoring_enabled: cdktf.booleanToTerraform(this._selfContainedInteractiveAuthoringEnabled),
-      rbac_authorization: cdktf.listMapper(dataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationToTerraform, true)(this._rbacAuthorization.internalValue),
+      data_factory_id: cdktn.stringToTerraform(this._dataFactoryId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      self_contained_interactive_authoring_enabled: cdktn.booleanToTerraform(this._selfContainedInteractiveAuthoringEnabled),
+      rbac_authorization: cdktn.listMapper(dataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationToTerraform, true)(this._rbacAuthorization.internalValue),
       timeouts: dataFactoryIntegrationRuntimeSelfHostedTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -554,37 +554,37 @@ export class DataFactoryIntegrationRuntimeSelfHosted extends cdktf.TerraformReso
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_factory_id: {
-        value: cdktf.stringToHclTerraform(this._dataFactoryId),
+        value: cdktn.stringToHclTerraform(this._dataFactoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       self_contained_interactive_authoring_enabled: {
-        value: cdktf.booleanToHclTerraform(this._selfContainedInteractiveAuthoringEnabled),
+        value: cdktn.booleanToHclTerraform(this._selfContainedInteractiveAuthoringEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       rbac_authorization: {
-        value: cdktf.listMapperHcl(dataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationToHclTerraform, true)(this._rbacAuthorization.internalValue),
+        value: cdktn.listMapperHcl(dataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationToHclTerraform, true)(this._rbacAuthorization.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataFactoryIntegrationRuntimeSelfHostedRbacAuthorizationList",

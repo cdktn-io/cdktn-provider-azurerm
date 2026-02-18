@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RouteMapConfig extends cdktf.TerraformMetaArguments {
+export interface RouteMapConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/route_map#id RouteMap#id}
   *
@@ -32,7 +32,7 @@ export interface RouteMapConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/route_map#rule RouteMap#rule}
   */
-  readonly rule?: RouteMapRule[] | cdktf.IResolvable;
+  readonly rule?: RouteMapRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -55,39 +55,39 @@ export interface RouteMapRuleActionParameter {
   readonly routePrefix?: string[];
 }
 
-export function routeMapRuleActionParameterToTerraform(struct?: RouteMapRuleActionParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeMapRuleActionParameterToTerraform(struct?: RouteMapRuleActionParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    as_path: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.asPath),
-    community: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.community),
-    route_prefix: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.routePrefix),
+    as_path: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.asPath),
+    community: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.community),
+    route_prefix: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.routePrefix),
   }
 }
 
 
-export function routeMapRuleActionParameterToHclTerraform(struct?: RouteMapRuleActionParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeMapRuleActionParameterToHclTerraform(struct?: RouteMapRuleActionParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     as_path: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.asPath),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.asPath),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     community: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.community),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.community),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     route_prefix: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.routePrefix),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.routePrefix),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -98,9 +98,9 @@ export function routeMapRuleActionParameterToHclTerraform(struct?: RouteMapRuleA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RouteMapRuleActionParameterOutputReference extends cdktf.ComplexObject {
+export class RouteMapRuleActionParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -108,11 +108,11 @@ export class RouteMapRuleActionParameterOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RouteMapRuleActionParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): RouteMapRuleActionParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,7 +133,7 @@ export class RouteMapRuleActionParameterOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RouteMapRuleActionParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RouteMapRuleActionParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -141,7 +141,7 @@ export class RouteMapRuleActionParameterOutputReference extends cdktf.ComplexObj
       this._community = undefined;
       this._routePrefix = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -203,15 +203,15 @@ export class RouteMapRuleActionParameterOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class RouteMapRuleActionParameterList extends cdktf.ComplexList {
-  public internalValue? : RouteMapRuleActionParameter[] | cdktf.IResolvable
+export class RouteMapRuleActionParameterList extends cdktn.ComplexList {
+  public internalValue? : RouteMapRuleActionParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -232,35 +232,35 @@ export interface RouteMapRuleAction {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/route_map#parameter RouteMap#parameter}
   */
-  readonly parameter?: RouteMapRuleActionParameter[] | cdktf.IResolvable;
+  readonly parameter?: RouteMapRuleActionParameter[] | cdktn.IResolvable;
 }
 
-export function routeMapRuleActionToTerraform(struct?: RouteMapRuleAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeMapRuleActionToTerraform(struct?: RouteMapRuleAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    parameter: cdktf.listMapper(routeMapRuleActionParameterToTerraform, true)(struct!.parameter),
+    type: cdktn.stringToTerraform(struct!.type),
+    parameter: cdktn.listMapper(routeMapRuleActionParameterToTerraform, true)(struct!.parameter),
   }
 }
 
 
-export function routeMapRuleActionToHclTerraform(struct?: RouteMapRuleAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeMapRuleActionToHclTerraform(struct?: RouteMapRuleAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter: {
-      value: cdktf.listMapperHcl(routeMapRuleActionParameterToHclTerraform, true)(struct!.parameter),
+      value: cdktn.listMapperHcl(routeMapRuleActionParameterToHclTerraform, true)(struct!.parameter),
       isBlock: true,
       type: "list",
       storageClassType: "RouteMapRuleActionParameterList",
@@ -271,9 +271,9 @@ export function routeMapRuleActionToHclTerraform(struct?: RouteMapRuleAction | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RouteMapRuleActionOutputReference extends cdktf.ComplexObject {
+export class RouteMapRuleActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -281,11 +281,11 @@ export class RouteMapRuleActionOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RouteMapRuleAction | cdktf.IResolvable | undefined {
+  public get internalValue(): RouteMapRuleAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -302,14 +302,14 @@ export class RouteMapRuleActionOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RouteMapRuleAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RouteMapRuleAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._parameter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -339,7 +339,7 @@ export class RouteMapRuleActionOutputReference extends cdktf.ComplexObject {
   public get parameter() {
     return this._parameter;
   }
-  public putParameter(value: RouteMapRuleActionParameter[] | cdktf.IResolvable) {
+  public putParameter(value: RouteMapRuleActionParameter[] | cdktn.IResolvable) {
     this._parameter.internalValue = value;
   }
   public resetParameter() {
@@ -351,15 +351,15 @@ export class RouteMapRuleActionOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class RouteMapRuleActionList extends cdktf.ComplexList {
-  public internalValue? : RouteMapRuleAction[] | cdktf.IResolvable
+export class RouteMapRuleActionList extends cdktn.ComplexList {
+  public internalValue? : RouteMapRuleAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -389,46 +389,46 @@ export interface RouteMapRuleMatchCriterion {
   readonly routePrefix?: string[];
 }
 
-export function routeMapRuleMatchCriterionToTerraform(struct?: RouteMapRuleMatchCriterion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeMapRuleMatchCriterionToTerraform(struct?: RouteMapRuleMatchCriterion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    as_path: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.asPath),
-    community: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.community),
-    match_condition: cdktf.stringToTerraform(struct!.matchCondition),
-    route_prefix: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.routePrefix),
+    as_path: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.asPath),
+    community: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.community),
+    match_condition: cdktn.stringToTerraform(struct!.matchCondition),
+    route_prefix: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.routePrefix),
   }
 }
 
 
-export function routeMapRuleMatchCriterionToHclTerraform(struct?: RouteMapRuleMatchCriterion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeMapRuleMatchCriterionToHclTerraform(struct?: RouteMapRuleMatchCriterion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     as_path: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.asPath),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.asPath),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     community: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.community),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.community),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     match_condition: {
-      value: cdktf.stringToHclTerraform(struct!.matchCondition),
+      value: cdktn.stringToHclTerraform(struct!.matchCondition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     route_prefix: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.routePrefix),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.routePrefix),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -439,9 +439,9 @@ export function routeMapRuleMatchCriterionToHclTerraform(struct?: RouteMapRuleMa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RouteMapRuleMatchCriterionOutputReference extends cdktf.ComplexObject {
+export class RouteMapRuleMatchCriterionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -449,11 +449,11 @@ export class RouteMapRuleMatchCriterionOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RouteMapRuleMatchCriterion | cdktf.IResolvable | undefined {
+  public get internalValue(): RouteMapRuleMatchCriterion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -478,7 +478,7 @@ export class RouteMapRuleMatchCriterionOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RouteMapRuleMatchCriterion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RouteMapRuleMatchCriterion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -487,7 +487,7 @@ export class RouteMapRuleMatchCriterionOutputReference extends cdktf.ComplexObje
       this._matchCondition = undefined;
       this._routePrefix = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -563,15 +563,15 @@ export class RouteMapRuleMatchCriterionOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class RouteMapRuleMatchCriterionList extends cdktf.ComplexList {
-  public internalValue? : RouteMapRuleMatchCriterion[] | cdktf.IResolvable
+export class RouteMapRuleMatchCriterionList extends cdktn.ComplexList {
+  public internalValue? : RouteMapRuleMatchCriterion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -596,55 +596,55 @@ export interface RouteMapRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/route_map#action RouteMap#action}
   */
-  readonly action?: RouteMapRuleAction[] | cdktf.IResolvable;
+  readonly action?: RouteMapRuleAction[] | cdktn.IResolvable;
   /**
   * match_criterion block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/route_map#match_criterion RouteMap#match_criterion}
   */
-  readonly matchCriterion?: RouteMapRuleMatchCriterion[] | cdktf.IResolvable;
+  readonly matchCriterion?: RouteMapRuleMatchCriterion[] | cdktn.IResolvable;
 }
 
-export function routeMapRuleToTerraform(struct?: RouteMapRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeMapRuleToTerraform(struct?: RouteMapRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    next_step_if_matched: cdktf.stringToTerraform(struct!.nextStepIfMatched),
-    action: cdktf.listMapper(routeMapRuleActionToTerraform, true)(struct!.action),
-    match_criterion: cdktf.listMapper(routeMapRuleMatchCriterionToTerraform, true)(struct!.matchCriterion),
+    name: cdktn.stringToTerraform(struct!.name),
+    next_step_if_matched: cdktn.stringToTerraform(struct!.nextStepIfMatched),
+    action: cdktn.listMapper(routeMapRuleActionToTerraform, true)(struct!.action),
+    match_criterion: cdktn.listMapper(routeMapRuleMatchCriterionToTerraform, true)(struct!.matchCriterion),
   }
 }
 
 
-export function routeMapRuleToHclTerraform(struct?: RouteMapRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeMapRuleToHclTerraform(struct?: RouteMapRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     next_step_if_matched: {
-      value: cdktf.stringToHclTerraform(struct!.nextStepIfMatched),
+      value: cdktn.stringToHclTerraform(struct!.nextStepIfMatched),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     action: {
-      value: cdktf.listMapperHcl(routeMapRuleActionToHclTerraform, true)(struct!.action),
+      value: cdktn.listMapperHcl(routeMapRuleActionToHclTerraform, true)(struct!.action),
       isBlock: true,
       type: "list",
       storageClassType: "RouteMapRuleActionList",
     },
     match_criterion: {
-      value: cdktf.listMapperHcl(routeMapRuleMatchCriterionToHclTerraform, true)(struct!.matchCriterion),
+      value: cdktn.listMapperHcl(routeMapRuleMatchCriterionToHclTerraform, true)(struct!.matchCriterion),
       isBlock: true,
       type: "list",
       storageClassType: "RouteMapRuleMatchCriterionList",
@@ -655,9 +655,9 @@ export function routeMapRuleToHclTerraform(struct?: RouteMapRule | cdktf.IResolv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RouteMapRuleOutputReference extends cdktf.ComplexObject {
+export class RouteMapRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -665,11 +665,11 @@ export class RouteMapRuleOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RouteMapRule | cdktf.IResolvable | undefined {
+  public get internalValue(): RouteMapRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -694,7 +694,7 @@ export class RouteMapRuleOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RouteMapRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RouteMapRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -703,7 +703,7 @@ export class RouteMapRuleOutputReference extends cdktf.ComplexObject {
       this._action.internalValue = undefined;
       this._matchCriterion.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -751,7 +751,7 @@ export class RouteMapRuleOutputReference extends cdktf.ComplexObject {
   public get action() {
     return this._action;
   }
-  public putAction(value: RouteMapRuleAction[] | cdktf.IResolvable) {
+  public putAction(value: RouteMapRuleAction[] | cdktn.IResolvable) {
     this._action.internalValue = value;
   }
   public resetAction() {
@@ -767,7 +767,7 @@ export class RouteMapRuleOutputReference extends cdktf.ComplexObject {
   public get matchCriterion() {
     return this._matchCriterion;
   }
-  public putMatchCriterion(value: RouteMapRuleMatchCriterion[] | cdktf.IResolvable) {
+  public putMatchCriterion(value: RouteMapRuleMatchCriterion[] | cdktn.IResolvable) {
     this._matchCriterion.internalValue = value;
   }
   public resetMatchCriterion() {
@@ -779,15 +779,15 @@ export class RouteMapRuleOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class RouteMapRuleList extends cdktf.ComplexList {
-  public internalValue? : RouteMapRule[] | cdktf.IResolvable
+export class RouteMapRuleList extends cdktn.ComplexList {
+  public internalValue? : RouteMapRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -817,46 +817,46 @@ export interface RouteMapTimeouts {
   readonly update?: string;
 }
 
-export function routeMapTimeoutsToTerraform(struct?: RouteMapTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeMapTimeoutsToTerraform(struct?: RouteMapTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function routeMapTimeoutsToHclTerraform(struct?: RouteMapTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeMapTimeoutsToHclTerraform(struct?: RouteMapTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -867,19 +867,19 @@ export function routeMapTimeoutsToHclTerraform(struct?: RouteMapTimeouts | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RouteMapTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RouteMapTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RouteMapTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RouteMapTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -904,7 +904,7 @@ export class RouteMapTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RouteMapTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RouteMapTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -913,7 +913,7 @@ export class RouteMapTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -995,7 +995,7 @@ export class RouteMapTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/route_map azurerm_route_map}
 */
-export class RouteMap extends cdktf.TerraformResource {
+export class RouteMap extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1006,14 +1006,14 @@ export class RouteMap extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RouteMap resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RouteMap resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RouteMap to import
   * @param importFromId The id of the existing RouteMap that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/route_map#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RouteMap to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_route_map", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_route_map", importId: importFromId, provider });
       }
 
   // ===========
@@ -1101,7 +1101,7 @@ export class RouteMap extends cdktf.TerraformResource {
   public get rule() {
     return this._rule;
   }
-  public putRule(value: RouteMapRule[] | cdktf.IResolvable) {
+  public putRule(value: RouteMapRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -1134,10 +1134,10 @@ export class RouteMap extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      virtual_hub_id: cdktf.stringToTerraform(this._virtualHubId),
-      rule: cdktf.listMapper(routeMapRuleToTerraform, true)(this._rule.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      virtual_hub_id: cdktn.stringToTerraform(this._virtualHubId),
+      rule: cdktn.listMapper(routeMapRuleToTerraform, true)(this._rule.internalValue),
       timeouts: routeMapTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1145,25 +1145,25 @@ export class RouteMap extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_hub_id: {
-        value: cdktf.stringToHclTerraform(this._virtualHubId),
+        value: cdktn.stringToHclTerraform(this._virtualHubId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule: {
-        value: cdktf.listMapperHcl(routeMapRuleToHclTerraform, true)(this._rule.internalValue),
+        value: cdktn.listMapperHcl(routeMapRuleToHclTerraform, true)(this._rule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RouteMapRuleList",

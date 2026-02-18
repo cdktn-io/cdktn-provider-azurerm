@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PaloAltoLocalRulestackRuleConfig extends cdktf.TerraformMetaArguments {
+export interface PaloAltoLocalRulestackRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack_rule#action PaloAltoLocalRulestackRule#action}
   */
@@ -35,7 +35,7 @@ export interface PaloAltoLocalRulestackRuleConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack_rule#enabled PaloAltoLocalRulestackRule#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack_rule#id PaloAltoLocalRulestackRule#id}
   *
@@ -50,7 +50,7 @@ export interface PaloAltoLocalRulestackRuleConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack_rule#logging_enabled PaloAltoLocalRulestackRule#logging_enabled}
   */
-  readonly loggingEnabled?: boolean | cdktf.IResolvable;
+  readonly loggingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack_rule#name PaloAltoLocalRulestackRule#name}
   */
@@ -58,11 +58,11 @@ export interface PaloAltoLocalRulestackRuleConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack_rule#negate_destination PaloAltoLocalRulestackRule#negate_destination}
   */
-  readonly negateDestination?: boolean | cdktf.IResolvable;
+  readonly negateDestination?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack_rule#negate_source PaloAltoLocalRulestackRule#negate_source}
   */
-  readonly negateSource?: boolean | cdktf.IResolvable;
+  readonly negateSource?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack_rule#priority PaloAltoLocalRulestackRule#priority}
   */
@@ -120,31 +120,31 @@ export interface PaloAltoLocalRulestackRuleCategory {
 }
 
 export function paloAltoLocalRulestackRuleCategoryToTerraform(struct?: PaloAltoLocalRulestackRuleCategoryOutputReference | PaloAltoLocalRulestackRuleCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.customUrls),
-    feeds: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.feeds),
+    custom_urls: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.customUrls),
+    feeds: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.feeds),
   }
 }
 
 
 export function paloAltoLocalRulestackRuleCategoryToHclTerraform(struct?: PaloAltoLocalRulestackRuleCategoryOutputReference | PaloAltoLocalRulestackRuleCategory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_urls: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.customUrls),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.customUrls),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     feeds: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.feeds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.feeds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -155,14 +155,14 @@ export function paloAltoLocalRulestackRuleCategoryToHclTerraform(struct?: PaloAl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoLocalRulestackRuleCategoryOutputReference extends cdktf.ComplexObject {
+export class PaloAltoLocalRulestackRuleCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -246,52 +246,52 @@ export interface PaloAltoLocalRulestackRuleDestination {
 }
 
 export function paloAltoLocalRulestackRuleDestinationToTerraform(struct?: PaloAltoLocalRulestackRuleDestinationOutputReference | PaloAltoLocalRulestackRuleDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cidrs),
-    countries: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.countries),
-    feeds: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.feeds),
-    local_rulestack_fqdn_list_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.localRulestackFqdnListIds),
-    local_rulestack_prefix_list_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.localRulestackPrefixListIds),
+    cidrs: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cidrs),
+    countries: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.countries),
+    feeds: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.feeds),
+    local_rulestack_fqdn_list_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.localRulestackFqdnListIds),
+    local_rulestack_prefix_list_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.localRulestackPrefixListIds),
   }
 }
 
 
 export function paloAltoLocalRulestackRuleDestinationToHclTerraform(struct?: PaloAltoLocalRulestackRuleDestinationOutputReference | PaloAltoLocalRulestackRuleDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cidrs: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cidrs),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.cidrs),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     countries: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.countries),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.countries),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     feeds: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.feeds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.feeds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     local_rulestack_fqdn_list_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.localRulestackFqdnListIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.localRulestackFqdnListIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     local_rulestack_prefix_list_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.localRulestackPrefixListIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.localRulestackPrefixListIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -302,14 +302,14 @@ export function paloAltoLocalRulestackRuleDestinationToHclTerraform(struct?: Pal
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoLocalRulestackRuleDestinationOutputReference extends cdktf.ComplexObject {
+export class PaloAltoLocalRulestackRuleDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -458,45 +458,45 @@ export interface PaloAltoLocalRulestackRuleSource {
 }
 
 export function paloAltoLocalRulestackRuleSourceToTerraform(struct?: PaloAltoLocalRulestackRuleSourceOutputReference | PaloAltoLocalRulestackRuleSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cidrs),
-    countries: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.countries),
-    feeds: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.feeds),
-    local_rulestack_prefix_list_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.localRulestackPrefixListIds),
+    cidrs: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cidrs),
+    countries: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.countries),
+    feeds: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.feeds),
+    local_rulestack_prefix_list_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.localRulestackPrefixListIds),
   }
 }
 
 
 export function paloAltoLocalRulestackRuleSourceToHclTerraform(struct?: PaloAltoLocalRulestackRuleSourceOutputReference | PaloAltoLocalRulestackRuleSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cidrs: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cidrs),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.cidrs),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     countries: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.countries),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.countries),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     feeds: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.feeds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.feeds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     local_rulestack_prefix_list_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.localRulestackPrefixListIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.localRulestackPrefixListIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -507,14 +507,14 @@ export function paloAltoLocalRulestackRuleSourceToHclTerraform(struct?: PaloAlto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoLocalRulestackRuleSourceOutputReference extends cdktf.ComplexObject {
+export class PaloAltoLocalRulestackRuleSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -640,46 +640,46 @@ export interface PaloAltoLocalRulestackRuleTimeouts {
   readonly update?: string;
 }
 
-export function paloAltoLocalRulestackRuleTimeoutsToTerraform(struct?: PaloAltoLocalRulestackRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paloAltoLocalRulestackRuleTimeoutsToTerraform(struct?: PaloAltoLocalRulestackRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function paloAltoLocalRulestackRuleTimeoutsToHclTerraform(struct?: PaloAltoLocalRulestackRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paloAltoLocalRulestackRuleTimeoutsToHclTerraform(struct?: PaloAltoLocalRulestackRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -690,19 +690,19 @@ export function paloAltoLocalRulestackRuleTimeoutsToHclTerraform(struct?: PaloAl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoLocalRulestackRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PaloAltoLocalRulestackRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PaloAltoLocalRulestackRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PaloAltoLocalRulestackRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -727,7 +727,7 @@ export class PaloAltoLocalRulestackRuleTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PaloAltoLocalRulestackRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PaloAltoLocalRulestackRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -736,7 +736,7 @@ export class PaloAltoLocalRulestackRuleTimeoutsOutputReference extends cdktf.Com
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -818,7 +818,7 @@ export class PaloAltoLocalRulestackRuleTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack_rule azurerm_palo_alto_local_rulestack_rule}
 */
-export class PaloAltoLocalRulestackRule extends cdktf.TerraformResource {
+export class PaloAltoLocalRulestackRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -829,14 +829,14 @@ export class PaloAltoLocalRulestackRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PaloAltoLocalRulestackRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PaloAltoLocalRulestackRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PaloAltoLocalRulestackRule to import
   * @param importFromId The id of the existing PaloAltoLocalRulestackRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PaloAltoLocalRulestackRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_palo_alto_local_rulestack_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_palo_alto_local_rulestack_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -968,11 +968,11 @@ export class PaloAltoLocalRulestackRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1016,11 +1016,11 @@ export class PaloAltoLocalRulestackRule extends cdktf.TerraformResource {
   }
 
   // logging_enabled - computed: false, optional: true, required: false
-  private _loggingEnabled?: boolean | cdktf.IResolvable; 
+  private _loggingEnabled?: boolean | cdktn.IResolvable; 
   public get loggingEnabled() {
     return this.getBooleanAttribute('logging_enabled');
   }
-  public set loggingEnabled(value: boolean | cdktf.IResolvable) {
+  public set loggingEnabled(value: boolean | cdktn.IResolvable) {
     this._loggingEnabled = value;
   }
   public resetLoggingEnabled() {
@@ -1045,11 +1045,11 @@ export class PaloAltoLocalRulestackRule extends cdktf.TerraformResource {
   }
 
   // negate_destination - computed: false, optional: true, required: false
-  private _negateDestination?: boolean | cdktf.IResolvable; 
+  private _negateDestination?: boolean | cdktn.IResolvable; 
   public get negateDestination() {
     return this.getBooleanAttribute('negate_destination');
   }
-  public set negateDestination(value: boolean | cdktf.IResolvable) {
+  public set negateDestination(value: boolean | cdktn.IResolvable) {
     this._negateDestination = value;
   }
   public resetNegateDestination() {
@@ -1061,11 +1061,11 @@ export class PaloAltoLocalRulestackRule extends cdktf.TerraformResource {
   }
 
   // negate_source - computed: false, optional: true, required: false
-  private _negateSource?: boolean | cdktf.IResolvable; 
+  private _negateSource?: boolean | cdktn.IResolvable; 
   public get negateSource() {
     return this.getBooleanAttribute('negate_source');
   }
-  public set negateSource(value: boolean | cdktf.IResolvable) {
+  public set negateSource(value: boolean | cdktn.IResolvable) {
     this._negateSource = value;
   }
   public resetNegateSource() {
@@ -1214,23 +1214,23 @@ export class PaloAltoLocalRulestackRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: cdktf.stringToTerraform(this._action),
-      applications: cdktf.listMapper(cdktf.stringToTerraform, false)(this._applications),
-      audit_comment: cdktf.stringToTerraform(this._auditComment),
-      decryption_rule_type: cdktf.stringToTerraform(this._decryptionRuleType),
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      inspection_certificate_id: cdktf.stringToTerraform(this._inspectionCertificateId),
-      logging_enabled: cdktf.booleanToTerraform(this._loggingEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      negate_destination: cdktf.booleanToTerraform(this._negateDestination),
-      negate_source: cdktf.booleanToTerraform(this._negateSource),
-      priority: cdktf.numberToTerraform(this._priority),
-      protocol: cdktf.stringToTerraform(this._protocol),
-      protocol_ports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._protocolPorts),
-      rulestack_id: cdktf.stringToTerraform(this._rulestackId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      action: cdktn.stringToTerraform(this._action),
+      applications: cdktn.listMapper(cdktn.stringToTerraform, false)(this._applications),
+      audit_comment: cdktn.stringToTerraform(this._auditComment),
+      decryption_rule_type: cdktn.stringToTerraform(this._decryptionRuleType),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      inspection_certificate_id: cdktn.stringToTerraform(this._inspectionCertificateId),
+      logging_enabled: cdktn.booleanToTerraform(this._loggingEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      negate_destination: cdktn.booleanToTerraform(this._negateDestination),
+      negate_source: cdktn.booleanToTerraform(this._negateSource),
+      priority: cdktn.numberToTerraform(this._priority),
+      protocol: cdktn.stringToTerraform(this._protocol),
+      protocol_ports: cdktn.listMapper(cdktn.stringToTerraform, false)(this._protocolPorts),
+      rulestack_id: cdktn.stringToTerraform(this._rulestackId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       category: paloAltoLocalRulestackRuleCategoryToTerraform(this._category.internalValue),
       destination: paloAltoLocalRulestackRuleDestinationToTerraform(this._destination.internalValue),
       source: paloAltoLocalRulestackRuleSourceToTerraform(this._source.internalValue),
@@ -1241,103 +1241,103 @@ export class PaloAltoLocalRulestackRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action: {
-        value: cdktf.stringToHclTerraform(this._action),
+        value: cdktn.stringToHclTerraform(this._action),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       applications: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._applications),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._applications),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       audit_comment: {
-        value: cdktf.stringToHclTerraform(this._auditComment),
+        value: cdktn.stringToHclTerraform(this._auditComment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       decryption_rule_type: {
-        value: cdktf.stringToHclTerraform(this._decryptionRuleType),
+        value: cdktn.stringToHclTerraform(this._decryptionRuleType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       inspection_certificate_id: {
-        value: cdktf.stringToHclTerraform(this._inspectionCertificateId),
+        value: cdktn.stringToHclTerraform(this._inspectionCertificateId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       logging_enabled: {
-        value: cdktf.booleanToHclTerraform(this._loggingEnabled),
+        value: cdktn.booleanToHclTerraform(this._loggingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       negate_destination: {
-        value: cdktf.booleanToHclTerraform(this._negateDestination),
+        value: cdktn.booleanToHclTerraform(this._negateDestination),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       negate_source: {
-        value: cdktf.booleanToHclTerraform(this._negateSource),
+        value: cdktn.booleanToHclTerraform(this._negateSource),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       protocol: {
-        value: cdktf.stringToHclTerraform(this._protocol),
+        value: cdktn.stringToHclTerraform(this._protocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocol_ports: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._protocolPorts),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._protocolPorts),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       rulestack_id: {
-        value: cdktf.stringToHclTerraform(this._rulestackId),
+        value: cdktn.stringToHclTerraform(this._rulestackId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

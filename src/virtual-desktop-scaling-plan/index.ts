@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VirtualDesktopScalingPlanConfig extends cdktf.TerraformMetaArguments {
+export interface VirtualDesktopScalingPlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_scaling_plan#description VirtualDesktopScalingPlan#description}
   */
@@ -56,13 +56,13 @@ export interface VirtualDesktopScalingPlanConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_scaling_plan#host_pool VirtualDesktopScalingPlan#host_pool}
   */
-  readonly hostPool?: VirtualDesktopScalingPlanHostPool[] | cdktf.IResolvable;
+  readonly hostPool?: VirtualDesktopScalingPlanHostPool[] | cdktn.IResolvable;
   /**
   * schedule block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_scaling_plan#schedule VirtualDesktopScalingPlan#schedule}
   */
-  readonly schedule: VirtualDesktopScalingPlanSchedule[] | cdktf.IResolvable;
+  readonly schedule: VirtualDesktopScalingPlanSchedule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -78,35 +78,35 @@ export interface VirtualDesktopScalingPlanHostPool {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_scaling_plan#scaling_plan_enabled VirtualDesktopScalingPlan#scaling_plan_enabled}
   */
-  readonly scalingPlanEnabled: boolean | cdktf.IResolvable;
+  readonly scalingPlanEnabled: boolean | cdktn.IResolvable;
 }
 
-export function virtualDesktopScalingPlanHostPoolToTerraform(struct?: VirtualDesktopScalingPlanHostPool | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualDesktopScalingPlanHostPoolToTerraform(struct?: VirtualDesktopScalingPlanHostPool | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hostpool_id: cdktf.stringToTerraform(struct!.hostpoolId),
-    scaling_plan_enabled: cdktf.booleanToTerraform(struct!.scalingPlanEnabled),
+    hostpool_id: cdktn.stringToTerraform(struct!.hostpoolId),
+    scaling_plan_enabled: cdktn.booleanToTerraform(struct!.scalingPlanEnabled),
   }
 }
 
 
-export function virtualDesktopScalingPlanHostPoolToHclTerraform(struct?: VirtualDesktopScalingPlanHostPool | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualDesktopScalingPlanHostPoolToHclTerraform(struct?: VirtualDesktopScalingPlanHostPool | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hostpool_id: {
-      value: cdktf.stringToHclTerraform(struct!.hostpoolId),
+      value: cdktn.stringToHclTerraform(struct!.hostpoolId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scaling_plan_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.scalingPlanEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.scalingPlanEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -117,9 +117,9 @@ export function virtualDesktopScalingPlanHostPoolToHclTerraform(struct?: Virtual
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualDesktopScalingPlanHostPoolOutputReference extends cdktf.ComplexObject {
+export class VirtualDesktopScalingPlanHostPoolOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -127,11 +127,11 @@ export class VirtualDesktopScalingPlanHostPoolOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VirtualDesktopScalingPlanHostPool | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualDesktopScalingPlanHostPool | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,14 +148,14 @@ export class VirtualDesktopScalingPlanHostPoolOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualDesktopScalingPlanHostPool | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualDesktopScalingPlanHostPool | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._hostpoolId = undefined;
       this._scalingPlanEnabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -181,11 +181,11 @@ export class VirtualDesktopScalingPlanHostPoolOutputReference extends cdktf.Comp
   }
 
   // scaling_plan_enabled - computed: false, optional: false, required: true
-  private _scalingPlanEnabled?: boolean | cdktf.IResolvable; 
+  private _scalingPlanEnabled?: boolean | cdktn.IResolvable; 
   public get scalingPlanEnabled() {
     return this.getBooleanAttribute('scaling_plan_enabled');
   }
-  public set scalingPlanEnabled(value: boolean | cdktf.IResolvable) {
+  public set scalingPlanEnabled(value: boolean | cdktn.IResolvable) {
     this._scalingPlanEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -194,15 +194,15 @@ export class VirtualDesktopScalingPlanHostPoolOutputReference extends cdktf.Comp
   }
 }
 
-export class VirtualDesktopScalingPlanHostPoolList extends cdktf.ComplexList {
-  public internalValue? : VirtualDesktopScalingPlanHostPool[] | cdktf.IResolvable
+export class VirtualDesktopScalingPlanHostPoolList extends cdktn.ComplexList {
+  public internalValue? : VirtualDesktopScalingPlanHostPool[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -245,7 +245,7 @@ export interface VirtualDesktopScalingPlanSchedule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_scaling_plan#ramp_down_force_logoff_users VirtualDesktopScalingPlan#ramp_down_force_logoff_users}
   */
-  readonly rampDownForceLogoffUsers: boolean | cdktf.IResolvable;
+  readonly rampDownForceLogoffUsers: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_scaling_plan#ramp_down_load_balancing_algorithm VirtualDesktopScalingPlan#ramp_down_load_balancing_algorithm}
   */
@@ -288,144 +288,144 @@ export interface VirtualDesktopScalingPlanSchedule {
   readonly rampUpStartTime: string;
 }
 
-export function virtualDesktopScalingPlanScheduleToTerraform(struct?: VirtualDesktopScalingPlanSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualDesktopScalingPlanScheduleToTerraform(struct?: VirtualDesktopScalingPlanSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days_of_week: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.daysOfWeek),
-    name: cdktf.stringToTerraform(struct!.name),
-    off_peak_load_balancing_algorithm: cdktf.stringToTerraform(struct!.offPeakLoadBalancingAlgorithm),
-    off_peak_start_time: cdktf.stringToTerraform(struct!.offPeakStartTime),
-    peak_load_balancing_algorithm: cdktf.stringToTerraform(struct!.peakLoadBalancingAlgorithm),
-    peak_start_time: cdktf.stringToTerraform(struct!.peakStartTime),
-    ramp_down_capacity_threshold_percent: cdktf.numberToTerraform(struct!.rampDownCapacityThresholdPercent),
-    ramp_down_force_logoff_users: cdktf.booleanToTerraform(struct!.rampDownForceLogoffUsers),
-    ramp_down_load_balancing_algorithm: cdktf.stringToTerraform(struct!.rampDownLoadBalancingAlgorithm),
-    ramp_down_minimum_hosts_percent: cdktf.numberToTerraform(struct!.rampDownMinimumHostsPercent),
-    ramp_down_notification_message: cdktf.stringToTerraform(struct!.rampDownNotificationMessage),
-    ramp_down_start_time: cdktf.stringToTerraform(struct!.rampDownStartTime),
-    ramp_down_stop_hosts_when: cdktf.stringToTerraform(struct!.rampDownStopHostsWhen),
-    ramp_down_wait_time_minutes: cdktf.numberToTerraform(struct!.rampDownWaitTimeMinutes),
-    ramp_up_capacity_threshold_percent: cdktf.numberToTerraform(struct!.rampUpCapacityThresholdPercent),
-    ramp_up_load_balancing_algorithm: cdktf.stringToTerraform(struct!.rampUpLoadBalancingAlgorithm),
-    ramp_up_minimum_hosts_percent: cdktf.numberToTerraform(struct!.rampUpMinimumHostsPercent),
-    ramp_up_start_time: cdktf.stringToTerraform(struct!.rampUpStartTime),
+    days_of_week: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.daysOfWeek),
+    name: cdktn.stringToTerraform(struct!.name),
+    off_peak_load_balancing_algorithm: cdktn.stringToTerraform(struct!.offPeakLoadBalancingAlgorithm),
+    off_peak_start_time: cdktn.stringToTerraform(struct!.offPeakStartTime),
+    peak_load_balancing_algorithm: cdktn.stringToTerraform(struct!.peakLoadBalancingAlgorithm),
+    peak_start_time: cdktn.stringToTerraform(struct!.peakStartTime),
+    ramp_down_capacity_threshold_percent: cdktn.numberToTerraform(struct!.rampDownCapacityThresholdPercent),
+    ramp_down_force_logoff_users: cdktn.booleanToTerraform(struct!.rampDownForceLogoffUsers),
+    ramp_down_load_balancing_algorithm: cdktn.stringToTerraform(struct!.rampDownLoadBalancingAlgorithm),
+    ramp_down_minimum_hosts_percent: cdktn.numberToTerraform(struct!.rampDownMinimumHostsPercent),
+    ramp_down_notification_message: cdktn.stringToTerraform(struct!.rampDownNotificationMessage),
+    ramp_down_start_time: cdktn.stringToTerraform(struct!.rampDownStartTime),
+    ramp_down_stop_hosts_when: cdktn.stringToTerraform(struct!.rampDownStopHostsWhen),
+    ramp_down_wait_time_minutes: cdktn.numberToTerraform(struct!.rampDownWaitTimeMinutes),
+    ramp_up_capacity_threshold_percent: cdktn.numberToTerraform(struct!.rampUpCapacityThresholdPercent),
+    ramp_up_load_balancing_algorithm: cdktn.stringToTerraform(struct!.rampUpLoadBalancingAlgorithm),
+    ramp_up_minimum_hosts_percent: cdktn.numberToTerraform(struct!.rampUpMinimumHostsPercent),
+    ramp_up_start_time: cdktn.stringToTerraform(struct!.rampUpStartTime),
   }
 }
 
 
-export function virtualDesktopScalingPlanScheduleToHclTerraform(struct?: VirtualDesktopScalingPlanSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualDesktopScalingPlanScheduleToHclTerraform(struct?: VirtualDesktopScalingPlanSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days_of_week: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.daysOfWeek),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.daysOfWeek),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     off_peak_load_balancing_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.offPeakLoadBalancingAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.offPeakLoadBalancingAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     off_peak_start_time: {
-      value: cdktf.stringToHclTerraform(struct!.offPeakStartTime),
+      value: cdktn.stringToHclTerraform(struct!.offPeakStartTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     peak_load_balancing_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.peakLoadBalancingAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.peakLoadBalancingAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     peak_start_time: {
-      value: cdktf.stringToHclTerraform(struct!.peakStartTime),
+      value: cdktn.stringToHclTerraform(struct!.peakStartTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ramp_down_capacity_threshold_percent: {
-      value: cdktf.numberToHclTerraform(struct!.rampDownCapacityThresholdPercent),
+      value: cdktn.numberToHclTerraform(struct!.rampDownCapacityThresholdPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ramp_down_force_logoff_users: {
-      value: cdktf.booleanToHclTerraform(struct!.rampDownForceLogoffUsers),
+      value: cdktn.booleanToHclTerraform(struct!.rampDownForceLogoffUsers),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ramp_down_load_balancing_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.rampDownLoadBalancingAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.rampDownLoadBalancingAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ramp_down_minimum_hosts_percent: {
-      value: cdktf.numberToHclTerraform(struct!.rampDownMinimumHostsPercent),
+      value: cdktn.numberToHclTerraform(struct!.rampDownMinimumHostsPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ramp_down_notification_message: {
-      value: cdktf.stringToHclTerraform(struct!.rampDownNotificationMessage),
+      value: cdktn.stringToHclTerraform(struct!.rampDownNotificationMessage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ramp_down_start_time: {
-      value: cdktf.stringToHclTerraform(struct!.rampDownStartTime),
+      value: cdktn.stringToHclTerraform(struct!.rampDownStartTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ramp_down_stop_hosts_when: {
-      value: cdktf.stringToHclTerraform(struct!.rampDownStopHostsWhen),
+      value: cdktn.stringToHclTerraform(struct!.rampDownStopHostsWhen),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ramp_down_wait_time_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.rampDownWaitTimeMinutes),
+      value: cdktn.numberToHclTerraform(struct!.rampDownWaitTimeMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ramp_up_capacity_threshold_percent: {
-      value: cdktf.numberToHclTerraform(struct!.rampUpCapacityThresholdPercent),
+      value: cdktn.numberToHclTerraform(struct!.rampUpCapacityThresholdPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ramp_up_load_balancing_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.rampUpLoadBalancingAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.rampUpLoadBalancingAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ramp_up_minimum_hosts_percent: {
-      value: cdktf.numberToHclTerraform(struct!.rampUpMinimumHostsPercent),
+      value: cdktn.numberToHclTerraform(struct!.rampUpMinimumHostsPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ramp_up_start_time: {
-      value: cdktf.stringToHclTerraform(struct!.rampUpStartTime),
+      value: cdktn.stringToHclTerraform(struct!.rampUpStartTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -436,9 +436,9 @@ export function virtualDesktopScalingPlanScheduleToHclTerraform(struct?: Virtual
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualDesktopScalingPlanScheduleOutputReference extends cdktf.ComplexObject {
+export class VirtualDesktopScalingPlanScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -446,11 +446,11 @@ export class VirtualDesktopScalingPlanScheduleOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VirtualDesktopScalingPlanSchedule | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualDesktopScalingPlanSchedule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -531,7 +531,7 @@ export class VirtualDesktopScalingPlanScheduleOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualDesktopScalingPlanSchedule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualDesktopScalingPlanSchedule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -554,7 +554,7 @@ export class VirtualDesktopScalingPlanScheduleOutputReference extends cdktf.Comp
       this._rampUpMinimumHostsPercent = undefined;
       this._rampUpStartTime = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -585,7 +585,7 @@ export class VirtualDesktopScalingPlanScheduleOutputReference extends cdktf.Comp
   // days_of_week - computed: false, optional: false, required: true
   private _daysOfWeek?: string[]; 
   public get daysOfWeek() {
-    return cdktf.Fn.tolist(this.getListAttribute('days_of_week'));
+    return cdktn.Fn.tolist(this.getListAttribute('days_of_week'));
   }
   public set daysOfWeek(value: string[]) {
     this._daysOfWeek = value;
@@ -674,11 +674,11 @@ export class VirtualDesktopScalingPlanScheduleOutputReference extends cdktf.Comp
   }
 
   // ramp_down_force_logoff_users - computed: false, optional: false, required: true
-  private _rampDownForceLogoffUsers?: boolean | cdktf.IResolvable; 
+  private _rampDownForceLogoffUsers?: boolean | cdktn.IResolvable; 
   public get rampDownForceLogoffUsers() {
     return this.getBooleanAttribute('ramp_down_force_logoff_users');
   }
-  public set rampDownForceLogoffUsers(value: boolean | cdktf.IResolvable) {
+  public set rampDownForceLogoffUsers(value: boolean | cdktn.IResolvable) {
     this._rampDownForceLogoffUsers = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -823,15 +823,15 @@ export class VirtualDesktopScalingPlanScheduleOutputReference extends cdktf.Comp
   }
 }
 
-export class VirtualDesktopScalingPlanScheduleList extends cdktf.ComplexList {
-  public internalValue? : VirtualDesktopScalingPlanSchedule[] | cdktf.IResolvable
+export class VirtualDesktopScalingPlanScheduleList extends cdktn.ComplexList {
+  public internalValue? : VirtualDesktopScalingPlanSchedule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -861,46 +861,46 @@ export interface VirtualDesktopScalingPlanTimeouts {
   readonly update?: string;
 }
 
-export function virtualDesktopScalingPlanTimeoutsToTerraform(struct?: VirtualDesktopScalingPlanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualDesktopScalingPlanTimeoutsToTerraform(struct?: VirtualDesktopScalingPlanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function virtualDesktopScalingPlanTimeoutsToHclTerraform(struct?: VirtualDesktopScalingPlanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualDesktopScalingPlanTimeoutsToHclTerraform(struct?: VirtualDesktopScalingPlanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -911,19 +911,19 @@ export function virtualDesktopScalingPlanTimeoutsToHclTerraform(struct?: Virtual
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualDesktopScalingPlanTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VirtualDesktopScalingPlanTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VirtualDesktopScalingPlanTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualDesktopScalingPlanTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -948,7 +948,7 @@ export class VirtualDesktopScalingPlanTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualDesktopScalingPlanTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualDesktopScalingPlanTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -957,7 +957,7 @@ export class VirtualDesktopScalingPlanTimeoutsOutputReference extends cdktf.Comp
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1039,7 +1039,7 @@ export class VirtualDesktopScalingPlanTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_scaling_plan azurerm_virtual_desktop_scaling_plan}
 */
-export class VirtualDesktopScalingPlan extends cdktf.TerraformResource {
+export class VirtualDesktopScalingPlan extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1050,14 +1050,14 @@ export class VirtualDesktopScalingPlan extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VirtualDesktopScalingPlan resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VirtualDesktopScalingPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualDesktopScalingPlan to import
   * @param importFromId The id of the existing VirtualDesktopScalingPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_scaling_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualDesktopScalingPlan to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_desktop_scaling_plan", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_desktop_scaling_plan", importId: importFromId, provider });
       }
 
   // ===========
@@ -1242,7 +1242,7 @@ export class VirtualDesktopScalingPlan extends cdktf.TerraformResource {
   public get hostPool() {
     return this._hostPool;
   }
-  public putHostPool(value: VirtualDesktopScalingPlanHostPool[] | cdktf.IResolvable) {
+  public putHostPool(value: VirtualDesktopScalingPlanHostPool[] | cdktn.IResolvable) {
     this._hostPool.internalValue = value;
   }
   public resetHostPool() {
@@ -1258,7 +1258,7 @@ export class VirtualDesktopScalingPlan extends cdktf.TerraformResource {
   public get schedule() {
     return this._schedule;
   }
-  public putSchedule(value: VirtualDesktopScalingPlanSchedule[] | cdktf.IResolvable) {
+  public putSchedule(value: VirtualDesktopScalingPlanSchedule[] | cdktn.IResolvable) {
     this._schedule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1288,17 +1288,17 @@ export class VirtualDesktopScalingPlan extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      exclusion_tag: cdktf.stringToTerraform(this._exclusionTag),
-      friendly_name: cdktf.stringToTerraform(this._friendlyName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      time_zone: cdktf.stringToTerraform(this._timeZone),
-      host_pool: cdktf.listMapper(virtualDesktopScalingPlanHostPoolToTerraform, true)(this._hostPool.internalValue),
-      schedule: cdktf.listMapper(virtualDesktopScalingPlanScheduleToTerraform, true)(this._schedule.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      exclusion_tag: cdktn.stringToTerraform(this._exclusionTag),
+      friendly_name: cdktn.stringToTerraform(this._friendlyName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      time_zone: cdktn.stringToTerraform(this._timeZone),
+      host_pool: cdktn.listMapper(virtualDesktopScalingPlanHostPoolToTerraform, true)(this._hostPool.internalValue),
+      schedule: cdktn.listMapper(virtualDesktopScalingPlanScheduleToTerraform, true)(this._schedule.internalValue),
       timeouts: virtualDesktopScalingPlanTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1306,67 +1306,67 @@ export class VirtualDesktopScalingPlan extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       exclusion_tag: {
-        value: cdktf.stringToHclTerraform(this._exclusionTag),
+        value: cdktn.stringToHclTerraform(this._exclusionTag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       friendly_name: {
-        value: cdktf.stringToHclTerraform(this._friendlyName),
+        value: cdktn.stringToHclTerraform(this._friendlyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       time_zone: {
-        value: cdktf.stringToHclTerraform(this._timeZone),
+        value: cdktn.stringToHclTerraform(this._timeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host_pool: {
-        value: cdktf.listMapperHcl(virtualDesktopScalingPlanHostPoolToHclTerraform, true)(this._hostPool.internalValue),
+        value: cdktn.listMapperHcl(virtualDesktopScalingPlanHostPoolToHclTerraform, true)(this._hostPool.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VirtualDesktopScalingPlanHostPoolList",
       },
       schedule: {
-        value: cdktf.listMapperHcl(virtualDesktopScalingPlanScheduleToHclTerraform, true)(this._schedule.internalValue),
+        value: cdktn.listMapperHcl(virtualDesktopScalingPlanScheduleToHclTerraform, true)(this._schedule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VirtualDesktopScalingPlanScheduleList",

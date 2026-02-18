@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetappAccountConfig extends cdktf.TerraformMetaArguments {
+export interface NetappAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_account#id NetappAccount#id}
   *
@@ -60,7 +60,7 @@ export interface NetappAccountActiveDirectory {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_account#aes_encryption_enabled NetappAccount#aes_encryption_enabled}
   */
-  readonly aesEncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly aesEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}
   */
@@ -86,19 +86,19 @@ export interface NetappAccountActiveDirectory {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_account#ldap_over_tls_enabled NetappAccount#ldap_over_tls_enabled}
   */
-  readonly ldapOverTlsEnabled?: boolean | cdktf.IResolvable;
+  readonly ldapOverTlsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Specifies whether or not the LDAP traffic needs to be signed.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_account#ldap_signing_enabled NetappAccount#ldap_signing_enabled}
   */
-  readonly ldapSigningEnabled?: boolean | cdktf.IResolvable;
+  readonly ldapSigningEnabled?: boolean | cdktn.IResolvable;
   /**
   * If enabled, NFS client local users can also (in addition to LDAP users) access the NFS volumes.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_account#local_nfs_users_with_ldap_allowed NetappAccount#local_nfs_users_with_ldap_allowed}
   */
-  readonly localNfsUsersWithLdapAllowed?: boolean | cdktf.IResolvable;
+  readonly localNfsUsersWithLdapAllowed?: boolean | cdktn.IResolvable;
   /**
   * The Organizational Unit (OU) within the Windows Active Directory where machines will be created. If blank, defaults to 'CN=Computers'
   *
@@ -132,115 +132,115 @@ export interface NetappAccountActiveDirectory {
 }
 
 export function netappAccountActiveDirectoryToTerraform(struct?: NetappAccountActiveDirectoryOutputReference | NetappAccountActiveDirectory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aes_encryption_enabled: cdktf.booleanToTerraform(struct!.aesEncryptionEnabled),
-    dns_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dnsServers),
-    domain: cdktf.stringToTerraform(struct!.domain),
-    kerberos_ad_name: cdktf.stringToTerraform(struct!.kerberosAdName),
-    kerberos_kdc_ip: cdktf.stringToTerraform(struct!.kerberosKdcIp),
-    ldap_over_tls_enabled: cdktf.booleanToTerraform(struct!.ldapOverTlsEnabled),
-    ldap_signing_enabled: cdktf.booleanToTerraform(struct!.ldapSigningEnabled),
-    local_nfs_users_with_ldap_allowed: cdktf.booleanToTerraform(struct!.localNfsUsersWithLdapAllowed),
-    organizational_unit: cdktf.stringToTerraform(struct!.organizationalUnit),
-    password: cdktf.stringToTerraform(struct!.password),
-    server_root_ca_certificate: cdktf.stringToTerraform(struct!.serverRootCaCertificate),
-    site_name: cdktf.stringToTerraform(struct!.siteName),
-    smb_server_name: cdktf.stringToTerraform(struct!.smbServerName),
-    username: cdktf.stringToTerraform(struct!.username),
+    aes_encryption_enabled: cdktn.booleanToTerraform(struct!.aesEncryptionEnabled),
+    dns_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dnsServers),
+    domain: cdktn.stringToTerraform(struct!.domain),
+    kerberos_ad_name: cdktn.stringToTerraform(struct!.kerberosAdName),
+    kerberos_kdc_ip: cdktn.stringToTerraform(struct!.kerberosKdcIp),
+    ldap_over_tls_enabled: cdktn.booleanToTerraform(struct!.ldapOverTlsEnabled),
+    ldap_signing_enabled: cdktn.booleanToTerraform(struct!.ldapSigningEnabled),
+    local_nfs_users_with_ldap_allowed: cdktn.booleanToTerraform(struct!.localNfsUsersWithLdapAllowed),
+    organizational_unit: cdktn.stringToTerraform(struct!.organizationalUnit),
+    password: cdktn.stringToTerraform(struct!.password),
+    server_root_ca_certificate: cdktn.stringToTerraform(struct!.serverRootCaCertificate),
+    site_name: cdktn.stringToTerraform(struct!.siteName),
+    smb_server_name: cdktn.stringToTerraform(struct!.smbServerName),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function netappAccountActiveDirectoryToHclTerraform(struct?: NetappAccountActiveDirectoryOutputReference | NetappAccountActiveDirectory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aes_encryption_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.aesEncryptionEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.aesEncryptionEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     dns_servers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsServers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dnsServers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     domain: {
-      value: cdktf.stringToHclTerraform(struct!.domain),
+      value: cdktn.stringToHclTerraform(struct!.domain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kerberos_ad_name: {
-      value: cdktf.stringToHclTerraform(struct!.kerberosAdName),
+      value: cdktn.stringToHclTerraform(struct!.kerberosAdName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kerberos_kdc_ip: {
-      value: cdktf.stringToHclTerraform(struct!.kerberosKdcIp),
+      value: cdktn.stringToHclTerraform(struct!.kerberosKdcIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ldap_over_tls_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.ldapOverTlsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.ldapOverTlsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ldap_signing_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.ldapSigningEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.ldapSigningEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     local_nfs_users_with_ldap_allowed: {
-      value: cdktf.booleanToHclTerraform(struct!.localNfsUsersWithLdapAllowed),
+      value: cdktn.booleanToHclTerraform(struct!.localNfsUsersWithLdapAllowed),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     organizational_unit: {
-      value: cdktf.stringToHclTerraform(struct!.organizationalUnit),
+      value: cdktn.stringToHclTerraform(struct!.organizationalUnit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     server_root_ca_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.serverRootCaCertificate),
+      value: cdktn.stringToHclTerraform(struct!.serverRootCaCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     site_name: {
-      value: cdktf.stringToHclTerraform(struct!.siteName),
+      value: cdktn.stringToHclTerraform(struct!.siteName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     smb_server_name: {
-      value: cdktf.stringToHclTerraform(struct!.smbServerName),
+      value: cdktn.stringToHclTerraform(struct!.smbServerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -251,14 +251,14 @@ export function netappAccountActiveDirectoryToHclTerraform(struct?: NetappAccoun
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappAccountActiveDirectoryOutputReference extends cdktf.ComplexObject {
+export class NetappAccountActiveDirectoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -362,11 +362,11 @@ export class NetappAccountActiveDirectoryOutputReference extends cdktf.ComplexOb
   }
 
   // aes_encryption_enabled - computed: false, optional: true, required: false
-  private _aesEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _aesEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get aesEncryptionEnabled() {
     return this.getBooleanAttribute('aes_encryption_enabled');
   }
-  public set aesEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set aesEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._aesEncryptionEnabled = value;
   }
   public resetAesEncryptionEnabled() {
@@ -436,11 +436,11 @@ export class NetappAccountActiveDirectoryOutputReference extends cdktf.ComplexOb
   }
 
   // ldap_over_tls_enabled - computed: false, optional: true, required: false
-  private _ldapOverTlsEnabled?: boolean | cdktf.IResolvable; 
+  private _ldapOverTlsEnabled?: boolean | cdktn.IResolvable; 
   public get ldapOverTlsEnabled() {
     return this.getBooleanAttribute('ldap_over_tls_enabled');
   }
-  public set ldapOverTlsEnabled(value: boolean | cdktf.IResolvable) {
+  public set ldapOverTlsEnabled(value: boolean | cdktn.IResolvable) {
     this._ldapOverTlsEnabled = value;
   }
   public resetLdapOverTlsEnabled() {
@@ -452,11 +452,11 @@ export class NetappAccountActiveDirectoryOutputReference extends cdktf.ComplexOb
   }
 
   // ldap_signing_enabled - computed: false, optional: true, required: false
-  private _ldapSigningEnabled?: boolean | cdktf.IResolvable; 
+  private _ldapSigningEnabled?: boolean | cdktn.IResolvable; 
   public get ldapSigningEnabled() {
     return this.getBooleanAttribute('ldap_signing_enabled');
   }
-  public set ldapSigningEnabled(value: boolean | cdktf.IResolvable) {
+  public set ldapSigningEnabled(value: boolean | cdktn.IResolvable) {
     this._ldapSigningEnabled = value;
   }
   public resetLdapSigningEnabled() {
@@ -468,11 +468,11 @@ export class NetappAccountActiveDirectoryOutputReference extends cdktf.ComplexOb
   }
 
   // local_nfs_users_with_ldap_allowed - computed: false, optional: true, required: false
-  private _localNfsUsersWithLdapAllowed?: boolean | cdktf.IResolvable; 
+  private _localNfsUsersWithLdapAllowed?: boolean | cdktn.IResolvable; 
   public get localNfsUsersWithLdapAllowed() {
     return this.getBooleanAttribute('local_nfs_users_with_ldap_allowed');
   }
-  public set localNfsUsersWithLdapAllowed(value: boolean | cdktf.IResolvable) {
+  public set localNfsUsersWithLdapAllowed(value: boolean | cdktn.IResolvable) {
     this._localNfsUsersWithLdapAllowed = value;
   }
   public resetLocalNfsUsersWithLdapAllowed() {
@@ -582,31 +582,31 @@ export interface NetappAccountIdentity {
 }
 
 export function netappAccountIdentityToTerraform(struct?: NetappAccountIdentityOutputReference | NetappAccountIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function netappAccountIdentityToHclTerraform(struct?: NetappAccountIdentityOutputReference | NetappAccountIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -617,14 +617,14 @@ export function netappAccountIdentityToHclTerraform(struct?: NetappAccountIdenti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappAccountIdentityOutputReference extends cdktf.ComplexObject {
+export class NetappAccountIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -658,7 +658,7 @@ export class NetappAccountIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -713,46 +713,46 @@ export interface NetappAccountTimeouts {
   readonly update?: string;
 }
 
-export function netappAccountTimeoutsToTerraform(struct?: NetappAccountTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappAccountTimeoutsToTerraform(struct?: NetappAccountTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function netappAccountTimeoutsToHclTerraform(struct?: NetappAccountTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappAccountTimeoutsToHclTerraform(struct?: NetappAccountTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -763,19 +763,19 @@ export function netappAccountTimeoutsToHclTerraform(struct?: NetappAccountTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappAccountTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetappAccountTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetappAccountTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetappAccountTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -800,7 +800,7 @@ export class NetappAccountTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetappAccountTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetappAccountTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -809,7 +809,7 @@ export class NetappAccountTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -891,7 +891,7 @@ export class NetappAccountTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_account azurerm_netapp_account}
 */
-export class NetappAccount extends cdktf.TerraformResource {
+export class NetappAccount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -902,14 +902,14 @@ export class NetappAccount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetappAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetappAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetappAccount to import
   * @param importFromId The id of the existing NetappAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetappAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_netapp_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_netapp_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -1078,11 +1078,11 @@ export class NetappAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       active_directory: netappAccountActiveDirectoryToTerraform(this._activeDirectory.internalValue),
       identity: netappAccountIdentityToTerraform(this._identity.internalValue),
       timeouts: netappAccountTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1092,31 +1092,31 @@ export class NetappAccount extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

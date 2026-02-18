@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VoiceServicesCommunicationsGatewayConfig extends cdktf.TerraformMetaArguments {
+export interface VoiceServicesCommunicationsGatewayConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/voice_services_communications_gateway#api_bridge VoiceServicesCommunicationsGateway#api_bridge}
   */
@@ -58,7 +58,7 @@ export interface VoiceServicesCommunicationsGatewayConfig extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/voice_services_communications_gateway#on_prem_mcp_enabled VoiceServicesCommunicationsGateway#on_prem_mcp_enabled}
   */
-  readonly onPremMcpEnabled?: boolean | cdktf.IResolvable;
+  readonly onPremMcpEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/voice_services_communications_gateway#platforms VoiceServicesCommunicationsGateway#platforms}
   */
@@ -76,7 +76,7 @@ export interface VoiceServicesCommunicationsGatewayConfig extends cdktf.Terrafor
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/voice_services_communications_gateway#service_location VoiceServicesCommunicationsGateway#service_location}
   */
-  readonly serviceLocation: VoiceServicesCommunicationsGatewayServiceLocation[] | cdktf.IResolvable;
+  readonly serviceLocation: VoiceServicesCommunicationsGatewayServiceLocation[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -107,53 +107,53 @@ export interface VoiceServicesCommunicationsGatewayServiceLocation {
   readonly operatorAddresses: string[];
 }
 
-export function voiceServicesCommunicationsGatewayServiceLocationToTerraform(struct?: VoiceServicesCommunicationsGatewayServiceLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function voiceServicesCommunicationsGatewayServiceLocationToTerraform(struct?: VoiceServicesCommunicationsGatewayServiceLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_media_source_address_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedMediaSourceAddressPrefixes),
-    allowed_signaling_source_address_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedSignalingSourceAddressPrefixes),
-    esrp_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.esrpAddresses),
-    location: cdktf.stringToTerraform(struct!.location),
-    operator_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.operatorAddresses),
+    allowed_media_source_address_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedMediaSourceAddressPrefixes),
+    allowed_signaling_source_address_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedSignalingSourceAddressPrefixes),
+    esrp_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.esrpAddresses),
+    location: cdktn.stringToTerraform(struct!.location),
+    operator_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.operatorAddresses),
   }
 }
 
 
-export function voiceServicesCommunicationsGatewayServiceLocationToHclTerraform(struct?: VoiceServicesCommunicationsGatewayServiceLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function voiceServicesCommunicationsGatewayServiceLocationToHclTerraform(struct?: VoiceServicesCommunicationsGatewayServiceLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_media_source_address_prefixes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedMediaSourceAddressPrefixes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedMediaSourceAddressPrefixes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     allowed_signaling_source_address_prefixes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedSignalingSourceAddressPrefixes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedSignalingSourceAddressPrefixes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     esrp_addresses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.esrpAddresses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.esrpAddresses),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator_addresses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.operatorAddresses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.operatorAddresses),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -164,9 +164,9 @@ export function voiceServicesCommunicationsGatewayServiceLocationToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VoiceServicesCommunicationsGatewayServiceLocationOutputReference extends cdktf.ComplexObject {
+export class VoiceServicesCommunicationsGatewayServiceLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -174,11 +174,11 @@ export class VoiceServicesCommunicationsGatewayServiceLocationOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VoiceServicesCommunicationsGatewayServiceLocation | cdktf.IResolvable | undefined {
+  public get internalValue(): VoiceServicesCommunicationsGatewayServiceLocation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -207,7 +207,7 @@ export class VoiceServicesCommunicationsGatewayServiceLocationOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VoiceServicesCommunicationsGatewayServiceLocation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VoiceServicesCommunicationsGatewayServiceLocation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -217,7 +217,7 @@ export class VoiceServicesCommunicationsGatewayServiceLocationOutputReference ex
       this._location = undefined;
       this._operatorAddresses = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -235,7 +235,7 @@ export class VoiceServicesCommunicationsGatewayServiceLocationOutputReference ex
   // allowed_media_source_address_prefixes - computed: false, optional: true, required: false
   private _allowedMediaSourceAddressPrefixes?: string[]; 
   public get allowedMediaSourceAddressPrefixes() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_media_source_address_prefixes'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_media_source_address_prefixes'));
   }
   public set allowedMediaSourceAddressPrefixes(value: string[]) {
     this._allowedMediaSourceAddressPrefixes = value;
@@ -251,7 +251,7 @@ export class VoiceServicesCommunicationsGatewayServiceLocationOutputReference ex
   // allowed_signaling_source_address_prefixes - computed: false, optional: true, required: false
   private _allowedSignalingSourceAddressPrefixes?: string[]; 
   public get allowedSignalingSourceAddressPrefixes() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_signaling_source_address_prefixes'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_signaling_source_address_prefixes'));
   }
   public set allowedSignalingSourceAddressPrefixes(value: string[]) {
     this._allowedSignalingSourceAddressPrefixes = value;
@@ -267,7 +267,7 @@ export class VoiceServicesCommunicationsGatewayServiceLocationOutputReference ex
   // esrp_addresses - computed: false, optional: true, required: false
   private _esrpAddresses?: string[]; 
   public get esrpAddresses() {
-    return cdktf.Fn.tolist(this.getListAttribute('esrp_addresses'));
+    return cdktn.Fn.tolist(this.getListAttribute('esrp_addresses'));
   }
   public set esrpAddresses(value: string[]) {
     this._esrpAddresses = value;
@@ -296,7 +296,7 @@ export class VoiceServicesCommunicationsGatewayServiceLocationOutputReference ex
   // operator_addresses - computed: false, optional: false, required: true
   private _operatorAddresses?: string[]; 
   public get operatorAddresses() {
-    return cdktf.Fn.tolist(this.getListAttribute('operator_addresses'));
+    return cdktn.Fn.tolist(this.getListAttribute('operator_addresses'));
   }
   public set operatorAddresses(value: string[]) {
     this._operatorAddresses = value;
@@ -307,15 +307,15 @@ export class VoiceServicesCommunicationsGatewayServiceLocationOutputReference ex
   }
 }
 
-export class VoiceServicesCommunicationsGatewayServiceLocationList extends cdktf.ComplexList {
-  public internalValue? : VoiceServicesCommunicationsGatewayServiceLocation[] | cdktf.IResolvable
+export class VoiceServicesCommunicationsGatewayServiceLocationList extends cdktn.ComplexList {
+  public internalValue? : VoiceServicesCommunicationsGatewayServiceLocation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -345,46 +345,46 @@ export interface VoiceServicesCommunicationsGatewayTimeouts {
   readonly update?: string;
 }
 
-export function voiceServicesCommunicationsGatewayTimeoutsToTerraform(struct?: VoiceServicesCommunicationsGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function voiceServicesCommunicationsGatewayTimeoutsToTerraform(struct?: VoiceServicesCommunicationsGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function voiceServicesCommunicationsGatewayTimeoutsToHclTerraform(struct?: VoiceServicesCommunicationsGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function voiceServicesCommunicationsGatewayTimeoutsToHclTerraform(struct?: VoiceServicesCommunicationsGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -395,19 +395,19 @@ export function voiceServicesCommunicationsGatewayTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VoiceServicesCommunicationsGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VoiceServicesCommunicationsGatewayTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VoiceServicesCommunicationsGatewayTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VoiceServicesCommunicationsGatewayTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -432,7 +432,7 @@ export class VoiceServicesCommunicationsGatewayTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VoiceServicesCommunicationsGatewayTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VoiceServicesCommunicationsGatewayTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -441,7 +441,7 @@ export class VoiceServicesCommunicationsGatewayTimeoutsOutputReference extends c
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -523,7 +523,7 @@ export class VoiceServicesCommunicationsGatewayTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/voice_services_communications_gateway azurerm_voice_services_communications_gateway}
 */
-export class VoiceServicesCommunicationsGateway extends cdktf.TerraformResource {
+export class VoiceServicesCommunicationsGateway extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -534,14 +534,14 @@ export class VoiceServicesCommunicationsGateway extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VoiceServicesCommunicationsGateway resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VoiceServicesCommunicationsGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VoiceServicesCommunicationsGateway to import
   * @param importFromId The id of the existing VoiceServicesCommunicationsGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/voice_services_communications_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VoiceServicesCommunicationsGateway to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_voice_services_communications_gateway", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_voice_services_communications_gateway", importId: importFromId, provider });
       }
 
   // ===========
@@ -739,11 +739,11 @@ export class VoiceServicesCommunicationsGateway extends cdktf.TerraformResource 
   }
 
   // on_prem_mcp_enabled - computed: false, optional: true, required: false
-  private _onPremMcpEnabled?: boolean | cdktf.IResolvable; 
+  private _onPremMcpEnabled?: boolean | cdktn.IResolvable; 
   public get onPremMcpEnabled() {
     return this.getBooleanAttribute('on_prem_mcp_enabled');
   }
-  public set onPremMcpEnabled(value: boolean | cdktf.IResolvable) {
+  public set onPremMcpEnabled(value: boolean | cdktn.IResolvable) {
     this._onPremMcpEnabled = value;
   }
   public resetOnPremMcpEnabled() {
@@ -801,7 +801,7 @@ export class VoiceServicesCommunicationsGateway extends cdktf.TerraformResource 
   public get serviceLocation() {
     return this._serviceLocation;
   }
-  public putServiceLocation(value: VoiceServicesCommunicationsGatewayServiceLocation[] | cdktf.IResolvable) {
+  public putServiceLocation(value: VoiceServicesCommunicationsGatewayServiceLocation[] | cdktn.IResolvable) {
     this._serviceLocation.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -831,21 +831,21 @@ export class VoiceServicesCommunicationsGateway extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_bridge: cdktf.stringToTerraform(this._apiBridge),
-      auto_generated_domain_name_label_scope: cdktf.stringToTerraform(this._autoGeneratedDomainNameLabelScope),
-      codecs: cdktf.stringToTerraform(this._codecs),
-      connectivity: cdktf.stringToTerraform(this._connectivity),
-      e911_type: cdktf.stringToTerraform(this._e911Type),
-      emergency_dial_strings: cdktf.listMapper(cdktf.stringToTerraform, false)(this._emergencyDialStrings),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      microsoft_teams_voicemail_pilot_number: cdktf.stringToTerraform(this._microsoftTeamsVoicemailPilotNumber),
-      name: cdktf.stringToTerraform(this._name),
-      on_prem_mcp_enabled: cdktf.booleanToTerraform(this._onPremMcpEnabled),
-      platforms: cdktf.listMapper(cdktf.stringToTerraform, false)(this._platforms),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      service_location: cdktf.listMapper(voiceServicesCommunicationsGatewayServiceLocationToTerraform, true)(this._serviceLocation.internalValue),
+      api_bridge: cdktn.stringToTerraform(this._apiBridge),
+      auto_generated_domain_name_label_scope: cdktn.stringToTerraform(this._autoGeneratedDomainNameLabelScope),
+      codecs: cdktn.stringToTerraform(this._codecs),
+      connectivity: cdktn.stringToTerraform(this._connectivity),
+      e911_type: cdktn.stringToTerraform(this._e911Type),
+      emergency_dial_strings: cdktn.listMapper(cdktn.stringToTerraform, false)(this._emergencyDialStrings),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      microsoft_teams_voicemail_pilot_number: cdktn.stringToTerraform(this._microsoftTeamsVoicemailPilotNumber),
+      name: cdktn.stringToTerraform(this._name),
+      on_prem_mcp_enabled: cdktn.booleanToTerraform(this._onPremMcpEnabled),
+      platforms: cdktn.listMapper(cdktn.stringToTerraform, false)(this._platforms),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      service_location: cdktn.listMapper(voiceServicesCommunicationsGatewayServiceLocationToTerraform, true)(this._serviceLocation.internalValue),
       timeouts: voiceServicesCommunicationsGatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -853,91 +853,91 @@ export class VoiceServicesCommunicationsGateway extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_bridge: {
-        value: cdktf.stringToHclTerraform(this._apiBridge),
+        value: cdktn.stringToHclTerraform(this._apiBridge),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auto_generated_domain_name_label_scope: {
-        value: cdktf.stringToHclTerraform(this._autoGeneratedDomainNameLabelScope),
+        value: cdktn.stringToHclTerraform(this._autoGeneratedDomainNameLabelScope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       codecs: {
-        value: cdktf.stringToHclTerraform(this._codecs),
+        value: cdktn.stringToHclTerraform(this._codecs),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connectivity: {
-        value: cdktf.stringToHclTerraform(this._connectivity),
+        value: cdktn.stringToHclTerraform(this._connectivity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       e911_type: {
-        value: cdktf.stringToHclTerraform(this._e911Type),
+        value: cdktn.stringToHclTerraform(this._e911Type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       emergency_dial_strings: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._emergencyDialStrings),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._emergencyDialStrings),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       microsoft_teams_voicemail_pilot_number: {
-        value: cdktf.stringToHclTerraform(this._microsoftTeamsVoicemailPilotNumber),
+        value: cdktn.stringToHclTerraform(this._microsoftTeamsVoicemailPilotNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       on_prem_mcp_enabled: {
-        value: cdktf.booleanToHclTerraform(this._onPremMcpEnabled),
+        value: cdktn.booleanToHclTerraform(this._onPremMcpEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       platforms: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._platforms),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._platforms),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       service_location: {
-        value: cdktf.listMapperHcl(voiceServicesCommunicationsGatewayServiceLocationToHclTerraform, true)(this._serviceLocation.internalValue),
+        value: cdktn.listMapperHcl(voiceServicesCommunicationsGatewayServiceLocationToHclTerraform, true)(this._serviceLocation.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "VoiceServicesCommunicationsGatewayServiceLocationList",

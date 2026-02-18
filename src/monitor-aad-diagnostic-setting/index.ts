@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MonitorAadDiagnosticSettingConfig extends cdktf.TerraformMetaArguments {
+export interface MonitorAadDiagnosticSettingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_aad_diagnostic_setting#eventhub_authorization_rule_id MonitorAadDiagnosticSetting#eventhub_authorization_rule_id}
   */
@@ -44,7 +44,7 @@ export interface MonitorAadDiagnosticSettingConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_aad_diagnostic_setting#enabled_log MonitorAadDiagnosticSetting#enabled_log}
   */
-  readonly enabledLog?: MonitorAadDiagnosticSettingEnabledLog[] | cdktf.IResolvable;
+  readonly enabledLog?: MonitorAadDiagnosticSettingEnabledLog[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -60,35 +60,35 @@ export interface MonitorAadDiagnosticSettingEnabledLogRetentionPolicy {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_aad_diagnostic_setting#enabled MonitorAadDiagnosticSetting#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
 export function monitorAadDiagnosticSettingEnabledLogRetentionPolicyToTerraform(struct?: MonitorAadDiagnosticSettingEnabledLogRetentionPolicyOutputReference | MonitorAadDiagnosticSettingEnabledLogRetentionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days: cdktf.numberToTerraform(struct!.days),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    days: cdktn.numberToTerraform(struct!.days),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function monitorAadDiagnosticSettingEnabledLogRetentionPolicyToHclTerraform(struct?: MonitorAadDiagnosticSettingEnabledLogRetentionPolicyOutputReference | MonitorAadDiagnosticSettingEnabledLogRetentionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days: {
-      value: cdktf.numberToHclTerraform(struct!.days),
+      value: cdktn.numberToHclTerraform(struct!.days),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -99,14 +99,14 @@ export function monitorAadDiagnosticSettingEnabledLogRetentionPolicyToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAadDiagnosticSettingEnabledLogRetentionPolicyOutputReference extends cdktf.ComplexObject {
+export class MonitorAadDiagnosticSettingEnabledLogRetentionPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -154,11 +154,11 @@ export class MonitorAadDiagnosticSettingEnabledLogRetentionPolicyOutputReference
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -182,26 +182,26 @@ export interface MonitorAadDiagnosticSettingEnabledLog {
   readonly retentionPolicy?: MonitorAadDiagnosticSettingEnabledLogRetentionPolicy;
 }
 
-export function monitorAadDiagnosticSettingEnabledLogToTerraform(struct?: MonitorAadDiagnosticSettingEnabledLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorAadDiagnosticSettingEnabledLogToTerraform(struct?: MonitorAadDiagnosticSettingEnabledLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    category: cdktf.stringToTerraform(struct!.category),
+    category: cdktn.stringToTerraform(struct!.category),
     retention_policy: monitorAadDiagnosticSettingEnabledLogRetentionPolicyToTerraform(struct!.retentionPolicy),
   }
 }
 
 
-export function monitorAadDiagnosticSettingEnabledLogToHclTerraform(struct?: MonitorAadDiagnosticSettingEnabledLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorAadDiagnosticSettingEnabledLogToHclTerraform(struct?: MonitorAadDiagnosticSettingEnabledLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     category: {
-      value: cdktf.stringToHclTerraform(struct!.category),
+      value: cdktn.stringToHclTerraform(struct!.category),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -218,9 +218,9 @@ export function monitorAadDiagnosticSettingEnabledLogToHclTerraform(struct?: Mon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAadDiagnosticSettingEnabledLogOutputReference extends cdktf.ComplexObject {
+export class MonitorAadDiagnosticSettingEnabledLogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -228,11 +228,11 @@ export class MonitorAadDiagnosticSettingEnabledLogOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorAadDiagnosticSettingEnabledLog | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorAadDiagnosticSettingEnabledLog | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -249,14 +249,14 @@ export class MonitorAadDiagnosticSettingEnabledLogOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorAadDiagnosticSettingEnabledLog | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorAadDiagnosticSettingEnabledLog | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._category = undefined;
       this._retentionPolicy.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -298,15 +298,15 @@ export class MonitorAadDiagnosticSettingEnabledLogOutputReference extends cdktf.
   }
 }
 
-export class MonitorAadDiagnosticSettingEnabledLogList extends cdktf.ComplexList {
-  public internalValue? : MonitorAadDiagnosticSettingEnabledLog[] | cdktf.IResolvable
+export class MonitorAadDiagnosticSettingEnabledLogList extends cdktn.ComplexList {
+  public internalValue? : MonitorAadDiagnosticSettingEnabledLog[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -336,46 +336,46 @@ export interface MonitorAadDiagnosticSettingTimeouts {
   readonly update?: string;
 }
 
-export function monitorAadDiagnosticSettingTimeoutsToTerraform(struct?: MonitorAadDiagnosticSettingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorAadDiagnosticSettingTimeoutsToTerraform(struct?: MonitorAadDiagnosticSettingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function monitorAadDiagnosticSettingTimeoutsToHclTerraform(struct?: MonitorAadDiagnosticSettingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorAadDiagnosticSettingTimeoutsToHclTerraform(struct?: MonitorAadDiagnosticSettingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -386,19 +386,19 @@ export function monitorAadDiagnosticSettingTimeoutsToHclTerraform(struct?: Monit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAadDiagnosticSettingTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MonitorAadDiagnosticSettingTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MonitorAadDiagnosticSettingTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorAadDiagnosticSettingTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -423,7 +423,7 @@ export class MonitorAadDiagnosticSettingTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorAadDiagnosticSettingTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorAadDiagnosticSettingTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -432,7 +432,7 @@ export class MonitorAadDiagnosticSettingTimeoutsOutputReference extends cdktf.Co
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -514,7 +514,7 @@ export class MonitorAadDiagnosticSettingTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_aad_diagnostic_setting azurerm_monitor_aad_diagnostic_setting}
 */
-export class MonitorAadDiagnosticSetting extends cdktf.TerraformResource {
+export class MonitorAadDiagnosticSetting extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -525,14 +525,14 @@ export class MonitorAadDiagnosticSetting extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MonitorAadDiagnosticSetting resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MonitorAadDiagnosticSetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitorAadDiagnosticSetting to import
   * @param importFromId The id of the existing MonitorAadDiagnosticSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_aad_diagnostic_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitorAadDiagnosticSetting to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_aad_diagnostic_setting", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_aad_diagnostic_setting", importId: importFromId, provider });
       }
 
   // ===========
@@ -674,7 +674,7 @@ export class MonitorAadDiagnosticSetting extends cdktf.TerraformResource {
   public get enabledLog() {
     return this._enabledLog;
   }
-  public putEnabledLog(value: MonitorAadDiagnosticSettingEnabledLog[] | cdktf.IResolvable) {
+  public putEnabledLog(value: MonitorAadDiagnosticSettingEnabledLog[] | cdktn.IResolvable) {
     this._enabledLog.internalValue = value;
   }
   public resetEnabledLog() {
@@ -707,13 +707,13 @@ export class MonitorAadDiagnosticSetting extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      eventhub_authorization_rule_id: cdktf.stringToTerraform(this._eventhubAuthorizationRuleId),
-      eventhub_name: cdktf.stringToTerraform(this._eventhubName),
-      id: cdktf.stringToTerraform(this._id),
-      log_analytics_workspace_id: cdktf.stringToTerraform(this._logAnalyticsWorkspaceId),
-      name: cdktf.stringToTerraform(this._name),
-      storage_account_id: cdktf.stringToTerraform(this._storageAccountId),
-      enabled_log: cdktf.listMapper(monitorAadDiagnosticSettingEnabledLogToTerraform, true)(this._enabledLog.internalValue),
+      eventhub_authorization_rule_id: cdktn.stringToTerraform(this._eventhubAuthorizationRuleId),
+      eventhub_name: cdktn.stringToTerraform(this._eventhubName),
+      id: cdktn.stringToTerraform(this._id),
+      log_analytics_workspace_id: cdktn.stringToTerraform(this._logAnalyticsWorkspaceId),
+      name: cdktn.stringToTerraform(this._name),
+      storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
+      enabled_log: cdktn.listMapper(monitorAadDiagnosticSettingEnabledLogToTerraform, true)(this._enabledLog.internalValue),
       timeouts: monitorAadDiagnosticSettingTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -721,43 +721,43 @@ export class MonitorAadDiagnosticSetting extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       eventhub_authorization_rule_id: {
-        value: cdktf.stringToHclTerraform(this._eventhubAuthorizationRuleId),
+        value: cdktn.stringToHclTerraform(this._eventhubAuthorizationRuleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventhub_name: {
-        value: cdktf.stringToHclTerraform(this._eventhubName),
+        value: cdktn.stringToHclTerraform(this._eventhubName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_analytics_workspace_id: {
-        value: cdktf.stringToHclTerraform(this._logAnalyticsWorkspaceId),
+        value: cdktn.stringToHclTerraform(this._logAnalyticsWorkspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountId),
+        value: cdktn.stringToHclTerraform(this._storageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled_log: {
-        value: cdktf.listMapperHcl(monitorAadDiagnosticSettingEnabledLogToHclTerraform, true)(this._enabledLog.internalValue),
+        value: cdktn.listMapperHcl(monitorAadDiagnosticSettingEnabledLogToHclTerraform, true)(this._enabledLog.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "MonitorAadDiagnosticSettingEnabledLogList",

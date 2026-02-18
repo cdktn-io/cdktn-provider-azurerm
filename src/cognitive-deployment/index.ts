@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CognitiveDeploymentConfig extends cdktf.TerraformMetaArguments {
+export interface CognitiveDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cognitive_deployment#cognitive_account_id CognitiveDeployment#cognitive_account_id}
   */
@@ -19,7 +19,7 @@ export interface CognitiveDeploymentConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cognitive_deployment#dynamic_throttling_enabled CognitiveDeployment#dynamic_throttling_enabled}
   */
-  readonly dynamicThrottlingEnabled?: boolean | cdktf.IResolvable;
+  readonly dynamicThrottlingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cognitive_deployment#id CognitiveDeployment#id}
   *
@@ -74,38 +74,38 @@ export interface CognitiveDeploymentModel {
 }
 
 export function cognitiveDeploymentModelToTerraform(struct?: CognitiveDeploymentModelOutputReference | CognitiveDeploymentModel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    format: cdktf.stringToTerraform(struct!.format),
-    name: cdktf.stringToTerraform(struct!.name),
-    version: cdktf.stringToTerraform(struct!.version),
+    format: cdktn.stringToTerraform(struct!.format),
+    name: cdktn.stringToTerraform(struct!.name),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function cognitiveDeploymentModelToHclTerraform(struct?: CognitiveDeploymentModelOutputReference | CognitiveDeploymentModel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     format: {
-      value: cdktf.stringToHclTerraform(struct!.format),
+      value: cdktn.stringToHclTerraform(struct!.format),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -116,14 +116,14 @@ export function cognitiveDeploymentModelToHclTerraform(struct?: CognitiveDeploym
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitiveDeploymentModelOutputReference extends cdktf.ComplexObject {
+export class CognitiveDeploymentModelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -226,52 +226,52 @@ export interface CognitiveDeploymentSku {
 }
 
 export function cognitiveDeploymentSkuToTerraform(struct?: CognitiveDeploymentSkuOutputReference | CognitiveDeploymentSku): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity: cdktf.numberToTerraform(struct!.capacity),
-    family: cdktf.stringToTerraform(struct!.family),
-    name: cdktf.stringToTerraform(struct!.name),
-    size: cdktf.stringToTerraform(struct!.size),
-    tier: cdktf.stringToTerraform(struct!.tier),
+    capacity: cdktn.numberToTerraform(struct!.capacity),
+    family: cdktn.stringToTerraform(struct!.family),
+    name: cdktn.stringToTerraform(struct!.name),
+    size: cdktn.stringToTerraform(struct!.size),
+    tier: cdktn.stringToTerraform(struct!.tier),
   }
 }
 
 
 export function cognitiveDeploymentSkuToHclTerraform(struct?: CognitiveDeploymentSkuOutputReference | CognitiveDeploymentSku): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity: {
-      value: cdktf.numberToHclTerraform(struct!.capacity),
+      value: cdktn.numberToHclTerraform(struct!.capacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     family: {
-      value: cdktf.stringToHclTerraform(struct!.family),
+      value: cdktn.stringToHclTerraform(struct!.family),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     size: {
-      value: cdktf.stringToHclTerraform(struct!.size),
+      value: cdktn.stringToHclTerraform(struct!.size),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tier: {
-      value: cdktf.stringToHclTerraform(struct!.tier),
+      value: cdktn.stringToHclTerraform(struct!.tier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -282,14 +282,14 @@ export function cognitiveDeploymentSkuToHclTerraform(struct?: CognitiveDeploymen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitiveDeploymentSkuOutputReference extends cdktf.ComplexObject {
+export class CognitiveDeploymentSkuOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -434,46 +434,46 @@ export interface CognitiveDeploymentTimeouts {
   readonly update?: string;
 }
 
-export function cognitiveDeploymentTimeoutsToTerraform(struct?: CognitiveDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitiveDeploymentTimeoutsToTerraform(struct?: CognitiveDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cognitiveDeploymentTimeoutsToHclTerraform(struct?: CognitiveDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cognitiveDeploymentTimeoutsToHclTerraform(struct?: CognitiveDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -484,19 +484,19 @@ export function cognitiveDeploymentTimeoutsToHclTerraform(struct?: CognitiveDepl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CognitiveDeploymentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CognitiveDeploymentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CognitiveDeploymentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CognitiveDeploymentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -521,7 +521,7 @@ export class CognitiveDeploymentTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CognitiveDeploymentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CognitiveDeploymentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -530,7 +530,7 @@ export class CognitiveDeploymentTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -612,7 +612,7 @@ export class CognitiveDeploymentTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cognitive_deployment azurerm_cognitive_deployment}
 */
-export class CognitiveDeployment extends cdktf.TerraformResource {
+export class CognitiveDeployment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -623,14 +623,14 @@ export class CognitiveDeployment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CognitiveDeployment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CognitiveDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitiveDeployment to import
   * @param importFromId The id of the existing CognitiveDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cognitive_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitiveDeployment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cognitive_deployment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cognitive_deployment", importId: importFromId, provider });
       }
 
   // ===========
@@ -689,11 +689,11 @@ export class CognitiveDeployment extends cdktf.TerraformResource {
   }
 
   // dynamic_throttling_enabled - computed: false, optional: true, required: false
-  private _dynamicThrottlingEnabled?: boolean | cdktf.IResolvable; 
+  private _dynamicThrottlingEnabled?: boolean | cdktn.IResolvable; 
   public get dynamicThrottlingEnabled() {
     return this.getBooleanAttribute('dynamic_throttling_enabled');
   }
-  public set dynamicThrottlingEnabled(value: boolean | cdktf.IResolvable) {
+  public set dynamicThrottlingEnabled(value: boolean | cdktn.IResolvable) {
     this._dynamicThrottlingEnabled = value;
   }
   public resetDynamicThrottlingEnabled() {
@@ -813,12 +813,12 @@ export class CognitiveDeployment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cognitive_account_id: cdktf.stringToTerraform(this._cognitiveAccountId),
-      dynamic_throttling_enabled: cdktf.booleanToTerraform(this._dynamicThrottlingEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      rai_policy_name: cdktf.stringToTerraform(this._raiPolicyName),
-      version_upgrade_option: cdktf.stringToTerraform(this._versionUpgradeOption),
+      cognitive_account_id: cdktn.stringToTerraform(this._cognitiveAccountId),
+      dynamic_throttling_enabled: cdktn.booleanToTerraform(this._dynamicThrottlingEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      rai_policy_name: cdktn.stringToTerraform(this._raiPolicyName),
+      version_upgrade_option: cdktn.stringToTerraform(this._versionUpgradeOption),
       model: cognitiveDeploymentModelToTerraform(this._model.internalValue),
       sku: cognitiveDeploymentSkuToTerraform(this._sku.internalValue),
       timeouts: cognitiveDeploymentTimeoutsToTerraform(this._timeouts.internalValue),
@@ -828,37 +828,37 @@ export class CognitiveDeployment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cognitive_account_id: {
-        value: cdktf.stringToHclTerraform(this._cognitiveAccountId),
+        value: cdktn.stringToHclTerraform(this._cognitiveAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dynamic_throttling_enabled: {
-        value: cdktf.booleanToHclTerraform(this._dynamicThrottlingEnabled),
+        value: cdktn.booleanToHclTerraform(this._dynamicThrottlingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rai_policy_name: {
-        value: cdktf.stringToHclTerraform(this._raiPolicyName),
+        value: cdktn.stringToHclTerraform(this._raiPolicyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version_upgrade_option: {
-        value: cdktf.stringToHclTerraform(this._versionUpgradeOption),
+        value: cdktn.stringToHclTerraform(this._versionUpgradeOption),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

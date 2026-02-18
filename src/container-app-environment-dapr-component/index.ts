@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ContainerAppEnvironmentDaprComponentConfig extends cdktf.TerraformMetaArguments {
+export interface ContainerAppEnvironmentDaprComponentConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Dapr Component Type. For example `state.azure.blobstorage`.
   *
@@ -36,7 +36,7 @@ export interface ContainerAppEnvironmentDaprComponentConfig extends cdktf.Terraf
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_environment_dapr_component#ignore_errors ContainerAppEnvironmentDaprComponent#ignore_errors}
   */
-  readonly ignoreErrors?: boolean | cdktf.IResolvable;
+  readonly ignoreErrors?: boolean | cdktn.IResolvable;
   /**
   * The component initialisation timeout in ISO8601 format. e.g. `5s`, `2h`, `1m`. Defaults to `5s`.
   *
@@ -66,13 +66,13 @@ export interface ContainerAppEnvironmentDaprComponentConfig extends cdktf.Terraf
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_environment_dapr_component#metadata ContainerAppEnvironmentDaprComponent#metadata}
   */
-  readonly metadata?: ContainerAppEnvironmentDaprComponentMetadata[] | cdktf.IResolvable;
+  readonly metadata?: ContainerAppEnvironmentDaprComponentMetadata[] | cdktn.IResolvable;
   /**
   * secret block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_environment_dapr_component#secret ContainerAppEnvironmentDaprComponent#secret}
   */
-  readonly secret?: ContainerAppEnvironmentDaprComponentSecret[] | cdktf.IResolvable;
+  readonly secret?: ContainerAppEnvironmentDaprComponentSecret[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -101,39 +101,39 @@ export interface ContainerAppEnvironmentDaprComponentMetadata {
   readonly value?: string;
 }
 
-export function containerAppEnvironmentDaprComponentMetadataToTerraform(struct?: ContainerAppEnvironmentDaprComponentMetadata | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAppEnvironmentDaprComponentMetadataToTerraform(struct?: ContainerAppEnvironmentDaprComponentMetadata | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    secret_name: cdktf.stringToTerraform(struct!.secretName),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    secret_name: cdktn.stringToTerraform(struct!.secretName),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function containerAppEnvironmentDaprComponentMetadataToHclTerraform(struct?: ContainerAppEnvironmentDaprComponentMetadata | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAppEnvironmentDaprComponentMetadataToHclTerraform(struct?: ContainerAppEnvironmentDaprComponentMetadata | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretName),
+      value: cdktn.stringToHclTerraform(struct!.secretName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -144,9 +144,9 @@ export function containerAppEnvironmentDaprComponentMetadataToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContainerAppEnvironmentDaprComponentMetadataOutputReference extends cdktf.ComplexObject {
+export class ContainerAppEnvironmentDaprComponentMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -154,11 +154,11 @@ export class ContainerAppEnvironmentDaprComponentMetadataOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ContainerAppEnvironmentDaprComponentMetadata | cdktf.IResolvable | undefined {
+  public get internalValue(): ContainerAppEnvironmentDaprComponentMetadata | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -179,7 +179,7 @@ export class ContainerAppEnvironmentDaprComponentMetadataOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ContainerAppEnvironmentDaprComponentMetadata | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ContainerAppEnvironmentDaprComponentMetadata | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -187,7 +187,7 @@ export class ContainerAppEnvironmentDaprComponentMetadataOutputReference extends
       this._secretName = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -246,15 +246,15 @@ export class ContainerAppEnvironmentDaprComponentMetadataOutputReference extends
   }
 }
 
-export class ContainerAppEnvironmentDaprComponentMetadataList extends cdktf.ComplexList {
-  public internalValue? : ContainerAppEnvironmentDaprComponentMetadata[] | cdktf.IResolvable
+export class ContainerAppEnvironmentDaprComponentMetadataList extends cdktn.ComplexList {
+  public internalValue? : ContainerAppEnvironmentDaprComponentMetadata[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -292,46 +292,46 @@ export interface ContainerAppEnvironmentDaprComponentSecret {
   readonly value?: string;
 }
 
-export function containerAppEnvironmentDaprComponentSecretToTerraform(struct?: ContainerAppEnvironmentDaprComponentSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAppEnvironmentDaprComponentSecretToTerraform(struct?: ContainerAppEnvironmentDaprComponentSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity: cdktf.stringToTerraform(struct!.identity),
-    key_vault_secret_id: cdktf.stringToTerraform(struct!.keyVaultSecretId),
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    identity: cdktn.stringToTerraform(struct!.identity),
+    key_vault_secret_id: cdktn.stringToTerraform(struct!.keyVaultSecretId),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function containerAppEnvironmentDaprComponentSecretToHclTerraform(struct?: ContainerAppEnvironmentDaprComponentSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAppEnvironmentDaprComponentSecretToHclTerraform(struct?: ContainerAppEnvironmentDaprComponentSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity: {
-      value: cdktf.stringToHclTerraform(struct!.identity),
+      value: cdktn.stringToHclTerraform(struct!.identity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_secret_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultSecretId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultSecretId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -342,9 +342,9 @@ export function containerAppEnvironmentDaprComponentSecretToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContainerAppEnvironmentDaprComponentSecretOutputReference extends cdktf.ComplexObject {
+export class ContainerAppEnvironmentDaprComponentSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -352,11 +352,11 @@ export class ContainerAppEnvironmentDaprComponentSecretOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ContainerAppEnvironmentDaprComponentSecret | cdktf.IResolvable | undefined {
+  public get internalValue(): ContainerAppEnvironmentDaprComponentSecret | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -381,7 +381,7 @@ export class ContainerAppEnvironmentDaprComponentSecretOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ContainerAppEnvironmentDaprComponentSecret | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ContainerAppEnvironmentDaprComponentSecret | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -390,7 +390,7 @@ export class ContainerAppEnvironmentDaprComponentSecretOutputReference extends c
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -466,15 +466,15 @@ export class ContainerAppEnvironmentDaprComponentSecretOutputReference extends c
   }
 }
 
-export class ContainerAppEnvironmentDaprComponentSecretList extends cdktf.ComplexList {
-  public internalValue? : ContainerAppEnvironmentDaprComponentSecret[] | cdktf.IResolvable
+export class ContainerAppEnvironmentDaprComponentSecretList extends cdktn.ComplexList {
+  public internalValue? : ContainerAppEnvironmentDaprComponentSecret[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -504,46 +504,46 @@ export interface ContainerAppEnvironmentDaprComponentTimeouts {
   readonly update?: string;
 }
 
-export function containerAppEnvironmentDaprComponentTimeoutsToTerraform(struct?: ContainerAppEnvironmentDaprComponentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAppEnvironmentDaprComponentTimeoutsToTerraform(struct?: ContainerAppEnvironmentDaprComponentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function containerAppEnvironmentDaprComponentTimeoutsToHclTerraform(struct?: ContainerAppEnvironmentDaprComponentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAppEnvironmentDaprComponentTimeoutsToHclTerraform(struct?: ContainerAppEnvironmentDaprComponentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -554,19 +554,19 @@ export function containerAppEnvironmentDaprComponentTimeoutsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContainerAppEnvironmentDaprComponentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ContainerAppEnvironmentDaprComponentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ContainerAppEnvironmentDaprComponentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ContainerAppEnvironmentDaprComponentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -591,7 +591,7 @@ export class ContainerAppEnvironmentDaprComponentTimeoutsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ContainerAppEnvironmentDaprComponentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ContainerAppEnvironmentDaprComponentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -600,7 +600,7 @@ export class ContainerAppEnvironmentDaprComponentTimeoutsOutputReference extends
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -682,7 +682,7 @@ export class ContainerAppEnvironmentDaprComponentTimeoutsOutputReference extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_environment_dapr_component azurerm_container_app_environment_dapr_component}
 */
-export class ContainerAppEnvironmentDaprComponent extends cdktf.TerraformResource {
+export class ContainerAppEnvironmentDaprComponent extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -693,14 +693,14 @@ export class ContainerAppEnvironmentDaprComponent extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ContainerAppEnvironmentDaprComponent resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ContainerAppEnvironmentDaprComponent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContainerAppEnvironmentDaprComponent to import
   * @param importFromId The id of the existing ContainerAppEnvironmentDaprComponent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_environment_dapr_component#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContainerAppEnvironmentDaprComponent to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_container_app_environment_dapr_component", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_container_app_environment_dapr_component", importId: importFromId, provider });
       }
 
   // ===========
@@ -790,11 +790,11 @@ export class ContainerAppEnvironmentDaprComponent extends cdktf.TerraformResourc
   }
 
   // ignore_errors - computed: false, optional: true, required: false
-  private _ignoreErrors?: boolean | cdktf.IResolvable; 
+  private _ignoreErrors?: boolean | cdktn.IResolvable; 
   public get ignoreErrors() {
     return this.getBooleanAttribute('ignore_errors');
   }
-  public set ignoreErrors(value: boolean | cdktf.IResolvable) {
+  public set ignoreErrors(value: boolean | cdktn.IResolvable) {
     this._ignoreErrors = value;
   }
   public resetIgnoreErrors() {
@@ -868,7 +868,7 @@ export class ContainerAppEnvironmentDaprComponent extends cdktf.TerraformResourc
   public get metadata() {
     return this._metadata;
   }
-  public putMetadata(value: ContainerAppEnvironmentDaprComponentMetadata[] | cdktf.IResolvable) {
+  public putMetadata(value: ContainerAppEnvironmentDaprComponentMetadata[] | cdktn.IResolvable) {
     this._metadata.internalValue = value;
   }
   public resetMetadata() {
@@ -884,7 +884,7 @@ export class ContainerAppEnvironmentDaprComponent extends cdktf.TerraformResourc
   public get secret() {
     return this._secret;
   }
-  public putSecret(value: ContainerAppEnvironmentDaprComponentSecret[] | cdktf.IResolvable) {
+  public putSecret(value: ContainerAppEnvironmentDaprComponentSecret[] | cdktn.IResolvable) {
     this._secret.internalValue = value;
   }
   public resetSecret() {
@@ -917,16 +917,16 @@ export class ContainerAppEnvironmentDaprComponent extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      component_type: cdktf.stringToTerraform(this._componentType),
-      container_app_environment_id: cdktf.stringToTerraform(this._containerAppEnvironmentId),
-      id: cdktf.stringToTerraform(this._id),
-      ignore_errors: cdktf.booleanToTerraform(this._ignoreErrors),
-      init_timeout: cdktf.stringToTerraform(this._initTimeout),
-      name: cdktf.stringToTerraform(this._name),
-      scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
-      version: cdktf.stringToTerraform(this._version),
-      metadata: cdktf.listMapper(containerAppEnvironmentDaprComponentMetadataToTerraform, true)(this._metadata.internalValue),
-      secret: cdktf.listMapper(containerAppEnvironmentDaprComponentSecretToTerraform, true)(this._secret.internalValue),
+      component_type: cdktn.stringToTerraform(this._componentType),
+      container_app_environment_id: cdktn.stringToTerraform(this._containerAppEnvironmentId),
+      id: cdktn.stringToTerraform(this._id),
+      ignore_errors: cdktn.booleanToTerraform(this._ignoreErrors),
+      init_timeout: cdktn.stringToTerraform(this._initTimeout),
+      name: cdktn.stringToTerraform(this._name),
+      scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._scopes),
+      version: cdktn.stringToTerraform(this._version),
+      metadata: cdktn.listMapper(containerAppEnvironmentDaprComponentMetadataToTerraform, true)(this._metadata.internalValue),
+      secret: cdktn.listMapper(containerAppEnvironmentDaprComponentSecretToTerraform, true)(this._secret.internalValue),
       timeouts: containerAppEnvironmentDaprComponentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -934,61 +934,61 @@ export class ContainerAppEnvironmentDaprComponent extends cdktf.TerraformResourc
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       component_type: {
-        value: cdktf.stringToHclTerraform(this._componentType),
+        value: cdktn.stringToHclTerraform(this._componentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       container_app_environment_id: {
-        value: cdktf.stringToHclTerraform(this._containerAppEnvironmentId),
+        value: cdktn.stringToHclTerraform(this._containerAppEnvironmentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ignore_errors: {
-        value: cdktf.booleanToHclTerraform(this._ignoreErrors),
+        value: cdktn.booleanToHclTerraform(this._ignoreErrors),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       init_timeout: {
-        value: cdktf.stringToHclTerraform(this._initTimeout),
+        value: cdktn.stringToHclTerraform(this._initTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._scopes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata: {
-        value: cdktf.listMapperHcl(containerAppEnvironmentDaprComponentMetadataToHclTerraform, true)(this._metadata.internalValue),
+        value: cdktn.listMapperHcl(containerAppEnvironmentDaprComponentMetadataToHclTerraform, true)(this._metadata.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ContainerAppEnvironmentDaprComponentMetadataList",
       },
       secret: {
-        value: cdktf.listMapperHcl(containerAppEnvironmentDaprComponentSecretToHclTerraform, true)(this._secret.internalValue),
+        value: cdktn.listMapperHcl(containerAppEnvironmentDaprComponentSecretToHclTerraform, true)(this._secret.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ContainerAppEnvironmentDaprComponentSecretList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SentinelAlertRuleScheduledConfig extends cdktf.TerraformMetaArguments {
+export interface SentinelAlertRuleScheduledConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled#alert_rule_template_guid SentinelAlertRuleScheduled#alert_rule_template_guid}
   */
@@ -35,7 +35,7 @@ export interface SentinelAlertRuleScheduledConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled#enabled SentinelAlertRuleScheduled#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled#id SentinelAlertRuleScheduled#id}
   *
@@ -74,7 +74,7 @@ export interface SentinelAlertRuleScheduledConfig extends cdktf.TerraformMetaArg
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled#suppression_enabled SentinelAlertRuleScheduled#suppression_enabled}
   */
-  readonly suppressionEnabled?: boolean | cdktf.IResolvable;
+  readonly suppressionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled#tactics SentinelAlertRuleScheduled#tactics}
   */
@@ -96,13 +96,13 @@ export interface SentinelAlertRuleScheduledConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled#alert_details_override SentinelAlertRuleScheduled#alert_details_override}
   */
-  readonly alertDetailsOverride?: SentinelAlertRuleScheduledAlertDetailsOverride[] | cdktf.IResolvable;
+  readonly alertDetailsOverride?: SentinelAlertRuleScheduledAlertDetailsOverride[] | cdktn.IResolvable;
   /**
   * entity_mapping block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled#entity_mapping SentinelAlertRuleScheduled#entity_mapping}
   */
-  readonly entityMapping?: SentinelAlertRuleScheduledEntityMapping[] | cdktf.IResolvable;
+  readonly entityMapping?: SentinelAlertRuleScheduledEntityMapping[] | cdktn.IResolvable;
   /**
   * event_grouping block
   *
@@ -120,7 +120,7 @@ export interface SentinelAlertRuleScheduledConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled#sentinel_entity_mapping SentinelAlertRuleScheduled#sentinel_entity_mapping}
   */
-  readonly sentinelEntityMapping?: SentinelAlertRuleScheduledSentinelEntityMapping[] | cdktf.IResolvable;
+  readonly sentinelEntityMapping?: SentinelAlertRuleScheduledSentinelEntityMapping[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -139,32 +139,32 @@ export interface SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty {
   readonly value: string;
 }
 
-export function sentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyToTerraform(struct?: SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyToTerraform(struct?: SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function sentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyToHclTerraform(struct?: SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyToHclTerraform(struct?: SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -175,9 +175,9 @@ export function sentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -185,11 +185,11 @@ export class SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -206,14 +206,14 @@ export class SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -252,15 +252,15 @@ export class SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyOutput
   }
 }
 
-export class SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyList extends cdktf.ComplexList {
-  public internalValue? : SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty[] | cdktf.IResolvable
+export class SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyList extends cdktn.ComplexList {
+  public internalValue? : SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -293,56 +293,56 @@ export interface SentinelAlertRuleScheduledAlertDetailsOverride {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled#dynamic_property SentinelAlertRuleScheduled#dynamic_property}
   */
-  readonly dynamicProperty?: SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty[] | cdktf.IResolvable;
+  readonly dynamicProperty?: SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty[] | cdktn.IResolvable;
 }
 
-export function sentinelAlertRuleScheduledAlertDetailsOverrideToTerraform(struct?: SentinelAlertRuleScheduledAlertDetailsOverride | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleScheduledAlertDetailsOverrideToTerraform(struct?: SentinelAlertRuleScheduledAlertDetailsOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description_format: cdktf.stringToTerraform(struct!.descriptionFormat),
-    display_name_format: cdktf.stringToTerraform(struct!.displayNameFormat),
-    severity_column_name: cdktf.stringToTerraform(struct!.severityColumnName),
-    tactics_column_name: cdktf.stringToTerraform(struct!.tacticsColumnName),
-    dynamic_property: cdktf.listMapper(sentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyToTerraform, true)(struct!.dynamicProperty),
+    description_format: cdktn.stringToTerraform(struct!.descriptionFormat),
+    display_name_format: cdktn.stringToTerraform(struct!.displayNameFormat),
+    severity_column_name: cdktn.stringToTerraform(struct!.severityColumnName),
+    tactics_column_name: cdktn.stringToTerraform(struct!.tacticsColumnName),
+    dynamic_property: cdktn.listMapper(sentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyToTerraform, true)(struct!.dynamicProperty),
   }
 }
 
 
-export function sentinelAlertRuleScheduledAlertDetailsOverrideToHclTerraform(struct?: SentinelAlertRuleScheduledAlertDetailsOverride | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleScheduledAlertDetailsOverrideToHclTerraform(struct?: SentinelAlertRuleScheduledAlertDetailsOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description_format: {
-      value: cdktf.stringToHclTerraform(struct!.descriptionFormat),
+      value: cdktn.stringToHclTerraform(struct!.descriptionFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     display_name_format: {
-      value: cdktf.stringToHclTerraform(struct!.displayNameFormat),
+      value: cdktn.stringToHclTerraform(struct!.displayNameFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     severity_column_name: {
-      value: cdktf.stringToHclTerraform(struct!.severityColumnName),
+      value: cdktn.stringToHclTerraform(struct!.severityColumnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tactics_column_name: {
-      value: cdktf.stringToHclTerraform(struct!.tacticsColumnName),
+      value: cdktn.stringToHclTerraform(struct!.tacticsColumnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dynamic_property: {
-      value: cdktf.listMapperHcl(sentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyToHclTerraform, true)(struct!.dynamicProperty),
+      value: cdktn.listMapperHcl(sentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyToHclTerraform, true)(struct!.dynamicProperty),
       isBlock: true,
       type: "list",
       storageClassType: "SentinelAlertRuleScheduledAlertDetailsOverrideDynamicPropertyList",
@@ -353,9 +353,9 @@ export function sentinelAlertRuleScheduledAlertDetailsOverrideToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -363,11 +363,11 @@ export class SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SentinelAlertRuleScheduledAlertDetailsOverride | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAlertRuleScheduledAlertDetailsOverride | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -396,7 +396,7 @@ export class SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAlertRuleScheduledAlertDetailsOverride | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAlertRuleScheduledAlertDetailsOverride | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -406,7 +406,7 @@ export class SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference exten
       this._tacticsColumnName = undefined;
       this._dynamicProperty.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -490,7 +490,7 @@ export class SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference exten
   public get dynamicProperty() {
     return this._dynamicProperty;
   }
-  public putDynamicProperty(value: SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty[] | cdktf.IResolvable) {
+  public putDynamicProperty(value: SentinelAlertRuleScheduledAlertDetailsOverrideDynamicProperty[] | cdktn.IResolvable) {
     this._dynamicProperty.internalValue = value;
   }
   public resetDynamicProperty() {
@@ -502,15 +502,15 @@ export class SentinelAlertRuleScheduledAlertDetailsOverrideOutputReference exten
   }
 }
 
-export class SentinelAlertRuleScheduledAlertDetailsOverrideList extends cdktf.ComplexList {
-  public internalValue? : SentinelAlertRuleScheduledAlertDetailsOverride[] | cdktf.IResolvable
+export class SentinelAlertRuleScheduledAlertDetailsOverrideList extends cdktn.ComplexList {
+  public internalValue? : SentinelAlertRuleScheduledAlertDetailsOverride[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -532,32 +532,32 @@ export interface SentinelAlertRuleScheduledEntityMappingFieldMapping {
   readonly identifier: string;
 }
 
-export function sentinelAlertRuleScheduledEntityMappingFieldMappingToTerraform(struct?: SentinelAlertRuleScheduledEntityMappingFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleScheduledEntityMappingFieldMappingToTerraform(struct?: SentinelAlertRuleScheduledEntityMappingFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column_name: cdktf.stringToTerraform(struct!.columnName),
-    identifier: cdktf.stringToTerraform(struct!.identifier),
+    column_name: cdktn.stringToTerraform(struct!.columnName),
+    identifier: cdktn.stringToTerraform(struct!.identifier),
   }
 }
 
 
-export function sentinelAlertRuleScheduledEntityMappingFieldMappingToHclTerraform(struct?: SentinelAlertRuleScheduledEntityMappingFieldMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleScheduledEntityMappingFieldMappingToHclTerraform(struct?: SentinelAlertRuleScheduledEntityMappingFieldMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column_name: {
-      value: cdktf.stringToHclTerraform(struct!.columnName),
+      value: cdktn.stringToHclTerraform(struct!.columnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identifier: {
-      value: cdktf.stringToHclTerraform(struct!.identifier),
+      value: cdktn.stringToHclTerraform(struct!.identifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -568,9 +568,9 @@ export function sentinelAlertRuleScheduledEntityMappingFieldMappingToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAlertRuleScheduledEntityMappingFieldMappingOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleScheduledEntityMappingFieldMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -578,11 +578,11 @@ export class SentinelAlertRuleScheduledEntityMappingFieldMappingOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SentinelAlertRuleScheduledEntityMappingFieldMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAlertRuleScheduledEntityMappingFieldMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -599,14 +599,14 @@ export class SentinelAlertRuleScheduledEntityMappingFieldMappingOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAlertRuleScheduledEntityMappingFieldMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAlertRuleScheduledEntityMappingFieldMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._columnName = undefined;
       this._identifier = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -645,15 +645,15 @@ export class SentinelAlertRuleScheduledEntityMappingFieldMappingOutputReference 
   }
 }
 
-export class SentinelAlertRuleScheduledEntityMappingFieldMappingList extends cdktf.ComplexList {
-  public internalValue? : SentinelAlertRuleScheduledEntityMappingFieldMapping[] | cdktf.IResolvable
+export class SentinelAlertRuleScheduledEntityMappingFieldMappingList extends cdktn.ComplexList {
+  public internalValue? : SentinelAlertRuleScheduledEntityMappingFieldMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -674,35 +674,35 @@ export interface SentinelAlertRuleScheduledEntityMapping {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled#field_mapping SentinelAlertRuleScheduled#field_mapping}
   */
-  readonly fieldMapping: SentinelAlertRuleScheduledEntityMappingFieldMapping[] | cdktf.IResolvable;
+  readonly fieldMapping: SentinelAlertRuleScheduledEntityMappingFieldMapping[] | cdktn.IResolvable;
 }
 
-export function sentinelAlertRuleScheduledEntityMappingToTerraform(struct?: SentinelAlertRuleScheduledEntityMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleScheduledEntityMappingToTerraform(struct?: SentinelAlertRuleScheduledEntityMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entity_type: cdktf.stringToTerraform(struct!.entityType),
-    field_mapping: cdktf.listMapper(sentinelAlertRuleScheduledEntityMappingFieldMappingToTerraform, true)(struct!.fieldMapping),
+    entity_type: cdktn.stringToTerraform(struct!.entityType),
+    field_mapping: cdktn.listMapper(sentinelAlertRuleScheduledEntityMappingFieldMappingToTerraform, true)(struct!.fieldMapping),
   }
 }
 
 
-export function sentinelAlertRuleScheduledEntityMappingToHclTerraform(struct?: SentinelAlertRuleScheduledEntityMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleScheduledEntityMappingToHclTerraform(struct?: SentinelAlertRuleScheduledEntityMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entity_type: {
-      value: cdktf.stringToHclTerraform(struct!.entityType),
+      value: cdktn.stringToHclTerraform(struct!.entityType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_mapping: {
-      value: cdktf.listMapperHcl(sentinelAlertRuleScheduledEntityMappingFieldMappingToHclTerraform, true)(struct!.fieldMapping),
+      value: cdktn.listMapperHcl(sentinelAlertRuleScheduledEntityMappingFieldMappingToHclTerraform, true)(struct!.fieldMapping),
       isBlock: true,
       type: "list",
       storageClassType: "SentinelAlertRuleScheduledEntityMappingFieldMappingList",
@@ -713,9 +713,9 @@ export function sentinelAlertRuleScheduledEntityMappingToHclTerraform(struct?: S
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAlertRuleScheduledEntityMappingOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleScheduledEntityMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -723,11 +723,11 @@ export class SentinelAlertRuleScheduledEntityMappingOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SentinelAlertRuleScheduledEntityMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAlertRuleScheduledEntityMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -744,14 +744,14 @@ export class SentinelAlertRuleScheduledEntityMappingOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAlertRuleScheduledEntityMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAlertRuleScheduledEntityMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._entityType = undefined;
       this._fieldMapping.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -781,7 +781,7 @@ export class SentinelAlertRuleScheduledEntityMappingOutputReference extends cdkt
   public get fieldMapping() {
     return this._fieldMapping;
   }
-  public putFieldMapping(value: SentinelAlertRuleScheduledEntityMappingFieldMapping[] | cdktf.IResolvable) {
+  public putFieldMapping(value: SentinelAlertRuleScheduledEntityMappingFieldMapping[] | cdktn.IResolvable) {
     this._fieldMapping.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -790,15 +790,15 @@ export class SentinelAlertRuleScheduledEntityMappingOutputReference extends cdkt
   }
 }
 
-export class SentinelAlertRuleScheduledEntityMappingList extends cdktf.ComplexList {
-  public internalValue? : SentinelAlertRuleScheduledEntityMapping[] | cdktf.IResolvable
+export class SentinelAlertRuleScheduledEntityMappingList extends cdktn.ComplexList {
+  public internalValue? : SentinelAlertRuleScheduledEntityMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -817,24 +817,24 @@ export interface SentinelAlertRuleScheduledEventGrouping {
 }
 
 export function sentinelAlertRuleScheduledEventGroupingToTerraform(struct?: SentinelAlertRuleScheduledEventGroupingOutputReference | SentinelAlertRuleScheduledEventGrouping): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation_method: cdktf.stringToTerraform(struct!.aggregationMethod),
+    aggregation_method: cdktn.stringToTerraform(struct!.aggregationMethod),
   }
 }
 
 
 export function sentinelAlertRuleScheduledEventGroupingToHclTerraform(struct?: SentinelAlertRuleScheduledEventGroupingOutputReference | SentinelAlertRuleScheduledEventGrouping): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation_method: {
-      value: cdktf.stringToHclTerraform(struct!.aggregationMethod),
+      value: cdktn.stringToHclTerraform(struct!.aggregationMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -845,14 +845,14 @@ export function sentinelAlertRuleScheduledEventGroupingToHclTerraform(struct?: S
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAlertRuleScheduledEventGroupingOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleScheduledEventGroupingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -906,7 +906,7 @@ export interface SentinelAlertRuleScheduledIncidentGrouping {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled#enabled SentinelAlertRuleScheduled#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled#entity_matching_method SentinelAlertRuleScheduled#entity_matching_method}
   */
@@ -918,70 +918,70 @@ export interface SentinelAlertRuleScheduledIncidentGrouping {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled#reopen_closed_incidents SentinelAlertRuleScheduled#reopen_closed_incidents}
   */
-  readonly reopenClosedIncidents?: boolean | cdktf.IResolvable;
+  readonly reopenClosedIncidents?: boolean | cdktn.IResolvable;
 }
 
 export function sentinelAlertRuleScheduledIncidentGroupingToTerraform(struct?: SentinelAlertRuleScheduledIncidentGroupingOutputReference | SentinelAlertRuleScheduledIncidentGrouping): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    by_alert_details: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.byAlertDetails),
-    by_custom_details: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.byCustomDetails),
-    by_entities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.byEntities),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    entity_matching_method: cdktf.stringToTerraform(struct!.entityMatchingMethod),
-    lookback_duration: cdktf.stringToTerraform(struct!.lookbackDuration),
-    reopen_closed_incidents: cdktf.booleanToTerraform(struct!.reopenClosedIncidents),
+    by_alert_details: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.byAlertDetails),
+    by_custom_details: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.byCustomDetails),
+    by_entities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.byEntities),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    entity_matching_method: cdktn.stringToTerraform(struct!.entityMatchingMethod),
+    lookback_duration: cdktn.stringToTerraform(struct!.lookbackDuration),
+    reopen_closed_incidents: cdktn.booleanToTerraform(struct!.reopenClosedIncidents),
   }
 }
 
 
 export function sentinelAlertRuleScheduledIncidentGroupingToHclTerraform(struct?: SentinelAlertRuleScheduledIncidentGroupingOutputReference | SentinelAlertRuleScheduledIncidentGrouping): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     by_alert_details: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.byAlertDetails),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.byAlertDetails),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     by_custom_details: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.byCustomDetails),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.byCustomDetails),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     by_entities: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.byEntities),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.byEntities),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     entity_matching_method: {
-      value: cdktf.stringToHclTerraform(struct!.entityMatchingMethod),
+      value: cdktn.stringToHclTerraform(struct!.entityMatchingMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lookback_duration: {
-      value: cdktf.stringToHclTerraform(struct!.lookbackDuration),
+      value: cdktn.stringToHclTerraform(struct!.lookbackDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     reopen_closed_incidents: {
-      value: cdktf.booleanToHclTerraform(struct!.reopenClosedIncidents),
+      value: cdktn.booleanToHclTerraform(struct!.reopenClosedIncidents),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -992,14 +992,14 @@ export function sentinelAlertRuleScheduledIncidentGroupingToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAlertRuleScheduledIncidentGroupingOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleScheduledIncidentGroupingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1109,11 +1109,11 @@ export class SentinelAlertRuleScheduledIncidentGroupingOutputReference extends c
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1157,11 +1157,11 @@ export class SentinelAlertRuleScheduledIncidentGroupingOutputReference extends c
   }
 
   // reopen_closed_incidents - computed: false, optional: true, required: false
-  private _reopenClosedIncidents?: boolean | cdktf.IResolvable; 
+  private _reopenClosedIncidents?: boolean | cdktn.IResolvable; 
   public get reopenClosedIncidents() {
     return this.getBooleanAttribute('reopen_closed_incidents');
   }
-  public set reopenClosedIncidents(value: boolean | cdktf.IResolvable) {
+  public set reopenClosedIncidents(value: boolean | cdktn.IResolvable) {
     this._reopenClosedIncidents = value;
   }
   public resetReopenClosedIncidents() {
@@ -1176,7 +1176,7 @@ export interface SentinelAlertRuleScheduledIncident {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled#create_incident_enabled SentinelAlertRuleScheduled#create_incident_enabled}
   */
-  readonly createIncidentEnabled: boolean | cdktf.IResolvable;
+  readonly createIncidentEnabled: boolean | cdktn.IResolvable;
   /**
   * grouping block
   *
@@ -1186,25 +1186,25 @@ export interface SentinelAlertRuleScheduledIncident {
 }
 
 export function sentinelAlertRuleScheduledIncidentToTerraform(struct?: SentinelAlertRuleScheduledIncidentOutputReference | SentinelAlertRuleScheduledIncident): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create_incident_enabled: cdktf.booleanToTerraform(struct!.createIncidentEnabled),
+    create_incident_enabled: cdktn.booleanToTerraform(struct!.createIncidentEnabled),
     grouping: sentinelAlertRuleScheduledIncidentGroupingToTerraform(struct!.grouping),
   }
 }
 
 
 export function sentinelAlertRuleScheduledIncidentToHclTerraform(struct?: SentinelAlertRuleScheduledIncidentOutputReference | SentinelAlertRuleScheduledIncident): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create_incident_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.createIncidentEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.createIncidentEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1221,14 +1221,14 @@ export function sentinelAlertRuleScheduledIncidentToHclTerraform(struct?: Sentin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAlertRuleScheduledIncidentOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleScheduledIncidentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1260,11 +1260,11 @@ export class SentinelAlertRuleScheduledIncidentOutputReference extends cdktf.Com
   }
 
   // create_incident_enabled - computed: false, optional: false, required: true
-  private _createIncidentEnabled?: boolean | cdktf.IResolvable; 
+  private _createIncidentEnabled?: boolean | cdktn.IResolvable; 
   public get createIncidentEnabled() {
     return this.getBooleanAttribute('create_incident_enabled');
   }
-  public set createIncidentEnabled(value: boolean | cdktf.IResolvable) {
+  public set createIncidentEnabled(value: boolean | cdktn.IResolvable) {
     this._createIncidentEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1292,25 +1292,25 @@ export interface SentinelAlertRuleScheduledSentinelEntityMapping {
   readonly columnName: string;
 }
 
-export function sentinelAlertRuleScheduledSentinelEntityMappingToTerraform(struct?: SentinelAlertRuleScheduledSentinelEntityMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleScheduledSentinelEntityMappingToTerraform(struct?: SentinelAlertRuleScheduledSentinelEntityMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column_name: cdktf.stringToTerraform(struct!.columnName),
+    column_name: cdktn.stringToTerraform(struct!.columnName),
   }
 }
 
 
-export function sentinelAlertRuleScheduledSentinelEntityMappingToHclTerraform(struct?: SentinelAlertRuleScheduledSentinelEntityMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleScheduledSentinelEntityMappingToHclTerraform(struct?: SentinelAlertRuleScheduledSentinelEntityMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column_name: {
-      value: cdktf.stringToHclTerraform(struct!.columnName),
+      value: cdktn.stringToHclTerraform(struct!.columnName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1321,9 +1321,9 @@ export function sentinelAlertRuleScheduledSentinelEntityMappingToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAlertRuleScheduledSentinelEntityMappingOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleScheduledSentinelEntityMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1331,11 +1331,11 @@ export class SentinelAlertRuleScheduledSentinelEntityMappingOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SentinelAlertRuleScheduledSentinelEntityMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAlertRuleScheduledSentinelEntityMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1348,13 +1348,13 @@ export class SentinelAlertRuleScheduledSentinelEntityMappingOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAlertRuleScheduledSentinelEntityMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAlertRuleScheduledSentinelEntityMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._columnName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1379,15 +1379,15 @@ export class SentinelAlertRuleScheduledSentinelEntityMappingOutputReference exte
   }
 }
 
-export class SentinelAlertRuleScheduledSentinelEntityMappingList extends cdktf.ComplexList {
-  public internalValue? : SentinelAlertRuleScheduledSentinelEntityMapping[] | cdktf.IResolvable
+export class SentinelAlertRuleScheduledSentinelEntityMappingList extends cdktn.ComplexList {
+  public internalValue? : SentinelAlertRuleScheduledSentinelEntityMapping[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1417,46 +1417,46 @@ export interface SentinelAlertRuleScheduledTimeouts {
   readonly update?: string;
 }
 
-export function sentinelAlertRuleScheduledTimeoutsToTerraform(struct?: SentinelAlertRuleScheduledTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleScheduledTimeoutsToTerraform(struct?: SentinelAlertRuleScheduledTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function sentinelAlertRuleScheduledTimeoutsToHclTerraform(struct?: SentinelAlertRuleScheduledTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleScheduledTimeoutsToHclTerraform(struct?: SentinelAlertRuleScheduledTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1467,19 +1467,19 @@ export function sentinelAlertRuleScheduledTimeoutsToHclTerraform(struct?: Sentin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAlertRuleScheduledTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleScheduledTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SentinelAlertRuleScheduledTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAlertRuleScheduledTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1504,7 +1504,7 @@ export class SentinelAlertRuleScheduledTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAlertRuleScheduledTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAlertRuleScheduledTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1513,7 +1513,7 @@ export class SentinelAlertRuleScheduledTimeoutsOutputReference extends cdktf.Com
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1595,7 +1595,7 @@ export class SentinelAlertRuleScheduledTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled azurerm_sentinel_alert_rule_scheduled}
 */
-export class SentinelAlertRuleScheduled extends cdktf.TerraformResource {
+export class SentinelAlertRuleScheduled extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1606,14 +1606,14 @@ export class SentinelAlertRuleScheduled extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SentinelAlertRuleScheduled resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SentinelAlertRuleScheduled resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SentinelAlertRuleScheduled to import
   * @param importFromId The id of the existing SentinelAlertRuleScheduled that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_scheduled#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SentinelAlertRuleScheduled to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_sentinel_alert_rule_scheduled", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_sentinel_alert_rule_scheduled", importId: importFromId, provider });
       }
 
   // ===========
@@ -1752,11 +1752,11 @@ export class SentinelAlertRuleScheduled extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1884,11 +1884,11 @@ export class SentinelAlertRuleScheduled extends cdktf.TerraformResource {
   }
 
   // suppression_enabled - computed: false, optional: true, required: false
-  private _suppressionEnabled?: boolean | cdktf.IResolvable; 
+  private _suppressionEnabled?: boolean | cdktn.IResolvable; 
   public get suppressionEnabled() {
     return this.getBooleanAttribute('suppression_enabled');
   }
-  public set suppressionEnabled(value: boolean | cdktf.IResolvable) {
+  public set suppressionEnabled(value: boolean | cdktn.IResolvable) {
     this._suppressionEnabled = value;
   }
   public resetSuppressionEnabled() {
@@ -1902,7 +1902,7 @@ export class SentinelAlertRuleScheduled extends cdktf.TerraformResource {
   // tactics - computed: false, optional: true, required: false
   private _tactics?: string[]; 
   public get tactics() {
-    return cdktf.Fn.tolist(this.getListAttribute('tactics'));
+    return cdktn.Fn.tolist(this.getListAttribute('tactics'));
   }
   public set tactics(value: string[]) {
     this._tactics = value;
@@ -1918,7 +1918,7 @@ export class SentinelAlertRuleScheduled extends cdktf.TerraformResource {
   // techniques - computed: false, optional: true, required: false
   private _techniques?: string[]; 
   public get techniques() {
-    return cdktf.Fn.tolist(this.getListAttribute('techniques'));
+    return cdktn.Fn.tolist(this.getListAttribute('techniques'));
   }
   public set techniques(value: string[]) {
     this._techniques = value;
@@ -1968,7 +1968,7 @@ export class SentinelAlertRuleScheduled extends cdktf.TerraformResource {
   public get alertDetailsOverride() {
     return this._alertDetailsOverride;
   }
-  public putAlertDetailsOverride(value: SentinelAlertRuleScheduledAlertDetailsOverride[] | cdktf.IResolvable) {
+  public putAlertDetailsOverride(value: SentinelAlertRuleScheduledAlertDetailsOverride[] | cdktn.IResolvable) {
     this._alertDetailsOverride.internalValue = value;
   }
   public resetAlertDetailsOverride() {
@@ -1984,7 +1984,7 @@ export class SentinelAlertRuleScheduled extends cdktf.TerraformResource {
   public get entityMapping() {
     return this._entityMapping;
   }
-  public putEntityMapping(value: SentinelAlertRuleScheduledEntityMapping[] | cdktf.IResolvable) {
+  public putEntityMapping(value: SentinelAlertRuleScheduledEntityMapping[] | cdktn.IResolvable) {
     this._entityMapping.internalValue = value;
   }
   public resetEntityMapping() {
@@ -2032,7 +2032,7 @@ export class SentinelAlertRuleScheduled extends cdktf.TerraformResource {
   public get sentinelEntityMapping() {
     return this._sentinelEntityMapping;
   }
-  public putSentinelEntityMapping(value: SentinelAlertRuleScheduledSentinelEntityMapping[] | cdktf.IResolvable) {
+  public putSentinelEntityMapping(value: SentinelAlertRuleScheduledSentinelEntityMapping[] | cdktn.IResolvable) {
     this._sentinelEntityMapping.internalValue = value;
   }
   public resetSentinelEntityMapping() {
@@ -2065,30 +2065,30 @@ export class SentinelAlertRuleScheduled extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alert_rule_template_guid: cdktf.stringToTerraform(this._alertRuleTemplateGuid),
-      alert_rule_template_version: cdktf.stringToTerraform(this._alertRuleTemplateVersion),
-      custom_details: cdktf.hashMapper(cdktf.stringToTerraform)(this._customDetails),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      log_analytics_workspace_id: cdktf.stringToTerraform(this._logAnalyticsWorkspaceId),
-      name: cdktf.stringToTerraform(this._name),
-      query: cdktf.stringToTerraform(this._query),
-      query_frequency: cdktf.stringToTerraform(this._queryFrequency),
-      query_period: cdktf.stringToTerraform(this._queryPeriod),
-      severity: cdktf.stringToTerraform(this._severity),
-      suppression_duration: cdktf.stringToTerraform(this._suppressionDuration),
-      suppression_enabled: cdktf.booleanToTerraform(this._suppressionEnabled),
-      tactics: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tactics),
-      techniques: cdktf.listMapper(cdktf.stringToTerraform, false)(this._techniques),
-      trigger_operator: cdktf.stringToTerraform(this._triggerOperator),
-      trigger_threshold: cdktf.numberToTerraform(this._triggerThreshold),
-      alert_details_override: cdktf.listMapper(sentinelAlertRuleScheduledAlertDetailsOverrideToTerraform, true)(this._alertDetailsOverride.internalValue),
-      entity_mapping: cdktf.listMapper(sentinelAlertRuleScheduledEntityMappingToTerraform, true)(this._entityMapping.internalValue),
+      alert_rule_template_guid: cdktn.stringToTerraform(this._alertRuleTemplateGuid),
+      alert_rule_template_version: cdktn.stringToTerraform(this._alertRuleTemplateVersion),
+      custom_details: cdktn.hashMapper(cdktn.stringToTerraform)(this._customDetails),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      log_analytics_workspace_id: cdktn.stringToTerraform(this._logAnalyticsWorkspaceId),
+      name: cdktn.stringToTerraform(this._name),
+      query: cdktn.stringToTerraform(this._query),
+      query_frequency: cdktn.stringToTerraform(this._queryFrequency),
+      query_period: cdktn.stringToTerraform(this._queryPeriod),
+      severity: cdktn.stringToTerraform(this._severity),
+      suppression_duration: cdktn.stringToTerraform(this._suppressionDuration),
+      suppression_enabled: cdktn.booleanToTerraform(this._suppressionEnabled),
+      tactics: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tactics),
+      techniques: cdktn.listMapper(cdktn.stringToTerraform, false)(this._techniques),
+      trigger_operator: cdktn.stringToTerraform(this._triggerOperator),
+      trigger_threshold: cdktn.numberToTerraform(this._triggerThreshold),
+      alert_details_override: cdktn.listMapper(sentinelAlertRuleScheduledAlertDetailsOverrideToTerraform, true)(this._alertDetailsOverride.internalValue),
+      entity_mapping: cdktn.listMapper(sentinelAlertRuleScheduledEntityMappingToTerraform, true)(this._entityMapping.internalValue),
       event_grouping: sentinelAlertRuleScheduledEventGroupingToTerraform(this._eventGrouping.internalValue),
       incident: sentinelAlertRuleScheduledIncidentToTerraform(this._incident.internalValue),
-      sentinel_entity_mapping: cdktf.listMapper(sentinelAlertRuleScheduledSentinelEntityMappingToTerraform, true)(this._sentinelEntityMapping.internalValue),
+      sentinel_entity_mapping: cdktn.listMapper(sentinelAlertRuleScheduledSentinelEntityMappingToTerraform, true)(this._sentinelEntityMapping.internalValue),
       timeouts: sentinelAlertRuleScheduledTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -2096,127 +2096,127 @@ export class SentinelAlertRuleScheduled extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alert_rule_template_guid: {
-        value: cdktf.stringToHclTerraform(this._alertRuleTemplateGuid),
+        value: cdktn.stringToHclTerraform(this._alertRuleTemplateGuid),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alert_rule_template_version: {
-        value: cdktf.stringToHclTerraform(this._alertRuleTemplateVersion),
+        value: cdktn.stringToHclTerraform(this._alertRuleTemplateVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_details: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._customDetails),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._customDetails),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_analytics_workspace_id: {
-        value: cdktf.stringToHclTerraform(this._logAnalyticsWorkspaceId),
+        value: cdktn.stringToHclTerraform(this._logAnalyticsWorkspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query: {
-        value: cdktf.stringToHclTerraform(this._query),
+        value: cdktn.stringToHclTerraform(this._query),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_frequency: {
-        value: cdktf.stringToHclTerraform(this._queryFrequency),
+        value: cdktn.stringToHclTerraform(this._queryFrequency),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_period: {
-        value: cdktf.stringToHclTerraform(this._queryPeriod),
+        value: cdktn.stringToHclTerraform(this._queryPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       severity: {
-        value: cdktf.stringToHclTerraform(this._severity),
+        value: cdktn.stringToHclTerraform(this._severity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       suppression_duration: {
-        value: cdktf.stringToHclTerraform(this._suppressionDuration),
+        value: cdktn.stringToHclTerraform(this._suppressionDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       suppression_enabled: {
-        value: cdktf.booleanToHclTerraform(this._suppressionEnabled),
+        value: cdktn.booleanToHclTerraform(this._suppressionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tactics: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tactics),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tactics),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       techniques: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._techniques),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._techniques),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       trigger_operator: {
-        value: cdktf.stringToHclTerraform(this._triggerOperator),
+        value: cdktn.stringToHclTerraform(this._triggerOperator),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trigger_threshold: {
-        value: cdktf.numberToHclTerraform(this._triggerThreshold),
+        value: cdktn.numberToHclTerraform(this._triggerThreshold),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       alert_details_override: {
-        value: cdktf.listMapperHcl(sentinelAlertRuleScheduledAlertDetailsOverrideToHclTerraform, true)(this._alertDetailsOverride.internalValue),
+        value: cdktn.listMapperHcl(sentinelAlertRuleScheduledAlertDetailsOverrideToHclTerraform, true)(this._alertDetailsOverride.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SentinelAlertRuleScheduledAlertDetailsOverrideList",
       },
       entity_mapping: {
-        value: cdktf.listMapperHcl(sentinelAlertRuleScheduledEntityMappingToHclTerraform, true)(this._entityMapping.internalValue),
+        value: cdktn.listMapperHcl(sentinelAlertRuleScheduledEntityMappingToHclTerraform, true)(this._entityMapping.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SentinelAlertRuleScheduledEntityMappingList",
@@ -2234,7 +2234,7 @@ export class SentinelAlertRuleScheduled extends cdktf.TerraformResource {
         storageClassType: "SentinelAlertRuleScheduledIncidentList",
       },
       sentinel_entity_mapping: {
-        value: cdktf.listMapperHcl(sentinelAlertRuleScheduledSentinelEntityMappingToHclTerraform, true)(this._sentinelEntityMapping.internalValue),
+        value: cdktn.listMapperHcl(sentinelAlertRuleScheduledSentinelEntityMappingToHclTerraform, true)(this._sentinelEntityMapping.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SentinelAlertRuleScheduledSentinelEntityMappingList",

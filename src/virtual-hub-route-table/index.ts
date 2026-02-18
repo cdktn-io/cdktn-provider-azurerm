@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VirtualHubRouteTableConfig extends cdktf.TerraformMetaArguments {
+export interface VirtualHubRouteTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_hub_route_table#id VirtualHubRouteTable#id}
   *
@@ -36,7 +36,7 @@ export interface VirtualHubRouteTableConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_hub_route_table#route VirtualHubRouteTable#route}
   */
-  readonly route?: VirtualHubRouteTableRoute[] | cdktf.IResolvable;
+  readonly route?: VirtualHubRouteTableRoute[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -67,53 +67,53 @@ export interface VirtualHubRouteTableRoute {
   readonly nextHopType?: string;
 }
 
-export function virtualHubRouteTableRouteToTerraform(struct?: VirtualHubRouteTableRoute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualHubRouteTableRouteToTerraform(struct?: VirtualHubRouteTableRoute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destinations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destinations),
-    destinations_type: cdktf.stringToTerraform(struct!.destinationsType),
-    name: cdktf.stringToTerraform(struct!.name),
-    next_hop: cdktf.stringToTerraform(struct!.nextHop),
-    next_hop_type: cdktf.stringToTerraform(struct!.nextHopType),
+    destinations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinations),
+    destinations_type: cdktn.stringToTerraform(struct!.destinationsType),
+    name: cdktn.stringToTerraform(struct!.name),
+    next_hop: cdktn.stringToTerraform(struct!.nextHop),
+    next_hop_type: cdktn.stringToTerraform(struct!.nextHopType),
   }
 }
 
 
-export function virtualHubRouteTableRouteToHclTerraform(struct?: VirtualHubRouteTableRoute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualHubRouteTableRouteToHclTerraform(struct?: VirtualHubRouteTableRoute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destinations: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinations),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destinations),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     destinations_type: {
-      value: cdktf.stringToHclTerraform(struct!.destinationsType),
+      value: cdktn.stringToHclTerraform(struct!.destinationsType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     next_hop: {
-      value: cdktf.stringToHclTerraform(struct!.nextHop),
+      value: cdktn.stringToHclTerraform(struct!.nextHop),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     next_hop_type: {
-      value: cdktf.stringToHclTerraform(struct!.nextHopType),
+      value: cdktn.stringToHclTerraform(struct!.nextHopType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -124,9 +124,9 @@ export function virtualHubRouteTableRouteToHclTerraform(struct?: VirtualHubRoute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualHubRouteTableRouteOutputReference extends cdktf.ComplexObject {
+export class VirtualHubRouteTableRouteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -134,11 +134,11 @@ export class VirtualHubRouteTableRouteOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VirtualHubRouteTableRoute | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualHubRouteTableRoute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -167,7 +167,7 @@ export class VirtualHubRouteTableRouteOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualHubRouteTableRoute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualHubRouteTableRoute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class VirtualHubRouteTableRouteOutputReference extends cdktf.ComplexObjec
       this._nextHop = undefined;
       this._nextHopType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -195,7 +195,7 @@ export class VirtualHubRouteTableRouteOutputReference extends cdktf.ComplexObjec
   // destinations - computed: false, optional: false, required: true
   private _destinations?: string[]; 
   public get destinations() {
-    return cdktf.Fn.tolist(this.getListAttribute('destinations'));
+    return cdktn.Fn.tolist(this.getListAttribute('destinations'));
   }
   public set destinations(value: string[]) {
     this._destinations = value;
@@ -261,15 +261,15 @@ export class VirtualHubRouteTableRouteOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class VirtualHubRouteTableRouteList extends cdktf.ComplexList {
-  public internalValue? : VirtualHubRouteTableRoute[] | cdktf.IResolvable
+export class VirtualHubRouteTableRouteList extends cdktn.ComplexList {
+  public internalValue? : VirtualHubRouteTableRoute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -299,46 +299,46 @@ export interface VirtualHubRouteTableTimeouts {
   readonly update?: string;
 }
 
-export function virtualHubRouteTableTimeoutsToTerraform(struct?: VirtualHubRouteTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualHubRouteTableTimeoutsToTerraform(struct?: VirtualHubRouteTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function virtualHubRouteTableTimeoutsToHclTerraform(struct?: VirtualHubRouteTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualHubRouteTableTimeoutsToHclTerraform(struct?: VirtualHubRouteTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -349,19 +349,19 @@ export function virtualHubRouteTableTimeoutsToHclTerraform(struct?: VirtualHubRo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualHubRouteTableTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VirtualHubRouteTableTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VirtualHubRouteTableTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualHubRouteTableTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -386,7 +386,7 @@ export class VirtualHubRouteTableTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualHubRouteTableTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualHubRouteTableTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -395,7 +395,7 @@ export class VirtualHubRouteTableTimeoutsOutputReference extends cdktf.ComplexOb
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -477,7 +477,7 @@ export class VirtualHubRouteTableTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_hub_route_table azurerm_virtual_hub_route_table}
 */
-export class VirtualHubRouteTable extends cdktf.TerraformResource {
+export class VirtualHubRouteTable extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -488,14 +488,14 @@ export class VirtualHubRouteTable extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VirtualHubRouteTable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VirtualHubRouteTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualHubRouteTable to import
   * @param importFromId The id of the existing VirtualHubRouteTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_hub_route_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualHubRouteTable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_hub_route_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_hub_route_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -556,7 +556,7 @@ export class VirtualHubRouteTable extends cdktf.TerraformResource {
   // labels - computed: false, optional: true, required: false
   private _labels?: string[]; 
   public get labels() {
-    return cdktf.Fn.tolist(this.getListAttribute('labels'));
+    return cdktn.Fn.tolist(this.getListAttribute('labels'));
   }
   public set labels(value: string[]) {
     this._labels = value;
@@ -600,7 +600,7 @@ export class VirtualHubRouteTable extends cdktf.TerraformResource {
   public get route() {
     return this._route;
   }
-  public putRoute(value: VirtualHubRouteTableRoute[] | cdktf.IResolvable) {
+  public putRoute(value: VirtualHubRouteTableRoute[] | cdktn.IResolvable) {
     this._route.internalValue = value;
   }
   public resetRoute() {
@@ -633,11 +633,11 @@ export class VirtualHubRouteTable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.listMapper(cdktf.stringToTerraform, false)(this._labels),
-      name: cdktf.stringToTerraform(this._name),
-      virtual_hub_id: cdktf.stringToTerraform(this._virtualHubId),
-      route: cdktf.listMapper(virtualHubRouteTableRouteToTerraform, true)(this._route.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.listMapper(cdktn.stringToTerraform, false)(this._labels),
+      name: cdktn.stringToTerraform(this._name),
+      virtual_hub_id: cdktn.stringToTerraform(this._virtualHubId),
+      route: cdktn.listMapper(virtualHubRouteTableRouteToTerraform, true)(this._route.internalValue),
       timeouts: virtualHubRouteTableTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -645,31 +645,31 @@ export class VirtualHubRouteTable extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._labels),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._labels),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_hub_id: {
-        value: cdktf.stringToHclTerraform(this._virtualHubId),
+        value: cdktn.stringToHclTerraform(this._virtualHubId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       route: {
-        value: cdktf.listMapperHcl(virtualHubRouteTableRouteToHclTerraform, true)(this._route.internalValue),
+        value: cdktn.listMapperHcl(virtualHubRouteTableRouteToHclTerraform, true)(this._route.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "VirtualHubRouteTableRouteList",

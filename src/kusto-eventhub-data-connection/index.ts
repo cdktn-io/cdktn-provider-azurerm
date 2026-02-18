@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KustoEventhubDataConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface KustoEventhubDataConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_eventhub_data_connection#cluster_name KustoEventhubDataConnection#cluster_name}
   */
@@ -105,46 +105,46 @@ export interface KustoEventhubDataConnectionTimeouts {
   readonly update?: string;
 }
 
-export function kustoEventhubDataConnectionTimeoutsToTerraform(struct?: KustoEventhubDataConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kustoEventhubDataConnectionTimeoutsToTerraform(struct?: KustoEventhubDataConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function kustoEventhubDataConnectionTimeoutsToHclTerraform(struct?: KustoEventhubDataConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kustoEventhubDataConnectionTimeoutsToHclTerraform(struct?: KustoEventhubDataConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -155,19 +155,19 @@ export function kustoEventhubDataConnectionTimeoutsToHclTerraform(struct?: Kusto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KustoEventhubDataConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KustoEventhubDataConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KustoEventhubDataConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KustoEventhubDataConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -192,7 +192,7 @@ export class KustoEventhubDataConnectionTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KustoEventhubDataConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KustoEventhubDataConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -201,7 +201,7 @@ export class KustoEventhubDataConnectionTimeoutsOutputReference extends cdktf.Co
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -283,7 +283,7 @@ export class KustoEventhubDataConnectionTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_eventhub_data_connection azurerm_kusto_eventhub_data_connection}
 */
-export class KustoEventhubDataConnection extends cdktf.TerraformResource {
+export class KustoEventhubDataConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -294,14 +294,14 @@ export class KustoEventhubDataConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KustoEventhubDataConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KustoEventhubDataConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KustoEventhubDataConnection to import
   * @param importFromId The id of the existing KustoEventhubDataConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_eventhub_data_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KustoEventhubDataConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kusto_eventhub_data_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kusto_eventhub_data_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -611,22 +611,22 @@ export class KustoEventhubDataConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_name: cdktf.stringToTerraform(this._clusterName),
-      compression: cdktf.stringToTerraform(this._compression),
-      consumer_group: cdktf.stringToTerraform(this._consumerGroup),
-      data_format: cdktf.stringToTerraform(this._dataFormat),
-      database_name: cdktf.stringToTerraform(this._databaseName),
-      database_routing_type: cdktf.stringToTerraform(this._databaseRoutingType),
-      event_system_properties: cdktf.listMapper(cdktf.stringToTerraform, false)(this._eventSystemProperties),
-      eventhub_id: cdktf.stringToTerraform(this._eventhubId),
-      id: cdktf.stringToTerraform(this._id),
-      identity_id: cdktf.stringToTerraform(this._identityId),
-      location: cdktf.stringToTerraform(this._location),
-      mapping_rule_name: cdktf.stringToTerraform(this._mappingRuleName),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      retrieval_start_date: cdktf.stringToTerraform(this._retrievalStartDate),
-      table_name: cdktf.stringToTerraform(this._tableName),
+      cluster_name: cdktn.stringToTerraform(this._clusterName),
+      compression: cdktn.stringToTerraform(this._compression),
+      consumer_group: cdktn.stringToTerraform(this._consumerGroup),
+      data_format: cdktn.stringToTerraform(this._dataFormat),
+      database_name: cdktn.stringToTerraform(this._databaseName),
+      database_routing_type: cdktn.stringToTerraform(this._databaseRoutingType),
+      event_system_properties: cdktn.listMapper(cdktn.stringToTerraform, false)(this._eventSystemProperties),
+      eventhub_id: cdktn.stringToTerraform(this._eventhubId),
+      id: cdktn.stringToTerraform(this._id),
+      identity_id: cdktn.stringToTerraform(this._identityId),
+      location: cdktn.stringToTerraform(this._location),
+      mapping_rule_name: cdktn.stringToTerraform(this._mappingRuleName),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      retrieval_start_date: cdktn.stringToTerraform(this._retrievalStartDate),
+      table_name: cdktn.stringToTerraform(this._tableName),
       timeouts: kustoEventhubDataConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -634,97 +634,97 @@ export class KustoEventhubDataConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_name: {
-        value: cdktf.stringToHclTerraform(this._clusterName),
+        value: cdktn.stringToHclTerraform(this._clusterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       compression: {
-        value: cdktf.stringToHclTerraform(this._compression),
+        value: cdktn.stringToHclTerraform(this._compression),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       consumer_group: {
-        value: cdktf.stringToHclTerraform(this._consumerGroup),
+        value: cdktn.stringToHclTerraform(this._consumerGroup),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_format: {
-        value: cdktf.stringToHclTerraform(this._dataFormat),
+        value: cdktn.stringToHclTerraform(this._dataFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_name: {
-        value: cdktf.stringToHclTerraform(this._databaseName),
+        value: cdktn.stringToHclTerraform(this._databaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_routing_type: {
-        value: cdktf.stringToHclTerraform(this._databaseRoutingType),
+        value: cdktn.stringToHclTerraform(this._databaseRoutingType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_system_properties: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._eventSystemProperties),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._eventSystemProperties),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       eventhub_id: {
-        value: cdktf.stringToHclTerraform(this._eventhubId),
+        value: cdktn.stringToHclTerraform(this._eventhubId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_id: {
-        value: cdktf.stringToHclTerraform(this._identityId),
+        value: cdktn.stringToHclTerraform(this._identityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mapping_rule_name: {
-        value: cdktf.stringToHclTerraform(this._mappingRuleName),
+        value: cdktn.stringToHclTerraform(this._mappingRuleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retrieval_start_date: {
-        value: cdktf.stringToHclTerraform(this._retrievalStartDate),
+        value: cdktn.stringToHclTerraform(this._retrievalStartDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_name: {
-        value: cdktf.stringToHclTerraform(this._tableName),
+        value: cdktn.stringToHclTerraform(this._tableName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

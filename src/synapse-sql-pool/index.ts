@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SynapseSqlPoolConfig extends cdktf.TerraformMetaArguments {
+export interface SynapseSqlPoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_sql_pool#collation SynapseSqlPool#collation}
   */
@@ -23,11 +23,11 @@ export interface SynapseSqlPoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_sql_pool#data_encrypted SynapseSqlPool#data_encrypted}
   */
-  readonly dataEncrypted?: boolean | cdktf.IResolvable;
+  readonly dataEncrypted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_sql_pool#geo_backup_policy_enabled SynapseSqlPool#geo_backup_policy_enabled}
   */
-  readonly geoBackupPolicyEnabled?: boolean | cdktf.IResolvable;
+  readonly geoBackupPolicyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_sql_pool#id SynapseSqlPool#id}
   *
@@ -84,31 +84,31 @@ export interface SynapseSqlPoolRestore {
 }
 
 export function synapseSqlPoolRestoreToTerraform(struct?: SynapseSqlPoolRestoreOutputReference | SynapseSqlPoolRestore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    point_in_time: cdktf.stringToTerraform(struct!.pointInTime),
-    source_database_id: cdktf.stringToTerraform(struct!.sourceDatabaseId),
+    point_in_time: cdktn.stringToTerraform(struct!.pointInTime),
+    source_database_id: cdktn.stringToTerraform(struct!.sourceDatabaseId),
   }
 }
 
 
 export function synapseSqlPoolRestoreToHclTerraform(struct?: SynapseSqlPoolRestoreOutputReference | SynapseSqlPoolRestore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     point_in_time: {
-      value: cdktf.stringToHclTerraform(struct!.pointInTime),
+      value: cdktn.stringToHclTerraform(struct!.pointInTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_database_id: {
-      value: cdktf.stringToHclTerraform(struct!.sourceDatabaseId),
+      value: cdktn.stringToHclTerraform(struct!.sourceDatabaseId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,14 +119,14 @@ export function synapseSqlPoolRestoreToHclTerraform(struct?: SynapseSqlPoolResto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SynapseSqlPoolRestoreOutputReference extends cdktf.ComplexObject {
+export class SynapseSqlPoolRestoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -202,46 +202,46 @@ export interface SynapseSqlPoolTimeouts {
   readonly update?: string;
 }
 
-export function synapseSqlPoolTimeoutsToTerraform(struct?: SynapseSqlPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synapseSqlPoolTimeoutsToTerraform(struct?: SynapseSqlPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function synapseSqlPoolTimeoutsToHclTerraform(struct?: SynapseSqlPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synapseSqlPoolTimeoutsToHclTerraform(struct?: SynapseSqlPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -252,19 +252,19 @@ export function synapseSqlPoolTimeoutsToHclTerraform(struct?: SynapseSqlPoolTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SynapseSqlPoolTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SynapseSqlPoolTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SynapseSqlPoolTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SynapseSqlPoolTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -289,7 +289,7 @@ export class SynapseSqlPoolTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SynapseSqlPoolTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SynapseSqlPoolTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -298,7 +298,7 @@ export class SynapseSqlPoolTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -380,7 +380,7 @@ export class SynapseSqlPoolTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool}
 */
-export class SynapseSqlPool extends cdktf.TerraformResource {
+export class SynapseSqlPool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -391,14 +391,14 @@ export class SynapseSqlPool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SynapseSqlPool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SynapseSqlPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SynapseSqlPool to import
   * @param importFromId The id of the existing SynapseSqlPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_sql_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SynapseSqlPool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_synapse_sql_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_synapse_sql_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -480,11 +480,11 @@ export class SynapseSqlPool extends cdktf.TerraformResource {
   }
 
   // data_encrypted - computed: false, optional: true, required: false
-  private _dataEncrypted?: boolean | cdktf.IResolvable; 
+  private _dataEncrypted?: boolean | cdktn.IResolvable; 
   public get dataEncrypted() {
     return this.getBooleanAttribute('data_encrypted');
   }
-  public set dataEncrypted(value: boolean | cdktf.IResolvable) {
+  public set dataEncrypted(value: boolean | cdktn.IResolvable) {
     this._dataEncrypted = value;
   }
   public resetDataEncrypted() {
@@ -496,11 +496,11 @@ export class SynapseSqlPool extends cdktf.TerraformResource {
   }
 
   // geo_backup_policy_enabled - computed: false, optional: true, required: false
-  private _geoBackupPolicyEnabled?: boolean | cdktf.IResolvable; 
+  private _geoBackupPolicyEnabled?: boolean | cdktn.IResolvable; 
   public get geoBackupPolicyEnabled() {
     return this.getBooleanAttribute('geo_backup_policy_enabled');
   }
-  public set geoBackupPolicyEnabled(value: boolean | cdktf.IResolvable) {
+  public set geoBackupPolicyEnabled(value: boolean | cdktn.IResolvable) {
     this._geoBackupPolicyEnabled = value;
   }
   public resetGeoBackupPolicyEnabled() {
@@ -649,17 +649,17 @@ export class SynapseSqlPool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      collation: cdktf.stringToTerraform(this._collation),
-      create_mode: cdktf.stringToTerraform(this._createMode),
-      data_encrypted: cdktf.booleanToTerraform(this._dataEncrypted),
-      geo_backup_policy_enabled: cdktf.booleanToTerraform(this._geoBackupPolicyEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      recovery_database_id: cdktf.stringToTerraform(this._recoveryDatabaseId),
-      sku_name: cdktf.stringToTerraform(this._skuName),
-      storage_account_type: cdktf.stringToTerraform(this._storageAccountType),
-      synapse_workspace_id: cdktf.stringToTerraform(this._synapseWorkspaceId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      collation: cdktn.stringToTerraform(this._collation),
+      create_mode: cdktn.stringToTerraform(this._createMode),
+      data_encrypted: cdktn.booleanToTerraform(this._dataEncrypted),
+      geo_backup_policy_enabled: cdktn.booleanToTerraform(this._geoBackupPolicyEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      recovery_database_id: cdktn.stringToTerraform(this._recoveryDatabaseId),
+      sku_name: cdktn.stringToTerraform(this._skuName),
+      storage_account_type: cdktn.stringToTerraform(this._storageAccountType),
+      synapse_workspace_id: cdktn.stringToTerraform(this._synapseWorkspaceId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       restore: synapseSqlPoolRestoreToTerraform(this._restore.internalValue),
       timeouts: synapseSqlPoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -668,67 +668,67 @@ export class SynapseSqlPool extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       collation: {
-        value: cdktf.stringToHclTerraform(this._collation),
+        value: cdktn.stringToHclTerraform(this._collation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       create_mode: {
-        value: cdktf.stringToHclTerraform(this._createMode),
+        value: cdktn.stringToHclTerraform(this._createMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_encrypted: {
-        value: cdktf.booleanToHclTerraform(this._dataEncrypted),
+        value: cdktn.booleanToHclTerraform(this._dataEncrypted),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       geo_backup_policy_enabled: {
-        value: cdktf.booleanToHclTerraform(this._geoBackupPolicyEnabled),
+        value: cdktn.booleanToHclTerraform(this._geoBackupPolicyEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_database_id: {
-        value: cdktf.stringToHclTerraform(this._recoveryDatabaseId),
+        value: cdktn.stringToHclTerraform(this._recoveryDatabaseId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku_name: {
-        value: cdktf.stringToHclTerraform(this._skuName),
+        value: cdktn.stringToHclTerraform(this._skuName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_type: {
-        value: cdktf.stringToHclTerraform(this._storageAccountType),
+        value: cdktn.stringToHclTerraform(this._storageAccountType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       synapse_workspace_id: {
-        value: cdktf.stringToHclTerraform(this._synapseWorkspaceId),
+        value: cdktn.stringToHclTerraform(this._synapseWorkspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

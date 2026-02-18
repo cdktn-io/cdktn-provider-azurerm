@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MssqlJobTargetGroupConfig extends cdktf.TerraformMetaArguments {
+export interface MssqlJobTargetGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_job_target_group#id MssqlJobTargetGroup#id}
   *
@@ -32,7 +32,7 @@ export interface MssqlJobTargetGroupConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_job_target_group#job_target MssqlJobTargetGroup#job_target}
   */
-  readonly jobTarget?: MssqlJobTargetGroupJobTarget[] | cdktf.IResolvable;
+  readonly jobTarget?: MssqlJobTargetGroupJobTarget[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -63,53 +63,53 @@ export interface MssqlJobTargetGroupJobTarget {
   readonly serverName: string;
 }
 
-export function mssqlJobTargetGroupJobTargetToTerraform(struct?: MssqlJobTargetGroupJobTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlJobTargetGroupJobTargetToTerraform(struct?: MssqlJobTargetGroupJobTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database_name: cdktf.stringToTerraform(struct!.databaseName),
-    elastic_pool_name: cdktf.stringToTerraform(struct!.elasticPoolName),
-    job_credential_id: cdktf.stringToTerraform(struct!.jobCredentialId),
-    membership_type: cdktf.stringToTerraform(struct!.membershipType),
-    server_name: cdktf.stringToTerraform(struct!.serverName),
+    database_name: cdktn.stringToTerraform(struct!.databaseName),
+    elastic_pool_name: cdktn.stringToTerraform(struct!.elasticPoolName),
+    job_credential_id: cdktn.stringToTerraform(struct!.jobCredentialId),
+    membership_type: cdktn.stringToTerraform(struct!.membershipType),
+    server_name: cdktn.stringToTerraform(struct!.serverName),
   }
 }
 
 
-export function mssqlJobTargetGroupJobTargetToHclTerraform(struct?: MssqlJobTargetGroupJobTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlJobTargetGroupJobTargetToHclTerraform(struct?: MssqlJobTargetGroupJobTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database_name: {
-      value: cdktf.stringToHclTerraform(struct!.databaseName),
+      value: cdktn.stringToHclTerraform(struct!.databaseName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     elastic_pool_name: {
-      value: cdktf.stringToHclTerraform(struct!.elasticPoolName),
+      value: cdktn.stringToHclTerraform(struct!.elasticPoolName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     job_credential_id: {
-      value: cdktf.stringToHclTerraform(struct!.jobCredentialId),
+      value: cdktn.stringToHclTerraform(struct!.jobCredentialId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     membership_type: {
-      value: cdktf.stringToHclTerraform(struct!.membershipType),
+      value: cdktn.stringToHclTerraform(struct!.membershipType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     server_name: {
-      value: cdktf.stringToHclTerraform(struct!.serverName),
+      value: cdktn.stringToHclTerraform(struct!.serverName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,9 +120,9 @@ export function mssqlJobTargetGroupJobTargetToHclTerraform(struct?: MssqlJobTarg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlJobTargetGroupJobTargetOutputReference extends cdktf.ComplexObject {
+export class MssqlJobTargetGroupJobTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -130,11 +130,11 @@ export class MssqlJobTargetGroupJobTargetOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MssqlJobTargetGroupJobTarget | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlJobTargetGroupJobTarget | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -163,7 +163,7 @@ export class MssqlJobTargetGroupJobTargetOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlJobTargetGroupJobTarget | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlJobTargetGroupJobTarget | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class MssqlJobTargetGroupJobTargetOutputReference extends cdktf.ComplexOb
       this._membershipType = undefined;
       this._serverName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -271,15 +271,15 @@ export class MssqlJobTargetGroupJobTargetOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class MssqlJobTargetGroupJobTargetList extends cdktf.ComplexList {
-  public internalValue? : MssqlJobTargetGroupJobTarget[] | cdktf.IResolvable
+export class MssqlJobTargetGroupJobTargetList extends cdktn.ComplexList {
+  public internalValue? : MssqlJobTargetGroupJobTarget[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -309,46 +309,46 @@ export interface MssqlJobTargetGroupTimeouts {
   readonly update?: string;
 }
 
-export function mssqlJobTargetGroupTimeoutsToTerraform(struct?: MssqlJobTargetGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlJobTargetGroupTimeoutsToTerraform(struct?: MssqlJobTargetGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mssqlJobTargetGroupTimeoutsToHclTerraform(struct?: MssqlJobTargetGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlJobTargetGroupTimeoutsToHclTerraform(struct?: MssqlJobTargetGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -359,19 +359,19 @@ export function mssqlJobTargetGroupTimeoutsToHclTerraform(struct?: MssqlJobTarge
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlJobTargetGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MssqlJobTargetGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MssqlJobTargetGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlJobTargetGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -396,7 +396,7 @@ export class MssqlJobTargetGroupTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlJobTargetGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlJobTargetGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -405,7 +405,7 @@ export class MssqlJobTargetGroupTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -487,7 +487,7 @@ export class MssqlJobTargetGroupTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_job_target_group azurerm_mssql_job_target_group}
 */
-export class MssqlJobTargetGroup extends cdktf.TerraformResource {
+export class MssqlJobTargetGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -498,14 +498,14 @@ export class MssqlJobTargetGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MssqlJobTargetGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MssqlJobTargetGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MssqlJobTargetGroup to import
   * @param importFromId The id of the existing MssqlJobTargetGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_job_target_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MssqlJobTargetGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_job_target_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_job_target_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -593,7 +593,7 @@ export class MssqlJobTargetGroup extends cdktf.TerraformResource {
   public get jobTarget() {
     return this._jobTarget;
   }
-  public putJobTarget(value: MssqlJobTargetGroupJobTarget[] | cdktf.IResolvable) {
+  public putJobTarget(value: MssqlJobTargetGroupJobTarget[] | cdktn.IResolvable) {
     this._jobTarget.internalValue = value;
   }
   public resetJobTarget() {
@@ -626,10 +626,10 @@ export class MssqlJobTargetGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      job_agent_id: cdktf.stringToTerraform(this._jobAgentId),
-      name: cdktf.stringToTerraform(this._name),
-      job_target: cdktf.listMapper(mssqlJobTargetGroupJobTargetToTerraform, true)(this._jobTarget.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      job_agent_id: cdktn.stringToTerraform(this._jobAgentId),
+      name: cdktn.stringToTerraform(this._name),
+      job_target: cdktn.listMapper(mssqlJobTargetGroupJobTargetToTerraform, true)(this._jobTarget.internalValue),
       timeouts: mssqlJobTargetGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -637,25 +637,25 @@ export class MssqlJobTargetGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       job_agent_id: {
-        value: cdktf.stringToHclTerraform(this._jobAgentId),
+        value: cdktn.stringToHclTerraform(this._jobAgentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       job_target: {
-        value: cdktf.listMapperHcl(mssqlJobTargetGroupJobTargetToHclTerraform, true)(this._jobTarget.internalValue),
+        value: cdktn.listMapperHcl(mssqlJobTargetGroupJobTargetToHclTerraform, true)(this._jobTarget.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "MssqlJobTargetGroupJobTargetList",

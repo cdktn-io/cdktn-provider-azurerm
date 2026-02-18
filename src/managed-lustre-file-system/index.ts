@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ManagedLustreFileSystemConfig extends cdktf.TerraformMetaArguments {
+export interface ManagedLustreFileSystemConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_lustre_file_system#id ManagedLustreFileSystem#id}
   *
@@ -100,31 +100,31 @@ export interface ManagedLustreFileSystemEncryptionKey {
 }
 
 export function managedLustreFileSystemEncryptionKeyToTerraform(struct?: ManagedLustreFileSystemEncryptionKeyOutputReference | ManagedLustreFileSystemEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_url: cdktf.stringToTerraform(struct!.keyUrl),
-    source_vault_id: cdktf.stringToTerraform(struct!.sourceVaultId),
+    key_url: cdktn.stringToTerraform(struct!.keyUrl),
+    source_vault_id: cdktn.stringToTerraform(struct!.sourceVaultId),
   }
 }
 
 
 export function managedLustreFileSystemEncryptionKeyToHclTerraform(struct?: ManagedLustreFileSystemEncryptionKeyOutputReference | ManagedLustreFileSystemEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_url: {
-      value: cdktf.stringToHclTerraform(struct!.keyUrl),
+      value: cdktn.stringToHclTerraform(struct!.keyUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.sourceVaultId),
+      value: cdktn.stringToHclTerraform(struct!.sourceVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,14 +135,14 @@ export function managedLustreFileSystemEncryptionKeyToHclTerraform(struct?: Mana
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedLustreFileSystemEncryptionKeyOutputReference extends cdktf.ComplexObject {
+export class ManagedLustreFileSystemEncryptionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -215,38 +215,38 @@ export interface ManagedLustreFileSystemHsmSetting {
 }
 
 export function managedLustreFileSystemHsmSettingToTerraform(struct?: ManagedLustreFileSystemHsmSettingOutputReference | ManagedLustreFileSystemHsmSetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_id: cdktf.stringToTerraform(struct!.containerId),
-    import_prefix: cdktf.stringToTerraform(struct!.importPrefix),
-    logging_container_id: cdktf.stringToTerraform(struct!.loggingContainerId),
+    container_id: cdktn.stringToTerraform(struct!.containerId),
+    import_prefix: cdktn.stringToTerraform(struct!.importPrefix),
+    logging_container_id: cdktn.stringToTerraform(struct!.loggingContainerId),
   }
 }
 
 
 export function managedLustreFileSystemHsmSettingToHclTerraform(struct?: ManagedLustreFileSystemHsmSettingOutputReference | ManagedLustreFileSystemHsmSetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_id: {
-      value: cdktf.stringToHclTerraform(struct!.containerId),
+      value: cdktn.stringToHclTerraform(struct!.containerId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     import_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.importPrefix),
+      value: cdktn.stringToHclTerraform(struct!.importPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     logging_container_id: {
-      value: cdktf.stringToHclTerraform(struct!.loggingContainerId),
+      value: cdktn.stringToHclTerraform(struct!.loggingContainerId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -257,14 +257,14 @@ export function managedLustreFileSystemHsmSettingToHclTerraform(struct?: Managed
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedLustreFileSystemHsmSettingOutputReference extends cdktf.ComplexObject {
+export class ManagedLustreFileSystemHsmSettingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -355,31 +355,31 @@ export interface ManagedLustreFileSystemIdentity {
 }
 
 export function managedLustreFileSystemIdentityToTerraform(struct?: ManagedLustreFileSystemIdentityOutputReference | ManagedLustreFileSystemIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function managedLustreFileSystemIdentityToHclTerraform(struct?: ManagedLustreFileSystemIdentityOutputReference | ManagedLustreFileSystemIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -390,14 +390,14 @@ export function managedLustreFileSystemIdentityToHclTerraform(struct?: ManagedLu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedLustreFileSystemIdentityOutputReference extends cdktf.ComplexObject {
+export class ManagedLustreFileSystemIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -431,7 +431,7 @@ export class ManagedLustreFileSystemIdentityOutputReference extends cdktf.Comple
   // identity_ids - computed: false, optional: false, required: true
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -466,31 +466,31 @@ export interface ManagedLustreFileSystemMaintenanceWindow {
 }
 
 export function managedLustreFileSystemMaintenanceWindowToTerraform(struct?: ManagedLustreFileSystemMaintenanceWindowOutputReference | ManagedLustreFileSystemMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_week: cdktf.stringToTerraform(struct!.dayOfWeek),
-    time_of_day_in_utc: cdktf.stringToTerraform(struct!.timeOfDayInUtc),
+    day_of_week: cdktn.stringToTerraform(struct!.dayOfWeek),
+    time_of_day_in_utc: cdktn.stringToTerraform(struct!.timeOfDayInUtc),
   }
 }
 
 
 export function managedLustreFileSystemMaintenanceWindowToHclTerraform(struct?: ManagedLustreFileSystemMaintenanceWindowOutputReference | ManagedLustreFileSystemMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_week: {
-      value: cdktf.stringToHclTerraform(struct!.dayOfWeek),
+      value: cdktn.stringToHclTerraform(struct!.dayOfWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_of_day_in_utc: {
-      value: cdktf.stringToHclTerraform(struct!.timeOfDayInUtc),
+      value: cdktn.stringToHclTerraform(struct!.timeOfDayInUtc),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -501,14 +501,14 @@ export function managedLustreFileSystemMaintenanceWindowToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedLustreFileSystemMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+export class ManagedLustreFileSystemMaintenanceWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -585,45 +585,45 @@ export interface ManagedLustreFileSystemRootSquash {
 }
 
 export function managedLustreFileSystemRootSquashToTerraform(struct?: ManagedLustreFileSystemRootSquashOutputReference | ManagedLustreFileSystemRootSquash): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
-    no_squash_nids: cdktf.stringToTerraform(struct!.noSquashNids),
-    squash_gid: cdktf.numberToTerraform(struct!.squashGid),
-    squash_uid: cdktf.numberToTerraform(struct!.squashUid),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    no_squash_nids: cdktn.stringToTerraform(struct!.noSquashNids),
+    squash_gid: cdktn.numberToTerraform(struct!.squashGid),
+    squash_uid: cdktn.numberToTerraform(struct!.squashUid),
   }
 }
 
 
 export function managedLustreFileSystemRootSquashToHclTerraform(struct?: ManagedLustreFileSystemRootSquashOutputReference | ManagedLustreFileSystemRootSquash): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     no_squash_nids: {
-      value: cdktf.stringToHclTerraform(struct!.noSquashNids),
+      value: cdktn.stringToHclTerraform(struct!.noSquashNids),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     squash_gid: {
-      value: cdktf.numberToHclTerraform(struct!.squashGid),
+      value: cdktn.numberToHclTerraform(struct!.squashGid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     squash_uid: {
-      value: cdktf.numberToHclTerraform(struct!.squashUid),
+      value: cdktn.numberToHclTerraform(struct!.squashUid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -634,14 +634,14 @@ export function managedLustreFileSystemRootSquashToHclTerraform(struct?: Managed
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedLustreFileSystemRootSquashOutputReference extends cdktf.ComplexObject {
+export class ManagedLustreFileSystemRootSquashOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -761,46 +761,46 @@ export interface ManagedLustreFileSystemTimeouts {
   readonly update?: string;
 }
 
-export function managedLustreFileSystemTimeoutsToTerraform(struct?: ManagedLustreFileSystemTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedLustreFileSystemTimeoutsToTerraform(struct?: ManagedLustreFileSystemTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function managedLustreFileSystemTimeoutsToHclTerraform(struct?: ManagedLustreFileSystemTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedLustreFileSystemTimeoutsToHclTerraform(struct?: ManagedLustreFileSystemTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -811,19 +811,19 @@ export function managedLustreFileSystemTimeoutsToHclTerraform(struct?: ManagedLu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedLustreFileSystemTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ManagedLustreFileSystemTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ManagedLustreFileSystemTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ManagedLustreFileSystemTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -848,7 +848,7 @@ export class ManagedLustreFileSystemTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ManagedLustreFileSystemTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ManagedLustreFileSystemTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -857,7 +857,7 @@ export class ManagedLustreFileSystemTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -939,7 +939,7 @@ export class ManagedLustreFileSystemTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system}
 */
-export class ManagedLustreFileSystem extends cdktf.TerraformResource {
+export class ManagedLustreFileSystem extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -950,14 +950,14 @@ export class ManagedLustreFileSystem extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ManagedLustreFileSystem resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ManagedLustreFileSystem resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedLustreFileSystem to import
   * @param importFromId The id of the existing ManagedLustreFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_lustre_file_system#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedLustreFileSystem to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_managed_lustre_file_system", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_managed_lustre_file_system", importId: importFromId, provider });
       }
 
   // ===========
@@ -1126,7 +1126,7 @@ export class ManagedLustreFileSystem extends cdktf.TerraformResource {
   // zones - computed: false, optional: false, required: true
   private _zones?: string[]; 
   public get zones() {
-    return cdktf.Fn.tolist(this.getListAttribute('zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('zones'));
   }
   public set zones(value: string[]) {
     this._zones = value;
@@ -1235,15 +1235,15 @@ export class ManagedLustreFileSystem extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku_name: cdktf.stringToTerraform(this._skuName),
-      storage_capacity_in_tb: cdktf.numberToTerraform(this._storageCapacityInTb),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._zones),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku_name: cdktn.stringToTerraform(this._skuName),
+      storage_capacity_in_tb: cdktn.numberToTerraform(this._storageCapacityInTb),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      zones: cdktn.listMapper(cdktn.stringToTerraform, false)(this._zones),
       encryption_key: managedLustreFileSystemEncryptionKeyToTerraform(this._encryptionKey.internalValue),
       hsm_setting: managedLustreFileSystemHsmSettingToTerraform(this._hsmSetting.internalValue),
       identity: managedLustreFileSystemIdentityToTerraform(this._identity.internalValue),
@@ -1256,55 +1256,55 @@ export class ManagedLustreFileSystem extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku_name: {
-        value: cdktf.stringToHclTerraform(this._skuName),
+        value: cdktn.stringToHclTerraform(this._skuName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_capacity_in_tb: {
-        value: cdktf.numberToHclTerraform(this._storageCapacityInTb),
+        value: cdktn.numberToHclTerraform(this._storageCapacityInTb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       zones: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._zones),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._zones),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BotChannelDirectlineConfig extends cdktf.TerraformMetaArguments {
+export interface BotChannelDirectlineConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_directline#bot_name BotChannelDirectline#bot_name}
   */
@@ -36,7 +36,7 @@ export interface BotChannelDirectlineConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_directline#site BotChannelDirectline#site}
   */
-  readonly site: BotChannelDirectlineSite[] | cdktf.IResolvable;
+  readonly site: BotChannelDirectlineSite[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -48,15 +48,15 @@ export interface BotChannelDirectlineSite {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_directline#enabled BotChannelDirectline#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_directline#endpoint_parameters_enabled BotChannelDirectline#endpoint_parameters_enabled}
   */
-  readonly endpointParametersEnabled?: boolean | cdktf.IResolvable;
+  readonly endpointParametersEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_directline#enhanced_authentication_enabled BotChannelDirectline#enhanced_authentication_enabled}
   */
-  readonly enhancedAuthenticationEnabled?: boolean | cdktf.IResolvable;
+  readonly enhancedAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_directline#name BotChannelDirectline#name}
   */
@@ -64,7 +64,7 @@ export interface BotChannelDirectlineSite {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_directline#storage_enabled BotChannelDirectline#storage_enabled}
   */
-  readonly storageEnabled?: boolean | cdktf.IResolvable;
+  readonly storageEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_directline#trusted_origins BotChannelDirectline#trusted_origins}
   */
@@ -72,92 +72,92 @@ export interface BotChannelDirectlineSite {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_directline#user_upload_enabled BotChannelDirectline#user_upload_enabled}
   */
-  readonly userUploadEnabled?: boolean | cdktf.IResolvable;
+  readonly userUploadEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_directline#v1_allowed BotChannelDirectline#v1_allowed}
   */
-  readonly v1Allowed?: boolean | cdktf.IResolvable;
+  readonly v1Allowed?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_directline#v3_allowed BotChannelDirectline#v3_allowed}
   */
-  readonly v3Allowed?: boolean | cdktf.IResolvable;
+  readonly v3Allowed?: boolean | cdktn.IResolvable;
 }
 
-export function botChannelDirectlineSiteToTerraform(struct?: BotChannelDirectlineSite | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelDirectlineSiteToTerraform(struct?: BotChannelDirectlineSite | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    endpoint_parameters_enabled: cdktf.booleanToTerraform(struct!.endpointParametersEnabled),
-    enhanced_authentication_enabled: cdktf.booleanToTerraform(struct!.enhancedAuthenticationEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    storage_enabled: cdktf.booleanToTerraform(struct!.storageEnabled),
-    trusted_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.trustedOrigins),
-    user_upload_enabled: cdktf.booleanToTerraform(struct!.userUploadEnabled),
-    v1_allowed: cdktf.booleanToTerraform(struct!.v1Allowed),
-    v3_allowed: cdktf.booleanToTerraform(struct!.v3Allowed),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    endpoint_parameters_enabled: cdktn.booleanToTerraform(struct!.endpointParametersEnabled),
+    enhanced_authentication_enabled: cdktn.booleanToTerraform(struct!.enhancedAuthenticationEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    storage_enabled: cdktn.booleanToTerraform(struct!.storageEnabled),
+    trusted_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.trustedOrigins),
+    user_upload_enabled: cdktn.booleanToTerraform(struct!.userUploadEnabled),
+    v1_allowed: cdktn.booleanToTerraform(struct!.v1Allowed),
+    v3_allowed: cdktn.booleanToTerraform(struct!.v3Allowed),
   }
 }
 
 
-export function botChannelDirectlineSiteToHclTerraform(struct?: BotChannelDirectlineSite | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelDirectlineSiteToHclTerraform(struct?: BotChannelDirectlineSite | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     endpoint_parameters_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.endpointParametersEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.endpointParametersEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enhanced_authentication_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enhancedAuthenticationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.enhancedAuthenticationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.storageEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.storageEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     trusted_origins: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.trustedOrigins),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.trustedOrigins),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     user_upload_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.userUploadEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.userUploadEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     v1_allowed: {
-      value: cdktf.booleanToHclTerraform(struct!.v1Allowed),
+      value: cdktn.booleanToHclTerraform(struct!.v1Allowed),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     v3_allowed: {
-      value: cdktf.booleanToHclTerraform(struct!.v3Allowed),
+      value: cdktn.booleanToHclTerraform(struct!.v3Allowed),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -168,9 +168,9 @@ export function botChannelDirectlineSiteToHclTerraform(struct?: BotChannelDirect
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BotChannelDirectlineSiteOutputReference extends cdktf.ComplexObject {
+export class BotChannelDirectlineSiteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -178,11 +178,11 @@ export class BotChannelDirectlineSiteOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BotChannelDirectlineSite | cdktf.IResolvable | undefined {
+  public get internalValue(): BotChannelDirectlineSite | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -227,7 +227,7 @@ export class BotChannelDirectlineSiteOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BotChannelDirectlineSite | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BotChannelDirectlineSite | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -241,7 +241,7 @@ export class BotChannelDirectlineSiteOutputReference extends cdktf.ComplexObject
       this._v1Allowed = undefined;
       this._v3Allowed = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -261,11 +261,11 @@ export class BotChannelDirectlineSiteOutputReference extends cdktf.ComplexObject
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -277,11 +277,11 @@ export class BotChannelDirectlineSiteOutputReference extends cdktf.ComplexObject
   }
 
   // endpoint_parameters_enabled - computed: false, optional: true, required: false
-  private _endpointParametersEnabled?: boolean | cdktf.IResolvable; 
+  private _endpointParametersEnabled?: boolean | cdktn.IResolvable; 
   public get endpointParametersEnabled() {
     return this.getBooleanAttribute('endpoint_parameters_enabled');
   }
-  public set endpointParametersEnabled(value: boolean | cdktf.IResolvable) {
+  public set endpointParametersEnabled(value: boolean | cdktn.IResolvable) {
     this._endpointParametersEnabled = value;
   }
   public resetEndpointParametersEnabled() {
@@ -293,11 +293,11 @@ export class BotChannelDirectlineSiteOutputReference extends cdktf.ComplexObject
   }
 
   // enhanced_authentication_enabled - computed: false, optional: true, required: false
-  private _enhancedAuthenticationEnabled?: boolean | cdktf.IResolvable; 
+  private _enhancedAuthenticationEnabled?: boolean | cdktn.IResolvable; 
   public get enhancedAuthenticationEnabled() {
     return this.getBooleanAttribute('enhanced_authentication_enabled');
   }
-  public set enhancedAuthenticationEnabled(value: boolean | cdktf.IResolvable) {
+  public set enhancedAuthenticationEnabled(value: boolean | cdktn.IResolvable) {
     this._enhancedAuthenticationEnabled = value;
   }
   public resetEnhancedAuthenticationEnabled() {
@@ -337,11 +337,11 @@ export class BotChannelDirectlineSiteOutputReference extends cdktf.ComplexObject
   }
 
   // storage_enabled - computed: false, optional: true, required: false
-  private _storageEnabled?: boolean | cdktf.IResolvable; 
+  private _storageEnabled?: boolean | cdktn.IResolvable; 
   public get storageEnabled() {
     return this.getBooleanAttribute('storage_enabled');
   }
-  public set storageEnabled(value: boolean | cdktf.IResolvable) {
+  public set storageEnabled(value: boolean | cdktn.IResolvable) {
     this._storageEnabled = value;
   }
   public resetStorageEnabled() {
@@ -355,7 +355,7 @@ export class BotChannelDirectlineSiteOutputReference extends cdktf.ComplexObject
   // trusted_origins - computed: false, optional: true, required: false
   private _trustedOrigins?: string[]; 
   public get trustedOrigins() {
-    return cdktf.Fn.tolist(this.getListAttribute('trusted_origins'));
+    return cdktn.Fn.tolist(this.getListAttribute('trusted_origins'));
   }
   public set trustedOrigins(value: string[]) {
     this._trustedOrigins = value;
@@ -369,11 +369,11 @@ export class BotChannelDirectlineSiteOutputReference extends cdktf.ComplexObject
   }
 
   // user_upload_enabled - computed: false, optional: true, required: false
-  private _userUploadEnabled?: boolean | cdktf.IResolvable; 
+  private _userUploadEnabled?: boolean | cdktn.IResolvable; 
   public get userUploadEnabled() {
     return this.getBooleanAttribute('user_upload_enabled');
   }
-  public set userUploadEnabled(value: boolean | cdktf.IResolvable) {
+  public set userUploadEnabled(value: boolean | cdktn.IResolvable) {
     this._userUploadEnabled = value;
   }
   public resetUserUploadEnabled() {
@@ -385,11 +385,11 @@ export class BotChannelDirectlineSiteOutputReference extends cdktf.ComplexObject
   }
 
   // v1_allowed - computed: false, optional: true, required: false
-  private _v1Allowed?: boolean | cdktf.IResolvable; 
+  private _v1Allowed?: boolean | cdktn.IResolvable; 
   public get v1Allowed() {
     return this.getBooleanAttribute('v1_allowed');
   }
-  public set v1Allowed(value: boolean | cdktf.IResolvable) {
+  public set v1Allowed(value: boolean | cdktn.IResolvable) {
     this._v1Allowed = value;
   }
   public resetV1Allowed() {
@@ -401,11 +401,11 @@ export class BotChannelDirectlineSiteOutputReference extends cdktf.ComplexObject
   }
 
   // v3_allowed - computed: false, optional: true, required: false
-  private _v3Allowed?: boolean | cdktf.IResolvable; 
+  private _v3Allowed?: boolean | cdktn.IResolvable; 
   public get v3Allowed() {
     return this.getBooleanAttribute('v3_allowed');
   }
-  public set v3Allowed(value: boolean | cdktf.IResolvable) {
+  public set v3Allowed(value: boolean | cdktn.IResolvable) {
     this._v3Allowed = value;
   }
   public resetV3Allowed() {
@@ -417,15 +417,15 @@ export class BotChannelDirectlineSiteOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class BotChannelDirectlineSiteList extends cdktf.ComplexList {
-  public internalValue? : BotChannelDirectlineSite[] | cdktf.IResolvable
+export class BotChannelDirectlineSiteList extends cdktn.ComplexList {
+  public internalValue? : BotChannelDirectlineSite[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -455,46 +455,46 @@ export interface BotChannelDirectlineTimeouts {
   readonly update?: string;
 }
 
-export function botChannelDirectlineTimeoutsToTerraform(struct?: BotChannelDirectlineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelDirectlineTimeoutsToTerraform(struct?: BotChannelDirectlineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function botChannelDirectlineTimeoutsToHclTerraform(struct?: BotChannelDirectlineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelDirectlineTimeoutsToHclTerraform(struct?: BotChannelDirectlineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -505,19 +505,19 @@ export function botChannelDirectlineTimeoutsToHclTerraform(struct?: BotChannelDi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BotChannelDirectlineTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BotChannelDirectlineTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BotChannelDirectlineTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BotChannelDirectlineTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -542,7 +542,7 @@ export class BotChannelDirectlineTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BotChannelDirectlineTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BotChannelDirectlineTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -551,7 +551,7 @@ export class BotChannelDirectlineTimeoutsOutputReference extends cdktf.ComplexOb
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -633,7 +633,7 @@ export class BotChannelDirectlineTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_directline azurerm_bot_channel_directline}
 */
-export class BotChannelDirectline extends cdktf.TerraformResource {
+export class BotChannelDirectline extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -644,14 +644,14 @@ export class BotChannelDirectline extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BotChannelDirectline resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BotChannelDirectline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BotChannelDirectline to import
   * @param importFromId The id of the existing BotChannelDirectline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_directline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BotChannelDirectline to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_bot_channel_directline", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_bot_channel_directline", importId: importFromId, provider });
       }
 
   // ===========
@@ -753,7 +753,7 @@ export class BotChannelDirectline extends cdktf.TerraformResource {
   public get site() {
     return this._site;
   }
-  public putSite(value: BotChannelDirectlineSite[] | cdktf.IResolvable) {
+  public putSite(value: BotChannelDirectlineSite[] | cdktn.IResolvable) {
     this._site.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -783,11 +783,11 @@ export class BotChannelDirectline extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bot_name: cdktf.stringToTerraform(this._botName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      site: cdktf.listMapper(botChannelDirectlineSiteToTerraform, true)(this._site.internalValue),
+      bot_name: cdktn.stringToTerraform(this._botName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      site: cdktn.listMapper(botChannelDirectlineSiteToTerraform, true)(this._site.internalValue),
       timeouts: botChannelDirectlineTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -795,31 +795,31 @@ export class BotChannelDirectline extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bot_name: {
-        value: cdktf.stringToHclTerraform(this._botName),
+        value: cdktn.stringToHclTerraform(this._botName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       site: {
-        value: cdktf.listMapperHcl(botChannelDirectlineSiteToHclTerraform, true)(this._site.internalValue),
+        value: cdktn.listMapperHcl(botChannelDirectlineSiteToHclTerraform, true)(this._site.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "BotChannelDirectlineSiteList",

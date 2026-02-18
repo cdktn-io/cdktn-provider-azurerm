@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermOracleDatabaseSystemVersionsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermOracleDatabaseSystemVersionsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/oracle_database_system_versions#database_software_image_supported DataAzurermOracleDatabaseSystemVersions#database_software_image_supported}
   */
-  readonly databaseSoftwareImageSupported?: boolean | cdktf.IResolvable;
+  readonly databaseSoftwareImageSupported?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/oracle_database_system_versions#database_system_shape DataAzurermOracleDatabaseSystemVersions#database_system_shape}
   */
@@ -42,7 +42,7 @@ export interface DataAzurermOracleDatabaseSystemVersionsConfig extends cdktf.Ter
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/oracle_database_system_versions#upgrade_supported DataAzurermOracleDatabaseSystemVersions#upgrade_supported}
   */
-  readonly upgradeSupported?: boolean | cdktf.IResolvable;
+  readonly upgradeSupported?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -54,8 +54,8 @@ export interface DataAzurermOracleDatabaseSystemVersionsVersions {
 }
 
 export function dataAzurermOracleDatabaseSystemVersionsVersionsToTerraform(struct?: DataAzurermOracleDatabaseSystemVersionsVersions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -64,8 +64,8 @@ export function dataAzurermOracleDatabaseSystemVersionsVersionsToTerraform(struc
 
 
 export function dataAzurermOracleDatabaseSystemVersionsVersionsToHclTerraform(struct?: DataAzurermOracleDatabaseSystemVersionsVersions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -73,7 +73,7 @@ export function dataAzurermOracleDatabaseSystemVersionsVersionsToHclTerraform(st
   return attrs;
 }
 
-export class DataAzurermOracleDatabaseSystemVersionsVersionsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermOracleDatabaseSystemVersionsVersionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -82,7 +82,7 @@ export class DataAzurermOracleDatabaseSystemVersionsVersionsOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -122,14 +122,14 @@ export class DataAzurermOracleDatabaseSystemVersionsVersionsOutputReference exte
   }
 }
 
-export class DataAzurermOracleDatabaseSystemVersionsVersionsList extends cdktf.ComplexList {
+export class DataAzurermOracleDatabaseSystemVersionsVersionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -147,25 +147,25 @@ export interface DataAzurermOracleDatabaseSystemVersionsTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermOracleDatabaseSystemVersionsTimeoutsToTerraform(struct?: DataAzurermOracleDatabaseSystemVersionsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermOracleDatabaseSystemVersionsTimeoutsToTerraform(struct?: DataAzurermOracleDatabaseSystemVersionsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermOracleDatabaseSystemVersionsTimeoutsToHclTerraform(struct?: DataAzurermOracleDatabaseSystemVersionsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermOracleDatabaseSystemVersionsTimeoutsToHclTerraform(struct?: DataAzurermOracleDatabaseSystemVersionsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -176,19 +176,19 @@ export function dataAzurermOracleDatabaseSystemVersionsTimeoutsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermOracleDatabaseSystemVersionsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermOracleDatabaseSystemVersionsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermOracleDatabaseSystemVersionsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermOracleDatabaseSystemVersionsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -201,13 +201,13 @@ export class DataAzurermOracleDatabaseSystemVersionsTimeoutsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermOracleDatabaseSystemVersionsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermOracleDatabaseSystemVersionsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -238,7 +238,7 @@ export class DataAzurermOracleDatabaseSystemVersionsTimeoutsOutputReference exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/oracle_database_system_versions azurerm_oracle_database_system_versions}
 */
-export class DataAzurermOracleDatabaseSystemVersions extends cdktf.TerraformDataSource {
+export class DataAzurermOracleDatabaseSystemVersions extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -249,14 +249,14 @@ export class DataAzurermOracleDatabaseSystemVersions extends cdktf.TerraformData
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermOracleDatabaseSystemVersions resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermOracleDatabaseSystemVersions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermOracleDatabaseSystemVersions to import
   * @param importFromId The id of the existing DataAzurermOracleDatabaseSystemVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/oracle_database_system_versions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermOracleDatabaseSystemVersions to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_oracle_database_system_versions", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_oracle_database_system_versions", importId: importFromId, provider });
       }
 
   // ===========
@@ -301,11 +301,11 @@ export class DataAzurermOracleDatabaseSystemVersions extends cdktf.TerraformData
   // ==========
 
   // database_software_image_supported - computed: false, optional: true, required: false
-  private _databaseSoftwareImageSupported?: boolean | cdktf.IResolvable; 
+  private _databaseSoftwareImageSupported?: boolean | cdktn.IResolvable; 
   public get databaseSoftwareImageSupported() {
     return this.getBooleanAttribute('database_software_image_supported');
   }
-  public set databaseSoftwareImageSupported(value: boolean | cdktf.IResolvable) {
+  public set databaseSoftwareImageSupported(value: boolean | cdktn.IResolvable) {
     this._databaseSoftwareImageSupported = value;
   }
   public resetDatabaseSoftwareImageSupported() {
@@ -394,11 +394,11 @@ export class DataAzurermOracleDatabaseSystemVersions extends cdktf.TerraformData
   }
 
   // upgrade_supported - computed: false, optional: true, required: false
-  private _upgradeSupported?: boolean | cdktf.IResolvable; 
+  private _upgradeSupported?: boolean | cdktn.IResolvable; 
   public get upgradeSupported() {
     return this.getBooleanAttribute('upgrade_supported');
   }
-  public set upgradeSupported(value: boolean | cdktf.IResolvable) {
+  public set upgradeSupported(value: boolean | cdktn.IResolvable) {
     this._upgradeSupported = value;
   }
   public resetUpgradeSupported() {
@@ -437,13 +437,13 @@ export class DataAzurermOracleDatabaseSystemVersions extends cdktf.TerraformData
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database_software_image_supported: cdktf.booleanToTerraform(this._databaseSoftwareImageSupported),
-      database_system_shape: cdktf.stringToTerraform(this._databaseSystemShape),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      shape_family: cdktf.stringToTerraform(this._shapeFamily),
-      storage_management: cdktf.stringToTerraform(this._storageManagement),
-      upgrade_supported: cdktf.booleanToTerraform(this._upgradeSupported),
+      database_software_image_supported: cdktn.booleanToTerraform(this._databaseSoftwareImageSupported),
+      database_system_shape: cdktn.stringToTerraform(this._databaseSystemShape),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      shape_family: cdktn.stringToTerraform(this._shapeFamily),
+      storage_management: cdktn.stringToTerraform(this._storageManagement),
+      upgrade_supported: cdktn.booleanToTerraform(this._upgradeSupported),
       timeouts: dataAzurermOracleDatabaseSystemVersionsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -451,43 +451,43 @@ export class DataAzurermOracleDatabaseSystemVersions extends cdktf.TerraformData
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       database_software_image_supported: {
-        value: cdktf.booleanToHclTerraform(this._databaseSoftwareImageSupported),
+        value: cdktn.booleanToHclTerraform(this._databaseSoftwareImageSupported),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       database_system_shape: {
-        value: cdktf.stringToHclTerraform(this._databaseSystemShape),
+        value: cdktn.stringToHclTerraform(this._databaseSystemShape),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       shape_family: {
-        value: cdktf.stringToHclTerraform(this._shapeFamily),
+        value: cdktn.stringToHclTerraform(this._shapeFamily),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_management: {
-        value: cdktf.stringToHclTerraform(this._storageManagement),
+        value: cdktn.stringToHclTerraform(this._storageManagement),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       upgrade_supported: {
-        value: cdktf.booleanToHclTerraform(this._upgradeSupported),
+        value: cdktn.booleanToHclTerraform(this._upgradeSupported),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

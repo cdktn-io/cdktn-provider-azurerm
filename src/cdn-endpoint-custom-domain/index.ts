@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CdnEndpointCustomDomainConfig extends cdktf.TerraformMetaArguments {
+export interface CdnEndpointCustomDomainConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_endpoint_custom_domain#cdn_endpoint_id CdnEndpointCustomDomain#cdn_endpoint_id}
   */
@@ -66,38 +66,38 @@ export interface CdnEndpointCustomDomainCdnManagedHttps {
 }
 
 export function cdnEndpointCustomDomainCdnManagedHttpsToTerraform(struct?: CdnEndpointCustomDomainCdnManagedHttpsOutputReference | CdnEndpointCustomDomainCdnManagedHttps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_type: cdktf.stringToTerraform(struct!.certificateType),
-    protocol_type: cdktf.stringToTerraform(struct!.protocolType),
-    tls_version: cdktf.stringToTerraform(struct!.tlsVersion),
+    certificate_type: cdktn.stringToTerraform(struct!.certificateType),
+    protocol_type: cdktn.stringToTerraform(struct!.protocolType),
+    tls_version: cdktn.stringToTerraform(struct!.tlsVersion),
   }
 }
 
 
 export function cdnEndpointCustomDomainCdnManagedHttpsToHclTerraform(struct?: CdnEndpointCustomDomainCdnManagedHttpsOutputReference | CdnEndpointCustomDomainCdnManagedHttps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate_type: {
-      value: cdktf.stringToHclTerraform(struct!.certificateType),
+      value: cdktn.stringToHclTerraform(struct!.certificateType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol_type: {
-      value: cdktf.stringToHclTerraform(struct!.protocolType),
+      value: cdktn.stringToHclTerraform(struct!.protocolType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tls_version: {
-      value: cdktf.stringToHclTerraform(struct!.tlsVersion),
+      value: cdktn.stringToHclTerraform(struct!.tlsVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -108,14 +108,14 @@ export function cdnEndpointCustomDomainCdnManagedHttpsToHclTerraform(struct?: Cd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnEndpointCustomDomainCdnManagedHttpsOutputReference extends cdktf.ComplexObject {
+export class CdnEndpointCustomDomainCdnManagedHttpsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -213,46 +213,46 @@ export interface CdnEndpointCustomDomainTimeouts {
   readonly update?: string;
 }
 
-export function cdnEndpointCustomDomainTimeoutsToTerraform(struct?: CdnEndpointCustomDomainTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cdnEndpointCustomDomainTimeoutsToTerraform(struct?: CdnEndpointCustomDomainTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cdnEndpointCustomDomainTimeoutsToHclTerraform(struct?: CdnEndpointCustomDomainTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cdnEndpointCustomDomainTimeoutsToHclTerraform(struct?: CdnEndpointCustomDomainTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -263,19 +263,19 @@ export function cdnEndpointCustomDomainTimeoutsToHclTerraform(struct?: CdnEndpoi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnEndpointCustomDomainTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CdnEndpointCustomDomainTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CdnEndpointCustomDomainTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CdnEndpointCustomDomainTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -300,7 +300,7 @@ export class CdnEndpointCustomDomainTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnEndpointCustomDomainTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CdnEndpointCustomDomainTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -309,7 +309,7 @@ export class CdnEndpointCustomDomainTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -399,31 +399,31 @@ export interface CdnEndpointCustomDomainUserManagedHttps {
 }
 
 export function cdnEndpointCustomDomainUserManagedHttpsToTerraform(struct?: CdnEndpointCustomDomainUserManagedHttpsOutputReference | CdnEndpointCustomDomainUserManagedHttps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_vault_secret_id: cdktf.stringToTerraform(struct!.keyVaultSecretId),
-    tls_version: cdktf.stringToTerraform(struct!.tlsVersion),
+    key_vault_secret_id: cdktn.stringToTerraform(struct!.keyVaultSecretId),
+    tls_version: cdktn.stringToTerraform(struct!.tlsVersion),
   }
 }
 
 
 export function cdnEndpointCustomDomainUserManagedHttpsToHclTerraform(struct?: CdnEndpointCustomDomainUserManagedHttpsOutputReference | CdnEndpointCustomDomainUserManagedHttps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_vault_secret_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultSecretId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultSecretId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tls_version: {
-      value: cdktf.stringToHclTerraform(struct!.tlsVersion),
+      value: cdktn.stringToHclTerraform(struct!.tlsVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -434,14 +434,14 @@ export function cdnEndpointCustomDomainUserManagedHttpsToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnEndpointCustomDomainUserManagedHttpsOutputReference extends cdktf.ComplexObject {
+export class CdnEndpointCustomDomainUserManagedHttpsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -505,7 +505,7 @@ export class CdnEndpointCustomDomainUserManagedHttpsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_endpoint_custom_domain azurerm_cdn_endpoint_custom_domain}
 */
-export class CdnEndpointCustomDomain extends cdktf.TerraformResource {
+export class CdnEndpointCustomDomain extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -516,14 +516,14 @@ export class CdnEndpointCustomDomain extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CdnEndpointCustomDomain resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CdnEndpointCustomDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CdnEndpointCustomDomain to import
   * @param importFromId The id of the existing CdnEndpointCustomDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_endpoint_custom_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CdnEndpointCustomDomain to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cdn_endpoint_custom_domain", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cdn_endpoint_custom_domain", importId: importFromId, provider });
       }
 
   // ===========
@@ -675,10 +675,10 @@ export class CdnEndpointCustomDomain extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cdn_endpoint_id: cdktf.stringToTerraform(this._cdnEndpointId),
-      host_name: cdktf.stringToTerraform(this._hostName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      cdn_endpoint_id: cdktn.stringToTerraform(this._cdnEndpointId),
+      host_name: cdktn.stringToTerraform(this._hostName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
       cdn_managed_https: cdnEndpointCustomDomainCdnManagedHttpsToTerraform(this._cdnManagedHttps.internalValue),
       timeouts: cdnEndpointCustomDomainTimeoutsToTerraform(this._timeouts.internalValue),
       user_managed_https: cdnEndpointCustomDomainUserManagedHttpsToTerraform(this._userManagedHttps.internalValue),
@@ -688,25 +688,25 @@ export class CdnEndpointCustomDomain extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cdn_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._cdnEndpointId),
+        value: cdktn.stringToHclTerraform(this._cdnEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host_name: {
-        value: cdktf.stringToHclTerraform(this._hostName),
+        value: cdktn.stringToHclTerraform(this._hostName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

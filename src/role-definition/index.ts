@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RoleDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface RoleDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/role_definition#assignable_scopes RoleDefinition#assignable_scopes}
   */
@@ -44,7 +44,7 @@ export interface RoleDefinitionConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/role_definition#permissions RoleDefinition#permissions}
   */
-  readonly permissions?: RoleDefinitionPermissions[] | cdktf.IResolvable;
+  readonly permissions?: RoleDefinitionPermissions[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -71,46 +71,46 @@ export interface RoleDefinitionPermissions {
   readonly notDataActions?: string[];
 }
 
-export function roleDefinitionPermissionsToTerraform(struct?: RoleDefinitionPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function roleDefinitionPermissionsToTerraform(struct?: RoleDefinitionPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
-    data_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dataActions),
-    not_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notActions),
-    not_data_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notDataActions),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
+    data_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dataActions),
+    not_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.notActions),
+    not_data_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.notDataActions),
   }
 }
 
 
-export function roleDefinitionPermissionsToHclTerraform(struct?: RoleDefinitionPermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function roleDefinitionPermissionsToHclTerraform(struct?: RoleDefinitionPermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dataActions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dataActions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     not_actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notActions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.notActions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     not_data_actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notDataActions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.notDataActions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -121,9 +121,9 @@ export function roleDefinitionPermissionsToHclTerraform(struct?: RoleDefinitionP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RoleDefinitionPermissionsOutputReference extends cdktf.ComplexObject {
+export class RoleDefinitionPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -131,11 +131,11 @@ export class RoleDefinitionPermissionsOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RoleDefinitionPermissions | cdktf.IResolvable | undefined {
+  public get internalValue(): RoleDefinitionPermissions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -160,7 +160,7 @@ export class RoleDefinitionPermissionsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RoleDefinitionPermissions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RoleDefinitionPermissions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class RoleDefinitionPermissionsOutputReference extends cdktf.ComplexObjec
       this._notActions = undefined;
       this._notDataActions = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -202,7 +202,7 @@ export class RoleDefinitionPermissionsOutputReference extends cdktf.ComplexObjec
   // data_actions - computed: false, optional: true, required: false
   private _dataActions?: string[]; 
   public get dataActions() {
-    return cdktf.Fn.tolist(this.getListAttribute('data_actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('data_actions'));
   }
   public set dataActions(value: string[]) {
     this._dataActions = value;
@@ -234,7 +234,7 @@ export class RoleDefinitionPermissionsOutputReference extends cdktf.ComplexObjec
   // not_data_actions - computed: false, optional: true, required: false
   private _notDataActions?: string[]; 
   public get notDataActions() {
-    return cdktf.Fn.tolist(this.getListAttribute('not_data_actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('not_data_actions'));
   }
   public set notDataActions(value: string[]) {
     this._notDataActions = value;
@@ -248,15 +248,15 @@ export class RoleDefinitionPermissionsOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class RoleDefinitionPermissionsList extends cdktf.ComplexList {
-  public internalValue? : RoleDefinitionPermissions[] | cdktf.IResolvable
+export class RoleDefinitionPermissionsList extends cdktn.ComplexList {
+  public internalValue? : RoleDefinitionPermissions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -286,46 +286,46 @@ export interface RoleDefinitionTimeouts {
   readonly update?: string;
 }
 
-export function roleDefinitionTimeoutsToTerraform(struct?: RoleDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function roleDefinitionTimeoutsToTerraform(struct?: RoleDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function roleDefinitionTimeoutsToHclTerraform(struct?: RoleDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function roleDefinitionTimeoutsToHclTerraform(struct?: RoleDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -336,19 +336,19 @@ export function roleDefinitionTimeoutsToHclTerraform(struct?: RoleDefinitionTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RoleDefinitionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RoleDefinitionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RoleDefinitionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RoleDefinitionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -373,7 +373,7 @@ export class RoleDefinitionTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RoleDefinitionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RoleDefinitionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -382,7 +382,7 @@ export class RoleDefinitionTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -464,7 +464,7 @@ export class RoleDefinitionTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/role_definition azurerm_role_definition}
 */
-export class RoleDefinition extends cdktf.TerraformResource {
+export class RoleDefinition extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -475,14 +475,14 @@ export class RoleDefinition extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RoleDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RoleDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RoleDefinition to import
   * @param importFromId The id of the existing RoleDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/role_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RoleDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_role_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_role_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -626,7 +626,7 @@ export class RoleDefinition extends cdktf.TerraformResource {
   public get permissions() {
     return this._permissions;
   }
-  public putPermissions(value: RoleDefinitionPermissions[] | cdktf.IResolvable) {
+  public putPermissions(value: RoleDefinitionPermissions[] | cdktn.IResolvable) {
     this._permissions.internalValue = value;
   }
   public resetPermissions() {
@@ -659,13 +659,13 @@ export class RoleDefinition extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assignable_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._assignableScopes),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      role_definition_id: cdktf.stringToTerraform(this._roleDefinitionId),
-      scope: cdktf.stringToTerraform(this._scope),
-      permissions: cdktf.listMapper(roleDefinitionPermissionsToTerraform, true)(this._permissions.internalValue),
+      assignable_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._assignableScopes),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      role_definition_id: cdktn.stringToTerraform(this._roleDefinitionId),
+      scope: cdktn.stringToTerraform(this._scope),
+      permissions: cdktn.listMapper(roleDefinitionPermissionsToTerraform, true)(this._permissions.internalValue),
       timeouts: roleDefinitionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -673,43 +673,43 @@ export class RoleDefinition extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       assignable_scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._assignableScopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._assignableScopes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_definition_id: {
-        value: cdktf.stringToHclTerraform(this._roleDefinitionId),
+        value: cdktn.stringToHclTerraform(this._roleDefinitionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope: {
-        value: cdktf.stringToHclTerraform(this._scope),
+        value: cdktn.stringToHclTerraform(this._scope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permissions: {
-        value: cdktf.listMapperHcl(roleDefinitionPermissionsToHclTerraform, true)(this._permissions.internalValue),
+        value: cdktn.listMapperHcl(roleDefinitionPermissionsToHclTerraform, true)(this._permissions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RoleDefinitionPermissionsList",

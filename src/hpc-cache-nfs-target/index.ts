@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface HpcCacheNfsTargetConfig extends cdktf.TerraformMetaArguments {
+export interface HpcCacheNfsTargetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache_nfs_target#cache_name HpcCacheNfsTarget#cache_name}
   */
@@ -52,7 +52,7 @@ export interface HpcCacheNfsTargetConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache_nfs_target#namespace_junction HpcCacheNfsTarget#namespace_junction}
   */
-  readonly namespaceJunction: HpcCacheNfsTargetNamespaceJunction[] | cdktf.IResolvable;
+  readonly namespaceJunction: HpcCacheNfsTargetNamespaceJunction[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -79,46 +79,46 @@ export interface HpcCacheNfsTargetNamespaceJunction {
   readonly targetPath?: string;
 }
 
-export function hpcCacheNfsTargetNamespaceJunctionToTerraform(struct?: HpcCacheNfsTargetNamespaceJunction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hpcCacheNfsTargetNamespaceJunctionToTerraform(struct?: HpcCacheNfsTargetNamespaceJunction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_policy_name: cdktf.stringToTerraform(struct!.accessPolicyName),
-    namespace_path: cdktf.stringToTerraform(struct!.namespacePath),
-    nfs_export: cdktf.stringToTerraform(struct!.nfsExport),
-    target_path: cdktf.stringToTerraform(struct!.targetPath),
+    access_policy_name: cdktn.stringToTerraform(struct!.accessPolicyName),
+    namespace_path: cdktn.stringToTerraform(struct!.namespacePath),
+    nfs_export: cdktn.stringToTerraform(struct!.nfsExport),
+    target_path: cdktn.stringToTerraform(struct!.targetPath),
   }
 }
 
 
-export function hpcCacheNfsTargetNamespaceJunctionToHclTerraform(struct?: HpcCacheNfsTargetNamespaceJunction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hpcCacheNfsTargetNamespaceJunctionToHclTerraform(struct?: HpcCacheNfsTargetNamespaceJunction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_policy_name: {
-      value: cdktf.stringToHclTerraform(struct!.accessPolicyName),
+      value: cdktn.stringToHclTerraform(struct!.accessPolicyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace_path: {
-      value: cdktf.stringToHclTerraform(struct!.namespacePath),
+      value: cdktn.stringToHclTerraform(struct!.namespacePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     nfs_export: {
-      value: cdktf.stringToHclTerraform(struct!.nfsExport),
+      value: cdktn.stringToHclTerraform(struct!.nfsExport),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_path: {
-      value: cdktf.stringToHclTerraform(struct!.targetPath),
+      value: cdktn.stringToHclTerraform(struct!.targetPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -129,9 +129,9 @@ export function hpcCacheNfsTargetNamespaceJunctionToHclTerraform(struct?: HpcCac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HpcCacheNfsTargetNamespaceJunctionOutputReference extends cdktf.ComplexObject {
+export class HpcCacheNfsTargetNamespaceJunctionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -139,11 +139,11 @@ export class HpcCacheNfsTargetNamespaceJunctionOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): HpcCacheNfsTargetNamespaceJunction | cdktf.IResolvable | undefined {
+  public get internalValue(): HpcCacheNfsTargetNamespaceJunction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,7 +168,7 @@ export class HpcCacheNfsTargetNamespaceJunctionOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: HpcCacheNfsTargetNamespaceJunction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: HpcCacheNfsTargetNamespaceJunction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class HpcCacheNfsTargetNamespaceJunctionOutputReference extends cdktf.Com
       this._nfsExport = undefined;
       this._targetPath = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -250,15 +250,15 @@ export class HpcCacheNfsTargetNamespaceJunctionOutputReference extends cdktf.Com
   }
 }
 
-export class HpcCacheNfsTargetNamespaceJunctionList extends cdktf.ComplexList {
-  public internalValue? : HpcCacheNfsTargetNamespaceJunction[] | cdktf.IResolvable
+export class HpcCacheNfsTargetNamespaceJunctionList extends cdktn.ComplexList {
+  public internalValue? : HpcCacheNfsTargetNamespaceJunction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -288,46 +288,46 @@ export interface HpcCacheNfsTargetTimeouts {
   readonly update?: string;
 }
 
-export function hpcCacheNfsTargetTimeoutsToTerraform(struct?: HpcCacheNfsTargetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hpcCacheNfsTargetTimeoutsToTerraform(struct?: HpcCacheNfsTargetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function hpcCacheNfsTargetTimeoutsToHclTerraform(struct?: HpcCacheNfsTargetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hpcCacheNfsTargetTimeoutsToHclTerraform(struct?: HpcCacheNfsTargetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -338,19 +338,19 @@ export function hpcCacheNfsTargetTimeoutsToHclTerraform(struct?: HpcCacheNfsTarg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HpcCacheNfsTargetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class HpcCacheNfsTargetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): HpcCacheNfsTargetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): HpcCacheNfsTargetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -375,7 +375,7 @@ export class HpcCacheNfsTargetTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: HpcCacheNfsTargetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: HpcCacheNfsTargetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -384,7 +384,7 @@ export class HpcCacheNfsTargetTimeoutsOutputReference extends cdktf.ComplexObjec
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -466,7 +466,7 @@ export class HpcCacheNfsTargetTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache_nfs_target azurerm_hpc_cache_nfs_target}
 */
-export class HpcCacheNfsTarget extends cdktf.TerraformResource {
+export class HpcCacheNfsTarget extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -477,14 +477,14 @@ export class HpcCacheNfsTarget extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a HpcCacheNfsTarget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a HpcCacheNfsTarget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HpcCacheNfsTarget to import
   * @param importFromId The id of the existing HpcCacheNfsTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache_nfs_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HpcCacheNfsTarget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_hpc_cache_nfs_target", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_hpc_cache_nfs_target", importId: importFromId, provider });
       }
 
   // ===========
@@ -648,7 +648,7 @@ export class HpcCacheNfsTarget extends cdktf.TerraformResource {
   public get namespaceJunction() {
     return this._namespaceJunction;
   }
-  public putNamespaceJunction(value: HpcCacheNfsTargetNamespaceJunction[] | cdktf.IResolvable) {
+  public putNamespaceJunction(value: HpcCacheNfsTargetNamespaceJunction[] | cdktn.IResolvable) {
     this._namespaceJunction.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -678,15 +678,15 @@ export class HpcCacheNfsTarget extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cache_name: cdktf.stringToTerraform(this._cacheName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      target_host_name: cdktf.stringToTerraform(this._targetHostName),
-      usage_model: cdktf.stringToTerraform(this._usageModel),
-      verification_timer_in_seconds: cdktf.numberToTerraform(this._verificationTimerInSeconds),
-      write_back_timer_in_seconds: cdktf.numberToTerraform(this._writeBackTimerInSeconds),
-      namespace_junction: cdktf.listMapper(hpcCacheNfsTargetNamespaceJunctionToTerraform, true)(this._namespaceJunction.internalValue),
+      cache_name: cdktn.stringToTerraform(this._cacheName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      target_host_name: cdktn.stringToTerraform(this._targetHostName),
+      usage_model: cdktn.stringToTerraform(this._usageModel),
+      verification_timer_in_seconds: cdktn.numberToTerraform(this._verificationTimerInSeconds),
+      write_back_timer_in_seconds: cdktn.numberToTerraform(this._writeBackTimerInSeconds),
+      namespace_junction: cdktn.listMapper(hpcCacheNfsTargetNamespaceJunctionToTerraform, true)(this._namespaceJunction.internalValue),
       timeouts: hpcCacheNfsTargetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -694,55 +694,55 @@ export class HpcCacheNfsTarget extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cache_name: {
-        value: cdktf.stringToHclTerraform(this._cacheName),
+        value: cdktn.stringToHclTerraform(this._cacheName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_host_name: {
-        value: cdktf.stringToHclTerraform(this._targetHostName),
+        value: cdktn.stringToHclTerraform(this._targetHostName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       usage_model: {
-        value: cdktf.stringToHclTerraform(this._usageModel),
+        value: cdktn.stringToHclTerraform(this._usageModel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       verification_timer_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._verificationTimerInSeconds),
+        value: cdktn.numberToHclTerraform(this._verificationTimerInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       write_back_timer_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._writeBackTimerInSeconds),
+        value: cdktn.numberToHclTerraform(this._writeBackTimerInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       namespace_junction: {
-        value: cdktf.listMapperHcl(hpcCacheNfsTargetNamespaceJunctionToHclTerraform, true)(this._namespaceJunction.internalValue),
+        value: cdktn.listMapperHcl(hpcCacheNfsTargetNamespaceJunctionToHclTerraform, true)(this._namespaceJunction.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "HpcCacheNfsTargetNamespaceJunctionList",

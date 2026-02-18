@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PaloAltoLocalRulestackConfig extends cdktf.TerraformMetaArguments {
+export interface PaloAltoLocalRulestackConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack#anti_spyware_profile PaloAltoLocalRulestack#anti_spyware_profile}
   */
@@ -85,46 +85,46 @@ export interface PaloAltoLocalRulestackTimeouts {
   readonly update?: string;
 }
 
-export function paloAltoLocalRulestackTimeoutsToTerraform(struct?: PaloAltoLocalRulestackTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paloAltoLocalRulestackTimeoutsToTerraform(struct?: PaloAltoLocalRulestackTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function paloAltoLocalRulestackTimeoutsToHclTerraform(struct?: PaloAltoLocalRulestackTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paloAltoLocalRulestackTimeoutsToHclTerraform(struct?: PaloAltoLocalRulestackTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,19 +135,19 @@ export function paloAltoLocalRulestackTimeoutsToHclTerraform(struct?: PaloAltoLo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoLocalRulestackTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PaloAltoLocalRulestackTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PaloAltoLocalRulestackTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PaloAltoLocalRulestackTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,7 +172,7 @@ export class PaloAltoLocalRulestackTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PaloAltoLocalRulestackTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PaloAltoLocalRulestackTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -181,7 +181,7 @@ export class PaloAltoLocalRulestackTimeoutsOutputReference extends cdktf.Complex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -263,7 +263,7 @@ export class PaloAltoLocalRulestackTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack azurerm_palo_alto_local_rulestack}
 */
-export class PaloAltoLocalRulestack extends cdktf.TerraformResource {
+export class PaloAltoLocalRulestack extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -274,14 +274,14 @@ export class PaloAltoLocalRulestack extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PaloAltoLocalRulestack resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PaloAltoLocalRulestack resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PaloAltoLocalRulestack to import
   * @param importFromId The id of the existing PaloAltoLocalRulestack that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_local_rulestack#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PaloAltoLocalRulestack to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_palo_alto_local_rulestack", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_palo_alto_local_rulestack", importId: importFromId, provider });
       }
 
   // ===========
@@ -518,17 +518,17 @@ export class PaloAltoLocalRulestack extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      anti_spyware_profile: cdktf.stringToTerraform(this._antiSpywareProfile),
-      anti_virus_profile: cdktf.stringToTerraform(this._antiVirusProfile),
-      description: cdktf.stringToTerraform(this._description),
-      dns_subscription: cdktf.stringToTerraform(this._dnsSubscription),
-      file_blocking_profile: cdktf.stringToTerraform(this._fileBlockingProfile),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      url_filtering_profile: cdktf.stringToTerraform(this._urlFilteringProfile),
-      vulnerability_profile: cdktf.stringToTerraform(this._vulnerabilityProfile),
+      anti_spyware_profile: cdktn.stringToTerraform(this._antiSpywareProfile),
+      anti_virus_profile: cdktn.stringToTerraform(this._antiVirusProfile),
+      description: cdktn.stringToTerraform(this._description),
+      dns_subscription: cdktn.stringToTerraform(this._dnsSubscription),
+      file_blocking_profile: cdktn.stringToTerraform(this._fileBlockingProfile),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      url_filtering_profile: cdktn.stringToTerraform(this._urlFilteringProfile),
+      vulnerability_profile: cdktn.stringToTerraform(this._vulnerabilityProfile),
       timeouts: paloAltoLocalRulestackTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -536,67 +536,67 @@ export class PaloAltoLocalRulestack extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       anti_spyware_profile: {
-        value: cdktf.stringToHclTerraform(this._antiSpywareProfile),
+        value: cdktn.stringToHclTerraform(this._antiSpywareProfile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       anti_virus_profile: {
-        value: cdktf.stringToHclTerraform(this._antiVirusProfile),
+        value: cdktn.stringToHclTerraform(this._antiVirusProfile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dns_subscription: {
-        value: cdktf.stringToHclTerraform(this._dnsSubscription),
+        value: cdktn.stringToHclTerraform(this._dnsSubscription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file_blocking_profile: {
-        value: cdktf.stringToHclTerraform(this._fileBlockingProfile),
+        value: cdktn.stringToHclTerraform(this._fileBlockingProfile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       url_filtering_profile: {
-        value: cdktf.stringToHclTerraform(this._urlFilteringProfile),
+        value: cdktn.stringToHclTerraform(this._urlFilteringProfile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vulnerability_profile: {
-        value: cdktf.stringToHclTerraform(this._vulnerabilityProfile),
+        value: cdktn.stringToHclTerraform(this._vulnerabilityProfile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
